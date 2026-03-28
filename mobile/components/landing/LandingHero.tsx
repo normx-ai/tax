@@ -16,7 +16,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
   const login = useAuthStore((s) => s.login);
 
   const stats = [
-    { value: "2 263", label: "Articles de loi" },
+    { value: "+2 200", label: "Articles de loi" },
     { value: "16", label: "Simulateurs fiscaux" },
     { value: "IA", label: "Assistant intelligent" },
     { value: "CGI 2026", label: "Code Général des Impôts" },
@@ -72,7 +72,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           marginBottom: 36,
         }}
       >
-        16 simulateurs fiscaux, un assistant IA et 2 263 articles de loi indexés — tout le Code Général des Impôts à portée de main.
+        16 simulateurs fiscaux, un assistant IA et +2 200 articles de loi indexés — tout le Code Général des Impôts à portée de main.
       </Text>
 
       {/* CTA buttons */}
