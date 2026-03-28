@@ -58,45 +58,8 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
 
   return (
     <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 18, paddingBottom: 30 }}>
-      {/* En-tête — Greeting + CGI 242 */}
-      <View style={{ marginBottom: 20 }}>
-        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.textSecondary, marginBottom: 4 }}>
-          {getGreeting(t)}
-        </Text>
-        <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 26, color: colors.text, letterSpacing: -0.5 }}>
-          NORMX <Text style={{ color: colors.primary }}>Tax</Text>
-        </Text>
-        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
-          {t("dashboard.subtitle")}
-        </Text>
-      </View>
-
-      {/* Stats — 4 mini-cards en ligne */}
-      <View style={{ flexDirection: "row", gap: 8, marginBottom: 22 }}>
-        {STATS.map((s) => (
-          <View
-            key={s.labelKey}
-            style={{
-              flex: 1,
-              ...cardBase,
-              alignItems: "center",
-              paddingVertical: 12,
-              paddingHorizontal: 6,
-            }}
-          >
-            <Ionicons name={s.icon} size={18} color={s.color} style={{ marginBottom: 4 }} />
-            <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 18, color: colors.text }}>
-              {s.value}
-            </Text>
-            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 11, color: colors.textMuted, textAlign: "center" }} numberOfLines={1}>
-              {t(s.labelKey)}
-            </Text>
-          </View>
-        ))}
-      </View>
-
-      {/* Actions rapides — grille 2x2 */}
-      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12, marginBottom: 24 }}>
+      {/* Actions rapides — grille 2x2 (en premier) */}
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12, marginBottom: 20 }}>
         {ACTIONS.map((item) => (
           <TouchableOpacity
             key={item.titleKey}
@@ -118,6 +81,45 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
               {t(item.descKey)}
             </Text>
           </TouchableOpacity>
+        ))}
+      </View>
+
+      {/* En-tête — Greeting */}
+      <View style={{ marginBottom: 16 }}>
+        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.textSecondary, marginBottom: 4 }}>
+          {getGreeting(t)}
+        </Text>
+        <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 26, color: colors.text, letterSpacing: -0.5 }}>
+          NORMX <Text style={{ color: colors.primary }}>Tax</Text>
+        </Text>
+      </View>
+
+      {/* Stats — barre unique 1x4 */}
+      <View style={{
+        flexDirection: "row",
+        backgroundColor: "#1A3A5C",
+        borderRadius: 14,
+        paddingVertical: 16,
+        paddingHorizontal: 8,
+        marginBottom: 22,
+      }}>
+        {STATS.map((s, i) => (
+          <View
+            key={s.labelKey}
+            style={{
+              flex: 1,
+              alignItems: "center",
+              borderRightWidth: i < STATS.length - 1 ? 1 : 0,
+              borderRightColor: "rgba(255,255,255,0.15)",
+            }}
+          >
+            <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 20, color: "#D4A843" }}>
+              {s.value}
+            </Text>
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 10, color: "rgba(255,255,255,0.7)", textAlign: "center", marginTop: 2 }} numberOfLines={1}>
+              {t(s.labelKey)}
+            </Text>
+          </View>
         ))}
       </View>
 
