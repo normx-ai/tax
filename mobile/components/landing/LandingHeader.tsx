@@ -20,11 +20,14 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        paddingVertical: 16,
-        paddingHorizontal: isMobile ? 16 : 32,
+        height: 64,
+        paddingHorizontal: 24,
+        maxWidth: 1200,
+        width: "100%",
+        alignSelf: "center",
         borderBottomWidth: 1,
-        borderBottomColor: "rgba(0,0,0,0.06)",
-        backgroundColor: "rgba(255,255,255,0.95)",
+        borderBottomColor: "rgba(0,0,0,0.08)",
+        backgroundColor: "rgba(255,255,255,0.92)",
         zIndex: 100,
       }}
     >
