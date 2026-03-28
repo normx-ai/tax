@@ -1,9 +1,11 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import { router } from "expo-router";
-import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { useAuthStore } from "@/lib/store/auth";
 
-const GOLD = "#D4A843";
+const PRIMARY = "#D4A843";
+const DARK = "#1A3A5C";
+const TEXT_SEC = "#6b7280";
+const BG_WARM = "#faf8f5";
 
 interface Props {
   isMobile: boolean;
@@ -11,109 +13,129 @@ interface Props {
 }
 
 export default function LandingHero({ isMobile, loaded }: Props) {
-  const { t } = useTranslation();
+  const login = useAuthStore((s) => s.login);
 
   const stats = [
-    { value: "1", label: "Pays couvert" },
-    { value: "2 181", label: "Articles de loi" },
-    { value: "16", label: "Simulateurs" },
+    { value: "2 263", label: "Articles de loi" },
+    { value: "16", label: "Simulateurs fiscaux" },
     { value: "IA", label: "Assistant intelligent" },
+    { value: "CGI 2026", label: "Code Général des Impôts" },
   ];
 
   return (
-    <View style={{ alignItems: "center", paddingTop: isMobile ? 60 : 90, paddingBottom: 50, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
+    <View style={{ alignItems: "center", paddingTop: isMobile ? 60 : 100, paddingBottom: 60, paddingHorizontal: 24, backgroundColor: BG_WARM }}>
       {/* Badge */}
       <View
         style={{
           flexDirection: "row",
           alignItems: "center",
           gap: 8,
-          backgroundColor: "rgba(26,58,92,0.06)",
-          borderWidth: 1,
-          borderColor: "rgba(26,58,92,0.12)",
+          backgroundColor: "rgba(212,168,67,0.1)",
           borderRadius: 100,
-          paddingVertical: 7,
-          paddingHorizontal: 18,
-          marginBottom: 28,
+          paddingVertical: 8,
+          paddingHorizontal: 20,
+          marginBottom: 32,
         }}
       >
-        <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: "#1A3A5C" }}>
-          Plateforme IA pour les professionnels africains
+        <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: PRIMARY, letterSpacing: 0.5 }}>
+          Fiscalité intelligente pour l'Afrique
         </Text>
       </View>
 
       {/* Title */}
       <Text
         style={{
-          fontFamily: fonts.headingBlack,
-          fontWeight: fontWeights.headingBlack,
-          fontSize: isMobile ? 32 : 56,
-          color: "#1A3A5C",
+          fontFamily: fonts.black,
+          fontWeight: fontWeights.black,
+          fontSize: isMobile ? 30 : 52,
+          color: DARK,
           textAlign: "center",
-          lineHeight: isMobile ? 38 : 64,
+          lineHeight: isMobile ? 36 : 60,
           marginBottom: 20,
+          letterSpacing: -0.5,
         }}
       >
-        {"L'intelligence "}<Text style={{ color: GOLD }}>{"juridique & fiscale"}</Text>{"\n"}à portée de main
+        {"Simulez vos impôts,\nmaîtrisez le "}
+        <Text style={{ color: PRIMARY }}>CGI Congo 2026</Text>
       </Text>
 
       {/* Subtitle */}
       <Text
         style={{
-          fontSize: isMobile ? 15 : 19,
-          color: "#5a6a7a",
-          maxWidth: 640,
+          fontSize: isMobile ? 15 : 18,
+          color: TEXT_SEC,
+          maxWidth: 560,
           textAlign: "center",
-          lineHeight: isMobile ? 24 : 31,
-          fontFamily: fonts.light,
-          fontWeight: fontWeights.light,
-          marginBottom: 44,
+          lineHeight: isMobile ? 24 : 30,
+          fontFamily: fonts.regular,
+          fontWeight: fontWeights.regular,
+          marginBottom: 36,
         }}
       >
-        NORMX AI centralise le droit, la fiscalité, la comptabilité et la paie dans une plateforme unique propulsée par l'intelligence artificielle.
+        16 simulateurs fiscaux, un assistant IA et 2 263 articles de loi indexés — tout le Code Général des Impôts à portée de main.
       </Text>
+
+      {/* CTA buttons */}
+      <View style={{ flexDirection: isMobile ? "column" : "row", gap: 12, alignItems: "center", marginBottom: 48 }}>
+        <TouchableOpacity
+          onPress={login}
+          style={{
+            paddingVertical: 16,
+            paddingHorizontal: 32,
+            borderRadius: 10,
+            backgroundColor: PRIMARY,
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 8,
+          }}
+        >
+          <Text style={{ color: DARK, fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
+            Démarrer maintenant →
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={login}
+          style={{
+            paddingVertical: 14,
+            paddingHorizontal: 32,
+            borderRadius: 10,
+            borderWidth: 1.5,
+            borderColor: "rgba(0,0,0,0.1)",
+            backgroundColor: "#ffffff",
+          }}
+        >
+          <Text style={{ color: DARK, fontSize: 16, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+            Créer un compte
+          </Text>
+        </TouchableOpacity>
+      </View>
 
       {/* Stats */}
       <View
         style={{
           flexDirection: "row",
           justifyContent: "center",
-          gap: isMobile ? 24 : 56,
+          gap: isMobile ? 20 : 48,
           flexWrap: "wrap",
-          marginBottom: 50,
+          backgroundColor: DARK,
+          borderRadius: 16,
+          paddingVertical: 24,
+          paddingHorizontal: isMobile ? 16 : 48,
+          width: "100%",
+          maxWidth: 800,
         }}
       >
         {stats.map((stat, i) => (
           <View key={i} style={{ alignItems: "center", opacity: loaded ? 1 : 0 }}>
-            <Text style={{ fontSize: isMobile ? 28 : 40, fontFamily: fonts.black, fontWeight: fontWeights.black, color: "#1A3A5C" }}>
+            <Text style={{ fontSize: isMobile ? 24 : 32, fontFamily: fonts.black, fontWeight: fontWeights.black, color: PRIMARY }}>
               {stat.value}
             </Text>
-            <Text style={{ fontSize: 13, color: "#5a6a7a", textTransform: "uppercase", letterSpacing: 1.5, marginTop: 5, fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
+            <Text style={{ fontSize: 11, color: "rgba(255,255,255,0.7)", marginTop: 4, fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
               {stat.label}
             </Text>
           </View>
         ))}
-      </View>
-
-      {/* CTA buttons */}
-      <View style={{ flexDirection: isMobile ? "column" : "row", gap: 14, alignItems: "center" }}>
-        <TouchableOpacity
-          onPress={() => router.push("/cgi242")}
-          style={{ paddingVertical: 15, paddingHorizontal: 38, borderRadius: 12, backgroundColor: "#1A3A5C" }}
-        >
-          <Text style={{ color: "#ffffff", fontSize: 18, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold }}>
-            Découvrir NORMX Tax →
-          </Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          onPress={() => router.push("/(auth)/register")}
-          style={{ paddingVertical: 13, paddingHorizontal: 38, borderRadius: 12, borderWidth: 1, borderColor: "rgba(26,58,92,0.2)" }}
-        >
-          <Text style={{ color: "#1A3A5C", fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
-            Essai gratuit
-          </Text>
-        </TouchableOpacity>
       </View>
     </View>
   );

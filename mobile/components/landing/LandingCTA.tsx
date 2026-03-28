@@ -1,65 +1,72 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import { router } from "expo-router";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { useAuthStore } from "@/lib/store/auth";
 
-const GOLD = "#D4A843";
+const PRIMARY = "#D4A843";
+const DARK = "#1A3A5C";
 
 export default function LandingCTA() {
+  const login = useAuthStore((s) => s.login);
+
   return (
-    <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
-      <Text
-        style={{
-          fontFamily: fonts.headingBlack,
-          fontWeight: fontWeights.headingBlack,
-          fontSize: 42,
-          color: "#1A3A5C",
+    <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#faf8f5" }}>
+      <View style={{
+        backgroundColor: "#ffffff",
+        borderWidth: 1,
+        borderColor: "rgba(0,0,0,0.06)",
+        borderRadius: 20,
+        padding: 48,
+        maxWidth: 700,
+        width: "100%",
+        alignItems: "center",
+      }}>
+        <Text style={{
+          fontFamily: fonts.black,
+          fontWeight: fontWeights.black,
+          fontSize: 28,
+          color: DARK,
           textAlign: "center",
           marginBottom: 12,
-        }}
-      >
-        {`Prêt à essayer ?`}
-      </Text>
-      <Text
-        style={{
-          color: "#5a6a7a",
-          fontSize: 17,
-          fontFamily: fonts.light,
-          fontWeight: fontWeights.light,
+        }}>
+          Prêt à simplifier votre fiscalité ?
+        </Text>
+        <Text style={{
+          color: "#6b7280",
+          fontSize: 16,
+          fontFamily: fonts.regular,
+          fontWeight: fontWeights.regular,
           marginBottom: 28,
-        }}
-      >
-        {`7 jours gratuits \u2014 Commencez avec le CGI 242`}
-      </Text>
-      <TouchableOpacity
-        onPress={() => router.push("/(auth)/register")}
-        style={{
-          paddingVertical: 15,
-          paddingHorizontal: 38,
-          borderRadius: 12,
-          backgroundColor: "#1A3A5C",
-        }}
-      >
-        <Text
+          textAlign: "center",
+        }}>
+          Accédez au CGI Congo 2026, simulez vos impôts et posez vos questions à l'IA fiscale.
+        </Text>
+        <TouchableOpacity
+          onPress={login}
           style={{
-            color: "#ffffff",
-            fontSize: 18,
-            fontFamily: fonts.extraBold,
-            fontWeight: fontWeights.extraBold,
+            paddingVertical: 16,
+            paddingHorizontal: 32,
+            borderRadius: 10,
+            backgroundColor: PRIMARY,
           }}
         >
-          {`Démarrer l'essai gratuit`}
-        </Text>
-      </TouchableOpacity>
-      <Text
-        style={{
-          marginTop: 14,
-          fontSize: 14,
-          color: "#8a8a95",
+          <Text style={{
+            color: DARK,
+            fontSize: 16,
+            fontFamily: fonts.bold,
+            fontWeight: fontWeights.bold,
+          }}>
+            Démarrer maintenant →
+          </Text>
+        </TouchableOpacity>
+        <Text style={{
+          marginTop: 16,
+          fontSize: 13,
+          color: "#9ca3af",
           fontFamily: fonts.regular,
-        }}
-      >
-        Aucune carte bancaire requise
-      </Text>
+        }}>
+          Connexion sécurisée via NORMX AI
+        </Text>
+      </View>
     </View>
   );
 }
