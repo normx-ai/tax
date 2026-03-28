@@ -101,6 +101,7 @@ services:
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - /var/www/certbot:/var/www/certbot:ro
+      - /var/www/normx-app:/var/www/normx-app:ro
     depends_on:
       api:
         condition: service_healthy
