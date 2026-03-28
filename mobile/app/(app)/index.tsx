@@ -12,10 +12,8 @@ import { useActiveCode, type CodeId } from "@/lib/context/ActiveCodeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const CODE_CARDS: { id: CodeId; icon: keyof typeof Ionicons.glyphMap; label: string; description: string; color: string; available: boolean }[] = [
-  { id: "cgi", icon: "book-outline", label: "Code Général des Impôts", description: "CGI 242 — Édition 2026", color: "#00815d", available: true },
-  { id: "social", icon: "people-outline", label: "Code Social", description: "Travail & Sécurité sociale", color: "#4f46e5", available: true },
-  { id: "hydrocarbures", icon: "flame-outline", label: "Code des Hydrocarbures", description: "Loi n°2024-28", color: "#d97706", available: false },
-  { id: "douanier", icon: "shield-checkmark-outline", label: "Code Douanier", description: "CEMAC", color: "#9333ea", available: false },
+  { id: "cgi", icon: "book-outline", label: "Code Général des Impôts", description: "CGI 2026 — République du Congo", color: "#D4A843", available: true },
+  { id: "social", icon: "people-outline", label: "Code Social", description: "Travail & Sécurité sociale — 2026", color: "#1A3A5C", available: true },
 ];
 
 function getGreeting(t: (key: string) => string) {

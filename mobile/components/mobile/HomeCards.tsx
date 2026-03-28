@@ -19,10 +19,10 @@ function getGreeting(t: (key: string) => string) {
 }
 
 const STATS = [
-  { labelKey: "dashboard.stats.articles", value: "2 181", icon: "document-text-outline" as const, color: "#00815d" },
-  { labelKey: "dashboard.stats.simulators", value: "16", icon: "calculator-outline" as const, color: "#4f46e5" },
-  { labelKey: "dashboard.stats.tfnc", value: "64", icon: "library-outline" as const, color: "#d97706" },
-  { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, color: "#9333ea" },
+  { labelKey: "dashboard.stats.articles", value: "+2 200", icon: "document-text-outline" as const, color: "#D4A843" },
+  { labelKey: "dashboard.stats.simulators", value: "16", icon: "calculator-outline" as const, color: "#1A3A5C" },
+  { labelKey: "dashboard.stats.tfnc", value: "2", icon: "library-outline" as const, color: "#D4A843" },
+  { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, color: "#1A3A5C" },
 ];
 
 const ACTIONS = [
@@ -64,7 +64,7 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
           {getGreeting(t)}
         </Text>
         <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 26, color: colors.text, letterSpacing: -0.5 }}>
-          CGI <Text style={{ color: colors.primary }}>242</Text>
+          NORMX <Text style={{ color: colors.primary }}>Tax</Text>
         </Text>
         <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: colors.textMuted, marginTop: 4 }}>
           {t("dashboard.subtitle")}
