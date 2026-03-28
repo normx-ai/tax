@@ -55,7 +55,7 @@ export default function LandingCTA() {
             fontFamily: fonts.bold,
             fontWeight: fontWeights.bold,
           }}>
-            Démarrer maintenant →
+            Se connecter →
           </Text>
         </TouchableOpacity>
         <Text style={{

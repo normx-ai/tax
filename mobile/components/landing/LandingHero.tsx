@@ -90,7 +90,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           }}
         >
           <Text style={{ color: DARK, fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
-            Démarrer maintenant →
+            Se connecter →
           </Text>
         </TouchableOpacity>
 

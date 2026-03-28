@@ -95,7 +95,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
           <Ionicons name="log-in-outline" size={20} color="#ffffff" />
         ) : (
           <Text style={{ color: "#ffffff", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 14 }}>
-            Démarrer maintenant
+            Connexion
           </Text>
         )}
       </TouchableOpacity>
