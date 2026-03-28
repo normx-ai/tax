@@ -28,7 +28,7 @@ export default function LandingCTA() {
           textAlign: "center",
           marginBottom: 12,
         }}>
-          Prêt à simplifier votre fiscalité ?
+          Prêt à simplifier votre fiscalité et votre gestion sociale ?
         </Text>
         <Text style={{
           color: "#6b7280",
@@ -38,7 +38,7 @@ export default function LandingCTA() {
           marginBottom: 28,
           textAlign: "center",
         }}>
-          Accédez au CGI Congo 2026, simulez vos impôts et posez vos questions à l'IA fiscale.
+          Accédez au Code fiscal et social du Congo, simulez vos impôts et cotisations, posez vos questions à l'IA.
         </Text>
         <TouchableOpacity
           onPress={login}

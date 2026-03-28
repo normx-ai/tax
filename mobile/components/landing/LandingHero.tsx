@@ -19,7 +19,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
     { value: "+2 200", label: "Articles de loi" },
     { value: "16", label: "Simulateurs fiscaux" },
     { value: "IA", label: "Assistant intelligent" },
-    { value: "CGI 2026", label: "Code Général des Impôts" },
+    { value: "2", label: "Codes : CGI + Social" },
   ];
 
   return (
@@ -38,7 +38,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
         }}
       >
         <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: PRIMARY, letterSpacing: 0.5 }}>
-          Fiscalité intelligente pour l'Afrique
+          Fiscalité et droit social pour l'Afrique
         </Text>
       </View>
 
@@ -55,8 +55,8 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           letterSpacing: -0.5,
         }}
       >
-        {"Simulez vos impôts,\nmaîtrisez le "}
-        <Text style={{ color: PRIMARY }}>CGI Congo 2026</Text>
+        {"Simulez vos impôts,\naccédez au "}
+        <Text style={{ color: PRIMARY }}>code fiscal et social</Text>
       </Text>
 
       {/* Subtitle */}
@@ -72,7 +72,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           marginBottom: 36,
         }}
       >
-        16 simulateurs fiscaux, un assistant IA et +2 200 articles de loi indexés — tout le Code Général des Impôts à portée de main.
+        Simulateurs fiscaux et sociaux, assistant IA et +2 200 articles indexés — Code Général des Impôts et Code Social du Congo à portée de main.
       </Text>
 
       {/* CTA buttons */}
