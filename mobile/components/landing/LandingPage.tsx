@@ -3,6 +3,7 @@ import { ScrollView, View, Platform } from "react-native";
 import LandingHeader from "./LandingHeader";
 import LandingHero from "./LandingHero";
 
+import LandingShowcase from "./LandingShowcase";
 import LandingFeatures from "./LandingFeatures";
 import LandingPricing from "./LandingPricing";
 import LandingContact from "./LandingContact";
@@ -45,6 +46,10 @@ export default function LandingPage() {
 
       <AnimatedSection delay={100}>
         <LandingHero isMobile={isMobile} loaded={loaded} />
+      </AnimatedSection>
+
+      <AnimatedSection delay={0}>
+        <LandingShowcase isMobile={isMobile} />
       </AnimatedSection>
 
       <View ref={(r) => { sectionRefs.current.features = r; }}>
