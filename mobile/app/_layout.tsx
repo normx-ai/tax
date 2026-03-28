@@ -8,18 +8,14 @@ import * as SplashScreen from "expo-splash-screen";
 import * as ScreenCapture from "expo-screen-capture";
 import * as Font from "expo-font";
 import {
-  PlayfairDisplay_700Bold,
-  PlayfairDisplay_900Black,
-} from "@expo-google-fonts/playfair-display";
-import {
-  Outfit_300Light,
-  Outfit_400Regular,
-  Outfit_500Medium,
-  Outfit_600SemiBold,
-  Outfit_700Bold,
-  Outfit_800ExtraBold,
-  Outfit_900Black,
-} from "@expo-google-fonts/outfit";
+  Inter_300Light,
+  Inter_400Regular,
+  Inter_500Medium,
+  Inter_600SemiBold,
+  Inter_700Bold,
+  Inter_800ExtraBold,
+  Inter_900Black,
+} from "@expo-google-fonts/inter";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { ThemeProvider, useTheme } from "@/lib/theme/ThemeContext";
 import ToastProvider from "@/components/ui/ToastProvider";
@@ -77,15 +73,13 @@ function RootLayout() {
     } else {
       // Native : charger les polices via expo-font
       Font.loadAsync({
-        PlayfairDisplay_700Bold,
-        PlayfairDisplay_900Black,
-        Outfit_300Light,
-        Outfit_400Regular,
-        Outfit_500Medium,
-        Outfit_600SemiBold,
-        Outfit_700Bold,
-        Outfit_800ExtraBold,
-        Outfit_900Black,
+        Inter_300Light,
+        Inter_400Regular,
+        Inter_500Medium,
+        Inter_600SemiBold,
+        Inter_700Bold,
+        Inter_800ExtraBold,
+        Inter_900Black,
       }).then(() => {
         setFontsLoaded(true);
         SplashScreen.hideAsync();

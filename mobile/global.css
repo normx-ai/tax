@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Police par défaut Outfit sur tout le site */
+/* Police par défaut Inter sur tout le site */
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 input, textarea {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   outline: none !important;
   -webkit-appearance: none;
 }

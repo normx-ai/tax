@@ -16,6 +16,7 @@
     "deploy": "npm run build:web && rsync -avz --delete dist/ ubuntu@${DEPLOY_VPS_HOST}:/var/www/cgi242/"
   },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.4.2",
     "@expo-google-fonts/outfit": "^0.4.3",
     "@expo-google-fonts/playfair-display": "^0.4.2",
     "@expo/metro-runtime": "~6.1.2",
