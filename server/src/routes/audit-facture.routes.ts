@@ -1,6 +1,6 @@
 import { Router } from "express";
 import multer from "multer";
-import { requireAuth, AuthRequest } from "../middleware/auth";
+import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
 import { checkAuditQuota } from "../middleware/subscription.middleware";
 import { analyzeInvoice, type DocumentType } from "../services/audit-facture.service";

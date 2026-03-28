@@ -1,5 +1,5 @@
 import { Router, Response } from 'express';
-import { requireAuth, AuthRequest } from '../middleware/auth';
+import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireOwner, requireAdmin } from '../middleware/orgRole.middleware';
 import { validate } from '../middleware/validate.middleware';

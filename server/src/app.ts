@@ -7,9 +7,10 @@ import cookieParser from "cookie-parser";
 import swaggerUi from "swagger-ui-express";
 import { swaggerSpec } from "./config/swagger";
 import { globalLimiter, authLimiter, sensitiveLimiter, chatLimiter } from "./middleware/rateLimit.middleware";
-import { csrfProtection } from "./middleware/csrf.middleware";
-import authRoutes from "./routes/auth";
-import mfaRoutes from "./routes/mfa.routes";
+// Auth custom et MFA supprimes — remplace par Keycloak (auth.normx-ai.com)
+// import { csrfProtection } from "./middleware/csrf.middleware";
+// import authRoutes from "./routes/auth";
+// import mfaRoutes from "./routes/mfa.routes";
 import chatRoutes from "./routes/chat";
 import organizationRoutes from "./routes/organization.routes";
 import subscriptionRoutes from "./routes/subscription.routes";
@@ -105,7 +106,8 @@ app.use((req, res, next) => {
 });
 
 // Protection CSRF (double-submit cookie) — apres cookieParser
-app.use(csrfProtection);
+// CSRF plus necessaire — Keycloak gere la securite des tokens
+// app.use(csrfProtection);
 
 // Rate limiting global
 app.use(globalLimiter);
@@ -117,8 +119,9 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // Routes
-app.use("/api/auth", authLimiter, authRoutes);
-app.use("/api/mfa", sensitiveLimiter, mfaRoutes);
+// Routes auth/mfa supprimees — Keycloak gere login/register/OTP/MFA
+// app.use("/api/auth", authLimiter, authRoutes);
+// app.use("/api/mfa", sensitiveLimiter, mfaRoutes);
 app.use("/api/chat", chatLimiter, chatRoutes);
 app.use("/api/organizations", organizationRoutes);
 app.use("/api/subscription", sensitiveLimiter, subscriptionRoutes);

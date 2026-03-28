@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
-import type { MfaSetupResult } from "@/lib/api/mfa";
+// MFA supprime — gere par Keycloak (auth.normx-ai.com/realms/normx/account)
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface MfaSetupFlowProps {

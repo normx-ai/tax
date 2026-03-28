@@ -1,5 +1,5 @@
 import { Response, NextFunction } from 'express';
-import { AuthRequest } from './auth';
+import { AuthRequest } from './keycloak-auth';
 import prisma from '../utils/prisma';
 import { createLogger } from '../utils/logger';
 import { AuditService } from '../services/audit.service';

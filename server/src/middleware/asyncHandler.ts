@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { AuthRequest } from "./auth";
+import { AuthRequest } from "./keycloak-auth";
 import { createLogger } from "../utils/logger";
 
 const logger = createLogger("AsyncHandler");

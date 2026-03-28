@@ -6,7 +6,7 @@ import { useAuthStore } from "@/lib/store/auth";
 import { useOnlineStatus } from "@/lib/hooks/useOnlineStatus";
 import { useOfflineSync } from "@/lib/hooks/useOfflineSync";
 import { usePushNotifications } from "@/lib/hooks/usePushNotifications";
-import { useSessionHeartbeat } from "@/lib/hooks/useSessionHeartbeat";
+// useSessionHeartbeat supprime — Keycloak gere les sessions
 import { useAntiCopy } from "@/lib/hooks/useAntiCopy";
 import Sidebar from "@/components/Sidebar";
 import { useActiveCode } from "@/lib/context/ActiveCodeContext";
@@ -104,7 +104,7 @@ function AppLayoutInner() {
   const { t, i18n } = useTranslation();
   useOfflineSync();
   usePushNotifications();
-  useSessionHeartbeat();
+  // useSessionHeartbeat() — supprime, Keycloak gere les sessions
   useAntiCopy();
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
   const loggedOut = useAuthStore((s) => s.loggedOut);

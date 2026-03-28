@@ -2,7 +2,7 @@
 // Routes historique de recherche — consultation, populaires, purge RGPD
 
 import { Router, Response } from "express";
-import { requireAuth, AuthRequest } from "../middleware/auth";
+import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { asyncHandler } from "../middleware/asyncHandler";
 import { validate } from "../middleware/validate.middleware";
 import { searchHistoryQuery } from "../schemas/search-history.schema";

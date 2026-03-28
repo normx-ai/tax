@@ -2,7 +2,7 @@
 // Route statistiques personnelles utilisateur
 
 import { Router, Response } from "express";
-import { requireAuth, AuthRequest } from "../middleware/auth";
+import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { asyncHandler } from "../middleware/asyncHandler";
 import prisma from "../utils/prisma";
 

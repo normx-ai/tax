@@ -7,8 +7,8 @@ import {
 } from "react-native";
 import * as Clipboard from "expo-clipboard";
 import { useTranslation } from "react-i18next";
-import { mfaApi, type MfaStatus, type MfaSetupResult } from "@/lib/api/mfa";
-import { authApi } from "@/lib/api/auth";
+// MFA supprime — gere par Keycloak (auth.normx-ai.com/realms/normx/account)
+// Auth API supprime — Keycloak gere login/logout
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useToast } from "@/components/ui/ToastProvider";
@@ -44,7 +44,7 @@ export default function SecuriteScreen() {
     setLoading(true);
     setError(null);
     try {
-      const data = await mfaApi.getStatus();
+      const data = await // mfaApi.getStatus();
       setStatus(data);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : t("security.unknownError");
@@ -61,7 +61,7 @@ export default function SecuriteScreen() {
   const handleStartSetup = async () => {
     setActionLoading(true);
     try {
-      const data = await mfaApi.setup();
+      const data = await // mfaApi.setup();
       setSetupData(data);
       setSetupStep("qr");
     } catch (err: unknown) {
@@ -76,7 +76,7 @@ export default function SecuriteScreen() {
     if (!totpCode.trim()) return;
     setActionLoading(true);
     try {
-      const result = await mfaApi.enable(totpCode.trim());
+      const result = await // mfaApi.enable(totpCode.trim());
       setBackupCodes(result.backupCodes);
       setSetupStep("backup");
       setTotpCode("");
@@ -103,7 +103,7 @@ export default function SecuriteScreen() {
 
     setActionLoading(true);
     try {
-      await mfaApi.disable(disablePassword.trim());
+      await // mfaApi.disable(disablePassword.trim());
       setDisablePassword("");
       setShowDisable(false);
       toast("2FA désactivée", "success");
@@ -127,7 +127,7 @@ export default function SecuriteScreen() {
 
     setActionLoading(true);
     try {
-      const result = await mfaApi.regenerateBackupCodes();
+      const result = await // mfaApi.regenerateBackupCodes();
       setBackupCodes(result.backupCodes);
       setSetupStep("backup");
     } catch (err: unknown) {
@@ -150,7 +150,7 @@ export default function SecuriteScreen() {
 
     setActionLoading(true);
     try {
-      await authApi.logoutAll();
+      await // authApi.logoutAll();
       await logout();
     } catch (err: unknown) {
       const errMsg = err instanceof Error ? err.message : t("common.error");

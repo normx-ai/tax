@@ -1,7 +1,7 @@
 import { Router, Response } from 'express';
 import path from 'path';
 import fs from 'fs';
-import { requireAuth, AuthRequest } from '../middleware/auth';
+import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { requireAdmin } from '../middleware/requireAdmin';
 import { validate } from '../middleware/validate.middleware';
 import {

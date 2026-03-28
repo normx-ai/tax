@@ -1,6 +1,6 @@
 import { Router, Response } from "express";
 import prisma from "../utils/prisma";
-import { requireAuth, AuthRequest } from "../middleware/auth";
+import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { validate } from "../middleware/validate.middleware";
 import { updateProfileBody } from "../schemas/user.schema";
 import { asyncHandler } from "../middleware/asyncHandler";

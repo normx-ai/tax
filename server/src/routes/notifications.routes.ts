@@ -1,5 +1,5 @@
 import { Router, Response } from "express";
-import { requireAuth, AuthRequest } from "../middleware/auth";
+import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { asyncHandler } from "../middleware/asyncHandler";
 import { validate } from "../middleware/validate.middleware";
 import { registerPushBody, unregisterPushBody } from "../schemas/notifications.schema";

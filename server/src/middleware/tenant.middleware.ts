@@ -1,5 +1,5 @@
 import { Response, NextFunction } from 'express';
-import { AuthRequest } from './auth';
+import { AuthRequest } from './keycloak-auth';
 import prisma from '../utils/prisma';
 import { cacheService, CACHE_TTL, CACHE_PREFIX } from '../utils/cache';
 import { ROLE_DEFAULTS, PermissionMap } from '../types/permissions';

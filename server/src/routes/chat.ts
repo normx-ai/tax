@@ -2,7 +2,7 @@
 // Routes chat IA fiscal - SSE streaming + CRUD conversations
 
 import { Router, Response } from "express";
-import { requireAuth, AuthRequest } from "../middleware/auth";
+import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
 import { checkQuestionQuota } from "../middleware/subscription.middleware";
 import { validate } from "../middleware/validate.middleware";

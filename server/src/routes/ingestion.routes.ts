@@ -2,7 +2,7 @@
 // API REST protégée pour l'ingestion d'articles CGI dans PostgreSQL + Qdrant
 
 import { Router, Response } from 'express';
-import { requireAuth, AuthRequest } from '../middleware/auth';
+import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { requireAdmin } from '../middleware/requireAdmin';
 import { validate } from '../middleware/validate.middleware';
 import { ingestArticlesBody, ingestSourcesBody } from '../schemas/ingestion.schema';

@@ -1,5 +1,5 @@
 import { Response, NextFunction } from 'express';
-import { AuthRequest } from './auth';
+import { AuthRequest } from './keycloak-auth';
 import { OrgRole, isRoleAtLeast, Permission } from '../types/permissions';
 
 export function requireOrgRole(minRole: OrgRole) {
