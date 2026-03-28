@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { ScrollView, View, Platform } from "react-native";
 import LandingHeader from "./LandingHeader";
 import LandingHero from "./LandingHero";
-import LandingProducts from "./LandingProducts";
+
 import LandingFeatures from "./LandingFeatures";
 import LandingPricing from "./LandingPricing";
 import LandingContact from "./LandingContact";
@@ -46,12 +46,6 @@ export default function LandingPage() {
       <AnimatedSection delay={100}>
         <LandingHero isMobile={isMobile} loaded={loaded} />
       </AnimatedSection>
-
-      <View ref={(r) => { sectionRefs.current.produits = r; }}>
-        <AnimatedSection delay={0}>
-          <LandingProducts isMobile={isMobile} />
-        </AnimatedSection>
-      </View>
 
       <View ref={(r) => { sectionRefs.current.features = r; }}>
         <AnimatedSection delay={0}>
