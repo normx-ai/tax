@@ -106,6 +106,9 @@ services:
         condition: service_healthy
     networks:
       - cgi242-net
+      - normx-legal-net
+      - normx-net
+      - keycloak-net
     # Healthcheck Nginx (B8)
     healthcheck:
       test: ["CMD", "curl", "-sf", "http://localhost:80/"]
@@ -130,3 +133,12 @@ volumes:
 networks:
   cgi242-net:
     driver: bridge
+  normx-legal-net:
+    external: true
+    name: normx-legal_normx-legal-net
+  normx-net:
+    external: true
+    name: normx_normx-net
+  keycloak-net:
+    external: true
+    name: keycloak_keycloak-net
