@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { useMemo } from "react";
 import { router, type Href } from "expo-router";
 import { useAuthStore } from "@/lib/store/auth";
+import { useHistoryStore } from "@/lib/store/history";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -37,6 +38,7 @@ export default function Dashboard() {
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
   const { setActiveCode } = useActiveCode();
+  const historyItems = useHistoryStore((s) => s.items);
 
   const handleCodeSelect = (code: CodeId) => {
     setActiveCode(code);
@@ -172,6 +174,45 @@ export default function Dashboard() {
             ))}
           </View>
         </View>
+
+        {/* Dernières consultations */}
+        {historyItems.length > 0 && (
+          <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
+            <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
+              <Ionicons name="time-outline" size={15} color={colors.primary} style={{ marginRight: 6 }} />
+              <Text style={{ fontSize: 18, fontWeight: "500", color: colors.text }}>{t("dashboard.recentConsultations")}</Text>
+            </View>
+            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" }}>
+              {historyItems.slice(0, 5).map((item, i) => (
+                <TouchableOpacity
+                  key={`${item.code}-${item.article}-${i}`}
+                  onPress={() => {
+                    setActiveCode(item.code);
+                    router.push("/(app)/code" as Href);
+                  }}
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingVertical: 10,
+                    paddingHorizontal: 12,
+                    borderBottomWidth: i < Math.min(historyItems.length, 5) - 1 ? 1 : 0,
+                    borderBottomColor: colors.border,
+                    gap: 10,
+                  }}
+                >
+                  <Ionicons name={item.code === "cgi" ? "book-outline" : "people-outline"} size={16} color={item.code === "cgi" ? "#D4A843" : "#0F2A42"} />
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 13, fontWeight: "500", color: colors.text }} numberOfLines={1}>{item.article}</Text>
+                    <Text style={{ fontSize: 11, color: colors.textMuted }} numberOfLines={1}>{item.titre}</Text>
+                  </View>
+                  <Text style={{ fontSize: 10, color: colors.textMuted }}>
+                    {new Date(item.timestamp).toLocaleDateString("fr-FR", { hour: "2-digit", minute: "2-digit" })}
+                  </Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+        )}
 
         {/* Échéances fiscales du mois */}
         <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
