@@ -1,8 +1,8 @@
 # ==========================================
 # CGI-242 — Deploiement automatique via GitHub Actions
 # ==========================================
-# Les secrets sont injectes depuis GitHub Secrets
-# -> Aucun fichier .env sur le VPS
+# Frontend build dans GitHub Actions (7 GB RAM)
+# Backend build sur le VPS (Docker)
 # ==========================================
 
 name: Deploy to Production
@@ -23,6 +23,29 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies & build frontend
+        run: |
+          cd mobile
+          npm install --legacy-peer-deps
+          EXPO_PUBLIC_API_URL=/api npx expo export --platform web
+          cd ..
+
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ env.VPS_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Upload frontend build
+        run: |
+          rsync -az --delete mobile/dist/ ${{ env.VPS_USER }}@${{ env.VPS_HOST }}:${{ env.APP_DIR }}/nginx/dist/
 
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1
@@ -61,8 +84,6 @@ jobs:
             MOBILE_API_SECRET=${{ secrets.MOBILE_API_SECRET }}
             ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}
             ENVEOF
-
-            # Securiser les permissions du fichier
             chmod 600 server/.env.production
 
             # --- Generer .env (Docker Compose) ---
@@ -70,20 +91,6 @@ jobs:
             POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
             ENVEOF
             chmod 600 .env
-
-            # --- Generer mobile/.env ---
-            cat > mobile/.env << 'ENVEOF'
-            EXPO_PUBLIC_API_URL=/api
-            EXPO_PUBLIC_SENTRY_DSN=${{ secrets.SENTRY_DSN }}
-            EXPO_PUBLIC_TURNSTILE_SITE_KEY=${{ secrets.TURNSTILE_SITE_KEY }}
-            ENVEOF
-
-            # --- Build frontend web ---
-            cd mobile && rm -rf node_modules && npm install && npm run build:web && cd ..
-
-            # --- Copier le build dans nginx ---
-            sudo rm -rf nginx/dist
-            cp -r mobile/dist nginx/dist
 
             # --- Rebuild et restart ---
             docker compose build --no-cache api nginx
