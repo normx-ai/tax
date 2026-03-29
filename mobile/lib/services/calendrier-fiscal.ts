@@ -228,6 +228,36 @@ export function getJoursRestants(jour: number, mois: number): number {
 }
 
 /**
+ * Retourne la prochaine echeance fiscale (la plus proche dans le futur).
+ */
+export function getProchaineEcheance(): { echeance: EcheanceFiscale; joursRestants: number; date: Date } | null {
+  const now = new Date();
+  const jourActuel = now.getDate();
+  const moisActuel = now.getMonth();
+
+  // Chercher dans le mois en cours (jours futurs)
+  const echeancesMois = getEcheancesDuMois(moisActuel);
+  for (const e of echeancesMois.sort((a, b) => a.jour - b.jour)) {
+    if (e.jour > jourActuel) {
+      const joursRestants = e.jour - jourActuel;
+      return { echeance: e, joursRestants, date: new Date(now.getFullYear(), moisActuel, e.jour) };
+    }
+  }
+
+  // Sinon chercher dans le mois suivant
+  const moisSuivant = (moisActuel + 1) % 12;
+  const echeancesSuivant = getEcheancesDuMois(moisSuivant);
+  if (echeancesSuivant.length > 0) {
+    const premiere = echeancesSuivant.sort((a, b) => a.jour - b.jour)[0];
+    const dateCible = new Date(now.getFullYear(), moisSuivant, premiere.jour);
+    const joursRestants = Math.ceil((dateCible.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+    return { echeance: premiere, joursRestants, date: dateCible };
+  }
+
+  return null;
+}
+
+/**
  * Nom du mois en français.
  */
 const NOMS_MOIS = [

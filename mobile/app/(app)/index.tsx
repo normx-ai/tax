@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import HomeCards from "@/components/mobile/HomeCards";
-import { getEcheancesDuMois, getNomMois, type EcheanceFiscale } from "@/lib/services/calendrier-fiscal";
+import { getEcheancesDuMois, getNomMois, getProchaineEcheance, type EcheanceFiscale } from "@/lib/services/calendrier-fiscal";
 import { useActiveCode, type CodeId } from "@/lib/context/ActiveCodeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
@@ -54,6 +54,8 @@ export default function Dashboard() {
   const echeancesMoisCourant = useMemo(() => {
     return getEcheancesDuMois(moisActuel);
   }, [moisActuel]);
+
+  const prochaineEcheance = useMemo(() => getProchaineEcheance(), []);
 
   const QUICK_ACTIONS = useMemo(() => [
     {
@@ -136,6 +138,45 @@ export default function Dashboard() {
             {t("dashboard.subtitle")}
           </Text>
         </View>
+
+        {/* Alerte prochaine echeance */}
+        {prochaineEcheance && (
+          <TouchableOpacity
+            onPress={() => router.push("/(app)/calendrier" as Href)}
+            style={{
+              marginHorizontal: 16,
+              marginTop: 8,
+              padding: 12,
+              backgroundColor: prochaineEcheance.joursRestants <= 3 ? "#fef2f2" : prochaineEcheance.joursRestants <= 7 ? "#fffbeb" : `${colors.primary}10`,
+              borderLeftWidth: 4,
+              borderLeftColor: prochaineEcheance.joursRestants <= 3 ? colors.danger : prochaineEcheance.joursRestants <= 7 ? colors.warning : colors.primary,
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 10,
+            }}
+          >
+            <Ionicons
+              name="alert-circle"
+              size={20}
+              color={prochaineEcheance.joursRestants <= 3 ? colors.danger : prochaineEcheance.joursRestants <= 7 ? colors.warning : colors.primary}
+            />
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 13, fontWeight: "500", color: colors.text }}>
+                {prochaineEcheance.echeance.label}
+              </Text>
+              <Text style={{ fontSize: 11, color: colors.textMuted }}>
+                {prochaineEcheance.joursRestants === 0
+                  ? "Aujourd'hui"
+                  : prochaineEcheance.joursRestants === 1
+                  ? "Demain"
+                  : `Dans ${prochaineEcheance.joursRestants} jours`}
+                {" — "}
+                {prochaineEcheance.date.toLocaleDateString("fr-FR", { day: "numeric", month: "long" })}
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={14} color={colors.textMuted} />
+          </TouchableOpacity>
+        )}
 
         {/* Stats cards — grille 2x2 */}
         <View style={{ paddingHorizontal: 16, paddingTop: 8 }}>
