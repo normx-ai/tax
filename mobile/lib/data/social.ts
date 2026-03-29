@@ -1,5 +1,6 @@
 import type { ArticleData, SommaireNode } from "./types";
-import { parseArticles, type RawArticle } from "./helpers";
+import { parseArticles, normalize, type RawArticle } from "./helpers";
+import type { SearchResult } from "./cgi";
 
 // --- Types pour le sommaire social en mode Livre ---
 
@@ -236,11 +237,14 @@ function buildCodeTravailNode(): SommaireNode {
 }
 
 function buildPartieNode(id: string, label: string, items: { key: string; label: string }[]): SommaireNode {
-  const children: SommaireNode[] = items.map((item) => ({
-    id: `${id}-${item.key}`,
-    label: item.label,
-    articles: loadArticles(item.key),
-  }));
+  const children: SommaireNode[] = items.map((item) => {
+    const articles = loadArticles(item.key);
+    return {
+      id: `${id}-${item.key}`,
+      label: item.label,
+      articles: articles.length > 0 ? articles : undefined,
+    };
+  });
   return { id, label, children };
 }
 
@@ -365,4 +369,45 @@ export function getSocialSommaire(): SommaireNode[] {
 export function getAllSocialArticles(): ArticleData[] {
   ensureSocialLoaded();
   return _socialArticles!;
+}
+
+export function searchSocialArticles(query: string): SearchResult[] {
+  ensureSocialLoaded();
+  const q = normalize(query.trim());
+  if (!q) return [];
+
+  const words = q.split(/\s+/).filter((w) => w.length > 0);
+  if (words.length === 0) return [];
+
+  const scored: SearchResult[] = [];
+
+  for (const art of _socialArticles!) {
+    const st = art._searchText || "";
+    let allMatched = true;
+
+    for (const w of words) {
+      if (!st.includes(w)) {
+        allMatched = false;
+        break;
+      }
+    }
+    if (!allMatched) continue;
+
+    let score = 0;
+    const artNum = normalize(art.article);
+    if (artNum === q || artNum === "art. " + q) score += 200;
+    else if (artNum.includes(q)) score += 80;
+
+    const titreN = normalize(art.titre);
+    for (const w of words) {
+      if (titreN.includes(w)) score += 25;
+    }
+
+    if (words.length > 1 && st.includes(q)) score += 20;
+
+    scored.push({ art, score, matchedWords: words });
+  }
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored;
 }

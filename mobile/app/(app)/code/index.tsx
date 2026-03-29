@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { getSommaire, searchArticles, type SommaireNode, type ArticleData, type SearchResult } from "@/lib/data/cgi";
-import { getSocialSommaire } from "@/lib/data/social";
+import { getSocialSommaire, searchSocialArticles } from "@/lib/data/social";
 import { useDebounce } from "@/lib/hooks/useDebounce";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import TreeNode from "@/components/code/TreeNode";
@@ -68,7 +68,10 @@ export default function CodeCGI() {
   const [scrollToId, setScrollToId] = useState<string | undefined>();
   const [scrollTrigger, setScrollTrigger] = useState(0);
   const debouncedSearch = useDebounce(search, 300);
-  const searchResults = useMemo(() => searchArticles(debouncedSearch), [debouncedSearch]);
+  const searchResults = useMemo(
+    () => activeCode === "social" ? searchSocialArticles(debouncedSearch) : searchArticles(debouncedSearch),
+    [debouncedSearch, activeCode]
+  );
 
   if (isMobile) {
     return <MobileCGIBrowser sommaire={sommaire} />;
