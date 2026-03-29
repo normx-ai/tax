@@ -38,18 +38,18 @@ export default function LandingHero({ isMobile, loaded }: Props) {
         {!isMobile && (
           <View style={{ flex: 1, maxWidth: 520 }}>
             <View style={{
-              backgroundColor: "#1a1a1a",
+              backgroundColor: "#222",
               borderRadius: 12,
-              padding: 6,
+              padding: 4,
               paddingBottom: 0,
               borderWidth: 2,
-              borderColor: "#2a2a2a",
+              borderColor: "#333",
             }}>
-              <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: "#3a3a3a", alignSelf: "center", marginBottom: 4 }} />
+              <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: "#444", alignSelf: "center", marginBottom: 3 }} />
               <Image
                 source={require("@/assets/princ_normx_tax.png")}
                 style={{ width: "100%", aspectRatio: 1.6, borderRadius: 2 }}
-                resizeMode="contain"
+                resizeMode="cover"
               />
             </View>
             <View style={{ height: 12, backgroundColor: "#c8c8c8", borderBottomLeftRadius: 4, borderBottomRightRadius: 4 }}>
