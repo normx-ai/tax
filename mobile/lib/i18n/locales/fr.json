@@ -246,8 +246,10 @@
       "edition": "Édition"
     },
     "actions": {
-      "consultCgi": "Consulter le CGI 2026",
-      "consultCgiDesc": "Code Général des Impôts en vigueur",
+      "consultCgi": "Code fiscal",
+      "consultCgiDesc": "CGI 2026",
+      "consultSocial": "Code social",
+      "consultSocialDesc": "Travail & Sécu",
       "simulate": "Simuler un impôt",
       "simulateDesc": "IS, ITS, TVA, Paie, Patente, IRCM et 9 autres",
       "chatAi": "Chat IA",

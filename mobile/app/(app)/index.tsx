@@ -62,8 +62,17 @@ export default function Dashboard() {
       label: t("dashboard.actions.consultCgi"),
       desc: t("dashboard.actions.consultCgiDesc"),
       icon: "book-outline" as const,
-      color: "#00815d",
+      color: "#D4A843",
       route: "/(app)/code",
+      onPress: () => { setActiveCode("cgi"); router.push("/(app)/code" as Href); },
+    },
+    {
+      label: t("dashboard.actions.consultSocial"),
+      desc: t("dashboard.actions.consultSocialDesc"),
+      icon: "people-outline" as const,
+      color: "#0F2A42",
+      route: "/(app)/code",
+      onPress: () => { setActiveCode("social"); router.push("/(app)/code" as Href); },
     },
     {
       label: t("dashboard.actions.simulate"),
@@ -105,7 +114,7 @@ export default function Dashboard() {
               return (
                 <TouchableOpacity
                   key={a.label}
-                  onPress={() => a.route && router.push(a.route as Href)}
+                  onPress={() => a.onPress ? a.onPress() : a.route && router.push(a.route as Href)}
                   disabled={disabled}
                   accessibilityLabel={a.label}
                   style={{
