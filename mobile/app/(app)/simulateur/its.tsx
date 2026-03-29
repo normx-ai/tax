@@ -150,8 +150,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   labelSmall: {
-    fontSize: 13,
-    fontWeight: "600",
+    fontSize: 15,
+    fontWeight: "500",
     marginBottom: 2,
   },
   counterRow: {
@@ -183,8 +183,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   checkboxLabel: {
-    fontSize: 14,
-    fontWeight: "600",
+    fontSize: 15,
+    fontWeight: "500",
     marginLeft: 6,
   },
   partsBox: {
@@ -197,8 +197,8 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   fieldLabel: {
-    fontSize: 14,
-    fontWeight: "600",
+    fontSize: 15,
+    fontWeight: "500",
     marginBottom: 6,
   },
   inputRow: {
@@ -214,8 +214,8 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   currencyLabel: {
-    fontSize: 14,
-    fontWeight: "600",
+    fontSize: 15,
+    fontWeight: "500",
   },
   quotientBox: {
     paddingHorizontal: 14,

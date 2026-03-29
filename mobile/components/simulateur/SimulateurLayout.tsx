@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   subtitle: {
-    fontSize: 13,
+    fontSize: 15,
     marginBottom: 12,
   },
   descriptionBox: {
@@ -99,10 +99,10 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   descriptionText: {
-    fontSize: 13,
+    fontSize: 15,
   },
   legalRef: {
-    fontSize: 12,
+    fontSize: 14,
     marginTop: 12,
   },
 });
