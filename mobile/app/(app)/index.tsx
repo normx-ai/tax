@@ -14,7 +14,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const CODE_CARDS: { id: CodeId; icon: keyof typeof Ionicons.glyphMap; label: string; description: string; color: string; available: boolean }[] = [
   { id: "cgi", icon: "book-outline", label: "Code Général des Impôts", description: "CGI 2026 — République du Congo", color: "#D4A843", available: true },
-  { id: "social", icon: "people-outline", label: "Code Social", description: "Travail & Sécurité sociale — 2026", color: "#0F2A42", available: true },
+  { id: "social", icon: "people-outline", label: "Code Social", description: "Travail & Sécurité sociale — 2026", color: "#3b82f6", available: true },
 ];
 
 function getGreeting(t: (key: string) => string) {
@@ -70,7 +70,7 @@ export default function Dashboard() {
       label: t("dashboard.actions.consultSocial"),
       desc: t("dashboard.actions.consultSocialDesc"),
       icon: "people-outline" as const,
-      color: "#0F2A42",
+      color: "#3b82f6",
       route: "/(app)/code",
       onPress: () => { setActiveCode("social"); router.push("/(app)/code" as Href); },
     },
@@ -241,7 +241,7 @@ export default function Dashboard() {
                     gap: 10,
                   }}
                 >
-                  <Ionicons name={item.code === "cgi" ? "book-outline" : "people-outline"} size={16} color={item.code === "cgi" ? "#D4A843" : "#0F2A42"} />
+                  <Ionicons name={item.code === "cgi" ? "book-outline" : "people-outline"} size={16} color={item.code === "cgi" ? "#D4A843" : "#3b82f6"} />
                   <View style={{ flex: 1 }}>
                     <Text style={{ fontSize: 13, fontWeight: "500", color: colors.text }} numberOfLines={1}>{item.article}</Text>
                     <Text style={{ fontSize: 11, color: colors.textMuted }} numberOfLines={1}>{item.titre}</Text>
