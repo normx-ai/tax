@@ -55,11 +55,6 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
       {/* Navigation */}
       {!isMobile && (
         <View style={{ flexDirection: "row", gap: 6, alignItems: "center" }}>
-          <TouchableOpacity onPress={() => onScrollTo?.("produits")} style={{ paddingVertical: 8, paddingHorizontal: 14, borderRadius: 8 }}>
-            <Text style={{ fontSize: 14, color: "#6b7280", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
-              Produits
-            </Text>
-          </TouchableOpacity>
           <TouchableOpacity onPress={() => onScrollTo?.("features")} style={{ paddingVertical: 8, paddingHorizontal: 14, borderRadius: 8 }}>
             <Text style={{ fontSize: 14, color: "#6b7280", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
               Fonctionnalités
