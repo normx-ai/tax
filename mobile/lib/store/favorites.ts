@@ -1,12 +1,21 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Platform } from "react-native";
 
 interface FavoritesState {
   articleIds: string[];
   isFavorite: (articleId: string) => boolean;
   toggleFavorite: (articleId: string) => void;
 }
+
+const storage = createJSONStorage(() => {
+  if (Platform.OS === "web" && typeof localStorage !== "undefined") {
+    return localStorage;
+  }
+  // Mobile : AsyncStorage
+  const AsyncStorage = require("@react-native-async-storage/async-storage").default;
+  return AsyncStorage;
+});
 
 export const useFavoritesStore = create<FavoritesState>()(
   persist(
@@ -24,7 +33,7 @@ export const useFavoritesStore = create<FavoritesState>()(
     }),
     {
       name: "cgi242-favorites",
-      storage: createJSONStorage(() => AsyncStorage),
+      storage,
     }
   )
 );

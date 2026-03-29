@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { useFavoritesStore } from "@/lib/store/favorites";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { ArticleData } from "@/lib/data/cgi";
 import ArticleText from "./ArticleText";
@@ -27,6 +28,8 @@ const SPEECH_MAX_CHUNK = 3_000;
 export default function ArticleDetail({ article, onBack, onSelectArticle }: Props) {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const isFavorite = useFavoritesStore((s) => s.isFavorite(article.article));
+  const toggleFavorite = useFavoritesStore((s) => s.toggleFavorite);
   const [speechState, setSpeechState] = useState<"idle" | "playing" | "paused">("idle");
   const [currentLineIndex, setCurrentLineIndex] = useState<number | undefined>(undefined);
   const stoppedRef = useRef(false);
@@ -245,7 +248,12 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
         </View>
       </View>
 
-      <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 30, color: colors.text, marginBottom: 4 }}>{article.article}</Text>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 12, marginBottom: 4 }}>
+        <Text style={{ fontFamily: fonts.heading, fontWeight: fontWeights.heading, fontSize: 30, color: colors.text, flex: 1 }}>{article.article}</Text>
+        <TouchableOpacity onPress={() => toggleFavorite(article.article)} style={{ padding: 6 }}>
+          <Ionicons name={isFavorite ? "star" : "star-outline"} size={24} color={isFavorite ? "#D4A843" : colors.textMuted} />
+        </TouchableOpacity>
+      </View>
       <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 19, color: colors.textMuted, fontStyle: "italic", marginBottom: 24 }}>{article.titre}</Text>
 
       <View
