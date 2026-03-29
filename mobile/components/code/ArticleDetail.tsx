@@ -40,6 +40,17 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
   const [referencedBy, setReferencedBy] = useState<ArticleReference[]>([]);
   const [loadingRefs, setLoadingRefs] = useState(false);
 
+  // Injecter CSS pour position fixed sur web
+  useEffect(() => {
+    if (Platform.OS !== "web") return;
+    const id = "audio-controls-css";
+    if (document.getElementById(id)) return;
+    const style = document.createElement("style");
+    style.id = id;
+    style.textContent = `[data-class="audio-controls-fixed"] { position: fixed !important; }`;
+    document.head.appendChild(style);
+  }, []);
+
   useEffect(() => {
     return () => {
       stoppedRef.current = true;
@@ -292,8 +303,13 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
       <View style={{ height: 70 }} />
     </ScrollView>
 
-    {/* Boutons écoute flottants */}
-    <View style={{ position: Platform.OS === "web" ? ("fixed" as any) : "absolute", bottom: 16, right: 16, flexDirection: "row", gap: 8, zIndex: 50 }}>
+    {/* Boutons écoute flottants — fixe en bas à droite */}
+    <View
+      // @ts-ignore
+      dataSet={{ class: "audio-controls-fixed" }}
+      style={{ bottom: 20, left: 20, flexDirection: "row", gap: 8, zIndex: 999,
+        ...(Platform.OS === "web" ? { position: "fixed" } : { position: "absolute" }) as Record<string, string>
+      }}>
       {speechState !== "idle" && (
         <TouchableOpacity
           onPress={handleStop}

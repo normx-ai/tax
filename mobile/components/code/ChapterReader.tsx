@@ -216,7 +216,12 @@ function ArticleBlock({ article, colors, scrollRef }: { article: ArticleData; co
 
       {/* Bouton audio fixe en bas à droite quand lecture active */}
       {speechState !== "idle" && Platform.OS === "web" && (
-        <View style={{ position: "fixed" as any, bottom: 16, right: 16, flexDirection: "row", gap: 8, zIndex: 50 }}>
+        <View
+          // @ts-ignore
+          dataSet={{ class: "audio-controls-fixed" }}
+          style={{ bottom: 20, left: 20, flexDirection: "row", gap: 8, zIndex: 999,
+            ...(Platform.OS === "web" ? { position: "fixed" } : { position: "absolute" }) as Record<string, string>
+          }}>
           <TouchableOpacity
             onPress={stop}
             style={{ width: 44, height: 44, borderRadius: 22, backgroundColor: colors.danger, alignItems: "center", justifyContent: "center", shadowColor: "#000", shadowOpacity: 0.2, shadowRadius: 8, elevation: 5 }}
