@@ -38,7 +38,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
         }}
       >
         <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: PRIMARY, letterSpacing: 0.5 }}>
-          Fiscalité et droit social pour l'Afrique
+          La fiscalité augmentée par l'IA
         </Text>
       </View>
 
