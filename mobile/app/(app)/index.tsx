@@ -93,6 +93,40 @@ export default function Dashboard() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 24 }}>
+        {/* Actions rapides — horizontal en haut */}
+        <View style={{ paddingHorizontal: 16, paddingTop: 12 }}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 10 }}>
+            {QUICK_ACTIONS.map((a) => {
+              const disabled = !a.route;
+              return (
+                <TouchableOpacity
+                  key={a.label}
+                  onPress={() => a.route && router.push(a.route as Href)}
+                  disabled={disabled}
+                  style={{
+                    backgroundColor: colors.card,
+                    borderWidth: 1,
+                    borderColor: colors.border,
+                    borderRadius: 12,
+                    paddingHorizontal: 16,
+                    paddingVertical: 12,
+                    alignItems: "center",
+                    opacity: disabled ? 0.5 : 1,
+                    minWidth: 100,
+                  }}
+                >
+                  <View style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: `${a.color}15`, alignItems: "center", justifyContent: "center", marginBottom: 6 }}>
+                    <Ionicons name={a.icon} size={20} color={a.color} />
+                  </View>
+                  <Text style={{ fontSize: 12, fontWeight: "500", color: colors.text, textAlign: "center" }} numberOfLines={2}>
+                    {a.label}
+                  </Text>
+                </TouchableOpacity>
+              );
+            })}
+          </ScrollView>
+        </View>
+
         {/* Bienvenue */}
         <View style={{ paddingHorizontal: 16, paddingTop: 16, paddingBottom: 8 }}>
           <Text style={{ fontSize: 24, fontWeight: "400", color: colors.text }}>
@@ -113,7 +147,6 @@ export default function Dashboard() {
                   flex: 1,
                   minWidth: "45%",
                   backgroundColor: colors.card,
-                  
                   borderWidth: 1,
                   borderColor: colors.border,
                   padding: 14,
@@ -125,7 +158,6 @@ export default function Dashboard() {
                   style={{
                     width: 44,
                     height: 44,
-                    
                     backgroundColor: `${s.color}15`,
                     alignItems: "center",
                     justifyContent: "center",
@@ -135,74 +167,11 @@ export default function Dashboard() {
                   <Ionicons name={s.icon} size={22} color={s.color} />
                 </View>
                 <View>
-                  <Text style={{ fontSize: 22, fontWeight: "800", color: colors.text }}>{s.value}</Text>
+                  <Text style={{ fontSize: 22, fontWeight: "400", color: colors.text }}>{s.value}</Text>
                   <Text style={{ fontSize: 14, color: colors.textSecondary }}>{t(s.labelKey)}</Text>
                 </View>
               </View>
             ))}
-          </View>
-        </View>
-
-        {/* Actions rapides */}
-        <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
-          <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text, marginBottom: 10 }}>{t("dashboard.quickActions")}</Text>
-          <View
-            style={{
-              backgroundColor: colors.card,
-              
-              borderWidth: 1,
-              borderColor: colors.border,
-              overflow: "hidden",
-            }}
-          >
-            {QUICK_ACTIONS.map((a, i) => {
-              const disabled = !a.route;
-              return (
-                <TouchableOpacity
-                  key={a.label}
-                  onPress={() => a.route && router.push(a.route as Href)}
-                  disabled={disabled}
-                  accessibilityLabel={a.label}
-                  accessibilityRole="button"
-                  style={{
-                    flexDirection: "row",
-                    alignItems: "center",
-                    paddingHorizontal: 14,
-                    paddingVertical: 14,
-                    borderBottomWidth: i < QUICK_ACTIONS.length - 1 ? 1 : 0,
-                    borderBottomColor: colors.background,
-                    opacity: disabled ? 0.5 : 1,
-                  }}
-                >
-                  <View
-                    style={{
-                      width: 40,
-                      height: 40,
-                      
-                      backgroundColor: `${a.color}15`,
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginRight: 12,
-                    }}
-                  >
-                    <Ionicons name={a.icon} size={20} color={a.color} />
-                  </View>
-                  <View style={{ flex: 1 }}>
-                    <Text style={{ fontSize: 16, fontWeight: "700", color: disabled ? colors.textMuted : colors.text }}>
-                      {a.label}
-                    </Text>
-                    <Text style={{ fontSize: 14, color: colors.textMuted }}>{a.desc}</Text>
-                  </View>
-                  {disabled ? (
-                    <View style={{ backgroundColor: colors.background, paddingHorizontal: 6, paddingVertical: 2 }}>
-                      <Text style={{ fontSize: 12, fontWeight: "700", color: colors.textMuted }}>{t("common.comingSoon")}</Text>
-                    </View>
-                  ) : (
-                    <Ionicons name="chevron-forward" size={18} color={colors.disabled} />
-                  )}
-                </TouchableOpacity>
-              );
-            })}
           </View>
         </View>
 
