@@ -5,6 +5,7 @@ import { useAuthStore } from "@/lib/store/auth";
 
 const PRIMARY = "#D4A843";
 const DARK = "#1A3A5C";
+const TEXT_SEC = "#6b7280";
 
 interface Props {
   isMobile: boolean;
@@ -47,9 +48,14 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
             N
           </Text>
         </View>
-        <Text style={{ fontSize: 22, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: DARK }}>
-          NORMX <Text style={{ color: PRIMARY }}>Tax</Text>
-        </Text>
+        <View>
+          <Text style={{ fontSize: 20, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: DARK, lineHeight: 22 }}>
+            NORMX <Text style={{ color: PRIMARY }}>Tax</Text>
+          </Text>
+          <Text style={{ fontSize: 11, color: TEXT_SEC, fontFamily: fonts.regular, lineHeight: 14 }}>
+            La fiscalité augmentée par l'IA
+          </Text>
+        </View>
       </View>
 
       {/* Navigation */}
