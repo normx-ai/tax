@@ -97,7 +97,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
         backgroundColor: colors.sidebar,
         borderRightWidth: 1,
         borderRightColor: colors.sidebarBorder,
-        paddingTop: 16,
+        paddingTop: 0,
         paddingBottom: 16,
         justifyContent: "space-between",
       }}
