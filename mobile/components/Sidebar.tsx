@@ -119,8 +119,8 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
             <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24 }}>C</Text>
           ) : (
             <View>
-              <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>NORMX Tax</Text>
-              <Text style={{ color: "#e8e6e1", fontSize: 13, fontFamily: fonts.regular }}>{t("sidebar.subtitle")}</Text>
+              <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>NORMX <Text style={{ color: "#e8e6e1" }}>AI</Text></Text>
+              <Text style={{ color: "rgba(232,230,225,0.6)", fontSize: 11, fontFamily: fonts.regular }}>La fiscalité augmentée par l'IA</Text>
             </View>
           )}
           {!isCollapsed && (
