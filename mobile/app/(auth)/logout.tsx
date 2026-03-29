@@ -10,7 +10,7 @@ export default function LogoutScreen() {
   }, []);
 
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#1A3A5C" }}>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#0F2A42" }}>
       <ActivityIndicator size="large" color="#D4A843" />
       <Text style={{ color: "#fff", marginTop: 16, fontSize: 14 }}>Deconnexion...</Text>
     </View>

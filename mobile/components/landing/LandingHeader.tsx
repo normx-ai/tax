@@ -4,7 +4,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useAuthStore } from "@/lib/store/auth";
 
 const PRIMARY = "#D4A843";
-const DARK = "#1A3A5C";
+const DARK = "#0F2A42";
 const TEXT_SEC = "#6b7280";
 
 interface Props {

@@ -43,7 +43,7 @@ const PLANS = [
     tag: "PROFESSIONAL",
     price: "149€",
     periodKey: "landing.pricingPerYear",
-    color: "#1A3A5C",
+    color: "#0F2A42",
     popular: true,
     featureKeys: [
       "landing.pricingFeat30q",
@@ -80,7 +80,7 @@ export default function LandingPricing({ isMobile }: Props) {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 26 : 40,
-          color: "#1A3A5C",
+          color: "#0F2A42",
           textAlign: "center",
           marginBottom: 8,
         }}
@@ -178,7 +178,7 @@ export default function LandingPricing({ isMobile }: Props) {
                   fontFamily: fonts.headingBlack,
                   fontWeight: fontWeights.headingBlack,
                   fontSize: 38,
-                  color: "#1A3A5C",
+                  color: "#0F2A42",
                 }}
               >
                 {plan.price}
@@ -242,7 +242,7 @@ export default function LandingPricing({ isMobile }: Props) {
                   fontFamily: fonts.bold,
                   fontWeight: fontWeights.bold,
                   fontSize: 16,
-                  color: plan.popular ? "#fff" : "#1A3A5C",
+                  color: plan.popular ? "#fff" : "#0F2A42",
                 }}
               >
                 {plan.tag === "FREE" ? t("landing.pricingTryFree") : t("landing.pricingStart")}

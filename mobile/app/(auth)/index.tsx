@@ -6,7 +6,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 import LandingPage from "@/components/landing/LandingPage";
 
 const PRIMARY = "#D4A843";
-const DARK = "#1A3A5C";
+const DARK = "#0F2A42";
 const BG_WARM = "#faf8f5";
 
 export default function AuthScreen() {

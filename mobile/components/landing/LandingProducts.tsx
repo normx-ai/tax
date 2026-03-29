@@ -55,10 +55,10 @@ export default function LandingProducts({ isMobile }: Props) {
 
   return (
     <View style={{ paddingVertical: 60, paddingHorizontal: 24, maxWidth: 1060, alignSelf: "center", width: "100%", backgroundColor: "#ffffff" }}>
-      <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#1A3A5C", textAlign: "center", textTransform: "uppercase", letterSpacing: 2, marginBottom: 12 }}>
+      <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#0F2A42", textAlign: "center", textTransform: "uppercase", letterSpacing: 2, marginBottom: 12 }}>
         Nos produits
       </Text>
-      <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 26 : 36, color: "#1A3A5C", textAlign: "center", marginBottom: 8 }}>
+      <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 26 : 36, color: "#0F2A42", textAlign: "center", marginBottom: 8 }}>
         Une suite complète pour les professionnels
       </Text>
       <Text style={{ fontSize: 16, color: "#5a6a7a", textAlign: "center", fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 40 }}>
@@ -77,7 +77,7 @@ export default function LandingProducts({ isMobile }: Props) {
                 flexGrow: 1,
                 backgroundColor: product.available ? "rgba(26,58,92,0.03)" : "#f8f9fa",
                 borderWidth: product.available ? 2 : 1,
-                borderColor: product.available ? "#1A3A5C" : "rgba(0,0,0,0.08)",
+                borderColor: product.available ? "#0F2A42" : "rgba(0,0,0,0.08)",
                 borderRadius: 16,
                 padding: isMobile ? 22 : 28,
                 position: "relative",
@@ -85,12 +85,12 @@ export default function LandingProducts({ isMobile }: Props) {
               }}
             >
               {product.available && (
-                <View style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, backgroundColor: "#1A3A5C" }} />
+                <View style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, backgroundColor: "#0F2A42" }} />
               )}
               <View style={{ width: 52, height: 52, borderRadius: 14, backgroundColor: `${product.color}18`, alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
                 <Ionicons name={product.icon} size={24} color={product.color} />
               </View>
-              <Text style={{ fontSize: 20, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: "#1A3A5C", marginBottom: 8 }}>
+              <Text style={{ fontSize: 20, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: "#0F2A42", marginBottom: 8 }}>
                 {product.name}
               </Text>
               <Text style={{ fontSize: 14, color: "#5a6a7a", lineHeight: 20, fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 16 }}>
@@ -102,7 +102,7 @@ export default function LandingProducts({ isMobile }: Props) {
                 </Text>
               </View>
               {product.available && (
-                <Text style={{ marginTop: 12, fontSize: 14, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#1A3A5C" }}>
+                <Text style={{ marginTop: 12, fontSize: 14, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#0F2A42" }}>
                   Accéder →
                 </Text>
               )}

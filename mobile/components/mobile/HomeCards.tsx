@@ -20,9 +20,9 @@ function getGreeting(t: (key: string) => string) {
 
 const STATS = [
   { labelKey: "dashboard.stats.articles", value: "+2 200", icon: "document-text-outline" as const, color: "#D4A843" },
-  { labelKey: "dashboard.stats.simulators", value: "16", icon: "calculator-outline" as const, color: "#1A3A5C" },
+  { labelKey: "dashboard.stats.simulators", value: "16", icon: "calculator-outline" as const, color: "#0F2A42" },
   { labelKey: "dashboard.stats.tfnc", value: "2", icon: "library-outline" as const, color: "#D4A843" },
-  { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, color: "#1A3A5C" },
+  { labelKey: "dashboard.stats.edition", value: "2026", icon: "calendar-outline" as const, color: "#0F2A42" },
 ];
 
 const ACTIONS = [
@@ -97,7 +97,7 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
       {/* Stats — barre unique 1x4 */}
       <View style={{
         flexDirection: "row",
-        backgroundColor: "#1A3A5C",
+        backgroundColor: "#0F2A42",
         borderRadius: 14,
         paddingVertical: 16,
         paddingHorizontal: 8,

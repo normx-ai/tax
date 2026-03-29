@@ -323,7 +323,7 @@ function AppLayoutInner() {
       />
       <View style={{ flex: 1 }}>
         {/* Header principal — style Normx */}
-        <View style={{ backgroundColor: "#1A3A5C", paddingHorizontal: 20, height: 54, flexDirection: "row", alignItems: "center", justifyContent: "space-between", zIndex: 100 }}>
+        <View style={{ backgroundColor: "#0F2A42", paddingHorizontal: 20, height: 54, flexDirection: "row", alignItems: "center", justifyContent: "space-between", zIndex: 100 }}>
           {/* Gauche : logo + breadcrumb */}
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <TouchableOpacity onPress={() => router.push("/(app)")} style={{ flexDirection: "row", alignItems: "center" }}>

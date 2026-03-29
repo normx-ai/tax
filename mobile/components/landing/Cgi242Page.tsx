@@ -7,7 +7,7 @@ import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#D4A843";
-const BG = "#1A3A5C";
+const BG = "#0F2A42";
 
 const CODE_OPTIONS = [
   { id: "cgi", icon: "book-outline" as const, label: "Code Général des Impôts", desc: "CGI 242 — Édition 2026", available: true },

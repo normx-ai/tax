@@ -16,7 +16,7 @@ export default function LandingContact({ isMobile }: Props) {
           fontFamily: fonts.headingBlack,
           fontWeight: fontWeights.headingBlack,
           fontSize: isMobile ? 26 : 40,
-          color: "#1A3A5C",
+          color: "#0F2A42",
           textAlign: "center",
           marginBottom: 8,
         }}
@@ -72,14 +72,14 @@ export default function LandingContact({ isMobile }: Props) {
               marginBottom: 16,
             }}
           >
-            <Ionicons name="mail-outline" size={24} color="#1A3A5C" />
+            <Ionicons name="mail-outline" size={24} color="#0F2A42" />
           </View>
           <Text
             style={{
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#1A3A5C",
+              color: "#0F2A42",
               marginBottom: 6,
             }}
           >
@@ -92,7 +92,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
               fontSize: 14,
-              color: "#1A3A5C",
+              color: "#0F2A42",
               textAlign: "center",
             }}
           >
@@ -131,7 +131,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#1A3A5C",
+              color: "#0F2A42",
               marginBottom: 6,
             }}
           >
@@ -181,7 +181,7 @@ export default function LandingContact({ isMobile }: Props) {
               fontFamily: fonts.semiBold,
               fontWeight: fontWeights.semiBold,
               fontSize: 17,
-              color: "#1A3A5C",
+              color: "#0F2A42",
               marginBottom: 6,
             }}
           >

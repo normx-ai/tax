@@ -3,7 +3,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useAuthStore } from "@/lib/store/auth";
 
 const PRIMARY = "#D4A843";
-const DARK = "#1A3A5C";
+const DARK = "#0F2A42";
 
 export default function LandingCTA() {
   const login = useAuthStore((s) => s.login);

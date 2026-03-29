@@ -101,9 +101,9 @@ export default function AuditFacturePage() {
                 paddingVertical: 6,
                 paddingHorizontal: 12,
                 borderRadius: 6,
-                backgroundColor: docType === dt ? "#1A3A5C" : colors.card,
+                backgroundColor: docType === dt ? "#0F2A42" : colors.card,
                 borderWidth: 1,
-                borderColor: docType === dt ? "#1A3A5C" : colors.border,
+                borderColor: docType === dt ? "#0F2A42" : colors.border,
               }}
             >
               <Text style={{
@@ -165,7 +165,7 @@ export default function AuditFacturePage() {
           onPress={handleAnalyze}
           disabled={!file || loading}
           style={{
-            backgroundColor: file && !loading ? "#1A3A5C" : colors.disabled,
+            backgroundColor: file && !loading ? "#0F2A42" : colors.disabled,
             borderRadius: 8,
             paddingVertical: 10,
             alignItems: "center",

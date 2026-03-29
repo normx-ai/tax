@@ -32,7 +32,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
   const { t } = useTranslation();
 
   return (
-    <View style={{ backgroundColor: "#1A3A5C", borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.08)", paddingTop: 48, paddingBottom: 0 }}>
+    <View style={{ backgroundColor: "#0F2A42", borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.08)", paddingTop: 48, paddingBottom: 0 }}>
       <View style={{ maxWidth: 1060, width: "100%", alignSelf: "center", paddingHorizontal: 24, flexDirection: isMobile ? "column" : "row", gap: isMobile ? 36 : 0 }}>
         {/* Marque */}
         <View style={{ flex: isMobile ? undefined : 1.3 }}>

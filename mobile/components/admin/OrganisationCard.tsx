@@ -7,7 +7,7 @@ type PlanKey = "FREE" | "STARTER" | "PROFESSIONAL" | "TEAM" | "ENTERPRISE";
 export const PLAN_COLORS: Record<PlanKey, string> = {
   FREE: "#6b7280",
   STARTER: "#3b82f6",
-  PROFESSIONAL: "#1A3A5C",
+  PROFESSIONAL: "#0F2A42",
   TEAM: "#8b5cf6",
   ENTERPRISE: "#d97706",
 };
@@ -157,7 +157,7 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => onActivate(org, "PROFESSIONAL")}
-            style={{ flex: 1, backgroundColor: "#1A3A5C", paddingVertical: 10, alignItems: "center" }}
+            style={{ flex: 1, backgroundColor: "#0F2A42", paddingVertical: 10, alignItems: "center" }}
           >
             <Text style={{ color: "#fff", fontWeight: "600", fontSize: 15 }}>Pro</Text>
             <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>149€/user/an</Text>

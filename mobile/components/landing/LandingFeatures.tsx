@@ -29,7 +29,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
 
   return (
     <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 24, paddingBottom: 60, backgroundColor: "#ffffff" }}>
-      <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 28 : 36, color: "#1A3A5C", textAlign: "center", marginBottom: 8 }}>
+      <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 28 : 36, color: "#0F2A42", textAlign: "center", marginBottom: 8 }}>
         {t("landing.featuresTitle")}
       </Text>
       <Text style={{ fontSize: isMobile ? 14 : 16, color: "#5a6a7a", textAlign: "center", fontFamily: fonts.light, fontWeight: fontWeights.light, marginBottom: 36 }}>
@@ -53,7 +53,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
             <View style={{ width: 44, height: 44, borderRadius: 12, backgroundColor: `${feat.color}15`, alignItems: "center", justifyContent: "center", marginBottom: 12 }}>
               <Ionicons name={feat.icon} size={22} color={feat.color} />
             </View>
-            <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#1A3A5C", marginBottom: 6 }}>
+            <Text style={{ fontSize: 17, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#0F2A42", marginBottom: 6 }}>
               {t(feat.titleKey)}
             </Text>
             <Text style={{ fontSize: 15, color: "#5a6a7a", lineHeight: 20, fontFamily: fonts.light, fontWeight: fontWeights.light }}>
