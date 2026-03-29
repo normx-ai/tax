@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useAuthStore } from "@/lib/store/auth";
 
@@ -138,6 +138,30 @@ export default function LandingHero({ isMobile, loaded }: Props) {
           </View>
         ))}
       </View>
+
+      {/* Screenshot app */}
+      {!isMobile && (
+        <View style={{ marginTop: 48, width: "100%", maxWidth: 900, alignSelf: "center" }}>
+          <View style={{
+            backgroundColor: "#1a1a1a",
+            borderRadius: 12,
+            padding: 6,
+            paddingBottom: 0,
+            borderWidth: 2,
+            borderColor: "#2a2a2a",
+          }}>
+            <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: "#3a3a3a", alignSelf: "center", marginBottom: 4 }} />
+            <Image
+              source={require("@/assets/princ_normx_tax.png")}
+              style={{ width: "100%", height: 450, borderRadius: 4 }}
+              resizeMode="cover"
+            />
+          </View>
+          <View style={{ height: 12, backgroundColor: "#c8c8c8", borderBottomLeftRadius: 4, borderBottomRightRadius: 4 }}>
+            <View style={{ width: 80, height: 4, backgroundColor: "#9a9a9a", borderBottomLeftRadius: 4, borderBottomRightRadius: 4, alignSelf: "center" }} />
+          </View>
+        </View>
+      )}
     </View>
   );
 }
