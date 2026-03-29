@@ -48,8 +48,8 @@ export default function LandingHero({ isMobile, loaded }: Props) {
               <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: "#3a3a3a", alignSelf: "center", marginBottom: 4 }} />
               <Image
                 source={require("@/assets/princ_normx_tax.png")}
-                style={{ width: "100%", height: 340, borderRadius: 2 }}
-                resizeMode="cover"
+                style={{ width: "100%", aspectRatio: 1.6, borderRadius: 2 }}
+                resizeMode="contain"
               />
             </View>
             <View style={{ height: 12, backgroundColor: "#c8c8c8", borderBottomLeftRadius: 4, borderBottomRightRadius: 4 }}>
