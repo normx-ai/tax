@@ -1,0 +1,87 @@
+{
+  "expo": {
+    "name": "CGI242 - Intelligence Fiscale IA",
+    "slug": "cgi-242",
+    "version": "1.0.0",
+    "description": "Application mobile du Code General des Impots du Congo (edition 2026). Consultation des 2 181 articles, 16 simulateurs fiscaux (ITS, IS, Patente) et echeances fiscales.",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "cgi242",
+    "newArchEnabled": true,
+    "githubUrl": "https://github.com/normxai/cgi-242",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F2A42"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.normxai.cgi242",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Utilisé pour la recherche vocale",
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSSpeechRecognitionUsageDescription": "Utilisé pour la reconnaissance vocale"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F2A42"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.normxai.cgi242",
+      "permissions": [
+        "RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "lang": "fr"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "@sentry/react-native",
+        {
+          "organization": "normx-ai-9m",
+          "project": "react-native"
+        }
+      ],
+      "expo-speech-recognition",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#0F2A42",
+          "defaultChannel": "general",
+          "sounds": []
+        }
+      ],
+      "expo-localization"
+    ],
+    "extra": {
+      "privacyUrl": "https://normx-ai.com/confidentialite.html",
+      "termsUrl": "https://normx-ai.com/cgu.html",
+      "eas": {
+        "projectId": "10683ceb-5899-41bd-a451-b48c96f123f1"
+      },
+      "router": {}
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "owner": "cmabika",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/10683ceb-5899-41bd-a451-b48c96f123f1"
+    }
+  }
+}
