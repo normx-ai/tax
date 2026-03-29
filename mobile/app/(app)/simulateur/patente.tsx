@@ -358,7 +358,7 @@ const styles = StyleSheet.create({
   },
   netPatenteValue: {
     fontSize: 18,
-    fontWeight: "800",
+    fontWeight: "400",
   },
   totalBox: {
     paddingHorizontal: 14,
@@ -367,12 +367,12 @@ const styles = StyleSheet.create({
   },
   totalLabel: {
     fontSize: 15,
-    fontWeight: "800",
+    fontWeight: "400",
     fontFamily: fonts.bold,
   },
   totalValue: {
     fontSize: 20,
-    fontWeight: "800",
+    fontWeight: "400",
     fontFamily: fonts.bold,
   },
   deadlineBox: {

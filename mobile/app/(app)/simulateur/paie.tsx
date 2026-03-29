@@ -356,7 +356,7 @@ const styles = StyleSheet.create({
   },
   brutValue: {
     fontSize: 24,
-    fontWeight: "800",
+    fontWeight: "400",
   },
   exonereText: {
     fontSize: 14,

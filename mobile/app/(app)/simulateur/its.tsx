@@ -238,6 +238,6 @@ const styles = StyleSheet.create({
   },
   quotientValue: {
     fontSize: 18,
-    fontWeight: "800",
+    fontWeight: "400",
   },
 });

@@ -28,7 +28,7 @@ export default function ResultHighlight({ label, value, variant = "danger", note
     >
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
         <Text style={{ fontSize: 16, fontWeight: "700", color: variantColor }}>{label}</Text>
-        <Text style={{ fontSize: 20, fontWeight: "800", color: variantColor }}>{value}</Text>
+        <Text style={{ fontSize: 20, fontWeight: "400", color: variantColor }}>{value}</Text>
       </View>
       {note && (
         <Text style={{ fontSize: 14, color: colors.textSecondary, marginTop: 4 }}>{note}</Text>

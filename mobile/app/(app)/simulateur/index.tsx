@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 20,
-    fontWeight: "800",
+    fontWeight: "400",
     marginBottom: 2,
   },
   badge: {
