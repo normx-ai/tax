@@ -21,8 +21,8 @@ export default function LandingCTA() {
         alignItems: "center",
       }}>
         <Text style={{
-          fontFamily: fonts.black,
-          fontWeight: fontWeights.black,
+          fontFamily: fonts.bold,
+          fontWeight: fontWeights.bold,
           fontSize: 28,
           color: DARK,
           textAlign: "center",

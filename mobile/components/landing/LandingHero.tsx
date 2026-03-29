@@ -129,7 +129,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
       >
         {stats.map((stat, i) => (
           <View key={i} style={{ alignItems: "center", opacity: loaded ? 1 : 0 }}>
-            <Text style={{ fontSize: isMobile ? 24 : 32, fontFamily: fonts.black, fontWeight: fontWeights.black, color: PRIMARY }}>
+            <Text style={{ fontSize: isMobile ? 24 : 32, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: PRIMARY }}>
               {stat.value}
             </Text>
             <Text style={{ fontSize: 11, color: "rgba(255,255,255,0.7)", marginTop: 4, fontFamily: fonts.medium, fontWeight: fontWeights.medium }}>
