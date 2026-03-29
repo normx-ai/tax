@@ -4,24 +4,26 @@ import { Platform } from "react-native";
 
 interface FavoritesState {
   articleIds: string[];
-  isFavorite: (articleId: string) => boolean;
   toggleFavorite: (articleId: string) => void;
 }
 
-const storage = createJSONStorage(() => {
-  if (Platform.OS === "web" && typeof localStorage !== "undefined") {
-    return localStorage;
-  }
-  // Mobile : AsyncStorage
-  const AsyncStorage = require("@react-native-async-storage/async-storage").default;
-  return AsyncStorage;
-});
+const webStorage = {
+  getItem: (name: string) => {
+    const val = localStorage.getItem(name);
+    return val ? JSON.parse(val) : null;
+  },
+  setItem: (name: string, value: unknown) => {
+    localStorage.setItem(name, JSON.stringify(value));
+  },
+  removeItem: (name: string) => {
+    localStorage.removeItem(name);
+  },
+};
 
 export const useFavoritesStore = create<FavoritesState>()(
   persist(
     (set, get) => ({
       articleIds: [],
-      isFavorite: (articleId: string) => get().articleIds.includes(articleId),
       toggleFavorite: (articleId: string) => {
         const current = get().articleIds;
         if (current.includes(articleId)) {
@@ -33,7 +35,9 @@ export const useFavoritesStore = create<FavoritesState>()(
     }),
     {
       name: "cgi242-favorites",
-      storage,
+      storage: Platform.OS === "web"
+        ? createJSONStorage(() => webStorage)
+        : createJSONStorage(() => require("@react-native-async-storage/async-storage").default),
     }
   )
 );

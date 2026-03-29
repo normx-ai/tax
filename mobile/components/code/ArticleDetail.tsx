@@ -8,6 +8,7 @@ import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useFavoritesStore } from "@/lib/store/favorites";
+import { useHistoryStore } from "@/lib/store/history";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { ArticleData } from "@/lib/data/cgi";
 import ArticleText from "./ArticleText";
@@ -28,8 +29,19 @@ const SPEECH_MAX_CHUNK = 3_000;
 export default function ArticleDetail({ article, onBack, onSelectArticle }: Props) {
   const { colors } = useTheme();
   const { t } = useTranslation();
-  const isFavorite = useFavoritesStore((s) => s.isFavorite(article.article));
+  const favoriteIds = useFavoritesStore((s) => s.articleIds);
   const toggleFavorite = useFavoritesStore((s) => s.toggleFavorite);
+  const isFavorite = favoriteIds.includes(article.article);
+  const addHistory = useHistoryStore((s) => s.addItem);
+
+  // Enregistrer dans l'historique au montage
+  useEffect(() => {
+    addHistory({
+      article: article.article,
+      titre: article.titre,
+      code: "cgi",
+    });
+  }, [article.article]);
   const [speechState, setSpeechState] = useState<"idle" | "playing" | "paused">("idle");
   const [currentLineIndex, setCurrentLineIndex] = useState<number | undefined>(undefined);
   const stoppedRef = useRef(false);
