@@ -41,6 +41,16 @@ export function getLoginUrl(redirectUri: string): string {
   return `${KEYCLOAK_URL}/realms/${KEYCLOAK_REALM}/protocol/openid-connect/auth?${params}`;
 }
 
+export function getRegisterUrl(redirectUri: string): string {
+  const params = new URLSearchParams({
+    client_id: KEYCLOAK_CLIENT_ID,
+    redirect_uri: redirectUri,
+    response_type: "code",
+    scope: "openid profile email",
+  });
+  return `${KEYCLOAK_URL}/realms/${KEYCLOAK_REALM}/protocol/openid-connect/registrations?${params}`;
+}
+
 export function getLogoutUrl(redirectUri: string): string {
   const params = new URLSearchParams({
     client_id: KEYCLOAK_CLIENT_ID,

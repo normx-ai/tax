@@ -9,6 +9,7 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import {
   getLoginUrl,
+  getRegisterUrl,
   getLogoutUrl,
   exchangeCode,
   refreshAccessToken,
@@ -54,6 +55,7 @@ interface AuthState {
   sessionExpired: boolean;
 
   login: () => void;
+  register: () => void;
   logout: () => void;
   handleCallback: () => Promise<void>;
   getToken: () => Promise<string | null>;
@@ -149,6 +151,14 @@ export const useAuthStore = create<AuthState>()(
       // Redirect vers Keycloak login
       login: () => {
         const url = getLoginUrl(getRedirectUri());
+        if (isWeb) {
+          window.location.href = url;
+        }
+      },
+
+      // Redirect vers Keycloak register
+      register: () => {
+        const url = getRegisterUrl(getRedirectUri());
         if (isWeb) {
           window.location.href = url;
         }

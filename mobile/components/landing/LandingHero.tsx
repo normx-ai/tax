@@ -14,6 +14,7 @@ interface Props {
 
 export default function LandingHero({ isMobile, loaded }: Props) {
   const login = useAuthStore((s) => s.login);
+  const register = useAuthStore((s) => s.register);
 
   const stats = [
     { value: "+2 200", label: "Articles de loi" },
@@ -95,7 +96,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
         </TouchableOpacity>
 
         <TouchableOpacity
-          onPress={login}
+          onPress={register}
           style={{
             paddingVertical: 14,
             paddingHorizontal: 32,

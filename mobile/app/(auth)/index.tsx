@@ -11,6 +11,7 @@ const BG_WARM = "#faf8f5";
 
 export default function AuthScreen() {
   const login = useAuthStore((s) => s.login);
+  const register = useAuthStore((s) => s.register);
   const isLoading = useAuthStore((s) => s.isLoading);
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
 
@@ -75,7 +76,7 @@ export default function AuthScreen() {
         <Ionicons name="arrow-forward" size={18} color={DARK} />
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={login} style={{ marginTop: 12, paddingVertical: 14, paddingHorizontal: 32, borderRadius: 12, borderWidth: 1.5, borderColor: "rgba(0,0,0,0.1)", backgroundColor: "#ffffff", width: "100%", maxWidth: 360, alignItems: "center" }}>
+      <TouchableOpacity onPress={register} style={{ marginTop: 12, paddingVertical: 14, paddingHorizontal: 32, borderRadius: 12, borderWidth: 1.5, borderColor: "rgba(0,0,0,0.1)", backgroundColor: "#ffffff", width: "100%", maxWidth: 360, alignItems: "center" }}>
         <Text style={{ color: DARK, fontSize: 16, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>Créer un compte</Text>
       </TouchableOpacity>
 
