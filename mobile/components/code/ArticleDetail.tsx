@@ -28,9 +28,11 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
   const { colors } = useTheme();
   const { t } = useTranslation();
   const [speechState, setSpeechState] = useState<"idle" | "playing" | "paused">("idle");
+  const [currentLineIndex, setCurrentLineIndex] = useState<number | undefined>(undefined);
   const stoppedRef = useRef(false);
   const chunksRef = useRef<string[]>([]);
   const chunkIndexRef = useRef(0);
+  const lineIndexRef = useRef(0);
   const [references, setReferences] = useState<ArticleReference[]>([]);
   const [referencedBy, setReferencedBy] = useState<ArticleReference[]>([]);
   const [loadingRefs, setLoadingRefs] = useState(false);
@@ -38,9 +40,15 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
   useEffect(() => {
     return () => {
       stoppedRef.current = true;
-      Speech.stop();
+      if (Platform.OS === "web") {
+        window.speechSynthesis?.cancel();
+      } else {
+        Speech.stop();
+      }
       setSpeechState("idle");
+      setCurrentLineIndex(undefined);
       chunkIndexRef.current = 0;
+      lineIndexRef.current = 0;
     };
   }, [article]);
 
@@ -138,9 +146,31 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
     });
   };
 
+  const speakLineByLine = (idx: number) => {
+    const nonEmpty = article.texte.map((l, i) => ({ l, i })).filter(({ l }) => l.length > 0);
+    if (stoppedRef.current || idx >= nonEmpty.length) {
+      setSpeechState("idle");
+      setCurrentLineIndex(undefined);
+      lineIndexRef.current = 0;
+      return;
+    }
+    const { l: line, i: lineIdx } = nonEmpty[idx];
+    lineIndexRef.current = idx;
+    setCurrentLineIndex(lineIdx);
+    const cleaned = prepareForSpeech(line);
+    if (!cleaned) { speakLineByLine(idx + 1); return; }
+
+    window.speechSynthesis?.cancel();
+    const utterance = new SpeechSynthesisUtterance(cleaned);
+    utterance.lang = "fr-FR";
+    utterance.rate = 0.9;
+    utterance.onend = () => speakLineByLine(idx + 1);
+    utterance.onerror = () => { setSpeechState("idle"); setCurrentLineIndex(undefined); };
+    window.speechSynthesis?.speak(utterance);
+  };
+
   const handlePlay = async () => {
     if (speechState === "playing") {
-      // Pause
       if (Platform.OS === "web") {
         window.speechSynthesis?.pause();
       } else {
@@ -152,36 +182,26 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
     }
 
     if (speechState === "paused") {
-      // Reprendre
       if (Platform.OS === "web") {
         window.speechSynthesis?.resume();
         setSpeechState("playing");
       } else {
         stoppedRef.current = false;
-        const resumeIndex = chunkIndexRef.current;
         setSpeechState("playing");
-        speakChunk(chunksRef.current, resumeIndex);
+        speakChunk(chunksRef.current, chunkIndexRef.current);
       }
       return;
     }
 
-    // Démarrer depuis le début
+    // Démarrer
     stoppedRef.current = false;
-    chunkIndexRef.current = 0;
-    chunksRef.current = getChunks();
 
     if (Platform.OS === "web") {
-      // Sur web : utiliser speechSynthesis directement pour pause/resume
-      window.speechSynthesis?.cancel();
-      const allText = chunksRef.current.join(" ... ");
-      const utterance = new SpeechSynthesisUtterance(allText);
-      utterance.lang = "fr-FR";
-      utterance.rate = 0.9;
-      utterance.onend = () => { setSpeechState("idle"); chunkIndexRef.current = 0; };
-      utterance.onerror = () => { setSpeechState("idle"); chunkIndexRef.current = 0; };
-      window.speechSynthesis?.speak(utterance);
       setSpeechState("playing");
+      speakLineByLine(0);
     } else {
+      chunkIndexRef.current = 0;
+      chunksRef.current = getChunks();
       setSpeechState("playing");
       speakChunk(chunksRef.current, 0);
     }
@@ -195,7 +215,9 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
       await Speech.stop();
     }
     setSpeechState("idle");
+    setCurrentLineIndex(undefined);
     chunkIndexRef.current = 0;
+    lineIndexRef.current = 0;
   };
 
   const handleBack = () => {
@@ -237,7 +259,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
           elevation: 2,
         }}
       >
-        <ArticleText texte={article.texte} />
+        <ArticleText texte={article.texte} highlightIndex={currentLineIndex} />
       </View>
 
       {article.mots_cles.length > 0 && (

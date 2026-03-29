@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity, Platform } from "react-native";
 import { useRef, useEffect, useCallback, useState, useMemo } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
@@ -60,16 +60,24 @@ function useSpeech(article: ArticleData) {
       speakLineRef.current(idx + 1);
       return;
     }
-    Speech.speak(cleaned, {
-      language: "fr-FR",
-      rate: 0.9,
-      onDone: () => speakLineRef.current(idx + 1),
-      onStopped: () => {},
-      onError: () => {
-        setSpeechState("idle");
-        setCurrentLineIndex(undefined);
-      },
-    });
+
+    if (Platform.OS === "web") {
+      window.speechSynthesis?.cancel();
+      const utterance = new SpeechSynthesisUtterance(cleaned);
+      utterance.lang = "fr-FR";
+      utterance.rate = 0.9;
+      utterance.onend = () => speakLineRef.current(idx + 1);
+      utterance.onerror = () => { setSpeechState("idle"); setCurrentLineIndex(undefined); };
+      window.speechSynthesis?.speak(utterance);
+    } else {
+      Speech.speak(cleaned, {
+        language: "fr-FR",
+        rate: 0.9,
+        onDone: () => speakLineRef.current(idx + 1),
+        onStopped: () => {},
+        onError: () => { setSpeechState("idle"); setCurrentLineIndex(undefined); },
+      });
+    }
   };
 
   const play = useCallback(() => {
@@ -79,20 +87,33 @@ function useSpeech(article: ArticleData) {
   }, []);
 
   const pause = useCallback(() => {
-    stoppedRef.current = true;
-    Speech.stop();
+    if (Platform.OS === "web") {
+      window.speechSynthesis?.pause();
+    } else {
+      stoppedRef.current = true;
+      Speech.stop();
+    }
     setSpeechState("paused");
   }, []);
 
   const resume = useCallback(() => {
-    stoppedRef.current = false;
-    setSpeechState("playing");
-    speakLineRef.current(currentNonEmptyIdx.current);
+    if (Platform.OS === "web") {
+      window.speechSynthesis?.resume();
+      setSpeechState("playing");
+    } else {
+      stoppedRef.current = false;
+      setSpeechState("playing");
+      speakLineRef.current(currentNonEmptyIdx.current);
+    }
   }, []);
 
   const stop = useCallback(() => {
     stoppedRef.current = true;
-    Speech.stop();
+    if (Platform.OS === "web") {
+      window.speechSynthesis?.cancel();
+    } else {
+      Speech.stop();
+    }
     setSpeechState("idle");
     currentNonEmptyIdx.current = 0;
     setCurrentLineIndex(undefined);
