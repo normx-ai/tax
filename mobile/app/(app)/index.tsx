@@ -143,45 +143,6 @@ export default function Dashboard() {
           </View>
         </View>
 
-        {/* Codes juridiques */}
-        <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
-          <Text style={{ fontSize: 18, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text, marginBottom: 10 }}>
-            Codes & Législation
-          </Text>
-          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-            {CODE_CARDS.map((c) => (
-              <TouchableOpacity
-                key={c.id}
-                onPress={() => c.available && handleCodeSelect(c.id)}
-                disabled={!c.available}
-                style={{
-                  flex: 1,
-                  minWidth: "45%",
-                  backgroundColor: colors.card,
-                  borderWidth: 1,
-                  borderColor: colors.border,
-                  borderRadius: 14,
-                  padding: 14,
-                  opacity: c.available ? 1 : 0.5,
-                }}
-              >
-                <View style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: `${c.color}15`, alignItems: "center", justifyContent: "center", marginBottom: 10 }}>
-                  <Ionicons name={c.icon} size={20} color={c.color} />
-                </View>
-                <Text style={{ fontSize: 14, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text }} numberOfLines={2}>
-                  {c.label}
-                </Text>
-                <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>{c.description}</Text>
-                {!c.available && (
-                  <View style={{ backgroundColor: colors.background, paddingHorizontal: 8, paddingVertical: 2, borderRadius: 8, alignSelf: "flex-start", marginTop: 6 }}>
-                    <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted }}>Bientôt</Text>
-                  </View>
-                )}
-              </TouchableOpacity>
-            ))}
-          </View>
-        </View>
-
         {/* Actions rapides */}
         <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
           <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text, marginBottom: 10 }}>{t("dashboard.quickActions")}</Text>
