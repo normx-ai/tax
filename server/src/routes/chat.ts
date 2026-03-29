@@ -8,7 +8,7 @@ import { checkQuestionQuota } from "../middleware/subscription.middleware";
 import { validate } from "../middleware/validate.middleware";
 import { messageStreamBody, conversationIdParam } from "../schemas/chat.schema";
 import * as chatService from "../services/chat.service";
-import prisma from "../utils/prisma";
+import prisma from "../utils/prisma"; // pour les articles CGI (donnees globales)
 import { createLogger } from "../utils/logger";
 
 const logger = createLogger('ChatRoutes');
@@ -40,7 +40,7 @@ router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, v
   res.flushHeaders();
 
   try {
-    const stream = chatService.sendMessageStream(userId, content.trim(), conversationId, req.orgId);
+    const stream = chatService.sendMessageStream(req.tenantSchema!, userId, content.trim(), conversationId);
 
     for await (const event of stream) {
       res.write(`event: ${event.event}\ndata: ${event.data}\n\n`);
@@ -71,7 +71,7 @@ router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, v
 // GET /api/chat/conversations — Lister les conversations
 router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response) => {
   try {
-    const conversations = await chatService.getConversations(req.userId!, req.orgId);
+    const conversations = await chatService.getConversations(req.tenantSchema!, req.userId!);
     res.json({ conversations });
   } catch (err) {
     logger.error("[chat/conversations]", err);
@@ -104,7 +104,7 @@ router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response
 router.get("/conversations/:id", requireAuth, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
   try {
     const id = String(req.params.id);
-    const conversation = await chatService.getConversation(req.userId!, id, req.orgId);
+    const conversation = await chatService.getConversation(req.tenantSchema!, req.userId!, id);
     res.json({ conversation });
   } catch (err) {
     logger.error("[chat/conversation]", err);
@@ -142,7 +142,7 @@ router.get("/conversations/:id", requireAuth, validate({ params: conversationIdP
 router.delete("/conversations/:id", requireAuth, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
   try {
     const id = String(req.params.id);
-    await chatService.deleteConversation(req.userId!, id);
+    await chatService.deleteConversation(req.tenantSchema!, req.userId!, id);
     res.json({ message: "Conversation supprimee" });
   } catch (err) {
     logger.error("[chat/delete]", err);
@@ -217,8 +217,8 @@ router.get("/article/:numero/references", requireAuth, async (req: AuthRequest, 
 
     res.json({
       article: { id: article.id, numero: article.numero, titre: article.titre },
-      references: article.references.map(r => r.toArticle),
-      referencedBy: article.referencedBy.map(r => r.fromArticle),
+      references: article.references.map((r: { toArticle: { id: string; numero: string; titre: string | null } }) => r.toArticle),
+      referencedBy: article.referencedBy.map((r: { fromArticle: { id: string; numero: string; titre: string | null } }) => r.fromArticle),
     });
   } catch (err) {
     logger.error("[chat/article/references]", err);

@@ -1,23 +1,22 @@
 // server/src/services/chat.service.ts
-// Service chat IA fiscal - RAG hybride + Claude API + gestion conversations Prisma
+// Service chat IA fiscal - RAG hybride + Claude API + schema PostgreSQL isolation
 
 import Anthropic from "@anthropic-ai/sdk";
 import { buildSimplePrompt, buildFiscalPrompt, buildContextPrompt, buildSocialContextPrompt, buildSocialFallbackPrompt } from "./chat.prompts";
 import { hybridSearch, isSocialQuery, SearchResult } from "./rag/hybrid-search.service";
 import { isFiscalQuery, buildContext, extractArticlesFromResponse, Citation } from "./rag/chat.utils";
 import { createLogger } from "../utils/logger";
-import prisma from "../utils/prisma";
-import { trackUsage } from "./usage-stats.service";
-import { incrementQuota } from "./subscription.service";
 import { orchestrate } from "./orchestrator";
+import * as chatDb from "../db/chat.db";
+import * as analyticsDb from "../db/analytics.db";
 
 const logger = createLogger('ChatService');
-const anthropic = new Anthropic(); // utilise ANTHROPIC_API_KEY env var
+const anthropic = new Anthropic();
 
 const CLAUDE_MODEL = "claude-sonnet-4-20250514";
 const MAX_TOKENS = 2000;
 const MAX_HISTORY_MESSAGES = 10;
-const MAX_HISTORY_CHARS = 12000; // ~3000 tokens — budget historique conversation
+const MAX_HISTORY_CHARS = 12000;
 
 const GREETING_PATTERNS = [
   /^(bonjour|bonsoir|salut|hello|hi|hey|coucou|yo)\b/i,
@@ -27,45 +26,24 @@ const GREETING_PATTERNS = [
   /^(qui es-tu|tu es qui|c est quoi cgi)\b/i,
 ];
 
-/**
- * Tronque l'historique pour respecter le budget de tokens.
- * Garde les messages les plus récents en priorité.
- */
 function trimHistory(messages: { role: string; content: string }[]): { role: string; content: string }[] {
   const trimmed: { role: string; content: string }[] = [];
   let totalChars = 0;
-
-  // Parcours du plus récent au plus ancien
   for (let i = messages.length - 1; i >= 0; i--) {
     const msg = messages[i];
-    const msgChars = msg.content.length;
-
-    if (totalChars + msgChars > MAX_HISTORY_CHARS) break;
-
+    if (totalChars + msg.content.length > MAX_HISTORY_CHARS) break;
     trimmed.unshift(msg);
-    totalChars += msgChars;
+    totalChars += msg.content.length;
   }
-
   return trimmed;
 }
 
-/**
- * Detecte si le message est une salutation simple
- */
 export function isSimpleGreeting(query: string): boolean {
-  const trimmed = query.trim();
-  return GREETING_PATTERNS.some((pattern) => pattern.test(trimmed));
+  return GREETING_PATTERNS.some((pattern) => pattern.test(query.trim()));
 }
 
-/**
- * Effectue la recherche RAG si c'est une question fiscale
- * Retourne les résultats de recherche ou null en cas d'erreur/salutation
- */
 async function performRAGSearch(content: string): Promise<SearchResult[] | null> {
-  if (!isFiscalQuery(content)) {
-    return null;
-  }
-
+  if (!isFiscalQuery(content)) return null;
   try {
     const results = await hybridSearch(content, 8, '2026');
     if (results.length > 0) {
@@ -74,81 +52,51 @@ async function performRAGSearch(content: string): Promise<SearchResult[] | null>
     }
     return null;
   } catch (error) {
-    logger.warn('RAG indisponible, fallback sur connaissances statiques:', error);
+    logger.warn('RAG indisponible, fallback:', error);
     return null;
   }
 }
 
+function buildSystemPrompt(content: string, searchResults: SearchResult[] | null): string {
+  const socialQuery = isSocialQuery(content);
+  if (isSimpleGreeting(content)) return buildSimplePrompt();
+  if (searchResults && searchResults.length > 0) {
+    const context = buildContext(searchResults);
+    const basePrompt = socialQuery ? buildSocialContextPrompt(context) : buildContextPrompt(context);
+    const { enhancedSystemPrompt, agent } = orchestrate(content, basePrompt);
+    logger.info(`Agent: ${agent.name} (social: ${socialQuery})`);
+    return enhancedSystemPrompt;
+  }
+  const basePrompt = socialQuery ? buildSocialFallbackPrompt() : buildFiscalPrompt();
+  const { enhancedSystemPrompt } = orchestrate(content, basePrompt);
+  return enhancedSystemPrompt;
+}
+
 /**
- * Envoyer un message et recevoir la reponse complete (non-streaming)
+ * Envoyer un message — reponse complete (non-streaming)
  */
 export async function sendMessage(
+  schema: string,
   userId: string,
   content: string,
   conversationId?: string,
-  organizationId?: string
 ) {
-  // 1. Creer ou recuperer la conversation
   let conversation;
   if (conversationId) {
-    conversation = await prisma.conversation.findFirst({
-      where: { id: conversationId, creatorId: userId, ...(organizationId ? { organizationId } : {}) },
-    });
-    if (!conversation) {
-      throw new Error("Conversation introuvable");
-    }
+    conversation = await chatDb.findConversation(schema, conversationId, userId);
+    if (!conversation) throw new Error("Conversation introuvable");
   } else {
-    conversation = await prisma.conversation.create({
-      data: {
-        creatorId: userId,
-        title: content.slice(0, 80),
-        ...(organizationId ? { organizationId } : {}),
-      },
-    });
+    conversation = await chatDb.createConversation(schema, userId, content.slice(0, 80));
   }
 
-  // 2. Sauver le message USER
-  await prisma.message.create({
-    data: {
-      conversationId: conversation.id,
-      authorId: userId,
-      role: "USER",
-      content,
-    },
-  });
+  await chatDb.createMessage(schema, conversation.id, userId, "USER", content);
 
-  // 3. Recuperer les derniers messages et tronquer selon le budget
-  const rawMessages = await prisma.message.findMany({
-    where: { conversationId: conversation.id },
-    orderBy: { createdAt: "asc" },
-    take: MAX_HISTORY_MESSAGES,
-    select: { role: true, content: true },
-  });
+  const rawMessages = await chatDb.getMessages(schema, conversation.id, MAX_HISTORY_MESSAGES);
   const previousMessages = trimHistory(rawMessages);
 
-  // 4. RAG: recherche hybride si question fiscale
   const searchResults = await performRAGSearch(content);
+  const systemPrompt = buildSystemPrompt(content, searchResults);
 
-  // 5. Choisir le prompt systeme + orchestration multi-agent
-  const socialQuery = isSocialQuery(content);
-  let systemPrompt: string;
-  if (isSimpleGreeting(content)) {
-    systemPrompt = buildSimplePrompt();
-  } else if (searchResults && searchResults.length > 0) {
-    const context = buildContext(searchResults);
-    // Utiliser le bon prompt selon le type de question
-    const basePrompt = socialQuery ? buildSocialContextPrompt(context) : buildContextPrompt(context);
-    const { enhancedSystemPrompt, agent } = orchestrate(content, basePrompt);
-    systemPrompt = enhancedSystemPrompt;
-    logger.info(`Agent sélectionné: ${agent.name} (social: ${socialQuery})`);
-  } else {
-    // Fallback sans RAG
-    const basePrompt = socialQuery ? buildSocialFallbackPrompt() : buildFiscalPrompt();
-    const { enhancedSystemPrompt } = orchestrate(content, basePrompt);
-    systemPrompt = enhancedSystemPrompt;
-  }
-
-  // 6. Appeler Claude
   const startTime = Date.now();
   const response = await anthropic.messages.create({
     model: CLAUDE_MODEL,
@@ -161,113 +109,52 @@ export async function sendMessage(
   });
 
   const responseTime = Date.now() - startTime;
-  const assistantContent =
-    response.content[0].type === "text" ? response.content[0].text : "";
-  const tokensUsed =
-    (response.usage?.input_tokens || 0) + (response.usage?.output_tokens || 0);
+  const assistantContent = response.content[0].type === "text" ? response.content[0].text : "";
+  const tokensUsed = (response.usage?.input_tokens || 0) + (response.usage?.output_tokens || 0);
 
-  // 7. Extraire les citations
   let citations: Citation[] | undefined;
   if (searchResults && searchResults.length > 0) {
     citations = extractArticlesFromResponse(assistantContent, searchResults);
   }
 
-  // 8. Sauver le message ASSISTANT avec citations
-  const assistantMessage = await prisma.message.create({
-    data: {
-      conversationId: conversation.id,
-      role: "ASSISTANT",
-      content: assistantContent,
-      citations: citations && citations.length > 0 ? JSON.parse(JSON.stringify(citations)) : undefined,
-      tokensUsed,
-      responseTime,
-    },
-  });
+  const assistantMessage = await chatDb.createMessage(
+    schema, conversation.id, userId, "ASSISTANT", assistantContent, citations
+  );
 
-  // 9. Fire-and-forget : enregistrer SearchHistory + UsageStats
-  recordSearchAndUsage(userId, content, searchResults, tokensUsed);
+  // Fire-and-forget
+  chatDb.createSearchHistory(schema, userId, content, searchResults?.length || 0).catch(() => {});
+  analyticsDb.trackUsage(schema, userId, "chat_message", { tokensUsed }).catch(() => {});
 
-  return {
-    conversationId: conversation.id,
-    message: assistantMessage,
-  };
+  return { conversationId: conversation.id, message: assistantMessage };
 }
 
 /**
  * Envoyer un message avec streaming SSE
- * Utilise un generateur async pour yield les events
  */
 export async function* sendMessageStream(
+  schema: string,
   userId: string,
   content: string,
   conversationId?: string,
-  organizationId?: string
 ): AsyncGenerator<{ event: string; data: string }> {
-  // 1. Creer ou recuperer la conversation
   let conversation;
   if (conversationId) {
-    conversation = await prisma.conversation.findFirst({
-      where: { id: conversationId, creatorId: userId, ...(organizationId ? { organizationId } : {}) },
-    });
-    if (!conversation) {
-      throw new Error("Conversation introuvable");
-    }
+    conversation = await chatDb.findConversation(schema, conversationId, userId);
+    if (!conversation) throw new Error("Conversation introuvable");
   } else {
-    conversation = await prisma.conversation.create({
-      data: {
-        creatorId: userId,
-        title: content.slice(0, 80),
-        ...(organizationId ? { organizationId } : {}),
-      },
-    });
+    conversation = await chatDb.createConversation(schema, userId, content.slice(0, 80));
   }
 
-  // Emettre l'ID de la conversation
-  yield {
-    event: "conversation",
-    data: JSON.stringify({ conversationId: conversation.id }),
-  };
+  yield { event: "conversation", data: JSON.stringify({ conversationId: conversation.id }) };
 
-  // 2. Sauver le message USER
-  await prisma.message.create({
-    data: {
-      conversationId: conversation.id,
-      authorId: userId,
-      role: "USER",
-      content,
-    },
-  });
+  await chatDb.createMessage(schema, conversation.id, userId, "USER", content);
 
-  // 3. Recuperer les derniers messages et tronquer selon le budget
-  const rawMessages = await prisma.message.findMany({
-    where: { conversationId: conversation.id },
-    orderBy: { createdAt: "asc" },
-    take: MAX_HISTORY_MESSAGES,
-    select: { role: true, content: true },
-  });
+  const rawMessages = await chatDb.getMessages(schema, conversation.id, MAX_HISTORY_MESSAGES);
   const previousMessages = trimHistory(rawMessages);
 
-  // 4. RAG: recherche hybride si question fiscale
   const searchResults = await performRAGSearch(content);
+  const systemPrompt = buildSystemPrompt(content, searchResults);
 
-  // 5. Choisir le prompt systeme + orchestration multi-agent
-  const socialQueryStream = isSocialQuery(content);
-  let systemPrompt: string;
-  if (isSimpleGreeting(content)) {
-    systemPrompt = buildSimplePrompt();
-  } else if (searchResults && searchResults.length > 0) {
-    const context = buildContext(searchResults);
-    const basePrompt = socialQueryStream ? buildSocialContextPrompt(context) : buildContextPrompt(context);
-    const { enhancedSystemPrompt, agent } = orchestrate(content, basePrompt);
-    systemPrompt = enhancedSystemPrompt;
-    logger.info(`Agent sélectionné (stream): ${agent.name} (social: ${socialQueryStream})`);
-  } else {
-    const basePrompt = socialQueryStream ? buildSocialFallbackPrompt() : buildFiscalPrompt();
-    const { enhancedSystemPrompt } = orchestrate(content, basePrompt);
-    systemPrompt = enhancedSystemPrompt;
-  }
-
-  // 6. Appeler Claude en streaming
   const startTime = Date.now();
   let fullContent = "";
 
@@ -282,179 +169,59 @@ export async function* sendMessageStream(
   });
 
   for await (const event of stream) {
-    if (
-      event.type === "content_block_delta" &&
-      event.delta.type === "text_delta"
-    ) {
+    if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
       fullContent += event.delta.text;
-      yield {
-        event: "chunk",
-        data: JSON.stringify({ text: event.delta.text }),
-      };
+      yield { event: "chunk", data: JSON.stringify({ text: event.delta.text }) };
     }
   }
 
   const finalMessage = await stream.finalMessage();
   const responseTime = Date.now() - startTime;
-  const tokensUsed =
-    (finalMessage.usage?.input_tokens || 0) +
-    (finalMessage.usage?.output_tokens || 0);
+  const tokensUsed = (finalMessage.usage?.input_tokens || 0) + (finalMessage.usage?.output_tokens || 0);
 
-  // 7. Extraire les citations
   let citations: Citation[] | undefined;
   if (searchResults && searchResults.length > 0) {
     citations = extractArticlesFromResponse(fullContent, searchResults);
-
-    // Emettre les citations
     if (citations.length > 0) {
-      yield {
-        event: "citations",
-        data: JSON.stringify({ citations }),
-      };
+      yield { event: "citations", data: JSON.stringify({ citations }) };
     }
   }
 
-  // 8. Sauver le message ASSISTANT complet avec citations
-  const assistantMessage = await prisma.message.create({
-    data: {
-      conversationId: conversation.id,
-      role: "ASSISTANT",
-      content: fullContent,
-      citations: citations && citations.length > 0 ? JSON.parse(JSON.stringify(citations)) : undefined,
-      tokensUsed,
-      responseTime,
-    },
-  });
+  const assistantMessage = await chatDb.createMessage(
+    schema, conversation.id, userId, "ASSISTANT", fullContent, citations
+  );
 
-  // 9. Fire-and-forget : enregistrer SearchHistory + UsageStats
-  // skipQuotaIncrement=true car le middleware checkQuestionQuota a déjà incrémenté (M13)
-  recordSearchAndUsage(userId, content, searchResults, tokensUsed, true);
+  // Fire-and-forget
+  chatDb.createSearchHistory(schema, userId, content, searchResults?.length || 0).catch(() => {});
+  analyticsDb.trackUsage(schema, userId, "chat_message", { tokensUsed }).catch(() => {});
 
-  // 11. Event done
   yield {
     event: "done",
-    data: JSON.stringify({
-      messageId: assistantMessage.id,
-      tokensUsed,
-      responseTime,
-    }),
+    data: JSON.stringify({ messageId: assistantMessage.id, tokensUsed, responseTime }),
   };
 }
 
 /**
- * Lister les conversations d'un utilisateur
+ * Lister les conversations
  */
-export async function getConversations(userId: string, organizationId?: string) {
-  return prisma.conversation.findMany({
-    where: { creatorId: userId, ...(organizationId ? { organizationId } : {}) },
-    orderBy: { updatedAt: "desc" },
-    select: {
-      id: true,
-      title: true,
-      createdAt: true,
-      updatedAt: true,
-      _count: { select: { messages: true } },
-    },
-  });
+export async function getConversations(schema: string, userId: string) {
+  return chatDb.listConversations(schema, userId);
 }
 
 /**
  * Recuperer une conversation avec ses messages
  */
-export async function getConversation(userId: string, conversationId: string, organizationId?: string) {
-  const conversation = await prisma.conversation.findFirst({
-    where: { id: conversationId, creatorId: userId, ...(organizationId ? { organizationId } : {}) },
-    include: {
-      messages: {
-        orderBy: { createdAt: "asc" },
-        select: {
-          id: true,
-          role: true,
-          content: true,
-          citations: true,
-          tokensUsed: true,
-          responseTime: true,
-          createdAt: true,
-        },
-      },
-    },
-  });
-
-  if (!conversation) {
-    throw new Error("Conversation introuvable");
-  }
-
+export async function getConversation(schema: string, userId: string, conversationId: string) {
+  const conversation = await chatDb.getConversationWithMessages(schema, conversationId, userId);
+  if (!conversation) throw new Error("Conversation introuvable");
   return conversation;
 }
 
 /**
  * Supprimer une conversation
  */
-export async function deleteConversation(
-  userId: string,
-  conversationId: string
-) {
-  const conversation = await prisma.conversation.findFirst({
-    where: { id: conversationId, creatorId: userId },
-  });
-
-  if (!conversation) {
-    throw new Error("Conversation introuvable");
-  }
-
-  await prisma.conversation.delete({
-    where: { id: conversationId },
-  });
-
+export async function deleteConversation(schema: string, userId: string, conversationId: string) {
+  const result = await chatDb.deleteConversation(schema, conversationId, userId);
+  if (!result) throw new Error("Conversation introuvable");
   return { success: true };
-}
-
-/**
- * Enregistre SearchHistory, met à jour UsageStats et incrémente le quota (fire-and-forget).
- * Résout l'articleId via le numéro d'article du premier résultat RAG.
- */
-function recordSearchAndUsage(
-  userId: string,
-  query: string,
-  searchResults: SearchResult[] | null,
-  tokensUsed: number,
-  skipQuotaIncrement = false
-): void {
-  const firstNumero = searchResults?.[0]?.payload?.numero;
-
-  // SearchHistory
-  const insertSearch = firstNumero
-    ? prisma.article
-        .findFirst({ where: { numero: firstNumero }, select: { id: true } })
-        .then(article =>
-          prisma.searchHistory.create({
-            data: { userId, query, articleId: article?.id || null },
-          })
-        )
-    : prisma.searchHistory.create({
-        data: { userId, query, articleId: null },
-      });
-
-  insertSearch.catch(err => logger.warn('SearchHistory insert failed:', err));
-
-  // UsageStats
-  trackUsage({
-    userId,
-    questionsAsked: 1,
-    articlesViewed: searchResults?.length || 0,
-    tokensUsed,
-  }).catch(err => logger.warn('UsageStats update failed:', err));
-
-  // Quota abonnement : incrémenter questionsUsed du user
-  // Sauf si le middleware checkQuestionQuota a déjà fait l'incrément atomique (M13)
-  if (!skipQuotaIncrement) {
-    prisma.organizationMember.findFirst({
-      where: { userId },
-      select: { organizationId: true },
-    }).then(member => {
-      if (member) {
-        return incrementQuota(member.organizationId, userId);
-      }
-    }).catch(err => logger.warn('IncrementQuota failed:', err));
-  }
 }
