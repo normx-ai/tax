@@ -74,16 +74,9 @@ export async function sendMessageStream(
       const token = await getAuthToken();
       if (token) headers.Authorization = `Bearer ${token}`;
     } else {
-      // Web : ajouter le token CSRF (même logique que l'intercepteur axios)
-      try {
-        const csrfToken = document.cookie
-          .split("; ")
-          .find((c) => c.startsWith("csrf-token="))
-          ?.split("=")[1];
-        if (csrfToken) {
-          headers["X-CSRF-Token"] = csrfToken;
-        }
-      } catch {}
+      // Web : ajouter le token Keycloak
+      const token = localStorage.getItem("kc_access_token");
+      if (token) headers.Authorization = `Bearer ${token}`;
     }
 
     let response = await fetch(`${API_URL}/chat/message/stream`, {
@@ -94,63 +87,22 @@ export async function sendMessageStream(
       signal: controller.signal,
     });
 
-    // Si 401 : tenter un refresh puis réessayer
-    if (response.status === 401) {
+    // Si 401 : tenter un refresh token Keycloak puis réessayer
+    if (response.status === 401 && isWeb) {
       try {
-        if (isWeb) {
-          const refreshRes = await fetch(`${API_URL}/auth/refresh-token`, {
+        const { useAuthStore } = require("@/lib/store/auth");
+        const newToken = await useAuthStore.getState().getToken();
+        if (newToken) {
+          headers.Authorization = `Bearer ${newToken}`;
+          response = await fetch(`${API_URL}/chat/message/stream`, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({}),
-            credentials: "include",
+            headers,
+            body: JSON.stringify({ content, conversationId }),
+            signal: controller.signal,
           });
-          if (refreshRes.ok) {
-            // Relire le cookie CSRF (peut avoir changé après refresh)
-            try {
-              const newCsrf = document.cookie
-                .split("; ")
-                .find((c) => c.startsWith("csrf-token="))
-                ?.split("=")[1];
-              if (newCsrf) headers["X-CSRF-Token"] = newCsrf;
-            } catch {}
-            response = await fetch(`${API_URL}/chat/message/stream`, {
-              method: "POST",
-              headers,
-              body: JSON.stringify({ content, conversationId }),
-              credentials: "include",
-              signal: controller.signal,
-            });
-          }
-        } else if (isMobile) {
-          const { getItemAsync, setItemAsync } = require("expo-secure-store");
-          const refreshToken = await getItemAsync("refreshToken");
-          if (refreshToken) {
-            const refreshRes = await fetch(`${API_URL}/auth/refresh-token`, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ refreshToken }),
-            });
-            if (refreshRes.ok) {
-              const refreshData = await refreshRes.json();
-              if (refreshData.accessToken) {
-                await setItemAsync("accessToken", refreshData.accessToken);
-                headers.Authorization = `Bearer ${refreshData.accessToken}`;
-              }
-              if (refreshData.refreshToken) {
-                await setItemAsync("refreshToken", refreshData.refreshToken);
-              }
-              response = await fetch(`${API_URL}/chat/message/stream`, {
-                method: "POST",
-                headers,
-                body: JSON.stringify({ content, conversationId }),
-                credentials: "omit",
-                signal: controller.signal,
-              });
-            }
-          }
         }
       } catch {
-        // refresh échoué, on continue avec l'erreur originale
+        // refresh échoué
       }
     }
 
