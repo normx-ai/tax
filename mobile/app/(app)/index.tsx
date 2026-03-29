@@ -95,7 +95,7 @@ export default function Dashboard() {
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 24 }}>
         {/* Bienvenue */}
         <View style={{ paddingHorizontal: 16, paddingTop: 16, paddingBottom: 8 }}>
-          <Text style={{ fontSize: 24, fontWeight: "800", color: colors.text }}>
+          <Text style={{ fontSize: 24, fontWeight: "400", color: colors.text }}>
             {getGreeting(t)}, {user?.prenom || t("dashboard.user")} !
           </Text>
           <Text style={{ fontSize: 16, color: colors.textSecondary, marginTop: 2 }}>
