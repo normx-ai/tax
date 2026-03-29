@@ -285,7 +285,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
     </ScrollView>
 
     {/* Boutons écoute flottants */}
-    <View style={{ position: "absolute", bottom: 16, right: 16, flexDirection: "row", gap: 8 }}>
+    <View style={{ position: Platform.OS === "web" ? ("fixed" as any) : "absolute", bottom: 16, right: 16, flexDirection: "row", gap: 8, zIndex: 50 }}>
       {speechState !== "idle" && (
         <TouchableOpacity
           onPress={handleStop}
