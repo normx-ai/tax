@@ -41,6 +41,9 @@ COPY prisma/ prisma/
 # Données statiques (articles CGI)
 COPY data/ data/
 
+# Schema template tenant
+COPY src/db/tenant-schema.sql dist/db/tenant-schema.sql
+
 # Dossier pour les factures PDF
 RUN mkdir -p /app/storage/invoices && chown -R node:node /app/storage
 
