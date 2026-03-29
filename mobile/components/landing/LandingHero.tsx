@@ -52,22 +52,22 @@ export default function LandingHero({ isMobile, loaded }: Props) {
                 {/* Content */}
                 <View style={{ flexDirection: "row" }}>
                   {/* Sidebar */}
-                  <View style={{ width: 100, backgroundColor: DARK, paddingVertical: 8, paddingHorizontal: 6, gap: 4 }}>
-                    {["Dashboard", "CGI", "Code Social", "Simulateurs", "Calendrier", "Chat IA"].map((item, i) => (
-                      <View key={i} style={{ paddingVertical: 5, paddingHorizontal: 6, borderRadius: 4, backgroundColor: i === 3 ? "rgba(212,168,67,0.2)" : "transparent" }}>
-                        <Text style={{ fontSize: 8, color: i === 3 ? PRIMARY : "rgba(255,255,255,0.5)", fontWeight: i === 3 ? "700" : "400" }}>{item}</Text>
+                  <View style={{ width: 110, backgroundColor: DARK, paddingVertical: 10, paddingHorizontal: 8, gap: 5, minHeight: 320 }}>
+                    {["Dashboard", "CGI", "Code Social", "Simulateurs", "Calendrier", "Chat IA", "Audit Facture", "Mon profil"].map((item, i) => (
+                      <View key={i} style={{ paddingVertical: 6, paddingHorizontal: 8, borderRadius: 4, backgroundColor: i === 3 ? "rgba(212,168,67,0.2)" : "transparent" }}>
+                        <Text style={{ fontSize: 9, color: i === 3 ? PRIMARY : "rgba(255,255,255,0.5)", fontWeight: i === 3 ? "700" : "400" }}>{item}</Text>
                       </View>
                     ))}
                   </View>
                   {/* Main */}
-                  <View style={{ flex: 1, padding: 10 }}>
-                    <Text style={{ fontSize: 11, fontWeight: "700", color: "#1f2937", marginBottom: 8 }}>Simulateur ITS</Text>
+                  <View style={{ flex: 1, padding: 12 }}>
+                    <Text style={{ fontSize: 13, fontWeight: "700", color: "#1f2937", marginBottom: 10 }}>Simulateur ITS</Text>
                     {/* Stats row */}
-                    <View style={{ flexDirection: "row", gap: 6, marginBottom: 8 }}>
+                    <View style={{ flexDirection: "row", gap: 8, marginBottom: 10 }}>
                       {[{ val: "1 308 756", lbl: "Brut mensuel", color: PRIMARY }, { val: "48 000", lbl: "CNSS 4%", color: "#ef4444" }, { val: "111 828", lbl: "ITS mensuel", color: "#ef4444" }].map((s, i) => (
-                        <View key={i} style={{ flex: 1, backgroundColor: "#f9fafb", padding: 6, borderRadius: 4 }}>
-                          <Text style={{ fontSize: 12, fontWeight: "700", color: s.color }}>{s.val}</Text>
-                          <Text style={{ fontSize: 7, color: "#6b7280" }}>{s.lbl}</Text>
+                        <View key={i} style={{ flex: 1, backgroundColor: "#f9fafb", padding: 8, borderRadius: 4 }}>
+                          <Text style={{ fontSize: 14, fontWeight: "700", color: s.color }}>{s.val}</Text>
+                          <Text style={{ fontSize: 8, color: "#6b7280", marginTop: 2 }}>{s.lbl}</Text>
                         </View>
                       ))}
                     </View>
@@ -81,13 +81,16 @@ export default function LandingHero({ isMobile, loaded }: Props) {
                         { label: "SALAIRE BRUT MENSUEL", val: "1 308 756", color: "#1f2937" },
                         { label: "C.N.S.S. MENSUEL - 4%", val: "- 48 000", color: "#ef4444" },
                         { label: "NET IMPOSABLE 80%", val: "1 008 605", color: "#1f2937" },
+                        { label: "SALAIRE BRUT ANNUEL", val: "15 705 072", color: "#1f2937" },
+                        { label: "C.N.S.S. ANNUEL", val: "- 576 000", color: "#ef4444" },
+                        { label: "NET IMPOSABLE ANNUEL", val: "12 103 258", color: "#1f2937" },
                         { label: "QUOTIENT FAMILIAL", val: "3 458 074", color: PRIMARY },
                         { label: "ITS ANNUEL", val: "1 341 939", color: "#1f2937" },
                         { label: "ITS MENSUEL", val: "111 828", color: "#ef4444" },
                       ].map((row, i) => (
-                        <View key={i} style={{ flexDirection: "row", paddingVertical: 4, paddingHorizontal: 6, borderBottomWidth: 1, borderBottomColor: "#e5e7eb" }}>
-                          <Text style={{ flex: 2, fontSize: 8, color: "#374151" }}>{row.label}</Text>
-                          <Text style={{ flex: 1, fontSize: 8, fontWeight: "600", color: row.color, textAlign: "right" }}>{row.val}</Text>
+                        <View key={i} style={{ flexDirection: "row", paddingVertical: 5, paddingHorizontal: 8, borderBottomWidth: 1, borderBottomColor: "#e5e7eb" }}>
+                          <Text style={{ flex: 2, fontSize: 9, color: "#374151" }}>{row.label}</Text>
+                          <Text style={{ flex: 1, fontSize: 9, fontWeight: "600", color: row.color, textAlign: "right" }}>{row.val}</Text>
                         </View>
                       ))}
                     </View>
