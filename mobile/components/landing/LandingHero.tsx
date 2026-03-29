@@ -1,8 +1,50 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Platform } from "react-native";
+import { useEffect } from "react";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useAuthStore } from "@/lib/store/auth";
 
 const PRIMARY = "#D4A843";
+
+// Injecter les animations CSS au montage (web uniquement)
+function useInjectAnimations() {
+  useEffect(() => {
+    if (Platform.OS !== "web") return;
+    const id = "normx-hero-animations";
+    if (document.getElementById(id)) return;
+    const style = document.createElement("style");
+    style.id = id;
+    style.textContent = `
+      @keyframes heroFadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes heroSlideRight { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: translateX(0); } }
+      @keyframes heroPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(212,168,67,0); } 50% { box-shadow: 0 0 12px 2px rgba(212,168,67,0.12); } }
+      .hero-stat { animation: heroFadeUp 0.5s ease-out both; }
+      .hero-stat:nth-child(1) { animation-delay: 0.3s; }
+      .hero-stat:nth-child(2) { animation-delay: 0.5s; }
+      .hero-stat:nth-child(3) { animation-delay: 0.7s; }
+      .hero-sidebar-item { animation: heroSlideRight 0.4s ease-out both; }
+      .hero-sidebar-item:nth-child(1) { animation-delay: 0.2s; }
+      .hero-sidebar-item:nth-child(2) { animation-delay: 0.3s; }
+      .hero-sidebar-item:nth-child(3) { animation-delay: 0.4s; }
+      .hero-sidebar-item:nth-child(4) { animation-delay: 0.5s; }
+      .hero-sidebar-item:nth-child(5) { animation-delay: 0.6s; }
+      .hero-sidebar-item:nth-child(6) { animation-delay: 0.7s; }
+      .hero-sidebar-item:nth-child(7) { animation-delay: 0.8s; }
+      .hero-sidebar-item:nth-child(8) { animation-delay: 0.9s; }
+      .hero-row { animation: heroFadeUp 0.4s ease-out both; }
+      .hero-row:nth-child(1) { animation-delay: 0.8s; }
+      .hero-row:nth-child(2) { animation-delay: 0.9s; }
+      .hero-row:nth-child(3) { animation-delay: 1.0s; }
+      .hero-row:nth-child(4) { animation-delay: 1.1s; }
+      .hero-row:nth-child(5) { animation-delay: 1.2s; }
+      .hero-row:nth-child(6) { animation-delay: 1.3s; }
+      .hero-row:nth-child(7) { animation-delay: 1.4s; }
+      .hero-row:nth-child(8) { animation-delay: 1.5s; }
+      .hero-row:nth-child(9) { animation-delay: 1.6s; }
+      .hero-macbook { animation: heroPulse 3s ease-in-out 2s infinite; }
+    `;
+    document.head.appendChild(style);
+  }, []);
+}
 const DARK = "#0F2A42";
 const TEXT_SEC = "#6b7280";
 const BG_WARM = "#faf8f5";
@@ -15,6 +57,7 @@ interface Props {
 export default function LandingHero({ isMobile, loaded }: Props) {
   const login = useAuthStore((s) => s.login);
   const register = useAuthStore((s) => s.register);
+  useInjectAnimations();
 
   const stats = [
     { value: "+2 200", label: "Articles de loi" },
@@ -38,7 +81,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
         {!isMobile && (
           <View style={{ flex: 1, maxWidth: 520 }}>
             {/* MacBook frame */}
-            <View style={{ backgroundColor: "#222", borderRadius: 12, padding: 4, paddingBottom: 0, borderWidth: 2, borderColor: "#333" }}>
+            <View style={{ backgroundColor: "#222", borderRadius: 12, padding: 4, paddingBottom: 0, borderWidth: 2, borderColor: "#333", ...(Platform.OS === "web" ? { animationName: "heroPulse", animationDuration: "3s", animationIterationCount: "infinite", animationDelay: "2s", animationTimingFunction: "ease-in-out" } as Record<string, string> : {}) }}>
               <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: "#444", alignSelf: "center", marginBottom: 3 }} />
               {/* Ecran */}
               <View style={{ backgroundColor: "#fff", borderRadius: 2, overflow: "hidden" }}>
@@ -54,7 +97,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
                   {/* Sidebar */}
                   <View style={{ width: 110, backgroundColor: DARK, paddingVertical: 10, paddingHorizontal: 8, gap: 5, minHeight: 320 }}>
                     {["Dashboard", "CGI", "Code Social", "Simulateurs", "Calendrier", "Chat IA", "Audit Facture", "Mon profil"].map((item, i) => (
-                      <View key={i} style={{ paddingVertical: 6, paddingHorizontal: 8, borderRadius: 4, backgroundColor: i === 3 ? "rgba(212,168,67,0.2)" : "transparent" }}>
+                      <View key={i} style={{ paddingVertical: 6, paddingHorizontal: 8, borderRadius: 4, backgroundColor: i === 3 ? "rgba(212,168,67,0.2)" : "transparent", ...(Platform.OS === "web" ? { animationName: "heroSlideRight", animationDuration: "0.4s", animationFillMode: "both", animationDelay: `${0.2 + i * 0.1}s` } as Record<string, string> : {}) }}>
                         <Text style={{ fontSize: 9, color: i === 3 ? PRIMARY : "rgba(255,255,255,0.5)", fontWeight: i === 3 ? "700" : "400" }}>{item}</Text>
                       </View>
                     ))}
@@ -65,7 +108,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
                     {/* Stats row */}
                     <View style={{ flexDirection: "row", gap: 8, marginBottom: 10 }}>
                       {[{ val: "1 308 756", lbl: "Brut mensuel", color: PRIMARY }, { val: "48 000", lbl: "CNSS 4%", color: "#ef4444" }, { val: "111 828", lbl: "ITS mensuel", color: "#ef4444" }].map((s, i) => (
-                        <View key={i} style={{ flex: 1, backgroundColor: "#f9fafb", padding: 8, borderRadius: 4 }}>
+                        <View key={i} style={{ flex: 1, backgroundColor: "#f9fafb", padding: 8, borderRadius: 4, ...(Platform.OS === "web" ? { animationName: "heroFadeUp", animationDuration: "0.5s", animationFillMode: "both", animationDelay: `${0.3 + i * 0.2}s` } as Record<string, string> : {}) }}>
                           <Text style={{ fontSize: 14, fontWeight: "700", color: s.color }}>{s.val}</Text>
                           <Text style={{ fontSize: 8, color: "#6b7280", marginTop: 2 }}>{s.lbl}</Text>
                         </View>
@@ -88,7 +131,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
                         { label: "ITS ANNUEL", val: "1 341 939", color: "#1f2937" },
                         { label: "ITS MENSUEL", val: "111 828", color: "#ef4444" },
                       ].map((row, i) => (
-                        <View key={i} style={{ flexDirection: "row", paddingVertical: 5, paddingHorizontal: 8, borderBottomWidth: 1, borderBottomColor: "#e5e7eb" }}>
+                        <View key={i} style={{ flexDirection: "row", paddingVertical: 5, paddingHorizontal: 8, borderBottomWidth: 1, borderBottomColor: "#e5e7eb", ...(Platform.OS === "web" ? { animationName: "heroFadeUp", animationDuration: "0.4s", animationFillMode: "both", animationDelay: `${0.8 + i * 0.1}s` } as Record<string, string> : {}) }}>
                           <Text style={{ flex: 2, fontSize: 9, color: "#374151" }}>{row.label}</Text>
                           <Text style={{ flex: 1, fontSize: 9, fontWeight: "600", color: row.color, textAlign: "right" }}>{row.val}</Text>
                         </View>
