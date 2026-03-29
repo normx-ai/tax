@@ -144,8 +144,6 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
       if (Platform.OS === "web") {
         window.speechSynthesis?.pause();
       } else {
-        // expo-speech n'a pas de pause native : on stop et on garde l'index
-        // pour reprendre au chunk suivant (le chunk en cours est perdu)
         stoppedRef.current = true;
         await Speech.stop();
       }
@@ -155,12 +153,11 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
 
     if (speechState === "paused") {
       // Reprendre
-      stoppedRef.current = false;
       if (Platform.OS === "web") {
         window.speechSynthesis?.resume();
         setSpeechState("playing");
       } else {
-        // Reprendre au chunk suivant (le chunk en cours a été interrompu)
+        stoppedRef.current = false;
         const resumeIndex = chunkIndexRef.current;
         setSpeechState("playing");
         speakChunk(chunksRef.current, resumeIndex);
@@ -172,15 +169,30 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
     stoppedRef.current = false;
     chunkIndexRef.current = 0;
     chunksRef.current = getChunks();
-    setSpeechState("playing");
-    speakChunk(chunksRef.current, 0);
+
+    if (Platform.OS === "web") {
+      // Sur web : utiliser speechSynthesis directement pour pause/resume
+      window.speechSynthesis?.cancel();
+      const allText = chunksRef.current.join(" ... ");
+      const utterance = new SpeechSynthesisUtterance(allText);
+      utterance.lang = "fr-FR";
+      utterance.rate = 0.9;
+      utterance.onend = () => { setSpeechState("idle"); chunkIndexRef.current = 0; };
+      utterance.onerror = () => { setSpeechState("idle"); chunkIndexRef.current = 0; };
+      window.speechSynthesis?.speak(utterance);
+      setSpeechState("playing");
+    } else {
+      setSpeechState("playing");
+      speakChunk(chunksRef.current, 0);
+    }
   };
 
   const handleStop = async () => {
     stoppedRef.current = true;
-    await Speech.stop();
     if (Platform.OS === "web") {
       window.speechSynthesis?.cancel();
+    } else {
+      await Speech.stop();
     }
     setSpeechState("idle");
     chunkIndexRef.current = 0;
