@@ -79,10 +79,11 @@ export default function LandingHero({ isMobile, loaded }: Props) {
       }}>
         {/* Colonne gauche — Mockup CSS Tax */}
         {!isMobile && (
-          <View style={{ flex: 1, maxWidth: 520 }}>
-            {/* MacBook frame */}
-            <View style={{ backgroundColor: "#222", borderRadius: 12, padding: 4, paddingBottom: 0, borderWidth: 2, borderColor: "#333", ...(Platform.OS === "web" ? { animationName: "heroPulse", animationDuration: "3s", animationIterationCount: "infinite", animationDelay: "2s", animationTimingFunction: "ease-in-out" } as Record<string, string> : {}) }}>
-              <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: "#444", alignSelf: "center", marginBottom: 3 }} />
+          <View style={{ flex: 1, maxWidth: 540 }}>
+            {/* MacBook Air frame */}
+            <View style={{ backgroundColor: "#e2e2e2", borderRadius: 14, padding: 6, paddingBottom: 0, borderWidth: 1, borderColor: "#d4d4d4", ...(Platform.OS === "web" ? { animationName: "heroPulse", animationDuration: "3s", animationIterationCount: "infinite", animationDelay: "2s", animationTimingFunction: "ease-in-out" } as Record<string, string> : {}) }}>
+              {/* Caméra notch */}
+              <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: "#1a1a1a", alignSelf: "center", marginBottom: 4, borderWidth: 1, borderColor: "#333" }} />
               {/* Ecran */}
               <View style={{ backgroundColor: "#fff", borderRadius: 2, overflow: "hidden" }}>
                 {/* Topbar mockup */}
@@ -141,10 +142,12 @@ export default function LandingHero({ isMobile, loaded }: Props) {
                 </View>
               </View>
             </View>
-            {/* MacBook base */}
-            <View style={{ height: 12, backgroundColor: "#c8c8c8", borderBottomLeftRadius: 4, borderBottomRightRadius: 4 }}>
-              <View style={{ width: 80, height: 4, backgroundColor: "#9a9a9a", borderBottomLeftRadius: 4, borderBottomRightRadius: 4, alignSelf: "center" }} />
+            {/* MacBook Air base — wedge design */}
+            <View style={{ height: 8, backgroundColor: "#d1d1d1", borderBottomLeftRadius: 2, borderBottomRightRadius: 2, marginHorizontal: 20 }}>
+              <View style={{ width: 60, height: 3, backgroundColor: "#b0b0b0", borderBottomLeftRadius: 2, borderBottomRightRadius: 2, alignSelf: "center" }} />
             </View>
+            {/* Ombre */}
+            <View style={{ height: 4, marginHorizontal: 40, ...(Platform.OS === "web" ? { background: "radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%, transparent 70%)" } as Record<string, string> : {}) }} />
           </View>
         )}
 
