@@ -103,24 +103,23 @@ export default function Dashboard() {
                   key={a.label}
                   onPress={() => a.route && router.push(a.route as Href)}
                   disabled={disabled}
+                  accessibilityLabel={a.label}
+                  // @ts-ignore - title works on web for hover tooltip
+                  title={a.label}
                   style={{
                     backgroundColor: colors.card,
                     borderWidth: 1,
                     borderColor: colors.border,
                     borderRadius: 12,
-                    paddingHorizontal: 16,
-                    paddingVertical: 12,
+                    padding: 12,
                     alignItems: "center",
+                    justifyContent: "center",
                     opacity: disabled ? 0.5 : 1,
-                    minWidth: 100,
+                    width: 56,
+                    height: 56,
                   }}
                 >
-                  <View style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: `${a.color}15`, alignItems: "center", justifyContent: "center", marginBottom: 6 }}>
-                    <Ionicons name={a.icon} size={20} color={a.color} />
-                  </View>
-                  <Text style={{ fontSize: 12, fontWeight: "500", color: colors.text, textAlign: "center" }} numberOfLines={2}>
-                    {a.label}
-                  </Text>
+                  <Ionicons name={a.icon} size={22} color={a.color} />
                 </TouchableOpacity>
               );
             })}
