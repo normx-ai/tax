@@ -20,8 +20,15 @@ export default function LoginKeycloak() {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
 
   useEffect(() => {
-    // Si deja authentifie, ne rien faire (le layout redirigera)
-  }, [isAuthenticated]);
+    // Sur web, rediriger automatiquement vers Keycloak
+    if (typeof window !== "undefined" && !isAuthenticated && !isLoading) {
+      // Verifier si on revient de Keycloak avec un ?code=
+      const params = new URLSearchParams(window.location.search);
+      if (!params.has("code")) {
+        login();
+      }
+    }
+  }, [isAuthenticated, isLoading]);
 
   if (isLoading) {
     return (
