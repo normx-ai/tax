@@ -34,6 +34,7 @@ export interface AuthRequest extends Request {
   orgRole?: string;
   orgPermissions?: Record<string, boolean>;
   quotaIncremented?: boolean;
+  tenantSchema?: string;
 }
 
 interface KeycloakPayload {
