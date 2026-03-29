@@ -156,22 +156,13 @@ export default function Dashboard() {
             }}
           >
             <Ionicons
-              name="alert-circle"
+              name="calendar-outline"
               size={20}
               color={prochaineEcheance.joursRestants <= 3 ? colors.danger : prochaineEcheance.joursRestants <= 7 ? colors.warning : colors.primary}
             />
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 13, fontWeight: "500", color: colors.text }}>
-                {prochaineEcheance.echeance.label}
-              </Text>
-              <Text style={{ fontSize: 11, color: colors.textMuted }}>
-                {prochaineEcheance.joursRestants === 0
-                  ? "Aujourd'hui"
-                  : prochaineEcheance.joursRestants === 1
-                  ? "Demain"
-                  : `Dans ${prochaineEcheance.joursRestants} jours`}
-                {" — "}
-                {prochaineEcheance.date.toLocaleDateString("fr-FR", { day: "numeric", month: "long" })}
+                Prochaine échéance : {prochaineEcheance.date.toLocaleDateString("fr-FR", { day: "numeric", month: "long" })}
               </Text>
             </View>
             <Ionicons name="chevron-forward" size={14} color={colors.textMuted} />
