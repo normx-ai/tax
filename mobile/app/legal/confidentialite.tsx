@@ -70,7 +70,7 @@ export default function ConfidentialitePublicScreen() {
             </View>
             <View>
               <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 22, color: colors.text }}>
-                NORMX <Text style={{ color: GOLD }}>Tax</Text>
+                NORMX <Text style={{ color: GOLD }}>AI</Text>
               </Text>
               <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted }}>
                 Politique de confidentialité
@@ -90,11 +90,11 @@ export default function ConfidentialitePublicScreen() {
             1. Responsable du traitement
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Le responsable du traitement des données personnelles collectées via l'application CGI 242 est :{"\n\n"}
+            Le responsable du traitement des données personnelles collectées via la plateforme NORMX AI est :{"\n\n"}
             NORMX AI SAS{"\n"}
             Société par Actions Simplifiée au capital de 1 000 €{"\n"}
             Siège social : 5 rue Benjamin Raspail, 60100 Creil{"\n"}
-            En cours d'immatriculation au RCS de Compiègne{"\n\n"}
+            RCS Compiègne : 941 200 169{"\n\n"}
             Référente protection des données : Christelle MABIKA{"\n"}
             Email : info-contact@normx-ai.com{"\n"}
             Téléphone : 06 20 76 94 24

@@ -59,7 +59,7 @@ export default function MentionsLegalesScreen() {
             </View>
             <View>
               <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 22, color: colors.text }}>
-                NORMX <Text style={{ color: GOLD }}>Tax</Text>
+                NORMX <Text style={{ color: GOLD }}>AI</Text>
               </Text>
               <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted }}>
                 Mentions légales
@@ -82,7 +82,7 @@ export default function MentionsLegalesScreen() {
           <InfoRow label="Forme juridique" value="Société par Actions Simplifiée (SAS)" colors={colors} />
           <InfoRow label="Capital social" value="1 000 €" colors={colors} />
           <InfoRow label="Siège social" value="5 rue Benjamin Raspail, 60100 Creil" colors={colors} />
-          <InfoRow label="Immatriculation" value="En cours d'immatriculation au RCS de Compiègne" colors={colors} />
+          <InfoRow label="RCS" value="Compiègne — 941 200 169" colors={colors} />
           <InfoRow label="Téléphone" value="06 20 76 94 24" colors={colors} />
           <InfoRow label="Email" value="info-contact@normx-ai.com" colors={colors} />
 
@@ -109,7 +109,7 @@ export default function MentionsLegalesScreen() {
             4. Objet de l'application
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, paddingLeft: 8 }}>
-            L'application CGI 242, commercialisée sous le nom de produit NORMX Tax, est éditée par NORMX AI SAS. NORMX Tax est une plateforme numérique dédiée à la consultation des Codes Généraux des Impôts des pays d'Afrique, aux simulations fiscales et à l'assistance par intelligence artificielle en matière fiscale.
+            NORMX AI est une plateforme numérique SaaS éditée par NORMX AI SAS, proposant des outils de comptabilité (SYSCOHADA/SYCEBNL), de fiscalité (CGI Congo 2026, code social), de gestion de la paie, de génération d'états financiers et de documents juridiques conformes au droit OHADA, assistés par intelligence artificielle.
           </Text>
 
           {/* 5. Propriété intellectuelle */}

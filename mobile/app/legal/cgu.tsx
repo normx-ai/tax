@@ -57,7 +57,7 @@ export default function CGUPublicScreen() {
             </View>
             <View>
               <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 22, color: colors.text }}>
-                NORMX <Text style={{ color: GOLD }}>Tax</Text>
+                NORMX <Text style={{ color: GOLD }}>AI</Text>
               </Text>
               <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted }}>
                 Conditions Générales d'Utilisation
@@ -77,8 +77,8 @@ export default function CGUPublicScreen() {
             Article 1 — Objet
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de l'application CGI 242 (ci-après « NORMX Tax »), éditée par NORMX AI SAS, société par actions simplifiée au capital de 1 000 €, en cours d'immatriculation au RCS de Compiègne, dont le siège social est situé au 5 rue Benjamin Raspail, 60100 Creil.{"\n\n"}
-            CGI 242 est une plateforme numérique dédiée à la consultation des Codes Généraux des Impôts des pays d'Afrique, aux simulations fiscales et à l'assistance par intelligence artificielle en matière fiscale.{"\n\n"}
+            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de la plateforme NORMX AI, éditée par NORMX AI SAS, société par actions simplifiée au capital de 1 000 €, immatriculée au RCS de Compiègne sous le numéro 941 200 169, dont le siège social est situé au 5/7 rue Benjamin Raspail, 60100 Creil.{"\n\n"}
+            NORMX AI est une plateforme numérique comprenant les produits suivants : NORMX Tax (fiscalité et simulations), NORMX Compta (comptabilité), NORMX Paie (gestion de la paie), NORMX États (états financiers) et NORMX Legal (documents juridiques OHADA).{"\n\n"}
             L'utilisation de l'application implique l'acceptation pleine et entière des présentes CGU ainsi que de la Politique de confidentialité accessible depuis l'application.
           </Text>
 
