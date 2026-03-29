@@ -110,9 +110,9 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
             alignItems: "center",
             justifyContent: isCollapsed ? "center" : "space-between",
             paddingHorizontal: isCollapsed ? 0 : 16,
-            paddingVertical: 12,
+            height: 54,
             backgroundColor: "#0F2A42",
-            marginBottom: 8,
+            marginBottom: 0,
           }}
         >
           {isCollapsed ? (
