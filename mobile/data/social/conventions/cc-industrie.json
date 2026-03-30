@@ -1,124 +1,373 @@
 {
   "meta": {
     "code": "social",
-    "document": "Convention Collective de l'Industrie et Métallurgie",
-    "pays": "République du Congo",
-    "edition": "2008",
+    "document": "Convention Collective de l'Industrie et M\u00e9tallurgie",
+    "pays": "R\u00e9publique du Congo",
+    "edition": "2010",
     "tome": null,
     "partie": "Conventions collectives",
     "livre": null,
     "chapitre": null,
-    "chapitre_titre": "Convention Collective de l'Industrie et Métallurgie",
+    "chapitre_titre": "Convention Collective de l'Industrie et M\u00e9tallurgie",
     "section": null,
     "section_titre": null,
     "page_source": 1,
-    "signataires": "Fédération de l'industrie / UNICONGO (employeurs) / FESYTRALIM / CSC, FESYTRIM / CSTC (travailleurs)",
-    "date_signature": "2008"
+    "signataires": "F\u00e9d\u00e9ration de l'industrie / UNICONGO (employeurs) / FESYTRALIM / CSC, FESYTRIM / CSTC (travailleurs)",
+    "date_signature": "30 mars 2010",
+    "lieu_signature": "Pointe-Noire",
+    "abroge": "Convention collective de l'industrie du 20 d\u00e9cembre 1991"
   },
   "articles": [
     {
       "article": "Art. 1",
       "titre": "Objet et champ d'application",
       "texte": [
-        "La présente convention et ses annexes règlent les rapports de travail entre les employeurs et les salariés tels qu'ils sont définis à l'article 2 du code du travail en vigueur, quels que soient leur sexe et leur origine, employés dans les entreprises industrielles de droit congolais exerçant leurs activités sur, ou à partir du territoire de la République du Congo.",
-        "L'ensemble du personnel de tous les établissements de l'une des entreprises définies à l'article 1er et quelle que soit l'activité propre à tel ou tel établissement, est soumis à la présente convention collective, sauf accord contractuel au sein de l'entreprise.",
-        "Des annexes à la présente convention déterminent les classifications professionnelles et la grille des salaires."
+        "La pr\u00e9sente convention et ses annexes r\u00e8glent les rapports de travail entre les employeurs et les salari\u00e9s tels qu'ils sont d\u00e9finis \u00e0 l'article 2 du code du travail en vigueur, quels que soient leur sexe et leur origine, employ\u00e9s dans les entreprises industrielles de droit congolais exer\u00e7ant leurs activit\u00e9s sur, ou \u00e0 partir du territoire de la R\u00e9publique du Congo.",
+        "L'ensemble du personnel de tous les \u00e9tablissements de l'une des entreprises d\u00e9finies \u00e0 l'article 1er et quelle que soit l'activit\u00e9 propre \u00e0 tel ou tel \u00e9tablissement, est soumis \u00e0 la pr\u00e9sente convention collective, sauf accord contractuel au sein de l'entreprise.",
+        "Des annexes \u00e0 la pr\u00e9sente convention d\u00e9terminent les classifications professionnelles et la grille des salaires."
       ],
-      "mots_cles": ["objet", "champ d'application", "industrie", "métallurgie", "entreprises industrielles"],
+      "mots_cles": ["objet", "champ d'application", "industrie", "m\u00e9tallurgie", "entreprises industrielles"],
       "statut": "en vigueur",
-      "section": "Titre I : Des clauses générales"
+      "section": "Titre I : Des clauses g\u00e9n\u00e9rales"
     },
     {
       "article": "Art. 2",
-      "titre": "Abrogation de la Convention antérieure",
+      "titre": "Abrogation de la Convention ant\u00e9rieure",
       "texte": [
-        "La présente convention collective remplace la convention collective de l'industrie du 20 décembre 1991 et ses annexes."
+        "La pr\u00e9sente convention collective remplace la convention collective de l'industrie du 20 d\u00e9cembre 1991 et ses annexes."
       ],
       "mots_cles": ["abrogation", "convention 1991"],
       "statut": "en vigueur",
-      "section": "Titre I : Des clauses générales"
+      "section": "Titre I : Des clauses g\u00e9n\u00e9rales"
     },
     {
       "article": "Art. 3",
-      "titre": "Durée - Date d'application - Dénonciation - Révision",
+      "titre": "Dur\u00e9e - Date d'application - D\u00e9nonciation - R\u00e9vision",
       "texte": [
-        "DUREE :",
-        "La présente convention est conclue pour une durée indéterminée.",
+        "DUR\u00c9E :",
+        "La pr\u00e9sente convention est conclue pour une dur\u00e9e ind\u00e9termin\u00e9e.",
         "DATE D'APPLICATION :",
-        "Elle est applicable à partir du jour qui suit son dépôt au greffe du tribunal du travail de Pointe-Noire, par la partie la plus diligente.",
-        "DENONCIATION :",
-        "Elle peut être dénoncée au plus tôt trois (3) ans après sa signature, sous réserve d'un préavis de trois (3) mois donné par lettre recommandée avec accusé de réception par celle des parties qui le désire.",
-        "La partie qui prend l'initiative de la dénonciation doit exposer, dans sa lettre de préavis, le motif précis de la dénonciation et joindre un projet de la nouvelle Convention. Les pourparlers doivent s'ouvrir dans un délai qui n'excède pas un (1) mois après expiration du délai de préavis.",
-        "REVISION :",
-        "La présente convention, de même que tout avenant qui pourrait être pris ultérieurement, sont susceptibles de révision au plus tôt un (1) an après leur signature.",
-        "La demande de révision doit être faite, sous réserve d'un préavis de deux (2) mois, par lettre recommandée, adressée par la partie qui en prend l'initiative à toutes les autres parties contractantes. Cette demande doit indiquer les dispositions mises en cause et être accompagnée de propositions écrites, afin que les pourparlers puissent commencer sans retard et dans un délai qui ne peut excéder un (1) mois après expiration du délai de préavis.",
+        "Elle est applicable \u00e0 partir du jour qui suit son d\u00e9p\u00f4t au greffe du tribunal du travail de Pointe-Noire, par la partie la plus diligente.",
+        "D\u00c9NONCIATION :",
+        "Elle peut \u00eatre d\u00e9nonc\u00e9e au plus t\u00f4t trois (3) ans apr\u00e8s sa signature, sous r\u00e9serve d'un pr\u00e9avis de trois (3) mois donn\u00e9 par lettre recommand\u00e9e avec accus\u00e9 de r\u00e9ception par celle des parties qui le d\u00e9sire.",
+        "La partie qui prend l'initiative de la d\u00e9nonciation doit exposer, dans sa lettre de pr\u00e9avis, le motif pr\u00e9cis de la d\u00e9nonciation et joindre un projet de la nouvelle Convention. Les pourparlers doivent s'ouvrir dans un d\u00e9lai qui n'exc\u00e8de pas un (1) mois apr\u00e8s expiration du d\u00e9lai de pr\u00e9avis.",
+        "R\u00c9VISION :",
+        "La pr\u00e9sente convention, de m\u00eame que tout avenant qui pourrait \u00eatre pris ult\u00e9rieurement, sont susceptibles de r\u00e9vision au plus t\u00f4t un (1) an apr\u00e8s leur signature.",
+        "La demande de r\u00e9vision doit \u00eatre faite, sous r\u00e9serve d'un pr\u00e9avis de deux (2) mois, par lettre recommand\u00e9e, adress\u00e9e par la partie qui en prend l'initiative \u00e0 toutes les autres parties contractantes. Cette demande doit indiquer les dispositions mises en cause et \u00eatre accompagn\u00e9e de propositions \u00e9crites, afin que les pourparlers puissent commencer sans retard et dans un d\u00e9lai qui ne peut exc\u00e9der un (1) mois apr\u00e8s expiration du d\u00e9lai de pr\u00e9avis.",
         "DISPOSITIONS COMMUNES :",
-        "Les parties s'interdisent d'avoir recours au lock-out ou à la grève pendant le préavis de dénonciation, le préavis de révision, ainsi que pendant les pourparlers qui y sont consécutifs pour des motifs touchant à l'objet même de la dénonciation ou de la révision.",
-        "Qu'il s'agisse de dénonciation ou de révision, la présente convention restera en vigueur jusqu'à la date d'application de la nouvelle convention ou des nouvelles dispositions signées à la suite de la dénonciation ou de la révision demandée par l'une des parties, pour autant que celles-ci interviennent dans un délai maximum d'un (1) an. Passé ce délai, la présente convention collective ou les dispositions mises en cause cesseront de produire leurs effets et les parties se référeront à la législation et à la réglementation du travail en vigueur."
+        "Les parties s'interdisent d'avoir recours au lock-out ou \u00e0 la gr\u00e8ve pendant le pr\u00e9avis de d\u00e9nonciation, le pr\u00e9avis de r\u00e9vision, ainsi que pendant les pourparlers qui y sont cons\u00e9cutifs pour des motifs touchant \u00e0 l'objet m\u00eame de la d\u00e9nonciation ou de la r\u00e9vision.",
+        "Qu'il s'agisse de d\u00e9nonciation ou de r\u00e9vision, la pr\u00e9sente convention restera en vigueur jusqu'\u00e0 la date d'application de la nouvelle convention ou des nouvelles dispositions sign\u00e9es \u00e0 la suite de la d\u00e9nonciation ou de la r\u00e9vision demand\u00e9e par l'une des parties, pour autant que celles-ci interviennent dans un d\u00e9lai maximum d'un (1) an. Pass\u00e9 ce d\u00e9lai, la pr\u00e9sente convention collective ou les dispositions mises en cause cesseront de produire leurs effets et les parties se r\u00e9f\u00e9reront \u00e0 la l\u00e9gislation et \u00e0 la r\u00e9glementation du travail en vigueur."
       ],
-      "mots_cles": ["durée indéterminée", "dénonciation 3 ans", "3 mois préavis", "révision 1 an", "2 mois préavis"],
+      "mots_cles": ["dur\u00e9e ind\u00e9termin\u00e9e", "d\u00e9nonciation 3 ans", "3 mois pr\u00e9avis", "r\u00e9vision 1 an", "2 mois pr\u00e9avis"],
       "statut": "en vigueur",
-      "section": "Titre I : Des clauses générales"
+      "section": "Titre I : Des clauses g\u00e9n\u00e9rales"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Adh\u00e9sion post\u00e9rieure \u00e0 la signature",
+      "texte": [
+        "Toute entreprise ou groupe d'entreprises dont l'objet social entre dans le champ d'application de la pr\u00e9sente convention peut y adh\u00e9rer par lettre recommand\u00e9e adress\u00e9e au greffe du tribunal du travail, aux parties contractantes ainsi qu'\u00e0 la Direction D\u00e9partementale du Travail.",
+        "L'adh\u00e9sion prend effet \u00e0 compter du jour suivant la notification au greffe.",
+        "L'adh\u00e9rant ne peut ni d\u00e9noncer ni demander la r\u00e9vision, m\u00eame partielle, de la pr\u00e9sente convention ; elle ne peut que proc\u00e9der au retrait de son adh\u00e9sion.",
+        "Les organisations signataires ne sont pas tenues de faire une place \u00e0 l'adh\u00e9rent dans les organismes ou commissions paritaires pr\u00e9vus par la pr\u00e9sente convention."
+      ],
+      "mots_cles": ["adh\u00e9sion", "lettre recommand\u00e9e", "greffe", "retrait"],
+      "statut": "en vigueur",
+      "section": "Titre I : Des clauses g\u00e9n\u00e9rales"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Avantages acquis",
+      "texte": [
+        "La pr\u00e9sente convention ne peut \u00eatre la cause de restriction aux avantages individuels acquis par le travailleur \u00e0 la date de son application.",
+        "Le maintien de ces avantages ne jouera que pour le personnel en service \u00e0 la date d'application de la pr\u00e9sente convention.",
+        "Les avantages reconnus par la pr\u00e9sente convention ne peuvent en aucun cas s'ajouter aux avantages d\u00e9j\u00e0 acquis pour le m\u00eame objet en vertu de conventions ou accords ant\u00e9rieurs.",
+        "Les contrats individuels de travail post\u00e9rieurs \u00e0 la date d'application de la pr\u00e9sente convention sont soumis aux dispositions de celle-ci comme conditions minima d'engagement.",
+        "Les dispositions de la pr\u00e9sente convention s'appliquent de plein droit aux contrats en cours."
+      ],
+      "mots_cles": ["avantages acquis", "maintien", "conditions minima"],
+      "statut": "en vigueur",
+      "section": "Titre I : Des clauses g\u00e9n\u00e9rales"
     },
     {
       "article": "Art. 6",
-      "titre": "Exercice du droit syndical et liberté d'opinion",
+      "titre": "Exercice du droit syndical et libert\u00e9 d'opinion",
       "texte": [
-        "Les parties signataires reconnaissent la liberté d'opinion ainsi que le droit d'adhérer librement et d'appartenir à un syndicat professionnel constitué conformément à la réglementation du travail.",
-        "En vue de garantir la liberté d'opinion et de permettre le libre exercice du droit syndical, l'employeur s'engage à :",
-        "* ne pas prendre en considération le fait d'appartenir ou non à un syndicat, les opinions politiques ou philosophiques, la race, les croyances religieuses ou les origines du salarié pour arrêter les décisions en ce qui concerne l'embauche, la conduite ou la répartition du travail, les mesures de discipline, le congédiement et l'avancement ;",
-        "* n'exercer ni pressions, ni mesures discriminatoires en faveur ou à l'encontre d'une organisation syndicale quelconque.",
-        "Dans le même but, les salariés s'engagent à ne pas prendre en considération tant dans l'exécution du travail que dans leurs relations socio-professionnelles, le fait d'appartenir ou non à un syndicat, les opinions politiques ou philosophiques, la race, les croyances religieuses ou les origines des autres salariés.",
-        "L'exercice du droit syndical ne doit pas avoir de conséquences des actes contraires aux lois, règlements et usages, notamment ceux stipulés par la présente convention et par la profession.",
-        "Les parties signataires s'engagent à respecter la liberté d'opinion, à n'exercer aucune pression tendant à gêner l'exercice du droit syndical ou celui du droit de propriété au sein de l'entreprise et de la profession.",
-        "Les parties signataires, considérant que l'entreprise est essentiellement un lieu de travail, veillent à la stricte observation des engagements ci-dessus et s'emploient auprès de leurs adhérents à en assurer le respect intégral."
+        "Les parties signataires reconnaissent la libert\u00e9 d'opinion ainsi que le droit d'adh\u00e9rer librement et d'appartenir \u00e0 un syndicat professionnel constitu\u00e9 conform\u00e9ment \u00e0 la r\u00e9glementation du travail.",
+        "En vue de garantir la libert\u00e9 d'opinion et de permettre le libre exercice du droit syndical, l'employeur s'engage \u00e0 ne pas prendre en consid\u00e9ration le fait d'appartenir ou non \u00e0 un syndicat, les opinions politiques ou philosophiques, la race, les croyances religieuses ou les origines du salari\u00e9 pour arr\u00eater les d\u00e9cisions en ce qui concerne l'embauche, la conduite ou la r\u00e9partition du travail, les mesures de discipline, le cong\u00e9diement et l'avancement.",
+        "Dans le m\u00eame but, les salari\u00e9s s'engagent \u00e0 ne pas prendre en consid\u00e9ration tant dans l'ex\u00e9cution du travail que dans leurs relations socio-professionnelles, le fait d'appartenir ou non \u00e0 un syndicat, les opinions politiques ou philosophiques, la race, les croyances religieuses ou les origines des autres salari\u00e9s.",
+        "L'exercice du droit syndical ne doit pas avoir pour cons\u00e9quence des actes contraires aux lois, r\u00e8glements et usages, notamment ceux stipul\u00e9s par la pr\u00e9sente convention et par la profession.",
+        "Les parties signataires, consid\u00e9rant que l'entreprise est essentiellement un lieu de travail, veillent \u00e0 la stricte observation des engagements ci-dessus et s'emploient aupr\u00e8s de leurs adh\u00e9rents \u00e0 en assurer le respect int\u00e9gral."
       ],
-      "mots_cles": ["liberté d'opinion", "droit syndical", "non-discrimination", "race", "religion"],
+      "mots_cles": ["libert\u00e9 d'opinion", "droit syndical", "non-discrimination", "race", "religion"],
       "statut": "en vigueur",
-      "section": "Titre II : Du dialogue social - Chapitre 1"
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Acteurs du dialogue social dans l'entreprise",
+      "texte": [
+        "Les acteurs du dialogue social dans l'entreprise sont constitu\u00e9s de la direction et des repr\u00e9sentants du personnel \u00e9lus et ceux d\u00e9sign\u00e9s par les organisations syndicales repr\u00e9sentatives.",
+        "Les partenaires sociaux marquent leur volont\u00e9 de se rencontrer p\u00e9riodiquement pour discuter des questions int\u00e9ressant la vie de l'entreprise."
+      ],
+      "mots_cles": ["dialogue social", "direction", "repr\u00e9sentants du personnel", "organisations syndicales"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "\u00c9lection, d\u00e9signation et fonctionnement",
+      "texte": [
+        "Les conditions d'\u00e9lection des d\u00e9l\u00e9gu\u00e9s du personnel et de d\u00e9signation des repr\u00e9sentants syndicaux sont d\u00e9termin\u00e9es par la loi.",
+        "L'employeur est tenu d'organiser les \u00e9lections des d\u00e9l\u00e9gu\u00e9s du personnel conform\u00e9ment aux dispositions l\u00e9gales en vigueur.",
+        "Les repr\u00e9sentants syndicaux sont d\u00e9sign\u00e9s conform\u00e9ment aux dispositions l\u00e9gales.",
+        "Seules les organisations syndicales ayant au moins un d\u00e9l\u00e9gu\u00e9 du personnel \u00e0 l'issue des \u00e9lections sont habilit\u00e9es \u00e0 constituer une section syndicale et \u00e0 d\u00e9signer des repr\u00e9sentants syndicaux."
+      ],
+      "mots_cles": ["\u00e9lection", "d\u00e9l\u00e9gu\u00e9s du personnel", "repr\u00e9sentants syndicaux", "section syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Moyens des d\u00e9l\u00e9gu\u00e9s du personnel et des repr\u00e9sentants syndicaux",
+      "texte": [
+        "L'entreprise met en place les moyens d'information, de formation et de fonctionnement n\u00e9cessaires \u00e0 l'exercice des fonctions des d\u00e9l\u00e9gu\u00e9s du personnel et des repr\u00e9sentants syndicaux.",
+        "Dans les entreprises d'au moins cinquante (50) salari\u00e9s, le chef d'entreprise doit mettre \u00e0 disposition un local am\u00e9nag\u00e9. Ce local peut \u00eatre commun aux deux organes de repr\u00e9sentation du personnel.",
+        "Les d\u00e9l\u00e9gu\u00e9s du personnel et les repr\u00e9sentants syndicaux b\u00e9n\u00e9ficient d'un cong\u00e9 d'\u00e9ducation ouvri\u00e8re de dix (10) jours ouvrables par an."
+      ],
+      "mots_cles": ["moyens", "local am\u00e9nag\u00e9", "50 salari\u00e9s", "cong\u00e9 \u00e9ducation ouvri\u00e8re", "10 jours"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
     },
     {
       "article": "Art. 10",
-      "titre": "Crédit d'heures",
+      "titre": "Cr\u00e9dit d'heures",
       "texte": [
-        "Pour l'exercice de leurs fonctions, les délégués du personnel titulaires et les représentants syndicaux disposent d'un crédit de vingt (20) heures par mois considéré et rémunéré comme temps de travail. Ce crédit d'heures n'inclut pas le temps passé aux réunions convoquées à l'initiative de la direction de l'entreprise."
+        "Pour l'exercice de leurs fonctions, les d\u00e9l\u00e9gu\u00e9s du personnel titulaires et les repr\u00e9sentants syndicaux disposent d'un cr\u00e9dit de vingt (20) heures par mois consid\u00e9r\u00e9 et r\u00e9mun\u00e9r\u00e9 comme temps de travail.",
+        "Ce cr\u00e9dit d'heures n'inclut pas le temps pass\u00e9 aux r\u00e9unions convoqu\u00e9es \u00e0 l'initiative de la direction de l'entreprise."
       ],
-      "mots_cles": ["crédit d'heures", "20 heures", "délégués du personnel", "représentants syndicaux"],
+      "mots_cles": ["cr\u00e9dit d'heures", "20 heures", "d\u00e9l\u00e9gu\u00e9s du personnel", "repr\u00e9sentants syndicaux"],
       "statut": "en vigueur",
-      "section": "Titre II : Du dialogue social - Chapitre 2"
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Rencontres p\u00e9riodiques des partenaires sociaux",
+      "texte": [
+        "Les d\u00e9l\u00e9gu\u00e9s du personnel sont re\u00e7us collectivement par le chef d'\u00e9tablissement ou son repr\u00e9sentant au moins une fois par mois. Ils sont re\u00e7us en outre en cas d'urgence sur leur demande.",
+        "Les membres du bureau de la section syndicale sont re\u00e7us par la direction sur leur demande.",
+        "Aucun responsable hi\u00e9rarchique ne pourra retenir un d\u00e9l\u00e9gu\u00e9 sans motif valable lorsque celui-ci est appel\u00e9 \u00e0 une r\u00e9union. Le d\u00e9l\u00e9gu\u00e9 devra, si possible, pr\u00e9venir son responsable hi\u00e9rarchique vingt-quatre (24) heures avant.",
+        "Sauf circonstances exceptionnelles, les d\u00e9l\u00e9gu\u00e9s du personnel doivent remettre au chef d'\u00e9tablissement une note \u00e9crite contenant l'objet de leur demande deux (2) jours ouvrables avant la date de la r\u00e9union.",
+        "Les dispositions du pr\u00e9sent article ne mettent pas en cause les articles 242 et suivants du code du travail relatifs aux diff\u00e9rends collectifs.",
+        "Nonobstant les dispositions ci-dessus, les salari\u00e9s ont la facult\u00e9 de pr\u00e9senter eux-m\u00eames leurs r\u00e9clamations et suggestions \u00e0 l'employeur."
+      ],
+      "mots_cles": ["rencontres p\u00e9riodiques", "une fois par mois", "urgence", "24 heures", "2 jours ouvrables"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Panneaux d'affichage",
+      "texte": [
+        "Des panneaux identiques, grillag\u00e9s ou vitr\u00e9s, se fermant \u00e0 cl\u00e9, en nombre suffisant, sont mis \u00e0 la disposition des d\u00e9l\u00e9gu\u00e9s du personnel et des organisations syndicales.",
+        "Ils sont appos\u00e9s \u00e0 l'int\u00e9rieur de chaque \u00e9tablissement dans un endroit accessible \u00e0 l'ensemble du personnel.",
+        "Les communications affich\u00e9es doivent avoir un objet exclusivement professionnel et syndical et ne rev\u00eatir aucun caract\u00e8re injurieux.",
+        "Elles sont affich\u00e9es apr\u00e8s communication d'un exemplaire au chef d'\u00e9tablissement."
+      ],
+      "mots_cles": ["panneaux d'affichage", "communications", "professionnel", "syndical"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Missions des organes repr\u00e9sentatifs du personnel",
+      "texte": [
+        "A) Les d\u00e9l\u00e9gu\u00e9s du personnel ont pour mission :",
+        "- pr\u00e9senter aux employeurs toutes les r\u00e9clamations individuelles ou collectives qui n'auraient pas \u00e9t\u00e9 directement satisfaites ;",
+        "- donner leur avis pr\u00e9alable pour tout licenciement collectif ou individuel motiv\u00e9 par une diminution d'activit\u00e9 ;",
+        "- saisir l'Inspection du Travail de toute plainte ou r\u00e9clamation concernant l'application des prescriptions l\u00e9gales et r\u00e9glementaires ;",
+        "- veiller aux prescriptions d'hygi\u00e8ne et de s\u00e9curit\u00e9 ;",
+        "- communiquer \u00e0 l'employeur toutes suggestions utiles tendant \u00e0 l'am\u00e9lioration de l'organisation et du rendement de l'entreprise.",
+        "B) La section syndicale a pour missions :",
+        "- l'affichage des communications syndicales ;",
+        "- la publication et la diffusion des documents d'informations syndicales ;",
+        "- la n\u00e9gociation des accords d'\u00e9tablissement ;",
+        "- l'organisation de la campagne \u00e9lectorale ;",
+        "- la collecte des cotisations syndicales ;",
+        "- la tenue des r\u00e9unions p\u00e9riodiques avec ses adh\u00e9rents.",
+        "Seules les organisations syndicales ayant au moins un d\u00e9l\u00e9gu\u00e9 du personnel \u00e0 l'issue des \u00e9lections sont habilit\u00e9es \u00e0 constituer une section syndicale et \u00e0 d\u00e9signer des repr\u00e9sentants syndicaux."
+      ],
+      "mots_cles": ["d\u00e9l\u00e9gu\u00e9s du personnel", "section syndicale", "r\u00e9clamations", "licenciement collectif", "hygi\u00e8ne", "s\u00e9curit\u00e9"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Protection des membres des organes repr\u00e9sentatifs du personnel",
+      "texte": [
+        "L'exercice de la fonction de d\u00e9l\u00e9gu\u00e9 du personnel ou de repr\u00e9sentant syndical ne peut constituer une entrave \u00e0 l'avancement, \u00e0 la r\u00e9mun\u00e9ration ni \u00e0 la formation professionnelle du travailleur.",
+        "Tout licenciement d'un d\u00e9l\u00e9gu\u00e9 du personnel ou d'un repr\u00e9sentant syndical est soumis \u00e0 l'autorisation de la commission des litiges conform\u00e9ment \u00e0 l'arr\u00eat\u00e9 1109 du 24 juin 1996.",
+        "Les dispositions ci-dessus sont applicables :",
+        "- aux anciens d\u00e9l\u00e9gu\u00e9s et anciens membres du bureau de la section syndicale pendant six (6) mois \u00e0 partir de l'expiration de leur mandat ;",
+        "- aux candidats aux fonctions de d\u00e9l\u00e9gu\u00e9s du personnel pendant la dur\u00e9e comprise entre la remise des listes \u00e9lectorales et le scrutin ;",
+        "- aux candidats non \u00e9lus pendant les trois (3) mois suivant le scrutin."
+      ],
+      "mots_cles": ["protection", "d\u00e9l\u00e9gu\u00e9s", "repr\u00e9sentants syndicaux", "licenciement", "commission des litiges", "6 mois", "3 mois"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Embauche",
+      "texte": [
+        "Conform\u00e9ment \u00e0 l'article 163 du code du travail, tout chef d'entreprise est tenu de s'adresser au bureau de placement pour tout recrutement de personnel.",
+        "Il est tenu de notifier tout emploi vacant au bureau de placement comp\u00e9tent.",
+        "Les candidats \u00e0 l'embauche doivent pr\u00e9senter les pi\u00e8ces d'identit\u00e9 n\u00e9cessaires ainsi que leurs r\u00e9f\u00e9rences scolaires ou professionnelles.",
+        "Lors de sa prise de fonction, tout travailleur doit prendre connaissance du r\u00e8glement int\u00e9rieur de l'entreprise, affich\u00e9 \u00e0 une place convenable et accessible."
+      ],
+      "mots_cles": ["embauche", "bureau de placement", "emploi vacant", "r\u00e8glement int\u00e9rieur"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "R\u00e9embauche",
+      "texte": [
+        "Tout travailleur cong\u00e9di\u00e9 par suite d'une diminution de l'activit\u00e9 de l'entreprise ou d'une r\u00e9organisation interne conserve pendant deux (2) ans la priorit\u00e9 d'embauche dans la m\u00eame cat\u00e9gorie d'emploi.",
+        "Le travailleur est tenu de communiquer tout changement d'adresse \u00e0 son ancien employeur.",
+        "En cas de vacance de poste, l'employeur transmet au bureau de placement une offre nominative en faveur du travailleur b\u00e9n\u00e9ficiant de la priorit\u00e9 de r\u00e9embauche."
+      ],
+      "mots_cles": ["r\u00e9embauche", "priorit\u00e9", "2 ans", "diminution d'activit\u00e9", "r\u00e9organisation"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
     },
     {
       "article": "Art. 17",
-      "titre": "Période d'essai",
+      "titre": "P\u00e9riode d'essai",
       "texte": [
-        "Une période d'essai, stipulée obligatoirement par écrit, peut être prévue à l'engagement d'un travailleur. Sa durée est de :",
-        "- un (1) mois pour les ouvriers et employés (catégorie 1 à 7).",
-        "- deux (2) mois pour les agents de maîtrise (catégorie 8 et 9).",
-        "- trois (3) mois pour les cadres (catégorie 10 à 11).",
-        "L'engagement à l'essai pourra être renouvelé. Toutefois, en application des dispositions de l'article 35 du code du travail, il ne pourra porter, renouvellement compris, que sur une période maximum de six (6) mois.",
-        "Pendant toute la durée de l'essai, le travailleur est rémunéré sur la base du salaire minimum conventionnel correspondant au poste de travail à pourvoir.",
-        "Pendant cette période d'essai, les parties ont la faculté réciproque de rompre le contrat sans indemnités, ni préavis et sans en avoir donné le motif.",
-        "Cette période d'essai ne peut être confondue avec le stage qu'auraient pu accomplir certains travailleurs avant le commencement de leurs services.",
-        "La prolongation des services après expiration du contrat d'engagement à l'essai, sans qu'il y ait établissement d'un nouveau contrat équivaut à la conclusion d'un contrat à durée indéterminée prenant effet à la date du début de l'essai."
+        "Une p\u00e9riode d'essai, stipul\u00e9e obligatoirement par \u00e9crit, peut \u00eatre pr\u00e9vue \u00e0 l'engagement d'un travailleur. Sa dur\u00e9e est de :",
+        "- un (1) mois pour les ouvriers et employ\u00e9s (cat\u00e9gorie 1 \u00e0 7) ;",
+        "- deux (2) mois pour les agents de ma\u00eetrise (cat\u00e9gorie 8 \u00e0 9) ;",
+        "- trois (3) mois pour les cadres (cat\u00e9gorie 10 \u00e0 11).",
+        "L'engagement \u00e0 l'essai pourra \u00eatre renouvel\u00e9. Toutefois, en application des dispositions de l'article 35 du code du travail, il ne pourra porter, renouvellement compris, que sur une p\u00e9riode maximum de six (6) mois.",
+        "Pendant toute la dur\u00e9e de l'essai, le travailleur est r\u00e9mun\u00e9r\u00e9 sur la base du salaire minimum conventionnel correspondant au poste de travail \u00e0 pourvoir.",
+        "Pendant cette p\u00e9riode d'essai, les parties ont la facult\u00e9 r\u00e9ciproque de rompre le contrat sans indemnit\u00e9s, ni pr\u00e9avis et sans en avoir donn\u00e9 le motif.",
+        "Cette p\u00e9riode d'essai ne peut \u00eatre confondue avec le stage qu'auraient pu accomplir certains travailleurs avant le commencement de leurs services.",
+        "La prolongation des services apr\u00e8s expiration du contrat d'engagement \u00e0 l'essai, sans qu'il y ait \u00e9tablissement d'un nouveau contrat, \u00e9quivaut \u00e0 la conclusion d'un contrat \u00e0 dur\u00e9e ind\u00e9termin\u00e9e prenant effet \u00e0 la date du d\u00e9but de l'essai."
       ],
-      "mots_cles": ["période d'essai", "1 mois", "2 mois", "3 mois", "6 mois", "renouvellement"],
+      "mots_cles": ["p\u00e9riode d'essai", "1 mois", "2 mois", "3 mois", "6 mois maximum", "renouvellement"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et exécution"
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Engagement d\u00e9finitif",
+      "texte": [
+        "D\u00e8s la fin de la p\u00e9riode d'essai, l'engagement d\u00e9finitif du travailleur est constat\u00e9 par un \u00e9crit \u00e9tabli en trois exemplaires et sign\u00e9 par chacune des parties.",
+        "Cet \u00e9crit sp\u00e9cifie l'emploi, le classement et la r\u00e9mun\u00e9ration du travailleur.",
+        "Un des exemplaires est remis au travailleur et l'autre \u00e0 l'Inspecteur du travail du ressort.",
+        "Toute modification ult\u00e9rieure fait l'objet d'une notification \u00e9crite au travailleur. Les premiers bulletins de salaires feront foi des modifications apport\u00e9es.",
+        "Tout nouveau travailleur engag\u00e9 dans l'entreprise le sera aux conditions de la pr\u00e9sente convention. Il ne pourra b\u00e9n\u00e9ficier des avantages sp\u00e9cifiques de la convention d'\u00e9tablissement qu'apr\u00e8s une p\u00e9riode de pr\u00e9sence dans l'entreprise d\u00e9termin\u00e9e par cette convention ou par le contrat individuel de travail."
+      ],
+      "mots_cles": ["engagement d\u00e9finitif", "trois exemplaires", "emploi", "classement", "r\u00e9mun\u00e9ration"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Stage d'adaptation ou d'initiation",
+      "texte": [
+        "Apr\u00e8s l'engagement d\u00e9finitif, le travailleur peut \u00eatre soumis \u00e0 un stage d'adaptation ou d'initiation, plac\u00e9 sous la responsabilit\u00e9 des chefs hi\u00e9rarchiques ou dans un centre de perfectionnement professionnel.",
+        "La dur\u00e9e du stage varie de un (1) \u00e0 six (6) mois, toutes cat\u00e9gories confondues."
+      ],
+      "mots_cles": ["stage", "adaptation", "initiation", "1 \u00e0 6 mois"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Formation professionnelle",
+      "texte": [
+        "Les parties reconnaissent l'utilit\u00e9 de la formation professionnelle pour le d\u00e9veloppement des comp\u00e9tences des travailleurs.",
+        "L'entreprise devra accorder toutes les facilit\u00e9s et aides n\u00e9cessaires pour compl\u00e9ter la formation professionnelle du travailleur dans le poste d'origine.",
+        "L'entreprise devra examiner toute demande ou mesure permettant de d\u00e9velopper cette formation, soit par des cours du soir \u00e0 l'ext\u00e9rieur, soit par des stages de perfectionnement au sein de l'entreprise, ou par des cours de formations sp\u00e9cialis\u00e9es.",
+        "L'entreprise proc\u00e9dera en priorit\u00e9 au reclassement du travailleur ayant satisfait \u00e0 sa formation, dans la limite des postes \u00e0 pourvoir."
+      ],
+      "mots_cles": ["formation professionnelle", "cours du soir", "stages", "perfectionnement", "reclassement"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Promotion",
+      "texte": [
+        "La promotion comprend l'avancement et le changement de cat\u00e9gorie.",
+        "L'avancement : \u00e0 l'int\u00e9rieur des cat\u00e9gories, les travailleurs pourront progresser d'\u00e9chelon en \u00e9chelon en fonction de leur \u00e9volution jug\u00e9e selon les crit\u00e8res \u00e9num\u00e9r\u00e9s dans les annexes.",
+        "Le changement de cat\u00e9gorie : l'employ\u00e9 pourra changer de cat\u00e9gorie en fonction de :",
+        "- la r\u00e9\u00e9valuation de son poste par la commission de classement ;",
+        "- son affectation \u00e0 un poste nouvellement cr\u00e9\u00e9 ;",
+        "- sa mutation \u00e0 un poste d'une cat\u00e9gorie sup\u00e9rieure.",
+        "Le choix se fera sur la base d'\u00e9valuation des postulants selon des crit\u00e8res et m\u00e9thodes fix\u00e9s par l'entreprise.",
+        "Un cadre d'\u00e9valuation annuel des travailleurs adapt\u00e9 \u00e0 la sp\u00e9cificit\u00e9 de chaque entreprise sera mis en place. En fonction des \u00e9valuations, les travailleurs feront ou ne feront pas l'objet d'une promotion.",
+        "En fonction des capacit\u00e9s individuelles et des besoins de service, un employ\u00e9 pourra acc\u00e9der \u00e0 un emploi du groupe sup\u00e9rieur."
+      ],
+      "mots_cles": ["promotion", "avancement", "changement de cat\u00e9gorie", "\u00e9valuation annuelle", "\u00e9chelon"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Int\u00e9rim",
+      "texte": [
+        "Lorsqu'un travailleur doit occuper temporairement un emploi de cat\u00e9gorie inf\u00e9rieure, son salaire et son classement sont maintenus pendant cette p\u00e9riode qui ne peut exc\u00e9der deux (2) mois.",
+        "Lorsque l'employeur demande ensuite au travailleur d'accepter d\u00e9finitivement cet emploi de cat\u00e9gorie inf\u00e9rieure, ce dernier a le droit de refuser. En cas de refus, le contrat est consid\u00e9r\u00e9 comme rompu du fait de l'employeur.",
+        "Tout travailleur assurant sur d\u00e9cision de la direction l'int\u00e9rim d'un employ\u00e9 d'une cat\u00e9gorie ou d'un \u00e9chelon sup\u00e9rieur pendant une p\u00e9riode sup\u00e9rieure \u00e0 la p\u00e9riode d'essai pr\u00e9vue pour la cat\u00e9gorie de l'emploi concern\u00e9, percevra pass\u00e9 ce d\u00e9lai une indemnit\u00e9 mensuelle due \u00e0 partir du premier jour de l'int\u00e9rim.",
+        "Cette indemnit\u00e9 est \u00e9gale \u00e0 la totalit\u00e9 de la diff\u00e9rence entre le salaire de base per\u00e7u et le salaire minimum conventionnel de la cat\u00e9gorie et de l'\u00e9chelon du nouvel emploi.",
+        "Les heures suppl\u00e9mentaires effectu\u00e9es pendant l'int\u00e9rim sont r\u00e9mun\u00e9r\u00e9es sur la base du salaire minimum de la cat\u00e9gorie du travailleur dont il assure l'int\u00e9rim.",
+        "\u00c0 l'expiration de la p\u00e9riode d'essai pr\u00e9vue, sauf maladie ou accident du travail, le travailleur est r\u00e9int\u00e9gr\u00e9 dans sa fonction d'origine ou b\u00e9n\u00e9ficie de la cat\u00e9gorie professionnelle minimum attach\u00e9e au nouvel emploi."
+      ],
+      "mots_cles": ["int\u00e9rim", "cat\u00e9gorie inf\u00e9rieure", "2 mois", "indemnit\u00e9", "cat\u00e9gorie sup\u00e9rieure"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Mutation",
+      "texte": [
+        "Lorsque les mutations ne sont pas pr\u00e9vues dans les conditions d'engagement, aucun travailleur ne peut \u00eatre mut\u00e9 dans un \u00e9tablissement situ\u00e9 dans une autre commune ou localit\u00e9 sans son consentement.",
+        "En cas de mutation, les frais de transport du travailleur, de sa conjointe et de ses enfants mineurs inscrits \u00e0 la CNSS, ainsi que les frais de transport de leurs bagages dans les limites de poids fix\u00e9 \u00e0 l'article 61, \u00e0 l'exclusion des frais d'assurance, sont \u00e0 la charge de l'employeur."
+      ],
+      "mots_cles": ["mutation", "consentement", "frais de transport", "CNSS", "bagages"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Formation et ex\u00e9cution"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "P\u00e9riodes militaires",
+      "texte": [
+        "Pendant la dur\u00e9e du service militaire ou paramilitaire et pendant les p\u00e9riodes obligatoires d'instruction militaire, le contrat de travail est suspendu.",
+        "L'employeur est tenu de verser au travailleur une indemnit\u00e9 correspondant \u00e0 la p\u00e9riode de pr\u00e9avis, \u00e9gale au montant de sa r\u00e9mun\u00e9ration pendant la dur\u00e9e de l'absence, conform\u00e9ment \u00e0 la l\u00e9gislation en vigueur.",
+        "Le travailleur qui d\u00e9sire reprendre l'emploi qu'il occupait doit en avertir son employeur par lettre recommand\u00e9e au plus tard dans le mois suivant la date pr\u00e9sum\u00e9e de sa lib\u00e9ration du service militaire.",
+        "Les p\u00e9riodes de suspension pour service militaire ne sont pas consid\u00e9r\u00e9es comme temps de service pour la d\u00e9termination de l'anciennet\u00e9, sauf cas de mobilisation g\u00e9n\u00e9rale."
+      ],
+      "mots_cles": ["service militaire", "suspension", "pr\u00e9avis", "lettre recommand\u00e9e", "anciennet\u00e9"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 2 : Suspension"
     },
     {
       "article": "Art. 25",
-      "titre": "Grossesse et maternité",
+      "titre": "Grossesse et maternit\u00e9",
       "texte": [
-        "A l'occasion de son accouchement, toute salariée a le droit de suspendre son contrat de travail pendant quinze (15) semaines consécutives, dont neuf (9) postérieures à la délivrance. Cette suspension peut être prolongée de trois (3) semaines en cas de maladie dûment constatée, résultant de la grossesse ou des couches.",
-        "Pendant cette période, l'employeur ne peut la licencier.",
-        "A la reprise du travail, la salariée a droit, pendant une période de quinze (15) mois à compter de la naissance de l'enfant, à des repos pour allaitement dont la durée ne peut dépasser une (1) heure par jour de travail, cette heure pouvant être fractionnée en deux demi-heures à la demande de la mère.",
-        "Des avances sur salaire n'excédant pas un (1) mois de salaire minimum conventionnel de sa catégorie, peuvent être consenties par l'employeur pour l'intéressée à charge pour les rembourser, d'accord parties à la reprise du travail.",
-        "Lorsque l'employée s'absente de son poste de travail pour les raisons citées au 2ème alinéa, elle bénéficie de toutes les prestations en espèces et médicales.",
-        "Le choix du ou des Etablissements pour le remboursement des prestations sera fixé par les accords d'entreprise.",
-        "En cas de choix d'un Etablissement ou catégorie autre pour convenance personnelle ou urgence, le remboursement se fera sur la base du coût des prestations de l'Etablissement de référence.",
-        "Le libre choix sera respecté entre un Etablissement public ou privé, pourvu que la participation de l'employeur soit conforme aux dispositions de la présente convention."
+        "\u00c0 l'occasion de son accouchement, toute salari\u00e9e a le droit de suspendre son contrat de travail pendant quinze (15) semaines cons\u00e9cutives, dont neuf (9) post\u00e9rieures \u00e0 la d\u00e9livrance. Cette suspension peut \u00eatre prolong\u00e9e de trois (3) semaines en cas de maladie d\u00fbment constat\u00e9e, r\u00e9sultant de la grossesse ou des couches.",
+        "Pendant cette p\u00e9riode, l'employeur ne peut la licencier.",
+        "\u00c0 la reprise du travail, la salari\u00e9e a droit, pendant une p\u00e9riode de quinze (15) mois \u00e0 compter de la naissance de l'enfant, \u00e0 des repos pour allaitement dont la dur\u00e9e ne peut d\u00e9passer une (1) heure par jour de travail, cette heure pouvant \u00eatre fractionn\u00e9e en deux demi-heures \u00e0 la demande de la m\u00e8re.",
+        "Des avances sur salaire n'exc\u00e9dant pas un (1) mois de salaire minimum conventionnel de sa cat\u00e9gorie peuvent \u00eatre consenties par l'employeur, remboursables d'accord parties \u00e0 la reprise du travail.",
+        "Lorsque l'employ\u00e9e s'absente de son poste de travail pour les raisons cit\u00e9es au 2\u00e8me alin\u00e9a, elle b\u00e9n\u00e9ficie de toutes les prestations en esp\u00e8ces et m\u00e9dicales en vigueur.",
+        "Le choix du ou des \u00c9tablissements pour le remboursement des prestations sera fix\u00e9 par les accords d'entreprise.",
+        "En cas de choix d'un \u00c9tablissement ou cat\u00e9gorie autre pour convenance personnelle ou urgence, le remboursement se fera sur la base du co\u00fbt des prestations de l'\u00c9tablissement de r\u00e9f\u00e9rence.",
+        "Le libre choix sera respect\u00e9 entre un \u00c9tablissement public ou priv\u00e9."
       ],
-      "mots_cles": ["grossesse", "maternité", "15 semaines", "9 semaines", "allaitement", "15 mois", "1 heure"],
+      "mots_cles": ["grossesse", "maternit\u00e9", "15 semaines", "9 semaines", "allaitement", "15 mois", "1 heure"],
       "statut": "en vigueur",
       "section": "Titre III : Du contrat de travail - Chapitre 2 : Suspension"
     },
@@ -126,316 +375,695 @@
       "article": "Art. 26",
       "titre": "Maladies et accidents non professionnels",
       "texte": [
-        "En cas de maladie ou accident non professionnel dûment constaté par un médecin ou tradipraticien agréé par l'entreprise et notifié à l'employeur dans les quarante huit (48) heures, sauf cas de force majeure, le contrat de travail est suspendu pendant une durée limitée à six (6) mois, ce délai est prolongé jusqu'au remplacement du travailleur conformément aux lois et règlements en vigueur.",
-        "Si pendant le délai de suspension, le remplacement du travailleur s'impose, le remplaçant devra être informé en présence du ou des délégués du personnel du caractère provisoire de son emploi.",
-        "Pendant la période de suspension du contrat de travail pour cause de maladie ou d'accident non professionnel, le travailleur percevra les indemnités maxima ci-après :",
-        "1- Avant douze (12) mois de service : indemnité égale à l'indemnité de préavis conformément aux dispositions de l'article 48 du code du travail.",
-        "2-Après un (1) an de service : indemnité égale à trois (3) mois de salaire de base + ancienneté et trois (3) mois de demi-salaire.",
-        "Les indemnités attribuées après un (1) an de service comprennent celles prévues par l'article 48 du code du travail."
+        "En cas de maladie ou accident non professionnel d\u00fbment constat\u00e9 par un m\u00e9decin ou tradipraticien agr\u00e9\u00e9 par l'entreprise et notifi\u00e9 \u00e0 l'employeur dans les quarante huit (48) heures, sauf cas de force majeure, le contrat de travail est suspendu pendant une dur\u00e9e limit\u00e9e \u00e0 six (6) mois, ce d\u00e9lai est prolong\u00e9 jusqu'au remplacement du travailleur conform\u00e9ment aux lois et r\u00e8glements en vigueur.",
+        "Si pendant le d\u00e9lai de suspension, le remplacement du travailleur s'impose, le rempla\u00e7ant devra \u00eatre inform\u00e9 en pr\u00e9sence du ou des d\u00e9l\u00e9gu\u00e9s du personnel du caract\u00e8re provisoire de son emploi.",
+        "Pendant la p\u00e9riode de suspension du contrat de travail pour cause de maladie ou d'accident non professionnel, le travailleur percevra les indemnit\u00e9s maxima ci-apr\u00e8s :",
+        "1- Avant douze (12) mois de service : indemnit\u00e9 \u00e9gale \u00e0 l'indemnit\u00e9 de pr\u00e9avis conform\u00e9ment aux dispositions de l'article 48 du code du travail.",
+        "2- Apr\u00e8s un (1) an de service et anciennet\u00e9 : indemnit\u00e9 \u00e9gale \u00e0 trois (3) mois de salaire de base + anciennet\u00e9 et trois (3) mois de demi-salaire.",
+        "Les indemnit\u00e9s attribu\u00e9es apr\u00e8s un (1) an de service comprennent celles pr\u00e9vues par l'article 48 du code du travail.",
+        "Si le travailleur ne peut reprendre son emploi en raison d'une incapacit\u00e9 physique due \u00e0 la maladie, l'employeur doit rechercher avec les d\u00e9l\u00e9gu\u00e9s du personnel et les repr\u00e9sentants syndicaux la possibilit\u00e9 de le reclasser.",
+        "En cas d'impossibilit\u00e9 de reclassement constat\u00e9e par une commission m\u00e9dicale comprenant le m\u00e9decin d'entreprise, le m\u00e9decin de la CNSS et un m\u00e9decin sp\u00e9cialiste ext\u00e9rieur, l'employeur peut proc\u00e9der au licenciement l\u00e9gitime."
       ],
-      "mots_cles": ["maladie", "accident non professionnel", "48 heures", "6 mois", "3 mois salaire", "3 mois demi-salaire"],
+      "mots_cles": ["maladie", "accident non professionnel", "48 heures", "6 mois", "3 mois salaire", "3 mois demi-salaire", "reclassement"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 2 : Suspension"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Accidents du travail et maladies professionnelles",
+      "texte": [
+        "Les accidents du travail et les maladies professionnelles rel\u00e8vent des dispositions l\u00e9gislatives ou r\u00e9glementaires en vigueur.",
+        "Le contrat du travailleur concern\u00e9 est suspendu jusqu'\u00e0 son r\u00e9tablissement.",
+        "Si le travailleur n'est plus \u00e0 m\u00eame de reprendre son service, l'employeur doit rechercher avec les d\u00e9l\u00e9gu\u00e9s du personnel et les repr\u00e9sentants syndicaux la possibilit\u00e9 de le reclasser dans un emploi compatible avec ses nouvelles capacit\u00e9s.",
+        "En cas d'impossibilit\u00e9 de reclassement constat\u00e9e par une commission m\u00e9dicale comprenant le m\u00e9decin d'entreprise, le m\u00e9decin de la CNSS et un m\u00e9decin sp\u00e9cialiste ext\u00e9rieur, l'employeur peut proc\u00e9der au licenciement l\u00e9gitime."
+      ],
+      "mots_cles": ["accident du travail", "maladie professionnelle", "suspension", "reclassement", "commission m\u00e9dicale"],
       "statut": "en vigueur",
       "section": "Titre III : Du contrat de travail - Chapitre 2 : Suspension"
     },
     {
       "article": "Art. 28",
-      "titre": "Mise en disponibilité",
+      "titre": "Mise en disponibilit\u00e9",
       "texte": [
-        "La mise en disponibilité est la position d'un salarié qui cesse momentanément, sur sa demande écrite et pour convenance personnelle, d'exercer ses fonctions dans l'entreprise.",
-        "La durée maximale de cette mise en disponibilité est d'un (1) an ; elle est renouvelable une seule fois.",
-        "Cependant, pour les salariés appelés à occuper hors de l'entreprise, des fonctions ou responsabilités électives, un mandat politique ou syndical à caractère permanent, la durée de la mise en disponibilité est étendue et limitée à celle desdites fonctions.",
-        "Pendant la durée de la mise en disponibilité, le contrat de travail est suspendu ; en conséquence, les dispositions de la présente convention et des accords d'établissement cessent de s'appliquer à l'intéressé. Notamment, le salarié cesse de bénéficier de sa rémunération, de tout droit à l'avancement, ainsi que de tout droit à l'ancienneté.",
-        "Le salarié ne peut quitter son service qu'après avoir reçu l'accord écrit de son employeur. Dans le cas contraire, l'employeur constate la rupture unilatérale du contrat de travail du fait du salarié. Cette rupture ne peut être considérée comme un licenciement.",
-        "A l'expiration de la période de mise en disponibilité, et sur sa demande écrite réceptionnée par l'employeur au moins un (1) mois avant l'expiration de sa mise en disponibilité, le salarié est réintégré dans son emploi ou dans un emploi équivalent dans son entreprise."
+        "La mise en disponibilit\u00e9 est la position d'un salari\u00e9 qui cesse momentan\u00e9ment, sur sa demande \u00e9crite et pour convenance personnelle, d'exercer ses fonctions dans l'entreprise.",
+        "La dur\u00e9e maximale de cette mise en disponibilit\u00e9 est d'un (1) an ; elle est renouvelable une seule fois.",
+        "Cependant, pour les salari\u00e9s appel\u00e9s \u00e0 occuper hors de l'entreprise des fonctions ou responsabilit\u00e9s \u00e9lectives, un mandat politique ou syndical \u00e0 caract\u00e8re permanent, la dur\u00e9e de la mise en disponibilit\u00e9 est \u00e9tendue et limit\u00e9e \u00e0 celle desdites fonctions.",
+        "Pendant la dur\u00e9e de la mise en disponibilit\u00e9, le contrat de travail est suspendu. Le salari\u00e9 cesse de b\u00e9n\u00e9ficier de sa r\u00e9mun\u00e9ration, de tout droit \u00e0 l'avancement et \u00e0 l'anciennet\u00e9.",
+        "Le salari\u00e9 ne peut quitter son service qu'apr\u00e8s avoir re\u00e7u l'accord \u00e9crit de son employeur. Dans le cas contraire, l'employeur constate la rupture unilat\u00e9rale du contrat de travail du fait du salari\u00e9. Cette rupture ne peut \u00eatre consid\u00e9r\u00e9e comme un licenciement.",
+        "\u00c0 l'expiration de la p\u00e9riode de mise en disponibilit\u00e9, et sur sa demande \u00e9crite r\u00e9ceptionn\u00e9e par l'employeur au moins un (1) mois avant l'expiration, le salari\u00e9 est r\u00e9int\u00e9gr\u00e9 dans son classement d'origine. Il ne peut pr\u00e9tendre retrouver les fonctions exerc\u00e9es avant sa mise en disponibilit\u00e9."
       ],
-      "mots_cles": ["mise en disponibilité", "1 an", "renouvelable", "convenance personnelle", "mandat syndical", "1 mois préavis"],
+      "mots_cles": ["mise en disponibilit\u00e9", "1 an", "renouvelable", "convenance personnelle", "mandat syndical", "1 mois pr\u00e9avis"],
       "statut": "en vigueur",
       "section": "Titre III : Du contrat de travail - Chapitre 2 : Suspension"
     },
     {
       "article": "Art. 29",
-      "titre": "Modalités de résiliation",
+      "titre": "Modalit\u00e9s de r\u00e9siliation",
       "texte": [
-        "Toute rupture du contrat de travail par l'une des parties doit être notifiée par écrit à l'autre partie. La lettre de notification indique expressément le motif, sauf rupture pendant la période d'essai.",
-        "En cas de rupture du contrat de travail, l'employeur est autorisé à déduire les sommes dues par le travailleur lors de l'établissement du solde de tout compte.",
-        "En cas de faute lourde (détournement ou vol), le montant du préjudice matériel éventuel subi sera mis en réserve dans l'attente des décisions de justice."
+        "Toute rupture du contrat de travail par l'une des parties doit \u00eatre notifi\u00e9e par \u00e9crit \u00e0 l'autre partie. La lettre de notification indique express\u00e9ment le motif, sauf rupture pendant la p\u00e9riode d'essai.",
+        "En cas de rupture du contrat de travail, l'employeur est autoris\u00e9 \u00e0 d\u00e9duire les sommes dues par le travailleur lors de l'\u00e9tablissement du solde de tout compte.",
+        "En cas de faute lourde (d\u00e9tournement ou vol), le montant du pr\u00e9judice mat\u00e9riel \u00e9ventuel subi sera mis en r\u00e9serve dans l'attente des d\u00e9cisions de justice."
       ],
-      "mots_cles": ["résiliation", "notification écrite", "motif", "solde de tout compte", "faute lourde"],
+      "mots_cles": ["r\u00e9siliation", "notification \u00e9crite", "motif", "solde de tout compte", "faute lourde"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 3 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : R\u00e9siliation"
     },
     {
       "article": "Art. 30",
-      "titre": "Préavis",
+      "titre": "Pr\u00e9avis",
       "texte": [
-        "Hormis le cas de faute lourde et celui de la démission d'une employée au cours de la période de quinze (15) mois à compter de la naissance de son enfant (art. 115 du code de travail), toute résiliation d'un contrat de travail intervenant, après la période d'essai, est subordonnée à un préavis donné par la partie qui prend l'initiative de la rupture.",
-        "Sous réserve, le cas échéant, de stipulations au contrat de travail plus favorables, la durée du préavis est fixée comme suit :",
-        "- 1 mois pour les ouvriers et employés d'exécution (catégorie 1 à 7).",
-        "- 2 mois pour les agents de maîtrise (catégorie 8 à 9).",
-        "- 3 mois pour les cadres (catégorie 10 à 11).",
-        "L'inobservation totale ou partielle du délai de préavis emporte l'obligation pour la partie responsable de verser à l'autre partie une indemnité « dite indemnité de préavis » dont le montant correspond à la rémunération et aux avantages de toutes natures dont aurait bénéficié le travailleur durant le délai de préavis qui n'aura pas été effectivement respecté.",
-        "Le travailleur congédié qui a trouvé un autre emploi durant la période de préavis peut quitter son dernier employeur sans lui être redevable d'une indemnité, sous la seule réserve de le prévenir de son départ définitif deux (2) jours auparavant. Il conserve son droit d'indemnité de licenciement.",
-        "Pendant la période de préavis, qu'il s'agisse d'un licenciement ou d'une démission, le travailleur bénéficie, en vue de la recherche d'un autre emploi, de deux (2) jours de liberté par semaine pris à son choix payé à plein salaire, après avoir informé son employeur un jour avant."
+        "Hormis le cas de faute lourde et celui de la d\u00e9mission d'une employ\u00e9e au cours de la p\u00e9riode de quinze (15) mois \u00e0 compter de la naissance de son enfant (art. 115 du code du travail), toute r\u00e9siliation d'un contrat de travail intervenant apr\u00e8s la p\u00e9riode d'essai est subordonn\u00e9e \u00e0 un pr\u00e9avis donn\u00e9 par la partie qui prend l'initiative de la rupture.",
+        "Sous r\u00e9serve, le cas \u00e9ch\u00e9ant, de stipulations au contrat de travail plus favorables, la dur\u00e9e du pr\u00e9avis est fix\u00e9e comme suit :",
+        "- 1 mois pour les ouvriers et employ\u00e9s d'ex\u00e9cution (cat\u00e9gorie 1 \u00e0 7) ;",
+        "- 2 mois pour les agents de ma\u00eetrise (cat\u00e9gorie 8 \u00e0 9) ;",
+        "- 3 mois pour les cadres (cat\u00e9gorie 10 \u00e0 11).",
+        "L'inobservation totale ou partielle du d\u00e9lai de pr\u00e9avis emporte l'obligation pour la partie responsable de verser \u00e0 l'autre partie une indemnit\u00e9 dite \u00ab indemnit\u00e9 de pr\u00e9avis \u00bb dont le montant correspond \u00e0 la r\u00e9mun\u00e9ration et aux avantages de toutes natures dont aurait b\u00e9n\u00e9fici\u00e9 le travailleur durant le d\u00e9lai de pr\u00e9avis qui n'aura pas \u00e9t\u00e9 effectivement respect\u00e9.",
+        "Si l'une des parties d\u00e9sire mettre fin au contrat pendant le cong\u00e9, la notification doit \u00eatre faite un (1) mois avant la date de d\u00e9part en cong\u00e9, deux (2) mois pour le travailleur recrut\u00e9 hors du pays. En cas d'inobservation, l'indemnit\u00e9 de pr\u00e9avis sera doubl\u00e9e. De m\u00eame si la rupture intervient pendant le cong\u00e9.",
+        "Le travailleur cong\u00e9di\u00e9 qui a trouv\u00e9 un autre emploi durant la p\u00e9riode de pr\u00e9avis peut quitter son dernier employeur sans lui \u00eatre redevable d'une indemnit\u00e9, sous la seule r\u00e9serve de le pr\u00e9venir de son d\u00e9part d\u00e9finitif deux (2) jours francs auparavant. Il conserve son droit \u00e0 l'indemnit\u00e9 de licenciement.",
+        "Si le travailleur est responsable d'un service ou d'un stock, il ne peut quitter avant d'avoir rendu compte de sa gestion.",
+        "Pendant la p\u00e9riode de pr\u00e9avis, qu'il s'agisse d'un licenciement ou d'une d\u00e9mission, le travailleur b\u00e9n\u00e9ficie, en vue de la recherche d'un autre emploi, de deux (2) jours de libert\u00e9 par semaine pris \u00e0 son choix pay\u00e9 \u00e0 plein salaire, apr\u00e8s avoir inform\u00e9 son employeur un jour avant.",
+        "L'indemnit\u00e9 de licenciement y aff\u00e9rente sera calcul\u00e9e conform\u00e9ment aux dispositions du pr\u00e9sent article."
       ],
-      "mots_cles": ["préavis", "1 mois", "2 mois", "3 mois", "indemnité de préavis", "2 jours liberté"],
+      "mots_cles": ["pr\u00e9avis", "1 mois", "2 mois", "3 mois", "indemnit\u00e9 de pr\u00e9avis", "2 jours libert\u00e9"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 3 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : R\u00e9siliation"
     },
     {
       "article": "Art. 31",
-      "titre": "Indemnité de licenciement",
+      "titre": "Indemnit\u00e9 de licenciement",
       "texte": [
-        "En cas de licenciement par l'employeur, hors le cas de faute lourde, un travailleur ayant accompli dans l'entreprise une durée de service continue au moins égale à deux (2) ans, a droit à une indemnité de licenciement distincte du préavis.",
-        "Cette indemnité est attribuée dans les conditions suivantes :",
-        "- 31% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence et pour les cinq (5) premières années de présence consécutive chez le même employeur.",
-        "- 36% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence pour la période comprise entre la sixième et la dixième année incluse de présence consécutive chez le même employeur.",
-        "- 40% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence pour la période comprise entre la onzième année et la vingtième année incluse de présence consécutive chez le même employeur ;",
-        "- 45% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence et pour la période s'étendant au-delà de vingt ans.",
-        "On entend par salaire global, toutes les prestations constituant une contre partie du travail, à l'exclusion de celle présentant le caractère d'un remboursement de frais.",
-        "Lorsque le licenciement résulte du seul cas de compression de personnel pour cause économique, les dispositions ci-dessus sont modifiées comme suit :",
-        "- le travailleur a droit, après un an de présence, à une indemnité de licenciement égale à 23% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence consécutive chez le même employeur.",
-        "- une indemnité complémentaire pourra être négociée en fonction des moyens de l'entreprise. Cette indemnité éventuelle, sera basée sur l'ancienneté et le salaire global de chaque travailleur concerné."
+        "En cas de licenciement par l'employeur, hors le cas de faute lourde, un travailleur ayant accompli dans l'entreprise une dur\u00e9e de service continue au moins \u00e9gale \u00e0 deux (2) ans, a droit \u00e0 une indemnit\u00e9 de licenciement distincte du pr\u00e9avis.",
+        "Les travailleurs sont admis au b\u00e9n\u00e9fice de l'indemnit\u00e9 de licenciement lorsqu'ils atteignent l'anciennet\u00e9 n\u00e9cessaire \u00e0 la suite de plusieurs embauchages si leurs d\u00e9parts pr\u00e9c\u00e9dents ont \u00e9t\u00e9 provoqu\u00e9s par des compressions de personnel.",
+        "Cette indemnit\u00e9 est attribu\u00e9e dans les conditions suivantes :",
+        "- 31% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque ann\u00e9e de pr\u00e9sence pour les cinq (5) premi\u00e8res ann\u00e9es ;",
+        "- 36% pour chaque ann\u00e9e de pr\u00e9sence pour la p\u00e9riode comprise entre la sixi\u00e8me et la dixi\u00e8me ann\u00e9e incluse ;",
+        "- 40% pour chaque ann\u00e9e de pr\u00e9sence pour la p\u00e9riode comprise entre la onzi\u00e8me et la vingti\u00e8me ann\u00e9e incluse ;",
+        "- 45% pour chaque ann\u00e9e de pr\u00e9sence pour la p\u00e9riode au-del\u00e0 de vingt ans.",
+        "Pour le calcul de l'indemnit\u00e9, les fractions d'ann\u00e9e au moins \u00e9gales \u00e0 trente (30) jours sont prises en consid\u00e9ration.",
+        "On entend par salaire global toutes les prestations constituant une contrepartie du travail, \u00e0 l'exclusion de celles pr\u00e9sentant le caract\u00e8re d'un remboursement de frais.",
+        "Lorsque le licenciement r\u00e9sulte du seul cas de compression de personnel :",
+        "- le travailleur a droit apr\u00e8s un an de pr\u00e9sence \u00e0 une indemnit\u00e9 de licenciement \u00e9gale \u00e0 23% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque ann\u00e9e de pr\u00e9sence ;",
+        "- une indemnit\u00e9 compl\u00e9mentaire pourra \u00eatre n\u00e9goci\u00e9e en fonction des moyens de l'entreprise, bas\u00e9e sur l'anciennet\u00e9 et le salaire global."
       ],
-      "mots_cles": ["indemnité de licenciement", "2 ans", "31%", "36%", "40%", "45%", "compression 23%"],
+      "mots_cles": ["indemnit\u00e9 de licenciement", "2 ans", "31%", "36%", "40%", "45%", "compression 23%"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 3 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : R\u00e9siliation"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Licenciement pour diminution d'activit\u00e9s ou r\u00e9organisation",
+      "texte": [
+        "Tout licenciement collectif ou individuel motiv\u00e9 par une diminution d'activit\u00e9s ou une r\u00e9organisation interne est soumis \u00e0 la proc\u00e9dure pr\u00e9vue par la r\u00e9glementation en vigueur."
+      ],
+      "mots_cles": ["licenciement collectif", "diminution d'activit\u00e9s", "r\u00e9organisation", "proc\u00e9dure"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : R\u00e9siliation"
     },
     {
       "article": "Art. 33",
-      "titre": "Mise à la retraite et préretraite",
+      "titre": "Mise \u00e0 la retraite et pr\u00e9retraite",
       "texte": [
-        "L'âge à partir duquel le travailleur assuré peut faire valoir ses droits à la retraite est fixé par le code de sécurité sociale.",
-        "Lorsque le travailleur remplit les conditions requises pour bénéficier de la retraite, l'employeur est tenu d'assurer la transmission du dossier constitué par le travailleur à la Caisse Nationale de Sécurité Sociale (CNSS).",
-        "Le travailleur partant à la retraite bénéficiera d'une indemnité de départ dont le montant sera égal à cinq (5) mois de salaire (salaire de base + ancienneté).",
-        "La préretraite, faculté de faire cesser le contrat de travail avant l'âge de la retraite, est prévue selon les conditions et les modalités d'application devant préserver les droits à cotisation du travailleur.",
-        "Les situations génératrices de la préretraite sont les suivantes :",
-        "- demande spontanée de l'intéressé ;",
-        "- réduction d'activité de l'entreprise ;",
-        "- incapacité d'un employé pour des raisons de mauvaise santé ou de fatigue mentale de continuer à assurer ses fonctions. Cette incapacité devra être constatée par le ou les médecins agréés ;",
+        "L'\u00e2ge de la retraite est fix\u00e9 par le code de s\u00e9curit\u00e9 sociale.",
+        "En cas de contestation r\u00e9sultant d'un acte d'\u00e9tat civil ou d'un jugement suppl\u00e9tif le rajeunissant, l'employeur pourra avoir recours au tribunal comp\u00e9tent.",
+        "L'employeur est tenu d'assurer la transmission du dossier constitu\u00e9 par le travailleur \u00e0 la Caisse Nationale de S\u00e9curit\u00e9 Sociale (CNSS).",
+        "Le travailleur partant \u00e0 la retraite b\u00e9n\u00e9ficiera d'une indemnit\u00e9 de d\u00e9part \u00e9gale \u00e0 cinq (5) mois de salaire (salaire de base + anciennet\u00e9).",
+        "La pr\u00e9retraite, facult\u00e9 de faire cesser le contrat de travail avant l'\u00e2ge de la retraite, est pr\u00e9vue selon les conditions et modalit\u00e9s devant pr\u00e9server les droits \u00e0 cotisation du travailleur.",
+        "Les situations g\u00e9n\u00e9ratrices de la pr\u00e9retraite sont les suivantes :",
+        "- demande spontan\u00e9e de l'int\u00e9ress\u00e9 ;",
+        "- r\u00e9duction d'activit\u00e9 de l'entreprise ;",
+        "- incapacit\u00e9 d'un employ\u00e9 pour des raisons de mauvaise sant\u00e9 ou de fatigue mentale, constat\u00e9e par les m\u00e9decins agr\u00e9\u00e9s ;",
         "- accord entre les parties."
       ],
-      "mots_cles": ["retraite", "CNSS", "5 mois", "indemnité de départ", "préretraite"],
+      "mots_cles": ["retraite", "CNSS", "5 mois", "indemnit\u00e9 de d\u00e9part", "pr\u00e9retraite"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 3 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : R\u00e9siliation"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Rupture du contrat du travailleur malade",
+      "texte": [
+        "Si \u00e0 l'expiration du d\u00e9lai de six (6) mois pr\u00e9vu \u00e0 l'article 26, le travailleur dont le contrat a \u00e9t\u00e9 suspendu pour cause de maladie se trouve dans l'incapacit\u00e9 de reprendre son travail, l'employeur peut le remplacer d\u00e9finitivement par lettre recommand\u00e9e.",
+        "Dans tous les cas, la rupture du contrat pour cause de maladie ouvre droit \u00e0 une indemnit\u00e9 :",
+        "1\u00b0 Cas du travailleur remplissant les conditions d'anciennet\u00e9 requises pour l'indemnit\u00e9 de licenciement : indemnit\u00e9 \u00e9gale au montant de cette derni\u00e8re sans pouvoir \u00eatre inf\u00e9rieure \u00e0 l'indemnit\u00e9 compensatrice de pr\u00e9avis.",
+        "2\u00b0 Cas du travailleur ne remplissant pas les conditions d'anciennet\u00e9 : indemnit\u00e9 \u00e9gale \u00e0 l'indemnit\u00e9 compensatrice de pr\u00e9avis.",
+        "Le travailleur remplac\u00e9 conserve pendant deux (2) ans une priorit\u00e9 de r\u00e9embauchage, sous r\u00e9serve d'une visite m\u00e9dicale d'aptitude."
+      ],
+      "mots_cles": ["maladie", "6 mois", "rupture", "indemnit\u00e9", "priorit\u00e9 r\u00e9embauchage", "2 ans"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : R\u00e9siliation"
     },
     {
       "article": "Art. 35",
-      "titre": "Décès du salarié",
+      "titre": "D\u00e9c\u00e8s du travailleur",
       "texte": [
-        "En cas du décès d'un travailleur, les salaires de présence, l'allocation de congé et les indemnités de toute nature acquis à la date du décès, sous déduction des avances et acomptes contractés par le défunt auprès de l'employeur, reviennent de plein droit à ses héritiers qui doivent justifier de leur qualité par la présentation d'un certificat d'hérédité.",
-        "Si le travailleur comptait au jour du décès deux (2) années au moins d'ancienneté dans l'entreprise, l'employeur est tenu de verser aux héritiers une indemnité d'un montant équivalent à celui de l'indemnité de licenciement qui serait revenue au travailleur en cas de rupture du contrat.",
-        "En cas de décès du travailleur, l'entreprise prendra à sa charge :",
-        "- 1 cercueil 1,90 m normal de type limba parisien latté vingt feuilles (20) accessoires locaux, quatre équerres(4), trois draps (3) d'ornement ;",
+        "En cas de d\u00e9c\u00e8s d'un travailleur, les salaires de pr\u00e9sence, l'allocation de cong\u00e9 et les indemnit\u00e9s de toute nature acquis \u00e0 la date du d\u00e9c\u00e8s, sous d\u00e9duction des avances et acomptes contract\u00e9s par le d\u00e9funt aupr\u00e8s de l'employeur, reviennent de plein droit aux h\u00e9ritiers qui doivent justifier de leur qualit\u00e9 par la pr\u00e9sentation d'un certificat d'h\u00e9r\u00e9dit\u00e9.",
+        "Si le travailleur comptait au jour du d\u00e9c\u00e8s deux (2) ann\u00e9es au moins d'anciennet\u00e9 dans l'entreprise, l'employeur est tenu de verser aux h\u00e9ritiers une indemnit\u00e9 d'un montant \u00e9quivalent \u00e0 celui de l'indemnit\u00e9 de licenciement qui serait revenue au travailleur en cas de rupture du contrat.",
+        "Ne peuvent pr\u00e9tendre \u00e0 cette indemnit\u00e9 que les h\u00e9ritiers en ligne directe effectivement \u00e0 la charge du travailleur au moment du d\u00e9c\u00e8s.",
+        "Si le travailleur avait \u00e9t\u00e9 d\u00e9plac\u00e9 de son lieu de recrutement, l'employeur assure \u00e0 ses frais le transport du corps au lieu de r\u00e9sidence habituelle, \u00e0 condition que les h\u00e9ritiers en formulent la demande dans le d\u00e9lai de deux (2) ans apr\u00e8s le d\u00e9lai r\u00e9glementaire pr\u00e9vu pour le transfert des restes mortels.",
+        "En cas de d\u00e9c\u00e8s du travailleur, l'entreprise prendra \u00e0 sa charge :",
+        "- 1 cercueil 1,90 m normal de type limba parisien latt\u00e9 vingt feuilles (20) accessoires locaux, quatre \u00e9querres (4), trois draps (3) d'ornement ;",
         "- 1 linceul ;",
-        "- Corbillard dans le périmètre de l'agglomération ;",
-        "- Participation aux frais funéraires."
+        "- Corbillard dans le p\u00e9rim\u00e8tre de l'agglom\u00e9ration ;",
+        "- Participation aux frais fun\u00e9raires."
       ],
-      "mots_cles": ["décès", "héritiers", "indemnité", "2 ans", "cercueil", "corbillard", "frais funéraires"],
+      "mots_cles": ["d\u00e9c\u00e8s", "h\u00e9ritiers", "indemnit\u00e9", "2 ans", "cercueil", "corbillard", "frais fun\u00e9raires"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 3 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : R\u00e9siliation"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Certificat de travail",
+      "texte": [
+        "Au moment de quitter d\u00e9finitivement l'entreprise, l'employeur est tenu de remettre au travailleur un Certificat de Travail indiquant exclusivement :",
+        "- le nom et l'adresse de l'entreprise ;",
+        "- la date d'entr\u00e9e et celle de sortie ;",
+        "- la nature et les dates des emplois successivement occup\u00e9s avec \u00e9ventuellement r\u00e9f\u00e9rence aux cat\u00e9gories et \u00e9chelons pr\u00e9vus en annexe."
+      ],
+      "mots_cles": ["certificat de travail", "nom", "adresse", "emplois", "cat\u00e9gories"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : R\u00e9siliation"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "D\u00e9termination du salaire",
+      "texte": [
+        "Le salaire est la contrepartie du travail fourni. Il est fix\u00e9 \u00e0 l'heure, \u00e0 la journ\u00e9e ou au mois.",
+        "Le salaire de base est d\u00e9termin\u00e9 en fonction de la cat\u00e9gorie attribu\u00e9e au travailleur.",
+        "Le salaire de base de chaque cat\u00e9gorie, exprim\u00e9 en francs CFA, est fix\u00e9 ou modifi\u00e9 par une commission mixte paritaire.",
+        "La d\u00e9termination de ces salaires s'effectue par avenants \u00e0 la pr\u00e9sente convention."
+      ],
+      "mots_cles": ["salaire", "contrepartie", "cat\u00e9gorie", "commission mixte paritaire", "avenants"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Abattement de salaire pour les jeunes travailleurs",
+      "texte": [
+        "Le taux d'abattement des salaires des jeunes travailleurs de moins de 18 ans qui ne sont pas li\u00e9s par contrat d'apprentissage est fix\u00e9 comme suit :",
+        "- de 16 \u00e0 17 ans : 20% ;",
+        "- de 17 \u00e0 18 ans : 10%.",
+        "Toutefois, le salaire per\u00e7u ne peut \u00eatre inf\u00e9rieur au SMIG.",
+        "Les jeunes travailleurs titulaires du BEMT ou du BEMG ne subiront pas les abattements ci-dessus."
+      ],
+      "mots_cles": ["abattement", "jeunes travailleurs", "moins de 18 ans", "20%", "10%", "SMIG", "BEMT", "BEMG"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Paiement du salaire",
+      "texte": [
+        "Le salaire est pay\u00e9 conform\u00e9ment aux prescriptions l\u00e9gales et r\u00e9glementaires en vigueur.",
+        "En cas de contestation sur le bulletin de paye, le travailleur peut demander justification des \u00e9l\u00e9ments constitutifs de sa r\u00e9mun\u00e9ration.",
+        "Il peut se faire assister par un repr\u00e9sentant syndical ou un d\u00e9l\u00e9gu\u00e9 du personnel."
+      ],
+      "mots_cles": ["paiement", "salaire", "bulletin de paye", "contestation", "repr\u00e9sentant syndical"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
     },
     {
       "article": "Art. 40",
-      "titre": "Prime d'ancienneté",
+      "titre": "Prime d'anciennet\u00e9",
       "texte": [
-        "On entend par ancienneté, le temps pendant lequel le travailleur a été occupé d'une façon continue dans les différents établissements d'une entreprise quelles que puissent être les modifications survenues dans la nature juridique de celle-ci.",
-        "Une prime d'ancienneté consistant dans une majoration du salaire de base du travailleur lui sera allouée dans les conditions suivantes :",
-        "- 3% après trois (3) années de présence effective ;",
-        "- 1% par année de présence à partir de la troisième année avec un maximum de 25%."
+        "On entend par anciennet\u00e9, le temps pendant lequel le travailleur a \u00e9t\u00e9 occup\u00e9 d'une fa\u00e7on continue dans les diff\u00e9rents \u00e9tablissements d'une entreprise quelles que puissent \u00eatre les modifications survenues dans la nature juridique de celle-ci.",
+        "Comptent comme temps de service pour la d\u00e9termination de l'anciennet\u00e9 :",
+        "- l'absence pour maladie dans la limite de six (6) mois, prorog\u00e9e jusqu'au remplacement si le poste reste vacant ;",
+        "- la p\u00e9riode d'indisponibilit\u00e9 r\u00e9sultant d'un accident du travail ou d'une maladie professionnelle ;",
+        "- les p\u00e9riodes de repos des femmes salari\u00e9es en couches ;",
+        "- la gr\u00e8ve ou le lock-out dans le respect de la proc\u00e9dure l\u00e9gale ;",
+        "- les absences pour cong\u00e9s pay\u00e9s ou permissions exceptionnelles ;",
+        "- les absences r\u00e9mun\u00e9r\u00e9es ou non, r\u00e9guli\u00e8rement autoris\u00e9es dans la limite d'un mois par ann\u00e9e civile ;",
+        "- le temps pass\u00e9 dans une autre entreprise lors d'une mutation.",
+        "N'ont pas pour effet d'annuler le droit \u00e0 l'anciennet\u00e9 :",
+        "- la fermeture de l'entreprise pour d\u00e9part sous les drapeaux ;",
+        "- la dur\u00e9e du service militaire ;",
+        "- la dur\u00e9e de la d\u00e9tention pr\u00e9ventive limit\u00e9e \u00e0 six (6) mois ;",
+        "- les absences r\u00e9guli\u00e8rement autoris\u00e9es si la dur\u00e9e totale est sup\u00e9rieure \u00e0 un (1) mois par an ;",
+        "- la p\u00e9riode interruptive pour compression, sous r\u00e9serve que cette p\u00e9riode ne d\u00e9passe pas un (1) an, prorog\u00e9e d'une ann\u00e9e maximum si le travailleur est r\u00e9employ\u00e9 pendant ce d\u00e9lai.",
+        "Une prime d'anciennet\u00e9 consistant en une majoration du salaire de base est allou\u00e9e au travailleur dans les conditions suivantes :",
+        "- 3% apr\u00e8s trois (3) ann\u00e9es de pr\u00e9sence effective ;",
+        "- 1% par ann\u00e9e de pr\u00e9sence \u00e0 partir de la troisi\u00e8me ann\u00e9e avec un maximum de 25%."
       ],
-      "mots_cles": ["prime d'ancienneté", "3%", "1%", "25% maximum"],
+      "mots_cles": ["prime d'anciennet\u00e9", "3%", "1%", "25% maximum", "temps de service", "maladie", "cong\u00e9s"],
       "statut": "en vigueur",
-      "section": "Titre IV : De la rémunération - Du salaire"
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
+    },
+    {
+      "article": "Art. 41",
+      "titre": "Indemnit\u00e9 de transport",
+      "texte": [
+        "Une participation de l'employeur aux frais \u00e9ventuels de transport du travailleur est admise au prorata du temps de travail effectif.",
+        "Cette participation est \u00e9gale \u00e0 100% du tarif mensuel d'abonnement ou des tarifs officialis\u00e9s par les municipalit\u00e9s pour les transports en commun.",
+        "Cette participation n'est pas due lorsque l'employeur met la prestation de transport \u00e0 la disposition du travailleur."
+      ],
+      "mots_cles": ["indemnit\u00e9 de transport", "100%", "abonnement", "transports en commun"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
     },
     {
       "article": "Art. 42",
-      "titre": "Majorations pour diplômes",
+      "titre": "Majorations pour dipl\u00f4mes",
       "texte": [
-        "Des majorations mensuelles pour les diplômes sont accordées dans les conditions ci après pour les travailleurs qui en sont titulaires :",
-        "1°) Petits diplômes ........................ 3 800 frs / mois",
-        "Diplômes d'enseignement général et technique (BEMT-BEP-BEPC-B.E.I)",
-        "2°)-Diplômes d'Etudes Secondaires et Diplômes Spéciaux ........ 5 600 frs /mois",
-        "Baccalauréat, B.S.E.C",
-        "3°) Diplômes d'Enseignement Supérieur .......................... 10 000 frs / mois",
-        "Licence en droit, Lettres ou sciences",
-        "Diplômes de sciences politiques avec baccalauréat - Diplôme des Grandes écoles I.U.T- Doctorat.",
-        "Le cumul des majorations pour un titulaire de plusieurs diplômes n'est pas admis. Un seul diplôme est pris en considération pour l'attribution de la majoration, le diplôme donnant droit à la prime la plus importante."
+        "Des majorations mensuelles pour les dipl\u00f4mes sont accord\u00e9es dans les conditions ci-apr\u00e8s pour les travailleurs qui en sont titulaires :",
+        "1\u00b0) Petits dipl\u00f4mes (BEMT-BEP-BEPC-BEI) : 3 800 frs/mois.",
+        "2\u00b0) Dipl\u00f4mes d'\u00c9tudes Secondaires et Dipl\u00f4mes Sp\u00e9ciaux (Baccalaur\u00e9at, BSEC) : 5 600 frs/mois.",
+        "3\u00b0) Dipl\u00f4mes d'Enseignement Sup\u00e9rieur (Licence, Sciences politiques avec baccalaur\u00e9at, Grandes \u00e9coles, IUT, Doctorat) : 10 000 frs/mois.",
+        "Le cumul des majorations pour un titulaire de plusieurs dipl\u00f4mes n'est pas admis. Un seul dipl\u00f4me est pris en consid\u00e9ration pour l'attribution de la majoration, le dipl\u00f4me donnant droit \u00e0 la prime la plus importante."
       ],
-      "mots_cles": ["majoration diplôme", "BEPC 3 800 FCFA", "BAC 5 600 FCFA", "licence 10 000 FCFA"],
+      "mots_cles": ["majoration dipl\u00f4me", "BEPC 3 800 FCFA", "BAC 5 600 FCFA", "licence 10 000 FCFA"],
       "statut": "en vigueur",
-      "section": "Titre IV : De la rémunération - Du salaire"
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
+    },
+    {
+      "article": "Art. 43",
+      "titre": "Majorations pour langues \u00e9trang\u00e8res",
+      "texte": [
+        "Lorsqu'un emploi exige la connaissance d'une ou plusieurs langues \u00e9trang\u00e8res, une prime mensuelle est accord\u00e9e au travailleur :",
+        "- Traduction (par langue) : 5 000 frs/mois ;",
+        "- R\u00e9daction (par langue) : 7 000 frs/mois.",
+        "Pour une m\u00eame langue, les majorations pour traduction et r\u00e9daction ne peuvent s'additionner, mais leur cumul est possible s'il s'agit de r\u00e9daction ou de traductions en plusieurs langues."
+      ],
+      "mots_cles": ["langues \u00e9trang\u00e8res", "traduction 5 000 FCFA", "r\u00e9daction 7 000 FCFA", "cumul"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
+    },
+    {
+      "article": "Art. 44",
+      "titre": "Primes diverses",
+      "texte": [
+        "Les entreprises peuvent accorder, selon leurs sp\u00e9cialit\u00e9s, des primes diverses.",
+        "Leur nature et leur montant seront d\u00e9termin\u00e9s par les accords d'\u00e9tablissement propres \u00e0 chaque entreprise."
+      ],
+      "mots_cles": ["primes diverses", "accords d'\u00e9tablissement"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
     },
     {
       "article": "Art. 45",
       "titre": "Prime de panier",
       "texte": [
-        "Une prime de panier est due à tout travailleur qu'une prolongation exceptionnelle de l'horaire de travail empêche de prendre un repas à l'heure habituelle.",
-        "Elle est aussi due à tout travailleur qui effectue en continue deux heures ou plus en sus de son horaire normal de travail.",
-        "Elle est fixée à un minimum de mille sept cent cinquante (1 750 frs) francs /jour, révisable annuellement.",
-        "Elle peut être remplacée par un repas gratuit."
+        "Une prime de panier est due \u00e0 tout travailleur qu'une prolongation exceptionnelle de l'horaire de travail emp\u00eache de prendre un repas \u00e0 l'heure habituelle.",
+        "Elle est aussi due \u00e0 tout travailleur qui effectue en continue deux heures ou plus en sus de son horaire normal de travail.",
+        "Elle est fix\u00e9e \u00e0 un minimum de mille sept cent cinquante (1 750) francs/jour, r\u00e9visable annuellement.",
+        "Elle peut \u00eatre remplac\u00e9e par un repas gratuit."
       ],
       "mots_cles": ["prime de panier", "1 750 FCFA/jour", "repas gratuit"],
       "statut": "en vigueur",
-      "section": "Titre IV : De la rémunération - Du salaire"
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
     },
     {
       "article": "Art. 46",
-      "titre": "Prime de fin d'année",
+      "titre": "Prime de fin d'ann\u00e9e",
       "texte": [
-        "Il est institué pour tout travailleur ayant un an de service continu dans l'entreprise et s'y trouvant encore au 31 Décembre de l'année considérée, une prime de fin d'année égale à un mois de salaire de base + 20% de la prime d'ancienneté.",
-        "Toutefois, cette prime est attribuée au prorata des mois de service de l'année considérée, à tout travailleur ayant au moins une année d'ancienneté dans l'entreprise et congédié en cours d'année par suite d'une diminution de l'activité de l'établissement ou une réorganisation intérieure.",
-        "Tout travailleur ayant fait en cours d'année l'objet d'une ou plusieurs sanctions (blâme au minimum) confirmées par l'Inspecteur du travail ou son représentant légal, pourra voir sa prime réduite ou supprimée.",
-        "La non réponse de l'inspecteur du travail dans un délai maximum d'un (1) mois vaut confirmation de la sanction."
+        "Il est institu\u00e9 pour tout travailleur ayant un an de service continu dans l'entreprise et s'y trouvant encore au 31 D\u00e9cembre de l'ann\u00e9e consid\u00e9r\u00e9e, une prime de fin d'ann\u00e9e \u00e9gale \u00e0 un mois de salaire de base + 20% de la prime d'anciennet\u00e9.",
+        "Toutefois, cette prime est attribu\u00e9e au prorata des mois de service de l'ann\u00e9e consid\u00e9r\u00e9e, \u00e0 tout travailleur ayant au moins une ann\u00e9e d'anciennet\u00e9 dans l'entreprise et cong\u00e9di\u00e9 en cours d'ann\u00e9e par suite d'une diminution de l'activit\u00e9 de l'\u00e9tablissement ou d'une r\u00e9organisation int\u00e9rieure.",
+        "Tout travailleur ayant fait en cours d'ann\u00e9e l'objet d'une ou plusieurs sanctions (bl\u00e2me au minimum) confirm\u00e9es par l'Inspecteur du travail pourra voir sa prime r\u00e9duite ou supprim\u00e9e.",
+        "La non r\u00e9ponse de l'inspecteur du travail dans un d\u00e9lai maximum d'un (1) mois vaut confirmation de la sanction.",
+        "En cas de diminution d'activit\u00e9 ou de crise \u00e9conomique d\u00fbment constat\u00e9e, les parties reconnaissent le droit de diff\u00e9rer ou r\u00e9viser cette prime d'accord parties.",
+        "Cette disposition ne s'applique qu'en l'absence de textes r\u00e9glementaires et l\u00e9gislatifs r\u00e9gissant ces situations."
       ],
-      "mots_cles": ["prime de fin d'année", "1 mois salaire", "20% ancienneté", "prorata"],
+      "mots_cles": ["prime de fin d'ann\u00e9e", "1 mois salaire", "20% anciennet\u00e9", "prorata", "sanctions"],
       "statut": "en vigueur",
-      "section": "Titre IV : De la rémunération - Du salaire"
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
     },
     {
       "article": "Art. 47",
-      "titre": "Congés payés",
+      "titre": "Cong\u00e9s pay\u00e9s",
       "texte": [
-        "La durée des congés payés est fixée par la législation et la réglementation en vigueur.",
-        "Toutefois la durée des congés est augmentée comme suit en considération de l'ancienneté du travailleur dans l'entreprise :",
-        "- 2 jours supplémentaires ouvrables après trois (3) ans de service ;",
-        "- 4 jours supplémentaires ouvrables après cinq (5) ans de service ;",
-        "- 5 jours supplémentaires ouvrables après dix (10) ans de service ;",
-        "- 7 jours supplémentaires ouvrables après quinze (15) ans de service ;",
-        "- 8 jours supplémentaires ouvrables après vingt (20) ans de service ;",
-        "- 10 jours supplémentaires ouvrables après vingt cinq (25) ans de service."
+        "La dur\u00e9e des cong\u00e9s pay\u00e9s est fix\u00e9e par la l\u00e9gislation et la r\u00e9glementation en vigueur.",
+        "Toutefois la dur\u00e9e des cong\u00e9s est augment\u00e9e comme suit en consid\u00e9ration de l'anciennet\u00e9 du travailleur dans l'entreprise :",
+        "- 2 jours suppl\u00e9mentaires ouvrables apr\u00e8s trois (3) ans de service ;",
+        "- 4 jours suppl\u00e9mentaires ouvrables apr\u00e8s cinq (5) ans de service ;",
+        "- 5 jours suppl\u00e9mentaires ouvrables apr\u00e8s dix (10) ans de service ;",
+        "- 7 jours suppl\u00e9mentaires ouvrables apr\u00e8s quinze (15) ans de service ;",
+        "- 8 jours suppl\u00e9mentaires ouvrables apr\u00e8s vingt (20) ans de service ;",
+        "- 10 jours suppl\u00e9mentaires ouvrables apr\u00e8s vingt-cinq (25) ans de service."
       ],
-      "mots_cles": ["congés payés", "ancienneté", "2 jours", "4 jours", "5 jours", "7 jours", "8 jours", "10 jours"],
+      "mots_cles": ["cong\u00e9s pay\u00e9s", "anciennet\u00e9", "2 jours", "4 jours", "5 jours", "7 jours", "8 jours", "10 jours"],
       "statut": "en vigueur",
-      "section": "Titre IV : De la rémunération"
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
+    },
+    {
+      "article": "Art. 48",
+      "titre": "Ordre de d\u00e9part en cong\u00e9",
+      "texte": [
+        "Sauf stipulations contraires des contrats individuels (maximum 24 mois), les travailleurs acqui\u00e8rent droit au cong\u00e9 pay\u00e9 de vingt-six (26) jours ouvrables apr\u00e8s douze (12) mois de service effectif.",
+        "L'ordre des d\u00e9parts en cong\u00e9 est \u00e9tabli par l'employeur en fonction des n\u00e9cessit\u00e9s de l'entreprise. Un planning annuel de d\u00e9part est dress\u00e9 au d\u00e9but de chaque ann\u00e9e et affich\u00e9.",
+        "Le travailleur partira normalement \u00e0 la date d'expiration de sa p\u00e9riode de r\u00e9f\u00e9rence. L'employeur peut avancer ou retarder le d\u00e9part, la date effective ne devant pas \u00eatre ant\u00e9rieure ou post\u00e9rieure de plus de trois (3) mois \u00e0 la date d'expiration.",
+        "Le rappel du travailleur en cong\u00e9 ne pourra intervenir que pour des raisons s\u00e9rieuses et motiv\u00e9es. Le travailleur rappel\u00e9 conservera int\u00e9gralement son allocation de cong\u00e9 et percevra son salaire d\u00e8s la reprise du travail. Il b\u00e9n\u00e9ficiera d'une prolongation \u00e9gale au nombre de jours perdus et de deux (2) journ\u00e9es de cong\u00e9s suppl\u00e9mentaires non pay\u00e9s. Les frais de voyage aller et retour lui seront rembours\u00e9s.",
+        "Hors le cas de rupture ou d'expiration du contrat, est nulle toute convention pr\u00e9voyant l'octroi d'une indemnit\u00e9 compensatrice en lieu et place du cong\u00e9 effectif."
+      ],
+      "mots_cles": ["d\u00e9part en cong\u00e9", "26 jours ouvrables", "12 mois", "planning", "rappel", "3 mois"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
+    },
+    {
+      "article": "Art. 49",
+      "titre": "Allocation de cong\u00e9",
+      "texte": [
+        "L'employeur doit verser au travailleur, pendant toute la dur\u00e9e du cong\u00e9, une allocation calcul\u00e9e conform\u00e9ment \u00e0 la r\u00e9glementation en vigueur.",
+        "L'allocation de cong\u00e9 doit \u00eatre vers\u00e9e en totalit\u00e9 le jour du d\u00e9part en cong\u00e9."
+      ],
+      "mots_cles": ["allocation de cong\u00e9", "versement", "jour de d\u00e9part"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Du salaire"
+    },
+    {
+      "article": "Art. 50",
+      "titre": "Obligations du travailleur",
+      "texte": [
+        "Le travailleur a le devoir d'accomplir son travail consciencieusement. Il doit toute son activit\u00e9 professionnelle \u00e0 l'entreprise, sauf d\u00e9rogation stipul\u00e9e au contrat.",
+        "Toutefois, il lui est loisible, sauf convention contraire, d'exercer en dehors de son temps de travail toute activit\u00e9 \u00e0 caract\u00e8re professionnel non susceptible de concurrencer l'entreprise ou de nuire \u00e0 la bonne ex\u00e9cution des services convenus.",
+        "Est nulle de plein droit toute clause du contrat portant interdiction pour le travailleur d'exercer une activit\u00e9 quelconque \u00e0 l'expiration ou en cas de rupture du contrat de travail.",
+        "Il est \u00e9galement interdit au travailleur de divulguer les renseignements d'ordre confidentiel acquis au service de l'entreprise."
+      ],
+      "mots_cles": ["obligations", "travailleur", "activit\u00e9 professionnelle", "non-concurrence", "confidentialit\u00e9"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 51",
+      "titre": "Discipline",
+      "texte": [
+        "Les dispositions disciplinaires particuli\u00e8res sont pr\u00e9cis\u00e9es dans le r\u00e8glement int\u00e9rieur de chaque entreprise.",
+        "Les sanctions disciplinaires applicables au personnel sont :",
+        "- avertissement \u00e9crit ;",
+        "- bl\u00e2me ;",
+        "- mise \u00e0 pied sans solde de un (1) \u00e0 huit (8) jours maximum ;",
+        "- licenciement avec ou sans indemnit\u00e9.",
+        "Ces sanctions ne sont pas n\u00e9cessairement successives mais adapt\u00e9es \u00e0 la gravit\u00e9 de la faute commise.",
+        "Elles sont prises par l'employeur ou son repr\u00e9sentant apr\u00e8s que l'int\u00e9ress\u00e9, assist\u00e9 d'un d\u00e9l\u00e9gu\u00e9 du personnel, aura fourni ses explications \u00e9crites ou verbales.",
+        "Toute sanction est signifi\u00e9e par \u00e9crit et copie transmise \u00e0 la direction d\u00e9partementale du travail du ressort.",
+        "En application de l'article 41 du code du travail, le licenciement pour faute lourde ne prend effet d\u00e9finitivement qu'apr\u00e8s que le travailleur aura pr\u00e9sent\u00e9 sa d\u00e9fense avec la facult\u00e9 de se faire assister par une personne de son choix.",
+        "Pendant le d\u00e9lai ne pouvant exc\u00e9der trente (30) jours, les relations de travail sont suspendues. Ce d\u00e9lai ne donne pas lieu \u00e0 r\u00e9mun\u00e9ration, sauf pour le travailleur prot\u00e9g\u00e9 conform\u00e9ment \u00e0 l'article 176 du code du travail."
+      ],
+      "mots_cles": ["discipline", "avertissement", "bl\u00e2me", "mise \u00e0 pied", "licenciement", "faute lourde", "30 jours"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 52",
+      "titre": "Tenues de travail",
+      "texte": [
+        "Dans les entreprises o\u00f9 une tenue de travail d\u00e9termin\u00e9e est rendue n\u00e9cessaire par la nature de l'activit\u00e9, l'employeur devra la fournir gratuitement, en double exemplaire.",
+        "Le port de la tenue de travail est obligatoire pendant les heures de travail.",
+        "Des moyens de protection adapt\u00e9s au poste de travail occup\u00e9 seront mis \u00e0 la disposition des travailleurs affect\u00e9s \u00e0 des travaux sp\u00e9ciaux ; leur port est rendu obligatoire."
+      ],
+      "mots_cles": ["tenues de travail", "gratuit", "double exemplaire", "moyens de protection"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 53",
+      "titre": "Dur\u00e9e du travail",
+      "texte": [
+        "Les parties se r\u00e9f\u00e8rent \u00e0 la l\u00e9gislation et \u00e0 la r\u00e9glementation en vigueur en ce qui concerne :",
+        "1\u00b0 la dur\u00e9e hebdomadaire du travail ;",
+        "2\u00b0 les conditions d'ex\u00e9cution des heures au-del\u00e0 de la dur\u00e9e l\u00e9gale ;",
+        "3\u00b0 la r\u00e9cup\u00e9ration des heures perdues.",
+        "Toute modification aux horaires de travail sera communiqu\u00e9e aux d\u00e9l\u00e9gu\u00e9s du personnel et transmise \u00e0 l'Inspection du Travail du ressort, avant sa mise en application."
+      ],
+      "mots_cles": ["dur\u00e9e du travail", "dur\u00e9e hebdomadaire", "heures suppl\u00e9mentaires", "r\u00e9cup\u00e9ration", "Inspection du Travail"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
     },
     {
       "article": "Art. 54",
-      "titre": "Heures supplémentaires",
+      "titre": "Heures suppl\u00e9mentaires",
       "texte": [
-        "Les heures effectuées dans la semaine, avec l'accord de la direction au-delà de la durée légale ou dans certains cas, au-delà de la durée considérée comme équivalente à la durée légale, sont des heures supplémentaires et à ce titre, rémunérées au taux de l'heure majorée d'un certain pourcentage.",
-        "Conformément aux dispositions de la réglementation en vigueur fixant pour les établissements, la durée du travail, la réglementation des heures supplémentaires et les modalités de leur rémunération, les heures susvisées donnent lieu aux majorations suivantes :",
-        "- 10% du salaire horaire pour les cinq (5) premières heures au-delà de la durée légale ou de la durée considérée comme équivalent ;",
-        "- 25% du salaire horaire pour les heures supplémentaires effectuées le jour ;",
-        "- 50% du salaire horaire pour les heures supplémentaires effectuées la nuit ou pendant le repos hebdomadaire ou les jours fériés ;",
-        "- 100% du salaire horaire pour les heures de nuit effectuées le jour du repos hebdomadaire ou les jours fériés.",
-        "Sauf cas d'urgence, le personnel désigné pour effectuer des heures supplémentaires est prévenu vingt quatre (24) heures à l'avance."
+        "Les heures effectu\u00e9es dans la semaine, avec l'accord de la direction, au-del\u00e0 de la dur\u00e9e l\u00e9gale ou de la dur\u00e9e consid\u00e9r\u00e9e comme \u00e9quivalente, sont des heures suppl\u00e9mentaires r\u00e9mun\u00e9r\u00e9es au taux de l'heure major\u00e9 comme suit :",
+        "- 10% du salaire horaire pour les cinq (5) premi\u00e8res heures au-del\u00e0 de la dur\u00e9e l\u00e9gale ou de la dur\u00e9e consid\u00e9r\u00e9e comme \u00e9quivalente ;",
+        "- 25% du salaire horaire pour les heures suppl\u00e9mentaires effectu\u00e9es le jour ;",
+        "- 50% du salaire horaire pour les heures suppl\u00e9mentaires effectu\u00e9es la nuit ou pendant le repos hebdomadaire ou les jours f\u00e9ri\u00e9s ;",
+        "- 100% du salaire horaire pour les heures de nuit effectu\u00e9es le jour du repos hebdomadaire ou les jours f\u00e9ri\u00e9s.",
+        "L'employeur se r\u00e9serve le droit de faire effectuer des heures suppl\u00e9mentaires dans la limite et aux conditions fix\u00e9es par la l\u00e9gislation.",
+        "Sauf cas d'urgence, le personnel d\u00e9sign\u00e9 pour effectuer des heures suppl\u00e9mentaires est pr\u00e9venu vingt-quatre (24) heures \u00e0 l'avance.",
+        "La libert\u00e9 dont jouissent les cadres dans l'organisation de leur travail trouve sa contrepartie dans le fait que les heures suppl\u00e9mentaires effectu\u00e9es par eux sont inh\u00e9rentes \u00e0 leurs fonctions et \u00e9galement compens\u00e9es par un salaire qui tient compte des surcro\u00eets de travail."
       ],
-      "mots_cles": ["heures supplémentaires", "10%", "25%", "50%", "100%", "24 heures"],
+      "mots_cles": ["heures suppl\u00e9mentaires", "10%", "25%", "50%", "100%", "24 heures", "cadres"],
       "statut": "en vigueur",
-      "section": "Titre V : Des conditions de travail"
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 55",
+      "titre": "Travail de nuit",
+      "texte": [
+        "Conform\u00e9ment \u00e0 l'article 106 du code du travail, le travail effectu\u00e9 entre vingt (20) heures et cinq (5) heures est consid\u00e9r\u00e9 comme travail de nuit.",
+        "Le travail par \u00e9quipe en horaire normal n'entre pas dans le cadre des majorations \u00e9ventuelles pour travail de nuit."
+      ],
+      "mots_cles": ["travail de nuit", "20 heures", "5 heures", "\u00e9quipe"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 56",
+      "titre": "Travail des femmes et des enfants",
+      "texte": [
+        "Dans les usines, manufactures, mines, mini\u00e8res, chantiers, ateliers et leurs d\u00e9pendances, les femmes ne peuvent \u00eatre employ\u00e9es \u00e0 un travail de nuit.",
+        "Le repos des femmes doit avoir une dur\u00e9e de onze (11) heures cons\u00e9cutives au minimum comprenant la p\u00e9riode nocturne d\u00e9finie \u00e0 l'article 106 du code du travail.",
+        "Toutefois, des d\u00e9rogations temporaires ou permanentes pourront \u00eatre admises par d\u00e9cret.",
+        "Il est interdit d'employer une femme pendant les six (6) semaines qui suivent son accouchement.",
+        "Il est interdit d'embaucher un enfant de moins de seize (16) ans, sauf d\u00e9rogation pr\u00e9vue par la l\u00e9gislation.",
+        "Les enfants de moins de 16 ans fr\u00e9quentant un \u00e9tablissement scolaire public ou priv\u00e9 peuvent \u00eatre employ\u00e9s pendant la p\u00e9riode des classes ou des vacances \u00e0 des travaux l\u00e9gers, ne pouvant exc\u00e9der deux heures par jour, le total quotidien enseignement et travaux ne d\u00e9passant pas sept (7) heures.",
+        "L'Inspecteur du travail peut requ\u00e9rir l'examen des femmes et des enfants par un m\u00e9decin agr\u00e9\u00e9 en vue de v\u00e9rifier si le travail dont ils sont charg\u00e9s n'exc\u00e8de pas leurs forces.",
+        "La femme ou l'enfant ne peut \u00eatre maintenu dans un emploi au-dessus de ses forces et doit \u00eatre affect\u00e9 \u00e0 un emploi convenable. \u00c0 d\u00e9faut, le contrat est r\u00e9sili\u00e9 avec paiement de l'indemnit\u00e9 de pr\u00e9avis et \u00e9ventuellement de l'indemnit\u00e9 de licenciement."
+      ],
+      "mots_cles": ["femmes", "enfants", "travail de nuit", "11 heures repos", "6 semaines", "16 ans", "travaux l\u00e9gers"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
     },
     {
       "article": "Art. 57",
       "titre": "Permissions exceptionnelles",
       "texte": [
-        "Des permissions exceptionnelles à l'occasion des événements familiaux touchant directement son propre foyer, sont accordées au travailleur dans une limite dix (10) jours par année civile, sans retenue sur salaire et sans déduction de la durée du congé acquis, sur présentation de pièces d'état-civil ou de justification probante, dans les conditions suivantes :",
-        "- Mariage du travailleur ......................... 4 jours",
-        "- Mariage d'un de ses enfants ..................... 2 jours",
-        "- Mariage d'un frère ou d'une sœur ............... 1 jour",
-        "- Décès du conjoint(e) légitime .................. 7 jours",
-        "- Décès d'un de ses enfants, du père, de la mère .. 4 jours",
-        "- Décès d'un frère ou d'une sœur ................. 2 jours",
-        "- Accouchement de l'épouse légitime ............... 2 jours",
-        "- Déménagement ................................... 2 jours",
-        "- Retrait de deuil ............................... 2 jours",
-        "- Examen ou concours ......... Durée des épreuves y compris les oraux."
+        "Des permissions exceptionnelles \u00e0 l'occasion des \u00e9v\u00e9nements familiaux touchant directement son propre foyer sont accord\u00e9es au travailleur dans une limite de dix (10) jours par ann\u00e9e civile, sans retenue sur salaire et sans d\u00e9duction de la dur\u00e9e du cong\u00e9 acquis, sur pr\u00e9sentation de pi\u00e8ces d'\u00e9tat-civil ou de justification probante, dans les conditions suivantes :",
+        "- Mariage du travailleur : 4 jours ;",
+        "- Mariage d'un de ses enfants : 2 jours ;",
+        "- Mariage d'un fr\u00e8re ou d'une s\u0153ur : 1 jour ;",
+        "- D\u00e9c\u00e8s du conjoint(e) l\u00e9gitime : 7 jours ;",
+        "- D\u00e9c\u00e8s d'un de ses enfants, du p\u00e8re, de la m\u00e8re : 4 jours ;",
+        "- D\u00e9c\u00e8s d'un fr\u00e8re ou d'une s\u0153ur : 2 jours ;",
+        "- Accouchement de l'\u00e9pouse l\u00e9gitime : 2 jours ;",
+        "- D\u00e9m\u00e9nagement : 2 jours ;",
+        "- Retrait de deuil : 2 jours ;",
+        "- Examen ou concours : dur\u00e9e du d\u00e9roulement des \u00e9preuves y compris les oraux.",
+        "Si l'\u00e9v\u00e9nement se produit hors du lieu d'emploi et n\u00e9cessite le d\u00e9placement du travailleur, les d\u00e9lais pourront \u00eatre prolong\u00e9s d'accord parties. Cette prolongation ne donnera pas lieu \u00e0 r\u00e9mun\u00e9ration."
       ],
-      "mots_cles": ["permissions exceptionnelles", "10 jours", "mariage 4 jours", "décès 7 jours", "accouchement 2 jours"],
+      "mots_cles": ["permissions exceptionnelles", "10 jours", "mariage 4 jours", "d\u00e9c\u00e8s 7 jours", "accouchement 2 jours"],
       "statut": "en vigueur",
-      "section": "Titre V : Des conditions de travail"
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 58",
+      "titre": "Jours f\u00e9ri\u00e9s",
+      "texte": [
+        "Les jours f\u00e9ri\u00e9s, ch\u00f4m\u00e9s et pay\u00e9s sont ceux pr\u00e9vus par la l\u00e9gislation en vigueur."
+      ],
+      "mots_cles": ["jours f\u00e9ri\u00e9s", "ch\u00f4m\u00e9s", "pay\u00e9s"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 59",
+      "titre": "Logement",
+      "texte": [
+        "Lorsque le travailleur est d\u00e9plac\u00e9 de son lieu de r\u00e9sidence habituelle par le fait de l'employeur en vue d'ex\u00e9cuter un contrat de travail et qu'il ne peut, par ses propres moyens, se procurer un logement suffisant pour lui et sa famille, l'employeur est tenu de le lui assurer dans les conditions pr\u00e9vues \u00e0 l'article 81 du code du travail.",
+        "Le travailleur devra par \u00e9crit mettre en demeure l'employeur de remplir ses obligations en mati\u00e8re de logement.",
+        "Le travailleur log\u00e9 par l'employeur subira une retenue de logement \u00e9gale au maximum fix\u00e9 par la r\u00e9glementation locale. Pour les logements d'une classe sup\u00e9rieure, le montant de la retenue fera l'objet d'un accord particulier au contrat.",
+        "En cas de rupture du contrat de travail, le travailleur est tenu d'\u00e9vacuer le logement dans les d\u00e9lais suivants :",
+        "a) notification r\u00e9ciproque du pr\u00e9avis : \u00e9vacuation \u00e0 l'expiration du pr\u00e9avis ;",
+        "b) licenciement sans pr\u00e9avis : \u00e9vacuation imm\u00e9diate, sur demande pr\u00e9alable, dans la limite maximum d'un mois ;",
+        "c) d\u00e9mission sans pr\u00e9avis : \u00e9vacuation imm\u00e9diate ;",
+        "d) licenciement pour faute lourde : \u00e9vacuation dans un d\u00e9lai de dix (10) jours.",
+        "Le logement doit \u00eatre restitu\u00e9 dans un bon \u00e9tat.",
+        "L'obligation de loger pourra \u00eatre remplac\u00e9e par le versement d'une indemnit\u00e9 de logement conforme aux usages locaux. Cette indemnit\u00e9 ne peut toutefois \u00eatre r\u00e9clam\u00e9e a posteriori si le travailleur n'a pas mis en demeure son employeur de le loger."
+      ],
+      "mots_cles": ["logement", "\u00e9vacuation", "pr\u00e9avis", "retenue", "indemnit\u00e9 de logement", "10 jours"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 60",
+      "titre": "Classe de passage",
+      "texte": [
+        "Les classes de passage du travailleur et de sa famille seront d\u00e9termin\u00e9es dans les accords d'\u00e9tablissement propres \u00e0 chaque secteur d'activit\u00e9 en fonction des cat\u00e9gories professionnelles pr\u00e9vues \u00e0 la pr\u00e9sente convention."
+      ],
+      "mots_cles": ["classe de passage", "accords d'\u00e9tablissement", "cat\u00e9gories professionnelles"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 61",
+      "titre": "Bagages",
+      "texte": [
+        "Pour le transport des bagages du travailleur et de sa famille, il n'est pas pr\u00e9vu \u00e0 la charge de l'entreprise d'avantage autre que la franchise conc\u00e9d\u00e9e par la compagnie de transport.",
+        "Toutefois, lors du premier voyage du lieu de r\u00e9sidence habituelle au lieu d'emploi et du dernier voyage, ainsi que dans le cas de mutation, l'employeur assurera au travailleur voyageant par toute autre voie que la voie maritime, le transport gratuit de :",
+        "- 350 kilos de bagage en sus de la franchise pour lui-m\u00eame et sa ou ses \u00e9pouses l\u00e9gitimes, dont le mariage est \u00e0 l'\u00e9tat civil ;",
+        "- 50 kilos de bagages en sus de la franchise pour chacun de ses enfants mineurs l\u00e9galement \u00e0 la charge du travailleur et vivant habituellement avec lui.",
+        "De plus, les travailleurs voyageant par avion \u00e0 l'occasion de leurs cong\u00e9s b\u00e9n\u00e9ficieront d'un total de cent (100) kilos suppl\u00e9mentaires de bagages, par voie maritime ou terrestre, \u00e0 la charge de l'employeur quelle que soit l'importance de leur famille.",
+        "Le transport de bagages est effectu\u00e9 par une voie et des moyens au choix de l'employeur.",
+        "L'assurance des bagages demeure \u00e0 la charge du travailleur."
+      ],
+      "mots_cles": ["bagages", "350 kilos", "50 kilos", "100 kilos", "transport", "franchise", "assurance"],
+      "statut": "en vigueur",
+      "section": "Titre V : Des conditions de travail - Obligations"
+    },
+    {
+      "article": "Art. 62",
+      "titre": "Organisation m\u00e9dicale et sanitaire",
+      "texte": [
+        "Les employeurs sont tenus de se conformer en mati\u00e8re d'organisation m\u00e9dicale et sanitaire aux prescriptions l\u00e9gales et r\u00e9glementaires en vigueur."
+      ],
+      "mots_cles": ["organisation m\u00e9dicale", "sanitaire", "prescriptions l\u00e9gales"],
+      "statut": "en vigueur",
+      "section": "Titre VI : Du service m\u00e9dical et social"
     },
     {
       "article": "Art. 63",
       "titre": "Hospitalisation",
       "texte": [
-        "En attendant la mise en place d'un régime de sécurité sociale à l'échelon national, comportant notamment la garantie maladie, les employeurs acceptent en cas d'hospitalisation du travailleur et de la ou les épouses légitimes et les enfants à charge sur prescription du médecin d'entreprise :",
-        "1°- de se porter caution auprès de l'établissement hospitalier du paiement des frais d'hospitalisation du travailleur dans la limite des sommes qui sont ou pourraient être dues à ce dernier.",
-        "2°- de prendre en charge à 56% les frais d'hospitalisation du travailleur dans la limite de la période de congé de maladie à plein et demi-salaire du travailleur malade, suivant la classification ci-après :",
-        "- 3ème catégorie tarif journalier hôpital : 1ère, 2e, 3e et 4e catégorie de la présente convention.",
-        "- 2ème catégorie tarif journalier hôpital : 5e, 6e et 7e catégorie de la présente convention.",
-        "- 1ère tarif journalier hôpital : 8e catégorie et au dessus de la présente convention."
+        "En attendant la mise en place d'un r\u00e9gime de s\u00e9curit\u00e9 sociale comportant notamment la garantie maladie, les employeurs acceptent, en cas d'hospitalisation du travailleur et de la ou les \u00e9pouses l\u00e9gitimes et les enfants \u00e0 charge sur prescription du m\u00e9decin :",
+        "1\u00b0 de se porter caution aupr\u00e8s de l'\u00e9tablissement hospitalier du paiement des frais d'hospitalisation, le remboursement est assur\u00e9, d'accord parties, par retenues p\u00e9riodiques sur le salaire de l'int\u00e9ress\u00e9 pour la quote-part restant \u00e0 la charge du travailleur ;",
+        "2\u00b0 de prendre en charge \u00e0 56% les frais d'hospitalisation du travailleur dans la limite de la p\u00e9riode de cong\u00e9 de maladie, suivant la classification :",
+        "- 3\u00e8me cat\u00e9gorie tarif journalier h\u00f4pital pour les 1\u00e8re, 2\u00e8me, 3\u00e8me et 4\u00e8me cat\u00e9gorie de la pr\u00e9sente convention ;",
+        "- 2\u00e8me cat\u00e9gorie tarif journalier h\u00f4pital pour les 5\u00e8me, 6\u00e8me et 7\u00e8me cat\u00e9gorie ;",
+        "- 1\u00e8re cat\u00e9gorie tarif journalier h\u00f4pital pour 8\u00e8me cat\u00e9gorie et au-dessus.",
+        "Dans le cas d'hospitalisation d'un membre de la famille telle que d\u00e9finie par les statuts de la CNSS, l'employeur se portera caution aupr\u00e8s de l'\u00e9tablissement hospitalier du paiement des frais, le remboursement sera assur\u00e9, d'accord parties, par retenues p\u00e9riodiques sur le salaire de l'int\u00e9ress\u00e9."
       ],
-      "mots_cles": ["hospitalisation", "56%", "caution", "catégories", "tarif journalier"],
+      "mots_cles": ["hospitalisation", "56%", "caution", "cat\u00e9gories", "tarif journalier", "CNSS"],
       "statut": "en vigueur",
-      "section": "Titre VI : Du service médical et social"
+      "section": "Titre VI : Du service m\u00e9dical et social"
     },
     {
       "article": "Art. 64",
       "titre": "Frais pharmaceutiques",
       "texte": [
-        "En attendant la mise en place d'un régime de sécurité sociale à l'échelon national, comportant notamment la garantie maladie, les employeurs acceptent de prendre en charge 37% des frais pharmaceutiques exposés par l'employé, cadre y compris, pour ses propres soins médicaux, sur présentation d'ordonnances délivrées par le médecin de l'entreprise."
+        "En attendant la mise en place d'un r\u00e9gime de s\u00e9curit\u00e9 sociale comportant notamment la garantie maladie, les employeurs acceptent de prendre en charge 37% des frais pharmaceutiques expos\u00e9s par l'employ\u00e9, cadre y compris, pour ses propres soins m\u00e9dicaux, sur pr\u00e9sentation d'ordonnances d\u00e9livr\u00e9es par le m\u00e9decin de l'entreprise."
       ],
-      "mots_cles": ["frais pharmaceutiques", "37%", "ordonnance", "médecin d'entreprise"],
+      "mots_cles": ["frais pharmaceutiques", "37%", "ordonnance", "m\u00e9decin d'entreprise"],
       "statut": "en vigueur",
-      "section": "Titre VI : Du service médical et social"
+      "section": "Titre VI : Du service m\u00e9dical et social"
+    },
+    {
+      "article": "Art. 65",
+      "titre": "Cong\u00e9s pour soins",
+      "texte": [
+        "Des cong\u00e9s sans solde peuvent \u00eatre accord\u00e9s aux travailleurs, qu'ils soient mari\u00e9s, veufs, divorc\u00e9s ou c\u00e9libataires, pour soigner en cas de maladie grave attest\u00e9e par un certificat m\u00e9dical, leurs enfants, conjoint ou ascendants directs."
+      ],
+      "mots_cles": ["cong\u00e9s pour soins", "sans solde", "maladie grave", "enfants", "conjoint", "ascendants"],
+      "statut": "en vigueur",
+      "section": "Titre VI : Du service m\u00e9dical et social"
+    },
+    {
+      "article": "Art. 66",
+      "titre": "R\u00e9compenses et distinctions honorifiques",
+      "texte": [
+        "Les travailleurs qui apportent une contribution particuli\u00e8re \u00e0 l'ex\u00e9cution des t\u00e2ches, de par la mani\u00e8re dont ils s'acquittent de leurs obligations, de l'initiative dont ils font preuve, de l'am\u00e9lioration de la productivit\u00e9 ou de la qualit\u00e9 du travail qu'ils g\u00e9n\u00e8rent, peuvent recevoir de l'employeur une r\u00e9compense ou une distinction honorifique.",
+        "Ces r\u00e9compenses et distinctions sont octroy\u00e9es par l'employeur."
+      ],
+      "mots_cles": ["r\u00e9compenses", "distinctions honorifiques", "productivit\u00e9", "qualit\u00e9"],
+      "statut": "en vigueur",
+      "section": "Titre VII : Des dispositions diverses"
+    },
+    {
+      "article": "Art. 67",
+      "titre": "Classement des travailleurs",
+      "texte": [
+        "Les cat\u00e9gories et \u00e9chelons des travailleurs sont d\u00e9termin\u00e9s par la classification professionnelle figurant en annexe \u00e0 la pr\u00e9sente convention.",
+        "Le classement du travailleur est fonction de l'emploi qu'il occupe au sein de l'entreprise et est fix\u00e9 dans les conditions pr\u00e9vues \u00e0 l'article 15 de la pr\u00e9sente convention sur les conditions d'engagement."
+      ],
+      "mots_cles": ["classement", "cat\u00e9gories", "\u00e9chelons", "classification professionnelle", "annexe"],
+      "statut": "en vigueur",
+      "section": "Titre VII : Des dispositions diverses"
+    },
+    {
+      "article": "Art. 68",
+      "titre": "Commission paritaire d'avancement et des promotions",
+      "texte": [
+        "Il est institu\u00e9 une commission paritaire d'avancement et des promotions en application de l'article 20 de la pr\u00e9sente convention.",
+        "Le r\u00f4le de la commission est de proc\u00e9der aux avancements des travailleurs selon les crit\u00e8res d\u00e9finis dans les annexes.",
+        "La commission est compos\u00e9e de :",
+        "- deux repr\u00e9sentants de l'employeur ;",
+        "- deux repr\u00e9sentants des travailleurs choisis par les organisations syndicales les plus repr\u00e9sentatives ou les d\u00e9l\u00e9gu\u00e9s du personnel."
+      ],
+      "mots_cles": ["commission paritaire", "avancement", "promotions", "2 repr\u00e9sentants employeur", "2 repr\u00e9sentants travailleurs"],
+      "statut": "en vigueur",
+      "section": "Titre VII : Des dispositions diverses"
+    },
+    {
+      "article": "Art. 69",
+      "titre": "Commission de contestation et de classement",
+      "texte": [
+        "Tout travailleur a le droit de demander \u00e0 son employeur de faire v\u00e9rifier si l'emploi qu'il occupe effectivement correspond bien \u00e0 la d\u00e9finition du poste de travail retenue comme base de classification.",
+        "La r\u00e9clamation peut \u00eatre introduite soit directement soit par l'interm\u00e9diaire du repr\u00e9sentant syndical.",
+        "En cas de d\u00e9saccord, le diff\u00e9rend peut \u00eatre soumis \u00e0 la commission de contestation et de classement. Tout employeur peut utiliser la m\u00eame voie de recours pour l'\u00e9valuation d'un poste.",
+        "Cette commission, pr\u00e9sid\u00e9e par le directeur r\u00e9gional du travail et de la fonction publique du ressort, est compos\u00e9e de deux repr\u00e9sentants des travailleurs et de deux repr\u00e9sentants des employeurs.",
+        "Elle statue sur tout diff\u00e9rend concernant les contestations de classification de poste des travailleurs. Elle appr\u00e9cie et fixe la cat\u00e9gorie dans laquelle est class\u00e9 le poste occup\u00e9 par le travailleur.",
+        "Au cas o\u00f9 elle attribue un nouveau classement, elle pr\u00e9cise dans sa d\u00e9cision la date \u00e0 laquelle celui-ci prend effet.",
+        "Sur demande du pr\u00e9sident de la commission, les membres sont d\u00e9sign\u00e9s par les organisations syndicales patronales et les travailleurs signataires. Ils pourront s'adjoindre un ou deux coll\u00e8gues plus qualifi\u00e9s, et au besoin soumettre l'int\u00e9ress\u00e9 \u00e0 un contr\u00f4le de qualification par un organisme sp\u00e9cialis\u00e9.",
+        "La commission se r\u00e9unit obligatoirement dans les trois (3) jours francs qui suivent la requ\u00eate et se prononce dans les cinq (5) jours qui suivent la date de sa premi\u00e8re r\u00e9union.",
+        "Le pr\u00e9sident ne participe pas au vote mais exprime ses avis au proc\u00e8s-verbal. La d\u00e9cision est prise \u00e0 la majorit\u00e9 des voix. Elle doit toujours \u00eatre motiv\u00e9e.",
+        "Lorsqu'une des parties n'accepte pas cette d\u00e9cision, le litige est port\u00e9 devant le tribunal du travail du ressort."
+      ],
+      "mots_cles": ["commission de contestation", "classement", "directeur r\u00e9gional du travail", "3 jours", "5 jours", "majorit\u00e9"],
+      "statut": "en vigueur",
+      "section": "Titre VII : Des dispositions diverses"
     },
     {
       "article": "Art. 70",
-      "titre": "Commission d'interprétation et de conciliation",
+      "titre": "Commission d'interpr\u00e9tation et de conciliation",
       "texte": [
-        "Il est institué une commission nationale paritaire d'interprétation et de conciliation pour rechercher une solution amiable aux différends pouvant résulter de l'interprétation et de l'application de la présente convention ou de ses annexes et additifs.",
-        "Cette commission n'a pas à connaître des litiges individuels qui ne mettent pas en cause le sens et la portée de la présente convention.",
+        "Il est institu\u00e9 une commission nationale paritaire d'interpr\u00e9tation et de conciliation pour rechercher une solution amiable aux diff\u00e9rends pouvant r\u00e9sulter de l'interpr\u00e9tation et de l'application de la pr\u00e9sente convention ou de ses annexes et additifs.",
+        "Cette commission n'a pas \u00e0 conna\u00eetre des litiges individuels qui ne mettent pas en cause le sens et la port\u00e9e de la pr\u00e9sente convention.",
         "La composition de la commission est la suivante :",
-        "- deux (2) membres titulaires et deux membres suppléants de chaque organisation syndicale des travailleurs signataires ;",
-        "- un (1) nombre égal de membres patronaux titulaires et suppléants.",
-        "La partie signataire qui désire soumettre un différend à la commission, doit le porter par écrit à la connaissance de toutes les autres parties ainsi que de l'autorité administrative.",
-        "Celle-ci est tenue de réunir la commission dans le plus bref délai. Lorsque la commission donne un avis à l'unanimité des organisations représentées, le texte de cet avis signé par les membres de la commission, a les mêmes effets juridiques que les clauses de la présente convention."
+        "- deux (2) membres titulaires et deux membres suppl\u00e9ants de chaque organisation syndicale des travailleurs signataires ;",
+        "- un (1) nombre \u00e9gal de membres patronaux titulaires et suppl\u00e9ants.",
+        "Les noms des membres sont communiqu\u00e9s par les organisations syndicales int\u00e9ress\u00e9es \u00e0 l'autorit\u00e9 administrative (minist\u00e8re du travail).",
+        "La partie signataire qui d\u00e9sire soumettre un diff\u00e9rend \u00e0 la commission doit le porter par \u00e9crit \u00e0 la connaissance de toutes les autres parties ainsi que de l'autorit\u00e9 administrative.",
+        "Celle-ci est tenue de r\u00e9unir la commission dans le plus bref d\u00e9lai.",
+        "Lorsque la commission donne un avis \u00e0 l'unanimit\u00e9 des organisations repr\u00e9sent\u00e9es, le texte de cet avis sign\u00e9 par les membres de la commission a les m\u00eames effets juridiques que les clauses de la pr\u00e9sente convention.",
+        "Cet avis fait l'objet d'un d\u00e9p\u00f4t au greffe du tribunal du travail, \u00e0 la diligence de l'autorit\u00e9 qui a r\u00e9uni la commission."
       ],
-      "mots_cles": ["commission d'interprétation", "conciliation", "paritaire", "unanimité"],
+      "mots_cles": ["commission d'interpr\u00e9tation", "conciliation", "paritaire", "unanimit\u00e9", "tribunal du travail"],
       "statut": "en vigueur",
       "section": "Titre VII : Des dispositions diverses"
     },
     {
       "article": "Annexe I",
-      "titre": "Grille des salaires — CC Industrie et Métallurgie",
+      "titre": "Grille des salaires \u2014 CC Industrie et M\u00e9tallurgie",
       "texte": [
-        "BAREME DES SALAIRES",
-        "1ère catégorie :",
-        "- 1er échelon : 50 463 FCFA",
-        "- 2ème échelon : 52 558 FCFA",
-        "- 3ème échelon : —",
-        "2ème catégorie :",
-        "- 1er échelon : 55 284 FCFA",
-        "- 2ème échelon : —",
-        "- 3ème échelon : —",
-        "3ème catégorie :",
-        "- 1er échelon : 67 088 FCFA",
-        "- 2ème échelon : —",
-        "- 3ème échelon : —",
-        "4ème catégorie :",
-        "- 1er échelon : 70 507 FCFA",
-        "- 2ème échelon : 79 107 FCFA",
-        "- 3ème échelon : —",
-        "5ème catégorie :",
-        "- 1er échelon : 87 383 FCFA",
-        "- 2ème échelon : —",
-        "- 3ème échelon : —",
-        "6ème catégorie :",
-        "- 1er échelon : 102 683 FCFA",
-        "- 2ème échelon : 107 680 FCFA",
-        "- 3ème échelon : —",
-        "7ème catégorie :",
-        "- 1er échelon : 120 641 FCFA",
-        "- 2ème échelon : 133 446 FCFA",
-        "- 3ème échelon : —",
-        "8ème catégorie :",
-        "- 1er échelon : 140 657 FCFA",
-        "- 2ème échelon : 158 301 FCFA",
-        "- 3ème échelon : —",
-        "9ème catégorie :",
-        "- 1er échelon : 164 337 FCFA",
-        "- 2ème échelon : 173 098 FCFA",
-        "- 3ème échelon : —",
-        "10ème catégorie :",
-        "- 1er échelon : 187 357 FCFA",
-        "- 2ème échelon : —",
-        "- 3ème échelon : —",
-        "11ème catégorie :",
-        "- 1er échelon : 229 495 FCFA",
-        "- 2ème échelon : —",
-        "- 3ème échelon : —"
+        "BAR\u00c8ME DES SALAIRES",
+        "1\u00e8re cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 50 463 FCFA",
+        "- 2\u00e8me \u00e9chelon : 52 558 FCFA",
+        "2\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 55 284 FCFA",
+        "3\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 67 088 FCFA",
+        "4\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 70 507 FCFA",
+        "- 2\u00e8me \u00e9chelon : 79 107 FCFA",
+        "5\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 87 383 FCFA",
+        "6\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 102 683 FCFA",
+        "- 2\u00e8me \u00e9chelon : 107 680 FCFA",
+        "7\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 120 641 FCFA",
+        "- 2\u00e8me \u00e9chelon : 133 446 FCFA",
+        "8\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 140 657 FCFA",
+        "- 2\u00e8me \u00e9chelon : 158 301 FCFA",
+        "9\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 164 337 FCFA",
+        "- 2\u00e8me \u00e9chelon : 173 098 FCFA",
+        "10\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 187 357 FCFA",
+        "11\u00e8me cat\u00e9gorie :",
+        "- 1er \u00e9chelon : 229 495 FCFA"
       ],
-      "mots_cles": ["grille salariale", "barème", "salaires", "FCFA", "catégories", "échelons", "industrie", "métallurgie"],
+      "mots_cles": ["grille salariale", "bar\u00e8me", "salaires", "FCFA", "cat\u00e9gories", "\u00e9chelons", "industrie", "m\u00e9tallurgie"],
       "statut": "en vigueur",
       "section": "Annexe I : Grille des salaires"
     }
