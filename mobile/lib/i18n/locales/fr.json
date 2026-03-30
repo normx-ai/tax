@@ -241,8 +241,8 @@
     "viewAllNotifications": "Voir toutes les notifications",
     "stats": {
       "articles": "Articles CGI",
+      "socialArticles": "Articles sociaux",
       "simulators": "Simulateurs",
-      "tfnc": "Textes TFNC",
       "edition": "Édition"
     },
     "actions": {

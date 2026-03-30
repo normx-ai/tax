@@ -156,7 +156,7 @@ export default function LandingShowcase({ isMobile }: Props) {
           checks={[
             "Réponses avec références aux articles du CGI",
             "Code du Travail et conventions collectives",
-            "Recherche instantanée dans +2 200 articles",
+            "Recherche instantanée dans +3 700 articles",
             "Disponible 24h/24",
           ]}
           mockupIcon="chatbubbles-outline"

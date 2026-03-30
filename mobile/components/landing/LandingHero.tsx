@@ -60,7 +60,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
   useInjectAnimations();
 
   const stats = [
-    { value: "+2 200", label: "Articles de loi" },
+    { value: "+3 700", label: "Articles de loi" },
     { value: "16", label: "Simulateurs fiscaux" },
     { value: "IA", label: "Assistant intelligent" },
     { value: "2", label: "Codes : CGI + Social" },
@@ -194,7 +194,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
             fontFamily: fonts.regular,
             marginBottom: 32,
           }}>
-            Simulateurs fiscaux et sociaux, assistant IA et +2 200 articles indexés — Code Général des Impôts et Code Social du Congo.
+            Simulateurs fiscaux et sociaux, assistant IA et +3 700 articles indexés — Code Général des Impôts et Code Social du Congo.
           </Text>
 
           {/* CTA buttons */}

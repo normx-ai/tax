@@ -9,7 +9,7 @@ export default function LandingStats({ isMobile }: Props) {
   const { t } = useTranslation();
 
   const stats = [
-    { value: "2 181", label: t("landing.statsArticles") },
+    { value: "3 703", label: t("landing.statsArticles") },
     { value: "16", label: t("landing.statsSimulators") },
     { value: "64", label: t("landing.statsTexts") },
     { value: "2026", label: t("landing.statsEdition") },
