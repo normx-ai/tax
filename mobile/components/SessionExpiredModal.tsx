@@ -9,13 +9,11 @@ export default function SessionExpiredModal() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const sessionExpired = useAuthStore((s) => s.sessionExpired);
-  const reason = useAuthStore((s) => s.sessionExpiredReason);
   const logout = useAuthStore((s) => s.logout);
+  const login = useAuthStore((s) => s.login);
 
-  const isRevoked = reason === "revoked";
-
-  const handleReconnect = async () => {
-    await logout();
+  const handleReconnect = () => {
+    login();
   };
 
   return (
@@ -23,23 +21,23 @@ export default function SessionExpiredModal() {
       <View style={styles.overlay}>
         <View style={[styles.card, { backgroundColor: colors.card }]}>
           <Ionicons
-            name={isRevoked ? "phone-portrait-outline" : "time-outline"}
+            name="time-outline"
             size={48}
-            color={isRevoked ? colors.primary : colors.warning}
+            color={colors.warning}
             style={{ marginBottom: 16 }}
           />
           <Text style={[styles.title, { color: colors.text, fontFamily: fonts.heading, fontWeight: fontWeights.heading }]}>
-            {isRevoked ? t("auth.sessionRevoked") : t("auth.sessionExpired")}
+            Session expirée
           </Text>
           <Text style={[styles.message, { color: colors.textSecondary, fontFamily: fonts.regular, fontWeight: fontWeights.regular }]}>
-            {isRevoked ? t("auth.sessionRevokedMessage") : t("auth.sessionExpiredMessage")}
+            Votre session a expiré. Reconnectez-vous pour continuer.
           </Text>
           <TouchableOpacity
             onPress={handleReconnect}
             style={[styles.button, { backgroundColor: colors.primary }]}
           >
             <Text style={[styles.buttonText, { fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }]}>
-              {t("auth.reconnect")}
+              Se reconnecter
             </Text>
           </TouchableOpacity>
         </View>
