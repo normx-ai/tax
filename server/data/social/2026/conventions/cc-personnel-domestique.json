@@ -1,77 +1,423 @@
 {
   "meta": {
     "code": "social",
-    "document": "Convention Collective du Personnel Domestique de Maison",
+    "document": "Arrêté N° 1868/MTERFPS-DGT fixant les Conditions d'Emploi du Personnel Domestique",
     "pays": "République du Congo",
-    "edition": "1991",
+    "edition": "5 octobre 1995",
     "tome": null,
     "partie": "Conventions collectives",
     "livre": null,
     "chapitre": null,
-    "chapitre_titre": "Convention Collective du Personnel Domestique",
+    "chapitre_titre": "Conditions d'Emploi du Personnel Domestique",
     "section": null,
     "section_titre": null,
     "page_source": 1,
-    "signataires": "Employeurs / Travailleurs domestiques",
-    "date_signature": "1991"
+    "type": "Arrêté ministériel",
+    "signataire": "Professeur Anaclet TSOMAMBET, Ministre du Travail, de la Fonction Publique et de la Sécurité Sociale",
+    "date_signature": "5 octobre 1995",
+    "lieu_signature": "Brazzaville",
+    "abroge": "Arrêté n° 6226 du 9 juillet 1985 fixant les conditions d'emploi du personnel domestique",
+    "visas": [
+      "Constitution",
+      "Loi n° 45-75 du 15 mars 1975 (Code du Travail)",
+      "Arrêté n° 6226/ITERFPS.DGT du 9 juillet 1985",
+      "Avis de la Commission Nationale Consultative du Travail (session 24-28 mai 1994)"
+    ]
   },
   "articles": [
     {
       "article": "Art. 1",
-      "titre": "Objet et champ d'application",
+      "titre": "Définition et champ d'application",
       "texte": [
-        "La présente convention règle les rapports de travail entre les employeurs et les travailleurs domestiques exerçant leur activité sur le territoire de la République du Congo.",
-        "Sont considérés comme travailleurs domestiques : les cuisiniers, les boys, les gardiens, les jardiniers, les lingères, les nounous et autres employés de maison.",
-        "La présente convention s'applique aux travailleurs domestiques employés par des personnes physiques pour des travaux de la maison."
+        "Le présent arrêté fixe les conditions d'Emploi du Personnel Domestique."
       ],
-      "mots_cles": ["personnel domestique", "employés de maison", "cuisiniers", "boys", "gardiens", "jardiniers", "nounous", "lingères"],
+      "mots_cles": ["champ d'application", "personnel domestique", "conditions d'emploi"],
       "statut": "en vigueur",
-      "section": "Titre I : Dispositions générales"
+      "section": "Section I : Dispositions générales"
     },
     {
       "article": "Art. 2",
-      "titre": "Contrat de travail",
+      "titre": "Définition",
       "texte": [
-        "Le contrat de travail du personnel domestique est constaté par écrit. Il doit mentionner la nature de l'emploi, la rémunération convenue, la durée de la période d'essai et le lieu d'exécution du contrat."
+        "Est réputé employé de maison ou domestique au sens du présent arrêté, tout salarié embauché au service du foyer et occupé d'une façon continue aux travaux de la maison.",
+        "Le personnel occasionnel ou embauché pour une durée réduite ne dépassant pas 20 heures par semaine ne relève pas des présentes dispositions et demeure régi par les stipulations des parties."
       ],
-      "mots_cles": ["contrat de travail", "écrit", "rémunération", "période d'essai"],
+      "mots_cles": ["employé de maison", "domestique", "foyer", "travaux de la maison", "personnel occasionnel", "20 heures"],
       "statut": "en vigueur",
-      "section": "Titre II : Du contrat de travail"
+      "section": "Section I : Dispositions générales"
     },
     {
       "article": "Art. 3",
-      "titre": "Période d'essai",
+      "titre": "Engagement et période d'essai",
       "texte": [
-        "La période d'essai du personnel domestique est fixée à quinze (15) jours.",
-        "Elle peut être renouvelée une fois.",
-        "Pendant cette période, chacune des parties peut rompre le contrat sans préavis ni indemnité."
+        "L'engagement individuel est établi conformément aux dispositions légales en vigueur.",
+        "L'engagement définitif peut être précédé d'une période d'essai d'une durée maximum de 15 jours pendant laquelle chacune des parties peut reprendre sa liberté sans préavis de l'achèvement de la durée en cours.",
+        "La durée exacte de la période d'essai doit être fixée par écrit au moment de l'engagement.",
+        "L'employeur fera procéder à ses frais à l'examen médical du travailleur."
       ],
-      "mots_cles": ["période d'essai", "15 jours", "renouvellement"],
+      "mots_cles": ["engagement", "période d'essai", "15 jours", "examen médical", "écrit"],
       "statut": "en vigueur",
-      "section": "Titre II : Du contrat de travail"
+      "section": "Section II : Engagement et période d'essai"
     },
     {
       "article": "Art. 4",
-      "titre": "Préavis",
+      "titre": "Salaire minima",
       "texte": [
-        "Le préavis de rupture du contrat de travail du personnel domestique est fixé à quinze (15) jours.",
-        "En cas de faute lourde, le contrat peut être rompu sans préavis."
+        "Les salaires minima mensuels des domestiques sont fixés par catégories et par échelon en annexe."
       ],
-      "mots_cles": ["préavis", "15 jours", "faute lourde"],
+      "mots_cles": ["salaire", "minima", "catégories", "échelon", "annexe"],
       "statut": "en vigueur",
-      "section": "Titre III : Résiliation du contrat"
+      "section": "Section III : Salaire minima"
     },
     {
-      "article": "Grille salariale",
-      "titre": "Grille des salaires du personnel domestique",
+      "article": "Art. 5",
+      "titre": "Avantages en nature",
       "texte": [
-        "Les salaires minima du personnel domestique sont fixés par arrêté.",
-        "Le SMIG (70 400 FCFA depuis le 1er janvier 2025) s'applique aux travailleurs domestiques.",
-        "Les employeurs sont tenus de déclarer leurs employés domestiques à la Caisse Nationale de Sécurité Sociale."
+        "Le logement et la nourriture constituent des avantages en nature purement facultatifs.",
+        "Leur valeur est fixée d'accord parties et peut être déduite des salaires."
       ],
-      "mots_cles": ["salaire", "SMIG", "70 400 FCFA", "CNSS", "déclaration"],
+      "mots_cles": ["avantages en nature", "logement", "nourriture", "déduction", "salaire"],
       "statut": "en vigueur",
-      "section": "Annexe : Grille salariale"
+      "section": "Section IV : Avantages en nature"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Durée du travail",
+      "texte": [
+        "Afin de tenir compte du caractère intermittent du travail du personnel domestique, est considéré comme équivalent à 40 heures du travail effectif, une durée de présence hebdomadaire de 60 heures.",
+        "Toute heure de travail effectuée dans la semaine au delà de la 60ème est supplémentaire et rémunérée comme telle selon la forme suivante (Salaire Mensuel) :",
+        "10% pour les cinq (5) premières heures supplémentaires ;",
+        "25% pour les autres heures supplémentaires effectuées de jour ;",
+        "50% pour les heures supplémentaires effectuées la nuit ou pendant le repos hebdomadaire ou les jours fériés ;",
+        "100% pour les heures effectuées de nuit pendant les jours fériés ou le repos hebdomadaire.",
+        "Est considéré comme travail de nuit, le travail effectué entre 20 heures et 5 heures.",
+        "Pour les travailleurs de moins de 18 ans, la durée de repos entre deux journées de travail ne doit en aucun cas être inférieure à 11 heures."
+      ],
+      "mots_cles": ["durée du travail", "60 heures", "40 heures", "heures supplémentaires", "travail de nuit", "majoration", "mineurs"],
+      "statut": "en vigueur",
+      "section": "Section V : Durée du travail"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Repos hebdomadaire",
+      "texte": [
+        "Le personnel domestique doit bénéficier du repos hebdomadaire dans les conditions suivantes :",
+        "1 journée entière par semaine ;",
+        "ou 2 demi-journées par semaine dont l'une au moins convenue à l'avance ;",
+        "ou 1 1/2 journée par semaine et une entière par quinzaine."
+      ],
+      "mots_cles": ["repos hebdomadaire", "journée", "demi-journée", "quinzaine"],
+      "statut": "en vigueur",
+      "section": "Section VI : Repos hebdomadaire"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Congés payés",
+      "texte": [
+        "Le personnel domestique acquiert droit au congé à la charge de l'employeur dans les conditions prévues par la réglementation en vigueur à savoir 2,16 jours ouvrables par mois soit 26 jours ouvrables par année de service effectif."
+      ],
+      "mots_cles": ["congés payés", "2,16 jours", "26 jours", "année de service"],
+      "statut": "en vigueur",
+      "section": "Section VII : Congés payés"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Acquisition du congé",
+      "texte": [
+        "Le congé est acquis après une durée de service effectif d'une année fixée d'accord partie ; il peut se cumuler sur un maximum de trois (3) années."
+      ],
+      "mots_cles": ["acquisition", "congé", "cumul", "3 années"],
+      "statut": "en vigueur",
+      "section": "Section VII : Congés payés"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Indemnité compensatrice",
+      "texte": [
+        "En cas de rupture ou d'expiration de contrat, une indemnité proportionnelle au temps de service sera accordée à la place du congé.",
+        "En dehors de ce cas, le congé ne peut être remplacé par une indemnité compensatrice."
+      ],
+      "mots_cles": ["indemnité compensatrice", "rupture", "expiration", "contrat"],
+      "statut": "en vigueur",
+      "section": "Section VII : Congés payés"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Congé supplémentaire",
+      "texte": [
+        "La durée du congé annuel sera augmentée comme suit en considération de l'ancienneté :",
+        "2 jours ouvrables après 3 ans de service ;",
+        "4 jours ouvrables après 5 ans de service ;",
+        "5 jours ouvrables après 10 ans de service ;",
+        "6 jours ouvrables après 15 ans de service ;",
+        "7 jours ouvrables après 20 ans de service ;",
+        "8 jours ouvrables après 25 ans de service."
+      ],
+      "mots_cles": ["congé supplémentaire", "ancienneté", "jours ouvrables"],
+      "statut": "en vigueur",
+      "section": "Section VIII : Congé supplémentaire"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Préavis",
+      "texte": [
+        "Lorsque l'engagement est conclu pour une durée indéterminée chacune des parties a le droit d'y mettre fin en prévenant l'autre partie par écrit ou par tout autre moyen certain huit (8) jours à l'avance.",
+        "La faute lourde entraîne la perte du bénéfice du droit au préavis, sous réserve de l'appréciation de la gravité de la faute par l'administration du travail ou la juridiction compétente."
+      ],
+      "mots_cles": ["préavis", "8 jours", "durée indéterminée", "faute lourde", "écrit"],
+      "statut": "en vigueur",
+      "section": "Section IX : Préavis"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Heures de liberté pendant le préavis",
+      "texte": [
+        "Pendant la durée du préavis, le domestique bénéficiera en vue de la recherche d'un autre emploi de 2 heures par jour mis.",
+        "Ces 2 heures seront prises alternativement un jour au choix du domestique, un jour au choix de l'employeur, à défaut d'accord entre les parties."
+      ],
+      "mots_cles": ["préavis", "heures de liberté", "2 heures", "recherche d'emploi"],
+      "statut": "en vigueur",
+      "section": "Section IX : Préavis"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Indemnité de licenciement",
+      "texte": [
+        "Le domestique licencié après un an de service effectif percevra, sauf le cas de faute lourde une indemnité égale à :",
+        "15% du salaire mensuel par année de présence pour les cinq (5) premières années ;",
+        "20% du salaire mensuel par année de présence de la 6ème à la 10ème année ;",
+        "25% du salaire mensuel par année de présence de la 11ème à la 15ème année ;",
+        "30% du salaire mensuel par année de présence à partir de la 16ème année."
+      ],
+      "mots_cles": ["indemnité de licenciement", "faute lourde", "pourcentage", "ancienneté", "salaire mensuel"],
+      "statut": "en vigueur",
+      "section": "Section X : Indemnité de licenciement"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Indemnité pour embauches multiples",
+      "texte": [
+        "En raison du fait que les activités de la profession peuvent être discontinues, les domestiques peuvent prétendre à l'indemnité de licenciement lorsqu'à la suite de plusieurs embauches chez le même employeur, ils atteignent la présence nécessaire à son attribution."
+      ],
+      "mots_cles": ["embauches multiples", "activités discontinues", "indemnité de licenciement", "même employeur"],
+      "statut": "en vigueur",
+      "section": "Section X : Indemnité de licenciement"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Prime d'ancienneté",
+      "texte": [
+        "Une prime d'ancienneté consistant en une majoration du salaire minimum de l'échelon professionnel du travailleur lui sera allouée dans les conditions suivantes :",
+        "3% après 3 années de présence ;",
+        "1% par année de présence à partir de la 4ème année avec un maximum de 25%."
+      ],
+      "mots_cles": ["prime d'ancienneté", "majoration", "3%", "1%", "25%", "salaire minimum"],
+      "statut": "en vigueur",
+      "section": "Section XI : Prime d'ancienneté"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Frais de voyage",
+      "texte": [
+        "Le domestique recruté hors du lieu d'emploi ou déplacé de ce lieu par l'employeur durant l'exécution du contrat a droit à la gratuité du voyage pour lui-même et sa famille reconnue par la Caisse Nationale de Sécurité Sociale."
+      ],
+      "mots_cles": ["frais de voyage", "lieu d'emploi", "gratuité", "famille", "CNSS"],
+      "statut": "en vigueur",
+      "section": "Section XII : Frais de transport"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Indemnité de transport",
+      "texte": [
+        "Une participation de l'employeur aux frais éventuels de transport du domestique est admise au prorata du temps de travail effectif.",
+        "Cette participation sera égale au moins à 45% du tarif mensuel d'abonnement ou des tarifs officialisés par les municipalités.",
+        "Dans les localités où il n'existe pas de transports urbains, le montant de l'indemnité de transport sera déterminé d'accord parties.",
+        "L'indemnité de transport n'est pas due lorsque l'employeur met à la disposition du domestique un moyen de déplacement."
+      ],
+      "mots_cles": ["indemnité de transport", "45%", "abonnement", "transport urbain", "prorata"],
+      "statut": "en vigueur",
+      "section": "Section XII : Frais de transport"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Période de la paie",
+      "texte": [
+        "Le domestique sera payé chaque mois à la date fixe en principe le dernier jour du mois.",
+        "Toutefois, à la demande du domestique, un acompte sera payé chaque quinzaine."
+      ],
+      "mots_cles": ["paie", "mensuel", "dernier jour", "acompte", "quinzaine"],
+      "statut": "en vigueur",
+      "section": "Section XIII : Période de la paie"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Bulletin de paie",
+      "texte": [
+        "L'employeur doit pouvoir apporter la preuve du paiement régulier du salaire. Il est donc recommandé de délivrer au domestique un bulletin de paye contenant les indications suivantes :",
+        "La période de référence ;",
+        "La classification professionnelle ;",
+        "Le montant du salaire de base ;",
+        "Les heures supplémentaires le cas échéant ;",
+        "Les montants des avantages en nature à déduire ;",
+        "Le salaire net à verser."
+      ],
+      "mots_cles": ["bulletin de paie", "preuve", "paiement", "salaire de base", "heures supplémentaires", "salaire net"],
+      "statut": "en vigueur",
+      "section": "Section XIII : Période de la paie"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Absences",
+      "texte": [
+        "Le domestique ne peut s'absenter sans autorisation ni justification.",
+        "Toute absence non autorisée ni justifiée au cours du même mois peut être considérée comme un abandon de travail entraînant la rupture du contrat."
+      ],
+      "mots_cles": ["absences", "autorisation", "justification", "abandon de travail", "rupture"],
+      "statut": "en vigueur",
+      "section": "Section XIV : Absences et permissions"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Permissions exceptionnelles",
+      "texte": [
+        "Des permissions exceptionnelles pour événements familiaux seront accordées sans retenues de salaire et sur justification ultérieure dans les cas suivants :",
+        "3 jours ouvrables en cas de mariage du travailleur ;",
+        "2 jours ouvrables en cas de mariage d'un enfant, d'un frère ou d'une sœur du travailleur ;",
+        "5 jours ouvrables en cas de décès d'un enfant, d'un ascendant en ligne directe ;",
+        "5 jours ouvrables en cas de décès d'un conjoint légitime ;",
+        "2 jours ouvrables en cas d'accouchement de la femme du travailleur ;",
+        "1 jour ouvrable en cas de baptême d'un enfant du travailleur ;",
+        "2 jours ouvrables en cas de retrait de deuil du travailleur ;",
+        "1 jour ouvrable en cas de déménagement."
+      ],
+      "mots_cles": ["permissions exceptionnelles", "événements familiaux", "mariage", "décès", "accouchement", "baptême", "deuil", "déménagement"],
+      "statut": "en vigueur",
+      "section": "Section XIV : Absences et permissions"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Accidents de travail",
+      "texte": [
+        "Tout accident de travail concernant un domestique doit être déclaré par l'employeur dans les 48 heures qui suivent le déroulement de l'accident à l'inspecteur du travail du lieu d'emploi et à la Caisse Nationale de Sécurité Sociale."
+      ],
+      "mots_cles": ["accident de travail", "déclaration", "48 heures", "inspecteur du travail", "CNSS"],
+      "statut": "en vigueur",
+      "section": "Section XV : Accidents de travail"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Soins médicaux",
+      "texte": [
+        "L'employeur assure les soins médicaux et la fourniture des produits pharmaceutiques dans la limite de 50% des frais engagés par le travailleur."
+      ],
+      "mots_cles": ["soins médicaux", "produits pharmaceutiques", "50%", "frais"],
+      "statut": "en vigueur",
+      "section": "Section XVI : Soins médicaux"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Maladie",
+      "texte": [
+        "Conformément aux dispositions de l'article 47 du code du travail, l'employeur est tenu de verser au domestique, dans la limite de 8 jours, son salaire normal pendant la durée de l'absence pour maladie médicalement constatée."
+      ],
+      "mots_cles": ["maladie", "8 jours", "salaire", "absence", "certificat médical"],
+      "statut": "en vigueur",
+      "section": "Section XVII : Maladie"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Prestations familiales",
+      "texte": [
+        "Tout employeur du personnel domestique doit être immatriculé à la caisse nationale de sécurité sociale."
+      ],
+      "mots_cles": ["prestations familiales", "immatriculation", "CNSS", "sécurité sociale"],
+      "statut": "en vigueur",
+      "section": "Section XVIII : Prestations familiales"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Retraite - Âge limite",
+      "texte": [
+        "La limite d'âge d'admission à la retraite est fixée à 55 ans."
+      ],
+      "mots_cles": ["retraite", "âge limite", "55 ans"],
+      "statut": "en vigueur",
+      "section": "Section XIX : Retraite"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Indemnité de retraite",
+      "texte": [
+        "Tout employé de maison admis à faire valoir ses droits à la retraite ayant effectué au moins une année de service chez le même employeur perçoit une indemnité spéciale équivalente à trois (3) mois de salaire de base par dix années de service."
+      ],
+      "mots_cles": ["indemnité de retraite", "3 mois", "salaire de base", "10 années"],
+      "statut": "en vigueur",
+      "section": "Section XIX : Retraite"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Litiges",
+      "texte": [
+        "Tout conflit pouvant survenir à l'occasion du contrat de travail entre l'employeur et le domestique sera soumis par la partie la plus diligente à l'inspecteur du travail du lieu d'exécution du contrat ou à son suppléant légal pour son règlement à l'amiable.",
+        "En cas d'échec du règlement, le litige sera soumis au tribunal du travail du lieu d'emploi."
+      ],
+      "mots_cles": ["litiges", "conflit", "inspecteur du travail", "règlement amiable", "tribunal du travail"],
+      "statut": "en vigueur",
+      "section": "Section XX : Litiges et sanctions"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Sanctions",
+      "texte": [
+        "Les infractions au présent arrêté seront punies conformément aux dispositions du titre IX du code du travail."
+      ],
+      "mots_cles": ["sanctions", "infractions", "code du travail", "titre IX"],
+      "statut": "en vigueur",
+      "section": "Section XX : Litiges et sanctions"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Classification des emplois",
+      "texte": [
+        "La classification des emplois applicable au personnel domestique est déterminée comme suit :",
+        "1ère Catégorie : Manoeuvre d'entretien, plongeur, marmiton.",
+        "1er échelon : Tous ceux, débutants, occupés à l'entretien et à des petits travaux de façon artisanale ne nécessitant pas de soins particuliers ou de précautions particulières.",
+        "2ème échelon : Même personnel après deux (2) ans de pratique professionnelle.",
+        "2ème Catégorie : Jardinier, lavandière, nurse, garde-enfant, garçon, serveur, sentinelle, gardien.",
+        "1er échelon : Jardinier capable d'assurer les travaux courants d'entretien d'un jardin. Lavadère assurant le lavage et le repassage courants. Gardien-enfant ou nurse assurant la garde, la propreté, l'hygiène et l'alimentation de l'enfant. Garçon ou serveur, débutant, connaissant simplement les rudiments du métier. Sentinelle ou gardien.",
+        "2ème échelon : Même personnel après deux (2) ans de pratique professionnelle.",
+        "3ème Catégorie :",
+        "1er échelon : Jardinier confirmé sachant faire des semis, préparer des plates-bandes et massifs. Garçon chargé de l'ensemble des travaux domestiques, entretien des locaux, lavage, repassage, service à table y compris cuisine courante simple pour célibataire ou ménage sans enfants.",
+        "2ème échelon : Même personnel après deux (2) ans de pratique professionnelle ainsi que : Garçon confirmé, connaissant parfaitement l'entretien du linge et le service de table. Cuisinier, ayant une bonne pratique courante et pratique capable d'exécuter des plats sur simple indication.",
+        "4ème Catégorie :",
+        "Échelon unique : cuisinier qualifié, ayant une connaissance étendue de la cuisine, y compris celle de la pâtisserie, capable d'exécuter un menu, d'utiliser un livre de recette ou pouvant assurer la popote de six (6) personnes ou préparer une réception.",
+        "5ème Catégorie :",
+        "1er échelon : Cuisinier hautement qualifié.",
+        "2ème échelon : Cuisinier hautement qualifié ayant au moins dix (10) ans d'activité professionnelle confirmée."
+      ],
+      "mots_cles": ["classification", "catégories", "échelons", "manoeuvre", "plongeur", "marmiton", "jardinier", "lavandière", "nurse", "garde-enfant", "garçon", "serveur", "sentinelle", "gardien", "cuisinier"],
+      "statut": "en vigueur",
+      "section": "Section XXI : Classification des emplois et dispositions finales"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Abrogation",
+      "texte": [
+        "L'arrêté n° 6226 du 9 Juillet 1985 est abrogé."
+      ],
+      "mots_cles": ["abrogation", "arrêté 6226", "1985"],
+      "statut": "en vigueur",
+      "section": "Section XXI : Classification des emplois et dispositions finales"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Application",
+      "texte": [
+        "Les inspecteurs du travail ou leurs suppléants légaux sont chargés de l'application du présent arrêté qui sera publié au journal officiel de la République du Congo et communiqué partout où besoin sera."
+      ],
+      "mots_cles": ["application", "inspecteurs du travail", "journal officiel", "publication"],
+      "statut": "en vigueur",
+      "section": "Section XXI : Classification des emplois et dispositions finales"
     }
   ]
 }
