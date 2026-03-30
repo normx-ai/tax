@@ -2,360 +2,1197 @@
   "meta": {
     "code": "social",
     "document": "Convention Collective des Entreprises de Recherche et de Production d'Hydrocarbures",
-    "pays": "République du Congo",
+    "pays": "Republique du Congo",
     "edition": "2009",
     "tome": null,
     "partie": "Conventions collectives",
     "livre": null,
     "chapitre": null,
-    "chapitre_titre": "Convention Collective Pétrole",
+    "chapitre_titre": "Convention Collective Petrole",
     "section": null,
     "section_titre": null,
     "page_source": 1,
-    "signataires": "Entreprises de recherche et de production d'hydrocarbures (employeurs) / Organisations syndicales des salariés (travailleurs)",
-    "date_signature": "8 avril 2009, Pointe-Noire"
+    "date_signature": "2 mars 2009",
+    "depot": "8 avril 2009 au Tribunal du Travail de Pointe-Noire",
+    "lieu": "Pointe-Noire",
+    "abroge": "Convention collective des entreprises de recherche et de production d'hydrocarbures du 9 aout 1995",
+    "signataires_employeurs": "UNICONGO (CMS NOMECO/CONGOREP, Eni Congo, Total E&P Congo, SOCO, Maurel & Prom Congo, Chevron Overseas)",
+    "signataires_travailleurs": "CSTC (Michel SOUZA), CSC (Nicolas NGANDZO), COSYLAC (Emmanuel NIEMETZ), FESYMEPS/CSTC (Guy Benjamin LOEMBA, Jean Claude TCHIBINDA), FETRAMIP/CSC (Patrice MASSOUKOU, Christian ITSOUA), FTPP/COSYLAC (Didier MABIALA)",
+    "president_commission": "OKANDZE-NGAKEGNI, Directeur Departemental du Travail"
   },
   "articles": [
     {
       "article": "Art. 1",
       "titre": "Objet et champ d'application",
       "texte": [
-        "La présente convention collective règle, conformément au code de travail, les rapports de travail entre employeurs et salariés des entreprises de recherche et de production d'hydrocarbures exerçant leur activité sur le territoire de la République du Congo.",
-        "Des annexes à la présente convention déterminent: la grille salariale (annexe 1), la définition des emplois-types (annexe 2) et les filières professionnelles (annexe 3)."
+        "La presente convention collective regle, conformement au code de travail, les rapports de travail entre employeurs et salaries des entreprises de recherche et de production d'hydrocarbures exercant leur activite sur le territoire de la Republique du Congo.",
+        "Des annexes a la presente convention determinent : la grille salariale (annexe 1), la definition des emplois-types (annexe 2) et les filieres professionnelles (annexe 3)."
       ],
-      "mots_cles": ["objet", "champ d'application", "hydrocarbures", "pétrole", "recherche", "production"],
+      "mots_cles": ["objet", "champ d'application", "hydrocarbures", "petrole", "recherche", "production"],
       "statut": "en vigueur",
-      "section": "Titre I : Des clauses générales"
+      "section": "Titre I : Des clauses generales"
     },
     {
       "article": "Art. 2",
-      "titre": "De la convention antérieure",
+      "titre": "De la convention anterieure",
       "texte": [
-        "La présente convention collective se substitue à la convention collective des entreprises de recherche et de production d'hydrocarbures du 9 août 1995 et ses annexes."
+        "La presente convention collective se substitue a la convention collective des entreprises de recherche et de production d'hydrocarbures du 9 aout 1995 et ses annexes."
       ],
-      "mots_cles": ["convention antérieure", "1995", "substitution"],
+      "mots_cles": ["convention anterieure", "1995", "substitution"],
       "statut": "en vigueur",
-      "section": "Titre I : Des clauses générales"
+      "section": "Titre I : Des clauses generales"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Avantages acquis",
+      "texte": [
+        "La presente convention collective ne peut en aucun cas etre la cause de restriction aux avantages acquis par les salaries a sa date d'application.",
+        "Il est precise que le maintien de ces avantages ne jouera que pour le personnel en service a la date d'application de la presente convention collective.",
+        "Les avantages reconnus par la presente convention collective ne peuvent en aucun cas s'ajouter aux avantages deja acquis pour le meme objet dans les entreprises, a la suite d'accord ou d'usages."
+      ],
+      "mots_cles": ["avantages acquis", "maintien", "non-cumul"],
+      "statut": "en vigueur",
+      "section": "Titre I : Des clauses generales"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Exercice du droit syndical et liberte d'opinion",
+      "texte": [
+        "Les parties signataires reconnaissent la liberte d'opinion ainsi que le droit d'adherer librement et d'appartenir a un syndicat professionnel conformement a la reglementation du travail.",
+        "En vue de garantir la liberte d'opinion et de permettre le libre exercice du droit syndical, l'employeur s'engage a : ne pas prendre en consideration le fait d'appartenir ou non a un syndicat, les opinions politiques ou philosophiques, la race, les croyances religieuses ou les origines du salarie pour arreter les decisions en ce qui concerne l'embauche, la conduite ou la repartition du travail, les mesures de discipline, le congediement et l'avancement ; n'exercer ni pressions, ni mesures discriminatoires en faveur ou a l'encontre d'une organisation syndicale quelconque.",
+        "Dans le meme but, les salaries s'engagent a ne pas prendre en consideration tant dans l'execution du travail que dans leurs relations socio-professionnelles, le fait d'appartenir ou non a un syndicat, les opinions politiques ou philosophiques, la race, les croyances religieuses ou les origines des autres salaries.",
+        "L'exercice du droit syndical ne doit pas avoir pour consequence des actes contraires aux lois, reglements et usages, notamment ceux codifies par la presente convention et par la profession.",
+        "Les parties signataires s'engagent a respecter la liberte d'opinion, a n'exercer aucune pression tendant a gener l'exercice du droit syndical ou celui du droit de propriete au sein de l'entreprise et de la profession.",
+        "Les parties signataires, considerant que l'entreprise est essentiellement un lieu de travail, veillent a la stricte observation des engagements ci-dessus et s'emploient aupres de leurs adherents a en assurer le respect integral."
+      ],
+      "mots_cles": ["droit syndical", "liberte d'opinion", "non-discrimination", "syndicat"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Acteurs du dialogue social dans l'entreprise",
+      "texte": [
+        "Les acteurs du dialogue social dans l'entreprise sont constitues de la Direction et des representants du personnel elus par les salaries et ceux designes par les organisations syndicales representatives.",
+        "Les partenaires sociaux, conscients que le dialogue social est un facteur cle de l'efficacite economique et sociale, marquent leur volonte de se rencontrer periodiquement conformement a l'article 9 alinea 1."
+      ],
+      "mots_cles": ["dialogue social", "acteurs", "direction", "representants du personnel"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Election, designation et fonctionnement",
+      "texte": [
+        "Les conditions d'election, de designation et de fonctionnement des institutions representatives du personnel (delegues du personnel, representants syndicaux, comite d'entreprise, section syndicale, comite d'hygiene et de securite), le nombre de personnes qui les composent, le contenu et l'exercice de leur mission, leur statut, leur formation et les moyens mis a leur disposition sont determines par la loi.",
+        "Il revient aux entreprises qui en remplissent les conditions, l'obligation d'organiser, selon les dispositions reglementaires, les elections des delegues du personnel."
+      ],
+      "mots_cles": ["election", "designation", "delegues du personnel", "comite d'entreprise", "section syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Moyens des delegues du personnel et des representants syndicaux",
+      "texte": [
+        "Les entreprises mettent en place, conformement aux dispositions legales et reglementaires en vigueur, les moyens notamment d'information, de formation et de fonctionnement, permettant aux delegues du personnel et aux representants syndicaux d'exercer leur mission dans des conditions satisfaisantes.",
+        "Le Chef d'entreprise doit mettre a la disposition des delegues du personnel, des representants syndicaux et des sections syndicales un local amenage pour l'exercice de leur fonction. Ce local peut etre commun a toutes les organisations representatives du personnel.",
+        "En outre, les delegues du personnel tant titulaires que suppleants, les representants syndicaux federaux ou confederaux dans l'entreprise (limite a 3 par syndicat representatif) peuvent beneficier chaque annee d'un conge d'education ouvriere de douze (12) jours ouvrables intuitu personae non cumulables."
+      ],
+      "mots_cles": ["moyens", "local", "conge education ouvriere", "12 jours", "3 par syndicat"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Credit d'heures",
+      "texte": [
+        "Pour l'exercice de leurs fonctions, les delegues du personnel titulaires et les representants syndicaux disposent d'un credit de vingt (20) heures par mois considere et remunere comme temps de travail.",
+        "Ce credit d'heures n'inclut pas le temps passe aux reunions convoquees a l'initiative de la direction de l'entreprise."
+      ],
+      "mots_cles": ["credit d'heures", "20 heures", "delegues", "representants syndicaux"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Rencontres periodiques des partenaires sociaux",
+      "texte": [
+        "Les delegues du personnel sont recus collectivement par le Chef d'Etablissement ou son representant au moins une fois par mois, pendant les heures de travail, aux heures et lieux fixes et affiches par la direction. Ils peuvent en outre etre recus, en cas d'urgence, sur leur demande ou a l'initiative de la direction.",
+        "Les representants syndicaux ou les membres du bureau de la section syndicale, sur leur demande, peuvent etre recus par le Chef d'Etablissement ou son representant. Les parties s'accordent a l'avance sur le nombre des membres du bureau de la section syndicale devant prendre part a la rencontre.",
+        "Aucun responsable hierarchique ne pourra, sans motif valable, retenir un delegue du personnel ou le membre concerne du bureau de la section syndicale au moment de la reunion avec le Chef d'Etablissement ou son representant. Lorsqu'un responsable hierarchique se trouve dans cette obligation, il doit en faire part au delegue du personnel, au representant syndical, ou au membre concerne de la section syndicale, si possible 24 heures au moins avant la tenue de la reunion et en informer le Chef d'Etablissement ou son Representant, en precisant les motifs qui ont provoque sa decision.",
+        "Sauf circonstances exceptionnelles, les delegues du personnel, les representants syndicaux ou les membres du bureau de la section syndicale remettent au Chef d'Etablissement ou son representant deux (02) jours ouvrables avant la date ou ils doivent etre recus, une note ecrite exposant sommairement l'objet de leur demande.",
+        "Ces dispositions ne mettent pas en cause celles des articles 242 et suivants du code de travail relatifs aux differends collectifs.",
+        "Nonobstant les dispositions ci-dessus, les salaries ont la faculte de presenter eux-memes leurs reclamations et suggestions a l'employeur."
+      ],
+      "mots_cles": ["rencontres periodiques", "une fois par mois", "24 heures", "2 jours ouvrables", "note ecrite"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Panneaux d'affichage",
+      "texte": [
+        "Des panneaux d'affichage identiques, grillages ou vitres, se fermant a cle et en nombre suffisant, ou tout autre dispositif en accord entre direction et syndicats, seront mis dans chaque etablissement a la disposition des delegues du personnel et des organisations syndicales representatives des salaries, pour leurs communications au personnel.",
+        "Ces panneaux seront places a l'interieur de chaque etablissement.",
+        "Les communications doivent avoir un objet exclusivement professionnel et/ou syndical et ne revetir aucun caractere injurieux ou diffamatoire. Elles seront affichees par les soins des delegues du personnel, representants syndicaux ou des membres de la section syndicale apres communication d'un exemplaire au chef d'Etablissement ou a son representant.",
+        "La direction ne pourra s'opposer a leur affichage que si ces communications sortent manifestement du cadre defini ci-dessus."
+      ],
+      "mots_cles": ["panneaux d'affichage", "communications", "professionnel", "syndical"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Missions des organes representatifs du personnel",
+      "texte": [
+        "DELEGUES DU PERSONNEL :",
+        "Les delegues du personnel ont pour mission de : presenter aux employeurs toutes les reclamations individuelles ou collectives qui n'auraient pas ete directement satisfaites concernant les conditions de travail et la protection des salaries, l'application des conventions collectives, des classifications professionnelles et des salaires ; donner leur prealable avis pour tout licenciement collectif ou individuel motive par une diminution d'activite de l'etablissement ou de l'entreprise par une reorganisation interne et selon la procedure fixee par les textes en vigueur ; saisir l'inspection du travail et des lois sociales de toute plainte ou reclamation concernant l'application des prescriptions legales ou reglementaires dont elle est chargee d'assurer le controle ; veiller a l'application des prescriptions relatives a l'hygiene, a la sante, a la securite des travailleurs et de proposer toutes mesures utiles a ce sujet ; communiquer a l'employeur toutes suggestions utiles tendant a l'amelioration de l'organisation et du rendement de l'entreprise.",
+        "SECTION SYNDICALE D'ENTREPRISE :",
+        "Dans chaque entreprise incluse dans le champ d'application de la presente convention et qui en remplit les conditions, les representants syndicaux sont designes conformement aux dispositions legales et reglementaires en vigueur.",
+        "Seules les organisations syndicales ayant au moins un delegue du personnel a l'issue des elections sont habilitees a constituer une section syndicale et a designer des representants syndicaux.",
+        "La section syndicale a pour missions essentielles : l'affichage des communications syndicales ; la publication et la diffusion des informations syndicales ; la collecte des cotisations syndicales a l'interieur de l'entreprise ; la tenue des reunions periodiques avec ses adherents dans l'entreprise ; l'organisation de la campagne electorale aux fins des elections syndicales et professionnelles ; la negociation des accords d'etablissement ou d'entreprise."
+      ],
+      "mots_cles": ["delegues du personnel", "section syndicale", "missions", "reclamations", "licenciement collectif"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Protection des membres des organes representatifs du personnel",
+      "texte": [
+        "L'exercice de la fonction de delegue du personnel et de representant syndical ou de membre du bureau de la section syndicale, ainsi que celle de membre federal ou confederal, ne peut constituer une entrave a l'avancement ou a l'amelioration de la remuneration, ni a la formation professionnelle du salarie.",
+        "Les delegues du personnel, les representants syndicaux et les membres de la section syndicale ne peuvent, sans leur consentement, ceci pendant la duree de leur mandat, etre deplaces de leur lieu habituel de travail.",
+        "Tout licenciement d'un delegue du personnel, d'un membre du bureau de la section syndicale ou d'un representant syndical, ainsi que d'un membre federal ou confederal, est soumis a l'autorisation de la commission des litiges prevue par le code du Travail, conformement aux articles 39, 176 et 210-6 du code de travail."
+      ],
+      "mots_cles": ["protection", "delegues", "representants syndicaux", "licenciement", "commission des litiges"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Non discrimination",
+      "texte": [
+        "Les parties signataires de la presente convention rappellent leur volonte que soit strictement respectee l'interdiction de toute discrimination a l'encontre ou en faveur des salaries, en raison de leur origine, de leur sexe, de leur situation familiale, de leur nom, leur appartenance a une ethnie, une nation ou une race, de leurs opinions politiques, de leurs activites syndicales ou mutualistes, de l'exercice du droit de greve, de leur conviction religieuse, de leur etat de sante ou de leur handicap."
+      ],
+      "mots_cles": ["non discrimination", "origine", "sexe", "ethnie", "opinions politiques", "handicap"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Non discrimination et formation"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Egalite professionnelle",
+      "texte": [
+        "L'egalite entre les femmes et les hommes notamment pour l'acces a l'emploi, a la formation, a la promotion professionnelle, en ce qui concerne les salaires et les conditions de travail est garantie conformement a la reglementation en vigueur et a la presente convention.",
+        "L'egalite d'acces a l'emploi entre les citoyens congolais et les etrangers est garantie. Toutefois, cet acces a l'emploi par les etrangers est soumis a la reglementation en vigueur."
+      ],
+      "mots_cles": ["egalite professionnelle", "femmes", "hommes", "acces a l'emploi", "etrangers"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Non discrimination et formation"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Embauche",
+      "texte": [
+        "Les conditions d'embauche sont definies par l'entreprise, en conformite avec les dispositions legales en vigueur.",
+        "Le contrat de travail, dont un (1) exemplaire est remis au salarie, devra mentionner expressement le lieu d'embauche repute et le lieu de travail du salarie.",
+        "On entend par lieu d'embauche, le lieu ou le recrutement est cense etre effectue, selon les stipulations du contrat de travail.",
+        "On entend par lieu de travail, le lieu ou le salarie exerce principalement son activite professionnelle.",
+        "Pour l'exercice de son activite et selon les besoins, l'employeur entend faire usage des differents types de contrats prevus par la legislation du travail.",
+        "Lors de sa prise de fonction, tout salarie doit obligatoirement prendre connaissance du reglement interieur de l'entreprise. A cet effet, le reglement interieur doit etre affiche a une place convenable, aisement accessible dans les lieux ou le travail est effectue, ainsi que dans les locaux ou se fait l'embauche. De meme, une copie du reglement interieur lui est remise.",
+        "Le salarie doit subir, avant tout engagement, un examen medical permettant d'apprecier l'aptitude physique de l'interesse a occuper les fonctions auxquelles il est destine. Cet examen est effectue aupres d'un medecin agree par l'entreprise, et les frais sont a la charge de celle-ci."
+      ],
+      "mots_cles": ["embauche", "contrat de travail", "lieu d'embauche", "lieu de travail", "reglement interieur", "examen medical"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 2 : Formation du contrat"
     },
     {
       "article": "Art. 16",
-      "titre": "Période d'essai d'embauche",
+      "titre": "Periode d'essai d'embauche",
       "texte": [
-        "Une période d'essai d'embauche est stipulée au contrat. Sa durée varie selon le collège auquel appartient le salarié. Cette période d'essai est de :",
-        "- Un (1) mois pour les salariés du collège Exécution",
-        "- Deux (2) mois pour les salariés du collège Maîtrise ;",
-        "- Trois (3) mois pour les salariés du collège Cadre.",
-        "La période d'embauche peut être renouvelée ; toutefois, en application des dispositions du code de travail, elle ne peut porter, renouvellement compris, que sur une période maximum de six (06) mois.",
-        "Pendant la période d'essai d'embauche, le salarié doit percevoir au moins le salaire minimum de la catégorie dont relève le poste à pourvoir, ainsi que les avantages contractuels auxquels il a droit.",
-        "Les parties ont la faculté réciproque de rompre le contrat pendant cette période sans indemnité ni préavis.",
-        "La prolongation des services après expiration de la période d'essai d'embauche équivaut à la confirmation du contrat établi prenant effet à la date d'établissement dudit contrat.",
-        "Pendant cette période d'essai d'embauche, l'employeur ne peut exiger du salarié l'exécution d'un travail non prévu par les parties."
+        "Une periode d'essai d'embauche est stipulee au contrat. Sa duree varie selon le college auquel appartient le salarie. Cette periode d'essai est de :",
+        "- Un (1) mois pour les salaries du college Execution ;",
+        "- Deux (2) mois pour les salaries du college Maitrise ;",
+        "- Trois (3) mois pour les salaries du college Cadre.",
+        "La periode d'essai d'embauche peut etre renouvelee ; toutefois, en application des dispositions du code du travail, elle ne peut porter, renouvellement compris, que sur une periode maximum de six (06) mois.",
+        "Pendant la periode d'essai d'embauche, le salarie doit percevoir au moins le salaire minimum de la categorie dont releve le poste a pourvoir, ainsi que les avantages contractuels auxquels il a droit.",
+        "Les parties ont la faculte reciproque de rompre le contrat pendant cette periode sans indemnite ni preavis.",
+        "La prolongation des services apres expiration de la periode d'essai d'embauche equivaut a la confirmation du contrat etabli prenant effet a la date d'etablissement dudit contrat.",
+        "Pendant cette periode d'essai d'embauche, l'employeur ne peut exiger du salarie l'execution d'un travail non prevu par les parties."
       ],
-      "mots_cles": ["période d'essai", "1 mois", "2 mois", "3 mois", "6 mois", "Exécution", "Maîtrise", "Cadre"],
+      "mots_cles": ["periode d'essai", "1 mois", "2 mois", "3 mois", "6 mois", "Execution", "Maitrise", "Cadre"],
       "statut": "en vigueur",
       "section": "Titre III : Du contrat de travail - Chapitre 2 : Formation du contrat"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Engagement definitif",
+      "texte": [
+        "A la fin de la periode d'essai d'embauche, tout engagement est confirme par ecrit etabli et signe par chacune des parties.",
+        "Ce document doit specifier notamment l'emploi et le classement du salarie, sa remuneration ainsi que divers avantages individuels dont il peut eventuellement beneficier.",
+        "Toute modification de caractere individuel apportee a l'un des elements ci-dessus doit prealablement faire l'objet d'une notification ecrite.",
+        "Les premiers bulletins de salaire delivres apres l'entree en vigueur de la presente convention feront foi des modifications apportees aux conditions de travail fixees par les precedents documents pour les salaries en service dans les entreprises."
+      ],
+      "mots_cles": ["engagement definitif", "confirmation ecrite", "emploi", "classement", "remuneration"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 2 : Formation du contrat"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Classement des salaries",
+      "texte": [
+        "Les salaries sont classes dans les categories et groupes d'emplois definis en annexe II de la presente convention.",
+        "Le classement du salarie a l'embauche est fixe en fonction de l'emploi exerce.",
+        "A chaque emploi correspond une classification minimum."
+      ],
+      "mots_cles": ["classement", "categories", "groupes d'emplois", "annexe II", "classification minimum"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 2 : Formation du contrat"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Formation professionnelle",
+      "texte": [
+        "Les parties contractantes reconnaissent l'utilite de la formation professionnelle. L'entreprise met en oeuvre les moyens materiels, humains et financiers adaptes au bon deroulement de la formation professionnelle.",
+        "La formation professionnelle a pour objet de : 1) donner aux salaries, par un enseignement approprie, les connaissances theoriques et pratiques necessaires au bon exercice de leurs metiers ; 2) leur permettre, en fonction des besoins de l'entreprise, et quelle que soit leur fonction ou leur formation anterieure, d'acquerir les connaissances theoriques et pratiques pour maitriser les techniques professionnelles nouvelles ou pour s'elever dans la hierarchie professionnelle.",
+        "Suivant la taille de l'entreprise, il est cree une Commission de Formation composee de representants de l'employeur et des salaries, qui est informee des programmes de formation avant leur mise en application. Elle a un role consultatif, c'est-a-dire qu'elle emet des avis, des suggestions et qu'elle peut demander a etre tenue au courant de l'execution de ces programmes.",
+        "Le temps consacre aux stages, aux cours de formation, organises par l'entreprise est pris si possible sur l'horaire de travail.",
+        "L'entreprise prend en charge les frais des stages de formation inities par elle, au Congo ou a l'etranger. Les modalites pratiques de prise en charge de ces stages, en particulier les stages de longue duree et les stages a l'etranger, font l'objet d'un contrat special entre l'entreprise et le beneficiaire."
+      ],
+      "mots_cles": ["formation professionnelle", "Commission de Formation", "stages", "connaissances", "contrat special"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 1 : Non discrimination et formation"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Promotion / Avancement",
+      "texte": [
+        "a) Promotion :",
+        "La promotion se definit comme le changement de categorie ou par le passage a un college superieur.",
+        "La promotion a l'interieur d'un college (changement de categorie) n'est susceptible d'intervenir que lorsque le salarie a demontre sa capacite a tenir un emploi de facon performante et son aptitude a s'adapter aux evolutions du metier qu'il exerce.",
+        "La promotion accompagnee d'un changement de college ne se justifie que lorsque le salarie a demontre sa capacite a occuper un emploi classe dans un college superieur.",
+        "Dans tous les cas, la promotion ne peut intervenir que si le poste occupe le permet, ou s'il y a un poste a pourvoir.",
+        "b) Avancement :",
+        "Le changement d'echelon a l'interieur d'une meme categorie constitue un avancement, lequel correspond a un accroissement du salaire de base. Il concretise la reconnaissance des resultats obtenus dans l'accomplissement des taches et des objectifs.",
+        "Les situations individuelles des salaries font l'objet, au moins une fois par an, d'un examen detaille suivant des procedures propres a chaque entreprise.",
+        "Lors de cet examen, la direction de l'entreprise arrete selon le merite des agents la liste des promotions et avancements.",
+        "Les salaries s'estimant leses dans leurs avancements ou promotions ont la possibilite de faire un recours aupres de la direction de l'entreprise. Celle-ci examine alors les cas qui lui sont soumis selon une procedure propre a chaque entreprise.",
+        "En cas de vacance ou de creation de poste, l'entreprise fait appel en priorite aux salaries confirmes en service. Le salarie choisi est soumis a la periode d'essai requise pour le poste ouvert. Pendant cette periode, il conserve sa classification. Cette periode d'essai qui doit etre notifiee au salarie est de :",
+        "- Un (1) mois, pour le college Execution ;",
+        "- Deux (2) mois, pour le college Maitrise ;",
+        "- Trois (3) mois, pour le college Cadre.",
+        "Au cas ou cet essai ne s'avere pas satisfaisant, le salarie est reintegre dans son ancien emploi. Cette reintegration ne saurait etre consideree comme une retrogradation par rapport au poste qu'il occupait avant l'essai."
+      ],
+      "mots_cles": ["promotion", "avancement", "changement de categorie", "changement de college", "echelon", "periode d'essai", "vacance de poste"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : Execution et developpement RH"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Commission de classement",
+      "texte": [
+        "Si le salarie conteste lui-meme, ou par l'intermediaire d'un representant syndical mandate par lui, aupres de l'employeur, le classement de son emploi dans la hierarchie professionnelle et qu'une suite favorable n'est pas donnee a sa reclamation, le differend est porte devant la commission paritaire de classement par l'interesse, s'il le juge necessaire.",
+        "Cette commission, presidee par l'inspecteur du travail du ressort, est composee de deux representants du salarie et de deux representants de l'employeur. Les representants du salarie et de l'employeur sont designes par les organisations syndicales de leur choix et dont ils relevent.",
+        "Le salarie adresse sa requete ou la fait adresser par son organisation syndicale a l'inspecteur du travail du ressort qui provoque la reunion de la commission paritaire en convoquant ses membres. Dans tous les cas, la commission ne peut sieger que si la representation du salarie et de l'employeur demeure paritaire.",
+        "Le role de la commission est de determiner la categorie dans laquelle doit etre classe l'emploi assure par le salarie dans l'entreprise.",
+        "Si la commission dispose d'elements d'information suffisants, elle rend immediatement sa decision. Dans le cas contraire, elle peut inviter les parties a produire des elements complementaires. Elle peut decider de soumettre le salarie a un essai professionnel. Elle definit les conditions et la duree de l'essai, et designe les personnes qualifiees pour en apprecier les resultats.",
+        "Des qu'elle dispose de ces elements d'appreciation complementaires, la commission prononce sa decision. Celle-ci est prise a la majorite des voix des membres presents. Le president ne participe pas au vote.",
+        "La decision doit etre motivee, donner la repartition des voix et indiquer tous les avis exprimes, y compris celui du president. Si elle attribue un nouveau classement au salarie, elle precise la date de prise d'effet.",
+        "Un exemplaire de la decision rendue est remis a chacune des parties, a la diligence du president.",
+        "Lorsque l'une des parties n'accepte pas la decision de la commission paritaire de classement, le litige peut etre porte devant le tribunal du travail du ressort."
+      ],
+      "mots_cles": ["commission de classement", "commission paritaire", "inspecteur du travail", "categorie", "essai professionnel", "tribunal du travail"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : Execution et developpement RH"
     },
     {
       "article": "Art. 22",
       "titre": "Mutation",
       "texte": [
-        "La mutation est le passage d'un poste de travail à un autre pouvant entraîner un changement de lieu de travail, et éventuellement de résidence.",
-        "La mutation fait l'objet d'un changement d'affectation signifiée préalablement au salarié par écrit avec indication du poste à occuper.",
+        "La mutation est le passage d'un poste de travail a un autre pouvant entrainer un changement de lieu de travail, et eventuellement de residence.",
+        "La mutation fait l'objet d'un changement d'affectation signifiee prealablement au salarie par ecrit avec indication du poste a occuper.",
         "La mutation peut avoir lieu :",
         "- sur initiative de l'employeur, pour raison de service ;",
-        "- sur demande du salarié, pour convenance personnelle.",
+        "- sur demande du salarie, pour convenance personnelle.",
         "1) Mutation sur initiative de l'employeur :",
-        "Pour raison de service ou d'inaptitude professionnelle constatée par le médecin de l'entreprise, tout salarié peut être muté à l'intérieur de l'entreprise en un même lieu ou en n'importe quel point du Congo.",
-        "Si la mutation entraîne un changement de résidence, l'employeur prend en charge les frais de déménagement et de voyage du salarié et de sa famille légitime (épouse(s) et enfants mineurs). Le salarié perçoit également une indemnité forfaitaire d'installation égale :",
-        "- au salaire de base minimum de la catégorie 4 pour les salariés du collège Exécution ;",
-        "- au salaire de base minimum de la catégorie 5 pour les salariés du collège Maîtrise ;",
-        "- au salaire de base minimum de la catégorie 6 pour les salariés du collège Cadre.",
-        "2) Mutation sur demande du salarié :",
-        "Pour convenance personnelle, tout salarié peut également demander sa mutation. Dans le cas où l'employeur accepte la demande de mutation, le salarié muté ne peut prétendre aux frais de déménagement ni à l'indemnité forfaitaire d'installation prévus ci-dessus s'il change de résidence."
+        "Pour raison de service ou d'inaptitude professionnelle constatee par le medecin de l'entreprise, tout salarie peut etre mute a l'interieur de l'entreprise en un meme lieu ou en n'importe quel point du Congo.",
+        "Si la mutation entraine un changement de residence, l'employeur prend en charge les frais de demenagement et de voyage du salarie et de sa famille legitime (epouse(s) et enfants mineurs). Le salarie percoit egalement une indemnite forfaitaire d'installation egale :",
+        "- au salaire de base minimum de la categorie 4 pour les salaries du college Execution ;",
+        "- au salaire de base minimum de la categorie 5 pour les salaries du college Maitrise ;",
+        "- au salaire de base minimum de la categorie 6 pour les salaries du college Cadre.",
+        "2) Mutation sur demande du salarie :",
+        "Pour convenance personnelle, tout salarie peut egalement demander sa mutation. Dans le cas ou l'employeur accepte la demande de mutation, le salarie mute ne peut pretendre aux frais de demenagement ni a l'indemnite forfaitaire d'installation prevus ci-dessus s'il change de residence."
       ],
-      "mots_cles": ["mutation", "changement de résidence", "indemnité d'installation", "catégorie 4", "catégorie 5", "catégorie 6"],
+      "mots_cles": ["mutation", "changement de residence", "indemnite d'installation", "categorie 4", "categorie 5", "categorie 6"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 3 : Exécution et développement RH"
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : Execution et developpement RH"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Interim",
+      "texte": [
+        "En cas de necessite de service, tout salarie peut etre appele a occuper provisoirement un poste de classement superieur a celui de son emploi habituel, pendant une duree qui ne pourra exceder un (1) mois.",
+        "Dans ce cas, le salarie beneficie d'une indemnite correspondant a la difference entre le salaire de base de sa categorie et celui de la categorie du poste interimaire.",
+        "L'interim ne peut exceder quatre (4) mois. Au-dela de cette periode, l'employeur doit soit titulariser le salarie au poste interimaire, soit le reinstaller dans son ancien poste."
+      ],
+      "mots_cles": ["interim", "1 mois", "4 mois", "indemnite", "titularisation", "poste superieur"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 3 : Execution et developpement RH"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Principe (Suspension)",
+      "texte": [
+        "Le contrat de travail est suspendu conformement aux dispositions de l'article 47 du code du travail, notamment dans les cas suivants :",
+        "- pendant la duree du service militaire obligatoire et les periodes obligatoires d'instruction militaire ;",
+        "- pendant la duree de l'absence du salarie pour cause de maladie ou d'accident non professionnel, dans la limite de six (6) mois ;",
+        "- pendant la duree de l'absence du salarie pour cause d'accident du travail ou de maladie professionnelle ;",
+        "- pendant la periode de grossesse et de maternite ;",
+        "- pendant la mise en disponibilite ;",
+        "- pendant la periode de chomage economique ou technique ;",
+        "- pendant la mise a pied disciplinaire ;",
+        "- pendant la detention preventive du salarie ;",
+        "- pendant la greve et le lock-out declenches dans le respect de la procedure de reglement des conflits collectifs de travail."
+      ],
+      "mots_cles": ["suspension", "contrat de travail", "article 47", "service militaire", "maladie", "accident", "grossesse", "disponibilite", "chomage", "greve"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 4 : Suspension"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Periodes militaires",
+      "texte": [
+        "Le contrat de travail est suspendu pendant la duree du service militaire obligatoire et les periodes obligatoires d'instruction militaire.",
+        "Le salarie percoit une indemnite conformement aux dispositions de l'article 48 du code du travail.",
+        "A l'expiration de la periode de service militaire, le salarie doit solliciter sa reintegration dans un delai d'un (1) mois.",
+        "La reintegration est subordonnee a la verification de l'aptitude medicale du salarie."
+      ],
+      "mots_cles": ["service militaire", "suspension", "indemnite", "reintegration", "1 mois", "aptitude medicale"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 4 : Suspension"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Grossesse et maternite",
+      "texte": [
+        "La femme salariee a droit a un conge de maternite de quinze (15) semaines dont neuf (9) semaines apres l'accouchement.",
+        "En cas de maladie dument constatee par un medecin agree et resultant de la grossesse ou des couches, le conge de maternite peut etre prolonge de trois (3) semaines supplementaires.",
+        "Pendant une periode de quinze (15) mois a compter de la naissance, la mere a droit a une heure de repos par jour pour l'allaitement de son enfant, prise a sa convenance, soit au debut, soit a la fin de la journee de travail."
+      ],
+      "mots_cles": ["grossesse", "maternite", "15 semaines", "9 semaines", "3 semaines prolongation", "15 mois allaitement", "1 heure par jour"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 4 : Suspension"
     },
     {
       "article": "Art. 27",
       "titre": "Maladies et accidents non professionnels",
       "texte": [
-        "En cas de maladies ou d'accidents non professionnels dûment constatés par un médecin agréé par l'entreprise et notifiés à l'employeur dans les quarante-huit (48) heures, sauf cas de force majeure, le contrat de travail est suspendu pendant une durée limitée à six (6) mois ; ce délai est prorogé jusqu'au remplacement du salarié.",
-        "Pendant la période de suspension du contrat de travail pour cause de maladie ou d'accident non professionnels, le salarié perçoit les indemnités maxima ci-après :",
-        "- pour une ancienneté inférieure à douze (12) mois : indemnité égale à l'indemnité de préavis conformément aux dispositions du code de travail ;",
-        "- pour une ancienneté comprise entre un (1) an et cinq (5) ans : indemnité égale à trois (3) mois de salaire de base ;",
-        "- pour une ancienneté comprise entre cinq (5) et dix (10) ans : indemnité égale à quatre (4) mois de salaire et un (1) mois de demi-salaire de base ;",
-        "- pour une ancienneté comprise entre dix (10) et quinze (15) ans : indemnité égale à six (6) mois de salaire de base ;",
-        "- pour une ancienneté comprise entre quinze (15) et vingt (20) ans : indemnité égale à sept (7) mois de salaire et un (1) mois de demi-salaire de base ;",
-        "- pour une ancienneté comprise entre vingt (20) et vingt-cinq (25) ans : indemnité égale à neuf (9) mois de salaire de base ;",
-        "- pour une ancienneté comprise entre vingt-cinq (25) et trente (30) ans : indemnité égale à dix (10) mois de salaire et un (1) mois de demi-salaire de base ;",
-        "- pour une ancienneté comprise entre trente (30) ans et trente-cinq (35) ans : indemnité égale à douze (12) mois de salaire de base ;",
-        "- Pour une ancienneté supérieure à trente-cinq (35) ans : indemnité égale à treize (13) mois de salaire et un (1) mois de demi-salaire de base.",
-        "Une fois calculée dans sa totalité selon les modalités ci-dessus indiquées, le montant global de cette indemnité est divisé par six (6) tranches égales, dont chacune sera versée au terme de chaque mois au salarié en remplacement de sa rémunération jusqu'au jour de sa reprise de travail, dans la limite de la période de six (6) mois."
+        "En cas de maladies ou d'accidents non professionnels dument constates par un medecin agree par l'entreprise et notifies a l'employeur dans les quarante-huit (48) heures, sauf cas de force majeure, le contrat de travail est suspendu pendant une duree limitee a six (6) mois ; ce delai est proroge jusqu'au remplacement du salarie.",
+        "Pendant la periode de suspension du contrat de travail pour cause de maladie ou d'accident non professionnels, le salarie percoit les indemnites maxima ci-apres :",
+        "- pour une anciennete inferieure a douze (12) mois : indemnite egale a l'indemnite de preavis conformement aux dispositions du code de travail ;",
+        "- pour une anciennete comprise entre un (1) an et cinq (5) ans : indemnite egale a trois (3) mois de salaire de base ;",
+        "- pour une anciennete comprise entre cinq (5) et dix (10) ans : indemnite egale a quatre (4) mois de salaire et un (1) mois de demi-salaire de base ;",
+        "- pour une anciennete comprise entre dix (10) et quinze (15) ans : indemnite egale a six (6) mois de salaire de base ;",
+        "- pour une anciennete comprise entre quinze (15) et vingt (20) ans : indemnite egale a sept (7) mois de salaire et un (1) mois de demi-salaire de base ;",
+        "- pour une anciennete comprise entre vingt (20) et vingt-cinq (25) ans : indemnite egale a neuf (9) mois de salaire de base ;",
+        "- pour une anciennete comprise entre vingt-cinq (25) et trente (30) ans : indemnite egale a dix (10) mois de salaire et un (1) mois de demi-salaire de base ;",
+        "- pour une anciennete comprise entre trente (30) ans et trente-cinq (35) ans : indemnite egale a douze (12) mois de salaire de base ;",
+        "- pour une anciennete superieure a trente-cinq (35) ans : indemnite egale a treize (13) mois de salaire et un (1) mois de demi-salaire de base.",
+        "Une fois calculee dans sa totalite selon les modalites ci-dessus indiquees, le montant global de cette indemnite est divise par six (6) tranches egales, dont chacune sera versee au terme de chaque mois au salarie en remplacement de sa remuneration jusqu'au jour de sa reprise de travail, dans la limite de la periode de six (6) mois.",
+        "Si a l'expiration du delai de six (6) mois, le salarie dont le contrat a ete rompu ne peut reprendre son travail, l'employeur doit rechercher, avec les delegues du personnel et le medecin de l'entreprise, la possibilite de le reclasser dans un autre emploi compatible avec ses nouvelles capacites physiques."
       ],
-      "mots_cles": ["maladie", "accident non professionnel", "48 heures", "6 mois", "indemnités progressives", "3 mois", "13 mois"],
+      "mots_cles": ["maladie", "accident non professionnel", "48 heures", "6 mois", "indemnites progressives", "3 mois", "13 mois", "reclassement"],
       "statut": "en vigueur",
       "section": "Titre III : Du contrat de travail - Chapitre 4 : Suspension"
     },
     {
-      "article": "Art. 32",
-      "titre": "Préavis",
+      "article": "Art. 28",
+      "titre": "Accidents du travail et maladies professionnelles",
       "texte": [
-        "En cas de rupture de contrat, et sauf cas de faute lourde, la partie qui prend l'initiative de la rupture doit respecter le préavis dont la durée est fixée comme suit :",
-        "- Deux (2) mois pour les collèges Exécution et Maîtrise ;",
-        "- Trois (3) mois pour le collège Cadre.",
-        "L'inobservation du délai de préavis crée l'obligation pour la partie responsable de verser à l'autre partie une indemnité égale à la rémunération et aux avantages de toute nature dont le salarié aurait bénéficié le délai du préavis qui n'aura pas été effectivement respecté.",
-        "Toutefois, le salarié congédié qui trouve un autre emploi durant la période de préavis, peut quitter son dernier employeur sans lui être redevable d'une indemnité, sous la seule réserve de le prévenir de son départ définitif deux (2) jours francs auparavant. Dans ce cas, le salarié conserve le droit à l'indemnité de licenciement, mais seuls les jours de préavis effectivement travaillés sont payés.",
-        "Pendant la période de préavis, qu'il s'agisse d'un licenciement ou d'une démission, le salarié est autorisé à s'absenter deux (2) heures par jour pour chercher un nouvel emploi, ces heures étant prises à son choix globalement ou heure par heure, et payées à plein salaire. Le salarié doit informer l'employeur de ses absences en temps utile."
+        "Les accidents du travail et les maladies professionnelles sont regis par les dispositions legales en vigueur.",
+        "Le contrat de travail est suspendu jusqu'a la consolidation de la blessure ou de la maladie.",
+        "L'employeur s'engage a verser une indemnite complementaire pendant une duree d'un (1) an au-dela du delai de preavis, de sorte que le salarie percoive l'integralite de sa remuneration."
       ],
-      "mots_cles": ["préavis", "2 mois", "3 mois", "Exécution", "Maîtrise", "Cadre", "2 heures par jour"],
+      "mots_cles": ["accident du travail", "maladie professionnelle", "consolidation", "indemnite complementaire", "1 an", "remuneration integrale"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 4 : Suspension"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Mise en disponibilite",
+      "texte": [
+        "La mise en disponibilite est une suspension du contrat de travail accordee par l'employeur sur demande ecrite du salarie pour une duree d'un (1) an renouvelable une fois.",
+        "Pendant la mise en disponibilite, tous les droits du salarie sont suspendus.",
+        "Le salarie doit notifier a l'employeur sa demande de reintegration au moins un (1) mois avant l'expiration de la periode de disponibilite.",
+        "Pour les salaries titulaires d'un mandat electif ou syndical, la mise en disponibilite est accordee pour la duree du mandat. Dans ce cas, l'anciennete continue a courir."
+      ],
+      "mots_cles": ["disponibilite", "1 an renouvelable", "suspension des droits", "reintegration", "1 mois preavis", "mandat electif", "anciennete"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 4 : Suspension"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Chomage economique et chomage technique",
+      "texte": [
+        "Chomage economique : en cas de chomage economique, le contrat de travail est suspendu pour une duree maximale de trois (3) mois renouvelable une fois.",
+        "Chomage technique : en cas de chomage technique, le contrat de travail est suspendu pour une duree maximale de six (6) mois.",
+        "Pendant la periode de chomage economique ou technique, le salarie percoit une indemnite egale au tiers (1/3) du salaire categoriel, augmente des accessoires de salaire.",
+        "Les avantages medicaux et pharmaceutiques sont maintenus pendant la periode de chomage economique ou technique."
+      ],
+      "mots_cles": ["chomage economique", "3 mois renouvelable", "chomage technique", "6 mois", "1/3 salaire", "avantages medicaux maintenus"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 4 : Suspension"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Modalites (Resiliation)",
+      "texte": [
+        "La resiliation du contrat de travail doit etre notifiee par ecrit par la partie qui en prend l'initiative.",
+        "Ces dispositions s'appliquent tant a l'employeur qu'a l'ensemble des salaries.",
+        "La lettre de notification doit mentionner le motif de la resiliation."
+      ],
+      "mots_cles": ["resiliation", "notification ecrite", "motif"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Preavis",
+      "texte": [
+        "En cas de rupture de contrat, et sauf cas de faute lourde, la partie qui prend l'initiative de la rupture doit respecter le preavis dont la duree est fixee comme suit :",
+        "- Deux (2) mois pour les colleges Execution et Maitrise ;",
+        "- Trois (3) mois pour le college Cadre.",
+        "L'inobservation du delai de preavis cree l'obligation pour la partie responsable de verser a l'autre partie une indemnite egale a la remuneration et aux avantages de toute nature dont le salarie aurait beneficie le delai du preavis qui n'aura pas ete effectivement respecte.",
+        "Toutefois, le salarie congedie qui trouve un autre emploi durant la periode de preavis, peut quitter son dernier employeur sans lui etre redevable d'une indemnite, sous la seule reserve de le prevenir de son depart definitif deux (2) jours francs auparavant. Dans ce cas, le salarie conserve le droit a l'indemnite de licenciement, mais seuls les jours de preavis effectivement travailles sont payes.",
+        "Pendant la periode de preavis, qu'il s'agisse d'un licenciement ou d'une demission, le salarie est autorise a s'absenter deux (2) heures par jour pour chercher un nouvel emploi, ces heures etant prises a son choix globalement ou heure par heure, et payees a plein salaire. Le salarie doit informer l'employeur de ses absences en temps utile."
+      ],
+      "mots_cles": ["preavis", "2 mois", "3 mois", "Execution", "Maitrise", "Cadre", "2 heures par jour"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Licenciement pour diminution d'activite ou reorganisation",
+      "texte": [
+        "Le licenciement pour diminution d'activite ou reorganisation interne est effectue conformement aux dispositions de l'article 39 du code du travail.",
+        "L'entreprise s'efforce de faciliter le reclassement des salaries licencies pour ce motif.",
+        "Le salarie licencie pour diminution d'activite ou reorganisation beneficie d'une priorite de reembauchage pendant une duree de deux (2) ans a compter de la date de rupture du contrat.",
+        "Le salarie doit communiquer a l'employeur tout changement d'adresse survenu apres son depart de l'entreprise."
+      ],
+      "mots_cles": ["licenciement", "diminution d'activite", "reorganisation", "article 39", "priorite de reembauchage", "2 ans"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
     },
     {
       "article": "Art. 34",
-      "titre": "Indemnité de licenciement",
+      "titre": "Indemnite de licenciement",
       "texte": [
-        "En cas de licenciement par l'employeur, hors le cas de faute lourde, le salarié ayant accompli dans l'entreprise une durée de service égale à deux (2) années a droit à une indemnité de licenciement distincte du préavis.",
-        "Cette indemnité est représentée, pour chaque année de présence accomplie dans l'entreprise par un pourcentage déterminé du salaire global mensuel moyen, établi à partir de la moyenne mensuelle de la rémunération des douze (12) mois d'activité qui ont précédé la date de licenciement.",
-        "On entend par salaire global, toutes les prestations constituant une contrepartie du travail (heures supplémentaires, primes diverses, commissions, etc.) à l'exclusion de celles présentant le caractère d'un remboursement de frais."
+        "En cas de licenciement par l'employeur, hors le cas de faute lourde, le salarie ayant accompli dans l'entreprise une duree de service egale a deux (2) annees a droit a une indemnite de licenciement distincte du preavis.",
+        "Cette indemnite est representee, pour chaque annee de presence accomplie dans l'entreprise par un pourcentage determine du salaire global mensuel moyen, etabli a partir de la moyenne mensuelle de la remuneration des douze (12) mois d'activite qui ont precede la date de licenciement.",
+        "On entend par salaire global, toutes les prestations constituant une contrepartie du travail (heures supplementaires, primes diverses, commissions, etc.) a l'exclusion de celles presentant le caractere d'un remboursement de frais.",
+        "Ce pourcentage est fixe comme suit :",
+        "- Trente (30) % par an pour les cinq (5) premieres annees ;",
+        "- Trente sept (37) % par an pour la periode allant de la 6eme a la 10eme annee incluse ;",
+        "- Cinquante cinq (55) % par an pour la periode allant de la 11eme a la 15eme annee incluse ;",
+        "- Soixante dix (70) % par an pour la periode allant de la 16eme a la 20eme annee incluse ;",
+        "- Quatre vingt (80) % par an pour la periode allant de la 21eme a la 25eme annee incluse ;",
+        "- Quatre vingt dix (90) % par an pour la periode allant de la 26eme a la 30eme annee incluse ;",
+        "- Quatre vingt quinze (95) % par an pour la periode allant de la 31eme a la 35eme annee incluse ;",
+        "- Cent (100) % par an au-dela de la 35eme annee.",
+        "Dans le decompte effectue sur les bases indiquees ci-dessus, il doit etre tenu compte des fractions d'annees."
       ],
-      "mots_cles": ["indemnité de licenciement", "2 ans", "salaire global", "12 mois"],
+      "mots_cles": ["indemnite de licenciement", "2 ans", "salaire global", "12 mois", "30%", "37%", "55%", "70%", "80%", "90%", "95%", "100%"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
     },
     {
-      "article": "Art. 34 (barème)",
-      "titre": "Barème de l'indemnité de licenciement",
+      "article": "Art. 35",
+      "titre": "Certificat de travail",
       "texte": [
-        "Ce pourcentage est fixé comme suit :",
-        "- Trente (30) % par an pour les cinq (5) premières années ;",
-        "- Trente sept (37) % par an pour la période allant de la 6ème à la 10ème année incluse ;",
-        "- Cinquante cinq (55) % par an pour la période allant de la 11ème à la 15ème année incluse ;",
-        "- Soixante dix (70) % par an pour la période allant de la 16ème à la 20ème année incluse ;",
-        "- Quatre vingt (80) % par an pour la période allant de la 21ème à la 25ème année incluse ;",
-        "- Quatre vingt dix (90) % par an pour la période allant de la 26ème à la 30ème année incluse ;",
-        "- Quatre vingt quinze (95) % par an pour la période allant de la 31ème à la 35ème année incluse ;",
-        "- Cent (100) % par an au-delà de la 35ème année ;",
-        "Dans le décompte effectué sur les bases indiquées ci-dessus, il doit être tenu compte des fractions d'années."
+        "A l'expiration du contrat de travail, l'employeur doit remettre au salarie un certificat de travail indiquant exclusivement la date de son entree, celle de sa sortie, la nature et les dates des emplois successivement occupes, ainsi que les categories correspondantes.",
+        "Ce certificat de travail est exempt de tous droits de timbre et d'enregistrement."
       ],
-      "mots_cles": ["barème licenciement", "30%", "37%", "55%", "70%", "80%", "90%", "95%", "100%"],
+      "mots_cles": ["certificat de travail", "date d'entree", "date de sortie", "emplois occupes"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Rupture du contrat du salarie malade",
+      "texte": [
+        "Lorsque le contrat de travail est rompu a l'expiration de la periode de suspension prevue a l'article 27, le salarie ayant au moins un (1) an de service dans l'entreprise beneficie d'une indemnite egale a l'indemnite de licenciement majoree de l'indemnite de preavis.",
+        "Un certificat de travail lui est remis dans les conditions prevues a l'article 35."
+      ],
+      "mots_cles": ["rupture", "salarie malade", "indemnite de licenciement", "indemnite de preavis", "1 an", "certificat de travail"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
     },
     {
       "article": "Art. 37",
-      "titre": "Décès du salarié",
+      "titre": "Deces du salarie",
       "texte": [
-        "Le décès d'un salarié en service ouvre aux ayants droit, outre les éléments constitutifs du solde de tout compte, le bénéfice d'une allocation de décès dont le montant est égal à sa rémunération mensuelle brute.",
-        "Si le salarié comptait, au jour du décès, une (1) année d'ancienneté dans l'entreprise, il est versé, en plus, une indemnité d'un montant équivalent à celui de l'indemnité de licenciement qui serait revenue au salarié en cas de rupture du contrat.",
-        "Ne peuvent prétendre aux dispositions des alinéas 1 et 2 du présent article que les ayants droits du salarié porteurs d'un acte notarié ou d'un jugement d'héritier du de cujus.",
-        "Lors des obsèques, l'entreprise est tenue d'assurer à ses frais, le transport du corps du salarié décédé au lieu d'inhumation en République du Congo, sur demande expresse de la famille.",
-        "Pour couvrir l'ensemble des frais liés aux obsèques (location des cars, achat de cercueil et accessoires, caveau, etc.) une allocation de secours dont le montant est fixé d'accord parties entre la direction de l'entreprise et les instances syndicales, est allouée aux ayants droits.",
-        "L'employeur verse une allocation fixée dans les mêmes conditions que ci-dessus en cas de décès du conjoint ou de l'enfant du salarié."
+        "Le deces d'un salarie en service ouvre aux ayants droit, outre les elements constitutifs du solde de tout compte, le benefice d'une allocation de deces dont le montant est egal a sa remuneration mensuelle brute.",
+        "Si le salarie comptait, au jour du deces, une (1) annee d'anciennete dans l'entreprise, il est verse, en plus, une indemnite d'un montant equivalent a celui de l'indemnite de licenciement qui serait revenue au salarie en cas de rupture du contrat.",
+        "Ne peuvent pretendre aux dispositions des alineas 1 et 2 du present article que les ayants droit du salarie porteurs d'un acte notarie ou d'un jugement d'heritier du de cujus.",
+        "L'employeur est tenu d'assurer a ses frais :",
+        "- le rapatriement du corps du salarie decede a l'etranger dans le cadre de son travail ;",
+        "- le transport du corps au lieu d'inhumation en Republique du Congo ;",
+        "- les frais funeraires (cercueil, costume, couronne, conservation, caveau, cars) ;",
+        "- une allocation forfaitaire de secours.",
+        "En cas de deces du conjoint ou d'un enfant du salarie, l'employeur prend en charge le cercueil, la couronne et verse une allocation forfaitaire dont le montant est fixe en accord entre la direction et les instances syndicales de l'entreprise."
       ],
-      "mots_cles": ["décès", "allocation", "rémunération brute", "1 an ancienneté", "obsèques", "transport corps", "ayants droit"],
+      "mots_cles": ["deces", "allocation", "remuneration brute", "1 an anciennete", "obseques", "transport corps", "ayants droit", "frais funeraires"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
     },
     {
       "article": "Art. 38",
-      "titre": "Mise à la retraite",
+      "titre": "Mise a la retraite",
       "texte": [
-        "Lorsque le salarié remplit les conditions requises pour faire valoir ses droits à la retraite, l'employeur est tenu d'assurer la transmission du dossier constitué par le salarié à la Caisse nationale de sécurité sociale (C.N.S.S.).",
-        "Conformément aux dispositions en vigueur à la C.N.S.S., la mise à la retraite des salariés nés vers peut intervenir à partir du 1er janvier de l'année de leur 60e anniversaire, en tenant compte de la réglementation en vigueur.",
-        "La notification de mise à la retraite sera faite dans le délai normal et conventionnel de préavis.",
-        "Le salarié partant à la retraite bénéficie d'une indemnité de départ calculée ainsi :",
-        "- Trois et demi (3,5) mois de salaire brut pour les salariés ayant de un (1) à cinq (5) années de présence dans l'entreprise ;",
-        "- Cinq (5) mois de salaire brut pour les salariés ayant de six (6) à dix (10) années de présence dans l'entreprise ;",
-        "- Six et demi (6,5) mois de salaire brut pour les salariés ayant de onze (11) à quinze (15) années de présence dans l'entreprise ;",
-        "- Huit (8) mois de salaire brut pour les salariés ayant de seize (16) à vingt (20) années de présence dans l'entreprise ;",
-        "- Neuf et demi (9,5) mois de salaire brut pour les salariés ayant de vingt un (21) à vingt cinq (25) années de présence dans l'entreprise ;",
-        "- Onze (11) mois de salaire brut pour les salariés ayant de vingt six (26) à trente (30) années de présence dans l'entreprise ;",
-        "- Douze et demi (12,5) mois de salaire brut pour les salariés ayant de trente un (31) à trente cinq (35) années de présence dans l'entreprise ;",
-        "- Quatorze (14) mois de salaire brut pour les salariés ayant trente six (36) années ou plus de présence dans l'entreprise.",
-        "En outre, le salarié partant à la retraite bénéficie, d'une indemnité forfaitaire de transport dont le montant est égal aux frais de voyage congés prévus à l'article 53 ci-dessous."
+        "Lorsque le salarie remplit les conditions requises pour faire valoir ses droits a la retraite, l'employeur est tenu d'assurer la transmission du dossier constitue par le salarie a la Caisse nationale de securite sociale (C.N.S.S.).",
+        "Conformement aux dispositions en vigueur a la C.N.S.S., la mise a la retraite des salaries nes vers peut intervenir a partir du 1er janvier de l'annee de leur 60e anniversaire, en tenant compte de la reglementation en vigueur.",
+        "La notification de mise a la retraite sera faite dans le delai normal et conventionnel de preavis.",
+        "Le salarie partant a la retraite beneficie d'une indemnite de depart calculee ainsi :",
+        "- Trois et demi (3,5) mois de salaire brut pour les salaries ayant de un (1) a cinq (5) annees de presence dans l'entreprise ;",
+        "- Cinq (5) mois de salaire brut pour les salaries ayant de six (6) a dix (10) annees de presence dans l'entreprise ;",
+        "- Six et demi (6,5) mois de salaire brut pour les salaries ayant de onze (11) a quinze (15) annees de presence dans l'entreprise ;",
+        "- Huit (8) mois de salaire brut pour les salaries ayant de seize (16) a vingt (20) annees de presence dans l'entreprise ;",
+        "- Neuf et demi (9,5) mois de salaire brut pour les salaries ayant de vingt et un (21) a vingt-cinq (25) annees de presence dans l'entreprise ;",
+        "- Onze (11) mois de salaire brut pour les salaries ayant de vingt-six (26) a trente (30) annees de presence dans l'entreprise ;",
+        "- Douze et demi (12,5) mois de salaire brut pour les salaries ayant de trente et un (31) a trente-cinq (35) annees de presence dans l'entreprise ;",
+        "- Quatorze (14) mois de salaire brut pour les salaries ayant trente-six (36) annees ou plus de presence dans l'entreprise.",
+        "En outre, le salarie partant a la retraite beneficie d'une indemnite forfaitaire de transport dont le montant est egal aux frais de voyage conges prevus a l'article 53 ci-dessous."
       ],
-      "mots_cles": ["retraite", "60 ans", "CNSS", "3,5 mois", "5 mois", "6,5 mois", "8 mois", "9,5 mois", "11 mois", "12,5 mois", "14 mois"],
+      "mots_cles": ["retraite", "60 ans", "CNSS", "3,5 mois", "5 mois", "6,5 mois", "8 mois", "9,5 mois", "11 mois", "12,5 mois", "14 mois", "indemnite forfaitaire de transport"],
       "statut": "en vigueur",
-      "section": "Titre III : Du contrat de travail - Chapitre 5 : Résiliation"
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Retraite complementaire",
+      "texte": [
+        "L'employeur peut souscrire au profit de ses salaries un regime de retraite complementaire.",
+        "Les conditions de mise en place de ce regime sont determinees en concertation avec les instances syndicales de l'entreprise."
+      ],
+      "mots_cles": ["retraite complementaire", "regime", "concertation syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre III : Du contrat de travail - Chapitre 5 : Resiliation"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Obligation du salarie",
+      "texte": [
+        "Le salarie doit toute son activite professionnelle a l'entreprise, sauf derogation stipulee au contrat.",
+        "Il lui est interdit d'exercer, meme en dehors des heures de travail, une activite a caractere professionnel susceptible de concurrencer l'entreprise ou de nuire a la bonne execution des services convenus.",
+        "Est nulle de plein droit toute clause d'un contrat portant interdiction pour le salarie d'exercer une activite quelconque a l'expiration du contrat.",
+        "Le salarie est tenu au secret professionnel et a la non-divulgation des informations confidentielles de l'entreprise."
+      ],
+      "mots_cles": ["obligation", "activite professionnelle", "non-concurrence", "secret professionnel", "confidentialite"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 41",
+      "titre": "Discipline",
+      "texte": [
+        "Les sanctions disciplinaires applicables au personnel sont les suivantes :",
+        "- l'avertissement ecrit ;",
+        "- le blame ecrit ;",
+        "- la mise a pied de un (1) a huit (8) jours ;",
+        "- le licenciement.",
+        "Ces sanctions ne sont pas necessairement successives.",
+        "Avant toute sanction, le salarie doit etre entendu en ses explications, avec la possibilite de se faire assister par un delegue du personnel de son choix.",
+        "La sanction est notifiee par ecrit au salarie et une copie est adressee a la direction departementale du travail.",
+        "En cas de faute lourde, le salarie peut faire l'objet d'une mise a pied conservatoire immediate. Il dispose d'un delai de trente (30) jours pour presenter sa defense."
+      ],
+      "mots_cles": ["discipline", "avertissement", "blame", "mise a pied", "1 a 8 jours", "licenciement", "faute lourde", "30 jours defense"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 42",
+      "titre": "Duree du travail",
+      "texte": [
+        "La duree du travail est fixee conformement a la reglementation en vigueur.",
+        "Toute modification des horaires de travail doit etre communiquee aux delegues du personnel et a la direction departementale du travail, et obtenir le visa de celle-ci avant sa mise en application."
+      ],
+      "mots_cles": ["duree du travail", "horaires", "delegues du personnel", "direction departementale du travail", "visa"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
     },
     {
       "article": "Art. 43",
-      "titre": "Heures supplémentaires",
+      "titre": "Heures supplementaires",
       "texte": [
-        "Les heures effectuées dans la semaine, avec l'accord de la direction, au-delà de la durée légale ou, dans certains cas, au-delà de la durée considérée comme équivalente à la durée légale, sont des heures supplémentaires et, à ce titre, rémunérées au taux de l'heure normale majoré d'un certain pourcentage.",
-        "Conformément à la réglementation en vigueur, les heures susvisées donnent lieu au paiement de majorations qui sont fixées comme suit :",
-        "- 15 % du salaire horaire pour les cinq premières heures au-delà de la durée légale ou de la durée considérée comme équivalente ;",
-        "- 30% du salaire horaire pour les heures suivantes de jour ;",
-        "- 60 % du salaire horaire pour les heures supplémentaires effectuées de nuit les jours ouvrables, ou pendant le repos hebdomadaire ou les jours fériés ;",
-        "- 110 % du salaire horaire pour les heures effectuées de nuit, le jour de repos hebdomadaire ou les jours fériés.",
-        "Sauf cas d'urgence, le personnel désigné pour faire des heures supplémentaires sera prévenu vingt quatre (24) heures à l'avance.",
-        "Hormis les cas d'astreinte décidée par la direction de l'entreprise, les heures supplémentaires effectuées individuellement et librement par un agent d'encadrement en dehors de l'horaire normal du service auquel il appartient, ne sont pas rémunérées."
+        "Les heures effectuees dans la semaine, avec l'accord de la direction, au-dela de la duree legale ou, dans certains cas, au-dela de la duree consideree comme equivalente a la duree legale, sont des heures supplementaires et, a ce titre, remunerees au taux de l'heure normale majore d'un certain pourcentage.",
+        "Conformement a la reglementation en vigueur, les heures susvisees donnent lieu au paiement de majorations qui sont fixees comme suit :",
+        "- 15 % du salaire horaire pour les cinq premieres heures au-dela de la duree legale ou de la duree consideree comme equivalente ;",
+        "- 30 % du salaire horaire pour les heures suivantes de jour ;",
+        "- 60 % du salaire horaire pour les heures supplementaires effectuees de nuit les jours ouvrables, ou pendant le repos hebdomadaire ou les jours feries ;",
+        "- 110 % du salaire horaire pour les heures effectuees de nuit, le jour de repos hebdomadaire ou les jours feries.",
+        "Les heures supplementaires sont effectuees a la discretion de l'employeur.",
+        "Sauf cas d'urgence, le personnel designe pour faire des heures supplementaires sera prevenu vingt-quatre (24) heures a l'avance.",
+        "L'astreinte est definie comme la periode pendant laquelle le salarie, sans etre a la disposition permanente et immediate de l'employeur, a l'obligation de demeurer a son domicile ou a proximite afin d'etre en mesure d'intervenir pour effectuer un travail au service de l'entreprise.",
+        "Hormis les cas d'astreinte decidee par la direction de l'entreprise, les heures supplementaires effectuees individuellement et librement par un agent d'encadrement en dehors de l'horaire normal du service auquel il appartient, ne sont pas remunerees."
       ],
-      "mots_cles": ["heures supplémentaires", "15%", "30%", "60%", "110%", "24 heures", "astreinte"],
+      "mots_cles": ["heures supplementaires", "15%", "30%", "60%", "110%", "24 heures", "astreinte", "cadre"],
       "statut": "en vigueur",
-      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions générales"
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 44",
+      "titre": "Travail de nuit",
+      "texte": [
+        "Conformement a l'article 106 du code du travail, le travail de nuit est celui effectue entre 20 heures et 5 heures."
+      ],
+      "mots_cles": ["travail de nuit", "20h", "5h", "article 106"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 45",
+      "titre": "Travail poste",
+      "texte": [
+        "Le travail poste est un mode d'organisation du travail dans lequel le salarie, selon un cycle determine, accomplit sa tache d'une seule traite et est releve a la fin de sa periode de travail par un autre salarie qui assure la continuite de l'accomplissement de la tache dans les memes conditions que le premier.",
+        "Les travailleurs postes en continu sont ceux qui assurent un fonctionnement 24 heures sur 24.",
+        "L'organisation du travail poste, y compris la compensation du travail de nuit, est determinee en concertation avec les instances syndicales de l'entreprise."
+      ],
+      "mots_cles": ["travail poste", "cycle", "continu", "24h/24", "compensation nuit", "concertation syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 46",
+      "titre": "Repos hebdomadaire",
+      "texte": [
+        "Le repos hebdomadaire est obligatoire conformement aux dispositions de l'article 118 du code du travail."
+      ],
+      "mots_cles": ["repos hebdomadaire", "obligatoire", "article 118"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 47",
+      "titre": "Travail des femmes",
+      "texte": [
+        "Les femmes ont acces a tous les emplois dans les memes conditions que les hommes.",
+        "Aucune reduction de salaire ne peut etre appliquee en raison de l'etat de grossesse ou de la qualite de mere allaitante de la salariee.",
+        "La femme salariee peut, a l'expiration de son conge de maternite, beneficier d'un conge sans solde jusqu'a ce que l'enfant ait atteint l'age d'un (1) an. Pendant cette periode, elle ne peut faire l'objet d'un licenciement."
+      ],
+      "mots_cles": ["travail des femmes", "egalite", "grossesse", "conge sans solde", "1 an", "protection licenciement"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 48",
+      "titre": "Travail des enfants",
+      "texte": [
+        "Aucun enfant ne peut etre employe dans une entreprise avant l'age de seize (16) ans, meme comme apprenti.",
+        "Des derogations peuvent etre accordees conformement aux dispositions legales en vigueur."
+      ],
+      "mots_cles": ["travail des enfants", "16 ans", "interdiction", "apprenti", "derogations"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 49",
+      "titre": "Logement",
+      "texte": [
+        "Les entreprises favorisent l'accession a la propriete de leurs salaries par la mise en place de politiques d'aide au logement.",
+        "L'entreprise fournit un logement au salarie du college Cadre ou, a defaut, lui verse une indemnite equivalente.",
+        "Pour les salaries des colleges Maitrise et Execution, les conditions d'attribution de l'indemnite de logement sont determinees en concertation avec les instances syndicales de l'entreprise.",
+        "Le salarie deplace de son lieu habituel de residence pour les besoins du service beneficie d'un logement fourni par l'employeur ou d'une indemnite equivalente.",
+        "Les delais d'evacuation du logement fourni par l'entreprise sont les suivants :",
+        "- a l'expiration du preavis en cas de demission ou de licenciement ;",
+        "- immediatement si le salarie quitte l'entreprise sans respecter le preavis ;",
+        "- trente (30) jours en cas de licenciement pour faute lourde ;",
+        "- trois (3) mois en cas de mise a la retraite ;",
+        "- trois (3) mois apres le deces du salarie pour les personnes a sa charge."
+      ],
+      "mots_cles": ["logement", "aide au logement", "cadre", "indemnite", "evacuation", "30 jours", "3 mois", "retraite", "deces"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
+    },
+    {
+      "article": "Art. 50",
+      "titre": "Tenues de travail",
+      "texte": [
+        "L'employeur fournit aux salaries des tenues de travail en double exemplaire.",
+        "La tenue de travail reste la propriete de l'entreprise.",
+        "Les equipements de protection individuelle (EPI) sont fournis pour les travaux necessitant une protection speciale.",
+        "Le non-port de la tenue de travail ou des EPI peut faire l'objet de sanctions disciplinaires.",
+        "Le remplacement de la tenue de travail se fait sur restitution de l'ancienne tenue."
+      ],
+      "mots_cles": ["tenues de travail", "double exemplaire", "propriete entreprise", "EPI", "sanctions", "remplacement"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 1 : Dispositions generales"
     },
     {
       "article": "Art. 51",
-      "titre": "Congés payés",
+      "titre": "Conges payes",
       "texte": [
-        "Au terme d'une durée de service effectif de douze (12) mois, le salarié acquiert, conformément aux dispositions du code de travail, un droit à congé égal au minimum à vingt six (26) jours ouvrables.",
-        "De plus, pour les salariés soumis au régime légal des congés payés, la durée des congés, tels que définis ci-dessus, est augmentée comme suit en considération de leur ancienneté dans l'entreprise :",
-        "- 2 jours supplémentaires ouvrables après cinq (5) ans de service effectif ;",
-        "- 4 jours supplémentaires ouvrables après dix (10) ans de service effectif ;",
-        "- 9 jours supplémentaires ouvrables après quinze (15) ans de service effectif ;",
-        "- 11 jours supplémentaires ouvrables après vingt (20) ans de service effectif ;",
-        "- 13 jours supplémentaires ouvrables après vingt cinq (25) ans de service effectif ;",
-        "- 15 jours supplémentaires ouvrables après trente (30) ans de service effectif ;",
-        "- 17 jours supplémentaires ouvrables au-delà de trente cinq (35) ans de service effectif."
+        "Au terme d'une duree de service effectif de douze (12) mois, le salarie acquiert, conformement aux dispositions du code de travail, un droit a conge egal au minimum a vingt-six (26) jours ouvrables.",
+        "De plus, pour les salaries soumis au regime legal des conges payes, la duree des conges, tels que definis ci-dessus, est augmentee comme suit en consideration de leur anciennete dans l'entreprise :",
+        "- 2 jours supplementaires ouvrables apres cinq (5) ans de service effectif ;",
+        "- 4 jours supplementaires ouvrables apres dix (10) ans de service effectif ;",
+        "- 9 jours supplementaires ouvrables apres quinze (15) ans de service effectif ;",
+        "- 11 jours supplementaires ouvrables apres vingt (20) ans de service effectif ;",
+        "- 13 jours supplementaires ouvrables apres vingt-cinq (25) ans de service effectif ;",
+        "- 15 jours supplementaires ouvrables apres trente (30) ans de service effectif ;",
+        "- 17 jours supplementaires ouvrables au-dela de trente-cinq (35) ans de service effectif.",
+        "La planification des conges est du ressort de l'employeur, avec une flexibilite de trois (3) mois.",
+        "Le rappel du salarie en conge ne peut intervenir que pour des raisons de service graves. Dans ce cas, le salarie beneficie d'une prolongation de conge de deux (2) jours non payes.",
+        "Le cumul des conges sur deux (2) ans est possible d'accord parties."
       ],
-      "mots_cles": ["congés payés", "26 jours", "12 mois", "2 jours", "4 jours", "9 jours", "11 jours", "13 jours", "15 jours", "17 jours"],
+      "mots_cles": ["conges payes", "26 jours", "12 mois", "2 jours", "4 jours", "9 jours", "11 jours", "13 jours", "15 jours", "17 jours", "rappel", "cumul"],
       "statut": "en vigueur",
-      "section": "Titre IV : Des conditions de travail - Chapitre 2 : Congés payés"
+      "section": "Titre IV : Des conditions de travail - Chapitre 2 : Conges payes"
+    },
+    {
+      "article": "Art. 52",
+      "titre": "Allocation de conge",
+      "texte": [
+        "L'allocation de conge est calculee conformement a la reglementation en vigueur.",
+        "Elle est payee integralement au salarie le jour de son depart en conge."
+      ],
+      "mots_cles": ["allocation de conge", "paiement integral", "jour de depart"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 2 : Conges payes"
     },
     {
       "article": "Art. 53",
       "titre": "Permissions exceptionnelles",
       "texte": [
-        "Des permissions exceptionnelles, à l'occasion d'événements familiaux touchant directement le salarié, peuvent lui être accordées dans une limite de dix-huit (18) jours par année civile, sans retenue de salaire et sans déduction de la durée du congé acquis, sur présentation des pièces d'état civil ou justification probante, dans les conditions suivantes :",
-        "- mariage du salarié à l'état civil, trois (3) jours ouvrables ;",
-        "- mariage à l'état civil d'un de ses enfants, d'un frère ou d'une sœur, en ligne directe, deux (2) jours ouvrables ;",
-        "- décès du conjoint légitime, huit (8) jours ouvrables ;",
-        "- décès d'un descendant ou d'un ascendant en ligne directe, ainsi que d'un frère ou d'une sœur, cinq (5) jours ouvrables ;",
-        "- accouchement de l'épouse légitime du salarié, trois (3) jours ouvrables ;",
-        "- retrait de deuil du conjoint, d'un descendant, ascendant ou collatéral direct, deux (2) jours ouvrables."
+        "Des permissions exceptionnelles, a l'occasion d'evenements familiaux touchant directement le salarie, peuvent lui etre accordees dans une limite de dix-huit (18) jours par annee civile, sans retenue de salaire et sans deduction de la duree du conge acquis, sur presentation des pieces d'etat civil ou justification probante, dans les conditions suivantes :",
+        "- mariage du salarie a l'etat civil : trois (3) jours ouvrables ;",
+        "- mariage a l'etat civil d'un de ses enfants, d'un frere ou d'une soeur, en ligne directe : deux (2) jours ouvrables ;",
+        "- deces du conjoint legitime : huit (8) jours ouvrables ;",
+        "- deces d'un descendant ou d'un ascendant en ligne directe, ainsi que d'un frere ou d'une soeur : cinq (5) jours ouvrables ;",
+        "- accouchement de l'epouse legitime du salarie : trois (3) jours ouvrables ;",
+        "- retrait de deuil du conjoint, d'un descendant, ascendant ou collateral direct : deux (2) jours ouvrables.",
+        "Une extension de ces permissions est possible d'accord parties, sans remuneration."
       ],
-      "mots_cles": ["permissions exceptionnelles", "18 jours", "mariage 3 jours", "décès conjoint 8 jours", "décès 5 jours", "accouchement 3 jours"],
+      "mots_cles": ["permissions exceptionnelles", "18 jours", "mariage 3 jours", "deces conjoint 8 jours", "deces 5 jours", "accouchement 3 jours", "retrait de deuil 2 jours"],
       "statut": "en vigueur",
-      "section": "Titre IV : Des conditions de travail - Chapitre 2 : Congés payés"
+      "section": "Titre IV : Des conditions de travail - Chapitre 2 : Conges payes"
+    },
+    {
+      "article": "Art. 54",
+      "titre": "Frais de voyage",
+      "texte": [
+        "1) Embauche : lorsque le lieu d'embauche est different du lieu de travail, les frais de voyage du salarie sont a la charge de l'employeur. Les frais de voyage de la famille ne sont pris en charge qu'apres l'engagement definitif.",
+        "2) Mutation : lorsque la mutation est a l'initiative de l'employeur, les frais de voyage du salarie et de sa famille sont a la charge de l'employeur. En cas de mutation sur demande du salarie, les frais de voyage ne sont pas pris en charge par l'employeur.",
+        "3) Conges annuels : une indemnite forfaitaire de transport est versee aux salaries deplaces ainsi qu'aux salaries locaux. Les classes de transport sont determinees en fonction des categories professionnelles."
+      ],
+      "mots_cles": ["frais de voyage", "embauche", "mutation", "conges annuels", "forfait transport", "classes de transport", "categories professionnelles"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 3 : Voyages et deplacements"
+    },
+    {
+      "article": "Art. 55",
+      "titre": "Transport des bagages",
+      "texte": [
+        "1) Embauche : le poids des bagages transportes aux frais de l'employeur est fixe a 1 000 kg pour le salarie et son epouse et a 50 kg par enfant mineur. Ce transport n'est pris en charge qu'apres l'engagement definitif.",
+        "2) Mutation : lorsque la mutation est a l'initiative de l'employeur, les frais de demenagement sont a la charge de l'employeur, apres la periode d'essai.",
+        "3) Conges : les frais de transport des bagages pendant les conges sont inclus dans l'indemnite prevue a l'article 53-3.",
+        "Le moyen de transport est choisi par l'employeur. L'assurance des bagages pendant le transport est a la charge de l'employeur."
+      ],
+      "mots_cles": ["transport des bagages", "1000 kg", "50 kg par enfant", "demenagement", "assurance", "employeur"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 3 : Voyages et deplacements"
+    },
+    {
+      "article": "Art. 56",
+      "titre": "Frais de deplacement",
+      "texte": [
+        "Le deplacement temporaire est celui effectue par le salarie pour les besoins du service en dehors de son lieu habituel de travail.",
+        "Une indemnite de deplacement est versee au salarie pour couvrir les frais de transport, d'hebergement et de nourriture. Le montant de cette indemnite est fixe par l'employeur en concertation avec les instances syndicales.",
+        "Les frais de coucher et de petit-dejeuner sont integralement a la charge de l'employeur.",
+        "Pendant le deplacement, le salarie percoit la meme remuneration que s'il travaillait dans son lieu habituel.",
+        "Sauf cas d'urgence, le salarie est prevenu vingt-quatre (24) heures a l'avance de son deplacement."
+      ],
+      "mots_cles": ["deplacement temporaire", "indemnite", "transport", "hebergement", "nourriture", "24 heures preavis"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail - Chapitre 3 : Voyages et deplacements"
+    },
+    {
+      "article": "Art. 57",
+      "titre": "Definition de la remuneration",
+      "texte": [
+        "La remuneration comprend :",
+        "- le salaire conventionnel ;",
+        "- les elements permanents de la remuneration ;",
+        "- les elements lies a l'activite.",
+        "Ces elements sont definis dans les chapitres 3 et 4 du present titre."
+      ],
+      "mots_cles": ["remuneration", "salaire conventionnel", "elements permanents", "elements lies a l'activite"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 1 : Definition"
+    },
+    {
+      "article": "Art. 58",
+      "titre": "Modalites d'attribution et de revision",
+      "texte": [
+        "Hors le salaire conventionnel et la prime d'anciennete, les modalites d'attribution et de revision des elements de la remuneration sont fixees d'accord parties entre les directions et les instances syndicales des entreprises.",
+        "La grille salariale ne peut etre modifiee qu'en commission mixte paritaire. En aucun cas un accord d'etablissement ne peut prevaloir sur celle-ci."
+      ],
+      "mots_cles": ["modalites", "attribution", "revision", "grille salariale", "commission mixte paritaire", "accord d'etablissement"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 2 : Modalites"
+    },
+    {
+      "article": "Art. 59",
+      "titre": "Paiement",
+      "texte": [
+        "Le paiement de la remuneration est effectue conformement aux prescriptions legales en vigueur.",
+        "En cas de contestation sur le montant de la remuneration, le salarie peut demander a l'employeur la justification de son calcul. Il peut se faire assister par un representant syndical."
+      ],
+      "mots_cles": ["paiement", "remuneration", "contestation", "justification", "representant syndical"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 2 : Modalites"
+    },
+    {
+      "article": "Art. 60",
+      "titre": "Determination du salaire conventionnel",
+      "texte": [
+        "Le salaire conventionnel constitue la contrepartie du travail fourni.",
+        "Il est verse mensuellement.",
+        "A conditions egales de travail, de qualification professionnelle et de rendement, le salaire est egal pour tous les salaries.",
+        "Le salaire conventionnel est determine en fonction de la classification du salarie.",
+        "Il est fixe par la commission mixte paritaire."
+      ],
+      "mots_cles": ["salaire conventionnel", "mensuel", "egalite", "classification", "commission mixte paritaire"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 3 : Elements permanents"
     },
     {
       "article": "Art. 61",
-      "titre": "Majoration pour ancienneté",
+      "titre": "Majoration pour anciennete",
       "texte": [
-        "Dans le cadre de la présente convention, on entend par ancienneté le temps pendant lequel le salarié a été occupé d'une façon continue dans les différents établissements d'une même entreprise, quelles que puissent être les modifications survenues dans la nature juridique de celle-ci.",
-        "Une prime d'ancienneté, consistant en une majoration du salaire de base, est allouée au salarié dans les conditions suivantes :",
-        "- Deux (2) % du salaire conventionnel après deux (2) ans de présence ;",
-        "- Un (1) % du salaire conventionnel en sus par année de service effectif au-delà de la 2ème année avec un maximum de trente deux (32) %."
+        "Dans le cadre de la presente convention, on entend par anciennete le temps pendant lequel le salarie a ete occupe d'une facon continue dans les differents etablissements d'une meme entreprise, quelles que puissent etre les modifications survenues dans la nature juridique de celle-ci.",
+        "Une prime d'anciennete, consistant en une majoration du salaire de base, est allouee au salarie dans les conditions suivantes :",
+        "- Deux (2) % du salaire conventionnel apres deux (2) ans de presence ;",
+        "- Un (1) % du salaire conventionnel en sus par annee de service effectif au-dela de la 2eme annee ;",
+        "- Deux (2) % du salaire conventionnel en sus par annee de service effectif au-dela de la 25eme annee, avec un maximum de trente-deux (32) %."
       ],
-      "mots_cles": ["prime d'ancienneté", "2%", "1%", "32% maximum"],
+      "mots_cles": ["prime d'anciennete", "2%", "1%", "2% au-dela 25 ans", "32% maximum"],
       "statut": "en vigueur",
-      "section": "Titre V : De la rémunération - Chapitre 3 : Éléments permanents"
+      "section": "Titre V : De la remuneration - Chapitre 3 : Elements permanents"
     },
     {
       "article": "Art. 62",
-      "titre": "Prime de fin d'année",
+      "titre": "Prime de fin d'annee",
       "texte": [
-        "Une prime de fin d'année, équivalente à un (1) mois de salaire de base augmenté de la prime d'ancienneté, est versée par l'entreprise à tout salarié effectivement présent pendant toute la période du 1er janvier au 31 décembre.",
-        "Toutefois, cette prime est attribuée au prorata des mois de service de l'année considérée à tout salarié ayant au moins une (1) année d'ancienneté dans l'entreprise, congédié en cours d'année par suite d'une diminution d'activité de l'entreprise ou d'une réorganisation interne.",
-        "Tout salarié ayant fait, en cours d'année, l'objet d'une ou plusieurs sanctions (blâme au minimum), peut voir sa prime réduite (ou même supprimée en cas de faute lourde), sauf avis contraire de la direction départementale du travail saisie par le salarié concerné qui peut se faire assister par un délégué du personnel."
+        "Une prime de fin d'annee, equivalente a un (1) mois de salaire de base augmente de la prime d'anciennete, est versee par l'entreprise a tout salarie effectivement present pendant toute la periode du 1er janvier au 31 decembre.",
+        "Toutefois, cette prime est attribuee au prorata des mois de service de l'annee consideree a tout salarie ayant au moins une (1) annee d'anciennete dans l'entreprise, congedie en cours d'annee par suite d'une diminution d'activite de l'entreprise ou d'une reorganisation interne.",
+        "Tout salarie ayant fait, en cours d'annee, l'objet d'une ou plusieurs sanctions (blame au minimum), peut voir sa prime reduite (ou meme supprimee en cas de faute lourde), sauf avis contraire de la direction departementale du travail saisie par le salarie concerne qui peut se faire assister par un delegue du personnel."
       ],
-      "mots_cles": ["prime de fin d'année", "1 mois", "salaire de base", "ancienneté", "prorata"],
+      "mots_cles": ["prime de fin d'annee", "1 mois", "salaire de base", "anciennete", "prorata", "sanctions"],
       "statut": "en vigueur",
-      "section": "Titre V : De la rémunération - Chapitre 3 : Éléments permanents"
+      "section": "Titre V : De la remuneration - Chapitre 3 : Elements permanents"
+    },
+    {
+      "article": "Art. 63",
+      "titre": "Prime de diplome - Prime de langue",
+      "texte": [
+        "La prime de diplome ou la prime de langue ne repond plus aux contraintes actuelles des entreprises.",
+        "Toutefois, le salarie qui en beneficie continuera a la percevoir, en application de l'article 3 de la presente convention collective."
+      ],
+      "mots_cles": ["prime de diplome", "prime de langue", "avantages acquis", "article 3"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 3 : Elements permanents"
+    },
+    {
+      "article": "Art. 64",
+      "titre": "Indemnite de transport",
+      "texte": [
+        "Lorsque l'employeur n'assure pas le transport du salarie entre son domicile et son lieu de travail, une indemnite de transport est versee au salarie, calculee sur la base des tarifs des transports en commun.",
+        "Lorsque le salarie utilise son vehicule personnel pour les besoins du service, il percoit une indemnite kilometrique.",
+        "Le montant de ces indemnites est determine en concertation avec les instances syndicales de l'entreprise."
+      ],
+      "mots_cles": ["indemnite de transport", "transports en commun", "indemnite kilometrique", "vehicule personnel", "concertation syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 65",
+      "titre": "Indemnite de logement - Indemnite de Confort Domestique",
+      "texte": [
+        "INDEMNITE DE LOGEMENT :",
+        "Hors le cas ou l'entreprise assure son logement, il est verse a chaque salarie une indemnite de logement.",
+        "INDEMNITE DE CONFORT DOMESTIQUE :",
+        "Le cadre non loge beneficie d'une indemnite de confort domestique correspondant a sa situation socioprofessionnelle. Cette indemnite est une participation de l'entreprise aux depenses et prestations liees a l'occupation du logement.",
+        "L'indemnite de logement et l'indemnite de confort domestique sont determinees en concertation entre la direction et les instances syndicales de l'entreprise."
+      ],
+      "mots_cles": ["indemnite de logement", "confort domestique", "cadre non loge", "concertation syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 66",
+      "titre": "Prime de quart ou Prime de poste",
+      "texte": [
+        "Cette prime remunere les conditions particulieres du travail par poste dans lequel le salarie, selon un cycle determine, accomplit sa tache d'une seule traite et est releve a la fin de sa periode de travail par un autre salarie qui assure la continuite de l'accomplissement de la tache dans les memes conditions que le premier."
+      ],
+      "mots_cles": ["prime de quart", "prime de poste", "travail poste", "cycle", "continuite"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
     },
     {
       "article": "Art. 67",
-      "titre": "Primes liées au travail off shore / on shore",
+      "titre": "Primes liees au travail off shore / on shore",
       "texte": [
-        "a) PRIME OFF SHORE / ON SHORE",
-        "Cette prime rémunère les conditions particulières de travail ou de vie sur chantiers on shore / off shore. Elle est due pour chaque jour passé sur chantiers on shore / off shore.",
-        "b) PRIME DE SEPARATION OFF SHORE / ON SHORE",
-        "Cette prime est due pour chaque journée passée sur chantiers off shore / on shore sans retour au domicile après un séjour minimum de deux (2) jours consécutifs.",
-        "Ces deux primes, si elles sont dues au salarié, peuvent être fusionnées selon les entreprises."
+        "a) PRIME OFF SHORE / ON SHORE :",
+        "Cette prime remunere les conditions particulieres de travail ou de vie sur chantiers on shore / off shore. Elle est due pour chaque jour passe sur chantiers on shore / off shore.",
+        "b) PRIME DE SEPARATION OFF SHORE / ON SHORE :",
+        "Cette prime est due pour chaque journee passee sur chantiers off shore / on shore sans retour au domicile apres un sejour minimum de deux (2) jours consecutifs.",
+        "Ces deux primes, si elles sont dues au salarie, peuvent etre fusionnees selon les entreprises."
       ],
-      "mots_cles": ["prime off shore", "on shore", "prime de séparation", "2 jours", "chantiers"],
+      "mots_cles": ["prime off shore", "on shore", "prime de separation", "2 jours", "chantiers", "fusion"],
       "statut": "en vigueur",
-      "section": "Titre V : De la rémunération - Chapitre 4 : Éléments liés à l'activité"
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 68",
+      "titre": "Prime de panier - Indemnite de repas",
+      "texte": [
+        "Une prime de panier est due a tout salarie qu'une prolongation exceptionnelle de la duree de la seance de travail empeche de prendre le repas a l'heure habituelle.",
+        "Elle est due des que cette prolongation reduit a moins de deux (2) heures le temps disponible laisse au salarie ou lorsqu'elle est d'au moins deux (2) heures dans le cas ou le salarie ne reprend pas son travail dans la meme journee.",
+        "Dans le cas ou cette prolongation de seance de travail est superieure a deux (2) heures et ne permet pas au salarie de rentrer chez lui pour prendre son repas, il lui est verse une indemnite dont le montant represente la valeur estimee d'un repas, compte tenu du cout de la vie au lieu d'activite.",
+        "Cette indemnite peut etre remplacee par un repas a l'initiative de l'employeur."
+      ],
+      "mots_cles": ["prime de panier", "indemnite de repas", "prolongation", "2 heures", "repas"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 69",
+      "titre": "Prime de caisse",
+      "texte": [
+        "Cette prime est liee a la responsabilite de la tenue d'une caisse.",
+        "Le montant est fixe par l'employeur apres concertation avec les instances syndicales de l'entreprise, en tenant compte de l'encaisse."
+      ],
+      "mots_cles": ["prime de caisse", "responsabilite", "encaisse", "concertation syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 70",
+      "titre": "Prime d'interessement",
+      "texte": [
+        "Une prime d'interessement subordonnee aux resultats economiques de l'entreprise peut etre versee par l'employeur au travailleur au debut de chaque annee, au titre de l'annee anterieure.",
+        "La determination de cette prime se fait en concertation entre la direction et les instances syndicales de l'entreprise."
+      ],
+      "mots_cles": ["prime d'interessement", "resultats economiques", "annee anterieure", "concertation syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 71",
+      "titre": "Prime exceptionnelle",
+      "texte": [
+        "La Direction de l'entreprise peut decider, a sa seule initiative et a sa discretion, d'octroyer une prime exceptionnelle destinee a recompenser le merite de certains salaries sans pour autant que cette liberalite puisse servir d'appui a une quelconque revendication."
+      ],
+      "mots_cles": ["prime exceptionnelle", "merite", "discretion direction", "liberalite"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 72",
+      "titre": "Autres primes specifiques",
+      "texte": [
+        "Certaines primes specifiques aux activites de chaque entreprise peuvent etre attribuees aux salaries concernes.",
+        "Sont notamment visees par cet article, sans que cette liste ne soit exhaustive :",
+        "- les primes de travaux insalubres ;",
+        "- les primes de penibilite ;",
+        "- les primes de sujetions diverses ;",
+        "- certaines primes liees a l'activite sur chantiers (hors primes off shore / on shore telles que definies a l'article 67).",
+        "La determination de ces primes se fait en concertation entre la direction et les instances syndicales de l'entreprise."
+      ],
+      "mots_cles": ["primes specifiques", "travaux insalubres", "penibilite", "sujetions", "chantiers", "concertation syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 73",
+      "titre": "Indemnite Sainte Barbe",
+      "texte": [
+        "Une indemnite, dont le montant est fixe en accord entre la direction et les instances syndicales d'entreprises, est versee par l'employeur, a la fin du mois de novembre, a chaque salarie a l'occasion de la fete corporative des mineurs, dite 'sainte barbe' (4 decembre)."
+      ],
+      "mots_cles": ["Sainte Barbe", "4 decembre", "fete corporative", "mineurs", "indemnite", "novembre"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 74",
+      "titre": "Arbre de Noel",
+      "texte": [
+        "Une donation dite arbre de Noel est versee a l'occasion de la fete de Noel pour les enfants reconnus par l'entreprise.",
+        "Le montant et l'age des enfants beneficiaires sont determines en concertation avec les instances syndicales de l'entreprise."
+      ],
+      "mots_cles": ["arbre de Noel", "enfants", "donation", "concertation syndicale"],
+      "statut": "en vigueur",
+      "section": "Titre V : De la remuneration - Chapitre 4 : Elements lies a l'activite"
+    },
+    {
+      "article": "Art. 75",
+      "titre": "Protection du salarie",
+      "texte": [
+        "Les parties contractantes affirment leur volonte de tout mettre en oeuvre pour garantir et preserver la sante et la securite des salaries occupes dans les differents etablissements.",
+        "Les employeurs s'entourent de tous les avis qualifies pour l'elaboration et l'application des consignes de securite.",
+        "Les salaries doivent respecter les consignes prises pour la prevention des accidents et maladies professionnelles, notamment celles concernant le port de materiel de protection individuelle.",
+        "Les equipements de protection necessaires a l'execution des travaux dangereux sont fournis par l'employeur. Il en est de meme pour les effets de protection necessaires a l'execution de certains travaux exposant les vetements des ouvriers a une deterioration prematuree. Dans les deux cas, l'entretien des equipements et des effets de protection est assure par l'employeur.",
+        "Les signataires de la presente convention se tiennent en etroite relation pour l'etude et la mise en application de toutes les dispositions propres a augmenter la securite des salaries et ameliorer les conditions d'hygiene du travail.",
+        "Les salaries affectes a des postes comportant des risques de maladies ou d'accidents font l'objet d'une surveillance speciale. Les autres salaries doivent etre soumis annuellement a deux (2) visites medicales de controle, conformement a la reglementation du travail en vigueur.",
+        "Lorsque le medecin agree de l'entreprise estime qu'une mutation provisoire est necessaire pour sauvegarder l'etat de sante d'un salarie, cette mutation intervient sans consequence prejudiciable pour ledit salarie.",
+        "Les employeurs signataires de la presente convention s'engagent a fournir l'assistance juridique aux salaries ayant subi toutes sortes d'outrages, d'injures, de diffamations, de menaces, d'attaques ou voies de fait dans l'exercice de leurs fonctions, en vue de l'obtention de la reparation des prejudices eventuellement subis."
+      ],
+      "mots_cles": ["protection", "sante", "securite", "equipements de protection", "visites medicales", "2 visites annuelles", "mutation provisoire", "assistance juridique"],
+      "statut": "en vigueur",
+      "section": "Titre VI : De l'hygiene et de la securite - Du service medical - Du service social"
+    },
+    {
+      "article": "Art. 76",
+      "titre": "Institution d'un Comite d'Hygiene et de Securite",
+      "texte": [
+        "Les parties reconnaissent la necessite d'associer les salaries aux problemes d'hygiene et de securite.",
+        "A cet effet, il est institue dans chaque entreprise un comite d'hygiene et de securite dont le role est de veiller a l'application pratique des mesures d'hygiene et de securite.",
+        "Les conditions de mise en place et de fonctionnement de ce comite sont definies par les textes reglementaires en vigueur en Republique du Congo."
+      ],
+      "mots_cles": ["comite d'hygiene et de securite", "mesures pratiques", "textes reglementaires"],
+      "statut": "en vigueur",
+      "section": "Titre VI : De l'hygiene et de la securite - Du service medical - Du service social"
     },
     {
       "article": "Art. 77",
-      "titre": "Organisation médicale et sanitaire",
+      "titre": "Organisation medicale et sanitaire",
       "texte": [
-        "Les salariés régis par la présente convention ont droit, pour eux-mêmes, leurs épouses et enfants légitimement à leur charge, aux soins médicaux et à l'hospitalisation dans les conditions ci-après :",
-        "- les visites médicales sont effectuées auprès du médecin d'entreprise, ou éventuellement d'un médecin agréé ;",
-        "- les soins médicaux sont donnés dans les dispensaires, centres médicaux des entreprises ou dans les hôpitaux publics ou privés agréés ;",
-        "- l'hospitalisation, y compris la nourriture du malade, est assurée dans les centres médicaux des entreprises ou dans les hôpitaux publics ou privés agréés ;",
-        "- les médicaments prescrits par les médecins d'entreprise ou les médecins agréés sont fournis dans les dispensaires, centres médicaux des entreprises et éventuellement par les pharmacies agréées de la place ;",
-        "- les visites médicales annuelles, les soins médicaux et les médicaments prescrits par les médecins d'entreprise ou les médecins agréés sont pris en charge totalement par les entreprises."
+        "Les salaries regis par la presente convention ont droit, pour eux-memes, leurs epouses et enfants legitimement a leur charge, aux soins medicaux et a l'hospitalisation dans les conditions ci-apres :",
+        "- les visites medicales sont effectuees aupres du medecin d'entreprise, ou eventuellement d'un medecin agree ;",
+        "- les soins medicaux sont donnes dans les dispensaires, centres medicaux des entreprises ou dans les hopitaux publics ou prives agrees ;",
+        "- l'hospitalisation, y compris la nourriture du malade, est assuree dans les centres medicaux des entreprises ou dans les hopitaux publics ou prives agrees ;",
+        "- les medicaments prescrits par les medecins d'entreprise ou les medecins agrees sont fournis dans les dispensaires, centres medicaux des entreprises et eventuellement par les pharmacies agreees de la place ;",
+        "- dans le cas ou un centre medical existe dans l'entreprise, seules les prestations non assurees par ce centre peuvent faire l'objet d'une prise en charge totale ou partielle, conformement aux dispositions internes a ladite entreprise ;",
+        "- les visites medicales annuelles, les soins medicaux et les medicaments prescrits par les medecins d'entreprise ou les medecins agrees sont pris en charge totalement par les entreprises."
       ],
-      "mots_cles": ["organisation médicale", "soins médicaux", "hospitalisation", "médicaments", "prise en charge totale", "épouses", "enfants"],
+      "mots_cles": ["organisation medicale", "soins medicaux", "hospitalisation", "medicaments", "prise en charge totale", "epouses", "enfants"],
       "statut": "en vigueur",
-      "section": "Titre VI : De l'hygiène et de la sécurité - Du service médical - Du service social"
+      "section": "Titre VI : De l'hygiene et de la securite - Du service medical - Du service social"
+    },
+    {
+      "article": "Art. 78",
+      "titre": "Services sociaux",
+      "texte": [
+        "Les employeurs reconnaissent l'utilite des services sociaux au sein des entreprises et acceptent d'en creer conformement aux textes reglementaires en vigueur.",
+        "Dans la limite de leurs possibilites financieres, ils acceptent, en liaison avec les instances syndicales des entreprises, de creer des installations sportives et d'organiser des colonies de vacances."
+      ],
+      "mots_cles": ["services sociaux", "installations sportives", "colonies de vacances", "instances syndicales"],
+      "statut": "en vigueur",
+      "section": "Titre VI : De l'hygiene et de la securite - Du service medical - Du service social"
+    },
+    {
+      "article": "Art. 79",
+      "titre": "Commission d'interpretation et de conciliation",
+      "texte": [
+        "Il est institue une commission paritaire d'interpretation et de conciliation pour rechercher une solution amiable aux differends pouvant resulter de l'interpretation et de l'application de la presente convention, de ses annexes et additifs.",
+        "Cette commission n'a pas a connaitre les litiges individuels qui ne mettent pas en cause le sens et la portee de la presente convention.",
+        "La partie signataire qui desire soumettre un differend a la commission doit le porter par ecrit a la connaissance de toutes les autres parties signataires, du directeur departemental du travail, ainsi que de l'autorite administrative competente (ministere du travail).",
+        "Celle-ci est tenue de reunir la commission dans les trente (30) jours qui suivent la reception de la demande.",
+        "Lorsque la commission donne son avis a l'unanimite des organisations representees, le texte de cet avis, signe par les membres de la commission, a les memes effets juridiques que les clauses de la presente convention.",
+        "Cet avis fait l'objet d'un depot au greffe du tribunal du travail a la diligence de l'autorite qui a reuni la commission."
+      ],
+      "mots_cles": ["commission paritaire", "interpretation", "conciliation", "30 jours", "differend", "unanimite", "tribunal du travail"],
+      "statut": "en vigueur",
+      "section": "Titre VII : Differends"
     },
     {
       "article": "Art. 80",
-      "titre": "Durée - Date d'application - Dénonciation - Révision",
+      "titre": "Duree - Date d'application - Denonciation - Revision",
       "texte": [
-        "a) DUREE",
-        "La présente convention collective est conclue pour une durée indéterminée.",
-        "b) DATE D'APPLICATION",
-        "La présente convention collective est applicable à partir du jour qui suit son dépôt au greffe du tribunal du travail de Pointe-Noire par la partie la plus diligente.",
-        "c) DENONCIATION",
-        "La présente convention collective peut être dénoncée au plus tôt deux (2) ans après sa signature, sous réserve d'un préavis de trois (3) mois donné par lettre recommandée avec accusé de réception par celle des parties qui le désire.",
-        "d) REVISION",
-        "La présente convention collective, de même que tout avenant qui pourrait être pris ultérieurement, sont susceptibles de révision au plus tôt un (1) an après leur signature.",
-        "La demande de révision doit être faite, sous réserve d'un préavis de deux (2) mois, par lettre recommandée, adressée par la partie qui en prend l'initiative à toutes les autres parties contractantes.",
-        "e) DISPOSITIONS COMMUNES",
-        "Les parties s'interdisent d'avoir recours au lock-out ou à la grève pendant le préavis de dénonciation, le préavis de révision, ainsi que pendant les pourparlers qui y sont consécutifs pour des motifs touchant à l'objet même de la dénonciation ou de la révision.",
-        "f) CAS DE FORCE MAJEURE",
-        "Dans le cas où un événement dûment constaté par le ministre du travail empêche l'une des parties d'observer les délais de préavis prévus à l'article 80-c, le délai de un (1) an est suspendu dans ses effets jusqu'à la date de convocation des travaux."
+        "a) DUREE :",
+        "La presente convention collective est conclue pour une duree indeterminee.",
+        "b) DATE D'APPLICATION :",
+        "La presente convention collective est applicable a partir du jour qui suit son depot au greffe du tribunal du travail de Pointe-Noire par la partie la plus diligente.",
+        "c) DENONCIATION :",
+        "La presente convention collective peut etre denoncee au plus tot deux (2) ans apres sa signature, sous reserve d'un preavis de trois (3) mois donne par lettre recommandee avec accuse de reception par celle des parties qui le desire.",
+        "La partie qui prend l'initiative de la denonciation doit exposer, dans sa lettre de preavis, le motif precis de la denonciation et joindre un projet de la nouvelle convention.",
+        "Les pourparlers doivent s'ouvrir dans un delai qui n'excede pas un (1) mois apres expiration du delai de preavis.",
+        "d) REVISION :",
+        "La presente convention collective, de meme que tout avenant qui pourrait etre pris ulterieurement, sont susceptibles de revision au plus tot un (1) an apres leur signature.",
+        "La demande de revision doit etre faite, sous reserve d'un preavis de deux (2) mois, par lettre recommandee adressee par la partie qui en prend l'initiative a toutes les autres parties contractantes.",
+        "Cette demande doit indiquer les dispositions mises en cause et etre accompagnee de propositions ecrites, afin que les pourparlers puissent commencer sans retard et dans un delai qui ne pourra exceder un (1) mois apres expiration du delai de preavis.",
+        "e) DISPOSITIONS COMMUNES :",
+        "Les parties s'interdisent d'avoir recours au lock-out ou a la greve pendant le preavis de denonciation, le preavis de revision, ainsi que pendant les pourparlers qui y sont consecutifs pour des motifs touchant a l'objet meme de la denonciation ou de la revision.",
+        "Qu'il s'agisse de denonciation ou de revision, la presente convention collective restera en vigueur jusqu'a la date d'application de la nouvelle convention collective ou des nouvelles dispositions signees a la suite de la denonciation ou de la revision formulee par l'une des parties, pour autant que celles-ci interviennent dans un delai maximum d'un (1) an.",
+        "Passe ce delai, la presente convention collective ou les dispositions mises en cause cesseront de produire leurs effets et les parties se refereront a la legislation et a la reglementation du travail en vigueur.",
+        "f) CAS DE FORCE MAJEURE :",
+        "Dans le cas ou un evenement dument constate par le ministre du travail empeche l'une des parties d'observer les delais de preavis prevus a l'article 80-c, le delai de un (1) an est suspendu dans ses effets jusqu'a la date de convocation des travaux.",
+        "Dans le cas ou un evenement externe a la commission mixte paritaire dument constate empeche le bon deroulement de ses travaux, la commission est egalement suspendue dans ses effets jusqu'a la reprise des travaux interrompus."
       ],
-      "mots_cles": ["durée indéterminée", "dénonciation 2 ans", "3 mois préavis", "révision 1 an", "2 mois préavis", "force majeure"],
+      "mots_cles": ["duree indeterminee", "denonciation 2 ans", "3 mois preavis", "revision 1 an", "2 mois preavis", "force majeure", "lock-out", "greve"],
+      "statut": "en vigueur",
+      "section": "Titre VIII : Des dispositions finales"
+    },
+    {
+      "article": "Art. 81",
+      "titre": "Adhesion posterieure a la signature de la convention",
+      "texte": [
+        "Toute entreprise ou groupe d'entreprises dont l'objet social entre dans le champ d'application de la presente convention peut adherer a ladite convention collective en notifiant cette adhesion par lettre recommandee au greffe du tribunal du travail de Pointe-Noire ou le depot a ete effectue, aux parties contractantes, ainsi qu'a la direction departementale du travail du ressort.",
+        "Cette adhesion prend effet a compter du jour qui suit celui de la notification au greffe du tribunal du travail.",
+        "L'organisation adherant apres coup a la presente convention collective ne peut toutefois ni la denoncer, ni en demander la revision, meme partielle ; elle ne peut que proceder au retrait de son adhesion."
+      ],
+      "mots_cles": ["adhesion posterieure", "lettre recommandee", "greffe", "tribunal du travail", "Pointe-Noire", "retrait d'adhesion"],
       "statut": "en vigueur",
       "section": "Titre VIII : Des dispositions finales"
     },
     {
       "article": "Annexe I (2019)",
-      "titre": "Grille salariale applicable à compter du 1er janvier 2019 (en milliers de Francs CFA)",
+      "titre": "Grille salariale applicable a compter du 1er janvier 2019 (en milliers de Francs CFA)",
       "texte": [
-        "GRILLE SALARIALE PÉTROLE — Applicable au 1er janvier 2019",
-        "Protocole d'accord du 22 juillet 2019 — Augmentation générale de 1,2%",
+        "GRILLE SALARIALE PETROLE — Applicable au 1er janvier 2019",
+        "Protocole d'accord du 22 juillet 2019 — Augmentation generale de 1,2%",
         "",
-        "COLLÈGE EXÉCUTION :",
-        "Catégorie 1 : échelon 1 = 225, échelon 2 = 249, échelon 3 = 273, échelon 4 = 298, échelon 5 = 288, échelon 6 = 306, indice ouverture 1,52",
-        "Catégorie 2 : échelon 1 = 273, échelon 2 = 296, échelon 3 = 323, échelon 4 = 342, échelon 5 = 374, échelon 6 = 397, indice 1,52",
-        "Catégorie 3 : échelon 1 = 308, échelon 2 = 337, échelon 3 = 367, échelon 4 = 395, échelon 5 = 439, échelon 6 = 444, indice 1,52",
-        "Catégorie 4 : échelon 1 = 371, échelon 2 = 405, échelon 3 = 438, échelon 4 = 464, échelon 5 = 503, échelon 6 = 533, indice 1,52",
-        "Catégorie 5 : échelon 1 = 434, échelon 2 = 469, échelon 3 = 503, échelon 4 = 538, échelon 5 = 611, indice 1,48",
-        "Catégorie 6 : échelon 1 = 540, échelon 2 = 581, échelon 3 = 620, échelon 4 = 656, échelon 5 = 692, échelon 6 = 713, échelon 7 = 744, indice 1,45",
-        "Catégorie 7 : échelon 1 = 619, échelon 2 = 655, échelon 3 = 692, échelon 4 = 722, échelon 5 = 752, échelon 6 = 788, échelon 7 = 821, indice 1,40",
-        "Catégorie 8 : échelon 1 = 691, échelon 2 = 744, échelon 3 = 793, échelon 4 = 839, échelon 5 = 848, échelon 6 = 902, échelon 7 = 939, échelon 8 = 959, indice 1,47",
-        "Catégorie 9 : échelon 1 = 730, échelon 2 = 788, échelon 3 = 844, échelon 4 = 895, échelon 5 = 992, échelon 6 = 982, échelon 7 = 1037, indice 1,49",
+        "COLLEGE EXECUTION :",
+        "Categorie 1 : echelon 1 = 225, echelon 2 = 249, echelon 3 = 273, echelon 4 = 298, echelon 5 = 288, echelon 6 = 306, indice ouverture 1,52",
+        "Categorie 2 : echelon 1 = 273, echelon 2 = 296, echelon 3 = 323, echelon 4 = 342, echelon 5 = 374, echelon 6 = 397, indice 1,52",
+        "Categorie 3 : echelon 1 = 308, echelon 2 = 337, echelon 3 = 367, echelon 4 = 395, echelon 5 = 439, echelon 6 = 444, indice 1,52",
+        "Categorie 4 : echelon 1 = 371, echelon 2 = 405, echelon 3 = 438, echelon 4 = 464, echelon 5 = 503, echelon 6 = 533, indice 1,52",
+        "Categorie 5 : echelon 1 = 434, echelon 2 = 469, echelon 3 = 503, echelon 4 = 538, echelon 5 = 611, indice 1,48",
+        "Categorie 6 : echelon 1 = 540, echelon 2 = 581, echelon 3 = 620, echelon 4 = 656, echelon 5 = 692, echelon 6 = 713, echelon 7 = 744, indice 1,45",
+        "Categorie 7 : echelon 1 = 619, echelon 2 = 655, echelon 3 = 692, echelon 4 = 722, echelon 5 = 752, echelon 6 = 788, echelon 7 = 821, indice 1,40",
+        "Categorie 8 : echelon 1 = 691, echelon 2 = 744, echelon 3 = 793, echelon 4 = 839, echelon 5 = 848, echelon 6 = 902, echelon 7 = 939, echelon 8 = 959, indice 1,47",
+        "Categorie 9 : echelon 1 = 730, echelon 2 = 788, echelon 3 = 844, echelon 4 = 895, echelon 5 = 992, echelon 6 = 982, echelon 7 = 1037, indice 1,49",
         "",
-        "COLLÈGE MAÎTRISE :",
-        "Catégorie 10 : échelon 1 = 722, échelon 2 = 700, échelon 3 = 887, échelon 4 = 957, échelon 5 = 975, échelon 6 = 997, échelon 7 = 1007, indice 1,47",
-        "Catégorie 11 : échelon 1 = 817, échelon 2 = 887, échelon 3 = 952, échelon 4 = 1024, échelon 5 = 1145, échelon 6 = 1175, échelon 7 = 1189, indice 1,54",
-        "Catégorie 12 : échelon 1 = 1024, échelon 2 = 1095, échelon 3 = 1155, échelon 4 = 1209, échelon 5 = 1329, échelon 6 = 1364, indice 1,40",
-        "Catégorie 13 : échelon 1 = 1177, échelon 2 = 1262, échelon 3 = 1344, échelon 4 = 1420, échelon 5 = 1544, échelon 6 = 1605, indice 1,43",
-        "Catégorie 14 : échelon 1 = 1355, échelon 2 = 1463, échelon 3 = 1556, échelon 4 = 1564, échelon 5 = 1825, échelon 6 = 1900, indice 1,46",
+        "COLLEGE MAITRISE :",
+        "Categorie 10 : echelon 1 = 722, echelon 2 = 700, echelon 3 = 887, echelon 4 = 957, echelon 5 = 975, echelon 6 = 997, echelon 7 = 1007, indice 1,47",
+        "Categorie 11 : echelon 1 = 817, echelon 2 = 887, echelon 3 = 952, echelon 4 = 1024, echelon 5 = 1145, echelon 6 = 1175, echelon 7 = 1189, indice 1,54",
+        "Categorie 12 : echelon 1 = 1024, echelon 2 = 1095, echelon 3 = 1155, echelon 4 = 1209, echelon 5 = 1329, echelon 6 = 1364, indice 1,40",
+        "Categorie 13 : echelon 1 = 1177, echelon 2 = 1262, echelon 3 = 1344, echelon 4 = 1420, echelon 5 = 1544, echelon 6 = 1605, indice 1,43",
+        "Categorie 14 : echelon 1 = 1355, echelon 2 = 1463, echelon 3 = 1556, echelon 4 = 1564, echelon 5 = 1825, echelon 6 = 1900, indice 1,46",
         "",
-        "COLLÈGE CADRE :",
-        "Catégorie 15 : échelon 1 = 1262, échelon 2 = 1364, échelon 3 = 1463, échelon 4 = 1547, échelon 5 = 1693, échelon 6 = 1770, indice 1,48",
-        "Catégorie 16J : échelon 1 = 1262, échelon 2 = 1317, échelon 3 = 1364, échelon 4 = 1416, échelon 5 = 1507, échelon 6 = 1547, échelon 7 = 1584, indice 1,32",
-        "Catégorie 16 : échelon 1 = 1494, échelon 2 = 1595, échelon 3 = 1698, échelon 4 = 1793, échelon 5 = 1951, échelon 6 = 2031, échelon 7 = 2076, indice 1,48",
-        "Catégorie 17 : échelon 1 = 1863, échelon 2 = 1991, échelon 3 = 2107, échelon 4 = 2216, échelon 5 = 2414, échelon 6 = 2505, indice 1,41",
-        "Catégorie 18 : échelon 1 = 2208, échelon 2 = 2408, échelon 3 = 2605, échelon 4 = 2751, échelon 5 = 2876, échelon 6 = 2919, échelon 7 = 3024, échelon 8 = 3091, indice 1,48",
-        "Catégorie 19 : échelon 1 = 2556, échelon 2 = 2737, échelon 3 = 2915, échelon 4 = 3059, échelon 5 = 3186, échelon 6 = 3451, indice 1,42",
-        "Catégorie 20 : échelon 1 = 2984, échelon 2 = 3197, échelon 3 = 3383, échelon 4 = 3571, échelon 5 = 3740, échelon 6 = 3941, échelon 7 = 4028, indice 1,42",
+        "COLLEGE CADRE :",
+        "Categorie 15 : echelon 1 = 1262, echelon 2 = 1364, echelon 3 = 1463, echelon 4 = 1547, echelon 5 = 1693, echelon 6 = 1770, indice 1,48",
+        "Categorie 16J : echelon 1 = 1262, echelon 2 = 1317, echelon 3 = 1364, echelon 4 = 1416, echelon 5 = 1507, echelon 6 = 1547, echelon 7 = 1584, indice 1,32",
+        "Categorie 16 : echelon 1 = 1494, echelon 2 = 1595, echelon 3 = 1698, echelon 4 = 1793, echelon 5 = 1951, echelon 6 = 2031, echelon 7 = 2076, indice 1,48",
+        "Categorie 17 : echelon 1 = 1863, echelon 2 = 1991, echelon 3 = 2107, echelon 4 = 2216, echelon 5 = 2414, echelon 6 = 2505, indice 1,41",
+        "Categorie 18 : echelon 1 = 2208, echelon 2 = 2408, echelon 3 = 2605, echelon 4 = 2751, echelon 5 = 2876, echelon 6 = 2919, echelon 7 = 3024, echelon 8 = 3091, indice 1,48",
+        "Categorie 19 : echelon 1 = 2556, echelon 2 = 2737, echelon 3 = 2915, echelon 4 = 3059, echelon 5 = 3186, echelon 6 = 3451, indice 1,42",
+        "Categorie 20 : echelon 1 = 2984, echelon 2 = 3197, echelon 3 = 3383, echelon 4 = 3571, echelon 5 = 3740, echelon 6 = 3941, echelon 7 = 4028, indice 1,42",
         "",
         "NB :",
-        "- La catégorie 16J est celle des Ingénieurs débutants. Ils y séjournent 5 ans maximum, à raison d'un avancement automatique par an.",
-        "- Les Directions des Entreprises et les Instances Syndicales se réunissent chaque année, dans un délai maximum de deux mois qui suit la date anniversaire du dépôt de la convention collective, pour examiner la question relative à la révision des salaires.",
-        "- La grille salariale de la Convention Collective ne peut être modifiée qu'en Commission Mixte Paritaire. En aucun cas un accord d'établissement ne peut prévaloir sur celle-ci.",
+        "- La categorie 16J est celle des Ingenieurs debutants. Ils y sejournent 5 ans maximum, a raison d'un avancement automatique par an.",
+        "- Les Directions des Entreprises et les Instances Syndicales se reunissent chaque annee, dans un delai maximum de deux mois qui suit la date anniversaire du depot de la convention collective, pour examiner la question relative a la revision des salaires.",
+        "- La grille salariale de la Convention Collective ne peut etre modifiee qu'en Commission Mixte Paritaire. En aucun cas un accord d'etablissement ne peut prevaloir sur celle-ci.",
         "",
         "Historique des augmentations :",
         "- 2014 : +5% (protocole du 2 juillet 2014)",
         "- 2015 : +1% (protocole du 10 novembre 2015)",
-        "- 2016 : +2% (protocole du 17 février 2017)",
+        "- 2016 : +2% (protocole du 17 fevrier 2017)",
         "- 2017 : +3% (protocole du 3 octobre 2017)",
         "- 2018 : +1% (protocole du 2 octobre 2018)",
         "- 2019 : +1,2% (protocole du 22 juillet 2019)"
       ],
-      "mots_cles": ["grille salariale", "pétrole", "2019", "catégories 1-20", "échelons", "FCFA", "milliers", "Exécution", "Maîtrise", "Cadre", "augmentations"],
+      "mots_cles": ["grille salariale", "petrole", "2019", "categories 1-20", "echelons", "FCFA", "milliers", "Execution", "Maitrise", "Cadre", "augmentations"],
       "statut": "en vigueur",
       "section": "Annexe I : Grille salariale"
     }
