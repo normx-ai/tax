@@ -1,7 +1,7 @@
 {
   "meta": {
     "code": "social",
-    "document": "Convention Collective fixant les Conditions d'Emploi des Marins du Secteur de la Pêche Maritime Industrielle",
+    "document": "Convention Collective fixant les Conditions d'Emploi des Marins du Secteur de la Pêche Maritime Industrielle en République du Congo",
     "pays": "République du Congo",
     "edition": "2009",
     "tome": null,
@@ -12,7 +12,10 @@
     "section": null,
     "section_titre": null,
     "page_source": 1,
-    "signataires": "Armateurs de pêche industrielle (employeurs) / Syndicats des marins pêcheurs (travailleurs)",
+    "signataires_employeurs": "Syndicat des Armateurs de la Pêche Industrielle (SAPI) et les Armateurs à la Pêche Maritime Industrielle",
+    "signataires_travailleurs": "Fédération Syndicale des Travailleurs de l'Industrie et de la Métallurgie (FESYTRALIM/CSC)",
+    "presidence_arbitrage": "Direction Départementale du Travail et Direction Générale de la Marine Marchande",
+    "lieu_signature": "Pointe-Noire",
     "date_signature": "14 décembre 2009"
   },
   "articles": [
@@ -20,10 +23,9 @@
       "article": "Art. 1",
       "titre": "Objet et champ d'application",
       "texte": [
-        "La présente convention collective fixe les conditions d'emploi des marins du secteur de la pêche maritime industrielle en République du Congo.",
-        "Elle règle les rapports de travail entre les armateurs de pêche industrielle et les marins pêcheurs."
+        "La présente convention collective règle les rapports entre les armateurs de pêche industrielle et les marins pêcheurs exerçant dans les eaux maritimes sous juridiction congolaise."
       ],
-      "mots_cles": ["pêche maritime", "industrielle", "marins pêcheurs", "armateurs"],
+      "mots_cles": ["pêche maritime", "industrielle", "marins pêcheurs", "armateurs", "eaux maritimes", "juridiction congolaise"],
       "statut": "en vigueur",
       "section": "Titre I : Dispositions générales"
     },
@@ -32,56 +34,1028 @@
       "titre": "Définitions",
       "texte": [
         "Au sens de la présente convention, on entend par :",
-        "- Armateur : toute personne physique ou morale propriétaire ou exploitant d'un ou de plusieurs navires de pêche ;",
-        "- Marin pêcheur : toute personne inscrite au registre maritime et engagée par un armateur pour exercer à bord d'un navire de pêche une activité professionnelle liée à la pêche maritime industrielle."
+        "\"Marin pêcheur\" : toute personne physique de l'un ou l'autre sexe, embarquée à bord d'un navire de pêche pour y exercer une activité rémunératrice et inscrite au rôle d'équipage.",
+        "\"Armateur\" : toute personne morale ou physique qui possède, arme, exploite ou utilise un navire de pêche.",
+        "\"Navire de pêche\" : tout engin flottant qui effectue à titre principal une activité de pêche maritime.",
+        "\"Accord d'engagement du marin-pêcheur\" : le contrat conclu entre un armateur ou son représentant et un marin pêcheur, ayant pour objet un service à accomplir à bord d'un navire de pêche en vue d'une activité de pêche maritime.",
+        "\"Godaille\" : la quantité de poisson octroyée par l'armateur aux marins à la suite d'une marée et destinée à sa consommation domestique.",
+        "\"Salaire\" : s'entend du salaire de base, de l'allocation de congé, des primes, des indemnités de toute nature octroyés au marin pêcheur à l'exception de l'indemnité de licenciement."
       ],
-      "mots_cles": ["armateur", "marin pêcheur", "navire de pêche", "registre maritime"],
+      "mots_cles": ["marin pêcheur", "armateur", "navire de pêche", "accord d'engagement", "godaille", "salaire", "rôle d'équipage"],
       "statut": "en vigueur",
       "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Entrée en vigueur",
+      "texte": [
+        "La présente convention entre en vigueur à partir du jour qui suit celui de son dépôt au greffe du Tribunal de Travail de Pointe-Noire par l'une des parties."
+      ],
+      "mots_cles": ["entrée en vigueur", "dépôt", "greffe", "Tribunal de Travail", "Pointe-Noire"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Portée de la convention",
+      "texte": [
+        "Les clauses de la présente convention sont considérées comme des conditions minima d'engagement, remplaçant les clauses correspondantes des accords d'engagement du marin pêcheur existantes sans modifier celles-ci chaque fois qu'elles seront plus favorables pour les marins."
+      ],
+      "mots_cles": ["conditions minima", "engagement", "clauses favorables"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Avantages acquis",
+      "texte": [
+        "Dans chaque armement, les avantages particuliers acquis à la date de la signature et non visés au titre V sont intégralement maintenus à leurs bénéficiaires."
+      ],
+      "mots_cles": ["avantages acquis", "armement", "maintien"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Durée de la convention",
+      "texte": [
+        "La présente convention est conclue pour une durée indéterminée."
+      ],
+      "mots_cles": ["durée indéterminée"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Dénonciation de la convention",
+      "texte": [
+        "La présente convention peut être dénoncée en tout ou partie, à toute époque, par l'une des parties contractantes moyennant un préavis de trois (03) mois signifié à l'autre partie contractante par écrit, dont copie sera adressée à l'Inspection du Travail du ressort et à l'Autorité Maritime.",
+        "Toutefois, la première dénonciation ne pourra intervenir avant l'expiration d'un délai de deux (02) ans à compter de l'entrée en vigueur de la présente convention.",
+        "La notification de la dénonciation doit en préciser les motifs et contenir un nouveau projet d'accord ou avenant sur les points mis en cause."
+      ],
+      "mots_cles": ["dénonciation", "préavis", "3 mois", "2 ans", "Inspection du Travail", "Autorité Maritime"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 8",
+      "titre": "Révision de la convention",
+      "texte": [
+        "La présente convention pourra être révisée selon la procédure définie à l'article 7.",
+        "Cependant, la première révision ne pourra intervenir avant un délai de deux (02) ans à compter de sa date de signature."
+      ],
+      "mots_cles": ["révision", "2 ans", "procédure"],
+      "statut": "en vigueur",
+      "section": "Titre I : Dispositions générales"
+    },
+    {
+      "article": "Art. 9",
+      "titre": "Exercice du droit syndical et liberté d'opinion",
+      "texte": [
+        "Les parties signataires reconnaissent la liberté d'opinion ainsi que le droit d'adhérer librement et d'appartenir à un syndicat professionnel conformément à la réglementation du travail.",
+        "L'employeur s'engage à ne pas prendre en considération l'appartenance syndicale, les opinions politiques ou philosophiques, la race, les croyances religieuses ou origines du salarié pour l'embauche, la conduite, la répartition du travail, les mesures de discipline, le congédiement et l'avancement.",
+        "L'employeur s'engage à n'exercer ni pressions ni mesures discriminatoires. Les salariés s'engagent également à respecter ces principes.",
+        "L'exercice du droit syndical ne doit pas avoir pour conséquence des actes contraires aux lois, règlements et usages.",
+        "Les parties s'engagent à respecter la liberté d'opinion, à n'exercer aucune pression tendant à gêner l'exercice du droit syndical ou celui du droit de propriété au sein de l'entreprise et de la profession.",
+        "Les parties veillent à la stricte observation des engagements."
+      ],
+      "mots_cles": ["droit syndical", "liberté d'opinion", "non-discrimination", "syndicat professionnel"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 10",
+      "titre": "Acteurs du dialogue social dans l'entreprise",
+      "texte": [
+        "Les acteurs du dialogue social dans l'entreprise sont constitués de la direction et des représentants du personnel élus par les salariés et ceux désignés par les organisations syndicales représentatives.",
+        "Les partenaires sociaux marquent leur volonté de se rencontrer périodiquement."
+      ],
+      "mots_cles": ["dialogue social", "représentants du personnel", "organisations syndicales", "direction"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 11",
+      "titre": "Élection, désignation et fonctionnement",
+      "texte": [
+        "Les conditions d'élection, de désignation et de fonctionnement des représentants du personnel sont déterminées par le code du travail et ses textes d'application.",
+        "L'employeur est tenu d'organiser les élections."
+      ],
+      "mots_cles": ["élection", "désignation", "fonctionnement", "code du travail"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 12",
+      "titre": "Moyens des délégués du personnel et des représentants syndicaux",
+      "texte": [
+        "L'entreprise met en place les moyens d'information, de formation et de fonctionnement des délégués du personnel et des représentants syndicaux.",
+        "L'employeur met à disposition un local aménagé si l'entreprise occupe au moins cinquante (50) salariés. Ce local peut être commun.",
+        "Les délégués et représentants syndicaux bénéficient d'un congé d'éducation ouvrière de dix (10) jours ouvrables par an."
+      ],
+      "mots_cles": ["délégués du personnel", "représentants syndicaux", "local", "50 salariés", "congé d'éducation ouvrière", "10 jours"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Crédit d'heures",
+      "texte": [
+        "Les délégués du personnel et les représentants syndicaux bénéficient d'un crédit de vingt (20) heures par mois rémunéré comme temps de travail.",
+        "Ce crédit n'inclut pas le temps passé aux réunions convoquées à l'initiative de la direction."
+      ],
+      "mots_cles": ["crédit d'heures", "20 heures", "temps de travail", "réunions"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Rencontres périodiques des partenaires sociaux",
+      "texte": [
+        "Les délégués sont reçus collectivement par le Chef d'Établissement au moins une fois par mois. Ils sont reçus en outre en cas d'urgence.",
+        "Les membres du bureau de la section syndicale sont reçus sur leur demande. Les parties s'accordent à l'avance sur le nombre de membres.",
+        "Aucun responsable hiérarchique ne pourra retenir un délégué sans motif valable, si possible vingt-quatre (24) heures avant.",
+        "Sauf circonstances exceptionnelles, remise d'une note écrite deux (2) jours ouvrables avant.",
+        "Ces dispositions ne mettent pas en cause les articles 242 et suivants du code du travail.",
+        "Nonobstant, les salariés ont la faculté de présenter eux-mêmes leurs réclamations et suggestions."
+      ],
+      "mots_cles": ["rencontres périodiques", "Chef d'Établissement", "délégués", "section syndicale", "urgence"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Panneaux d'affichage",
+      "texte": [
+        "Des panneaux identiques, grillagés ou vitrés, se fermant à clé en nombre suffisant sont mis à la disposition des délégués et organisations syndicales.",
+        "Ils sont apposés à l'intérieur de chaque établissement.",
+        "Les communications sont exclusivement professionnelles et syndicales, sans caractère injurieux.",
+        "Elles sont affichées après communication d'un exemplaire au chef d'établissement."
+      ],
+      "mots_cles": ["panneaux d'affichage", "communications syndicales", "établissement"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Missions des organes représentatifs du personnel",
+      "texte": [
+        "Les délégués du personnel ont pour mission :",
+        "- Présenter les réclamations individuelles ou collectives ;",
+        "- Donner leur avis préalable pour tout licenciement collectif ou individuel motivé par une diminution d'activité ;",
+        "- Saisir l'inspection du travail ;",
+        "- Veiller aux prescriptions d'hygiène et sécurité ;",
+        "- Communiquer toutes suggestions utiles.",
+        "La section syndicale d'entreprise : les représentants syndicaux sont désignés conformément aux dispositions légales. Seules les organisations syndicales ayant au moins un délégué du personnel sont habilitées à constituer une section syndicale.",
+        "La section syndicale a pour missions essentielles :",
+        "- Affichage des communications syndicales ;",
+        "- Publication et diffusion des documents d'informations syndicales ;",
+        "- Collecte des cotisations ;",
+        "- Négociation des accords d'établissement ;",
+        "- Organisation de la campagne électorale."
+      ],
+      "mots_cles": ["délégués du personnel", "réclamations", "licenciement collectif", "section syndicale", "hygiène", "sécurité"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Protection des membres des organes représentatifs du personnel",
+      "texte": [
+        "L'exercice de la fonction de représentant du personnel ne peut constituer une entrave à l'avancement ou à l'amélioration de la rémunération, ni à la formation professionnelle.",
+        "Les délégués et les membres du bureau de la section syndicale ne peuvent, sans leur consentement, pendant la durée de leur mandat, être déplacés de leur lieu habituel de travail.",
+        "Tout licenciement d'un représentant du personnel est soumis à l'autorisation de la commission des litiges prévue par le code du Travail.",
+        "Ces dispositions sont applicables :",
+        "- Aux candidats pendant la durée entre la remise des listes et le scrutin ;",
+        "- Aux candidats non déclarés élus pendant les trois (03) mois qui suivent le scrutin ;",
+        "- Aux anciens représentants syndicaux pendant six (06) ans à partir de l'expiration de leur mandat ;",
+        "- Aux anciens délégués du personnel et aux anciens membres du bureau de la section syndicale pendant six (06) mois à partir de l'expiration du mandat."
+      ],
+      "mots_cles": ["protection", "représentants du personnel", "licenciement", "mandat", "commission des litiges"],
+      "statut": "en vigueur",
+      "section": "Titre II : Du dialogue social"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "Engagement",
+      "texte": [
+        "Les accords d'engagement du marin pêcheur qui interviendront postérieurement à la signature de la présente convention seront soumis à ses dispositions considérées comme étant des conditions minima d'engagement.",
+        "Aucune clause restrictive ne pourra donc être insérée dans lesdits accords.",
+        "La présente convention s'applique de plein droit aux accords en cours d'exécution à compter de la date de son entrée en vigueur."
+      ],
+      "mots_cles": ["engagement", "conditions minima", "accords", "clause restrictive"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Modalités",
+      "texte": [
+        "Les marins sont engagés à compter du jour de leur inscription au rôle d'équipage dans les conditions déterminées aux accords d'engagement du marin pêcheur.",
+        "Lesdits accords pourront être conclus au voyage, à durée indéterminée ou déterminée.",
+        "Lorsque l'engagement est conclu pour une durée déterminée, l'accord doit préciser la durée.",
+        "Si l'engagement est conclu pour une durée indéterminée, l'accord doit fixer le délai de préavis à observer en cas de résiliation par l'une des parties. Ce délai ne peut être inférieur à vingt-quatre (24) heures.",
+        "Si l'accord est conclu au voyage, il doit désigner nominativement le port où le voyage prendra fin et fixer à quel moment les activités de pêche maritime prendront fin."
+      ],
+      "mots_cles": ["modalités", "rôle d'équipage", "voyage", "durée déterminée", "durée indéterminée", "préavis", "24 heures"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Priorité d'engagement",
+      "texte": [
+        "Le marin congédié par suite de suppression d'emploi ou de compression de personnel conserve pendant un (01) an la priorité d'embauche dans la même catégorie d'emploi."
+      ],
+      "mots_cles": ["priorité d'engagement", "suppression d'emploi", "compression de personnel", "1 an"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
     },
     {
       "article": "Art. 21",
       "titre": "Période d'essai",
       "texte": [
-        "Le marin pêcheur est soumis à une période d'essai dont la durée est fixée par l'accord d'engagement.",
-        "La durée de la période d'essai varie selon la catégorie du marin.",
-        "Elle ne peut excéder six (6) mois, renouvellement compris."
+        "L'engagement à durée déterminée ou indéterminée peut être précédé d'une période d'essai stipulé obligatoirement par écrit.",
+        "La durée de la période d'essai est fonction du groupe de classification :",
+        "Engagement à durée indéterminée :",
+        "- De la 1ère à la 7ème catégorie : 1 mois ;",
+        "- De la 8ème à la 11ème catégorie : 2 mois.",
+        "Chacune de ces périodes est éventuellement renouvelable. Toutefois, conformément à l'article 312 alinéa 8 du code communautaire de la Marine Marchande elle ne peut porter renouvellement compris que sur une période ne pouvant excéder 3 mois.",
+        "Pendant cette période, le contrat peut être résilié par l'une des parties si l'essai n'est pas concluant, sous réserves d'une notification écrite au marin intéressé avec ampliation à l'autorité maritime.",
+        "Pendant la période d'essai, le marin doit percevoir le salaire de la catégorie dont relève le poste à pourvoir ainsi que les avantages contractuels auxquels il a droit.",
+        "Engagement à durée déterminée :",
+        "- 15 jours pour les contrats dont la durée est égale ou inférieure à six (06) mois ;",
+        "- 1 mois pour les contrats dont la durée est supérieure à six (06) mois.",
+        "Le contrat à durée déterminée arrivé à terme, peut être reporté ou renouvelé par un avenant pour une durée égale ou inférieure à la durée initiale.",
+        "Si les services se prolongent après expiration du contrat à durée déterminée, cette prolongation des services équivaut à la conclusion d'un engagement maritime à durée indéterminée prenant effet à compter du début des services, sauf cas de force majeure."
       ],
-      "mots_cles": ["période d'essai", "marin pêcheur", "6 mois"],
+      "mots_cles": ["période d'essai", "durée déterminée", "durée indéterminée", "catégorie", "1 mois", "2 mois", "3 mois", "renouvellement", "Marine Marchande"],
       "statut": "en vigueur",
       "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Modifications aux clauses de l'accord d'engagement du marin pêcheur",
+      "texte": [
+        "Toute modification de caractère individuel apportée à l'un des éléments de l'accord d'engagement du marin pêcheur doit au préalable, faire l'objet d'une notification écrite au marin dans un délai équivalent à la période de préavis dans la limite maximum d'un mois. Une copie est adressée à l'autorité maritime.",
+        "Pour des raisons tenant à l'incapacité physique du marin, à la situation économique ou à la réorganisation de l'armement, l'armateur peut proposer au marin une modification de son contrat.",
+        "Si le marin donne son accord de principe, cette modification ne peut intervenir qu'après avis de l'autorité maritime et à une date fixée d'accord partie et située dans la période égale au préavis et dans la limite maximum d'un mois.",
+        "Si le marin refuse cette modification puisqu'entraînant pour lui une diminution des avantages dont il bénéficie, la rupture de l'accord est réputée être à la charge de l'armateur. Ce dernier est tenu d'observer les règles de préavis et d'accorder les avantages prévus par la présente convention en cas de licenciement."
+      ],
+      "mots_cles": ["modification", "accord d'engagement", "notification écrite", "préavis", "autorité maritime", "refus", "licenciement"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Promotion",
+      "texte": [
+        "L'armateur est tenu de faire appel de préférence aux marins en service dans l'armement en cas de vacance ou de création d'emploi.",
+        "Le postulant occupant un tel emploi peut être soumis à la période d'essai prévue pour cet emploi, si l'emploi à pourvoir relève d'une catégorie supérieure.",
+        "Au cas où l'essai ne serait pas concluant, le marin est réintégré dans son ancien emploi, cette mesure ne devant pas être considérée comme une rétrogradation."
+      ],
+      "mots_cles": ["promotion", "vacance", "création d'emploi", "période d'essai", "réintégration"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Mutation provisoire",
+      "texte": [
+        "Le fait, pour un marin d'assurer provisoirement ou par intérim sur ordre de l'armateur ou son représentant un emploi comportant un classement supérieur dans la hiérarchie professionnelle et d'en assumer toutes les responsabilités lui confère les droits aux avantages spécifiques attachés audit emploi."
+      ],
+      "mots_cles": ["mutation provisoire", "intérim", "classement supérieur", "avantages"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Changement d'emploi — Mutation dans une catégorie inférieure",
+      "texte": [
+        "En cas de nécessité de service, le marin pourra être affecté momentanément à un emploi relevant d'une catégorie inférieure à celle de son classement habituel. Dans ce cas, son salaire, les avantages et son classement antérieur sont maintenus pendant une période de mutation qui n'excèdera pas trois (03) mois.",
+        "S'il est demandé au marin d'accepter définitivement un emploi inférieur à celui qu'il occupe, le marin peut refuser ce déclassement. En cas de refus, le contrat est résilié du fait de l'employeur.",
+        "Si le marin accepte, il est rémunéré dans les conditions correspondantes à son nouvel emploi. Toutefois, cette acceptation doit être expressément stipulée par écrit et transmise à l'autorité maritime.",
+        "Le marin qui accepte un poste inférieur par suite de la situation économique de l'armement, bénéficie d'une priorité pour réoccuper son poste antérieur dans le cas où cet emploi serait rétabli sur un navire équivalent après évaluation par l'autorité maritime."
+      ],
+      "mots_cles": ["changement d'emploi", "mutation", "catégorie inférieure", "3 mois", "déclassement", "priorité"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Discipline",
+      "texte": [
+        "En dehors de celles prévues par le règlement intérieur de l'armement, sont réputées fautes contre la discipline :",
+        "a) Fautes légères :",
+        "- L'ivresse à bord avec ou sans désordre et en dehors du service ;",
+        "- Le retard à l'appareillage ;",
+        "- La désobéissance simple à tout ordre concernant le service ;",
+        "- L'absence irrégulière à bord, lorsque cette absence n'a pas pour résultat de faire manquer le départ du navire ;",
+        "- Les insultes et même les querelles et disputes à bord sans voie de fait ;",
+        "- Les larcins ou filouteries dont l'importance ne justifierait pas aux yeux de l'autorité maritime le dépôt d'une plainte pour vol ;",
+        "- La non-observation des règles de coopération, d'entraide et de vie commune et particulièrement le manque de respect mutuel entre les membres de l'équipage, surtout envers les supérieurs.",
+        "b) Fautes graves :",
+        "- La récidive des fautes légères ;",
+        "- Toute faute dans l'exercice de la profession susceptible de nuire à la sécurité du navire ;",
+        "- La désobéissance ou le refus d'obéir à tout ordre concernant le service ou la résistance à un tel ordre ;",
+        "- La négligence dans le service de quart ou de garde notamment le fait de s'être endormi à la barre ou à la vigie ;",
+        "- Le manque de respect envers un supérieur ou les insultes directement adressées à un inférieur à bord ou à terre ;",
+        "- Le fait d'avoir allumé un feu sans permission ou de fumer dans un endroit interdit ;",
+        "- L'emploi non autorisé sans perte et sans dégradation ou l'abandon d'une embarcation, radeau ou annexe ;",
+        "- La dégradation volontaire du matériel de bord ;",
+        "- Le vol du matériel de bord ;",
+        "- Le détournement des produits de la pêche ;",
+        "- L'absence irrégulière à bord ayant eu pour conséquence de faire manquer l'appareillage du navire ou d'empêcher la reprise du service à bord ;",
+        "- La non-observation des prescriptions relatives à la sécurité et à l'hygiène, aux conditions de travail, de même qu'à l'incendie."
+      ],
+      "mots_cles": ["discipline", "fautes légères", "fautes graves", "ivresse", "désobéissance", "vol", "sécurité", "incendie"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Sanctions",
+      "texte": [
+        "Toute faute contre la discipline entraîne l'une des sanctions suivantes :",
+        "1- La réprimande ;",
+        "2- L'avertissement verbal ou écrit ;",
+        "3- Le blâme écrit ;",
+        "4- L'amende ;",
+        "5- La rétrogradation ;",
+        "6- La suspension de service sans droit à aucune rémunération pour une période ne pouvant excéder six (06) mois ;",
+        "7- Le licenciement ;",
+        "8- La radiation du registre national des gens de mer.",
+        "Toutes fautes contre la discipline commises par le marin à bord ou à terre doivent faire l'objet d'une transmission à l'autorité maritime avec ou sans proposition de sanction dans un délai de cinq (05) jours francs.",
+        "La non réponse de l'autorité maritime dans un délai maximum d'un (01) mois vaut confirmation de la sanction.",
+        "Les sanctions prévues de 1 à 3 à l'encontre du marin par l'armateur sont applicables aux fautes légères.",
+        "Les sanctions prévues de 5 à 8 ne sont prononcées qu'en cas de faute grave.",
+        "Quant aux amendes, le taux à infliger est déterminé par l'autorité maritime conformément aux textes en vigueur."
+      ],
+      "mots_cles": ["sanctions", "réprimande", "avertissement", "blâme", "amende", "rétrogradation", "suspension", "licenciement", "radiation", "autorité maritime"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Formation professionnelle",
+      "texte": [
+        "Les parties contractantes reconnaissent l'utilité de la formation professionnelle.",
+        "Les marins des armements de la pêche maritime industrielle régis par la présente convention peuvent participer à des stages de formation professionnelle interne ou externe :",
+        "- Soit à l'initiative des armateurs ou de leurs représentants dans le cadre d'un plan de formation et/ou des formations en alternance ayant fait l'objet de concertation avec les partenaires sociaux de l'armement et l'autorité maritime ;",
+        "- Soit à la demande d'un marin après accord de l'armateur ou de son représentant dans le cadre du congé individuel de formation.",
+        "La formation professionnelle a pour but :",
+        "- De permettre en fonction des besoins de chaque armement, l'actualisation des connaissances théoriques et pratiques, la maîtrise des techniques en perpétuelle évolution et le développement des parcours professionnels à l'ensemble des marins de la profession ;",
+        "- De favoriser aux marins quelle que soit leur fonction ou leur formation antérieure d'acquérir les connaissances théoriques et pratiques nouvelles, l'adaptation aux changements des conditions de travail, la promotion sociale par l'accès aux différents niveaux de la culture et de la qualification professionnelle.",
+        "Le temps consacré aux stages pendant les périodes de la formation professionnelle organisée par l'armateur est pris sur l'horaire du travail et sera rémunéré comme temps de travail.",
+        "L'armateur prend en charge les frais de stage de formation professionnelle initiée par lui à l'intérieur ou à l'extérieur de l'armement, au Congo ou à l'étranger.",
+        "Les modalités pratiques de la prise en charge de chacun des stages, en particulier les stages de longue durée et les stages à l'étranger feront l'objet d'un contrat spécial entre l'armateur et le bénéficiaire pouvant prévoir un dédit de formation. Ledit contrat sera préalablement soumis au visa de l'autorité maritime.",
+        "Si le stage de formation à terre est subordonné à l'épreuve d'examen, l'échec de cet examen ne peut être la cause d'un licenciement. Le marin est alors réintégré dans son emploi précédent."
+      ],
+      "mots_cles": ["formation professionnelle", "stages", "plan de formation", "congé individuel de formation", "dédit de formation", "autorité maritime"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Principe de suspension",
+      "texte": [
+        "L'accord d'engagement du marin pêcheur est suspendu dans les conditions prévues à l'article 47 du code du travail et notamment :",
+        "- En cas de fermeture de l'établissement par suite du départ de l'employeur sous les drapeaux ou pour une période obligatoire d'instruction militaire ;",
+        "- Pendant la durée du service militaire obligatoire du salarié et pendant les périodes obligatoires d'instruction militaire auxquelles il est astreint ;",
+        "- Pendant la durée de l'absence du salarié, en cas de maladie constatée par un médecin agréé, durée limitée à six (06) mois. Ce délai est prorogé jusqu'au remplacement du salarié ;",
+        "- Pendant la période d'indisponibilité résultant d'un accident de travail ou d'une maladie professionnelle ;",
+        "- Pendant la durée de la détention préventive du salarié, durée limitée à six (06) mois ;",
+        "- Pendant les périodes de repos des femmes en couches ;",
+        "- Pendant la grève et le lock out déclenchés dans le respect des lois et règlements en vigueur ;",
+        "- Pendant l'exercice des fonctions syndicales ou électives impliquant une occupation à temps plein ;",
+        "- En cas de réquisition d'intérêt national ;",
+        "- En cas de mise en chômage technique ou économique ;",
+        "- En cas de mise en disponibilité du salarié ;",
+        "- En cas de mise à pied du salarié pour raisons disciplinaires ou du salarié protégé comme mesure conservatoire."
+      ],
+      "mots_cles": ["suspension", "maladie", "accident de travail", "service militaire", "détention préventive", "grève", "lock out", "chômage technique", "disponibilité"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Suspension"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Périodes militaires",
+      "texte": [
+        "Pendant le service militaire ou para-militaire du salarié et pendant les périodes obligatoires d'instruction militaire auxquelles il est astreint, l'accord d'engagement du marin pêcheur est suspendu.",
+        "L'employeur est cependant tenu de verser au salarié, au moment de son départ, l'indemnité prévue par le code du travail en vigueur en son article 48, ainsi que ses droits au congé annuel.",
+        "La durée de ce service n'est prise en compte pour la détermination de l'ancienneté que dans le cas de mobilisation générale. Toutefois, pour bénéficier des dispositions ci-dessus, le salarié n'a droit à aucune rémunération.",
+        "Le salarié ayant quitté l'entreprise pour effectuer son service militaire est à l'expiration du temps passé sous les drapeaux, repris de plein droit. Sa réintégration est subordonnée à la condition d'en avoir formulé la demande par écrit dans un délai d'un (01) mois après sa date de libération effective.",
+        "Le salarié qui n'a pas demandé sa réintégration dans le délai d'un (01) mois est considéré comme démissionnaire.",
+        "L'employeur doit effectuer la réintégration du salarié dans un délai maximum d'un (01) mois à compter de la date de réception de la demande.",
+        "À la reprise du travail, le salarié libéré de la période militaire doit également passer une visite médicale d'aptitude devant le médecin agréé par l'entreprise.",
+        "En cas d'aptitude, il est repris dans la catégorie et l'échelon qui étaient les siens avant son départ sous les drapeaux.",
+        "En cas d'inaptitude devant entraîner la résiliation de l'accord d'engagement, le salarié bénéficie des indemnités de rupture du contrat qu'il aurait perçues s'il avait été normalement licencié."
+      ],
+      "mots_cles": ["service militaire", "suspension", "réintégration", "1 mois", "visite médicale", "ancienneté", "démissionnaire"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Suspension"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Grossesse et maternité",
+      "texte": [
+        "À l'occasion de son accouchement, toute salariée a le droit de suspendre son travail pendant quinze (15) semaines consécutives, dont neuf (09) postérieures à la délivrance.",
+        "Cette suspension peut être prolongée de trois (03) semaines en cas de maladie dûment constatée résultant de la grossesse ou des couches.",
+        "Pendant cette période, l'employeur ne peut pas la licencier.",
+        "Cependant, s'il advient une suppression de poste consécutive à une réorganisation de l'entreprise ou à une compression de ses effectifs, la salariée se verra affectée ou mutée à un nouveau poste disponible qui déterminera sa nouvelle rémunération.",
+        "À la reprise du travail, l'employée a droit, pendant une période de quinze (15) mois à compter de la date de naissance de l'enfant, à des repos pour allaitement dont la durée ne peut dépasser une (01) heure par journée de travail, cette heure pouvant être fractionnée en deux (02) demi-heures à la demande de l'employée.",
+        "Des avances sur salaire n'excédant pas un (01) mois de salaire conventionnel de sa catégorie peuvent être consenties par l'employeur, à charge pour l'intéressée de les rembourser d'accord parties à la reprise du travail."
+      ],
+      "mots_cles": ["grossesse", "maternité", "15 semaines", "9 semaines postérieures", "allaitement", "15 mois", "1 heure", "licenciement interdit"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Suspension"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Maladies et accidents non professionnels",
+      "texte": [
+        "En cas de maladie ou d'accident non professionnel dûment constaté par un médecin ou un tradi-praticien agréé et notifié à l'employeur dans les quarante huit (48) heures sauf cas de force majeure, l'accord d'engagement du marin pêcheur est suspendu pendant une durée limitée à six (06) mois : ce délai est prorogé jusqu'au remplacement du travailleur conformément à l'article 47 alinéa C du code du travail.",
+        "Si pendant le délai de suspension le remplacement du travailleur s'impose, le remplaçant devra être informé en présence d'un délégué du personnel, du caractère provisoire de son emploi.",
+        "Pendant la période de suspension du contrat de travail pour cause de maladie ou d'accident non professionnel, le travailleur percevra les indemnités maxima ci-après :",
+        "1- Avant douze (12) mois de service : indemnité égale à l'indemnité de préavis conformément aux dispositions de l'article 48 du code du travail ;",
+        "2- Après un (01) an :",
+        "- Les trois (03) premiers mois : le salaire de base plus ancienneté ;",
+        "- Les trois (03) mois suivants : en demi-salaire.",
+        "Les indemnités attribuées après un (01) an de service comprennent celles prévues par l'article 48 du code du travail.",
+        "Si plusieurs congés de maladie sont accordés à un travailleur au cours d'une année civile, la durée du plein et du demi-traitement ne peut excéder au total celle fixée ci-dessus, sans préjudice des dispositions de l'article 48 du code du travail.",
+        "Au cas où un travailleur ne pourrait reprendre son emploi lors de la consolidation de la blessure ou en raison d'une incapacité physique due à la maladie, l'employeur doit avec le délégué du personnel rechercher dans toute la mesure du possible les moyens de le reclasser dans un autre emploi.",
+        "En cas d'impossibilité de reclassement constatée par une commission médicale comprenant le médecin d'entreprise agréé, le médecin de la CNSS et un médecin spécialiste extérieur, l'employeur pourra procéder au licenciement légitime."
+      ],
+      "mots_cles": ["maladie non professionnelle", "accident non professionnel", "48 heures", "6 mois", "indemnités", "plein salaire", "demi-salaire", "reclassement", "commission médicale", "CNSS"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Suspension"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Accidents du travail et maladies professionnels",
+      "texte": [
+        "Toutes maladies professionnelles doivent être dûment constatées par un médecin agréé. Celui-ci en informe l'employeur qui saisit l'autorité maritime, sauf cas de force majeure.",
+        "Un rapport de circonstances, causes et effets possibles, sera transmis dans les quarante huit (48) heures à l'employeur sauf cas de force majeure et à l'autorité maritime.",
+        "Dans la mesure où la responsabilité du marin n'est pas engagée, il sera payé de ses salaires et soigné aux frais de l'armateur dans la limite de six (06) mois, puis pris en charge par la CNSS.",
+        "Au cas où la responsabilité du marin est engagée, l'enquête de l'autorité maritime déterminera le degré de responsabilité ; et le marin responsable pourra perdre son droit au salaire à compter du jour de cessation de travail.",
+        "Si le travailleur accidenté du travail, lors de la consolidation de la blessure, n'est plus à même de reprendre son service ou de l'assurer dans les conditions normales, l'employeur doit rechercher avec le délégué du personnel, la possibilité de le reclasser dans un autre emploi.",
+        "En cas d'impossibilité de reclassement constatée par une commission médicale comprenant le médecin d'entreprise agréé, le médecin de la CNSS et un médecin spécialiste extérieur, l'employeur pourra procéder au licenciement légitime."
+      ],
+      "mots_cles": ["accident du travail", "maladie professionnelle", "médecin agréé", "autorité maritime", "6 mois", "CNSS", "reclassement", "responsabilité"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Suspension"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Mise en disponibilité",
+      "texte": [
+        "La mise en disponibilité est la position d'un salarié qui cesse momentanément, sur sa demande et pour convenance personnelle, d'exercer ses fonctions dans l'entreprise.",
+        "La durée maximale de cette mise en disponibilité est d'un (01) an. Elle est renouvelable une fois.",
+        "Pendant cette période, l'accord d'engagement est suspendu. En conséquence, les dispositions de la présente convention et des accords d'établissement cessent de s'appliquer à l'intéressé.",
+        "Notamment le salarié cesse de bénéficier de sa rémunération, de tout droit à l'avancement ainsi que de tout droit à l'ancienneté.",
+        "Le salarié doit formuler sa demande par écrit. Il ne peut quitter son service qu'après avoir reçu l'accord écrit de son employeur.",
+        "Dans le cas contraire, l'employeur constate la rupture unilatérale de l'accord d'engagement du fait du salarié. Cette rupture peut être considérée comme un abandon de poste dont l'employeur prendra acte.",
+        "À l'expiration de la période de mise en disponibilité et sur sa demande écrite au moins un (01) mois avant l'expiration de sa disponibilité, le salarié est réintégré dans son classement d'origine. Il ne peut prétendre à retrouver les fonctions exercées avant sa mise en disponibilité.",
+        "Toutefois, pour les salariés appelés à occuper des fonctions ou responsabilités électives, mandat politique ou syndical à caractère permanent, la durée de la mise en disponibilité est étendue à la durée de leur mandat. L'ancienneté continue à courir pendant cette période.",
+        "À la reprise, pour leur affectation, il est tenu compte, dans la mesure du possible, de l'évolution de leurs aptitudes par rapport aux responsabilités qu'ils ont exercées au cours de leur mandat."
+      ],
+      "mots_cles": ["mise en disponibilité", "convenance personnelle", "1 an", "renouvelable", "abandon de poste", "réintégration", "mandat syndical", "mandat politique"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Suspension"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Chômage économique et chômage technique",
+      "texte": [
+        "Le chômage économique est une suspension des accords d'engagement du marin pêcheur pour motif économique. La durée du chômage économique est de trois (03) mois renouvelable une fois.",
+        "Le chômage technique est une mesure de suspension des accords d'engagement du marin pêcheur due à l'impossibilité matérielle dans laquelle se trouve l'employeur de fournir du travail dans tout ou partie de l'entreprise. La durée du chômage technique ne peut excéder six (06) mois renouvellement compris.",
+        "Tout salarié mis au chômage économique ou technique perçoit de son employeur une indemnité mensuelle égale au tiers (1/3) de son salaire catégoriel plus tous les accessoires non liés à la prestation effective du travail.",
+        "Il bénéficie en outre des frais médicaux et pharmaceutiques et des autres prestations sociales prévues par la présente convention.",
+        "La mise en oeuvre, tant du chômage économique que du chômage technique, obéit aux dispositions de la réglementation en vigueur.",
+        "Les cas de suspension non traités par la présente convention sont gérés conformément à la réglementation en vigueur (code du travail et arrêtés)."
+      ],
+      "mots_cles": ["chômage économique", "chômage technique", "3 mois", "6 mois", "1/3 salaire catégoriel", "indemnité", "prestations sociales"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Suspension"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Principe de résiliation",
+      "texte": [
+        "L'accord d'engagement du marin pêcheur prend fin dans les cas suivants :",
+        "- Débarquement du marin après expiration normale du contrat ;",
+        "- Maladie prolongée du marin ;",
+        "- Inaptitude physique ;",
+        "- Décès du marin ;",
+        "- Retraite ;",
+        "- Licenciement pour diminution d'activité ou réorganisation ;",
+        "- Vente ou innavigabilité du navire ;",
+        "- Accord mutuel des parties ;",
+        "- Radiation du marin dans le matricule de gens de mer ;",
+        "- Licenciement ;",
+        "- Démission."
+      ],
+      "mots_cles": ["résiliation", "fin de contrat", "débarquement", "maladie", "inaptitude", "décès", "retraite", "licenciement", "démission"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "Modalités de résiliation",
+      "texte": [
+        "Toute rupture de l'accord d'engagement du marin pêcheur par l'une des parties doit être notifiée par écrit à l'autre partie.",
+        "La lettre de notification indique expressément le motif, sauf dans le cas d'une rupture pendant la période d'essai.",
+        "En cas de rupture de l'accord d'engagement du marin pêcheur l'entreprise est autorisée à déduire les sommes dues par le travailleur lors de l'établissement du solde de tout compte."
+      ],
+      "mots_cles": ["rupture", "notification écrite", "motif", "solde de tout compte"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Préavis",
+      "texte": [
+        "Sauf cas de faute grave ou lourde, la partie qui prend l'initiative de la rupture doit respecter le délai de préavis dont la durée est déterminée comme suit :",
+        "- 1 mois pour le collège de la 1ère à la 7ème catégorie ;",
+        "- 2 mois pour le collège de la 8ème à la 11ème catégorie.",
+        "L'inobservation du délai de préavis emporte pour la partie responsable de verser à l'autre partie une indemnité dite compensatrice de préavis égale aux salaires et aux avantages de toute nature dont aurait bénéficié le salarié durant le délai de préavis qui n'aurait pas été effectivement respecté."
+      ],
+      "mots_cles": ["préavis", "1 mois", "2 mois", "catégorie", "indemnité compensatrice"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Indemnité compensatrice de préavis",
+      "texte": [
+        "Chacune des parties qui n'aura pas observé le délai de préavis aura l'obligation de verser à l'autre partie une indemnité compensatrice égale à la rémunération et aux avantages de toute nature dont aurait bénéficié le marin pendant la durée du préavis restant à couvrir comme s'il avait normalement travaillé.",
+        "En cas de licenciement et lorsque le préavis aura été exécuté au moins à moitié, le marin licencié qui se trouvera dans l'obligation d'occuper immédiatement un nouvel emploi, pourra, sous réserve de prévenir de son départ définitif deux (02) jours francs auparavant et après avoir fourni toutes justifications utiles à l'armateur, quitter l'armement avant l'expiration du délai de préavis sans avoir à payer l'indemnité compensatrice.",
+        "L'armateur est alors tenu de régler dans les meilleurs délais tous les droits du marin afin de faciliter son départ définitif de l'armement."
+      ],
+      "mots_cles": ["indemnité compensatrice", "préavis", "rémunération", "nouvel emploi", "2 jours francs"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Indemnité supplémentaire de préavis",
+      "texte": [
+        "La partie qui prendra l'initiative de rompre l'accord d'engagement pendant la période de congé, sera tenue de payer en plus de l'indemnité de préavis, une indemnité supplémentaire égale à deux (02) mois de salaire."
+      ],
+      "mots_cles": ["indemnité supplémentaire", "préavis", "congé", "2 mois de salaire"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 41",
+      "titre": "Rupture de l'accord du marin malade",
+      "texte": [
+        "Si, à l'expiration du délai de six (06) mois le marin dont l'accord d'engagement a été suspendu pour cause de maladie se trouve dans l'incapacité de reprendre son travail, l'armateur peut le remplacer définitivement après concertation avec les délégués du personnel et l'autorité maritime, à moins que le marin ne demande une prolongation de suspension de l'accord d'engagement, hors rémunération et accessoires de salaires, d'une durée maximale de six (06) mois.",
+        "La rupture de l'accord d'engagement du marin pêcheur pour cause de maladie ouvre au marin les mêmes droits que pour cause d'inaptitude physique à la navigation."
+      ],
+      "mots_cles": ["marin malade", "6 mois", "remplacement", "prolongation", "inaptitude physique"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 42",
+      "titre": "Rupture de l'accord pour inaptitude physique à la navigation",
+      "texte": [
+        "Au cas où l'inaptitude physique à la navigation constatée par le médecin des gens de mer est définitive, l'entreprise s'efforcera de trouver un autre poste de travail au marin. Dans le cas contraire, une indemnité spéciale sera allouée, en dehors de l'indemnité de fin de contrat.",
+        "À cette occasion, l'armateur lui remet le montant du préavis, des congés et de gratifications auquel le marin pourrait avoir droit du fait de cette rupture.",
+        "Il lui sera alloué une indemnité dite de rupture de contrat pour inaptitude physique à la navigation, calculée sur la base du salaire brut moyen des 12 derniers mois sous déduction des avances et acomptes contractés :",
+        "- De 1 à 3 ans d'ancienneté : 1 mois de salaire brut moyen ;",
+        "- De 3 à 5 ans d'ancienneté : 2 mois de salaire brut moyen ;",
+        "- Au-delà de 5 ans d'ancienneté : 3 mois de salaire brut moyen.",
+        "Les droits ainsi qu'un certificat de travail seront remis au moment de la rupture définitive de l'accord d'engagement du marin pêcheur."
+      ],
+      "mots_cles": ["inaptitude physique", "navigation", "médecin des gens de mer", "indemnité", "salaire brut moyen", "12 derniers mois", "certificat de travail"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 43",
+      "titre": "Décès du marin, du conjoint légitime et de l'enfant",
+      "texte": [
+        "En cas de décès du marin, le salaire de présence, l'allocation de congés et les indemnités de toute nature acquises à la date du décès, sous déduction des avances et acomptes contractés par le défunt auprès de l'armateur, reviennent de plein droit à ses héritiers, qui doivent justifier de leur qualité par la présentation d'un certificat d'hérédité.",
+        "L'armateur est tenu de verser aux ayants droits une indemnité d'un montant équivalent à celle de l'indemnité de licenciement qui serait revenue au marin en cas de rupture de l'accord.",
+        "Si le décès est survenu en dehors du port d'embarquement du marin, l'armateur assurera à ses frais le transport du corps du défunt au lieu de résidence habituelle, si les ayants-droits en formulent la demande.",
+        "En cas de décès d'un marin, l'armement prendra en charge les frais dans la limite de quatre cent mille (400 000) francs CFA contre remise des factures pro-forma par les délégués du personnel.",
+        "En cas de décès du conjoint légitime ou d'un enfant mineur légitime une participation de trente mille (30 000) francs CFA sera allouée par l'armement."
+      ],
+      "mots_cles": ["décès", "marin", "héritiers", "certificat d'hérédité", "indemnité de licenciement", "transport du corps", "400 000 FCFA", "30 000 FCFA", "conjoint", "enfant"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 44",
+      "titre": "Mise en retraite",
+      "texte": [
+        "Lorsque le marin remplit les conditions requises pour bénéficier de la retraite, l'armateur assurera la transmission du dossier constitué par le marin à la CNSS. Il pourra à sa demande, se faire accompagner par un représentant de la direction ou un délégué du personnel.",
+        "Au moment de son départ à la retraite, l'armateur lui remet le montant des congés, de gratifications ainsi qu'une indemnité spéciale dite de fin de carrière.",
+        "Cette indemnité est calculée sur le salaire (salaire de base + ancienneté) moyen des 12 meilleurs mois :",
+        "- De 0 à 2 ans : 1 mois de salaire ;",
+        "- De 3 à 5 ans : 2 mois de salaire ;",
+        "- De 6 à 10 ans : 3 mois de salaire ;",
+        "- De 11 à 15 ans : 4 mois de salaire ;",
+        "- De 16 à 20 ans : 5 mois de salaire ;",
+        "- Au-delà de 20 ans : 6 mois de salaire.",
+        "Le marin admis à la retraite et qui aura été déplacé de son lieu de recrutement à son lieu effectif de travail par le fait de l'armateur, bénéficiera d'une prime de déménagement de deux cent cinquante mille (250 000) francs CFA en sus des frais de transport."
+      ],
+      "mots_cles": ["retraite", "CNSS", "indemnité de fin de carrière", "12 meilleurs mois", "salaire de base", "ancienneté", "prime de déménagement", "250 000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 45",
+      "titre": "Licenciement pour diminution d'activités ou réorganisation",
+      "texte": [
+        "Tout licenciement collectif ou individuel motivé par une diminution de l'activité de l'armement ou d'une réorganisation intérieure est soumis à la procédure prévue par la législation en vigueur.",
+        "L'armateur établit l'ordre des licenciements en tenant compte des qualités professionnelles et de l'ancienneté.",
+        "À cet effet, l'armateur doit soumettre la demande de licenciement envisagé et communiquer la liste des marins concernés à l'autorité maritime qui fera connaître sa décision dans un délai de quinze (15) jours suivants la réception de la demande. La non réponse de l'autorité maritime vaut acceptation.",
+        "La non-observation de cette procédure rend nulle la décision de licenciement collectif et les marins licenciés doivent être réintégrés dans leur emploi avec paiement de leurs salaires pendant la période de la suspension du contrat.",
+        "Au cas où l'armement pourrait reprendre ses activités, ces marins conservent pendant un (01) an la priorité d'embauche dans la même catégorie d'emploi sous réserve qu'il soit libre de tout engagement au moment de la reprise.",
+        "Le marin licencié pour diminution d'activités ou réorganisation de l'armement percevra une indemnité de fin de contrat calculée selon un pourcentage du salaire mensuel brut moyen des douze (12) derniers mois. Cette indemnité est calculée de la manière suivante :",
+        "- De 2 à 5 ans : le taux est de 25% par an ;",
+        "- De 6 à 10 ans : le taux est de 35% par an ;",
+        "- De 11 à 15 ans : le taux est de 45% par an ;",
+        "- De 16 à 20 ans : le taux est de 55% par an ;",
+        "- Au-delà de la 20ème année : le taux est de 60% par an.",
+        "Pour le calcul de la durée des services des fractions d'années au moins égales à trente jours (30) seront prises en considération."
+      ],
+      "mots_cles": ["licenciement collectif", "diminution d'activité", "réorganisation", "ordre des licenciements", "autorité maritime", "15 jours", "priorité d'embauche", "1 an", "indemnité", "25%", "35%", "45%", "55%", "60%"],
+      "statut": "en vigueur",
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
     },
     {
       "article": "Art. 46",
       "titre": "Indemnité de licenciement",
       "texte": [
-        "En cas de licenciement par l'armateur, hors le cas de faute lourde, le marin pêcheur ayant accompli dans l'entreprise une durée de service continue au moins égale à deux (2) ans, a droit à une indemnité de licenciement distincte du préavis.",
-        "Cette indemnité est calculée conformément aux dispositions de la convention collective applicable au secteur."
+        "Le marin congédié pour motif légitime n'a droit à aucune indemnité.",
+        "Par contre, en cas de licenciement sans motif légitime, le travailleur ayant accompli une durée de service au moins égale à deux (02) ans a droit à une indemnité de licenciement distincte du préavis.",
+        "Le marin bénéficie de l'indemnité de licenciement lorsqu'il atteint la durée de présence nécessaire à son attribution, à la suite de plusieurs embauches, dans le même armement ; si ses départs précédents ont été provoqués par une compression d'effectifs ou une suppression d'emplois. Dans ce cas, le montant de l'indemnité de licenciement est déterminé, déduction faite des sommes qui ont pu être versées à ce titre lors des licenciements antérieurs.",
+        "Cette indemnité, calculée selon le salaire brut moyen de 12 derniers mois, est fixée de la manière suivante :",
+        "- De 2 à 5 ans : 2 mois de salaire ;",
+        "- De 6 à 10 ans : 3 mois de salaire ;",
+        "- De 11 à 15 ans : 4 mois de salaire ;",
+        "- De 16 à 20 ans : 5 mois de salaire ;",
+        "- Au-delà de 20 ans : 6 mois de salaire.",
+        "L'indemnité de licenciement n'est pas due :",
+        "- En cas de rupture du contrat d'engagement résultant d'une faute grave contre la discipline ;",
+        "- Lorsque le marin cesse définitivement son service pour admission à la retraite."
       ],
-      "mots_cles": ["indemnité de licenciement", "marin pêcheur", "2 ans", "armateur"],
+      "mots_cles": ["indemnité de licenciement", "2 ans", "salaire brut moyen", "12 derniers mois", "faute grave", "retraite"],
       "statut": "en vigueur",
-      "section": "Titre III : De l'accord d'engagement - Résiliation"
+      "section": "Titre III : De l'accord d'engagement du marin pêcheur — Résiliation"
+    },
+    {
+      "article": "Art. 47",
+      "titre": "Effectifs",
+      "texte": [
+        "L'armateur transmet l'effectif du navire à l'autorité maritime.",
+        "Pour les navires immatriculés au Congo, l'effectif expatrié embarqué ne devra pas être supérieur à 20%.",
+        "L'équipage doit être complet au moment de l'appareillage sauf cas de force majeure et en accord avec le représentant de l'équipage intéressé."
+      ],
+      "mots_cles": ["effectifs", "autorité maritime", "expatriés", "20%", "appareillage"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
+    },
+    {
+      "article": "Art. 48",
+      "titre": "Travaux à terre",
+      "texte": [
+        "Le marin mis à terre momentanément pour des réparations et employé à des travaux, perçoit un salaire comprenant la base, l'indemnité de nourriture et les accessoires de salaires exceptés les primes relatives aux travaux de mer.",
+        "En outre le marin mis à terre sera débarqué du rôle d'équipage."
+      ],
+      "mots_cles": ["travaux à terre", "réparations", "salaire de base", "indemnité de nourriture", "rôle d'équipage"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
+    },
+    {
+      "article": "Art. 49",
+      "titre": "Repos hebdomadaire",
+      "texte": [
+        "Le marin a droit à vingt quatre (24) heures de repos pour six (06) jours de mer soit quatre (04) heures de repos par jour de mer.",
+        "Ce repos court à compter de l'heure d'accostage du navire.",
+        "Toute interruption du repos du fait de l'armateur en suspend l'effet et donne droit à compensation."
+      ],
+      "mots_cles": ["repos hebdomadaire", "24 heures", "6 jours de mer", "4 heures par jour", "compensation"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
     },
     {
       "article": "Art. 50",
       "titre": "Permissions exceptionnelles",
       "texte": [
-        "Des permissions exceptionnelles sont accordées au marin pêcheur à l'occasion d'événements familiaux, conformément aux dispositions légales et réglementaires en vigueur."
+        "Des permissions exceptionnelles, à l'occasion d'événements familiaux touchant directement son propre foyer, pourront être accordées au travailleur dans une limite de dix (10) jours ouvrables par année civile sans retenue de salaire et sans déduction de la durée du congé acquis, sur présentation des pièces d'état civil ou justification probante, dans les conditions suivantes :",
+        "- Mariage du marin : 4 jours ;",
+        "- Mariage d'un de ses enfants : 2 jours ;",
+        "- Mariage d'un frère ou d'une sœur : 1 jour ;",
+        "- Décès du conjoint légitime : 7 jours ;",
+        "- Décès d'un de ses enfants, du père, de la mère : 5 jours ;",
+        "- Décès d'un frère ou d'une sœur : 2 jours ;",
+        "- Naissance d'un enfant : 2 jours ;",
+        "- Déménagement : 1 jour.",
+        "Toute permission de cette nature doit faire l'objet d'une autorisation préalable de l'armateur.",
+        "Si ces événements se produisent hors du lieu d'emploi et nécessitent le déplacement du travailleur les délais ci-dessus pourront être prolongés d'accord parties. Cette prolongation ne donnera pas lieu à rémunération."
       ],
-      "mots_cles": ["permissions exceptionnelles", "marin pêcheur"],
+      "mots_cles": ["permissions exceptionnelles", "10 jours", "mariage", "décès", "naissance", "déménagement", "événements familiaux"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
+    },
+    {
+      "article": "Art. 51",
+      "titre": "Travail à bord",
+      "texte": [
+        "Le travail à bord est organisé sur la base de trois cent douze (312) heures par mois."
+      ],
+      "mots_cles": ["travail à bord", "312 heures", "mois"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
+    },
+    {
+      "article": "Art. 52",
+      "titre": "Immobilisation du navire",
+      "texte": [
+        "L'immobilisation du navire peut résulter notamment d'une panne, d'un entretien, d'événements de force majeure, des intempéries à caractère exceptionnel, des difficultés d'approvisionnement en matière première ou en énergie, d'un sinistre, d'un incendie ou de toutes circonstances à caractère exceptionnel.",
+        "Ces périodes sont considérées comme temps de travail effectif pour l'appréciation des droits à congés et ancienneté.",
+        "Pendant cette période le marin perçoit de son employeur une rémunération correspondant au 1/3 de son salaire de base et au prorata du nombre de jours d'immobilisation du navire plus tous les accessoires de salaires non liés à la prestation effective du travail.",
+        "Il bénéficie en outre des frais médicaux et pharmaceutiques et des autres prestations sociales prévues par la présente convention."
+      ],
+      "mots_cles": ["immobilisation", "navire", "panne", "entretien", "force majeure", "1/3 salaire de base", "congés", "ancienneté"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
+    },
+    {
+      "article": "Art. 53",
+      "titre": "Obligations du marin",
+      "texte": [
+        "Le marin est tenu :",
+        "- D'exécuter son travail consciencieusement et de respecter l'autorité du capitaine ;",
+        "- De se rendre à bord du navire sur lequel il embarque au jour et à l'heure qui lui sont indiqués par l'armateur, son représentant ou le capitaine ;",
+        "- D'accomplir son service dans les conditions déterminées par l'accord et par les lois, règlements intérieurs et usages en vigueur ;",
+        "- De travailler au sauvetage du navire, de ses débris, des effets naufragés et de la cargaison ;",
+        "- D'obéir aux ordres de ses supérieurs, concernant le service du navire et de prendre soin du navire et de la cargaison ;",
+        "- D'accomplir, en dehors des heures de service, le travail de mise en état de propreté de son poste d'équipage, des annexes de ce poste, de ses objets de couchage, des ustensiles de plat, sans que ce travail puisse donner lieu à l'allocation supplémentaire."
+      ],
+      "mots_cles": ["obligations", "marin", "capitaine", "sauvetage", "service", "propreté"],
+      "statut": "en vigueur",
+      "section": "Titre IV : Des conditions de travail"
+    },
+    {
+      "article": "Art. 54",
+      "titre": "Congés payés",
+      "texte": [
+        "La mise en congés du marin est décidée par l'armateur en fonction des intérêts du navire ou de l'armement.",
+        "Les marins ont droit à un congé payé à la charge de l'armateur calculé à raison de quatre (04) jours ouvrables par mois d'engagement.",
+        "Le congé donne droit à l'indemnité de nourriture et est pris en compte dans la durée des services effectifs.",
+        "Le marin peut solliciter son départ en congés à partir du dixième mois d'embarquement.",
+        "À l'occasion d'un arrêt technique au moins égal à quatre (04) jours, l'armateur peut décider de la mise en congés de l'équipage du navire.",
+        "À ce salaire s'ajoutera l'indemnité de nourriture si elle n'y est pas déjà comprise.",
+        "Le calcul du salaire de congés s'effectue de la manière suivante :",
+        "Calcul du nombre de jours de congés acquis : nombre de jours écoulés depuis le début de la période multiplié par 4/30e.",
+        "Calcul du salaire moyen journalier : total des salaires brut depuis le début de la période (excepté 13e mois et les éventuelles indemnités de nourriture) divisé par le nombre de jours écoulés depuis le début de la période.",
+        "Calcul du salaire de congés : nombre de jours de congés acquis multiplié par le salaire moyen journalier.",
+        "Le salaire de congés est donc égal : nombre de jours acquis x total des salaires gagnés / nombre de jours écoulés."
+      ],
+      "mots_cles": ["congés payés", "4 jours par mois", "indemnité de nourriture", "10ème mois", "salaire de congés", "4/30e"],
       "statut": "en vigueur",
       "section": "Titre IV : Des conditions de travail"
     },
     {
       "article": "Art. 55",
-      "titre": "Couchage, hygiène, santé et logement de l'équipage",
+      "titre": "Couchage, hygiène, santé, logement de l'équipage",
       "texte": [
-        "L'armateur est tenu de fournir à bord du navire des conditions de couchage, d'hygiène et de santé conformes aux normes en vigueur.",
-        "Le logement de l'équipage à bord doit répondre aux exigences de salubrité et de sécurité."
+        "L'armateur a l'obligation de fournir le couchage.",
+        "Les couchettes sont pourvues sur les navires effectuant plus de quarante huit heures de mer :",
+        "- D'un (01) matelas ;",
+        "- D'une (01) couverture ;",
+        "- De deux (02) draps par an.",
+        "Les logements de l'équipage sont sains et disposent de moyens d'aération suffisants.",
+        "Le nettoyage général des locaux est assuré par l'équipage au moins une fois par jour.",
+        "Chaque membre d'équipage est responsable du bon état de l'ensemble du matériel qui lui est affecté.",
+        "Les armements à la pêche assurent la fourniture du matériel de plat.",
+        "L'armateur assure à l'équipage la fourniture de bottes, gants et cirés ainsi que de vêtements chauds pour le personnel employé à la cale.",
+        "Les objets de couchage fournis en nature ainsi que les autres équipements sont propriété de l'armateur et placés sous la responsabilité du marin qui est tenu au versement de dommages et intérêts en cas de détérioration anormale ou de perte résultant de sa faute.",
+        "Sur chaque navire, la boîte à pharmacie doit être pourvue conformément aux textes en vigueur. La clé de cette boîte est confiée au capitaine du navire.",
+        "Le capitaine ou éventuellement un autre membre de l'équipage doit soit être titulaire d'un certificat ou brevet de secouriste, soit avoir reçu une formation analogue de façon à pouvoir assurer les besoins courants.",
+        "Des soins immédiats doivent être donnés même pour les blessures bénignes. Dans les cas graves, le marin doit être débarqué au poste le plus proche. Si possible, une consultation médicale est demandée par radio.",
+        "L'armateur est tenu de fournir de l'eau potable en quantité suffisante."
       ],
-      "mots_cles": ["couchage", "hygiène", "santé", "logement", "équipage", "navire"],
+      "mots_cles": ["couchage", "hygiène", "santé", "logement", "équipage", "matelas", "couverture", "bottes", "gants", "cirés", "pharmacie", "secouriste", "eau potable"],
       "statut": "en vigueur",
       "section": "Titre IV : Des conditions de travail"
+    },
+    {
+      "article": "Art. 56",
+      "titre": "Dispositions générales sur le salaire",
+      "texte": [
+        "Le salaire est la contrepartie du travail et il est payable au mois.",
+        "À conditions égales de travail, de qualifications professionnelles et de rendement, le salaire est égal pour tous les marins.",
+        "Le salaire de chaque marin est déterminé en fonction de l'emploi qu'il occupe.",
+        "Les absences non justifiées du marin, donnent lieu à des retenues sur le salaire ainsi qu'aux sanctions prévues à l'article 27 de la présente convention."
+      ],
+      "mots_cles": ["salaire", "contrepartie du travail", "mensuel", "égalité", "qualifications", "retenues", "absences"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 57",
+      "titre": "Paiement du salaire",
+      "texte": [
+        "Les salaires seront payés conformément aux prescriptions légales et réglementaires en vigueur.",
+        "En cas de contestation sur le bulletin de paye, le marin peut demander à l'employeur la justification des éléments ayant servi à son établissement. Il peut se faire assister d'un représentant syndical ou d'un délégué du personnel.",
+        "Le paiement du salaire a lieu pendant les heures de travail."
+      ],
+      "mots_cles": ["paiement du salaire", "bulletin de paye", "contestation", "représentant syndical", "heures de travail"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 58",
+      "titre": "Avances sur salaires et acomptes",
+      "texte": [
+        "Des avances sur salaire et acomptes peuvent être accordés aux marins par l'armateur."
+      ],
+      "mots_cles": ["avances", "acomptes", "salaire"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 59",
+      "titre": "Régime des jours fériés",
+      "texte": [
+        "Le marin occupé à travailler pendant les jours fériés, chômés et payés a droit au double salaire de base de ces jours considérés."
+      ],
+      "mots_cles": ["jours fériés", "double salaire", "chômés", "payés"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 60",
+      "titre": "Jours fériés",
+      "texte": [
+        "Les jours fériés, chômés et payés sont ceux prévus par la législation en vigueur."
+      ],
+      "mots_cles": ["jours fériés", "législation"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 61",
+      "titre": "Catégories professionnelles",
+      "texte": [
+        "Les marins sont classés dans les catégories et échelons définis dans les classements professionnels figurant en annexe de la présente convention.",
+        "Le classement du marin est fonction du poste qu'il occupe à bord d'un navire ou dans l'armement."
+      ],
+      "mots_cles": ["catégories professionnelles", "échelons", "classement", "annexe"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 62",
+      "titre": "Avancement",
+      "texte": [
+        "Afin de récompenser les marins méritants au cours de leur carrière et de voir évoluer leur salaire de base tout au long de celle-ci, un système d'avancement d'échelon en échelon à l'intérieur de chaque catégorie est instauré dans des conditions adaptées aux armements de pêche, par la méthode d'appréciation.",
+        "L'avancement d'échelon en échelon à l'intérieur des catégories ne peut intervenir qu'en fonction des appréciations annuelles.",
+        "L'avancement ne se réalise qu'à l'échelon immédiatement supérieur et ne peut intervenir qu'après deux (02) bonnes appréciations."
+      ],
+      "mots_cles": ["avancement", "échelon", "appréciation annuelle", "2 bonnes appréciations", "carrière"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 63",
+      "titre": "Changement de catégorie",
+      "texte": [
+        "Les changements de catégories sont possibles de catégorie à catégorie.",
+        "La promotion signifie le passage pour un marin de sa fonction initiale à une fonction supérieure donnant accès à une nouvelle carrière.",
+        "La promotion intervient à titre exceptionnel et à la condition de l'existence d'une place disponible dans la catégorie de promotion, si les capacités, les connaissances et les aptitudes professionnelles du marin sont conformes."
+      ],
+      "mots_cles": ["changement de catégorie", "promotion", "fonction supérieure", "aptitudes professionnelles"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 64",
+      "titre": "Commission de classement",
+      "texte": [
+        "En cas de contestation de classement, une commission se réunira à la demande de l'une des parties en vue de déterminer le classement du ou des marins en fonction de la qualification et du poste occupé.",
+        "Cette commission, présidée par l'autorité maritime est composée de deux représentants désignés par chacune des parties qui peuvent s'adjoindre à titre consultatif, un ou deux de leurs collègues plus particulièrement qualifiés pour apprécier le litige.",
+        "La décision rendue doit faire l'objet d'un procès-verbal. Un exemplaire de la décision rendu est remis à chacune des parties."
+      ],
+      "mots_cles": ["commission de classement", "contestation", "autorité maritime", "procès-verbal", "qualification"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 65",
+      "titre": "Les différentes primes et indemnités",
+      "texte": [
+        "Les différentes primes et indemnités allouées aux marins sont les suivantes :",
+        "Les primes conventionnelles obligatoires : primes de mer, de diplôme, de transport etc., acquises au prorata du nombre de jours travaillés ou passés en mer.",
+        "Les primes à caractère facultatif liées à la bonne exécution du travail à un certain poste, qui peuvent être réduites ou annulées selon la qualité du travail, sur décision de l'armateur. Ces primes sont aussi payées au prorata du nombre de jours travaillés ou passés en mer.",
+        "1- Prime de mer : Une prime de mer incluse dans le salaire de mer est attribuée à chaque marin. Cette prime est fixée à cinq cent (500) francs CFA par jour de mer quelle que soit la fonction du marin.",
+        "2- Indemnité de nourriture : Les marins sont nourris à bord aux frais de l'armateur. À cet effet, une indemnité de nourriture de mille deux cent (1 200) francs CFA par jour de mer et par marin leur est allouée.",
+        "3- Indemnité de transport : Si l'armement ne pourvoit pas au transport du marin, une indemnité de mille (1 000) francs CFA par marée sera versée au marin.",
+        "4- Prime d'ancienneté : Il est attribué aux marins une prime d'ancienneté en fonction de leur durée de service dans l'armement. Cette prime est calculée sur le salaire de base minimum de la catégorie dans laquelle est classé l'intéressé. Les taux de la prime sont les suivants : 3% après 3 ans d'ancienneté dans l'armement ; 1% à partir de la 4ème année par année d'ancienneté dans l'armement, dans la limite de 15%. Le montant de la prime ainsi calculée s'ajoute au salaire réel.",
+        "5- Prime de fin d'année : Il est institué aux marins ayant un an de service continu dans l'entreprise et s'y trouvant encore au 31 décembre de l'année considérée, une prime de fin d'année égale au montant de son salaire de base mensuel. Toutefois cette prime pourra être attribuée au prorata des mois de service de l'année considérée, à tout marin ayant au moins une année d'ancienneté dans l'armement et licencié en cours d'année par suite d'une diminution d'activité ou réorganisation intérieure. Tout travailleur ayant fait en cours d'année l'objet d'une ou plusieurs sanctions (blâme au minimum) confirmées par l'autorité compétente pourra voir sa prime réduite ou supprimée par l'armateur. La non-réponse de l'autorité compétente dans un délai maximum de un (01) mois vaut confirmation de la sanction. En cas de diminution d'activité, de crise économique dûment constatée par les autorités compétentes, les parties contractantes reconnaissent le droit de différer ou de réviser cette prime de fin d'année d'accord parties.",
+        "6- Prime de logement : L'armateur versera une allocation mensuelle d'aide au logement de trente mille (30 000) francs CFA de la catégorie 9 à 11 de la grille salariale.",
+        "7- Prime de quart : Il est attribué une prime de quart d'un montant de cinq cent (500) francs CFA par jour de mer à tout marin assurant le quart.",
+        "8- Prime de cale : Il est attribué une prime de cale d'un montant de quatre cent (400) francs CFA par jour de mer à tout marin travaillant à la cale.",
+        "9- Prime de tri : Il est attribué une prime de triage d'un montant de quatre cent (400) francs CFA par jour de mer à tout marin utilisé pour le triage du produit de la pêche pour les navires congélateurs.",
+        "10- Prime de canotier : Il est attribué une prime d'un montant de quatre cent (400) francs CFA par jour de mer à tout marin utilisé comme canotier.",
+        "11- Prime de responsabilité : Il est attribué une prime d'un montant de cent cinquante mille (150 000) francs CFA par mois pour les patrons de pêche ou capitaines détenteurs d'un diplôme maritime et d'un montant de cent mille (100 000) francs CFA par mois pour les patrons non titulaires d'un brevet maritime.",
+        "12- Majorations pour diplômes : Des majorations mensuelles pour diplômes déclarés au moment de l'embauche ou obtenus en cours de carrière, seront attribuées dans les conditions ci-après, pour les travailleurs qui en sont titulaires : Petits diplômes (Diplômes d'enseignement technique et général BEP-CAP) : 3 000 francs CFA ; Diplômes d'études secondaires et diplômes spéciaux (Baccalauréat, Brevet de navigation) : 4 500 francs CFA ; Diplômes d'enseignement supérieur (Licence, doctorat, diplômes des grandes écoles, BTS-IUT) : 8 000 francs CFA. Le cumul des majorations pour un titulaire de plusieurs diplômes n'est pas admis. Seul sera pris en considération pour l'attribution de la majoration le diplôme donnant droit à la prime la plus importante.",
+        "13- Godaille : L'équipage a droit à la godaille dans les proportions suivantes : Sardiniers : de 0 à 10 Tonnes : production en kilos x 250 francs CFA x 1,5%. Au-delà de 10 Tonnes : production en kilos x 250 francs CFA x 1,0%. Deux (02) parts pour le patron, le reste pour l'équipage. Chalutiers-Chalutiers/Crevettiers-Thoniers : production en kilos x 500 francs CFA x 1,5%. Deux (02) parts pour le patron, le reste pour l'équipage. La Godaille peut être donnée en nature ou en numéraire."
+      ],
+      "mots_cles": ["primes", "indemnités", "prime de mer", "500 FCFA", "indemnité de nourriture", "1 200 FCFA", "transport", "1 000 FCFA", "ancienneté", "3%", "15%", "prime de fin d'année", "13e mois", "logement", "30 000 FCFA", "quart", "cale", "tri", "canotier", "responsabilité", "150 000 FCFA", "100 000 FCFA", "diplômes", "godaille", "sardiniers", "chalutiers"],
+      "statut": "en vigueur",
+      "section": "Titre V : Du salaire"
+    },
+    {
+      "article": "Art. 66",
+      "titre": "Assurances sociales",
+      "texte": [
+        "Le marin est régi par le régime général de la Caisse Nationale de Sécurité Sociale qui lui assure indemnité et prestation selon les dispositions de la réglementation en vigueur."
+      ],
+      "mots_cles": ["assurances sociales", "CNSS", "sécurité sociale"],
+      "statut": "en vigueur",
+      "section": "Titre VI : Des dispositions particulières"
+    },
+    {
+      "article": "Art. 67",
+      "titre": "Organisation médicale et sanitaire",
+      "texte": [
+        "Les employeurs sont tenus de se conformer en matière d'organisation médicale et sanitaire aux prescriptions des articles 142 du code du travail et des textes d'application en vigueur."
+      ],
+      "mots_cles": ["organisation médicale", "sanitaire", "code du travail", "article 142"],
+      "statut": "en vigueur",
+      "section": "Titre VI : Des dispositions particulières"
+    },
+    {
+      "article": "Art. 68",
+      "titre": "Hospitalisation",
+      "texte": [
+        "En attendant la mise en place d'un régime de sécurité sociale à l'échelon national, comportant notamment la garantie maladie, les employeurs acceptent en cas d'hospitalisation du travailleur sur prescription du médecin d'entreprise :",
+        "1- De se porter caution auprès de l'établissement hospitalier du paiement des frais d'hospitalisation du travailleur dans la limite des sommes qui sont ou pourraient être dues à ce dernier. Lorsque l'employeur en sa qualité de caution aura payé les frais d'hospitalisation, le remboursement en sera assuré, d'accord parties, par retenues périodiques après la reprise du travail sur le salaire de l'intéressé pour la quote part telle que définie ci-après restant à la charge du travailleur ;",
+        "2- De prendre en charge 53% des frais d'hospitalisation dans la limite de la période de congé de maladie à plein et à demi-salaire du travailleur malade, suivant la classification ci-après :",
+        "- 3ème catégorie tarif journalier hôpital : 1ère, 2ème, 3ème et 4ème catégorie de la présente convention ;",
+        "- 2ème catégorie tarif journalier hôpital : 5ème, 6ème et 7ème catégorie de la présente convention ;",
+        "- 1ère catégorie tarif journalier hôpital : 8ème catégorie et au-dessus de la présente convention."
+      ],
+      "mots_cles": ["hospitalisation", "caution", "53%", "frais d'hospitalisation", "médecin d'entreprise", "catégorie hospitalière"],
+      "statut": "en vigueur",
+      "section": "Titre VI : Des dispositions particulières"
+    },
+    {
+      "article": "Art. 69",
+      "titre": "Frais pharmaceutiques",
+      "texte": [
+        "En attendant la mise en place d'un régime de Sécurité Sociale à l'échelon national, comportant notamment la garantie maladie, les employeurs acceptent de prendre en charge quarante pour cent (40%) des frais pharmaceutiques exposés par l'employé pour ses propres soins médicaux, sur présentation d'ordonnance délivrée par un médecin."
+      ],
+      "mots_cles": ["frais pharmaceutiques", "40%", "ordonnance", "soins médicaux"],
+      "statut": "en vigueur",
+      "section": "Titre VI : Des dispositions particulières"
+    },
+    {
+      "article": "Art. 70",
+      "titre": "Congés pour soins",
+      "texte": [
+        "Des congés sans solde peuvent être accordés aux travailleurs qu'ils soient mariés, veufs, divorcés ou célibataires pour soigner en cas de maladie grave attestée par certificat médical, leurs enfants, conjoint(e) ou ascendant(e) directs."
+      ],
+      "mots_cles": ["congés pour soins", "sans solde", "maladie grave", "certificat médical", "enfants", "conjoint", "ascendants"],
+      "statut": "en vigueur",
+      "section": "Titre VI : Des dispositions particulières"
+    },
+    {
+      "article": "Art. 71",
+      "titre": "Naufrage — Incendie",
+      "texte": [
+        "En cas de naufrage, d'incendie ou de tout événement de mer entraînant la perte partielle ou totale de ses effets personnels, le marin perçoit une indemnité forfaitaire dont le montant est fixé en accords de parties."
+      ],
+      "mots_cles": ["naufrage", "incendie", "événement de mer", "effets personnels", "indemnité forfaitaire"],
+      "statut": "en vigueur",
+      "section": "Titre VI : Des dispositions particulières"
+    },
+    {
+      "article": "Art. 72",
+      "titre": "Commission paritaire d'interprétation et de conciliation",
+      "texte": [
+        "Il est institué une Commission Paritaire d'interprétation et de Conciliation pour rechercher une solution amiable aux différends pouvant résulter de l'interprétation et de l'application de la présente convention, de ses annexes et additifs.",
+        "Cette Commission n'a pas à connaître les litiges individuels qui ne mettent pas en cause le sens et la portée de la présente Convention.",
+        "La composition de la Commission est la suivante :",
+        "- Deux (02) membres titulaires et deux (02) membres suppléants de chaque Organisation syndicale des travailleurs signataires ;",
+        "- Un nombre égal de membres patronaux titulaires et suppléants.",
+        "Les noms des membres titulaires et suppléants sont communiqués par les organisations syndicales intéressées à la Direction Départementale du Travail du ressort.",
+        "La partie signataire qui désire soumettre un différend à la Commission, doit le porter par écrit à la connaissance de toutes les autres parties signataires et à la Direction Départementale du Travail du ressort.",
+        "Celle-ci est tenue de réunir la commission dans les plus brefs délais, et au plus tard dans le mois qui suit la réception de la demande.",
+        "Lorsque la commission donne son avis à l'unanimité des organisations représentées, le texte de cet avis signé par les membres de la commission a les mêmes effets juridiques que les clauses de la présente convention.",
+        "Cet avis fait l'objet d'un dépôt au greffe du tribunal de travail à la diligence de la Direction Départementale du Travail du ressort qui a réuni la commission."
+      ],
+      "mots_cles": ["commission paritaire", "interprétation", "conciliation", "différends", "Direction Départementale du Travail", "unanimité", "greffe", "tribunal de travail"],
+      "statut": "en vigueur",
+      "section": "Titre VII : Des dispositions finales"
     }
   ]
 }
