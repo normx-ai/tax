@@ -69,7 +69,7 @@ router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, v
  *         description: Liste des conversations
  */
 // GET /api/chat/conversations — Lister les conversations
-router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response) => {
+router.get("/conversations", requireAuth, resolveTenant, async (req: AuthRequest, res: Response) => {
   try {
     const conversations = await chatService.getConversations(req.tenantSchema!, req.userId!);
     res.json({ conversations });
@@ -101,7 +101,7 @@ router.get("/conversations", requireAuth, async (req: AuthRequest, res: Response
  *         description: Conversation introuvable
  */
 // GET /api/chat/conversations/:id — Recuperer une conversation avec messages
-router.get("/conversations/:id", requireAuth, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
+router.get("/conversations/:id", requireAuth, resolveTenant, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
   try {
     const id = String(req.params.id);
     const conversation = await chatService.getConversation(req.tenantSchema!, req.userId!, id);
@@ -139,7 +139,7 @@ router.get("/conversations/:id", requireAuth, validate({ params: conversationIdP
  *         description: Conversation introuvable
  */
 // DELETE /api/chat/conversations/:id — Supprimer une conversation
-router.delete("/conversations/:id", requireAuth, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
+router.delete("/conversations/:id", requireAuth, resolveTenant, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
   try {
     const id = String(req.params.id);
     await chatService.deleteConversation(req.tenantSchema!, req.userId!, id);

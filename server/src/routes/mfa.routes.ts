@@ -1,7 +1,8 @@
 import { Router, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { requireAuth, AuthRequest, isWebClient, setAuthCookies } from '../middleware/auth';
+import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
+import { isWebClient, setAuthCookies } from '../middleware/auth';
 import { sensitiveLimiter, authLimiter } from '../middleware/rateLimit.middleware';
 import { validate } from '../middleware/validate.middleware';
 import { enableMfaBody, disableMfaBody, verifyMfaBody } from '../schemas/mfa.schema';
