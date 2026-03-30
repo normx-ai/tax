@@ -1,6 +1,7 @@
 import { Response, NextFunction } from "express";
 import { AuthRequest } from "./keycloak-auth";
 import { createTenantSchema, ensureUserInSchema } from "../db/tenant.service";
+import prisma from "../utils/prisma";
 import { createLogger } from "../utils/logger";
 
 const logger = createLogger("TenantMiddleware");
@@ -19,7 +20,6 @@ export async function resolveTenant(req: AuthRequest, res: Response, next: NextF
     req.tenantSchema = schema;
 
     // Résoudre l'orgId réel via la table organization_members
-    const { default: prisma } = await import("../utils/prisma");
     const membership = await prisma.organizationMember.findFirst({
       where: { userId: req.userId },
       select: { organizationId: true },
