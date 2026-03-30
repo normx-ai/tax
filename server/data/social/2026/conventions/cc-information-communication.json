@@ -20,7 +20,7 @@
       "article": "Art. 1",
       "titre": "Objet et champ d'application",
       "texte": [
-        "La présente Convention Collective et ses annexes règlent les rapports de travail entre les entreprises Privées de Presse et l'ensemble des personnels desdites entreprises, tels qu'ils sont définis à l'article 2 du Code de Travail et aux articles 6, 7, 8, 87, 88 et 89 de la Loi No 8-2001 DU 12 Novembre 2001 sur la Liberté de l'Information et de la Communication, sans distinction de sexe, de religion et de statut, sur l'étendue du territoire de la République du Congo. Elle régit les relations de travail dans les entreprises privées de presse (journaux, radios, télévisions, agences d'information, médias en ligne, entreprises d'édition et d'imprimeries, agences d'images et de son).",
+        "La présente Convention Collective et ses annexes règlent les rapports de travail entre les entreprises Privées de Presse et l'ensemble des personnels desdites entreprises, tels qu'ils sont définis à l'article 2 du Code de Travail et aux articles 6, 7, 8, 87, 88 et 89 de la Loi No 8-2001 du 12 Novembre 2001 sur la Liberté de l'Information et de la Communication, sans distinction de sexe, de religion et de statut, sur l'étendue du territoire de la République du Congo. Elle régit les relations de travail dans les entreprises privées de presse (journaux, radios, télévisions, agences d'information, médias en ligne, entreprises d'édition et d'imprimeries, agences d'images et de son).",
         "Les annexes à la présente Convention Collective déterminent la classification des emplois et le barème des salaires."
       ],
       "mots_cles": ["information", "communication", "presse", "journaux", "radios", "télévisions", "médias en ligne", "agences"],
@@ -28,11 +28,78 @@
       "section": "Titre 1 : Dispositions générales - Chapitre I"
     },
     {
+      "article": "Art. 2",
+      "titre": "Durée",
+      "texte": [
+        "La présente Convention Collective est conclue pour une durée indéterminée."
+      ],
+      "mots_cles": ["durée", "indéterminée"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Avantages acquis",
+      "texte": [
+        "La présente Convention Collective ne peut être la cause de restriction aux avantages acquis à la date d'application. Le maintien ne jouera que pour le personnel en service.",
+        "Les avantages reconnus par la présente Convention Collective ne peuvent s'ajouter aux avantages déjà acquis pour le même objet.",
+        "Les contrats individuels postérieurs sont soumis comme conditions minima d'engagement. Les dispositions de la présente Convention Collective s'appliquent de plein droit aux contrats en cours."
+      ],
+      "mots_cles": ["avantages acquis", "maintien", "contrats individuels"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Dénonciation",
+      "texte": [
+        "La présente Convention Collective peut être dénoncée au plus tôt deux (2) ans après sa signature sous réserve d'un préavis de trois (3) mois donné par lettre recommandée avec accusé de réception par Huissier, par porteur ou tout autre moyen légal avec accusé de réception.",
+        "La partie qui dénonce doit exposer le motif et joindre un projet de nouvelle convention.",
+        "Les pourparlers doivent s'engager dans un délai n'excédant pas un (1) mois."
+      ],
+      "mots_cles": ["dénonciation", "préavis", "3 mois", "2 ans"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Révision",
+      "texte": [
+        "La présente Convention Collective et ses annexes sont susceptibles de révision au moins deux (2) ans après leur signature.",
+        "La demande de révision est faite par lettre recommandée avec accusé de réception avec propositions écrites. Les pourparlers doivent s'engager dans un délai n'excédant pas un (1) mois.",
+        "Les parties s'interdisent le lock-out ou la grève pendant le préavis de révision."
+      ],
+      "mots_cles": ["révision", "2 ans", "lock-out", "grève"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Date d'application",
+      "texte": [
+        "La présente Convention Collective est applicable à partir du jour qui suit son dépôt au Greffe du Tribunal du Travail de Brazzaville par la partie la plus diligente."
+      ],
+      "mots_cles": ["date d'application", "dépôt", "greffe", "tribunal du travail"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales - Chapitre I"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Publicité ou Diffusion",
+      "texte": [
+        "La présente Convention Collective sera publiée et diffusée partout où besoin sera.",
+        "Toutefois, un exemplaire sera mis à la disposition des travailleurs de chaque entreprise privée de presse, des délégués du personnel, des représentants syndicaux, ainsi que des Membres du Comité d'Hygiène et de Sécurité Sociale."
+      ],
+      "mots_cles": ["publicité", "diffusion", "exemplaire", "délégués du personnel"],
+      "statut": "en vigueur",
+      "section": "Titre 1 : Dispositions générales - Chapitre I"
+    },
+    {
       "article": "Art. 8",
       "titre": "Déontologie",
       "texte": [
-        "L'employeur reconnait au journaliste ou tout autre employé des medias prives, la liberté d'agir, d'écrire et de s'exprimer conformément à sa conscience, dans le respect de la déontologie professionnelle, sans être intimidé par une sanction disciplinaire ou une menace quelconque.",
-        "L'employeur reconnait aux Rédacteurs en chef, au Directeur de l'Information ou leurs Délégués la liberté d'accepter ou de rejeter toute contribution rédactionnelle, dans le respect de la ligne éditoriale."
+        "L'employeur reconnaît au journaliste ou tout autre employé des médias privés, la liberté d'agir, d'écrire et de s'exprimer conformément à sa conscience, dans le respect de la déontologie professionnelle, sans être intimidé par une sanction disciplinaire ou une menace quelconque.",
+        "L'employeur reconnaît aux Rédacteurs en chef, au Directeur de l'Information ou leurs Délégués la liberté d'accepter ou de rejeter toute contribution rédactionnelle, dans le respect de la ligne éditoriale."
       ],
       "mots_cles": ["déontologie", "liberté", "journaliste", "conscience", "ligne éditoriale"],
       "statut": "en vigueur",
@@ -40,9 +107,10 @@
     },
     {
       "article": "Art. 9",
-      "titre": "Clause de conscience — travail incompatible",
+      "titre": "Clause de conscience",
       "texte": [
-        "L'employeur s'engage à respecter la clause de conscience, à ne pas confier au journaliste un travail incompatible avec sa dignité et la déontologie. Le journaliste ou tout autre agent de l'information et communication sociale ne peut être contraint d'accepter un acte professionnel consistant à diffuser des informations qui seraient contraires à la réalité, à exprimer une opinion qui serait contraire à son intime conviction professionnelle."
+        "L'employeur s'engage à respecter la clause de conscience, à ne pas confier au journaliste un travail incompatible avec sa dignité et la déontologie.",
+        "Le journaliste ou tout autre agent de l'information et communication sociale ne peut être contraint d'accepter un acte professionnel consistant à diffuser des informations qui seraient contraires à la réalité, à exprimer une opinion qui serait contraire à son intime conviction professionnelle."
       ],
       "mots_cles": ["clause de conscience", "dignité", "déontologie", "conviction professionnelle"],
       "statut": "en vigueur",
@@ -50,9 +118,10 @@
     },
     {
       "article": "Art. 10",
-      "titre": "Changement d'orientation éditoriale — clause de conscience",
+      "titre": "Changement d'orientation éditoriale",
       "texte": [
-        "Lorsque l'établissement ou l'entreprise de presse change manifestement d'orientation éditoriale, le journaliste ou tout autre salarié de l'information et de la communication sociale qui se trouverait en désaccord de fond avec la nouvelle orientation, pourra constater la rupture du contrat de travail du fait de l'employeur en invoquant la clause de conscience. Dans ce cas, il percevra une indemnité équivalente à celle à laquelle il aurait pu prétendre en cas de licenciement."
+        "Lorsque l'établissement ou l'entreprise de presse change manifestement d'orientation éditoriale, le journaliste ou tout autre salarié de l'information et de la communication sociale qui se trouverait en désaccord de fond avec la nouvelle orientation, pourra constater la rupture du contrat de travail du fait de l'employeur en invoquant la clause de conscience.",
+        "Dans ce cas, il percevra une indemnité équivalente à celle à laquelle il aurait pu prétendre en cas de licenciement."
       ],
       "mots_cles": ["orientation éditoriale", "clause de conscience", "rupture", "indemnité licenciement"],
       "statut": "en vigueur",
@@ -60,17 +129,18 @@
     },
     {
       "article": "Art. 11",
-      "titre": "Protection des sources",
+      "titre": "Secret des sources",
       "texte": [
-        "Le journaliste ou tout autre agent de l'information et de la communication ne peut être contraint de révéler ses sources. Les Responsables de l'organe de presse ont le devoir de protéger le secret des sources du journaliste."
+        "Le journaliste ou tout autre agent de l'information et de la communication ne peut être contraint de révéler ses sources.",
+        "Les Responsables de l'organe de presse ont le devoir de protéger le secret des sources du journaliste."
       ],
-      "mots_cles": ["protection des sources", "secret des sources", "journaliste"],
+      "mots_cles": ["secret des sources", "protection des sources", "journaliste"],
       "statut": "en vigueur",
       "section": "Titre 1 - Chapitre III : Déontologie et discipline"
     },
     {
       "article": "Art. 12",
-      "titre": "Séparation rédactionnel / publicitaire",
+      "titre": "Séparation rédaction/publicité",
       "texte": [
         "Les activités rédactionnelles sont clairement distinctes des activités commerciales ou publicitaires des médias.",
         "L'employeur ne peut exiger d'un journaliste ou technicien un travail de publicité rédactionnelle. Le refus par un journaliste ou technicien d'exécuter un travail de publicité ne peut en aucun cas être retenu comme une faute professionnelle."
@@ -78,6 +148,765 @@
       "mots_cles": ["rédactionnel", "publicitaire", "séparation", "publicité rédactionnelle"],
       "statut": "en vigueur",
       "section": "Titre 1 - Chapitre III : Déontologie et discipline"
+    },
+    {
+      "article": "Art. 13",
+      "titre": "Fonction du journaliste",
+      "texte": [
+        "L'employeur s'engage à respecter la fonction première du journaliste qui est d'informer et de véhiculer, sans distorsion, les divers courants et sensibilités de la société.",
+        "À cet égard, obligation lui est faite, au même titre que le journaliste ou technicien, de respecter, d'une part, la rigueur dans la relation des faits et d'autre part, la liberté du commentaire."
+      ],
+      "mots_cles": ["fonction du journaliste", "informer", "rigueur", "liberté du commentaire"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Chapitre III : Déontologie et discipline"
+    },
+    {
+      "article": "Art. 14",
+      "titre": "Discipline",
+      "texte": [
+        "Les dispositions particulières en matière de discipline sont précisées dans le règlement intérieur de l'entreprise.",
+        "Les sanctions disciplinaires applicables aux personnels des entreprises privées de presse sont les suivantes : avertissement écrit ; blâme écrit ; mise à pied sans solde de un (1) à huit (8) jours ; licenciement avec ou sans indemnité.",
+        "Les sanctions doivent être adaptées à la gravité de la faute commise.",
+        "Les sanctions sont prises par l'employeur ou son représentant après que l'intéressé, qui peut se faire assister du délégué du personnel, ait fourni ses explications écrites ou verbales.",
+        "La sanction est signifiée par écrit au travailleur avec copie à l'Inspecteur du travail et des lois sociales du ressort. Il en est de même des lettres de réhabilitation qui pourront annuler lesdites sanctions.",
+        "Dans le cas d'une faute lourde constatée par l'employeur ou son représentant, la suspension des relations de travail qui peut immédiatement intervenir est signifiée par écrit au travailleur. Cependant, cette suspension qui ne donne pas lieu à rémunération, ne peut être suivie de licenciement définitif, qu'après que le travailleur ait présenté sa défense auprès de l'employeur, avec la faculté de se faire assister par une personne de son choix.",
+        "Le délai nécessaire au travailleur pour présenter sa défense ne peut excéder trente (30) jours à compter de la date de la signification écrite de la suspension des relations de travail."
+      ],
+      "mots_cles": ["discipline", "sanctions", "avertissement", "blâme", "mise à pied", "licenciement", "faute lourde"],
+      "statut": "en vigueur",
+      "section": "Titre 1 - Chapitre III : Déontologie et discipline"
+    },
+    {
+      "article": "Art. 15",
+      "titre": "Liberté d'opinions",
+      "texte": [
+        "Les parties contractantes reconnaissent la liberté d'opinion, la liberté d'expression, ainsi que le droit d'adhérer librement, ou non, à un syndicat professionnel constitué en vertu des dispositions législatives réglementaires en vigueur.",
+        "En vue de protéger cette liberté, l'employeur s'engage à ne pas prendre en considération le fait d'appartenir ou non à un syndicat, les opinions politiques, les croyances religieuses ou les origines ethniques du travailleur pour prendre les décisions en ce qui concerne l'embauche, l'organisation du travail, les mesures disciplinaires, la gestion des carrières et le licenciement."
+      ],
+      "mots_cles": ["liberté d'opinion", "liberté d'expression", "syndicat", "non-discrimination"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Liberté d'opinion, droit syndical et représentation du personnel"
+    },
+    {
+      "article": "Art. 16",
+      "titre": "Libre exercice du droit syndical",
+      "texte": [
+        "La liberté d'adhérer, ou non, à un syndicat est un droit fondamental pour chaque travailleur, tel que cela est prévu par le droit interne et les conventions internationales en la matière ratifiée par le Congo.",
+        "Toutefois, l'exercice de ce droit ne saurait avoir pour conséquence des actes contraires aux lois et règlements en vigueur, au règlement intérieur et aux usages, notamment ceux prévus par la présente convention."
+      ],
+      "mots_cles": ["droit syndical", "liberté syndicale", "conventions internationales"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Liberté d'opinion, droit syndical et représentation du personnel"
+    },
+    {
+      "article": "Art. 17",
+      "titre": "Les délégués du personnel",
+      "texte": [
+        "L'employeur s'engage à ne rien faire qui puisse entraver l'élection des délégués du personnel et le libre accomplissement de leurs missions, la mise à disposition des moyens d'action prévue par les textes en vigueur : crédit d'heures, local, cahier des réclamations, rencontres à la demande, etc., et la protection prévue par l'article 176 du Code de Travail.",
+        "Les délégués du personnel sont tenus d'exécuter leurs missions dans le strict respect des normes réglementaires en vigueur. Il ne leur est pas loisible de détourner leur mandat pour poser des actes qui n'entrent pas dans le cadre de l'exercice légal de leurs missions."
+      ],
+      "mots_cles": ["délégués du personnel", "élection", "crédit d'heures", "protection"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Liberté d'opinion, droit syndical et représentation du personnel"
+    },
+    {
+      "article": "Art. 18",
+      "titre": "La section syndicale",
+      "texte": [
+        "La section syndicale, cadre d'exercice de l'activité syndicale dans l'entreprise, exécute les missions dans le cadre fixé par le Code du Travail et ses arrêtés d'application.",
+        "Le Bureau de la section syndicale mis en place suivant les statuts de chaque organisation syndicale représentative anime la section syndicale et dispose de tous les moyens d'action et de la protection légale lui permettant de fonctionner.",
+        "Les parties contractantes s'engagent à s'abstenir de toute action qui soit de nature discriminatoire ou à entraver l'action des membres de la section syndicale par l'employeur ou à porter atteinte à la liberté de travailler ou de se détourner du cadre légal de l'exercice de leurs missions pour les membres du Bureau de la section syndicale."
+      ],
+      "mots_cles": ["section syndicale", "activité syndicale", "bureau syndical", "protection légale"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Liberté d'opinion, droit syndical et représentation du personnel"
+    },
+    {
+      "article": "Art. 19",
+      "titre": "Panneaux d'affichage",
+      "texte": [
+        "Des panneaux d'affichage grillagés ou vitrés, en nombre suffisant seront mis dans chaque établissement à la disposition des sections syndicales et délégués du personnel pour leurs communications au personnel. Ils seront apposés à l'intérieur d'établissement à un endroit proche de l'entrée ou de la sortie du personnel ou de tout autre endroit jugé plus accessible d'accord parties.",
+        "Les communications doivent avoir un objet exclusivement professionnel et syndical et ne revêtir aucun caractère polémique.",
+        "Elles seront affichées par les soins des membres du bureau de la section syndicale ou des délégués du personnel, après communication d'une copie au chef d'établissement ou son représentant."
+      ],
+      "mots_cles": ["panneaux d'affichage", "communications", "section syndicale", "délégués du personnel"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Liberté d'opinion, droit syndical et représentation du personnel"
+    },
+    {
+      "article": "Art. 20",
+      "titre": "Requêtes et réclamations",
+      "texte": [
+        "Les membres du bureau de la section syndicale ou les délégués du personnel sont collectivement reçus par le Chef d'établissement ou de l'entreprise de presse ou par son Représentant pour présenter toute requête, réclamation, revendication ou toute suggestion suivant les modalités prévues par la réglementation du travail en vigueur en la matière.",
+        "Nonobstant ces dispositions, les travailleurs ont la faculté de présenter eux-mêmes leurs réclamations à l'employeur."
+      ],
+      "mots_cles": ["requêtes", "réclamations", "revendications", "délégués du personnel"],
+      "statut": "en vigueur",
+      "section": "Titre 2 : Liberté d'opinion, droit syndical et représentation du personnel"
+    },
+    {
+      "article": "Art. 21",
+      "titre": "Conditions d'embauche et réembauche",
+      "texte": [
+        "1/ Conditions d'embauche : Tout candidat à l'embauche doit fournir les pièces suivantes : une demande manuscrite ; un Curriculum Vitae ; un Extrait d'acte de Naissance ; une copie légalisée des Diplômes ; un Certificat de Travail pour des candidats ayant déjà exercé ; un extrait de Casier Judiciaire ; un Certificat de Nationalité ; un certificat médical d'aptitude physique.",
+        "Il doit en outre être soumis à un entretien de recrutement ou à un test de sélection. Les candidats sont informés des méthodes et des résultats des évaluations pour assurer la transparence.",
+        "2/ Conditions de Réembauche : Tout travailleur congédié à la suite d'un licenciement pour motif économique motivé par une diminution d'activités ou une réorganisation interne, conserve pendant deux (2) ans la priorité d'embauche dans le même emploi, avec conservation de l'ancienneté au moment du licenciement.",
+        "À cet effet, le travailleur est tenu de communiquer au Chef d'établissement tout changement d'adresse survenu après son départ. En cas de vacance d'emploi, le Chef d'établissement ou entreprise avisera l'intéressé par lettre recommandée avec accusé de réception ou par tout autre moyen."
+      ],
+      "mots_cles": ["embauche", "réembauche", "pièces", "entretien", "licenciement économique", "priorité"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre I : Formation et exécution du contrat de travail"
+    },
+    {
+      "article": "Art. 22",
+      "titre": "Période d'essai",
+      "texte": [
+        "L'engagement définitif d'un travailleur peut être précédé d'une période d'essai au cours de laquelle les parties apprécient, notamment, pour l'employeur, la qualité des services et le rendement du travailleur et pour ce dernier, les conditions de travail et le climat social chez l'employeur.",
+        "La durée de la période d'essai est fixée ainsi qu'il suit : 15 jours pour les contrats dont la durée est inférieure à six (6) mois ; 1 mois pour les ouvriers et employés (1ère-7ème catégorie en CDI et CDD supérieure à 6 mois) ; 2 mois pour les Agents de maîtrise ; 3 mois pour les Cadres.",
+        "Elle peut éventuellement être renouvelée.",
+        "La période d'essai peut faire l'objet d'un contrat spécial dit contrat d'engagement à l'essai d'une clause d'un contrat de travail appelé à devenir définitif.",
+        "Pendant la période d'essai, le travailleur perçoit le salaire de base auquel s'ajoutent, le cas échéant, les avantages sociaux, tels que le logement, le transport et la couverture médicale.",
+        "Le renouvellement et la résiliation d'un contrat à l'essai sont soumis aux dispositions pertinentes du Code de Travail en la matière."
+      ],
+      "mots_cles": ["période d'essai", "15 jours", "1 mois", "2 mois", "3 mois", "renouvellement"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre I : Formation et exécution du contrat de travail"
+    },
+    {
+      "article": "Art. 23",
+      "titre": "Engagement définitif",
+      "texte": [
+        "L'engagement définitif, le cas échéant à expiration de la période d'essai, est notifié par écrit avec accusé de réception au travailleur par l'Employeur, avec mention de sa nature, de l'emploi pourvu et son classement catégoriel, son salaire de base, ses primes, indemnités et avantages divers auxquels il a droit. La lettre de notification est rédigée en Français.",
+        "L'engagement est suivi, dans les 5 jours qui suivent la réception de la lettre par le travailleur, de la conclusion d'un contrat de travail écrit, conforme aux prescriptions légales et réglementaires en vigueur en la matière.",
+        "Le Contrat de travail comporte : 1) Les mentions et clauses obligatoires : l'identité des parties ; la date de prise d'effet du contrat ; la désignation de l'emploi et sa catégorie professionnelle ; le lieu de travail ou le lieu de rattachement en cas de sites multiples ; la durée du travail hebdomadaire, mensuelle ou annuelle de référence ; le montant et la périodicité de versement du salaire ; la durée de la période d'essai, s'il y a lieu, et les conditions de son renouvellement ; la référence à la convention collective applicable ; la conformation au règlement intérieur ; le régime de protection sociale ; les modalités de règlement des litiges nés de son exécution ; les modalités de résiliation.",
+        "2) Des clauses facultatives : la mobilité géographique et/ou fonctionnelle au sein de l'entreprise ; le dédit formation ; le régime des déplacements professionnels ; le cas échéant pour le personnel d'encadrement, les conditions d'une éventuelle délégation de pouvoir ou d'autorité."
+      ],
+      "mots_cles": ["engagement définitif", "contrat de travail", "clauses obligatoires", "clauses facultatives"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre I : Formation et exécution du contrat de travail"
+    },
+    {
+      "article": "Art. 24",
+      "titre": "Dédit Formation",
+      "texte": [
+        "Le dédit ne peut correspondre qu'aux coûts de formation effectivement supportés par l'entreprise.",
+        "La durée de la clause ne peut excéder deux (2) ans après la fin de la formation.",
+        "La clause de dédit formation doit prévoir une indemnisation dégressive dans le temps visant à une diminution progressive de l'indemnité en fonction du temps passé dans l'entreprise après ladite formation.",
+        "Après sa conclusion, un exemplaire du contrat revêtu de tous les visas et signatures est remis au travailleur.",
+        "Toute modification substantielle d'une des clauses du contrat doit être soumise à l'approbation préalable du travailleur avant sa mise en œuvre. Son refus s'analyse en une faute contractuelle de l'employeur et la rupture du contrat éventuelle lui est imputable."
+      ],
+      "mots_cles": ["dédit formation", "coûts de formation", "indemnisation dégressive", "modification contrat"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre I : Formation et exécution du contrat de travail"
+    },
+    {
+      "article": "Art. 25",
+      "titre": "Avancement",
+      "texte": [
+        "L'avancement s'entend comme un passage d'un échelon inférieur à un échelon supérieur à l'intérieur de la catégorie à laquelle est classé le travailleur. Il traduit la reconnaissance des résultats obtenus par le travailleur dans l'accomplissement des missions et objectifs.",
+        "L'avancement est effectué une fois tous les deux (2) ans.",
+        "Il est décidé à la suite d'une évaluation des performances du travailleur organisée par l'employeur ou son représentant et entérinée par une commission paritaire d'avancement.",
+        "Les dispositions relatives à l'organisation, au fonctionnement, notamment, la périodicité des réunions de cette commission, seront définies par accord d'établissement dans chaque entreprise. Elle aura lieu, en tout état de cause, au moins une fois par année.",
+        "Les travailleurs sont informés au préalable des points devant faire l'objet de l'évaluation, ainsi que des techniques et méthodes utilisées à cet effet. Ceux s'estimant lésés dans leur avancement ou des résultats des évaluations peuvent faire recours auprès de l'employeur. Celui-ci examine les cas soumis."
+      ],
+      "mots_cles": ["avancement", "échelon", "évaluation", "commission paritaire", "2 ans"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre II : Carrière du travailleur"
+    },
+    {
+      "article": "Art. 26",
+      "titre": "Promotion",
+      "texte": [
+        "La promotion s'entend du passage, sur décision de l'employeur, d'un emploi de catégorie inférieure à un autre de catégorie supérieure.",
+        "En cas de vacance ou création d'un poste ou emploi, l'employeur fera appel en priorité aux salariés confirmés en service dans l'entreprise qui lui paraissent aptes à occuper le poste.",
+        "Le salarié choisi ou candidat est soumis à la période d'essai requise pour le poste pourvu. Au cas où l'essai s'avère insatisfaisant, le travailleur est remis à son ancien emploi. Cette remise ne saurait être considérée comme une rétrogradation par rapport au poste qu'il occupait avant l'engagement à l'essai."
+      ],
+      "mots_cles": ["promotion", "catégorie supérieure", "vacance", "période d'essai"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre II : Carrière du travailleur"
+    },
+    {
+      "article": "Art. 27",
+      "titre": "Intérim",
+      "texte": [
+        "Au sens de la présente convention collective, est considéré comme Intérim, le fait pour un travailleur d'occuper provisoirement et à plein temps, sur décision de l'employeur, un emploi de catégorie supérieure à celle de son emploi habituel.",
+        "Tout travailleur, à quelque catégorie qu'il appartienne, assurant sur décision de l'employeur, l'intérim d'un travailleur d'une catégorie supérieure, percevra, après un mois de service, une indemnité égale à la différence entre le salaire de base de la catégorie du nouvel emploi et le salaire de base de l'intéressé.",
+        "À l'expiration du délai de six (6) mois, l'employeur doit trancher définitivement sur la situation du salarié concerné : soit en le confirmant à son nouvel emploi ; soit en le remettant à son ancien emploi."
+      ],
+      "mots_cles": ["intérim", "catégorie supérieure", "indemnité", "6 mois"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre II : Carrière du travailleur"
+    },
+    {
+      "article": "Art. 28",
+      "titre": "Mobilité géographique et/ou fonctionnelle",
+      "texte": [
+        "Les signataires de la présente convention collective conviennent de l'importance de la mobilité professionnelle comme levier, d'une part, de développement des compétences, et d'évolution professionnelle des travailleurs et d'autre part d'adaptation et de flexibilité pour les entreprises dans un contexte de permanence des mutations des métiers, des technologies et des systèmes productifs.",
+        "En vue de favoriser cette mobilité professionnelle, les parties conviennent de mettre en place dans chaque entreprise, un système d'information accessible et transparent, sur les évolutions des métiers et des emplois, les trajectoires relatives, les nouveaux emplois disponibles.",
+        "Tout emploi disponible sera en priorité pourvu en interne, aux travailleurs de l'entreprise dont les profils correspondent aux exigences du poste.",
+        "Tout candidat, en interne, s'estimant avoir le profil requis pour le poste peut à cette occasion demander à bénéficier d'un entretien par le soin du service du personnel.",
+        "Toute affectation à un autre emploi dans le même métier ou dans un métier différent et/ou une localité différente doit recueillir l'avis du travailleur émis à l'occasion d'un entretien avec lui.",
+        "La mobilité ne devra en aucun cas être un motif de réduction des avantages salariaux et divers des travailleurs. Lorsqu'elle entraîne une modification substantielle du contrat de travail, celle-ci doit être proposée par écrit au travailleur, qui dispose d'un délai d'un (1) mois à compter de la date de réception de la proposition, pour accepter ou refuser la modification que l'employeur a l'intention d'opérer."
+      ],
+      "mots_cles": ["mobilité géographique", "mobilité fonctionnelle", "compétences", "modification contrat", "1 mois"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre II : Carrière du travailleur"
+    },
+    {
+      "article": "Art. 29",
+      "titre": "Mutation",
+      "texte": [
+        "Au sens de la présente convention collective, la mutation est le passage d'un poste de travail à un autre pouvant entraîner un changement de lieu de travail et, éventuellement, de résidence. La mutation est l'objet d'un changement d'affectation signifiée préalablement au travailleur par écrit, avec indication de l'emploi à occuper. Au cas où elle entraîne un changement d'emploi, le travailleur choisi est soumis à la période d'essai requise pour le nouveau poste.",
+        "La mutation peut être : à l'initiative de l'employeur, pour raison de service ; à la demande du travailleur, pour convenance personnelle.",
+        "1) Mutation à l'initiative de l'employeur : Pour raison de service ou d'inaptitude professionnelle constatée par le médecin agréé par l'entreprise, tout salarié peut être muté à l'intérieur de l'Entreprise en même lieu ou à n'importe quel point du territoire national du Congo. Lorsque la mutation est prévue au contrat de travail, le travailleur qui refuse de rejoindre son poste après notification de sa mutation, est passible de licenciement pour abandon de poste. Si la mutation entraîne un changement de résidence, les frais de déménagement et de voyage du salarié et de sa famille sont à la charge de l'employeur ou chef d'entreprise. Le travailleur perçoit également une indemnité forfaitaire d'installation égale à cinquante mille (50.000) F CFA.",
+        "2) Mutation à la demande du travailleur : Dans le cas où l'employeur accepte la demande de mutation pour convenance personnelle du travailleur, le refus de celui-ci après notification de la mutation, de rejoindre le poste ou le lieu de mutation constitue une faute lourde pour abandon de poste. Lorsque la mutation intervient notamment sur un poste déclaré vacant par l'employeur par appel à candidature ou avis vacance de poste, le travailleur bénéficie de plein droit de la prise en charge de ses frais afférents."
+      ],
+      "mots_cles": ["mutation", "affectation", "changement de résidence", "indemnité d'installation", "50000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre II : Carrière du travailleur"
+    },
+    {
+      "article": "Art. 30",
+      "titre": "Périodes militaires",
+      "texte": [
+        "En cas de suspension du contrat de travail pour cause de service militaire ou paramilitaire, l'employeur est tenu de verser au salarié, au moment de son départ sous le drapeau, une indemnité égale au montant de sa rémunération dans la limite du préavis ainsi que de son allocation de congé annuel.",
+        "La durée du service militaire n'est prise en compte pour la détermination de l'ancienneté que dans le cas de mobilisation générale. Pendant cette période, le travailleur n'a droit à aucune rémunération.",
+        "Le travailleur ayant quitté pour cause de service militaire est, à l'expiration du temps passé sous les drapeaux, repris de plein droit dès qu'il se présente et le réclame auprès de l'employeur à cet effet. Il doit toutefois prouver la fin de son service militaire.",
+        "Le travailleur qui ne s'est pas présenté à l'employeur aux fins de sa reprise de service dans un délai d'un (1) mois est considéré comme déserteur et l'employeur est fondé à en tirer toutes les conséquences.",
+        "À la reprise du travail, le travailleur ayant fini sa période militaire est tenu de passer une visite médicale d'aptitude auprès du médecin agréé par l'entreprise. En cas d'inaptitude devant entraîner la résiliation du contrat de travail, le travailleur bénéficie des indemnités corrélatives à la rupture du contrat de travail."
+      ],
+      "mots_cles": ["service militaire", "suspension contrat", "reprise", "ancienneté", "visite médicale"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre III : Suspension du contrat de travail"
+    },
+    {
+      "article": "Art. 31",
+      "titre": "Grossesse et maternité",
+      "texte": [
+        "En cas de grossesse d'une travailleuse, le contrat de travail est suspendu dans les conditions fixées par le code du travail.",
+        "Pendant cette période de suspension dite congé de maternité, l'employeur est tenu de payer à la travailleuse, à terme mensuel échu, une indemnité dont le montant est égal à la moitié de son salaire brut qu'elle percevait avant son départ.",
+        "L'autre moitié étant supportée par l'organisme de sécurité sociale auquel est assujetti l'employeur."
+      ],
+      "mots_cles": ["grossesse", "maternité", "congé de maternité", "indemnité", "sécurité sociale"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre III : Suspension du contrat de travail"
+    },
+    {
+      "article": "Art. 32",
+      "titre": "Modalités de rupture du contrat",
+      "texte": [
+        "La partie qui prend l'initiative de la rupture du contrat de travail doit notifier sa décision par écrit à l'autre partie avec accusé de réception.",
+        "La lettre de notification indique expressément le motif de la résiliation du contrat de travail."
+      ],
+      "mots_cles": ["rupture", "notification écrite", "accusé de réception", "motif"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 33",
+      "titre": "Préavis",
+      "texte": [
+        "Hormis le cas de faute lourde et celui de la démission d'un Journaliste ou technicien employé au cours de la période des quinze (15) mois à compter de la naissance de son enfant, toute résiliation d'un contrat de travail intervenant après la période d'essai est subordonnée à un préavis donné par écrit par la partie qui prend l'initiative de la rupture.",
+        "Sous réserve, le cas échéant, de stipulation plus favorable dans le contrat de travail, la durée du préavis est fixée comme suit : 1 mois pour les catégories 1, 2, 3, 4 ; 2 mois pour les catégories 5, 6, 7 ; 3 mois pour les catégories 8 et 9.",
+        "L'inobservation du délai de préavis emporte obligation pour la partie responsable de verser à l'autre partie une indemnité dite « indemnité de préavis » dont le montant correspond à la rémunération et aux avantages de toute nature auxquels aurait prétendu le travailleur durant le temps de préavis qui n'aura pas été effectivement accompli.",
+        "Si l'une des parties désire mettre fin au contrat avant le départ en congé, une notification doit être faite à l'autre partie un (1) mois avant la date de départ en congé.",
+        "Si le Journaliste au moment de la dénonciation de son contrat est responsable d'un service ou d'un stock, il ne peut quitter son emploi avant d'avoir rendu compte de sa gestion.",
+        "Pendant la période de préavis, qu'il s'agisse d'un licenciement ou d'une démission, le Journaliste ou technicien bénéficie en vue de la recherche d'un autre emploi, de deux (2) jours de liberté par semaine pris à son choix globalement ou heure par heure, payés à plein salaire. L'agent devra informer l'Employeur de ses absences en temps utile."
+      ],
+      "mots_cles": ["préavis", "1 mois", "2 mois", "3 mois", "catégories", "indemnité de préavis", "jours de liberté"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 34",
+      "titre": "Licenciement pour diminution d'activité ou réorganisation interne",
+      "texte": [
+        "Tout licenciement collectif ou individuel motivé par une diminution de l'activité de l'entreprise, ou une réorganisation interne, est subordonné à l'autorisation de la commission des litiges conformément aux textes en vigueur.",
+        "Tout Journaliste ou technicien salarié congédié par suite d'une diminution de l'activité de l'organe de Presse ou d'une réorganisation interne conserve pendant un (1) an la priorité d'embauchage dans la même catégorie d'emploi.",
+        "Il est tenu de communiquer à son Employeur tout changement d'adresse survenu après son départ de l'organe de presse ou Entreprise de presse."
+      ],
+      "mots_cles": ["licenciement économique", "diminution d'activité", "réorganisation", "priorité d'embauchage", "1 an"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 35",
+      "titre": "Indemnité de licenciement",
+      "texte": [
+        "Hormis le cas de faute lourde, en cas de licenciement, le Journaliste ou technicien aura droit à une indemnité de licenciement distincte de l'indemnité de préavis.",
+        "L'indemnité est calculée de la manière suivante : un (1) mois de salaire moyen des douze mois précédant la date du licenciement, par année de service effectif pour les cinq (5) premières années ; un (1) mois et demi de salaire moyen des douze mois précédant la date du licenciement, par année de la 6ème à la 10ème année de présence ; deux (2) mois de salaire moyen des douze mois précédant la date du licenciement, par année de la 10ème à la 15ème année ; deux (2) mois et demi de salaire moyen des douze mois précédant la date du licenciement, par année de la 16ème à la 20ème année ; trois (3) mois de salaire moyen des douze mois précédant la date du licenciement, au-delà de la 20ème année.",
+        "L'indemnité ainsi calculée ne peut dépasser 33 mois de traitement."
+      ],
+      "mots_cles": ["indemnité de licenciement", "salaire moyen", "ancienneté", "33 mois maximum"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 36",
+      "titre": "Rupture du contrat du salarié malade",
+      "texte": [
+        "À l'expiration du délai de douze (12) mois, si le salarié dont le contrat de travail a été suspendu pour cause de maladie se trouve dans l'incapacité de reprendre son travail, l'Employeur peut le remplacer définitivement, après lui avoir notifié par lettre recommandée son intention de mettre fin au contrat de travail."
+      ],
+      "mots_cles": ["maladie", "12 mois", "incapacité", "remplacement définitif"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 37",
+      "titre": "Certificat de travail",
+      "texte": [
+        "Au moment de quitter définitivement l'Entreprise de presse, tout salarié doit se faire remettre par son Employeur un certificat de travail, indiquant exclusivement le nom et l'adresse de l'organe, la date de son entrée, celle de sa sortie, la nature et les dates des emplois successivement occupés avec éventuellement référence aux classifications prévues en annexe de la présente convention.",
+        "Il peut être remis au Journaliste salarié sur sa demande, au début de la période de préavis, un certificat provisoire.",
+        "La non remise du certificat de travail expose l'employeur au paiement des dommages intérêts."
+      ],
+      "mots_cles": ["certificat de travail", "certificat provisoire", "dommages intérêts"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 38",
+      "titre": "Mise à la retraite",
+      "texte": [
+        "1/ Modalités : L'âge de départ à la retraite des agents est fixé à soixante (60) ans conformément à la législation en vigueur. L'Employeur est tenu d'assurer la transmission du dossier constitué par l'agent à la Caisse Nationale de Sécurité Sociale (CNSS).",
+        "Tout salarié retraité continuera à bénéficier des consultations gratuites dans un centre médico-social agréé ou auprès d'un médecin agréé.",
+        "Les Journalistes nés vers, atteindront la limite d'âge de 60 ans le 31 décembre de l'année en cours. Les Journalistes nés à des dates précises, atteindront leur limite d'âge le premier jour du mois qui suit le mois de naissance.",
+        "Toutefois, en cas d'incapacité physique, le salarié qui a atteint l'âge fixé par le Code de sécurité sociale, peut demander au Directeur Général de la CNSS, le bénéfice de la pension anticipée. La retraite obtenue par anticipation prend effet le premier jour du mois suivant la date de cessation de service.",
+        "Tout Journaliste cessant définitivement ses fonctions fait l'objet d'une récapitulation de carrière destinée à établir sa situation administrative au moment de son départ à la retraite. Un relevé de service lui est délivré avec la notification « retraite ». Ce relevé de service, visé par l'intéressé et signé par l'employeur, clos le dossier administratif de l'agent ou du Journaliste.",
+        "Le relevé de service sert de base au calcul des rappels de salaires éventuellement dus à l'agent ; du montant des retenues dues par l'agent à l'Entreprise de Presse ; du net à payer à l'Agent par l'entreprise ou du net à rembourser par le Journaliste à l'entreprise de Presse.",
+        "2/ Indemnité : Au moment du départ à la retraite tout agent percevra une indemnité dite « Indemnité de fin de carrière » égale à six (6) mois de salaire de base augmentée de la prime d'ancienneté. Toutefois, l'entreprise de presse peut adopter, par Accord d'établissement, des conditions de départ à la retraite plus favorables aux présentes dispositions."
+      ],
+      "mots_cles": ["retraite", "60 ans", "CNSS", "indemnité de fin de carrière", "6 mois", "pension anticipée"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 39",
+      "titre": "Décès du salarié",
+      "texte": [
+        "1. En cas de décès du salarié, les indemnités et primes de toute nature acquises à la date du décès, après déductions des prêts et acomptes contractés par le de cujus auprès de l'employeur reviennent de plein droit à ses héritiers qui doivent justifier de leur qualité par la présentation d'un certificat d'hérédité ou d'un acte notarié.",
+        "2. Les frais d'inhumation sont à la charge de l'Employeur qui versera au conjoint, à ses enfants ou aux autres ayants droit conformément aux dispositions du code de la famille, un capital de décès calculé sur la base de la rémunération globale du dernier mois de service effectif précédant le décès, majoré de quinze (15) jours pour chaque enfant à charge comme suit : 2 mois de salaire pour l'agent comptant moins d'un an d'ancienneté ; 3 mois pour l'agent comptant entre 1 et 5 ans d'ancienneté ; 4 mois pour l'agent comptant entre 6 et 15 ans d'ancienneté ; 5 mois pour l'agent comptant entre 16 et 20 ans d'ancienneté ; 6 mois pour l'agent comptant plus de 20 ans d'ancienneté.",
+        "En outre qu'il s'agisse du décès du journaliste lui-même ou d'un membre de sa famille au sens du code de la sécurité sociale, l'Employeur participera aux frais d'inhumation par la fourniture forfaitaire de : a) Travailleur : Cercueil et corbillard. b) Conjoint(e) : Une contribution de deux cent mille (200.000) F CFA. c) Enfant : Une contribution de l'employeur de cent mille (100.000) F CFA. d) Travailleur en mission, décédé à l'étranger : L'Entreprise assure le transfert des restes mortelles d'un agent en mission décédé à l'étranger. e) Travailleur en vacance décédé à l'étranger : Le transfert des restes mortelles d'un agent en vacance, décédé à l'étranger, n'est pas supporté par l'Entreprise. Une aide laissée à la discrétion de l'Employeur, Chef d'Entreprise de presse, est apportée à la famille du de cujus."
+      ],
+      "mots_cles": ["décès", "capital décès", "frais d'inhumation", "héritiers", "200000 FCFA", "100000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 40",
+      "titre": "Démission",
+      "texte": [
+        "La démission ne peut résulter que d'une demande de l'intéressé par écrit marquant sa volonté de cesser ses fonctions.",
+        "La direction de l'Entreprise doit se prononcer, dans un délai de trente (30) jours. Passé ce délai, le journaliste démissionnaire peut se considérer délié de ses obligations vis à vis de l'Entreprise même si l'Employeur ne s'est pas prononcé.",
+        "Toutefois, il doit, conformément à la réglementation en vigueur, accomplir le temps légal de préavis."
+      ],
+      "mots_cles": ["démission", "demande écrite", "30 jours", "préavis"],
+      "statut": "en vigueur",
+      "section": "Titre 3 - Chapitre IV : Rupture du contrat de travail"
+    },
+    {
+      "article": "Art. 41",
+      "titre": "Tenue de travail",
+      "texte": [
+        "Dans les entreprises ou organes de presse où le port d'une tenue de travail est obligatoire pour certaines catégories de travailleurs, l'employeur doit la fournir gratuitement. L'entretien de ces tenues, qui par mesure d'hygiène doivent toujours être en parfait état de propreté, est à la charge du Travailleur.",
+        "Dans les secteurs de l'entreprise où le port d'une tenue est obligatoire pendant les heures de travail, l'Employeur met à la disposition des agents cette tenue en double.",
+        "Dans tous les cas, cette tenue demeure propriété de l'Entreprise qui en définit par ailleurs les modalités de remplacement ainsi que les modalités d'entretien.",
+        "Outre la tenue de travail, des moyens de protection (casques, masques, gants, etc.) sont mis à la disposition des salariés affectés à des travaux spéciaux, dans les cas prévus par la réglementation sur l'hygiène et la sécurité au travail."
+      ],
+      "mots_cles": ["tenue de travail", "équipement", "protection", "hygiène"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre I : Conditions de travail - Dispositions générales"
+    },
+    {
+      "article": "Art. 42",
+      "titre": "Durée et heures de travail",
+      "texte": [
+        "La durée hebdomadaire du travail est fixée à 48 heures de travail.",
+        "La répartition de la durée hebdomadaire est faite suivant un horaire daté et signé par le chef de l'entreprise, après avis des délégués du personnel et de l'Inspecteur de Travail du ressort et affiché aux emplacements habituels."
+      ],
+      "mots_cles": ["durée du travail", "48 heures", "horaire", "délégués du personnel"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre I : Conditions de travail - Dispositions générales"
+    },
+    {
+      "article": "Art. 43",
+      "titre": "Heures supplémentaires",
+      "texte": [
+        "Les heures supplémentaires effectuées par les Salariés de l'information et de la communication ne sont pas comprises dans le volume horaire de 48 heures par semaine.",
+        "L'employeur se réserve le droit d'organiser les permanences dans les limites et aux conditions fixées par la législation et la réglementation en vigueur.",
+        "Sauf cas d'urgence, le personnel désigné pour assurer la permanence sera prévenu d'avance."
+      ],
+      "mots_cles": ["heures supplémentaires", "permanences", "48 heures"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre I : Conditions de travail - Dispositions générales"
+    },
+    {
+      "article": "Art. 44",
+      "titre": "Travail de nuit",
+      "texte": [
+        "Conformément aux dispositions du Code du Travail en la matière, le travail effectué entre vingt (20) heures du soir et cinq (5) heures du matin est, en toute saison, considéré comme travail de nuit."
+      ],
+      "mots_cles": ["travail de nuit", "20 heures", "5 heures"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre I : Conditions de travail - Dispositions générales"
+    },
+    {
+      "article": "Art. 45",
+      "titre": "Travail des femmes",
+      "texte": [
+        "Sous réserve des dispositions du Code du Travail et de la réglementation du travail, la femme salariée peut occuper tout emploi correspondant à ses compétences et à ses capacités.",
+        "Il est interdit de réduire le salaire d'une femme pour des motifs concernant la grossesse ou l'allaitement de son enfant.",
+        "L'employée, si elle le demande, peut bénéficier d'un congé sans solde qui suspend les effets de son contrat de travail, jusqu'à ce que son enfant atteigne un (1) an.",
+        "Durant ce congé sans solde, elle ne peut être licenciée, ni en cas de réduction d'activité, ni en cas de réorganisation de l'entreprise de presse."
+      ],
+      "mots_cles": ["travail des femmes", "grossesse", "allaitement", "congé sans solde", "protection"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre I : Conditions de travail - Dispositions générales"
+    },
+    {
+      "article": "Art. 46",
+      "titre": "Travail des enfants",
+      "texte": [
+        "Toute embauche des personnes de moins de 16 ans est interdite conformément aux conventions internationales sur la protection de l'enfance."
+      ],
+      "mots_cles": ["travail des enfants", "16 ans", "interdiction", "protection de l'enfance"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre I : Conditions de travail - Dispositions générales"
+    },
+    {
+      "article": "Art. 47",
+      "titre": "Logement de fonction",
+      "texte": [
+        "L'Employeur peut octroyer des logements de fonction à ses cadres employés. À défaut, il peut leur allouer une indemnité de logement.",
+        "En cas de rupture du contrat de travail, le travailleur installé dans un logement mis à sa disposition par l'employeur est tenu de l'évacuer dans les délais fixés ci-après : en cas de notification du préavis, l'évacuation du logement a lieu à l'expiration du délai de préavis ; en cas de rupture du contrat par le travailleur sans que le délai de préavis ait été respecté, l'évacuation du logement est immédiate ; en cas de licenciement pour faute lourde, l'évacuation a lieu dans un délai de trente (30) jours ; en cas de licenciement sans que l'employeur n'ait observé le préavis, le travailleur a droit à l'occupation du logement de fonction ou à une indemnité compensatrice de logement pendant la période du préavis qu'il n'aura pas été effectivement respectée ; en cas de départ à la retraite, le travailleur dispose d'un délai de trois (3) mois après son admission à la retraite pour libérer le logement mis à sa disposition par l'entreprise ; en cas de décès du travailleur, les ayants droit disposent d'un délai de trois (3) mois à partir de la date de l'inhumation du travailleur décédé pour libérer le logement de fonction.",
+        "En cas de non-paiement des droits de rupture du contrat de travail, le travailleur continuera à occuper le logement, jusqu'à l'apurement effectif desdits droits."
+      ],
+      "mots_cles": ["logement de fonction", "indemnité de logement", "évacuation", "délais", "retraite", "décès"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre I : Conditions de travail - Dispositions générales"
+    },
+    {
+      "article": "Art. 48",
+      "titre": "Congés payés",
+      "texte": [
+        "Le salarié acquiert un droit à congé égal à vingt six (26) jours ouvrables après une durée de service effectif égale à douze (12) mois conformément aux dispositions du code du travail.",
+        "Les contrats individuels pourront prévoir une durée plus longue de service effectif ouvrant droit de jouissance au congé, sans que cette durée puisse être supérieure à vingt quatre (24) mois."
+      ],
+      "mots_cles": ["congés payés", "26 jours", "12 mois", "24 mois"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre II : Congés payés et autres absences"
+    },
+    {
+      "article": "Art. 49",
+      "titre": "Congés pour convenance personnelle",
+      "texte": [
+        "Un congé pour convenance personnelle est accordé à tout salarié qui en fera la demande pour une durée d'un (1) an renouvelable une fois.",
+        "Pendant la jouissance de ce congé, l'agent ne peut prétendre ni à la rémunération ni aux avantages de toutes sortes.",
+        "Le bénéficiaire adressera à l'issue dudit congé, une demande de réintégration."
+      ],
+      "mots_cles": ["congé convenance personnelle", "1 an", "renouvelable", "réintégration"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre II : Congés payés et autres absences"
+    },
+    {
+      "article": "Art. 50",
+      "titre": "Congés supplémentaires",
+      "texte": [
+        "La durée des congés est augmentée comme suit, en considération de l'ancienneté du travailleur dans l'entreprise : 2 jours ouvrables supplémentaires après 3 ans de service effectif ; 4 jours après 5 ans ; 5 jours après 10 ans ; 7 jours après 15 ans ; 9 jours après 20 ans.",
+        "L'ordre des départs en congé est établi par l'employeur en fonction des nécessités de l'entreprise et, dans la mesure du possible, du désir des travailleurs. Informés par voie d'affichage ou par leur hiérarchie.",
+        "Le travailleur part normalement à la date d'expiration de la durée du service effectif lui donnant droit aux congés. Toutefois, si l'employeur estime que les nécessités de service l'exigent, il peut avancer ou retarder le départ du travailleur à condition que la date effective du départ en congé ne soit pas antérieure ou postérieure de plus de trois (3) mois à la date initialement prévue.",
+        "Le rappel d'un travailleur en congé ne peut intervenir que lorsque la bonne marche de l'entreprise ou de l'un de ses services l'exige. Le travailleur appelé conserve intégralement le bénéfice de son allocation de congé et perçoit de nouveau son salaire dès la reprise du travail. Il bénéficie lors du congé suivant d'une prolongation égale au nombre de jours perdus par suite du rappel. Cette prolongation est payée.",
+        "Hors le cas de rupture ou d'expiration du contrat, est nulle et de nul effet toute convention prévoyant l'octroi d'une indemnité compensatrice en lieu et place du congé."
+      ],
+      "mots_cles": ["congés supplémentaires", "ancienneté", "2 jours", "4 jours", "5 jours", "7 jours", "9 jours", "rappel"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre II : Congés payés et autres absences"
+    },
+    {
+      "article": "Art. 51",
+      "titre": "Permissions exceptionnelles",
+      "texte": [
+        "Les permissions exceptionnelles, à l'occasion d'événements familiaux touchant directement le salarié, peuvent lui être accordées dans une limite de dix (10) jours par année civile, sans retenue de salaire, sans déduction de la durée du congé acquis et sur présentation des pièces d'état civil ou justification probante, dans les conditions suivantes :",
+        "Maladie d'un enfant à charge ou d'un(e) conjoint(e) : 1 jour ; décès d'un(e) conjoint(e) : 10 jours ; décès d'un(e) descendant(e) ou d'un(e) ascendant(e) : 7 jours ; destruction accidentelle de l'habitation : 10 jours ; mariage de l'agent : 5 jours ; mariage d'un enfant, frère, sœur, en ligne directe : 5 jours ; examen ou concours professionnel : 5 jours ; accouchement de la femme de l'agent : 3 jours ; déménagement de l'agent : 3 jours ; baptême d'un enfant : 3 jours.",
+        "En dehors des cas ci-dessus cités, tout autre motif d'absence ne donne pas droit à la rémunération."
+      ],
+      "mots_cles": ["permissions exceptionnelles", "10 jours", "mariage", "décès", "accouchement", "événements familiaux"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre II : Congés payés et autres absences"
+    },
+    {
+      "article": "Art. 52",
+      "titre": "Allocations de congé",
+      "texte": [
+        "L'employeur doit verser au travailleur, pour toute la durée du congé, une allocation qui est calculée conformément à la réglementation en vigueur.",
+        "L'allocation des congés est versée en totalité au travailleur le jour de son départ en congé."
+      ],
+      "mots_cles": ["allocation de congé", "versement", "départ en congé"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre II : Congés payés et autres absences"
+    },
+    {
+      "article": "Art. 53",
+      "titre": "Frais de transport",
+      "texte": [
+        "Conformément aux dispositions réglementaires, le travailleur bénéficie de la prise en charge par l'employeur des frais de transport, pour lui-même et sa famille, lorsque l'affectation ou la mutation est effectuée sur l'initiative de l'employeur.",
+        "Les classes de passage du travailleur à l'intérieur de la République du Congo : Employés : Train 2ème classe, Bateau 2ème classe, Avion classe économique ; Agents de maîtrise : Train 1ère classe, Bateau 1ère classe, Avion classe économique ; Cadres : Train 1ère classe, Bateau 1ère classe, Avion classe affaires."
+      ],
+      "mots_cles": ["frais de transport", "classes de passage", "train", "bateau", "avion", "mutation"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre III : Voyages, transport, déplacement"
+    },
+    {
+      "article": "Art. 54",
+      "titre": "Transport des bagages",
+      "texte": [
+        "Lorsque l'affectation ou la mutation est effectuée sur l'initiative de l'employeur, celui-ci assure le transport gratuit des bagages dans les conditions ci-après : 250 kilos de bagages en sus de la franchise pour le travailleur et son ou ses épouse(s) ; 75 kilos en sus de la franchise pour chacun de ses enfants à charge et vivant habituellement avec lui."
+      ],
+      "mots_cles": ["transport des bagages", "250 kilos", "75 kilos", "mutation"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre III : Voyages, transport, déplacement"
+    },
+    {
+      "article": "Art. 55",
+      "titre": "Frais de mission",
+      "texte": [
+        "Les frais de mission journaliers sont fixés comme suit : Employés ou Ouvriers : 25.000 FCFA ; Agents de maîtrise : 40.000 FCFA ; Cadres : 50.000 FCFA."
+      ],
+      "mots_cles": ["frais de mission", "25000 FCFA", "40000 FCFA", "50000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre 4 - Chapitre III : Voyages, transport, déplacement"
+    },
+    {
+      "article": "Art. 56",
+      "titre": "Définition du salaire",
+      "texte": [
+        "Le salaire est composé du salaire de base, des primes et indemnités."
+      ],
+      "mots_cles": ["salaire", "salaire de base", "primes", "indemnités"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Chapitre I : Du salaire - Dispositions générales"
+    },
+    {
+      "article": "Art. 57",
+      "titre": "Modalités d'attribution du salaire",
+      "texte": [
+        "Le salaire de base est la contrepartie du travail effectué. Il est fixé à l'heure, au jour ou au mois.",
+        "À conditions égales de travail, de qualification professionnelle et de rendement, le salaire est égal pour tous les travailleurs, quels que soient leurs origines, leurs sexes, leurs âges et leurs statuts.",
+        "Le salaire de base de chaque travailleur est déterminé en fonction de la catégorie à laquelle est classé l'agent, l'emploi qu'il occupe suivant la classification des emplois en annexe à la présente Convention collective.",
+        "Le salaire de base par catégorie exprimé en FRANCS CFA est fixé par la Grille en Annexe à la présente Convention collective ou dans chaque entreprise par un Accord d'établissement, à la condition d'être plus favorable que ceux de la présente Convention collective."
+      ],
+      "mots_cles": ["salaire de base", "égalité salariale", "classification", "grille de salaires"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Chapitre I : Du salaire - Dispositions générales"
+    },
+    {
+      "article": "Art. 58",
+      "titre": "Prime d'ancienneté",
+      "texte": [
+        "La prime d'ancienneté est une majoration du salaire de base qui est allouée au salarié dans les conditions suivantes : de 2 à 5 ans : 5% ; de 6 à 10 ans : 7% ; de 11 à 15 ans : 10% ; de 15 à 20 ans : 15% ; au-delà de 20 ans : 20%."
+      ],
+      "mots_cles": ["prime d'ancienneté", "majoration", "5%", "7%", "10%", "15%", "20%"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Chapitre III : Des primes"
+    },
+    {
+      "article": "Art. 59",
+      "titre": "Prime de fin d'année",
+      "texte": [
+        "Une prime de fin d'année, équivalente à un (1) mois de salaire de base augmenté de la prime d'ancienneté est versée par l'Entreprise à tout salarié effectivement présent pendant toute la période du 1er janvier au 31 décembre.",
+        "Cette prime est calculée au prorata des mois de service de l'année considérée à tout salarié ayant au moins une (1) année d'ancienneté dans l'entreprise, congédié en cours d'année par suite d'une diminution d'activité de l'entreprise ou d'une réorganisation interne.",
+        "Toutefois, le paiement de cette prime est subordonné à la réalisation de l'objectif annuel assigné par la direction générale de l'organe ou Entreprise de presse.",
+        "Tout salarié ayant fait, en cours d'année l'objet d'une ou de plusieurs sanctions (blâme au minimum) peut voir sa prime réduite ou même supprimée, sauf avis contraire de l'Inspecteur du Travail du ressort saisi par le salarié concerné ou le délégué du personnel de l'Entreprise de presse.",
+        "En cas de diminution de l'activité, de retournement de la conjoncture économique, les partenaires sociaux de l'Entreprise peuvent différer ou réviser cette prime de fin d'année d'accord parties."
+      ],
+      "mots_cles": ["prime de fin d'année", "13ème mois", "ancienneté", "objectif annuel", "sanctions"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Chapitre III : Des primes"
+    },
+    {
+      "article": "Art. 60",
+      "titre": "Indemnité de transport",
+      "texte": [
+        "Une prime de Transport de dix mille francs (10.000 F CFA) par mois est attribuée à tout Agent de l'Information et de la Communication évoluant dans les entreprises privées de presse."
+      ],
+      "mots_cles": ["indemnité de transport", "10000 FCFA", "mensuelle"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Chapitre III : Des primes"
+    },
+    {
+      "article": "Art. 61",
+      "titre": "Prime de risque",
+      "texte": [
+        "Les risques encourus par le salarié dans l'exercice de ses fonctions sont à la charge de son employeur."
+      ],
+      "mots_cles": ["prime de risque", "risques professionnels", "charge employeur"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Chapitre III : Des primes"
+    },
+    {
+      "article": "Art. 62",
+      "titre": "Prime de panier",
+      "texte": [
+        "Une prime dite « de panier » est due aux personnels des médias dont une prolongation exceptionnelle de la durée de travail les empêche de prendre un repas à l'heure habituelle.",
+        "Elle est due lorsque cette prolongation réduit à moins d'une (1) heure le temps disponible laissé au salarié ou lorsqu'elle est d'au moins une (1) heure dans le cas où le(la) salarié(e) ne reprendrait pas son travail dans la même journée.",
+        "Dans le cas où cette prolongation de travail serait supérieure à une (1) heure et ne permet pas au salarié de rentrer chez lui pour prendre son repas, il lui est versé une prime dont le montant est fixé à 2.000 F CFA."
+      ],
+      "mots_cles": ["prime de panier", "2000 FCFA", "prolongation", "repas"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Chapitre III : Des primes"
+    },
+    {
+      "article": "Art. 63",
+      "titre": "Avantages divers",
+      "texte": [
+        "1/ Mise d'équipement : Il est alloué à tout agent mis en stage à l'étranger, pour une durée d'au moins trois (3) mois, une indemnité de mise d'équipement d'un montant égal à cinquante mille (50.000) francs CFA.",
+        "2/ Avance de salaire : Les agents mutés d'une localité à une autre ou mis en stage pourront, sur leur demande et avant leur départ, percevoir une avance de salaire égale au maximum à un mois de leur rémunération. Les agents qui seront affectés à leur demande n'en seront pas bénéficiaires."
+      ],
+      "mots_cles": ["mise d'équipement", "50000 FCFA", "avance de salaire", "stage étranger"],
+      "statut": "en vigueur",
+      "section": "Titre 5 - Chapitre III : Des primes"
+    },
+    {
+      "article": "Art. 64",
+      "titre": "Dispositions générales - Sécurité et santé au travail",
+      "texte": [
+        "Les parties contractantes affirment leur volonté de tout mettre en œuvre pour garantir et préserver la santé et la sécurité des salariés.",
+        "L'Employeur s'entoure de tous les avis qualifiés pour l'élaboration et l'application des consignes de sécurité. Les salariés doivent respecter les consignes prises pour la prévention des accidents et maladies professionnelles, notamment celles concernant le port de matériel de protection individuelle.",
+        "Les équipements de protection nécessaires à l'exécution des travaux dangereux sont fournis par l'employeur. Il en est de même pour les effets de protection nécessaires à l'exécution de certains travaux exposant les vêtements des ouvriers à une détérioration prématurée. Dans les deux cas, l'entretien des équipements et des effets de protection est assuré par l'employeur.",
+        "Les signataires se tiennent en étroite relation pour l'étude et la mise en application de toutes les dispositions propres à augmenter la sécurité des salariés et améliorer les conditions d'hygiène du travail.",
+        "Les salariés affectés à des postes comportant des risques de maladies ou d'accidents font l'objet d'une surveillance spéciale. Les autres salariés doivent être soumis annuellement à deux (2) visites médicales de contrôle, conformément à la réglementation du travail en vigueur.",
+        "Lorsque le médecin agréé de l'entreprise estime qu'une mutation provisoire est nécessaire pour sauvegarder l'état de santé d'un salarié, cette mutation intervient sans conséquences préjudiciables pour ledit salarié.",
+        "L'entreprise s'engage à fournir l'assistance juridique aux salariés ayant subi toutes sortes d'outrages, d'injures, de diffamations, de menaces, d'attaques, ou voies de fait dans l'exercice de leurs fonctions, en vue de l'obtention de la réparation des préjudices éventuellement subis."
+      ],
+      "mots_cles": ["sécurité", "santé au travail", "équipements de protection", "visites médicales", "assistance juridique"],
+      "statut": "en vigueur",
+      "section": "Titre 6 : Sécurité et santé au travail"
+    },
+    {
+      "article": "Art. 65",
+      "titre": "Sécurité du travail",
+      "texte": [
+        "Les parties reconnaissent l'intérêt de la prévention des risques professionnels sur les lieux de travail. À cet effet, il est institué un comité d'hygiène, de sécurité (CHS) dont le rôle est de veiller à l'application pratique des mesures d'hygiène et de sécurité, conformément à la réglementation en vigueur.",
+        "Ce comité est constitué comme suit : Président : le Chef d'entreprise ou son représentant ; Membres : le Directeur de Publication ou son Représentant ; le médecin agréé de l'entreprise ; le Chef du personnel ; un Inspecteur du Travail ; le ou les Délégués du personnel ; le ou les Représentants Syndicaux.",
+        "Dans les secteurs de l'entreprise où le port d'une tenue est obligatoire pendant les heures de travail, l'Employeur met à la disposition des agents cette tenue en double. Dans tous les cas, cette tenue demeure propriété de l'Entreprise qui en définit par ailleurs les modalités de remplacement ainsi que les modalités d'entretien.",
+        "Outre la tenue de travail, des moyens de protection (casques, masques, gants, etc.) sont mis à la disposition des salariés affectés à des travaux spéciaux, dans les cas prévus par la réglementation sur l'hygiène et la sécurité au travail."
+      ],
+      "mots_cles": ["comité d'hygiène et sécurité", "CHS", "prévention", "risques professionnels", "tenue de travail"],
+      "statut": "en vigueur",
+      "section": "Titre 6 : Sécurité et santé au travail"
+    },
+    {
+      "article": "Art. 66",
+      "titre": "Surveillance médicale",
+      "texte": [
+        "Afin de prévenir toute altération de la santé du fait du travail, les salariés bénéficient des examens médicaux et éventuellement, des examens complémentaires prévus par la réglementation en vigueur, notamment en ce qui concerne leur nature, leur périodicité et les délais de leur réalisation.",
+        "Les salariés régis par la présente convention ont droit pour eux-mêmes, leurs épouses et enfants à charge, aux soins médicaux et à l'hospitalisation dans les conditions ci-après : les visites médicales sont effectuées auprès du médecin agréé par l'entreprise ou éventuellement d'un médecin du centre médical agréé par l'entreprise ; les soins médicaux sont donnés dans le centre médico-social de l'entreprise ou dans les hôpitaux publics."
+      ],
+      "mots_cles": ["surveillance médicale", "examens médicaux", "soins médicaux", "médecin agréé"],
+      "statut": "en vigueur",
+      "section": "Titre 6 : Sécurité et santé au travail"
+    },
+    {
+      "article": "Art. 67",
+      "titre": "Prise en charge médicale",
+      "texte": [
+        "L'employeur assure la prise en charge des frais médicaux et pharmaceutiques des travailleurs de l'entreprise, du conjoint, des enfants légitimes et à charge. Par travailleur, il faut entendre le travailleur embauché pour une durée indéterminée ou déterminée, celui en période d'essai ainsi que les personnes placées en apprentissage dans les formes prescrites par la loi.",
+        "Tout travailleur gravement malade peut bénéficier, sur décision médicale, d'une évacuation sanitaire prise en charge par l'entreprise sans distinction de grade ou de catégorie.",
+        "1- Frais médicaux et pharmaceutiques : Les frais pharmaceutiques, les analyses médicales et les soins médicaux du travailleur, de son épouse, de ses enfants mineurs légalement à sa charge et vivant habituellement avec lui, à condition qu'ils soient prescrits sur l'ordonnance médicale nominative par l'un des médecins agréés par l'établissement ou ceux des centres hospitaliers publics, sont pris en charge par l'entreprise ou organe de presse sur présentation des pièces justificatives de la manière suivante : 50% pour le travailleur ; 30% pour l'épouse et les enfants à charge.",
+        "2- Frais d'hospitalisation : En cas d'hospitalisation du travailleur, les frais d'hospitalisation sont pris en charge à hauteur de 50%, à la condition que celle-ci ait lieu dans une structure hospitalière publique à l'intérieur du territoire de la République du Congo ou dans une structure sanitaire agréée par l'entreprise. En cas de maladie du travailleur et de sa famille au sens du Code de la Sécurité Sociale, à l'étranger au cours d'un déplacement par le fait de l'employeur, il est fait application des dispositions ci-dessus. Les mêmes dispositions s'appliquent aux cas d'évacuation à l'étranger. En cas d'hospitalisation du conjoint du travailleur ou de ses enfants, les frais d'hospitalisation sont pris en charge à hauteur de 30% par l'employeur.",
+        "3- Frais ophtalmiques : L'entreprise prend en charge, à hauteur de 50%, sur présentation d'une ordonnance établie par l'un des médecins agréés par elle, pour le travailleur de l'organe de presse, les verres correcteurs et la monture ordinaire. En cas de bris des lunettes suite à un accident de travail, les verres et la monture seront supportés à 100% par l'Employeur, sur présentation du procès-verbal d'accident. Il en est de même lorsque la détérioration de la vue résulte de l'activité professionnelle."
+      ],
+      "mots_cles": ["prise en charge médicale", "frais pharmaceutiques", "50%", "30%", "hospitalisation", "évacuation sanitaire", "frais ophtalmiques"],
+      "statut": "en vigueur",
+      "section": "Titre 6 : Sécurité et santé au travail"
+    },
+    {
+      "article": "Art. 68",
+      "titre": "Services sociaux",
+      "texte": [
+        "L'employeur reconnaît l'utilité des services sociaux au sein de l'entreprise de presse et accepte d'en créer conformément aux textes réglementaires en vigueur.",
+        "Dans la limite de ses possibilités financières, il accepte, en liaison avec les représentants du personnel, de créer des installations sportives, d'organiser des excursions touristiques des travailleurs à l'occasion de la fête du 1er mai et des colonies de vacances ainsi que des activités culturelles."
+      ],
+      "mots_cles": ["services sociaux", "installations sportives", "activités culturelles", "1er mai"],
+      "statut": "en vigueur",
+      "section": "Titre 6 : Sécurité et santé au travail"
+    },
+    {
+      "article": "Art. 69",
+      "titre": "Récompenses",
+      "texte": [
+        "En cas d'action particulièrement méritoire sur le plan professionnel, les récompenses suivantes, sans être limitatives, peuvent être décernées à l'agent : Encouragement ; Témoignage de satisfaction ; Mention honorable ; Une décoration ; Une promotion.",
+        "Ces récompenses sont décernées par le président du Conseil d'administration sur proposition du Directeur général de l'organe de presse.",
+        "L'encouragement est accordé aux travailleurs qui, dans les circonstances normales, ont fait preuve de zèle, de probité et d'intelligence professionnelle.",
+        "Le témoignage de satisfaction est décerné pour des faits plus importants, des actes de courage, de dévouement ou d'humanité.",
+        "La mention honorable est décernée aux travailleurs qui, dans les circonstances difficiles ou dangereuses, ont obtenu un résultat de service significatif ou à celui qui a exposé sa vie en accomplissant un acte héroïque pour sauver ses semblables.",
+        "Ces actions particulières méritoires sur le plan professionnel méritent les récompenses suivantes, sans être limitatives : un stimulant matériel ; un diplôme d'honneur ; une décoration ; une promotion."
+      ],
+      "mots_cles": ["récompenses", "encouragement", "satisfaction", "mention honorable", "décoration", "promotion"],
+      "statut": "en vigueur",
+      "section": "Titre 7 : Dispositions diverses et transitoires"
+    },
+    {
+      "article": "Art. 70",
+      "titre": "Aide et secours",
+      "texte": [
+        "a) Une avance de solde d'un (1) mois remboursable est accordée à tout travailleur à l'occasion : du décès d'un membre de sa famille (conjoint, enfants, père et mère) sous réserve que sa capacité de remboursement le lui permette ; de la mutation d'un agent ; du mariage d'un agent.",
+        "b) En cas de sinistre (éboulement de terrain, incendie maison, inondation maison...) dûment constaté par le service social de l'entreprise et un huissier de justice, un secours non remboursable est accordé au sinistré dont le montant ne peut excéder cent mille (100.000) francs CFA."
+      ],
+      "mots_cles": ["aide", "secours", "avance de solde", "sinistre", "100000 FCFA"],
+      "statut": "en vigueur",
+      "section": "Titre 7 : Dispositions diverses et transitoires"
+    },
+    {
+      "article": "Art. 71",
+      "titre": "Commission d'interprétation et de conciliation",
+      "texte": [
+        "Il est institué une commission paritaire d'interprétation et de conciliation pour rechercher une solution amiable aux différends pouvant résulter de l'interprétation et de l'application de la présente Convention ou de ses annexes et/ou additifs éventuels.",
+        "Cette commission ne doit pas enregistrer les litiges individuels qui ne devront pas venir mettre en cause le sens et la portée de la présente convention.",
+        "La composition de la commission est la suivante : deux (02) membres titulaires et deux (02) suppléants de chaque organisation syndicale des travailleurs signataires ; un nombre égal des membres patronaux titulaires et suppléants ; les Inspecteurs de Travail dûment mandatés par la DDT ou la DGTSS.",
+        "Les noms des membres titulaires et suppléants des organisations syndicales sont communiqués ou transmis à la DDT de Brazzaville ou la DGTSS à Brazzaville par la partie la plus diligente.",
+        "La partie signataire qui désire soumettre un différend à la commission doit le porter par écrit à la connaissance de toutes les autres parties ainsi que de l'autorité administrative. Celle-ci est tenue de réunir la commission dans les plus brefs délais.",
+        "Lorsque la commission donne un avis à l'unanimité des organisations représentées, le texte de cet avis est signé par les membres de la commission. Cet avis fait l'objet d'un dépôt au greffe du tribunal du travail, à la diligence de l'autorité qui a réuni la commission."
+      ],
+      "mots_cles": ["commission d'interprétation", "conciliation", "commission paritaire", "différends", "DDT", "DGTSS"],
+      "statut": "en vigueur",
+      "section": "Titre 8 : Du dialogue social"
+    },
+    {
+      "article": "Art. 72",
+      "titre": "Commission de classement",
+      "texte": [
+        "Si le salarié conteste lui-même, ou par l'intermédiaire d'un représentant du personnel mandaté par lui auprès de l'employeur le classement de son emploi dans la hiérarchie professionnelle et qu'une suite favorable n'est pas donnée à sa réclamation, le différend est porté devant la commission paritaire de classement par l'intéressé, s'il le juge nécessaire.",
+        "Cette commission, présidée par l'inspecteur du Travail du ressort, est composée à parité des représentants de l'employeur, et des représentants des salariés. Les représentants des salariés sont désignés par les syndicats les plus représentatifs de l'entreprise.",
+        "Le salarié adresse sa requête ou la fait adresser par son organisation syndicale à l'inspecteur du Travail du ressort qui convoque la réunion de la commission. Elle se réunit à la diligence du Directeur Général, Patron ou Chef de l'Organe de Presse."
+      ],
+      "mots_cles": ["commission de classement", "hiérarchie professionnelle", "contestation", "inspecteur du travail"],
+      "statut": "en vigueur",
+      "section": "Titre 8 : Du dialogue social"
+    },
+    {
+      "article": "Art. 73",
+      "titre": "Commission d'avancement",
+      "texte": [
+        "Il est institué au sein de chaque entreprise, une commission paritaire d'avancement et de promotion placée sous l'autorité du directeur de l'organe de presse.",
+        "La commission d'avancement est compétente à examiner les dossiers d'avancement des travailleurs en fonction de leur performance.",
+        "Le rôle de la commission est de procéder aux avancements des travailleurs selon les critères définis dans les annexes de la présente convention.",
+        "La composition de cette commission est la suivante : le Directeur de l'organe de presse ; le chef du personnel ; le Responsable administratif et financier ; les Représentants Syndicaux ; les délégués du personnel."
+      ],
+      "mots_cles": ["commission d'avancement", "promotion", "performance", "commission paritaire"],
+      "statut": "en vigueur",
+      "section": "Titre 8 : Du dialogue social"
+    },
+    {
+      "article": "Art. 74",
+      "titre": "Classement des agents",
+      "texte": [
+        "Les catégories et échelons dans lesquels sont classés les travailleurs des entreprises privées de presse sont déterminés par la classification professionnelle figurant en annexe de la présente convention.",
+        "Le classement des travailleurs est fonction de l'emploi qu'ils occupent au sein de l'entreprise.",
+        "Les annexes à la présente Convention Collective fixent les classifications professionnelles et les grilles des salaires des travailleurs."
+      ],
+      "mots_cles": ["classement", "catégories", "échelons", "classification professionnelle", "grilles de salaires"],
+      "statut": "en vigueur",
+      "section": "Titre 8 : Du dialogue social"
     }
   ]
 }
