@@ -1,6 +1,7 @@
 import { Router, Response } from "express";
 import prisma from "../utils/prisma";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
+import { resolveTenant } from "../middleware/tenant.middleware";
 import { validate } from "../middleware/validate.middleware";
 import { updateProfileBody } from "../schemas/user.schema";
 import { asyncHandler } from "../middleware/asyncHandler";
@@ -19,7 +20,7 @@ const router = Router();
  *       200:
  *         description: Profil utilisateur
  */
-router.get("/profile", requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+router.get("/profile", requireAuth, resolveTenant, asyncHandler(async (req: AuthRequest, res: Response) => {
   const user = await prisma.user.findUnique({
     where: { id: req.userId },
     select: {
@@ -103,7 +104,7 @@ router.get("/profile", requireAuth, asyncHandler(async (req: AuthRequest, res: R
  *       200:
  *         description: Profil mis à jour
  */
-router.put("/profile", requireAuth, validate({ body: updateProfileBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
+router.put("/profile", requireAuth, resolveTenant, validate({ body: updateProfileBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const { firstName, lastName, phone, profession } = req.body;
 
   // Construire l'objet de mise à jour avec uniquement les champs fournis
