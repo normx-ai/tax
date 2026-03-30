@@ -17,7 +17,14 @@ export async function resolveTenant(req: AuthRequest, res: Response, next: NextF
     const schema = await createTenantSchema(tenantSlug);
 
     req.tenantSchema = schema;
-    req.orgId = req.userId; // compat
+
+    // Résoudre l'orgId réel via la table organization_members
+    const { default: prisma } = await import("../utils/prisma");
+    const membership = await prisma.organizationMember.findFirst({
+      where: { userId: req.userId },
+      select: { organizationId: true },
+    });
+    req.orgId = membership?.organizationId || req.userId;
 
     // Auto-creer l'utilisateur dans le schema
     await ensureUserInSchema(
