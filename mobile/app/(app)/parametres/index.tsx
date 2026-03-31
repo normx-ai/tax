@@ -23,11 +23,9 @@ import Constants from "expo-constants";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const PLAN_LABELS: Record<string, string> = {
-  FREE: "Gratuit",
+  FREE: "Découverte",
   STARTER: "Starter",
-  PROFESSIONAL: "Professionnel",
-  TEAM: "Équipe",
-  ENTERPRISE: "Entreprise",
+  PRO: "Pro",
 };
 
 export default function ParametresScreen() {
@@ -67,9 +65,9 @@ export default function ParametresScreen() {
     );
   }
 
-  const planLabel = subscription ? (PLAN_LABELS[subscription.plan] || subscription.plan) : "Gratuit";
-  const questionsUsed = subscription?.questionsUsed ?? 0;
-  const questionsMax = subscription?.questionsPerMonth ?? 10;
+  const planLabel = subscription ? (PLAN_LABELS[subscription.plan] || subscription.plan) : "Découverte";
+  const creditsUsed = subscription?.creditsUsed ?? 0;
+  const creditsMax = subscription?.creditsPerMonth ?? 10;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
@@ -163,8 +161,8 @@ export default function ParametresScreen() {
           <Divider colors={colors} />
           <SettingsRow
             icon="chatbubble-ellipses-outline"
-            label={t("settings.aiQuestions")}
-            value={`${questionsUsed} / ${questionsMax} ${t("settings.thisMonth")}`}
+            label="Crédits"
+            value={`${creditsUsed} / ${creditsMax} ce mois`}
             colors={colors}
           />
           {subscription?.currentPeriodEnd && (

@@ -2,7 +2,7 @@ import { Response, NextFunction } from 'express';
 import { AuthRequest } from './keycloak-auth';
 import prisma from '../utils/prisma';
 import { cacheService, CACHE_TTL, CACHE_PREFIX } from '../utils/cache';
-import { PlanName, isPlanAtLeast, isUnlimited, isPaidPlan } from '../types/plans';
+import { PlanName, isPlanAtLeast, isUnlimited, isPaidPlan, CREDITS_PER_AUDIT } from '../types/plans';
 import { createLogger } from '../utils/logger';
 
 const logger = createLogger('SubscriptionMiddleware');
@@ -10,7 +10,7 @@ const logger = createLogger('SubscriptionMiddleware');
 interface SubContext {
   plan: PlanName;
   status: string;
-  questionsPerMonth: number; // quota par user
+  creditsPerMonth: number; // credits mensuels par user
   currentPeriodStart: Date;
   currentPeriodEnd: Date | null;
 }
@@ -32,11 +32,11 @@ async function getSubContext(orgId: string): Promise<SubContext | null> {
       logger.info(`Abonnement expiré pour org ${orgId}`);
       await prisma.subscription.update({
         where: { id: sub.id },
-        data: { status: 'EXPIRED', plan: 'FREE', questionsPerMonth: 0, questionsUsed: 0 },
+        data: { status: 'EXPIRED', plan: 'FREE', creditsPerMonth: 0, creditsUsed: 0 },
       });
       sub.status = 'EXPIRED';
       sub.plan = 'FREE';
-      sub.questionsPerMonth = 0;
+      sub.creditsPerMonth = 0;
     }
   }
 
@@ -47,12 +47,12 @@ async function getSubContext(orgId: string): Promise<SubContext | null> {
     logger.info(`Lazy reset quotas pour org ${orgId}`);
     await prisma.organizationMember.updateMany({
       where: { organizationId: orgId },
-      data: { questionsUsed: 0 },
+      data: { creditsUsed: 0 },
     });
     await prisma.subscription.update({
       where: { id: sub.id },
       data: {
-        questionsUsed: 0,
+        creditsUsed: 0,
         currentPeriodStart: new Date(now.getFullYear(), now.getMonth(), 1),
       },
     });
@@ -62,7 +62,7 @@ async function getSubContext(orgId: string): Promise<SubContext | null> {
   const ctx: SubContext = {
     plan: sub.plan as PlanName,
     status: sub.status,
-    questionsPerMonth: sub.questionsPerMonth,
+    creditsPerMonth: sub.creditsPerMonth,
     currentPeriodStart: sub.currentPeriodStart,
     currentPeriodEnd: sub.currentPeriodEnd,
   };
@@ -100,10 +100,10 @@ export function requirePlan(minPlan: PlanName) {
 }
 
 /**
- * Vérifie et incrémente atomiquement le quota de questions de l'utilisateur (M13).
- * L'incrément conditionnel évite les dépassements en cas de requêtes simultanées.
+ * Vérifie et décrémente atomiquement les crédits de l'utilisateur.
+ * Par défaut consomme 1 crédit. Pour les audits, utiliser checkAuditCredits.
  */
-export async function checkQuestionQuota(req: AuthRequest, res: Response, next: NextFunction) {
+export async function checkCredits(req: AuthRequest, res: Response, next: NextFunction) {
   if (!req.orgId || !req.userId) {
     next();
     return;
@@ -119,32 +119,65 @@ export async function checkQuestionQuota(req: AuthRequest, res: Response, next: 
       return;
     }
 
-    // Quota illimité → pas de vérification
-    if (isUnlimited(ctx.questionsPerMonth)) {
+    // Crédits illimités → pas de vérification
+    if (isUnlimited(ctx.creditsPerMonth)) {
       req.quotaIncremented = false;
       next();
       return;
     }
 
-    // Incrément atomique conditionnel : vérifie ET incrémente en une seule requête SQL (M13)
+    // FREE plan : crédits totaux (pas mensuels), vérifier sur le membre
+    if (ctx.plan === 'FREE') {
+      const affected: number = await prisma.$executeRaw`
+        UPDATE organization_members
+        SET "creditsUsed" = "creditsUsed" + 1
+        WHERE "userId" = ${req.userId}
+          AND "organizationId" = ${req.orgId}
+          AND "creditsUsed" < (
+            SELECT "creditsTotal" FROM subscriptions WHERE "organizationId" = ${req.orgId}
+          )
+      `;
+
+      if (affected === 0) {
+        const member = await prisma.organizationMember.findUnique({
+          where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
+          select: { creditsUsed: true },
+        });
+        const sub = await prisma.subscription.findUnique({
+          where: { organizationId: req.orgId },
+          select: { creditsTotal: true },
+        });
+        res.status(429).json({
+          error: 'Crédits épuisés',
+          quota: { used: member?.creditsUsed || 0, limit: sub?.creditsTotal || 0, plan: ctx.plan },
+        });
+        return;
+      }
+
+      req.quotaIncremented = true;
+      cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
+      next();
+      return;
+    }
+
+    // Plans payants : crédits mensuels par user
     const affected: number = await prisma.$executeRaw`
       UPDATE organization_members
-      SET "questionsUsed" = "questionsUsed" + 1
+      SET "creditsUsed" = "creditsUsed" + 1
       WHERE "userId" = ${req.userId}
         AND "organizationId" = ${req.orgId}
-        AND "questionsUsed" < ${ctx.questionsPerMonth}
+        AND "creditsUsed" < ${ctx.creditsPerMonth}
     `;
 
     if (affected === 0) {
-      // Soit le membre n'existe pas, soit le quota est atteint
       const member = await prisma.organizationMember.findUnique({
         where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
-        select: { questionsUsed: true },
+        select: { creditsUsed: true },
       });
-      const userUsed = member?.questionsUsed || 0;
+      const userUsed = member?.creditsUsed || 0;
       res.status(429).json({
-        error: 'Quota de questions atteint pour ce mois',
-        quota: { used: userUsed, limit: ctx.questionsPerMonth, plan: ctx.plan },
+        error: 'Crédits mensuels épuisés',
+        quota: { used: userUsed, limit: ctx.creditsPerMonth, plan: ctx.plan },
       });
       return;
     }
@@ -152,120 +185,120 @@ export async function checkQuestionQuota(req: AuthRequest, res: Response, next: 
     // Incrémenter aussi le compteur global org (fire-and-forget)
     prisma.subscription.update({
       where: { organizationId: req.orgId },
-      data: { questionsUsed: { increment: 1 } },
+      data: { creditsUsed: { increment: 1 } },
     }).catch((err) => {
-      logger.error('Echec increment compteur quota org', err);
+      logger.error('Echec increment compteur credits org', err);
     });
 
-    // Marquer que le quota a déjà été incrémenté (évite double incrément dans chat)
     req.quotaIncremented = true;
     cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
     next();
   } catch (err) {
-    logger.error('Erreur vérification quota', err);
+    logger.error('Erreur vérification crédits', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
 }
 
 /**
- * Vérifie le quota d'audits documents par mois.
- * Basé sur le comptage des DocumentAudit créés ce mois par l'org.
+ * Vérifie et décrémente les crédits pour un audit document (coûte CREDITS_PER_AUDIT = 3 crédits).
  */
-export async function checkAuditQuota(req: AuthRequest, res: Response, next: NextFunction) {
-  if (!req.orgId) { next(); return; }
+export async function checkAuditCredits(req: AuthRequest, res: Response, next: NextFunction) {
+  if (!req.orgId || !req.userId) {
+    next();
+    return;
+  }
   try {
     const ctx = await getSubContext(req.orgId);
-    if (!ctx) { next(); return; }
+    if (!ctx) {
+      next();
+      return;
+    }
     if (ctx.status === 'EXPIRED') {
       res.status(403).json({ error: 'Abonnement expiré. Veuillez renouveler.' });
       return;
     }
 
-    const { getPlanQuota } = require('../types/plans');
-    const quota = getPlanQuota(ctx.plan);
+    // Crédits illimités
+    if (isUnlimited(ctx.creditsPerMonth)) {
+      next();
+      return;
+    }
 
-    // FREE : quota total (pas mensuel)
+    const cost = CREDITS_PER_AUDIT;
+
+    // FREE plan : crédits totaux
     if (ctx.plan === 'FREE') {
-      const totalAudits: [{ count: bigint }] = await prisma.$queryRaw`
-        SELECT COUNT(*)::bigint as count FROM document_audits WHERE "orgId" = ${req.orgId}
+      const affected: number = await prisma.$executeRaw`
+        UPDATE organization_members
+        SET "creditsUsed" = "creditsUsed" + ${cost}
+        WHERE "userId" = ${req.userId}
+          AND "organizationId" = ${req.orgId}
+          AND "creditsUsed" + ${cost} <= (
+            SELECT "creditsTotal" FROM subscriptions WHERE "organizationId" = ${req.orgId}
+          )
       `;
-      const used = Number(totalAudits[0]?.count ?? 0);
-      if (quota.auditsTotal > 0 && used >= quota.auditsTotal) {
-        res.status(429).json({ error: 'Quota d\'audits atteint', quota: { used, limit: quota.auditsTotal, plan: ctx.plan } });
+
+      if (affected === 0) {
+        const member = await prisma.organizationMember.findUnique({
+          where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
+          select: { creditsUsed: true },
+        });
+        const sub = await prisma.subscription.findUnique({
+          where: { organizationId: req.orgId },
+          select: { creditsTotal: true },
+        });
+        res.status(429).json({
+          error: `Crédits insuffisants (un audit coûte ${cost} crédits)`,
+          quota: { used: member?.creditsUsed || 0, limit: sub?.creditsTotal || 0, cost, plan: ctx.plan },
+        });
         return;
       }
-      next(); return;
+
+      cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
+      next();
+      return;
     }
 
-    // Plans payants : quota mensuel
-    if (isUnlimited(quota.auditsPerMonth)) { next(); return; }
-
-    const monthStart = new Date();
-    monthStart.setDate(1); monthStart.setHours(0, 0, 0, 0);
-    const monthAudits: [{ count: bigint }] = await prisma.$queryRaw`
-      SELECT COUNT(*)::bigint as count FROM document_audits
-      WHERE "orgId" = ${req.orgId} AND "createdAt" >= ${monthStart}
+    // Plans payants : crédits mensuels
+    const affected: number = await prisma.$executeRaw`
+      UPDATE organization_members
+      SET "creditsUsed" = "creditsUsed" + ${cost}
+      WHERE "userId" = ${req.userId}
+        AND "organizationId" = ${req.orgId}
+        AND "creditsUsed" + ${cost} <= ${ctx.creditsPerMonth}
     `;
-    const used = Number(monthAudits[0]?.count ?? 0);
-    if (used >= quota.auditsPerMonth) {
-      res.status(429).json({ error: 'Quota d\'audits mensuel atteint', quota: { used, limit: quota.auditsPerMonth, plan: ctx.plan } });
-      return;
-    }
-    next();
-  } catch (err) {
-    logger.error('Erreur vérification quota audit', err);
-    next();
-  }
-}
 
-/**
- * Vérifie que le plan inclut les organisations (TEAM+).
- */
-export async function requireOrganizationFeature(req: AuthRequest, res: Response, next: NextFunction) {
-  if (!req.orgId) { next(); return; }
-  try {
-    const ctx = await getSubContext(req.orgId);
-    if (!ctx) { next(); return; }
-    const { getPlanQuota } = require('../types/plans');
-    const quota = getPlanQuota(ctx.plan);
-    if (!quota.hasOrganization && ctx.plan !== 'FREE') {
-      res.status(403).json({ error: 'Fonctionnalité organisation non incluse dans votre plan. Passez au plan Team.' });
+    if (affected === 0) {
+      const member = await prisma.organizationMember.findUnique({
+        where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
+        select: { creditsUsed: true },
+      });
+      const userUsed = member?.creditsUsed || 0;
+      res.status(429).json({
+        error: `Crédits mensuels insuffisants (un audit coûte ${cost} crédits)`,
+        quota: { used: userUsed, limit: ctx.creditsPerMonth, cost, plan: ctx.plan },
+      });
       return;
     }
-    next();
-  } catch (err) {
-    logger.error('Erreur vérification feature organisation', err);
-    next();
-  }
-}
 
-/**
- * Vérifie que le plan inclut les analytics (TEAM+).
- */
-export async function requireAnalyticsFeature(req: AuthRequest, res: Response, next: NextFunction) {
-  if (!req.orgId) { next(); return; }
-  try {
-    const ctx = await getSubContext(req.orgId);
-    if (!ctx) { next(); return; }
-    const { getPlanQuota } = require('../types/plans');
-    const quota = getPlanQuota(ctx.plan);
-    if (!quota.hasAnalytics) {
-      res.status(403).json({ error: 'Fonctionnalité analytics non incluse dans votre plan. Passez au plan Team.' });
-      return;
-    }
+    // Incrémenter le compteur global org
+    prisma.subscription.update({
+      where: { organizationId: req.orgId },
+      data: { creditsUsed: { increment: cost } },
+    }).catch((err) => {
+      logger.error('Echec increment compteur credits org (audit)', err);
+    });
+
+    cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
     next();
   } catch (err) {
-    logger.error('Erreur vérification feature analytics', err);
+    logger.error('Erreur vérification crédits audit', err);
     next();
   }
 }
 
 export function requirePremium(req: AuthRequest, res: Response, next: NextFunction) {
   return requirePlan('STARTER')(req, res, next);
-}
-
-export function requireEnterprise(req: AuthRequest, res: Response, next: NextFunction) {
-  return requirePlan('ENTERPRISE')(req, res, next);
 }
 
 export async function requirePaid(req: AuthRequest, res: Response, next: NextFunction) {

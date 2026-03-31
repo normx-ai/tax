@@ -2,7 +2,7 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireAdmin, requireMember } from '../middleware/orgRole.middleware';
-import { requireAnalyticsFeature } from '../middleware/subscription.middleware';
+import { requirePaid } from '../middleware/subscription.middleware';
 import { validate } from '../middleware/validate.middleware';
 import { daysQuery } from '../schemas/analytics.schema';
 import * as analyticsService from '../services/analytics.service';
@@ -23,7 +23,7 @@ const router = Router();
  *         description: Données du tableau de bord
  */
 // GET /api/analytics/dashboard
-router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, requireAnalyticsFeature, asyncHandler(async (req: AuthRequest, res: Response) => {
+router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, requirePaid, asyncHandler(async (req: AuthRequest, res: Response) => {
   const dashboard = await analyticsService.getDashboard(req.orgId!);
   res.json(dashboard);
 }));

@@ -26,5 +26,5 @@ export const paginationQuery = z.object({
 });
 
 // --- Enums ---
-export const paidPlanEnum = z.enum(['STARTER', 'PROFESSIONAL', 'TEAM', 'ENTERPRISE']);
+export const paidPlanEnum = z.enum(['STARTER', 'PRO']);
 export const orgRoleEnum = z.enum(['OWNER', 'ADMIN', 'MEMBER', 'VIEWER']);

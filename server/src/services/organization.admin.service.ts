@@ -54,7 +54,7 @@ export async function getOrganizationStats(orgId: string) {
     conversations: conversationCount,
     messages: messagesCount,
     plan: sub?.plan || 'FREE',
-    questionsUsed: sub?.questionsUsed || 0,
-    questionsPerMonth: sub?.questionsPerMonth || 0,
+    creditsUsed: sub?.creditsUsed || 0,
+    creditsPerMonth: sub?.creditsPerMonth || 0,
   };
 }

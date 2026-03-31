@@ -14,8 +14,8 @@ export interface UserProfile {
 export interface SubscriptionInfo {
   plan: string;
   status: string;
-  questionsPerMonth: number;
-  questionsUsed: number;
+  creditsPerMonth: number;
+  creditsUsed: number;
   currentPeriodEnd: string | null;
 }
 

@@ -1,89 +1,71 @@
-export type PlanName = 'FREE' | 'STARTER' | 'PROFESSIONAL' | 'TEAM' | 'ENTERPRISE';
+export type PlanName = 'FREE' | 'STARTER' | 'PRO';
 
 export interface PlanQuota {
-  questionsPerMonth: number;   // par user (-1 = illimité)
-  questionsTotal: number;      // pour FREE uniquement (5 total, pas /mois)
-  auditsPerMonth: number;      // documents audit/mois (-1 = illimité)
-  auditsTotal: number;         // pour FREE uniquement
-  maxMembers: number;          // -1 = illimité
-  simulators: 'basic' | 'all'; // 5 de base ou 16 complets
-  hasOrganization: boolean;
-  hasAnalytics: boolean;
-  pricePerYear: number;        // en euros
-  trialDays: number;
+  creditsPerMonth: number;      // credits mensuels (-1 = illimite, 0 = pas de mensuel)
+  creditsTotal: number;          // credits totaux pour FREE (10)
+  trialDays: number;             // duree essai en jours (7 pour FREE)
+  simulators: 'basic' | 'all';   // 3 de base ou 16 complets
+  fullCodeAccess: boolean;       // acces complet CGI+Social
+  fiscalCalendar: boolean;       // calendrier fiscal
+  support: 'none' | 'email' | 'priority';
+  pricePerYear: number;          // en euros
 }
+
+// 1 credit = 1 question IA ou 1 recherche RAG
+// 1 audit document = 3 credits
+export const CREDITS_PER_AUDIT = 3;
 
 export const PLAN_QUOTAS: Record<PlanName, PlanQuota> = {
   FREE: {
-    questionsPerMonth: 0,
-    questionsTotal: 5,
-    auditsPerMonth: 0,
-    auditsTotal: 3,
-    maxMembers: 1,
-    simulators: 'all',
-    hasOrganization: false,
-    hasAnalytics: false,
-    pricePerYear: 0,
+    creditsPerMonth: 0,
+    creditsTotal: 10,
     trialDays: 7,
+    simulators: 'basic',
+    fullCodeAccess: false,
+    fiscalCalendar: false,
+    support: 'none',
+    pricePerYear: 0,
   },
   STARTER: {
-    questionsPerMonth: 15,
-    questionsTotal: 0,
-    auditsPerMonth: 10,
-    auditsTotal: 0,
-    maxMembers: 1,
-    simulators: 'basic',
-    hasOrganization: false,
-    hasAnalytics: false,
-    pricePerYear: 69,
+    creditsPerMonth: 60,
+    creditsTotal: 0,
     trialDays: 0,
-  },
-  PROFESSIONAL: {
-    questionsPerMonth: 30,
-    questionsTotal: 0,
-    auditsPerMonth: 30,
-    auditsTotal: 0,
-    maxMembers: 1,
     simulators: 'all',
-    hasOrganization: false,
-    hasAnalytics: false,
-    pricePerYear: 149,
-    trialDays: 0,
+    fullCodeAccess: true,
+    fiscalCalendar: true,
+    support: 'email',
+    pricePerYear: 150,
   },
-  TEAM: {
-    questionsPerMonth: 200,
-    questionsTotal: 0,
-    auditsPerMonth: 100,
-    auditsTotal: 0,
-    maxMembers: 5,
-    simulators: 'all',
-    hasOrganization: true,
-    hasAnalytics: true,
-    pricePerYear: 299,
+  PRO: {
+    creditsPerMonth: 250,
+    creditsTotal: 0,
     trialDays: 0,
-  },
-  ENTERPRISE: {
-    questionsPerMonth: -1,
-    questionsTotal: 0,
-    auditsPerMonth: -1,
-    auditsTotal: 0,
-    maxMembers: -1,
     simulators: 'all',
-    hasOrganization: true,
-    hasAnalytics: true,
-    pricePerYear: 500,
-    trialDays: 0,
+    fullCodeAccess: true,
+    fiscalCalendar: true,
+    support: 'priority',
+    pricePerYear: 300,
   },
 };
 
-const PLAN_ORDER: PlanName[] = ['FREE', 'STARTER', 'PROFESSIONAL', 'TEAM', 'ENTERPRISE'];
+// Packs credits a la carte (ne se resetent pas, valides jusqu'a utilisation)
+export interface CreditPack {
+  id: string;
+  credits: number;
+  priceEur: number;
+  label: string;
+}
+
+export const CREDIT_PACKS: CreditPack[] = [
+  { id: 'pack_30', credits: 30, priceEur: 8, label: '30 credits' },
+  { id: 'pack_80', credits: 80, priceEur: 18, label: '80 credits' },
+  { id: 'pack_200', credits: 200, priceEur: 35, label: '200 credits' },
+];
+
+const PLAN_ORDER: PlanName[] = ['FREE', 'STARTER', 'PRO'];
 
 export function getPlanQuota(plan: PlanName): PlanQuota {
   return PLAN_QUOTAS[plan] || PLAN_QUOTAS.FREE;
-}
-
-export function isUnlimited(value: number): boolean {
-  return value === -1;
 }
 
 export function isPlanAtLeast(current: PlanName, minimum: PlanName): boolean {
@@ -98,42 +80,28 @@ export function isPaidPlan(plan: PlanName): boolean {
   return plan !== 'FREE';
 }
 
+export function isUnlimited(value: number): boolean {
+  return value === -1;
+}
+
 export function getPlanDisplayName(plan: PlanName): string {
   const names: Record<PlanName, string> = {
-    FREE: 'Gratuit',
+    FREE: 'Découverte',
     STARTER: 'Starter',
-    PROFESSIONAL: 'Professional',
-    TEAM: 'Team',
-    ENTERPRISE: 'Enterprise',
+    PRO: 'Pro',
   };
   return names[plan];
 }
 
-/** Remises volume sièges (TEAM/ENTERPRISE) : 3-4 → -10%, 5-9 → -15%, 10+ → -20% */
-function getVolumeDiscount(memberCount: number): number {
-  if (memberCount >= 10) return 0.20;
-  if (memberCount >= 5) return 0.15;
-  if (memberCount >= 3) return 0.10;
-  return 0;
+export function getPlanPriceFCFA(plan: PlanName): number {
+  const EUR_TO_FCFA = 656;
+  return Math.round(PLAN_QUOTAS[plan].pricePerYear * EUR_TO_FCFA / 1000) * 1000;
 }
 
-export function calculateTotalPrice(plan: PlanName, memberCount: number): number {
-  const quota = PLAN_QUOTAS[plan];
-  if (memberCount <= 0) return 0;
-  const discount = getVolumeDiscount(memberCount);
-  return Math.round(memberCount * quota.pricePerYear * (1 - discount));
-}
+/** Simulateurs de base (FREE) */
+export const BASIC_SIMULATORS = ['its', 'tva', 'is'];
 
-export function getUnitPrice(plan: PlanName, memberCount: number): number {
-  const quota = PLAN_QUOTAS[plan];
-  const discount = getVolumeDiscount(memberCount);
-  return Math.round(quota.pricePerYear * (1 - discount));
-}
-
-/** Simulateurs de base (STARTER) */
-export const BASIC_SIMULATORS = ['its', 'tva', 'is', 'paie', 'patente'];
-
-/** Tous les simulateurs (PROFESSIONAL+) */
+/** Tous les simulateurs (STARTER+) */
 export const ALL_SIMULATORS = [
   'its', 'tva', 'is', 'paie', 'patente',
   'solde-liquidation', 'retenue-source', 'is-parapetrolier',

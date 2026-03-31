@@ -2,10 +2,11 @@ import { api } from "./client";
 
 export interface QuotaResponse {
   plan: string;
-  questionsUsed: number;
-  questionsPerMonth: number;
+  creditsUsed: number;
+  creditsPerMonth: number;
+  creditsTotal: number;
+  creditsPurchased: number;
   remaining: number;
-  isUnlimited: boolean;
   currentPeriodStart: string;
   currentPeriodEnd: string | null;
   status: string;

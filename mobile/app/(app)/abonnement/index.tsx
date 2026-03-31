@@ -155,9 +155,8 @@ export default function AbonnementScreen() {
         <PlanHeader plan={plan} status={status} colors={colors} />
 
         <QuotaProgress
-          questionsUsed={quota?.questionsUsed ?? 0}
-          questionsLimit={quota?.questionsPerMonth ?? 0}
-          isUnlimited={quota?.isUnlimited ?? false}
+          creditsUsed={quota?.creditsUsed ?? 0}
+          creditsLimit={quota?.creditsPerMonth ?? 0}
           remaining={quota?.remaining ?? 0}
           planColor={planColor}
           colors={colors}

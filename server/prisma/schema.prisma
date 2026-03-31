@@ -138,8 +138,8 @@ model OrganizationMember {
   // Permissions granulaires (optionnel, override du rôle)
   permissions Json? @default("{}")
 
-  // Stats individuelles dans l'orga
-  questionsUsed Int @default(0)
+  // Credits utilises ce mois par ce membre
+  creditsUsed Int @default(0)
 
   joinedAt  DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -186,9 +186,7 @@ model Invitation {
 enum SubscriptionPlan {
   FREE
   STARTER
-  PROFESSIONAL
-  TEAM
-  ENTERPRISE
+  PRO
 }
 
 enum SubscriptionStatus {
@@ -219,11 +217,11 @@ model Subscription {
   plan   SubscriptionPlan   @default(FREE)
   status SubscriptionStatus @default(ACTIVE)
 
-  // Limites
-  questionsPerMonth Int @default(10)
-  questionsUsed     Int @default(0)
-  maxMembers        Int @default(1) // Pour les orgas
-  paidSeats         Int @default(1) // Sièges payés par l'admin
+  // Credits
+  creditsPerMonth  Int @default(0)  // Credits mensuels (reset chaque mois)
+  creditsUsed      Int @default(0)  // Credits utilises ce mois
+  creditsTotal     Int @default(10) // Credits totaux pour FREE (non-mensuel)
+  creditsPurchased Int @default(0)  // Credits achetes via packs (ne se resetent pas)
 
   // Paiement
   stripeCustomerId     String?

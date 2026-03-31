@@ -85,9 +85,8 @@ export async function resolveTenant(req: AuthRequest, res: Response, next: NextF
             organizationId: org.id,
             plan: "FREE",
             status: "TRIALING",
-            questionsPerMonth: 5,
-            maxMembers: 1,
-            paidSeats: 1,
+            creditsPerMonth: 0,
+            creditsTotal: 10,
             currentPeriodStart: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
           },
         });

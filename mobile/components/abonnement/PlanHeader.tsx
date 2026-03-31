@@ -4,14 +4,14 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const PLAN_COLORS: Record<string, string> = {
   FREE: "#6b7280",
-  BASIQUE: "#3b82f6",
-  PRO: "#8b5cf6",
+  STARTER: "#3b82f6",
+  PRO: "#D4A843",
 };
 
 const PLAN_BG: Record<string, string> = {
   FREE: "#f3f4f6",
-  BASIQUE: "#eff6ff",
-  PRO: "#f5f3ff",
+  STARTER: "#eff6ff",
+  PRO: "#faf8f5",
 };
 
 const STATUS_COLORS: Record<string, string> = {
@@ -29,33 +29,24 @@ const STATUS_LABEL_KEYS: Record<string, string> = {
 const PLANS_INFO = [
   {
     name: "FREE",
-    priceKey: "abonnement.planFree",
-    priceDetailKey: "abonnement.planFreeDetail",
-    featureKeys: ["abonnement.feat5q", "abonnement.featCgiRead", "abonnement.featBasicSim"],
+    label: "Découverte",
+    price: "Gratuit",
+    priceDetail: "7 jours d'essai - 10 crédits",
+    features: ["10 crédits au total", "Code CGI et social en lecture", "3 simulateurs de base"],
   },
   {
     name: "STARTER",
-    priceKey: "abonnement.planStarterPrice",
-    priceDetailKey: "abonnement.planStarterDetail",
-    featureKeys: ["abonnement.feat15q", "abonnement.featFullCgi", "abonnement.feat5sim", "abonnement.feat10audit"],
+    label: "Starter",
+    price: "150 EUR / an",
+    priceDetail: "60 crédits/mois - Tous les simulateurs",
+    features: ["60 crédits/mois", "Code CGI et social complet", "16 simulateurs", "15 audits documents/mois", "Calendrier fiscal"],
   },
   {
-    name: "PROFESSIONAL",
-    priceKey: "abonnement.planProPrice",
-    priceDetailKey: "abonnement.planProDetail",
-    featureKeys: ["abonnement.feat30q", "abonnement.featFullCgi", "abonnement.featAllSim", "abonnement.feat30audit", "abonnement.featHistory"],
-  },
-  {
-    name: "TEAM",
-    priceKey: "abonnement.planTeamPrice",
-    priceDetailKey: "abonnement.planTeamDetail",
-    featureKeys: ["abonnement.feat200q", "abonnement.featAllSim", "abonnement.feat100audit", "abonnement.featOrg", "abonnement.featAnalytics", "abonnement.featPriority"],
-  },
-  {
-    name: "ENTERPRISE",
-    priceKey: "abonnement.planEnterprisePrice",
-    priceDetailKey: "abonnement.planEnterpriseDetail",
-    featureKeys: ["abonnement.featUnlimitedQ", "abonnement.featAllSim", "abonnement.featUnlimitedAudit", "abonnement.featUnlimitedMembers", "abonnement.featPriority", "abonnement.featApi"],
+    name: "PRO",
+    label: "Pro",
+    price: "300 EUR / an",
+    priceDetail: "250 crédits/mois - Support prioritaire",
+    features: ["250 crédits/mois", "Tout le Starter +", "50 audits documents/mois", "Support prioritaire"],
   },
 ];
 
@@ -74,6 +65,7 @@ export default function PlanHeader({ plan, status, colors }: Props) {
   const statusColor = STATUS_COLORS[status] || STATUS_COLORS.EXPIRED;
   const statusLabelKey = STATUS_LABEL_KEYS[status];
   const statusLabel = statusLabelKey ? t(statusLabelKey) : status;
+  const planInfo = PLANS_INFO.find((p) => p.name === plan);
 
   return (
     <View
@@ -102,7 +94,7 @@ export default function PlanHeader({ plan, status, colors }: Props) {
           }}
         >
           <Text style={{ color: "#fff", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 20, letterSpacing: 1 }}>
-            {plan}
+            {planInfo?.label || plan}
           </Text>
         </View>
 
@@ -133,7 +125,7 @@ export default function PlanHeader({ plan, status, colors }: Props) {
 
       <View style={{ paddingHorizontal: 20, paddingTop: 16, paddingBottom: 12, alignItems: "center" }}>
         <Text style={{ fontSize: 24, fontFamily: fonts.heading, fontWeight: fontWeights.heading, color: colors.text }}>
-          {t(PLANS_INFO.find((p) => p.name === plan)?.priceKey || "abonnement.planFree")}
+          {planInfo?.price || "Gratuit"}
         </Text>
       </View>
     </View>

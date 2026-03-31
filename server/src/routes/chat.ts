@@ -4,7 +4,7 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
-import { checkQuestionQuota } from "../middleware/subscription.middleware";
+import { checkCredits } from "../middleware/subscription.middleware";
 import { validate } from "../middleware/validate.middleware";
 import { messageStreamBody, conversationIdParam } from "../schemas/chat.schema";
 import * as chatService from "../services/chat.service";
@@ -28,7 +28,7 @@ const router = Router();
  *         description: Flux SSE de la réponse du chat
  */
 // POST /api/chat/message/stream — Envoyer un message avec streaming SSE
-router.post("/message/stream", requireAuth, resolveTenant, checkQuestionQuota, validate({ body: messageStreamBody }), async (req: AuthRequest, res: Response) => {
+router.post("/message/stream", requireAuth, resolveTenant, checkCredits, validate({ body: messageStreamBody }), async (req: AuthRequest, res: Response) => {
   const userId = req.userId!;
   const { content, conversationId } = req.body;
 

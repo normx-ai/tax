@@ -86,8 +86,8 @@ export async function getDashboard(orgId: string) {
     },
     subscription: sub ? {
       plan: sub.plan,
-      questionsUsed: sub.questionsUsed,
-      questionsPerMonth: sub.questionsPerMonth,
+      creditsUsed: sub.creditsUsed,
+      creditsPerMonth: sub.creditsPerMonth,
     } : null,
   };
 }
@@ -144,7 +144,7 @@ export async function getMemberStats(orgId: string) {
         email: m.user.email,
         role: m.role,
         questionsCount: messageCount + searchCount,
-        questionsUsed: m.questionsUsed,
+        creditsUsed: m.creditsUsed,
         messagesLast30d: messageCount,
         searchesLast30d: searchCount,
         lastActive: m.user.lastLoginAt?.toISOString() || null,

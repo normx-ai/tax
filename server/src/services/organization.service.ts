@@ -68,8 +68,8 @@ export async function createOrganization(userId: string, userEmail: string, data
       organizationId: org.id,
       plan: 'FREE',
       status: 'TRIALING',
-      questionsPerMonth: PLAN_QUOTAS.FREE.questionsPerMonth,
-      maxMembers: PLAN_QUOTAS.FREE.maxMembers,
+      creditsPerMonth: PLAN_QUOTAS.FREE.creditsPerMonth,
+      creditsTotal: PLAN_QUOTAS.FREE.creditsTotal,
       currentPeriodEnd: trialEnd,
       trialEndsAt: trialEnd,
     },
@@ -133,11 +133,7 @@ export async function inviteMember(orgId: string, invitedById: string, email: st
     });
     const totalOccupied = memberCount + pendingCount;
 
-    if (totalOccupied >= sub.paidSeats) {
-      throw new Error(
-        `Limite de sièges atteinte : ${memberCount} membre(s) + ${pendingCount} invitation(s) en attente = ${totalOccupied} / ${sub.paidSeats} siège(s) payé(s). Augmentez le nombre de sièges auprès de l'administrateur.`
-      );
-    }
+    // Pas de limite de membres dans le nouveau système de crédits
   }
 
   // Vérifier invitation existante

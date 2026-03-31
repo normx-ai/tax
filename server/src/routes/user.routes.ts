@@ -69,8 +69,8 @@ router.get("/profile", requireAuth, resolveTenant, asyncHandler(async (req: Auth
       ? {
           plan: subscription.plan,
           status: subscription.status,
-          questionsPerMonth: subscription.questionsPerMonth,
-          questionsUsed: membership?.questionsUsed ?? 0,
+          creditsPerMonth: subscription.creditsPerMonth,
+          creditsUsed: membership?.creditsUsed ?? 0,
           currentPeriodEnd: subscription.currentPeriodEnd,
         }
       : null,
