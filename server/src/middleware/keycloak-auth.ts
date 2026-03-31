@@ -102,14 +102,8 @@ export async function requireAuth(req: AuthRequest, res: Response, next: NextFun
     req.userName = payload.name || "";
     req.userRoles = payload.realm_access?.roles || [];
 
-    // Verifier que l'user a le role "fiscaliste" ou "admin"
-    if (!req.userRoles.includes("fiscaliste") && !req.userRoles.includes("admin")) {
-      res.status(403).json({
-        error: "Acces refuse — abonnement Tax requis",
-        requiredRole: "fiscaliste",
-      });
-      return;
-    }
+    // Keycloak = authentification uniquement
+    // Le controle d'acces par produit se fait via la subscription en base (resolveTenant + subscription.middleware)
 
     next();
   } catch (err) {
