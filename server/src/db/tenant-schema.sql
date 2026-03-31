@@ -74,6 +74,14 @@ CREATE TABLE IF NOT EXISTS "${schema}".audit_log (
   created_at TIMESTAMP DEFAULT NOW()
 );
 
+CREATE TABLE IF NOT EXISTS "${schema}".favorites (
+  id VARCHAR(255) PRIMARY KEY DEFAULT gen_random_uuid()::text,
+  user_id VARCHAR(255) REFERENCES "${schema}".users(id) ON DELETE CASCADE,
+  article_id VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW(),
+  UNIQUE(user_id, article_id)
+);
+
 -- Index
 CREATE INDEX IF NOT EXISTS idx_conversations_user ON "${schema}".conversations(user_id);
 CREATE INDEX IF NOT EXISTS idx_messages_conv ON "${schema}".messages(conversation_id);
@@ -81,3 +89,4 @@ CREATE INDEX IF NOT EXISTS idx_search_user ON "${schema}".search_history(user_id
 CREATE INDEX IF NOT EXISTS idx_usage_user ON "${schema}".usage_stats(user_id);
 CREATE INDEX IF NOT EXISTS idx_alertes_user ON "${schema}".alertes_fiscales(user_id);
 CREATE INDEX IF NOT EXISTS idx_audit_date ON "${schema}".audit_log(created_at);
+CREATE INDEX IF NOT EXISTS idx_favorites_user ON "${schema}".favorites(user_id);

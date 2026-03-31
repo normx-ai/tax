@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, Platform, ActivityIndicator } from "react
 import { Redirect, Stack, usePathname, router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
+import { useFavoritesStore } from "@/lib/store/favorites";
 import { useOnlineStatus } from "@/lib/hooks/useOnlineStatus";
 import { useOfflineSync } from "@/lib/hooks/useOfflineSync";
 import { usePushNotifications } from "@/lib/hooks/usePushNotifications";
@@ -109,6 +110,8 @@ function AppLayoutInner() {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
   const loggedOut = useAuthStore((s) => s.loggedOut);
   const user = useAuthStore((s) => s.user);
+  const loadFavorites = useFavoritesStore((s) => s.loadFavorites);
+  const favoritesLoaded = useFavoritesStore((s) => s.loaded);
   const isOnline = useOnlineStatus();
   const pathname = usePathname();
   const { isMobile } = useResponsive();
@@ -148,6 +151,7 @@ function AppLayoutInner() {
         .then((res) => setSubStatus(res.data.status))
         .catch(() => setSubStatus(null))
         .finally(() => setSubLoading(false));
+      if (!favoritesLoaded) loadFavorites();
     }
   }, [isAuthenticated]);
 
