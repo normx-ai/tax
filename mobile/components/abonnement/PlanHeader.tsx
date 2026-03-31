@@ -38,15 +38,15 @@ const PLANS_INFO = [
     name: "STARTER",
     label: "Starter",
     price: "150 EUR / an",
-    priceDetail: "60 crédits/mois - Tous les simulateurs",
-    features: ["60 crédits/mois", "Code CGI et social complet", "16 simulateurs", "15 audits documents/mois", "Calendrier fiscal"],
+    priceDetail: "80 crédits/mois - Tous les simulateurs",
+    features: ["80 crédits/mois", "Code CGI et social complet", "16 simulateurs", "15 audits documents/mois", "Calendrier fiscal"],
   },
   {
     name: "PRO",
     label: "Pro",
     price: "300 EUR / an",
-    priceDetail: "250 crédits/mois - Support prioritaire",
-    features: ["250 crédits/mois", "Tout le Starter +", "50 audits documents/mois", "Support prioritaire"],
+    priceDetail: "150 crédits/mois - Support prioritaire",
+    features: ["150 crédits/mois", "Tout le Starter +", "50 audits documents/mois", "Support prioritaire"],
   },
 ];
 

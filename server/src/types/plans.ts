@@ -27,7 +27,7 @@ export const PLAN_QUOTAS: Record<PlanName, PlanQuota> = {
     pricePerYear: 0,
   },
   STARTER: {
-    creditsPerMonth: 60,
+    creditsPerMonth: 80,
     creditsTotal: 0,
     trialDays: 0,
     simulators: 'all',
@@ -37,7 +37,7 @@ export const PLAN_QUOTAS: Record<PlanName, PlanQuota> = {
     pricePerYear: 150,
   },
   PRO: {
-    creditsPerMonth: 250,
+    creditsPerMonth: 150,
     creditsTotal: 0,
     trialDays: 0,
     simulators: 'all',
