@@ -122,38 +122,46 @@ export async function getMemberStats(orgId: string) {
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-  const memberStats = await Promise.all(
-    members.map(async (m) => {
-      const [messageCount, searchCount] = await Promise.all([
-        prisma.message.count({
-          where: {
-            authorId: m.userId,
-            role: 'USER',
-            conversation: { organizationId: orgId },
-            createdAt: { gte: thirtyDaysAgo },
-          },
-        }),
-        prisma.searchHistory.count({
-          where: { userId: m.userId, createdAt: { gte: thirtyDaysAgo } },
-        }),
-      ]);
+  const memberIds = members.map((m) => m.userId);
 
-      return {
-        userId: m.userId,
-        name: [m.user.firstName, m.user.lastName].filter(Boolean).join(' ') || m.user.email,
-        email: m.user.email,
-        role: m.role,
-        questionsCount: messageCount + searchCount,
-        creditsUsed: m.creditsUsed,
-        messagesLast30d: messageCount,
-        searchesLast30d: searchCount,
-        lastActive: m.user.lastLoginAt?.toISOString() || null,
-        joinedAt: m.joinedAt,
-      };
-    })
-  );
+  // 2 requetes GROUP BY au lieu de 2*N requetes individuelles
+  const [messageCounts, searchCounts] = await Promise.all([
+    prisma.message.groupBy({
+      by: ['authorId'],
+      where: {
+        authorId: { in: memberIds },
+        role: 'USER',
+        conversation: { organizationId: orgId },
+        createdAt: { gte: thirtyDaysAgo },
+      },
+      _count: { authorId: true },
+    }),
+    prisma.searchHistory.groupBy({
+      by: ['userId'],
+      where: { userId: { in: memberIds }, createdAt: { gte: thirtyDaysAgo } },
+      _count: { userId: true },
+    }),
+  ]);
 
-  return memberStats;
+  const msgMap = new Map(messageCounts.map((r) => [r.authorId, r._count.authorId]));
+  const searchMap = new Map(searchCounts.map((r) => [r.userId, r._count.userId]));
+
+  return members.map((m) => {
+    const messageCount = msgMap.get(m.userId) || 0;
+    const searchCount = searchMap.get(m.userId) || 0;
+    return {
+      userId: m.userId,
+      name: [m.user.firstName, m.user.lastName].filter(Boolean).join(' ') || m.user.email,
+      email: m.user.email,
+      role: m.role,
+      questionsCount: messageCount + searchCount,
+      creditsUsed: m.creditsUsed,
+      messagesLast30d: messageCount,
+      searchesLast30d: searchCount,
+      lastActive: m.user.lastLoginAt?.toISOString() || null,
+      joinedAt: m.joinedAt,
+    };
+  });
 }
 
 /**

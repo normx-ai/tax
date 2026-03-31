@@ -11,25 +11,20 @@ export interface Citation {
   score: number;
 }
 
-/**
- * Détecte si la requête est une simple salutation
- */
-export function isSimpleGreeting(query: string): boolean {
-  const lowerQuery = query.toLowerCase().trim();
-  const greetings = ['bonjour', 'salut', 'hello', 'hi', 'bonsoir', 'coucou', 'hey', 'merci', 'au revoir', 'bye'];
-
-  if (lowerQuery.length < 20) {
-    return greetings.some(g => lowerQuery.startsWith(g));
-  }
-
-  return false;
-}
+const GREETING_PATTERNS = [
+  /^(bonjour|bonsoir|salut|hello|hi|hey|coucou|yo)\b/i,
+  /^(merci|thanks|thank you)\b/i,
+  /^(au revoir|bye|a bientot|a\+)\b/i,
+  /^(comment vas-tu|ca va|comment tu vas)\b/i,
+  /^(qui es-tu|tu es qui|c est quoi cgi)\b/i,
+];
 
 /**
- * Détecte si la requête nécessite une recherche dans le CGI
+ * Detecte si la requete necessite une recherche dans le CGI
  */
 export function isFiscalQuery(query: string): boolean {
-  return !isSimpleGreeting(query);
+  const trimmed = query.trim();
+  return !GREETING_PATTERNS.some((p) => p.test(trimmed));
 }
 
 /**

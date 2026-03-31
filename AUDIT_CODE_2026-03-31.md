@@ -1,121 +1,75 @@
 # Audit Complet CGI-242 - 31/03/2026
 
-## Corrections appliquees
+## Toutes les corrections appliquees
 
 ### Critiques
-| # | Correction |
-|---|------------|
-| 1 | SQL Injection `analytics.db.ts:35` : `INTERVAL '${days}'` remplace par `make_interval(days => $2)` parametre |
-| 2 | CI heredoc `deploy.yml:64-86` : suppression des espaces en debut de ligne + health check bloquant (exit 1) |
+- SQL Injection `analytics.db.ts` : parametre `make_interval(days => $2)`
+- CI heredoc whitespace + health check bloquant (exit 1)
 
 ### Securite
-| # | Correction |
-|---|------------|
-| 4-5 | Token SSE `chat.ts` : utilise `useAuthStore.getState().getToken()` au lieu de localStorage direct et cle incorrecte |
-| 6 | Swagger `/docs` restreint par IP (allow/deny) |
-| 7 | `server_tokens off` ajoute dans nginx.conf |
-| 15 | `audit-facture.routes.ts:53` : `(req as any).organizationId` remplace par `req.orgId` |
-| 22 | Emails : `escapeHtml()` ajoute pour inviterName et organizationName |
-| 23 | CSP restreint : connect-src limite a tax/auth/sentry, HSTS preload, microphone=() |
-| 31 | `tax.normx-ai.com` retire du server_name de normx-ai.conf (conflit) |
+- Token SSE via `getToken()` (plus de localStorage direct ni de cle incorrecte)
+- `server_tokens off`, Swagger restreint par IP, CSP restrictif, HSTS preload
+- `escapeHtml()` dans les emails, `microphone=()`
+- Conflit server_name resolu
 
 ### Performance
-| # | Correction |
-|---|------------|
-| 8 | Double PrismaClient `ingestion.service.ts` remplace par import singleton |
-| 10 | HTTP/2 active, proxy_read_timeout passe a 120s |
-| 27 | ThemeProvider value memoize avec useMemo |
-| 28 | Double client Qdrant remplace par singleton `getQdrantClient()` |
-| 29 | Healthcheck Qdrant ajoute (wget healthz), depend service_healthy |
-| 30 | Healthcheck Nginx : curl remplace par wget (Alpine) |
+- HTTP/2, `proxy_read_timeout 120s` pour Claude AI
+- Singleton Prisma + Qdrant (plus de doublons connexions)
+- ThemeProvider `useMemo`, theme en `localStorage`
+- Healthchecks Qdrant + Nginx (wget Alpine)
+- `getStats()` : GROUP BY au lieu de charger tous les logs en memoire
+- `getMemberStats()` : 2 requetes GROUP BY au lieu de 2*N COUNT individuels
+- `checkCredits`/`checkAuditCredits` factorise en `deductCredits(cost)` (-100 lignes)
+- `isFiscalQuery` inline (plus de doublon `isSimpleGreeting`)
 
-### Bugs
-| # | Correction |
-|---|------------|
-| 11 | `useActiveCode()` deplace avant les early returns (Rules of Hooks) |
-| 13-14 | `resolveTenant` ajoute sur search-history (3 routes) et user-stats |
-| 16 | `user?.globalRole` remplace par `user?.role` |
+### Bugs corriges
+- `resolveTenant` ajoute (search-history 3 routes + user-stats)
+- `req.orgId` au lieu de `(req as any).organizationId`
+- `useActiveCode()` avant les early returns (Rules of Hooks)
+- `user.role` au lieu de `user.globalRole`
 
 ### Types stricts (zero any)
-| # | Correction |
-|---|------------|
-| -- | 39 composants mobile : `colors: any` -> `ThemeColors` avec import type |
-| -- | 48 catch blocks : `err: any` / `err: unknown` -> `err` sans annotation |
-| -- | 12 casts mobile : `as any` remplaces par types stricts (TextStyle, Href, Ionicons.glyphMap, etc.) |
-| -- | `where: any` -> `Prisma.InvoiceWhereInput` dans invoice.service.ts |
-| -- | `(a: any)` -> `RawArticle & { numero?: string }` dans social.ts |
-| -- | Window.turnstile type avec declaration globale |
-| -- | Props `colors?: unknown` inutilisees supprimees (NumberField, SimulateurSection) |
+- 39 composants : `colors: any` -> `ThemeColors`
+- 48 catch blocks : annotations retirees
+- 12 `as any` remplaces (TextStyle, Href, Ionicons.glyphMap, etc.)
+- `Prisma.InvoiceWhereInput`, `RawArticle`, Window.turnstile type
 
-### Dead code supprime (13 fichiers, ~2500 lignes)
-| Fichier supprime | Raison |
-|---|---|
-| `server/src/routes/auth.ts` | Ancien auth remplace par Keycloak |
-| `server/src/routes/mfa.routes.ts` | Ancien MFA remplace par Keycloak |
-| `server/src/services/mfa.service.ts` | Ancien MFA |
-| `server/src/services/mfa.backup.service.ts` | Ancien MFA backup codes |
-| `server/src/services/tokenBlacklist.service.ts` | Ancien token blacklist |
-| `server/src/middleware/auth.ts` | Ancien middleware auth cookie |
-| `server/src/middleware/csrf.middleware.ts` | Ancien CSRF (Keycloak gere) |
-| `server/src/utils/jwt.ts` | Ancien JWT (bloquait le demarrage) |
-| `server/src/utils/otp.ts` | Ancien OTP |
-| `server/src/schemas/auth.schema.ts` | Ancien schemas validation auth |
-| `server/src/schemas/mfa.schema.ts` | Ancien schemas validation MFA |
-| `server/src/__tests__/auth.test.ts` | Tests de l'ancien auth |
-| `server/src/__tests__/mfa.test.ts` | Tests de l'ancien MFA |
+### Dead code supprime (~2500 lignes, 13 fichiers)
+- `auth.ts`, `mfa.routes.ts`, `mfa.service.ts`, `mfa.backup.service.ts`
+- `tokenBlacklist.service.ts`, `csrf.middleware.ts`, `auth.ts` (middleware)
+- `jwt.ts`, `otp.ts`, `auth.schema.ts`, `mfa.schema.ts`
+- `auth.test.ts`, `mfa.test.ts`
+- `authLimiter` retire, dead quota check supprime
+- `deploy.sh` + 7 fichiers .md obsoletes
 
-### Autres nettoyages
-| Correction |
-|------------|
-| `authLimiter` retire du rate limiter et des imports app.ts |
-| Dead code `inviteMember` quota check supprime dans organization.service.ts |
-| `console.log` remplace par logger structure dans tenant.service.ts |
-| sessionStorage remplace par localStorage pour le theme |
-| deploy.sh obsolete supprime |
-| 7 fichiers .md obsoletes supprimes |
+### Dependencies nettoyees
+- `bcryptjs`, `otpauth`, `qrcode` retires des dependencies (plus utilises)
+- `@types/bcryptjs`, `@types/jsonwebtoken`, `@types/qrcode` retires
+- `@types/multer`, `@types/pg` deplaces vers devDependencies
 
 ## A corriger (restant)
 
 ### Hautes
 | # | Fichier | Probleme |
 |---|---------|----------|
-| 3 | `mobile/lib/store/auth.ts:111` | Tokens en localStorage (passer a memory-only + silent refresh Keycloak) |
-| 9 | `server/src/services/audit.service.ts:120` | `getStats()` charge tous les logs en memoire (utiliser GROUP BY) |
-| 24 | `mobile/lib/store/auth.ts` | `storeTokens`/`clearTokens` ne font rien sur mobile natif |
+| 3 | `mobile/lib/store/auth.ts:111` | Tokens en localStorage (architecture a revoir : memory-only + silent refresh Keycloak) |
+| 24 | `mobile/lib/store/auth.ts` | `storeTokens`/`clearTokens` no-op sur mobile natif |
 
-### Moyennes - Duplication
+### Moyennes
 | # | Fichier | Probleme |
 |---|---------|----------|
-| 17 | `subscription.middleware.ts` + `subscription.service.ts` | Reset mensuel credits duplique |
-| 18 | `subscription.middleware.ts` | `checkCredits`/`checkAuditCredits` quasi-identiques |
-| 19 | `mobile/` 4 stores | 4 abstractions de storage differentes |
+| 19 | `mobile/` 4 stores | 4 abstractions de storage differentes a unifier |
 | 20 | `mobile/` 3 fichiers | `getInitials()` duplique 3 fois |
-| 21 | `chat.service.ts` + `chat.utils.ts` | `isSimpleGreeting()` duplique |
-
-### Moyennes - Performance
-| # | Fichier | Probleme |
-|---|---------|----------|
-| 25 | `server/src/services/analytics.service.ts:125` | N+1 queries dans `getMemberStats` |
-
-### Basses
-| # | Probleme |
-|---|----------|
-| 35 | Imports inutilises (`fontWeights` dans simulateurs) |
-| 37 | Strings hardcodees en francais (SessionExpiredModal, patente.tsx) |
-| 38 | `@types/multer` et `@types/pg` dans dependencies au lieu de devDependencies |
+| 35 | Divers | Imports inutilises (`fontWeights` dans simulateurs) |
+| 37 | Divers | Strings hardcodees en francais (SessionExpiredModal, patente.tsx) |
 
 ## Points positifs
 
-- Containers non-root, multi-stage Docker build, filesystem read-only
-- Resource limits et healthchecks sur tous les services (Postgres, Qdrant, Nginx)
-- Rate limiting, HTTP/2, HSTS preload
-- SSL corrects, server_tokens off, Swagger restreint par IP
-- CSP restrictif (domaines specifiques), emails echappes contre XSS
-- PostgreSQL non expose, secrets via GitHub Secrets
-- CI health check bloquant le deploy en cas d'echec
-- Zero `any` dans le code source (hors tests)
-- Types stricts partout (ThemeColors, TextStyle, Href, Prisma.WhereInput)
-- Singleton Prisma et Qdrant (plus de doublons connexions)
-- Proxy timeout 120s adapte aux appels Claude AI
-- ThemeProvider optimise avec useMemo, theme persiste en localStorage
-- Zero dead code auth/MFA (13 fichiers, ~2500 lignes supprimees)
+- Zero `any`, zero dead code auth/MFA
+- Singleton Prisma + Qdrant, GROUP BY au lieu de N+1
+- HTTP/2, HSTS preload, CSP restrictif, server_tokens off
+- Proxy 120s pour IA, ThemeProvider optimise
+- Healthchecks sur tous les services
+- Swagger restreint, emails echappes
+- Dependencies nettoyees (3 packages inutiles retires)
+- CI health check bloquant

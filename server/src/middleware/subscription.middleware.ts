@@ -100,10 +100,9 @@ export function requirePlan(minPlan: PlanName) {
 }
 
 /**
- * Vérifie et décrémente atomiquement les crédits de l'utilisateur.
- * Par défaut consomme 1 crédit. Pour les audits, utiliser checkAuditCredits.
+ * Deduction generique de credits (factorise checkCredits et checkAuditCredits).
  */
-export async function checkCredits(req: AuthRequest, res: Response, next: NextFunction) {
+async function deductCredits(req: AuthRequest, res: Response, next: NextFunction, cost: number) {
   if (!req.orgId || !req.userId) {
     next();
     return;
@@ -119,114 +118,13 @@ export async function checkCredits(req: AuthRequest, res: Response, next: NextFu
       return;
     }
 
-    // Crédits illimités → pas de vérification
     if (isUnlimited(ctx.creditsPerMonth)) {
       req.quotaIncremented = false;
       next();
       return;
     }
 
-    // FREE plan : crédits totaux (pas mensuels), vérifier sur le membre
-    if (ctx.plan === 'FREE') {
-      const affected: number = await prisma.$executeRaw`
-        UPDATE organization_members
-        SET "creditsUsed" = "creditsUsed" + 1
-        WHERE "userId" = ${req.userId}
-          AND "organizationId" = ${req.orgId}
-          AND "creditsUsed" < (
-            SELECT "creditsTotal" FROM subscriptions WHERE "organizationId" = ${req.orgId}
-          )
-      `;
-
-      if (affected === 0) {
-        const member = await prisma.organizationMember.findUnique({
-          where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
-          select: { creditsUsed: true },
-        });
-        const sub = await prisma.subscription.findUnique({
-          where: { organizationId: req.orgId },
-          select: { creditsTotal: true },
-        });
-        res.status(429).json({
-          error: 'Crédits épuisés',
-          quota: { used: member?.creditsUsed || 0, limit: sub?.creditsTotal || 0, plan: ctx.plan },
-        });
-        return;
-      }
-
-      req.quotaIncremented = true;
-      cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
-      next();
-      return;
-    }
-
-    // Plans payants : crédits mensuels par user
-    const affected: number = await prisma.$executeRaw`
-      UPDATE organization_members
-      SET "creditsUsed" = "creditsUsed" + 1
-      WHERE "userId" = ${req.userId}
-        AND "organizationId" = ${req.orgId}
-        AND "creditsUsed" < ${ctx.creditsPerMonth}
-    `;
-
-    if (affected === 0) {
-      const member = await prisma.organizationMember.findUnique({
-        where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
-        select: { creditsUsed: true },
-      });
-      const userUsed = member?.creditsUsed || 0;
-      res.status(429).json({
-        error: 'Crédits mensuels épuisés',
-        quota: { used: userUsed, limit: ctx.creditsPerMonth, plan: ctx.plan },
-      });
-      return;
-    }
-
-    // Incrémenter aussi le compteur global org (fire-and-forget)
-    prisma.subscription.update({
-      where: { organizationId: req.orgId },
-      data: { creditsUsed: { increment: 1 } },
-    }).catch((err) => {
-      logger.error('Echec increment compteur credits org', err);
-    });
-
-    req.quotaIncremented = true;
-    cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
-    next();
-  } catch (err) {
-    logger.error('Erreur vérification crédits', err);
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-}
-
-/**
- * Vérifie et décrémente les crédits pour un audit document (coûte CREDITS_PER_AUDIT = 3 crédits).
- */
-export async function checkAuditCredits(req: AuthRequest, res: Response, next: NextFunction) {
-  if (!req.orgId || !req.userId) {
-    next();
-    return;
-  }
-  try {
-    const ctx = await getSubContext(req.orgId);
-    if (!ctx) {
-      next();
-      return;
-    }
-    if (ctx.status === 'EXPIRED') {
-      res.status(403).json({ error: 'Abonnement expiré. Veuillez renouveler.' });
-      return;
-    }
-
-    // Crédits illimités
-    if (isUnlimited(ctx.creditsPerMonth)) {
-      next();
-      return;
-    }
-
-    const cost = CREDITS_PER_AUDIT;
-
-    // FREE plan : crédits totaux
+    // FREE plan : credits totaux
     if (ctx.plan === 'FREE') {
       const affected: number = await prisma.$executeRaw`
         UPDATE organization_members
@@ -248,18 +146,19 @@ export async function checkAuditCredits(req: AuthRequest, res: Response, next: N
           select: { creditsTotal: true },
         });
         res.status(429).json({
-          error: `Crédits insuffisants (un audit coûte ${cost} crédits)`,
+          error: cost > 1 ? `Crédits insuffisants (coût: ${cost} crédits)` : 'Crédits épuisés',
           quota: { used: member?.creditsUsed || 0, limit: sub?.creditsTotal || 0, cost, plan: ctx.plan },
         });
         return;
       }
 
+      req.quotaIncremented = true;
       cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
       next();
       return;
     }
 
-    // Plans payants : crédits mensuels
+    // Plans payants : credits mensuels par user
     const affected: number = await prisma.$executeRaw`
       UPDATE organization_members
       SET "creditsUsed" = "creditsUsed" + ${cost}
@@ -273,28 +172,38 @@ export async function checkAuditCredits(req: AuthRequest, res: Response, next: N
         where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
         select: { creditsUsed: true },
       });
-      const userUsed = member?.creditsUsed || 0;
       res.status(429).json({
-        error: `Crédits mensuels insuffisants (un audit coûte ${cost} crédits)`,
-        quota: { used: userUsed, limit: ctx.creditsPerMonth, cost, plan: ctx.plan },
+        error: cost > 1 ? `Crédits mensuels insuffisants (coût: ${cost} crédits)` : 'Crédits mensuels épuisés',
+        quota: { used: member?.creditsUsed || 0, limit: ctx.creditsPerMonth, cost, plan: ctx.plan },
       });
       return;
     }
 
-    // Incrémenter le compteur global org
+    // Incrementer compteur global org (fire-and-forget)
     prisma.subscription.update({
       where: { organizationId: req.orgId },
       data: { creditsUsed: { increment: cost } },
     }).catch((err) => {
-      logger.error('Echec increment compteur credits org (audit)', err);
+      logger.error('Echec increment compteur credits org', err);
     });
 
+    req.quotaIncremented = true;
     cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
     next();
   } catch (err) {
-    logger.error('Erreur vérification crédits audit', err);
-    next();
+    logger.error('Erreur vérification crédits', err);
+    res.status(500).json({ error: 'Erreur serveur' });
   }
+}
+
+/** Vérifie et décrémente 1 crédit. */
+export function checkCredits(req: AuthRequest, res: Response, next: NextFunction) {
+  return deductCredits(req, res, next, 1);
+}
+
+/** Vérifie et décrémente CREDITS_PER_AUDIT crédits. */
+export function checkAuditCredits(req: AuthRequest, res: Response, next: NextFunction) {
+  return deductCredits(req, res, next, CREDITS_PER_AUDIT);
 }
 
 export function requirePremium(req: AuthRequest, res: Response, next: NextFunction) {

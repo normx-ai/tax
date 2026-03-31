@@ -118,31 +118,38 @@ export class AuditService {
     const since = new Date();
     since.setDate(since.getDate() - days);
 
-    const logs = await prisma.auditLog.findMany({
-      where: { organizationId: orgId, createdAt: { gte: since } },
-      select: { action: true, actorId: true, actorEmail: true, createdAt: true },
-    });
+    const where = { organizationId: orgId, createdAt: { gte: since } };
 
-    // Compter par action
+    const [total, byActionRaw, topActorsRaw] = await Promise.all([
+      prisma.auditLog.count({ where }),
+      prisma.auditLog.groupBy({
+        by: ['action'],
+        where,
+        _count: { action: true },
+      }),
+      prisma.auditLog.groupBy({
+        by: ['actorId', 'actorEmail'],
+        where,
+        _count: { actorId: true },
+        orderBy: { _count: { actorId: 'desc' } },
+        take: 10,
+      }),
+    ]);
+
     const byAction: Record<string, number> = {};
-    const byActor: Record<string, { email: string; count: number }> = {};
-
-    for (const log of logs) {
-      byAction[log.action] = (byAction[log.action] || 0) + 1;
-      if (!byActor[log.actorId]) {
-        byActor[log.actorId] = { email: log.actorEmail, count: 0 };
-      }
-      byActor[log.actorId].count++;
+    for (const row of byActionRaw) {
+      byAction[row.action] = row._count.action;
     }
 
     return {
-      total: logs.length,
+      total,
       period: { days, since },
       byAction,
-      topActors: Object.entries(byActor)
-        .sort((a, b) => b[1].count - a[1].count)
-        .slice(0, 10)
-        .map(([id, data]) => ({ userId: id, email: data.email, actions: data.count })),
+      topActors: topActorsRaw.map((row) => ({
+        userId: row.actorId,
+        email: row.actorEmail,
+        actions: row._count.actorId,
+      })),
     };
   }
 
