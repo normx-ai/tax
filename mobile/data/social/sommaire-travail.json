@@ -4,7 +4,10 @@
     "document": "Code du travail",
     "pays": "République du Congo",
     "loi": "Loi n°45-75 du 15 mars 1975",
-    "mises_a_jour": ["Loi n°22-88 du 17 septembre 1988", "Loi n°6-96 du 6 mars 1996"],
+    "mises_a_jour": [
+      "Loi n°22-88 du 17 septembre 1988",
+      "Loi n°6-96 du 6 mars 1996"
+    ],
     "source": "code-du-travail2.pdf",
     "total_pages": 53
   },
@@ -22,33 +25,74 @@
           "chapitre": 1,
           "chapitre_nom": "Du contrat d'apprentissage",
           "sections": [
-            { "section": 1, "section_nom": "De la nature et de la forme du contrat d'apprentissage" },
-            { "section": 2, "section_nom": "Des conditions du contrat d'apprentissage" },
-            { "section": 3, "section_nom": "Des devoirs du maître et de l'apprenti" },
-            { "section": 4, "section_nom": "De la résolution du contrat d'apprentissage" },
-            { "section": 5, "section_nom": "Des mesures de contrôle du contrat d'apprentissage" }
+            {
+              "section": 1,
+              "section_nom": "De la nature et de la forme du contrat d'apprentissage"
+            },
+            {
+              "section": 2,
+              "section_nom": "Des conditions du contrat d'apprentissage"
+            },
+            {
+              "section": 3,
+              "section_nom": "Des devoirs du maître et de l'apprenti"
+            },
+            {
+              "section": 4,
+              "section_nom": "De la résolution du contrat d'apprentissage"
+            },
+            {
+              "section": 5,
+              "section_nom": "Des mesures de contrôle du contrat d'apprentissage"
+            }
           ]
         },
         {
           "chapitre": 2,
           "chapitre_nom": "Du contrat de travail individuel",
           "sections": [
-            { "section": 1, "section_nom": "Dispositions d'ensemble" },
-            { "section": 2, "section_nom": "De la conclusion et de l'exécution du contrat" },
-            { "section": 3, "section_nom": "De la résiliation des contrats individuels de travail" },
-            { "section": 4, "section_nom": "De la suspension du contrat individuel de travail" },
-            { "section": 5, "section_nom": "Du chômage économique et technique" }
+            {
+              "section": 1,
+              "section_nom": "Dispositions d'ensemble"
+            },
+            {
+              "section": 2,
+              "section_nom": "De la conclusion et de l'exécution du contrat"
+            },
+            {
+              "section": 3,
+              "section_nom": "De la résiliation des contrats individuels de travail"
+            },
+            {
+              "section": 4,
+              "section_nom": "De la suspension du contrat individuel de travail"
+            }
           ]
         },
         {
           "chapitre": 3,
           "chapitre_nom": "De la convention collective et des accords collectifs",
           "sections": [
-            { "section": 1, "section_nom": "De la nature et de la validité de la convention" },
-            { "section": 2, "section_nom": "Des conventions collectives susceptibles d'extension et de la procédure d'extension" },
-            { "section": 3, "section_nom": "Des accords collectifs d'établissement" },
-            { "section": 4, "section_nom": "Des conventions collectives dans les Services, Entreprises et Établissements" },
-            { "section": 5, "section_nom": "De l'exécution de la convention collective" }
+            {
+              "section": 1,
+              "section_nom": "De la nature et de la validité de la convention"
+            },
+            {
+              "section": 2,
+              "section_nom": "Des conventions collectives susceptibles d'extension et de la procédure d'extension"
+            },
+            {
+              "section": 3,
+              "section_nom": "Des accords collectifs d'établissement"
+            },
+            {
+              "section": 4,
+              "section_nom": "Des conventions collectives dans les Services, Entreprises et Établissements"
+            },
+            {
+              "section": 5,
+              "section_nom": "De l'exécution de la convention collective"
+            }
           ]
         },
         {
@@ -81,9 +125,18 @@
           "chapitre": 2,
           "chapitre_nom": "Du paiement de salaire",
           "sections": [
-            { "section": 1, "section_nom": "Du mode de paiement de salaire" },
-            { "section": 2, "section_nom": "Des privilèges et des garanties de la créance de salaire" },
-            { "section": 3, "section_nom": "De la prescription de l'action en paiement du salaire" }
+            {
+              "section": 1,
+              "section_nom": "Du mode de paiement de salaire"
+            },
+            {
+              "section": 2,
+              "section_nom": "Des privilèges et des garanties de la créance de salaire"
+            },
+            {
+              "section": 3,
+              "section_nom": "De la prescription de l'action en paiement du salaire"
+            }
           ]
         },
         {
@@ -126,8 +179,14 @@
           "chapitre": 5,
           "chapitre_nom": "Du congé payé et des transports",
           "sections": [
-            { "section": 1, "section_nom": "Du congé payé" },
-            { "section": 2, "section_nom": "Voyages et transports" }
+            {
+              "section": 1,
+              "section_nom": "Du congé payé"
+            },
+            {
+              "section": 2,
+              "section_nom": "Voyages et transports"
+            }
           ]
         }
       ]
@@ -151,8 +210,14 @@
           "chapitre": 1,
           "chapitre_nom": "De l'administration du travail",
           "sections": [
-            { "section": 1, "section_nom": "Du corps de l'inspection du travail" },
-            { "section": 2, "section_nom": "Du placement et des bureaux de placement" }
+            {
+              "section": 1,
+              "section_nom": "Du corps de l'inspection du travail"
+            },
+            {
+              "section": 2,
+              "section_nom": "Du placement et des bureaux de placement"
+            }
           ]
         },
         {
