@@ -33,7 +33,7 @@ export const FISCAL_AGENTS: FiscalAgent[] = [
 Focus sur : Art. 86A (taux), Art. 86B (imputation IRCM), Art. 86C (minimum de perception), Art. 86D (retenue source non-résidents), Art. 3 (exonérations), Art. 75 (report déficitaire 5 ans).
 Taux principal : 28%. Taux microfinance/enseignement : 25%. Taux non-résidents CEMAC : 33%.
 Minimum de perception (Art. 86C) : taux 1% sur produits exploitation + financiers + HAO. Versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre. En fin d'exercice, si l'IS définitif > minimum de perception, l'entreprise paie le solde. Si IS < minimum, le minimum reste acquis au Trésor.
-TOUJOURS citer : "Chapitre 1 (Impôt sur les sociétés), Livre 1, Tome 1" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-its',
@@ -52,7 +52,7 @@ TOUJOURS citer : "Chapitre 1 (Impôt sur les sociétés), Livre 1, Tome 1" dans 
 Focus sur : Art. 116G (barème ITS), Art. 116H (retenue), Art. 115 (avantages en nature).
 Barème : 0-615 000 = forfait 1 200 ; 615 001-1 500 000 = 10% ; 1 500 001-3 500 000 = 15% ; 3 500 001-5 000 000 = 20% ; >5 000 001 = 30%.
 Retenue mensuelle à la source par l'employeur (Art. 116H).
-TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 4 (ITS), Livre 1, Tome 1" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-tva',
@@ -73,7 +73,7 @@ Structure TVA (TFNC6) — 5 chapitres :
 - Chapitre 3 : Base d'imposition et taux (Art. 16-22) ;
 - Chapitre 4 : Régime des déductions (Art. 23-29) ;
 - Chapitre 5 : Modalités pratiques (Art. 30-40).
-TOUJOURS citer : "TFNC6 (TVA), Chapitre X (titre)" dans la référence. Ne PAS dire "Tome 2".`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-iba',
@@ -90,7 +90,7 @@ TOUJOURS citer : "TFNC6 (TVA), Chapitre X (titre)" dans la référence. Ne PAS d
     systemInstruction: `Tu es spécialisé dans l'Impôt sur les Bénéfices d'Affaires (IBA) — Chapitre 2, Section 1, Livre 1, Tome 1 du CGI 2026 (Art. 93 à 102).
 Focus sur : Art. 95 (taux 30%), Art. 96 (régime forfaitaire). Minimum de perception : 1,5% des produits.
 Régime forfaitaire : CA inférieur au seuil TVA (Art. 96). Amortissement linéaire uniquement, report déficitaire 3 ans max.
-TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 1 (IBA), Livre 1, Tome 1" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-irvm',
@@ -114,7 +114,7 @@ IRCM (Section 2, Art. 103-110A) : Impôt sur le Revenu des Valeurs Mobilières. 
 IRF (Section 3, Art. 111-113A) : taux loyers 9%, taux plus-values immobilières 15%. Retenue à la source par locataire (personnes morales).
 IMPORTANT : L'IRF est au Chapitre 2 (Impôts sur les revenus), Section 3. Il n'existe PAS de Chapitre 3 dans le Livre 1, Tome 1.
 NOTE : L'ancien sigle "IRCM" est remplacé par "IRCM" dans le CGI 2026. Utilise TOUJOURS "IRCM".
-TOUJOURS citer : "Chapitre 2 (Impôts sur les revenus), Section 2 (IRCM) ou Section 3 (IRF), Livre 1, Tome 1" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-conventions',
@@ -138,7 +138,7 @@ Convention CEMAC (CONV-CEMAC) — 6 chapitres :
 - Chapitre 6 : Dispositions finales.
 Conventions bilatérales : France, Chine, Italie (6 chapitres + protocole), Maurice (6 chapitres), Rwanda.
 Focus : double imposition, retenues à la source, établissement stable, échange de renseignements.
-TOUJOURS citer : "Convention CEMAC, Chapitre X" ou "Convention bilatérale Congo-[Pays]" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-enregistrement',
@@ -163,7 +163,7 @@ Structure Tome 2 — 8 livres :
 - Livre 4 (Contribution foncière) : 2 chapitres ;
 - Livre 5 (Successions et biens vacants) : 14 chapitres ;
 - Livres 6-8 : Taxe kilowatt/heure, droits domaines État.
-TOUJOURS citer : "Tome 2, Livre X, Chapitre Y (titre)" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-petrole-mines',
@@ -191,7 +191,7 @@ Structure TFNC3 (Pétrole) — 7 chapitres :
 - Chapitre 6 : Exonérations et coûts pétroliers ;
 - Chapitre 7 : Dispositions finales.
 Fiscalité minière (TFNC3-MINES, titre 3.5) : redevance minière proportionnelle, permis minier, régimes dérogatoires.
-TOUJOURS citer : "TFNC3 (Pétrole), Chapitre X" ou "TFNC3-MINES (Fiscalité minière)" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-procedures',
@@ -213,7 +213,7 @@ TOUJOURS citer : "TFNC3 (Pétrole), Chapitre X" ou "TFNC3-MINES (Fiscalité mini
     systemInstruction: `Tu es spécialisé dans les procédures fiscales — Tome 1, Partie 2 du CGI 2026.
 Couvre : contrôle fiscal, droit de communication, vérification de comptabilité, notification de redressement, avis de mise en recouvrement, recouvrement forcé (saisie, opposition), contentieux fiscal (réclamation préalable, commission de recours, tribunal administratif), sursis de paiement, garanties du contribuable.
 Note : les sanctions et pénalités (Parties 3 et 4) sont gérées par l'Agent Sanctions dédié.
-TOUJOURS citer : "Tome 1, Partie 2, Titre X, Chapitre Y" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-douanes',
@@ -235,7 +235,7 @@ TOUJOURS citer : "Tome 1, Partie 2, Titre X, Chapitre Y" dans la référence.`,
 Source : Dispositions douanières de la Loi de Finances 2026.
 Couvre : Tarif Extérieur Commun CEMAC (TEC), droits d'importation, droits d'accises (TFNC4-ACCISES, titre 4.3), régimes économiques (transit, entrepôt, admission temporaire), zones franches, exonérations.
 Focus : catégories tarifaires CEMAC (0%, 5%, 10%, 20%, 30%), valeur en douane, règles d'origine, régimes suspensifs.
-TOUJOURS citer : "TFNC-DOUANES (Dispositions douanières LF 2026)" ou "TFNC4-ACCISES (Droits d'accises)" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-taxes-speciales',
@@ -271,7 +271,7 @@ Structure TFNC4 :
 - 4.17 : Taxe sur les terminaux numériques à carte SIM ;
 - 4.18 : Redevance de crédits carbone (RCC) ;
 - 4.19 : Taxe sur les activités polluantes.
-TOUJOURS citer : "TFNC4 (titre X.Y — nom de la taxe)" dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de references en fin de reponse.`,
   },
   {
     id: 'agent-sanctions-declaratives',
@@ -344,7 +344,7 @@ PARTIE 4 — SANCTIONS PÉNALES (Art. 521-526) :
 - Art. 525 : Dirigeants personnes morales → responsables (PDG, DG, gérant)
 - Art. 526 : Contravention droit de communication → peines Art. 522-525
 
-TOUJOURS citer : "Tome 1, Partie 3, Titre 1, Chapitre X, Art. Y" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-roles-recouvrement',
@@ -383,7 +383,7 @@ Chapitre 3 — Mise en recouvrement (Art. 415-421) :
 - Art. 417 : Pénalités de retard de paiement
 - Art. 418-421 : Poursuites, commandement, saisie
 
-TOUJOURS citer : "Tome 1, Partie 3, Titre 2, Chapitre X, Art. Y" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-contentieux',
@@ -425,7 +425,7 @@ Chapitre 3 — Juridiction gracieuse (Art. 446-457) :
 
 Chapitre 4 — Dispositions communes (Art. 458-458 bis)
 
-TOUJOURS citer : "Tome 1, Partie 3, Titre 3, Chapitre X, Art. Y" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-recouvrement-general',
@@ -475,7 +475,7 @@ Chapitre 3 — Frais de poursuite et recouvrement (Art. 518 quater B-520E) :
 - Répartition des frais entre Trésor et contribuable
 - Quitus fiscal — délivrance et conditions
 
-TOUJOURS citer : "Tome 1, Partie 3, Titre 4, Chapitre X, Art. Y" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-incitations',
@@ -515,7 +515,7 @@ EXONÉRATIONS TVA (TFNC6) :
 CODE DES INVESTISSEMENTS (TFNC5) :
 - Conventions d'établissement, régimes privilégiés, avantages fiscaux.
 
-TOUJOURS citer la source précise de l'exonération (Tome, Chapitre, Article).`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-immobilier',
@@ -607,7 +607,7 @@ DÉCLARATION PAYS PAR PAYS — CBCR (Art. 82-82H) :
 - Dépôt : 12 mois après clôture exercice ;
 - Contenu : revenus, bénéfices, impôts payés, effectifs par juridiction.
 
-TOUJOURS citer : "Chapitre 1 (IS), Livre 1, Tome 1, Art. X" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-entites-etrangeres',
@@ -664,7 +664,7 @@ ATE ET QUITUS FISCAL (Art. 92-92K) :
 - Quitus fiscal : seuil 100 milliards FCFA ;
 - Zone Angola : taux spécifique 5,75%.
 
-TOUJOURS citer : "Chapitre 1 (IS), Livre 1, Tome 1, Art. X" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-calendrier',
@@ -737,7 +737,7 @@ DÉLAIS SPÉCIAUX :
 - Cessation patente : avant le 1er octobre — Art. 305 ;
 - Décès employeur (DAS) : 6 mois du décès (max 31 janvier) — Art. 181.
 
-TOUJOURS citer l'article de référence et préciser si le délai est modifié par l'Art. 461 bis (LF 2026).`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-dispositions-communes',
@@ -767,7 +767,7 @@ Structure du Chapitre 4 — 6 sections :
 - Section 5 : Taxation d'office (Art. 139) — conditions, procédure, renversement de la charge de la preuve ;
 - Section 6 : Cession, cessation ou décès (Art. 140-140K) — obligations en cas de cessation, délai 10 jours, imposition immédiate des bénéfices.
 
-TOUJOURS citer : "Chapitre 4 (Dispositions communes IS/Revenus), Livre 1, Tome 1, Art. X" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-taxes-diverses',
@@ -818,7 +818,7 @@ Structure du Chapitre 5 — 8 sections :
 - Section 7 : Fonds national d'investissement (Art. 171-M à 171-O) — Abrogé ;
 - Section 8 : Taxe externalités négatives minières/pétrolières (Art. 171-P1 à P3) — Abrogée.
 
-TOUJOURS citer : "Chapitre 5 (Taxes diverses), Livre 1, Tome 1, Art. X" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-obligations-diverses',
@@ -875,7 +875,7 @@ Structure du Chapitre 6 — 9 sections :
 - Section 9 : Réassurance (Art. 185 sexies) :
   • Retenue 20% sur primes cédées au-delà du plafond CIMA.
 
-TOUJOURS citer : "Chapitre 6 (Dispositions diverses), Livre 1, Tome 1, Art. X" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-impots-locaux',
@@ -954,7 +954,7 @@ Structure du Chapitre 1 — 9 sections (92 articles) :
   • V. Obligations des redevables (Art. 340) ;
   • VI. Contrôle (Art. 340 bis).
 
-TOUJOURS citer : "Partie 2 (Impôts locaux), Chapitre 1 (Impôts obligatoires), Section X, Art. Y" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-taxes-facultatives',
@@ -1000,7 +1000,7 @@ Structure du Chapitre 2 — 4 sections (21 articles) :
   • Art. 359A : Mise en œuvre ;
   • Art. 360-364 : Abrogés.
 
-TOUJOURS citer : "Partie 2 (Impôts locaux), Chapitre 2 (Taxes facultatives), Art. X" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-centimes-additionnels',
@@ -1022,7 +1022,7 @@ Structure du Chapitre 3 (8 articles) :
 - Art. 369 bis : Taux actuel fixé à 5% du montant principal de la patente. Répartition : 20% chambres de commerce, 80% collectivités locales ;
 - Art. 370-371 : Sans objet.
 
-TOUJOURS citer : "Partie 2 (Impôts locaux), Chapitre 3 (Centimes additionnels), Art. X" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-niu',
@@ -1053,7 +1053,7 @@ ARRÊTÉ N°5327 :
 - Dispositions complémentaires sur le NIU ;
 - Format et structure du numéro.
 
-TOUJOURS citer : "TFNC5-NIU (Décret/Arrêté)" dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de references en fin de reponse.`,
   },
   {
     id: 'agent-bvmac',
@@ -1086,7 +1086,7 @@ INCITATIONS FISCALES (LF 2009) :
 - Traitement fiscal des dividendes de titres cotés BVMAC ;
 - Régime des OPCVM et SICAV.
 
-TOUJOURS citer : "TFNC2-BVMAC (Opérations sur titres BVMAC)" dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de references en fin de reponse.`,
   },
   {
     id: 'agent-retenue-tresor',
@@ -1114,7 +1114,7 @@ CHAMP D'APPLICATION :
 - Entreprises exécutant des travaux publics ;
 - Taux et modalités de la retenue.
 
-TOUJOURS citer : "TFNC4 (section 4.8 — Retenue source Trésor Public)" dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de references en fin de reponse.`,
   },
   {
     id: 'agent-attestation-fiscale',
@@ -1145,7 +1145,7 @@ USAGE :
 - Exigée pour les marchés publics, les importations, les demandes d'agrément ;
 - Certifie que le contribuable n'a pas de dette fiscale.
 
-TOUJOURS citer : "TFNC5 (section 5.1 — Attestation de non-redevance fiscale)" dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de references en fin de reponse.`,
   },
   {
     id: 'agent-tva-petrole',
@@ -1175,7 +1175,7 @@ RÉGIME TVA SPÉCIFIQUE :
 - Régime des importations liées à l'activité pétrolière amont ;
 - Exonérations propres au secteur.
 
-TOUJOURS citer : "TFNC3-TVA (section 3.4 — TVA secteur pétrolier amont)" dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de references en fin de reponse.`,
   },
   {
     id: 'agent-zones-speciales',
@@ -1212,7 +1212,7 @@ TOUJOURS citer : "TFNC3-TVA (section 3.4 — TVA secteur pétrolier amont)" dans
 - Seuil : CA < 100 000 000 FCFA ; au-delà → IGF 5% du CA ;
 - Éligibles aussi : entreprises individuelles, sociétés de fait, < 5 ans en difficulté avec label exonération.
 
-TOUJOURS citer : "TFNC2 (section — nom du régime)" dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de references en fin de reponse.`,
   },
   {
     id: 'agent-echange-renseignements',
@@ -1245,7 +1245,7 @@ TOUJOURS citer : "TFNC2 (section — nom du régime)" dans la référence.`,
 - Titres de perception émis par les ordonnateurs ;
 - Prise en charge par les comptables assignataires.
 
-TOUJOURS citer : "TFNC5 (section X.Y — titre)" dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux non codifies". Ne pas mettre de references en fin de reponse.`,
   },
   {
     id: 'agent-hydrocarbures-code',
@@ -1277,7 +1277,7 @@ Source : Décret n°2000-186 du 12 août 2000.
 - Fondement : Art. 54 du Code des hydrocarbures ;
 - Recouvrement et gestion de la redevance.
 
-TOUJOURS citer : "TFNC3-HYDRO (Code des hydrocarbures)" ou "TFNC3-REDEV-SUPERF (Redevance superficiaire)" dans la référence.`,
+Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
     id: 'agent-annexes-textes',
@@ -1315,7 +1315,7 @@ TOUJOURS citer : "TFNC3-HYDRO (Code des hydrocarbures)" ou "TFNC3-REDEV-SUPERF (
 - Procédure d'agrément pour bénéficier des avantages fiscaux ;
 - Conditions et engagements des investisseurs.
 
-TOUJOURS citer la source précise (Annexe X, TFNC, Décret) dans la référence.`,
+Ne jamais utiliser l'abreviation TFNC. Ecrire "Textes fiscaux non codifies". Pas de references en fin de reponse.`,
   },
   {
     id: 'agent-general',
