@@ -223,17 +223,33 @@ function buildCodeTravailNode(): SommaireNode {
         const fileKey = TRAVAIL_CHAPITRE_MAP[chKey];
         const articles = fileKey ? loadArticles(fileKey) : [];
 
-        const sChildren: SommaireNode[] | undefined =
-          ch.sections && ch.sections.length > 0
-            ? ch.sections.map((s) => ({
-                id: `${chId}-s${s.section}`,
-                label: `Section ${s.section} : ${s.section_nom}`,
-              }))
-            : undefined;
+        // Grouper les articles par section si le chapitre a des sections
+        if (ch.sections && ch.sections.length > 0) {
+          const sChildren: SommaireNode[] = ch.sections.map((s) => {
+            const sectionLabel = `Section ${s.section} : ${s.section_nom}`;
+            const sectionArticles = articles.filter(
+              (a) => a.section && a.section.includes(`Section ${s.section}`)
+            );
+            return {
+              id: `${chId}-s${s.section}`,
+              label: sectionLabel,
+              articles: sectionArticles.length > 0 ? sectionArticles : undefined,
+            };
+          });
+          // Articles sans section rattachee
+          const unmatched = articles.filter(
+            (a) => !a.section || !ch.sections!.some((s) => a.section!.includes(`Section ${s.section}`))
+          );
+          return {
+            id: chId,
+            label: `Chapitre ${ch.chapitre} : ${ch.chapitre_nom}`,
+            children: sChildren,
+            articles: unmatched.length > 0 ? unmatched : undefined,
+          };
+        }
         return {
           id: chId,
           label: `Chapitre ${ch.chapitre} : ${ch.chapitre_nom}`,
-          children: sChildren,
           articles: articles.length > 0 ? articles : undefined,
         };
       });
