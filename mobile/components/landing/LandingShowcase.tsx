@@ -26,6 +26,7 @@ function FeatureSection({
   mockupColor,
   mockupTitle,
   mockupLines,
+  customMockup,
 }: {
   isMobile: boolean;
   reverse?: boolean;
@@ -38,6 +39,7 @@ function FeatureSection({
   mockupColor: string;
   mockupTitle: string;
   mockupLines: string[];
+  customMockup?: React.ReactNode;
 }) {
   const content = (
     <View style={{ flex: 1, minWidth: 280 }}>
@@ -108,7 +110,109 @@ function FeatureSection({
       width: "100%",
     }}>
       {content}
-      {mockup}
+      {customMockup || mockup}
+    </View>
+  );
+}
+
+function IPadChatMockup() {
+  return (
+    <View style={{ flex: 1, minWidth: 280, alignItems: "center" }}>
+      {/* iPad frame */}
+      <View style={{
+        backgroundColor: "#1a1a1e",
+        borderRadius: 24,
+        padding: 10,
+        maxWidth: 440,
+        width: "100%",
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 12 },
+        shadowOpacity: 0.15,
+        shadowRadius: 32,
+      }}>
+        {/* Camera */}
+        <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: "#333", alignSelf: "center", marginBottom: 6 }} />
+        {/* Screen */}
+        <View style={{ backgroundColor: "#ffffff", borderRadius: 14, overflow: "hidden" }}>
+          {/* App header */}
+          <View style={{ backgroundColor: DARK, paddingVertical: 10, paddingHorizontal: 16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+              <Ionicons name="chatbubbles" size={16} color={PRIMARY} />
+              <Text style={{ fontSize: 13, fontWeight: "700", color: "#ffffff" }}>NORMX Tax — Assistant IA</Text>
+            </View>
+            <View style={{ width: 24, height: 24, borderRadius: 12, backgroundColor: "rgba(255,255,255,0.1)", alignItems: "center", justifyContent: "center" }}>
+              <Ionicons name="add" size={14} color="rgba(255,255,255,0.6)" />
+            </View>
+          </View>
+
+          {/* Chat messages */}
+          <View style={{ padding: 14, gap: 12, minHeight: 300, backgroundColor: "#f9fafb" }}>
+            {/* User message */}
+            <View style={{ alignSelf: "flex-end", maxWidth: "80%" }}>
+              <View style={{ backgroundColor: DARK, borderRadius: 14, borderBottomRightRadius: 4, paddingVertical: 10, paddingHorizontal: 14 }}>
+                <Text style={{ fontSize: 12, color: "#ffffff", lineHeight: 18 }}>
+                  Quel est le taux de l'IS au Congo en 2026 ?
+                </Text>
+              </View>
+            </View>
+
+            {/* AI response */}
+            <View style={{ alignSelf: "flex-start", maxWidth: "85%" }}>
+              <View style={{ backgroundColor: "#ffffff", borderRadius: 14, borderBottomLeftRadius: 4, paddingVertical: 12, paddingHorizontal: 14, borderWidth: 1, borderColor: "rgba(0,0,0,0.06)" }}>
+                <Text style={{ fontSize: 12, color: "#374151", lineHeight: 19 }}>
+                  Le taux de l'impot sur les societes est fixe a 28% pour les societes residentes (art. 86-A du CGI, tome 1). Ce taux passe de 30% a 28% suite a la Loi de Finances 2026.
+                </Text>
+                <View style={{ marginTop: 10, gap: 4 }}>
+                  <Text style={{ fontSize: 11, color: BLUE, fontWeight: "600" }}>Taux differencies :</Text>
+                  <Text style={{ fontSize: 11, color: "#6b7280", lineHeight: 17 }}>
+                    - 25% pour microfinance et enseignement{"\n"}- 28% pour societes minieres{"\n"}- 33% pour non-residents hors CEMAC
+                  </Text>
+                </View>
+                {/* Citation badge */}
+                <View style={{ marginTop: 10, flexDirection: "row", gap: 6, flexWrap: "wrap" }}>
+                  <View style={{ backgroundColor: `${BLUE}10`, borderRadius: 6, paddingVertical: 3, paddingHorizontal: 8 }}>
+                    <Text style={{ fontSize: 10, color: BLUE, fontWeight: "600" }}>Art. 86-A</Text>
+                  </View>
+                  <View style={{ backgroundColor: `${BLUE}10`, borderRadius: 6, paddingVertical: 3, paddingHorizontal: 8 }}>
+                    <Text style={{ fontSize: 10, color: BLUE, fontWeight: "600" }}>Directive CEMAC 0119/25</Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+
+            {/* User follow-up */}
+            <View style={{ alignSelf: "flex-end", maxWidth: "80%" }}>
+              <View style={{ backgroundColor: DARK, borderRadius: 14, borderBottomRightRadius: 4, paddingVertical: 10, paddingHorizontal: 14 }}>
+                <Text style={{ fontSize: 12, color: "#ffffff", lineHeight: 18 }}>
+                  Et le minimum de perception ?
+                </Text>
+              </View>
+            </View>
+
+            {/* AI typing indicator */}
+            <View style={{ alignSelf: "flex-start" }}>
+              <View style={{ backgroundColor: "#ffffff", borderRadius: 14, borderBottomLeftRadius: 4, paddingVertical: 10, paddingHorizontal: 14, borderWidth: 1, borderColor: "rgba(0,0,0,0.06)", flexDirection: "row", gap: 4 }}>
+                <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: BLUE, opacity: 0.4 }} />
+                <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: BLUE, opacity: 0.6 }} />
+                <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: BLUE, opacity: 0.8 }} />
+              </View>
+            </View>
+          </View>
+
+          {/* Input bar */}
+          <View style={{ borderTopWidth: 1, borderTopColor: "rgba(0,0,0,0.06)", paddingVertical: 10, paddingHorizontal: 14, flexDirection: "row", alignItems: "center", gap: 10, backgroundColor: "#ffffff" }}>
+            <View style={{ flex: 1, backgroundColor: "#f3f4f6", borderRadius: 20, paddingVertical: 8, paddingHorizontal: 14 }}>
+              <Text style={{ fontSize: 12, color: "#9ca3af" }}>Posez votre question fiscale...</Text>
+            </View>
+            <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: PRIMARY, alignItems: "center", justifyContent: "center" }}>
+              <Ionicons name="send" size={14} color={DARK} />
+            </View>
+          </View>
+        </View>
+
+        {/* iPad home indicator */}
+        <View style={{ width: 80, height: 4, borderRadius: 2, backgroundColor: "#555", alignSelf: "center", marginTop: 8 }} />
+      </View>
     </View>
   );
 }
@@ -144,31 +248,26 @@ export default function LandingShowcase({ isMobile }: Props) {
         />
       </View>
 
-      {/* Section 2 — Assistant IA */}
+      {/* Section 2 — Assistant IA (mock iPad) */}
       <View style={{ backgroundColor: "#faf8f5" }}>
         <FeatureSection
           isMobile={isMobile}
           reverse
           label="ASSISTANT IA"
           labelColor={BLUE}
-          title={"Posez vos questions,\nobtenez des réponses sourcées"}
-          description="Un assistant IA formé sur le CGI Congo et le Code Social. Chaque réponse cite les articles de loi."
+          title={"Posez vos questions,\nobtenez des reponses sourcees"}
+          description="Un assistant IA forme sur le CGI Congo et le Code Social. Chaque reponse cite les articles de loi."
           checks={[
-            "Réponses avec références aux articles du CGI",
+            "Reponses avec references aux articles du CGI",
             "Code du Travail et conventions collectives",
-            "Recherche instantanée dans +3 700 articles",
+            "Recherche instantanee dans +3 700 articles",
             "Disponible 24h/24",
           ]}
           mockupIcon="chatbubbles-outline"
           mockupColor={BLUE}
-          mockupTitle="Assistant IA — NORMX Tax"
-          mockupLines={[
-            "Question|Quel est le taux de l'IS ?",
-            "Réponse|28% (Art. 86-A CGI 2026)",
-            "Source|Art. 86-A, Chapitre 1, Tome 1",
-            "Taux réduit|25% pour écoles",
-            "Taux majoré|33% entités étrangères",
-          ]}
+          mockupTitle=""
+          mockupLines={[]}
+          customMockup={<IPadChatMockup />}
         />
       </View>
 
