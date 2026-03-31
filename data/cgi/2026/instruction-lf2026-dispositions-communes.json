@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "document": "Instruction d'application LF 2026 - Dispositions communes et déclarations",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "version": "2026",
+    "tome": "1",
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 3,
+    "chapitre_titre": "Dispositions communes - Déclarations, vérification, taxation d'office, directive CEMAC",
+    "source": "Direction de la Réglementation et du Contentieux, Instruction n°42-2025 du 31/12/2025"
+  },
+  "articles": [
+    {
+      "article": "Art. CEMAC",
+      "titre": "Effets de la transposition de la Directive CEMAC",
+      "texte": [
+        "La transposition de la directive dans le droit interne de la République du Congo peut avoir plusieurs effets parmi lesquels :",
+        "Effets obligatoires : une fois transposée, la directive devient partie intégrante du droit national et s'impose aux autorités et justiciables.",
+        "Primauté du droit communautaire : en cas de conflit entre la directive et une loi nationale, c'est la directive qui prime.",
+        "Toutefois, en raison du fait que la Directive n°0119/25-UEAC-177-CM-42 du 9 janvier 2025 portant harmonisation de l'imposition des revenus et bénéfices dans les États membres de la CEMAC ne contredit pas certaines dispositions du code général des impôts, celles-ci demeurent en vigueur et sont concurrentes sur les points non prévus par la directive.",
+        "C'est le principe de spécialité et de complémentarité des normes.",
+        "--- Commentaire de l'instruction ---",
+        "Cette section de l'instruction explique les effets juridiques de la transposition de la directive CEMAC dans le droit congolais. Le principe clé est que la directive prime sur la loi nationale en cas de conflit, mais les dispositions du CGI qui ne sont pas en contradiction avec la directive restent applicables en vertu du principe de complémentarité. La base juridique de la réforme LF 2026 est la Directive CEMAC n°0119/25-UEAC-177-CM-42 du 09 janvier 2025."
+      ],
+      "mots_cles": ["directive CEMAC", "transposition", "primauté droit communautaire", "0119/25-UEAC-177-CM-42", "spécialité", "complémentarité", "harmonisation", "9 janvier 2025"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 128",
+      "titre": "Déclaration d'existence",
+      "texte": [
+        "Les contribuables soumis à l'impôt sur les sociétés et sur les bénéfices d'affaires doivent, dans les quinze jours du début de leurs déclarations, souscrire une déclaration d'existence auprès de leur résidence fiscale au sein de l'administration fiscale.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 128 fixe l'obligation de déclaration d'existence dans les 15 jours du début d'activité pour tout contribuable IS ou IBA."
+      ],
+      "mots_cles": ["déclaration existence", "15 jours", "résidence fiscale", "début activité"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 129",
+      "titre": "Régime du bénéfice réel obligatoire",
+      "texte": [
+        "Les contribuables dont le chiffre d'affaires est supérieur à 100.000.000 de francs CFA sont assujettis au régime de l'imposition assis sur le bénéfice réel.",
+        "Les contribuables sont tenus de souscrire une déclaration du montant de leur résultat à l'unité des moyennes entreprises de la circonscription dans laquelle est situé le siège de l'entreprise ou son principal établissement, dans les conditions et détails prévus par le CGI, si leur chiffre d'affaires ne dépasse pas 2.000.000.000 de francs CFA.",
+        "Pour les contribuables dont le chiffre d'affaires est supérieur ou égal à 2.000.000.000 de francs, la déclaration est déposée à l'unité des grandes entreprises de la circonscription.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 129 du CGI, tome 1 reprend l'article 102 du présent code. L'instruction note qu'il constitue une erreur matérielle (doublon)."
+      ],
+      "mots_cles": ["régime réel", "100 millions", "2 milliards", "moyennes entreprises", "grandes entreprises", "bénéfice réel"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 130",
+      "titre": "Télédéclaration et télépaiement obligatoires",
+      "texte": [
+        "Les entreprises soumises au régime du réel doivent, dans le cadre de leurs obligations fiscales, procéder à la télédéclaration et au télépaiement de leurs impôts, droits et taxes dont ils sont redevables, en application des dispositions légales en vigueur.",
+        "Le non-respect de cette disposition est sanctionné par une pénalité de 10% du montant à déclarer.",
+        "Sous peine d'irrecevabilité, les états financiers doivent être attestés et certifiés par un expert-comptable, en l'absence d'un commissaire aux comptes en leur entité.",
+        "Ces derniers doivent justifier d'un certificat de moralité fiscale de l'année en cours ou d'une attestation de non redevance fiscale.",
+        "En cas de conflit sur les états financiers, l'administration fiscale se réfère à ceux déposés auprès d'elle ou à ceux de la centrale des bilans auprès de la BEAC.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 130 impose la télédéclaration et le télépaiement pour toutes les entreprises au régime réel. La pénalité de 10% s'applique en cas de non-respect. Les états financiers doivent être certifiés par un expert-comptable ou un commissaire aux comptes disposant d'un certificat de moralité fiscale."
+      ],
+      "mots_cles": ["télédéclaration", "télépaiement", "10% pénalité", "expert-comptable", "certificat moralité fiscale", "états financiers", "BEAC"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 131",
+      "titre": "Déclaration annuelle du résultat fiscal",
+      "texte": [
+        "1) Les contribuables soumis à l'IS et à l'IBA doivent déclarer leur résultat fiscal annuel à l'appui de trois jeux complets d'états financiers annuels tels que prévus par l'Acte Uniforme OHADA relatif au droit comptable et à l'information financière des entités. Les états financiers annuels doivent également être produits sur support électronique.",
+        "2) Le jeu complet d'états financiers comprend : le bilan, le compte de résultat, le tableau de flux de trésorerie, les notes annexes.",
+        "3) La déclaration du résultat fiscal se fait au moyen d'un modèle prescrit par l'administration fiscale dit déclaration statistique et fiscale.",
+        "Les livres, registres ou pièces doivent être conservés dans leur forme originale pendant dix ans.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 131 détaille les obligations de déclaration annuelle : 3 jeux d'états financiers SYSCOHADA (bilan, compte de résultat, tableau de flux de trésorerie, notes annexes), déclaration statistique et fiscale, conservation 10 ans des documents comptables."
+      ],
+      "mots_cles": ["déclaration résultat", "états financiers", "SYSCOHADA", "OHADA", "3 jeux", "bilan", "10 ans conservation", "déclaration statistique et fiscale", "support électronique"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 132",
+      "titre": "Déclarations des personnes physiques",
+      "texte": [
+        "1) La déclaration des revenus des personnes physiques bénéficiaires uniquement des revenus fonciers, traitements, salaires, indemnités, émoluments, pensions et rentes viagères, des revenus des capitaux mobiliers ainsi que des plus-values de cession, et le paiement éventuel du solde liquidation des impôts sur les revenus, sont effectués au plus tard le 20 mars de l'année qui suit celle de la mise à disposition desdits revenus auprès de l'unité de la fiscalité de particuliers du lieu de la résidence des contribuables.",
+        "2) Les déclarations spéciales des revenus d'exploitation des personnes physiques relevant des cédules des bénéfices d'affaires présentant les états financiers conformément à l'Acte Uniforme de l'OHADA sont déposées auprès de l'unité des entreprises (grandes, moyennes, petites et très petites) compétente.",
+        "3) Les déclarations des revenus des personnes physiques relevant à la fois de l'une et l'autre catégorie visée aux alinéas 1 et 2 ci-dessus, sont effectuées auprès de l'unité de la fiscalité des particuliers du lieu de résidence du contribuable, au plus tard le 20 juin de l'année qui suit celle de l'acquisition desdits revenus, après déduction des acomptes de l'impôt sur le bénéfice d'affaires acquitté auprès de l'unité des entreprises compétentes.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 132 fixe les dates et lieux de déclaration pour les personnes physiques : revenus passifs (fonciers, salaires, IRCM, plus-values) au 20 mars auprès de la fiscalité des particuliers ; bénéfices d'affaires auprès de l'unité des entreprises ; revenus mixtes (les deux catégories) au 20 juin auprès de la fiscalité des particuliers avec imputation des acomptes IBA."
+      ],
+      "mots_cles": ["déclaration personnes physiques", "20 mars", "20 juin", "revenus mixtes", "fiscalité des particuliers", "unité des entreprises", "solde liquidation"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 140A",
+      "titre": "Déclaration des biens mobiliers à l'étranger",
+      "texte": [
+        "Toute personne domiciliée ou résident habituellement au Congo, conservant hors du Congo des biens mobiliers, doivent obligatoirement dans les délais requis une déclaration indiquant la nature, la valeur de ses biens et les revenus y attachés.",
+        "La déclaration, tant des différents éléments d'actifs que du revenu, est faite sous la foi du serment.",
+        "--- Commentaire de l'instruction ---",
+        "Obligation de déclaration sous serment de tous les biens mobiliers détenus à l'étranger par les résidents congolais."
+      ],
+      "mots_cles": ["biens mobiliers étranger", "déclaration obligatoire", "serment", "résidents"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 140D",
+      "titre": "Droit de rectification de l'administration",
+      "texte": [
+        "L'administration a le droit de rectifier les déclarations, mais elle doit au préalable adresser au contribuable l'indication des éléments qu'elle se propose de retenir comme base d'imposition et fixer le délai maximal qui lui ait accordé pour se faire entendre ou faire parvenir son acception ou ses observations.",
+        "--- Commentaire de l'instruction ---",
+        "Le droit de rectification impose à l'administration une procédure contradictoire : elle doit notifier au contribuable les éléments de base d'imposition envisagés et lui accorder un délai pour répondre. Le contribuable a le droit d'être entendu avant toute rectification."
+      ],
+      "mots_cles": ["droit rectification", "notification", "observations", "base d'imposition", "procédure contradictoire", "délai"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 140F",
+      "titre": "Taxation d'office",
+      "texte": [
+        "Est taxé d'office tout contribuable :",
+        "1) Qui n'a pas souscrit sa déclaration après mise en demeure d'un délai de 8 jours ou qui s'est opposé au contrôle fiscal ;",
+        "2) Qui s'est abstenu de répondre aux demandes d'éclaircissement ou de justifications de l'administration fiscale ;",
+        "3) Dont le revenu déclaré, défalcation faite des charges déductibles, est inférieur au total des dépenses personnelles, ostensibles et notoires, augmentée de ces revenus en nature.",
+        "En ce qui concerne ces contribuables, la base d'imposition est, à défaut d'éléments certains permettant de leur attribuer un revenu supérieur, fixé à une somme égale au montant des dépenses et des revenus en nature, diminué du montant des revenus affranchis de l'impôt.",
+        "--- Commentaire de l'instruction ---",
+        "La taxation d'office est une procédure coercitive qui s'applique aux contribuables défaillants : non-déclaration malgré mise en demeure de 8 jours, refus de répondre aux demandes de l'administration, ou revenus déclarés insuffisants au regard du train de vie."
+      ],
+      "mots_cles": ["taxation d'office", "mise en demeure", "8 jours", "dépenses personnelles", "évaluation forfaitaire", "contrôle fiscal", "train de vie"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 140H",
+      "titre": "Cession, cessation ou décès de l'exploitant",
+      "texte": [
+        "1) Dans le cas de cession, de cessation ou décès, en totalité ou en partie, dû à raison des bénéfices réalisés dans cette entreprise ou qui n'ont pas encore été imposé est immédiatement établi.",
+        "Les contribuables doivent, dans un délai de quinze jours, aviser l'inspecteur divisionnaire de la cessation et lui faire connaître la date effective ainsi que les noms, prénoms et adresses du cessionnaire.",
+        "2) Pour les contribuables soumis au régime du forfait, le bénéfice imposable de l'année en cours est fixé au montant du bénéfice forfaitaire retenu pour l'année précédente et ajusté au prorata du temps écoulé.",
+        "En cas de cession ou de cessation d'entreprise dans un délai de cinq ans après la création, le bénéfice imposable est augmenté du montant des plus-values provenant de la cession des stocks et des éléments de l'actif immobilisé.",
+        "--- Commentaire de l'instruction ---",
+        "En cas de cession, cessation ou décès, l'imposition est immédiate. Délai de 15 jours pour aviser l'inspecteur divisionnaire. Pour les forfaitaires : bénéfice proratisé. Si cession dans les 5 ans suivant la création : réintégration des plus-values de stocks et actifs."
+      ],
+      "mots_cles": ["cession", "cessation", "décès", "15 jours", "bénéfice imposable immédiat", "plus-values", "5 ans", "prorata", "inspecteur divisionnaire"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 140K",
+      "titre": "Décès du contribuable - Impositions",
+      "texte": [
+        "Dans le cas du décès du contribuable, l'impôt sur les bénéfices d'affaires est établi à raison des revenus dont ce dernier a disposé pendant l'année de son décès et des bénéfices qu'il a réalisés depuis la fin du dernier exercice taxé.",
+        "Dans le cas des revenus des capitaux mobiliers, l'imposition porte sur les revenus dont la distribution ou le versement résulte du décès du contribuable s'ils n'ont pas précédemment imposé et sur ceux qu'il acquit sans en avoir la disposition antérieurement à son décès.",
+        "La déclaration des revenus imposables est produite par les ayants droits du défunt dans les six mois de la date du décès.",
+        "--- Commentaire de l'instruction ---",
+        "En cas de décès, l'IBA est établi sur les revenus de l'année du décès et les bénéfices depuis la fin du dernier exercice taxé. Les ayants droit disposent de 6 mois pour produire la déclaration. Les revenus dont la mise à disposition résulte du décès font l'objet d'une imposition distincte."
+      ],
+      "mots_cles": ["décès contribuable", "ayants droit", "6 mois", "imposition distincte", "IBA", "IRCM", "revenus année décès"],
+      "statut": "en vigueur"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "document": "Instruction d'application LF 2026 - IS Taux, déclarations et régimes particuliers",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "version": "2026",
+    "tome": "1",
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 1,
+    "chapitre_titre": "IS - Taux, modalités de paiement, régimes particuliers et sociétés étrangères",
+    "source": "Direction de la Réglementation et du Contentieux, Instruction n°42-2025 du 31/12/2025"
+  },
+  "articles": [
+    {
+      "article": "Art. 47",
+      "titre": "Prix de transfert - Principe de pleine concurrence",
+      "texte": [
+        "Les transactions entre entreprises liées doivent être réalisées dans des conditions conformes au principe de pleine concurrence, c'est-à-dire dans les conditions qui seraient convenues entre des entreprises indépendantes réalisant des transactions comparables dans des circonstances comparables.",
+        "--- Commentaire de l'instruction ---",
+        "Les articles 47 à 56 du CGI, tome 1 correspondent aux articles 118 à 118F anciens. Le régime des prix de transfert est renforcé avec une obligation documentaire élargie. Les entreprises doivent mettre à disposition l'ensemble de leur documentation dans les 30 jours suivant la demande de l'administration fiscale."
+      ],
+      "mots_cles": ["prix de transfert", "pleine concurrence", "entreprises liées", "documentation", "30 jours", "transactions comparables"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 75",
+      "titre": "Report déficitaire",
+      "texte": [
+        "Le déficit constaté au cours d'un exercice est reportable sur les résultats des exercices suivants dans la limite de cinq (5) exercices.",
+        "Les amortissements réputés différés en période déficitaire sont reportables sans limitation de durée.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 75 du CGI, tome 1 correspond à l'article 121 du CGI ancien. Le report déficitaire est limité à 5 ans pour les déficits ordinaires. Les amortissements réputés différés (ARD) restent reportables sans limite de durée, ce qui constitue un avantage important pour les entreprises en phase d'investissement."
+      ],
+      "mots_cles": ["report déficitaire", "5 ans", "amortissements différés", "ARD", "sans limitation de durée", "déficit"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 86A",
+      "titre": "Taux de l'impôt sur les sociétés",
+      "texte": [
+        "Le taux de l'impôt sur les sociétés est fixé à :",
+        "- 28% : taux général applicable à toutes les sociétés résidentes ;",
+        "- 25% : taux applicable aux établissements de microfinance et d'enseignement ;",
+        "- 28% : taux applicable aux sociétés minières et immobilières ;",
+        "- 33% : taux applicable aux personnes morales étrangères non-résidentes dans un État membre de la CEMAC.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 86A du CGI, tome 1 correspond à l'article 122 du CGI ancien. NOUVEAUTÉ MAJEURE de la LF 2026 : le taux général de l'IS passe de 30% à 28%. Le taux de 25% pour les établissements de microfinance et d'enseignement est maintenu. Le taux de 33% s'applique aux personnes morales dont le siège n'est pas dans un État membre de la CEMAC. La base juridique est la Directive CEMAC n°0119/25-UEAC-177-CM-42 du 09 janvier 2025."
+      ],
+      "mots_cles": ["taux IS", "28%", "25%", "33%", "microfinance", "enseignement", "non-résidents CEMAC", "baisse taux", "directive CEMAC"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 86C",
+      "titre": "Minimum de perception IS",
+      "texte": [
+        "Le montant de l'impôt sur les sociétés ne peut être inférieur à un minimum de perception fixé à 1% du total des produits d'exploitation, des produits financiers et des produits hors activité ordinaire (HAO).",
+        "Le minimum de perception est versé en quatre (4) acomptes trimestriels aux dates suivantes : 15 février, 15 mai, 15 août et 15 novembre.",
+        "En fin d'exercice, si l'IS définitif est supérieur au minimum de perception, l'entreprise paie le solde (IS - acomptes versés). Si l'IS définitif est inférieur, le minimum de perception reste acquis au Trésor.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 86C du CGI, tome 1 correspond à l'article 123 du CGI ancien. DEUX NOUVEAUTÉS IMPORTANTES : 1) Le taux du minimum de perception passe de 1,5% à 1% sur les produits d'exploitation + financiers + HAO. 2) Les dates de versement des acomptes changent : désormais le 15 février, 15 mai, 15 août et 15 novembre (au lieu de 15 mars, 15 juin, 15 septembre, 15 décembre dans l'ancien code). Le minimum de perception reste acquis au Trésor même si l'IS définitif lui est inférieur."
+      ],
+      "mots_cles": ["minimum de perception", "1%", "acomptes IS", "15 février", "15 mai", "15 août", "15 novembre", "4 acomptes", "produits exploitation", "produits financiers", "HAO"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 86D",
+      "titre": "Retenue à la source sur prestations des non-résidents",
+      "texte": [
+        "Les sommes versées en rémunération de prestations de toute nature fournies ou utilisées au Congo par des personnes physiques ou morales qui n'y ont pas d'installation professionnelle permanente donnent lieu à une retenue à la source au taux de 20%.",
+        "Cette retenue s'applique aux honoraires, redevances, droits d'auteur, rémunérations de services, et toute somme versée en contrepartie de prestations immatérielles.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 86D du CGI, tome 1 correspond à l'article 185 ter C du CGI ancien. La retenue à la source de 20% s'applique à toutes les prestations fournies par des non-résidents n'ayant pas d'établissement stable au Congo. Le payeur est responsable du reversement de la retenue au Trésor. NOTE : dans l'article 92B, le renvoi aux articles 185 ter C et 185 ter A constitue une erreur matérielle ; il faut lire : article 86D."
+      ],
+      "mots_cles": ["retenue source", "non-résidents", "20%", "prestations", "honoraires", "redevances", "services immatériels"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 86E",
+      "titre": "Déclaration des résultats IS",
+      "texte": [
+        "Les contribuables soumis à l'impôt sur les sociétés sont tenus de souscrire chaque année, au plus tard le 30 avril, une déclaration des résultats de l'exercice précédent.",
+        "Cette déclaration doit être accompagnée des états financiers annuels établis conformément au système comptable OHADA (SYSCOHADA).",
+        "L'obligation de déclaration des résultats concerne tous les contribuables, que les bénéfices réalisés soient soumis à l'impôt ou qu'ils en soient exonérés.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 86E du CGI, tome 1 correspond à l'article 124 du CGI ancien. Il n'y a pas de modification substantielle. La date limite de déclaration reste le 30 avril. La déclaration est obligatoire même pour les sociétés exonérées ou déficitaires."
+      ],
+      "mots_cles": ["déclaration résultats", "30 avril", "états financiers", "SYSCOHADA", "obligation déclarative"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 86F",
+      "titre": "Délais de déclaration spéciaux",
+      "texte": [
+        "En cas de dissolution, transformation entraînant la création d'un être moral nouveau, d'apport en société, de fusion, de transfert de siège ou d'un établissement à l'étranger, la déclaration des bénéfices non encore imposés est souscrite dans un délai spécial de 15 jours. Le solde de liquidation est alors exigible à l'expiration de ce délai.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 86F du CGI, tome 1 correspond à l'article 124A du CGI ancien. En cas d'événements exceptionnels (dissolution, fusion, transfert), un délai raccourci de 15 jours s'applique pour la déclaration et le paiement du solde."
+      ],
+      "mots_cles": ["délai déclaration", "15 jours", "dissolution", "fusion", "transformation", "liquidation", "transfert siège"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 86G",
+      "titre": "Versement des acomptes IS",
+      "texte": [
+        "Toutes les sociétés ou personnes morales soumises à l'impôt sur les sociétés sont assujetties au versement de cet impôt sans émission préalable d'un rôle.",
+        "Les redevables de l'impôt sur les sociétés sont tenus d'effectuer de leur propre initiative : au cours de chaque période d'imposition, le versement d'acomptes ; dès la remise de la déclaration des bénéfices prévus à l'article 86F, le paiement du solde de l'impôt liquidé.",
+        "Les acomptes sont calculés par la société et versés dans les quinze premiers jours des mois de février, mai, août et novembre.",
+        "Chaque acompte est égal au quart (1/4) de l'impôt calculé sur les 4/5 du bénéfice imposable du plus récent exercice clos à la date de son échéance.",
+        "Pour les sociétés nouvelles, les acomptes sont fixés au quart de l'impôt calculé sur le produit évalué à 5% du capital appelé.",
+        "Pour les succursales de sociétés étrangères, les acomptes sont fixés au quart de l'impôt calculé sur le produit évalué à 5% du capital social minimum d'une SA de droit OHADA ne faisant pas appel public à l'épargne.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 86G du CGI, tome 1 correspond à l'article 124B du CGI ancien. Cette disposition abroge les anciens acomptes d'IS. Désormais, tout contribuable assujetti à l'IS est soumis au minimum de perception payable en quatre acomptes quel que soit le résultat. A contrario, les contribuables non assujettis à l'IS ne sont pas redevables du minimum de perception."
+      ],
+      "mots_cles": ["acomptes IS", "versement spontané", "4 acomptes", "février mai août novembre", "minimum perception", "1/4 impôt", "4/5 bénéfice", "sociétés nouvelles", "5% capital"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 87",
+      "titre": "Régime des sociétés mères et filiales",
+      "texte": [
+        "Lorsqu'une société par actions ou à responsabilité limitée possède des actions ou parts d'intérêts d'une autre société, les produits nets des actions ou parts d'intérêts perçus par la première au cours de l'exercice sont retranchés du bénéfice net total, défalcation faite d'une quote-part de frais et charges fixée à 10% du montant desdits produits.",
+        "Conditions d'application : 1° les actions ou parts possédées par la société mère représentent au moins 25% du capital de la filiale ; 2° les sociétés mères et leurs filiales ont leur siège dans la CEMAC ; 3° les titres sont inscrits sous forme nominative pendant deux années consécutives au moins.",
+        "La rupture de cet engagement est sanctionnée par l'imposition des revenus indûment exonérés.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 87 du CGI, tome 1 correspond à l'article 126 du CGI ancien. Le régime mère-filiale permet de retrancher les dividendes reçus du bénéfice imposable moyennant une quote-part de frais de 10%. Conditions : participation minimum 25%, siège CEMAC, détention nominative 2 ans minimum. Ce régime évite la double imposition des bénéfices distribués au sein d'un groupe."
+      ],
+      "mots_cles": ["sociétés mères filiales", "dividendes", "quote-part 10%", "participation 25%", "2 ans détention", "CEMAC", "double imposition"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 90",
+      "titre": "Régime fiscal des holdings - Conditions d'éligibilité",
+      "texte": [
+        "Les SA ou SARL de droit congolais peuvent bénéficier du régime des sociétés holding dès lors qu'elles remplissent les conditions suivantes :",
+        "1) détenir un portefeuille d'actions ou de parts sociales dont la valeur est au moins égale aux deux tiers de l'actif immobilisé de la holding ;",
+        "2) maintenir cette proportion pendant une durée minimum de cinq années ;",
+        "3) avoir pour seules activités : la gestion de participations, les prestations de direction/gestion/coordination de sociétés du groupe, la recherche et développement, la gestion de trésorerie du groupe.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 90 du CGI, tome 1 correspond aux articles 126D et 126D-1 anciens. Le régime des holdings est soumis à des conditions strictes : portefeuille de 2/3 de l'actif immobilisé, maintien pendant 5 ans, activités limitées. Les plus-values de cession de titres détenus plus de 2 ans sont taxées à 1/4 du taux IS. Si le portefeuille est composé à 60% de participations CEMAC et les titres détenus plus de 2 ans, les plus-values sont exonérées."
+      ],
+      "mots_cles": ["holdings", "2/3 actif immobilisé", "5 ans", "portefeuille", "gestion participations", "plus-values titres", "1/4 taux IS", "60% CEMAC"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 91",
+      "titre": "Régime d'intégration fiscale - Dispositions générales",
+      "texte": [
+        "Une société dont le capital n'est pas détenu à 95% au moins, directement ou indirectement, par une autre personne morale assujettie à l'IS, peut se constituer seule redevable de l'IS dû sur l'ensemble des résultats du groupe formé par elle-même et les sociétés dont elle détient 95% au moins du capital.",
+        "L'option d'intégration est exercée par la société mère d'un groupe, avant la date d'ouverture de l'exercice. Elle est valable pour une période de cinq exercices. Elle est renouvelée par tacite reconduction, sauf dénonciation trois mois avant l'expiration de chaque période.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 91 du CGI, tome 1 correspond à l'article 126E ancien. Le régime d'intégration fiscale permet à une société mère de se constituer seule redevable de l'IS pour l'ensemble du groupe (détention 95% minimum). L'option est valable 5 ans, tacitement reconductible."
+      ],
+      "mots_cles": ["intégration fiscale", "groupe de sociétés", "95%", "5 exercices", "société mère", "résultat d'ensemble", "option"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 92",
+      "titre": "Régime des personnes morales étrangères",
+      "texte": [
+        "Les personnes morales étrangères se livrant sur le territoire de la République du Congo à des activités dans des conditions d'intermittence et de précarité qui ne permettent pas l'application des articles 86C à 86F du présent Code, sont assujetties à un impôt forfaitaire sur le revenu.",
+        "Les entreprises sont tenues de déposer une déclaration d'existence, une autorisation temporaire d'exercer (ATE), une déclaration des prestations au plus tard le quinze (15) du deuxième mois suivant celui de l'exécution des prestations.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 92 du CGI, tome 1 correspond à l'article 126 ter ancien. La date de déclaration qui était autrefois au vingt (20) du deuxième mois suivant celui de l'exécution des prestations, est désormais fixée au plus tard le quinze (15) du deuxième mois suivant celui de l'exécution des prestations."
+      ],
+      "mots_cles": ["sociétés étrangères", "impôt forfaitaire", "ATE", "autorisation temporaire", "15 du 2ème mois", "intermittence", "précarité"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 92A",
+      "titre": "Base imposable des sociétés étrangères",
+      "texte": [
+        "L'impôt sur les sociétés des personnes morales étrangères est assis sur la base d'un pourcentage forfaitaire du chiffre d'affaires hors taxes réalisé dans la République du Congo. Ce pourcentage forfaitaire est fixé à 22% et constitue la base imposable.",
+        "Le taux de change applicable est le taux de change en République du Congo à la date d'émission des factures.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 92A du CGI, tome 1 correspond à l'article 126 quater A ancien. La base imposable des sociétés étrangères est de 22% du CA HT réalisé au Congo. En ce qui concerne les sociétés étrangères, le taux de l'IS n'a pas changé, il est toujours à 33%."
+      ],
+      "mots_cles": ["base imposable étrangers", "22% forfaitaire", "chiffre d'affaires", "taux 33%", "taux de change"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 92B",
+      "titre": "Paiement IS sociétés étrangères et sous-traitants pétroliers",
+      "texte": [
+        "L'IS est payé spontanément et sans émission préalable de rôle sur les bénéfices ou la base imposable de la société sous-traitante pétrolière.",
+        "La retenue à la source est instituée pour les sociétés étrangères dont : la durée des travaux n'excède pas six mois ; la durée des travaux excède six mois et qui ne justifient pas d'une installation professionnelle permanente en République du Congo.",
+        "Pour ces sociétés : les travaux ou prestations exécutés au cours d'un mois doivent être facturés dans les 30 jours du 2ème mois suivant ; l'IS forfaitaire retenu à la source est exigible au plus tard le 15 du mois qui suit la date de paiement prévue sur la facture.",
+        "A défaut de justification d'une ATE, le taux de l'impôt applicable est le taux général de 20% prévu à l'article 86D du présent code.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 92B du CGI, tome 1 correspond à l'article 126 quater B.1 ancien. Le renvoi aux articles 185 ter C et 185 ter A constitue une erreur matérielle. Au lieu de : articles 185 ter C et 185 ter A, Lire : article 86D. Les sous-traitants pétroliers sont soumis à un régime spécifique de retenue à la source."
+      ],
+      "mots_cles": ["sous-traitants pétroliers", "retenue source", "6 mois", "ATE", "20%", "facturation 30 jours", "erreur matérielle", "86D"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 92C",
+      "titre": "Taux IS sociétés étrangères",
+      "texte": [
+        "Le taux de l'impôt sur les sociétés pour les sociétés étrangères est fixé à l'article 86A du présent code.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 92C du CGI, tome 1 correspond à l'article 126 quater B-2 ancien. En ce qui concerne les sociétés étrangères, le taux de l'IS n'a pas changé, il est toujours à 33%."
+      ],
+      "mots_cles": ["taux IS étrangers", "33%", "personnes morales étrangères"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 92E",
+      "titre": "Sanctions défaut de déclaration sociétés étrangères",
+      "texte": [
+        "Le défaut de déclaration par un contribuable des factures émises, ainsi que l'inexactitude ou l'insuffisance de déclaration sont sanctionnés par une amende fiscale de 100.000 francs par élément omis ou incomplet.",
+        "Le non-paiement de l'impôt ou son paiement partiel après une mise en demeure de 8 jours est sanctionné par une pénalité de 100% du montant des droits éludés.",
+        "Le paiement tardif de l'impôt avant mise en demeure est sanctionné par un intérêt de retard de 1% par jour ouvrable calculé sur le principal des droits sans excéder 50%.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 92E du CGI, tome 1 correspond à l'article 126 quater C-2 ancien. Les sanctions sont maintenues : amende de 100.000 FCFA par élément omis, pénalité de 100% en cas de non-paiement après mise en demeure, intérêt de retard de 1% par jour (max 50%)."
+      ],
+      "mots_cles": ["sanctions", "amende 100.000 FCFA", "pénalité 100%", "intérêt retard 1%", "mise en demeure 8 jours", "50% maximum"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 92G",
+      "titre": "Quitus fiscal",
+      "texte": [
+        "L'autorisation de quitter le territoire congolais, pour les personnes morales étrangères, est subordonnée à la présentation d'un quitus fiscal délivré par :",
+        "- le directeur général des impôts et des domaines, lorsque le chiffre d'affaires global du requérant ne dépasse pas 100.000.000.000 de francs CFA ;",
+        "- le ministre des finances lorsque le chiffre d'affaires global du requérant est supérieur à 100 milliards de francs CFA, après avis du directeur général des impôts et des domaines.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 92G du CGI, tome 1 correspond à l'article 126 quater D ancien. Le quitus fiscal reste obligatoire pour les sociétés étrangères quittant le territoire. Le certificat d'imposition est délivré par le chef de l'Unité du requérant (et non plus par l'inspecteur divisionnaire)."
+      ],
+      "mots_cles": ["quitus fiscal", "certificat d'imposition", "100 milliards", "sociétés étrangères", "autorisation quitter territoire"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 92J",
+      "titre": "Sous-traitants pétroliers - Régime dérogatoire",
+      "texte": [
+        "Toutes les personnes morales ayant leur siège social au Congo, ou celles qui exercent au Congo une activité industrielle, commerciale, artisanale, agricole ou prestations de service, par dérogation de l'article 4 du CGI tome 1, et qui sont liées aux sociétés de recherche, de production et d'exploitation pétrolières installées ou opérant au Congo, sont imposées selon les dispositions des articles 92, 92A et 92I du présent code quel que soit le lieu d'exécution du contrat.",
+        "Sont de plein droit soumises au régime dérogatoire les personnes morales dont l'activité exclusive est de fournir des biens, services ou d'exécuter des travaux directement liés à l'activité pétrolière.",
+        "Le seuil de 70% du CA résultant de l'activité pétrolière déclenche l'application du régime dérogatoire.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 92J du CGI, tome 1 correspond à l'article 126 sexies ancien. Les sous-traitants pétroliers dont le CA pétrolier représente au moins 70% du CA global sont soumis au régime dérogatoire de l'IS forfaitaire."
+      ],
+      "mots_cles": ["sous-traitants pétroliers", "régime dérogatoire", "70% CA", "activité pétrolière", "IS forfaitaire", "hydrocarbures"],
+      "statut": "en vigueur"
+    }
+  ]
+}

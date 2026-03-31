@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "document": "Instruction d'application LF 2026 - IBA",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "version": "2026",
+    "tome": "1",
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 2,
+    "chapitre_titre": "Impôt sur les Bénéfices d'Affaires (IBA)",
+    "source": "Direction de la Réglementation et du Contentieux, Instruction n°42-2025 du 31/12/2025"
+  },
+  "articles": [
+    {
+      "article": "Art. 93",
+      "titre": "Principe de l'IBA",
+      "texte": [
+        "Les bénéfices réalisés par les personnes physiques qui accomplissent habituellement, pour leur propre compte, une activité à caractère lucratif, sont soumis à un impôt annuel désigné sous le nom d'impôt sur les bénéfices d'affaires (IBA).",
+        "--- Commentaire de l'instruction ---",
+        "L'article 93 du CGI, tome 1 est une disposition nouvelle. Il précise le champ d'application et l'assiette de l'impôt sur les bénéfices d'affaires (IBA). L'IBA s'applique sur les revenus professionnels à savoir : les bénéfices industriels, commerciaux et artisanaux (BICA), bénéfices agricoles (BA), les bénéfices non commerciaux (BNC) et assimilés. L'IBA devient un impôt autonome, alors que l'IRPP englobait toutes les catégories de revenus."
+      ],
+      "mots_cles": ["IBA", "bénéfices d'affaires", "personnes physiques", "BICA", "BNC", "BA", "impôt autonome", "IRPP supprimé"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 93A",
+      "titre": "Champ d'application de l'IBA",
+      "texte": [
+        "Sont imposables au titre de l'impôt sur les bénéfices d'affaires :",
+        "- les bénéfices industriels, commerciaux, artisanaux et agricoles, y compris les plus-values de cession de fonds de commerce ou de clientèle ;",
+        "- les bénéfices des professions libérales et des charges et offices dont les titulaires n'ont pas la qualité de commerçant ;",
+        "- les produits des droits de propriété intellectuelle ou industrielle ;",
+        "- et d'une manière générale, les bénéfices et revenus de toutes opérations ou exploitations lucratives, perçus de manière habituelle ou exceptionnelle, ne se rattachant pas à des revenus soumis à l'ITS, à l'IRCM ou à l'IRF.",
+        "Les personnes physiques associées de sociétés non assujetties à l'IS sont personnellement soumises à l'IBA pour la part des bénéfices sociaux correspondant à leurs droits dans la société.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 93A du CGI, tome 1 correspond aux articles 14, 36A et 42 anciens. Cet article marque une séparation claire entre IBA et autres impôts (IS, ITS, IRCM, IRF). L'IBA devient un impôt autonome, alors que l'IRPP englobait toutes les catégories."
+      ],
+      "mots_cles": ["champ application IBA", "BICA", "professions libérales", "propriété intellectuelle", "agricole", "plus-values fonds commerce", "sociétés transparentes"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 93B",
+      "titre": "Personnes imposables à l'IBA",
+      "texte": [
+        "Sous réserve des dispositions des conventions internationales, sont imposables :",
+        "1a) Les personnes physiques de nationalité congolaise ou étrangère ayant leur domicile fiscal au Congo ou y résidant habituellement ;",
+        "1b) Les personnes physiques n'ayant ni domicile, ni résidence au Congo, pour autant qu'elles ont des revenus réalisés dans l'État du Congo ou en provenant ;",
+        "2) Les fonctionnaires ou agents de l'État exerçant leurs fonctions à l'étranger sont passibles de l'impôt au Congo à raison de leurs revenus de source congolaise.",
+        "Une absence continue de durée supérieure à vingt-quatre mois entraîne la perte de la résidence du contribuable au Congo.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 93B du CGI, tome 1 correspond à l'article 2 ancien. Les dispositions de cet article concernent aussi bien l'IBA que l'IRF, l'IRCM et l'ITS."
+      ],
+      "mots_cles": ["personnes imposables IBA", "domicile fiscal", "résidence habituelle", "24 mois", "non-résidents", "source congolaise"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 93C",
+      "titre": "Lieu d'imposition de l'IBA",
+      "texte": [
+        "Les bénéfices imposables sont ceux réalisés par les entreprises exploitées au Congo dans les conditions prévues par les dispositions des articles 5 et 6.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 93C du CGI, tome 1 est une disposition nouvelle. Il précise le lieu d'imposition de l'IBA et la définition du bénéfice imposable comme en matière d'IS."
+      ],
+      "mots_cles": ["lieu imposition IBA", "exploitation au Congo", "territorialité IBA"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 94",
+      "titre": "Bénéfice imposable IBA - Restrictions",
+      "texte": [
+        "Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées par les articles 6 et suivants en matière d'impôt sur les sociétés.",
+        "Toutefois :",
+        "- les amortissements ne peuvent être pratiqués que selon le mode linéaire ;",
+        "- les provisions pour créances douteuses ne sont pas déductibles ;",
+        "- le report déficitaire ne peut s'étendre que jusqu'au troisième exercice qui suit l'exercice déficitaire ;",
+        "- les contribuables ne peuvent pas bénéficier du crédit d'impôt prévu à l'article 3A.",
+        "L'impôt sur le bénéfice des affaires est établi dans les mêmes conditions et sous les mêmes sanctions que l'impôt sur les sociétés.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 94 du CGI, tome 1 est une disposition nouvelle. L'IBA est établi dans les mêmes conditions que l'IS mais le législateur fait des restrictions pour certains avantages fiscaux par rapport à l'IS, à savoir : les amortissements (linéaire uniquement), les provisions pour créances douteuses (non déductibles), les reports déficitaires (3 ans au lieu de 5), les crédits d'impôts pour investissement (non applicables)."
+      ],
+      "mots_cles": ["bénéfice imposable IBA", "amortissement linéaire uniquement", "provisions non déductibles", "report déficitaire 3 ans", "pas crédit impôt", "restrictions IBA"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 94A",
+      "titre": "Charges non déductibles de l'IBA",
+      "texte": [
+        "Ne sont pas déductibles du bénéfice imposable de l'exploitant individuel :",
+        "- les prélèvements que l'exploitant effectue sur ses recettes professionnelles à titre de rémunération de son travail personnel ;",
+        "- les dépenses exposées dans l'intérêt personnel de l'exploitant ;",
+        "- les intérêts des capitaux engagés par l'exploitant et les sommes versées à titre de rémunération des fonds propres de l'entreprise ;",
+        "- les loyers versés par l'exploitant à lui-même pour l'occupation à titre professionnel de locaux dont il est propriétaire.",
+        "Les dépenses mixtes sont ventilées afin de déterminer la part déductible se rapportant à l'exercice de la profession.",
+        "Les frais de représentation ne sont déductibles qu'à hauteur de 50% de leur montant.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 94A du CGI, tome 1 est une disposition nouvelle. Il précise la non déductibilité de certaines dépenses engagées par l'exploitant individuel. Toutefois, pour les charges mixtes, une circulaire du Directeur Général des Impôts et des Domaines précisera les modalités de déduction."
+      ],
+      "mots_cles": ["charges non déductibles IBA", "prélèvements personnels", "frais représentation 50%", "exploitant individuel", "dépenses mixtes", "loyers à soi-même"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 94B",
+      "titre": "Obligations comptables IBA",
+      "texte": [
+        "Les bénéfices perçus de manière régulière sont constatés par une comptabilité d'engagement conforme au SYSCOHADA.",
+        "Toutefois, les contribuables exerçant une profession libérale, une activité non commerciale ou gérant des revenus de propriété intellectuelle ou industrielle peuvent tenir une comptabilité de caisse.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 94B du CGI, tome 1 est une disposition nouvelle. Il fixe les obligations comptables des contribuables et donne la possibilité de tenir une comptabilité de caisse aux contribuables exerçant une profession libérale, une activité non commerciale ainsi que les gérants des revenus de propriété intellectuelle ou industrielle."
+      ],
+      "mots_cles": ["comptabilité IBA", "SYSCOHADA", "comptabilité de caisse", "professions libérales", "engagement"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 95",
+      "titre": "Taux et minimum de perception de l'IBA",
+      "texte": [
+        "Pour le calcul de l'impôt, toute fraction du bénéfice imposable inférieure à mille francs, est négligée.",
+        "Le taux de l'impôt sur les bénéfices d'affaires est fixé à 30%.",
+        "Le montant de l'impôt sur les bénéfices d'affaires ne peut être inférieur à un minimum de perception.",
+        "Pour assurer l'équité de la charge fiscale finale sur les bénéfices, et favoriser la formalisation de l'économie par les entreprises individuelles, le minimum de perception est fixé à 1,5% sur le montant total des produits d'exploitation, des produits financiers et des produits hors activité ordinaire du contribuable.",
+        "En aucun cas, les taux ci-dessus ne peuvent être inférieurs à ceux applicables en matière d'impôts sur la société.",
+        "L'impôt minimum forfaitaire dû pour l'impôt sur les bénéfices d'affaires est régi par les mêmes dispositions que celles de l'impôt sur les sociétés.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 95 du CGI, tome 1 est une disposition nouvelle. L'IBA est un impôt proportionnel dont le taux est fixé à 30% du bénéfice imposable avec un minimum de perception. Le taux du minimum de perception de l'IBA est fixé à 1,5% applicable sur le montant total des produits d'exploitation, des produits financiers et des produits hors activité ordinaire du contribuable. Le bénéfice imposable est établi dans les mêmes conditions que l'IS. Les modalités de déclaration et de paiement, l'imputation et les sanctions sont comme en matière d'IS."
+      ],
+      "mots_cles": ["taux IBA", "30%", "minimum perception IBA", "1,5%", "produits exploitation", "impôt proportionnel"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 95B",
+      "titre": "IBA des sociétés transparentes",
+      "texte": [
+        "L'impôt sur les bénéfices d'affaires dû par les personnes physiques au titre de leur part de bénéfice dans une société transparente est prélevé à la source en application de l'article 183 du présent code.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 95B du CGI, tome 1 est une disposition nouvelle. L'IBA dû par une personne physique en raison de sa quote-part de bénéfice dans une société transparente (SNC, SCP, etc.) est retenu à la source suivant les modalités prévues à l'article 183, tome 1 et liquidé au taux de 30%."
+      ],
+      "mots_cles": ["sociétés transparentes", "SNC", "SCP", "retenue source IBA", "30%", "quote-part bénéfice"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 96",
+      "titre": "Régime du forfait - Petites et très petites entreprises",
+      "texte": [
+        "1. Les contribuables dont le chiffre d'affaires n'excède pas le seuil d'assujettissement à la TVA (100.000.000 FCFA), sont imposés selon le régime du forfait.",
+        "2. Toutefois : a) les contribuables dont le CA n'excède pas le seuil mais qui optent pour la TVA, cessent immédiatement d'être soumis au régime forfaitaire et sont soumis à l'IBA selon le régime général ;",
+        "b) sont exclus du régime du forfait : (i) les personnes exerçant des professions réglementées ; (ii) les boulangers ; (iii) les entrepreneurs de travaux ; (iv) les exploitants de quincaillerie ; (v) les grossistes ; (vi) les importateurs.",
+        "3. Les contribuables imposés au réel dont le CA baisse sous le seuil TVA ne sont soumis au forfait que lorsque leur CA est resté inférieur pendant deux exercices successifs.",
+        "4. L'impôt global forfaitaire cesse dès le premier exercice qui suit celui au cours duquel les limites du CA sont dépassées.",
+        "5. Par dérogation, les contribuables qui satisfont à l'article 104 peuvent opter pour le régime réel avant le 1er février de l'année suivante. L'option vaut pour 3 ans et est irrévocable.",
+        "6. Les contribuables relevant du forfait doivent : a) tenir une comptabilité selon le système minimal de trésorerie OHADA ; b) tenir un registre chronologique des factures d'achats et dépenses ; c) tenir un registre des factures de ventes ; d) souscrire la déclaration mensuelle visée à l'article 176 ; e) effectuer les retenues à la source ; f) produire le bilan, compte de résultat et notes annexes.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 96 du CGI, tome 1 correspond à l'article 26 ancien. Les contribuables dont le chiffre d'affaires ne dépasse pas 100.000.000 FCFA relèvent du régime du forfait. Cependant, les personnes exerçant des professions réglementées, les boulangers, les entrepreneurs de travaux, les exploitants de quincaillerie, les grossistes et les importateurs sont expressément exclus du régime du forfait. L'amende pour défaut de déclaration du paraphe et de la tenue de tout document comptable est ramenée à 100.000 FCFA au lieu de 500.000 FCFA."
+      ],
+      "mots_cles": ["régime forfait", "100 millions", "seuil TVA", "petites entreprises", "exclusions forfait", "professions réglementées", "boulangers", "grossistes", "importateurs", "IGF", "système minimal trésorerie"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 97",
+      "titre": "Évaluation forfaitaire du chiffre d'affaires",
+      "texte": [
+        "Les montants du chiffre d'affaires et du bénéfice sont évalués par l'administration d'après les résultats obtenus par le contribuable au cours de l'année de l'imposition. Ils doivent correspondre au bénéfice que l'entreprise peut produire normalement.",
+        "L'évaluation est notifiée au contribuable qui dispose d'un délai de 30 jours à partir de la réception de cette notification pour faire parvenir son acceptation ou formuler ses observations.",
+        "Le défaut de réponse dans le délai prévu est considéré comme une acceptation.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 97 du CGI, tome 1 correspond à l'article 27 ancien. Toutefois, le contribuable dispose désormais d'un délai de 30 jours au lieu de 20 jours pour faire parvenir sa réponse à la notification de l'administration évaluant son chiffre d'affaires ou son bénéfice."
+      ],
+      "mots_cles": ["évaluation forfaitaire", "30 jours", "notification", "chiffre d'affaires", "délai réponse"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 98",
+      "titre": "Base de calcul de l'impôt global forfaitaire",
+      "texte": [
+        "1. La base de calcul de l'impôt global forfaitaire est fixée pour une année civile.",
+        "2. Cette base de calcul est connue chaque année au plus tard le 15 février après le dépôt de la déclaration n°294 accompagnée obligatoirement des états financiers visés aux articles 96 et 97 du présent code.",
+        "3. Le montant qui sert de base de calcul de l'impôt global forfaitaire est redressé unilatéralement, sans préavis, par l'administration, en cas de manœuvre frauduleuse ou de dissimulation.",
+        "4. Au cours de la première année d'exploitation, l'impôt global forfaitaire est fixé à partir d'un chiffre d'affaires estimé selon la procédure contradictoire.",
+        "5. Le défaut de la déclaration du paraphe et de la tenue des registres, des factures et tous documents comptables ou leur non production, est sanctionné par une taxation d'office et une amende de 100.000 FCFA.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 98 du CGI, tome 1 correspond à l'article 28 ancien. Cependant, la base de calcul de l'impôt global forfaire est désormais connue au plus tard le 15 février de chaque année. Aussi, l'amende pour défaut de déclaration du paraphe et de la tenue de tout document comptable est ramenée à 100.000 FCFA au lieu de 500.000 FCFA."
+      ],
+      "mots_cles": ["impôt global forfaitaire", "15 février", "IGF", "amende 100.000 FCFA", "déclaration 294", "taxation d'office"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 99",
+      "titre": "Déclaration trimestrielle des fournisseurs",
+      "texte": [
+        "Le contribuable soumis au régime du forfait est tenu de déclarer au plus tard le 15 du mois suivant la fin de chaque trimestre, la liste de ses fournisseurs ou de ses sources d'approvisionnement des marchandises auprès de sa résidence fiscale selon le modèle prescrit par l'administration fiscale.",
+        "L'inobservation de cette obligation est sanctionnée par une amende de 500.000 FCFA.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 99 du CGI, tome 1 correspond à l'article 28 bis ancien. Cependant, le délai de déclaration de la liste des fournisseurs est désormais fixé au plus tard le 15 avril, 15 juillet, 15 octobre de l'année en cours et le 15 janvier de l'année suivante."
+      ],
+      "mots_cles": ["liste fournisseurs", "déclaration trimestrielle", "forfait", "15 du mois suivant", "500.000 FCFA"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 102",
+      "titre": "Régime du bénéfice réel",
+      "texte": [
+        "Les contribuables dont le chiffre d'affaires est supérieur ou égal au seuil d'assujettissement à la TVA sont assujettis au régime de l'imposition assis sur le bénéfice réel.",
+        "Déclaration à l'unité des moyennes entreprises si CA ne dépasse pas 2.000.000.000 FCFA. Déclaration à l'unité des grandes entreprises si CA est supérieur ou égal à 2.000.000.000 FCFA.",
+        "Les dispositions des alinéas 2, 3 et 4 du présent article ne s'appliquent pas aux sous-traitants pétroliers.",
+        "A l'appui de la déclaration du bénéfice ou déficit, les contribuables sont tenus de faire connaître leur chiffre d'affaires, c'est-à-dire : le montant brut total des ventes, des travaux effectivement et définitivement réalisés, des avantages, commissions, remises, prix de location, intérêts, escomptes, agios encaissés.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 102 du CGI, tome 1 correspond à l'article 30 ancien. Il n'appelle pas de commentaire particulier. Le seuil du régime réel est le seuil TVA (100.000.000 FCFA)."
+      ],
+      "mots_cles": ["régime réel", "100 millions", "seuil TVA", "2 milliards", "grandes entreprises", "moyennes entreprises", "bénéfice réel"],
+      "statut": "en vigueur"
+    }
+  ]
+}

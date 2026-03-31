@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "document": "Instruction d'application LF 2026 - IS Généralités",
+    "pays": "République du Congo",
+    "edition": "2026",
+    "version": "2026",
+    "tome": "1",
+    "partie": 1,
+    "livre": 1,
+    "chapitre": 1,
+    "chapitre_titre": "Impôt sur les Sociétés - Généralités et Champ d'application",
+    "source": "Direction de la Réglementation et du Contentieux, Instruction n°42-2025 du 31/12/2025"
+  },
+  "articles": [
+    {
+      "article": "Art. 1er",
+      "titre": "Principe de l'impôt sur les sociétés",
+      "texte": [
+        "Il est établi un impôt annuel sur l'ensemble des bénéfices ou revenus réalisés par les sociétés et autres personnes morales, désigné sous le nom d'impôt sur les sociétés.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 1er du CGI, tome 1, correspond à l'article 107 du CGI ancien. Il n'appelle pas de commentaire particulier. Il pose le principe fondamental de l'IS comme impôt annuel frappant les bénéfices des personnes morales."
+      ],
+      "mots_cles": ["IS", "impôt sur les sociétés", "principe IS", "définition", "personnes morales", "bénéfices"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 2",
+      "titre": "Personnes imposables à l'IS",
+      "texte": [
+        "Sont passibles de l'impôt sur les sociétés, quel que soit leur objet : les sociétés anonymes (SA), les sociétés par actions simplifiées (SAS), les sociétés à responsabilité limitée (SARL), les sociétés coopératives et leurs unions.",
+        "Peuvent opter pour le régime fiscal des sociétés de capitaux : les sociétés en nom collectif (SNC), les sociétés en commandite simple (SCS), les sociétés en participation, les sociétés de fait.",
+        "L'option doit être notifiée avant le 30 octobre de l'année en cours pour prendre effet au titre de l'exercice suivant. L'option est irrévocable.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 2 du CGI, tome 1 correspond à l'article 108 du CGI ancien. L'impôt s'applique obligatoirement aux sociétés de capitaux (SA, SAS, SARL) et aux coopératives. Les sociétés de personnes (SNC, SCS, sociétés en participation, sociétés de fait) peuvent opter pour l'IS avant le 30 octobre de l'année en cours. L'option est irrévocable."
+      ],
+      "mots_cles": ["personnes imposables IS", "SA", "SAS", "SARL", "option IS", "SNC", "sociétés de capitaux", "30 octobre", "coopératives", "option irrévocable"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3",
+      "titre": "Exonérations de l'IS",
+      "texte": [
+        "Sont exonérées de l'impôt sur les sociétés : la BEAC, la BDEAC, les coopératives agricoles et leurs unions fonctionnant conformément aux dispositions qui les régissent, les caisses de crédit agricole mutuel, les associations sans but lucratif, les collectivités locales, les organismes d'utilité publique, les groupements d'intérêt économique (GIE), les sociétés civiles professionnelles, les centres de gestion agréés, les entreprises agricoles.",
+        "IMPORTANT : A compter du 1er janvier 2026, les exonérations conventionnelles d'impôt sur les sociétés ne peuvent être octroyées ni renouvelées.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 3 du CGI, tome 1 correspond à l'article 109 du CGI ancien. La principale innovation de la loi de finances 2026 est la suppression des exonérations conventionnelles d'IS à compter du 1er janvier 2026. Cela signifie que les conventions d'établissement qui prévoyaient des exonérations d'IS ne peuvent plus être octroyées ni renouvelées. Les exonérations légales (BEAC, BDEAC, coopératives, etc.) restent en vigueur."
+      ],
+      "mots_cles": ["exonérations IS", "BEAC", "BDEAC", "coopératives agricoles", "GIE", "suppression exonérations conventionnelles", "2026", "associations", "collectivités locales", "centres de gestion agréés"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 3A",
+      "titre": "Crédit d'impôt pour investissement",
+      "texte": [
+        "Il est institué au profit des entreprises soumises à l'impôt sur les sociétés, un crédit d'impôt pour investissement. Ce crédit d'impôt est égal à un pourcentage maximum de 15% du montant des investissements réalisés au cours de l'exercice.",
+        "Le crédit d'impôt est reportable sur une période de 5 ans et n'est pas remboursable. Il est imputable sur l'IS dû au titre de l'exercice au cours duquel les investissements ont été réalisés et, le cas échéant, sur les exercices suivants dans la limite de 5 ans.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 3A du CGI, tome 1 correspond à l'article 109A du CGI ancien. Il n'appelle pas de commentaire particulier. Le crédit d'impôt investissement est plafonné à 15% du montant des investissements, reportable sur 5 exercices, non remboursable. Ce crédit n'est pas applicable aux contribuables soumis à l'IBA (art. 94)."
+      ],
+      "mots_cles": ["crédit d'impôt investissement", "15%", "report 5 ans", "non remboursable", "investissement"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4",
+      "titre": "Territorialité de l'IS",
+      "texte": [
+        "L'impôt sur les sociétés est établi dans les conditions prévues au livre premier du présent Code en tenant compte uniquement des bénéfices réalisés dans les entreprises exploitées au Congo.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 4 du CGI, tome 1 correspond à l'article 110 du CGI ancien. Il pose le principe de territorialité de l'IS : seuls les bénéfices réalisés au Congo sont imposables. Ce principe est applicable sous réserve des conventions internationales relatives aux doubles impositions."
+      ],
+      "mots_cles": ["territorialité IS", "bénéfices Congo", "exploitation au Congo", "principe de territorialité"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 4A",
+      "titre": "Établissement stable",
+      "texte": [
+        "Au sens du présent code, l'expression établissement stable désigne une installation fixe d'affaires par l'intermédiaire de laquelle une entreprise non résidente exerce tout ou partie de son activité.",
+        "Constitue notamment un établissement stable : un siège de direction, une succursale, un bureau, une usine, un atelier, une mine, un puits de pétrole ou de gaz, une carrière ou tout autre lieu d'extraction de ressources naturelles.",
+        "Un chantier de construction ou de montage constitue un établissement stable lorsque sa durée dépasse trois (3) mois.",
+        "La fourniture de services, y compris les services de consultants, par une entreprise agissant par l'intermédiaire de salariés ou d'autre personnel engagé à cet effet, constitue un établissement stable lorsque les activités de cette nature se poursuivent pendant une période ou des périodes représentant un total de plus de 183 jours au cours d'une période quelconque de douze mois.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 4A du CGI, tome 1 est une disposition nouvelle introduite par la loi de finances 2026 en transposition de la directive CEMAC. Il définit la notion d'établissement stable conformément aux standards internationaux. Un chantier de plus de 3 mois ou des services pendant plus de 183 jours sur une période de 12 mois constituent un établissement stable, emportant obligation fiscale au Congo."
+      ],
+      "mots_cles": ["établissement stable", "installation fixe", "3 mois", "183 jours", "chantier", "non-résident", "directive CEMAC", "succursale", "services consultants"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 5",
+      "titre": "Déductibilité des charges - Acte anormal de gestion",
+      "texte": [
+        "Les charges sont admises en déduction du résultat fiscal lorsqu'elles sont exposées dans l'intérêt direct de l'exploitation ou se rattachent à la gestion normale de l'entreprise, correspondent à une charge effective et sont appuyées de justifications suffisantes.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 5 du CGI, tome 1 correspond à l'article 110A du CGI ancien. Il pose le principe fondamental de la déductibilité des charges : elles doivent être exposées dans l'intérêt de l'exploitation, correspondre à une charge effective et être justifiées. Toute charge qui ne remplit pas ces trois conditions constitue un acte anormal de gestion et doit être réintégrée."
+      ],
+      "mots_cles": ["charges déductibles", "acte anormal de gestion", "intérêt de l'exploitation", "justifications", "charge effective", "réintégration"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 6",
+      "titre": "Bénéfice imposable",
+      "texte": [
+        "Le bénéfice imposable est le bénéfice net déterminé d'après les résultats d'ensemble des opérations de toute nature effectuées par l'entreprise, y compris notamment les cessions d'éléments quelconques de l'actif, soit en cours, soit en fin d'exploitation.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 6 du CGI, tome 1 correspond à l'article 110B du CGI ancien. Il définit le bénéfice imposable comme le bénéfice net résultant de l'ensemble des opérations de l'entreprise, incluant les cessions d'actifs."
+      ],
+      "mots_cles": ["bénéfice imposable", "bénéfice net", "résultat d'ensemble", "cessions actif"],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "Art. 7",
+      "titre": "Résidence fiscale des sociétés",
+      "texte": [
+        "La résidence fiscale d'une société est établie au Congo lorsque son siège de direction effective se trouve au Congo, c'est-à-dire le lieu où sont prises les décisions stratégiques et commerciales nécessaires à la conduite de l'ensemble des activités de l'entreprise.",
+        "--- Commentaire de l'instruction ---",
+        "L'article 7 du CGI, tome 1 correspond à l'article 110C du CGI ancien. Il définit la résidence fiscale des sociétés par le critère du siège de direction effective, conformément aux standards internationaux et à la directive CEMAC."
+      ],
+      "mots_cles": ["résidence fiscale société", "siège direction effective", "domicile fiscal", "décisions stratégiques"],
+      "statut": "en vigueur"
+    }
+  ]
+}
