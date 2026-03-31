@@ -20,18 +20,13 @@
         "Le contrat d'apprentissage est celui par lequel un chef d'établissement industriel, commercial ou agricole, un artisan ou un façonnier s'oblige à donner ou à faire donner une formation professionnelle méthodique et complète à une autre personne et par lequel celle-ci s'oblige en retour, à se conformer aux instructions qu'elle recevra et à exécuter les ouvrages qui seront confiés en vue de son apprentissage."
       ],
       "mots_cles": [
-        "apprentissage",
-        "oblige",
-        "donner",
-        "définition",
-        "celui",
-        "chef",
-        "établissement",
+        "formation professionnelle méthodique",
+        "chef d'établissement",
+        "artisan",
+        "façonnier",
         "industriel",
         "commercial",
-        "agricole",
-        "artisan",
-        "façonnier"
+        "agricole"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : De la nature et de la forme du contrat d'apprentissage"
@@ -49,18 +44,16 @@
         "- l'indication de la profession qui sera enseignée à l'apprenti, éventuellement l'indication des cours professionnels que le chef d'établissement s'engage à faire suivre à l'apprenti soit dans l'établissement soit au dehors."
       ],
       "mots_cles": [
-        "profession",
-        "apprenti",
-        "noms",
-        "prénoms",
-        "domicile",
-        "apprentissage",
-        "usages",
-        "indication",
-        "établissement",
-        "soit",
-        "contenu",
-        "établi"
+        "durée 4 ans maximum",
+        "usages profession",
+        "mentions obligatoires",
+        "noms prénoms âge",
+        "mineur",
+        "tuteur",
+        "rémunération",
+        "nourriture",
+        "logement",
+        "cours professionnels"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : De la nature et de la forme du contrat d'apprentissage"
@@ -80,18 +73,13 @@
         "Si l'omission du visa est due au fait du maître, l'apprenti aura droit de faire constater la nullité du contrat et pourra se réclamer de toutes les mesures législatives ou réglementaires applicables aux salariés titulaires d'un contrat de travail de droit commun."
       ],
       "mots_cles": [
-        "apprenti",
-        "visa",
-        "apprentissage",
-        "maître",
-        "droit",
-        "nullité",
-        "constater",
-        "applicables",
-        "forme",
-        "écrite",
-        "être",
-        "constaté"
+        "écrit à peine de nullité",
+        "visa inspecteur du travail",
+        "certificat médical 3 mois",
+        "exempt timbre enregistrement",
+        "libre engagement antérieur",
+        "nullité plein droit",
+        "omission visa"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : De la nature et de la forme du contrat d'apprentissage"
@@ -103,14 +91,9 @@
         "Nul ne peut recevoir des apprentis mineurs s'il n'est âgé de 21 ans au moins."
       ],
       "mots_cles": [
-        "minimum",
-        "maître",
-        "apprentissage",
-        "recevoir",
-        "apprentis",
-        "mineurs",
-        "âge minimum",
-        "apprentissage nul"
+        "21 ans minimum",
+        "maître d'apprentissage",
+        "apprentis mineurs"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conditions du contrat d'apprentissage"
@@ -122,18 +105,11 @@
         "Aucun maître s'il ne vit en famille ou en communauté, ne peut loger en son domicile personnel ou dans son atelier, comme apprenties, des jeunes filles mineures."
       ],
       "mots_cles": [
-        "apprenties",
-        "mineures",
-        "interdiction",
-        "hébergement",
-        "aucun",
-        "maître",
-        "famille",
-        "communauté",
-        "loger",
-        "domicile",
-        "personnel",
-        "atelier"
+        "apprenties mineures",
+        "hébergement interdit",
+        "domicile personnel",
+        "atelier",
+        "famille ou communauté"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conditions du contrat d'apprentissage"
@@ -145,18 +121,10 @@
         "Ne peuvent recevoir des apprentis les individus qui ont été condamnés soit pour crime, soit pour délit contre les mœurs, soit pour quelque délit que ce soit, à une peine d'au moins 3 mois de prison sans sursis."
       ],
       "mots_cles": [
-        "soit",
-        "condamnés",
-        "délit",
-        "interdiction",
-        "peuvent",
-        "recevoir",
-        "apprentis",
-        "individus",
-        "crime",
-        "mœurs",
-        "quelque",
-        "peine"
+        "condamnation crime",
+        "délit contre mœurs",
+        "3 mois prison sans sursis",
+        "interdiction recevoir apprentis"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conditions du contrat d'apprentissage"
@@ -168,18 +136,12 @@
         "L'apprenti doit être âgé de 16 ans au minimum. Il bénéficie des dispositions relatives au travail des enfants et de la réglementation concernant le repos hebdomadaire, la protection des travailleurs, la durée du travail, l'hygiène et la sécurité, la réparation des accidents du travail."
       ],
       "mots_cles": [
-        "minimum",
-        "apprenti",
-        "être",
-        "bénéficie",
-        "enfants",
-        "réglementation",
-        "concernant",
-        "repos",
-        "hebdomadaire",
-        "protection",
-        "durée",
-        "hygiène"
+        "16 ans minimum",
+        "repos hebdomadaire",
+        "hygiène sécurité",
+        "accidents du travail",
+        "durée du travail",
+        "protection enfants"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conditions du contrat d'apprentissage"
@@ -196,18 +158,14 @@
         "Il peut être prévu que l'apprenti s'engage après l'achèvement de l'apprentissage à exercer pendant une durée déterminée qui ne peut excéder 2 ans une activité professionnelle salariée pour le compte de son ancien maître, faute de quoi l'apprenti sera tenu de verser, à titre de clause pénale, une somme qui sera fixée en considération du préjudice qui pourra en résulter pour le maître."
       ],
       "mots_cles": [
-        "apprenti",
-        "maître",
-        "rémunération",
-        "apprentissage",
-        "être",
-        "compte",
-        "smig",
-        "travaux",
-        "formation",
-        "représente",
-        "tenu",
-        "prévu"
+        "rémunération apprenti",
+        "SMIG",
+        "redevance",
+        "moitié du SMIG",
+        "rémunération progressive",
+        "engagement 2 ans après",
+        "clause pénale",
+        "inspecteurs recommandation"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conditions du contrat d'apprentissage"
@@ -219,18 +177,10 @@
         "Toute période égale à onze mois d'apprentissage, ouvre droit, pour l'apprenti, à un mois de repos effectif."
       ],
       "mots_cles": [
-        "repos",
-        "apprenti",
-        "mois",
-        "annuel",
-        "période",
-        "égale",
-        "onze",
-        "apprentissage",
-        "ouvre",
-        "droit",
-        "effectif",
-        "repos annuel"
+        "11 mois apprentissage",
+        "1 mois repos",
+        "repos effectif",
+        "congé annuel"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conditions du contrat d'apprentissage"
@@ -243,18 +193,10 @@
         "Il n'emploiera l'apprenti, dans la mesure de ses forces, qu'aux travaux et services qui se rattachent à l'exercice de la profession."
       ],
       "mots_cles": [
-        "maître",
-        "parents",
-        "apprenti",
-        "obligations",
-        "envers",
-        "prévenir",
-        "retard",
-        "représentants",
-        "maladie",
-        "absence",
-        "nature",
-        "motiver"
+        "prévenir parents",
+        "maladie absence",
+        "travaux rattachés profession",
+        "obligation information"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Des devoirs du maître et de l'apprenti"
@@ -267,18 +209,12 @@
         "Si l'apprenti ne sait pas lire, écrire et compter, le maître est tenu de lui accorder le temps et la liberté nécessaires pour son instruction. Ce temps sera dévolu à l'apprenti selon un accord réalisé entre les parties, mais ne pourra excéder une durée calculée sur la base de 2 heures par jour de travail."
       ],
       "mots_cles": [
-        "apprenti",
-        "maître",
-        "temps",
-        "obligation",
-        "traitement",
-        "traiter",
-        "père",
-        "famille",
-        "assurer",
-        "soins",
-        "médicaux",
-        "meilleures"
+        "soins médicaux",
+        "logement nourriture",
+        "instruction",
+        "2 heures par jour",
+        "bon père de famille",
+        "lire écrire compter"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Des devoirs du maître et de l'apprenti"
@@ -291,18 +227,10 @@
         "Il lui délivrera, à la fin de l'apprentissage, un congé d'acquit ou certificat constatant l'exécution du contrat."
       ],
       "mots_cles": [
-        "obligation",
-        "enseignement",
-        "maître",
-        "enseigner",
-        "apprenti",
-        "progressivement",
-        "complètement",
-        "métier",
-        "profession",
-        "spéciale",
-        "objet",
-        "délivrera"
+        "enseignement progressif",
+        "congé d'acquit",
+        "certificat fin apprentissage",
+        "métier profession"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Des devoirs du maître et de l'apprenti"
@@ -316,18 +244,12 @@
         "Un certificat constatant la qualification professionnelle de l'apprenti lui est remis en cas de succès à l'examen de fin d'apprentissage. Il est signé par les autorités compétentes."
       ],
       "mots_cles": [
-        "apprenti",
-        "apprentissage",
-        "examen",
-        "deux",
-        "profession",
-        "devoirs",
-        "maître",
-        "cadre",
-        "obéissance",
-        "respect",
-        "aider",
-        "mesure"
+        "obéissance respect",
+        "examen fin apprentissage",
+        "jury professionnel",
+        "certificat qualification",
+        "main-d'œuvre",
+        "enseignement technique"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Des devoirs du maître et de l'apprenti"
@@ -339,18 +261,9 @@
         "L'apprenti est tenu de remplacer à la fin de l'apprentissage le temps qu'il n'a pu employer par suite de maladie ou d'absence ayant duré plus de quinze jours."
       ],
       "mots_cles": [
-        "temps",
-        "remplacement",
-        "perdu",
-        "apprenti",
-        "tenu",
-        "remplacer",
-        "apprentissage",
-        "employer",
-        "suite",
-        "maladie",
-        "absence",
-        "ayant"
+        "remplacement temps perdu",
+        "15 jours absence",
+        "maladie prolongée"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Des devoirs du maître et de l'apprenti"
@@ -363,18 +276,11 @@
         "Tout nouveau contrat d'apprentissage conclu sans que les obligations du précédent contrat aient été remplies complètement ou sans qu'il ait été résolu légalement, est nul de plein droit."
       ],
       "mots_cles": [
-        "embauchage",
-        "apprentissage",
-        "interdiction",
-        "apprentis",
-        "ouvrier",
-        "employé",
-        "jeunes",
-        "gens",
-        "liés",
-        "élèves",
-        "stagiaires",
-        "écoles"
+        "embauchage interdit",
+        "indemnité chef établissement",
+        "nullité plein droit",
+        "centres formation professionnelle",
+        "stagiaires élèves"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Des devoirs du maître et de l'apprenti"
@@ -386,18 +292,9 @@
         "Les deux premiers mois de l'apprentissage sont considérés comme un temps d'essai pendant lequel le contrat peut être annulé par la seule volonté d'une des parties."
       ],
       "mots_cles": [
-        "essai",
-        "apprentissage",
-        "période",
-        "deux",
-        "premiers",
-        "mois",
-        "considérés",
-        "temps",
-        "être",
-        "annulé",
-        "seule",
-        "volonté"
+        "2 premiers mois essai",
+        "période essai apprentissage",
+        "annulation libre volonté"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : De la résolution du contrat d'apprentissage"
@@ -413,18 +310,12 @@
         "- divorces du maître, décès de sa femme ou de toute autre femme de la famille qui dirigeait la maison à l'époque de la conclusion du contrat, si les apprenties sont des filles mineures."
       ],
       "mots_cles": [
-        "maître",
-        "résolution",
-        "plein",
-        "droit",
-        "apprenti",
-        "femme",
-        "apprentissage",
-        "intervient",
-        "suivants",
-        "mort",
-        "service",
-        "militaire"
+        "résolution plein droit",
+        "mort maître apprenti",
+        "service militaire",
+        "condamnation article 10",
+        "divorce",
+        "apprenties filles mineures"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : De la résolution du contrat d'apprentissage"
@@ -441,18 +332,15 @@
         "Une maladie entraînant l'impossibilité de poursuivre l'apprentissage dans la profession choisie ou la suspension de l'apprentissage pour une durée supérieure à 6 mois est aussi un motif de demande de résiliation."
       ],
       "mots_cles": [
-        "demande",
-        "maître",
-        "résolution",
-        "parties",
-        "apprentissage",
-        "résolu",
-        "manquement",
-        "stipulations",
-        "infraction",
-        "grave",
-        "habituelle",
-        "prescriptions"
+        "résolution demande parties",
+        "manquement stipulations",
+        "infraction grave habituelle",
+        "changement résidence",
+        "vente fonds",
+        "cessation exploitation",
+        "secrets fabrication",
+        "vol",
+        "maladie 6 mois suspension"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : De la résolution du contrat d'apprentissage"
@@ -465,18 +353,10 @@
         "Les actions en résolution du contrat d'apprentissage sont portées devant les tribunaux du travail qui règlent éventuellement les indemnités ou restitutions qui pourraient être dues à l'une ou à l'autre des parties."
       ],
       "mots_cles": [
-        "rupture",
-        "abusive",
-        "apprentissage",
-        "ouvre",
-        "droit",
-        "dommages",
-        "intérêts",
-        "actions",
-        "résolution",
-        "portées",
-        "devant",
-        "tribunaux"
+        "rupture abusive",
+        "dommages-intérêts",
+        "tribunaux du travail",
+        "indemnités restitutions"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : De la résolution du contrat d'apprentissage"
@@ -489,18 +369,11 @@
         "Mention y est portée de la date de signature du contrat et de la date de fin de l'apprentissage. À l'expiration du contrat le carnet est obligatoirement remis à l'apprenti."
       ],
       "mots_cles": [
-        "carnet",
-        "apprentissage",
-        "apprenti",
-        "date",
-        "ouvert",
-        "maître",
-        "mentionner",
-        "progressions",
-        "cours",
-        "enseignement",
-        "être",
-        "tenu"
+        "carnet apprentissage",
+        "progressions apprenti",
+        "inspecteur du travail",
+        "tenu à jour",
+        "remis à l'apprenti"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Des mesures de contrôle du contrat d'apprentissage"
@@ -515,18 +388,13 @@
         "Des arrêtés du Ministre du travail et de la prévoyance sociale peuvent limiter l'effectif des apprentis dans les entreprises ou suspendre le droit de former des apprentis dans les entreprises dans lesquelles il aura été constaté une formation professionnelle manifestement insuffisante."
       ],
       "mots_cles": [
-        "contrôle",
-        "entreprises",
-        "apprentis",
-        "inspecteur",
-        "apprentissage",
-        "arrêtés",
-        "ministre",
-        "prévoyance",
-        "sociale",
-        "lesquelles",
-        "représentant",
-        "chargé"
+        "contrôle inspecteur travail",
+        "technicien enseignement",
+        "cessation contrat",
+        "pourcentage apprentis",
+        "arrêtés Ministre",
+        "formation insuffisante",
+        "commission consultative"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Des mesures de contrôle du contrat d'apprentissage"

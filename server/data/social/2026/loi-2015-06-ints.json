@@ -20,18 +20,12 @@
         "Toutefois, il peut, lorsque les circonstances le justifient, être transféré en tout autre lieu du territoire national, sur décision du comité de direction."
       ],
       "mots_cles": [
-        "national",
+        "établissement public",
+        "personnalité morale",
+        "autonomie financière",
         "ints",
-        "institut",
-        "social",
         "création",
-        "créé",
-        "établissement",
-        "public",
-        "caractère",
-        "administratif",
-        "doté",
-        "personnalité"
+        "siège"
       ],
       "statut": "en vigueur"
     },
@@ -43,17 +37,12 @@
       ],
       "mots_cles": [
         "tutelle",
-        "ministère",
-        "charge",
+        "académique",
         "institut",
-        "national",
-        "social",
+        "travail",
         "placé",
         "administrative",
-        "affaires",
-        "sociales",
-        "académique",
-        "enseignement"
+        "affaires"
       ],
       "statut": "en vigueur"
     },
@@ -66,18 +55,13 @@
         "- développer la recherche-action et la recherche appliquée en travail social."
       ],
       "mots_cles": [
-        "social",
+        "travail",
         "missions",
         "recherche",
         "institut",
-        "national",
         "assurer",
         "formation",
-        "initiale",
-        "continue",
-        "domaine",
-        "développer",
-        "action"
+        "initiale"
       ],
       "statut": "en vigueur"
     },
@@ -91,18 +75,13 @@
         "- les dons et legs."
       ],
       "mots_cles": [
+        "dons et legs",
         "ressources",
         "institut",
-        "national",
-        "social",
+        "travail",
         "constituées",
         "subvention",
-        "état",
-        "aides",
-        "publiques",
-        "propres",
-        "dons",
-        "legs"
+        "aides"
       ],
       "statut": "en vigueur"
     },
@@ -114,18 +93,13 @@
         "Le directeur général de l'institut national du travail social est nommé par décret en Conseil des Ministres, sur proposition conjointe des Ministres de tutelle."
       ],
       "mots_cles": [
+        "directeur général",
+        "direction générale",
+        "tutelle",
         "direction",
         "institut",
-        "national",
-        "social",
-        "ministres",
-        "administration",
-        "administré",
-        "comité",
-        "géré",
-        "générale",
-        "directeur",
-        "général"
+        "travail",
+        "administration"
       ],
       "statut": "en vigueur"
     },
@@ -138,16 +112,11 @@
       "mots_cles": [
         "statuts",
         "approuvés",
-        "décret",
-        "conseil",
-        "ministres",
-        "fixent",
         "attributions",
         "organisation",
         "fonctionnement",
         "organes",
-        "administration",
-        "gestion"
+        "administration"
       ],
       "statut": "en vigueur"
     },
@@ -159,16 +128,7 @@
       ],
       "mots_cles": [
         "publication",
-        "présente",
-        "sera",
-        "publiée",
-        "journal",
-        "officiel",
-        "exécutée",
-        "état",
-        "présente loi",
-        "sera publiée",
-        "journal officiel"
+        "comme"
       ],
       "statut": "en vigueur"
     }

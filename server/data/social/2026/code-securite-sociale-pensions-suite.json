@@ -18,18 +18,11 @@
         "La pension d'invalidité est toujours concédée à titre temporaire. Elle peut être révisée à la suite de toute modification de l'état de l'assuré soit par aggravation, soit par atténuation de l'invalidité. En vue de déceler cette modification, la Caisse est admise à prescrire de nouveaux examens à l'assuré et l'invalide peut également faire constater toute modification de son état. Les modalités et la périodicité de ces examens sont fixées par arrêté du Ministre chargé de la sécurité sociale."
       ],
       "mots_cles": [
-        "invalidité",
-        "modification",
-        "temporaire",
-        "pension",
-        "état",
-        "assuré",
-        "soit",
-        "examens",
-        "caractère",
-        "toujours",
-        "concédée",
-        "être"
+        "pension temporaire",
+        "révision périodique",
+        "aggravation ou atténuation",
+        "examens médicaux",
+        "arrêté ministériel"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -41,18 +34,9 @@
         "La pension d'invalidité est remplacée par une pension de vieillesse de même montant lorsque le bénéficiaire atteint l'âge de la retraite."
       ],
       "mots_cles": [
-        "pension",
-        "vieillesse",
-        "transformation",
-        "invalidité",
-        "remplacée",
-        "même",
-        "montant",
-        "bénéficiaire",
-        "atteint",
-        "retraite",
-        "même montant",
-        "bénéficiaire atteint"
+        "conversion invalidité en vieillesse",
+        "âge de la retraite",
+        "même montant maintenu"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -72,18 +56,15 @@
         "Le service des allocations familiales est maintenu de plein droit aux bénéficiaires de pension de vieillesse, de pension anticipée ou proportionnelle et de pension d'invalidité."
       ],
       "mots_cles": [
-        "pension",
-        "montant",
-        "mois",
-        "vieillesse",
-        "invalidité",
-        "assurance",
-        "anticipée",
-        "proportionnelle",
-        "moyenne",
-        "assuré",
-        "cent",
-        "allocation"
+        "36 ou 60 meilleurs mois",
+        "10 dernières années",
+        "40 pour cent rémunération moyenne",
+        "majoration 2 pour cent par 12 mois",
+        "240 mois d'assurance",
+        "minimum 60 pour cent du SMIG",
+        "maximum 80 pour cent rémunération",
+        "pension proportionnelle",
+        "allocation de vieillesse"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -99,18 +80,15 @@
         "5) Le droit à la pension du conjoint survivant s'éteint en cas de remariage. Il lui est alors, versé une allocation de remariage égale à six mensualités de la pension."
       ],
       "mots_cles": [
-        "pension",
-        "décès",
-        "assuré",
-        "survivants",
-        "droit",
-        "survivant",
-        "vieillesse",
-        "invalidité",
-        "proportionnelle",
-        "anticipée",
-        "montant",
-        "date"
+        "pension de survivant",
+        "30 pour cent veuf ou veuve",
+        "50 pour cent enfants descendants",
+        "20 pour cent ascendants",
+        "maximum 80 pour cent",
+        "un an de mariage minimum",
+        "pluralité de veuves parts égales",
+        "allocation de remariage six mensualités",
+        "240 mois d'assurance"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -122,18 +100,11 @@
         "Si l'assuré ne pouvait prétendre à une pension d'invalidité et comptait moins de deux cent quarante mois d'assurance à la date de son décès, les survivants bénéficient d'une allocation de survivant, versée en une seule fois, d'un montant égal à autant de mensualités de la pension de vieillesse à laquelle l'assuré aurait pu prétendre au terme de deux cent quarante mois d'assurance qu'il avait accompli de période de six mois d'assurance à la date de son décès. En outre, le bénéfice des allocations familiales est maintenu en faveur des enfants survivants."
       ],
       "mots_cles": [
-        "mois",
-        "assurance",
-        "allocation",
-        "survivant",
-        "assuré",
-        "prétendre",
-        "pension",
-        "deux",
-        "cent",
-        "quarante",
-        "date",
-        "décès"
+        "allocation de survivant",
+        "moins de 240 mois d'assurance",
+        "versée en une seule fois",
+        "maintien allocations familiales",
+        "enfants survivants"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -145,18 +116,11 @@
         "Tout travailleur Congolais passant du régime des pensions civiles de l'État à celui de la Caisse vice versa, conserve l'intégralité des droits acquis qui seront entièrement validés par le régime d'accueil. En aucune manière, il ne lui sera proposé un rachat, même partiel des droits précités."
       ],
       "mots_cles": [
-        "droits",
-        "acquis",
-        "régime",
-        "conservation",
-        "congolais",
-        "passant",
-        "pensions",
-        "civiles",
-        "état",
-        "celui",
-        "caisse",
-        "vice"
+        "conservation des droits acquis",
+        "pensions civiles de l'État",
+        "validation intégrale",
+        "pas de rachat partiel",
+        "passage entre régimes"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -169,18 +133,10 @@
         "Cette allocation est égale à trois mensualités de la pension."
       ],
       "mots_cles": [
-        "allocation",
-        "pension",
-        "décès",
-        "accordée",
-        "ayants",
-        "droit",
-        "titulaire",
-        "vieillesse",
-        "invalidité",
-        "proportionnelle",
-        "égale",
-        "trois"
+        "allocation de décès",
+        "trois mensualités de pension",
+        "ayants droit",
+        "pension de vieillesse invalidité ou proportionnelle"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -192,17 +148,8 @@
         "L'allocation de décès est versée aux personnes qui, au jour du décès étaient effectivement à la charge de l'assuré."
       ],
       "mots_cles": [
-        "décès",
-        "allocation",
-        "bénéficiaires",
-        "versée",
-        "personnes",
-        "jour",
-        "étaient",
-        "effectivement",
-        "charge",
-        "assuré",
-        "décès étaient"
+        "personnes à charge effective",
+        "jour du décès"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -215,18 +162,11 @@
         "Le versement de l'allocation de décès n'interdit pas le paiement de la pension de survivant à la veuve ou au veuf comme prévu par le Code de la famille."
       ],
       "mots_cles": [
-        "allocation",
-        "décès",
-        "défaut",
-        "ayants",
-        "droit",
-        "présente",
-        "frais",
-        "visés",
-        "versée",
-        "personne",
-        "justifie",
-        "avoir"
+        "frais funéraires",
+        "à défaut d'ayants droit",
+        "personne ayant supporté les frais",
+        "pension de survivant maintenue",
+        "veuve ou veuf"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -239,18 +179,12 @@
         "2) Dans les mêmes conditions, il peut être procédé, lors de la liquidation des pensions de vieillesse et d'invalidité, la revalorisation des salaires pris en compte pour la détermination de la rémunération mensuelle moyenne servant de base au calcul de ces prestations."
       ],
       "mots_cles": [
-        "pensions",
-        "revalorisation",
-        "être",
-        "pris",
-        "conseil",
-        "salaires",
-        "compte",
-        "montants",
-        "paiements",
-        "périodiques",
-        "cours",
-        "attribués"
+        "revalorisation des pensions",
+        "coût de la vie",
+        "SMIG",
+        "rémunération mensuelle moyenne",
+        "décret en conseil des ministres",
+        "possibilités financières"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
@@ -262,18 +196,11 @@
         "Les modalités d'affiliation des employeurs, d'immatriculation des travailleurs, de perception des cotisations, de liquidation et du service des prestations ainsi que les obligations incombant aux employeurs et aux travailleurs dans le fonctionnement du régime de Sécurité Sociale seront déterminées par arrêté du Ministre chargé de la sécurité sociale après avis du Conseil d'Administration."
       ],
       "mots_cles": [
-        "modalités",
-        "affiliation",
-        "immatriculation",
-        "sécurité",
-        "sociale",
-        "perception",
-        "cotisations",
-        "liquidation",
-        "service",
-        "prestations",
-        "ainsi",
-        "obligations"
+        "affiliation des employeurs",
+        "immatriculation des travailleurs",
+        "perception des cotisations",
+        "liquidation des prestations",
+        "arrêté ministériel"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -285,18 +212,10 @@
         "Un arrêté du Ministre chargé de la sécurité sociale pris après avis du Conseil d'Administration, fixe les conditions et les modalités suivant lesquelles la Caisse peut conclure des accords avec les formations sanitaires publiques ou privées agréées par le Ministre de la Santé en vue d'assurer les soins et procéder aux visites et examens médicaux prévus par le Code du travail ou les textes législatifs et réglementaires régissant la Sécurité Sociale."
       ],
       "mots_cles": [
-        "accords",
-        "formations",
-        "sanitaires",
-        "ministre",
-        "sécurité",
-        "sociale",
-        "arrêté",
-        "chargé",
-        "pris",
-        "après",
-        "avis",
-        "conseil"
+        "accords avec formations sanitaires",
+        "soins médicaux",
+        "visites et examens médicaux",
+        "agréées par le Ministre de la Santé"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -314,18 +233,12 @@
         "e) à l'aide financière ou la participation à des institutions publiques ou privées agissant dans les domaines sanitaires et social."
       ],
       "mots_cles": [
-        "action",
-        "fonds",
-        "sanitaire",
-        "sociale",
-        "caisse",
-        "prévention",
-        "création",
-        "créé",
-        "auprès",
-        "alimenté",
-        "produit",
-        "majorations"
+        "fonds d'action sanitaire et sociale",
+        "majorations de retard",
+        "prévention des accidents",
+        "centres d'action sanitaire",
+        "réadaptation des invalides",
+        "maisons de repos vieux travailleurs"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -338,18 +251,12 @@
         "L'expression « mois d'assurance », désigne tout mois au cours duquel l'assuré a occupé, pendant vingt jours au moins, un emploi assujetti à l'assurance."
       ],
       "mots_cles": [
-        "assurance",
-        "mois",
-        "périodes",
-        "assimilables",
-        "période",
-        "assuré",
-        "ouverture",
-        "droit",
-        "prestations",
-        "perçu",
-        "indemnités",
-        "journalières"
+        "périodes assimilables",
+        "indemnités journalières AT/maternité",
+        "incapacité maladie six mois",
+        "service militaire",
+        "congé régulier",
+        "vingt jours minimum par mois"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -362,18 +269,10 @@
         "Le versement des rentes et des pensions s'effectue trimestriellement. Toutefois, le Conseil d'Administration de la Caisse peut déterminer dans quelles régions et sous quelles conditions les prestations sont versées mensuellement."
       ],
       "mots_cles": [
-        "rentes",
-        "pensions",
-        "quelles",
-        "liquidation",
-        "liquidées",
-        "montants",
-        "mensuels",
-        "droit",
-        "mensualité",
-        "déterminé",
-        "après",
-        "situation"
+        "liquidation mensuelle",
+        "arrondi centaine de francs supérieur",
+        "versement trimestriel",
+        "versement mensuel possible"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -386,18 +285,13 @@
         "Le droit aux arrérages des pensions de vieillesse, de rente d'accident de travail se prescrit par 2 ans."
       ],
       "mots_cles": [
-        "droit",
-        "accident",
-        "prescrit",
-        "prescriptions",
-        "prestations",
-        "familiales",
-        "allocations",
-        "funéraires",
-        "indemnités",
-        "journalières",
-        "maternité",
-        "arrérages"
+        "prescription un an",
+        "prestations familiales",
+        "allocations funéraires",
+        "indemnités journalières",
+        "prescription deux ans",
+        "arrérages pensions",
+        "rente d'accident"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -409,18 +303,11 @@
         "Le titulaire d'une pension d'invalidité, qui a besoin de façon constante de l'aide et des soins qu'une tierce personne pour accomplir les actes de la vie courante, a droit à un supplément égal à 50 pour cent du montant de la rente ou du montant de sa pension."
       ],
       "mots_cles": [
-        "supplément",
-        "tierce",
-        "personne",
-        "pension",
-        "montant",
-        "titulaire",
-        "invalidité",
-        "besoin",
-        "façon",
-        "constante",
-        "aide",
-        "soins"
+        "tierce personne",
+        "supplément 50 pour cent",
+        "pension d'invalidité",
+        "actes de la vie courante",
+        "aide constante"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -434,18 +321,12 @@
         "3) Si à la suite d'un accident du travail, la victime a droit simultanément à une rente d'incapacité permanente et à une pension d'invalidité, le versement de la pension d'invalidité est suspendu jusqu'à concurrence du montant de la rente d'incapacité permanente."
       ],
       "mots_cles": [
-        "pension",
-        "rente",
-        "survivant",
-        "droit",
-        "montant",
-        "cumul",
-        "suite",
-        "accident",
-        "simultanément",
-        "versement",
-        "suspendu",
-        "jusqu"
+        "cumul rente et pension",
+        "suspension jusqu'à concurrence",
+        "totalité du plus élevé",
+        "moitié de l'autre",
+        "rente d'incapacité permanente",
+        "pension d'invalidité"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -461,18 +342,12 @@
         "c) lorsque l'assuré bénéficiaire d'une pension de vieillesse, d'une pension anticipée ou proportionnelle reprend une activité salariée."
       ],
       "mots_cles": [
-        "prestations",
-        "incapacité",
-        "bénéficiaire",
-        "pension",
-        "exclusions",
-        "suspensions",
-        "dues",
-        "décès",
-        "conséquence",
-        "crime",
-        "délit",
-        "commis"
+        "crime ou délit",
+        "faute intentionnelle",
+        "non-résidence sur le territoire",
+        "accords de réciprocité",
+        "reprise activité salariée",
+        "suspension des prestations"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -484,18 +359,11 @@
         "Lorsque l'événement ouvrant droit à prestation est dû à la faute d'un tiers, la Caisse doit verser les prestations à l'assuré ou à ses ayants droit ; ceux-ci conservent contre les tiers responsables le droit de réclamer, conformément aux règles de droit commun, la réparation du préjudice causé. Cependant la Caisse leur est subrogée de plein droit dans leur action contre les tiers responsables pour le montant des prestations octroyées ou des capitaux constitutifs correspondants."
       ],
       "mots_cles": [
-        "droit",
-        "tiers",
-        "faute",
-        "caisse",
-        "prestations",
-        "responsables",
-        "subrogation",
-        "événement",
-        "ouvrant",
-        "prestation",
-        "verser",
-        "assuré"
+        "subrogation de plein droit",
+        "faute d'un tiers",
+        "action contre tiers responsable",
+        "capitaux constitutifs",
+        "réparation du préjudice"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"
@@ -508,18 +376,11 @@
         "Toutefois, la Caisse peut prélever sur les prestations venant à échéance et dans la limite maximale du quart de ces prestations, les sommes indûment payées jusqu'à récupération totale de celles-ci."
       ],
       "mots_cles": [
-        "prestations",
         "incessibilité",
-        "prévues",
-        "présente",
-        "incessibles",
-        "insaisissables",
-        "mêmes",
-        "limites",
-        "salaires",
-        "conformément",
-        "code",
-        "toutefois"
+        "insaisissabilité",
+        "quart maximum prélèvement",
+        "sommes indûment payées",
+        "récupération"
       ],
       "statut": "en vigueur",
       "section": "Titre 5 - Dispositions communes"

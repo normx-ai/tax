@@ -22,18 +22,13 @@
         "Il fixe la liste des machines et éléments de machines considérés comme dangereux et les dispositifs de protection dont ils doivent être munis."
       ],
       "mots_cles": [
-        "machines",
-        "arrêté",
+        "code du travail",
+        "machines dangereuses",
         "dangereuses",
-        "dispositifs",
         "protection",
-        "objet",
-        "mterfpps",
-        "décembre",
-        "relatif",
-        "présent",
-        "pris",
-        "code"
+        "machines",
+        "dispositifs",
+        "/mterfpps"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions générales"
@@ -45,18 +40,12 @@
         "Il est interdit d'exposer, de mettre en vente ou de louer, de céder à quelque titre que ce soit ou d'utiliser des appareils, machines ou éléments de machines dangereuses qui ne soient pas montés, disposés, ou protégés dans des conditions homologuées ou reconnues comme telles, et assurent la sécurité et l'hygiène des travailleurs."
       ],
       "mots_cles": [
-        "vente",
-        "machines",
-        "interdiction",
+        "machines dangereuses",
+        "oit",
         "protection",
-        "interdit",
-        "exposer",
-        "mettre",
-        "louer",
-        "céder",
-        "quelque",
-        "soit",
-        "utiliser"
+        "dangereuses",
+        "sécurité",
+        "hygiène"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions générales"
@@ -69,18 +58,13 @@
         "Le tribunal prononce cette résolution et peut, en outre, accorder des dommages-intérêts à l'acheteur."
       ],
       "mots_cles": [
+        "protection",
         "résolution",
         "vente",
         "acheteur",
         "appareil",
         "machine",
-        "auquel",
-        "élément",
-        "dangereuse",
-        "dispositif",
-        "protection",
-        "livré",
-        "contraires"
+        "auquel"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions générales"
@@ -92,18 +76,13 @@
         "Tout appareil, machines ou éléments de machines reconnus dangereux doivent être disposés ou protégés de manière à empêcher le personnel d'entrer involontairement en contact avec ces éléments."
       ],
       "mots_cles": [
+        "protection",
         "contact",
         "machines",
         "éléments",
-        "protection",
+        "contre",
         "involontaire",
-        "appareil",
-        "reconnus",
-        "dangereux",
-        "être",
-        "disposés",
-        "protégés",
-        "manière"
+        "appareil"
       ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions générales"
@@ -121,18 +100,13 @@
         "- 6° les dispositifs de protection amovibles pour machines visées au paragraphe 4."
       ],
       "mots_cles": [
+        "oit",
+        "accident",
+        "protection",
         "industries",
         "machines",
         "éléments",
-        "liste",
-        "dangereux",
-        "après",
-        "utilisés",
-        "comportant",
-        "transmission",
-        "tels",
-        "machine",
-        "considérés"
+        "liste"
       ],
       "statut": "en vigueur",
       "section": "Section 2 : Liste des machines et éléments de machines dangereux"
@@ -145,18 +119,13 @@
         "Les passages entre les machines, mécanismes, outils mus mécaniquement doivent avoir une largeur d'au moins 80 centimètres. Le sol des intervalles doit être plat, il ne doit pas être glissant."
       ],
       "mots_cles": [
+        "oit",
+        "protection",
         "machines",
-        "être",
         "salles",
         "centimètres",
         "accès",
-        "restreint",
-        "génératrices",
-        "motrices",
-        "accessibles",
-        "personnels",
-        "affectés",
-        "conduite"
+        "restreint"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -169,18 +138,13 @@
         "Les machines visées à l'alinéa précédent doivent, en outre, être disposées, protégées ou utilisées de telle façon que les ouvriers ne puissent, de leur poste de travail, toucher, même involontairement, la partie travaillante des instruments tranchants."
       ],
       "mots_cles": [
+        "oit",
+        "ouvriers",
         "machines",
         "instruments",
         "tranchants",
         "outils",
-        "travaillante",
-        "être",
-        "tranchantes",
-        "tournant",
-        "grande",
-        "vitesse",
-        "telles",
-        "scier"
+        "travaillante"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -193,18 +157,13 @@
         "Les scies circulaires à table doivent être munies d'un couteau diviseur réglable fixé immédiatement en arrière de la scie et dans le plan de celle-ci."
       ],
       "mots_cles": [
-        "être",
         "machines",
         "travailler",
-        "bois",
         "scies",
         "munies",
         "dites",
         "dégauchissage",
-        "pourvues",
-        "arbre",
-        "porte",
-        "lames"
+        "pourvues"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -217,18 +176,13 @@
         "Une inscription très apparente, placée autour des volants de meules, et de tout autre engin posant et tournant à grande vitesse indique le nombre de tours par minute qui ne doit pas être dépassé."
       ],
       "mots_cles": [
+        "oit",
         "tournant",
         "grande",
         "vitesse",
         "engin",
-        "être",
-        "soit",
         "engins",
-        "monté",
-        "enveloppé",
-        "telle",
-        "sorte",
-        "rupture"
+        "monté"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -241,18 +195,13 @@
         "En cas de réparation d'un organe mécanique quelconque, de la presse ou du dispositif de protection, de commande ou d'utilisation, l'arrêt de la machine doit être assuré dans tous les cas par la suppression de la liaison entre cette dernière et la fiche qui l'anime et, chaque fois que la nature du travail ne s'y oppose, par le blocage de l'embrayage ou du volant ainsi que du coulisseau s'il y a lieu."
       ],
       "mots_cles": [
+        "oit",
+        "protection",
         "mouvement",
         "presses",
         "alternatif",
         "utilisées",
-        "être",
-        "systèmes",
-        "mécaniquement",
-        "travaux",
-        "automatiques",
-        "déposées",
-        "protégées",
-        "commandées"
+        "travail"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -264,18 +213,13 @@
         "La mise en train de l'arrêt collectif de machines actionnées par une même commande doit toujours être précédée d'un signal convenu."
       ],
       "mots_cles": [
+        "oit",
         "arrêt",
         "collectif",
         "machines",
         "signal",
-        "mise",
         "train",
-        "actionnées",
-        "même",
-        "commande",
-        "toujours",
-        "être",
-        "précédée"
+        "actionnées"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -289,18 +233,13 @@
         "Chaque machine-outil, métier, etc. doit, en outre, être installé et entretenu de manière à pouvoir être isolé par son conducteur de la commande qui l'actionne par un système approprié."
       ],
       "mots_cles": [
+        "oit",
         "arrêt",
         "machines",
-        "être",
         "appareil",
-        "zone",
         "dangereuse",
         "conducteurs",
-        "hors",
-        "motrices",
-        "toujours",
-        "placé",
-        "dehors"
+        "motrices"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -315,18 +254,13 @@
         "Il en est de même pour les opérations de nettoyage des organes mécaniques à l'arrêt."
       ],
       "mots_cles": [
+        "oit",
+        "sécurité",
         "nettoyage",
         "graissage",
         "marche",
         "interdit",
-        "procéder",
-        "être",
-        "arrêt",
-        "transmissions",
-        "mécanismes",
-        "toutefois",
-        "lorsqu",
-        "absolument"
+        "procéder"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -338,18 +272,13 @@
         "Il est interdit d'admettre des ouvriers ou ouvrières à se tenir près des machines s'ils ne portent pas des vêtements ajustés et non flottants."
       ],
       "mots_cles": [
+        "obligatoires",
+        "ouvriers",
         "vêtements",
         "ajustés",
-        "obligatoires",
         "interdit",
         "admettre",
-        "ouvriers",
-        "ouvrières",
-        "tenir",
-        "près",
-        "machines",
-        "portent",
-        "flottants"
+        "ouvrières"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -364,18 +293,13 @@
         "Le résultat des visites est consigné sur un registre dit « registre de sécurité » ouvert par le chef d'établissement et tenu constamment à la disposition de l'inspecteur du travail."
       ],
       "mots_cles": [
-        "visites",
+        "mise en demeure",
+        "inspecteur du travail",
+        "oit",
         "contrôle",
-        "fois",
-        "inspecteur",
-        "chef",
-        "établissement",
-        "registre",
         "trimestriel",
-        "machines",
-        "défectueuses",
-        "machine",
-        "défectuosité"
+        "accident",
+        "sécurité"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -387,17 +311,13 @@
         "L'efficacité des appareils et dispositifs de protection contre les dangers présentés par les machines doit être officiellement reconnue."
       ],
       "mots_cles": [
+        "oit",
+        "protection",
         "efficacité",
         "dispositifs",
-        "protection",
         "appareils",
-        "dangers",
-        "présentés",
-        "machines",
-        "être",
-        "officiellement",
-        "reconnue",
-        "officiellement reconnue"
+        "contre",
+        "dangers"
       ],
       "statut": "en vigueur",
       "section": "Section 3 : Protection contre les machines dangereuses"
@@ -409,18 +329,13 @@
         "Les dispositifs de sécurité en service à la date de publication du présent arrêté continueront à être utilisés sous réserve de la reconnaissance de leur efficacité par l'inspecteur du travail du ressort."
       ],
       "mots_cles": [
+        "inspecteur du travail",
+        "sécurité",
+        "publication",
         "dispositifs",
         "service",
         "maintien",
-        "sécurité",
-        "date",
-        "publication",
-        "présent",
-        "arrêté",
-        "continueront",
-        "être",
-        "utilisés",
-        "réserve"
+        "continueront"
       ],
       "statut": "en vigueur",
       "section": "Section 4 : Dispositions transitoires"
@@ -433,18 +348,13 @@
         "Il est également interdit d'installer des dispositifs de protection d'une efficacité non reconnue lorsqu'il existe des dispositifs de protection homologués, sauf autorisation particulière de l'inspecteur du travail en vue de permettre l'expérimentation d'un dispositif nouveau."
       ],
       "mots_cles": [
-        "machines",
+        "inspecteur du travail",
         "protection",
+        "machines",
         "dispositifs",
         "installer",
         "interdit",
-        "existe",
-        "efficacité",
-        "reconnue",
-        "interdiction",
-        "compter",
-        "date",
-        "mise"
+        "existe"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Dispositions finales"
@@ -456,17 +366,13 @@
         "Les infractions au présent arrêté sont passibles des amendes et peines prévues par le titre 9 du Code du travail."
       ],
       "mots_cles": [
+        "code du travail",
+        "amendes",
         "sanctions",
         "infractions",
-        "présent",
-        "arrêté",
         "passibles",
-        "amendes",
         "peines",
-        "prévues",
-        "code",
-        "présent arrêté",
-        "peines prévues"
+        "travail"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Dispositions finales"
@@ -478,18 +384,13 @@
         "Le directeur général du travail et les inspecteurs du travail sont chargés de l'application du présent arrêté qui sera enregistré, publié au Journal Officiel et communiqué partout où besoin sera. Le directeur général du travail est outre chargé de son entière exécution."
       ],
       "mots_cles": [
+        "directeur général",
+        "travail",
         "exécution",
         "directeur",
-        "général",
-        "sera",
         "inspecteurs",
-        "chargés",
-        "présent",
-        "arrêté",
-        "enregistré",
-        "publié",
-        "journal",
-        "officiel"
+        "communiqué",
+        "partout"
       ],
       "statut": "en vigueur",
       "section": "Section 5 : Dispositions finales"

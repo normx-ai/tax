@@ -20,17 +20,12 @@
       ],
       "mots_cles": [
         "rémunération",
-        "public",
         "nature",
         "champ",
-        "présent",
-        "décret",
-        "applicables",
         "sommes",
-        "dues",
-        "personnes",
-        "salariées",
-        "travaillant"
+        "travaillant",
+        "secteur",
+        "privé"
       ],
       "statut": "en vigueur",
       "section": "Section 1 - Règles générales"
@@ -50,18 +45,15 @@
         "La portion saisissable pourra, le cas échéant, être retenue en sus pour sûreté des termes arriérés de la pension alimentaire."
       ],
       "mots_cles": [
-        "fcfa",
-        "portion",
-        "égale",
-        "supérieure",
-        "inférieure",
-        "alimentaire",
-        "saisissables",
-        "montant",
-        "saisissable",
-        "mois",
-        "pension",
-        "quotités"
+        "50.000 FCFA",
+        "100.000 FCFA",
+        "150.000 FCFA",
+        "250.000 FCFA",
+        "saisie-arrêt",
+        "quotité saisissable",
+        "oit",
+        "insaisissable",
+        "pension"
       ],
       "statut": "en vigueur",
       "section": "Section 2 - Limitation de la saisie-arrêt"
@@ -73,18 +65,11 @@
         "Il doit être pris en considération dans le calcul de la retenue, non seulement la rémunération proprement dite, mais aussi tous les accessoires de ladite rémunération à l'exception des indemnités et sommes déclarées insaisissables par la loi, des remboursements de frais exposés par le travailleur et des allocations ou indemnités pour charges de famille."
       ],
       "mots_cles": [
-        "calcul",
-        "retenue",
-        "rémunération",
+        "oit",
+        "insaisissable",
+        "insaisissables",
         "indemnités",
-        "éléments",
-        "être",
-        "pris",
-        "considération",
-        "seulement",
-        "proprement",
-        "dite",
-        "accessoires"
+        "allocations"
       ],
       "statut": "en vigueur",
       "section": "Section 2 - Limitation de la saisie-arrêt"
@@ -97,18 +82,13 @@
         "À cet effet, sur réquisition du créancier, le greffier de la juridiction convoque le débiteur en observant les délais et les formalités prévus aux articles 11 à 15 du Code de procédure civile, commerciale, administrative et financière."
       ],
       "mots_cles": [
+        "saisie-arrêt",
+        "oit",
+        "obligatoire",
         "tentative",
         "conciliation",
         "débiteur",
-        "obligatoire",
-        "saisie",
-        "arrêt",
-        "portant",
-        "rémunérations",
-        "visées",
-        "quel",
-        "soit",
-        "montant"
+        "saisie"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -120,18 +100,13 @@
         "Les règles édictées par les articles 20 à 22 du Code de procédure civile, commerciale, administrative et financière, sur la non-comparution des parties sont applicables à la procédure de la saisie-arrêt."
       ],
       "mots_cles": [
+        "saisie-arrêt",
         "comparution",
-        "parties",
         "procédure",
         "règles",
         "édictées",
-        "code",
         "civile",
-        "commerciale",
-        "administrative",
-        "financière",
-        "applicables",
-        "saisie"
+        "commerciale"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -147,18 +122,13 @@
         "L'ordonnance ainsi rendue n'est susceptible d'aucune voie de recours."
       ],
       "mots_cles": [
+        "procès-verbal",
+        "saisie-arrêt",
+        "convocation",
+        "recours",
         "conciliation",
         "président",
-        "procès",
-        "verbal",
-        "comparution",
-        "autorise",
-        "saisie",
-        "arrêt",
-        "ordonnance",
-        "tribunal",
-        "populaire",
-        "village"
+        "procès"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -176,18 +146,13 @@
         "- 5° l'invitation faite au tiers saisi d'adresser au greffe dans le délai d'un mois, par lettre recommandée, une déclaration contenant des renseignements précis sur la situation du débiteur saisi et, en particulier, sur sa rémunération au sens de l'article 3 du présent décret."
       ],
       "mots_cles": [
+        "saisie-arrêt",
+        "notification",
         "saisi",
         "tiers",
         "débiteur",
         "délai",
-        "ordonnance",
-        "avis",
-        "rémunération",
-        "lettre",
-        "recommandée",
-        "notification",
-        "huitaine",
-        "partir"
+        "ordonnance"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -205,8 +170,7 @@
         "continuer",
         "percevoir",
         "tiers",
-        "saisi",
-        "rémunération"
+        "saisi"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -218,18 +182,13 @@
         "Lorsqu'une saisie-arrêt aura été pratiquée, s'il survient d'autres créanciers, leur intervention est instruite en suivant la même procédure que celle décrite ci-dessus."
       ],
       "mots_cles": [
+        "saisie-arrêt",
         "intervention",
         "créanciers",
-        "lorsqu",
         "saisie",
         "arrêt",
-        "aura",
         "pratiquée",
-        "survient",
-        "instruite",
-        "suivant",
-        "même",
-        "procédure"
+        "survient"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -241,16 +200,13 @@
         "En cas de changement de domicile, le créancier saisissant ou intervenant doit déclarer au greffe son nouveau domicile."
       ],
       "mots_cles": [
+        "oit",
         "domicile",
         "changement",
         "créancier",
         "saisissant",
         "intervenant",
-        "déclarer",
-        "greffe",
-        "nouveau",
-        "créancier saisissant",
-        "nouveau domicile"
+        "déclarer"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -264,18 +220,13 @@
         "Le tiers saisi qui, n'ayant pas fait sa déclaration par lettre recommandée conformément à l'alinéa 2 de l'article 7, ne comparaît pas ou qui refuse de faire sa déclaration à l'audience, ou qui a fait une déclaration reconnue mensongère, est déclaré débiteur pur et simple des retenues non opérées aux frais par lui occasionnés."
       ],
       "mots_cles": [
+        "saisie-arrêt",
+        "convocation",
         "déclaration",
         "saisie",
         "arrêt",
         "débiteur",
-        "tiers",
-        "saisi",
-        "convocation",
-        "tribunal",
-        "populaire",
-        "village",
-        "centre",
-        "quartier"
+        "tiers"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -288,18 +239,11 @@
         "Tout versement du tiers saisi est immédiatement signalé au greffier par la sanction de recouvrement."
       ],
       "mots_cles": [
-        "versement",
-        "quinze",
-        "jours",
-        "suivent",
-        "tiers",
-        "saisi",
-        "recouvrement",
+        "quinze jours",
+        "oit",
         "trimestriel",
         "trimestre",
-        "partir",
-        "avis",
-        "envoyé"
+        "recouvrement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -315,18 +259,13 @@
         "L'ordonnance non frappée d'opposition dans le délai ci-dessus devient définitive et exécutoire."
       ],
       "mots_cles": [
+        "quinze jours",
+        "notification",
         "ordonnance",
         "tiers",
         "saisi",
         "opposition",
-        "être",
-        "délai",
-        "contrainte",
-        "effectué",
-        "versement",
-        "contraint",
-        "rendue",
-        "office"
+        "délai"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -340,18 +279,12 @@
         "Une expédition du procès-verbal de répartition est adressée dans les quarante-huit heures à la Section de Recouvrement aux fins de règlement des ayants-droits."
       ],
       "mots_cles": [
+        "quarante-huit heures",
+        "procès-verbal",
+        "oit",
         "répartition",
-        "sommes",
-        "montant",
-        "président",
-        "dividende",
-        "créances",
-        "privilégiées",
-        "frais",
-        "prélever",
-        "ayants",
-        "droit",
-        "procès"
+        "heures",
+        "recouvrement"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -364,18 +297,13 @@
         "Dès que le tiers saisi est avisé de la saisie-arrêt nouvelle, il doit en informer le greffier de l'ancien domicile du débiteur et il est fait par le Président une réparation des sommes déposées à la section de recouvrement qui met fin à la procédure dans l'ancien ressort."
       ],
       "mots_cles": [
+        "saisie-arrêt",
+        "oit",
+        "recouvrement",
         "saisie",
-        "même",
         "débiteur",
         "domicile",
-        "ressort",
-        "président",
-        "arrêt",
-        "aura",
-        "tiers",
-        "saisi",
-        "ancien",
-        "compétence"
+        "ressort"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -388,18 +316,13 @@
         "Tous frais de contestations jugée mal fondée seront mis à la charge de la partie qui aura succombé."
       ],
       "mots_cles": [
+        "saisie-arrêt",
+        "répartition",
         "frais",
         "saisie",
         "arrêt",
-        "charge",
-        "seront",
-        "répartition",
         "débiteur",
-        "saisi",
-        "prélevés",
-        "sommes",
-        "distribuer",
-        "contestations"
+        "saisi"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -415,18 +338,11 @@
         "Le Président devra procéder chaque trimestre à une vérification du registre."
       ],
       "mots_cles": [
-        "registre",
-        "saisie",
-        "soit",
-        "spécial",
-        "président",
-        "greffe",
-        "être",
-        "décision",
-        "arrêt",
-        "tiers",
-        "saisi",
-        "greffier"
+        "saisie-arrêt",
+        "oit",
+        "répartition",
+        "régime",
+        "trimestre"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -438,18 +354,13 @@
         "Sont abrogées toutes dispositions contraires au présent décret et notamment le décret n°55-972 du 16 juillet 1955 relatif aux saisies-arrêts, cessions et retenues sur les traitements ou salaires des travailleurs visés par l'article 1 de la loi n°52-1322 du 15 décembre 1952."
       ],
       "mots_cles": [
-        "décret",
         "abrogation",
         "abrogées",
         "contraires",
-        "présent",
-        "notamment",
         "juillet",
-        "relatif",
         "saisies",
         "arrêts",
-        "cessions",
-        "retenues"
+        "cessions"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
@@ -461,18 +372,13 @@
         "Le Garde des Sceaux, Ministre de la justice, le Ministre de l'intérieur, le Ministre des finances, le Ministre du travail et de la prévoyance sociale sont chargés, chacun en ce qui le concerne, de l'exécution du présent décret qui sera enregistré, publié au journal Officiel de la République Populaire du Congo et communiqué partout où besoin sera."
       ],
       "mots_cles": [
-        "ministre",
+        "prévoyance sociale",
         "exécution",
-        "sera",
         "garde",
         "sceaux",
         "justice",
         "intérieur",
-        "finances",
-        "prévoyance",
-        "sociale",
-        "chargés",
-        "chacun"
+        "finances"
       ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"

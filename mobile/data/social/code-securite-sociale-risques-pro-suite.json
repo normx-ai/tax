@@ -19,18 +19,12 @@
         "Les frais de déplacement comprennent, le cas échéant, les frais de transport, les frais de séjour et l'indemnité compensatrice de perte de salaire."
       ],
       "mots_cles": [
-        "frais",
-        "déplacement",
-        "victime",
-        "ayants",
-        "droit",
-        "quitter",
-        "résidence",
-        "répondre",
-        "convocation",
-        "médecin",
-        "conseil",
-        "soumettre"
+        "frais de déplacement",
+        "médecin conseil",
+        "expertise médicale",
+        "frais de transport",
+        "frais de séjour",
+        "indemnité compensatrice perte de salaire"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Contrôle médical"
@@ -42,18 +36,12 @@
         "Les honoraires dus au Médecin traitant, au Médecin Expert ou au Médecin Spécialiste, ainsi que leurs frais de déplacement sont également à la charge de la Caisse et remboursés d'après les tarifs en vigueur."
       ],
       "mots_cles": [
-        "médecin",
-        "honoraires",
-        "médecins",
-        "traitant",
-        "expert",
-        "spécialiste",
-        "ainsi",
-        "frais",
-        "déplacement",
-        "également",
-        "charge",
-        "caisse"
+        "honoraires médicaux",
+        "médecin traitant",
+        "médecin expert",
+        "médecin spécialiste",
+        "tarifs en vigueur",
+        "charge de la Caisse"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Contrôle médical"
@@ -65,18 +53,10 @@
         "Lorsque l'examen ou l'expertise a été prescrit à la requête de la victime ou de ses ayants droit et que sa contestation est reconnue manifestement abusive, la juridiction compétente peut mettre à leur charge tout ou partie des honoraires et frais correspondants."
       ],
       "mots_cles": [
-        "contestation",
-        "abusive",
-        "examen",
-        "expertise",
-        "prescrit",
-        "requête",
-        "victime",
-        "ayants",
-        "droit",
-        "reconnue",
-        "manifestement",
-        "juridiction"
+        "contestation abusive",
+        "expertise à la requête de la victime",
+        "honoraires et frais à charge",
+        "juridiction compétente"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Contrôle médical"
@@ -88,17 +68,10 @@
         "Toute modification de l'état de la victime, soit par aggravation, soit par atténuation de l'infirmité peut entraîner une révision de la rente."
       ],
       "mots_cles": [
-        "révision",
-        "rente",
-        "soit",
-        "modification",
-        "état",
-        "victime",
+        "révision de la rente",
         "aggravation",
-        "atténuation",
-        "infirmité",
-        "entraîner",
-        "victime  soit"
+        "atténuation de l'infirmité",
+        "modification de l'état"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Révision"
@@ -111,18 +84,13 @@
         "La victime peut également faire constater, dans les mêmes conditions, par son Médecin traitant, toute modification de son infirmité."
       ],
       "mots_cles": [
-        "examens",
-        "contrôle",
-        "modification",
-        "médecin",
-        "victime",
-        "déceler",
-        "caisse",
-        "procéder",
-        "expert",
-        "assermenté",
-        "état",
-        "peuvent"
+        "examens de contrôle",
+        "médecin expert assermenté",
+        "six mois deux premières années",
+        "un an après délai",
+        "guérison apparente",
+        "consolidation",
+        "médecin traitant"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Révision"
@@ -136,18 +104,11 @@
         "La victime ne peut refuser de se prêter aux examens de contrôle sous peine de suspension du service de la rente. Cette suspension ne peut toutefois intervenir qu'après avis de l'Inspecteur du Travail."
       ],
       "mots_cles": [
-        "contrôle",
-        "victime",
-        "notification",
-        "examen",
-        "lieu",
-        "caisse",
-        "suspension",
-        "informée",
-        "trente",
-        "jours",
-        "avance",
-        "lettre"
+        "trente jours à l'avance",
+        "lettre recommandée",
+        "suspension de la rente",
+        "refus d'examen de contrôle",
+        "Inspecteur du Travail"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Révision"
@@ -159,18 +120,10 @@
         "En cas de décès de la victime résultant des conséquences de l'accident, une nouvelle fixation des réparations allouées peut être demandée à tout moment par les ayants droit de la victime."
       ],
       "mots_cles": [
-        "décès",
-        "résultant",
-        "accident",
-        "victime",
-        "conséquences",
-        "nouvelle",
-        "fixation",
-        "réparations",
-        "allouées",
-        "être",
-        "demandée",
-        "moment"
+        "décès résultant de l'accident",
+        "nouvelle fixation des réparations",
+        "demande des ayants droit",
+        "à tout moment"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Révision"
@@ -183,18 +136,12 @@
         "En ce cas, la victime doit faire connaître à la Caisse le montant de la rente dont elle bénéficie. Toute déclaration frauduleuse peut entraîner une réduction de la fraction de l'indemnité journalière de la victime."
       ],
       "mots_cles": [
-        "victime",
-        "aggravation",
-        "nouvelle",
-        "incapacité",
-        "caisse",
-        "fraction",
-        "indemnité",
-        "journalière",
-        "montant",
-        "rente",
-        "lésion",
-        "entraîne"
+        "aggravation de lésion",
+        "nouvelle incapacité temporaire",
+        "frais médicaux chirurgicaux",
+        "fraction d'indemnité journalière",
+        "rente maintenue",
+        "déclaration frauduleuse"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Révision"
@@ -207,18 +154,10 @@
         "Les justifications nécessaires, notamment le certificat du Médecin traitant, sont fournies à l'appui de la demande."
       ],
       "mots_cles": [
-        "demande",
-        "nouvelle",
-        "fixation",
-        "soit",
-        "tendant",
-        "réparations",
-        "motivées",
-        "aggravation",
-        "infirmité",
-        "victime",
-        "décès",
-        "résultant"
+        "demande de révision",
+        "simple déclaration ou lettre recommandée",
+        "certificat du médecin traitant",
+        "pièces justificatives"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Révision"
@@ -230,18 +169,10 @@
         "Toute nouvelle fixation des réparations motivées par une aggravation ou une atténuation de l'infirmité ou par le décès de la victime fait l'objet d'une décision de la Caisse qui doit être notifiée sans retard à la victime ou à ses ayants droit."
       ],
       "mots_cles": [
-        "décision",
-        "caisse",
-        "victime",
-        "nouvelle",
-        "fixation",
-        "réparations",
-        "motivées",
-        "aggravation",
-        "atténuation",
-        "infirmité",
-        "décès",
-        "objet"
+        "décision de la Caisse",
+        "notification sans retard",
+        "aggravation ou atténuation",
+        "ayants droit"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Révision"
@@ -253,18 +184,9 @@
         "La nouvelle rente est due à partir du jour où a été constatée l'aggravation ou l'atténuation de la lésion."
       ],
       "mots_cles": [
-        "nouvelle",
-        "rente",
-        "date",
-        "effet",
-        "partir",
-        "jour",
-        "constatée",
-        "aggravation",
-        "atténuation",
-        "lésion",
+        "date d'effet",
         "nouvelle rente",
-        "été constatée"
+        "constatation aggravation ou atténuation"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Révision"
@@ -282,18 +204,13 @@
         "En aucun cas, le rachat des rentes ne peut entraîner pour la victime la perte du droit à révision de celle-ci lorsque les conséquences de l'accident provoquent ultérieurement une aggravation de l'invalidité."
       ],
       "mots_cles": [
-        "rachat",
-        "rente",
-        "être",
-        "rentes",
-        "après",
-        "taux",
-        "incapacité",
-        "total",
-        "partiel",
-        "victime",
-        "accident",
-        "délai"
+        "rachat total ou partiel",
+        "cinq ans d'arrérages",
+        "taux inférieur à 10 pour cent rachat total",
+        "10 à 50 pour cent quart maximum",
+        "supérieur 50 pour cent aucun rachat",
+        "demande dans deux ans",
+        "maintien droit à révision"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Rachat"
@@ -305,18 +222,8 @@
         "La conversion est effectuée conformément au barème fixé par le décret pris en conseil des Ministres."
       ],
       "mots_cles": [
-        "barème",
-        "conversion",
-        "effectuée",
-        "conformément",
-        "fixé",
-        "décret",
-        "pris",
-        "conseil",
-        "ministres",
-        "effectuée conformément",
-        "barème fixé",
-        "décret pris"
+        "barème de conversion",
+        "décret en conseil des ministres"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Rachat"
@@ -329,18 +236,12 @@
         "Cette révision peut avoir lieu à la suite des variations sensibles du coût de la vie. Elles tiennent compte des possibilités financières de la branche des risques professionnels et de l'évolution du salaire minimum interprofessionnel garantie."
       ],
       "mots_cles": [
-        "rentes",
-        "revalorisation",
-        "dues",
-        "accidents",
-        "maladies",
-        "professionnelles",
-        "ayant",
-        "entraîné",
-        "mort",
-        "victime",
-        "incapacité",
-        "permanente"
+        "revalorisation des rentes",
+        "coefficient de révision",
+        "coût de la vie",
+        "SMIG",
+        "incapacité permanente 10 pour cent",
+        "possibilités financières"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Revalorisation"
@@ -352,18 +253,11 @@
         "Si l'accident a occasionné une incapacité totale de travail obligeant la victime à avoir recours à l'assistance d'une tierce personne pour effectuer les actes ordinaires de la vie, le montant annuel de la majoration de 50 % est calculé sur la base de la rente majorée."
       ],
       "mots_cles": [
-        "majoration",
-        "tierce",
-        "personne",
-        "accident",
-        "occasionné",
-        "incapacité",
-        "totale",
-        "obligeant",
-        "victime",
-        "avoir",
-        "recours",
-        "assistance"
+        "tierce personne",
+        "majoration 50 pour cent",
+        "incapacité totale",
+        "actes ordinaires de la vie",
+        "rente majorée"
       ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Majorations"
