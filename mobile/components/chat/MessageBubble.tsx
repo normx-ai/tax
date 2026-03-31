@@ -70,9 +70,7 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
             {content}
           </Text>
         </View>
-        {role === "ASSISTANT" && citations && citations.length > 0 && (
-          <CitationsBlock citations={citations} />
-        )}
+        {/* Sources retirées - les références sont intégrées dans la réponse */}
         {pending && (
           <Ionicons name="time-outline" size={12} color={colors.textMuted} style={{ marginTop: 4 }} />
         )}
