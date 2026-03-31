@@ -176,26 +176,26 @@ export default function LandingShowcase({ isMobile }: Props) {
       <View style={{ backgroundColor: "#ffffff" }}>
         <FeatureSection
           isMobile={isMobile}
-          label="CODE SOCIAL"
+          label="CODE DU TRAVAIL & CONVENTIONS"
           labelColor={PURPLE}
-          title={"Gérez vos cotisations\net obligations sociales"}
-          description="CNSS, CAMU, TUS, conventions collectives — tout le droit social congolais indexé et simulable."
+          title={"Tout le droit social\ncongolais en un clic"}
+          description="Code du Travail, Code de Securite Sociale, 16 conventions collectives et textes d'application — indexes et consultables article par article."
           checks={[
-            "CNSS : pension vieillesse 4% + patronale 8%",
-            "CAMU : assurance maladie universelle",
-            "16 conventions collectives du Congo",
-            "Simulateur de bulletin de paie conforme",
+            "Code du Travail : contrats, salaires, licenciement, conges",
+            "16 conventions collectives (BTP, petrole, commerce...)",
+            "Code de Securite Sociale : CNSS, pensions, risques pro",
+            "CAMU, ONEMO, ACPE, FONEA — tous les organismes sociaux",
           ]}
-          mockupIcon="people-outline"
+          mockupIcon="book-outline"
           mockupColor={PURPLE}
-          mockupTitle="Cotisations sociales"
+          mockupTitle="Sommaire — Code Social"
           mockupLines={[
-            "CNSS salariale (PVID)|4,00%",
-            "CNSS patronale (PVID)|8,00%",
-            "CNSS Prestations familiales|10,03%",
-            "CNSS Risques professionnels|2,25%",
-            "CAMU salariale|2,27%",
-            "TUS|7,50%",
+            "Code du Travail|10 titres, 247 articles",
+            "Securite Sociale|Loi 004-86",
+            "Conventions collectives|16 secteurs",
+            "CAMU (Loi 19-2023)|Assurance maladie",
+            "Risques professionnels|Loi 2012-18",
+            "Age de retraite|Loi 2024-48",
           ]}
         />
       </View>
