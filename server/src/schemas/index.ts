@@ -1,6 +1,4 @@
 export * from './common.schema';
-export * from './auth.schema';
-export * from './mfa.schema';
 export * from './chat.schema';
 export { createOrgBody, updateOrgBody, inviteMemberBody, changeMemberRoleBody, transferOwnershipBody, acceptInvitationBody, orgMemberParams, orgInvitationParams } from './organization.schema';
 export * from './subscription.schema';

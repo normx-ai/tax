@@ -12,7 +12,7 @@ import { Permission } from '../types/permissions';
 
 const router = Router();
 
-function handleError(res: Response, err) {
+function handleError(res: Response, err: Error | string) {
   const msg = err instanceof Error ? err.message : 'Erreur serveur';
   if (msg.includes('introuvable')) { res.status(404).json({ error: msg }); return; }
   if (msg.includes('propriétaire')) { res.status(400).json({ error: msg }); return; }
