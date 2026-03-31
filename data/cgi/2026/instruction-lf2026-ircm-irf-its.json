@@ -21,11 +21,21 @@
         "--- Commentaire de l'instruction ---",
         "L'article 103 du CGI, tome 1 correspond à l'article 50 ancien. L'impôt sur le revenu des capitaux mobiliers frappe les revenus qui ne sont pas inclus dans les bénéfices des entreprises soumises à l'IS. Le nouveau texte élargit le champ d'imposition, puisqu'il ne se limite plus aux revenus distribués par certaines sociétés mais inclut les plus-values de cession et d'autres produits financiers. Les revenus provenant d'un État CEMAC et perçus par des sociétés exploitées au Congo sont également visés."
       ],
-      "mots_cles": ["IRCM", "revenus capitaux mobiliers", "dividendes", "plus-values cession", "obligations", "créances", "dépôts", "CEMAC", "redressements"],
+      "mots_cles": [
+        "IRCM",
+        "revenus capitaux mobiliers",
+        "dividendes",
+        "plus-values cession",
+        "obligations",
+        "créances",
+        "dépôts",
+        "CEMAC",
+        "redressements"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 105C",
+      "article": "Art. 105-C",
       "titre": "Plus-values de cession de valeurs mobilières",
       "texte": [
         "Sont soumises à l'impôt sur le revenu des capitaux mobiliers, les plus-values des cessions de valeurs mobilières, notamment les actions, parts sociales et obligations et leurs démembrements.",
@@ -33,7 +43,17 @@
         "--- Commentaire de l'instruction ---",
         "L'article 105C du CGI, tome 1 est une disposition nouvelle. Lorsqu'une personne cède à titre onéreux ou gratuit ses actions, ses parts sociales qu'elle détenait, elle est soumise à l'impôt sur les revenus des capitaux mobiliers. Cette cession peut être : vente, apport, échange, succession, donation, dividende en nature."
       ],
-      "mots_cles": ["plus-values mobilières", "cession actions", "parts sociales", "IRCM", "vente", "échange", "donation", "succession", "apport en société"],
+      "mots_cles": [
+        "plus-values mobilières",
+        "cession actions",
+        "parts sociales",
+        "IRCM",
+        "vente",
+        "échange",
+        "donation",
+        "succession",
+        "apport en société"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -45,7 +65,13 @@
         "--- Commentaire de l'instruction ---",
         "L'article 106 du CGI, tome 1 correspond à l'article 18-7, alinéa 1 du CGI, tome 2, livre 3. Il précise les plus-values exclues de l'IRCM. Lorsqu'une société absorbante ou nouvelle attribue gratuitement les actions ou parts sociales aux actionnaires d'une société absorbée, ces attributions ne sont pas considérées comme des distributions soumises à l'IRCM, à condition que les deux sociétés résident au Congo."
       ],
-      "mots_cles": ["exonérations IRCM", "fusions", "apport partiel actif", "attributions gratuites", "société absorbante"],
+      "mots_cles": [
+        "exonérations IRCM",
+        "fusions",
+        "apport partiel actif",
+        "attributions gratuites",
+        "société absorbante"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -57,11 +83,18 @@
         "--- Commentaire de l'instruction ---",
         "L'article 110 du CGI, tome 1 correspond à l'article 3 du CGI, tome 2, livre 3. La principale nouveauté est l'instauration d'un taux unique de 15% pour tous les revenus de capitaux mobiliers (au lieu de 15%, 17% et 20% selon les catégories dans l'ancien code). Cependant, ce taux est porté à 35% pour les revenus dont l'identité des bénéficiaires n'est pas révélée (revenus occultes)."
       ],
-      "mots_cles": ["taux IRCM", "15%", "35%", "revenus occultes", "taux unique", "simplification"],
+      "mots_cles": [
+        "taux IRCM",
+        "15%",
+        "35%",
+        "revenus occultes",
+        "taux unique",
+        "simplification"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 110A",
+      "article": "Art. 110-A",
       "titre": "Retenue libératoire IRCM",
       "texte": [
         "Lorsque les revenus imposables sont versés par une personne exploitée en République du Congo au sens des dispositions de l'article 4 de la présente loi à : a) des personnes physiques, des personnes morales non soumises à l'impôt sur les sociétés ou des non-résidents, ces revenus sont soumis à une retenue libératoire ; b) des personnes morales soumises à l'impôt sur les sociétés, l'État peut également appliquer une retenue libératoire.",
@@ -70,7 +103,14 @@
         "--- Commentaire de l'instruction ---",
         "L'article 110A du CGI, tome 1 est une disposition nouvelle. Il introduit le régime de retenue libératoire. En effet, la personne qui verse des revenus aux bénéficiaires est chargée d'opérer cette retenue. Par dérogation, cette retenue s'applique également aux entités soumises à l'impôt sur les sociétés (IS). En ce qui concerne les plus-values de cession, la responsabilité de la déclaration et du paiement de l'impôt est partagée entre le cédant et le cessionnaire dans les soixante (60) jours après la réalisation de la plus-value."
       ],
-      "mots_cles": ["retenue libératoire IRCM", "cédant", "cessionnaire", "60 jours", "solidarité", "plus-values cession"],
+      "mots_cles": [
+        "retenue libératoire IRCM",
+        "cédant",
+        "cessionnaire",
+        "60 jours",
+        "solidarité",
+        "plus-values cession"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -85,7 +125,15 @@
         "--- Commentaire de l'instruction ---",
         "L'article 111 du CGI, tome 1 correspond à l'article 12 ancien. La principale nouveauté est l'extension détaillée et claire du champ d'application qui désormais, inclus les plus-values immobilières dans l'assiette de l'impôt sur les revenus fonciers (IRF). Les revenus fonciers s'entendent : des revenus tirés des propriétés bâties et installations assimilées ; des revenus tirés des propriétés non bâties ; des revenus fonciers accessoires (droit d'affichage, exploitation de terrains, etc.) ; des plus-values immobilières."
       ],
-      "mots_cles": ["IRF", "revenus fonciers", "propriétés bâties", "plus-values immobilières", "locations", "droit d'affichage", "carrières"],
+      "mots_cles": [
+        "IRF",
+        "revenus fonciers",
+        "propriétés bâties",
+        "plus-values immobilières",
+        "locations",
+        "droit d'affichage",
+        "carrières"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -96,7 +144,14 @@
         "--- Commentaire de l'instruction ---",
         "L'article 112 du CGI, tome 1 correspond aux articles 13 et 13 bis anciens. Cet article simplifie la base de calcul de l'impôt sur les revenus fonciers. Le montant servant de base de calcul de l'impôt est celui des loyers perçus au titre de l'année N-1. La principale innovation est le passage du système du revenu net (revenu brut moins charges) au système du revenu brut. Désormais, la base est simplement le montant brut des loyers perçus, sans déduction des charges du propriétaire."
       ],
-      "mots_cles": ["base IRF", "loyers bruts", "revenu brut", "année N-1", "simplification", "pas de déduction charges"],
+      "mots_cles": [
+        "base IRF",
+        "loyers bruts",
+        "revenu brut",
+        "année N-1",
+        "simplification",
+        "pas de déduction charges"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -112,11 +167,20 @@
         "--- Commentaire de l'instruction ---",
         "L'article 113 du CGI, tome 1 est une disposition nouvelle. Il institue un régime d'imposition des revenus fonciers avec deux catégories distinctes : les revenus locatifs, imposés au taux de 9% ; les plus-values immobilières, dont le taux est fixé à 10%. Il identifie clairement les redevables réels : le propriétaire pour les revenus locatifs et le cédant pour les plus-values. En outre, il renforce le recouvrement par une responsabilité solidaire du cessionnaire et des sociétés à prépondérance immobilière. Enfin, il prévoit l'imputation des moins-values immobilières comme en matière de capitaux mobiliers (art. 111/109)."
       ],
-      "mots_cles": ["taux IRF", "9%", "10%", "revenus locatifs", "plus-values immobilières", "propriétaire", "cédant", "solidarité cessionnaire"],
+      "mots_cles": [
+        "taux IRF",
+        "9%",
+        "10%",
+        "revenus locatifs",
+        "plus-values immobilières",
+        "propriétaire",
+        "cédant",
+        "solidarité cessionnaire"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 113A",
+      "article": "Art. 113-A",
       "titre": "Retenue à la source IRF - Modalités de paiement",
       "texte": [
         "Par dérogation aux dispositions de l'article 113, l'impôt sur les revenus fonciers applicable aux loyers est perçu par voie de retenue à la source si le locataire est : a) une personne morale soumise à l'impôt sur les sociétés ; b) une personne physique relevant de l'impôt sur les bénéfices d'affaires ; c) l'État, une collectivité locale ou un établissement public.",
@@ -128,7 +192,17 @@
         "--- Commentaire de l'instruction ---",
         "L'article 113A du CGI, tome 1 est une disposition nouvelle. Par dérogation aux dispositions de l'article 113 susvisé, il précise que pour les loyers, une retenue à la source est opérée, si le preneur est une personne morale soumise à l'IS, une personne physique relevant de l'IBA, l'État, une collectivité locale ou un établissement public. La déclaration et le paiement de cette retenue sont effectués par le locataire pour le compte du propriétaire ou de l'usufruitier, au plus tard le 15 mars de l'année d'imposition. Paiement du solde de l'impôt au plus tard le 15 mai, le 20 août et le 15 novembre. Pour les plus-values : déclaration et paiement dans les 3 mois suivant la cession."
       ],
-      "mots_cles": ["retenue source IRF", "locataire", "15 mars", "3 échéances", "15 mai", "20 août", "15 novembre", "retenue libératoire", "3 mois plus-values"],
+      "mots_cles": [
+        "retenue source IRF",
+        "locataire",
+        "15 mars",
+        "3 échéances",
+        "15 mai",
+        "20 août",
+        "15 novembre",
+        "retenue libératoire",
+        "3 mois plus-values"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -140,11 +214,19 @@
         "--- Commentaire de l'instruction ---",
         "L'article 114 du CGI, tome 1 correspond à l'article 37 ancien. Il apporte une précision sur le champ d'application de l'impôt sur les traitements et salaires, en ce qui concerne les rémunérations allouées aux dirigeants des sociétés."
       ],
-      "mots_cles": ["ITS", "salaires", "traitements", "pensions", "rentes viagères", "rémunérations dirigeants", "émoluments"],
+      "mots_cles": [
+        "ITS",
+        "salaires",
+        "traitements",
+        "pensions",
+        "rentes viagères",
+        "rémunérations dirigeants",
+        "émoluments"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 114A",
+      "article": "Art. 114-A",
       "titre": "Exonérations de l'ITS",
       "texte": [
         "Sont affranchis de l'impôt :",
@@ -165,7 +247,18 @@
         "--- Commentaire de l'instruction ---",
         "L'article 114A du CGI, tome 1 correspond à l'article 38 ancien. Toutefois, il élargit le champ d'application des exonérations, en intégrant : le capital décès ; les majorations de salaires résultant de l'application de l'index de correction servies aux fonctionnaires et agents de l'État des missions diplomatiques et postes consulaires à l'étranger."
       ],
-      "mots_cles": ["exonérations ITS", "indemnités transport", "licenciement", "retraite", "allocations familiales", "capital décès", "index correction", "intéressement", "chômage", "accidents travail"],
+      "mots_cles": [
+        "exonérations ITS",
+        "indemnités transport",
+        "licenciement",
+        "retraite",
+        "allocations familiales",
+        "capital décès",
+        "index correction",
+        "intéressement",
+        "chômage",
+        "accidents travail"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -186,11 +279,25 @@
         "--- Commentaire de l'instruction ---",
         "L'article 115 du CGI, tome 1 correspond à l'article 39 ancien. Contrairement aux autres avantages en nature dont la base de référence pour leur calcul est le salaire net imposable (salaire brut diminué des retenues faites par l'employeur au titre de pensions ou de retraites ainsi que les cotisations aux assurances sociales obligatoires), pour l'avantage en nature logement, la base de calcul est le salaire plafonné pour la branche de pension de vieillesse, d'invalidité et de décès de la caisse nationale de la sécurité sociale (CNSS), fixée à 1.200.000 FCFA le mois, soit 14.400.000 FCFA l'année. Aussi, cet article élargit la base d'imposition aux primes des mutuelles sociales et aux revenus de sources étrangères. En ce qui concerne la prime de mutuelle sociale, l'exception est faite lorsqu'elle profite à l'ensemble des salariés. Pour les revenus de source étrangère, la base d'imposition à l'ITS est constituée du montant net perçu, lorsqu'il n'existe pas de convention entre le pays de provenance des revenus et le Congo."
       ],
-      "mots_cles": ["base ITS", "avantages en nature", "logement 20%", "domesticité 7%", "eau 5%", "téléphone 2%", "voiture 3%", "nourriture 20%", "plafond sécurité sociale", "1.200.000 FCFA", "14.400.000 FCFA", "mutuelles", "revenus source étrangère"],
+      "mots_cles": [
+        "base ITS",
+        "avantages en nature",
+        "logement 20%",
+        "domesticité 7%",
+        "eau 5%",
+        "téléphone 2%",
+        "voiture 3%",
+        "nourriture 20%",
+        "plafond sécurité sociale",
+        "1.200.000 FCFA",
+        "14.400.000 FCFA",
+        "mutuelles",
+        "revenus source étrangère"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 116G",
+      "article": "Art. 116-G",
       "titre": "Barème de l'ITS",
       "texte": [
         "1) Le quotient familial ou le salaire net imposable correspondant à une part est imposé en appliquant les taux de :",
@@ -204,11 +311,25 @@
         "--- Commentaire de l'instruction ---",
         "L'article 116G du CGI, tome 1 correspond à l'article 95 ancien. La nouveauté dans cette disposition consiste en : l'augmentation du nombre de tranches de quatre (04) à cinq (05), en prenant en compte le salaire minimum interprofessionnel garanti (SMIG) ; l'application d'un montant fixe de 1.200 FCFA à la première tranche au lieu d'un taux proportionnel. Ces modifications substantielles de l'ITS n'ont pas changé son mode de calcul, qui demeure identique comme autrefois en matière d'IRPP."
       ],
-      "mots_cles": ["barème ITS", "1.200 FCFA", "10%", "15%", "20%", "30%", "5 tranches", "SMIG", "quotient familial", "615.000", "1.500.000", "3.500.000", "5.000.000"],
+      "mots_cles": [
+        "barème ITS",
+        "1.200 FCFA",
+        "10%",
+        "15%",
+        "20%",
+        "30%",
+        "5 tranches",
+        "SMIG",
+        "quotient familial",
+        "615.000",
+        "1.500.000",
+        "3.500.000",
+        "5.000.000"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 116H",
+      "article": "Art. 116-H",
       "titre": "Retenue à la source de l'ITS",
       "texte": [
         "1. Toute personne physique ou morale qui paie des sommes imposables à l'impôt sur les traitements et salaires au Congo est tenue d'opérer la retenue de l'impôt selon l'article 183.",
@@ -217,11 +338,18 @@
         "--- Commentaire de l'instruction ---",
         "L'article 116H du CGI, tome 1 correspond à l'article 172 alinéa 1er ancien. Il précise le caractère libératoire de la retenue, au cas où le contribuable ne dispose que d'une source de traitement et salaire. Par ailleurs, pour le contribuable ayant plusieurs sources, le montant de la retenue constitue un acompte, en attendant la souscription de la déclaration de l'ensemble de ses revenus imposables à l'ITS. En outre, les bénéficiaires des revenus de source étrangère doivent de leur propre initiative en faire la déclaration d'impôts."
       ],
-      "mots_cles": ["retenue source ITS", "retenue libératoire", "plusieurs sources", "déclaration annuelle", "source unique", "revenus étrangers"],
+      "mots_cles": [
+        "retenue source ITS",
+        "retenue libératoire",
+        "plusieurs sources",
+        "déclaration annuelle",
+        "source unique",
+        "revenus étrangers"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 116I",
+      "article": "Art. 116-I",
       "titre": "Disposition transitoire ITS 2026 - DAS 3",
       "texte": [
         "1. Au titre de l'année 2025, les employeurs soumis à l'obligation de produire la déclaration annuelle des salaires doivent produire une annexe dite DAS 3 suivant le modèle fixé par arrêté du ministre des finances. Cette annexe est un état récapitulatif de la DAS1 par nombre de parts des personnes imposées à l'impôt sur les traitements et salaires.",
@@ -229,7 +357,14 @@
         "--- Commentaire de l'instruction ---",
         "L'article 116I est une disposition nouvelle. Au titre de l'année 2026, l'ITS se calcule comme l'IRPP autrefois, en tenant compte du nouveau barème. La DAS 3 est un état transitoire permettant le passage de l'ancien système (IRPP) au nouveau (ITS cédulaire)."
       ],
-      "mots_cles": ["DAS 3", "déclaration annuelle salaires", "transition 2026", "calcul ITS comme IRPP", "disposition transitoire", "nouveau barème"],
+      "mots_cles": [
+        "DAS 3",
+        "déclaration annuelle salaires",
+        "transition 2026",
+        "calcul ITS comme IRPP",
+        "disposition transitoire",
+        "nouveau barème"
+      ],
       "statut": "en vigueur"
     }
   ]

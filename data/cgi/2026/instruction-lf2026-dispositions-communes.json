@@ -24,7 +24,16 @@
         "--- Commentaire de l'instruction ---",
         "Cette section de l'instruction explique les effets juridiques de la transposition de la directive CEMAC dans le droit congolais. Le principe clé est que la directive prime sur la loi nationale en cas de conflit, mais les dispositions du CGI qui ne sont pas en contradiction avec la directive restent applicables en vertu du principe de complémentarité. La base juridique de la réforme LF 2026 est la Directive CEMAC n°0119/25-UEAC-177-CM-42 du 09 janvier 2025."
       ],
-      "mots_cles": ["directive CEMAC", "transposition", "primauté droit communautaire", "0119/25-UEAC-177-CM-42", "spécialité", "complémentarité", "harmonisation", "9 janvier 2025"],
+      "mots_cles": [
+        "directive CEMAC",
+        "transposition",
+        "primauté droit communautaire",
+        "0119/25-UEAC-177-CM-42",
+        "spécialité",
+        "complémentarité",
+        "harmonisation",
+        "9 janvier 2025"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -35,7 +44,12 @@
         "--- Commentaire de l'instruction ---",
         "L'article 128 fixe l'obligation de déclaration d'existence dans les 15 jours du début d'activité pour tout contribuable IS ou IBA."
       ],
-      "mots_cles": ["déclaration existence", "15 jours", "résidence fiscale", "début activité"],
+      "mots_cles": [
+        "déclaration existence",
+        "15 jours",
+        "résidence fiscale",
+        "début activité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -48,7 +62,14 @@
         "--- Commentaire de l'instruction ---",
         "L'article 129 du CGI, tome 1 reprend l'article 102 du présent code. L'instruction note qu'il constitue une erreur matérielle (doublon)."
       ],
-      "mots_cles": ["régime réel", "100 millions", "2 milliards", "moyennes entreprises", "grandes entreprises", "bénéfice réel"],
+      "mots_cles": [
+        "régime réel",
+        "100 millions",
+        "2 milliards",
+        "moyennes entreprises",
+        "grandes entreprises",
+        "bénéfice réel"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -63,7 +84,15 @@
         "--- Commentaire de l'instruction ---",
         "L'article 130 impose la télédéclaration et le télépaiement pour toutes les entreprises au régime réel. La pénalité de 10% s'applique en cas de non-respect. Les états financiers doivent être certifiés par un expert-comptable ou un commissaire aux comptes disposant d'un certificat de moralité fiscale."
       ],
-      "mots_cles": ["télédéclaration", "télépaiement", "10% pénalité", "expert-comptable", "certificat moralité fiscale", "états financiers", "BEAC"],
+      "mots_cles": [
+        "télédéclaration",
+        "télépaiement",
+        "10% pénalité",
+        "expert-comptable",
+        "certificat moralité fiscale",
+        "états financiers",
+        "BEAC"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -77,7 +106,17 @@
         "--- Commentaire de l'instruction ---",
         "L'article 131 détaille les obligations de déclaration annuelle : 3 jeux d'états financiers SYSCOHADA (bilan, compte de résultat, tableau de flux de trésorerie, notes annexes), déclaration statistique et fiscale, conservation 10 ans des documents comptables."
       ],
-      "mots_cles": ["déclaration résultat", "états financiers", "SYSCOHADA", "OHADA", "3 jeux", "bilan", "10 ans conservation", "déclaration statistique et fiscale", "support électronique"],
+      "mots_cles": [
+        "déclaration résultat",
+        "états financiers",
+        "SYSCOHADA",
+        "OHADA",
+        "3 jeux",
+        "bilan",
+        "10 ans conservation",
+        "déclaration statistique et fiscale",
+        "support électronique"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -90,11 +129,19 @@
         "--- Commentaire de l'instruction ---",
         "L'article 132 fixe les dates et lieux de déclaration pour les personnes physiques : revenus passifs (fonciers, salaires, IRCM, plus-values) au 20 mars auprès de la fiscalité des particuliers ; bénéfices d'affaires auprès de l'unité des entreprises ; revenus mixtes (les deux catégories) au 20 juin auprès de la fiscalité des particuliers avec imputation des acomptes IBA."
       ],
-      "mots_cles": ["déclaration personnes physiques", "20 mars", "20 juin", "revenus mixtes", "fiscalité des particuliers", "unité des entreprises", "solde liquidation"],
+      "mots_cles": [
+        "déclaration personnes physiques",
+        "20 mars",
+        "20 juin",
+        "revenus mixtes",
+        "fiscalité des particuliers",
+        "unité des entreprises",
+        "solde liquidation"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140A",
+      "article": "Art. 140 A",
       "titre": "Déclaration des biens mobiliers à l'étranger",
       "texte": [
         "Toute personne domiciliée ou résident habituellement au Congo, conservant hors du Congo des biens mobiliers, doivent obligatoirement dans les délais requis une déclaration indiquant la nature, la valeur de ses biens et les revenus y attachés.",
@@ -102,22 +149,34 @@
         "--- Commentaire de l'instruction ---",
         "Obligation de déclaration sous serment de tous les biens mobiliers détenus à l'étranger par les résidents congolais."
       ],
-      "mots_cles": ["biens mobiliers étranger", "déclaration obligatoire", "serment", "résidents"],
+      "mots_cles": [
+        "biens mobiliers étranger",
+        "déclaration obligatoire",
+        "serment",
+        "résidents"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140D",
+      "article": "Art. 140 D",
       "titre": "Droit de rectification de l'administration",
       "texte": [
         "L'administration a le droit de rectifier les déclarations, mais elle doit au préalable adresser au contribuable l'indication des éléments qu'elle se propose de retenir comme base d'imposition et fixer le délai maximal qui lui ait accordé pour se faire entendre ou faire parvenir son acception ou ses observations.",
         "--- Commentaire de l'instruction ---",
         "Le droit de rectification impose à l'administration une procédure contradictoire : elle doit notifier au contribuable les éléments de base d'imposition envisagés et lui accorder un délai pour répondre. Le contribuable a le droit d'être entendu avant toute rectification."
       ],
-      "mots_cles": ["droit rectification", "notification", "observations", "base d'imposition", "procédure contradictoire", "délai"],
+      "mots_cles": [
+        "droit rectification",
+        "notification",
+        "observations",
+        "base d'imposition",
+        "procédure contradictoire",
+        "délai"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140F",
+      "article": "Art. 140 F",
       "titre": "Taxation d'office",
       "texte": [
         "Est taxé d'office tout contribuable :",
@@ -128,11 +187,19 @@
         "--- Commentaire de l'instruction ---",
         "La taxation d'office est une procédure coercitive qui s'applique aux contribuables défaillants : non-déclaration malgré mise en demeure de 8 jours, refus de répondre aux demandes de l'administration, ou revenus déclarés insuffisants au regard du train de vie."
       ],
-      "mots_cles": ["taxation d'office", "mise en demeure", "8 jours", "dépenses personnelles", "évaluation forfaitaire", "contrôle fiscal", "train de vie"],
+      "mots_cles": [
+        "taxation d'office",
+        "mise en demeure",
+        "8 jours",
+        "dépenses personnelles",
+        "évaluation forfaitaire",
+        "contrôle fiscal",
+        "train de vie"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140H",
+      "article": "Art. 140 H",
       "titre": "Cession, cessation ou décès de l'exploitant",
       "texte": [
         "1) Dans le cas de cession, de cessation ou décès, en totalité ou en partie, dû à raison des bénéfices réalisés dans cette entreprise ou qui n'ont pas encore été imposé est immédiatement établi.",
@@ -142,11 +209,21 @@
         "--- Commentaire de l'instruction ---",
         "En cas de cession, cessation ou décès, l'imposition est immédiate. Délai de 15 jours pour aviser l'inspecteur divisionnaire. Pour les forfaitaires : bénéfice proratisé. Si cession dans les 5 ans suivant la création : réintégration des plus-values de stocks et actifs."
       ],
-      "mots_cles": ["cession", "cessation", "décès", "15 jours", "bénéfice imposable immédiat", "plus-values", "5 ans", "prorata", "inspecteur divisionnaire"],
+      "mots_cles": [
+        "cession",
+        "cessation",
+        "décès",
+        "15 jours",
+        "bénéfice imposable immédiat",
+        "plus-values",
+        "5 ans",
+        "prorata",
+        "inspecteur divisionnaire"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140K",
+      "article": "Art. 140 K",
       "titre": "Décès du contribuable - Impositions",
       "texte": [
         "Dans le cas du décès du contribuable, l'impôt sur les bénéfices d'affaires est établi à raison des revenus dont ce dernier a disposé pendant l'année de son décès et des bénéfices qu'il a réalisés depuis la fin du dernier exercice taxé.",
@@ -155,7 +232,15 @@
         "--- Commentaire de l'instruction ---",
         "En cas de décès, l'IBA est établi sur les revenus de l'année du décès et les bénéfices depuis la fin du dernier exercice taxé. Les ayants droit disposent de 6 mois pour produire la déclaration. Les revenus dont la mise à disposition résulte du décès font l'objet d'une imposition distincte."
       ],
-      "mots_cles": ["décès contribuable", "ayants droit", "6 mois", "imposition distincte", "IBA", "IRCM", "revenus année décès"],
+      "mots_cles": [
+        "décès contribuable",
+        "ayants droit",
+        "6 mois",
+        "imposition distincte",
+        "IBA",
+        "IRCM",
+        "revenus année décès"
+      ],
       "statut": "en vigueur"
     }
   ]
