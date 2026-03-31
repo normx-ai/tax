@@ -38,7 +38,7 @@ export default function AbonnementScreen() {
       setError(null);
       const data = await subscriptionApi.getQuota();
       setQuota(data);
-    } catch (err: unknown) {
+    } catch (err) {
       const axiosErr = err as { response?: { data?: { error?: string } } };
       const errorMsg =
         axiosErr?.response?.data?.error || t("security.unknownError");
@@ -65,7 +65,7 @@ export default function AbonnementScreen() {
       await subscriptionApi.activate(planName);
       toast("Plan activé", "success");
       await loadQuota();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -86,7 +86,7 @@ export default function AbonnementScreen() {
       await subscriptionApi.renew();
       toast("Abonnement renouvelé", "success");
       await loadQuota();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -107,7 +107,7 @@ export default function AbonnementScreen() {
       await subscriptionApi.upgrade("PRO");
       toast("Plan mis à jour", "success");
       await loadQuota();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {

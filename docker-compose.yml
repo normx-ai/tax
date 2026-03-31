@@ -21,7 +21,7 @@ services:
       postgres:
         condition: service_healthy
       qdrant:
-        condition: service_started
+        condition: service_healthy
     networks:
       - cgi242-net
     # Filesystem read-only sauf /tmp (B5)
@@ -77,6 +77,11 @@ services:
       - qdrant_data:/qdrant/storage
     networks:
       - cgi242-net
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:6333/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
     deploy:
       resources:
         limits:
@@ -112,7 +117,7 @@ services:
       - keycloak-net
     # Healthcheck Nginx (B8)
     healthcheck:
-      test: ["CMD", "curl", "-sf", "http://localhost:80/"]
+      test: ["CMD-SHELL", "wget -qO- http://localhost:80/ || exit 1"]
       interval: 30s
       timeout: 5s
       retries: 3

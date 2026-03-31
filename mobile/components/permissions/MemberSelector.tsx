@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import type { OrgMember } from "@/lib/api/organization";
 import { ROLE_COLORS } from "./MyPermissionsCard";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 const ROLE_KEYS: Record<string, string> = {
   OWNER: "permLabels.roleOwner",
@@ -16,7 +17,7 @@ interface MemberSelectorProps {
   members: OrgMember[];
   selectedMemberId: string | null;
   onSelect: (id: string | null) => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function MemberSelector({ members, selectedMemberId, onSelect, colors }: MemberSelectorProps) {

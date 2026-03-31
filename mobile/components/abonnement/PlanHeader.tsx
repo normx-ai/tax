@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 const PLAN_COLORS: Record<string, string> = {
   FREE: "#6b7280",
@@ -55,7 +56,7 @@ export { PLAN_COLORS, PLAN_BG, STATUS_COLORS, STATUS_LABEL_KEYS, PLANS_INFO };
 interface Props {
   plan: string;
   status: string;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function PlanHeader({ plan, status, colors }: Props) {

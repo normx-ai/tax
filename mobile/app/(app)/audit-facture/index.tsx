@@ -66,8 +66,9 @@ export default function AuditFacturePage() {
     try {
       const res = await analyzeDocument(file.blob, file.name, docType);
       setResult(res);
-    } catch (err: any) {
-      setError(err?.response?.data?.error || "Erreur lors de l'analyse");
+    } catch (err) {
+      const axiosErr = err as { response?: { data?: { error?: string } } };
+      setError(axiosErr?.response?.data?.error || "Erreur lors de l'analyse");
     } finally {
       setLoading(false);
     }
@@ -152,10 +153,10 @@ export default function AuditFacturePage() {
 
         {Platform.OS === "web" && (
           <input
-            ref={inputRef as any}
+            ref={inputRef as React.RefObject<HTMLInputElement>}
             type="file"
             accept="application/pdf,image/jpeg,image/png"
-            onChange={handleWebFile as any}
+            onChange={handleWebFile as React.ChangeEventHandler<HTMLInputElement>}
             style={{ display: "none" }}
           />
         )}

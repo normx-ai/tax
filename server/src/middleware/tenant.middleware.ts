@@ -43,7 +43,7 @@ export async function resolveTenant(req: AuthRequest, res: Response, next: NextF
           },
         });
         logger.info(`Utilisateur auto-créé: ${req.userEmail}`);
-      } catch (err: unknown) {
+      } catch (err) {
         // Email déjà utilisé par un ancien compte -> mettre à jour l'id
         if (err && typeof err === "object" && "code" in err && (err as { code: string }).code === "P2002") {
           await prisma.user.update({

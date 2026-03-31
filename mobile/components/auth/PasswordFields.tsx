@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import PasswordStrengthIndicator from "./PasswordStrengthIndicator";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   password: string;
@@ -12,7 +13,7 @@ interface Props {
   onChangePassword: (v: string) => void;
   onChangeConfirmPassword: (v: string) => void;
   onToggleShowPassword: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default memo(function PasswordFields({

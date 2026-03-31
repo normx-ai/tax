@@ -1,11 +1,12 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   initials: string;
   email: string;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function AvatarSection({ initials, email, colors }: Props) {

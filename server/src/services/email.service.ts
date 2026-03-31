@@ -3,6 +3,10 @@ import { createLogger } from '../utils/logger';
 
 const logger = createLogger('EmailService');
 
+function escapeHtml(str: string): string {
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
 const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || '587', 10);
 const SMTP_USER = process.env.SMTP_USER;
@@ -202,12 +206,12 @@ export class EmailService {
   static async sendInvitation(email: string, organizationName: string, inviterName: string, token: string): Promise<void> {
     const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3004';
     const inviteUrl = `${frontendUrl}/register?invitation=${token}`;
-    const subject = `CGI-242 — Invitation à rejoindre ${organizationName}`;
+    const subject = `CGI-242 — Invitation à rejoindre ${escapeHtml(organizationName)}`;
     const html = EmailService.emailLayout(`
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
       <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
-        <strong>${inviterName}</strong> vous invite à rejoindre l'organisation <strong>${organizationName}</strong> sur CGI-242.
+        <strong>${escapeHtml(inviterName)}</strong> vous invite à rejoindre l'organisation <strong>${escapeHtml(organizationName)}</strong> sur CGI-242.
       </p>
 
       <div style="text-align: center; margin: 0 0 24px 0;">

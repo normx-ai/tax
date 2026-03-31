@@ -3,12 +3,13 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import type { Invitation } from "@/lib/api/organization";
 import { ROLE_LABELS } from "./MemberList";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface PendingInvitationsProps {
   invitations: Invitation[];
   isAdmin: boolean;
   onCancelInvitation: (id: string) => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function PendingInvitations({

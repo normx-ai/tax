@@ -30,7 +30,8 @@ export default function LandingPage() {
       const node = sectionView as unknown as HTMLElement;
       node?.scrollIntoView?.({ behavior: "smooth", block: "start" });
     } else {
-      (sectionView as any).measureLayout?.(
+      const viewNode = sectionView as unknown as { measureLayout?: (relativeToNativeNode: unknown, onSuccess: (x: number, y: number) => void, onFail: () => void) => void };
+      viewNode.measureLayout?.(
         scrollRef.current,
         (_x: number, y: number) => {
           scrollRef.current?.scrollTo({ y, animated: true });

@@ -93,7 +93,7 @@ export default function ProfilScreen() {
       }
 
       setMessage({ type: "success", text: t("profil.updateSuccess") });
-    } catch (err: unknown) {
+    } catch (err) {
       const errorMsg = (isAxiosError(err) ? err.response?.data?.error : null) || t("profil.updateError");
       setMessage({ type: "error", text: errorMsg });
     } finally {

@@ -85,7 +85,7 @@ export default function ChatScreen() {
     scrollTimerRef.current = setTimeout(() => scrollRef.current?.scrollToEnd({ animated: false }), 50);
   }, []);
 
-  const handleScroll = useCallback((e: any) => {
+  const handleScroll = useCallback((e: { nativeEvent: { contentOffset: { y: number }; contentSize: { height: number }; layoutMeasurement: { height: number } } }) => {
     const { contentOffset, contentSize, layoutMeasurement } = e.nativeEvent;
     const distanceFromBottom = contentSize.height - contentOffset.y - layoutMeasurement.height;
     isNearBottomRef.current = distanceFromBottom < 80;

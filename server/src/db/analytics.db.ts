@@ -32,9 +32,9 @@ export async function getUserStats(schema: string, userId: string) {
 export async function getUsageByPeriod(schema: string, userId: string, days: number = 30) {
   const r = await pool.query(
     `SELECT DATE(created_at) as date, action, COUNT(*) as count
-     FROM "${schema}".usage_stats WHERE user_id = $1 AND created_at > NOW() - INTERVAL '${days} days'
+     FROM "${schema}".usage_stats WHERE user_id = $1 AND created_at > NOW() - make_interval(days => $2)
      GROUP BY DATE(created_at), action ORDER BY date DESC`,
-    [userId]
+    [userId, days]
   );
   return r.rows;
 }

@@ -146,7 +146,7 @@ function loadArticles(key: string): ArticleData[] {
     const data = FILE_MAP[key]();
     if (!data?.articles) return [];
     // Normaliser les articles qui utilisent "numero" au lieu de "article"
-    const normalized = data.articles.map((a: any) => ({
+    const normalized = data.articles.map((a: RawArticle & { numero?: string; contenu?: string }) => ({
       ...a,
       article: a.article || (a.numero ? `Art. ${a.numero}` : undefined),
       texte: a.texte || (a.contenu ? [a.contenu] : []),

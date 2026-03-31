@@ -1,7 +1,7 @@
 import { Decimal } from '@prisma/client/runtime/library';
 import prisma from '../utils/prisma';
 import { createLogger } from '../utils/logger';
-import { InvoiceStatus, InvoiceType } from '@prisma/client';
+import { InvoiceStatus, InvoiceType, Prisma } from '@prisma/client';
 
 const logger = createLogger('InvoiceService');
 
@@ -167,7 +167,7 @@ export async function getAllInvoices(page = 1, limit = 50, filters?: {
   search?: string;
 }) {
   const skip = (page - 1) * limit;
-  const where: any = {};
+  const where: Prisma.InvoiceWhereInput = {};
 
   if (filters?.status) where.status = filters.status;
   if (filters?.type) where.type = filters.type;

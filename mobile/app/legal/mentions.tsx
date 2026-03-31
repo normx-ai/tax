@@ -2,11 +2,12 @@ import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import type { ThemeColors } from '@/lib/theme/colors';
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#D4A843";
 
-function InfoRow({ label, value, colors }: { label: string; value: string; colors: any }) {
+function InfoRow({ label, value, colors }: { label: string; value: string; colors: ThemeColors }) {
   return (
     <View style={{ flexDirection: "row", marginTop: 8, paddingLeft: 8 }}>
       <Text style={{ fontSize: 16, color: colors.textMuted, lineHeight: 22, fontFamily: fonts.medium, fontWeight: fontWeights.medium, width: 200 }}>

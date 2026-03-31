@@ -46,7 +46,7 @@ export default function SecuriteScreen() {
     try {
       const data = await // mfaApi.getStatus();
       setStatus(data);
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
     } finally {
@@ -64,7 +64,7 @@ export default function SecuriteScreen() {
       const data = await // mfaApi.setup();
       setSetupData(data);
       setSetupStep("qr");
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -81,7 +81,7 @@ export default function SecuriteScreen() {
       setSetupStep("backup");
       setTotpCode("");
       await loadStatus();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("security.invalidCode");
       toast(msg, "error");
     } finally {
@@ -108,7 +108,7 @@ export default function SecuriteScreen() {
       setShowDisable(false);
       toast("2FA désactivée", "success");
       await loadStatus();
-    } catch (err: unknown) {
+    } catch (err) {
       const errMsg = err instanceof Error ? err.message : t("common.error");
       toast(errMsg, "error");
     } finally {
@@ -130,7 +130,7 @@ export default function SecuriteScreen() {
       const result = await // mfaApi.regenerateBackupCodes();
       setBackupCodes(result.backupCodes);
       setSetupStep("backup");
-    } catch (err: unknown) {
+    } catch (err) {
       const errMsg = err instanceof Error ? err.message : t("common.error");
       toast(errMsg, "error");
     } finally {
@@ -152,7 +152,7 @@ export default function SecuriteScreen() {
     try {
       await // authApi.logoutAll();
       await logout();
-    } catch (err: unknown) {
+    } catch (err) {
       const errMsg = err instanceof Error ? err.message : t("common.error");
       toast(errMsg, "error");
     } finally {

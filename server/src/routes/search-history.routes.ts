@@ -1,5 +1,6 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
+import { resolveTenant } from "../middleware/tenant.middleware";
 import { asyncHandler } from "../middleware/asyncHandler";
 import { validate } from "../middleware/validate.middleware";
 import { searchHistoryQuery } from "../schemas/search-history.schema";
@@ -8,7 +9,7 @@ import pool from "../db/pool";
 const router = Router();
 
 // GET /api/search-history
-router.get("/", requireAuth, validate({ query: searchHistoryQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+router.get("/", requireAuth, resolveTenant, validate({ query: searchHistoryQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const s = req.tenantSchema!;
   const userId = req.userId!;
   const page = Number(req.query.page) || 1;
@@ -31,7 +32,7 @@ router.get("/", requireAuth, validate({ query: searchHistoryQuery }), asyncHandl
 }));
 
 // GET /api/search-history/popular
-router.get("/popular", requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+router.get("/popular", requireAuth, resolveTenant, asyncHandler(async (req: AuthRequest, res: Response) => {
   const s = req.tenantSchema!;
   const result = await pool.query(
     `SELECT query, COUNT(*) as count FROM "${s}".search_history
@@ -42,7 +43,7 @@ router.get("/popular", requireAuth, asyncHandler(async (req: AuthRequest, res: R
 }));
 
 // DELETE /api/search-history (RGPD)
-router.delete("/", requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+router.delete("/", requireAuth, resolveTenant, asyncHandler(async (req: AuthRequest, res: Response) => {
   const s = req.tenantSchema!;
   const result = await pool.query(
     `DELETE FROM "${s}".search_history WHERE user_id = $1`,

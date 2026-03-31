@@ -31,7 +31,7 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
   // Sur web : Entrée envoie, Shift+Entrée fait un retour à la ligne
   const handleKeyPress = useCallback((e: NativeSyntheticEvent<TextInputKeyPressEventData>) => {
     if (Platform.OS === "web") {
-      const nativeEvent = e.nativeEvent as any;
+      const nativeEvent = e.nativeEvent as TextInputKeyPressEventData & { key: string; shiftKey?: boolean };
       if (nativeEvent.key === "Enter" && !nativeEvent.shiftKey) {
         e.preventDefault();
         if (!disabled && value.trim()) {

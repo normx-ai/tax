@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import type { ThemeColors } from '@/lib/theme/colors';
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { ArticleData, SearchResult } from "@/lib/data/cgi";
 import { normalize } from "@/lib/data/helpers";
@@ -15,7 +16,7 @@ function HighlightedText({
 }: {
   text: string;
   words: string[];
-  style: any;
+  style: import("react-native").TextStyle;
   highlightColor: string;
   numberOfLines?: number;
 }) {
@@ -64,7 +65,7 @@ function HighlightedText({
   );
 }
 
-function RelevanceBadge({ score, colors }: { score: number; colors: any }) {
+function RelevanceBadge({ score, colors }: { score: number; colors: ThemeColors }) {
   let label: string;
   let bg: string;
   let fg: string;

@@ -3,10 +3,11 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 // MFA supprime — gere par Keycloak (auth.normx-ai.com/realms/normx/account)
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface MfaStatusCardProps {
   status: MfaStatus | null;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function MfaStatusCard({ status, colors }: MfaStatusCardProps) {

@@ -1,6 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { Platform, View, ActivityIndicator } from "react-native";
 
+interface TurnstileAPI {
+  render: (container: HTMLElement, options: Record<string, unknown>) => string;
+  remove: (widgetId: string) => void;
+}
+
+declare global {
+  interface Window { turnstile?: TurnstileAPI; }
+}
+
 const SITE_KEY = process.env.EXPO_PUBLIC_TURNSTILE_SITE_KEY;
 const SCRIPT_ID = "cf-turnstile-script";
 const SCRIPT_SRC = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
@@ -31,7 +40,7 @@ export default function TurnstileWidget({ onToken, onError, onExpire }: Turnstil
     let cancelled = false;
 
     function doRender() {
-      const turnstile = (window as any).turnstile;
+      const turnstile = window.turnstile;
       if (!turnstile || !containerRef.current || cancelled) return;
       if (widgetIdRef.current !== null) return;
 
@@ -57,13 +66,13 @@ export default function TurnstileWidget({ onToken, onError, onExpire }: Turnstil
     }
 
     // Quand le script est prêt, render
-    if ((window as any).turnstile) {
+    if (window.turnstile) {
       doRender();
     } else {
       script.addEventListener("load", doRender);
       // Fallback polling
       const interval = setInterval(() => {
-        if ((window as any).turnstile) {
+        if (window.turnstile) {
           clearInterval(interval);
           doRender();
         }
@@ -75,7 +84,7 @@ export default function TurnstileWidget({ onToken, onError, onExpire }: Turnstil
       cancelled = true;
       cleanInterval?.();
       script?.removeEventListener("load", doRender);
-      const turnstile = (window as any).turnstile;
+      const turnstile = window.turnstile;
       if (turnstile && widgetIdRef.current !== null) {
         try { turnstile.remove(widgetIdRef.current); } catch {}
         widgetIdRef.current = null;

@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 function formatDate(dateStr?: string | null): string {
   if (!dateStr) return "--";
@@ -25,7 +26,7 @@ interface Props {
   statusColor: string;
   currentPeriodStart?: string | null;
   currentPeriodEnd?: string | null;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function PeriodInfo({

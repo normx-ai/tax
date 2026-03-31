@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
+import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from "react";
 import { Platform } from "react-native";
 import { lightColors, darkColors, type ThemeColors } from "./colors";
 
@@ -23,7 +23,7 @@ const STORAGE_KEY = "cgi242_theme_v2";
 async function loadTheme(): Promise<ThemeMode | null> {
   try {
     if (Platform.OS === "web") {
-      return (sessionStorage.getItem(STORAGE_KEY) as ThemeMode) || null;
+      return (localStorage.getItem(STORAGE_KEY) as ThemeMode) || null;
     }
     const { getItemAsync } = await import("expo-secure-store");
     return (await getItemAsync(STORAGE_KEY)) as ThemeMode | null;
@@ -35,7 +35,7 @@ async function loadTheme(): Promise<ThemeMode | null> {
 async function saveTheme(mode: ThemeMode): Promise<void> {
   try {
     if (Platform.OS === "web") {
-      sessionStorage.setItem(STORAGE_KEY, mode);
+      localStorage.setItem(STORAGE_KEY, mode);
       return;
     }
     const { setItemAsync } = await import("expo-secure-store");
@@ -68,9 +68,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const colors = mode === "light" ? lightColors : darkColors;
+  const value = useMemo(() => ({ mode, colors, toggleTheme, setTheme }), [mode, colors, toggleTheme, setTheme]);
 
   return (
-    <ThemeContext.Provider value={{ mode, colors, toggleTheme, setTheme }}>
+    <ThemeContext.Provider value={value}>
       {children}
     </ThemeContext.Provider>
   );

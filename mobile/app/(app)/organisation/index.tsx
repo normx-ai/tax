@@ -90,7 +90,7 @@ export default function OrganisationScreen() {
       setOrg(orgData);
       setMembers(membersData);
       setInvitations(invData);
-    } catch (err: unknown) {
+    } catch (err) {
       if (controller.signal.aborted) return;
       const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
@@ -116,7 +116,7 @@ export default function OrganisationScreen() {
       setInviteEmail("");
       toast("Invitation envoyée", "success");
       await loadData();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -140,7 +140,7 @@ export default function OrganisationScreen() {
       await organizationApi.removeMember(orgId, member.userId);
       toast("Membre retiré", "success");
       await loadData();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -155,7 +155,7 @@ export default function OrganisationScreen() {
       await organizationApi.changeMemberRole(orgId, member.userId, newRole);
       setMenuOpenId(null);
       await loadData();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -169,7 +169,7 @@ export default function OrganisationScreen() {
     try {
       await organizationApi.cancelInvitation(orgId, invId);
       await loadData();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -192,7 +192,7 @@ export default function OrganisationScreen() {
     try {
       await organizationApi.transferOwnership(orgId, member.userId);
       await loadData();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -207,7 +207,7 @@ export default function OrganisationScreen() {
       await organizationApi.createOrganization(createName.trim());
       setCreateName("");
       router.replace("/(app)/organisation");
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -223,7 +223,7 @@ export default function OrganisationScreen() {
       setEditingName(false);
       setNewOrgName("");
       await loadData();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -246,7 +246,7 @@ export default function OrganisationScreen() {
     try {
       await organizationApi.deleteOrganization(orgId);
       router.replace("/(app)/organisation");
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -261,7 +261,7 @@ export default function OrganisationScreen() {
       await organizationApi.restoreOrganization(orgId);
       toast("Organisation restaurée", "success");
       await loadData();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -284,7 +284,7 @@ export default function OrganisationScreen() {
     try {
       await organizationApi.permanentDeleteOrganization(orgId);
       router.replace("/(app)/organisation");
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -322,7 +322,7 @@ export default function OrganisationScreen() {
       setPendingSeatRequest(request);
       setSeatsToAdd("");
       toast(t("seatRequest.success"), "success");
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {

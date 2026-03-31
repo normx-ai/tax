@@ -6,7 +6,6 @@ interface Props {
   label: string;
   value: string;
   onChange: (v: string) => void;
-  colors?: unknown;
 }
 
 export default function NumberField({ label, value, onChange }: Props) {

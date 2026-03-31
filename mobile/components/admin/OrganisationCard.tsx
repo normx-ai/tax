@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, TextInput, ActivityIndicator } from "react-native";
 import type { AdminOrganization } from "@/lib/api/admin";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 type PlanKey = "FREE" | "STARTER" | "PROFESSIONAL" | "TEAM" | "ENTERPRISE";
 
@@ -44,7 +45,7 @@ interface OrganisationCardProps {
   onSeatsChange: (value: string) => void;
   onActivate: (org: AdminOrganization, plan: "STARTER" | "PROFESSIONAL" | "TEAM" | "ENTERPRISE") => void;
   onRenew: (org: AdminOrganization) => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function OrganisationCard({ org, actionLoading, seatsValue, onSeatsChange, onActivate, onRenew, colors }: OrganisationCardProps) {

@@ -1,12 +1,13 @@
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   creditsUsed: number;
   creditsLimit: number;
   remaining: number;
   planColor: string;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function QuotaProgress({

@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import { router } from "expo-router";
+import { router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -83,7 +83,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
     if (codeId) {
       setActiveCode(codeId);
     }
-    router.push(route as any);
+    router.push(route as Href);
   };
 
   const handleProfileAction = (action: () => void) => {

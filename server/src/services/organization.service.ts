@@ -124,18 +124,6 @@ export async function getMembers(orgId: string) {
 }
 
 export async function inviteMember(orgId: string, invitedById: string, email: string, role: string = 'MEMBER') {
-  // Vérifier quota sièges payés
-  const sub = await prisma.subscription.findUnique({ where: { organizationId: orgId } });
-  if (sub) {
-    const memberCount = await prisma.organizationMember.count({ where: { organizationId: orgId } });
-    const pendingCount = await prisma.invitation.count({
-      where: { organizationId: orgId, status: 'PENDING' },
-    });
-    const totalOccupied = memberCount + pendingCount;
-
-    // Pas de limite de membres dans le nouveau système de crédits
-  }
-
   // Vérifier invitation existante
   const existing = await prisma.invitation.findUnique({
     where: { email_organizationId: { email, organizationId: orgId } },

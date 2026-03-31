@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface AuditToolbarProps {
   isOwner: boolean;
@@ -18,7 +19,7 @@ interface AuditToolbarProps {
   onCleanup: () => void;
   onCancelCleanup: () => void;
   onRefresh: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function AuditToolbar({

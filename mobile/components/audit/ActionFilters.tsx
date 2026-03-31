@@ -1,12 +1,13 @@
 import React from "react";
 import { Text, TouchableOpacity, ScrollView } from "react-native";
 import { ACTION_LABELS } from "./AuditStatsCards";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface ActionFiltersProps {
   actions: string[];
   filterAction: string | null;
   onFilterChange: (action: string | null) => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function ActionFilters({

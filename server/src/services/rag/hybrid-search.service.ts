@@ -2,17 +2,15 @@
 // Service de recherche hybride: keyword + vectorielle
 // Copie de cgi-engine adaptée (Voyage AI 1024 dims, sans .js, version défaut 2026)
 
-import { QdrantClient } from '@qdrant/js-client-rest';
 import { generateEmbedding } from './embeddings.service';
+import { getQdrantClient } from './qdrant.service';
 import { createLogger } from '../../utils/logger';
 import { checkDirectMappings, applyRoutingRules } from './hybrid-search.routing';
 import { extractKeywordMatches, getMetadataForArticle } from './hybrid-search.chapters';
 
 const logger = createLogger('HybridSearch');
 
-const client = new QdrantClient({
-  url: process.env.QDRANT_URL || 'http://localhost:6333',
-});
+const client = getQdrantClient();
 
 // Collections CGI + Social
 export const CGI_COLLECTION = 'cgi_2026';

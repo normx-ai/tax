@@ -1,12 +1,13 @@
 import { View, TouchableOpacity } from "react-native";
 import { Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   days: number;
   onChangeDays: (d: number) => void;
   onRefresh: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function PeriodSelector({ days, onChangeDays, onRefresh, colors }: Props) {

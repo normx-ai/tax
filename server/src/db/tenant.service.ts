@@ -1,6 +1,9 @@
 import pool, { getValidatedSchemaName } from "./pool";
 import fs from "fs";
 import path from "path";
+import { createLogger } from "../utils/logger";
+
+const logger = createLogger("TenantService");
 
 const SCHEMA_TEMPLATE = fs.readFileSync(
   path.join(__dirname, "tenant-schema.sql"),
@@ -29,7 +32,7 @@ export async function createTenantSchema(tenantSlug: string): Promise<string> {
   await pool.query(sql);
   schemaCache.add(schema);
 
-  console.log(`[tenant] Schema "${schema}" cree`);
+  logger.info(`Schema "${schema}" cree`);
   return schema;
 }
 

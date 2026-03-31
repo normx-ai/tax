@@ -14,18 +14,6 @@ export const globalLimiter = rateLimit({
 });
 
 /**
- * Auth : 5 requêtes par 15 minutes par IP (100 en dev)
- * Pour /api/auth/* et /api/mfa/verify
- */
-export const authLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: isDev ? 100 : 15,
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: { error: 'Trop de tentatives, réessayez dans 15 minutes' },
-});
-
-/**
  * Sensitive : 10 requêtes par heure par IP
  * Pour changement de mot de passe, MFA enable/disable, envoi OTP
  */

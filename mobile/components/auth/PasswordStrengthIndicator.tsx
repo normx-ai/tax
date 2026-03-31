@@ -2,10 +2,11 @@ import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   password: string;
-  colors: any;
+  colors: ThemeColors;
 }
 
 interface Criterion {

@@ -1,5 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { useTranslation } from "react-i18next";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   code: string;
@@ -7,7 +8,7 @@ interface Props {
   onChangeCode: (code: string) => void;
   onResend: () => void;
   onSubmit?: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function OtpInput({ code, cooldown, onChangeCode, onResend, onSubmit, colors }: Props) {

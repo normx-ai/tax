@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, TextInput } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import type { Organization } from "@/lib/api/organization";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface OrgHeaderProps {
   org: Organization;
@@ -14,7 +15,7 @@ interface OrgHeaderProps {
   onCancelEdit: () => void;
   onSaveName: () => void;
   onChangeNewName: (name: string) => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function OrgHeader({

@@ -33,7 +33,7 @@ export default function AdminScreen() {
       ]);
       setOrgs(data);
       setSeatRequests(requests);
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("security.unknownError");
       if (msg.includes("403") || msg.includes("refuse")) {
         setError(t("admin.accessDenied"));
@@ -81,7 +81,7 @@ export default function AdminScreen() {
       await adminApi.activateSubscription(orgId, plan, paidSeats);
       toast(t("security.activate") + " — OK", "success");
       await loadOrgs();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -106,7 +106,7 @@ export default function AdminScreen() {
       await adminApi.renewSubscription(orgId);
       toast("Abonnement renouvelé", "success");
       await loadOrgs();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -127,7 +127,7 @@ export default function AdminScreen() {
       await adminApi.approveSeatRequest(req.id);
       toast(t("seatRequest.approved"), "success");
       await loadOrgs();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -150,7 +150,7 @@ export default function AdminScreen() {
       toast(t("seatRequest.rejected"), "success");
       setRejectNotes((prev) => { const next = { ...prev }; delete next[req.id]; return next; });
       await loadOrgs();
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {

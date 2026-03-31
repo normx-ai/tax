@@ -58,7 +58,7 @@ export default function AnalyticsScreen() {
       setPopularSearches(psData);
       setResponseTimes(rtData);
       setFeatureUsage(fuData);
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
     } finally {
@@ -75,7 +75,7 @@ export default function AnalyticsScreen() {
     try {
       await analyticsApi.exportCsv(days);
       toast(t("security.exportSuccess"), "success");
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("security.exportError");
       toast(msg, "error");
     } finally {

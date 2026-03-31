@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import type { OrgMember } from "@/lib/api/organization";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 export const ROLE_COLORS: Record<string, string> = {
   OWNER: "#8b5cf6",
@@ -26,7 +27,7 @@ interface MemberListProps {
   onChangeRole: (member: OrgMember, role: string) => void;
   onRemoveMember: (member: OrgMember) => void;
   onTransferOwnership: (member: OrgMember) => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function MemberList({

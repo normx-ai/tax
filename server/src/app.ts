@@ -6,11 +6,7 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import swaggerUi from "swagger-ui-express";
 import { swaggerSpec } from "./config/swagger";
-import { globalLimiter, authLimiter, sensitiveLimiter, chatLimiter } from "./middleware/rateLimit.middleware";
-// Auth custom et MFA supprimes — remplace par Keycloak (auth.normx-ai.com)
-// import { csrfProtection } from "./middleware/csrf.middleware";
-// import authRoutes from "./routes/auth";
-// import mfaRoutes from "./routes/mfa.routes";
+import { globalLimiter, sensitiveLimiter, chatLimiter } from "./middleware/rateLimit.middleware";
 import chatRoutes from "./routes/chat";
 import organizationRoutes from "./routes/organization.routes";
 import subscriptionRoutes from "./routes/subscription.routes";
@@ -119,9 +115,6 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // Routes
-// Routes auth/mfa supprimees — Keycloak gere login/register/OTP/MFA
-// app.use("/api/auth", authLimiter, authRoutes);
-// app.use("/api/mfa", sensitiveLimiter, mfaRoutes);
 app.use("/api/chat", chatLimiter, chatRoutes);
 app.use("/api/organizations", organizationRoutes);
 app.use("/api/subscription", sensitiveLimiter, subscriptionRoutes);

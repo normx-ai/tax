@@ -252,7 +252,7 @@ export default function CalendrierFiscal() {
                 <View
                   key={`${e.descriptionKey}-${i}`}
                   style={{
-                    width: isMobile ? "100%" as unknown as number : "31.5%" as unknown as number,
+                    width: isMobile ? "100%" : "31.5%",
                     backgroundColor: colors.card,
                     borderWidth: 1,
                     borderColor: e.recurrent ? `${colors.accent}40` : `${colors.danger}40`,

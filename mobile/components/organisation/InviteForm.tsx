@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, TextInput, ActivityIndicator } from "react-native";
 import { ROLE_LABELS } from "./MemberList";
 import { useTranslation } from "react-i18next";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface InviteFormProps {
   inviteEmail: string;
@@ -12,7 +13,7 @@ interface InviteFormProps {
   onChangeEmail: (email: string) => void;
   onChangeRole: (role: "MEMBER" | "ADMIN") => void;
   onInvite: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function InviteForm({

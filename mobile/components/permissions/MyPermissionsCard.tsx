@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import type { MyPermissions, PermissionItem } from "@/lib/api/permissions";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 const PERMISSION_KEYS: Record<string, string> = {
   "org.view": "permLabels.orgView",
@@ -39,7 +40,7 @@ export const ROLE_COLORS: Record<string, string> = {
 interface MyPermissionsCardProps {
   myPerms: MyPermissions;
   available: PermissionItem[];
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function MyPermissionsCard({ myPerms, available, colors }: MyPermissionsCardProps) {

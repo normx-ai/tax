@@ -2,13 +2,14 @@ import React from "react";
 import { View, Text, TouchableOpacity, ScrollView, TextInput, ActivityIndicator } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface NoOrganisationProps {
   createName: string;
   createLoading: boolean;
   onChangeCreateName: (name: string) => void;
   onCreateOrg: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function NoOrganisation({

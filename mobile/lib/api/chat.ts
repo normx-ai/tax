@@ -42,11 +42,8 @@ export interface StreamCallbacks {
 // --- Helpers pour lire le token (mobile uniquement) ---
 
 async function getAuthToken(): Promise<string | null> {
-  if (isMobile) {
-    const { getItemAsync } = require("expo-secure-store");
-    return getItemAsync("accessToken");
-  }
-  return null; // Web : cookies httpOnly gérés automatiquement
+  const { useAuthStore } = require("@/lib/store/auth");
+  return useAuthStore.getState().getToken();
 }
 
 // --- SSE Streaming ---
@@ -71,13 +68,9 @@ export async function sendMessageStream(
 
     if (isMobile) {
       headers["X-Platform"] = "mobile";
-      const token = await getAuthToken();
-      if (token) headers.Authorization = `Bearer ${token}`;
-    } else {
-      // Web : ajouter le token Keycloak
-      const token = localStorage.getItem("kc_access_token");
-      if (token) headers.Authorization = `Bearer ${token}`;
     }
+    const token = await getAuthToken();
+    if (token) headers.Authorization = `Bearer ${token}`;
 
     let response = await fetch(`${API_URL}/chat/message/stream`, {
       method: "POST",

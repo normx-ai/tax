@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { type AuditStats } from "@/lib/api/audit";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 export const ACTION_LABELS: Record<string, string> = {
   CREATE: "Cr\u00e9ation",
@@ -16,7 +17,7 @@ export const ACTION_LABELS: Record<string, string> = {
 
 interface AuditStatsCardsProps {
   stats: AuditStats;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function AuditStatsCards({

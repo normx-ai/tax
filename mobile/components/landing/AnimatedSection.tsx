@@ -58,7 +58,7 @@ export default function AnimatedSection({ children, delay = 0, slideUp = 30 }: P
   }));
 
   return (
-    <Animated.View ref={viewRef as any} style={animatedStyle}>
+    <Animated.View ref={viewRef as React.RefObject<Animated.View>} style={animatedStyle}>
       {children}
     </Animated.View>
   );

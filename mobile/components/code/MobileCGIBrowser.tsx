@@ -3,6 +3,7 @@ import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import * as Speech from "expo-speech";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import type { ThemeColors } from '@/lib/theme/colors';
 import { useTranslation } from "react-i18next";
 import { searchArticles, type SommaireNode, type ArticleData, type SearchResult } from "@/lib/data/cgi";
 import { normalize } from "@/lib/data/helpers";
@@ -140,7 +141,7 @@ function cleanForSpeech(text: string): string {
 
 function AudioPlayer({ lines, colors, onLineChange }: {
   lines: string[];
-  colors: any;
+  colors: ThemeColors;
   onLineChange: (index: number | undefined) => void;
 }) {
   const { t } = useTranslation();
@@ -378,7 +379,7 @@ function HighlightText({
 }: {
   text: string;
   words: string[];
-  style: any;
+  style: import("react-native").TextStyle;
   highlightColor: string;
   numberOfLines?: number;
 }) {
@@ -412,7 +413,7 @@ function HighlightText({
 }
 
 // ── Badge de pertinence ──
-function ScoreBadge({ score, colors }: { score: number; colors: any }) {
+function ScoreBadge({ score, colors }: { score: number; colors: ThemeColors }) {
   const label = score >= 100 ? "Exact" : score >= 40 ? "Pertinent" : "Partiel";
   const bg = score >= 100 ? `${colors.success}20` : score >= 40 ? `${colors.primary}15` : `${colors.textMuted}15`;
   const fg = score >= 100 ? colors.success : score >= 40 ? colors.primary : colors.textMuted;

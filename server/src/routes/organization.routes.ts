@@ -12,7 +12,7 @@ import { getClientIp } from '../utils/ip';
 
 const router = Router();
 
-function handleError(res: Response, err: unknown) {
+function handleError(res: Response, err) {
   const msg = err instanceof Error ? err.message : 'Erreur serveur';
   if (msg.includes('introuvable')) { res.status(404).json({ error: msg }); return; }
   if (msg.includes('déjà') || msg.includes('Limite') || msg.includes('Impossible') || msg.includes('Seul')) { res.status(400).json({ error: msg }); return; }

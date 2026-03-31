@@ -3,7 +3,6 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 
 interface Props {
   label: string;
-  colors?: unknown;
 }
 
 export default function SimulateurSection({ label }: Props) {

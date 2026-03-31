@@ -124,7 +124,7 @@ export default function FacturesScreen() {
                       {formatAmount(inv.amountTTC, inv.currency)}
                     </Text>
                     <View style={{ flexDirection: "row", alignItems: "center", marginTop: 4 }}>
-                      <Ionicons name={statusCfg.icon as any} size={14} color={statusCfg.color} />
+                      <Ionicons name={statusCfg.icon as keyof typeof Ionicons.glyphMap} size={14} color={statusCfg.color} />
                       <Text style={{ fontSize: 12, color: statusCfg.color, marginLeft: 4, fontWeight: "600" }}>
                         {t(statusCfg.label)}
                       </Text>

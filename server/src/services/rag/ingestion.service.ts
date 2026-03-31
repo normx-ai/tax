@@ -2,10 +2,10 @@
 // Pipeline d'ingestion: JSON -> PostgreSQL + Qdrant
 // Adapté de cgi-engine (sans Redis, sans uuid externe, Prisma direct)
 
-import { PrismaClient } from '@prisma/client';
 import { generateEmbeddings } from './embeddings.service';
 import { initializeCollection, upsertArticleVectors, ArticleVector } from './qdrant.service';
 import { createLogger } from '../../utils/logger';
+import prisma from '../../utils/prisma';
 import crypto from 'crypto';
 import {
   ArticleJSON,
@@ -17,7 +17,6 @@ import {
 export type { ArticleJSON, SourceFile } from './ingestion.parsers';
 
 const logger = createLogger('IngestionService');
-const prisma = new PrismaClient();
 
 export interface IngestionResult {
   total: number;

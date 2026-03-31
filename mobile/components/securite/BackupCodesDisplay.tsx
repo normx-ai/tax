@@ -2,12 +2,13 @@ import { View, Text, TouchableOpacity, Platform } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface BackupCodesDisplayProps {
   backupCodes: string[];
   onCopy: () => void;
   onDone: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function BackupCodesDisplay({

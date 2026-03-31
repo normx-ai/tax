@@ -2,11 +2,12 @@ import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import type { ThemeColors } from '@/lib/theme/colors';
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 const GOLD = "#D4A843";
 
-function BulletItem({ children, colors }: { children: string; colors: any }) {
+function BulletItem({ children, colors }: { children: string; colors: ThemeColors }) {
   return (
     <View style={{ flexDirection: "row", marginTop: 6, paddingLeft: 8 }}>
       <Text style={{ fontSize: 16, color: GOLD, marginRight: 10, lineHeight: 22 }}>&#x2022;</Text>
@@ -17,7 +18,7 @@ function BulletItem({ children, colors }: { children: string; colors: any }) {
   );
 }
 
-function MappingRow({ finalite, base, colors }: { finalite: string; base: string; colors: any }) {
+function MappingRow({ finalite, base, colors }: { finalite: string; base: string; colors: ThemeColors }) {
   return (
     <View style={{ flexDirection: "row", marginTop: 6, paddingLeft: 8 }}>
       <Text style={{ fontSize: 16, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular, flex: 1 }}>

@@ -48,7 +48,7 @@ export default function AuditScreen() {
       setStats(statsData);
       setLogs(logsData.logs);
       setTotalPages(logsData.totalPages);
-    } catch (err: unknown) {
+    } catch (err) {
       setError(err instanceof Error ? err.message : t("audit.unknownError"));
     } finally {
       setLoading(false);
@@ -64,7 +64,7 @@ export default function AuditScreen() {
     try {
       const result = await auditApi.getEntityHistory(log.entityType, log.entityId);
       setEntityHistory(result.logs);
-    } catch (err: unknown) {
+    } catch (err) {
       toast(err instanceof Error ? err.message : t("common.error"), "error");
       setShowEntityHistory(false);
     } finally {
@@ -94,7 +94,7 @@ export default function AuditScreen() {
       toast(t("audit.logsDeleted", { count: result.deletedCount }), "success");
       setShowCleanup(false);
       await loadData();
-    } catch (err: unknown) {
+    } catch (err) {
       toast(err instanceof Error ? err.message : t("common.error"), "error");
     } finally {
       setActionLoading(false);

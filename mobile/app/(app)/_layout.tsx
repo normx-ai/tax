@@ -112,6 +112,7 @@ function AppLayoutInner() {
   const isOnline = useOnlineStatus();
   const pathname = usePathname();
   const { isMobile } = useResponsive();
+  const { activeCode } = useActiveCode();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [searchVisible, setSearchVisible] = useState(false);
 
@@ -187,12 +188,11 @@ function AppLayoutInner() {
     );
   }
 
-  if (subStatus === "EXPIRED" && user?.globalRole !== "ADMIN") {
+  if (subStatus === "EXPIRED" && user?.role !== "ADMIN") {
     return <PaywallScreen />;
   }
 
   const isHome = pathname === "/" || pathname === "/(app)";
-  const { activeCode } = useActiveCode();
   const pageTitleKey = !isHome ? PAGE_TITLES[pathname] : null;
   const parent = !isHome ? PAGE_PARENTS[pathname] : null;
 

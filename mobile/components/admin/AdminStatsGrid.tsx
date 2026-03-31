@@ -1,12 +1,13 @@
 import React from "react";
 import { View, Text } from "react-native";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface AdminStatsGridProps {
   totalOrgs: number;
   activeCount: number;
   trialCount: number;
   expiredCount: number;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function AdminStatsGrid({ totalOrgs, activeCount, trialCount, expiredCount, colors }: AdminStatsGridProps) {

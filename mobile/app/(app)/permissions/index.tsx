@@ -56,7 +56,7 @@ export default function PermissionsScreen() {
         const membersData = await organizationApi.getMembers(orgId);
         setMembers(membersData.filter((m) => m.userId !== String(user?.id)));
       }
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("security.unknownError");
       setError(msg);
     } finally {
@@ -72,7 +72,7 @@ export default function PermissionsScreen() {
     try {
       const data = await permissionsApi.getMemberEffective(userId);
       setMemberEffective(data);
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     }
@@ -95,7 +95,7 @@ export default function PermissionsScreen() {
         await permissionsApi.grantPermission(userId, permission);
       }
       await loadMemberPerms(userId);
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
       toast(msg, "error");
     } finally {
@@ -116,7 +116,7 @@ export default function PermissionsScreen() {
     try {
       await permissionsApi.resetToDefaults(userId);
       await loadMemberPerms(userId);
-    } catch (err: unknown) {
+    } catch (err) {
       const errMsg = err instanceof Error ? err.message : t("common.error");
       toast(errMsg, "error");
     } finally {

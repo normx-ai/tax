@@ -10,6 +10,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { router, type Href } from "expo-router";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import type { ThemeColors } from '@/lib/theme/colors';
 import { useTranslation } from "react-i18next";
 import { searchArticles, type SearchResult } from "@/lib/data/cgi";
 import { useDebounce } from "@/lib/hooks/useDebounce";
@@ -37,7 +38,7 @@ const HighlightedText = memo(function HighlightedText({
 }: {
   text: string;
   words: string[];
-  style: any;
+  style: import("react-native").TextStyle;
   highlightColor: string;
   numberOfLines?: number;
 }) {
@@ -98,7 +99,7 @@ const HighlightedText = memo(function HighlightedText({
   );
 });
 
-const RelevanceBadge = memo(function RelevanceBadge({ score, colors }: { score: number; colors: any }) {
+const RelevanceBadge = memo(function RelevanceBadge({ score, colors }: { score: number; colors: ThemeColors }) {
   let label: string;
   let bg: string;
   let fg: string;
@@ -350,7 +351,7 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                       borderColor: colors.border,
                       borderRadius: 12,
                       padding: 16,
-                      width: "48%" as unknown as number,
+                      width: "48%",
                       alignItems: "center",
                       gap: 8,
                     }}

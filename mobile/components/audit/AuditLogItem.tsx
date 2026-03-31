@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, Platform } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { type AuditLog } from "@/lib/api/audit";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -48,7 +49,7 @@ interface AuditLogItemProps {
   isExpanded: boolean;
   onToggle: () => void;
   onViewEntityHistory: (log: AuditLog) => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function AuditLogItem({

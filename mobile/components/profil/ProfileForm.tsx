@@ -2,6 +2,7 @@ import { View, Text, TextInput, TouchableOpacity, ActivityIndicator } from "reac
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   firstName: string;
@@ -16,7 +17,7 @@ interface Props {
   onChangePhone: (v: string) => void;
   onChangeProfession: (v: string) => void;
   onSave: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 function FieldInput({
@@ -36,7 +37,7 @@ function FieldInput({
   placeholder?: string;
   keyboardType?: "default" | "phone-pad" | "email-address";
   isLast?: boolean;
-  colors: any;
+  colors: ThemeColors;
 }) {
   return (
     <View style={{ marginBottom: isLast ? 0 : 16 }}>

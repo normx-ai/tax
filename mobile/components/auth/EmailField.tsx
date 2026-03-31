@@ -2,6 +2,7 @@ import { memo } from "react";
 import { View, Text, TextInput } from "react-native";
 import { useTranslation } from "react-i18next";
 import { useResponsive } from "@/lib/hooks/useResponsive";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   email: string;
@@ -9,7 +10,7 @@ interface Props {
   emailChecking: boolean;
   onChangeEmail: (email: string) => void;
   onBlur?: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default memo(function EmailField({ email, emailError, onChangeEmail, onBlur, colors }: Props) {

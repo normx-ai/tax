@@ -10,6 +10,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { type AuditLog } from "@/lib/api/audit";
 import { ACTION_ICONS, ACTION_LABELS, formatTimestamp } from "./AuditLogItem";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -18,7 +19,7 @@ interface EntityHistoryModalProps {
   loading: boolean;
   history: AuditLog[] | null;
   onClose: () => void;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function EntityHistoryModal({

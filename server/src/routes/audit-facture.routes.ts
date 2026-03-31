@@ -50,7 +50,7 @@ router.post(
       await prisma.documentAudit.create({
         data: {
           userId: req.userId!,
-          orgId: (req as any).organizationId || null,
+          orgId: req.orgId || null,
           fileName: req.file.originalname,
           fileType: req.file.mimetype,
           fileSize: req.file.size,
@@ -63,8 +63,8 @@ router.post(
       });
 
       return res.json(result);
-    } catch (err: any) {
-      logger.error("Erreur audit facture:", err.message);
+    } catch (err) {
+      logger.error("Erreur audit facture:", err instanceof Error ? err.message : err);
       return res.status(500).json({ error: "Erreur lors de l'analyse" });
     }
   }
@@ -92,8 +92,8 @@ router.get(
         },
       });
       return res.json(audits);
-    } catch (err: any) {
-      logger.error("Erreur historique audit:", err.message);
+    } catch (err) {
+      logger.error("Erreur historique audit:", err instanceof Error ? err.message : err);
       return res.status(500).json({ error: "Erreur chargement historique" });
     }
   }
@@ -110,8 +110,8 @@ router.get(
       });
       if (!audit) return res.status(404).json({ error: "Audit introuvable" });
       return res.json(audit);
-    } catch (err: any) {
-      logger.error("Erreur detail audit:", err.message);
+    } catch (err) {
+      logger.error("Erreur detail audit:", err instanceof Error ? err.message : err);
       return res.status(500).json({ error: "Erreur chargement audit" });
     }
   }

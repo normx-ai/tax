@@ -34,7 +34,7 @@ export default function InvitationsScreen() {
       setToken("");
       // Rediriger vers l'organisation après acceptation
       setTimeout(() => router.replace("/(app)/organisation"), 1500);
-    } catch (err: unknown) {
+    } catch (err) {
       const msg = err instanceof Error ? err.message : t("invitations.acceptError");
       setError(msg);
     } finally {

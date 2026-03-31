@@ -1,10 +1,11 @@
 import { View, Text } from "react-native";
 import type { MemberStat } from "@/lib/api/analytics";
+import type { ThemeColors } from '@/lib/theme/colors';
 
 interface Props {
   memberStats: MemberStat[];
   formatDate: (iso: string) => string;
-  colors: any;
+  colors: ThemeColors;
 }
 
 export default function MemberStatsTable({ memberStats, formatDate, colors }: Props) {
