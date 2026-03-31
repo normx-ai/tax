@@ -12,8 +12,9 @@ export default pool;
 
 export function getValidatedSchemaName(slug: string): string {
   const clean = slug.toLowerCase().replace(/[^a-z0-9_]/g, "_").substring(0, 63);
-  if (!clean || !/^[a-z]/.test(clean)) {
+  const schema = `tenant_${clean}`;
+  if (!schema || !/^[a-z]/.test(schema)) {
     throw new Error(`Nom de schema invalide: ${slug}`);
   }
-  return `tenant_${clean}`;
+  return schema;
 }
