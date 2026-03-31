@@ -61,35 +61,33 @@ jobs:
             git pull origin main
 
             # --- Generer server/.env.production depuis GitHub Secrets ---
-            cat > server/.env.production << 'ENVEOF'
-NODE_ENV=production
-PORT=3003
-DATABASE_URL=${{ secrets.DATABASE_URL }}
-JWT_SECRET=${{ secrets.JWT_SECRET }}
-JWT_REFRESH_SECRET=${{ secrets.JWT_REFRESH_SECRET }}
-JWT_EXPIRES_IN=15m
-JWT_REFRESH_EXPIRES_IN=7d
-MFA_ENCRYPTION_KEY=${{ secrets.MFA_ENCRYPTION_KEY }}
-ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
-VOYAGE_API_KEY=${{ secrets.VOYAGE_API_KEY }}
-FRONTEND_URL=https://tax.normx-ai.com
-CORS_ORIGIN=https://tax.normx-ai.com,https://normx-ai.com
-QDRANT_URL=http://qdrant:6333
-SMTP_HOST=${{ secrets.SMTP_HOST }}
-SMTP_PORT=465
-SMTP_USER=${{ secrets.SMTP_USER }}
-SMTP_PASS=${{ secrets.SMTP_PASS }}
-SMTP_FROM=no-reply@normx-ai.com
-TURNSTILE_SECRET_KEY=${{ secrets.TURNSTILE_SECRET_KEY }}
-MOBILE_API_SECRET=${{ secrets.MOBILE_API_SECRET }}
-ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}
-ENVEOF
+            printf '%s\n' \
+              "NODE_ENV=production" \
+              "PORT=3003" \
+              "DATABASE_URL=${{ secrets.DATABASE_URL }}" \
+              "JWT_SECRET=${{ secrets.JWT_SECRET }}" \
+              "JWT_REFRESH_SECRET=${{ secrets.JWT_REFRESH_SECRET }}" \
+              "JWT_EXPIRES_IN=15m" \
+              "JWT_REFRESH_EXPIRES_IN=7d" \
+              "MFA_ENCRYPTION_KEY=${{ secrets.MFA_ENCRYPTION_KEY }}" \
+              "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" \
+              "VOYAGE_API_KEY=${{ secrets.VOYAGE_API_KEY }}" \
+              "FRONTEND_URL=https://tax.normx-ai.com" \
+              "CORS_ORIGIN=https://tax.normx-ai.com,https://normx-ai.com" \
+              "QDRANT_URL=http://qdrant:6333" \
+              "SMTP_HOST=${{ secrets.SMTP_HOST }}" \
+              "SMTP_PORT=465" \
+              "SMTP_USER=${{ secrets.SMTP_USER }}" \
+              "SMTP_PASS=${{ secrets.SMTP_PASS }}" \
+              "SMTP_FROM=no-reply@normx-ai.com" \
+              "TURNSTILE_SECRET_KEY=${{ secrets.TURNSTILE_SECRET_KEY }}" \
+              "MOBILE_API_SECRET=${{ secrets.MOBILE_API_SECRET }}" \
+              "ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}" \
+              > server/.env.production
             chmod 600 server/.env.production
 
             # --- Generer .env (Docker Compose) ---
-            cat > .env << 'ENVEOF'
-POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
-ENVEOF
+            printf '%s\n' "POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}" > .env
             chmod 600 .env
 
             # --- Rebuild et restart ---
