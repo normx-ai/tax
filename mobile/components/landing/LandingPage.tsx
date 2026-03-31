@@ -4,6 +4,8 @@ import LandingHeader from "./LandingHeader";
 import LandingHero from "./LandingHero";
 
 import LandingShowcase from "./LandingShowcase";
+import LandingTrust from "./LandingTrust";
+import LandingWhyUs from "./LandingWhyUs";
 import LandingFeatures from "./LandingFeatures";
 import LandingPricing from "./LandingPricing";
 import LandingContact from "./LandingContact";
@@ -51,6 +53,14 @@ export default function LandingPage() {
 
       <AnimatedSection delay={0}>
         <LandingShowcase isMobile={isMobile} />
+      </AnimatedSection>
+
+      <AnimatedSection delay={0}>
+        <LandingTrust isMobile={isMobile} />
+      </AnimatedSection>
+
+      <AnimatedSection delay={0}>
+        <LandingWhyUs isMobile={isMobile} />
       </AnimatedSection>
 
       <View ref={(r) => { sectionRefs.current.features = r; }}>

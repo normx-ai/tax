@@ -164,8 +164,8 @@ export default function LandingShowcase({ isMobile }: Props) {
           mockupTitle="Assistant IA — NORMX Tax"
           mockupLines={[
             "Question|Quel est le taux de l'IS ?",
-            "Réponse|28% (Art. 10 CGI 2026)",
-            "Source|Art. 10, Titre I, Livre I",
+            "Réponse|28% (Art. 86-A CGI 2026)",
+            "Source|Art. 86-A, Chapitre 1, Tome 1",
             "Taux réduit|25% pour écoles",
             "Taux majoré|33% entités étrangères",
           ]}
