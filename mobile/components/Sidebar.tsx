@@ -36,7 +36,7 @@ interface NavItemExt extends NavItem {
 
 const NAV_ITEMS: NavItemExt[] = [
   { label: "sidebar.dashboard", icon: "home-outline", route: "/(app)" },
-  { label: "sidebar.code", icon: "book-outline", route: "/(app)/code", codeId: "cgi" },
+  { label: "Code des Impôts", icon: "book-outline", route: "/(app)/code", codeId: "cgi" },
   { label: "Code Social", icon: "people-outline", route: "/(app)/code", codeId: "social" },
   { label: "sidebar.simulators", icon: "calculator-outline", route: "/(app)/simulateur" },
   { label: "sidebar.calendrier", icon: "calendar-outline", route: "/(app)/calendrier" },
