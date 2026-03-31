@@ -23,7 +23,9 @@ interface DateGroup {
 }
 
 function formatRelativeDate(dateStr: string, t: TFunction): string {
+  if (!dateStr) return "";
   const date = new Date(dateStr);
+  if (isNaN(date.getTime())) return "";
   const now = new Date();
   const diffMs = now.getTime() - date.getTime();
   const diffMins = Math.floor(diffMs / 60000);
@@ -51,7 +53,8 @@ function groupByDate(conversations: Conversation[], t: TFunction): DateGroup[] {
   ];
 
   for (const conv of conversations) {
-    const date = new Date(conv.updatedAt);
+    const date = new Date(conv.updatedAt || conv.createdAt);
+    if (isNaN(date.getTime())) continue;
     const convDay = new Date(date.getFullYear(), date.getMonth(), date.getDate());
 
     let label: string;
