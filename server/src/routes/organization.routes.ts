@@ -36,7 +36,7 @@ router.get('/', requireAuth, async (req: AuthRequest, res: Response) => {
   try {
     const orgs = await orgService.getUserOrganizations(req.userId!);
     res.json(orgs);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -57,7 +57,7 @@ router.post('/', requireAuth, validate({ body: createOrgBody }), async (req: Aut
     const org = await orgService.createOrganization(req.userId!, req.userEmail!, req.body);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'ORG_CREATED', entityType: 'Organization', entityId: org.id, organizationId: org.id, ipAddress: getClientIp(req), changes: { after: { name: org.name, slug: org.slug } } });
     res.status(201).json(org);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -87,7 +87,7 @@ router.get('/:id', requireAuth, resolveTenant, requireOrg, requireMember, valida
     const id = String(req.params.id);
     const org = await orgService.getOrganizationById(id);
     res.json(org);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -118,7 +118,7 @@ router.put('/:id', requireAuth, resolveTenant, requireOrg, requireAdmin, validat
     const result = await orgService.updateOrganization(id, req.body);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'ORG_UPDATED', entityType: 'Organization', entityId: id, organizationId: id, ipAddress: getClientIp(req), changes: result });
     res.json(result.after);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -149,7 +149,7 @@ router.delete('/:id', requireAuth, resolveTenant, requireOrg, requireOwner, vali
     await orgAdminService.softDeleteOrganization(id, req.userId!);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'ORG_DELETED', entityType: 'Organization', entityId: id, organizationId: id, ipAddress: getClientIp(req), changes: { deletedBy: req.userId } });
     res.json({ message: 'Organisation supprimée' });
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -177,7 +177,7 @@ router.get('/:id/members', requireAuth, resolveTenant, requireOrg, requireMember
     const id = String(req.params.id);
     const members = await orgService.getMembers(id);
     res.json(members);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -206,7 +206,7 @@ router.post('/:id/members/invite', requireAuth, resolveTenant, requireOrg, requi
     const invitation = await orgService.inviteMember(id, req.userId!, req.body.email, req.body.role);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'MEMBER_INVITED', entityType: 'Invitation', entityId: invitation.id, organizationId: id, ipAddress: getClientIp(req), changes: { email: req.body.email, role: req.body.role } });
     res.status(201).json(invitation);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -242,7 +242,7 @@ router.delete('/:id/members/:userId', requireAuth, resolveTenant, requireOrg, re
     await orgService.removeMember(id, userId);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'MEMBER_REMOVED', entityType: 'OrganizationMember', entityId: userId, organizationId: id, ipAddress: getClientIp(req), changes: { removedUserId: userId } });
     res.json({ message: 'Membre retiré' });
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -278,7 +278,7 @@ router.put('/:id/members/:userId/role', requireAuth, resolveTenant, requireOrg, 
     const updated = await orgService.changeMemberRole(id, userId, req.body.role);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'MEMBER_ROLE_CHANGED', entityType: 'OrganizationMember', entityId: userId, organizationId: id, ipAddress: getClientIp(req), changes: { newRole: req.body.role } });
     res.json(updated);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -307,7 +307,7 @@ router.post('/:id/transfer-ownership', requireAuth, resolveTenant, requireOrg, r
     await orgService.transferOwnership(id, req.userId!, req.body.newOwnerId);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'OWNERSHIP_TRANSFERRED', entityType: 'Organization', entityId: id, organizationId: id, ipAddress: getClientIp(req), changes: { from: req.userId, to: req.body.newOwnerId } });
     res.json({ message: 'Propriété transférée' });
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -335,7 +335,7 @@ router.get('/:id/invitations', requireAuth, resolveTenant, requireOrg, requireAd
     const id = String(req.params.id);
     const invitations = await orgService.getInvitations(id);
     res.json(invitations);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -370,7 +370,7 @@ router.delete('/:id/invitations/:invId', requireAuth, resolveTenant, requireOrg,
     const invId = String(req.params.invId);
     await orgService.cancelInvitation(id, invId);
     res.json({ message: 'Invitation annulée' });
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 // Seat request route removed — credits system replaces seat-based model
@@ -393,7 +393,7 @@ router.post('/accept-invitation', requireAuth, validate({ body: acceptInvitation
     const result = await orgService.acceptInvitation(req.userId!, req.body.token);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'MEMBER_JOINED', entityType: 'Organization', entityId: result.organizationId, organizationId: result.organizationId, ipAddress: getClientIp(req), changes: { role: result.role } });
     res.json(result);
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -422,7 +422,7 @@ router.post('/:id/restore', requireAuth, resolveTenant, requireOrg, requireOwner
     await orgAdminService.restoreOrganization(id);
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'ORG_RESTORED', entityType: 'Organization', entityId: id, organizationId: id, ipAddress: getClientIp(req), changes: {} });
     res.json({ message: 'Organisation restaurée' });
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 /**
@@ -451,7 +451,7 @@ router.delete('/:id/permanent', requireAuth, resolveTenant, requireOrg, requireO
     AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'ORG_HARD_DELETED', entityType: 'Organization', entityId: id, organizationId: id, ipAddress: getClientIp(req), changes: { deletedBy: req.userId } });
     await orgAdminService.hardDeleteOrganization(id);
     res.json({ message: 'Organisation supprimée définitivement' });
-  } catch (err) { handleError(res, err); }
+  } catch (err) { handleError(res, err instanceof Error ? err : String(err)); }
 });
 
 export default router;
