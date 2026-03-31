@@ -168,12 +168,45 @@ export default function CodeCGI() {
           removeClippedSubviews
         >
           <View style={{ paddingVertical: 8 }}>
-            <View style={{ paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4 }}>
-              <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.primary, textTransform: "uppercase", letterSpacing: 0.5 }}>
-                {activeCode === "cgi" ? "Code des Impôts" : activeCode === "social" ? "Code Social" : activeCode === "hydrocarbures" ? "Code des Hydrocarbures" : "Code Douanier"}
-              </Text>
-              <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
-                {activeCode === "cgi" ? "CGI 2026 — République du Congo" : activeCode === "social" ? "Travail & Sécurité sociale — Édition 2026" : activeCode === "hydrocarbures" ? "Loi n°2024-28" : "CEMAC"}
+            {/* Tabs CGI / Social */}
+            <View style={{ flexDirection: "row", paddingHorizontal: 8, marginBottom: 8 }}>
+              {([
+                { id: "cgi" as const, label: "Code des Impôts", icon: "book-outline" as const },
+                { id: "social" as const, label: "Code Social", icon: "people-outline" as const },
+              ]).map((tab) => {
+                const isActive = activeCode === tab.id;
+                return (
+                  <TouchableOpacity
+                    key={tab.id}
+                    onPress={() => setActiveCode(tab.id)}
+                    style={{
+                      flex: 1,
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      paddingVertical: 10,
+                      backgroundColor: isActive ? `${colors.primary}15` : "transparent",
+                      borderBottomWidth: 2,
+                      borderBottomColor: isActive ? colors.primary : "transparent",
+                      gap: 6,
+                    }}
+                  >
+                    <Ionicons name={tab.icon} size={16} color={isActive ? colors.primary : colors.textMuted} />
+                    <Text style={{
+                      fontSize: 13,
+                      fontFamily: isActive ? fonts.bold : fonts.regular,
+                      fontWeight: isActive ? fontWeights.bold : fontWeights.regular,
+                      color: isActive ? colors.primary : colors.textMuted,
+                    }}>
+                      {tab.label}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
+            <View style={{ paddingHorizontal: 12, paddingVertical: 4, marginBottom: 4 }}>
+              <Text style={{ fontSize: 12, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>
+                {activeCode === "cgi" ? "CGI 2026 — République du Congo" : "Travail & Sécurité sociale — Édition 2026"}
               </Text>
             </View>
             <View style={[styles.separator, { backgroundColor: colors.border }]} />
