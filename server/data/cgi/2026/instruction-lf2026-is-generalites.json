@@ -13,7 +13,7 @@
   },
   "articles": [
     {
-      "article": "Art. 1",
+      "article": "INSTR-1",
       "titre": "Principe de l'impôt sur les sociétés",
       "texte": [
         "Il est établi un impôt annuel sur l'ensemble des bénéfices ou revenus réalisés par les sociétés et autres personnes morales, désigné sous le nom d'impôt sur les sociétés.",
@@ -31,7 +31,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 2",
+      "article": "INSTR-2",
       "titre": "Personnes imposables à l'IS",
       "texte": [
         "Sont passibles de l'impôt sur les sociétés, quel que soit leur objet : les sociétés anonymes (SA), les sociétés par actions simplifiées (SAS), les sociétés à responsabilité limitée (SARL), les sociétés coopératives et leurs unions.",
@@ -55,7 +55,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 3",
+      "article": "INSTR-3",
       "titre": "Exonérations de l'IS",
       "texte": [
         "Sont exonérées de l'impôt sur les sociétés : la BEAC, la BDEAC, les coopératives agricoles et leurs unions fonctionnant conformément aux dispositions qui les régissent, les caisses de crédit agricole mutuel, les associations sans but lucratif, les collectivités locales, les organismes d'utilité publique, les groupements d'intérêt économique (GIE), les sociétés civiles professionnelles, les centres de gestion agréés, les entreprises agricoles.",
@@ -78,7 +78,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 3-A",
+      "article": "INSTR-3-A",
       "titre": "Crédit d'impôt pour investissement",
       "texte": [
         "Il est institué au profit des entreprises soumises à l'impôt sur les sociétés, un crédit d'impôt pour investissement. Ce crédit d'impôt est égal à un pourcentage maximum de 15% du montant des investissements réalisés au cours de l'exercice.",
@@ -96,7 +96,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 4",
+      "article": "INSTR-4",
       "titre": "Territorialité de l'IS",
       "texte": [
         "L'impôt sur les sociétés est établi dans les conditions prévues au livre premier du présent Code en tenant compte uniquement des bénéfices réalisés dans les entreprises exploitées au Congo.",
@@ -112,7 +112,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 4-A",
+      "article": "INSTR-4-A",
       "titre": "Établissement stable",
       "texte": [
         "Au sens du présent code, l'expression établissement stable désigne une installation fixe d'affaires par l'intermédiaire de laquelle une entreprise non résidente exerce tout ou partie de son activité.",
@@ -136,7 +136,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 5",
+      "article": "INSTR-5",
       "titre": "Déductibilité des charges - Acte anormal de gestion",
       "texte": [
         "Les charges sont admises en déduction du résultat fiscal lorsqu'elles sont exposées dans l'intérêt direct de l'exploitation ou se rattachent à la gestion normale de l'entreprise, correspondent à une charge effective et sont appuyées de justifications suffisantes.",
@@ -154,7 +154,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 6",
+      "article": "INSTR-6",
       "titre": "Bénéfice imposable",
       "texte": [
         "Le bénéfice imposable est le bénéfice net déterminé d'après les résultats d'ensemble des opérations de toute nature effectuées par l'entreprise, y compris notamment les cessions d'éléments quelconques de l'actif, soit en cours, soit en fin d'exploitation.",
@@ -170,7 +170,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 7",
+      "article": "INSTR-7",
       "titre": "Résidence fiscale des sociétés",
       "texte": [
         "La résidence fiscale d'une société est établie au Congo lorsque son siège de direction effective se trouve au Congo, c'est-à-dire le lieu où sont prises les décisions stratégiques et commerciales nécessaires à la conduite de l'ensemble des activités de l'entreprise.",

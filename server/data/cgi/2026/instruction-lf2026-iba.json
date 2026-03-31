@@ -13,7 +13,7 @@
   },
   "articles": [
     {
-      "article": "Art. 93",
+      "article": "INSTR-93",
       "titre": "Principe de l'IBA",
       "texte": [
         "Les bénéfices réalisés par les personnes physiques qui accomplissent habituellement, pour leur propre compte, une activité à caractère lucratif, sont soumis à un impôt annuel désigné sous le nom d'impôt sur les bénéfices d'affaires (IBA).",
@@ -33,7 +33,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 93-A",
+      "article": "INSTR-93-A",
       "titre": "Champ d'application de l'IBA",
       "texte": [
         "Sont imposables au titre de l'impôt sur les bénéfices d'affaires :",
@@ -57,7 +57,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 93-B",
+      "article": "INSTR-93-B",
       "titre": "Personnes imposables à l'IBA",
       "texte": [
         "Sous réserve des dispositions des conventions internationales, sont imposables :",
@@ -79,7 +79,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 93-C",
+      "article": "INSTR-93-C",
       "titre": "Lieu d'imposition de l'IBA",
       "texte": [
         "Les bénéfices imposables sont ceux réalisés par les entreprises exploitées au Congo dans les conditions prévues par les dispositions des articles 5 et 6.",
@@ -94,7 +94,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 94",
+      "article": "INSTR-94",
       "titre": "Bénéfice imposable IBA - Restrictions",
       "texte": [
         "Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées par les articles 6 et suivants en matière d'impôt sur les sociétés.",
@@ -118,7 +118,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 94-A",
+      "article": "INSTR-94-A",
       "titre": "Charges non déductibles de l'IBA",
       "texte": [
         "Ne sont pas déductibles du bénéfice imposable de l'exploitant individuel :",
@@ -142,7 +142,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 94-B",
+      "article": "INSTR-94-B",
       "titre": "Obligations comptables IBA",
       "texte": [
         "Les bénéfices perçus de manière régulière sont constatés par une comptabilité d'engagement conforme au SYSCOHADA.",
@@ -160,7 +160,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 95",
+      "article": "INSTR-95",
       "titre": "Taux et minimum de perception de l'IBA",
       "texte": [
         "Pour le calcul de l'impôt, toute fraction du bénéfice imposable inférieure à mille francs, est négligée.",
@@ -183,7 +183,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 95-B",
+      "article": "INSTR-95-B",
       "titre": "IBA des sociétés transparentes",
       "texte": [
         "L'impôt sur les bénéfices d'affaires dû par les personnes physiques au titre de leur part de bénéfice dans une société transparente est prélevé à la source en application de l'article 183 du présent code.",
@@ -201,7 +201,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 96",
+      "article": "INSTR-96",
       "titre": "Régime du forfait - Petites et très petites entreprises",
       "texte": [
         "1. Les contribuables dont le chiffre d'affaires n'excède pas le seuil d'assujettissement à la TVA (100.000.000 FCFA), sont imposés selon le régime du forfait.",
@@ -230,7 +230,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 97",
+      "article": "INSTR-97",
       "titre": "Évaluation forfaitaire du chiffre d'affaires",
       "texte": [
         "Les montants du chiffre d'affaires et du bénéfice sont évalués par l'administration d'après les résultats obtenus par le contribuable au cours de l'année de l'imposition. Ils doivent correspondre au bénéfice que l'entreprise peut produire normalement.",
@@ -249,7 +249,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 98",
+      "article": "INSTR-98",
       "titre": "Base de calcul de l'impôt global forfaitaire",
       "texte": [
         "1. La base de calcul de l'impôt global forfaitaire est fixée pour une année civile.",
@@ -271,7 +271,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 99",
+      "article": "INSTR-99",
       "titre": "Déclaration trimestrielle des fournisseurs",
       "texte": [
         "Le contribuable soumis au régime du forfait est tenu de déclarer au plus tard le 15 du mois suivant la fin de chaque trimestre, la liste de ses fournisseurs ou de ses sources d'approvisionnement des marchandises auprès de sa résidence fiscale selon le modèle prescrit par l'administration fiscale.",
@@ -289,7 +289,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 102",
+      "article": "INSTR-102",
       "titre": "Régime du bénéfice réel",
       "texte": [
         "Les contribuables dont le chiffre d'affaires est supérieur ou égal au seuil d'assujettissement à la TVA sont assujettis au régime de l'imposition assis sur le bénéfice réel.",

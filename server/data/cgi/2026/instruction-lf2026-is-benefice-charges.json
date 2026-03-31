@@ -13,7 +13,7 @@
   },
   "articles": [
     {
-      "article": "Art. 8",
+      "article": "INSTR-8",
       "titre": "Bénéfice net",
       "texte": [
         "Le bénéfice net est constitué par la différence entre les valeurs de l'actif net à la clôture et à l'ouverture de la période dont les résultats doivent servir de base à l'impôt, diminuée des suppléments d'apport et augmentée des prélèvements effectués au cours de cette période par l'exploitant ou par les associés.",
@@ -21,66 +21,103 @@
         "--- Commentaire de l'instruction ---",
         "L'article 8 du CGI, tome 1 correspond à l'article 111 du CGI ancien. Il n'appelle pas de commentaire particulier. Il définit le bénéfice net comme la variation de l'actif net entre l'ouverture et la clôture de l'exercice."
       ],
-      "mots_cles": ["bénéfice net", "actif net", "clôture", "ouverture", "suppléments d'apport", "prélèvements"],
+      "mots_cles": [
+        "bénéfice net",
+        "actif net",
+        "clôture",
+        "ouverture",
+        "suppléments d'apport",
+        "prélèvements"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 9",
+      "article": "INSTR-9",
       "titre": "Actif net",
       "texte": [
         "L'actif net s'entend de l'excédent des valeurs d'actif sur le total formé au passif par les créances des tiers, les amortissements et les provisions justifiées.",
         "--- Commentaire de l'instruction ---",
         "L'article 9 du CGI, tome 1 correspond à l'article 111 bis du CGI ancien. Il n'appelle pas de commentaire particulier."
       ],
-      "mots_cles": ["actif net", "valeurs actif", "passif", "créances tiers", "amortissements", "provisions"],
+      "mots_cles": [
+        "actif net",
+        "valeurs actif",
+        "passif",
+        "créances tiers",
+        "amortissements",
+        "provisions"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 10",
+      "article": "INSTR-10",
       "titre": "Évaluation des stocks",
       "texte": [
         "Les stocks sont évalués au prix de revient ou au cours du jour de la clôture de l'exercice, si ce cours est inférieur au prix de revient. Les travaux en cours sont évalués au prix de revient.",
         "--- Commentaire de l'instruction ---",
         "L'article 10 du CGI, tome 1 correspond à l'article 112 du CGI ancien. Règle classique d'évaluation des stocks au plus bas du prix de revient et de la valeur de marché."
       ],
-      "mots_cles": ["stocks", "évaluation stocks", "prix de revient", "cours du jour", "travaux en cours"],
+      "mots_cles": [
+        "stocks",
+        "évaluation stocks",
+        "prix de revient",
+        "cours du jour",
+        "travaux en cours"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 11",
+      "article": "INSTR-11",
       "titre": "Période d'imposition",
       "texte": [
         "L'impôt est établi chaque année sur les bénéfices obtenus pendant l'année précédente ou dans la période de douze mois dont les résultats ont servi à l'établissement du dernier bilan.",
         "--- Commentaire de l'instruction ---",
         "L'article 11 du CGI, tome 1 correspond à l'article 112 bis du CGI ancien. La période d'imposition est l'exercice fiscal, généralement de 12 mois."
       ],
-      "mots_cles": ["période d'imposition", "exercice fiscal", "douze mois", "bilan"],
+      "mots_cles": [
+        "période d'imposition",
+        "exercice fiscal",
+        "douze mois",
+        "bilan"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 12",
+      "article": "INSTR-12",
       "titre": "Produits imposables",
       "texte": [
         "Sont compris dans les produits imposables : les produits d'exploitation, les produits accessoires, les produits financiers et les produits exceptionnels (produits hors activité ordinaire - HAO).",
         "--- Commentaire de l'instruction ---",
         "L'article 12 du CGI, tome 1 correspond à l'article 113 du CGI ancien. Il énumère les catégories de produits à inclure dans la base imposable."
       ],
-      "mots_cles": ["produits imposables", "produits exploitation", "produits financiers", "produits HAO", "produits exceptionnels"],
+      "mots_cles": [
+        "produits imposables",
+        "produits exploitation",
+        "produits financiers",
+        "produits HAO",
+        "produits exceptionnels"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 13",
+      "article": "INSTR-13",
       "titre": "Revenus de source étrangère",
       "texte": [
         "Les revenus de source étrangère perçus par une entreprise résidente sont imposables au Congo. Un crédit d'impôt peut être accordé pour les impôts acquittés à l'étranger en application des conventions fiscales.",
         "--- Commentaire de l'instruction ---",
         "L'article 13 du CGI, tome 1 correspond à l'article 113A du CGI ancien. Les bénéfices de source étrangère sont intégrés au résultat imposable sous réserve des conventions de non double imposition."
       ],
-      "mots_cles": ["revenus étrangers", "source étrangère", "crédit d'impôt", "conventions fiscales", "double imposition"],
+      "mots_cles": [
+        "revenus étrangers",
+        "source étrangère",
+        "crédit d'impôt",
+        "conventions fiscales",
+        "double imposition"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 14",
+      "article": "INSTR-14",
       "titre": "Cessions d'éléments d'actif",
       "texte": [
         "Les plus-values réalisées à l'occasion de cessions d'éléments de l'actif immobilisé sont comprises dans le bénéfice imposable.",
@@ -88,11 +125,17 @@
         "--- Commentaire de l'instruction ---",
         "L'article 14 du CGI, tome 1 correspond à l'article 114 du CGI ancien. Il pose le principe d'imposition des plus-values de cession d'actifs immobilisés."
       ],
-      "mots_cles": ["cessions actif", "plus-values", "actif immobilisé", "valeur nette comptable", "prix de cession"],
+      "mots_cles": [
+        "cessions actif",
+        "plus-values",
+        "actif immobilisé",
+        "valeur nette comptable",
+        "prix de cession"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 17",
+      "article": "INSTR-17",
       "titre": "Plus-values à long terme",
       "texte": [
         "Les plus-values nettes à long terme provenant de la cession d'éléments de l'actif immobilisé détenus depuis plus de deux ans sont imposées au taux réduit de 15%.",
@@ -100,22 +143,36 @@
         "--- Commentaire de l'instruction ---",
         "L'article 17 du CGI, tome 1 correspond à l'article 117 du CGI ancien. Le régime des plus-values à long terme est maintenu avec un taux réduit de 15% pour les éléments détenus depuis plus de 2 ans. Les moins-values à long terme ne sont compensables qu'avec des plus-values de même nature."
       ],
-      "mots_cles": ["plus-values long terme", "15%", "taux réduit", "2 ans", "moins-values", "actif immobilisé"],
+      "mots_cles": [
+        "plus-values long terme",
+        "15%",
+        "taux réduit",
+        "2 ans",
+        "moins-values",
+        "actif immobilisé"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 18",
+      "article": "INSTR-18",
       "titre": "Exonération des plus-values sous condition de réemploi",
       "texte": [
         "Les plus-values nettes à long terme sont exonérées d'impôt lorsque le contribuable prend l'engagement de réinvestir en immobilisations dans un délai de trois ans à compter de la clôture de l'exercice de réalisation de la plus-value, une somme au moins égale au prix de cession des éléments cédés.",
         "--- Commentaire de l'instruction ---",
         "L'article 18 du CGI, tome 1 correspond aux dispositions anciennes sur le réemploi. L'exonération est conditionnée au réinvestissement dans un délai de 3 ans. Le réemploi doit être effectué dans un État membre de la CEMAC (art. 19)."
       ],
-      "mots_cles": ["réemploi", "exonération plus-values", "3 ans", "réinvestissement", "CEMAC", "engagement"],
+      "mots_cles": [
+        "réemploi",
+        "exonération plus-values",
+        "3 ans",
+        "réinvestissement",
+        "CEMAC",
+        "engagement"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 28",
+      "article": "INSTR-28",
       "titre": "Intérêts des emprunts et comptes courants d'associés",
       "texte": [
         "Les intérêts servis aux associés ou actionnaires à raison des sommes qu'ils laissent ou mettent à la disposition de la société, en sus de leur part du capital, sont déductibles dans la limite du taux de la BEAC majoré de deux (2) points.",
@@ -123,11 +180,19 @@
         "--- Commentaire de l'instruction ---",
         "L'article 28 du CGI, tome 1 correspond aux anciennes dispositions sur les intérêts des comptes courants. RÈGLE IMPORTANTE de sous-capitalisation : les emprunts auprès des associés ne doivent pas dépasser 1,5 fois le capital social. Les intérêts sont plafonnés au taux BEAC + 2 points. Au-delà de ces limites, les intérêts ne sont pas déductibles et doivent être réintégrés au résultat fiscal."
       ],
-      "mots_cles": ["intérêts comptes courants", "taux BEAC + 2 points", "sous-capitalisation", "thin capitalization", "1,5 fois capital social", "associés", "réintégration"],
+      "mots_cles": [
+        "intérêts comptes courants",
+        "taux BEAC + 2 points",
+        "sous-capitalisation",
+        "thin capitalization",
+        "1,5 fois capital social",
+        "associés",
+        "réintégration"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 29",
+      "article": "INSTR-29",
       "titre": "Rémunérations des dirigeants",
       "texte": [
         "Les rémunérations allouées aux dirigeants de sociétés sont déductibles du bénéfice imposable dans la mesure où elles correspondent à un travail effectif et ne sont pas excessives eu égard à l'importance du service rendu.",
@@ -135,22 +200,39 @@
         "--- Commentaire de l'instruction ---",
         "L'article 29 du CGI, tome 1 correspond à l'article 114 du CGI ancien. NOUVEAUTÉ MAJEURE de la loi de finances 2026 : les rémunérations des 5 dirigeants les mieux rémunérés sont plafonnées à 33% du bénéfice fiscal lorsque ces dirigeants détiennent moins de 35% du capital. Cette mesure vise à lutter contre les rémunérations excessives utilisées comme outil d'évasion fiscale."
       ],
-      "mots_cles": ["rémunérations dirigeants", "33% bénéfice fiscal", "35% capital", "5 dirigeants", "plafonnement", "travail effectif", "charges déductibles"],
+      "mots_cles": [
+        "rémunérations dirigeants",
+        "33% bénéfice fiscal",
+        "35% capital",
+        "5 dirigeants",
+        "plafonnement",
+        "travail effectif",
+        "charges déductibles"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 34",
+      "article": "INSTR-34",
       "titre": "Charges non déductibles",
       "texte": [
         "Ne sont pas admis en déduction du bénéfice imposable : les amendes et pénalités de toute nature mises à la charge des contrevenants aux dispositions légales, les dépenses et charges de caractère somptuaire (chasse, pêche, résidences de plaisance, yachts), les libéralités sauf les dons effectués au profit d'organismes d'intérêt général dans la limite de 0,5% du chiffre d'affaires.",
         "--- Commentaire de l'instruction ---",
         "L'article 34 du CGI, tome 1 énumère les charges expressément exclues de la déduction fiscale. Les amendes fiscales, les pénalités et les dépenses somptuaires sont non déductibles. Les dons et le mécénat sont déductibles dans la limite de 0,5% du CA."
       ],
-      "mots_cles": ["charges non déductibles", "amendes", "pénalités", "charges somptuaires", "dons", "mécénat", "0,5% CA", "libéralités"],
+      "mots_cles": [
+        "charges non déductibles",
+        "amendes",
+        "pénalités",
+        "charges somptuaires",
+        "dons",
+        "mécénat",
+        "0,5% CA",
+        "libéralités"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 36",
+      "article": "INSTR-36",
       "titre": "Amortissement dégressif",
       "texte": [
         "Les entreprises peuvent, sur option, pratiquer l'amortissement dégressif pour les biens d'équipement autres que les immeubles d'habitation, les chantiers et les locaux servant à l'exercice de la profession.",
@@ -158,22 +240,35 @@
         "--- Commentaire de l'instruction ---",
         "L'article 36 du CGI, tome 1 correspond à l'article 116 du CGI ancien. Le régime d'amortissement dégressif reste applicable avec les mêmes coefficients. ATTENTION : l'amortissement dégressif n'est pas applicable aux contribuables soumis à l'IBA (art. 94) qui ne peuvent pratiquer que l'amortissement linéaire."
       ],
-      "mots_cles": ["amortissement dégressif", "coefficient 1,5", "coefficient 2", "coefficient 2,5", "biens d'équipement", "durée de vie", "option"],
+      "mots_cles": [
+        "amortissement dégressif",
+        "coefficient 1,5",
+        "coefficient 2",
+        "coefficient 2,5",
+        "biens d'équipement",
+        "durée de vie",
+        "option"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 37",
+      "article": "INSTR-37",
       "titre": "Amortissements exceptionnels",
       "texte": [
         "Les logiciels acquis par l'entreprise en vue d'être utilisés pour les besoins de son exploitation peuvent faire l'objet d'un amortissement exceptionnel sur une durée de deux (2) ans.",
         "--- Commentaire de l'instruction ---",
         "L'article 37 correspond aux dispositions anciennes sur les amortissements exceptionnels. Les logiciels peuvent être amortis sur 2 ans en mode exceptionnel, ce qui constitue un avantage fiscal pour les entreprises investissant dans la transformation numérique."
       ],
-      "mots_cles": ["amortissements exceptionnels", "logiciels", "2 ans", "transformation numérique"],
+      "mots_cles": [
+        "amortissements exceptionnels",
+        "logiciels",
+        "2 ans",
+        "transformation numérique"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 39",
+      "article": "INSTR-39",
       "titre": "Provisions - Conditions de déductibilité",
       "texte": [
         "Les provisions constituées en vue de faire face à des pertes ou charges nettement précisées et que des événements en cours rendent probables sont déductibles du bénéfice imposable, à condition qu'elles aient été effectivement constatées dans les écritures de l'exercice.",
@@ -181,18 +276,33 @@
         "--- Commentaire de l'instruction ---",
         "L'article 39 du CGI, tome 1 fixe les conditions de déductibilité des provisions : pertes ou charges nettement précisées, probables, et comptabilisées. Pour les créances douteuses, l'ancienneté minimum est de 6 mois avec preuve de poursuites ou d'insolvabilité. ATTENTION : les provisions pour créances douteuses ne sont pas déductibles pour les contribuables IBA (art. 94)."
       ],
-      "mots_cles": ["provisions", "créances douteuses", "6 mois", "déductibilité", "pertes probables", "poursuites judiciaires", "insolvabilité"],
+      "mots_cles": [
+        "provisions",
+        "créances douteuses",
+        "6 mois",
+        "déductibilité",
+        "pertes probables",
+        "poursuites judiciaires",
+        "insolvabilité"
+      ],
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 44",
+      "article": "INSTR-44",
       "titre": "Charges somptuaires et amendes non déductibles",
       "texte": [
         "Ne sont pas déductibles du bénéfice imposable : les amendes fiscales et pénalités de toute nature, les dépenses ayant un caractère somptuaire (chasse, pêche sportive, résidences de plaisance, yachts et bateaux de plaisance), les cadeaux d'affaires dont la valeur unitaire excède le seuil fixé par l'administration.",
         "--- Commentaire de l'instruction ---",
         "Les charges somptuaires et les amendes sont expressément exclues de la déduction. Cette disposition vise à empêcher que des dépenses personnelles ou des sanctions ne viennent réduire la base imposable."
       ],
-      "mots_cles": ["charges somptuaires", "amendes non déductibles", "pénalités", "chasse", "yachts", "cadeaux d'affaires"],
+      "mots_cles": [
+        "charges somptuaires",
+        "amendes non déductibles",
+        "pénalités",
+        "chasse",
+        "yachts",
+        "cadeaux d'affaires"
+      ],
       "statut": "en vigueur"
     }
   ]

@@ -13,7 +13,7 @@
   },
   "articles": [
     {
-      "article": "Art. CEMAC",
+      "article": "INSTR-CEMAC",
       "titre": "Effets de la transposition de la Directive CEMAC",
       "texte": [
         "La transposition de la directive dans le droit interne de la République du Congo peut avoir plusieurs effets parmi lesquels :",
@@ -37,7 +37,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 128",
+      "article": "INSTR-128",
       "titre": "Déclaration d'existence",
       "texte": [
         "Les contribuables soumis à l'impôt sur les sociétés et sur les bénéfices d'affaires doivent, dans les quinze jours du début de leurs déclarations, souscrire une déclaration d'existence auprès de leur résidence fiscale au sein de l'administration fiscale.",
@@ -53,7 +53,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 129",
+      "article": "INSTR-129",
       "titre": "Régime du bénéfice réel obligatoire",
       "texte": [
         "Les contribuables dont le chiffre d'affaires est supérieur à 100.000.000 de francs CFA sont assujettis au régime de l'imposition assis sur le bénéfice réel.",
@@ -73,7 +73,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 130",
+      "article": "INSTR-130",
       "titre": "Télédéclaration et télépaiement obligatoires",
       "texte": [
         "Les entreprises soumises au régime du réel doivent, dans le cadre de leurs obligations fiscales, procéder à la télédéclaration et au télépaiement de leurs impôts, droits et taxes dont ils sont redevables, en application des dispositions légales en vigueur.",
@@ -96,7 +96,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 131",
+      "article": "INSTR-131",
       "titre": "Déclaration annuelle du résultat fiscal",
       "texte": [
         "1) Les contribuables soumis à l'IS et à l'IBA doivent déclarer leur résultat fiscal annuel à l'appui de trois jeux complets d'états financiers annuels tels que prévus par l'Acte Uniforme OHADA relatif au droit comptable et à l'information financière des entités. Les états financiers annuels doivent également être produits sur support électronique.",
@@ -120,7 +120,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 132",
+      "article": "INSTR-132",
       "titre": "Déclarations des personnes physiques",
       "texte": [
         "1) La déclaration des revenus des personnes physiques bénéficiaires uniquement des revenus fonciers, traitements, salaires, indemnités, émoluments, pensions et rentes viagères, des revenus des capitaux mobiliers ainsi que des plus-values de cession, et le paiement éventuel du solde liquidation des impôts sur les revenus, sont effectués au plus tard le 20 mars de l'année qui suit celle de la mise à disposition desdits revenus auprès de l'unité de la fiscalité de particuliers du lieu de la résidence des contribuables.",
@@ -141,7 +141,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140 A",
+      "article": "INSTR-140 A",
       "titre": "Déclaration des biens mobiliers à l'étranger",
       "texte": [
         "Toute personne domiciliée ou résident habituellement au Congo, conservant hors du Congo des biens mobiliers, doivent obligatoirement dans les délais requis une déclaration indiquant la nature, la valeur de ses biens et les revenus y attachés.",
@@ -158,7 +158,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140 D",
+      "article": "INSTR-140 D",
       "titre": "Droit de rectification de l'administration",
       "texte": [
         "L'administration a le droit de rectifier les déclarations, mais elle doit au préalable adresser au contribuable l'indication des éléments qu'elle se propose de retenir comme base d'imposition et fixer le délai maximal qui lui ait accordé pour se faire entendre ou faire parvenir son acception ou ses observations.",
@@ -176,7 +176,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140 F",
+      "article": "INSTR-140 F",
       "titre": "Taxation d'office",
       "texte": [
         "Est taxé d'office tout contribuable :",
@@ -199,7 +199,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140 H",
+      "article": "INSTR-140 H",
       "titre": "Cession, cessation ou décès de l'exploitant",
       "texte": [
         "1) Dans le cas de cession, de cessation ou décès, en totalité ou en partie, dû à raison des bénéfices réalisés dans cette entreprise ou qui n'ont pas encore été imposé est immédiatement établi.",
@@ -223,7 +223,7 @@
       "statut": "en vigueur"
     },
     {
-      "article": "Art. 140 K",
+      "article": "INSTR-140 K",
       "titre": "Décès du contribuable - Impositions",
       "texte": [
         "Dans le cas du décès du contribuable, l'impôt sur les bénéfices d'affaires est établi à raison des revenus dont ce dernier a disposé pendant l'année de son décès et des bénéfices qu'il a réalisés depuis la fin du dernier exercice taxé.",
