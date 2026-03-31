@@ -1,5 +1,5 @@
 import { View, Text, TextInput, TouchableOpacity, ScrollView, useWindowDimensions, StyleSheet, Modal, FlatList } from "react-native";
-import { useState, useMemo, useRef, useCallback } from "react";
+import { useState, useMemo, useRef, useCallback, useEffect } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -63,6 +63,15 @@ export default function CodeCGI() {
     "social-livre3": true,
     "social-cc": true,
   });
+
+  // Reset selections quand on change de code (CGI <-> Social)
+  useEffect(() => {
+    setSelected("");
+    setSelectedNode(null);
+    setSelectedArticle(null);
+    setReaderNode(null);
+    setSearch("");
+  }, [activeCode]);
 
   const [readerNode, setReaderNode] = useState<SommaireNode | null>(null);
   const readerNodeRef = useRef<SommaireNode | null>(null);
