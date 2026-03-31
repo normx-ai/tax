@@ -19,7 +19,20 @@
         "Le siège de l'institut national du travail social est fixé à Ignié, département du Pool.",
         "Toutefois, il peut, lorsque les circonstances le justifient, être transféré en tout autre lieu du territoire national, sur décision du comité de direction."
       ],
-      "mots_cles": ["INTS", "travail social", "Ignié", "établissement public"],
+      "mots_cles": [
+        "national",
+        "ints",
+        "institut",
+        "social",
+        "création",
+        "créé",
+        "établissement",
+        "public",
+        "caractère",
+        "administratif",
+        "doté",
+        "personnalité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -28,7 +41,20 @@
       "texte": [
         "L'institut national du travail social est placé sous la tutelle administrative du ministère en charge des affaires sociales et sous la tutelle académique du ministère en charge de l'enseignement supérieur."
       ],
-      "mots_cles": ["tutelle", "affaires sociales", "enseignement supérieur"],
+      "mots_cles": [
+        "tutelle",
+        "ministère",
+        "charge",
+        "institut",
+        "national",
+        "social",
+        "placé",
+        "administrative",
+        "affaires",
+        "sociales",
+        "académique",
+        "enseignement"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -39,7 +65,20 @@
         "- assurer la formation initiale et continue dans le domaine du travail social ;",
         "- développer la recherche-action et la recherche appliquée en travail social."
       ],
-      "mots_cles": ["formation", "travail social", "recherche"],
+      "mots_cles": [
+        "social",
+        "missions",
+        "recherche",
+        "institut",
+        "national",
+        "assurer",
+        "formation",
+        "initiale",
+        "continue",
+        "domaine",
+        "développer",
+        "action"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -51,7 +90,20 @@
         "- les ressources propres ;",
         "- les dons et legs."
       ],
-      "mots_cles": ["ressources", "subvention", "financement"],
+      "mots_cles": [
+        "ressources",
+        "institut",
+        "national",
+        "social",
+        "constituées",
+        "subvention",
+        "état",
+        "aides",
+        "publiques",
+        "propres",
+        "dons",
+        "legs"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -61,7 +113,20 @@
         "L'institut national du travail social est administré par un comité de direction et géré par une direction générale.",
         "Le directeur général de l'institut national du travail social est nommé par décret en Conseil des Ministres, sur proposition conjointe des Ministres de tutelle."
       ],
-      "mots_cles": ["comité de direction", "direction générale"],
+      "mots_cles": [
+        "direction",
+        "institut",
+        "national",
+        "social",
+        "ministres",
+        "administration",
+        "administré",
+        "comité",
+        "géré",
+        "générale",
+        "directeur",
+        "général"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -70,7 +135,20 @@
       "texte": [
         "Des statuts approuvés par décret en Conseil des Ministres fixent les attributions, l'organisation et le fonctionnement des organes d'administration et de gestion de l'institut national du travail social."
       ],
-      "mots_cles": ["statuts", "décret"],
+      "mots_cles": [
+        "statuts",
+        "approuvés",
+        "décret",
+        "conseil",
+        "ministres",
+        "fixent",
+        "attributions",
+        "organisation",
+        "fonctionnement",
+        "organes",
+        "administration",
+        "gestion"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -79,7 +157,19 @@
       "texte": [
         "La présente loi sera publiée au journal officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["publication"],
+      "mots_cles": [
+        "publication",
+        "présente",
+        "sera",
+        "publiée",
+        "journal",
+        "officiel",
+        "exécutée",
+        "état",
+        "présente loi",
+        "sera publiée",
+        "journal officiel"
+      ],
       "statut": "en vigueur"
     }
   ]

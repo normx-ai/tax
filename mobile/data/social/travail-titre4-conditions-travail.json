@@ -28,7 +28,20 @@
         "- le décret n°1978-361/MJT.SGFPT. DTPS du 12 mai 1978 fixant pour les entreprises agricoles et assimilées la réglementation des heures supplémentaires et les modalités de leur rémunération, page 86",
         "- le décret n°1984-1093 du 29 décembre 1984 fixant les horaires de travail dans les services publics, dans les entreprises publiques et parapubliques et entreprises privées, page 90]"
       ],
-      "mots_cles": ["durée légale", "40 heures", "semaine", "2400 heures", "agricole", "dérogations", "heures supplémentaires", "majoration"],
+      "mots_cles": [
+        "durée",
+        "heures",
+        "décret",
+        "légale",
+        "entreprises",
+        "page",
+        "agricoles",
+        "pris",
+        "dérogations",
+        "modalités",
+        "supplémentaires",
+        "sgfpt"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De la durée du travail"
     },
@@ -38,7 +51,14 @@
       "texte": [
         "Le travail effectué entre 20 heures et 5 heures est considéré comme travail de nuit."
       ],
-      "mots_cles": ["travail de nuit", "20 heures", "5 heures"],
+      "mots_cles": [
+        "nuit",
+        "heures",
+        "définition",
+        "effectué",
+        "considéré",
+        "nuit   définition"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du travail de nuit"
     },
@@ -48,7 +68,17 @@
       "texte": [
         "La durée du travail de nuit ne peut excéder huit heures consécutives."
       ],
-      "mots_cles": ["durée", "nuit", "8 heures", "consécutives"],
+      "mots_cles": [
+        "durée",
+        "nuit",
+        "maximale",
+        "excéder",
+        "huit",
+        "heures",
+        "consécutives",
+        "durée maximale",
+        "huit heures"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du travail de nuit"
     },
@@ -59,7 +89,20 @@
         "Dans les usines, manufactures, mines, minières, chantiers, ateliers et leurs dépendances, les femmes ne peuvent être employées à un travail de nuit.",
         "Lorsque, en raison de conditions économiques exceptionnelles et particulièrement valables, l'intérêt général l'exigera, l'interdiction du travail de nuit des femmes pourra être suspendue sur proposition du Ministre du travail et de la prévoyance sociale, par décret pris après consultation des organisations les plus représentatives d'employeurs et de travailleurs intéressés."
       ],
-      "mots_cles": ["interdiction", "travail de nuit", "femmes", "usines", "manufactures", "suspension"],
+      "mots_cles": [
+        "nuit",
+        "femmes",
+        "interdiction",
+        "être",
+        "usines",
+        "manufactures",
+        "mines",
+        "minières",
+        "chantiers",
+        "ateliers",
+        "dépendances",
+        "peuvent"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du travail de nuit"
     },
@@ -69,7 +112,20 @@
       "texte": [
         "Le repos des femmes doit avoir une durée de onze heures consécutives au minimum. Il doit comprendre la période nocturne définie à l'article 106."
       ],
-      "mots_cles": ["repos", "femmes", "11 heures", "consécutives", "période nocturne"],
+      "mots_cles": [
+        "repos",
+        "femmes",
+        "heures",
+        "avoir",
+        "durée",
+        "onze",
+        "consécutives",
+        "minimum",
+        "comprendre",
+        "période",
+        "nocturne",
+        "définie"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du travail de nuit"
     },
@@ -80,7 +136,20 @@
         "Dans les industries dans lesquelles le travail s'applique à des matières qui seraient susceptibles d'altération très rapide, et sur simple préavis, aux dispositions du premier alinéa de l'article 108, en ce qui concerne les femmes majeures.",
         "Les chefs d'établissements devront toutefois prévenir l'inspecteur du travail et des lois sociales de leur ressort avant de faire usage de cette dérogation."
       ],
-      "mots_cles": ["dérogation", "matières altérables", "femmes majeures", "inspecteur du travail"],
+      "mots_cles": [
+        "dérogation",
+        "matières",
+        "altérables",
+        "industries",
+        "lesquelles",
+        "applique",
+        "seraient",
+        "susceptibles",
+        "altération",
+        "très",
+        "rapide",
+        "simple"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du travail de nuit"
     },
@@ -90,7 +159,20 @@
       "texte": [
         "Des dérogations permanentes aux dispositions prévues aux articles 107, 108 et 109 pourront être admises par décret pris après avis de la commission nationale représentative du travail, pour les femmes occupées dans les sites de l'hygiène et du bien-être et qui n'effectueront pas normalement un travail manuel."
       ],
-      "mots_cles": ["dérogations permanentes", "hygiène", "bien-être", "travail manuel"],
+      "mots_cles": [
+        "être",
+        "dérogations",
+        "femmes",
+        "hygiène",
+        "permanentes",
+        "prévues",
+        "pourront",
+        "admises",
+        "décret",
+        "pris",
+        "après",
+        "avis"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du travail de nuit"
     },
@@ -100,7 +182,20 @@
       "texte": [
         "Des décrets pris après avis de la commission nationale consultative du travail, fixent la nature des travaux interdits aux femmes et aux femmes enceintes."
       ],
-      "mots_cles": ["travaux interdits", "femmes", "femmes enceintes", "décrets"],
+      "mots_cles": [
+        "femmes",
+        "travaux",
+        "interdits",
+        "enceintes",
+        "décrets",
+        "pris",
+        "après",
+        "avis",
+        "commission",
+        "nationale",
+        "consultative",
+        "fixent"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 : Du travail des femmes et des enfants"
     },
@@ -117,7 +212,20 @@
         "Pendant cette période la femme garde le bénéfice de tous les droits tels qu'ils sont prévus au paragraphe 2 du présent article.",
         "Toute convention contraire est nulle de plein droit."
       ],
-      "mots_cles": ["maternité", "15 semaines", "congé", "accouchement", "salaire", "prévoyance sociale", "soins gratuits", "inspecteur du travail"],
+      "mots_cles": [
+        "femme",
+        "droit",
+        "semaines",
+        "être",
+        "grossesse",
+        "période",
+        "congé",
+        "enceinte",
+        "état",
+        "rupture",
+        "interruption",
+        "suspension"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 : Du travail des femmes et des enfants"
     },
@@ -127,7 +235,19 @@
       "texte": [
         "Il est interdit d'employer une femme pendant les 15 semaines de congé de maternité prévu à l'article précédent."
       ],
-      "mots_cles": ["interdiction", "emploi", "congé de maternité", "15 semaines"],
+      "mots_cles": [
+        "congé",
+        "maternité",
+        "interdiction",
+        "emploi",
+        "interdit",
+        "employer",
+        "femme",
+        "semaines",
+        "prévu",
+        "précédent",
+        "maternité prévu"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 : Du travail des femmes et des enfants"
     },
@@ -139,7 +259,20 @@
         "La durée de ces repos ne peut dépasser une heure par journée de travail, cette heure pouvant être fractionnée en deux demi-heures à la demande de la mère.",
         "Celle-ci peut, pendant cette période, quitter son travail sans préavis, et sans avoir de ce fait à payer une indemnité de rupture."
       ],
-      "mots_cles": ["allaitement", "15 mois", "1 heure", "repos", "sans préavis"],
+      "mots_cles": [
+        "repos",
+        "allaitement",
+        "mois",
+        "période",
+        "mère",
+        "heure",
+        "compter",
+        "naissance",
+        "enfant",
+        "droit",
+        "durée",
+        "dépasser"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 : Du travail des femmes et des enfants"
     },
@@ -149,7 +282,20 @@
       "texte": [
         "Les enfants ne peuvent être employés dans aucune entreprise même comme apprentis, avant l'âge de 16 ans sauf dérogation accordée par le Ministre de l'Éducation Nationale après avis de l'Inspecteur du Travail du lieu de l'emploi ou de son suppléant légal. Un décret pris après avis de la Commission Nationale Consultative du Travail fixera la nature des travaux et les catégories d'entreprises interdites aux jeunes et l'âge limite auquel s'applique l'interdiction."
       ],
-      "mots_cles": ["enfants", "16 ans", "âge minimum", "apprentis", "dérogation", "travaux interdits"],
+      "mots_cles": [
+        "enfants",
+        "nationale",
+        "après",
+        "avis",
+        "minimum",
+        "peuvent",
+        "être",
+        "employés",
+        "aucune",
+        "même",
+        "apprentis",
+        "sauf"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 : Du travail des femmes et des enfants"
     },
@@ -161,7 +307,20 @@
         "La femme ou l'enfant ne peut être maintenu dans un emploi ainsi reconnu au-dessus de ses forces et doit être affecté à un emploi convenable.",
         "Si cela n'est pas possible, le contrat doit être résolu avec paiement de l'indemnité de préavis et, éventuellement, de l'indemnité de licenciement."
       ],
-      "mots_cles": ["examen médical", "femmes", "enfants", "médecin agréé", "forces", "résolution contrat"],
+      "mots_cles": [
+        "être",
+        "examen",
+        "femmes",
+        "enfants",
+        "forces",
+        "emploi",
+        "indemnité",
+        "médical",
+        "inspecteur",
+        "lois",
+        "sociales",
+        "requérir"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 : Du travail des femmes et des enfants"
     },
@@ -172,7 +331,20 @@
         "Le repos hebdomadaire est obligatoire. Il est au minimum de 24 heures consécutives par semaine. Il a lieu en principe le dimanche.",
         "Un décret pris après avis de la Commission Nationale Consultative du Travail, détermine les modalités d'application du paragraphe précédent, notamment les professions pour lesquelles et les conditions dans lesquelles le repos pourra exceptionnellement et pour des motifs nettement établis, soit être donné par roulement ou collectivement d'autres jours que le dimanche, soit être suspendu par compensation des fêtes rituelles ou locales, soit réparti sur une période plus longue que la semaine."
       ],
-      "mots_cles": ["repos hebdomadaire", "24 heures", "dimanche", "dérogations", "roulement"],
+      "mots_cles": [
+        "repos",
+        "soit",
+        "hebdomadaire",
+        "heures",
+        "semaine",
+        "dimanche",
+        "lesquelles",
+        "être",
+        "obligatoire",
+        "minimum",
+        "consécutives",
+        "lieu"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 : Du repos hebdomadaire"
     },
@@ -190,7 +362,20 @@
         "Un congé pour affaires personnelles ou une mise en disponibilité peut être accordé à tout travailleur pendant 1 an renouvelable une fois après une période d'ancienneté de 2 ans sur autorisation de l'employeur.",
         "Au terme de cette disponibilité ou congé, le travailleur réintègre automatiquement son emploi. Toutefois les conventions collectives ou accords d'établissements, détermineront les conditions d'application."
       ],
-      "mots_cles": ["congé payé", "26 jours", "ancienneté", "accidents du travail", "maternité", "maladie", "disponibilité", "1 an"],
+      "mots_cles": [
+        "congé",
+        "jours",
+        "durée",
+        "conventions",
+        "collectives",
+        "lieu",
+        "emploi",
+        "être",
+        "payé",
+        "ouvrables",
+        "service",
+        "effectif"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 1 : Du congé payé"
     },
@@ -203,7 +388,20 @@
         "En cas de rupture ou d'expiration du contrat avant que le travailleur ait acquis droit au congé, une indemnité calculée sur les bases des droits acquis d'après l'article précédent doit être accordée en place de congé.",
         "En dehors de ce cas, est nulle et de nul effet toute convention prévoyant l'octroi d'une indemnité compensatrice aux lieux et place du congé."
       ],
-      "mots_cles": ["jouissance", "12 mois", "prescription", "3 ans", "24 mois", "indemnité compensatrice"],
+      "mots_cles": [
+        "congé",
+        "droit",
+        "jouissance",
+        "mois",
+        "service",
+        "acquis",
+        "durée",
+        "après",
+        "effectif",
+        "être",
+        "indemnité",
+        "place"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 1 : Du congé payé"
     },
@@ -213,7 +411,17 @@
       "texte": [
         "Le travailleur est libre de prendre son congé dans le pays de son choix, sous réserve des dispositions du présent chapitre."
       ],
-      "mots_cles": ["liberté", "lieu de congé", "choix"],
+      "mots_cles": [
+        "choix",
+        "congé",
+        "liberté",
+        "lieu",
+        "libre",
+        "prendre",
+        "pays",
+        "réserve",
+        "présent"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 1 : Du congé payé"
     },
@@ -224,7 +432,20 @@
         "L'employeur doit verser au travailleur, pendant toute la durée du congé, une allocation qui sera au moins égale aux rémunérations et aux différents éléments de rémunération définis à l'article 86 dont le travailleur bénéficiait au cours des 12 mois ayant précédé la date de départ en congé, à l'exclusion, s'il y a lieu, de l'indemnité de dépaysement.",
         "Le montant de l'allocation de congé devra être versé en totalité au travailleur au jour de son départ en congé."
       ],
-      "mots_cles": ["allocation de congé", "rémunération", "12 mois", "versement", "départ"],
+      "mots_cles": [
+        "congé",
+        "allocation",
+        "départ",
+        "verser",
+        "durée",
+        "sera",
+        "égale",
+        "rémunérations",
+        "différents",
+        "éléments",
+        "rémunération",
+        "définis"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 1 : Du congé payé"
     },
@@ -242,7 +463,20 @@
         "- 3° du lieu de l'emploi au lieu de recrutement et vice-versa :",
         "  - en cas de congé normal. Le retour sur le lieu d'emploi n'est dû que si le contrat n'est pas venu à expiration avant la date de fin de congé et si le travailleur à cette date est en état de reprendre son service."
       ],
-      "mots_cles": ["frais de voyage", "employeur", "recrutement", "emploi", "épouse", "enfants", "bagages"],
+      "mots_cles": [
+        "lieu",
+        "recrutement",
+        "emploi",
+        "frais",
+        "congé",
+        "voyage",
+        "charge",
+        "expiration",
+        "rupture",
+        "date",
+        "exécution",
+        "entraîne"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
     },
@@ -252,7 +486,20 @@
       "texte": [
         "Sous réserve des dispositions des articles 33 et 35, lorsqu'un contrat est résilié pour des causes autres que celles visées à l'article précédent ou par la faute lourde du travailleur, le montant des frais de transport, aller-retour, incombe à l'entreprise."
       ],
-      "mots_cles": ["frais de transport", "résiliation", "faute lourde", "entreprise"],
+      "mots_cles": [
+        "frais",
+        "transport",
+        "résiliation",
+        "réserve",
+        "lorsqu",
+        "résilié",
+        "causes",
+        "celles",
+        "visées",
+        "précédent",
+        "faute",
+        "lourde"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
     },
@@ -263,7 +510,20 @@
         "Le moyen de transport, la classe de passager et le poids des bagages sont déterminés par la situation occupée par le travailleur dans l'entreprise, suivant la stipulation de la convention collective ou du contrat individuel de travail ou, à défaut, suivant les règles adoptées par l'employeur à l'égard de son personnel ou suivant les usages locaux.",
         "Il sera tenu compte, dans tous les cas, des charges de la famille pour le calcul du poids des bagages. Toutefois, l'employeur est tenu de remettre au travailleur et à sa famille les titres de transport."
       ],
-      "mots_cles": ["classe", "transport", "bagages", "famille", "titres de transport"],
+      "mots_cles": [
+        "transport",
+        "bagages",
+        "suivant",
+        "classe",
+        "poids",
+        "tenu",
+        "famille",
+        "moyen",
+        "passager",
+        "déterminés",
+        "situation",
+        "occupée"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
     },
@@ -275,7 +535,20 @@
         "S'il use d'une voie ou de moyens de transport plus économiques il ne peut prétendre qu'au remboursement des frais engagés.",
         "Les délais de transport ne sont pas compris dans la durée maxima du contrat telle qu'elle est prévue à l'article 32."
       ],
-      "mots_cles": ["voie de transport", "choix employeur", "remboursement", "délais"],
+      "mots_cles": [
+        "voie",
+        "moyens",
+        "transport",
+        "transports",
+        "choix",
+        "régulièrement",
+        "choisis",
+        "frais",
+        "sauf",
+        "stipulation",
+        "contraire",
+        "voyages"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
     },
@@ -286,7 +559,20 @@
         "À défaut de convention contraire, le travailleur qui use d'une voie ou de moyens de transport moins rapides que ceux régulièrement choisis par l'employeur ne peut prétendre de ce fait à des délais de route plus longs que ceux prévus par la voie et les moyens normaux.",
         "S'il use d'une voie ou de moyens plus rapides, il continue à bénéficier, en plus de la durée du congé proprement dit, des délais qui auraient été nécessaires avec l'usage de la voie et des moyens choisis par l'employeur."
       ],
-      "mots_cles": ["transport", "délais de route", "voie rapide", "voie lente"],
+      "mots_cles": [
+        "voie",
+        "moyens",
+        "transport",
+        "rapides",
+        "ceux",
+        "choisis",
+        "délais",
+        "rapide",
+        "défaut",
+        "contraire",
+        "régulièrement",
+        "prétendre"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
     },
@@ -297,7 +583,20 @@
         "Le travailleur qui a cessé son service peut exiger de son ancien employeur, la mise à sa disposition des titres de transport auxquels il a droit, dans un délai de 2 ans à compter de la cessation du travail chez ledit employeur.",
         "Ce délai sera majoré, le cas échéant, du temps écoulé entre la citation en justice motivée par la réclamation de ce droit et le jugement définitif."
       ],
-      "mots_cles": ["titres de transport", "2 ans", "cessation", "réclamation"],
+      "mots_cles": [
+        "titres",
+        "transport",
+        "cessation",
+        "service",
+        "droit",
+        "délai",
+        "après",
+        "cessé",
+        "exiger",
+        "ancien",
+        "mise",
+        "disposition"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
     },
@@ -308,7 +607,20 @@
         "Le travailleur qui a cessé son service et qui est dans l'attente du moyen de transport désigné par son employeur pour regagner son lieu de recrutement conserve le bénéfice des avantages en nature et reçoit de l'employeur une indemnité égale à la rémunération qu'il aurait perçue s'il avait continué à travailler.",
         "L'indemnité prévue à l'alinéa précédent est due également lorsque le travailleur a été empêché d'utiliser le moyen de transport désigné à la date prévue, à charge pour lui de prévenir son employeur par les voies les plus rapides et de rendre compte et prouver que l'attente ne lui est pas imputable."
       ],
-      "mots_cles": ["indemnité d'attente", "transport", "avantages en nature", "rémunération"],
+      "mots_cles": [
+        "indemnité",
+        "attente",
+        "moyen",
+        "transport",
+        "désigné",
+        "prévue",
+        "cessé",
+        "service",
+        "regagner",
+        "lieu",
+        "recrutement",
+        "conserve"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
     },
@@ -318,7 +630,17 @@
       "texte": [
         "Les dispositions de la présente section ne peuvent être un obstacle à l'application de la réglementation sur les conditions d'admission et de séjour des étrangers."
       ],
-      "mots_cles": ["étrangers", "admission", "séjour", "réglementation"],
+      "mots_cles": [
+        "admission",
+        "séjour",
+        "étrangers",
+        "présente",
+        "peuvent",
+        "être",
+        "obstacle",
+        "réglementation",
+        "peuvent être"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du congé payé et des transports - Section 2 : Voyages et transports"
     }

@@ -22,7 +22,20 @@
       "texte": [
         "Les présents statuts fixent, en application de l'article 18 de la loi n°19-2023 du 27 mai 2023 portant création de la caisse d'assurance maladie universelle, les attributions, l'organisation et le fonctionnement de ses organes d'administration et de gestion."
       ],
-      "mots_cles": ["statuts", "article 18", "loi 19-2023", "CAMU"],
+      "mots_cles": [
+        "statuts",
+        "objet",
+        "présents",
+        "fixent",
+        "portant",
+        "création",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "attributions",
+        "organisation"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales"
     },
@@ -32,7 +45,16 @@
       "texte": [
         "La gestion du régime d'assurance maladie universelle est confiée à la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["gestion", "régime", "CAMU"],
+      "mots_cles": [
+        "gestion",
+        "régime",
+        "assurance",
+        "maladie",
+        "universelle",
+        "confiée",
+        "caisse",
+        "assurance maladie"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales"
     },
@@ -42,7 +64,20 @@
       "texte": [
         "Est assujetti au régime d'assurance maladie universelle, l'ensemble des populations résidant en République du Congo."
       ],
-      "mots_cles": ["assujettissement", "populations", "résidents"],
+      "mots_cles": [
+        "assujettissement",
+        "assujetti",
+        "régime",
+        "assurance",
+        "maladie",
+        "universelle",
+        "ensemble",
+        "populations",
+        "résidant",
+        "république",
+        "congo",
+        "assurance maladie"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales"
     },
@@ -55,7 +90,20 @@
         "- assurer aux affiliés une prise en charge des soins de santé ;",
         "- accomplir toutes autres missions dévolues par la loi en rapport avec le régime d'assurance maladie universelle."
       ],
-      "mots_cles": ["mission", "soins de santé", "affiliés"],
+      "mots_cles": [
+        "assurance",
+        "maladie",
+        "universelle",
+        "mission",
+        "régime",
+        "camu",
+        "caisse",
+        "gérer",
+        "chargée",
+        "notamment",
+        "assurer",
+        "affiliés"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 - Des missions, du siège, de la durée et de la tutelle - Chapitre 1"
     },
@@ -65,7 +113,20 @@
       "texte": [
         "Le siège de la caisse d'assurance maladie universelle est fixé à Brazzaville. Toutefois, il peut être transféré en tout autre lieu du territoire national, suivant les circonstances, par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["siège", "Brazzaville"],
+      "mots_cles": [
+        "siège",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "fixé",
+        "brazzaville",
+        "toutefois",
+        "être",
+        "transféré",
+        "lieu",
+        "territoire"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 - Chapitre 2 : Du siège"
     },
@@ -75,7 +136,20 @@
       "texte": [
         "La durée de la caisse d'assurance maladie universelle est illimitée, sauf en cas de dissolution anticipée dans les conditions prévues par les lois et règlements en vigueur."
       ],
-      "mots_cles": ["durée", "illimitée", "dissolution"],
+      "mots_cles": [
+        "durée",
+        "illimitée",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "sauf",
+        "dissolution",
+        "anticipée",
+        "prévues",
+        "lois",
+        "règlements"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 - Chapitre 3 : De la durée et de la tutelle"
     },
@@ -85,7 +159,20 @@
       "texte": [
         "La caisse d'assurance maladie universelle est placée sous la tutelle du ministère en charge de la sécurité sociale."
       ],
-      "mots_cles": ["tutelle", "ministère", "sécurité sociale"],
+      "mots_cles": [
+        "tutelle",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "placée",
+        "ministère",
+        "charge",
+        "sécurité",
+        "sociale",
+        "assurance maladie",
+        "sécurité sociale"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 - Chapitre 3 : De la durée et de la tutelle"
     },
@@ -95,7 +182,19 @@
       "texte": [
         "La caisse d'assurance maladie universelle est administrée par un conseil d'administration et gérée par une direction générale."
       ],
-      "mots_cles": ["administration", "conseil d'administration", "direction générale"],
+      "mots_cles": [
+        "administration",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "administrée",
+        "conseil",
+        "gérée",
+        "direction",
+        "générale",
+        "assurance maladie"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Des attributions, de l'organisation et du fonctionnement - Chapitre 1"
     },
@@ -105,7 +204,20 @@
       "texte": [
         "La gestion de la caisse d'assurance maladie universelle repose sur une convention d'objectifs entre la tutelle et le conseil d'administration ainsi qu'un contrat de performance entre le conseil d'administration et le directeur général."
       ],
-      "mots_cles": ["convention d'objectifs", "contrat de performance"],
+      "mots_cles": [
+        "objectifs",
+        "performance",
+        "conseil",
+        "administration",
+        "gestion",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "repose",
+        "tutelle",
+        "ainsi"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1"
     },
@@ -136,7 +248,20 @@
         "  - la constitution ou le renouvellement de tout aval, cautionnement, gage, hypothèque sur tout élément du patrimoine de la caisse d'assurance maladie universelle ;",
         "  - l'acquisition ou l'aliénation de tout élément du patrimoine de la caisse."
       ],
-      "mots_cles": ["conseil d'administration", "attributions", "directeur général", "CIPRES", "budget"],
+      "mots_cles": [
+        "général",
+        "directeur",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "conseil",
+        "contrôle",
+        "rapports",
+        "administration",
+        "cadre",
+        "législation"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -159,7 +284,20 @@
         "La durée du mandat des membres du conseil d'administration est de trois ans, renouvelable une fois.",
         "Aucun membre du conseil d'administration ne peut être candidat au poste de directeur général de la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["14 membres", "12 délibératifs", "2 consultatifs", "3 ans", "paritaire"],
+      "mots_cles": [
+        "représentant",
+        "ministère",
+        "charge",
+        "conseil",
+        "administration",
+        "membres",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "voix",
+        "délibérative"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -169,7 +307,15 @@
       "texte": [
         "Le conseil d'administration peut faire appel, à titre consultatif, à toute personne ressource."
       ],
-      "mots_cles": ["consultatif", "personne ressource"],
+      "mots_cles": [
+        "appel",
+        "consultatif",
+        "conseil",
+        "administration",
+        "personne",
+        "ressource",
+        "appel consultatif"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -180,7 +326,20 @@
         "Le président du conseil d'administration de la caisse d'assurance maladie universelle est nommé par décret en Conseil de Ministres parmi les membres du conseil d'administration ayant voix délibérative.",
         "Les autres membres du conseil d'administration sont nommés par décret du Président de la République, sur proposition des administrations ou organismes qu'ils représentent."
       ],
-      "mots_cles": ["président", "nomination", "décret", "Conseil de Ministres"],
+      "mots_cles": [
+        "conseil",
+        "président",
+        "administration",
+        "décret",
+        "membres",
+        "nomination",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "nommé",
+        "ministres"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -190,7 +349,20 @@
       "texte": [
         "La fonction de membre du conseil d'administration prend fin par démission, déchéance, condamnation pénale, décès, incapacité physique ou mentale dûment constatée par un médecin agréé."
       ],
-      "mots_cles": ["fin de fonction", "démission", "déchéance"],
+      "mots_cles": [
+        "fonction",
+        "membre",
+        "conseil",
+        "administration",
+        "prend",
+        "démission",
+        "déchéance",
+        "condamnation",
+        "pénale",
+        "décès",
+        "incapacité",
+        "physique"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -200,7 +372,20 @@
       "texte": [
         "Il est procédé, en cas de vacance de poste, à la désignation d'un nouveau membre dans un délai de deux mois, suivant les mêmes conditions qui ont présidé à la nomination du membre remplacé."
       ],
-      "mots_cles": ["vacance", "2 mois", "remplacement"],
+      "mots_cles": [
+        "vacance",
+        "poste",
+        "membre",
+        "procédé",
+        "désignation",
+        "nouveau",
+        "délai",
+        "deux",
+        "mois",
+        "suivant",
+        "mêmes",
+        "présidé"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -212,7 +397,20 @@
         "Toutefois, les membres du conseil d'administration perçoivent une indemnité de session dont le montant est fixé par le Ministre de tutelle, sur proposition du conseil d'administration.",
         "En cas de déplacement, ils perçoivent des frais de transport et de séjour."
       ],
-      "mots_cles": ["gratuité", "indemnité de session", "frais de déplacement"],
+      "mots_cles": [
+        "conseil",
+        "administration",
+        "fonctions",
+        "perçoivent",
+        "gratuité",
+        "membre",
+        "gratuites",
+        "toutefois",
+        "membres",
+        "indemnité",
+        "session",
+        "montant"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -226,7 +424,20 @@
         "- assurer le contrôle de l'exécution des délibérations du conseil d'administration et user, en cas d'urgence, de la procédure de consultation à domicile, si le conseil d'administration ne peut se réunir ;",
         "- se faire communiquer, périodiquement, toute information sur la vie de la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["président", "attributions", "convocation", "ordre du jour"],
+      "mots_cles": [
+        "conseil",
+        "administration",
+        "président",
+        "attributions",
+        "chargé",
+        "notamment",
+        "convoquer",
+        "présider",
+        "sessions",
+        "fixer",
+        "ordre",
+        "jour"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -237,7 +448,20 @@
         "Le conseil d'administration, en cas d'empêchement du président, désigne un président intérimaire pour une période qui ne peut excéder un exercice social. Dans ces conditions, la tutelle convoque et préside la session extraordinaire désignant le président intérimaire.",
         "Au-delà de l'exercice social, un nouveau président est nommé selon la procédure prévue à l'article 13 des présents statuts."
       ],
-      "mots_cles": ["intérimaire", "empêchement", "exercice social"],
+      "mots_cles": [
+        "président",
+        "intérimaire",
+        "exercice",
+        "social",
+        "conseil",
+        "administration",
+        "empêchement",
+        "désigne",
+        "période",
+        "excéder",
+        "tutelle",
+        "convoque"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -250,7 +474,20 @@
         "La première session se tient au cours du premier semestre. Elle est consacrée à l'approbation des états financiers de l'exercice précédent.",
         "La deuxième session se tient au cours du deuxième semestre. Elle est consacrée à l'examen du projet de budget annuel de l'exercice suivant."
       ],
-      "mots_cles": ["sessions", "2 fois par an", "15 jours", "budget", "états financiers"],
+      "mots_cles": [
+        "session",
+        "conseil",
+        "administration",
+        "tient",
+        "cours",
+        "semestre",
+        "consacrée",
+        "exercice",
+        "deuxième",
+        "sessions",
+        "ordinaires",
+        "réunit"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -261,7 +498,20 @@
         "Le conseil d'administration peut se réunir en session extraordinaire, aussi souvent que l'intérêt de la caisse d'assurance maladie universelle l'exige.",
         "Les sessions extraordinaires ont lieu sur initiative du président ou à la demande des deux tiers des membres du conseil d'administration."
       ],
-      "mots_cles": ["session extraordinaire", "deux tiers"],
+      "mots_cles": [
+        "sessions",
+        "extraordinaires",
+        "conseil",
+        "administration",
+        "réunir",
+        "session",
+        "extraordinaire",
+        "souvent",
+        "intérêt",
+        "caisse",
+        "assurance",
+        "maladie"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -272,7 +522,20 @@
         "Le conseil d'administration ne peut valablement délibérer que si les deux tiers des membres sont présents ou représentés. En cas d'empêchement, le membre absent donne mandat à un membre présent de le représenter.",
         "Aucun membre présent ne peut être porteur de plus d'un mandat."
       ],
-      "mots_cles": ["quorum", "deux tiers", "mandat"],
+      "mots_cles": [
+        "membre",
+        "mandat",
+        "présent",
+        "quorum",
+        "conseil",
+        "administration",
+        "valablement",
+        "délibérer",
+        "deux",
+        "tiers",
+        "membres",
+        "présents"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -283,7 +546,20 @@
         "Le président, à défaut de réunir les deux tiers des membres, constate l'absence de quorum et convoque une autre réunion qui se tient au plus tard dans les quinze jours qui suivent.",
         "Dans ce cas, le conseil d'administration délibère valablement s'il réunit la moitié de ses membres."
       ],
-      "mots_cles": ["défaut quorum", "15 jours", "moitié"],
+      "mots_cles": [
+        "défaut",
+        "quorum",
+        "membres",
+        "président",
+        "réunir",
+        "deux",
+        "tiers",
+        "constate",
+        "absence",
+        "convoque",
+        "réunion",
+        "tient"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -293,7 +569,20 @@
       "texte": [
         "Les délibérations sont prises à la majorité simple des voix. En cas de partage égal des voix, celle du président est prépondérante."
       ],
-      "mots_cles": ["majorité simple", "voix prépondérante"],
+      "mots_cles": [
+        "majorité",
+        "simple",
+        "voix",
+        "délibérations",
+        "prises",
+        "partage",
+        "égal",
+        "celle",
+        "président",
+        "prépondérante",
+        "majorité simple",
+        "partage égal"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -303,7 +592,20 @@
       "texte": [
         "En cas de vacance d'un ou plusieurs sièges, il est pourvu à la nomination de nouveaux membres dans les délais d'un mois, dans les conditions fixées aux articles 15 et 16 des présents statuts."
       ],
-      "mots_cles": ["vacance", "1 mois", "nomination"],
+      "mots_cles": [
+        "vacance",
+        "sièges",
+        "plusieurs",
+        "pourvu",
+        "nomination",
+        "nouveaux",
+        "membres",
+        "délais",
+        "mois",
+        "fixées",
+        "présents",
+        "statuts"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -313,7 +615,20 @@
       "texte": [
         "Le membre du conseil d'administration, nommé en remplacement d'un autre dont le mandat n'a pas expiré, ne demeure en fonction que le temps restant à courir du mandat de son prédécesseur."
       ],
-      "mots_cles": ["remplacement", "mandat", "prédécesseur"],
+      "mots_cles": [
+        "mandat",
+        "remplacement",
+        "cours",
+        "membre",
+        "conseil",
+        "administration",
+        "nommé",
+        "expiré",
+        "demeure",
+        "fonction",
+        "temps",
+        "restant"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -323,7 +638,20 @@
       "texte": [
         "Le président du conseil d'administration peut être révoqué par le Président de la République, soit pour manquement grave, soit à la demande motivée des deux tiers des membres du conseil d'administration."
       ],
-      "mots_cles": ["révocation", "président", "manquement grave", "deux tiers"],
+      "mots_cles": [
+        "président",
+        "conseil",
+        "administration",
+        "soit",
+        "révocation",
+        "être",
+        "révoqué",
+        "république",
+        "manquement",
+        "grave",
+        "demande",
+        "motivée"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -333,7 +661,20 @@
       "texte": [
         "Le secrétariat du conseil d'administration est assuré par le directeur général de la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["secrétariat", "directeur général"],
+      "mots_cles": [
+        "secrétariat",
+        "conseil",
+        "administration",
+        "assuré",
+        "directeur",
+        "général",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "directeur général",
+        "assurance maladie"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -345,7 +686,20 @@
         "Le procès-verbal est lu et approuvé par les membres du conseil d'administration au cours de la session suivante.",
         "Un exemplaire du procès-verbal est adressé à chacun des membres du conseil d'administration."
       ],
-      "mots_cles": ["procès-verbaux", "enregistrement audio", "approbation"],
+      "mots_cles": [
+        "procès",
+        "conseil",
+        "administration",
+        "verbal",
+        "membres",
+        "verbaux",
+        "sessions",
+        "enregistrées",
+        "supports",
+        "audio",
+        "font",
+        "objet"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -362,7 +716,20 @@
         "- l'affectation des résultats ;",
         "- les souscriptions d'emprunts."
       ],
-      "mots_cles": ["registre", "délibérations", "exécutoires", "Conseil des Ministres"],
+      "mots_cles": [
+        "délibérations",
+        "conseil",
+        "registre",
+        "administration",
+        "siège",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "prises",
+        "insérées",
+        "spécial"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -374,7 +741,20 @@
         "Le membre du conseil d'administration ayant un intérêt direct ou indirect dans une entreprise soumissionnant ou participant à un marché des travaux de services ou de fournitures de la caisse d'assurance maladie universelle, est tenu de le déclarer par écrit, dès qu'il en a connaissance, sous peine de nullité.",
         "Les modalités des conventions réglementées sont obligatoirement contenues dans le règlement intérieur du conseil d'administration."
       ],
-      "mots_cles": ["interdiction", "contrats", "conflit d'intérêts", "2 ans"],
+      "mots_cles": [
+        "conseil",
+        "administration",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "mandat",
+        "interdiction",
+        "contracter",
+        "interdit",
+        "membres",
+        "conclure"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -388,7 +768,20 @@
         "- le comité de recours.",
         "Les comités spécialisés sont mis en place par le conseil d'administration et comprennent trois administrateurs dont un en assure la présidence par désignation du conseil d'administration. Ils sont assistés par les équipes de la direction générale. Ils se réunissent deux fois par année, selon un calendrier qui prépare les sessions du conseil d'administration."
       ],
-      "mots_cles": ["comités spécialisés", "audit", "investissement", "recours"],
+      "mots_cles": [
+        "conseil",
+        "administration",
+        "comités",
+        "spécialisés",
+        "comité",
+        "cadre",
+        "suivi",
+        "activités",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -401,7 +794,20 @@
         "- la conformité de la caisse d'assurance maladie universelle avec les exigences des lois et des règlements ainsi qu'aux procédures de contrôle de la conformité ;",
         "- la fiabilité des processus de gestion des risques et de contrôle interne."
       ],
-      "mots_cles": ["comité d'audit", "information financière", "conformité", "contrôle interne"],
+      "mots_cles": [
+        "comité",
+        "audit",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "conformité",
+        "contrôle",
+        "missions",
+        "aider",
+        "conseil",
+        "administration"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -415,7 +821,20 @@
         "- examiner les opérations de placement ;",
         "- procéder à toute analyse, étude ou mission sur des sujets relevant de ses attributions."
       ],
-      "mots_cles": ["comité d'investissement", "budget", "placement"],
+      "mots_cles": [
+        "examiner",
+        "investissement",
+        "comité",
+        "budget",
+        "investissements",
+        "missions",
+        "stratégie",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "formuler"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -428,7 +847,20 @@
         "- statuer sur les litiges entre un assuré ou ses ayants droit et la caisse d'assurance maladie universelle ;",
         "- statuer sur les recours gracieux préalables à tout recours juridictionnel."
       ],
-      "mots_cles": ["comité de recours", "réclamations", "litiges", "recours gracieux"],
+      "mots_cles": [
+        "recours",
+        "comité",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "statuer",
+        "chargé",
+        "notamment",
+        "examiner",
+        "réclamations",
+        "décisions"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 1 : Du conseil d'administration"
     },
@@ -439,7 +871,20 @@
         "La direction générale est l'organe exécutif de la caisse d'assurance maladie universelle. Elle est dirigée et animée par un directeur général, assisté d'un directeur général adjoint.",
         "La direction générale comprend, outre les services rattachés, les directions centrales et les directions départementales."
       ],
-      "mots_cles": ["direction générale", "organe exécutif", "directeur général adjoint"],
+      "mots_cles": [
+        "direction",
+        "générale",
+        "directeur",
+        "général",
+        "directions",
+        "organe",
+        "exécutif",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "dirigée"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 : De la direction générale"
     },
@@ -449,7 +894,20 @@
       "texte": [
         "Le conseil d'administration procède, après appel à candidatures, sur la base des critères de compétences et d'intégrité, à la sélection de trois candidats au poste de directeur général de la CAMU."
       ],
-      "mots_cles": ["sélection", "appel à candidatures", "3 candidats"],
+      "mots_cles": [
+        "sélection",
+        "directeur",
+        "général",
+        "conseil",
+        "administration",
+        "procède",
+        "après",
+        "appel",
+        "candidatures",
+        "base",
+        "critères",
+        "compétences"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 1 : Nomination et cessation"
     },
@@ -459,7 +917,20 @@
       "texte": [
         "Le conseil d'administration transmet, après sélection, à l'autorité de tutelle les noms des trois candidats retenus accompagnés des procès-verbaux de délibérations, en vue de la nomination du directeur général, conformément à la réglementation en vigueur."
       ],
-      "mots_cles": ["transmission", "autorité de tutelle", "nomination"],
+      "mots_cles": [
+        "transmission",
+        "candidatures",
+        "conseil",
+        "administration",
+        "transmet",
+        "après",
+        "sélection",
+        "autorité",
+        "tutelle",
+        "noms",
+        "trois",
+        "candidats"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 1 : Nomination et cessation"
     },
@@ -469,7 +940,16 @@
       "texte": [
         "Le mandat du directeur général est de cinq ans, renouvelable une fois."
       ],
-      "mots_cles": ["mandat", "5 ans", "renouvelable"],
+      "mots_cles": [
+        "mandat",
+        "directeur",
+        "général",
+        "cinq",
+        "renouvelable",
+        "fois",
+        "directeur général",
+        "cinq ans"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 1 : Nomination et cessation"
     },
@@ -483,7 +963,20 @@
         "- les personnes frappées d'une interdiction résultant d'une décision de justice, de diriger, d'administrer ou de gérer une société, un organisme ou une administration ainsi qu'une entreprise commerciale, industrielle ou artisanale sur le territoire national.",
         "Les fonctions de directeur général sont incompatibles avec un mandat électif. Le directeur général ne peut avoir d'intérêt, ni exercer des fonctions rémunérées ou non dans aucune entreprise commerciale, industrielle ou artisanale."
       ],
-      "mots_cles": ["inéligibilité", "incompatibilité", "mandat électif"],
+      "mots_cles": [
+        "directeur",
+        "général",
+        "personnes",
+        "mandat",
+        "commerciale",
+        "industrielle",
+        "artisanale",
+        "fonctions",
+        "inéligibilité",
+        "inéligibles",
+        "poste",
+        "condamnées"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 1 : Nomination et cessation"
     },
@@ -493,7 +986,18 @@
       "texte": [
         "Le conseil d'administration conclut avec le directeur général un contrat de performance pour chaque année de son mandat."
       ],
-      "mots_cles": ["contrat de performance", "annuel"],
+      "mots_cles": [
+        "performance",
+        "conseil",
+        "administration",
+        "conclut",
+        "directeur",
+        "général",
+        "année",
+        "mandat",
+        "administration conclut",
+        "directeur général"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 1 : Nomination et cessation"
     },
@@ -508,7 +1012,20 @@
         "- en cas de révocation ;",
         "- en cas de décès."
       ],
-      "mots_cles": ["fin de fonction", "démission", "révocation", "6 mois"],
+      "mots_cles": [
+        "fonctions",
+        "directeur",
+        "général",
+        "prennent",
+        "expiration",
+        "mandat",
+        "suite",
+        "démission",
+        "empêchement",
+        "excédant",
+        "mois",
+        "révocation"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 1 : Nomination et cessation"
     },
@@ -519,7 +1036,20 @@
         "En cas de carence, d'irrégularités graves ou répétées, d'insuffisance notoire de résultats, le conseil d'administration peut suspendre, par décision motivée, le directeur général. Cette décision est communiquée sans délai à l'autorité de tutelle par le président du conseil d'administration.",
         "Dans ce cas, le directeur général peut exercer un recours auprès de l'autorité de tutelle qui dispose d'un délai d'un mois pour rejeter ou entériner la suspension, après une procédure contradictoire."
       ],
-      "mots_cles": ["suspension", "carence", "irrégularités", "recours", "1 mois"],
+      "mots_cles": [
+        "directeur",
+        "général",
+        "suspension",
+        "conseil",
+        "administration",
+        "décision",
+        "délai",
+        "autorité",
+        "tutelle",
+        "carence",
+        "irrégularités",
+        "graves"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 1 : Nomination et cessation"
     },
@@ -531,7 +1061,20 @@
         "Il est l'ordonnateur du budget en recettes et en dépenses. Il constate et liquide les droits et les charges de la caisse d'assurance maladie universelle. Il a seul qualité pour procéder à l'émission des titres de recettes et des titres de paiement.",
         "Il est assisté d'un directeur général adjoint."
       ],
-      "mots_cles": ["gestion quotidienne", "ordonnateur", "budget", "recettes", "dépenses"],
+      "mots_cles": [
+        "gestion",
+        "quotidienne",
+        "directeur",
+        "général",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "recettes",
+        "titres",
+        "assure",
+        "contrôle"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 2 : Attributions du directeur général"
     },
@@ -557,7 +1100,20 @@
         "- mettre en œuvre la politique de placement adoptée par le conseil d'administration.",
         "Le directeur général peut donner dérogation écrite à des agents nommément désignés."
       ],
-      "mots_cles": ["attributions", "personnel", "budget", "recouvrement", "représentation"],
+      "mots_cles": [
+        "conseil",
+        "administration",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "directeur",
+        "général",
+        "soumettre",
+        "rapport",
+        "attributions",
+        "exécution"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 2 : Attributions du directeur général"
     },
@@ -570,7 +1126,20 @@
         "- la qualité des services rendus aux usagers du système d'information et du dispositif de contrôle interne de la caisse d'assurance maladie universelle ;",
         "- la régularité et la sincérité des états financiers."
       ],
-      "mots_cles": ["responsabilité", "contrat de performance", "états financiers"],
+      "mots_cles": [
+        "responsabilité",
+        "personnelle",
+        "directeur",
+        "général",
+        "personnellement",
+        "responsable",
+        "réalisation",
+        "délais",
+        "prévus",
+        "objectifs",
+        "chiffrés",
+        "performance"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 2 : Attributions du directeur général"
     },
@@ -580,7 +1149,17 @@
       "texte": [
         "Le directeur général adjoint est nommé selon les mêmes procédures que le directeur général. Il est mis fin à ses fonctions dans les mêmes conditions."
       ],
-      "mots_cles": ["directeur général adjoint", "nomination"],
+      "mots_cles": [
+        "directeur",
+        "général",
+        "adjoint",
+        "mêmes",
+        "nomination",
+        "nommé",
+        "procédures",
+        "fonctions",
+        "directeur général"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 3 : Directeur général adjoint"
     },
@@ -590,7 +1169,20 @@
       "texte": [
         "Le directeur général adjoint, outre de suppléer le directeur général en cas d'empêchement ou d'absence, est chargé, sous la responsabilité de celui-ci, notamment, de la coordination des services du contrôle interne, des affaires juridiques et du contentieux, ainsi que des moyens généraux."
       ],
-      "mots_cles": ["DGA", "suppléance", "contrôle interne", "contentieux"],
+      "mots_cles": [
+        "directeur",
+        "général",
+        "attributions",
+        "adjoint",
+        "outre",
+        "suppléer",
+        "empêchement",
+        "absence",
+        "chargé",
+        "responsabilité",
+        "celui",
+        "notamment"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 3 : Directeur général adjoint"
     },
@@ -602,7 +1194,20 @@
         "- l'assistanat de direction ;",
         "- le service de la communication et des relations publiques."
       ],
-      "mots_cles": ["services rattachés", "assistanat", "communication"],
+      "mots_cles": [
+        "services",
+        "rattachés",
+        "directeur",
+        "général",
+        "assistanat",
+        "direction",
+        "service",
+        "communication",
+        "relations",
+        "publiques",
+        "services rattachés",
+        "directeur général"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 4 : Services rattachés au DG"
     },
@@ -618,7 +1223,20 @@
         "- coordonner la production des rapports et comptes rendus de réunions ;",
         "- assurer le rôle d'interface auprès des divers interlocuteurs du directeur général."
       ],
-      "mots_cles": ["assistanat", "agenda", "courrier", "interface"],
+      "mots_cles": [
+        "direction",
+        "assistanat",
+        "directeur",
+        "général",
+        "dirigé",
+        "animé",
+        "assistant",
+        "rang",
+        "chef",
+        "service",
+        "chargé",
+        "notamment"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 4 : Services rattachés au DG"
     },
@@ -634,7 +1252,20 @@
         "- mettre à la disposition des assurés les informations utiles sur leur situation ;",
         "- organiser les relations de la caisse d'assurance maladie universelle avec l'extérieur."
       ],
-      "mots_cles": ["communication", "relations publiques", "information"],
+      "mots_cles": [
+        "communication",
+        "relations",
+        "assurance",
+        "maladie",
+        "universelle",
+        "publiques",
+        "service",
+        "mettre",
+        "caisse",
+        "dirigé",
+        "animé",
+        "chef"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 4 : Services rattachés au DG"
     },
@@ -647,7 +1278,20 @@
         "- le service des affaires juridiques et du contentieux ;",
         "- le service des moyens généraux."
       ],
-      "mots_cles": ["services DGA", "contrôle interne", "affaires juridiques", "moyens généraux"],
+      "mots_cles": [
+        "service",
+        "services",
+        "rattachés",
+        "directeur",
+        "général",
+        "adjoint",
+        "contrôle",
+        "interne",
+        "affaires",
+        "juridiques",
+        "contentieux",
+        "moyens"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 5 : Services rattachés au DGA"
     },
@@ -663,7 +1307,20 @@
         "- identifier les dysfonctionnements dans la mise en œuvre des politiques, processus, procédures et standards établis ;",
         "- contrôler l'exécution de la démarche qualité."
       ],
-      "mots_cles": ["contrôle interne", "qualité", "investigations", "dysfonctionnements"],
+      "mots_cles": [
+        "service",
+        "contrôle",
+        "interne",
+        "veiller",
+        "qualité",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "procédures",
+        "dirigé",
+        "animé"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 5 : Services rattachés au DGA"
     },
@@ -679,7 +1336,20 @@
         "- recevoir et instruire les contestations et gérer le contentieux ;",
         "- préparer les dossiers à soumettre aux juridictions compétentes pour tout contentieux relatif à la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["affaires juridiques", "contentieux", "réclamations", "risques juridiques"],
+      "mots_cles": [
+        "service",
+        "juridiques",
+        "contentieux",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "affaires",
+        "préparer",
+        "dossiers",
+        "dirigé",
+        "animé"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 5 : Services rattachés au DGA"
     },
@@ -694,7 +1364,20 @@
         "- gérer le patrimoine mobilier, immobilier et roulant de la caisse d'assurance maladie universelle ;",
         "- assurer les services généraux."
       ],
-      "mots_cles": ["moyens généraux", "matériel", "patrimoine", "équipements"],
+      "mots_cles": [
+        "service",
+        "généraux",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "moyens",
+        "gérer",
+        "dirigé",
+        "animé",
+        "chef",
+        "chargé"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 5 : Services rattachés au DGA"
     },
@@ -710,7 +1393,20 @@
         "- la direction des études et des statistiques ;",
         "- la direction de l'administration et des ressources humaines."
       ],
-      "mots_cles": ["directions centrales", "6 directions", "prestations", "recouvrement", "SI"],
+      "mots_cles": [
+        "direction",
+        "directions",
+        "centrales",
+        "générale",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "comprend",
+        "prestations",
+        "sanitaires",
+        "recouvrement"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 6 : Des directions centrales"
     },
@@ -732,7 +1428,20 @@
         "- le service des prestations médicales ;",
         "- le service des prestations paramédicales."
       ],
-      "mots_cles": ["prestations sanitaires", "soins curatifs", "panier de soins", "conventionnement"],
+      "mots_cles": [
+        "prestations",
+        "sanitaires",
+        "direction",
+        "soins",
+        "santé",
+        "définir",
+        "service",
+        "dirigée",
+        "animée",
+        "directeur",
+        "mission",
+        "appliquer"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 6 : Des directions centrales"
     },
@@ -752,7 +1461,20 @@
         "- le service immatriculation et affiliation ;",
         "- le service comptes cotisants et assurés."
       ],
-      "mots_cles": ["recouvrement", "immatriculation", "affiliation", "cotisants"],
+      "mots_cles": [
+        "assurés",
+        "recouvrement",
+        "cotisants",
+        "direction",
+        "comptes",
+        "immatriculation",
+        "affiliation",
+        "service",
+        "dirigée",
+        "animée",
+        "directeur",
+        "mission"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 6 : Des directions centrales"
     },
@@ -778,7 +1500,20 @@
         "- le service des études, du développement et de l'exploitation ;",
         "- le service des infrastructures, des technologies et de la maintenance du parc informatique."
       ],
-      "mots_cles": ["systèmes d'information", "informatique", "sécurité", "bases de données"],
+      "mots_cles": [
+        "information",
+        "informatique",
+        "systèmes",
+        "direction",
+        "mettre",
+        "système",
+        "assurer",
+        "service",
+        "œuvre",
+        "plan",
+        "développement",
+        "caisse"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 6 : Des directions centrales"
     },
@@ -800,7 +1535,20 @@
         "- le service du budget et du contrôle de gestion ;",
         "- le service de la trésorerie."
       ],
-      "mots_cles": ["direction financière", "comptabilité", "budget", "trésorerie", "ratios prudentiels"],
+      "mots_cles": [
+        "direction",
+        "financière",
+        "comptable",
+        "comptabilité",
+        "service",
+        "tenir",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "assurer",
+        "suivi"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 6 : Des directions centrales"
     },
@@ -822,7 +1570,20 @@
         "- le service des études, de la planification et de la conduite du changement ;",
         "- le service des statistiques."
       ],
-      "mots_cles": ["études", "statistiques", "indicateurs", "études actuarielles"],
+      "mots_cles": [
+        "assurance",
+        "maladie",
+        "universelle",
+        "études",
+        "statistiques",
+        "caisse",
+        "direction",
+        "activités",
+        "suivre",
+        "régime",
+        "initier",
+        "plan"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 6 : Des directions centrales"
     },
@@ -844,7 +1605,20 @@
         "- le service des ressources humaines ;",
         "- le service de l'administration, de l'archivage et de la documentation."
       ],
-      "mots_cles": ["administration", "ressources humaines", "législation du travail", "compétences"],
+      "mots_cles": [
+        "ressources",
+        "humaines",
+        "administration",
+        "direction",
+        "assurer",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "gérer",
+        "relations",
+        "développement"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 6 : Des directions centrales"
     },
@@ -854,7 +1628,19 @@
       "texte": [
         "Les directions départementales de la caisse d'assurance maladie universelle sont régies par des textes spécifiques."
       ],
-      "mots_cles": ["directions départementales", "textes spécifiques"],
+      "mots_cles": [
+        "directions",
+        "départementales",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "régies",
+        "textes",
+        "spécifiques",
+        "directions départementales",
+        "assurance maladie"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Chapitre 2 - Section 7 : Des directions départementales"
     },
@@ -877,7 +1663,20 @@
         "- les dons et legs ;",
         "- toute autre ressource attribuée à la caisse d'assurance maladie universelle par un texte législatif ou réglementaire."
       ],
-      "mots_cles": ["ressources", "cotisations", "taxes", "subventions"],
+      "mots_cles": [
+        "cotisations",
+        "état",
+        "assurance",
+        "maladie",
+        "universelle",
+        "produit",
+        "ressources",
+        "camu",
+        "assimilés",
+        "constituées",
+        "organismes",
+        "agents"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -888,7 +1687,20 @@
         "En cas d'insuffisance des ressources, la caisse d'assurance maladie universelle peut faire recours à l'État à travers le comité national de financement de la sécurité sociale.",
         "Elle peut également aliéner ses valeurs mobilières et immobilières acquises à titre de placement."
       ],
-      "mots_cles": ["insuffisance", "recours État", "comité national", "aliénation"],
+      "mots_cles": [
+        "insuffisance",
+        "ressources",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "recours",
+        "état",
+        "travers",
+        "comité",
+        "national",
+        "financement"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -903,7 +1715,20 @@
         "- les dépenses effectuées pour l'exécution du programme d'action sanitaire ;",
         "- les dépenses effectuées pour les actions de prévention au titre de l'assurance maladie."
       ],
-      "mots_cles": ["dépenses", "prestations sanitaires", "investissement", "prévention"],
+      "mots_cles": [
+        "dépenses",
+        "assurance",
+        "maladie",
+        "effectuées",
+        "caisse",
+        "universelle",
+        "comprennent",
+        "paiements",
+        "prestations",
+        "sanitaires",
+        "fonctionnement",
+        "investissement"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -913,7 +1738,20 @@
       "texte": [
         "Les ressources et les dépenses de la caisse d'assurance maladie universelle font l'objet d'un budget annuel élaboré par le directeur général et adopté par le conseil d'administration."
       ],
-      "mots_cles": ["budget annuel", "directeur général", "conseil d'administration"],
+      "mots_cles": [
+        "budget",
+        "annuel",
+        "ressources",
+        "dépenses",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "font",
+        "objet",
+        "élaboré",
+        "directeur"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -923,7 +1761,16 @@
       "texte": [
         "Les deniers de la caisse d'assurance maladie universelle sont insaisissables."
       ],
-      "mots_cles": ["insaisissabilité", "deniers"],
+      "mots_cles": [
+        "deniers",
+        "insaisissabilité",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "insaisissables",
+        "assurance maladie"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -933,7 +1780,20 @@
       "texte": [
         "Les créanciers de la caisse porteurs de titres exécutoires, à défaut de décision du conseil d'administration autorisant le paiement, peuvent saisir le Ministre de tutelle aux fins de leur inscription au budget de la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["créanciers", "titres exécutoires", "Ministre de tutelle"],
+      "mots_cles": [
+        "créanciers",
+        "porteurs",
+        "titres",
+        "exécutoires",
+        "caisse",
+        "défaut",
+        "décision",
+        "conseil",
+        "administration",
+        "autorisant",
+        "paiement",
+        "peuvent"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -945,7 +1805,20 @@
         "Elle procède aux études actuarielles au moins une fois tous les cinq ans.",
         "Les résultats de l'analyse des opérations financières ou des études actuarielles sont mis à la disposition du comité national de financement de la sécurité sociale."
       ],
-      "mots_cles": ["opérations financières", "études actuarielles", "5 ans"],
+      "mots_cles": [
+        "analyse",
+        "opérations",
+        "financières",
+        "études",
+        "actuarielles",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "tenue",
+        "effectuer",
+        "année"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -955,7 +1828,20 @@
       "texte": [
         "La gestion financière et comptable de la caisse d'assurance maladie universelle est effectuée conformément aux règles et principes du plan comptable de la conférence interafricaine de prévoyance sociale et assurée par une direction financière et comptable."
       ],
-      "mots_cles": ["plan comptable", "CIPRES", "direction financière"],
+      "mots_cles": [
+        "comptable",
+        "plan",
+        "financière",
+        "cipres",
+        "gestion",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "effectuée",
+        "conformément",
+        "règles"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -966,7 +1852,20 @@
         "L'exécution budgétaire de l'année en cours commence le 1er janvier et se termine le 31 décembre.",
         "Les autorités chargées de la gestion de la caisse d'assurance maladie universelle ne peuvent engager les dépenses que dans les limites des crédits inscrits au budget."
       ],
-      "mots_cles": ["exercice budgétaire", "1er janvier", "31 décembre", "crédits"],
+      "mots_cles": [
+        "budgétaire",
+        "exercice",
+        "exécution",
+        "année",
+        "cours",
+        "commence",
+        "janvier",
+        "termine",
+        "décembre",
+        "autorités",
+        "chargées",
+        "gestion"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -976,7 +1875,20 @@
       "texte": [
         "La caisse d'assurance maladie universelle est tenue de constituer, chaque année, une réserve légale de sécurité dont le montant ne peut être inférieur, pour chaque exercice budgétaire, au moins à trois fois la moyenne mensuelle des dépenses de fonctionnement de la caisse, constatées au cours de l'exercice précédent."
       ],
-      "mots_cles": ["réserve légale", "3 fois", "dépenses de fonctionnement"],
+      "mots_cles": [
+        "réserve",
+        "légale",
+        "sécurité",
+        "caisse",
+        "exercice",
+        "assurance",
+        "maladie",
+        "universelle",
+        "tenue",
+        "constituer",
+        "année",
+        "montant"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -987,7 +1899,20 @@
         "La caisse d'assurance maladie universelle est tenue de constituer, chaque année, un fonds de roulement ou réserve de trésorerie pour faire face aux dépenses courantes en cas de difficulté conjoncturelle de trésorerie.",
         "Le montant de ce fonds de roulement ou réserve de trésorerie doit être au moins égal à la moyenne trimestrielle des charges administratives de la caisse d'assurance maladie universelle, constatées au cours de l'exercice précédent."
       ],
-      "mots_cles": ["fonds de roulement", "trésorerie", "charges administratives"],
+      "mots_cles": [
+        "fonds",
+        "roulement",
+        "trésorerie",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "réserve",
+        "tenue",
+        "constituer",
+        "année",
+        "face"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -998,7 +1923,20 @@
         "La caisse d'assurance maladie universelle est tenue de constituer, chaque année, dans le cadre de la gestion des prestations à long terme, une réserve technique qui a pour objet de faire face aux engagements futurs tout en permettant une stabilité du taux de cotisation.",
         "Les modalités de calcul des réserves légales de sécurité, de trésorerie et technique sont fixées par voie réglementaire."
       ],
-      "mots_cles": ["réserve technique", "engagements futurs", "taux de cotisation"],
+      "mots_cles": [
+        "technique",
+        "réserve",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "tenue",
+        "constituer",
+        "année",
+        "cadre",
+        "gestion",
+        "prestations"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -1008,7 +1946,20 @@
       "texte": [
         "Les fonds de la réserve légale de sécurité ainsi que tous autres fonds disponibles sont placés à moyen ou long terme selon un plan financier validé par le conseil d'administration de la caisse d'assurance maladie universelle et approuvé par le Conseil des Ministres."
       ],
-      "mots_cles": ["placement", "fonds", "plan financier", "Conseil des Ministres"],
+      "mots_cles": [
+        "fonds",
+        "conseil",
+        "placement",
+        "réserve",
+        "légale",
+        "sécurité",
+        "ainsi",
+        "disponibles",
+        "placés",
+        "moyen",
+        "long",
+        "terme"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -1019,7 +1970,20 @@
         "La caisse d'assurance maladie universelle est soumise aux contrôles prévus par la réglementation en vigueur.",
         "La caisse d'assurance maladie universelle est également soumise au respect des normes de gestion et des seuils de performance définis par les organisations et organismes internationaux de sécurité sociale dont elle est membre."
       ],
-      "mots_cles": ["contrôles", "normes de gestion", "performance", "organisations internationales"],
+      "mots_cles": [
+        "contrôles",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "soumise",
+        "prévus",
+        "réglementation",
+        "également",
+        "respect",
+        "normes",
+        "gestion"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Des dispositions financières et comptables"
     },
@@ -1031,7 +1995,20 @@
         "- le personnel contractuel de la caisse d'assurance maladie universelle ;",
         "- le personnel relevant de la fonction publique."
       ],
-      "mots_cles": ["personnel", "contractuel", "fonction publique"],
+      "mots_cles": [
+        "personnel",
+        "catégories",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "composé",
+        "deux",
+        "agents",
+        "contractuel",
+        "relevant",
+        "fonction"
+      ],
       "statut": "en vigueur",
       "section": "Titre 5 - Du personnel"
     },
@@ -1041,7 +2018,17 @@
       "texte": [
         "Le personnel contractuel de la caisse d'assurance maladie universelle est régi par une convention collective."
       ],
-      "mots_cles": ["personnel contractuel", "convention collective"],
+      "mots_cles": [
+        "personnel",
+        "contractuel",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "régi",
+        "personnel contractuel",
+        "assurance maladie"
+      ],
       "statut": "en vigueur",
       "section": "Titre 5 - Du personnel"
     },
@@ -1052,7 +2039,20 @@
         "Le personnel relevant de la fonction publique mis en position de détachement auprès de la caisse d'assurance maladie universelle est régi par la loi n°68-2022 du 16 août 2022 portant statut général de la fonction publique et les textes subséquents.",
         "Toutefois, il bénéficie des avantages accordés par la convention collective de la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["fonction publique", "détachement", "loi 68-2022", "avantages"],
+      "mots_cles": [
+        "fonction",
+        "publique",
+        "personnel",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "relevant",
+        "position",
+        "détachement",
+        "auprès",
+        "régi"
+      ],
       "statut": "en vigueur",
       "section": "Titre 5 - Du personnel"
     },
@@ -1062,7 +2062,20 @@
       "texte": [
         "La caisse d'assurance maladie universelle procède à la couverture et à la liquidation des frais de soins de santé des assurés sociaux selon les dispositions législatives et réglementaires en vigueur."
       ],
-      "mots_cles": ["couverture", "liquidation", "frais de soins"],
+      "mots_cles": [
+        "couverture",
+        "liquidation",
+        "frais",
+        "soins",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "procède",
+        "santé",
+        "assurés",
+        "sociaux"
+      ],
       "statut": "en vigueur",
       "section": "Titre 6 - Dispositions diverses et finales"
     },
@@ -1072,7 +2085,19 @@
       "texte": [
         "Les directeurs centraux et départementaux sont nommés conformément à la réglementation en vigueur, sur proposition de la tutelle."
       ],
-      "mots_cles": ["nomination", "directeurs", "tutelle"],
+      "mots_cles": [
+        "directeurs",
+        "nomination",
+        "centraux",
+        "départementaux",
+        "nommés",
+        "conformément",
+        "réglementation",
+        "proposition",
+        "tutelle",
+        "directeurs centraux",
+        "nommés conformément"
+      ],
       "statut": "en vigueur",
       "section": "Titre 6 - Dispositions diverses et finales"
     },
@@ -1082,7 +2107,20 @@
       "texte": [
         "Le directeur général, le directeur général adjoint, les directeurs centraux, les directeurs départementaux, les chefs de service et les autres agents de la caisse d'assurance maladie universelle perçoivent les indemnités prévues par les textes en vigueur."
       ],
-      "mots_cles": ["indemnités", "personnel", "textes en vigueur"],
+      "mots_cles": [
+        "indemnités",
+        "directeur",
+        "général",
+        "directeurs",
+        "personnel",
+        "adjoint",
+        "centraux",
+        "départementaux",
+        "chefs",
+        "service",
+        "agents",
+        "caisse"
+      ],
       "statut": "en vigueur",
       "section": "Titre 6 - Dispositions diverses et finales"
     },
@@ -1092,7 +2130,20 @@
       "texte": [
         "Les attributions et l'organisation des services et des bureaux à créer, en tant que de besoin, sont fixées par arrêté du Ministre chargé de la sécurité sociale."
       ],
-      "mots_cles": ["services", "bureaux", "arrêté"],
+      "mots_cles": [
+        "services",
+        "bureaux",
+        "créer",
+        "attributions",
+        "organisation",
+        "tant",
+        "besoin",
+        "fixées",
+        "arrêté",
+        "ministre",
+        "chargé",
+        "sécurité"
+      ],
       "statut": "en vigueur",
       "section": "Titre 6 - Dispositions diverses et finales"
     },
@@ -1102,7 +2153,16 @@
       "texte": [
         "Les présents statuts sont approuvés par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["approbation", "décret", "Conseil des Ministres"],
+      "mots_cles": [
+        "statuts",
+        "approbation",
+        "présents",
+        "approuvés",
+        "décret",
+        "conseil",
+        "ministres",
+        "présents statuts"
+      ],
       "statut": "en vigueur",
       "section": "Titre 6 - Dispositions diverses et finales"
     }

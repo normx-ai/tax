@@ -21,7 +21,20 @@
         "Modifié par l'arrêté n°6800 du 17 décembre 1990]",
         "Conformément aux dispositions de l'article 137 du Code du travail, il est institué auprès des établissements et entreprises industriels ou non, assujettis aux dispositions relatives à l'hygiène et à la sécurité au travail, des comités d'hygiène et sécurité ayant pour mission de définit et de mettre en œuvre la politique interne de prévention de tout risque professionnel."
       ],
-      "mots_cles": ["comités d'hygiène", "sécurité", "institution", "article 137", "prévention"],
+      "mots_cles": [
+        "hygiène",
+        "sécurité",
+        "comités",
+        "arrêté",
+        "décembre",
+        "entreprises",
+        "institution",
+        "mterfpps",
+        "instituant",
+        "modifié",
+        "conformément",
+        "code"
+      ],
       "statut": "en vigueur",
       "section": "Comités d'hygiène et de sécurité"
     },
@@ -41,7 +54,20 @@
         "  - 6 délégués de personnel pour les entreprises de 251 à 500 travailleurs ;",
         "  - 7 délégués de personnel pour les entreprises de 501 à 1.000 travailleurs."
       ],
-      "mots_cles": ["composition", "président", "chef d'établissement", "délégués", "effectif"],
+      "mots_cles": [
+        "délégués",
+        "personnel",
+        "entreprises",
+        "chef",
+        "comité",
+        "sécurité",
+        "service",
+        "composition",
+        "arrêté",
+        "hygiène",
+        "ainsi",
+        "composé"
+      ],
       "statut": "en vigueur",
       "section": "Comités d'hygiène et de sécurité"
     },
@@ -51,7 +77,20 @@
       "texte": [
         "Les membres du comité d'hygiène et sécurité sont désignés en tenant compte de leurs connaissances techniques ou des aptitudes nécessaires en matière d'hygiène et sécurité au travail, leur mandat est d'un an renouvelable."
       ],
-      "mots_cles": ["désignation", "mandat", "1 an", "renouvelable", "connaissances techniques"],
+      "mots_cles": [
+        "mandat",
+        "membres",
+        "hygiène",
+        "sécurité",
+        "désignation",
+        "comité",
+        "désignés",
+        "tenant",
+        "compte",
+        "connaissances",
+        "techniques",
+        "aptitudes"
+      ],
       "statut": "en vigueur",
       "section": "Comités d'hygiène et de sécurité"
     },
@@ -61,7 +100,20 @@
       "texte": [
         "Pour permettre aux membres du comité de se prononcer sur un sujet qui s'avère délicat, il peut être fait recours à la collaboration de toute personne qualifiée, ou à des organismes spécialisés. Ces personnes et organismes ont voix consultative et leurs conclusions n'engagent nullement le comité."
       ],
-      "mots_cles": ["experts", "voix consultative", "organismes spécialisés"],
+      "mots_cles": [
+        "recours",
+        "comité",
+        "organismes",
+        "experts",
+        "permettre",
+        "membres",
+        "prononcer",
+        "sujet",
+        "avère",
+        "délicat",
+        "être",
+        "collaboration"
+      ],
       "statut": "en vigueur",
       "section": "Attributions"
     },
@@ -80,7 +132,20 @@
         "- de procéder à l'identification et à l'évaluation des risques potentiels dans l'entreprise ;",
         "- de faire le point à la fin de chaque année sur la situation de l'entreprise en matière de prévention des risques professionnels."
       ],
-      "mots_cles": ["missions", "prévention", "risques professionnels", "enquêtes", "accidents", "inspection"],
+      "mots_cles": [
+        "prévention",
+        "risques",
+        "sécurité",
+        "professionnels",
+        "procéder",
+        "comité",
+        "hygiène",
+        "amélioration",
+        "prescriptions",
+        "assurer",
+        "missions",
+        "arrêté"
+      ],
       "statut": "en vigueur",
       "section": "Attributions"
     },
@@ -90,7 +155,20 @@
       "texte": [
         "Le comité d'hygiène et de sécurité procède à l'inspection de l'entreprise soit collectivement soit en commettant un ou plusieurs de ses membres."
       ],
-      "mots_cles": ["inspection", "collectivement", "membres"],
+      "mots_cles": [
+        "inspection",
+        "soit",
+        "comité",
+        "hygiène",
+        "sécurité",
+        "procède",
+        "collectivement",
+        "commettant",
+        "plusieurs",
+        "membres",
+        "sécurité procède",
+        "collectivement soit"
+      ],
       "statut": "en vigueur",
       "section": "Attributions"
     },
@@ -100,7 +178,20 @@
       "texte": [
         "(Arrêté n°1990-6800) Le comité d'hygiène et de sécurité doit pour l'exécution de certaines de ses attributions, commettre certains de ses membres et certains travailleurs de l'entreprise s'occupant des questions de sécurité qui lui en font rapport."
       ],
-      "mots_cles": ["délégation", "attributions", "rapport"],
+      "mots_cles": [
+        "certaines",
+        "attributions",
+        "sécurité",
+        "certains",
+        "délégation",
+        "arrêté",
+        "comité",
+        "hygiène",
+        "exécution",
+        "commettre",
+        "membres",
+        "occupant"
+      ],
       "statut": "en vigueur",
       "section": "Attributions"
     },
@@ -110,7 +201,20 @@
       "texte": [
         "Le comité d'hygiène et sécurité se réunit une fois par trimestre sur la convocation du chef d'établissement ou d'entreprise. Toutefois, il est tenu de se réunir à la suite de tout accident qui a entraîné ou aurait pu entraîner des conséquences graves."
       ],
-      "mots_cles": ["réunion", "trimestrielle", "accident", "convocation"],
+      "mots_cles": [
+        "réunion",
+        "trimestrielle",
+        "comité",
+        "hygiène",
+        "sécurité",
+        "réunit",
+        "fois",
+        "trimestre",
+        "convocation",
+        "chef",
+        "établissement",
+        "toutefois"
+      ],
       "statut": "en vigueur",
       "section": "Fonctionnement"
     },
@@ -120,7 +224,19 @@
       "texte": [
         "Les réunions doivent avoir lieu aux heures de travail, dans l'établissement. Le temps consacré aux réunions du comité est rémunéré comme temps de travail."
       ],
-      "mots_cles": ["heures de travail", "rémunéré", "établissement"],
+      "mots_cles": [
+        "réunions",
+        "heures",
+        "temps",
+        "avoir",
+        "lieu",
+        "établissement",
+        "consacré",
+        "comité",
+        "rémunéré",
+        "avoir lieu",
+        "temps consacré"
+      ],
       "statut": "en vigueur",
       "section": "Fonctionnement"
     },
@@ -131,7 +247,20 @@
         "(Arrêté n°1990-6800) Les réunions doivent être sanctionnées par des procès-verbaux, les enquêtes des accidents du travail et maladies professionnelles ou du contrôle d'établissement par des rapports.",
         "Les conclusions des réunions du comité d'hygiène et sécurité sont portées sur un registre. Les ampliations des procès-verbaux de réunions et des rapports d'enquête des accidents du travail et maladies professionnelles et du contrôle de l'entreprise ou l'établissement sont transmises à l'inspection régionale du travail et à tout membre du comité d'hygiène et sécurité."
       ],
-      "mots_cles": ["procès-verbaux", "rapports", "registre", "inspection régionale"],
+      "mots_cles": [
+        "réunions",
+        "procès",
+        "verbaux",
+        "accidents",
+        "maladies",
+        "professionnelles",
+        "contrôle",
+        "établissement",
+        "rapports",
+        "comité",
+        "hygiène",
+        "sécurité"
+      ],
       "statut": "en vigueur",
       "section": "Fonctionnement"
     },
@@ -141,7 +270,20 @@
       "texte": [
         "(Arrêté n°1990-6800) Le comité d'hygiène et sécurité examine ses rapports d'enquête des accidents du travail et des maladies professionnelles, les rapports de contrôle de l'entreprise aux fins de dégager les conclusions pour l'amélioration prévention risques professionnels et suit l'application des conclusions de ses réunions."
       ],
-      "mots_cles": ["rapports", "enquête", "accidents", "conclusions", "amélioration"],
+      "mots_cles": [
+        "rapports",
+        "enquête",
+        "conclusions",
+        "examen",
+        "arrêté",
+        "comité",
+        "hygiène",
+        "sécurité",
+        "examine",
+        "accidents",
+        "maladies",
+        "professionnelles"
+      ],
       "statut": "en vigueur",
       "section": "Fonctionnement"
     },
@@ -151,7 +293,20 @@
       "texte": [
         "Le registre doit être tenu à la disposition de l'inspecteur régional du travail et de tout agent chargé du contrôle et de tout membre du comité d'hygiène et sécurité."
       ],
-      "mots_cles": ["registre", "inspecteur", "contrôle"],
+      "mots_cles": [
+        "registre",
+        "disposition",
+        "inspecteur",
+        "être",
+        "tenu",
+        "régional",
+        "agent",
+        "chargé",
+        "contrôle",
+        "membre",
+        "comité",
+        "hygiène"
+      ],
       "statut": "en vigueur",
       "section": "Fonctionnement"
     },
@@ -161,7 +316,20 @@
       "texte": [
         "Le comité d'hygiène et sécurité est un organe consultatif, il fonctionne comme une commission technique spécialisée dépendante. La direction de l'établissement ou du comité d'entreprise dans les établissements où il en existe. Son instruction n'efface nullement la pleine et entière responsabilité tant pénale que pécuniaire du chef d'établissement."
       ],
-      "mots_cles": ["organe consultatif", "commission technique", "responsabilité", "chef d'établissement"],
+      "mots_cles": [
+        "organe",
+        "consultatif",
+        "comité",
+        "établissement",
+        "hygiène",
+        "sécurité",
+        "fonctionne",
+        "commission",
+        "technique",
+        "spécialisée",
+        "dépendante",
+        "direction"
+      ],
       "statut": "en vigueur",
       "section": "Fonctionnement"
     },
@@ -171,7 +339,20 @@
       "texte": [
         "(Arrêté n°1990-6800) Les membres travailleurs du comité d'hygiène et sécurité ainsi que les autres travailleurs chargés des questions de sécurité dans l'entreprise bénéficient de la protection en matière de licenciement prévue pour les délégués syndicaux."
       ],
-      "mots_cles": ["protection", "licenciement", "délégués syndicaux"],
+      "mots_cles": [
+        "protection",
+        "membres",
+        "comité",
+        "sécurité",
+        "arrêté",
+        "hygiène",
+        "ainsi",
+        "chargés",
+        "questions",
+        "bénéficient",
+        "matière",
+        "licenciement"
+      ],
       "statut": "en vigueur",
       "section": "Dispositions transitoires et finales"
     },
@@ -181,7 +362,20 @@
       "texte": [
         "Dans les entreprises occupant moins de vingt salariés, où sont exécutés des travaux de nature à présenter une insécurité particulière pour le personnel, l'inspecteur régional du travail peut en imposer la création."
       ],
-      "mots_cles": ["moins de 20 salariés", "insécurité", "inspecteur régional"],
+      "mots_cles": [
+        "entreprises",
+        "salariés",
+        "occupant",
+        "vingt",
+        "exécutés",
+        "travaux",
+        "nature",
+        "présenter",
+        "insécurité",
+        "particulière",
+        "personnel",
+        "inspecteur"
+      ],
       "statut": "en vigueur",
       "section": "Dispositions transitoires et finales"
     },
@@ -191,7 +385,20 @@
       "texte": [
         "Le présent arrêté qui prend effet à compter de sa date de signature sera enregistré, publié au Journal Officiel et communiqué partout où besoin sera. Le directeur général du travail est outre chargé de son entière exécution."
       ],
-      "mots_cles": ["entrée en vigueur", "Journal Officiel", "directeur général"],
+      "mots_cles": [
+        "sera",
+        "entrée",
+        "présent",
+        "arrêté",
+        "prend",
+        "effet",
+        "compter",
+        "date",
+        "signature",
+        "enregistré",
+        "publié",
+        "journal"
+      ],
       "statut": "en vigueur",
       "section": "Dispositions transitoires et finales"
     }

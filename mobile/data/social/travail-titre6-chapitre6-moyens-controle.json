@@ -24,7 +24,20 @@
         "Les chefs d'entreprise ou d'établissement doivent produire tous les semestres, au Bureau de Placement, des renseignements sur la situation de la main-d'œuvre qu'ils emploient.",
         "Un arrêté du Ministre du Travail et de la Prévoyance Sociale détermine les modalités de la déclaration prévue aux alinéas 1 et 2 du présent article."
       ],
-      "mots_cles": ["déclaration", "ouverture entreprise", "inspection du travail", "fermeture", "transfert", "semestriel"],
+      "mots_cles": [
+        "déclaration",
+        "bureau",
+        "déclarées",
+        "ouverture",
+        "personne",
+        "propose",
+        "ouvrir",
+        "quelque",
+        "nature",
+        "soit",
+        "préalable",
+        "inspection"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 : Des moyens de contrôle"
     },
@@ -40,7 +53,20 @@
         "Le registre d'employeur doit être tenu sans déplacement à la disposition de l'Inspection du Travail et des Lois Sociales et conservé pendant les 5 ans suivant la dernière mention qui y a été portée.",
         "Certaines entreprises ou catégories d'entreprises peuvent être exemptées de l'obligation de tenir ce registre en raison de leur situation, de leur faible importance ou de la nature de leur activité, par arrêté du Ministre du Travail et de la Prévoyance Sociale pris après avis de la Commission Nationale Consultative du Travail."
       ],
-      "mots_cles": ["registre d'employeur", "3 parties", "5 ans", "conservation", "inspection du travail"],
+      "mots_cles": [
+        "registre",
+        "tenir",
+        "arrêté",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "pris",
+        "après",
+        "avis",
+        "commission",
+        "nationale",
+        "consultative"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 : Des moyens de contrôle"
     },
@@ -50,7 +76,15 @@
       "texte": [
         "Les dossiers des travailleurs, prévus à l'article 162, sont conservés par le Bureau de Placement de l'emploi."
       ],
-      "mots_cles": ["dossiers", "travailleurs", "Bureau de Placement", "conservation"],
+      "mots_cles": [
+        "dossiers",
+        "bureau",
+        "placement",
+        "conservation",
+        "prévus",
+        "conservés",
+        "emploi"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 : Des moyens de contrôle"
     }

@@ -21,7 +21,20 @@
         "c) une branche des pensions, chargée du service des prestations de vieillesse, d'invalidité et de décès ;",
         "d) toute branche qui pourra être créée par la loi."
       ],
-      "mots_cles": ["sécurité sociale", "prestations familiales", "risques professionnels", "pensions", "vieillesse", "invalidité", "décès"],
+      "mots_cles": [
+        "branche",
+        "prestations",
+        "chargée",
+        "service",
+        "régime",
+        "sécurité",
+        "sociale",
+        "familiales",
+        "institution",
+        "institué",
+        "comprend",
+        "maternité"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales et champ d'application"
     },
@@ -31,7 +44,18 @@
       "texte": [
         "L'action du service légal des prestations est prolongée par une action sanitaire, sociale et familiale."
       ],
-      "mots_cles": ["action sanitaire", "action sociale", "action familiale"],
+      "mots_cles": [
+        "action",
+        "sanitaire",
+        "sociale",
+        "service",
+        "légal",
+        "prestations",
+        "prolongée",
+        "familiale",
+        "action sanitaire",
+        "service légal"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales et champ d'application"
     },
@@ -48,7 +72,20 @@
         "3) Les détenus exécutant un travail périlleux bénéficient des dispositions de la présente loi pour les accidents survenus par le fait ou à l'occasion de ce travail.",
         "4) Les modalités d'application des dispositions de la présente loi aux travailleurs assimilés seront déterminées par décret pris en conseil des Ministres après avis de la commission consultative du Travail."
       ],
-      "mots_cles": ["assujettis", "travailleurs", "apprentis", "stagiaires", "PDG", "gérants", "coopératives"],
+      "mots_cles": [
+        "présente",
+        "sociétés",
+        "gérants",
+        "personnes",
+        "nature",
+        "assimilés",
+        "salariés",
+        "directeurs",
+        "généraux",
+        "coopératives",
+        "assujetties",
+        "assujettis"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales et champ d'application"
     },
@@ -59,7 +96,20 @@
         "Les personnes non visées à l'article 3 du présent Code peuvent s'assurer volontairement aux branches des risques professionnels et de l'assurance vieillesse, invalidité ou à toute branche qui pourra être créée.",
         "Un décret pris en conseil des Ministres sur proposition du Ministre chargé de la sécurité sociale après avis de la commission Nationale Consultative du Travail déterminera les modalités de ladite assurance."
       ],
-      "mots_cles": ["assurance volontaire", "risques professionnels", "vieillesse"],
+      "mots_cles": [
+        "assurance",
+        "volontaire",
+        "personnes",
+        "visées",
+        "présent",
+        "code",
+        "peuvent",
+        "assurer",
+        "volontairement",
+        "branches",
+        "risques",
+        "professionnels"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales et champ d'application"
     },
@@ -69,7 +119,19 @@
       "texte": [
         "La loi pourra étendre le champ d'application du présent Code à des catégories nouvelles de bénéficiaires."
       ],
-      "mots_cles": ["extension", "bénéficiaires"],
+      "mots_cles": [
+        "champ",
+        "extension",
+        "pourra",
+        "étendre",
+        "présent",
+        "code",
+        "catégories",
+        "nouvelles",
+        "bénéficiaires",
+        "loi pourra",
+        "présent code"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales et champ d'application"
     },
@@ -79,7 +141,20 @@
       "texte": [
         "La gestion du régime de Sécurité Sociale institué par la présente loi est confiée à la Caisse. La Caisse Nationale de la Sécurité Sociale, dénommée ci-après la caisse."
       ],
-      "mots_cles": ["CNSS", "caisse", "gestion"],
+      "mots_cles": [
+        "caisse",
+        "sécurité",
+        "sociale",
+        "nationale",
+        "gestion",
+        "régime",
+        "institué",
+        "présente",
+        "confiée",
+        "dénommée",
+        "après",
+        "caisse nationale"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 - Organisation administrative / Chapitre 1 - De la caisse nationale de sécurité sociale"
     },
@@ -92,7 +167,20 @@
         "Art.2.- Le plafond des salaires soumises à cotisation est de 600.000 FCFA par mois, soit 7.200.000 FCFA par an pour les branches prestations familiales, risques professionnels ainsi que pour la Société de Promotion et de Gestion Immobilière (SOPROGI). (Ce prélèvement a été abrogé depuis.)",
         "Art.3.- Le présent décret, qui abroge toutes dispositions antérieures ou contraires, sera enregistré, publié au journal Officiel et communiqué partout où besoin sera."
       ],
-      "mots_cles": ["plafonds", "cotisations", "1.200.000 FCFA", "600.000 FCFA", "pension", "prestations familiales", "risques professionnels"],
+      "mots_cles": [
+        "soumises",
+        "fcfa",
+        "rémunérations",
+        "plafonds",
+        "cotisations",
+        "décret",
+        "sécurité",
+        "sociale",
+        "plafond",
+        "cotisation",
+        "mois",
+        "soit"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources / Décrets d'application"
     },
@@ -102,7 +190,20 @@
       "texte": [
         "Les éléments de rémunérations versés occasionnellement ou à des intervalles irréguliers ou à des intervalles différents de la périodicité des paies sont, pour le calcul des cotisations, lorsqu'ils sont versés dans l'intervalle de deux paies, ajoutés à la paie suivante, sans qu'il soit tenu compte de la période de travail à laquelle ils se rapportent."
       ],
-      "mots_cles": ["rémunérations occasionnelles", "cotisations", "calcul"],
+      "mots_cles": [
+        "rémunérations",
+        "versés",
+        "intervalles",
+        "paies",
+        "occasionnelles",
+        "éléments",
+        "occasionnellement",
+        "irréguliers",
+        "différents",
+        "périodicité",
+        "calcul",
+        "cotisations"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -115,7 +216,20 @@
         "3) Les taux de cotisation sont fixés de manière que les recettes totales de chaque branche permettent de couvrir : l'ensemble des dépenses de prestation et d'action sanitaire et sociale de ladite branche ; les frais d'administration s'y rapportant ; le montant nécessaire à la constitution des diverses réserves ; le fonds de roulement.",
         "4) Pour la branche des pensions, le taux doit être fixé de manière à assurer sa stabilité et l'équilibre financier de la branche pendant une période suffisamment longue."
       ],
-      "mots_cles": ["taux de cotisation", "branche", "risques professionnels", "pensions", "équilibre financier"],
+      "mots_cles": [
+        "branche",
+        "taux",
+        "cotisation",
+        "fixé",
+        "être",
+        "conseil",
+        "sécurité",
+        "sociale",
+        "après",
+        "avis",
+        "administration",
+        "manière"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -126,7 +240,20 @@
         "[NB - Décret n°1999-279 du 31 décembre 1999 portant relèvement du taux des cotisations du régime d'assurance vieillesse, d'invalidité et de décès géré par la caisse nationale de sécurité sociale]",
         "Art.unique.- Le taux de cotisation du régime d'assurance vieillesse, d'invalidité et de décès est porté à 12 %, dont 8 % à la charge de l'employeur et 4 % à la charge du salarié."
       ],
-      "mots_cles": ["taux", "12%", "8% employeur", "4% salarié", "vieillesse", "invalidité", "décès"],
+      "mots_cles": [
+        "taux",
+        "vieillesse",
+        "relèvement",
+        "cotisation",
+        "régime",
+        "assurance",
+        "invalidité",
+        "décès",
+        "charge",
+        "décret",
+        "décembre",
+        "portant"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources / Décrets d'application"
     },
@@ -140,7 +267,20 @@
         "La contribution de l'employeur reste exclusivement et définitivement à sa charge, toute convention contraire étant nulle de plein droit.",
         "4) Si le travailleur est occupé au service de deux ou plusieurs employeurs, chacun des employeurs est responsable du versement de la part des cotisations calculées proportionnellement à la rémunération qu'il paie à l'intéressé."
       ],
-      "mots_cles": ["répartition", "cotisations", "employeur", "salarié", "prestations familiales", "risques professionnels", "pensions"],
+      "mots_cles": [
+        "cotisations",
+        "part",
+        "branche",
+        "charge",
+        "rémunération",
+        "salarié",
+        "contribution",
+        "responsable",
+        "versement",
+        "paie",
+        "répartition",
+        "prestations"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -151,7 +291,20 @@
         "1) Les cotisations font l'objet d'un versement par l'employeur à la Caisse dans les quinze jours de chaque mois si l'employeur occupe plus de vingt travailleurs et dans les premiers jours de chaque trimestre dans les autres cas.",
         "2) Les cotisations qui ne sont pas acquittées dans le délai prescrit sont passibles d'une majoration de retard dont les modalités seront fixées par arrêté du Ministre chargé de la sécurité sociale après avis de la Commission Nationale Consultative du travail."
       ],
-      "mots_cles": ["versement", "délai", "mensuel", "trimestriel", "majoration de retard"],
+      "mots_cles": [
+        "cotisations",
+        "versement",
+        "jours",
+        "font",
+        "objet",
+        "caisse",
+        "quinze",
+        "mois",
+        "occupe",
+        "vingt",
+        "premiers",
+        "trimestre"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -162,7 +315,20 @@
         "1) L'employeur est tenu de produire chaque année une déclaration annuelle indiquant pour chacun de ses salariés qu'il a occupé au cours de l'année précédente, le montant total des rémunérations ou gains perçus, ainsi que la durée de travail effectué. Cette déclaration est adressée à la Caisse selon les modalités fixées par arrêté du Ministre chargé de la sécurité sociale.",
         "2) Le défaut de production aux échéances prescrites de ladite déclaration donne lieu à l'application des dispositions de l'article 181 du présent Code."
       ],
-      "mots_cles": ["déclaration annuelle", "salariés", "rémunérations"],
+      "mots_cles": [
+        "déclaration",
+        "annuelle",
+        "année",
+        "tenu",
+        "produire",
+        "indiquant",
+        "chacun",
+        "salariés",
+        "occupé",
+        "cours",
+        "précédente",
+        "montant"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -174,7 +340,20 @@
         "Le Directeur Général de la Caisse peut par délégation du Conseil d'Administration et dans la limite d'un plafond fixé par arrêté du Ministre chargé de la sécurité sociale, procéder à des remises partielles ou totales.",
         "2) La demande de remise gracieuse doit être présentée dans les quinze jours suivant la notification de la mise en demeure, cette requête n'est recevable qu'après règlement de la totalité des cotisations dues."
       ],
-      "mots_cles": ["majorations", "réduction", "remise gracieuse", "bonne foi"],
+      "mots_cles": [
+        "être",
+        "conseil",
+        "majorations",
+        "décision",
+        "administration",
+        "réduction",
+        "visées",
+        "peuvent",
+        "réduites",
+        "bonne",
+        "force",
+        "majeure"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -185,7 +364,20 @@
         "1) Lorsque le montant des salaires servant de base au calcul des cotisations n'a pas été communiqué à la Caisse, une taxation d'office est effectuée sur la base des salaires ayant fait l'objet de la déclaration la plus récente, majorée de 25 pour cent, à défaut sur la base de la comptabilité de l'employeur.",
         "2) Si la comptabilité de l'employeur ne permet pas d'établir le chiffre exact des rémunérations servant de base au calcul des cotisations dues, le montant des cotisations est fixé forfaitairement en tenant compte des conventions collectives en vigueur ou à défaut, des salaires pratiqués dans la profession."
       ],
-      "mots_cles": ["taxation d'office", "majoration 25%", "cotisations"],
+      "mots_cles": [
+        "base",
+        "salaires",
+        "cotisations",
+        "taxation",
+        "office",
+        "montant",
+        "servant",
+        "calcul",
+        "défaut",
+        "comptabilité",
+        "communiqué",
+        "caisse"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -195,7 +387,20 @@
       "texte": [
         "En cas de cession ou de cessation d'activité, le paiement des cotisations dues pour le mois ou le trimestre en cours est immédiatement exigible."
       ],
-      "mots_cles": ["cession", "cessation", "cotisations exigibles"],
+      "mots_cles": [
+        "cession",
+        "cessation",
+        "activité",
+        "paiement",
+        "cotisations",
+        "dues",
+        "mois",
+        "trimestre",
+        "cours",
+        "immédiatement",
+        "exigible",
+        "cotisations dues"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -207,7 +412,20 @@
         "2) La caisse procédera à l'inscription au registre public tenu au greffe de la juridiction compétente de ce privilège qui conserve son effet pendant deux ans renouvelables jusqu'à l'extinction de la dette ou à sa réalisation à son profit.",
         "3) Le privilège sur les immeubles sera transformé au bout de deux ans en hypothèque légale conformément aux textes en vigueur."
       ],
-      "mots_cles": ["privilège", "cotisations", "biens", "hypothèque"],
+      "mots_cles": [
+        "privilège",
+        "cotisations",
+        "immeubles",
+        "conformément",
+        "textes",
+        "deux",
+        "paiement",
+        "garanti",
+        "compter",
+        "date",
+        "exigibilité",
+        "biens"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -217,7 +435,20 @@
       "texte": [
         "L'état de cotisation restant à recouvrer est soumis à la fin de chaque année au Conseil d'Administration et au Ministre chargé de la sécurité sociale. Il est joint un rapport sur les mesures prises en vue de leur recouvrement et les garanties ou sûretés prises pour la conservation de la créance ainsi que des renseignements sur la solvabilité des débiteurs."
       ],
-      "mots_cles": ["recouvrement", "rapport annuel"],
+      "mots_cles": [
+        "état",
+        "cotisation",
+        "restant",
+        "recouvrer",
+        "prises",
+        "soumis",
+        "année",
+        "conseil",
+        "administration",
+        "ministre",
+        "chargé",
+        "sécurité"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -227,7 +458,20 @@
       "texte": [
         "Les deniers de la Caisse sont insaisissables et aucune opposition ne peut être pratiquée sur les sommes dues à cet établissement, les créanciers porteurs de titres pratiqués sur les sommes dues à cet établissement, les créanciers porteurs de titres exécutoires, à défaut de décision du Conseil d'Administration autorisant le paiement, peuvent saisir le Ministre de tutelle aux fins d'inscription au budget de la Caisse des Crédits nécessaires."
       ],
-      "mots_cles": ["insaisissabilité", "deniers", "caisse"],
+      "mots_cles": [
+        "caisse",
+        "deniers",
+        "sommes",
+        "dues",
+        "établissement",
+        "créanciers",
+        "porteurs",
+        "titres",
+        "insaisissabilité",
+        "insaisissables",
+        "aucune",
+        "opposition"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -237,7 +481,19 @@
       "texte": [
         "Les règles relatives à la comptabilité de la Caisse sont fixées par arrêté du Ministre chargé de la sécurité sociale."
       ],
-      "mots_cles": ["comptabilité", "arrêté"],
+      "mots_cles": [
+        "comptabilité",
+        "caisse",
+        "règles",
+        "fixées",
+        "arrêté",
+        "ministre",
+        "chargé",
+        "sécurité",
+        "sociale",
+        "ministre chargé",
+        "sécurité sociale"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -248,7 +504,20 @@
         "1) Chaque branche du régime de Sécurité Sociale fait l'objet d'une gestion financière distincte, les ressources d'une branche ne pouvant être affectées à la couverture des charges d'une autre branche.",
         "2) La part des frais d'Administration ainsi que des dépenses d'action sanitaire, sociale et familiale et de prévention à imputer à chacune des branches est déterminée par le conseil d'Administration de la caisse nationale de Sécurité Sociale."
       ],
-      "mots_cles": ["gestion distincte", "branches", "frais d'administration"],
+      "mots_cles": [
+        "branche",
+        "sociale",
+        "gestion",
+        "financière",
+        "distincte",
+        "sécurité",
+        "administration",
+        "régime",
+        "objet",
+        "ressources",
+        "pouvant",
+        "être"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -258,7 +527,20 @@
       "texte": [
         "Il est institué pour le fonctionnement des services un fonds de roulement commun à l'ensemble des branches dont le montant ne peut être inférieur à deux fois la moyenne mensuelle des dépenses de la caisse constatée au cours du dernier exercice."
       ],
-      "mots_cles": ["fonds de roulement", "deux fois", "dépenses mensuelles"],
+      "mots_cles": [
+        "fonds",
+        "roulement",
+        "institué",
+        "fonctionnement",
+        "services",
+        "commun",
+        "ensemble",
+        "branches",
+        "montant",
+        "être",
+        "inférieur",
+        "deux"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -273,7 +555,20 @@
         "2) Dans la branche des pensions : une réserve technique constituée par la différence entre les recettes et les dépenses de cette branche. Cette réserve ne peut être inférieure au montant total des dépenses constatées pour la branche des pensions au cours des trois derniers exercices.",
         "3) Dans la branche des prestations familiales : une réserve technique dont le montant ne doit pas être inférieur au douzième des prestations de service au cours de l'exercice précédent."
       ],
-      "mots_cles": ["réserves techniques", "réserves de sécurité", "risques professionnels", "pensions", "prestations familiales"],
+      "mots_cles": [
+        "branche",
+        "réserve",
+        "sécurité",
+        "montant",
+        "technique",
+        "dépenses",
+        "prestations",
+        "cours",
+        "réserves",
+        "techniques",
+        "égale",
+        "rentes"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     },
@@ -284,7 +579,20 @@
         "Les fonds des réserves de chaque branche, leurs placements respectifs ainsi que les cotisations des assurés volontaires sont entièrement à leur charge.",
         "Le montant des rémunérations servant de base de calcul des cotisations ne peut être, en aucun cas, inférieur au salaire minimum interprofessionnel garanti."
       ],
-      "mots_cles": ["réserves", "placements", "SMIG", "cotisations minimales"],
+      "mots_cles": [
+        "fonds",
+        "réserves",
+        "placements",
+        "cotisations",
+        "branche",
+        "respectifs",
+        "ainsi",
+        "assurés",
+        "volontaires",
+        "entièrement",
+        "charge",
+        "montant"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 - Ressources"
     }

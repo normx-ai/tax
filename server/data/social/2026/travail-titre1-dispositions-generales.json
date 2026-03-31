@@ -19,7 +19,17 @@
       "texte": [
         "La présente loi institue un Code du travail de la République Populaire du Congo."
       ],
-      "mots_cles": ["code du travail", "institution", "loi 45-75"],
+      "mots_cles": [
+        "code",
+        "institution",
+        "présente",
+        "institue",
+        "république",
+        "populaire",
+        "congo",
+        "présente loi",
+        "république populaire"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 : Dispositions générales"
     },
@@ -32,7 +42,20 @@
         "Toutefois, les agents contractuels de la fonction publique seront soumis, en ce qui concerne l'exercice du droit de grève, aux dispositions législatives spécifiques applicables à l'Administration publique.",
         "Les travailleurs continuent à bénéficier des avantages qui leur ont été consentis lorsque ceux-ci sont supérieurs à ceux que leur reconnaît le présent Code dont les dispositions ne s'opposent pas, par ailleurs, aux dispositions plus favorables qui peuvent être consenties par des conventions ou accords collectifs ou par des contrats particuliers."
       ],
-      "mots_cles": ["travailleur", "définition", "salarié", "employeur", "rémunération", "fonction publique", "grève", "conventions collectives"],
+      "mots_cles": [
+        "publique",
+        "présent",
+        "code",
+        "personne",
+        "administration",
+        "ceux",
+        "définition",
+        "considéré",
+        "quels",
+        "soient",
+        "sexe",
+        "nationalité"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 : Dispositions générales"
     },
@@ -42,7 +65,20 @@
       "texte": [
         "Toute personne, physique ou morale, publique ou privée, employant un ou plusieurs travailleurs au sens de l'article 2 est considérée comme constituant une entreprise et est soumise aux dispositions du présent code visant les employeurs."
       ],
-      "mots_cles": ["entreprise", "employeur", "définition"],
+      "mots_cles": [
+        "définition",
+        "personne",
+        "physique",
+        "morale",
+        "publique",
+        "privée",
+        "employant",
+        "plusieurs",
+        "considérée",
+        "constituant",
+        "soumise",
+        "présent"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 : Dispositions générales"
     },
@@ -55,7 +91,20 @@
         "Le terme « travail forcé » ne s'applique pas au travail ou service exigé en cas de guerre, de sinistre, de menace de sinistre, de désastre naturel ou d'épidémie, de façon générale, dans toutes circonstances susceptibles de mettre en danger la vie d'autrui ou les conditions normales d'existence de l'ensemble ou d'une partie de la population.",
         "Le terme « travail obligatoire » ne s'applique pas à tout travail décidé et exécuté de plein gré par une collectivité et visant à des tâches d'intérêt direct pour cette collectivité telles que l'établissement ou l'entretien des voies de communication, l'assainissement et la propreté des lieux d'habitation, le ravitaillement en eau, l'aménagement du sol, les constructions à des fins sociales, culturelles ou économiques."
       ],
-      "mots_cles": ["travail forcé", "travail obligatoire", "interdiction", "guerre", "sinistre", "épidémie"],
+      "mots_cles": [
+        "forcé",
+        "obligatoire",
+        "terme",
+        "façon",
+        "service",
+        "exigé",
+        "individu",
+        "menace",
+        "plein",
+        "applique",
+        "sinistre",
+        "collectivité"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 : Dispositions générales"
     }

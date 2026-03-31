@@ -20,7 +20,20 @@
         "[NB - Décret n°2024-2762 du 20 novembre 2024 fixant le montant du salaire minimum interprofessionnel garanti (SMIG)]",
         "Le présent décret fixe le salaire minimum interprofessionnel garanti (SMIG), valable sur l'ensemble du territoire national et dans tous les secteurs d'activités, à 70.400 FCFA par mois de travail."
       ],
-      "mots_cles": ["SMIG", "70 400 FCFA", "salaire minimum", "interprofessionnel", "national"],
+      "mots_cles": [
+        "smig",
+        "décret",
+        "salaire",
+        "minimum",
+        "interprofessionnel",
+        "garanti",
+        "fixation",
+        "novembre",
+        "fixant",
+        "montant",
+        "présent",
+        "valable"
+      ],
       "statut": "en vigueur",
       "section": "Décret SMIG"
     },
@@ -30,7 +43,20 @@
       "texte": [
         "Le réajustement, par un reversement des salaires définis par les conventions collectives et les statuts particuliers des organismes publics, est de plein droit lorsque lesdits salaires sont inférieurs à 70.400 FCFA."
       ],
-      "mots_cles": ["réajustement", "conventions collectives", "plein droit", "70 400 FCFA"],
+      "mots_cles": [
+        "salaires",
+        "réajustement",
+        "inférieurs",
+        "reversement",
+        "définis",
+        "conventions",
+        "collectives",
+        "statuts",
+        "particuliers",
+        "organismes",
+        "publics",
+        "plein"
+      ],
       "statut": "en vigueur",
       "section": "Décret SMIG"
     },
@@ -40,7 +66,15 @@
       "texte": [
         "Des arrêtés d'application précisent en tant que de besoin les dispositions des articles 1 et 2 du présent décret."
       ],
-      "mots_cles": ["arrêtés d'application"],
+      "mots_cles": [
+        "arrêtés",
+        "précisent",
+        "tant",
+        "besoin",
+        "présent",
+        "décret",
+        "présent décret"
+      ],
       "statut": "en vigueur",
       "section": "Décret SMIG"
     },
@@ -50,7 +84,20 @@
       "texte": [
         "Le Ministre chargé du travail veille à l'application du présent décret, qui prend effet à compter du 1er janvier 2025."
       ],
-      "mots_cles": ["entrée en vigueur", "1er janvier 2025", "Ministre du travail"],
+      "mots_cles": [
+        "entrée",
+        "ministre",
+        "chargé",
+        "veille",
+        "présent",
+        "décret",
+        "prend",
+        "effet",
+        "compter",
+        "janvier",
+        "ministre chargé",
+        "présent décret"
+      ],
       "statut": "en vigueur",
       "section": "Décret SMIG"
     },
@@ -60,7 +107,20 @@
       "texte": [
         "Le présent décret, qui abroge toutes dispositions antérieures contraires, notamment le décret n°2008-942 du 21 décembre 2008 fixant le montant du salaire minimum interprofessionnel garanti (SMIG), sera enregistré au Journal Officiel de la République du Congo."
       ],
-      "mots_cles": ["abrogation", "décret 2008-942", "Journal Officiel"],
+      "mots_cles": [
+        "décret",
+        "abrogation",
+        "précédent",
+        "présent",
+        "abroge",
+        "antérieures",
+        "contraires",
+        "notamment",
+        "décembre",
+        "fixant",
+        "montant",
+        "salaire"
+      ],
       "statut": "en vigueur",
       "section": "Décret SMIG"
     }

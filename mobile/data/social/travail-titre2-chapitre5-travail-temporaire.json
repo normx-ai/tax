@@ -20,7 +20,20 @@
         "(Loi n°06-96) Est, au sens de la présente section, un entrepreneur de travail temporaire ou d'intérim, toute personne physique ou morale dont l'activité exclusive est de mettre à la disposition provisoire d'utilisateurs des salariés qu'en fonction d'une qualification connue. Elle embauche et rémunère à cet effet.",
         "Il ne peut être fait appel aux salariés, mentionnés à l'alinéa précédent, que pour des missions non durables accomplies pour le compte d'un utilisateur dans les seuls cas prévus aux alinéas 1, 3, 5, 6 de l'article 32-3."
       ],
-      "mots_cles": ["travail temporaire", "intérim", "entrepreneur", "mise à disposition", "utilisateur", "qualification", "missions"],
+      "mots_cles": [
+        "entrepreneur",
+        "temporaire",
+        "salariés",
+        "définition",
+        "présente",
+        "intérim",
+        "personne",
+        "physique",
+        "morale",
+        "activité",
+        "exclusive",
+        "mettre"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -31,7 +44,20 @@
         "(Loi n°06-96) L'activité d'entrepreneur de travail temporaire ne peut s'exercer que dans le respect des lois et règlements en vigueur sur l'exercice des professions commerciales et des dispositions de l'article 181 du présent Code.",
         "Les personnes autorisées devront remplir certaines conditions fixées par décret."
       ],
-      "mots_cles": ["conditions", "exercice", "travail temporaire", "professions commerciales", "décret"],
+      "mots_cles": [
+        "exercice",
+        "temporaire",
+        "activité",
+        "entrepreneur",
+        "exercer",
+        "respect",
+        "lois",
+        "règlements",
+        "professions",
+        "commerciales",
+        "présent",
+        "code"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -48,7 +74,20 @@
         "- 5° mentionner la nature des équipements de protection individuelle que le salarié doit utiliser et, le cas échéant, préciser si ceux-ci sont fournis par l'entreprise de travail temporaire ;",
         "- 6° indiquer le montant de la rémunération avec ses différentes composantes, y compris, s'il en existe, les primes et accessoires de salaire que percevrait dans l'entreprise utilisatrice après période d'essai un salarié de qualification équivalente."
       ],
-      "mots_cles": ["contrat de mise à disposition", "écrit", "2 jours", "motif", "terme", "qualification", "rémunération", "équipements de protection"],
+      "mots_cles": [
+        "salarié",
+        "disposition",
+        "temporaire",
+        "mise",
+        "qualification",
+        "mission",
+        "entrepreneur",
+        "utilisateur",
+        "être",
+        "mentionner",
+        "terme",
+        "échéant"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     }

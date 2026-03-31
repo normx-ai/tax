@@ -19,7 +19,20 @@
       "texte": [
         "Tout assesseur du tribunal du Travail qui ne se sera pas rendu, à deux reprises successives et sans motif valable à son poste sur la citation qui lui aura été notifiée, pourra être déclaré, par le tribunal, incapable d'exercer les fonctions d'assesseur pendant la durée de son mandat."
       ],
-      "mots_cles": ["assesseur", "absence", "incapacité", "mandat"],
+      "mots_cles": [
+        "assesseur",
+        "tribunal",
+        "incapacité",
+        "absent",
+        "sera",
+        "rendu",
+        "deux",
+        "reprises",
+        "successives",
+        "motif",
+        "valable",
+        "poste"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Des contraventions"
     },
@@ -33,7 +46,20 @@
         "- c) les employeurs fondés de pouvoirs ou leurs préposés responsables du défaut d'affichage conforme aux dispositions de l'article 103.",
         "En ce qui concerne les infractions à l'arrêté prévu à l'article 182 (1), l'amende sera prononcée autant de fois qu'il y aura d'inscriptions omises ou erronées."
       ],
-      "mots_cles": ["amende", "10 000 FCFA", "20 000 FCFA", "récidive", "contravention"],
+      "mots_cles": [
+        "infractions",
+        "fcfa",
+        "amende",
+        "auteurs",
+        "amendes",
+        "seront",
+        "punis",
+        "francs",
+        "récidive",
+        "dernier",
+        "alinéa",
+        "arrêtés"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Des contraventions"
     },
@@ -46,7 +72,20 @@
         "- b) les auteurs d'infractions des dispositions des articles 9, 117 (2), 134 ;",
         "- c) les auteurs d'infractions des dispositions de l'article 141, alinéas 1 et 4, les employeurs ne tenant pas de registre de sécurité, de visites médicales, des accidents de travail et des maladies professionnelles et à caractère non professionnel."
       ],
-      "mots_cles": ["amende", "15 000 FCFA", "25 000 FCFA", "récidive", "sécurité", "registre"],
+      "mots_cles": [
+        "fcfa",
+        "infractions",
+        "amende",
+        "auteurs",
+        "amendes",
+        "seront",
+        "punis",
+        "récidive",
+        "arrêtés",
+        "décrets",
+        "prévus",
+        "alinéas"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Des contraventions"
     },
@@ -58,7 +97,20 @@
         "En cas de fausse déclaration relative aux statuts et aux noms et qualités des administrateurs et directeurs, l'amende pourra être portée à 36.0000 FCFA.",
         "Les peines prévues par la législation commerciale en vigueur contre les auteurs de contrefaçon, apposition, imitation ou usages frauduleux des marques de commerce sont applicables en matière de contrefaçon, apposition, imitation ou usages frauduleux des marques syndicales ou labels."
       ],
-      "mots_cles": ["infractions syndicales", "amende", "25 000 FCFA", "fausse déclaration", "contrefaçon", "marques syndicales"],
+      "mots_cles": [
+        "infractions",
+        "syndicales",
+        "directeurs",
+        "administrateurs",
+        "amende",
+        "fcfa",
+        "contrefaçon",
+        "apposition",
+        "imitation",
+        "usages",
+        "frauduleux",
+        "marques"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Des contraventions"
     },
@@ -76,7 +128,20 @@
         "Dans le cas d'infraction à l'article 76, s'il y a double récidive, l'emprisonnement est obligatoirement prononcé au maximum de sa peine.",
         "Dans le cas d'infraction à l'article 116, les pénalités ne seront pas encourues si l'infraction a été l'effet d'une erreur portant sur l'âge des enfants, commis lors de l'établissement du carnet du travailleur."
       ],
-      "mots_cles": ["amende", "36 000 FCFA", "100 000 FCFA", "récidive", "emprisonnement", "12 à 20 jours"],
+      "mots_cles": [
+        "récidive",
+        "personne",
+        "infraction",
+        "seront",
+        "auteurs",
+        "infractions",
+        "direction",
+        "régionale",
+        "double",
+        "emprisonnement",
+        "prononcé",
+        "amendes"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -92,7 +157,20 @@
         "- e) toute personne n'ayant pas envoyé les relevés des contrats de mission en matière de travail temporaire à la Direction régionale du travail ou à l'Office national de l'emploi et de la main-d'œuvre.",
         "La double récidive est punie d'un emprisonnement de douze à vingt jours."
       ],
-      "mots_cles": ["amende", "40 000 FCFA", "150 000 FCFA", "travailleur étranger", "carte de séjour", "emprisonnement"],
+      "mots_cles": [
+        "personne",
+        "emploi",
+        "amende",
+        "récidive",
+        "auteurs",
+        "infractions",
+        "matière",
+        "aura",
+        "autorisation",
+        "précédent",
+        "soit",
+        "amendes"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -103,7 +181,20 @@
         "(Loi n°06-96) Sera punie d'une amende de 100.000 à 250.0000 F et, en cas de récidive, d'une amende de 200.000 à 500.0000 F toute personne qui n'aura pas respecté le principe d'égalité de rémunération (au sens de l'article 73-3).",
         "La double récidive est punie d'un emprisonnement de quinze à vingt jours."
       ],
-      "mots_cles": ["égalité de rémunération", "amende", "100 000 FCFA", "emprisonnement"],
+      "mots_cles": [
+        "égalité",
+        "rémunération",
+        "punie",
+        "amende",
+        "récidive",
+        "sera",
+        "personne",
+        "aura",
+        "respecté",
+        "principe",
+        "double",
+        "emprisonnement"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -113,7 +204,20 @@
       "texte": [
         "(Loi n°06-96) Outre les sanctions prévues en cas d'inobservation des dispositions limitant les cas de rupture anticipée ou du délai de prévenance, les infractions constatées en matière de contrat de travail à durée déterminée sont punies d'une amende de 100.000 à 300.0000 F et, en cas de récidive, de 150.000 à 500.0000 F prononcée autant de fois qu'il y a de recrutements opérés dans les conditions irrégulières. En cas de double récidive, l'emprisonnement de quinze jours au plus est prononcé."
       ],
-      "mots_cles": ["CDD", "infractions", "amende", "100 000 FCFA", "emprisonnement", "15 jours"],
+      "mots_cles": [
+        "infractions",
+        "récidive",
+        "outre",
+        "sanctions",
+        "prévues",
+        "inobservation",
+        "limitant",
+        "rupture",
+        "anticipée",
+        "délai",
+        "prévenance",
+        "constatées"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -124,7 +228,20 @@
         "(Loi n°06-96) Seront punis d'une amende de 150.000 à 400.0000 F et, en cas de récidive, d'une amende de 300.000 à 600.0000 F quiconque aura porté ou tenté de porter atteinte soit à la libre désignation des membres du bureau syndical, soit à l'exercice régulier de leurs fonctions.",
         "En cas de double récidive, l'emprisonnement de vingt jours est prononcé."
       ],
-      "mots_cles": ["liberté syndicale", "atteinte", "amende", "150 000 FCFA", "emprisonnement", "20 jours"],
+      "mots_cles": [
+        "atteinte",
+        "amende",
+        "récidive",
+        "soit",
+        "liberté",
+        "syndicale",
+        "seront",
+        "punis",
+        "quiconque",
+        "aura",
+        "porté",
+        "tenté"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -135,7 +252,20 @@
         "(Loi n°06-96) Sera punie d'une amende de 200.000 à 500.0000 F et, en cas de récidive, d'une amende de 500.000 à 1.000.0000 F toute personne qui n'aura pas respecté le principe de l'égalité d'accès aux avantages collectifs en matière de travail temporaire.",
         "En cas de double récidive l'emprisonnement d'un mois est prononcé."
       ],
-      "mots_cles": ["égalité d'accès", "avantages collectifs", "travail temporaire", "amende", "emprisonnement", "1 mois"],
+      "mots_cles": [
+        "égalité",
+        "accès",
+        "avantages",
+        "collectifs",
+        "amende",
+        "récidive",
+        "sera",
+        "punie",
+        "personne",
+        "aura",
+        "respecté",
+        "principe"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -154,7 +284,20 @@
         "- h) toute personne exerçant l'activité d'entrepreneur de travail temporaire malgré une interdiction.",
         "En cas de double récidive l'emprisonnement d'un mois est prononcé."
       ],
-      "mots_cles": ["amende", "600 000 FCFA", "travail forcé", "fausse déclaration", "violence", "contrat fictif", "attestations mensongères", "emprisonnement", "1 mois"],
+      "mots_cles": [
+        "aura",
+        "volontairement",
+        "personne",
+        "tenté",
+        "embaucher",
+        "amende",
+        "récidive",
+        "interdiction",
+        "paiement",
+        "professionnelle",
+        "usage",
+        "carnet"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -170,7 +313,20 @@
         "- e) qui aura fait recours à un intermédiaire sans avoir conclu dans le délai prévu un contrat de mise à disposition conforme aux prescriptions légales ou en ayant fourni dans le contrat de mise à disposition des indications volontairement inexactes.",
         "En cas de double récidive, l'emprisonnement de deux à quatre mois est prononcé."
       ],
-      "mots_cles": ["utilisateur", "travail temporaire", "amende", "300 000 FCFA", "emprisonnement", "2 à 4 mois"],
+      "mots_cles": [
+        "recours",
+        "temporaire",
+        "ayant",
+        "aura",
+        "utilisateur",
+        "récidive",
+        "intermédiaire",
+        "durée",
+        "méconnaissance",
+        "respecté",
+        "délai",
+        "deux"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -183,7 +339,20 @@
         "- b) qui aura embauché un intérimaire sans lui avoir adressé dans le délai prévu un contrat écrit ou en ayant conclu un contrat ne comportant pas certaines mentions (mentions du contrat de mise à disposition, rémunération), ou encore en ayant conclu un contrat comportant des mentions volontairement inexactes ;",
         "- c) exerçant l'activité d'entrepreneur de travail temporaire à titre exclusif, ou sans déclaration à l'autorité administrative, ou sans obtention d'une garantie financière. En cas de double récidive, l'emprisonnement de deux à six mois est prononcé."
       ],
-      "mots_cles": ["entrepreneur travail temporaire", "amende", "500 000 FCFA", "contrat", "garantie financière", "emprisonnement"],
+      "mots_cles": [
+        "entrepreneur",
+        "temporaire",
+        "disposition",
+        "mentions",
+        "amende",
+        "récidive",
+        "aura",
+        "intérimaire",
+        "délai",
+        "prévu",
+        "mise",
+        "ayant"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -194,7 +363,20 @@
         "(Loi n°06-96) Dans tous les cas cités aux articles 254 nouveau (c, d, e), 255 nouveau (e, f), 255-2, 256-1, 257 nouveau (h), 257-2 et 257-3, le tribunal peut ordonner, aux frais de l'entrepreneur de travail temporaire ou de l'utilisateur condamné, l'affichage du jugement aux portes de l'entreprise et sa publication dans les journaux qu'il désigne.",
         "Le tribunal peut, en ce qui concerne les dispositions prévues à l'article 73-14, procéder soit à l'interdiction d'exercer pour une durée de deux à dix ans pour l'entrepreneur de travail temporaire, soit à la fermeture de l'entreprise pour une durée n'excédant pas deux mois."
       ],
-      "mots_cles": ["affichage jugement", "interdiction d'exercer", "2 à 10 ans", "fermeture entreprise", "2 mois"],
+      "mots_cles": [
+        "nouveau",
+        "affichage",
+        "jugement",
+        "interdiction",
+        "exercer",
+        "tribunal",
+        "entrepreneur",
+        "temporaire",
+        "soit",
+        "durée",
+        "deux",
+        "cités"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -207,7 +389,20 @@
         "- b) les auteurs d'infractions aux dispositions des décrets et arrêtés prévus aux articles 137, 142, et 148.",
         "En cas de double récidive l'emprisonnement de quarante jours est prononcé."
       ],
-      "mots_cles": ["amende", "900 000 FCFA", "1 500 000 FCFA", "hygiène", "sécurité", "emprisonnement", "40 jours"],
+      "mots_cles": [
+        "récidive",
+        "auteurs",
+        "infractions",
+        "amendes",
+        "fcfa",
+        "seront",
+        "punis",
+        "amende",
+        "décrets",
+        "arrêtés",
+        "prévus",
+        "double"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -219,7 +414,20 @@
         "En cas de récidive l'emprisonnement de deux à six mois est obligatoirement prononcé.",
         "Les dispositions du Code pénal qui prévoient et répriment les actes de résistance, les outrages et les violences contre les officiers de police judiciaire sont, en outre, applicables à ceux qui se rendent coupables des faits de même nature à l'égard des inspecteurs du travail et des lois sociales ou de leurs suppléants."
       ],
-      "mots_cles": ["opposition", "inspection du travail", "amende", "500 000 FCFA", "emprisonnement", "2 à 6 mois", "Code pénal"],
+      "mots_cles": [
+        "inspection",
+        "amende",
+        "récidive",
+        "suppléants",
+        "opposition",
+        "sera",
+        "punie",
+        "personne",
+        "opposée",
+        "tenté",
+        "opposer",
+        "exécution"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -229,7 +437,20 @@
       "texte": [
         "Sera puni des peines prévues par le Code pénal en matière d'abus de confiance, tout employeur qui aura retenu ou utilisé dans son intérêt personnel ou pour les besoins de son entreprise les sommes ou titres remis en cautionnement."
       ],
-      "mots_cles": ["abus de confiance", "cautionnement", "Code pénal"],
+      "mots_cles": [
+        "abus",
+        "confiance",
+        "cautionnement",
+        "sera",
+        "puni",
+        "peines",
+        "prévues",
+        "code",
+        "pénal",
+        "matière",
+        "aura",
+        "retenu"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -239,7 +460,20 @@
       "texte": [
         "(Loi n°06-96) Le paiement des sommes dues aux titres des sanctions pécuniaires prévues à l'article 154 de la présente loi est exigible dans un délai maximum de quinze jours à compter de la notification du montant de ces sommes."
       ],
-      "mots_cles": ["paiement", "sanctions pécuniaires", "15 jours", "notification"],
+      "mots_cles": [
+        "paiement",
+        "sanctions",
+        "pécuniaires",
+        "sommes",
+        "dues",
+        "titres",
+        "prévues",
+        "présente",
+        "exigible",
+        "délai",
+        "maximum",
+        "quinze"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -249,7 +483,20 @@
       "texte": [
         "(Loi n°06-96) Les dispositions du Code pénal en matière de défaillance du délinquant sont applicables à toute personne qui ne s'est pas acquittée dans les délais requis des amendes fixées au présent titre."
       ],
-      "mots_cles": ["défaillance", "délinquant", "Code pénal", "amendes"],
+      "mots_cles": [
+        "défaillance",
+        "délinquant",
+        "code",
+        "pénal",
+        "matière",
+        "applicables",
+        "personne",
+        "acquittée",
+        "délais",
+        "requis",
+        "amendes",
+        "fixées"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -264,7 +511,20 @@
         "Quant aux application des articles 254 nouveau et suivants, il y a récidive lorsque, dans les trois ans antérieurs au fait poursuivi, le contrevenant a déjà subi une condamnation pour un fait identique.",
         "Il y a double récidive lorsque le contrevenant pour un fait identique est déjà trouvé dans la situation de récidive. Toutefois, la double récidive ne s'applique qu'en cas de délit."
       ],
-      "mots_cles": ["sursis", "Code pénal", "amende", "50 fois", "récidive", "12 mois", "3 ans", "double récidive"],
+      "mots_cles": [
+        "récidive",
+        "contrevenant",
+        "déjà",
+        "identique",
+        "sursis",
+        "infractions",
+        "présent",
+        "fois",
+        "applique",
+        "antérieurs",
+        "poursuivi",
+        "subi"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     },
@@ -274,7 +534,20 @@
       "texte": [
         "Les chefs d'entreprises sont civilement responsables des condamnations prononcées contre leurs fondés de pouvoirs ou préposés."
       ],
-      "mots_cles": ["responsabilité civile", "chefs d'entreprise", "fondés de pouvoirs", "préposés"],
+      "mots_cles": [
+        "chefs",
+        "responsabilité",
+        "civile",
+        "entreprises",
+        "civilement",
+        "responsables",
+        "condamnations",
+        "prononcées",
+        "fondés",
+        "pouvoirs",
+        "préposés",
+        "responsabilité civile"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Des délits"
     }

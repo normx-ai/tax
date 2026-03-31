@@ -19,7 +19,20 @@
       "texte": [
         "Le contrat individuel de travail est un accord de volonté par lequel une personne s'engage à accomplir des actes matériels de nature professionnelle sous la direction et l'autorité d'une autre personne qui s'oblige à lui payer, en contrepartie, une rémunération, généralement en argent, appelée salaire."
       ],
-      "mots_cles": ["contrat individuel", "travail", "accord", "rémunération", "salaire", "direction", "autorité"],
+      "mots_cles": [
+        "individuel",
+        "personne",
+        "définition",
+        "accord",
+        "volonté",
+        "engage",
+        "accomplir",
+        "actes",
+        "matériels",
+        "nature",
+        "professionnelle",
+        "direction"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions d'ensemble"
     },
@@ -30,7 +43,20 @@
         "Les contrats sont passés librement, sous réserve des dispositions prévues à l'article 28, et dans les formes qu'il convient aux parties contractantes d'adopter. La preuve peut être rapportée par tous moyens.",
         "Le contrat écrit est exempt de tous droits de timbre et d'enregistrement."
       ],
-      "mots_cles": ["liberté contractuelle", "forme libre", "preuve", "timbre", "enregistrement"],
+      "mots_cles": [
+        "liberté",
+        "contractuelle",
+        "contrats",
+        "passés",
+        "librement",
+        "réserve",
+        "prévues",
+        "formes",
+        "convient",
+        "parties",
+        "contractantes",
+        "adopter"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions d'ensemble"
     },
@@ -40,7 +66,20 @@
       "texte": [
         "Pour des raisons d'ordre économique, démographique ou social, et notamment dans l'intérêt de la santé ou de l'hygiène publique, l'interdiction ou les limitations à l'embauchage dans les régions données pourront être décidées par décret."
       ],
-      "mots_cles": ["limitation", "embauchage", "décret", "santé", "hygiène publique"],
+      "mots_cles": [
+        "limitations",
+        "embauchage",
+        "raisons",
+        "ordre",
+        "économique",
+        "démographique",
+        "social",
+        "notamment",
+        "intérêt",
+        "santé",
+        "hygiène",
+        "publique"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions d'ensemble"
     },
@@ -51,7 +90,20 @@
         "Quels que soient le lieu de la conclusion du contrat et la résidence de l'une ou l'autre des parties, tout contrat de travail conclu pour être exécuté en République Populaire du Congo est soumis aux dispositions du présent Code.",
         "Il en est de même pour tout contrat de travail conclu pour être exécutée sous l'empire d'une autre législation, mais dont l'exécution partielle en République Populaire du Congo excède une durée de 3 mois consécutifs."
       ],
-      "mots_cles": ["lieu d'exécution", "Congo", "3 mois", "législation applicable"],
+      "mots_cles": [
+        "congo",
+        "exécuté",
+        "conclu",
+        "être",
+        "république",
+        "populaire",
+        "quels",
+        "soient",
+        "lieu",
+        "conclusion",
+        "résidence",
+        "parties"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions d'ensemble"
     },
@@ -63,7 +115,20 @@
         "Toutefois, il lui est loisible, sauf convention contraire, d'exercer, en dehors de son temps de travail, toute activité à caractère professionnel non susceptible de concurrencer l'entreprise ou de nuire à la bonne exécution des services convenus.",
         "Est nulle de plein droit toute clause d'un contrat de travail portant interdiction pour le travailleur d'exercer une activité quelconque à l'expiration ou en cas de rupture du contrat."
       ],
-      "mots_cles": ["exclusivité", "activité professionnelle", "concurrence", "clause de non-concurrence", "nullité"],
+      "mots_cles": [
+        "activité",
+        "professionnelle",
+        "sauf",
+        "exercer",
+        "exclusivité",
+        "dérogation",
+        "stipulée",
+        "toutefois",
+        "loisible",
+        "contraire",
+        "dehors",
+        "temps"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions d'ensemble"
     },
@@ -73,7 +138,20 @@
       "texte": [
         "Les formes et modalités d'établissement des contrats individuels de travail sont fixées par arrêté du Ministre du travail et de la prévoyance sociale pris après avis de la commission nationale consultative du travail."
       ],
-      "mots_cles": ["formes", "modalités", "arrêté", "Ministre du travail"],
+      "mots_cles": [
+        "formes",
+        "modalités",
+        "établissement",
+        "contrats",
+        "individuels",
+        "fixées",
+        "arrêté",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "pris",
+        "après"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Dispositions d'ensemble"
     },
@@ -85,7 +163,20 @@
         "Lorsque le contrat est conclu pour une durée déterminée, celle-ci ne peut excéder deux ans.",
         "Si le contrat arrivé à terme se poursuit par la volonté, même tacite, des parties, cette prolongation lui confère le caractère de contrat à durée indéterminée, nonobstant toute clause prohibant la tacite reconduction."
       ],
-      "mots_cles": ["durée déterminée", "durée indéterminée", "2 ans", "tacite reconduction", "CDD", "CDI"],
+      "mots_cles": [
+        "durée",
+        "déterminée",
+        "indéterminée",
+        "tacite",
+        "engager",
+        "services",
+        "temps",
+        "ouvrage",
+        "déterminé",
+        "conclu",
+        "celle",
+        "excéder"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 1 : Du contrat à durée déterminée ou indéterminée"
     },
@@ -104,7 +195,20 @@
         "- 8° le contrat conclu en vue de pourvoir aux emplois pour lesquels il est d'usage constant de ne pas recourir aux contrats à durée déterminée en raison de la nature de l'activité exercée et du caractère par nature temporaire de ces emplois.",
         "Les secteurs d'activité dans lesquels ces contrats peuvent être conclus sont déterminés par décret."
       ],
-      "mots_cles": ["CDD", "contrat à durée déterminée", "chantier", "surcroît", "remplacement", "emploi temporaire"],
+      "mots_cles": [
+        "durée",
+        "conclu",
+        "déterminée",
+        "contrats",
+        "temporaire",
+        "passé",
+        "salarié",
+        "certaines",
+        "catégories",
+        "décret",
+        "emplois",
+        "nature"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 1 : Du contrat à durée déterminée ou indéterminée"
     },
@@ -121,7 +225,20 @@
         "- la durée de la période d'essai éventuellement prévue ;",
         "- les modalités de paiement et les éléments de la rémunération."
       ],
-      "mots_cles": ["CDD", "forme écrite", "présomption CDI", "terme", "période d'essai", "rémunération"],
+      "mots_cles": [
+        "durée",
+        "terme",
+        "conclu",
+        "lorsqu",
+        "comporte",
+        "précis",
+        "report",
+        "forme",
+        "écrite",
+        "déterminée",
+        "être",
+        "écrit"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 1 : Du contrat à durée déterminée ou indéterminée"
     },
@@ -133,7 +250,20 @@
         "- 15 jours maximum pour les contrats dont la durée est inférieure ou égale à six mois ;",
         "- 1 mois pour les autres cas."
       ],
-      "mots_cles": ["période d'essai", "CDD", "15 jours", "1 mois", "6 mois"],
+      "mots_cles": [
+        "période",
+        "essai",
+        "durée",
+        "déterminée",
+        "mois",
+        "comporter",
+        "défaut",
+        "usage",
+        "conventionnelles",
+        "prévoyant",
+        "durées",
+        "moindres"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 1 : Du contrat à durée déterminée ou indéterminée"
     },
@@ -144,7 +274,20 @@
         "(Loi n°06-96) Le contrat de travail à durée déterminée ne peut être renouvelé qu'une fois pour une durée inférieure ou égale à celle de la période initiale. Dans tous les cas, cette durée ne peut excéder deux ans, renouvellement compris.",
         "Dans les cas prévus aux alinéas 2 et 5 de l'article 32-2, la durée du contrat ne pourra excéder six mois, renouvellement compris."
       ],
-      "mots_cles": ["renouvellement", "CDD", "1 fois", "2 ans", "6 mois"],
+      "mots_cles": [
+        "durée",
+        "renouvellement",
+        "excéder",
+        "compris",
+        "déterminée",
+        "être",
+        "renouvelé",
+        "fois",
+        "inférieure",
+        "égale",
+        "celle",
+        "période"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 1 : Du contrat à durée déterminée ou indéterminée"
     },
@@ -154,7 +297,20 @@
       "texte": [
         "(Loi n°06-96) Lorsque le contrat comporte une clause prévoyant un terme, il ne peut être reporté que pour une durée au plus égale au tiers de la période initiale. Le report de ce terme doit faire l'objet d'un avenant."
       ],
-      "mots_cles": ["report", "terme", "tiers", "avenant", "CDD"],
+      "mots_cles": [
+        "terme",
+        "report",
+        "comporte",
+        "clause",
+        "prévoyant",
+        "être",
+        "reporté",
+        "durée",
+        "égale",
+        "tiers",
+        "période",
+        "initiale"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 1 : Du contrat à durée déterminée ou indéterminée"
     },
@@ -170,7 +326,20 @@
         "- vérifié qu'un titre de transport aller et retour est prévu au contrat.",
         "Si le visa prévu au présent article est refusé, le contrat est nul de plein droit."
       ],
-      "mots_cles": ["visa", "ONEMO", "sortie du territoire", "transport", "nullité"],
+      "mots_cles": [
+        "visa",
+        "onemo",
+        "sortie",
+        "territoire",
+        "vérifié",
+        "prévu",
+        "passé",
+        "congolais",
+        "impliquant",
+        "république",
+        "populaire",
+        "congo"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 1 : Du contrat à durée déterminée ou indéterminée"
     },
@@ -182,7 +351,20 @@
         "Le contrat d'engagement à l'essai est, à peine de nullité, constaté par écrit. Il est soumis au visa s'il répond aux conditions prévues par l'article 33.",
         "Il peut constituer une clause incluse dans le corps d'un contrat appelé à devenir définitif."
       ],
-      "mots_cles": ["engagement à l'essai", "essai", "écrit", "nullité", "visa", "appréciation"],
+      "mots_cles": [
+        "engagement",
+        "essai",
+        "définitif",
+        "écrit",
+        "définition",
+        "conclure",
+        "verbal",
+        "décident",
+        "préalable",
+        "apprécier",
+        "notamment",
+        "premier"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 2 : Du contrat d'engagement à l'essai"
     },
@@ -194,7 +376,20 @@
         "Dans tous les cas il ne peut porter, renouvellement compris, sur une période maximum de 6 mois. Les délais de recrutement et de route ne sont pas compris dans la durée maximum de l'essai.",
         "S'il y a résiliation du contrat pendant la période d'essai par l'une ou l'autre des parties, le voyage du travailleur du lieu de recrutement au lieu d'emploi, et vice-versa est, dans tous les cas, supporté par l'employeur."
       ],
-      "mots_cles": ["durée essai", "6 mois", "renouvellement", "résiliation", "voyage", "recrutement"],
+      "mots_cles": [
+        "essai",
+        "durée",
+        "compris",
+        "période",
+        "maximum",
+        "recrutement",
+        "lieu",
+        "maximale",
+        "engagement",
+        "être",
+        "conclu",
+        "supérieure"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 2 : Du contrat d'engagement à l'essai"
     },
@@ -204,7 +399,20 @@
       "texte": [
         "La prolongation des services après expiration du contrat d'engagement à l'essai sans qu'il ait été établissement de nouveau contrat équivaut à la conclusion d'un contrat à durée indéterminée prenant effet à la date du début de l'essai."
       ],
-      "mots_cles": ["prolongation", "essai", "CDI", "durée indéterminée"],
+      "mots_cles": [
+        "essai",
+        "prolongation",
+        "après",
+        "vaut",
+        "services",
+        "expiration",
+        "engagement",
+        "établissement",
+        "nouveau",
+        "équivaut",
+        "conclusion",
+        "durée"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : De la conclusion et de l'exécution du contrat - Paragraphe 2 : Du contrat d'engagement à l'essai"
     },
@@ -214,7 +422,18 @@
       "texte": [
         "(Loi n°06-96) Le contrat de travail à durée déterminée prend fin à l'expiration du terme fixé."
       ],
-      "mots_cles": ["fin CDD", "terme", "expiration"],
+      "mots_cles": [
+        "durée",
+        "déterminée",
+        "prend",
+        "expiration",
+        "terme",
+        "fixé",
+        "cdd  loi",
+        "durée déterminée",
+        "prend fin",
+        "terme fixé"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 1 : Du contrat à durée déterminée"
     },
@@ -224,7 +443,16 @@
       "texte": [
         "(Loi n°06-96) La résolution peut être demandée par l'une des parties lorsque l'autre n'exécute pas ses obligations."
       ],
-      "mots_cles": ["résolution", "CDD", "inexécution", "obligations"],
+      "mots_cles": [
+        "résolution",
+        "être",
+        "demandée",
+        "parties",
+        "exécute",
+        "obligations",
+        "cdd  loi",
+        "être demandée"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 1 : Du contrat à durée déterminée"
     },
@@ -234,7 +462,20 @@
       "texte": [
         "(Loi n°06-96) Sauf accord des parties, le contrat de travail à durée déterminée ne peut être rompu avant l'échéance du terme qu'en cas de faute lourde ou de force majeure."
       ],
-      "mots_cles": ["rupture anticipée", "CDD", "faute lourde", "force majeure"],
+      "mots_cles": [
+        "rupture",
+        "anticipée",
+        "sauf",
+        "accord",
+        "parties",
+        "durée",
+        "déterminée",
+        "être",
+        "rompu",
+        "échéance",
+        "terme",
+        "faute"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 1 : Du contrat à durée déterminée"
     },
@@ -244,7 +485,20 @@
       "texte": [
         "(Loi n°06-96) En cas de rupture anticipée du fait de l'employeur, sous réserve de l'appréciation de la juridiction compétente, à titre d'indemnité, les rémunérations et les avantages de toute nature qu'il aurait recueillis si le contrat avait été exécuté jusqu'à la date prévue par les parties."
       ],
-      "mots_cles": ["rupture anticipée", "employeur", "indemnité", "rémunérations", "avantages"],
+      "mots_cles": [
+        "rupture",
+        "anticipée",
+        "indemnisation",
+        "réserve",
+        "appréciation",
+        "juridiction",
+        "compétente",
+        "indemnité",
+        "rémunérations",
+        "avantages",
+        "nature",
+        "aurait"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 1 : Du contrat à durée déterminée"
     },
@@ -255,7 +509,20 @@
         "(Loi n°06-96) La rupture du fait du salarié ouvre droit au profit de l'employeur à des dommages-intérêts correspondant au préjudice subi.",
         "Toutefois, il appartient à l'employeur d'apporter la preuve du préjudice. Dans ce cas, il peut conclure immédiatement un nouveau contrat de travail à durée déterminée pour pourvoir le poste abandonné."
       ],
-      "mots_cles": ["rupture", "salarié", "dommages-intérêts", "préjudice", "remplacement"],
+      "mots_cles": [
+        "rupture",
+        "salarié",
+        "préjudice",
+        "anticipée",
+        "ouvre",
+        "droit",
+        "profit",
+        "dommages",
+        "intérêts",
+        "correspondant",
+        "subi",
+        "toutefois"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 1 : Du contrat à durée déterminée"
     },
@@ -266,7 +533,20 @@
         "Sauf dispositions particulières expressément prévues au contrat, l'engagement à l'essai peut, à tout moment, cesser sans préavis par la volonté de l'une des parties.",
         "Toutefois, la partie qui prend l'initiative de la rupture du contrat de travail à l'essai doit rapporter la preuve ou le motif de sa non-satisfaction devant l'inspecteur du travail ou l'autorité compétente qui en apprécie l'authenticité."
       ],
-      "mots_cles": ["essai", "rupture", "sans préavis", "preuve", "inspecteur du travail"],
+      "mots_cles": [
+        "essai",
+        "rupture",
+        "sauf",
+        "particulières",
+        "expressément",
+        "prévues",
+        "engagement",
+        "moment",
+        "cesser",
+        "préavis",
+        "volonté",
+        "parties"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 2 : Du contrat d'engagement à l'essai"
     },
@@ -288,7 +568,20 @@
         "- l'arrêté n°1108/MTFPSS-DGT du 24 juin 1996 fixant la procédure de licenciement individuel ou collectif pour cause économique ou structurelle et de rupture du contrat par mutuel consentement, page 73",
         "- l'arrêté n°1701/MTFPSS-DGT du 7 août 1996 portant composition et fonctionnement de la Commission des litiges, page 74]"
       ],
-      "mots_cles": ["CDI", "résiliation", "préavis", "licenciement", "motif", "notification écrite", "délégués du personnel", "ancienneté", "commission des litiges", "consentement mutuel", "prime de départ"],
+      "mots_cles": [
+        "rupture",
+        "commission",
+        "préavis",
+        "licenciement",
+        "litiges",
+        "salarié",
+        "consentement",
+        "durée",
+        "devant",
+        "arrêté",
+        "ministre",
+        "après"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 3 : Du contrat à durée indéterminée"
     },
@@ -301,7 +594,20 @@
         "- liquidation des biens ;",
         "- cessation d'activité pour fin de travaux, lorsque les salariés sont liés à l'employeur par des contrats de travail conclus pour la durée du chantier ou de l'ouvrage."
       ],
-      "mots_cles": ["exceptions", "faillite", "liquidation", "cessation", "chantier"],
+      "mots_cles": [
+        "exceptions",
+        "licenciement",
+        "économique",
+        "nouveau",
+        "appliquent",
+        "règlement",
+        "judiciaire",
+        "faillite",
+        "liquidation",
+        "biens",
+        "cessation",
+        "activité"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 3 : Du contrat à durée indéterminée"
     },
@@ -311,7 +617,20 @@
       "texte": [
         "(Loi n°06-96) Dans les cas prévus à l'article 39-2 ci-dessus, l'employeur ou le syndicat doit réunir les délégués du personnel pour les informer du calendrier prévisionnel des licenciements envisagés."
       ],
-      "mots_cles": ["délégués du personnel", "information", "calendrier", "licenciement"],
+      "mots_cles": [
+        "délégués",
+        "information",
+        "exception",
+        "prévus",
+        "syndicat",
+        "réunir",
+        "personnel",
+        "informer",
+        "calendrier",
+        "prévisionnel",
+        "licenciements",
+        "envisagés"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 3 : Du contrat à durée indéterminée"
     },
@@ -323,7 +642,20 @@
         "En vue de la recherche d'un autre emploi, le travailleur bénéficiera pendant la durée du préavis, de deux jours de liberté par semaine pris à son choix, payés à plein salaire.",
         "La partie à l'égard de laquelle ces obligations ne seraient pas respectées sera dispensée d'observer le délai de préavis restant à courir, sans préjudice des dommages-intérêts qu'elle jugerait bon de demander."
       ],
-      "mots_cles": ["préavis", "obligations", "2 jours de liberté", "recherche emploi"],
+      "mots_cles": [
+        "préavis",
+        "obligations",
+        "durée",
+        "tenus",
+        "respect",
+        "réciproques",
+        "incombent",
+        "recherche",
+        "emploi",
+        "bénéficiera",
+        "deux",
+        "jours"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 3 : Du contrat à durée indéterminée"
     },
@@ -336,7 +668,20 @@
         "Cependant la rupture de contrat peut intervenir sans préavis en cas de faute lourde.",
         "Dans ce cas, le licenciement ne prend effet qu'après que le travailleur ait présenté sa défense auprès de l'employeur avec la faculté de se faire assister par une personne de son choix. Pendant le délai nécessaire au travailleur pour présenter sa défense, ce délai ne pouvant excéder trente jours, les relations de travail sont suspendues."
       ],
-      "mots_cles": ["indemnité compensatrice", "préavis", "faute lourde", "défense", "30 jours", "suspension"],
+      "mots_cles": [
+        "préavis",
+        "indemnité",
+        "délai",
+        "compensatrice",
+        "rupture",
+        "jours",
+        "défense",
+        "durée",
+        "indéterminée",
+        "intégralement",
+        "observé",
+        "emporte"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 3 : Du contrat à durée indéterminée"
     },
@@ -354,7 +699,20 @@
         "- b) lorsque la responsabilité incombe à l'employeur, des usages, de la nature des services engagés, de l'ancienneté des services, de l'âge du travailleur et des droits acquis à quelque titre que ce soit.",
         "Ces dommages-intérêts ne se confondent ni avec l'indemnité pour inobservation de préavis, ni avec l'indemnité de licenciement éventuellement prévue par le contrat ou la convention collective."
       ],
-      "mots_cles": ["rupture abusive", "réintégration", "licenciement abusif", "motif légitime", "syndicat", "dommages-intérêts", "ancienneté"],
+      "mots_cles": [
+        "réintégration",
+        "licenciements",
+        "motif",
+        "incombe",
+        "rupture",
+        "abusive",
+        "lieu",
+        "juridiction",
+        "compétente",
+        "légitime",
+        "appartenance",
+        "existence"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 4 : Des dispositions communes ou particulières à la résiliation des contrats individuels de travail"
     },
@@ -367,7 +725,20 @@
         "- 2° quand il a embauché un travailleur qu'il savait déjà lié par un contrat de travail ;",
         "- 3° quand il a continué à occuper un travailleur après avoir appris que ce travailleur était encore lié à un autre employeur par un contrat de travail. Dans ce troisième cas, la responsabilité du nouvel employeur cesse d'exister si, au moment où il a été averti, le contrat de travail abusivement rompu par le travailleur était venu à expiration, soit, s'il s'agit de contrat à durée déterminée, par l'arrivée du terme, soit s'il s'agit de contrat à durée indéterminée, par l'expiration du préavis ou si l'engagement du travailleur a été effectué dans les conditions prévues à l'article 41."
       ],
-      "mots_cles": ["responsabilité solidaire", "nouvel employeur", "débauchage", "contrat existant"],
+      "mots_cles": [
+        "nouvel",
+        "quand",
+        "responsabilité",
+        "rompu",
+        "abusivement",
+        "était",
+        "expiration",
+        "soit",
+        "agit",
+        "durée",
+        "solidaire",
+        "lorsqu"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 4 : Des dispositions communes ou particulières à la résiliation des contrats individuels de travail"
     },
@@ -377,7 +748,20 @@
       "texte": [
         "En cas de résiliation avant terme d'un contrat soumis aux dispositions de l'article 33, l'employeur est tenu d'en aviser dans les 15 jours l'autorité devant laquelle le contrat a été conclu."
       ],
-      "mots_cles": ["résiliation", "15 jours", "avis", "autorité"],
+      "mots_cles": [
+        "résiliation",
+        "obligation",
+        "avis",
+        "anticipée",
+        "terme",
+        "soumis",
+        "tenu",
+        "aviser",
+        "jours",
+        "autorité",
+        "devant",
+        "conclu"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 4 : Des dispositions communes ou particulières à la résiliation des contrats individuels de travail"
     },
@@ -389,7 +773,20 @@
         "La cessation de l'entreprise, sauf le cas de force majeure, ne dispense pas l'employeur de respecter les règles établies par ladite section. La faillite et la liquidation judiciaire ne sont pas considérées, comme des cas de force majeure.",
         "Les parties ne peuvent renoncer à l'avance au droit éventuel de demander des dommages-intérêts en vertu des dispositions ci-dessus."
       ],
-      "mots_cles": ["modification employeur", "succession", "vente", "fusion", "maintien contrats", "faillite", "force majeure"],
+      "mots_cles": [
+        "modification",
+        "situation",
+        "juridique",
+        "force",
+        "majeure",
+        "survient",
+        "notamment",
+        "succession",
+        "vente",
+        "fusion",
+        "transformation",
+        "fonds"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 4 : Des dispositions communes ou particulières à la résiliation des contrats individuels de travail"
     },
@@ -400,7 +797,20 @@
         "À l'expiration du contrat de travail, tout employeur est tenu de remettre à son travailleur, sous peine de dommages-intérêts, un certificat indiquant exclusivement la date de son entrée, celle de sa sortie, la nature et les dates des emplois successivement occupés.",
         "Ce certificat est exempt de tous droits de timbre et d'enregistrement, même s'il contient la formule « libre de tout engagement » ou toute autre formule ne constituant ni obligation ni quittance."
       ],
-      "mots_cles": ["certificat de travail", "fin de contrat", "dates", "emplois", "timbre", "libre de tout engagement"],
+      "mots_cles": [
+        "certificat",
+        "formule",
+        "expiration",
+        "tenu",
+        "remettre",
+        "peine",
+        "dommages",
+        "intérêts",
+        "indiquant",
+        "exclusivement",
+        "date",
+        "entrée"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : De la résiliation du contrat individuel de travail - Paragraphe 4 : Des dispositions communes ou particulières à la résiliation des contrats individuels de travail"
     },
@@ -422,7 +832,20 @@
         "- k) en cas de mise en disponibilité du travailleur ;",
         "- l) en cas de mise à pied pour raison disciplinaire ou du salarié protégé comme mesure conservatoire (article 176 du présent Code)."
       ],
-      "mots_cles": ["suspension", "contrat de travail", "maladie", "6 mois", "service militaire", "accident du travail", "détention", "maternité", "grève", "lock-out", "chômage économique", "chômage technique", "mise à pied"],
+      "mots_cles": [
+        "durée",
+        "militaire",
+        "mise",
+        "période",
+        "instruction",
+        "périodes",
+        "maladie",
+        "limitée",
+        "mois",
+        "présent",
+        "code",
+        "suspension"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail"
     },
@@ -432,7 +855,20 @@
       "texte": [
         "(Loi n°06-96) Le chômage économique est une mesure de suspension des contrats individuels de travail à l'initiative de l'employeur pour motif d'ordre économique."
       ],
-      "mots_cles": ["chômage économique", "suspension", "motif économique"],
+      "mots_cles": [
+        "économique",
+        "chômage",
+        "définition",
+        "mesure",
+        "suspension",
+        "contrats",
+        "individuels",
+        "initiative",
+        "motif",
+        "ordre",
+        "chômage économique",
+        "définition  loi"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 1 : Du chômage économique"
     },
@@ -442,7 +878,20 @@
       "texte": [
         "(Loi n°06-96) Tout employeur désireux de mettre une partie ou la totalité de son personnel en chômage économique est tenu d'adresser au Directeur régional du travail du ressort un dossier économique et financier accompagné de l'avis écrit des partenaires sociaux au sein de l'entreprise."
       ],
-      "mots_cles": ["chômage économique", "procédure", "Directeur régional", "dossier", "partenaires sociaux"],
+      "mots_cles": [
+        "économique",
+        "chômage",
+        "procédure",
+        "désireux",
+        "mettre",
+        "totalité",
+        "personnel",
+        "tenu",
+        "adresser",
+        "directeur",
+        "régional",
+        "ressort"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 1 : Du chômage économique"
     },
@@ -452,7 +901,20 @@
       "texte": [
         "(Loi n°06-96) Le Directeur régional du travail doit convoquer la commission des litiges au plus tard dans les quinze jours qui suivent le dépôt de la demande d'autorisation du chômage économique ; au-delà, l'autorisation est réputée avoir été accordée."
       ],
-      "mots_cles": ["commission des litiges", "15 jours", "autorisation", "chômage économique"],
+      "mots_cles": [
+        "commission",
+        "litiges",
+        "chômage",
+        "économique",
+        "autorisation",
+        "directeur",
+        "régional",
+        "convoquer",
+        "tard",
+        "quinze",
+        "jours",
+        "suivent"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 1 : Du chômage économique"
     },
@@ -462,7 +924,20 @@
       "texte": [
         "(Loi n°06-96) La commission des litiges constate la réalité des faits invoqués et autorise ou refuse la mesure sollicitée."
       ],
-      "mots_cles": ["commission des litiges", "vérification", "autorisation", "refus"],
+      "mots_cles": [
+        "commission",
+        "litiges",
+        "décision",
+        "constate",
+        "réalité",
+        "faits",
+        "invoqués",
+        "autorise",
+        "refuse",
+        "mesure",
+        "sollicitée",
+        "litiges  loi"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 1 : Du chômage économique"
     },
@@ -473,7 +948,20 @@
         "(Loi n°06-96) Si la commission des litiges autorise la mesure, celle-ci ne peut s'imposer aux travailleurs que sous réserve de leur accord individuellement exprimé préalablement à l'avis de la commission.",
         "En cas de refus du travailleur, la rupture du contrat de travail qui peut en résulter est du fait de l'employeur."
       ],
-      "mots_cles": ["accord individuel", "travailleur", "refus", "rupture", "fait de l'employeur"],
+      "mots_cles": [
+        "accord",
+        "commission",
+        "individuel",
+        "litiges",
+        "autorise",
+        "mesure",
+        "celle",
+        "imposer",
+        "réserve",
+        "individuellement",
+        "exprimé",
+        "préalablement"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 1 : Du chômage économique"
     },
@@ -483,7 +971,17 @@
       "texte": [
         "(Loi n°06-96) La durée du chômage économique est de trois mois renouvelables une fois."
       ],
-      "mots_cles": ["durée", "3 mois", "renouvelable", "chômage économique"],
+      "mots_cles": [
+        "durée",
+        "chômage",
+        "économique",
+        "trois",
+        "mois",
+        "renouvelables",
+        "fois",
+        "chômage économique",
+        "trois mois"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 1 : Du chômage économique"
     },
@@ -493,7 +991,19 @@
       "texte": [
         "(Loi n°06-96) Le chômage économique prononcé sans l'autorisation de la commission des litiges ou malgré le refus de celle-ci est nul."
       ],
-      "mots_cles": ["nullité", "chômage économique", "sans autorisation"],
+      "mots_cles": [
+        "chômage",
+        "économique",
+        "autorisation",
+        "nullité",
+        "prononcé",
+        "commission",
+        "litiges",
+        "malgré",
+        "refus",
+        "celle",
+        "chômage économique"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 1 : Du chômage économique"
     },
@@ -504,7 +1014,20 @@
         "(Loi n°06-96) Le chômage technique est une mesure de suspension des contrats individuels de travail due à l'impossibilité matérielle dans laquelle se trouve l'employeur de fournir du travail dans tout ou partie de l'entreprise.",
         "Le chômage technique peut résulter notamment d'un événement de force majeure ou du fait du prince, des intempéries à caractère exceptionnel, des difficultés d'approvisionnement en matières premières et en énergie, d'un sinistre, d'un incendie, ou de toutes circonstances à caractère exceptionnel."
       ],
-      "mots_cles": ["chômage technique", "suspension", "impossibilité matérielle", "force majeure", "intempéries", "sinistre", "incendie"],
+      "mots_cles": [
+        "chômage",
+        "technique",
+        "caractère",
+        "exceptionnel",
+        "définition",
+        "mesure",
+        "suspension",
+        "contrats",
+        "individuels",
+        "impossibilité",
+        "matérielle",
+        "trouve"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 2 : Du chômage technique"
     },
@@ -514,7 +1037,20 @@
       "texte": [
         "(Loi n°06-96) L'employeur qui désire mettre son personnel en chômage technique est tenu de saisir immédiatement, après avis des partenaires sociaux au sein de l'entreprise, le Directeur régional du travail de ressort qui, après avoir vérifié la réalité des faits ou causes justificatives de la suspension, convoque la commission des litiges dans un délai de dix jours maximum."
       ],
-      "mots_cles": ["chômage technique", "procédure", "Directeur régional", "10 jours", "commission des litiges"],
+      "mots_cles": [
+        "chômage",
+        "technique",
+        "après",
+        "procédure",
+        "désire",
+        "mettre",
+        "personnel",
+        "tenu",
+        "saisir",
+        "immédiatement",
+        "avis",
+        "partenaires"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 2 : Du chômage technique"
     },
@@ -524,7 +1060,19 @@
       "texte": [
         "(Loi n°06-96) La période de chômage technique ne peut excéder six mois, renouvellement compris."
       ],
-      "mots_cles": ["durée", "6 mois", "chômage technique"],
+      "mots_cles": [
+        "chômage",
+        "technique",
+        "durée",
+        "période",
+        "excéder",
+        "mois",
+        "renouvellement",
+        "compris",
+        "chômage technique",
+        "six mois",
+        "renouvellement compris"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 2 : Du chômage technique"
     },
@@ -535,7 +1083,20 @@
         "(Loi n°06-96) Pendant les périodes de chômage économique ou technique, l'employeur ne peut recourir à la réduction de l'horaire hebdomadaire de travail, aux heures supplémentaires pour les travailleurs restant dans l'entreprise et à l'embauche des nouveaux travailleurs.",
         "Toutefois, ces périodes doivent être considérées comme temps de travail effectif pour l'appréciation, notamment, du droit au préavis et du montant de l'indemnité de licenciement."
       ],
-      "mots_cles": ["heures supplémentaires", "interdiction", "embauche", "temps de travail effectif", "préavis", "indemnité de licenciement"],
+      "mots_cles": [
+        "heures",
+        "supplémentaires",
+        "chômage",
+        "périodes",
+        "interdiction",
+        "économique",
+        "technique",
+        "recourir",
+        "réduction",
+        "horaire",
+        "hebdomadaire",
+        "restant"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 3 : Dispositions communes"
     },
@@ -546,7 +1107,20 @@
         "(Loi n°06-96) Le travailleur mis en chômage économique ou technique perçoit de son employeur une indemnité mensuelle égale au tiers de son salaire catégoriel, plus tous les accessoires de salaire non liés à la prestation effective du travail.",
         "Il bénéficie en outre des frais médicaux et pharmaceutiques et des autres prestations de sécurité sociale prévues par la convention collective en vigueur."
       ],
-      "mots_cles": ["indemnité", "tiers du salaire", "chômage", "frais médicaux", "sécurité sociale"],
+      "mots_cles": [
+        "indemnité",
+        "chômage",
+        "économique",
+        "technique",
+        "salaire",
+        "perçoit",
+        "mensuelle",
+        "égale",
+        "tiers",
+        "catégoriel",
+        "accessoires",
+        "liés"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 3 : Dispositions communes"
     },
@@ -556,7 +1130,20 @@
       "texte": [
         "(Loi n°06-96) Le travailleur mis en chômage économique ou technique peut, au cas où il trouve un nouvel emploi, quitter son dernier employeur sans lui être redevable d'aucune indemnité."
       ],
-      "mots_cles": ["départ", "nouvel emploi", "pas d'indemnité", "chômage"],
+      "mots_cles": [
+        "quitter",
+        "chômage",
+        "droit",
+        "économique",
+        "technique",
+        "trouve",
+        "nouvel",
+        "emploi",
+        "dernier",
+        "être",
+        "redevable",
+        "aucune"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 3 : Dispositions communes"
     },
@@ -566,7 +1153,20 @@
       "texte": [
         "(Loi n°06-96) Lorsque la mesure du chômage économique ou technique aboutit à un licenciement, la base de calcul de l'indemnité due par l'employeur est le salaire du travailleur avant la mesure du chômage économique ou technique. Il en est de même du calcul des primes dues pendant la durée de la mesure."
       ],
-      "mots_cles": ["indemnité de licenciement", "base de calcul", "salaire avant chômage", "primes"],
+      "mots_cles": [
+        "calcul",
+        "mesure",
+        "base",
+        "indemnité",
+        "licenciement",
+        "chômage",
+        "économique",
+        "technique",
+        "aboutit",
+        "salaire",
+        "même",
+        "primes"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 3 : Dispositions communes"
     },
@@ -577,7 +1177,20 @@
         "(Loi n°06-96) Les décisions de la commission des litiges en matière de chômage économique ou technique peuvent être contestées conformément à l'article 39, alinéa 8, du présent Code.",
         "[NB - Articles 48 et 49 : Voir la section 4 ci-dessus. Suite à l'insertion des articles 47-1 à 47-16 par la loi n°6-96, les articles 48 et 49 se retrouvent placés par erreur sous la section 5 « Du chômage économique et technique », mais concernent la section 4 « De la suspension du contrat individuel de travail »]"
       ],
-      "mots_cles": ["contestation", "commission des litiges", "recours", "article 39"],
+      "mots_cles": [
+        "décisions",
+        "commission",
+        "chômage",
+        "économique",
+        "technique",
+        "contestation",
+        "litiges",
+        "matière",
+        "peuvent",
+        "être",
+        "contestées",
+        "conformément"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail - Paragraphe 3 : Dispositions communes"
     },
@@ -588,7 +1201,20 @@
         "Dans les cas prévus aux alinéas a, b et c, l'employeur est tenu de verser au travailleur, dans la limite normale du préavis, une indemnité égale au montant de sa rémunération pendant la durée de l'absence.",
         "Si le contrat est à durée déterminée, la limite du préavis à prendre en considération est celle fixée dans les conditions prévues à l'article 39 pour les contrats à durée indéterminée. Dans ce cas la suspension ne peut avoir pour effet de proroger le terme du contrat initialement prévu."
       ],
-      "mots_cles": ["indemnité", "suspension", "préavis", "rémunération", "CDD"],
+      "mots_cles": [
+        "durée",
+        "indemnité",
+        "suspension",
+        "limite",
+        "préavis",
+        "prévus",
+        "alinéas",
+        "tenu",
+        "verser",
+        "normale",
+        "égale",
+        "montant"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail"
     },
@@ -598,7 +1224,15 @@
       "texte": [
         "Les dispositions des articles 37, 39 à 46 ne s'appliquent pas, sauf convention contraire, aux contrats d'engagement à l'essai."
       ],
-      "mots_cles": ["essai", "inapplicabilité", "exception"],
+      "mots_cles": [
+        "contrats",
+        "essai",
+        "inapplicabilité",
+        "appliquent",
+        "sauf",
+        "contraire",
+        "engagement"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : De la suspension du contrat individuel de travail"
     }

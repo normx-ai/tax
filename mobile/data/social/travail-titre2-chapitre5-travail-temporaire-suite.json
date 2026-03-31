@@ -29,7 +29,20 @@
         "La durée totale du contrat, renouvellement compris, ne peut excéder vingt-quatre mois.",
         "Toute clause tendant à interdire l'embauchage du salarié temporaire à l'issue de sa mission est prohibée et réputée non écrite."
       ],
-      "mots_cles": ["contrat travail temporaire", "écrit", "2 jours", "rémunération", "rapatriement", "24 mois", "clause non écrite"],
+      "mots_cles": [
+        "salarié",
+        "temporaire",
+        "entrepreneur",
+        "clause",
+        "liant",
+        "disposition",
+        "rémunération",
+        "compris",
+        "mission",
+        "profession",
+        "chacun",
+        "salariés"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -39,7 +52,20 @@
       "texte": [
         "(Loi n°06-96) La rémunération que perçoit le salarié, lié par un contrat de travail temporaire, ne peut être inférieure, selon les conventions collectives de la branche d'activité de l'utilisateur, à celle définie au point 6 de l'article 73-3."
       ],
-      "mots_cles": ["rémunération", "salarié temporaire", "convention collective", "utilisateur"],
+      "mots_cles": [
+        "rémunération",
+        "salarié",
+        "temporaire",
+        "perçoit",
+        "être",
+        "inférieure",
+        "conventions",
+        "collectives",
+        "branche",
+        "activité",
+        "utilisateur",
+        "celle"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -54,7 +80,20 @@
         "Les équipements de protection individuelle sont fournis par l'utilisateur. Toutefois, certains équipements de protection personnalisée, définis par voie de convention ou d'accord collectif, peuvent être fournis par l'entrepreneur de travail temporaire. Les salariés temporaires ne doivent pas supporter la charge financière des équipements de protection individuelle.",
         "L'entreprise de travail temporaire est responsable des dommages pouvant être causés à l'utilisateur par le travailleur temporaire pendant sa mission."
       ],
-      "mots_cles": ["utilisateur", "responsabilité", "conditions d'exécution", "médecine du travail", "équipements de protection", "dommages"],
+      "mots_cles": [
+        "utilisateur",
+        "temporaire",
+        "médecine",
+        "charge",
+        "équipements",
+        "protection",
+        "durée",
+        "mission",
+        "responsable",
+        "exécution",
+        "obligations",
+        "entrepreneur"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -68,7 +107,20 @@
         "Toutefois, lorsque la durée restant à courir est supérieure à quatre semaines, les obligations visées aux alinéas précédents peuvent être satisfaites au moyen de trois contrats successifs au plus.",
         "La résiliation du contrat à l'initiative du salarié ouvre droit à des dommages-intérêts correspondant au préjudice subi, conformément à l'article 37-5 du présent Code du travail."
       ],
-      "mots_cles": ["rupture anticipée", "entrepreneur", "nouveau contrat", "3 jours", "rémunération équivalente", "dommages-intérêts"],
+      "mots_cles": [
+        "salarié",
+        "entrepreneur",
+        "temporaire",
+        "nouveau",
+        "rupture",
+        "terme",
+        "trois",
+        "rémunération",
+        "durée",
+        "celle",
+        "restant",
+        "courir"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -85,7 +137,20 @@
         "Les entreprises de travail temporaire sont tenues de fournir aux entreprises utilisatrices, sur leur demande, une attestation des organismes de sécurité sociale précisant leur situation au regard du recouvrement des cotisations dues à ces organismes.",
         "Les conditions d'application de cet article, notamment celles relatives à la défaillance de l'entrepreneur de travail temporaire, à la mise en jeu de la garantie financière, à la subrogation des organismes assurant cette caution dans les droits et actions des salariés, des organismes de sécurité sociale et des institutions sociales, à la substitution de l'utilisateur à l'entrepreneur de travail temporaire, ainsi que les modèles des attestations prévues ci-dessus sont fixés par arrêté du Ministre du Travail."
       ],
-      "mots_cles": ["caution", "garantie financière", "établissement financier", "salaires", "sécurité sociale", "substitution"],
+      "mots_cles": [
+        "organismes",
+        "temporaire",
+        "entrepreneur",
+        "caution",
+        "sécurité",
+        "sociale",
+        "dues",
+        "institutions",
+        "salariés",
+        "assurant",
+        "défaillance",
+        "paiement"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -96,7 +161,20 @@
         "(Loi n°06-96) La caution visée à l'article précédent est calculée en pourcentage du capital d'ouverture. Elle fera l'objet d'un réexamen chaque année en fonction de l'évolution du chiffre d'affaires.",
         "Un décret pris après avis de la Commission nationale consultative du travail déterminera les règles applicables à la caution exigée des entreprises de temporaires ainsi qu'à la substitution de l'utilisateur de travail temporaire en cas de défaillance de celui-ci."
       ],
-      "mots_cles": ["caution", "pourcentage", "capital", "chiffre d'affaires", "décret"],
+      "mots_cles": [
+        "caution",
+        "calcul",
+        "visée",
+        "précédent",
+        "calculée",
+        "pourcentage",
+        "capital",
+        "ouverture",
+        "fera",
+        "objet",
+        "réexamen",
+        "année"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -107,7 +185,20 @@
         "(Loi n°06-96) L'entreprise de travail temporaire doit être en possession, pour chacun de ses établissements, d'une attestation délivrée par le garant, indiquant notamment le nom et l'adresse de celui-ci, le montant, la date de prise d'effet et la date d'expiration de la garantie accordée. Cette attestation de garantie est tenue à la disposition de l'inspecteur du travail compétent et des agents de contrôle des organismes de sécurité sociale et autres institutions sociales.",
         "L'entreprise de travail temporaire adresse, dans les dix jours après l'obtention ou le renouvellement de la garantie financière, une copie de cette attestation à la Direction régionale du travail ainsi qu'à la Caisse nationale de sécurité sociale pour chacun des établissements concernés."
       ],
-      "mots_cles": ["attestation", "garantie financière", "garant", "10 jours", "Direction régionale", "CNSS"],
+      "mots_cles": [
+        "attestation",
+        "garantie",
+        "financière",
+        "temporaire",
+        "chacun",
+        "établissements",
+        "adresse",
+        "date",
+        "sécurité",
+        "sociale",
+        "être",
+        "possession"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -118,7 +209,20 @@
         "(Loi n°06-96) Les entrepreneurs de travail temporaire sont tenus de faire figurer sur tous les documents concernant leur entreprise, notamment sur les contrats de mise à disposition, le nom et l'adresse de leur garant ainsi que les références de l'article 73-8.",
         "Ces mêmes indications ainsi que les dates de prise d'effet et d'échéance de la garantie doivent être affichées de manière visible dans les locaux de leurs établissements."
       ],
-      "mots_cles": ["mentions obligatoires", "documents", "affichage", "garant"],
+      "mots_cles": [
+        "documents",
+        "ainsi",
+        "mentions",
+        "obligatoires",
+        "entrepreneurs",
+        "temporaire",
+        "tenus",
+        "figurer",
+        "concernant",
+        "notamment",
+        "contrats",
+        "mise"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -137,7 +241,20 @@
         "La déclaration, datée et signée par le chef d'entreprise, est adressée en deux exemplaires, sous pli recommandé, à l'inspecteur du travail dont relève le siège de l'entreprise.",
         "Elle est adressée dans les mêmes conditions à l'inspecteur du travail dont relève la succursale, l'agence ou le bureau annexe dont l'ouverture est prévue."
       ],
-      "mots_cles": ["déclaration", "ouverture", "mentions", "siège", "dirigeants", "sécurité sociale", "inspecteur du travail"],
+      "mots_cles": [
+        "succursale",
+        "agence",
+        "bureau",
+        "annexe",
+        "déclaration",
+        "ouverture",
+        "siège",
+        "prévue",
+        "opération",
+        "envisagée",
+        "temporaire",
+        "ainsi"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -148,7 +265,20 @@
         "(Loi n°06-96) L'inspecteur du travail, après s'être assuré de la conformité de la déclaration avec les prescriptions de l'article 73 nouveau ci-dessus, en retourne un exemplaire revêtu de son visa à l'expéditeur dans les quinze jours qui suivent sa réception.",
         "L'entrée en activité de l'entreprise, de la succursale, de l'agence ou du bureau annexe ne peut précéder la réception du document mentionné à l'alinéa précédent ou l'expiration du délai prévu par cet alinéa."
       ],
-      "mots_cles": ["visa", "inspecteur du travail", "15 jours", "conformité"],
+      "mots_cles": [
+        "visa",
+        "inspecteur",
+        "réception",
+        "alinéa",
+        "après",
+        "être",
+        "assuré",
+        "conformité",
+        "déclaration",
+        "prescriptions",
+        "nouveau",
+        "retourne"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -159,7 +289,20 @@
         "(Loi n°06-96) Les entrepreneurs de travail temporaire sont tenus de fournir à l'autorité administrative ainsi qu'à l'inspection du travail le relevé des contrats de travail définis à l'article 73-4 qu'ils ont conclus avec leurs salariés.",
         "Un arrêté du Ministre du Travail précise la nature des éléments d'information se rapportant aux contrats que doit comprendre le relevé, ainsi que la périodicité et les modalités de présentation de celui-ci."
       ],
-      "mots_cles": ["relevé", "contrats", "autorité administrative", "inspection du travail", "arrêté"],
+      "mots_cles": [
+        "relevé",
+        "contrats",
+        "ainsi",
+        "entrepreneurs",
+        "temporaire",
+        "tenus",
+        "fournir",
+        "autorité",
+        "administrative",
+        "inspection",
+        "définis",
+        "conclus"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -174,7 +317,20 @@
         "Une liste distincte est établie pour chaque entreprise utilisatrice ; au sein de cette liste, un ou plusieurs feuillets distincts sont établis pour chaque région où des salariés sont domiciliés.",
         "Sur demande du Directeur régional du travail, l'entrepreneur de travail temporaire est tenu de fournir l'adresse du ou des salariés mentionnés à l'alinéa ci-dessus."
       ],
-      "mots_cles": ["relevé mensuel", "8 jours", "Directeur régional", "ONEMO", "contrats", "salariés"],
+      "mots_cles": [
+        "mois",
+        "cours",
+        "mission",
+        "date",
+        "relevé",
+        "celle",
+        "contrats",
+        "entrepreneur",
+        "temporaire",
+        "tenu",
+        "directeur",
+        "régional"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -185,7 +341,20 @@
         "(Loi n°06-96) Lorsqu'un entrepreneur de travail temporaire exerce son activité sans avoir fait les déclarations prévues à l'article 73-2, sans avoir obtenu la garantie financière prévue à l'article 73-8, et qu'il en résulte un risque sérieux de préjudice pour le salarié temporaire, le président du tribunal de grande instance, saisi par l'inspecteur du travail après que celui-ci ait adressé à l'entrepreneur de travail temporaire un procès-verbal resté infructueux, peut ordonner la fermeture de l'entreprise pour une durée qui ne peut excéder deux mois.",
         "Lorsque ces mesures entraînent le licenciement du personnel permanent, celui-ci a droit à l'indemnité de préavis et à l'indemnité de licenciement."
       ],
-      "mots_cles": ["fermeture", "2 mois", "tribunal", "déclaration", "garantie financière", "licenciement"],
+      "mots_cles": [
+        "temporaire",
+        "fermeture",
+        "entrepreneur",
+        "avoir",
+        "celui",
+        "licenciement",
+        "indemnité",
+        "exercice",
+        "déclaration",
+        "lorsqu",
+        "exerce",
+        "activité"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -195,7 +364,20 @@
       "texte": [
         "(Loi n°06-96) Pour l'application aux entreprises utilisatrices des dispositions législatives ou réglementaires qui se réfèrent à une condition d'effectif du personnel, à l'exception de celles qui concernent la tarification des risques d'accident et de maladie professionnelle, cet effectif est calculé en ajoutant au nombre des salariés permanents le nombre moyen par jour ouvrable des salariés sous contrat de travail temporaire mis à leur disposition au cours de l'exercice."
       ],
-      "mots_cles": ["effectif", "entreprise utilisatrice", "salariés permanents", "temporaires"],
+      "mots_cles": [
+        "effectif",
+        "nombre",
+        "salariés",
+        "calcul",
+        "utilisatrice",
+        "entreprises",
+        "utilisatrices",
+        "législatives",
+        "réglementaires",
+        "réfèrent",
+        "condition",
+        "personnel"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -205,7 +387,20 @@
       "texte": [
         "(Loi n°06-96) La durée minimum de présence dans l'entreprise de travail temporaire des salariés non permanents s'apprécie en totalisant les périodes pendant lesquelles lesdits salariés ont été liés à leur employeur par des contrats de travail temporaire."
       ],
-      "mots_cles": ["durée minimum", "présence", "salariés non permanents"],
+      "mots_cles": [
+        "durée",
+        "minimum",
+        "présence",
+        "temporaire",
+        "salariés",
+        "permanents",
+        "apprécie",
+        "totalisant",
+        "périodes",
+        "lesquelles",
+        "liés",
+        "contrats"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     },
@@ -215,7 +410,20 @@
       "texte": [
         "(Loi n°06-96) L'effectif des salariés employés par les entreprises de travail temporaire est calculé en ajoutant au nombre des salariés permanents le nombre moyen par jour ouvrable des salariés qui ont été liés par un contrat de travail temporaire au cours de l'exercice."
       ],
-      "mots_cles": ["effectif", "entreprise travail temporaire", "salariés permanents", "temporaires"],
+      "mots_cles": [
+        "salariés",
+        "temporaire",
+        "effectif",
+        "entreprises",
+        "nombre",
+        "employés",
+        "calculé",
+        "ajoutant",
+        "permanents",
+        "moyen",
+        "jour",
+        "ouvrable"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Du travail temporaire"
     }

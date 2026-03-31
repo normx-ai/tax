@@ -20,7 +20,20 @@
         "Les tribunaux du travail connaissent des différends individuels pouvant s'élever entre le travailleur et l'employeur, ou l'apprenti et le maître, à l'occasion du contrat de travail ou du contrat d'apprentissage.",
         "Ces tribunaux ont qualité pour se prononcer sur tous les différends individuels relatifs aux conventions collectives ou aux arrêtés tenant lieu. Leur compétence s'étend également au contentieux du régime de prévoyance sociale, aux différends nés entre travailleurs à l'occasion du travail dû aux actions récursoires des entrepreneurs contre les sous-entrepreneurs aux cas prévus à l'article 70."
       ],
-      "mots_cles": ["tribunal du travail", "compétence", "différend individuel", "contrat de travail", "apprentissage", "prévoyance sociale"],
+      "mots_cles": [
+        "tribunaux",
+        "différends",
+        "compétence",
+        "individuels",
+        "occasion",
+        "entrepreneurs",
+        "connaissent",
+        "pouvant",
+        "élever",
+        "apprenti",
+        "maître",
+        "apprentissage"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Attributions des tribunaux du travail"
     },
@@ -31,7 +44,20 @@
         "Le tribunal compétent est celui du lieu de travail.",
         "Toutefois, pour les litiges nés de la résiliation du contrat de travail, et nonobstant toute attribution conventionnelle de juridiction, le travailleur dont le lieu de recrutement est situé dans une autre localité que celle du lieu de l'emploi aura le choix entre le tribunal du lieu de recrutement et celui du travail."
       ],
-      "mots_cles": ["tribunal compétent", "lieu de travail", "lieu de recrutement", "choix"],
+      "mots_cles": [
+        "lieu",
+        "tribunal",
+        "compétent",
+        "celui",
+        "recrutement",
+        "toutefois",
+        "litiges",
+        "résiliation",
+        "nonobstant",
+        "attribution",
+        "conventionnelle",
+        "juridiction"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : Attributions des tribunaux du travail"
     },
@@ -42,7 +68,20 @@
         "Les tribunaux du travail sont créés par décret sur proposition conjointe du Ministre de la Justice et du Ministre du Travail et de la Prévoyance Sociale après avis conforme de la Cour Suprême.",
         "Le décret fixe, pour chaque tribunal du travail, son siège, sa compétence territoriale et sa subdivision en sections professionnelles lorsque la structure du marché du travail le justifie."
       ],
-      "mots_cles": ["création", "décret", "Ministre Justice", "Ministre Travail", "Cour Suprême", "sections professionnelles"],
+      "mots_cles": [
+        "tribunaux",
+        "décret",
+        "ministre",
+        "création",
+        "créés",
+        "proposition",
+        "conjointe",
+        "justice",
+        "prévoyance",
+        "sociale",
+        "après",
+        "avis"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Organisation et fonctionnement des tribunaux du travail"
     },
@@ -52,7 +91,16 @@
       "texte": [
         "Les tribunaux du travail dépendent administrativement du Ministre de la Justice."
       ],
-      "mots_cles": ["dépendance administrative", "Ministre Justice"],
+      "mots_cles": [
+        "dépendance",
+        "administrative",
+        "tribunaux",
+        "dépendent",
+        "administrativement",
+        "ministre",
+        "justice",
+        "dépendance administrative"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Organisation et fonctionnement des tribunaux du travail"
     },
@@ -66,7 +114,20 @@
         "Les assesseurs titulaires sont remplacés, en cas d'empêchement par des assesseurs suppléants dont le nombre est égal à celui des titulaires.",
         "3) D'un Greffier désigné par le Chef des Services Judiciaires."
       ],
-      "mots_cles": ["composition", "Président", "assesseur employeur", "assesseur travailleur", "Greffier"],
+      "mots_cles": [
+        "assesseurs",
+        "tribunal",
+        "président",
+        "désigné",
+        "assesseur",
+        "titulaires",
+        "composition",
+        "composé",
+        "ministre",
+        "justice",
+        "pris",
+        "parmi"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Organisation et fonctionnement des tribunaux du travail"
     },
@@ -81,7 +142,20 @@
         "- des condamnations prononcées pour infractions (autres que les infractions qualifiées délits) à la législation sur les sociétés mais dont cependant la répression n'est pas subordonnée à la preuve de la mauvaise foi de leurs auteurs et qui ne sont passibles que d'une amende.",
         "Sont déchus de leur mandat les assesseurs qui sont frappés de l'une des condamnations visées ci-dessus ou qui perdent leurs droits civils et politiques."
       ],
-      "mots_cles": ["assesseurs", "nomination", "arrêté conjoint", "1 an", "renouvelable", "organisations syndicales", "déchéance"],
+      "mots_cles": [
+        "assesseurs",
+        "suppléants",
+        "condamnations",
+        "ministre",
+        "mandat",
+        "droits",
+        "civils",
+        "politiques",
+        "délits",
+        "infractions",
+        "nomination",
+        "nommés"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Organisation et fonctionnement des tribunaux du travail"
     },
@@ -99,7 +173,20 @@
         "- la déchéance.",
         "Tout assesseur contre lequel la déchéance a été prononcée ne peut être désigné à nouveau aux mêmes fonctions."
       ],
-      "mots_cles": ["manquement", "assesseur", "censure", "suspension", "6 mois", "déchéance"],
+      "mots_cles": [
+        "tribunal",
+        "procureur",
+        "république",
+        "ministre",
+        "devoirs",
+        "assesseur",
+        "fonctions",
+        "président",
+        "mois",
+        "procès",
+        "verbal",
+        "justice"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Organisation et fonctionnement des tribunaux du travail"
     },
@@ -109,7 +196,20 @@
       "texte": [
         "Les assesseurs et leurs suppléants prêtent devant le tribunal de Grande Instance du ressort, le serment suivant : « Je jure de remplir mes devoirs avec zèle et intégrité et de garder le secret des délibérations ». Toutefois en cas d'empêchement le serment peut être prêté par écrit."
       ],
-      "mots_cles": ["serment", "assesseurs", "tribunal de Grande Instance", "secret délibérations"],
+      "mots_cles": [
+        "serment",
+        "assesseurs",
+        "suppléants",
+        "prêtent",
+        "devant",
+        "tribunal",
+        "grande",
+        "instance",
+        "ressort",
+        "suivant",
+        "jure",
+        "remplir"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Organisation et fonctionnement des tribunaux du travail"
     },
@@ -120,7 +220,20 @@
         "Les fonctions d'assesseurs titulaires ou suppléants des tribunaux du travail sont gratuites.",
         "Toutefois, pourront être allouées aux assesseurs des indemnités de séjour et de déplacement, dont le montant, qui ne pourra être inférieur au montant des salaires et indemnités perdus, sera fixé par décret."
       ],
-      "mots_cles": ["gratuité", "indemnités", "séjour", "déplacement", "décret"],
+      "mots_cles": [
+        "fonctions",
+        "assesseurs",
+        "être",
+        "indemnités",
+        "montant",
+        "gratuité",
+        "assesseur",
+        "titulaires",
+        "suppléants",
+        "tribunaux",
+        "gratuites",
+        "toutefois"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Organisation et fonctionnement des tribunaux du travail"
     },
@@ -131,7 +244,20 @@
         "La procédure devant les tribunaux du Travail est gratuite à tous les degrés.",
         "En outre, le travailleur bénéficie d'office de l'assistance judiciaire pour l'exécution des jugements rendus à son profit ; lorsque le jugement est exécutoire et que le travailleur gagnant ne peut obtenir l'exécution amiable de la décision intervenue, il demande au Président de faire apposer la formule exécutoire sur la copie qui lui a été délivrée et de commettre un agent d'exécution pour poursuivre l'exécution forcée."
       ],
-      "mots_cles": ["gratuité", "procédure", "assistance judiciaire", "exécution forcée", "formule exécutoire"],
+      "mots_cles": [
+        "exécution",
+        "procédure",
+        "exécutoire",
+        "gratuité",
+        "devant",
+        "tribunaux",
+        "gratuite",
+        "degrés",
+        "outre",
+        "bénéficie",
+        "office",
+        "assistance"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : La procédure devant les tribunaux du travail"
     },
@@ -141,7 +267,20 @@
       "texte": [
         "L'action est introduite par déclaration orale ou écrite, faite au Greffier du Tribunal du Travail. Inscription en est faite sur un registre tenu spécialement à cet effet, un extrait de cette inscription est délivrée à la partie ayant introduit l'action."
       ],
-      "mots_cles": ["action", "déclaration", "Greffier", "registre", "inscription"],
+      "mots_cles": [
+        "action",
+        "faite",
+        "inscription",
+        "introduction",
+        "introduite",
+        "déclaration",
+        "orale",
+        "écrite",
+        "greffier",
+        "tribunal",
+        "registre",
+        "tenu"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : La procédure devant les tribunaux du travail"
     },
@@ -152,7 +291,20 @@
         "Dans les deux jours à dater de la réception de la demande, dimanche et jours fériés non compris, le Président cite les parties à comparaître dans un délai qui ne peut excéder 12 jours, majoré s'il y a lieu des délais de distance fixés dans les conditions prévues à l'article 239.",
         "La citation doit contenir le nom, profession du demandeur, l'indication de l'objet de la demande, l'heure et le jour de la comparution."
       ],
-      "mots_cles": ["citation", "comparaître", "2 jours", "12 jours", "délais de distance"],
+      "mots_cles": [
+        "jours",
+        "citation",
+        "comparaître",
+        "demande",
+        "deux",
+        "dater",
+        "réception",
+        "dimanche",
+        "fériés",
+        "compris",
+        "président",
+        "cite"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : La procédure devant les tribunaux du travail"
     },
@@ -163,7 +315,20 @@
         "Les parties sont tenues de comparaître, en personne ou par mandataire, au jour et à l'heure fixés, devant le Tribunal du Travail. Elles peuvent se faire assister ou représenter soit par un travailleur ou un employeur appartenant à la même branche d'activité, soit par un avocat régulièrement inscrit au barreau ou un avocat-défenseur, soit encore par un représentant des organisations syndicales auxquelles elles sont affiliées. Les employeurs peuvent, en outre, être représentés par un directeur ou un employé de l'entreprise ou de l'établissement.",
         "Sauf en ce qui concerne les avocats, le mandataire des parties doit être constitué par écrit."
       ],
-      "mots_cles": ["comparution", "mandataire", "avocat", "représentation", "syndicat"],
+      "mots_cles": [
+        "parties",
+        "soit",
+        "mandataire",
+        "peuvent",
+        "avocat",
+        "être",
+        "comparution",
+        "représentation",
+        "tenues",
+        "comparaître",
+        "personne",
+        "jour"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : La procédure devant les tribunaux du travail"
     },
@@ -174,7 +339,20 @@
         "Si au jour fixé par la convocation, le demandeur touché à personne ou à domicile ne comparaît pas et ne justifie pas d'un cas de force majeure, la cause est rayée du rôle ; elle ne peut être reprise qu'une seule fois et selon les formes imparties pour la demande primitive, à peine de déchéance.",
         "Si le défendeur ne comparaît pas, et ne justifie pas d'un cas de force majeure, ou s'il n'a pas présenté ses moyens sous forme de mémoire, défaut est donné contre lui et le tribunal statue sur le mérite de la demande."
       ],
-      "mots_cles": ["défaut", "comparution", "force majeure", "radiation", "déchéance"],
+      "mots_cles": [
+        "défaut",
+        "demandeur",
+        "comparaît",
+        "justifie",
+        "force",
+        "majeure",
+        "demande",
+        "comparution",
+        "jour",
+        "fixé",
+        "convocation",
+        "touché"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : La procédure devant les tribunaux du travail"
     },
@@ -190,7 +368,20 @@
         "- 5° s'ils sont employeurs ou travailleurs de l'une des parties en cause.",
         "La récusation est formée avant tout débat. Le Président statue immédiatement, si la demande est rejetée, il est passé outre au débat ; si elle est admise, l'affaire est renvoyée à la prochaine audience où doivent siéger le ou les assesseurs suppléants."
       ],
-      "mots_cles": ["récusation", "assesseur", "intérêt personnel", "parenté", "avis écrit"],
+      "mots_cles": [
+        "récusation",
+        "assesseurs",
+        "parties",
+        "quand",
+        "contestation",
+        "débat",
+        "tribunal",
+        "peuvent",
+        "être",
+        "récusés",
+        "intérêt",
+        "personnel"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : La procédure devant les tribunaux du travail"
     },
@@ -202,7 +393,20 @@
         "En cas d'accord, un procès-verbal rédigé séance tenante sur le registre des délibérations du Tribunal consacre le règlement à l'amiable du litige.",
         "Un extrait du procès-verbal de conciliation signé du Président et du Greffier vaut titre exécutoire."
       ],
-      "mots_cles": ["conciliation", "accord", "procès-verbal", "titre exécutoire"],
+      "mots_cles": [
+        "conciliation",
+        "tentative",
+        "tribunal",
+        "procès",
+        "verbal",
+        "parties",
+        "comparaissent",
+        "devant",
+        "procédé",
+        "accord",
+        "rédigé",
+        "séance"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : La procédure devant les tribunaux du travail"
     },
@@ -212,7 +416,20 @@
       "texte": [
         "En cas de conciliation partielle, un extrait du procès-verbal signé du Président et du Greffier vaut titre exécutoire pour les parties sur lesquelles un accord est intervenu et procès-verbal de non-conciliation pour le surplus de la demande."
       ],
-      "mots_cles": ["conciliation partielle", "titre exécutoire", "non-conciliation"],
+      "mots_cles": [
+        "conciliation",
+        "partielle",
+        "procès",
+        "verbal",
+        "extrait",
+        "signé",
+        "président",
+        "greffier",
+        "vaut",
+        "exécutoire",
+        "parties",
+        "lesquelles"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : La procédure devant les tribunaux du travail"
     },
@@ -222,7 +439,20 @@
       "texte": [
         "En cas de non-conciliation ou pour la partie contestée de la demande, le Tribunal du Travail doit retenir l'affaire ; il procède immédiatement à son examen, aucun renvoi ne peut être prononcé sauf accord des parties, et à quinzaine au maximum, mais le Tribunal peut toujours, par jugement motivé, prescrire toutes enquêtes, descentes sur les lieux et toutes mesures d'informations quelconques."
       ],
-      "mots_cles": ["non-conciliation", "jugement", "enquêtes", "renvoi", "quinzaine"],
+      "mots_cles": [
+        "jugement",
+        "conciliation",
+        "tribunal",
+        "contestée",
+        "demande",
+        "retenir",
+        "affaire",
+        "procède",
+        "immédiatement",
+        "examen",
+        "aucun",
+        "renvoi"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Du jugement"
     },
@@ -233,7 +463,20 @@
         "Sauf au stade de la conciliation, l'audience est publique.",
         "Le Président dirige les débats, interroge et confronte les parties, fait comparaître les témoins cités à la diligence des parties ou par lui-même, dans les formes indiquées à l'article 222. Il procède à l'audition de toute autre personne dont il juge la déposition utile au règlement du différend, peut procéder ou faire procéder à tous constats ou expertises."
       ],
-      "mots_cles": ["audience publique", "débats", "témoins", "expertises"],
+      "mots_cles": [
+        "audience",
+        "publique",
+        "parties",
+        "procéder",
+        "sauf",
+        "stade",
+        "conciliation",
+        "président",
+        "dirige",
+        "débats",
+        "interroge",
+        "confronte"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Du jugement"
     },
@@ -243,7 +486,20 @@
       "texte": [
         "Les débats clos, le Tribunal délibère immédiatement en secret. Sauf mise en délibéré dont le délai maximum est de 15 jours, le jugement est rédigé sur l'heure et l'audience reprise pour sa lecture, il doit être motivé."
       ],
-      "mots_cles": ["délibéré", "secret", "15 jours", "jugement motivé"],
+      "mots_cles": [
+        "délibéré",
+        "jugement",
+        "débats",
+        "clos",
+        "tribunal",
+        "délibère",
+        "immédiatement",
+        "secret",
+        "sauf",
+        "mise",
+        "délai",
+        "maximum"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Du jugement"
     },
@@ -253,7 +509,18 @@
       "texte": [
         "La minute du jugement est transcrite par le Greffier sur le répertoire des jugements rendus. Elle est signée par le Président et le Greffier."
       ],
-      "mots_cles": ["minute", "répertoire", "Greffier", "Président"],
+      "mots_cles": [
+        "minute",
+        "jugement",
+        "greffier",
+        "transcrite",
+        "répertoire",
+        "jugements",
+        "rendus",
+        "signée",
+        "président",
+        "jugements rendus"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Du jugement"
     },
@@ -263,7 +530,20 @@
       "texte": [
         "(Loi n°06-96) Le jugement peut ordonner l'exécution immédiate, nonobstant opposition ou appel et par prévision avec dispense de caution. Cette exécution ne pourra porter que sur les droits légaux ou conventionnels qui ne se heurtent à aucune contestation. Pour le surplus, l'exécution provisoire peut être ordonnée à charge de fournir caution. Copie du jugement, signée par le président et le greffier, doit être remise aux parties sur demande. Mention de cette délivrance, de sa date et de son heure est faite par le greffier en marge du jugement."
       ],
-      "mots_cles": ["exécution provisoire", "appel", "caution", "copie jugement"],
+      "mots_cles": [
+        "exécution",
+        "jugement",
+        "provisoire",
+        "caution",
+        "être",
+        "greffier",
+        "ordonner",
+        "immédiate",
+        "nonobstant",
+        "opposition",
+        "appel",
+        "prévision"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Du jugement"
     },
@@ -274,7 +554,20 @@
         "En cas de jugement par défaut, signification du jugement est faite, dans les formes de l'article 222, sans frais, à la partie défaillante, par le Greffier du Tribunal du Travail ou par un agent administratif commis spécialement à cet effet par le Président.",
         "Si, dans un délai de 10 jours après signification, le défaillant ne fait pas opposition au jugement dans les formes prescrites à l'article 221, le jugement est exécutoire. Sur opposition, le Président convoque à nouveau les parties, comme il est dit à l'article 222 ; le nouveau jugement nonobstant tout défaut ou appel, est exécutoire."
       ],
-      "mots_cles": ["jugement par défaut", "opposition", "10 jours", "signification", "exécutoire"],
+      "mots_cles": [
+        "jugement",
+        "défaut",
+        "opposition",
+        "signification",
+        "formes",
+        "président",
+        "exécutoire",
+        "nouveau",
+        "faite",
+        "frais",
+        "défaillante",
+        "greffier"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Du jugement"
     },
@@ -284,7 +577,19 @@
       "texte": [
         "La femme mariée est autorisée à se concilier, à demander, à défendre devant le Tribunal du Travail."
       ],
-      "mots_cles": ["femme mariée", "capacité", "tribunal du travail"],
+      "mots_cles": [
+        "femme",
+        "mariée",
+        "capacité",
+        "autorisée",
+        "concilier",
+        "demander",
+        "défendre",
+        "devant",
+        "tribunal",
+        "femme mariée",
+        "défendre devant"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Du jugement"
     },
@@ -294,7 +599,20 @@
       "texte": [
         "Les jugements du Tribunal du Travail sont définitifs et sans appel, sauf du chef de la compétence, lorsque le chiffre n'excède pas 25.000 FCFA. Au-dessus de 25.000 FCFA, les jugements sont susceptibles d'appel devant la Cour d'Appel."
       ],
-      "mots_cles": ["dernier ressort", "25 000 FCFA", "appel", "Cour d'Appel"],
+      "mots_cles": [
+        "jugements",
+        "appel",
+        "définitifs",
+        "fcfa",
+        "dernier",
+        "ressort",
+        "tribunal",
+        "sauf",
+        "chef",
+        "compétence",
+        "chiffre",
+        "excède"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De la compétence des tribunaux du travail et des voies de recours"
     },
@@ -306,7 +624,20 @@
         "Si l'une de ces demandes n'est susceptible d'être jugée qu'à charge d'appel, le Tribunal ne se prononcera sur toutes qu'à charge d'appel. Néanmoins, il statuera en dernier ressort si seule la demande reconventionnelle en dommages-intérêts, fondée exclusivement sur la demande principale, dépasse sa compétence en dernier ressort. Il statue également sans appel, en cas de défaut du défendeur, si seules les demandes reconventionnelles formées par celui-ci dépassent le taux de sa compétence en dernier ressort, quels que soient la nature et le montant de cette demande.",
         "Si une demande reconventionnelle est reconnue non fondée et formée uniquement en vue de rendre le jugement susceptible d'appel, l'auteur de cette demande peut être condamné à des dommages-intérêts envers l'autre partie, même au cas où en appel le jugement en premier ressort n'a été confirmé que partiellement."
       ],
-      "mots_cles": ["demandes reconventionnelles", "compensation", "appel", "dernier ressort", "dommages-intérêts"],
+      "mots_cles": [
+        "appel",
+        "demandes",
+        "ressort",
+        "demande",
+        "reconventionnelles",
+        "compétence",
+        "dernier",
+        "tribunal",
+        "compensation",
+        "nature",
+        "prononcera",
+        "susceptible"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De la compétence des tribunaux du travail et des voies de recours"
     },
@@ -319,7 +650,20 @@
         "L'appel est jugé sur pièces. Toutefois les parties peuvent demander à être entendues ; en ce cas la représentation des parties obéit aux règles fixées par l'article 223.",
         "L'arrêt doit être rendu dans les deux mois de la transmission de la déclaration d'appel à la Cour. Les dispositions prévues à l'article 220 pour l'exécution des jugements sont applicables aux arrêts."
       ],
-      "mots_cles": ["appel", "15 jours", "huitaine", "Cour d'Appel", "2 mois", "arrêt"],
+      "mots_cles": [
+        "appel",
+        "être",
+        "parties",
+        "jugement",
+        "prévues",
+        "déclaration",
+        "cour",
+        "délai",
+        "jours",
+        "prononcé",
+        "interjeté",
+        "formes"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De la compétence des tribunaux du travail et des voies de recours"
     },
@@ -330,7 +674,20 @@
         "Le pourvoi en cassation est recevable contre les arrêts et jugements rendus en dernier ressort.",
         "Il est introduit et jugé dans les formes et conditions prévues par les textes en vigueur relatifs à la procédure de cassation en matière civile."
       ],
-      "mots_cles": ["cassation", "pourvoi", "dernier ressort", "procédure civile"],
+      "mots_cles": [
+        "cassation",
+        "pourvoi",
+        "recevable",
+        "arrêts",
+        "jugements",
+        "rendus",
+        "dernier",
+        "ressort",
+        "introduit",
+        "jugé",
+        "formes",
+        "prévues"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De la compétence des tribunaux du travail et des voies de recours"
     },
@@ -340,7 +697,17 @@
       "texte": [
         "Des arrêtés du Ministre de la Justice fixent la contexture des registres et les délais de distance."
       ],
-      "mots_cles": ["délais de distance", "registres", "arrêté", "Ministre Justice"],
+      "mots_cles": [
+        "délais",
+        "distance",
+        "arrêtés",
+        "ministre",
+        "justice",
+        "fixent",
+        "contexture",
+        "registres",
+        "justice fixent"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De la compétence des tribunaux du travail et des voies de recours"
     },
@@ -356,7 +723,20 @@
         "L'exécution est poursuivie comme un jugement du tribunal du travail.",
         "Le président du tribunal du travail compétent est celui dans le ressort duquel le procès-verbal de conciliation a été signé."
       ],
-      "mots_cles": ["conciliation préalable", "inspecteur du travail", "prescription", "procès-verbal", "formule exécutoire"],
+      "mots_cles": [
+        "conciliation",
+        "inspecteur",
+        "procès",
+        "verbal",
+        "parties",
+        "tribunal",
+        "devant",
+        "fixées",
+        "président",
+        "préalable",
+        "pourra",
+        "demander"
+      ],
       "statut": "en vigueur",
       "section": "Section 6 : De la conciliation préalable devant l'inspecteur du travail et des lois sociales"
     },
@@ -366,7 +746,20 @@
       "texte": [
         "En l'absence ou en cas d'échec du règlement amiable du litige, l'action est introduite devant le Tribunal du Travail dans les formes prévues à l'article 221."
       ],
-      "mots_cles": ["échec conciliation", "action", "tribunal du travail"],
+      "mots_cles": [
+        "action",
+        "devant",
+        "tribunal",
+        "échec",
+        "absence",
+        "règlement",
+        "amiable",
+        "litige",
+        "introduite",
+        "formes",
+        "prévues",
+        "action devant"
+      ],
       "statut": "en vigueur",
       "section": "Section 6 : De la conciliation préalable devant l'inspecteur du travail et des lois sociales"
     }

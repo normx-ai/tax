@@ -19,7 +19,20 @@
       "texte": [
         "(Loi n°06-96) Il est institué auprès du ministère chargé du Travail une Commission nationale technique d'hygiène, de sécurité et de prévention des risques professionnels pour l'étude des questions intéressant l'hygiène, la sécurité des travailleurs et la prévention des risques professionnels. Cette commission comprendra un nombre égal de représentants des employeurs et des travailleurs à côté de fonctionnaires et experts qualifiés. Un décret fixe la composition et le fonctionnement de la commission."
       ],
-      "mots_cles": ["commission nationale", "hygiène", "sécurité", "prévention", "risques professionnels"],
+      "mots_cles": [
+        "commission",
+        "hygiène",
+        "sécurité",
+        "nationale",
+        "technique",
+        "prévention",
+        "risques",
+        "professionnels",
+        "institué",
+        "auprès",
+        "ministère",
+        "chargé"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -29,7 +42,20 @@
       "texte": [
         "(Loi n°06-96) Il pourra être créé au plan national un fonds pour la promotion des actions en matière d'hygiène, de sécurité et de prévention des risques professionnels."
       ],
-      "mots_cles": ["fonds national", "promotion", "hygiène", "sécurité"],
+      "mots_cles": [
+        "fonds",
+        "national",
+        "hygiène",
+        "sécurité",
+        "pourra",
+        "être",
+        "créé",
+        "plan",
+        "promotion",
+        "actions",
+        "matière",
+        "prévention"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -39,7 +65,20 @@
       "texte": [
         "L'entreprise doit être tenue dans un état constant de propreté et présenter des conditions d'hygiène et de sécurité nécessaires à la santé du personnel ; elle doit être aménagée de manière à garantir la sécurité des travailleurs."
       ],
-      "mots_cles": ["propreté", "hygiène", "sécurité", "santé", "aménagement"],
+      "mots_cles": [
+        "sécurité",
+        "propreté",
+        "être",
+        "obligation",
+        "tenue",
+        "état",
+        "constant",
+        "présenter",
+        "hygiène",
+        "nécessaires",
+        "santé",
+        "personnel"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -50,7 +89,20 @@
         "(Loi n°06-96) Toute implantation, ou tout réaménagement d'entreprises, d'ateliers, de chantiers camps des travailleurs, d'entrepôts de machines ou équipements de production devra être soumise à l'avis technique préalable de l'inspecteur du travail du ressort territorial.",
         "Des modalités d'application de cette disposition pourront être précisées en tant que de besoin."
       ],
-      "mots_cles": ["implantation", "réaménagement", "avis technique", "inspecteur du travail"],
+      "mots_cles": [
+        "avis",
+        "technique",
+        "préalable",
+        "inspecteur",
+        "être",
+        "implantation",
+        "réaménagement",
+        "entreprises",
+        "ateliers",
+        "chantiers",
+        "camps",
+        "entrepôts"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -63,7 +115,20 @@
         "Ces dispositions ou mesures portent notamment sur la localisation, l'implantation de l'entreprise, l'acquisition et l'installation des équipements ou de matériels, l'aménagement du milieu du travail et l'organisation du travail.",
         "Des arrêtés du Ministre du Travail préciseront en tant que besoin lesdites dispositions selon les branches professionnelles."
       ],
-      "mots_cles": ["prévention", "risques professionnels", "politique", "direction", "équipements", "organisation"],
+      "mots_cles": [
+        "politique",
+        "prévention",
+        "risques",
+        "professionnels",
+        "mesures",
+        "direction",
+        "niveau",
+        "élevé",
+        "considérer",
+        "promotion",
+        "sécurité",
+        "amélioration"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -73,7 +138,20 @@
       "texte": [
         "(Loi n°06-96) A chaque poste de travail est établie et affichée une instruction relative à la prévention des risques professionnels. Tout travailleur est tenu informé par l'employeur de cette instruction à son embauche. L'inspecteur du travail peut autoriser des dispenses d'établissement de l'instruction visée ci-dessus pour certains postes de travail jugés à risques mineurs."
       ],
-      "mots_cles": ["instruction", "prévention", "poste de travail", "affichage", "embauche"],
+      "mots_cles": [
+        "instruction",
+        "prévention",
+        "poste",
+        "risques",
+        "établie",
+        "affichée",
+        "professionnels",
+        "tenu",
+        "informé",
+        "embauche",
+        "inspecteur",
+        "autoriser"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -83,7 +161,20 @@
       "texte": [
         "(Loi n°06-96) Les maîtres d'ouvrages entreprenant la construction ou l'aménagement de bâtiments destinés à l'exercice d'une activité industrielle, commerciale ou agricole sont tenus de se conformer aux règles édictées en vue de satisfaire aux dispositions législatives et réglementaires prévues dans l'intérêt de la sécurité et de la santé au travail."
       ],
-      "mots_cles": ["bâtiments", "construction", "conformité", "sécurité", "santé au travail"],
+      "mots_cles": [
+        "bâtiments",
+        "conformité",
+        "industriels",
+        "maîtres",
+        "ouvrages",
+        "entreprenant",
+        "construction",
+        "aménagement",
+        "destinés",
+        "exercice",
+        "activité",
+        "industrielle"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -97,7 +188,20 @@
         "Les machines électriques doivent toutes être pourvues d'une prise de terre. Les escaliers doivent être solides et munis de fortes rampes.",
         "Les échafaudages doivent être munis de garde-corps rigides de 90 cm de haut. Les pièces mobiles suivantes des machines à transmission : bielles et volants de moteurs, roues, arbres de transmission, engrenage, cônes ou cylindres de friction, doivent être munis d'un dispositif protecteur ou séparés des ouvriers, à moins qu'elles ne soient hors de portée de la main."
       ],
-      "mots_cles": ["puits", "cuves", "gaz", "ceinture", "machines", "prise de terre", "échafaudages", "garde-corps"],
+      "mots_cles": [
+        "être",
+        "puits",
+        "munis",
+        "protection",
+        "cuves",
+        "ouvriers",
+        "dispositif",
+        "moteurs",
+        "machines",
+        "transmission",
+        "appelés",
+        "travailler"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -107,7 +211,15 @@
       "texte": [
         "La consommation par l'employeur ou le travailleur de toutes boissons alcoolisées est interdite sur les lieux de travail."
       ],
-      "mots_cles": ["boissons alcoolisées", "interdiction", "lieux de travail"],
+      "mots_cles": [
+        "boissons",
+        "alcoolisées",
+        "interdiction",
+        "consommation",
+        "interdite",
+        "lieux",
+        "boissons alcoolisées"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -119,7 +231,20 @@
         "Lesdites machines ou parties de machines seront déterminées par un arrêté du Ministre du Travail et de la Prévoyance Sociale, pris après avis du Comité Technique consultatif d'Hygiène et de Sécurité.",
         "[NB - Voir l'arrêté n°9029/MTERFPPS-DGT du 10 décembre 1986 relatif aux machines dangereuses et aux dispositifs de protection pour les machines dangereuses, page 92]"
       ],
-      "mots_cles": ["machines dangereuses", "dispositifs de protection", "interdiction", "arrêté"],
+      "mots_cles": [
+        "machines",
+        "dangereuses",
+        "parties",
+        "dispositifs",
+        "protection",
+        "arrêté",
+        "interdit",
+        "mettre",
+        "vente",
+        "vendre",
+        "louer",
+        "utiliser"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -129,7 +254,20 @@
       "texte": [
         "L'acheteur auquel est livrée une machine ou partie de machine dangereuse, un appareil ou un dispositif de protection a été livré dans des conditions contraires aux dispositions du présent arrêté peut, nonobstant toute clause contraire, demander la résolution de la vente. Le tribunal prononce cette résolution et peut, en outre, accorder des dommages-intérêts à l'acheteur."
       ],
-      "mots_cles": ["résolution vente", "machine dangereuse", "dommages-intérêts"],
+      "mots_cles": [
+        "résolution",
+        "machine",
+        "vente",
+        "dangereuse",
+        "acheteur",
+        "auquel",
+        "livrée",
+        "appareil",
+        "dispositif",
+        "protection",
+        "livré",
+        "contraires"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -145,7 +283,20 @@
         "- l'arrêté n°9036/MTERFPPS-DGT du 10 décembre 1986 relatif aux mesures générales d'hygiène et de sécurité applicables dans les entreprises industrielles, commerciales, agricoles et forestières ainsi que dans les établissements administratifs similaires, page 96",
         "- l'arrêté n°9028/MTERFPPS-DGT du 10 décembre 1986 relatif aux mesures spéciales de sécurité et d'hygiène applicables aux entreprises de travaux forestiers, page 113]"
       ],
-      "mots_cles": ["mesures générales", "protection", "salubrité", "éclairage", "ventilation", "incendies", "comités d'hygiène"],
+      "mots_cles": [
+        "mesures",
+        "hygiène",
+        "sécurité",
+        "entreprises",
+        "générales",
+        "protection",
+        "applicables",
+        "arrêté",
+        "mterfpps",
+        "décembre",
+        "page",
+        "salubrité"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -155,7 +306,20 @@
       "texte": [
         "En ce qui concerne l'application des arrêtés prévus à l'article précédent, les inspecteurs du Travail, s'agissant des prescriptions de ces arrêtés pour lesquelles cette procédure aura été prévue, doivent mettre les chefs d'entreprise en demeure de se conformer auxdites prescriptions avant de dresser procès-verbal."
       ],
-      "mots_cles": ["mise en demeure", "inspecteur du travail", "procès-verbal"],
+      "mots_cles": [
+        "demeure",
+        "arrêtés",
+        "prescriptions",
+        "mise",
+        "inspecteur",
+        "concerne",
+        "prévus",
+        "précédent",
+        "inspecteurs",
+        "agissant",
+        "lesquelles",
+        "procédure"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -165,7 +329,20 @@
       "texte": [
         "Cette mise en demeure doit être faite par écrit soit sur le registre d'employeur, soit par lettre recommandée avec accusé de réception. Elle est datée et signée, elle précise les infractions ou dangers constatés et fixe les délais dans lesquels ils devront avoir disparu, et qui ne pourront être inférieurs à quatre jours francs, sauf en cas d'extrême urgence."
       ],
-      "mots_cles": ["mise en demeure", "écrit", "registre", "lettre recommandée", "4 jours", "urgence"],
+      "mots_cles": [
+        "mise",
+        "demeure",
+        "être",
+        "soit",
+        "forme",
+        "faite",
+        "écrit",
+        "registre",
+        "lettre",
+        "recommandée",
+        "accusé",
+        "réception"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -177,7 +354,20 @@
         "Toutefois, dans ce cas, avant l'expiration des délais fixés par l'Inspecteur du Travail et des Lois Sociales, au plus tard dans les 8 jours qui suivent la mise en demeure, l'employeur peut adresser une réclamation au Ministre du Travail et de la Prévoyance Sociale. Cette réclamation est suspensive ; elle est soumise après enquête au Comité Technique Consultatif d'hygiène et de Sécurité qui, entend, s'il y a lieu, le réclamant. Notification de la décision du Ministre est faite à l'employeur dans la forme administrative ; avis en est donné à l'Inspecteur.",
         "[NB - Voir l'arrêté n°9035/MTERFPPS-DGT du 10 décembre 1986 portant classification des entreprises en ce qui concerne les moyens minima qui leur sont imposés en matière de médicaments et de matériels sanitaires, page 121]"
       ],
-      "mots_cles": ["conditions dangereuses", "mise en demeure", "réclamation", "8 jours", "Comité Technique"],
+      "mots_cles": [
+        "inspecteur",
+        "dangereuses",
+        "visées",
+        "arrêtés",
+        "sécurité",
+        "demeure",
+        "réclamation",
+        "ministre",
+        "lorsqu",
+        "existe",
+        "santé",
+        "prévus"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -190,7 +380,20 @@
         "En ce qui concerne les maladies professionnelles, la date de la première constatation médicale de la maladie est assimilée à la date de l'accident.",
         "Copie de la déclaration d'accident du travail ou de maladie professionnelle est transmise à l'Inspection du Travail et des Lois Sociales dans le délai prévu au premier alinéa."
       ],
-      "mots_cles": ["accident du travail", "maladie professionnelle", "48 heures", "CNPS", "déclaration", "2 ans"],
+      "mots_cles": [
+        "accident",
+        "déclaration",
+        "maladie",
+        "professionnelle",
+        "date",
+        "heures",
+        "délai",
+        "maladies",
+        "professionnelles",
+        "première",
+        "constatation",
+        "médicale"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -200,7 +403,20 @@
       "texte": [
         "(Loi n°06-96) Il est prescrit à tout employeur de tenir à la disposition de l'inspecteur du travail les registres des accidents de travail, maladies professionnelles et à caractère non professionnel, ainsi que le registre de sécurité. Des arrêtés du Ministre du Travail détermineront la contexture desdits registres."
       ],
-      "mots_cles": ["registres", "sécurité", "accidents", "maladies professionnelles", "inspecteur du travail"],
+      "mots_cles": [
+        "registres",
+        "sécurité",
+        "accidents",
+        "prescrit",
+        "tenir",
+        "disposition",
+        "inspecteur",
+        "maladies",
+        "professionnelles",
+        "caractère",
+        "professionnel",
+        "ainsi"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -210,7 +426,20 @@
       "texte": [
         "(Loi n°06-96) L'employeur assure l'information et l'éducation des travailleurs et des membres des comités d'hygiène et de sécurité en matière de sécurité et de prévention des risques professionnels inhérents à la profession ou à l'activité de l'entreprise."
       ],
-      "mots_cles": ["information", "éducation", "sécurité", "prévention", "comités d'hygiène"],
+      "mots_cles": [
+        "sécurité",
+        "information",
+        "éducation",
+        "matière",
+        "assure",
+        "membres",
+        "comités",
+        "hygiène",
+        "prévention",
+        "risques",
+        "professionnels",
+        "inhérents"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'hygiène et de la sécurité"
     },
@@ -223,7 +452,20 @@
         "Des arrêtés du Ministre du Travail et de la Prévoyance Sociale pris après avis du Comité Technique Consultatif d'Hygiène et de Sécurité et après consultation du Ministre de la Santé, déterminent les modalités d'exécution de cette obligation. Ils déterminent également les modalités dans lesquelles seront effectuées les visites médicales périodiques et précisent l'effectif et la qualification du personnel médical à employer compte tenu des conditions locales et du nombre des travailleurs et des membres de leurs familles.",
         "[NB - Voir l'arrêté n°9033/MTERFPPS-DGT du 10 décembre 1986 portant organisation et fonctionnement des centres socio-sanitaires, page 125]"
       ],
-      "mots_cles": ["service médical", "obligatoire", "travailleurs", "famille", "CNPS", "interentreprises", "visites médicales"],
+      "mots_cles": [
+        "médical",
+        "sanitaires",
+        "service",
+        "membres",
+        "prévoyance",
+        "sociale",
+        "formations",
+        "ministre",
+        "après",
+        "déterminent",
+        "modalités",
+        "obligatoire"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du service médical"
     },
@@ -234,7 +476,20 @@
         "(Loi n°06-96) Ne compte pour l'application des prescriptions de l'article 142 que le personnel médical ayant fait l'objet d'une décision d'agrément du Ministre du Travail.",
         "Cette décision prise après avis de l'Inspecteur du Travail et des Lois Sociales et consultation du Ministre de la Santé, peut être annulée dans les mêmes formes."
       ],
-      "mots_cles": ["agrément", "personnel médical", "Ministre du Travail", "Ministre de la Santé"],
+      "mots_cles": [
+        "agrément",
+        "personnel",
+        "médical",
+        "décision",
+        "ministre",
+        "compte",
+        "prescriptions",
+        "ayant",
+        "objet",
+        "prise",
+        "après",
+        "avis"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du service médical"
     },
@@ -245,7 +500,20 @@
         "Le service médical et l'organisation des dispensaires ou infirmeries communs à un groupe d'entreprises peuvent être installés suivant des modalités à fixer par arrêté du Ministre du Travail et de la Prévoyance Sociale après avis de l'Inspecteur du Travail et des Lois Sociales et du Comité Technique Consultatif d'Hygiène et de Sécurité. Chacune des entreprises participant au fonctionnement des organisations précitées reste tenue d'avoir une infirmerie avec salle d'isolement pour les cas urgents, dans laquelle le nombre de lits, le matériel et l'approvisionnement sont fixés par arrêté du Ministre du Travail et de la Prévoyance Sociale après avis du Comité Technique Consultatif d'Hygiène et de Sécurité.",
         "[NB - Voir l'arrêté n°9034/MTERFPPS-DGT du 10 décembre 1986 déterminant les modalités de constitution des centres socio-sanitaires communs à plusieurs entreprises installées en République populaire du Congo, page 130]"
       ],
-      "mots_cles": ["dispensaires", "interentreprises", "infirmerie", "isolement", "arrêté"],
+      "mots_cles": [
+        "entreprises",
+        "arrêté",
+        "dispensaires",
+        "communs",
+        "modalités",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "après",
+        "avis",
+        "comité",
+        "technique"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du service médical"
     },
@@ -256,7 +524,20 @@
         "(Loi n°06-96) Dans chaque exploitation, une visite médicale des travailleurs se déclarant malades est faite chaque matin après l'appel ; les femmes légitimes et les enfants, s'ils le demandent, peuvent se présenter à cette visite pour y être examinés et, le cas échéant, recevoir les soins et les traitements nécessaires. Il est tenu à cet effet un registre des visites médicales dont la contexture sera précisée par un arrêté du Ministre du Travail.",
         "Les résultats de cette visite sont consignés sur un registre spécial dont le modèle est fixé par arrêté du Ministre du Travail, après avis de la Commission nationale technique d'hygiène, de sécurité et de prévention des risques professionnels."
       ],
-      "mots_cles": ["visite médicale", "quotidienne", "matin", "femmes", "enfants", "registre"],
+      "mots_cles": [
+        "visite",
+        "médicale",
+        "après",
+        "registre",
+        "arrêté",
+        "ministre",
+        "quotidienne",
+        "exploitation",
+        "déclarant",
+        "malades",
+        "faite",
+        "matin"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du service médical"
     },
@@ -267,7 +548,20 @@
         "En cas de maladie d'un travailleur, d'une femme ou d'un enfant logé avec lui aux frais de l'entreprise l'employeur est tenu de leur fournir gratuitement les soins et médicaments dans la limite des moyens définis par les textes d'application du présent chapitre.",
         "L'employeur est également tenu d'assurer gratuitement l'alimentation de tout travailleur malade soigné sur place."
       ],
-      "mots_cles": ["soins gratuits", "médicaments", "maladie", "alimentation", "travailleur logé"],
+      "mots_cles": [
+        "soins",
+        "maladie",
+        "tenu",
+        "gratuitement",
+        "gratuits",
+        "femme",
+        "enfant",
+        "logé",
+        "frais",
+        "fournir",
+        "médicaments",
+        "limite"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du service médical"
     },
@@ -278,7 +572,20 @@
         "L'employeur doit faire évacuer sur la formation médicale la plus proche, les blessés et les malades transportables, non susceptibles d'être traités par les moyens dont il dispose.",
         "Si l'employeur ne dispose pas immédiatement de moyens appropriés, il en rend compte d'urgence au chef de la circonscription administrative la plus proche, qui fait procéder à l'évacuation par les moyens à sa disposition, tous les frais occasionnés à ce chef de l'administration devant être remboursés par l'employeur au tarif officiel des transports médicaux."
       ],
-      "mots_cles": ["évacuation", "blessés", "malades", "formation médicale", "transport médical"],
+      "mots_cles": [
+        "moyens",
+        "évacuation",
+        "blessés",
+        "malades",
+        "proche",
+        "être",
+        "dispose",
+        "chef",
+        "évacuer",
+        "formation",
+        "médicale",
+        "transportables"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du service médical"
     },
@@ -288,7 +595,20 @@
       "texte": [
         "Un arrêté du Ministre du Travail et de la Prévoyance Sociale pris après avis du Comité Technique Consultatif d'Hygiène et de Sécurité détermine les conditions dans lesquelles les employeurs sont obligatoirement tenus d'installer et d'approvisionner en médicaments accessoires une infirmerie, une salle de pansements ou une boîte de secours."
       ],
-      "mots_cles": ["infirmerie", "salle de pansements", "boîte de secours", "médicaments", "arrêté"],
+      "mots_cles": [
+        "infirmerie",
+        "salle",
+        "pansements",
+        "arrêté",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "pris",
+        "après",
+        "avis",
+        "comité",
+        "technique"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du service médical"
     }

@@ -25,7 +25,20 @@
         "La présente Convention Collective règle les rapports de travail entre les employeurs et les travailleurs tels qu'ils sont définis à l'article 2 du Code du Travail Congolais, quels que soient leur sexe et leur origine, employés dans les entreprises forestières et agricoles installées sur toute l'étendue de la République du Congo.",
         "L'ensemble du personnel de tous les établissements de l'une des entreprises définies à l'article 2 et quelle que soit l'activité propre à tel ou tel établissement est soumis à la présente Convention Collective, sauf accord contraire au sein de l'entreprise."
       ],
-      "mots_cles": ["objet", "champ d'application", "agriculture", "forêt", "exploitation forestière"],
+      "mots_cles": [
+        "présente",
+        "entreprises",
+        "objet",
+        "champ",
+        "règle",
+        "rapports",
+        "tels",
+        "définis",
+        "code",
+        "congolais",
+        "quels",
+        "soient"
+      ],
       "statut": "en vigueur",
       "section": "Titre I : Dispositions générales"
     },
@@ -41,7 +54,20 @@
         "- Les ateliers annexés nécessaires à la réparation et l'entretien du matériel.",
         "- Bureaux, dépôts, parcs et magasins de vente se rattachant aux exploitations définies ci-dessus, lorsque ces exploitations constituent le principal établissement."
       ],
-      "mots_cles": ["entreprises forestières", "abattage", "scierie", "déroulage", "entreprises agricoles", "élevage", "horticulture"],
+      "mots_cles": [
+        "exploitations",
+        "définies",
+        "entreprises",
+        "travaux",
+        "ateliers",
+        "annexés",
+        "exploitation",
+        "nécessaires",
+        "réparation",
+        "entretien",
+        "matériel",
+        "définition"
+      ],
       "statut": "en vigueur",
       "section": "Titre I : Dispositions générales"
     },
@@ -51,7 +77,20 @@
       "texte": [
         "La présente Convention annule et remplace la Convention Collective des Entreprises Agricoles et Forestières signée à Pointe-Noire en Avril 1974."
       ],
-      "mots_cles": ["dénonciation", "convention précédente", "1974", "Pointe-Noire"],
+      "mots_cles": [
+        "dénonciation",
+        "précédente",
+        "présente",
+        "annule",
+        "remplace",
+        "entreprises",
+        "agricoles",
+        "forestières",
+        "signée",
+        "pointe",
+        "noire",
+        "avril"
+      ],
       "statut": "en vigueur",
       "section": "Titre I : Dispositions générales"
     },
@@ -66,7 +105,20 @@
         "Les parties contractantes s'interdisent le lock-out ou la grève pendant le préavis de dénonciation ou de révision.",
         "La Convention reste en vigueur jusqu'à l'application de la nouvelle convention."
       ],
-      "mots_cles": ["durée indéterminée", "dénonciation", "2 ans", "préavis 3 mois", "révision", "1 an"],
+      "mots_cles": [
+        "révision",
+        "dénonciation",
+        "durée",
+        "mois",
+        "date",
+        "être",
+        "après",
+        "signature",
+        "préavis",
+        "lettre",
+        "recommandée",
+        "nouvelle"
+      ],
       "statut": "en vigueur",
       "section": "Titre I : Dispositions générales"
     },
@@ -78,7 +130,20 @@
         "L'adhérant ne peut ni dénoncer ni demander la révision de la présente Convention.",
         "Les organisations signataires ne sont pas tenues de faire une place dans leurs organes de direction à l'adhérent."
       ],
-      "mots_cles": ["adhésion", "lettre recommandée", "Tribunal du Travail"],
+      "mots_cles": [
+        "présente",
+        "adhésion",
+        "postérieure",
+        "signature",
+        "groupement",
+        "professionnel",
+        "adhérer",
+        "lettre",
+        "recommandée",
+        "adressée",
+        "secrétariat",
+        "tribunal"
+      ],
       "statut": "en vigueur",
       "section": "Titre I : Dispositions générales"
     },
@@ -92,7 +157,20 @@
         "Les contrats individuels de travail postérieurs à la présente Convention sont soumis comme conditions minima d'engagement aux dispositions de la présente Convention.",
         "Les dispositions de la présente Convention s'appliquent de plein droit aux contrats individuels en cours à la date de son entrée en vigueur."
       ],
-      "mots_cles": ["avantages acquis", "non-cumul", "conditions minima"],
+      "mots_cles": [
+        "présente",
+        "avantages",
+        "acquis",
+        "individuels",
+        "date",
+        "aucun",
+        "contrats",
+        "être",
+        "cause",
+        "restriction",
+        "antérieurement",
+        "maintien"
+      ],
       "statut": "en vigueur",
       "section": "Titre I : Dispositions générales"
     },
@@ -105,7 +183,20 @@
         "Les travailleurs s'engagent de leur côté à respecter la liberté d'opinion de leurs collègues.",
         "Les parties contractantes, considérant que l'entreprise est essentiellement un lieu de travail, veilleront à la stricte observation de ces engagements."
       ],
-      "mots_cles": ["liberté d'opinion", "syndicat", "non-discrimination", "embauchage"],
+      "mots_cles": [
+        "liberté",
+        "opinion",
+        "droit",
+        "parties",
+        "contractantes",
+        "engagent",
+        "reconnaissent",
+        "ainsi",
+        "adhérer",
+        "librement",
+        "syndicat",
+        "professionnel"
+      ],
       "statut": "en vigueur",
       "section": "Titre II : Libre exercice du droit syndical et liberté d'opinion"
     },
@@ -120,7 +211,20 @@
         "Des autorisations d'absences non rémunérées seront accordées dans les mêmes conditions aux membres du Bureau Syndical pour participer aux travaux d'organismes prévus en vertu des textes législatifs ou réglementaires.",
         "Les employeurs s'engagent à faciliter l'exercice du droit syndical en mettant à la disposition du bureau syndical toutes les informations raisonnables."
       ],
-      "mots_cles": ["droit syndical", "15 jours", "absences rémunérées", "congrès", "CSC"],
+      "mots_cles": [
+        "syndical",
+        "exercice",
+        "droit",
+        "bureau",
+        "lois",
+        "syndicaux",
+        "faciliter",
+        "autorisations",
+        "seront",
+        "accordées",
+        "membres",
+        "respecter"
+      ],
       "statut": "en vigueur",
       "section": "Titre II : Libre exercice du droit syndical et liberté d'opinion"
     },
@@ -132,7 +236,20 @@
         "Ces communications devront être communiquées pour accord au Chef d'établissement avant d'être affichées.",
         "Aucun document ne pourra être affiché en dehors du panneau d'affichage."
       ],
-      "mots_cles": ["panneaux d'affichage", "communications syndicales", "chef d'établissement"],
+      "mots_cles": [
+        "affichage",
+        "être",
+        "panneaux",
+        "communications",
+        "seront",
+        "installés",
+        "réservés",
+        "syndicales",
+        "strictement",
+        "professionnelles",
+        "devront",
+        "communiquées"
+      ],
       "statut": "en vigueur",
       "section": "Titre II : Libre exercice du droit syndical et liberté d'opinion"
     },
@@ -148,7 +265,20 @@
         "Pour l'exercice de leurs fonctions, les membres du bureau syndical d'entreprise disposent de vingt (20) heures par mois, considérées comme temps de travail effectif.",
         "Un local sera mis à la disposition des membres du bureau syndical d'entreprise pour l'exercice de leurs fonctions."
       ],
-      "mots_cles": ["bureau syndical", "9 salariés", "10 km", "20 heures/mois", "protection", "local"],
+      "mots_cles": [
+        "bureau",
+        "syndical",
+        "membres",
+        "salariés",
+        "prévues",
+        "code",
+        "établissements",
+        "mandat",
+        "exercice",
+        "fonctions",
+        "base",
+        "occupant"
+      ],
       "statut": "en vigueur",
       "section": "Titre II : Libre exercice du droit syndical et liberté d'opinion"
     },
@@ -165,7 +295,20 @@
         "Si les questions posées relèvent d'un conseil d'administration ou d'une direction générale situés hors du siège de l'établissement, le directeur local sera saisi par lettre recommandée avec un délai de réponse d'un (1) mois.",
         "Nonobstant les dispositions ci-dessus, les travailleurs conservent la faculté de présenter eux-mêmes leurs réclamations et suggestions à l'employeur ou à son représentant."
       ],
-      "mots_cles": ["requêtes", "réclamations", "réunion mensuelle", "24 heures", "7 jours", "registre"],
+      "mots_cles": [
+        "bureau",
+        "syndical",
+        "chef",
+        "établissement",
+        "réclamations",
+        "membres",
+        "reçus",
+        "représentant",
+        "mois",
+        "heures",
+        "demande",
+        "réunion"
+      ],
       "statut": "en vigueur",
       "section": "Titre II : Libre exercice du droit syndical et liberté d'opinion"
     },
@@ -180,7 +323,20 @@
         "Tout travailleur congédié par suite d'une diminution de l'activité de l'entreprise ou d'une réorganisation interne conserve pendant deux (2) ans la priorité d'embauchage dans la même catégorie d'emploi.",
         "En cas de vacance de poste, l'employeur transmet au bureau de placement une offre nominative en faveur du travailleur bénéficiant de la priorité de réembauchage."
       ],
-      "mots_cles": ["embauchage", "réembauchage", "bureau de placement", "priorité 2 ans", "règlement intérieur"],
+      "mots_cles": [
+        "bureau",
+        "placement",
+        "embauchage",
+        "réembauchage",
+        "tenu",
+        "emploi",
+        "priorité",
+        "conformément",
+        "code",
+        "chef",
+        "adresser",
+        "recrutement"
+      ],
       "statut": "en vigueur",
       "section": "Titre III : Formation et exécution du contrat de travail"
     },
@@ -204,7 +360,20 @@
         "Cette période d'essai ne peut être confondue avec le stage qu'auraient pu accomplir certains travailleurs avant le commencement de leurs services.",
         "La prolongation des services après expiration du contrat d'engagement à l'essai, sans qu'il y ait établissement d'un nouveau contrat, équivaut à la conclusion d'un contrat à durée indéterminée prenant effet à la date du début de l'essai."
       ],
-      "mots_cles": ["période d'essai", "15 jours", "1 mois", "1,5 mois", "2 mois", "2,5 mois", "3 mois", "6 mois maximum"],
+      "mots_cles": [
+        "essai",
+        "mois",
+        "période",
+        "catégories",
+        "être",
+        "engagement",
+        "durée",
+        "catégorie",
+        "pourra",
+        "services",
+        "stipulée",
+        "obligatoirement"
+      ],
       "statut": "en vigueur",
       "section": "Titre III : Formation et exécution du contrat de travail"
     },
@@ -219,7 +388,20 @@
         "Toute modification individuelle apportée à l'un des éléments du contrat de travail fait l'objet d'une notification écrite au travailleur.",
         "Les premiers bulletins de salaires feront foi des modifications intervenues."
       ],
-      "mots_cles": ["engagement définitif", "écrit", "deux exemplaires", "classement", "rémunération"],
+      "mots_cles": [
+        "engagement",
+        "écrit",
+        "définitif",
+        "exemplaires",
+        "issue",
+        "période",
+        "essai",
+        "constaté",
+        "établi",
+        "deux",
+        "signé",
+        "chacune"
+      ],
       "statut": "en vigueur",
       "section": "Titre III : Formation et exécution du contrat de travail"
     },
@@ -232,7 +414,20 @@
         "L'entreprise devra examiner toute demande visant à développer cette formation, soit par des cours du soir, soit par des stages de perfectionnement au sein de l'entreprise, ou par des cours de formation spécialisés.",
         "L'entreprise procédera au reclassement du travailleur dans la limite des postes à pourvoir, en cas d'aboutissement satisfaisant dûment constaté de ladite formation."
       ],
-      "mots_cles": ["formation professionnelle", "cours du soir", "stages", "reclassement"],
+      "mots_cles": [
+        "formation",
+        "professionnelle",
+        "devra",
+        "soit",
+        "cours",
+        "parties",
+        "contractantes",
+        "reconnaissent",
+        "utilité",
+        "développement",
+        "compétences",
+        "accorder"
+      ],
       "statut": "en vigueur",
       "section": "Titre III : Formation et exécution du contrat de travail"
     },
@@ -245,7 +440,20 @@
         "Le travailleur promu sera soumis à la période d'essai prévue pour la nouvelle catégorie.",
         "Si l'essai n'est pas satisfaisant, le travailleur sera réintégré dans son ancien emploi sans que ceci puisse être considéré comme une rétrogradation."
       ],
-      "mots_cles": ["promotion", "vacance de poste", "période d'essai", "réintégration"],
+      "mots_cles": [
+        "promotion",
+        "catégorie",
+        "sera",
+        "essai",
+        "vacance",
+        "création",
+        "poste",
+        "aura",
+        "lieu",
+        "décision",
+        "commandée",
+        "intérêt"
+      ],
       "statut": "en vigueur",
       "section": "Titre III : Formation et exécution du contrat de travail"
     },
@@ -257,7 +465,20 @@
         "Cette indemnité est égale à la différence entre le salaire de base perçu par le travailleur et le salaire minimum de la catégorie et de l'échelon du nouvel emploi.",
         "Passé un délai de six (6) mois d'intérim continu, le travailleur sera confirmé dans la catégorie professionnelle du titulaire."
       ],
-      "mots_cles": ["intérim", "1 mois", "indemnité", "6 mois confirmation", "différence de salaire"],
+      "mots_cles": [
+        "intérim",
+        "catégorie",
+        "échelon",
+        "mois",
+        "passé",
+        "délai",
+        "indemnité",
+        "salaire",
+        "assurant",
+        "décision",
+        "direction",
+        "classé"
+      ],
       "statut": "en vigueur",
       "section": "Titre III : Formation et exécution du contrat de travail"
     },
@@ -268,7 +489,20 @@
         "Les travailleurs s'engagent, à condition qu'ils en soient avertis un (1) mois à l'avance, à accepter de se rendre en tout point de la République où l'employeur jugerait utile de les affecter.",
         "Les parties reconnaissent à l'employeur le droit de congédier, sans autre préavis, tout travailleur ayant refusé d'obtempérer à un ordre de mutation ou de déplacement notifié dans les conditions ci-dessus."
       ],
-      "mots_cles": ["mutation", "1 mois de préavis", "déplacement", "refus"],
+      "mots_cles": [
+        "mutation",
+        "engagent",
+        "condition",
+        "soient",
+        "avertis",
+        "mois",
+        "avance",
+        "accepter",
+        "rendre",
+        "point",
+        "république",
+        "jugerait"
+      ],
       "statut": "en vigueur",
       "section": "Titre III : Formation et exécution du contrat de travail"
     },
@@ -279,7 +513,20 @@
         "Toute rupture de contrat de travail par l'une des parties doit être notifiée par écrit à l'autre partie.",
         "La lettre de notification indique expressément le motif de la rupture."
       ],
-      "mots_cles": ["rupture", "notification écrite", "motif"],
+      "mots_cles": [
+        "rupture",
+        "modalités",
+        "parties",
+        "être",
+        "notifiée",
+        "écrit",
+        "lettre",
+        "notification",
+        "indique",
+        "expressément",
+        "motif",
+        "être notifiée"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -293,7 +540,20 @@
         "Si le travailleur est responsable d'un service, d'une caisse ou d'un stock, il ne peut quitter son emploi avant d'avoir rendu compte de sa gestion.",
         "Pendant la période de préavis, le travailleur bénéficie de deux (2) jours de liberté par semaine, payés à plein salaire, pour la recherche d'un nouvel emploi."
       ],
-      "mots_cles": ["préavis", "faute lourde", "indemnité compensatrice", "2 jours francs", "2 jours de liberté"],
+      "mots_cles": [
+        "préavis",
+        "période",
+        "emploi",
+        "réserve",
+        "sauf",
+        "délai",
+        "responsable",
+        "indemnité",
+        "quitter",
+        "deux",
+        "jours",
+        "stipulations"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -305,7 +565,20 @@
         "En cas d'inobservation de cette obligation, l'indemnité représentative de préavis stipulée à l'article 19 sera majorée de quinze (15) jours francs pour les travailleurs payés à l'heure ou à la journée, et d'un (1) mois pour les travailleurs payés au mois.",
         "Il en sera de même si la rupture du contrat intervient pendant le congé du travailleur."
       ],
-      "mots_cles": ["préavis", "congé", "majoration", "15 jours", "1 mois"],
+      "mots_cles": [
+        "préavis",
+        "départ",
+        "congé",
+        "sera",
+        "payés",
+        "mois",
+        "parties",
+        "désire",
+        "mettre",
+        "notification",
+        "être",
+        "faite"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -323,7 +596,20 @@
         "On entend par salaire global toutes les prestations constituant une contrepartie du travail, à l'exclusion de celles présentant le caractère d'un remboursement de frais.",
         "Lorsque le licenciement résulte du seul cas de compression de personnel, le travailleur a droit, après un (1) an de présence, à une indemnité de licenciement égale à 24% de la moyenne mensuelle du salaire global des douze (12) derniers mois pour chaque année de présence."
       ],
-      "mots_cles": ["indemnité de licenciement", "2 ans", "32%", "37%", "42%", "compression 24%"],
+      "mots_cles": [
+        "licenciement",
+        "année",
+        "indemnité",
+        "présence",
+        "salaire",
+        "global",
+        "moyenne",
+        "mensuelle",
+        "douze",
+        "derniers",
+        "mois",
+        "durée"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -334,7 +620,20 @@
         "L'employeur est tenu d'assurer la transmission du dossier du travailleur partant à la retraite à la Caisse Nationale de Sécurité Sociale (CNSS).",
         "Le travailleur partant à la retraite bénéficiera d'une indemnité de départ dont le montant sera égal à l'indemnité de licenciement calculée conformément aux dispositions de l'article 22."
       ],
-      "mots_cles": ["retraite", "CNSS", "indemnité de départ", "indemnité de licenciement"],
+      "mots_cles": [
+        "retraite",
+        "partant",
+        "indemnité",
+        "tenu",
+        "assurer",
+        "transmission",
+        "dossier",
+        "caisse",
+        "nationale",
+        "sécurité",
+        "sociale",
+        "cnss"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -344,7 +643,20 @@
       "texte": [
         "Tout licenciement collectif ou individuel motivé par une diminution de l'activité de l'entreprise ou une réorganisation intérieure est soumis à la procédure prévue à l'article 39 du Code du Travail."
       ],
-      "mots_cles": ["licenciement collectif", "diminution d'activité", "réorganisation", "article 39"],
+      "mots_cles": [
+        "licenciement",
+        "diminution",
+        "activité",
+        "réorganisation",
+        "collectif",
+        "individuel",
+        "motivé",
+        "intérieure",
+        "soumis",
+        "procédure",
+        "prévue",
+        "code"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -357,7 +669,20 @@
         "Dans le cas où le travailleur ne remplit pas les conditions d'ancienneté requises pour bénéficier de l'indemnité de licenciement, il percevra une indemnité égale au montant de l'indemnité compensatrice de préavis.",
         "Le travailleur ainsi remplacé conserve pendant deux (2) ans une priorité de réembauchage dans la même catégorie d'emploi."
       ],
-      "mots_cles": ["rupture", "maladie", "6 mois", "inapte", "priorité réembauchage 2 ans"],
+      "mots_cles": [
+        "indemnité",
+        "licenciement",
+        "rupture",
+        "malade",
+        "expiration",
+        "délai",
+        "mois",
+        "prévu",
+        "trouve",
+        "incapacité",
+        "reprendre",
+        "remplacer"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -373,7 +698,20 @@
         "En cas de décès de l'époux(se) ou des épouses légitimes du travailleur, de l'enfant légitime mineur à charge, sur le lieu du travail ou à l'occasion d'une évacuation sanitaire vers un centre hospitalier, l'employeur assurera éventuellement le transport de la dépouille mortelle si le travailleur a été déplacé de son lieu d'embauchage du fait de l'exécution du contrat de travail.",
         "À ce titre, une avance de solde dans la limite du plafond reconnu par l'article 100 du Code du Travail sera consentie au travailleur."
       ],
-      "mots_cles": ["décès", "héritiers", "2 ans", "cercueil", "linceul", "transport corps", "famille"],
+      "mots_cles": [
+        "décès",
+        "héritiers",
+        "indemnité",
+        "transport",
+        "lieu",
+        "deux",
+        "charge",
+        "déplacé",
+        "assurera",
+        "corps",
+        "délai",
+        "salaires"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -384,7 +722,20 @@
         "Au moment de quitter définitivement l'entreprise, le travailleur doit exiger un certificat de travail indiquant exclusivement le nom et l'adresse de l'entreprise, la date d'entrée et de sortie du travailleur, la nature et les dates des emplois successivement occupés avec référence aux catégories et échelons de la classification professionnelle.",
         "Un certificat provisoire pourra être remis au travailleur dès le début de la période de préavis."
       ],
-      "mots_cles": ["certificat de travail", "nom", "adresse", "dates", "emplois", "catégories"],
+      "mots_cles": [
+        "certificat",
+        "moment",
+        "quitter",
+        "définitivement",
+        "exiger",
+        "indiquant",
+        "exclusivement",
+        "adresse",
+        "date",
+        "entrée",
+        "sortie",
+        "nature"
+      ],
       "statut": "en vigueur",
       "section": "Titre IV : Résiliation du contrat de travail"
     },
@@ -397,7 +748,20 @@
         "Lorsqu'il connaît la date de sa libération du service militaire, le travailleur doit en avertir son employeur par lettre recommandée au plus tard dans le mois suivant sa libération.",
         "Les périodes de suspension pour obligations militaires ne sont pas considérées comme temps de service pour la détermination de l'ancienneté du travailleur."
       ],
-      "mots_cles": ["service militaire", "suspension", "indemnité de préavis", "ancienneté"],
+      "mots_cles": [
+        "militaire",
+        "service",
+        "obligations",
+        "militaires",
+        "périodes",
+        "indemnité",
+        "libération",
+        "durée",
+        "para",
+        "obligatoires",
+        "instruction",
+        "suspendu"
+      ],
       "statut": "en vigueur",
       "section": "Titre V : Suspension du contrat de travail"
     },
@@ -410,7 +774,20 @@
         "En cas d'interruption supérieure à quinze (15) jours, le temps non travaillé pourra être utilisé pour octroyer les congés payés au personnel.",
         "Au cas où la durée de congé acquise serait inférieure à la durée de l'interruption, il sera proposé au travailleur soit une suspension du contrat avec priorité d'embauchage et maintien de l'ancienneté, soit une rupture du contrat par l'employeur avec règlement de toutes les indemnités dues."
       ],
-      "mots_cles": ["arrêt collectif", "intempéries", "force majeure", "15 jours", "suspension", "congés payés"],
+      "mots_cles": [
+        "interruption",
+        "arrêt",
+        "collectif",
+        "durée",
+        "soit",
+        "individuel",
+        "cause",
+        "événement",
+        "indépendant",
+        "volonté",
+        "accident",
+        "machine"
+      ],
       "statut": "en vigueur",
       "section": "Titre V : Suspension du contrat de travail"
     },
@@ -429,7 +806,20 @@
         "Le travailleur reclassé conserve le bénéfice de son classement antérieur.",
         "Si plusieurs congés de maladie sont accordés au travailleur au cours d'une même année civile, la durée totale du plein et demi traitement ne peut excéder celle prévue pour l'une des trois dernières périodes ci-dessus."
       ],
-      "mots_cles": ["maladie", "accident non professionnel", "48 heures", "6 mois", "30 jours", "2 mois", "3 mois", "reclassement"],
+      "mots_cles": [
+        "mois",
+        "après",
+        "salaire",
+        "indemnité",
+        "maladie",
+        "période",
+        "service",
+        "égale",
+        "préavis",
+        "demi",
+        "jusqu",
+        "emploi"
+      ],
       "statut": "en vigueur",
       "section": "Titre V : Suspension du contrat de travail"
     },
@@ -441,7 +831,20 @@
         "Le contrat du travailleur accidenté du travail est suspendu jusqu'à la consolidation de la blessure.",
         "Si, après consolidation, le travailleur n'est plus à même de reprendre son service, l'employeur doit rechercher, en concertation avec le bureau syndical d'entreprise, la possibilité de le reclasser dans un autre emploi compatible avec ses capacités."
       ],
-      "mots_cles": ["accident du travail", "maladie professionnelle", "suspension", "consolidation", "reclassement"],
+      "mots_cles": [
+        "accidents",
+        "maladies",
+        "professionnelles",
+        "consolidation",
+        "relèvent",
+        "législatives",
+        "réglementaires",
+        "accidenté",
+        "suspendu",
+        "jusqu",
+        "blessure",
+        "après"
+      ],
       "statut": "en vigueur",
       "section": "Titre V : Suspension du contrat de travail"
     },
@@ -455,7 +858,20 @@
         "À la reprise du travail, l'employée a droit pendant quinze (15) mois à des repos pour allaitement ne pouvant dépasser une (1) heure par journée de travail. Ces repos peuvent être fractionnés en deux demi-heures.",
         "Des avances de salaires pourront être accordées à la travailleuse pendant la période de suspension, remboursables d'accord parties."
       ],
-      "mots_cles": ["grossesse", "maternité", "15 semaines", "6 semaines post-accouchement", "allaitement", "15 mois", "1 heure/jour"],
+      "mots_cles": [
+        "semaines",
+        "période",
+        "grossesse",
+        "accouchement",
+        "employée",
+        "droit",
+        "quinze",
+        "travailleuse",
+        "suspension",
+        "repos",
+        "être",
+        "maternité"
+      ],
       "statut": "en vigueur",
       "section": "Titre V : Suspension du contrat de travail"
     },
@@ -467,7 +883,20 @@
         "Il lui est toutefois loisible d'exercer, en dehors de son temps de travail, toute activité à caractère professionnel non susceptible de concurrencer l'entreprise ou de nuire à la bonne exécution des services convenus.",
         "Est nulle de plein droit toute clause d'un contrat de travail portant interdiction pour le travailleur d'exercer une activité quelconque à l'expiration du contrat ou en cas de rupture de celui-ci."
       ],
-      "mots_cles": ["obligations", "activité professionnelle", "exclusivité", "concurrence", "clause de non-concurrence nulle"],
+      "mots_cles": [
+        "activité",
+        "exercer",
+        "obligations",
+        "professionnelle",
+        "sauf",
+        "dérogation",
+        "stipulée",
+        "toutefois",
+        "loisible",
+        "dehors",
+        "temps",
+        "caractère"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -482,7 +911,20 @@
         "Toute modification aux horaires de travail sera communiquée pour avis aux membres du bureau syndical d'entreprise et transmise à l'Inspecteur du Travail du ressort avant sa mise en application.",
         "Pour les activités devant être assurées sans interruption à aucun moment du jour ou de la nuit, la continuité du poste doit être assurée. Le travailleur de service ne peut quitter son poste et doit attendre l'arrivée de son remplaçant."
       ],
-      "mots_cles": ["durée du travail", "2400 heures", "an", "article 105", "continuité de poste"],
+      "mots_cles": [
+        "durée",
+        "heures",
+        "être",
+        "poste",
+        "parties",
+        "réfèrent",
+        "législation",
+        "réglementation",
+        "concerne",
+        "fixée",
+        "conformément",
+        "code"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -494,7 +936,20 @@
         "La durée du travail effectif journalier peut être prolongée au-delà des limites assignées au travail normal en vue de permettre l'exécution de travaux préparatoires ou complémentaires indispensables.",
         "Dans tous les cas, les heures récupérées sont rémunérées au taux normal."
       ],
-      "mots_cles": ["récupération", "prolongation", "force majeure", "travaux préparatoires", "taux normal"],
+      "mots_cles": [
+        "durée",
+        "récupération",
+        "être",
+        "prolongée",
+        "heures",
+        "normal",
+        "prolongation",
+        "exceptionnelle",
+        "interruption",
+        "résultant",
+        "causes",
+        "accidentelles"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -513,7 +968,20 @@
         "Les rémunérations pour heures supplémentaires ne sauraient se cumuler avec les primes versées pour une durée supplémentaire de travail et ayant en fait le caractère de rémunération d'heures supplémentaires.",
         "Les heures supplémentaires effectuées individuellement et librement par un cadre, en dehors de l'horaire normal du service auquel il appartient, ne sont pas rémunérées."
       ],
-      "mots_cles": ["heures supplémentaires", "10%", "25%", "50%", "100%", "6 premières heures", "24 heures"],
+      "mots_cles": [
+        "heures",
+        "supplémentaires",
+        "horaire",
+        "effectuées",
+        "salaire",
+        "durée",
+        "delà",
+        "légale",
+        "rémunérées",
+        "réglementation",
+        "rémunération",
+        "jour"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -525,7 +993,20 @@
         "Il a lieu en principe le dimanche.",
         "Cependant, il peut être fixé un autre jour de la semaine du fait des nécessités de l'exploitation."
       ],
-      "mots_cles": ["repos hebdomadaire", "24 heures", "dimanche"],
+      "mots_cles": [
+        "repos",
+        "hebdomadaire",
+        "obligatoire",
+        "minimum",
+        "vingt",
+        "quatre",
+        "heures",
+        "consécutives",
+        "lieu",
+        "principe",
+        "dimanche",
+        "cependant"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -536,7 +1017,20 @@
         "Conformément à l'article 106 du Code du Travail, le travail effectué entre vingt (20) heures et cinq (5) heures du matin est considéré comme travail de nuit.",
         "Cette disposition ne s'applique pas au travail effectué par rotation de plusieurs postes par jour."
       ],
-      "mots_cles": ["travail de nuit", "20h-5h", "article 106", "rotation de postes"],
+      "mots_cles": [
+        "nuit",
+        "effectué",
+        "heures",
+        "conformément",
+        "code",
+        "vingt",
+        "cinq",
+        "matin",
+        "considéré",
+        "disposition",
+        "applique",
+        "rotation"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -553,7 +1047,20 @@
         "L'Inspecteur du Travail peut requérir l'examen des femmes et des enfants par un médecin agréé, en vue de vérifier si le travail dont ils sont chargés n'excède pas leurs forces.",
         "La femme ou l'enfant ne peut être maintenu dans un emploi au-dessus de ses forces et doit être affecté à un emploi convenable. Si cela n'est pas possible, le contrat doit être résilié avec paiement de l'indemnité de préavis et, le cas échéant, de l'indemnité de licenciement."
       ],
-      "mots_cles": ["femmes", "enfants", "travail de nuit interdit", "11 heures repos", "16 ans", "6 semaines post-accouchement", "2 heures/jour"],
+      "mots_cles": [
+        "être",
+        "femmes",
+        "enfants",
+        "peuvent",
+        "heures",
+        "durée",
+        "période",
+        "femme",
+        "employés",
+        "seize",
+        "enseignement",
+        "forces"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -564,7 +1071,20 @@
         "Les jours fériés sont ceux prévus par la législation en vigueur.",
         "À l'exception des jours déclarés par l'État fériés, chômés et payés, les autres jours fériés légaux sont récupérés à la diligence de l'employeur."
       ],
-      "mots_cles": ["jours fériés", "chômés", "payés", "récupération"],
+      "mots_cles": [
+        "jours",
+        "fériés",
+        "ceux",
+        "prévus",
+        "législation",
+        "exception",
+        "déclarés",
+        "état",
+        "chômés",
+        "payés",
+        "légaux",
+        "récupérés"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -583,7 +1103,20 @@
         "Pour un départ en congé ou un licenciement, ces congés supplémentaires sont calculés au prorata du temps écoulé depuis les derniers congés.",
         "Les congés supplémentaires extra-légaux pourront être pris et payés selon décision de l'employeur, notamment lorsqu'il doit arrêter une chaîne de production à date fixe."
       ],
-      "mots_cles": ["congés payés", "ancienneté", "2 jours", "4 jours", "5 jours", "7 jours", "8 jours", "9 jours"],
+      "mots_cles": [
+        "supplémentaires",
+        "congés",
+        "jours",
+        "ouvrables",
+        "après",
+        "service",
+        "durée",
+        "payés",
+        "fixée",
+        "législation",
+        "réglementation",
+        "toutefois"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -595,7 +1128,20 @@
         "L'allocation de congé devra être versée en totalité au travailleur le jour de son départ en congé.",
         "Le congé annuel ouvre droit au transport, à la charge de l'employeur, du travailleur et de sa famille (épouses légitimes et enfants) du lieu de travail au lieu d'embauche."
       ],
-      "mots_cles": ["allocation de congé", "article 122", "transport", "famille", "jour de départ"],
+      "mots_cles": [
+        "congé",
+        "allocation",
+        "lieu",
+        "verser",
+        "calculée",
+        "conformément",
+        "code",
+        "décret",
+        "janvier",
+        "devra",
+        "être",
+        "versée"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -611,7 +1157,20 @@
         "Le travailleur rappelé conservera intégralement son allocation de congé et percevra de nouveau son salaire dès la reprise du travail. Il bénéficiera d'une prolongation de congé égale au nombre de jours perdus, majorée d'une journée de congé supplémentaire payée.",
         "Hors le cas de rupture ou d'expiration du contrat de travail, est nulle et de nul effet toute convention prévoyant l'octroi d'une indemnité compensatrice en lieu et place du congé effectif."
       ],
-      "mots_cles": ["ordre de départ", "12 mois", "24 mois maximum", "affichage", "rappel de congé"],
+      "mots_cles": [
+        "congé",
+        "durée",
+        "service",
+        "effectif",
+        "ordre",
+        "départ",
+        "mois",
+        "droit",
+        "égale",
+        "fonction",
+        "nécessités",
+        "expiration"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -628,7 +1187,20 @@
         "- Accouchement de l'épouse du travailleur : 3 jours",
         "Si l'événement se produit hors du lieu d'emploi et nécessite le déplacement du travailleur, les délais ci-dessus pourront être prolongés d'accord parties. Cette prolongation ne donnera pas lieu à rémunération."
       ],
-      "mots_cles": ["permissions exceptionnelles", "10 jours", "mariage 4 jours", "décès 6 jours", "accouchement 3 jours"],
+      "mots_cles": [
+        "jours",
+        "permissions",
+        "exceptionnelles",
+        "pourront",
+        "être",
+        "mariage",
+        "enfants",
+        "décès",
+        "lieu",
+        "occasion",
+        "événements",
+        "familiaux"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -640,7 +1212,20 @@
         "Les absences dûment notifiées et motivées n'entraînent que la suspension du contrat de travail.",
         "À défaut d'être notifiées et motivées, trois (3) absences d'au moins une journée ou une absence supérieure à quarante-huit (48) heures au cours d'un même mois pourront constituer un juste motif de rupture du contrat de travail par l'employeur."
       ],
-      "mots_cles": ["absences", "48 heures", "notification", "suspension", "rupture"],
+      "mots_cles": [
+        "absences",
+        "quarante",
+        "huit",
+        "heures",
+        "motif",
+        "absence",
+        "notifiées",
+        "motivées",
+        "diverses",
+        "salarié",
+        "rendre",
+        "avertir"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -652,7 +1237,20 @@
         "Les sanctions disciplinaires sont prises par le chef d'établissement ou son représentant, après que l'intéressé, assisté sur sa demande d'un membre du bureau syndical d'entreprise, aura fourni ses explications écrites ou verbales.",
         "La sanction est signifiée par écrit au travailleur. Des copies sont transmises à l'Inspecteur du Travail du ressort et au bureau syndical d'entreprise."
       ],
-      "mots_cles": ["discipline", "règlement intérieur", "sanctions", "explications", "Inspecteur du Travail"],
+      "mots_cles": [
+        "discipline",
+        "établissement",
+        "bureau",
+        "syndical",
+        "particulières",
+        "matière",
+        "seront",
+        "précisées",
+        "règlement",
+        "intérieur",
+        "sanctions",
+        "disciplinaires"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -674,7 +1272,20 @@
         "4) Par route :",
         "- Toutes catégories confondues"
       ],
-      "mots_cles": ["classes de passage", "bateau", "train", "avion", "route", "catégories"],
+      "mots_cles": [
+        "catégories",
+        "classe",
+        "classes",
+        "passage",
+        "prend",
+        "charge",
+        "frais",
+        "voyage",
+        "transport",
+        "cadre",
+        "prévues",
+        "code"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -690,7 +1301,20 @@
         "Le transport de bagages est effectué par une voie et des moyens au choix de l'employeur.",
         "L'assurance des bagages demeure à la charge du travailleur."
       ],
-      "mots_cles": ["bagages", "250 kg", "75 kg enfants", "100 kg avion", "franchise", "transport"],
+      "mots_cles": [
+        "bagages",
+        "transport",
+        "charge",
+        "kilogrammes",
+        "franchise",
+        "voyage",
+        "lieu",
+        "famille",
+        "prévu",
+        "avantage",
+        "concédée",
+        "compagnie"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -708,7 +1332,20 @@
         "Le logement doit être restitué dans un bon état d'entretien. Le travailleur sera redevable de toute dégradation mobilière et immobilière autre que celles correspondant à une usure normale.",
         "L'obligation de loger le travailleur pourra être remplacée par le versement d'une indemnité de logement, conformément aux usages locaux."
       ],
-      "mots_cles": ["logement", "article 83", "évacuation", "préavis", "faute lourde 15 jours", "indemnité de logement"],
+      "mots_cles": [
+        "logement",
+        "préavis",
+        "évacuation",
+        "tenu",
+        "licenciement",
+        "délai",
+        "être",
+        "déplacé",
+        "lieu",
+        "résidence",
+        "habituelle",
+        "celui"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -718,7 +1355,18 @@
       "texte": [
         "Dans les entreprises où une tenue de travail déterminée est rendue obligatoire, l'employeur devra la fournir gratuitement au travailleur."
       ],
-      "mots_cles": ["tenues de travail", "fourniture gratuite", "obligatoire"],
+      "mots_cles": [
+        "tenues",
+        "entreprises",
+        "tenue",
+        "déterminée",
+        "rendue",
+        "obligatoire",
+        "devra",
+        "fournir",
+        "gratuitement",
+        "fournir gratuitement"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -728,7 +1376,20 @@
       "texte": [
         "Tout employé astreint à des conditions nocives permanentes d'exécution de certains travaux devra obligatoirement se soumettre à un examen médical préventif tous les six (6) mois."
       ],
-      "mots_cles": ["travaux dangereux", "conditions nocives", "examen médical", "6 mois"],
+      "mots_cles": [
+        "travaux",
+        "dangereux",
+        "employé",
+        "astreint",
+        "nocives",
+        "permanentes",
+        "exécution",
+        "certains",
+        "devra",
+        "obligatoirement",
+        "soumettre",
+        "examen"
+      ],
       "statut": "en vigueur",
       "section": "Titre VI : Conditions du travail"
     },
@@ -744,7 +1405,20 @@
         "Les tarifs du travail à la production doivent procurer au travailleur de capacité moyenne un salaire au moins égal à celui du travailleur de même catégorie rémunéré au temps, conformément à l'article 84 du Code du Travail.",
         "Toutes les indications nécessaires à l'établissement du montant de la rémunération seront données préalablement au travailleur avant l'exécution du travail."
       ],
-      "mots_cles": ["salaire", "heure", "journée", "mois", "égalité", "18 ans", "pièce", "tâche", "rendement"],
+      "mots_cles": [
+        "salaire",
+        "rémunération",
+        "emploi",
+        "établissement",
+        "tâche",
+        "rendement",
+        "égal",
+        "production",
+        "catégorie",
+        "détermination",
+        "déterminé",
+        "fonction"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -758,7 +1432,20 @@
         "Le salaire perçu ne pourra en aucun cas être inférieur au salaire minima agricole garanti (SMAG) du lieu d'emploi.",
         "Les jeunes travailleurs titulaires du BEMT ou du BEMG ne subiront pas les abattements prévus ci-dessus."
       ],
-      "mots_cles": ["jeunes travailleurs", "abattement", "20%", "10%", "SMAG", "BEMT", "BEMG"],
+      "mots_cles": [
+        "abattement",
+        "salaire",
+        "jeunes",
+        "taux",
+        "salaires",
+        "âgés",
+        "huit",
+        "liés",
+        "apprentissage",
+        "fixé",
+        "suit",
+        "perçu"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -768,7 +1455,20 @@
       "texte": [
         "Lorsque le chef d'entreprise est appelé à employer des ouvriers dont les aptitudes physiques les mettent dans une position d'infériorité notoire sur les travailleurs de la même catégorie, il pourra exceptionnellement, moyennant l'accord de l'Inspecteur du Travail, leur appliquer un salaire inférieur au salaire minimum de cette catégorie."
       ],
-      "mots_cles": ["travailleurs diminués", "aptitudes physiques", "salaire inférieur", "Inspecteur du Travail"],
+      "mots_cles": [
+        "salaire",
+        "catégorie",
+        "diminués",
+        "physiquement",
+        "chef",
+        "appelé",
+        "employer",
+        "ouvriers",
+        "aptitudes",
+        "physiques",
+        "mettent",
+        "position"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -779,7 +1479,20 @@
         "Les salaires sont payés conformément aux prescriptions légales et réglementaires, et notamment aux articles 87 et suivants du Code du Travail.",
         "En cas de contestation sur le contenu du bulletin de paye, le travailleur peut demander la justification des éléments y figurant. Il peut se faire assister d'un membre du bureau syndical d'entreprise."
       ],
-      "mots_cles": ["paiement", "salaire", "bulletin de paye", "contestation", "bureau syndical"],
+      "mots_cles": [
+        "paiement",
+        "salaire",
+        "salaires",
+        "payés",
+        "conformément",
+        "prescriptions",
+        "légales",
+        "réglementaires",
+        "notamment",
+        "suivants",
+        "code",
+        "contestation"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -829,7 +1542,20 @@
         "- Après 28 ans de présence : 28%",
         "- Au-delà : 29%"
       ],
-      "mots_cles": ["prime d'ancienneté", "3%", "1%/an", "29% maximum", "28 ans", "temps de service"],
+      "mots_cles": [
+        "après",
+        "présence",
+        "ancienneté",
+        "service",
+        "période",
+        "militaire",
+        "prime",
+        "temps",
+        "maladie",
+        "limite",
+        "mois",
+        "absences"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -841,7 +1567,20 @@
         "Tout travailleur ayant fait en cours d'année l'objet d'une ou plusieurs sanctions (blâmes au minimum) confirmées par l'Inspecteur du Travail ou son représentant légal pourra voir sa prime réduite ou supprimée.",
         "La non-réponse de l'Inspecteur du Travail dans un délai de trois (3) mois vaut confirmation de la sanction."
       ],
-      "mots_cles": ["prime de fin d'année", "100%", "salaire de base", "sanctions", "3 mois"],
+      "mots_cles": [
+        "prime",
+        "année",
+        "inspecteur",
+        "égale",
+        "salaire",
+        "base",
+        "ayant",
+        "cours",
+        "objet",
+        "plusieurs",
+        "sanctions",
+        "blâmes"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -856,7 +1595,20 @@
         "- Prime vélo ordinaire personnel (planton) : 4 000 FCFA",
         "Les primes pour utilisation de bicyclette ou vélo moteur au planton ne sont pas dues lorsque le moyen de transport est fourni par l'employeur."
       ],
-      "mots_cles": ["primes", "caisse 12 000 FCFA", "caisse 7 000 FCFA", "vélo 6 000 FCFA", "vélo 4 000 FCFA"],
+      "mots_cles": [
+        "prime",
+        "fcfa",
+        "primes",
+        "vélo",
+        "planton",
+        "responsabilité",
+        "caisse",
+        "moteur",
+        "personnel",
+        "diverses",
+        "attribuées",
+        "relevant"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -871,7 +1623,20 @@
         "La liste des diplômes énumérés ci-dessus n'a pas un caractère limitatif. Pour les diplômes qui ne figurent pas dans cette énumération, il est procédé par voie d'assimilation.",
         "Le cumul des majorations pour un titulaire de plusieurs diplômes n'est pas admis. Seul sera pris en considération pour l'attribution de la majoration le diplôme donnant droit à la prime la plus importante."
       ],
-      "mots_cles": ["majoration diplôme", "BEMT 4 000 FCFA", "BAC 6 000 FCFA", "licence 10 000 FCFA", "non-cumul"],
+      "mots_cles": [
+        "diplômes",
+        "baccalauréat",
+        "droit",
+        "majorations",
+        "enseignement",
+        "diplôme",
+        "fcfa",
+        "sciences",
+        "brevet",
+        "supérieur",
+        "mensuelles",
+        "déclarés"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -885,7 +1650,20 @@
         "Les sténo-dactylographes chargés de prendre en sténographie des textes dictés en langue étrangère et de les dactylographier correctement dans la même langue reçoivent, par langue utilisée, en sus du salaire minimum afférent à leur qualification, une majoration mensuelle de 8 000 FCFA.",
         "Pour une même langue, les majorations prévues pour traducteur et rédacteur ne peuvent pas s'additionner, mais leur cumul est possible s'il s'agit de rédaction ou de traduction en plusieurs langues."
       ],
-      "mots_cles": ["langues étrangères", "traduction 7 000 FCFA", "rédaction 10 000 FCFA", "sténo 8 000 FCFA"],
+      "mots_cles": [
+        "langue",
+        "langues",
+        "traduction",
+        "rédaction",
+        "fcfa",
+        "majorations",
+        "étrangères",
+        "plusieurs",
+        "soit",
+        "chargés",
+        "reçoivent",
+        "salaire"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -899,7 +1677,20 @@
         "Elle peut être remplacée par la fourniture d'un repas gratuit.",
         "Cette indemnité ne peut se cumuler avec l'indemnité de déplacement prévue à l'article 62."
       ],
-      "mots_cles": ["indemnité de panier", "4 fois salaire horaire", "repas", "prolongation", "non-cumul"],
+      "mots_cles": [
+        "indemnité",
+        "panier",
+        "deux",
+        "prolongation",
+        "horaire",
+        "repas",
+        "heures",
+        "exceptionnelle",
+        "empêche",
+        "prendre",
+        "heure",
+        "habituelle"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -916,7 +1707,20 @@
         "Le travailleur appelé à effectuer un déplacement de plus d'une journée sera averti au moins vingt-quatre (24) heures à l'avance, sauf en cas d'urgence.",
         "La situation des travailleurs déplacés hors des frontières de la République du Congo pourra faire l'objet de contrats individuels spécifiques."
       ],
-      "mots_cles": ["indemnité de déplacement", "3 fois", "6 fois", "10 fois", "salaire horaire", "24 heures"],
+      "mots_cles": [
+        "déplacement",
+        "lieu",
+        "horaire",
+        "repas",
+        "indemnité",
+        "fois",
+        "salaire",
+        "minimum",
+        "entraîne",
+        "prise",
+        "dehors",
+        "emploi"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -928,7 +1732,20 @@
         "Cette participation sera égale à 100% du tarif mensuel d'abonnement ou des tarifs officialisés par les municipalités pour les transports en commun.",
         "Cette participation n'est pas due lorsque l'employeur met un moyen de transport à la disposition du travailleur."
       ],
-      "mots_cles": ["indemnité de transport", "100%", "abonnement", "transports en commun"],
+      "mots_cles": [
+        "transport",
+        "participation",
+        "indemnité",
+        "frais",
+        "éventuels",
+        "domicile",
+        "lieu",
+        "admise",
+        "prorata",
+        "temps",
+        "effectif",
+        "sera"
+      ],
       "statut": "en vigueur",
       "section": "Titre VII : Salaire"
     },
@@ -938,7 +1755,18 @@
       "texte": [
         "Les employeurs sont tenus de se conformer, en matière d'organisation médicale et sanitaire, aux prescriptions des articles 142 à 148 du Code du Travail et des textes d'application en vigueur."
       ],
-      "mots_cles": ["organisation médicale", "sanitaire", "articles 142 à 148", "Code du Travail"],
+      "mots_cles": [
+        "organisation",
+        "médicale",
+        "sanitaire",
+        "tenus",
+        "conformer",
+        "matière",
+        "prescriptions",
+        "code",
+        "textes",
+        "organisation médicale"
+      ],
       "statut": "en vigueur",
       "section": "Titre VIII : Service médical"
     },
@@ -948,7 +1776,20 @@
       "texte": [
         "Des congés sans solde peuvent être accordés aux employées, qu'elles soient mariées, veuves, divorcées ou célibataires, pour soigner, en cas de maladie grave attestée par un certificat médical, leurs enfants, leur conjoint ou leurs ascendants."
       ],
-      "mots_cles": ["congés pour soins", "sans solde", "maladie grave", "certificat médical", "famille"],
+      "mots_cles": [
+        "congés",
+        "soins",
+        "solde",
+        "peuvent",
+        "être",
+        "accordés",
+        "employées",
+        "soient",
+        "mariées",
+        "veuves",
+        "divorcées",
+        "célibataires"
+      ],
       "statut": "en vigueur",
       "section": "Titre VIII : Service médical"
     },
@@ -964,7 +1805,20 @@
         "- 1ère catégorie CHU : catégorie 8 et au-dessus de la présente Convention.",
         "Dans le cas d'hospitalisation d'un membre de la famille du travailleur, l'employeur se portera caution auprès de l'établissement hospitalier du paiement des frais d'hospitalisation dans la limite des sommes qui sont ou pourraient être dues au travailleur. Le remboursement sera assuré, d'accord parties, par retenues périodiques sur le salaire de l'intéressé."
       ],
-      "mots_cles": ["hospitalisation", "60%", "caution", "catégories CHU", "famille"],
+      "mots_cles": [
+        "hospitalisation",
+        "frais",
+        "catégorie",
+        "caution",
+        "limite",
+        "présente",
+        "maladie",
+        "auprès",
+        "établissement",
+        "hospitalier",
+        "paiement",
+        "sommes"
+      ],
       "statut": "en vigueur",
       "section": "Titre VIII : Service médical"
     },
@@ -974,7 +1828,20 @@
       "texte": [
         "En attendant la mise en place d'un régime de Sécurité Sociale à l'échelon national, comportant notamment la garantie maladie, les employeurs acceptent de prendre en charge 45% des frais pharmaceutiques exposés par l'employé pour ses propres soins médicaux, sur présentation d'ordonnance délivrée par un médecin."
       ],
-      "mots_cles": ["frais pharmaceutiques", "45%", "ordonnance", "soins médicaux"],
+      "mots_cles": [
+        "frais",
+        "pharmaceutiques",
+        "attendant",
+        "mise",
+        "place",
+        "régime",
+        "sécurité",
+        "sociale",
+        "échelon",
+        "national",
+        "comportant",
+        "notamment"
+      ],
       "statut": "en vigueur",
       "section": "Titre VIII : Service médical"
     },
@@ -985,7 +1852,20 @@
         "Les catégories et échelons dans lesquels les travailleurs sont classés sont déterminés par la classification professionnelle figurant en annexe de la présente Convention.",
         "Le classement d'un travailleur est fonction de l'emploi qu'il occupe effectivement au sein de l'entreprise, fixé dans les conditions prévues à l'article 13 relatif aux conditions de l'engagement."
       ],
-      "mots_cles": ["classement", "catégories", "échelons", "classification professionnelle", "annexe"],
+      "mots_cles": [
+        "classement",
+        "catégories",
+        "échelons",
+        "classés",
+        "déterminés",
+        "classification",
+        "professionnelle",
+        "figurant",
+        "annexe",
+        "présente",
+        "fonction",
+        "emploi"
+      ],
       "statut": "en vigueur",
       "section": "Titre IX : Dispositions diverses"
     },
@@ -1004,7 +1884,20 @@
         "La décision est prise à la majorité des voix. Elle doit toujours être motivée.",
         "Lorsqu'une des parties n'accepte pas la décision de la Commission, le litige est porté devant le Tribunal du Travail du ressort."
       ],
-      "mots_cles": ["commission de classement", "Inspecteur du Travail", "3 jours", "5 jours", "Tribunal du Travail", "majorité"],
+      "mots_cles": [
+        "commission",
+        "classement",
+        "emploi",
+        "deux",
+        "soit",
+        "différend",
+        "être",
+        "ressort",
+        "représentants",
+        "date",
+        "jours",
+        "suivant"
+      ],
       "statut": "en vigueur",
       "section": "Titre IX : Dispositions diverses"
     },
@@ -1024,7 +1917,20 @@
         "Lorsque la Commission donne un avis à l'unanimité des organisations représentées, le texte de cet avis, signé par les membres de la Commission, a les mêmes effets juridiques que les clauses de la présente Convention.",
         "Cet avis fait l'objet d'un dépôt au Secrétariat du Tribunal du Travail, à la diligence de l'Autorité Administrative qui a réuni la Commission."
       ],
-      "mots_cles": ["commission d'interprétation", "conciliation", "paritaire", "unanimité", "effets juridiques", "Tribunal du Travail"],
+      "mots_cles": [
+        "commission",
+        "membres",
+        "interprétation",
+        "présente",
+        "autorité",
+        "administrative",
+        "avis",
+        "conciliation",
+        "deux",
+        "titulaires",
+        "suppléants",
+        "signataires"
+      ],
       "statut": "en vigueur",
       "section": "Titre IX : Dispositions diverses"
     },
@@ -1058,7 +1964,20 @@
         "",
         "NB : La présente classification est applicable à compter du 15 Novembre 1991."
       ],
-      "mots_cles": ["barème", "salaires", "agriculture", "forêt", "élevage", "1990", "FCFA", "ouvriers", "employés", "12 catégories"],
+      "mots_cles": [
+        "fcfa",
+        "catégorie",
+        "échelon",
+        "mois",
+        "novembre",
+        "salaires",
+        "agriculture",
+        "élevage",
+        "part",
+        "compter",
+        "barèmes",
+        "forêt"
+      ],
       "statut": "en vigueur",
       "section": "Annexe : Barèmes de salaires"
     }

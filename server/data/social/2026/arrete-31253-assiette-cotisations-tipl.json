@@ -22,7 +22,20 @@
       "texte": [
         "Le présent arrêté fixe, en application de l'article 2 du décret n°2024-133 du 27 mars 2024 fixant les taux et montants de cotisations à la caisse d'assurance maladie universelle, l'assiette de cotisations des travailleurs indépendants et des professions libérales."
       ],
-      "mots_cles": ["objet", "assiette", "travailleurs indépendants", "professions libérales"],
+      "mots_cles": [
+        "cotisations",
+        "objet",
+        "présent",
+        "arrêté",
+        "décret",
+        "mars",
+        "fixant",
+        "taux",
+        "montants",
+        "caisse",
+        "assurance",
+        "maladie"
+      ],
       "statut": "en vigueur",
       "section": "Assiette cotisations TIPL"
     },
@@ -32,7 +45,20 @@
       "texte": [
         "Au sens du présent arrêté, l'assiette de cotisation est la base sur laquelle est calculée le taux de cotisation de 3,79 % applicable aux travailleurs indépendants et des professions libérales."
       ],
-      "mots_cles": ["assiette", "3,79 %", "base de calcul"],
+      "mots_cles": [
+        "assiette",
+        "cotisation",
+        "définition",
+        "présent",
+        "arrêté",
+        "base",
+        "calculée",
+        "taux",
+        "applicable",
+        "indépendants",
+        "professions",
+        "libérales"
+      ],
       "statut": "en vigueur",
       "section": "Assiette cotisations TIPL"
     },
@@ -57,7 +83,20 @@
         "14. Architectes, Vétérinaires, Armateurs : Assiette 500.000 FCFA, Cotisation 18.950 FCFA ;",
         "15. Huissiers, Notaires, Avocats, Conseils : Assiette 600.000 FCFA, Cotisation 22.740 FCFA."
       ],
-      "mots_cles": ["tableau", "15 catégories", "assiette", "cotisations mensuelles", "190 000 à 600 000 FCFA"],
+      "mots_cles": [
+        "fcfa",
+        "assiette",
+        "cotisation",
+        "tableau",
+        "cotisations",
+        "mensuelles",
+        "assiettes",
+        "montants",
+        "indépendants",
+        "professions",
+        "libérales",
+        "fixés"
+      ],
       "statut": "en vigueur",
       "section": "Assiette cotisations TIPL"
     },
@@ -67,7 +106,20 @@
       "texte": [
         "Le présent arrêté sera enregistré et publié au Journal officiel de la République du Congo."
       ],
-      "mots_cles": ["publication", "Journal officiel"],
+      "mots_cles": [
+        "publication",
+        "présent",
+        "arrêté",
+        "sera",
+        "enregistré",
+        "publié",
+        "journal",
+        "officiel",
+        "république",
+        "congo",
+        "présent arrêté",
+        "sera enregistré"
+      ],
       "statut": "en vigueur",
       "section": "Assiette cotisations TIPL"
     }

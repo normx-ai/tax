@@ -27,7 +27,20 @@
         "- 65 ans, pour les cadres hors catégorie.",
         "La durée d'assurance requise pour bénéficier d'une pension de vieillesse normale selon les catégories est fixée par voie réglementaire."
       ],
-      "mots_cles": ["âge retraite", "60 ans", "63 ans", "65 ans", "70 ans", "manœuvres", "agents de maîtrise", "cadres", "retraite anticipée"],
+      "mots_cles": [
+        "retraite",
+        "cadres",
+        "catégorie",
+        "catégories",
+        "manœuvres",
+        "ouvriers",
+        "assimilés",
+        "agents",
+        "maîtrise",
+        "hors",
+        "durée",
+        "assurance"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -36,7 +49,20 @@
       "texte": [
         "À la demande de l'employeur et, avec le consentement du travailleur, l'admission à la retraite peut être reportée pour une durée n'excédant pas deux ans."
       ],
-      "mots_cles": ["report", "2 ans", "consentement"],
+      "mots_cles": [
+        "admission",
+        "retraite",
+        "report",
+        "demande",
+        "consentement",
+        "être",
+        "reportée",
+        "durée",
+        "excédant",
+        "deux",
+        "être reportée",
+        "deux ans"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -45,7 +71,20 @@
       "texte": [
         "L'autorisation de prolongation d'activité est accordée par le Ministre chargé du travail, dans un délai de trois mois, à compter de la date de réception du procès-verbal cosigné par l'employeur et le travailleur. Passé ce délai, l'autorisation entre en vigueur de plein droit."
       ],
-      "mots_cles": ["prolongation", "3 mois", "Ministre du travail"],
+      "mots_cles": [
+        "autorisation",
+        "prolongation",
+        "délai",
+        "activité",
+        "accordée",
+        "ministre",
+        "chargé",
+        "trois",
+        "mois",
+        "compter",
+        "date",
+        "réception"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -54,7 +93,20 @@
       "texte": [
         "La présente loi, qui abroge toutes dispositions antérieures contraires, notamment la loi n°22-2010 du 30 décembre 2010 fixant l'âge d'admission à la retraite des travailleurs relevant du Code du travail, sera publiée au journal officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["abrogation", "loi 22-2010"],
+      "mots_cles": [
+        "abrogation",
+        "publication",
+        "présente",
+        "abroge",
+        "antérieures",
+        "contraires",
+        "notamment",
+        "décembre",
+        "fixant",
+        "admission",
+        "retraite",
+        "relevant"
+      ],
       "statut": "en vigueur"
     }
   ]

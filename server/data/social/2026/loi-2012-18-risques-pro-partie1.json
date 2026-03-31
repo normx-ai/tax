@@ -21,7 +21,20 @@
         "- une branche des pensions chargée du service des prestations de retraite, d'invalidité et de réversion.",
         "D'autres branches, en rapport avec le présent régime, peuvent être créées par la loi."
       ],
-      "mots_cles": ["régime obligatoire", "risques professionnels", "pensions", "retraite", "invalidité", "réversion"],
+      "mots_cles": [
+        "régime",
+        "obligatoire",
+        "risques",
+        "professionnels",
+        "pensions",
+        "branches",
+        "branche",
+        "chargée",
+        "service",
+        "prestations",
+        "institution",
+        "institué"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales"
     },
@@ -31,7 +44,20 @@
       "texte": [
         "Sont assujettis au régime des risques professionnels et des pensions institué par la présente loi, tous les travailleurs salariés relevant du secteur privé, des établissements publics et semi-publics, sans aucune distinction de race, de nationalité, de sexe et d'origine, lorsqu'ils exercent une activité professionnelle pour le compte et sous la direction d'un ou de plusieurs employeurs quel que soit leur statut, nonobstant la nature, la forme et la validité du contrat, la nature et le montant de la rémunération."
       ],
-      "mots_cles": ["assujettis", "salariés", "secteur privé", "établissements publics"],
+      "mots_cles": [
+        "publics",
+        "nature",
+        "personnes",
+        "assujetties",
+        "assujettis",
+        "régime",
+        "risques",
+        "professionnels",
+        "pensions",
+        "institué",
+        "présente",
+        "salariés"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales"
     },
@@ -47,7 +73,20 @@
         "- les membres des sociétés coopératives ouvrières de production, ainsi que les gérants non-salariés de coopérative et leurs préposés.",
         "Les détenus exécutant un travail périlleux bénéficient des dispositions de la présente loi pour les accidents survenus par le fait ou à l'occasion du travail."
       ],
-      "mots_cles": ["assimilés", "apprentis", "stagiaires", "PDG", "gérants", "coopératives", "détenus"],
+      "mots_cles": [
+        "généraux",
+        "sociétés",
+        "gérants",
+        "assimilés",
+        "salariés",
+        "présente",
+        "directeurs",
+        "celles",
+        "visés",
+        "apprentis",
+        "stagiaires",
+        "personnes"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales"
     },
@@ -58,7 +97,20 @@
         "Est considéré comme assuré, tout salarié immatriculé auprès de l'organisme de sécurité sociale en charge de la gestion du présent régime. Sont considérés comme ayants droit, le conjoint de l'assuré et ses enfants à charge.",
         "Les modalités d'affiliation des employeurs et d'immatriculation des travailleurs sont déterminées par voie réglementaire."
       ],
-      "mots_cles": ["assuré", "immatriculé", "ayants droit", "conjoint", "enfants"],
+      "mots_cles": [
+        "assuré",
+        "ayants",
+        "droit",
+        "charge",
+        "définition",
+        "considéré",
+        "salarié",
+        "immatriculé",
+        "auprès",
+        "organisme",
+        "sécurité",
+        "sociale"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 - Dispositions générales"
     },
@@ -68,7 +120,16 @@
       "texte": [
         "Sont considérés comme risques professionnels, les accidents du travail et les maladies professionnelles."
       ],
-      "mots_cles": ["risques professionnels", "accidents", "maladies professionnelles"],
+      "mots_cles": [
+        "risques",
+        "professionnels",
+        "définition",
+        "considérés",
+        "accidents",
+        "maladies",
+        "professionnelles",
+        "risques professionnels"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 - Des risques professionnels / Chapitre 1 - Détermination / Section 1 - Nature des risques"
     },
@@ -83,7 +144,20 @@
         "- l'accident survenu entre tout autre lieu où le travailleur se rend de façon habituelle pour des motifs d'ordre familial et le lieu de travail ;",
         "- l'accident survenu pendant les voyages dont les frais sont mis à la charge de l'employeur en vertu des dispositions y relatives du Code du travail."
       ],
-      "mots_cles": ["accident du travail", "trajet", "résidence", "cantine"],
+      "mots_cles": [
+        "accident",
+        "survenu",
+        "lieu",
+        "résidence",
+        "considéré",
+        "quelle",
+        "soit",
+        "cause",
+        "occasion",
+        "également",
+        "considérés",
+        "accidents"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 1"
     },
@@ -96,7 +170,20 @@
         "La date de la première constatation médicale de la maladie professionnelle est assimilée à la date de l'accident.",
         "Les maladies, qui ne se manifestent qu'après la date à laquelle le travailleur a cessé d'être directement exposé au risque, donnent droit aux prestations si elles sont déclarées dans les délais fixés par arrêté du Ministre chargé de la santé."
       ],
-      "mots_cles": ["maladie professionnelle", "liste", "arrêté", "délais"],
+      "mots_cles": [
+        "maladie",
+        "professionnelle",
+        "date",
+        "maladies",
+        "arrêté",
+        "ministre",
+        "chargé",
+        "santé",
+        "considérée",
+        "contractée",
+        "occasion",
+        "liste"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 1"
     },
@@ -107,7 +194,20 @@
         "La victime d'un accident du travail ou de trajet doit dans un délai de vingt-quatre heures, sauf cas de force majeure, d'impossibilité absolue ou de motif légitime, en informer son employeur ou l'un de ses préposés. La même obligation incombe aux ayants droit de l'assuré en cas de décès.",
         "La victime ou l'ayant droit doit apporter pour les accidents survenus en dehors des lieux de travail, la preuve de l'accident et les circonstances de sa survenue."
       ],
-      "mots_cles": ["déclaration", "24 heures", "victime", "preuve"],
+      "mots_cles": [
+        "victime",
+        "accident",
+        "droit",
+        "déclaration",
+        "trajet",
+        "délai",
+        "vingt",
+        "quatre",
+        "heures",
+        "sauf",
+        "force",
+        "majeure"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2 - Déclaration et enquête"
     },
@@ -119,7 +219,20 @@
         "En cas de carence de l'employeur, la victime ou ses ayants droit peuvent faire la déclaration d'accident du travail ou de la première constatation médicale de la maladie professionnelle dans un délai de deux ans, à compter de la date d'accident ou de constatation de la maladie.",
         "Une copie de la déclaration d'accident du travail ou de maladie professionnelle est transmise par l'organisme de sécurité sociale à l'inspection du travail et des lois sociales du ressort."
       ],
-      "mots_cles": ["employeur", "48 heures", "7 jours", "15 jours", "carence", "2 ans"],
+      "mots_cles": [
+        "délai",
+        "accident",
+        "maladie",
+        "déclaration",
+        "professionnelle",
+        "organisme",
+        "sécurité",
+        "sociale",
+        "jours",
+        "ouvrables",
+        "constatation",
+        "tenu"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2"
     },
@@ -129,7 +242,20 @@
       "texte": [
         "Une enquête commise par l'organisme de sécurité sociale permet de confirmer les preuves apportées par l'employeur, la victime ou ses ayants droit."
       ],
-      "mots_cles": ["enquête", "preuves"],
+      "mots_cles": [
+        "enquête",
+        "commise",
+        "organisme",
+        "sécurité",
+        "sociale",
+        "permet",
+        "confirmer",
+        "preuves",
+        "apportées",
+        "victime",
+        "ayants",
+        "droit"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2"
     },
@@ -139,7 +265,20 @@
       "texte": [
         "Les officiers de police judiciaire, les inspecteurs du travail et des lois sociales, les agents assermentés de l'organisme de sécurité sociale sont agréés, à titre permanent, en qualité d'enquêteurs pour les accidents du travail."
       ],
-      "mots_cles": ["enquêteurs", "police judiciaire", "inspecteurs", "agents assermentés"],
+      "mots_cles": [
+        "enquêteurs",
+        "agréés",
+        "officiers",
+        "police",
+        "judiciaire",
+        "inspecteurs",
+        "lois",
+        "sociales",
+        "agents",
+        "assermentés",
+        "organisme",
+        "sécurité"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2"
     },
@@ -149,7 +288,20 @@
       "texte": [
         "Lorsqu'une procédure d'accident du travail fait l'objet d'un procès-verbal de police, celui-ci doit être transmis au directeur général de l'organisme de sécurité sociale ou à ses représentants."
       ],
-      "mots_cles": ["procès-verbal", "police", "transmission"],
+      "mots_cles": [
+        "procès",
+        "verbal",
+        "police",
+        "lorsqu",
+        "procédure",
+        "accident",
+        "objet",
+        "celui",
+        "être",
+        "transmis",
+        "directeur",
+        "général"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2"
     },
@@ -161,7 +313,20 @@
         "La victime peut se faire assister par une personne de son choix. En cas de décès, ce droit appartient à ses ayants droit.",
         "Lorsque la victime est dans l'impossibilité d'assister à l'enquête, l'enquêteur se transporte auprès d'elle pour recueillir ses explications."
       ],
-      "mots_cles": ["enquête contradictoire", "témoins", "assistance"],
+      "mots_cles": [
+        "enquête",
+        "victime",
+        "droit",
+        "contradictoire",
+        "enquêteur",
+        "ayants",
+        "assister",
+        "témoins",
+        "entendus",
+        "présence",
+        "personne",
+        "choix"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2"
     },
@@ -173,7 +338,20 @@
         "En cas d'accident de trajet, ces éléments doivent être notés avec soin en vue d'établir, le cas échéant, les motifs qui auraient conduit la victime à interrompre ou à détourner son parcours.",
         "Ces éléments sont : l'identité de la victime et le lieu où elle se trouve ; la nature des lésions ; l'existence d'ayants droit, l'identité et la résidence de chacun d'eux ; la catégorie professionnelle, le classement de la victime au moment de l'arrêt de travail et, d'une manière générale, tous les éléments susceptibles de fixer le salaire servant de base de calcul des indemnités journalières et de rentes."
       ],
-      "mots_cles": ["éléments enquête", "circonstances", "faute", "identité", "lésions"],
+      "mots_cles": [
+        "éléments",
+        "accident",
+        "victime",
+        "établir",
+        "nature",
+        "lieu",
+        "existence",
+        "identité",
+        "enquête",
+        "enquêteur",
+        "recueillir",
+        "renseignements"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2"
     },
@@ -183,7 +361,20 @@
       "texte": [
         "En vue de recueillir les éléments cités à l'article 14 de la présente loi, l'enquêteur peut effectuer, au siège de l'établissement ou des établissements ayant employé la victime, toute constatation et vérifications nécessaires, le cas échéant, les renseignements sur les accidents de travail antérieurs en mentionnant pour chacun d'eux : la date à laquelle il est survenu ; la date de guérison ou de consolidation des blessures, s'il en résulte une incapacité permanente ; le taux de cette incapacité ; la date et le montant de la rente allouée ; le point de départ de celle-ci ; le débiteur de la rente."
       ],
-      "mots_cles": ["vérifications", "établissement", "accidents antérieurs", "rente"],
+      "mots_cles": [
+        "date",
+        "vérifications",
+        "incapacité",
+        "rente",
+        "place",
+        "recueillir",
+        "éléments",
+        "cités",
+        "présente",
+        "enquêteur",
+        "effectuer",
+        "siège"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2"
     },
@@ -194,7 +385,20 @@
         "L'enquêteur consigne les résultats de l'enquête dans un procès-verbal en double exemplaire qui fera foi, jusqu'à preuve du contraire, des faits constatés. Il envoie au service demandeur les deux exemplaires de ce procès-verbal accompagnés du dossier dont il avait été saisi, ainsi que toute pièce qu'il juge bon d'y annexer et ce, dans un délai de vingt et un jours ouvrables à compter de la date de réception du dossier.",
         "Si le délai se trouve dépassé, l'enquêteur fait connaître les circonstances qui ont occasionné le retard."
       ],
-      "mots_cles": ["procès-verbal", "21 jours", "enquêteur"],
+      "mots_cles": [
+        "procès",
+        "verbal",
+        "enquête",
+        "enquêteur",
+        "dossier",
+        "délai",
+        "consigne",
+        "résultats",
+        "double",
+        "exemplaire",
+        "fera",
+        "jusqu"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 1 / Section 2"
     },
@@ -208,7 +412,20 @@
         "- recourir à tous les procédés de publicité et de diffusion aux fins de faire connaître, dans les entreprises et auprès de la population, les méthodes de prévention ;",
         "- favoriser, par des subventions ou avances, la sensibilisation sur la prévention."
       ],
-      "mots_cles": ["prévention", "statistiques", "enquêtes", "publicité", "subventions"],
+      "mots_cles": [
+        "prévention",
+        "risques",
+        "professionnels",
+        "sécurité",
+        "procéder",
+        "cadre",
+        "action",
+        "organisme",
+        "sociale",
+        "tenu",
+        "recueillir",
+        "publier"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 2 - Prévention des risques professionnels"
     },
@@ -219,7 +436,20 @@
         "L'organisme de sécurité sociale peut, dans les conditions et modalités fixées par voie réglementaire, après avis du conseil d'administration, consentir aux entreprises des avances à taux réduit en vue de faciliter la réalisation par elles des aménagements destinés à assurer une meilleure protection des travailleurs.",
         "L'organisme de sécurité sociale peut également accorder des subventions ou des avances aux entreprises ou groupement d'entreprises en vue de créer et de développer des institutions, œuvres ou services dont le but est de perfectionner ou de développer les méthodes de prévention, de réadaptation et de rééducation, d'hygiène et de sécurité et plus généralement, d'exercer une action sanitaire préventive et sociale."
       ],
-      "mots_cles": ["avances", "entreprises", "subventions", "prévention"],
+      "mots_cles": [
+        "entreprises",
+        "avances",
+        "sécurité",
+        "sociale",
+        "organisme",
+        "développer",
+        "modalités",
+        "fixées",
+        "voie",
+        "réglementaire",
+        "après",
+        "avis"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 2"
     },
@@ -229,7 +459,20 @@
       "texte": [
         "Dans chaque atelier ou chantier, il sera disposé de manière apparente, par les soins du chef d'entreprise, une affiche dont le modèle est fixé par voie réglementaire, destinée à rappeler l'attention des travailleurs sur les dispositions essentielles de la réglementation en matière d'accident du travail et de maladies professionnelles."
       ],
-      "mots_cles": ["affichage", "atelier", "chantier", "réglementation"],
+      "mots_cles": [
+        "affichage",
+        "obligatoire",
+        "atelier",
+        "chantier",
+        "sera",
+        "disposé",
+        "manière",
+        "apparente",
+        "soins",
+        "chef",
+        "affiche",
+        "modèle"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 2"
     },
@@ -239,7 +482,20 @@
       "texte": [
         "Il est institué pour la prévention des risques professionnels un fonds financé par les pénalités prévues à l'article 119 de la présente loi."
       ],
-      "mots_cles": ["fonds prévention", "pénalités", "Art. 119"],
+      "mots_cles": [
+        "fonds",
+        "prévention",
+        "institué",
+        "risques",
+        "professionnels",
+        "financé",
+        "pénalités",
+        "prévues",
+        "présente",
+        "risques professionnels",
+        "fonds financé",
+        "pénalités prévues"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 2"
     },
@@ -260,7 +516,20 @@
         "- la couverture des frais d'hospitalisation ;",
         "- la fourniture, l'entretien, la réparation et le renouvellement des appareils de prothèse et d'orthopédie nécessités par les lésions résultant de l'accident du travail."
       ],
-      "mots_cles": ["prestations", "soins médicaux", "indemnités", "rente", "frais funéraires", "rééducation", "prothèse"],
+      "mots_cles": [
+        "frais",
+        "prestations",
+        "risques",
+        "professionnels",
+        "médicaux",
+        "médicale",
+        "incapacité",
+        "accident",
+        "couverture",
+        "fourniture",
+        "liées",
+        "soins"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 - Prestations / Section 1 - Prestations servies"
     },
@@ -274,7 +543,20 @@
         "- éventuellement, diriger la victime vers un centre médical d'entreprise ou interentreprises ou, à défaut, vers la formation sanitaire publique ou l'établissement hospitalier public ou privé le plus proche du lieu de l'accident.",
         "Les soins de première urgence ainsi que le salaire de la journée de l'accident ou de la déclaration de la maladie sont à la charge de l'employeur."
       ],
-      "mots_cles": ["employeur", "premiers soins", "urgence", "médecin"],
+      "mots_cles": [
+        "accident",
+        "soins",
+        "première",
+        "urgence",
+        "médecin",
+        "défaut",
+        "proche",
+        "obligations",
+        "tenu",
+        "survient",
+        "assurer",
+        "aviser"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 2 - Prestations médicales"
     },
@@ -284,7 +566,20 @@
       "texte": [
         "À l'exception des soins de première urgence et de ceux dispensés dans le cadre de la médecine d'entreprise qui sont à la charge de l'employeur, les prestations prévues à l'article 21 sont supportées par l'organisme de sécurité sociale qui en verse le montant directement aux établissements ayant assuré les fournitures et services."
       ],
-      "mots_cles": ["prise en charge", "organisme", "paiement direct"],
+      "mots_cles": [
+        "charge",
+        "organisme",
+        "prise",
+        "exception",
+        "soins",
+        "première",
+        "urgence",
+        "ceux",
+        "dispensés",
+        "cadre",
+        "médecine",
+        "prestations"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 2"
     },
@@ -296,7 +591,20 @@
         "En cas d'incapacité temporaire de travail dûment constatée par l'autorité médicale compétente, la victime a droit à une indemnité pour chaque jour d'incapacité.",
         "Si la victime est déjà titulaire d'une rente servie par l'organisme de sécurité sociale en raison d'une incapacité permanente résultant d'un précédent accident, l'organisme de sécurité sociale paie, en sus de la rente, en cas d'un nouvel accident, une indemnité journalière correspondant à la différence entre le montant de la rente et celui de l'indemnité journalière."
       ],
-      "mots_cles": ["indemnité journalière", "incapacité temporaire", "traitement", "rente"],
+      "mots_cles": [
+        "indemnité",
+        "journalière",
+        "victime",
+        "accident",
+        "incapacité",
+        "rente",
+        "droit",
+        "organisme",
+        "sécurité",
+        "sociale",
+        "période",
+        "traitement"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 3 - Indemnités journalières"
     },
@@ -306,7 +614,18 @@
       "texte": [
         "Pendant toute la période de rééducation, l'indemnité journalière ou la rente est intégralement maintenue à la victime."
       ],
-      "mots_cles": ["rééducation", "maintien indemnité"],
+      "mots_cles": [
+        "indemnité",
+        "rééducation",
+        "période",
+        "journalière",
+        "rente",
+        "intégralement",
+        "maintenue",
+        "victime",
+        "indemnité journalière",
+        "intégralement maintenue"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 3"
     },
@@ -319,7 +638,20 @@
         "L'indemnité journalière peut être maintenue en totalité ou en partie en cas de reprise d'un travail léger autorisé par le médecin traitant, si cette reprise est de nature à favoriser la guérison ou la consolidation de la lésion.",
         "La rémunération du jour de survenance de l'accident est intégralement à la charge de l'employeur."
       ],
-      "mots_cles": ["calcul", "premier jour", "15 jours", "travail léger", "charge employeur"],
+      "mots_cles": [
+        "indemnité",
+        "journalière",
+        "jours",
+        "accident",
+        "jour",
+        "ouvrables",
+        "incapacité",
+        "soit",
+        "guérison",
+        "consolidation",
+        "reprise",
+        "calcul"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 3"
     },
@@ -330,7 +662,20 @@
         "Le montant total de l'indemnité journalière ne peut dépasser le salaire normal des travailleurs de la même catégorie professionnelle ni le salaire sur lequel a été calculée l'indemnité journalière.",
         "En cas de dépassement, l'indemnité est réduite en conséquence."
       ],
-      "mots_cles": ["plafond", "salaire normal", "réduction"],
+      "mots_cles": [
+        "indemnité",
+        "journalière",
+        "salaire",
+        "plafond",
+        "montant",
+        "total",
+        "dépasser",
+        "normal",
+        "même",
+        "catégorie",
+        "professionnelle",
+        "calculée"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 3"
     },
@@ -341,7 +686,20 @@
         "L'indemnité journalière est égale à la totalité du salaire journalier pour une durée d'incapacité n'excédant pas vingt-neuf jours. Elle est égale au deux tiers dudit salaire du trentième jour au quatre-vingt-dixième jour.",
         "Au-delà, elle est égale au tiers du salaire."
       ],
-      "mots_cles": ["100%", "2/3", "1/3", "29 jours", "90 jours"],
+      "mots_cles": [
+        "égale",
+        "salaire",
+        "indemnité",
+        "journalière",
+        "vingt",
+        "tiers",
+        "jour",
+        "montant",
+        "totalité",
+        "journalier",
+        "durée",
+        "incapacité"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 3"
     },
@@ -351,7 +709,20 @@
       "texte": [
         "Le salaire servant au calcul de l'indemnité journalière et de la rente comprend l'ensemble des salaires ou gains, indemnités, primes, gratifications ou tous autres avantages en espèces perçus par le travailleur, sauf les primes et les indemnités ayant un caractère de remboursement de frais, les pourboires, les prestations familiales et les prestations d'accident du travail."
       ],
-      "mots_cles": ["salaire", "calcul", "indemnités", "primes", "exclusions"],
+      "mots_cles": [
+        "salaire",
+        "servant",
+        "calcul",
+        "indemnités",
+        "primes",
+        "prestations",
+        "indemnité",
+        "journalière",
+        "rente",
+        "comprend",
+        "ensemble",
+        "salaires"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 3"
     },
@@ -362,7 +733,20 @@
         "Pour le calcul de l'indemnité journalière, le salaire journalier visé à l'article 43 est le salaire journalier moyen perçu par le travailleur pendant les trente jours qui précèdent l'accident. Il est obtenu en divisant le montant du salaire perçu pendant cette période par le nombre de jours ouvrables dans ladite période.",
         "Si le travailleur a perçu pendant ces trente jours des indemnités portant sur une période plus étendue, seule la quote-part de l'indemnité correspondant aux trente jours précédant l'accident est prise en compte pour le calcul du salaire journalier moyen."
       ],
-      "mots_cles": ["salaire journalier moyen", "30 jours", "jours ouvrables"],
+      "mots_cles": [
+        "salaire",
+        "journalier",
+        "jours",
+        "moyen",
+        "perçu",
+        "trente",
+        "période",
+        "calcul",
+        "indemnité",
+        "accident",
+        "journalière",
+        "visé"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 3"
     },
@@ -372,7 +756,20 @@
       "texte": [
         "Au moment de l'arrêt de travail, si la victime travaillait depuis moins de trente jours, le salaire ou le gain servant à calculer le salaire journalier de base est celui qu'elle aurait perçu si elle avait travaillé dans les mêmes conditions pendant trente jours."
       ],
-      "mots_cles": ["moins de 30 jours", "salaire fictif", "base de calcul"],
+      "mots_cles": [
+        "jours",
+        "victime",
+        "depuis",
+        "trente",
+        "salaire",
+        "travaillant",
+        "moment",
+        "arrêt",
+        "travaillait",
+        "gain",
+        "servant",
+        "calculer"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 / Chapitre 3 / Section 3"
     }

@@ -23,7 +23,20 @@
         "Il est créé un établissement public à caractère administratif, doté de la personnalité morale et de l'autonomie financière, dénommé caisse des risques professionnels et des pensions des travailleurs du secteur privé.",
         "Le siège de la caisse des risques professionnels et des pensions des travailleurs du secteur privé est fixé à Brazzaville. Il peut être transféré en tout autre lieu du territoire national, suivant les circonstances, par décret en Conseil de Ministres."
       ],
-      "mots_cles": ["création", "établissement public", "Brazzaville", "siège"],
+      "mots_cles": [
+        "caisse",
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur",
+        "privé",
+        "création",
+        "créé",
+        "établissement",
+        "public",
+        "caractère",
+        "administratif"
+      ],
       "statut": "en vigueur",
       "section": "Création et missions"
     },
@@ -33,7 +46,20 @@
       "texte": [
         "La caisse des risques professionnels et des pensions des travailleurs du secteur privé est placée sous la tutelle du Ministre chargé de la sécurité sociale."
       ],
-      "mots_cles": ["tutelle", "Ministre", "sécurité sociale"],
+      "mots_cles": [
+        "tutelle",
+        "caisse",
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur",
+        "privé",
+        "placée",
+        "ministre",
+        "chargé",
+        "sécurité",
+        "sociale"
+      ],
       "statut": "en vigueur",
       "section": "Création et missions"
     },
@@ -46,7 +72,20 @@
         "- aux pensions de retraite, d'invalidité et de réversion ;",
         "- à d'autres branches qui seront créées par la loi et en rapport avec le régime des risques professionnels et des pensions des travailleurs du secteur privé."
       ],
-      "mots_cles": ["missions", "risques professionnels", "pensions", "retraite", "invalidité", "réversion"],
+      "mots_cles": [
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur",
+        "privé",
+        "missions",
+        "régime",
+        "caisse",
+        "gérer",
+        "assurer",
+        "prestations",
+        "sociales"
+      ],
       "statut": "en vigueur",
       "section": "Création et missions"
     },
@@ -66,7 +105,20 @@
         "- les dons et legs ;",
         "- toute autre ressource attribuée à la caisse."
       ],
-      "mots_cles": ["ressources", "cotisations", "employeurs", "travailleurs"],
+      "mots_cles": [
+        "cotisations",
+        "ressources",
+        "caisse",
+        "revenus",
+        "production",
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur",
+        "privé",
+        "constituées",
+        "placement"
+      ],
       "statut": "en vigueur",
       "section": "Création et missions"
     },
@@ -76,7 +128,20 @@
       "texte": [
         "La caisse des risques professionnels et des pensions des travailleurs du secteur privé reprend l'actif et le passif de la caisse nationale de sécurité sociale et la caisse de retraite des fonctionnaires ainsi que les droits, obligations et sujétions inhérents aux branches des rentes et des pensions."
       ],
-      "mots_cles": ["actif", "passif", "reprise", "CNSS", "caisse de retraite"],
+      "mots_cles": [
+        "caisse",
+        "actif",
+        "passif",
+        "pensions",
+        "reprise",
+        "risques",
+        "professionnels",
+        "secteur",
+        "privé",
+        "reprend",
+        "nationale",
+        "sécurité"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -87,7 +152,20 @@
         "Le personnel de la caisse nationale de sécurité sociale, de formation initiale ou acquise dans le domaine de la sécurité sociale, affecté aux prestations familiales des travailleurs du secteur privé, des agents de la force publique et des agents civils de l'État relevant du statut général de la fonction publique et des statuts particuliers, est reversé, de plein droit, à la caisse des risques professionnels et des pensions des travailleurs du secteur privé.",
         "Le personnel visé à l'alinéa précédent conserve ses droits acquis tant en ce qui concerne le traitement que l'ancienneté."
       ],
-      "mots_cles": ["personnel", "reversement", "droits acquis", "ancienneté"],
+      "mots_cles": [
+        "personnel",
+        "caisse",
+        "sécurité",
+        "sociale",
+        "secteur",
+        "privé",
+        "agents",
+        "publique",
+        "reversement",
+        "nationale",
+        "formation",
+        "initiale"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -97,7 +175,20 @@
       "texte": [
         "Les modalités d'affectation du personnel et de transfert de l'actif et du passif de la caisse nationale de sécurité sociale et de la caisse de retraite des fonctionnaires à la caisse des risques professionnels et des pensions des travailleurs du secteur privé sont déterminées par décret."
       ],
-      "mots_cles": ["modalités", "transfert", "décret"],
+      "mots_cles": [
+        "caisse",
+        "modalités",
+        "affectation",
+        "personnel",
+        "transfert",
+        "actif",
+        "passif",
+        "nationale",
+        "sécurité",
+        "sociale",
+        "retraite",
+        "fonctionnaires"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -108,7 +199,20 @@
         "La caisse des risques professionnels et des pensions des travailleurs du secteur privé dispose, en son sein, d'un organe de participation sociale permettant aux bénéficiaires des prestations de donner leurs avis sur l'organisation et le fonctionnement de la caisse.",
         "Un décret en Conseil de Ministres fixe les attributions, la composition et le fonctionnement de l'organe de participation sociale."
       ],
-      "mots_cles": ["participation sociale", "bénéficiaires", "organe"],
+      "mots_cles": [
+        "organe",
+        "participation",
+        "sociale",
+        "caisse",
+        "fonctionnement",
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur",
+        "privé",
+        "dispose",
+        "sein"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -119,7 +223,20 @@
         "La caisse des risques professionnels et des pensions des travailleurs du secteur privé est administrée et gérée par un conseil d'administration et une direction générale.",
         "La caisse des risques professionnels et des pensions des travailleurs du secteur privé est dirigée par un directeur général nommé par décret en Conseil de Ministres, sur proposition du Ministre chargé de la sécurité sociale."
       ],
-      "mots_cles": ["administration", "conseil d'administration", "direction générale", "directeur général"],
+      "mots_cles": [
+        "administration",
+        "caisse",
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur",
+        "privé",
+        "conseil",
+        "gestion",
+        "administrée",
+        "gérée",
+        "direction"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -129,7 +246,20 @@
       "texte": [
         "Les attributions, l'organisation et le fonctionnement des organes de gestion et d'administration de la caisse des risques professionnels et des pensions des travailleurs du secteur privé sont fixés par des statuts approuvés par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["statuts", "décret", "Conseil des Ministres"],
+      "mots_cles": [
+        "statuts",
+        "attributions",
+        "organisation",
+        "fonctionnement",
+        "organes",
+        "gestion",
+        "administration",
+        "caisse",
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -139,7 +269,20 @@
       "texte": [
         "En attendant la mise en place effective des organes d'administration et de gestion de la caisse des risques professionnels et des pensions des travailleurs du secteur privé, la caisse nationale de sécurité sociale assure, à titre transitoire, l'application des dispositions de la présente loi."
       ],
-      "mots_cles": ["transitoire", "CNSS", "mise en place"],
+      "mots_cles": [
+        "transitoire",
+        "caisse",
+        "disposition",
+        "attendant",
+        "mise",
+        "place",
+        "effective",
+        "organes",
+        "administration",
+        "gestion",
+        "risques",
+        "professionnels"
+      ],
       "statut": "en vigueur",
       "section": "Dispositions transitoires"
     },
@@ -149,7 +292,19 @@
       "texte": [
         "La présente loi sera publiée au Journal officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["publication", "Journal officiel"],
+      "mots_cles": [
+        "publication",
+        "présente",
+        "sera",
+        "publiée",
+        "journal",
+        "officiel",
+        "exécutée",
+        "état",
+        "présente loi",
+        "sera publiée",
+        "journal officiel"
+      ],
       "statut": "en vigueur",
       "section": "Dispositions transitoires"
     }

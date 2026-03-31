@@ -18,7 +18,20 @@
         "Il est créé un établissement public à caractère administratif, doté de la personnalité morale et de l'autonomie de gestion, dénommé « Fonds national d'appui à l'employabilité et à l'apprentissage », en sigle FONEA.",
         "Le siège du fonds national d'appui à l'employabilité et à l'apprentissage est fixé à Brazzaville."
       ],
-      "mots_cles": ["FONEA", "création", "établissement public", "employabilité", "apprentissage"],
+      "mots_cles": [
+        "fonea",
+        "fonds",
+        "national",
+        "appui",
+        "employabilité",
+        "apprentissage",
+        "création",
+        "créé",
+        "établissement",
+        "public",
+        "caractère",
+        "administratif"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -27,7 +40,20 @@
       "texte": [
         "Le fonds national d'appui à l'employabilité et à l'apprentissage est placé sous la tutelle du Ministre chargé de la formation professionnelle."
       ],
-      "mots_cles": ["tutelle", "formation professionnelle"],
+      "mots_cles": [
+        "tutelle",
+        "fonds",
+        "national",
+        "appui",
+        "employabilité",
+        "apprentissage",
+        "placé",
+        "ministre",
+        "chargé",
+        "formation",
+        "professionnelle",
+        "fonds national"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -47,7 +73,20 @@
         "- financer le renforcement des capacités des maîtres artisans ;",
         "- participer à la mise en œuvre de toute action visant une amélioration de l'adéquation formation-emploi."
       ],
-      "mots_cles": ["missions", "formation", "employabilité", "apprentissage", "financement", "reconversion"],
+      "mots_cles": [
+        "formation",
+        "apprentissage",
+        "employabilité",
+        "financer",
+        "formations",
+        "professionnelle",
+        "emploi",
+        "missions",
+        "promotion",
+        "qualifiantes",
+        "contribuer",
+        "demandeurs"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -61,7 +100,20 @@
         "- les dons et legs ;",
         "- toutes contributions se rapportant à ses missions."
       ],
-      "mots_cles": ["ressources", "taxe d'apprentissage", "subvention", "financement"],
+      "mots_cles": [
+        "ressources",
+        "apprentissage",
+        "fonea",
+        "fonds",
+        "national",
+        "appui",
+        "employabilité",
+        "constituées",
+        "taxe",
+        "produits",
+        "générés",
+        "activité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -70,7 +122,20 @@
       "texte": [
         "La structure en charge de la sécurité sociale recouvre pour le compte du fonds national d'appui à l'employabilité et à l'apprentissage la taxe d'apprentissage."
       ],
-      "mots_cles": ["recouvrement", "taxe d'apprentissage", "sécurité sociale"],
+      "mots_cles": [
+        "apprentissage",
+        "taxe",
+        "recouvrement",
+        "structure",
+        "charge",
+        "sécurité",
+        "sociale",
+        "recouvre",
+        "compte",
+        "fonds",
+        "national",
+        "appui"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -80,7 +145,20 @@
         "Le fonds national d'appui à l'employabilité et à l'apprentissage est administré par un comité de direction et géré par une direction générale.",
         "La direction générale du fonds national d'appui à l'employabilité et à l'apprentissage est dirigée et animée par un directeur général nommé par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["comité de direction", "direction générale", "directeur général"],
+      "mots_cles": [
+        "direction",
+        "fonds",
+        "national",
+        "appui",
+        "employabilité",
+        "apprentissage",
+        "générale",
+        "organes",
+        "gestion",
+        "administré",
+        "comité",
+        "géré"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -89,7 +167,20 @@
       "texte": [
         "Les attributions, l'organisation et le fonctionnement des organes d'administration et de gestion du fonds national d'appui à l'employabilité et à l'apprentissage sont fixés par des statuts approuvés par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["statuts", "organisation", "décret"],
+      "mots_cles": [
+        "statuts",
+        "attributions",
+        "organisation",
+        "fonctionnement",
+        "organes",
+        "administration",
+        "gestion",
+        "fonds",
+        "national",
+        "appui",
+        "employabilité",
+        "apprentissage"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -98,7 +189,20 @@
       "texte": [
         "La présente loi, qui abroge toutes dispositions antérieures contraires, notamment celles de la loi n°022-88 du 17 septembre 1988, sera publiée au Journal officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["abrogation", "publication"],
+      "mots_cles": [
+        "abrogation",
+        "publication",
+        "présente",
+        "abroge",
+        "antérieures",
+        "contraires",
+        "notamment",
+        "celles",
+        "septembre",
+        "sera",
+        "publiée",
+        "journal"
+      ],
       "statut": "en vigueur"
     }
   ]

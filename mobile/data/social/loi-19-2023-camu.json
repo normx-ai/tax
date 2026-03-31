@@ -22,7 +22,20 @@
       "texte": [
         "Il est créé un établissement public à caractère spécial, doté de la personnalité morale, d'un statut spécifique, de l'autonomie financière et administrative, dénommé « caisse d'assurance maladie universelle », en sigle CAMU."
       ],
-      "mots_cles": ["CAMU", "création", "établissement public", "assurance maladie"],
+      "mots_cles": [
+        "camu",
+        "création",
+        "créé",
+        "établissement",
+        "public",
+        "caractère",
+        "spécial",
+        "doté",
+        "personnalité",
+        "morale",
+        "statut",
+        "spécifique"
+      ],
       "statut": "en vigueur",
       "section": "Création"
     },
@@ -32,7 +45,20 @@
       "texte": [
         "Le siège de la caisse d'assurance maladie universelle est fixé à Brazzaville. Il peut être transféré, en tout autre lieu du territoire national, suivant les circonstances, par décret en Conseil de Ministres."
       ],
-      "mots_cles": ["siège", "Brazzaville"],
+      "mots_cles": [
+        "siège",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "fixé",
+        "brazzaville",
+        "être",
+        "transféré",
+        "lieu",
+        "territoire",
+        "national"
+      ],
       "statut": "en vigueur",
       "section": "Création"
     },
@@ -42,7 +68,20 @@
       "texte": [
         "La caisse d'assurance maladie universelle est placée sous la tutelle du Ministre en charge de la sécurité sociale."
       ],
-      "mots_cles": ["tutelle", "Ministre", "sécurité sociale"],
+      "mots_cles": [
+        "tutelle",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "placée",
+        "ministre",
+        "charge",
+        "sécurité",
+        "sociale",
+        "assurance maladie",
+        "sécurité sociale"
+      ],
       "statut": "en vigueur",
       "section": "Création"
     },
@@ -55,7 +94,20 @@
         "- assurer aux affiliés une prise en charge des soins de santé ;",
         "- accomplir toutes autres missions dévolues par la loi en rapport avec le régime d'assurance maladie universelle."
       ],
-      "mots_cles": ["mission", "assurance maladie", "soins de santé"],
+      "mots_cles": [
+        "assurance",
+        "maladie",
+        "universelle",
+        "mission",
+        "régime",
+        "caisse",
+        "gérer",
+        "chargée",
+        "notamment",
+        "assurer",
+        "affiliés",
+        "prise"
+      ],
       "statut": "en vigueur",
       "section": "Missions"
     },
@@ -67,7 +119,20 @@
         "Les créances de cotisations sociales bénéficient d'un privilège qui prend rang immédiatement après celui des salaires.",
         "En cas de procédures collectives d'apurement du passif, à savoir la conciliation, le règlement préventif, le redressement judiciaire ou la liquidation des biens, les cotisations attachées au super privilège des salaires bénéficient du même rang que ces derniers."
       ],
-      "mots_cles": ["puissance publique", "privilège", "créances", "cotisations"],
+      "mots_cles": [
+        "prérogatives",
+        "puissance",
+        "publique",
+        "créances",
+        "cotisations",
+        "bénéficient",
+        "privilège",
+        "rang",
+        "salaires",
+        "caisse",
+        "assurance",
+        "maladie"
+      ],
       "statut": "en vigueur",
       "section": "Missions"
     },
@@ -78,7 +143,20 @@
         "Les biens et deniers de la caisse d'assurance maladie universelle sont insaisissables.",
         "Aucune opposition ne peut être pratiquée sur les sommes dues à la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["insaisissabilité", "biens", "opposition"],
+      "mots_cles": [
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "insaisissabilité",
+        "biens",
+        "deniers",
+        "insaisissables",
+        "aucune",
+        "opposition",
+        "être",
+        "pratiquée"
+      ],
       "statut": "en vigueur",
       "section": "Missions"
     },
@@ -88,7 +166,20 @@
       "texte": [
         "La gestion de la caisse d'assurance maladie universelle repose sur une convention d'objectifs entre la tutelle et le conseil d'administration, et un contrat de performance entre ce dernier et le directeur général."
       ],
-      "mots_cles": ["convention d'objectifs", "contrat de performance"],
+      "mots_cles": [
+        "objectifs",
+        "gestion",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "repose",
+        "tutelle",
+        "conseil",
+        "administration",
+        "performance",
+        "dernier"
+      ],
       "statut": "en vigueur",
       "section": "Gestion"
     },
@@ -98,7 +189,20 @@
       "texte": [
         "La gestion financière et comptable de la caisse d'assurance maladie universelle est effectuée conformément aux règles et principes du plan comptable de la conférence interafricaine de prévoyance sociale et assurée par une direction financière et comptable."
       ],
-      "mots_cles": ["gestion financière", "plan comptable", "CIPRES"],
+      "mots_cles": [
+        "comptable",
+        "financière",
+        "gestion",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "effectuée",
+        "conformément",
+        "règles",
+        "principes",
+        "plan"
+      ],
       "statut": "en vigueur",
       "section": "Gestion"
     },
@@ -108,7 +212,20 @@
       "texte": [
         "La caisse d'assurance maladie universelle bénéficie d'une procédure d'acquisition des biens, équipements et services, dérogatoire des procédures de la commande publique et effectuée sous la supervision du conseil d'administration."
       ],
-      "mots_cles": ["acquisition", "procédure dérogatoire", "commande publique"],
+      "mots_cles": [
+        "procédure",
+        "acquisition",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "bénéficie",
+        "biens",
+        "équipements",
+        "services",
+        "dérogatoire",
+        "procédures"
+      ],
       "statut": "en vigueur",
       "section": "Gestion"
     },
@@ -119,7 +236,20 @@
         "La caisse d'assurance maladie universelle comprend, en son sein, un organe de participation sociale permettant aux bénéficiaires des prestations de donner leurs avis sur l'organisation et le fonctionnement de la caisse d'assurance maladie universelle.",
         "Les attributions, l'organisation, la composition et le fonctionnement de l'organe de participation sociale sont fixés par décret en Conseil de Ministres."
       ],
-      "mots_cles": ["participation sociale", "organe", "bénéficiaires"],
+      "mots_cles": [
+        "organe",
+        "participation",
+        "sociale",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "organisation",
+        "fonctionnement",
+        "comprend",
+        "sein",
+        "permettant"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -134,7 +264,20 @@
         "Sont également membres du conseil d'administration, avec voix délibérative, les représentants du ministère de la santé, du ministère des finances ainsi que les organisations professionnelles intervenant dans le domaine de la santé.",
         "Le nombre total des représentants de l'État employeur et des organisations patronales ne doit pas excéder le nombre des administrateurs représentant les travailleurs."
       ],
-      "mots_cles": ["conseil d'administration", "paritaire", "14 membres", "3 ans"],
+      "mots_cles": [
+        "conseil",
+        "administration",
+        "nombre",
+        "organisations",
+        "voix",
+        "délibérative",
+        "professionnelles",
+        "membres",
+        "administrateurs",
+        "état",
+        "représentant",
+        "tant"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -146,7 +289,20 @@
         "Le directeur général de la caisse d'assurance maladie universelle est nommé par décret en Conseil des Ministres, après appel à candidatures du conseil d'administration.",
         "Le conseil d'administration transmet au Ministre en charge de la sécurité sociale, le nom du meilleur candidat accompagné des procès-verbaux de délibération."
       ],
-      "mots_cles": ["directeur général", "nomination", "Conseil des Ministres"],
+      "mots_cles": [
+        "directeur",
+        "général",
+        "conseil",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "administration",
+        "dirigée",
+        "nommé",
+        "décret",
+        "ministres"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -169,7 +325,20 @@
         "- les dons et legs ;",
         "- toute autre ressource attribuée à la caisse par un texte législatif ou réglementaire."
       ],
-      "mots_cles": ["ressources", "cotisations", "taxes tabac", "contribution solidarité"],
+      "mots_cles": [
+        "cotisations",
+        "état",
+        "assurance",
+        "maladie",
+        "universelle",
+        "produit",
+        "ressources",
+        "caisse",
+        "assimilés",
+        "constituées",
+        "organismes",
+        "agents"
+      ],
       "statut": "en vigueur",
       "section": "Ressources"
     },
@@ -180,7 +349,20 @@
         "La caisse d'assurance maladie universelle tient dans ses livres un compte cotisant pour tout employeur et un compte individuel pour tout assuré.",
         "Ces comptes sont alimentés par les déclarations des employeurs."
       ],
-      "mots_cles": ["compte cotisant", "compte individuel", "déclarations"],
+      "mots_cles": [
+        "comptes",
+        "compte",
+        "cotisants",
+        "assurés",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "tient",
+        "livres",
+        "cotisant",
+        "individuel"
+      ],
       "statut": "en vigueur",
       "section": "Ressources"
     },
@@ -191,7 +373,20 @@
         "Les modalités de reversement des cotisations sociales à la caisse d'assurance maladie universelle sont définies par voie réglementaire.",
         "[NB - Voir le décret n°2024-131 du 27 mars 2024 ci-dessous.]"
       ],
-      "mots_cles": ["reversement", "cotisations", "décret 2024-131"],
+      "mots_cles": [
+        "modalités",
+        "reversement",
+        "cotisations",
+        "sociales",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "définies",
+        "voie",
+        "réglementaire",
+        "voir"
+      ],
       "statut": "en vigueur",
       "section": "Ressources"
     },
@@ -203,7 +398,20 @@
         "Ils sont fixés par voie réglementaire.",
         "[NB - Voir le décret n°2024-133 du 27 mars 2024 ci-dessous.]"
       ],
-      "mots_cles": ["taux", "montants", "cotisation", "décret 2024-133"],
+      "mots_cles": [
+        "taux",
+        "montants",
+        "cotisation",
+        "déterminés",
+        "manière",
+        "recettes",
+        "totales",
+        "permettent",
+        "couvrir",
+        "dépenses",
+        "prestations",
+        "espèces"
+      ],
       "statut": "en vigueur",
       "section": "Cotisations"
     },
@@ -214,7 +422,20 @@
         "La caisse d'assurance maladie universelle effectue, au moins une fois tous les cinq ans, une étude actuarielle.",
         "Si l'étude révèle un risque de déséquilibre financier, il est procédé au réajustement des paramètres techniques conformément à la réglementation en vigueur."
       ],
-      "mots_cles": ["étude actuarielle", "5 ans", "déséquilibre financier"],
+      "mots_cles": [
+        "étude",
+        "actuarielle",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "effectue",
+        "fois",
+        "cinq",
+        "révèle",
+        "risque",
+        "déséquilibre"
+      ],
       "statut": "en vigueur",
       "section": "Cotisations"
     },
@@ -225,7 +446,20 @@
         "Les attributions, l'organisation et le fonctionnement des organes d'administration et de gestion de la caisse d'assurance maladie universelle sont fixés par des statuts approuvés par décret en Conseil des Ministres.",
         "[NB - Voir le décret n°2023-1761 du 30 novembre 2023 ci-dessous.]"
       ],
-      "mots_cles": ["statuts", "décret 2023-1761"],
+      "mots_cles": [
+        "statuts",
+        "décret",
+        "attributions",
+        "organisation",
+        "fonctionnement",
+        "organes",
+        "administration",
+        "gestion",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle"
+      ],
       "statut": "en vigueur",
       "section": "Dispositions finales"
     },
@@ -235,7 +469,20 @@
       "texte": [
         "La présente loi, qui abroge la loi n°12-2015 du 31 août 2015 portant création de la caisse d'assurance maladie universelle, sera publiée au Journal officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["abrogation", "loi 12-2015", "Journal officiel"],
+      "mots_cles": [
+        "abrogation",
+        "publication",
+        "présente",
+        "abroge",
+        "août",
+        "portant",
+        "création",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "sera"
+      ],
       "statut": "en vigueur",
       "section": "Dispositions finales"
     }

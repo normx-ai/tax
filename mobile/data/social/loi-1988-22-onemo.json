@@ -18,7 +18,20 @@
       "texte": [
         "L'Office national de l'emploi, et de la main d'œuvre, en abrégé ONEMO, établissement public à caractère administratif et social, créé par la loi n°03/85 du 14 février 1985, remplacée et complétée par la loi n°01/86 du 22 février 1986, est régie par les dispositions de la présente loi."
       ],
-      "mots_cles": ["ONEMO", "emploi", "main d'œuvre", "établissement public"],
+      "mots_cles": [
+        "onemo",
+        "février",
+        "création",
+        "régime",
+        "juridique",
+        "office",
+        "national",
+        "emploi",
+        "main",
+        "œuvre",
+        "abrégé",
+        "établissement"
+      ],
       "statut": "abrogé"
     },
     {
@@ -27,7 +40,20 @@
       "texte": [
         "L'ONEMO est doté de la personnalité morale et de l'autonomie financière. Il est placé sous la tutelle du Ministre chargé du travail."
       ],
-      "mots_cles": ["personnalité morale", "autonomie financière", "tutelle"],
+      "mots_cles": [
+        "personnalité",
+        "morale",
+        "tutelle",
+        "onemo",
+        "doté",
+        "autonomie",
+        "financière",
+        "placé",
+        "ministre",
+        "chargé",
+        "personnalité morale",
+        "autonomie financière"
+      ],
       "statut": "abrogé"
     },
     {
@@ -46,7 +72,20 @@
         "- de délivrer aux travailleurs tant nationaux qu'étrangers une carte de travail ;",
         "- de délivrer, dans les conditions prévues par la présente loi, les autorisations d'emploi des travailleurs étrangers."
       ],
-      "mots_cles": ["missions", "emploi", "chômage", "recrutement", "formation professionnelle", "carte de travail"],
+      "mots_cles": [
+        "emploi",
+        "professionnelle",
+        "onemo",
+        "emplois",
+        "entreprises",
+        "prévues",
+        "formation",
+        "organiser",
+        "perfectionnement",
+        "stages",
+        "délivrer",
+        "étrangers"
+      ],
       "statut": "abrogé"
     },
     {
@@ -59,7 +98,20 @@
         "Dès son dépôt, la déclaration d'offre d'emploi est enregistrée et il en est donné reçu, daté et signé avec mention de son numéro d'enregistrement.",
         "Sauf cas de force majeure, l'offre d'emploi ne peut en aucun cas être retirée."
       ],
-      "mots_cles": ["offre d'emploi", "déclaration", "enregistrement"],
+      "mots_cles": [
+        "emploi",
+        "offre",
+        "déclaration",
+        "être",
+        "offreur",
+        "personne",
+        "droit",
+        "agence",
+        "onemo",
+        "lieu",
+        "émanant",
+        "privée"
+      ],
       "statut": "abrogé"
     },
     {
@@ -71,7 +123,20 @@
         "La déclaration de demande d'emploi est parfaite lorsqu'elle est déposée à l'agence de l'ONEMO compétente. Sa durée de validité est de douze mois à compter de la date de dépôt.",
         "Dès son dépôt, la déclaration de demande d'emploi est enregistrée et il en est donné un reçu, daté et signé avec mention de son numéro d'enregistrement."
       ],
-      "mots_cles": ["demande d'emploi", "enregistrement", "validité"],
+      "mots_cles": [
+        "emploi",
+        "demande",
+        "déclaration",
+        "enregistrée",
+        "agence",
+        "onemo",
+        "domicile",
+        "résidence",
+        "demandeur",
+        "nature",
+        "lieu",
+        "dépôt"
+      ],
       "statut": "abrogé"
     },
     {
@@ -83,7 +148,20 @@
         "Dès retrait de la déclaration de demande d'emploi, une nouvelle déclaration de demande d'emploi peut être enregistrée.",
         "Les modalités de retrait de la déclaration de demande d'emploi seront précisées par un arrêté du Ministre chargé du travail."
       ],
-      "mots_cles": ["retrait", "demande d'emploi"],
+      "mots_cles": [
+        "demande",
+        "emploi",
+        "déclaration",
+        "retrait",
+        "être",
+        "moment",
+        "quelque",
+        "cause",
+        "soit",
+        "retirée",
+        "auteur",
+        "emporte"
+      ],
       "statut": "abrogé"
     },
     {
@@ -92,7 +170,20 @@
       "texte": [
         "La déclaration de demande d'emploi en un lieu situé hors de la zone de compétence de l'agence qui la reçoit est immédiatement transmise par cette dernière à l'agence ou aux agences compétentes où elle est enregistrée avec mention de l'agence d'origine."
       ],
-      "mots_cles": ["transmission", "zone de compétence", "agences"],
+      "mots_cles": [
+        "agence",
+        "agences",
+        "transmission",
+        "déclaration",
+        "demande",
+        "emploi",
+        "lieu",
+        "situé",
+        "hors",
+        "zone",
+        "compétence",
+        "reçoit"
+      ],
       "statut": "abrogé"
     },
     {
@@ -101,7 +192,15 @@
       "texte": [
         "L'ouverture d'entreprise privée de placement est interdite."
       ],
-      "mots_cles": ["placement privé", "interdiction"],
+      "mots_cles": [
+        "placement",
+        "interdiction",
+        "privé",
+        "ouverture",
+        "privée",
+        "interdite",
+        "placement privé"
+      ],
       "statut": "abrogé"
     },
     {
@@ -111,7 +210,20 @@
         "Il est interdit de diffuser de quelque manière que ce soit, notamment par affichage et par annonce par voie de presse, de radio ou de télévision, une offre ou une demande d'emploi qui n'aurait pas été préalablement enregistrée par une agence de l'ONEMO.",
         "Toute annonce d'offre ou de demande d'emploi doit mentionner son numéro d'enregistrement à une agence de l'ONEMO."
       ],
-      "mots_cles": ["diffusion", "annonce", "enregistrement obligatoire"],
+      "mots_cles": [
+        "enregistrement",
+        "annonce",
+        "offre",
+        "demande",
+        "emploi",
+        "agence",
+        "onemo",
+        "interdiction",
+        "diffusion",
+        "interdit",
+        "diffuser",
+        "quelque"
+      ],
       "statut": "abrogé"
     },
     {
@@ -120,7 +232,15 @@
       "texte": [
         "Nul demandeur d'emploi n'est tenu d'accepter l'emploi qui lui est proposé."
       ],
-      "mots_cles": ["liberté", "demandeur d'emploi"],
+      "mots_cles": [
+        "emploi",
+        "demandeur",
+        "liberté",
+        "tenu",
+        "accepter",
+        "proposé",
+        "emploi nul"
+      ],
       "statut": "abrogé"
     },
     {
@@ -130,7 +250,20 @@
         "Il ne peut être procédé aucun engagement dans les établissements publics autre qu'administratifs dans les entreprises d'État et dans les sociétés d'économie mixte sans visa préalable de la direction générale de l'ONEMO.",
         "Ce visa ne peut être accordé que si l'embauche correspond au planning de recrutement adopté par les organes de direction."
       ],
-      "mots_cles": ["visa", "recrutement", "établissements publics", "entreprises d'État"],
+      "mots_cles": [
+        "visa",
+        "onemo",
+        "recrutement",
+        "être",
+        "direction",
+        "obligatoire",
+        "public",
+        "procédé",
+        "aucun",
+        "engagement",
+        "établissements",
+        "publics"
+      ],
       "statut": "abrogé"
     },
     {
@@ -140,7 +273,20 @@
         "Les dispositions des articles 9 et 10 de la présente loi ne sont pas applicables au recrutement d'agent de l'État, des collectivités locales et des établissements publics administratifs.",
         "Toutefois, le recrutement des agents mentionnés à l'alinéa précédent est soumis à la condition de leur enregistrement comme demandeur d'emploi."
       ],
-      "mots_cles": ["exceptions", "fonction publique", "collectivités locales"],
+      "mots_cles": [
+        "recrutement",
+        "exceptions",
+        "visa",
+        "onemo",
+        "présente",
+        "applicables",
+        "agent",
+        "état",
+        "collectivités",
+        "locales",
+        "établissements",
+        "publics"
+      ],
       "statut": "abrogé"
     },
     {
@@ -150,7 +296,20 @@
         "Tout engagement du salarié doit être constaté écrit.",
         "L'écrit constatant l'engagement doit mentionner les conditions essentielles de l'emploi, la nature de l'emploi, le lieu et la durée de l'emploi, la catégorie de classement du salarié, le montant de la rémunération et des primes et indemnités éventuellement prévue ainsi que la nationalité du travailleur."
       ],
-      "mots_cles": ["engagement", "contrat écrit", "conditions d'emploi"],
+      "mots_cles": [
+        "engagement",
+        "écrit",
+        "emploi",
+        "salarié",
+        "obligatoire",
+        "être",
+        "constaté",
+        "constatant",
+        "mentionner",
+        "essentielles",
+        "nature",
+        "lieu"
+      ],
       "statut": "abrogé"
     },
     {
@@ -161,7 +320,20 @@
         "La déclaration d'engagement s'accompagne du dépôt de trois exemplaires originaux de l'écrit constatant l'engagement ainsi que d'un certificat de nationalité du travailleur.",
         "Mention est faite avec son numéro d'enregistrement et sa date d'enregistrement au dossier de l'employeur et du travailleur."
       ],
-      "mots_cles": ["déclaration d'engagement", "enregistrement", "certificat de nationalité"],
+      "mots_cles": [
+        "engagement",
+        "déclaration",
+        "onemo",
+        "être",
+        "enregistrement",
+        "salarié",
+        "immédiatement",
+        "déclaré",
+        "enregistré",
+        "agence",
+        "lieu",
+        "emploi"
+      ],
       "statut": "abrogé"
     },
     {
@@ -173,7 +345,20 @@
         "- tout offreur d'emploi qui enfreint aux dispositions de l'article 9 de la présente loi.",
         "Le produit desdites amendes est versé au trésor public."
       ],
-      "mots_cles": ["sanctions", "amendes", "non-enregistrement"],
+      "mots_cles": [
+        "offreur",
+        "emploi",
+        "sanctions",
+        "soumission",
+        "sanctionné",
+        "amende",
+        "fcfa",
+        "soumet",
+        "enregistrement",
+        "onemo",
+        "enfreint",
+        "présente"
+      ],
       "statut": "abrogé"
     },
     {
@@ -184,7 +369,20 @@
         "La carte de travail est établie pour une durée d'un an. Elle doit être renouvelée tant que dure l'emploi chez le même employeur.",
         "La délivrance et le renouvellement de la carte de travail donnent lieu au paiement au profit de l'ONEMO d'un droit de 500 FCFA. Le montant de ce droit peut être modifié par la loi de finances."
       ],
-      "mots_cles": ["carte de travail", "délivrance", "renouvellement", "500 FCFA"],
+      "mots_cles": [
+        "carte",
+        "être",
+        "onemo",
+        "lieu",
+        "emploi",
+        "droit",
+        "déclaration",
+        "engagement",
+        "agence",
+        "exercé",
+        "délivre",
+        "immédiatement"
+      ],
       "statut": "abrogé"
     },
     {
@@ -193,7 +391,20 @@
       "texte": [
         "En cas de changement d'emploi chez le même employeur, déclaration doit être faite à l'agence de l'ONEMO du lieu où le nouvel emploi est exercé et il est fait application des dispositions des articles 14, 15, 16 et 19 de la présente loi."
       ],
-      "mots_cles": ["changement d'emploi", "même employeur"],
+      "mots_cles": [
+        "emploi",
+        "changement",
+        "même",
+        "déclaration",
+        "être",
+        "faite",
+        "agence",
+        "onemo",
+        "lieu",
+        "nouvel",
+        "exercé",
+        "présente"
+      ],
       "statut": "abrogé"
     },
     {
@@ -203,7 +414,20 @@
         "En cas de nouvel emploi d'un travailleur chez un autre employeur, sans qu'il en résulte d'interruption de travail pour le salarié, les dispositions des articles 14, 15, 16 et 19 trouvent application.",
         "Toutefois, les engagements ne peuvent être enregistrés et la carte de travail délivrée que si l'offre d'emploi a été déclarée et enregistrée conformément aux articles 4 et 5 de la présente loi et si les dispositions prévues à l'alinéa 3 de l'article 10 ont été appliquées."
       ],
-      "mots_cles": ["nouvel emploi", "autre employeur"],
+      "mots_cles": [
+        "emploi",
+        "nouvel",
+        "résulte",
+        "interruption",
+        "salarié",
+        "trouvent",
+        "toutefois",
+        "engagements",
+        "peuvent",
+        "être",
+        "enregistrés",
+        "carte"
+      ],
       "statut": "abrogé"
     },
     {
@@ -213,7 +437,20 @@
         "Les trois exemplaires originaux de l'écrit constatant l'engagement sont dans tous les cas, dès leur dépôt, transmis à la direction générale de l'ONEMO pour visa.",
         "Celle-ci, après contrôle de légalité, se fait retour avec observations éventuelles à l'agence expéditrice qui transmet à chaque intéressé un exemplaire de l'acte d'engagement visé. Les dispositions du présent article ne s'appliquent pas aux établissements et entreprises visées par l'article 12."
       ],
-      "mots_cles": ["visa", "contrôle de légalité", "acte d'engagement"],
+      "mots_cles": [
+        "visa",
+        "onemo",
+        "engagement",
+        "contrats",
+        "trois",
+        "exemplaires",
+        "originaux",
+        "écrit",
+        "constatant",
+        "dépôt",
+        "transmis",
+        "direction"
+      ],
       "statut": "abrogé"
     },
     {
@@ -224,7 +461,20 @@
         "Lorsque la date d'engagement est postérieure à la date de déclaration d'engagement, celle-ci doit être expressément mentionnée dans l'acte d'engagement ainsi que sur la carte de travail.",
         "La durée de validité de la carte de travail court à compter de la date effective d'engagement."
       ],
-      "mots_cles": ["date d'enregistrement", "validité"],
+      "mots_cles": [
+        "date",
+        "engagement",
+        "enregistrement",
+        "celle",
+        "être",
+        "déclaration",
+        "carte",
+        "librement",
+        "décidée",
+        "parties",
+        "toutefois",
+        "antérieure"
+      ],
       "statut": "abrogé"
     },
     {
@@ -236,7 +486,20 @@
         "Mention est faite sur le champ de la modification de la situation du travailleur et de sa date d'effet au dossier de l'employeur et du travailleur ainsi que sur la carte de travail.",
         "Les héritiers ou employeurs d'un travailleur décédé doivent déclarer le décès à l'agence de l'ONEMO du lieu du dernier emploi."
       ],
-      "mots_cles": ["licenciement", "retraite", "invalidité", "déclaration"],
+      "mots_cles": [
+        "déclaration",
+        "emploi",
+        "retraite",
+        "immédiatement",
+        "agence",
+        "onemo",
+        "lieu",
+        "dernier",
+        "licenciement",
+        "invalidité",
+        "licencié",
+        "ayant"
+      ],
       "statut": "abrogé"
     },
     {
@@ -245,7 +508,20 @@
       "texte": [
         "La carte du travailleur licencié ou ayant démissionné de son emploi ou mis à la retraite ou déclaré invalide n'est pas soumise à renouvellement."
       ],
-      "mots_cles": ["carte de travail", "cessation"],
+      "mots_cles": [
+        "carte",
+        "après",
+        "cessation",
+        "licencié",
+        "ayant",
+        "démissionné",
+        "emploi",
+        "retraite",
+        "déclaré",
+        "invalide",
+        "soumise",
+        "renouvellement"
+      ],
       "statut": "abrogé"
     },
     {
@@ -256,7 +532,20 @@
         "Nul ne peut bénéficier des prestations d'un des régimes d'assurance de la sécurité sociale s'il ne présente, lors de la demande de prestation, une carte de travail prouvant son état de santé, de retraité ou d'invalide.",
         "Nul travailleur ayant été licencié ou ayant démissionné ne peut être enregistré comme demandeur d'emploi s'il n'a pas déclaré son licenciement ou sa démission."
       ],
-      "mots_cles": ["sécurité sociale", "affiliation", "carte de travail obligatoire"],
+      "mots_cles": [
+        "carte",
+        "sécurité",
+        "sociale",
+        "être",
+        "régimes",
+        "assurance",
+        "présente",
+        "ayant",
+        "affilié",
+        "quelconque",
+        "obligatoire",
+        "géré"
+      ],
       "statut": "abrogé"
     },
     {
@@ -267,7 +556,20 @@
         "Chaque agence de l'ONEMO doit transmettre mensuellement à la direction régionale de la Caisse Nationale de Sécurité Sociale du ressort la liste des déclarations d'engagement, de licenciement, de démission ou de décès qu'elle a reçues.",
         "Le Ministre chargé de la fonction publique doit transmettre mensuellement à la direction générale de l'ONEMO la liste des agents recrutés."
       ],
-      "mots_cles": ["échange d'informations", "CNSS", "ONEMO"],
+      "mots_cles": [
+        "onemo",
+        "direction",
+        "transmettre",
+        "mensuellement",
+        "liste",
+        "régionale",
+        "caisse",
+        "nationale",
+        "sécurité",
+        "sociale",
+        "agence",
+        "ressort"
+      ],
       "statut": "abrogé"
     },
     {
@@ -277,7 +579,20 @@
         "Le recrutement de travailleurs étrangers est soumis à l'autorisation du Ministre chargé du travail dans les conditions fixées par les articles 26 à 35.",
         "Les règles particulières posées par les articles 26 à 35 ne font pas obstacle, sauf dérogation expressément mentionnée, à l'application de l'ensemble des dispositions prévues par la présente loi."
       ],
-      "mots_cles": ["travailleurs étrangers", "autorisation", "recrutement"],
+      "mots_cles": [
+        "recrutement",
+        "étrangers",
+        "soumis",
+        "autorisation",
+        "ministre",
+        "chargé",
+        "fixées",
+        "règles",
+        "particulières",
+        "posées",
+        "font",
+        "obstacle"
+      ],
       "statut": "abrogé"
     },
     {
@@ -287,7 +602,20 @@
         "La demande d'autorisation d'emploi d'un travailleur étranger doit être jointe, accompagnée de quatre exemplaires originaux du contrat de travail signé par les parties sous condition d'octroi de l'autorisation de la déclaration d'offre d'emploi.",
         "Un arrêté du Ministre chargé du travail précisera les pièces à joindre à l'appui de la demande."
       ],
-      "mots_cles": ["autorisation d'emploi", "travailleur étranger", "contrat de travail"],
+      "mots_cles": [
+        "demande",
+        "autorisation",
+        "emploi",
+        "étranger",
+        "être",
+        "jointe",
+        "accompagnée",
+        "quatre",
+        "exemplaires",
+        "originaux",
+        "signé",
+        "parties"
+      ],
       "statut": "abrogé"
     },
     {
@@ -298,7 +626,20 @@
         "Le syndicat d'entreprise dispose d'un délai de huit jours suivant la réception de la demande d'avis pour faire connaître son avis qui doit être motivé. Passé ce délai, le défaut de réponse du syndicat d'entreprise vaut avis favorable.",
         "Dès l'expiration du délai prévu à l'alinéa précédent, le directeur de l'agence de l'ONEMO saisie formule son avis et transmet immédiatement la demande à la direction générale de l'ONEMO."
       ],
-      "mots_cles": ["examen", "légalité", "avis syndicat", "emploi étranger"],
+      "mots_cles": [
+        "avis",
+        "demande",
+        "onemo",
+        "emploi",
+        "être",
+        "syndicat",
+        "délai",
+        "agence",
+        "examine",
+        "exercé",
+        "décrit",
+        "examen"
+      ],
       "statut": "abrogé"
     },
     {
@@ -308,7 +649,20 @@
         "La direction générale de l'ONEMO examine à l'échelon national si l'emploi pourrait être valablement exercé par un national et s'assure de la conformité du contrat à la politique générale de l'emploi des étrangers en République populaire du Congo ainsi qu'au programme de congolisation des emplois défini par l'entreprise conformément à la loi n°23/67 du 21 décembre 1967 sur l'africanisation des postes de travail.",
         "Après examen des points ci-dessus sanctionnés et de l'avis formulé par le chef de l'agence saisie, le directeur général de l'ONEMO formule son avis et transmet la demande au Ministre chargé du travail."
       ],
-      "mots_cles": ["échelon national", "congolisation", "africanisation"],
+      "mots_cles": [
+        "national",
+        "examen",
+        "échelon",
+        "générale",
+        "onemo",
+        "emploi",
+        "avis",
+        "direction",
+        "examine",
+        "pourrait",
+        "être",
+        "valablement"
+      ],
       "statut": "abrogé"
     },
     {
@@ -319,7 +673,20 @@
         "Si l'autorisation sollicitée a été accordée par le Ministre chargé du travail, le contrat est enregistré dans les conditions prévues par la présente loi. Toutefois, par dérogation à l'article 10, le contrat peut être enregistré en l'absence de déclaration de demande d'emploi.",
         "Si l'autorisation est refusée, notification en est faite au demandeur."
       ],
-      "mots_cles": ["décision", "autorisation", "Ministre du travail"],
+      "mots_cles": [
+        "ministre",
+        "décision",
+        "chargé",
+        "demande",
+        "autorisation",
+        "enregistré",
+        "transmise",
+        "direction",
+        "générale",
+        "onemo",
+        "sollicitée",
+        "accordée"
+      ],
       "statut": "abrogé"
     },
     {
@@ -330,7 +697,20 @@
         "Le renouvellement de l'autorisation d'emploi d'un travailleur étranger et soumis aux dispositions des articles 25 à 29.",
         "La demande de renouvellement doit être déposée dans les six mois précédents l'expiration de l'autorisation d'emploi d'un travailleur étranger."
       ],
-      "mots_cles": ["durée", "deux ans", "renouvellement", "autorisation"],
+      "mots_cles": [
+        "autorisation",
+        "emploi",
+        "étranger",
+        "durée",
+        "renouvellement",
+        "valable",
+        "deux",
+        "années",
+        "compter",
+        "date",
+        "engagement",
+        "soumis"
+      ],
       "statut": "abrogé"
     },
     {
@@ -339,7 +719,20 @@
       "texte": [
         "L'autorisation d'emploi d'un travailleur étranger et son renouvellement donnent lieu au paiement au profit de l'ONEMO d'un droit de 100.000 FCFA au profit de l'ONEMO."
       ],
-      "mots_cles": ["droit", "100.000 FCFA", "autorisation"],
+      "mots_cles": [
+        "droit",
+        "autorisation",
+        "emploi",
+        "étranger",
+        "profit",
+        "onemo",
+        "renouvellement",
+        "donnent",
+        "lieu",
+        "paiement",
+        "fcfa",
+        "emploi étranger"
+      ],
       "statut": "abrogé"
     },
     {
@@ -351,7 +744,20 @@
         "Il est délivré au travailleur dans le cas d'une autorisation provisoire d'emploi, une carte provisoire de travail valable pour trois mois. Elle est renouvelable une seule fois.",
         "La délivrance de la carte provisoire de travail donne lieu au paiement au profit de l'ONEMO, d'un droit de 10.000 FCFA. Son renouvellement ne donne pas lieu à perception d'un droit."
       ],
-      "mots_cles": ["urgence", "autorisation provisoire", "carte provisoire", "10.000 FCFA"],
+      "mots_cles": [
+        "provisoire",
+        "autorisation",
+        "emploi",
+        "étranger",
+        "être",
+        "onemo",
+        "carte",
+        "donne",
+        "lieu",
+        "droit",
+        "urgence",
+        "constatée"
+      ],
       "statut": "abrogé"
     },
     {
@@ -364,7 +770,20 @@
         "Il est délivré au travailleur, dans le cas d'autorisation temporaire d'emploi, une carte temporaire de travail pour la période de validité de l'autorisation d'emploi temporaire.",
         "La délivrance de la carte temporaire d'emploi donne lieu au paiement au profit de l'ONEMO d'un droit de 10.000 FCFA."
       ],
-      "mots_cles": ["autorisation temporaire", "six mois", "carte temporaire", "10.000 FCFA"],
+      "mots_cles": [
+        "temporaire",
+        "emploi",
+        "autorisation",
+        "onemo",
+        "autorisations",
+        "étrangers",
+        "peuvent",
+        "être",
+        "directeur",
+        "général",
+        "carte",
+        "étranger"
+      ],
       "statut": "abrogé"
     },
     {
@@ -373,7 +792,12 @@
       "texte": [
         "Les droits prévus aux articles 16, 31, 32 et 33 sont à la charge des employeurs."
       ],
-      "mots_cles": ["droits", "charge employeur"],
+      "mots_cles": [
+        "droits",
+        "charge",
+        "prévus",
+        "droits prévus"
+      ],
       "statut": "abrogé"
     },
     {
@@ -382,7 +806,20 @@
       "texte": [
         "Tout employeur ayant embauché un travailleur étranger en violation des dispositions de la présente loi sera puni d'une amende de 100.000 à 1.000.000 FCFA au profit du trésor public."
       ],
-      "mots_cles": ["sanction", "amende", "emploi illégal", "étranger"],
+      "mots_cles": [
+        "étranger",
+        "sanction",
+        "emploi",
+        "illégal",
+        "ayant",
+        "embauché",
+        "violation",
+        "présente",
+        "sera",
+        "puni",
+        "amende",
+        "fcfa"
+      ],
       "statut": "abrogé"
     },
     {
@@ -391,7 +828,20 @@
       "texte": [
         "Sauf en cas d'accord express donné par l'ONEMO, l'autorisation d'emploi d'un travailleur étranger est retirée si le travailleur recruté exerce un emploi différent de celui pour lequel l'autorisation a été donnée."
       ],
-      "mots_cles": ["retrait", "autorisation", "emploi différent"],
+      "mots_cles": [
+        "autorisation",
+        "emploi",
+        "retrait",
+        "sauf",
+        "accord",
+        "express",
+        "donné",
+        "onemo",
+        "étranger",
+        "retirée",
+        "recruté",
+        "exerce"
+      ],
       "statut": "abrogé"
     },
     {
@@ -401,7 +851,20 @@
         "L'ONEMO peut à tout moment proposer à l'employeur ayant engagé des travailleurs étrangers des candidats nationaux auxquels il fait passer des tests.",
         "L'engagement d'un travailleur national constitue dans tous les cas un motif légitime de rupture du contrat passé avec un travailleur étranger."
       ],
-      "mots_cles": ["remplacement", "candidats nationaux", "rupture contrat étranger"],
+      "mots_cles": [
+        "candidats",
+        "nationaux",
+        "remplacement",
+        "onemo",
+        "moment",
+        "proposer",
+        "ayant",
+        "engagé",
+        "étrangers",
+        "passer",
+        "tests",
+        "engagement"
+      ],
       "statut": "abrogé"
     },
     {
@@ -410,7 +873,19 @@
       "texte": [
         "L'ONEMO établit mensuellement et annuellement des statistiques de l'emploi et les transmet au Ministre chargé du travail."
       ],
-      "mots_cles": ["statistiques", "emploi"],
+      "mots_cles": [
+        "statistiques",
+        "emploi",
+        "onemo",
+        "établit",
+        "mensuellement",
+        "annuellement",
+        "transmet",
+        "ministre",
+        "chargé",
+        "onemo établit",
+        "ministre chargé"
+      ],
       "statut": "abrogé"
     },
     {
@@ -421,7 +896,20 @@
         "Passé ce délai, les dispositions de l'article 23 de la présente loi leur seront opposées.",
         "Il sera fait affichage pendant un délai de six mois à compter de la prise d'effet de la présente loi, de ses articles 23 et 41 à tous les guichets de la Caisse Nationale de Sécurité Sociale."
       ],
-      "mots_cles": ["régularisation", "délai", "six mois"],
+      "mots_cles": [
+        "délai",
+        "présente",
+        "mois",
+        "compter",
+        "effet",
+        "régularisation",
+        "exerçant",
+        "actuellement",
+        "emploi",
+        "ainsi",
+        "ceux",
+        "bénéficient"
+      ],
       "statut": "abrogé"
     },
     {
@@ -433,7 +921,20 @@
         "Le visa n'est accordé qu'après avoir : constaté l'identité du travailleur et son libre consentement ; donné lecture aux parties et éventuellement traduction du contrat ; vérifié en cas de contrat conclu pour une durée déterminée que celle-ci est stipulée sans ambiguïté ; vérifié qu'un titre de transport allé et retour est prévu au contrat.",
         "Si le visa prévu au présent article est refusé, le contrat est nul de plein droit."
       ],
-      "mots_cles": ["visa", "sortie du territoire", "contrat international"],
+      "mots_cles": [
+        "visa",
+        "impliquant",
+        "sortie",
+        "territoire",
+        "vérifié",
+        "prévu",
+        "contrats",
+        "code",
+        "remplacé",
+        "passé",
+        "congolais",
+        "république"
+      ],
       "statut": "abrogé"
     },
     {
@@ -444,7 +945,20 @@
         "Les infractions prévues à l'article 15 sont sanctionnées par le directeur général de l'ONEMO sur proposition du chef de l'agence concerné.",
         "Le Ministre chargé du travail dispose d'un pouvoir de transaction sur moment de l'amende prévue à l'article 35."
       ],
-      "mots_cles": ["infractions", "inspecteurs", "contrôleurs", "sanctions"],
+      "mots_cles": [
+        "infractions",
+        "onemo",
+        "constatation",
+        "présente",
+        "constatées",
+        "inspecteurs",
+        "contrôleurs",
+        "ainsi",
+        "agents",
+        "contrôle",
+        "assermentés",
+        "prévues"
+      ],
       "statut": "abrogé"
     },
     {
@@ -453,7 +967,20 @@
       "texte": [
         "Un décret pris en conseil des Ministres sur proposition du Ministre chargé du travail fixera l'organisation et le fonctionnement de l'ONEMO."
       ],
-      "mots_cles": ["décret", "organisation", "fonctionnement"],
+      "mots_cles": [
+        "organisation",
+        "fonctionnement",
+        "décret",
+        "pris",
+        "conseil",
+        "ministres",
+        "proposition",
+        "ministre",
+        "chargé",
+        "fixera",
+        "onemo",
+        "décret pris"
+      ],
       "statut": "abrogé"
     },
     {
@@ -462,7 +989,15 @@
       "texte": [
         "Sont abrogés les articles 2 à 5, 8 à 11, 15 à 17 inclus de la loi n°01/86 du 22 février 1986 ainsi que les articles 162 à 167 inclus du Code du travail."
       ],
-      "mots_cles": ["abrogations"],
+      "mots_cles": [
+        "inclus",
+        "abrogations",
+        "abrogés",
+        "février",
+        "ainsi",
+        "code",
+        "février      ainsi"
+      ],
       "statut": "abrogé"
     },
     {
@@ -471,7 +1006,20 @@
       "texte": [
         "La présente loi sera enregistrée, publiée au Journal Officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["entrée en vigueur", "publication"],
+      "mots_cles": [
+        "entrée",
+        "présente",
+        "sera",
+        "enregistrée",
+        "publiée",
+        "journal",
+        "officiel",
+        "exécutée",
+        "état",
+        "présente loi",
+        "sera enregistrée",
+        "journal officiel"
+      ],
       "statut": "abrogé"
     }
   ]

@@ -19,7 +19,20 @@
       "texte": [
         "(Loi n°06-96) Les syndicats professionnels ont exclusivement pour objet l'étude et la défense des droits et des intérêts matériels et moraux tant collectifs qu'individuels de leurs membres."
       ],
-      "mots_cles": ["syndicat professionnel", "objet", "défense des droits", "intérêts"],
+      "mots_cles": [
+        "objet",
+        "syndicats",
+        "professionnels",
+        "exclusivement",
+        "étude",
+        "défense",
+        "droits",
+        "intérêts",
+        "matériels",
+        "moraux",
+        "tant",
+        "collectifs"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -29,7 +42,20 @@
       "texte": [
         "Les personnes exerçant la même profession, les métiers similaires ou des professions connexes concourent à l'établissement de produits déterminés, ou la même profession libérale, peuvent constituer librement un syndicat professionnel. Tout travailleur ou employeur peut adhérer librement à un syndicat de son choix dans le cadre de la profession."
       ],
-      "mots_cles": ["liberté syndicale", "constitution", "adhésion", "profession"],
+      "mots_cles": [
+        "profession",
+        "même",
+        "librement",
+        "syndicat",
+        "liberté",
+        "constitution",
+        "syndicats",
+        "personnes",
+        "exerçant",
+        "métiers",
+        "similaires",
+        "professions"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -52,7 +78,20 @@
         "Les modifications apportées aux statuts et les changements survenus dans la composition de la direction ou de l'administration du syndicat doivent être portés dans les mêmes conditions à la connaissance des mêmes autorités et vérifiés dans les mêmes conditions.",
         "Dans le premier trimestre suivant la fin de chaque exercice, les dirigeants statutairement compétents de tout syndicat doivent communiquer au Ministre du Travail un rapport annuel faisant apparaître notamment les statistiques de ses effectifs et le montant des cotisations encaissées."
       ],
-      "mots_cles": ["dépôt statuts", "inspection du travail", "15 jours", "30 jours", "récépissé", "reconnaissance", "rapport annuel"],
+      "mots_cles": [
+        "syndicat",
+        "statuts",
+        "ministre",
+        "dépôt",
+        "notamment",
+        "jours",
+        "rapport",
+        "mêmes",
+        "administration",
+        "direction",
+        "lieu",
+        "mode"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -64,7 +103,20 @@
         "- 1° des condamnations pour délits d'imprudence hors le cas de délit de fuite concomitant ;",
         "- 2° des condamnations prononcées pour infractions (autres que les infractions qualifiées délits) à la législation sur les sociétés mais dont cependant la répression n'est pas subordonnée à la preuve de la mauvaise foi de leurs auteurs et qui ne sont passibles que d'une amende."
       ],
-      "mots_cles": ["dirigeants syndicaux", "conditions", "citoyenneté", "5 ans", "droits civils", "condamnation"],
+      "mots_cles": [
+        "condamnations",
+        "syndicat",
+        "avoir",
+        "droits",
+        "délits",
+        "infractions",
+        "diriger",
+        "membres",
+        "chargés",
+        "administration",
+        "direction",
+        "être"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -74,7 +126,20 @@
       "texte": [
         "Les femmes mariées exerçant une profession ou un métier peuvent, sans l'autorisation de leur mari, adhérer aux syndicats professionnels et participer à leur administration ou à leur direction dans les conditions fixées à l'article précédent."
       ],
-      "mots_cles": ["femmes mariées", "adhésion syndicale", "sans autorisation mari"],
+      "mots_cles": [
+        "femmes",
+        "mariées",
+        "adhésion",
+        "exerçant",
+        "profession",
+        "métier",
+        "peuvent",
+        "autorisation",
+        "mari",
+        "adhérer",
+        "syndicats",
+        "professionnels"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -84,7 +149,16 @@
       "texte": [
         "Les mineurs âgés de plus de 16 ans peuvent adhérer aux syndicats."
       ],
-      "mots_cles": ["mineurs", "16 ans", "adhésion syndicale"],
+      "mots_cles": [
+        "mineurs",
+        "adhésion",
+        "âgés",
+        "peuvent",
+        "adhérer",
+        "syndicats",
+        "mineurs âgés",
+        "ans peuvent"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -97,7 +171,20 @@
         "- b) de se consacrer à des fonctions syndicales.",
         "Cependant, tout travailleur en chômage qui n'aurait pas adhéré à un syndicat avant sa perte d'emploi ne pourra être admis à se syndiquer que lorsqu'il aura retrouvé un emploi."
       ],
-      "mots_cles": ["cessation activité", "maintien adhésion", "1 an", "fonctions syndicales", "chômage"],
+      "mots_cles": [
+        "syndicat",
+        "emploi",
+        "maintien",
+        "adhésion",
+        "après",
+        "cessation",
+        "activité",
+        "peuvent",
+        "continuer",
+        "professionnel",
+        "personnes",
+        "quitté"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -107,7 +194,20 @@
       "texte": [
         "Tout membre d'un syndicat professionnel peut s'en retirer à tout instant nonobstant toute clause contraire sans préjudice du droit, pour le syndicat, de réclamer la cotisation afférente aux 6 mois qui suivent le retrait d'adhésion."
       ],
-      "mots_cles": ["retrait", "syndicat", "6 mois cotisation"],
+      "mots_cles": [
+        "syndicat",
+        "retrait",
+        "membre",
+        "professionnel",
+        "retirer",
+        "instant",
+        "nonobstant",
+        "clause",
+        "contraire",
+        "préjudice",
+        "droit",
+        "réclamer"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -117,7 +217,20 @@
       "texte": [
         "En cas de dissolution volontaire, statutaire ou prononcée par la justice, les biens du syndicat sont dévolus conformément aux statuts ou, à défaut de dispositions statutaires, suivant les règles déterminées par l'assemblée générale. En aucun cas, ils ne peuvent être répartis entre les membres adhérents."
       ],
-      "mots_cles": ["dissolution", "biens", "dévolution", "statuts", "assemblée générale"],
+      "mots_cles": [
+        "dissolution",
+        "syndicat",
+        "volontaire",
+        "statutaire",
+        "prononcée",
+        "justice",
+        "biens",
+        "dévolus",
+        "conformément",
+        "statuts",
+        "défaut",
+        "statutaires"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'objet des syndicats professionnels et de leur constitution"
     },
@@ -135,7 +248,20 @@
         "La décision du Ministre du Travail est susceptible de recours, dans un délai de trente jours, devant la juridiction administrative.",
         "Les dispositions qui précèdent ne pourront être interprétées comme autorisant l'administration à prendre connaissance des registres d'inscription des adhérents et des livres de trésorerie du syndicat."
       ],
-      "mots_cles": ["représentativité", "Ministre du Travail", "élections", "effectifs", "cotisations", "recours", "30 jours"],
+      "mots_cles": [
+        "syndicat",
+        "ministre",
+        "éléments",
+        "appréciation",
+        "représentativité",
+        "syndicats",
+        "caractère",
+        "représentatif",
+        "groupement",
+        "professionnel",
+        "déterminé",
+        "réunira"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 bis : De la représentativité des syndicats"
     },
@@ -145,7 +271,20 @@
       "texte": [
         "Les syndicats professionnels jouissent de la personnalité civile. Ils ont le droit d'ester en justice et d'acquérir, sans autorisation, à titre gratuit ou à titre onéreux, des biens, meubles et immeubles."
       ],
-      "mots_cles": ["personnalité civile", "ester en justice", "acquérir", "biens"],
+      "mots_cles": [
+        "personnalité",
+        "civile",
+        "syndicats",
+        "professionnels",
+        "jouissent",
+        "droit",
+        "ester",
+        "justice",
+        "acquérir",
+        "autorisation",
+        "gratuit",
+        "onéreux"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
     },
@@ -155,7 +294,20 @@
       "texte": [
         "Ils peuvent, devant toutes les juridictions, exercer tous les droits réservés à la partie civile, relativement aux faits portant un préjudice direct ou indirect à l'intérêt collectif de la profession qu'ils représentent."
       ],
-      "mots_cles": ["partie civile", "juridictions", "préjudice", "intérêt collectif"],
+      "mots_cles": [
+        "droits",
+        "civile",
+        "peuvent",
+        "devant",
+        "juridictions",
+        "exercer",
+        "réservés",
+        "relativement",
+        "faits",
+        "portant",
+        "préjudice",
+        "direct"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
     },
@@ -165,7 +317,20 @@
       "texte": [
         "Ils peuvent affecter une partie de leurs ressources à la création de logements de travailleurs, à l'acquisition de terrains de culture ou de terrains d'éducation physique à l'usage de leurs membres."
       ],
-      "mots_cles": ["logements", "terrains", "éducation physique", "ressources"],
+      "mots_cles": [
+        "terrains",
+        "création",
+        "logements",
+        "peuvent",
+        "affecter",
+        "ressources",
+        "acquisition",
+        "culture",
+        "éducation",
+        "physique",
+        "usage",
+        "membres"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
     },
@@ -176,7 +341,20 @@
         "Ils peuvent créer, administrer ou subventionner des œuvres professionnelles telles que : institutions de prévoyance, caisses de solidarité, laboratoires, champs d'expérience, œuvres d'éducation scientifique, agricoles ou sociales, cours et publications intéressant la profession.",
         "Les immeubles et objets mobiliers nécessaires à leurs réunions ; à leurs bibliothèques et à leurs cours d'instruction professionnels sont insaisissables."
       ],
-      "mots_cles": ["œuvres professionnelles", "prévoyance", "solidarité", "éducation", "insaisissables"],
+      "mots_cles": [
+        "œuvres",
+        "professionnelles",
+        "cours",
+        "peuvent",
+        "créer",
+        "administrer",
+        "subventionner",
+        "telles",
+        "institutions",
+        "prévoyance",
+        "caisses",
+        "solidarité"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
     },
@@ -186,7 +364,16 @@
       "texte": [
         "Ils peuvent subventionner des sociétés coopératives de production ou de consommation."
       ],
-      "mots_cles": ["subvention", "coopératives", "production", "consommation"],
+      "mots_cles": [
+        "coopératives",
+        "subvention",
+        "peuvent",
+        "subventionner",
+        "sociétés",
+        "production",
+        "consommation",
+        "peuvent subventionner"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
     },
@@ -197,7 +384,20 @@
         "Ils peuvent passer des contrats ou conventions avec tous autres syndicats, sociétés, entreprises ou personnes.",
         "Les conventions collectives du travail sont passées dans les conditions déterminées par le chapitre III du Titre II."
       ],
-      "mots_cles": ["contrats", "conventions", "conventions collectives"],
+      "mots_cles": [
+        "conventions",
+        "contrats",
+        "peuvent",
+        "passer",
+        "syndicats",
+        "sociétés",
+        "entreprises",
+        "personnes",
+        "collectives",
+        "passées",
+        "déterminées",
+        "peuvent passer"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
     },
@@ -209,7 +409,20 @@
         "- 1° acheter pour le louer, prêter ou répartir entre leurs membres tout ce qui est nécessaire à l'exercice de leur profession, notamment matières premières, outils, instruments, machines, engrais, semences, plantes, animaux et matières alimentaires pour le bétail ;",
         "- 2° prêter leur entremise gratuite pour la vente des produits provenant exclusivement du travail personnel ou des exploitations des syndiqués ; faciliter cette vente par exposition, annonces, publications, groupements de commandes et d'expéditions, sans pouvoir l'opérer sous leur nom, et sous leur responsabilité."
       ],
-      "mots_cles": ["activités commerciales", "achats groupés", "vente", "pas de bénéfices", "ristournes"],
+      "mots_cles": [
+        "syndicats",
+        "membres",
+        "prêter",
+        "matières",
+        "vente",
+        "activités",
+        "commerciales",
+        "autorisés",
+        "statuts",
+        "condition",
+        "distribuer",
+        "bénéfices"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
     },
@@ -219,7 +432,20 @@
       "texte": [
         "Ils peuvent être consultés sur tous les différends et toutes les questions se rattachant à leur spécialité. Dans les affaires contentieuses, les avis du syndicat sont tenus à la disposition des parties qui peuvent en prendre communication et copie."
       ],
-      "mots_cles": ["consultation", "différends", "avis", "spécialité"],
+      "mots_cles": [
+        "peuvent",
+        "consultation",
+        "syndicats",
+        "être",
+        "consultés",
+        "différends",
+        "questions",
+        "rattachant",
+        "spécialité",
+        "affaires",
+        "contentieuses",
+        "avis"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : De la capacité civile des syndicats professionnels"
     },
@@ -230,7 +456,20 @@
         "Les syndicats peuvent déposer, dans les conditions déterminées par arrêté du Ministre du Travail et de la Prévoyance Sociale pris après avis de la Commission Nationale Consultative du Travail, leurs marques ou labels. Ils peuvent, dès lors, en revendiquer la propriété exclusive dans les conditions dudit arrêté. Ces marques ou labels peuvent être apposés sur tout produit ou objet de commerce pour en certifier l'origine et les conditions de fabrication. Ils peuvent être utilisés par tous les individus ou entreprises mettant en vente ces produits.",
         "Est nulle et de nul effet toute clause de contrat collectif, accord ou entente aux termes de laquelle l'usage de la marque syndicale par un employeur sera subordonné à l'obligation pour ledit employeur de ne conserver ou de ne prendre à son service que les adhérents du syndicat propriétaire de la marque."
       ],
-      "mots_cles": ["marques syndicales", "labels", "propriété", "nullité clause"],
+      "mots_cles": [
+        "peuvent",
+        "marques",
+        "arrêté",
+        "labels",
+        "être",
+        "marque",
+        "syndicales",
+        "syndicats",
+        "déposer",
+        "déterminées",
+        "ministre",
+        "prévoyance"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 : Des marques syndicales"
     },
@@ -240,7 +479,20 @@
       "texte": [
         "Les syndicats peuvent, en se conformant, aux dispositions des lois en vigueur, constituer entre leurs membres des caisses spéciales de secours mutuels et de retraites."
       ],
-      "mots_cles": ["caisses", "secours mutuels", "retraites"],
+      "mots_cles": [
+        "caisses",
+        "secours",
+        "mutuels",
+        "syndicats",
+        "peuvent",
+        "conformant",
+        "lois",
+        "constituer",
+        "membres",
+        "spéciales",
+        "retraites",
+        "secours mutuels"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 : Des caisses spéciales de secours mutuels et de retraites"
     },
@@ -250,7 +502,15 @@
       "texte": [
         "Les fonds de ces caisses spéciales sont insaisissables dans les limites déterminées par la loi."
       ],
-      "mots_cles": ["insaisissabilité", "fonds", "caisses spéciales"],
+      "mots_cles": [
+        "fonds",
+        "insaisissabilité",
+        "caisses",
+        "spéciales",
+        "insaisissables",
+        "limites",
+        "déterminées"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 : Des caisses spéciales de secours mutuels et de retraites"
     },
@@ -260,7 +520,20 @@
       "texte": [
         "Toute personne qui se retire d'un syndicat conserve le droit d'être membre de sociétés de secours mutuels et de retraites pour la vieillesse à l'actif desquels elle a contribué par des cotisations ou versements de fonds."
       ],
-      "mots_cles": ["retrait", "droit maintenu", "secours mutuels", "retraites"],
+      "mots_cles": [
+        "droit",
+        "syndicat",
+        "maintien",
+        "après",
+        "retrait",
+        "personne",
+        "retire",
+        "conserve",
+        "être",
+        "membre",
+        "sociétés",
+        "secours"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 : Des caisses spéciales de secours mutuels et de retraites"
     },
@@ -271,7 +544,20 @@
         "Les syndicats professionnels régulièrement constitués d'après les prescriptions de la présente loi peuvent librement se concerter pour l'étude et la défense de leurs intérêts économiques, industriels, commerciaux et agricoles.",
         "Ils peuvent se constituer en union sous quelque forme que ce soit."
       ],
-      "mots_cles": ["unions syndicales", "concertation", "intérêts économiques"],
+      "mots_cles": [
+        "peuvent",
+        "unions",
+        "syndicales",
+        "syndicats",
+        "professionnels",
+        "régulièrement",
+        "constitués",
+        "après",
+        "prescriptions",
+        "présente",
+        "librement",
+        "concerter"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Des unions syndicales"
     },
@@ -282,7 +568,20 @@
         "Les dispositions des articles 184, 186, 187, 188 et 189 sont applicables aux unions de syndicats qui doivent, d'autre part, faire connaître dans les conditions prévues à l'article 186, le nom et le siège social des syndicats qui les composent.",
         "Leurs statuts doivent déterminer les règles selon lesquelles les syndicats adhérents à l'union sont représentés dans le conseil d'administration et dans les assemblées générales."
       ],
-      "mots_cles": ["unions", "règles", "siège social", "conseil d'administration", "assemblées générales"],
+      "mots_cles": [
+        "syndicats",
+        "règles",
+        "applicables",
+        "unions",
+        "part",
+        "connaître",
+        "prévues",
+        "siège",
+        "social",
+        "composent",
+        "statuts",
+        "déterminer"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Des unions syndicales"
     },
@@ -292,7 +591,18 @@
       "texte": [
         "Ces unions jouissent de tous les droits conférés aux syndicats professionnels par les chapitres II, III et IV du présent titre."
       ],
-      "mots_cles": ["droits", "unions", "syndicats professionnels"],
+      "mots_cles": [
+        "droits",
+        "unions",
+        "jouissent",
+        "conférés",
+        "syndicats",
+        "professionnels",
+        "chapitres",
+        "présent",
+        "unions jouissent",
+        "droits conférés"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Des unions syndicales"
     },
@@ -302,7 +612,18 @@
       "texte": [
         "Des locaux pourront être mis à la disposition des unions de syndicats pour l'exercice de leur activité sur leur demande."
       ],
-      "mots_cles": ["locaux", "unions", "activité syndicale"],
+      "mots_cles": [
+        "locaux",
+        "unions",
+        "pourront",
+        "être",
+        "disposition",
+        "syndicats",
+        "exercice",
+        "activité",
+        "demande",
+        "pourront être"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 : Des unions syndicales"
     },
@@ -314,7 +635,20 @@
         "- 1° acheter pour le louer, prêter ou répartir entre leurs membres tout ce qui est nécessaire à l'exercice de leur profession, notamment matières premières, outils, instruments, machines, engrais semences, plantes, animaux et matières alimentaires pour le bétail ;",
         "- 2° prêter leur entremise gratuite pour la vente des produits provenant exclusivement du travail personnel ou les exploitations des membres de l'association ; faciliter cette vente par exposition, annonces, publications, groupements de commandes et d'expéditions, sans pouvoir l'opérer sous leur nom, et sous leur responsabilité."
       ],
-      "mots_cles": ["associations professionnelles", "assimilées", "syndicats", "achats", "vente"],
+      "mots_cles": [
+        "associations",
+        "professionnelles",
+        "prêter",
+        "membres",
+        "matières",
+        "vente",
+        "reconnues",
+        "arrêté",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "assimilées"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 : Des associations professionnelles"
     },
@@ -326,7 +660,20 @@
         "Le chef d'une entreprise ou ses représentants ne devra employer aucun moyen de pression en faveur ou à l'encontre d'une organisation syndicale quelconque.",
         "Toute mesure prise par l'employeur, contrairement aux dispositions des alinéas précédents, sera considérée comme abusive et donnera lieu à des dommages-intérêts."
       ],
-      "mots_cles": ["discrimination syndicale", "interdiction", "embauchage", "rémunération", "licenciement", "pression", "dommages-intérêts"],
+      "mots_cles": [
+        "syndicale",
+        "interdiction",
+        "discrimination",
+        "interdit",
+        "prendre",
+        "considération",
+        "appartenance",
+        "syndicat",
+        "exercice",
+        "activité",
+        "arrêter",
+        "décisions"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 : De la liberté syndicale"
     },
@@ -337,7 +684,20 @@
         "(Loi n°06-96) Dans toutes les entreprises installées au Congo, le libre exercice du droit syndical est reconnu aux salariés, dans le respect des droits et libertés garantis par la Constitution.",
         "De même, les syndicats professionnels ont le droit de s'organiser librement au sein desdites entreprises."
       ],
-      "mots_cles": ["droit syndical", "libre exercice", "Constitution", "entreprises"],
+      "mots_cles": [
+        "droit",
+        "libre",
+        "exercice",
+        "syndical",
+        "entreprises",
+        "installées",
+        "congo",
+        "reconnu",
+        "salariés",
+        "respect",
+        "droits",
+        "libertés"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 : De la liberté syndicale"
     },
@@ -347,7 +707,20 @@
       "texte": [
         "(Loi n°06-96) Dans les entreprises d'au moins 30 travailleurs, chacun des syndicats représentatifs ayant au moins un délégué du personnel en fonction peut constituer des sections syndicales chargées d'assurer la représentation des intérêts professionnels de leurs adhérents auprès de l'employeur."
       ],
-      "mots_cles": ["sections syndicales", "30 travailleurs", "représentation", "délégué du personnel"],
+      "mots_cles": [
+        "sections",
+        "syndicales",
+        "entreprises",
+        "chacun",
+        "syndicats",
+        "représentatifs",
+        "ayant",
+        "délégué",
+        "personnel",
+        "fonction",
+        "constituer",
+        "chargées"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 : De la liberté syndicale"
     },
@@ -362,7 +735,20 @@
         "- la tenue des réunions périodiques avec ses adhérents dans l'enceinte de l'entreprise ;",
         "- la négociation des accords d'établissement d'entreprise."
       ],
-      "mots_cles": ["section syndicale", "missions", "affichage", "cotisations", "réunions", "négociation"],
+      "mots_cles": [
+        "syndicales",
+        "missions",
+        "syndicale",
+        "essentielles",
+        "affichage",
+        "communications",
+        "publication",
+        "diffusion",
+        "documents",
+        "informations",
+        "professionnelles",
+        "auprès"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 : De la liberté syndicale"
     },
@@ -372,7 +758,20 @@
       "texte": [
         "(Loi n°06-96) Dans les entreprises où sont occupés au moins 50 salariés, les sections syndicales doivent disposer d'un local commun mis à leur disposition par l'employeur pour l'exercice de leurs missions. Les conditions d'utilisation de ce local sont déterminées d'accord parties avec le chef d'entreprise."
       ],
-      "mots_cles": ["local syndical", "50 salariés", "mise à disposition"],
+      "mots_cles": [
+        "local",
+        "syndical",
+        "entreprises",
+        "occupés",
+        "salariés",
+        "sections",
+        "syndicales",
+        "disposer",
+        "commun",
+        "disposition",
+        "exercice",
+        "missions"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 : De la liberté syndicale"
     },
@@ -382,7 +781,20 @@
       "texte": [
         "(Loi n°06-96) Les membres du bureau de la section syndicale bénéficient de la même protection que les délégués du personnel en matière de licenciement."
       ],
-      "mots_cles": ["protection", "bureau syndical", "licenciement", "délégués du personnel"],
+      "mots_cles": [
+        "protection",
+        "membres",
+        "bureau",
+        "syndical",
+        "syndicale",
+        "bénéficient",
+        "même",
+        "délégués",
+        "personnel",
+        "matière",
+        "licenciement",
+        "bureau syndical"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 : De la liberté syndicale"
     },
@@ -395,7 +807,20 @@
         "- le mode de désignation des membres du bureau de la section syndicale et les conditions que ceux-ci doivent remplir pour être choisis.",
         "[NB - Voir l'arrêté n°1109/MTFPSS-DCT du 24 juin 1996 relatif aux représentants syndicaux et à l'exercice de l'activité syndicale dans les entreprises, page 136]"
       ],
-      "mots_cles": ["conditions exercice", "activité syndicale", "arrêté", "bureau syndical", "effectif"],
+      "mots_cles": [
+        "syndicale",
+        "exercice",
+        "activité",
+        "arrêté",
+        "entreprises",
+        "membres",
+        "bureau",
+        "ministre",
+        "pris",
+        "après",
+        "avis",
+        "commission"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 : De la liberté syndicale"
     }

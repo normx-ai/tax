@@ -18,7 +18,16 @@
       "texte": [
         "Le présent arrêté fixe les conditions d'Emploi du personnel domestique."
       ],
-      "mots_cles": ["personnel domestique", "conditions d'emploi"],
+      "mots_cles": [
+        "objet",
+        "présent",
+        "arrêté",
+        "emploi",
+        "personnel",
+        "domestique",
+        "présent arrêté",
+        "personnel domestique"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 - Dispositions générales / 1) Définition et champ d'application"
     },
@@ -29,7 +38,20 @@
         "Est réputé employé de maison ou domestique au sens du présent arrêté, tout salarié embauché au service du foyer et occupé d'une façon continue aux travaux de la maison.",
         "Le personnel occasionnel ou embauché pour une durée réduite ne dépassant pas 20 heures par semaine ne relève pas des présentes dispositions et demeure régi par les stipulations des parties."
       ],
-      "mots_cles": ["employé de maison", "domestique", "20 heures"],
+      "mots_cles": [
+        "personnel",
+        "domestique",
+        "maison",
+        "embauché",
+        "définition",
+        "réputé",
+        "employé",
+        "présent",
+        "arrêté",
+        "salarié",
+        "service",
+        "foyer"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 - Dispositions générales / 1) Définition"
     },
@@ -40,7 +62,20 @@
         "L'engagement individuel est établi conformément aux dispositions légales en vigueur.",
         "L'engagement définitif peut être précédé d'une période d'essai d'une durée maximale de 15 jours pendant laquelle chacune des parties peut reprendre sa liberté sans préavis de l'achèvement de la durée en cours. La durée exacte de la période d'essai doit être fixée par écrit au moment de l'engagement. L'employeur fera procéder à ses frais à l'examen médical du travailleur."
       ],
-      "mots_cles": ["engagement", "période d'essai", "15 jours", "examen médical"],
+      "mots_cles": [
+        "engagement",
+        "période",
+        "essai",
+        "durée",
+        "être",
+        "individuel",
+        "établi",
+        "conformément",
+        "légales",
+        "définitif",
+        "précédé",
+        "maximale"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 - Dispositions générales / 2) Engagement et période d'essai"
     },
@@ -50,7 +85,18 @@
       "texte": [
         "Les salaires minima mensuels des domestiques sont fixés par catégories et par échelon en annexe."
       ],
-      "mots_cles": ["salaires minima", "catégories", "échelons"],
+      "mots_cles": [
+        "salaires",
+        "minima",
+        "mensuels",
+        "domestiques",
+        "fixés",
+        "catégories",
+        "échelon",
+        "annexe",
+        "salaires minima",
+        "minima mensuels"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 - Dispositions générales / 3) Salaire minima"
     },
@@ -60,7 +106,20 @@
       "texte": [
         "Le logement et la nourriture constituent des avantages purement facultatifs. Leur valeur est fixée d'accord parties et peut être déduite des salaires."
       ],
-      "mots_cles": ["logement", "nourriture", "avantages en nature"],
+      "mots_cles": [
+        "avantages",
+        "nature",
+        "logement",
+        "nourriture",
+        "constituent",
+        "purement",
+        "facultatifs",
+        "valeur",
+        "fixée",
+        "accord",
+        "parties",
+        "être"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 - Dispositions générales / 4) Avantages en nature"
     },
@@ -75,7 +134,20 @@
         "- 50 % pour les heures supplémentaires effectuées la nuit ou pendant le repos hebdomadaire, ou les jours fériés ;",
         "- 100 % pour les heures effectuées de nuit pendant les jours fériés ou le repos hebdomadaire. Est considéré comme travail de nuit, le travail effectué entre 20 heures et 5 heures."
       ],
-      "mots_cles": ["durée travail", "60 heures", "heures supplémentaires", "10%", "25%", "50%", "100%", "travail de nuit"],
+      "mots_cles": [
+        "heures",
+        "hebdomadaire",
+        "supplémentaires",
+        "effectuées",
+        "nuit",
+        "durée",
+        "considéré",
+        "repos",
+        "jours",
+        "fériés",
+        "afin",
+        "tenir"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 - Dispositions générales / 5) Durée du travail"
     },
@@ -89,7 +161,20 @@
         "- 1 demi-journée par semaine et une entière par quinzaine.",
         "Pour les travailleurs de moins de 18 ans, la durée de repos entre deux journées de travail ne doit en aucun cas être inférieure à 11 heures."
       ],
-      "mots_cles": ["repos hebdomadaire", "1 journée", "mineurs", "11 heures"],
+      "mots_cles": [
+        "repos",
+        "semaine",
+        "hebdomadaire",
+        "journée",
+        "entière",
+        "demi",
+        "journées",
+        "personnel",
+        "domestique",
+        "bénéficier",
+        "convenue",
+        "avance"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 - Dispositions générales / 6) Repos hebdomadaire"
     },
@@ -99,7 +184,20 @@
       "texte": [
         "Le personnel domestique, acquiert droit au congé à la charge de l'employeur dans les conditions prévues par la réglementation en vigueur à savoir 2,16 jours ouvrables par mois soit 26 jours ouvrables par année de service effectif."
       ],
-      "mots_cles": ["congés payés", "2,16 jours", "26 jours", "année de service"],
+      "mots_cles": [
+        "jours",
+        "ouvrables",
+        "congés",
+        "payés",
+        "personnel",
+        "domestique",
+        "acquiert",
+        "droit",
+        "congé",
+        "charge",
+        "prévues",
+        "réglementation"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 7) Congés payés"
     },
@@ -109,7 +207,20 @@
       "texte": [
         "Le congé est acquis après une durée de service effectif d'une année fixée d'accord partie ; il peut se cumuler sur un maximum de trois années."
       ],
-      "mots_cles": ["cumul", "3 années"],
+      "mots_cles": [
+        "cumul",
+        "congés",
+        "congé",
+        "acquis",
+        "après",
+        "durée",
+        "service",
+        "effectif",
+        "année",
+        "fixée",
+        "accord",
+        "cumuler"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 7) Congés payés"
     },
@@ -119,7 +230,20 @@
       "texte": [
         "En cas de rupture ou d'expiration de contrat, une indemnité proportionnelle au temps de service sera accordée à la place du congé. En dehors de ce cas, le congé ne peut être remplacé par une indemnité compensatrice."
       ],
-      "mots_cles": ["indemnité compensatrice", "rupture contrat"],
+      "mots_cles": [
+        "indemnité",
+        "congé",
+        "compensatrice",
+        "rupture",
+        "expiration",
+        "proportionnelle",
+        "temps",
+        "service",
+        "sera",
+        "accordée",
+        "place",
+        "dehors"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 7) Congés payés"
     },
@@ -135,7 +259,20 @@
         "- 7 jours ouvrables après 20 ans de service ;",
         "- 8 jours ouvrables après 25 ans de service."
       ],
-      "mots_cles": ["congé supplémentaire", "ancienneté", "jours ouvrables"],
+      "mots_cles": [
+        "jours",
+        "ouvrables",
+        "après",
+        "service",
+        "congé",
+        "ancienneté",
+        "supplémentaire",
+        "durée",
+        "annuel",
+        "sera",
+        "augmentée",
+        "suit"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 8) Congé supplémentaire"
     },
@@ -145,7 +282,20 @@
       "texte": [
         "Lorsque l'engagement est conclu pour une durée indéterminée chacune des parties a le droit d'y mettre fin en prévenant l'autre partie par écrit ou par tout autre moyen certain, huit jours à l'avance. La faute lourde entraîne la perte du bénéfice du droit au préavis, sous réserve de l'appréciation de la gravité de la faute par l'administration du travail ou la juridiction compétente."
       ],
-      "mots_cles": ["préavis", "8 jours", "faute lourde"],
+      "mots_cles": [
+        "préavis",
+        "droit",
+        "faute",
+        "engagement",
+        "conclu",
+        "durée",
+        "indéterminée",
+        "chacune",
+        "parties",
+        "mettre",
+        "prévenant",
+        "écrit"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 9) Préavis"
     },
@@ -155,7 +305,20 @@
       "texte": [
         "Pendant la durée du préavis, le domestique bénéficiera en vue de la recherche d'un autre emploi de deux heures par jour mis dans les heures du travail et payées à plein salaire. Ces deux heures seront prises alternativement un jour au choix du domestique, un jour au choix de l'employeur, à défaut d'accord entre les parties."
       ],
-      "mots_cles": ["recherche emploi", "2 heures par jour", "préavis"],
+      "mots_cles": [
+        "heures",
+        "jour",
+        "recherche",
+        "emploi",
+        "préavis",
+        "domestique",
+        "deux",
+        "choix",
+        "durée",
+        "bénéficiera",
+        "payées",
+        "plein"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 9) Préavis"
     },
@@ -169,7 +332,20 @@
         "- 25 % du salaire mensuel par année de présence de la 11e à la 15e année ;",
         "- 30 % du salaire mensuel par année de présence à partir de la 16e année."
       ],
-      "mots_cles": ["indemnité licenciement", "15%", "20%", "25%", "30%", "ancienneté"],
+      "mots_cles": [
+        "année",
+        "salaire",
+        "mensuel",
+        "présence",
+        "indemnités",
+        "licenciement",
+        "domestique",
+        "licencié",
+        "après",
+        "service",
+        "effectif",
+        "percevra"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 10) Indemnités de licenciement"
     },
@@ -179,7 +355,20 @@
       "texte": [
         "En raison du fait que les activités de la profession peuvent être discontinues, les domestiques peuvent prétendre à l'indemnité de licenciement, lorsqu'à la suite de plusieurs embauches chez le même employeur, ils atteignent la présence nécessaire à son attribution."
       ],
-      "mots_cles": ["embauches discontinues", "même employeur"],
+      "mots_cles": [
+        "indemnité",
+        "embauches",
+        "discontinues",
+        "peuvent",
+        "raison",
+        "activités",
+        "profession",
+        "être",
+        "domestiques",
+        "prétendre",
+        "licenciement",
+        "lorsqu"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 10) Indemnités de licenciement"
     },
@@ -191,7 +380,20 @@
         "- 3 % après 3 années de présence ;",
         "- 1 % par année de présence à partir de la 4e année avec un maximum de 25 %."
       ],
-      "mots_cles": ["prime ancienneté", "3%", "1%", "25% maximum"],
+      "mots_cles": [
+        "prime",
+        "ancienneté",
+        "présence",
+        "année",
+        "consistant",
+        "majoration",
+        "salaire",
+        "minimum",
+        "échelon",
+        "professionnel",
+        "sera",
+        "alloué"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 11) Prime d'ancienneté"
     },
@@ -201,7 +403,20 @@
       "texte": [
         "Le domestique recruté hors du lieu d'emploi ou déplacé de ce lieu par l'employeur durant l'exécution du contrat a droit à la gratuité du voyage pour lui-même et sa famille reconnue par la Caisse Nationale de Sécurité Sociale."
       ],
-      "mots_cles": ["frais transport", "recrutement", "gratuité voyage", "famille"],
+      "mots_cles": [
+        "lieu",
+        "hors",
+        "frais",
+        "transport",
+        "recrutement",
+        "domestique",
+        "recruté",
+        "emploi",
+        "déplacé",
+        "exécution",
+        "droit",
+        "gratuité"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 12) Frais de transport"
     },
@@ -214,7 +429,20 @@
         "Dans les localités où il n'existe pas de transports urbains, le montant de l'indemnité de transport sera déterminé d'accord parties.",
         "L'indemnité de transport n'est pas due lorsque l'employeur met à la disposition du domestiques un moyen de déplacement."
       ],
-      "mots_cles": ["transport", "45%", "abonnement", "indemnité"],
+      "mots_cles": [
+        "transport",
+        "participation",
+        "frais",
+        "sera",
+        "indemnité",
+        "éventuels",
+        "domestique",
+        "admise",
+        "prorata",
+        "temps",
+        "effectif",
+        "égale"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 12) Frais de transport"
     },
@@ -224,7 +452,20 @@
       "texte": [
         "Le domestique sera payé chaque mois à la date fixe en principe le dernier jour du mois. Toutefois, à la demande du domestique, un acompte sera payé chaque quinzaine."
       ],
-      "mots_cles": ["paie", "mensuel", "acompte", "quinzaine"],
+      "mots_cles": [
+        "domestique",
+        "sera",
+        "payé",
+        "mois",
+        "période",
+        "paie",
+        "date",
+        "principe",
+        "dernier",
+        "jour",
+        "toutefois",
+        "demande"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 13) Période de la paie"
     },
@@ -240,7 +481,20 @@
         "- les montants des avantages en nature à déduire ;",
         "- le salaire net à verser."
       ],
-      "mots_cles": ["bulletin de paie", "preuve paiement", "salaire net"],
+      "mots_cles": [
+        "salaire",
+        "bulletin",
+        "paie",
+        "pouvoir",
+        "apporter",
+        "preuve",
+        "paiement",
+        "régulier",
+        "donc",
+        "recommandé",
+        "délivrer",
+        "domestique"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 13) Période de la paie"
     },
@@ -250,7 +504,20 @@
       "texte": [
         "Le domestique ne peut s'absenter sans autorisation ni justification. Toute absence non autorisée ni justifiée au cours du même mois peut être considérée comme un abandon de travail entraînant la rupture du contrat."
       ],
-      "mots_cles": ["absences", "abandon de travail", "rupture contrat"],
+      "mots_cles": [
+        "absences",
+        "permissions",
+        "domestique",
+        "absenter",
+        "autorisation",
+        "justification",
+        "absence",
+        "autorisée",
+        "justifiée",
+        "cours",
+        "même",
+        "mois"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 14) Absences et permissions"
     },
@@ -268,7 +535,20 @@
         "- 2 jours ouvrables en cas de retrait de deuil du travailleur ;",
         "- 1 jour ouvrable en cas de déménagement."
       ],
-      "mots_cles": ["permissions exceptionnelles", "mariage", "décès", "accouchement", "baptême", "deuil", "déménagement"],
+      "mots_cles": [
+        "jours",
+        "ouvrables",
+        "enfant",
+        "permissions",
+        "exceptionnelles",
+        "mariage",
+        "décès",
+        "jour",
+        "ouvrable",
+        "événements",
+        "familiaux",
+        "seront"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 14) Absences et permissions"
     },
@@ -278,7 +558,20 @@
       "texte": [
         "Tout accident de travail concernant un domestique doit être déclaré par l'employeur dans les 48 heures qui suivent le déroulement de l'accident à l'inspecteur du travail du lieu d'emploi et à la Caisse Nationale de Sécurité Sociale."
       ],
-      "mots_cles": ["accident de travail", "déclaration", "48 heures", "inspecteur", "CNSS"],
+      "mots_cles": [
+        "accident",
+        "accidents",
+        "concernant",
+        "domestique",
+        "être",
+        "déclaré",
+        "heures",
+        "suivent",
+        "déroulement",
+        "inspecteur",
+        "lieu",
+        "emploi"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 15) Accidents de travail"
     },
@@ -288,7 +581,19 @@
       "texte": [
         "L'employeur assure les soins médicaux et la fourniture des produits pharmaceutiques dans la limite de 50 % des frais engagés par le travailleur."
       ],
-      "mots_cles": ["soins médicaux", "50%", "produits pharmaceutiques"],
+      "mots_cles": [
+        "soins",
+        "médicaux",
+        "assure",
+        "fourniture",
+        "produits",
+        "pharmaceutiques",
+        "limite",
+        "frais",
+        "engagés",
+        "soins médicaux",
+        "produits pharmaceutiques"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 16) Soins médicaux"
     },
@@ -298,7 +603,20 @@
       "texte": [
         "Conformément aux dispositions de l'article 47 du Code du travail, l'employeur est tenu de verser au domestique, dans la limite de 8 jours, son salaire normal pendant la durée de l'absence pour maladie médicalement constatée."
       ],
-      "mots_cles": ["maladie", "8 jours", "salaire maintenu"],
+      "mots_cles": [
+        "maladie",
+        "conformément",
+        "code",
+        "tenu",
+        "verser",
+        "domestique",
+        "limite",
+        "jours",
+        "salaire",
+        "normal",
+        "durée",
+        "absence"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 17) Maladie"
     },
@@ -308,7 +626,20 @@
       "texte": [
         "Tout employeur du personnel domestique doit être immatriculé à la caisse nationale de sécurité sociale."
       ],
-      "mots_cles": ["prestations familiales", "immatriculation", "CNSS"],
+      "mots_cles": [
+        "prestations",
+        "familiales",
+        "personnel",
+        "domestique",
+        "être",
+        "immatriculé",
+        "caisse",
+        "nationale",
+        "sécurité",
+        "sociale",
+        "prestations familiales",
+        "personnel domestique"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 18) Prestations familiales"
     },
@@ -318,7 +649,12 @@
       "texte": [
         "La limite d'âge d'admission à la retraite est fixée à 55 ans."
       ],
-      "mots_cles": ["retraite", "55 ans"],
+      "mots_cles": [
+        "retraite",
+        "limite",
+        "admission",
+        "fixée"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 19) Retraite"
     },
@@ -328,7 +664,20 @@
       "texte": [
         "Tout employé de maison admis à faire valoir ses droits à la retraite ayant effectué au moins une année de service chez le même employeur perçoit une indemnité spéciale équivalente à trois mois de salaire de base par dix années de service."
       ],
-      "mots_cles": ["indemnité retraite", "3 mois", "10 ans de service"],
+      "mots_cles": [
+        "indemnité",
+        "spéciale",
+        "retraite",
+        "service",
+        "employé",
+        "maison",
+        "admis",
+        "valoir",
+        "droits",
+        "ayant",
+        "effectué",
+        "année"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 19) Retraite"
     },
@@ -339,7 +688,20 @@
         "Tout conflit pouvant survenir à l'occasion du contrat de travail entre l'employeur et le domestique sera soumis par la partie la plus diligente à l'inspecteur du travail du lieu d'exécution du contrat ou à son suppléant légal pour son règlement à l'amiable.",
         "En cas d'échec du règlement, le litige sera soumis au tribunal du travail du lieu d'emploi."
       ],
-      "mots_cles": ["conflits", "inspecteur du travail", "tribunal du travail", "règlement amiable"],
+      "mots_cles": [
+        "règlement",
+        "sera",
+        "soumis",
+        "lieu",
+        "conflits",
+        "conflit",
+        "pouvant",
+        "survenir",
+        "occasion",
+        "domestique",
+        "diligente",
+        "inspecteur"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 / 19) Retraite"
     },
@@ -349,7 +711,18 @@
       "texte": [
         "Les infractions au présent arrêté seront punies conformément aux dispositions du titre 9 du Code du travail."
       ],
-      "mots_cles": ["sanctions", "infractions", "Code du travail"],
+      "mots_cles": [
+        "sanctions",
+        "infractions",
+        "présent",
+        "arrêté",
+        "seront",
+        "punies",
+        "conformément",
+        "code",
+        "présent arrêté",
+        "seront punies"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 - Classification des emplois / 20) Sanctions"
     },
@@ -373,7 +746,20 @@
         "- 1er échelon : cuisinier hautement qualifié ;",
         "- 2e échelon : cuisinier hautement qualifié ayant au moins dix ans d'activité professionnelle confirmée."
       ],
-      "mots_cles": ["classification", "catégories", "échelons", "manœuvre", "jardinier", "cuisinier", "gardien", "nurse"],
+      "mots_cles": [
+        "échelon",
+        "personnel",
+        "catégorie",
+        "entretien",
+        "pratique",
+        "professionnelle",
+        "garçon",
+        "cuisinier",
+        "travaux",
+        "même",
+        "après",
+        "jardinier"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 - Classification des emplois"
     },
@@ -383,7 +769,12 @@
       "texte": [
         "L'arrêté n°6226 du 9 juillet 1985 est abrogé."
       ],
-      "mots_cles": ["abrogation"],
+      "mots_cles": [
+        "abrogation",
+        "arrêté",
+        "juillet",
+        "abrogé"
+      ],
       "statut": "en vigueur",
       "section": "21) Dispositions finales"
     },
@@ -393,7 +784,20 @@
       "texte": [
         "Les inspecteurs du travail ou leurs suppléants légaux sont chargés de l'application du présent arrêté qui sera publié au journal officiel de la République du Congo et communiqué partout où besoin sera."
       ],
-      "mots_cles": ["publication", "inspecteurs du travail"],
+      "mots_cles": [
+        "sera",
+        "exécution",
+        "publication",
+        "inspecteurs",
+        "suppléants",
+        "légaux",
+        "chargés",
+        "présent",
+        "arrêté",
+        "publié",
+        "journal",
+        "officiel"
+      ],
       "statut": "en vigueur",
       "section": "21) Dispositions finales"
     },
@@ -408,7 +812,20 @@
         "4e catégorie : 1er échelon : 49.370 FCFA — 2e échelon : 51.370 FCFA",
         "5e catégorie : 1er échelon : 53.370 FCFA — 2e échelon : 55.870 FCFA"
       ],
-      "mots_cles": ["grille salaires", "FCFA", "catégories", "échelons", "40.370", "55.870"],
+      "mots_cles": [
+        "échelon",
+        "fcfa",
+        "catégorie",
+        "grille",
+        "salaires",
+        "personnel",
+        "domestique",
+        "minima",
+        "mensuels",
+        "personnel domestique",
+        "salaires minima",
+        "mensuels    ère"
+      ],
       "statut": "en vigueur",
       "section": "Annexes"
     }

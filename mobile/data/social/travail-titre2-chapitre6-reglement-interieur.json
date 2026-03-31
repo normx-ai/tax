@@ -19,7 +19,20 @@
       "texte": [
         "Un règlement intérieur est tenu dans les établissements de toute nature, qu'ils dépendent d'une entreprise privée ou de la puissance publique."
       ],
-      "mots_cles": ["règlement intérieur", "obligation", "établissements"],
+      "mots_cles": [
+        "règlement",
+        "intérieur",
+        "obligation",
+        "tenu",
+        "établissements",
+        "nature",
+        "dépendent",
+        "privée",
+        "puissance",
+        "publique",
+        "règlement intérieur",
+        "puissance publique"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 : Du règlement intérieur"
     },
@@ -32,7 +45,20 @@
         "Avant de le mettre en vigueur, le chef d'entreprise doit communiquer le règlement intérieur au bureau syndical s'il en existe, pour étude et discussion, et à l'inspecteur du travail qui peut exiger le retrait ou la modification des dispositions contraires aux lois et règlements en vigueur.",
         "Un arrêté du Ministre du travail et de la prévoyance sociale pris après avis de la commission nationale consultative du travail, déterminera les modalités de communication de dépôt et d'affichage du règlement intérieur, ainsi que le nombre de travailleurs de l'entreprise au-dessus duquel l'existence de ce règlement est obligatoire."
       ],
-      "mots_cles": ["contenu", "organisation technique", "discipline", "hygiène", "sécurité", "nullité", "rémunération", "inspecteur du travail", "bureau syndical"],
+      "mots_cles": [
+        "règlement",
+        "intérieur",
+        "contenu",
+        "concernant",
+        "celles",
+        "retrait",
+        "procédure",
+        "projet",
+        "établi",
+        "exclusivement",
+        "limité",
+        "règles"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 : Du règlement intérieur"
     },
@@ -42,7 +68,12 @@
       "texte": [
         "Il est interdit à l'employeur d'infliger des amendes."
       ],
-      "mots_cles": ["amendes", "interdiction", "employeur"],
+      "mots_cles": [
+        "infliger",
+        "amendes",
+        "interdiction",
+        "interdit"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 : Du règlement intérieur"
     }

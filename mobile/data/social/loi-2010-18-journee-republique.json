@@ -17,7 +17,17 @@
       "texte": [
         "Le 28 novembre de chaque année est institué journée de la République, en commémoration de la proclamation de la République du Congo."
       ],
-      "mots_cles": ["28 novembre", "journée de la République", "commémoration"],
+      "mots_cles": [
+        "novembre",
+        "république",
+        "institution",
+        "année",
+        "institué",
+        "journée",
+        "commémoration",
+        "proclamation",
+        "congo"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -27,7 +37,20 @@
         "La journée du 28 novembre est fériée, chômée, payée et fêtée sur toute l'étendue du territoire national.",
         "Le régime des rétributions, rémunérations, salaires et indemnités de tous genres ne subira aucune modification de ce fait."
       ],
-      "mots_cles": ["férié", "chômé", "payé", "rémunération"],
+      "mots_cles": [
+        "jour",
+        "férié",
+        "chômé",
+        "payé",
+        "journée",
+        "novembre",
+        "fériée",
+        "chômée",
+        "payée",
+        "fêtée",
+        "étendue",
+        "territoire"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -36,7 +59,20 @@
       "texte": [
         "Est abrogée la loi n°42-59 du 2 octobre 1959 fixant la date de la fête nationale de la République du Congo au 28 novembre de chaque année."
       ],
-      "mots_cles": ["abrogation"],
+      "mots_cles": [
+        "abrogation",
+        "abrogée",
+        "octobre",
+        "fixant",
+        "date",
+        "fête",
+        "nationale",
+        "république",
+        "congo",
+        "novembre",
+        "année",
+        "octobre      fixant"
+      ],
       "statut": "en vigueur"
     }
   ]

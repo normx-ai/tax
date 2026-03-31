@@ -24,7 +24,20 @@
         "Si l'une des parties ne comparaît pas ou ne se fait pas valablement représenter, l'inspecteur du travail ou le fonctionnaire responsable du bureau de contrôle du travail du ressort la convoque à nouveau, dans un délai qui ne peut excéder deux jours sans préjudice de sa condamnation à une sanction prononcée par la juridiction pénale sur procès-verbal, dressé par l'autorité compétente ci-dessus désignée conformément à l'article 255 nouveau du présent Code.",
         "Les accords de conciliation sont consignés dans un procès-verbal établi séance tenante signé par les parties qui en reçoivent ampliation. Ils sont obligatoires et deviennent exécutoires au jour du dépôt prévu à l'article 247."
       ],
-      "mots_cles": ["revendications", "cahier de revendications", "négociations", "7 jours", "conciliation", "inspecteur du travail", "procès-verbal"],
+      "mots_cles": [
+        "négociations",
+        "revendications",
+        "parties",
+        "jours",
+        "date",
+        "dépôt",
+        "inspecteur",
+        "conciliation",
+        "cahier",
+        "ouvrir",
+        "tard",
+        "sept"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -34,7 +47,20 @@
       "texte": [
         "(Loi n°06-96) En cas de désaccord, l'inspecteur du travail établit un procès-verbal de non-conciliation, signé par les parties, et faisant ressortir les points de désaccord. La négociation se poursuit suivant la procédure prévue aux articles 243 à 248 du présent Code, relative à la commission de recommandation."
       ],
-      "mots_cles": ["désaccord", "procès-verbal de non-conciliation", "commission de recommandation"],
+      "mots_cles": [
+        "procès",
+        "verbal",
+        "conciliation",
+        "désaccord",
+        "inspecteur",
+        "établit",
+        "signé",
+        "parties",
+        "faisant",
+        "ressortir",
+        "points",
+        "négociation"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -44,7 +70,20 @@
       "texte": [
         "(Loi n°06-96) En cas de refus de négocier, opposé notamment par l'employeur et dûment constaté par l'inspecteur du travail au sein de l'entreprise, les travailleurs peuvent user immédiatement de leur droit de grève."
       ],
-      "mots_cles": ["refus de négocier", "droit de grève", "inspecteur du travail"],
+      "mots_cles": [
+        "droit",
+        "grève",
+        "refus",
+        "négocier",
+        "opposé",
+        "notamment",
+        "dûment",
+        "constaté",
+        "inspecteur",
+        "sein",
+        "peuvent",
+        "user"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -57,7 +96,20 @@
         "En cas de désaccord des parties sur le choix des experts, ceux-ci sont désignés dans les 48 heures par le Ministre du Travail et de la Prévoyance Sociale.",
         "Le Président et les experts sont pris parmi les députés, les conseillers municipaux, de district et de région, les membres des bureaux des chambres de commerce, d'agriculture et d'industrie, les titulaires du mérite congolais, de la légion d'honneur ou du mérite social, des personnalités connues pour leur autorité morale et leur compétence en matière économique et sociale."
       ],
-      "mots_cles": ["commission de recommandation", "non-conciliation", "2 jours", "experts", "48 heures", "Président"],
+      "mots_cles": [
+        "commission",
+        "recommandation",
+        "experts",
+        "conciliation",
+        "parties",
+        "président",
+        "membres",
+        "sociale",
+        "mérite",
+        "tentative",
+        "abouti",
+        "procès"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -69,7 +121,20 @@
         "La Commission de Recommandation se prononce en droit sur les conflits relatifs à l'interprétation des lois, règlements, conventions collectives ou accords en vigueur.",
         "Elle se prononce en équité sur les autres conflits, notamment lorsque le conflit porte sur les salaires ou les conditions de travail qui ne sont pas fixées par les dispositions des lois, règlements, conventions collectives ou accords en vigueur, et sur les conflits relatifs à la conclusion et à la révision des clauses des conventions et accords collectifs."
       ],
-      "mots_cles": ["saisine", "commission de recommandation", "droit", "équité", "salaires", "conventions collectives"],
+      "mots_cles": [
+        "commission",
+        "lois",
+        "procès",
+        "verbal",
+        "conflits",
+        "conventions",
+        "accords",
+        "différend",
+        "recommandation",
+        "conciliation",
+        "ceux",
+        "prononce"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -83,7 +148,20 @@
         "Sur leur demande, les parties sont entendues par la commission de recommandation. Elles peuvent déposer tous mémoires qu'elles estiment de nature à éclairer la commission.",
         "Dans un délai de sept jours, la commission dresse un rapport motivé de ses investigations. Les conclusions de ce rapport établissent, sous forme de recommandation, un projet de règlement des points en litige."
       ],
-      "mots_cles": ["pouvoirs", "investigation", "commission", "enquête", "experts-comptables", "secret professionnel", "7 jours", "recommandation"],
+      "mots_cles": [
+        "commission",
+        "recommandation",
+        "pouvoirs",
+        "situation",
+        "entreprises",
+        "parties",
+        "documents",
+        "éclairer",
+        "experts",
+        "rapport",
+        "investigation",
+        "larges"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -95,7 +173,20 @@
         "À l'expiration du délai de 4 jours francs à compter de la notification de ces rapports et recommandations aux parties et si aucune de celles-ci n'a manifesté son opposition la recommandation sous réserve du dépôt prévu à l'article ci-dessous acquiert force exécutoire.",
         "L'opposition, à peine de nullité, est formée dans les délais ci-dessus indiqués par lettre recommandée adressée à l'Inspecteur du Travail et des Lois Sociales ou au fonctionnaire responsable du bureau de contrôle du travail du ressort. Le récépissé à l'expédition fera foi de la formation de l'opposition."
       ],
-      "mots_cles": ["communication", "24 heures", "4 jours", "force exécutoire", "opposition", "lettre recommandée"],
+      "mots_cles": [
+        "recommandation",
+        "opposition",
+        "force",
+        "exécutoire",
+        "inspecteur",
+        "lois",
+        "sociales",
+        "fonctionnaire",
+        "responsable",
+        "bureau",
+        "contrôle",
+        "ressort"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -110,7 +201,20 @@
         "Les minutes sont déposées aux greffes des Tribunaux au jour de leur rendu.",
         "Les frais occasionnés par la procédure de conciliation et de recommandation, notamment les frais de déplacement des experts, pertes de salaires ou traitements, frais d'expertises, sont supportés par le budget de l'État."
       ],
-      "mots_cles": ["recommandation exécutoire", "convention collective", "extension", "Journal Officiel", "frais", "budget de l'État"],
+      "mots_cles": [
+        "recommandation",
+        "accord",
+        "conciliation",
+        "conflit",
+        "frais",
+        "effets",
+        "exécutoire",
+        "salaires",
+        "étendue",
+        "code",
+        "arrêté",
+        "lois"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -121,7 +225,20 @@
         "Les recommandations qui ont acquis force exécutoire peuvent faire l'objet d'un recours devant la Cour Suprême, pour excès de pouvoir ou violation de la loi.",
         "La grève déclenchée après formation de l'opposition à la recommandation n'entraîne pas la rupture du contrat de travail."
       ],
-      "mots_cles": ["recours", "Cour Suprême", "excès de pouvoir", "grève", "opposition"],
+      "mots_cles": [
+        "recours",
+        "devant",
+        "cour",
+        "suprême",
+        "recommandations",
+        "acquis",
+        "force",
+        "exécutoire",
+        "peuvent",
+        "objet",
+        "excès",
+        "pouvoir"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -131,7 +248,20 @@
       "texte": [
         "(Loi n°06-96) Est considéré comme grève tout arrêt concerté et collectif de travail en vue de faire aboutir des revendications professionnelles déjà déterminées dans un cahier de revendications et non satisfaites par l'employeur soit par échec de procédures de négociation, de conciliation, d'arbitrage et de recommandation, soit par refus de négocier opposé par l'employeur."
       ],
-      "mots_cles": ["grève", "définition", "arrêt concerté", "revendications", "cahier de revendications"],
+      "mots_cles": [
+        "grève",
+        "revendications",
+        "soit",
+        "définition",
+        "considéré",
+        "arrêt",
+        "concerté",
+        "collectif",
+        "aboutir",
+        "professionnelles",
+        "déjà",
+        "déterminées"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -141,7 +271,20 @@
       "texte": [
         "(Loi n°06-96) Sont réputées licites toutes grèves déclenchées suite à une ou plusieurs revendications professionnelles et collectives non satisfaites, soit par échec des négociations, d'arbitrage, de conciliation et de recommandation, soit par refus de négocier opposé par l'employeur."
       ],
-      "mots_cles": ["grève licite", "revendications", "échec négociations"],
+      "mots_cles": [
+        "grèves",
+        "licites",
+        "soit",
+        "réputées",
+        "déclenchées",
+        "suite",
+        "plusieurs",
+        "revendications",
+        "professionnelles",
+        "collectives",
+        "satisfaites",
+        "échec"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -154,7 +297,20 @@
         "- la grève pour motif politique ;",
         "- la grève de solidarité lorsque les salariés solidaires ne sont concernés d'aucune manière par le motif."
       ],
-      "mots_cles": ["grève illicite", "grève abusive", "grève politique", "grève de solidarité"],
+      "mots_cles": [
+        "grève",
+        "illicites",
+        "abusives",
+        "motif",
+        "grèves",
+        "notamment",
+        "réputées",
+        "déclenchée",
+        "mépris",
+        "nouveau",
+        "politique",
+        "solidarité"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -164,7 +320,18 @@
       "texte": [
         "(Loi n°06-96) Sauf faute lourde du salarié, la grève suspend le contrat de travail."
       ],
-      "mots_cles": ["suspension", "contrat de travail", "grève", "faute lourde"],
+      "mots_cles": [
+        "grève",
+        "suspension",
+        "sauf",
+        "faute",
+        "lourde",
+        "salarié",
+        "suspend",
+        "grève  loi",
+        "sauf faute",
+        "grève suspend"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -174,7 +341,20 @@
       "texte": [
         "(Loi n°06-96) L'employeur est ainsi dispensé du paiement de salaire aux grévistes pendant la durée de la grève. Toutefois, celui-ci est intégralement conservé si un accord de fin de grève porte que les journées de grève seront payées, ou si la grève a été provoquée par une faute manifeste de l'employeur."
       ],
-      "mots_cles": ["salaire", "grève", "dispense", "accord fin de grève", "faute employeur"],
+      "mots_cles": [
+        "grève",
+        "paiement",
+        "dispense",
+        "salaires",
+        "ainsi",
+        "dispensé",
+        "salaire",
+        "grévistes",
+        "durée",
+        "toutefois",
+        "celui",
+        "intégralement"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -185,7 +365,20 @@
         "(Loi n°06-96) L'employeur est autorisé à déduire les jours de grève lorsqu'il s'agit de déterminer les jours de congé annuel auxquels peut prétendre le salarié.",
         "Il est également autorisé à supprimer proportionnellement à la durée de la grève toutes les primes et indemnités directement liées à la prestation de travail."
       ],
-      "mots_cles": ["déduction", "congé annuel", "primes", "indemnités", "grève"],
+      "mots_cles": [
+        "jours",
+        "grève",
+        "autorisé",
+        "déduction",
+        "déduire",
+        "lorsqu",
+        "agit",
+        "déterminer",
+        "congé",
+        "annuel",
+        "prétendre",
+        "salarié"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -195,7 +388,18 @@
       "texte": [
         "(Loi n°06-96) L'employeur est tenu de garantir aux travailleurs présents dans l'entreprise pendant la grève les moyens d'effectuer leur prestation de travail."
       ],
-      "mots_cles": ["non-grévistes", "moyens de travail", "garantie"],
+      "mots_cles": [
+        "moyens",
+        "garantie",
+        "grévistes",
+        "tenu",
+        "garantir",
+        "présents",
+        "grève",
+        "effectuer",
+        "prestation",
+        "grévistes  loi"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -205,7 +409,20 @@
       "texte": [
         "(Loi n°06-96) Les heures perdues du fait de la grève ne peuvent être récupérées sauf accord entre les parties."
       ],
-      "mots_cles": ["heures perdues", "récupération", "accord"],
+      "mots_cles": [
+        "heures",
+        "perdues",
+        "récupérables",
+        "grève",
+        "peuvent",
+        "être",
+        "récupérées",
+        "sauf",
+        "accord",
+        "parties",
+        "heures perdues",
+        "peuvent être"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -215,7 +432,20 @@
       "texte": [
         "(Loi n°06-96) Pendant les jours de grève, les salariés conservent le bénéfice des prestations sociales définies par la législation et la réglementation en vigueur, les conventions et accords collectifs."
       ],
-      "mots_cles": ["prestations sociales", "grève", "législation", "conventions"],
+      "mots_cles": [
+        "prestations",
+        "sociales",
+        "grève",
+        "jours",
+        "salariés",
+        "conservent",
+        "bénéfice",
+        "définies",
+        "législation",
+        "réglementation",
+        "conventions",
+        "accords"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -232,7 +462,20 @@
         "- la participation à une grève illicite.",
         "Dans ces cas, la rupture du contrat de travail s'effectue dans les formes prévues par les dispositions des articles 41 nouveau et 176 nouveau du présent Code."
       ],
-      "mots_cles": ["faute lourde", "grève", "occupation locaux", "séquestration", "sabotage", "vol", "grève illicite"],
+      "mots_cles": [
+        "grève",
+        "faute",
+        "lourde",
+        "nouveau",
+        "faits",
+        "suivants",
+        "constitutifs",
+        "énumération",
+        "soit",
+        "limitative",
+        "réserve",
+        "appréciation"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -242,7 +485,18 @@
       "texte": [
         "(Loi n°06-96) Outre leur incidence sur le contrat de travail, les faits signalés plus haut sont susceptibles de poursuite pénale."
       ],
-      "mots_cles": ["poursuite pénale", "faute lourde", "grève"],
+      "mots_cles": [
+        "poursuite",
+        "pénale",
+        "outre",
+        "incidence",
+        "faits",
+        "signalés",
+        "haut",
+        "susceptibles",
+        "poursuite pénale",
+        "faits signalés"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -252,7 +506,20 @@
       "texte": [
         "(Loi n°06-96) Les dispositions du présent titre s'appliquent au personnel des entreprises, des organismes et des établissements publics ou privés lorsque ces entreprises, organismes et établissements sont chargés de la gestion d'un service public employant des salariés régis par le présent Code du travail."
       ],
-      "mots_cles": ["service public", "entreprises publiques", "organismes", "salariés"],
+      "mots_cles": [
+        "service",
+        "public",
+        "présent",
+        "entreprises",
+        "organismes",
+        "établissements",
+        "appliquent",
+        "personnel",
+        "publics",
+        "privés",
+        "chargés",
+        "gestion"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -265,7 +532,20 @@
         "Le préavis doit parvenir sept jours francs avant le déclenchement de la grève à la direction de l'établissement, de l'entreprise ou de l'organisme intéressé ; il fixe le lieu, la date et l'heure du début ainsi que la durée, limitée ou non, de la grève envisagée.",
         "Pendant la durée de préavis, les parties intéressées peuvent continuer à négocier. L'inobservation du préavis entraîne l'illicéité de la grève."
       ],
-      "mots_cles": ["préavis", "7 jours", "service public", "assemblée générale", "illicéité"],
+      "mots_cles": [
+        "préavis",
+        "grève",
+        "service",
+        "organisme",
+        "intéressé",
+        "durée",
+        "public",
+        "personnels",
+        "mentionnés",
+        "font",
+        "usage",
+        "droit"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -275,7 +555,20 @@
       "texte": [
         "(Loi n°06-96) Le droit de grève dans le service public sera limité par l'institution d'un service minimum indispensable pour la sauvegarde de l'intérêt général et organisé par l'employeur. Le refus pour les salariés désignés par l'employeur d'assurer le service minimum est constitutif de faute lourde."
       ],
-      "mots_cles": ["service minimum", "service public", "intérêt général", "faute lourde"],
+      "mots_cles": [
+        "service",
+        "minimum",
+        "droit",
+        "grève",
+        "public",
+        "sera",
+        "limité",
+        "institution",
+        "indispensable",
+        "sauvegarde",
+        "intérêt",
+        "général"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -285,7 +578,20 @@
       "texte": [
         "(Loi n°06-96) Le lock-out est une mesure de fermeture temporaire de l'établissement ou de l'entreprise décidée par l'employeur du fait de la détérioration du climat social en son sein."
       ],
-      "mots_cles": ["lock-out", "fermeture temporaire", "climat social"],
+      "mots_cles": [
+        "lock",
+        "définition",
+        "mesure",
+        "fermeture",
+        "temporaire",
+        "établissement",
+        "décidée",
+        "détérioration",
+        "climat",
+        "social",
+        "sein",
+        "out  loi"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -298,7 +604,20 @@
         "- le lock-out peut être présenté comme une réponse à une exécution défectueuse du travail ne pouvant être assimilée à l'exercice normal du droit de grève ;",
         "- l'ordre et la sécurité dans l'entreprise sont suffisamment compromis."
       ],
-      "mots_cles": ["lock-out licite", "impossibilité", "sécurité", "exécution défectueuse"],
+      "mots_cles": [
+        "lock",
+        "licite",
+        "être",
+        "réputé",
+        "chef",
+        "preuve",
+        "impossibilité",
+        "assurer",
+        "fonctionnement",
+        "présenté",
+        "réponse",
+        "exécution"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -308,7 +627,20 @@
       "texte": [
         "(Loi n°06-96) L'employeur est dispensé du paiement des heures ou des journées non travaillées lorsque le lock-out intervient dans les cas visés à l'article précité."
       ],
-      "mots_cles": ["lock-out", "dispense paiement", "heures non travaillées"],
+      "mots_cles": [
+        "paiement",
+        "lock",
+        "dispense",
+        "dispensé",
+        "heures",
+        "journées",
+        "travaillées",
+        "intervient",
+        "visés",
+        "précité",
+        "out  loi",
+        "out intervient"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     },
@@ -318,7 +650,20 @@
       "texte": [
         "(Loi n°06-96) La grève et le lock-out ne peuvent intervenir qu'après épuisement des procédures définies ci-dessus. Le caractère licite ou illicite de la grève ou du lock-out sera apprécié par la juridiction compétente."
       ],
-      "mots_cles": ["épuisement procédures", "grève", "lock-out", "juridiction compétente"],
+      "mots_cles": [
+        "épuisement",
+        "procédures",
+        "grève",
+        "lock",
+        "peuvent",
+        "intervenir",
+        "après",
+        "définies",
+        "caractère",
+        "licite",
+        "illicite",
+        "sera"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 : Du différend collectif"
     }

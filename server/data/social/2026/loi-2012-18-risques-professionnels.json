@@ -21,7 +21,16 @@
       "titre": "Révision de l'indemnité journalière après trois mois",
       "contenu": "Si l'incapacité temporaire se prolonge au-delà de trois mois et s'il survient postérieurement à l'accident une augmentation générale des salaires concernant la catégorie à laquelle appartient la victime, le taux de l'indemnité journalière est révisé dans les mêmes proportions avec effet au premier jour du quatrième mois d'incapacité ou de la date d'effet de l'augmentation des salaires, si cette date est postérieure.\nEn pareil cas, il appartient à la victime de demander à l'organisme de sécurité sociale la révision du montant de l'indemnité journalière en produisant toutes pièces justificatives, notamment une attestation de l'employeur.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["indemnité journalière", "incapacité temporaire", "révision", "augmentation salaires", "trois mois"],
+      "mots_cles": [
+        "révision",
+        "indemnité",
+        "journalière",
+        "après",
+        "trois",
+        "mois",
+        "indemnité journalière",
+        "après trois"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -29,7 +38,12 @@
       "titre": "Indemnité journalière en cas d'aggravation",
       "contenu": "Si une aggravation de la lésion causée par l'accident entraîne pour la victime une nouvelle incapacité temporaire, l'indemnité journalière est calculée sur la base du salaire journalier moyen des 30 jours qui précèdent immédiatement l'arrêt de travail causé par cette aggravation.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["indemnité journalière", "aggravation", "incapacité temporaire", "salaire journalier moyen"],
+      "mots_cles": [
+        "indemnité",
+        "journalière",
+        "aggravation",
+        "indemnité journalière"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -37,7 +51,11 @@
       "titre": "Salaire de base pour l'apprenti",
       "contenu": "Le salaire servant de base au calcul de l'indemnité journalière due à l'apprenti ne peut être inférieur au salaire minimum de la catégorie, de l'échelon ou de l'emploi qualifié où l'apprenti aurait normalement été classé en fin d'apprentissage.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["apprenti", "indemnité journalière", "salaire minimum", "catégorie", "apprentissage"],
+      "mots_cles": [
+        "salaire",
+        "base",
+        "apprenti"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -45,7 +63,14 @@
       "titre": "Suspension de l'indemnité journalière en cas de maintien de salaire",
       "contenu": "L'organisme de sécurité sociale suspend le service de l'indemnité journalière lorsque l'employeur maintient à la victime tout ou partie de son salaire ou des avantages en nature, soit en vertu d'un contrat individuel ou collectif de travail, soit en vertu des usages de la profession, soit de sa propre initiative.\nNéanmoins, l'employeur et la victime, qui se sont mis d'accord pour le maintien d'avantages en nature, peuvent en informer l'organisme de sécurité sociale et demander le reversement par lui, à l'employeur, de la partie de l'indemnité journalière correspondant à la valeur des avantages maintenus.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["indemnité journalière", "suspension", "maintien salaire", "avantages en nature", "employeur"],
+      "mots_cles": [
+        "suspension",
+        "indemnité",
+        "journalière",
+        "maintien",
+        "salaire",
+        "indemnité journalière"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -53,7 +78,9 @@
       "titre": "Subrogation de l'employeur",
       "contenu": "Lorsque le salaire est maintenu en totalité, l'employeur est subrogé de plein droit à la victime, quelles que soient les clauses du contrat, dans les droits de celle-ci aux indemnités journalières qui lui sont dues.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["subrogation", "employeur", "maintien salaire", "indemnités journalières"],
+      "mots_cles": [
+        "subrogation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -61,7 +88,12 @@
       "titre": "Paiement de l'indemnité journalière",
       "contenu": "L'indemnité journalière est payée soit à la victime, soit à la personne qui justifie avoir à sa charge une victime mineure.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["indemnité journalière", "paiement", "victime mineure"],
+      "mots_cles": [
+        "paiement",
+        "indemnité",
+        "journalière",
+        "indemnité journalière"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -69,7 +101,13 @@
       "titre": "Périodicité du paiement de l'indemnité journalière",
       "contenu": "L'indemnité journalière doit être réglée à intervalles réguliers ne pouvant en aucun cas excéder un mois.\nElle est mise en paiement par l'organisme de sécurité sociale dès la réception du certificat médical attestant la nécessité de l'arrêt du travail.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["indemnité journalière", "paiement mensuel", "certificat médical", "arrêt de travail"],
+      "mots_cles": [
+        "périodicité",
+        "paiement",
+        "indemnité",
+        "journalière",
+        "indemnité journalière"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -77,7 +115,13 @@
       "titre": "Cessibilité et saisissabilité de l'indemnité journalière",
       "contenu": "L'indemnité journalière n'est cessible et saisissable que dans les limites fixées par le Code du travail.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["indemnité journalière", "cessibilité", "saisissabilité", "Code du travail"],
+      "mots_cles": [
+        "cessibilité",
+        "saisissabilité",
+        "indemnité",
+        "journalière",
+        "indemnité journalière"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -85,7 +129,11 @@
       "titre": "Astreinte pour retard de paiement",
       "contenu": "Tout retard injustifié dans le paiement de l'indemnité journalière donne droit au profit du bénéficiaire, à partir du trentième jour, à une astreinte quotidienne de 1 % du montant des sommes non payées.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["indemnité journalière", "retard paiement", "astreinte", "1 %", "trentième jour"],
+      "mots_cles": [
+        "astreinte",
+        "retard",
+        "paiement"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -93,7 +141,12 @@
       "titre": "Majoration pour faute inexcusable de l'employeur",
       "contenu": "Lorsque l'accident est dû à une faute inexcusable de l'employeur ou de ses préposés, les indemnités dues à la victime ou à ses ayants droit, en vertu de la présente loi, sont majorées.\nLe montant de la majoration est fixé à vingt-cinq pour cent de l'indemnité journalière. La majoration n'est payée par l'organisme de sécurité sociale qu'en récupérant le montant au moyen d'une cotisation supplémentaire imposée à l'employeur. Dans le cas de cession ou de cessation de l'activité de l'entreprise, le total des arrérages de la cotisation à échoir est immédiatement exigible.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["faute inexcusable", "majoration", "25 %", "cotisation supplémentaire", "employeur"],
+      "mots_cles": [
+        "majoration",
+        "faute",
+        "inexcusable",
+        "faute inexcusable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -101,7 +154,11 @@
       "titre": "Recours contre l'auteur de l'accident",
       "contenu": "Si l'accident est dû à une faute inexcusable de l'employeur ou de l'un de ses préposés, ou encore si l'accident est causé par une personne autre que l'employeur ou ses préposés, la victime ou ses ayants droit conservent contre l'auteur de l'accident le droit de demander réparation du préjudice causé, conformément aux règles de droit commun, dans la mesure où ce préjudice n'est pas réparé par application de la présente loi.\nL'organisme de sécurité sociale est tenu de servir à la victime ou à ses ayants droit les prestations et indemnités prévues par la présente loi. Il est admis de plein droit à intenter contre l'auteur de l'accident une action en remboursement des sommes payées par lui.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["faute inexcusable", "recours", "droit commun", "réparation", "action en remboursement"],
+      "mots_cles": [
+        "recours",
+        "auteur",
+        "accident"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -109,7 +166,12 @@
       "titre": "Prescription des indemnités journalières",
       "contenu": "Le droit aux indemnités journalières d'accident du travail se prescrit par deux ans.",
       "section": "Titre 2 - Des prestations - Chapitre 3 : De l'indemnité journalière",
-      "mots_cles": ["prescription", "deux ans", "indemnités journalières", "accident du travail"],
+      "mots_cles": [
+        "prescription",
+        "indemnités",
+        "journalières",
+        "indemnités journalières"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -117,7 +179,13 @@
       "titre": "Droit à la rente d'incapacité permanente",
       "contenu": "La victime d'un accident du travail ou d'une maladie professionnelle a droit à une rente d'incapacité permanente en rapport au degré de son incapacité, lorsque celle-ci a été dûment constatée par le médecin désigné ou agrée par l'organisme de sécurité sociale.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rente", "incapacité permanente", "accident du travail", "maladie professionnelle", "médecin"],
+      "mots_cles": [
+        "droit",
+        "rente",
+        "incapacité",
+        "permanente",
+        "incapacité permanente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -125,7 +193,13 @@
       "titre": "Détermination du degré d'incapacité permanente",
       "contenu": "Le degré d'incapacité permanente est déterminé en tenant compte de la nature de l'infirmité, l'état général, l'âge, les facultés physiques et mentales de la victime, ainsi qu'en fonction de ses aptitudes professionnelles sur la base d'un barème indicatif d'invalidité établi par arrêté du Ministre chargé de la santé.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["incapacité permanente", "barème invalidité", "infirmité", "aptitudes professionnelles"],
+      "mots_cles": [
+        "détermination",
+        "degré",
+        "incapacité",
+        "permanente",
+        "incapacité permanente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -133,7 +207,13 @@
       "titre": "Liquidation des rentes en montants mensuels",
       "contenu": "Les rentes sont liquidées en montants mensuels. Le droit à une mensualité est déterminé d'après la situation du bénéficiaire au premier jour du mois civil correspondant.\nChaque montant mensuel est arrondi à la centaine de francs supérieurs.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rentes", "liquidation", "montants mensuels", "arrondi", "centaine de francs"],
+      "mots_cles": [
+        "liquidation",
+        "rentes",
+        "montants",
+        "mensuels",
+        "montants mensuels"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -141,7 +221,12 @@
       "titre": "Rémunération de base pour le calcul de la rente",
       "contenu": "La rémunération servant de base au calcul de la rente est la rémunération moyenne mensuelle qui est au moins égale à trente fois la rémunération journalière moyenne déterminée à l'article 44 de la présente loi. Dans tous les cas, elle ne peut être inférieure à la rémunération minimale légale en vigueur à la date de l'accident.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rente", "rémunération de base", "rémunération moyenne mensuelle", "rémunération minimale"],
+      "mots_cles": [
+        "rémunération",
+        "base",
+        "calcul",
+        "rente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -149,7 +234,13 @@
       "titre": "Montant de la rente d'incapacité permanente",
       "contenu": "Le montant de la rente d'incapacité permanente est égal à la rémunération moyenne de la victime, déterminée conformément aux articles 45, 61 et 62 de la présente loi, multipliée par le taux d'incapacité préalablement réduit de moitié pour la partie de ce taux qui ne dépasse pas 50 % et augmenté de moitié pour la partie qui excède.\nLe montant de la rente ne peut, en aucun cas, excéder ladite rémunération.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rente", "incapacité permanente", "taux", "50 %", "rémunération moyenne"],
+      "mots_cles": [
+        "montant",
+        "rente",
+        "incapacité",
+        "permanente",
+        "incapacité permanente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -157,7 +248,14 @@
       "titre": "Diminution de la rente pour faute inexcusable de la victime",
       "contenu": "Lors de la fixation de la rente, l'organisme de sécurité sociale peut, s'il estime que l'accident est dû à une faute inexcusable de la victime, diminuer la rente de moitié.\nToutefois, le bénéficiaire peut introduire un recours devant la juridiction compétente.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rente", "faute inexcusable", "victime", "diminution", "recours"],
+      "mots_cles": [
+        "diminution",
+        "rente",
+        "faute",
+        "inexcusable",
+        "victime",
+        "faute inexcusable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -165,7 +263,9 @@
       "titre": "Fin de la rente",
       "contenu": "La rente prend fin soit à la date de la consolidation de la lésion ou de la stabilisation de l'état de la victime, soit le lendemain du décès.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rente", "fin", "consolidation", "stabilisation", "décès"],
+      "mots_cles": [
+        "rente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -173,7 +273,11 @@
       "titre": "Périodicité du paiement des rentes",
       "contenu": "Les rentes sont payables par trimestre et à terme échu.\nElles sont payées suivant d'autres périodicités dans les cas suivants :\n- lorsque le taux d'incapacité est inférieur à 10 %, la victime reçoit la rente sous forme d'un capital versé en une seule fois ;\n- la rente est payée une fois lorsque le taux d'incapacité est égal à 10 % et inférieur à 50 % ;\n- lorsque le taux d'incapacité est égal à 50 % et inférieur à 75 %, la rente est payée trimestriellement ;\n- lorsque le taux d'incapacité atteint ou dépasse 75 %, le titulaire de la rente peut demander que les arrérages lui soient réglés mensuellement.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rentes", "paiement", "trimestre", "capital", "taux incapacité", "10 %", "50 %", "75 %"],
+      "mots_cles": [
+        "périodicité",
+        "paiement",
+        "rentes"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -181,7 +285,13 @@
       "titre": "Allocation provisionnelle aux ayants droit",
       "contenu": "Une allocation provisionnelle à déduire lors du paiement des premiers arrérages de la rente peut être versée aux conjoints survivants ou aux ayants droit, à leur demande.\nLe remboursement de l'allocation provisionnelle est opéré dans les conditions indiquées à l'article 123 de la présente loi.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["allocation provisionnelle", "ayants droit", "conjoints survivants", "arrérages"],
+      "mots_cles": [
+        "allocation",
+        "provisionnelle",
+        "ayants",
+        "droit",
+        "allocation provisionnelle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -189,7 +299,10 @@
       "titre": "Révision de la rente",
       "contenu": "Toute modification de l'état de la victime, soit par aggravation soit par atténuation de l'infirmité, entraîne une révision de la rente.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rente", "révision", "aggravation", "atténuation", "infirmité"],
+      "mots_cles": [
+        "révision",
+        "rente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -197,7 +310,10 @@
       "titre": "Avances sur rentes",
       "contenu": "L'organisme de sécurité sociale peut accorder, sur demande, à la victime ou à ses ayants droit, des avances sur rentes.\nCes avances, qui ne peuvent être supérieures à la rente proposée par l'organisme de sécurité sociale, viennent en déduction de celle-ci.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["avances", "rentes", "déduction", "ayants droit"],
+      "mots_cles": [
+        "avances",
+        "rentes"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -205,7 +321,15 @@
       "titre": "Aggravation entraînant une nouvelle incapacité temporaire",
       "contenu": "Si l'aggravation de la lésion entraîne pour la victime une nouvelle incapacité temporaire et la nécessité d'un traitement médical, l'organisme de sécurité sociale paie les frais médicaux, chirurgicaux, pharmaceutiques, d'hospitalisation et, le cas échéant, la fraction de l'indemnité journalière qui excède le montant de la rente maintenue pendant cette période.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["aggravation", "incapacité temporaire", "frais médicaux", "indemnité journalière", "rente"],
+      "mots_cles": [
+        "aggravation",
+        "entraînant",
+        "nouvelle",
+        "incapacité",
+        "temporaire",
+        "aggravation entraînant",
+        "incapacité temporaire"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -213,7 +337,13 @@
       "titre": "Notification de la nouvelle fixation des réparations",
       "contenu": "Toute nouvelle fixation des réparations motivées par une aggravation ou une atténuation de l'état de la victime ou par le décès de celle-ci fait l'objet d'une décision de l'organisme de sécurité sociale, qui doit être notifiée sans retard à la victime ou à ses ayants droit.\nLa nouvelle rente est due à partir du jour où a été constatée l'aggravation ou l'atténuation de la lésion.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["réparations", "notification", "aggravation", "atténuation", "nouvelle rente"],
+      "mots_cles": [
+        "notification",
+        "nouvelle",
+        "fixation",
+        "réparations",
+        "nouvelle fixation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -221,7 +351,13 @@
       "titre": "Rachat total ou partiel des rentes",
       "contenu": "Le rachat total ou partiel des rentes d'accidents du travail s'effectue d'après les règles suivantes :\n1) La rente allouée à la victime de l'accident peut, après expiration d'un délai de cinq ans à compter du point de départ des arrérages, être remplacée, en totalité ou en partie, par un capital dans les conditions indiquées ci-après :\n- si le taux d'incapacité ne dépasse pas 10 %, le rachat porte sur la totalité de la rente ;\n- si le taux d'incapacité est supérieur à 10 % et inférieur à 50 %, le rachat de la rente peut être opéré dans la limite maximale d'un quart du capital correspondant à la valeur de la rente ;\n- si le taux d'incapacité est égal ou supérieur à 50 %, la tranche supérieure à 50 % ne donne droit à aucun rachat.\n2) La demande de rachat total ou partiel doit être adressée à l'organisme de sécurité sociale dans les deux ans qui suivent le délai de cinq ans visé à l'alinéa premier ; la décision est prise par l'organisme de sécurité sociale.\nLe rachat des rentes ne peut entraîner pour la victime la perte du droit à révision de celle-ci lorsque les conséquences de l'accident provoquent ultérieurement une aggravation de l'invalidité.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rachat", "rentes", "capital", "cinq ans", "taux incapacité", "10 %", "50 %"],
+      "mots_cles": [
+        "rachat",
+        "total",
+        "partiel",
+        "rentes",
+        "rachat total"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -229,7 +365,14 @@
       "titre": "Révision des taux de rentes par voie réglementaire",
       "contenu": "Les taux des rentes dues au titre d'accident du travail ou de maladies professionnelles ayant entraîné la mort de la victime ou une incapacité permanente au moins égale à dix pour cent peuvent être révisées par voie réglementaire.\nCette révision peut être envisagée à la suite d'une variation sensible du coût de la vie. Elle tient compte des possibilités financières de la branche des risques professionnels et de l'évolution du salaire minimum interprofessionnel garanti.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rentes", "révision taux", "coût de la vie", "SMIG", "voie réglementaire"],
+      "mots_cles": [
+        "révision",
+        "taux",
+        "rentes",
+        "voie",
+        "réglementaire",
+        "voie réglementaire"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -237,7 +380,11 @@
       "titre": "Exclusion et suspension des rentes",
       "contenu": "Les rentes ne sont pas dues lorsque l'incapacité de travail ou le décès sont la conséquence d'une faute intentionnelle, d'un crime ou d'un délit commis par l'assuré. Les prestations sont suspendues lorsque la victime d'un accident du travail ou d'une maladie professionnelle refuse ou néglige d'utiliser les services médicaux mis à sa disposition ou n'observe pas les règles prescrites pour la vérification de l'existence de son incapacité de travail.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rentes", "exclusion", "suspension", "faute intentionnelle", "crime", "délit"],
+      "mots_cles": [
+        "exclusion",
+        "suspension",
+        "rentes"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -245,7 +392,12 @@
       "titre": "Majoration pour tierce personne",
       "contenu": "Si l'accident a occasionné une incapacité totale de travail obligeant la victime à avoir recours à l'assistance d'une tierce personne pour effectuer les actes ordinaires de la vie, la rente est majorée de trente pour cent.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["rente", "majoration", "tierce personne", "30 %", "incapacité totale"],
+      "mots_cles": [
+        "majoration",
+        "tierce",
+        "personne",
+        "tierce personne"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -253,7 +405,13 @@
       "titre": "Cumul rente et pension de survivant",
       "contenu": "À la suite du décès d'un travailleur consécutif à un accident du travail ou à une maladie professionnelle, si les survivants ont droit simultanément à une rente et à une pension de survivant, seule la prestation la plus avantageuse leur est versée.\nEn cas de cumul d'une pension et d'une ou plusieurs rentes allouées en vertu des dispositions de la présente loi, le titulaire a droit à la totalité de la pension ou de la rente dont le montant est le plus élevé et la moitié de l'autre avantage.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["cumul", "rente", "pension de survivant", "prestation avantageuse", "décès"],
+      "mots_cles": [
+        "cumul",
+        "rente",
+        "pension",
+        "survivant",
+        "cumul rente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -261,7 +419,12 @@
       "titre": "Travailleur étranger cessant de résider sur le territoire",
       "contenu": "Le travailleur étranger victime d'un accident du travail qui cesse de résider sur le territoire national reçoit, à sa demande, en solde de tous comptes, une indemnité égale à trois fois le montant de la rente annuelle qui lui a été allouée, sauf cas de convention de réciprocité en matière de sécurité sociale.\nLa même disposition s'applique aux ayants droit qui cessent de résider sur le territoire national.\nL'organisme de sécurité sociale peut également retenir, à titre de pénalité, tout ou partie des indemnités journalières de la victime qui aurait volontairement enfreint les dispositions susvisées relatives au contrôle médical ou aux prescriptions du médecin.",
       "section": "Titre 2 - Des prestations - Section 4 : Des rentes",
-      "mots_cles": ["travailleur étranger", "territoire national", "rente annuelle", "convention réciprocité", "pénalité"],
+      "mots_cles": [
+        "étranger",
+        "cessant",
+        "résider",
+        "territoire"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -269,7 +432,12 @@
       "titre": "Examens de contrôle médical",
       "contenu": "L'organisme de sécurité sociale peut, à tout moment, faire procéder à des examens de contrôle de l'état de la victime par son médecin-conseil ou un médecin de son choix, notamment dès qu'il a connaissance de l'accident, pendant la période d'incapacité temporaire, en cas de rechute et au moment de la guérison ou de la consolidation de la blessure.\nIl peut également, à tout moment, faire contrôler par des enquêteurs ou par toute personne habilitée, les victimes d'accident du travail à qui il sert des prestations.\nLa périodicité des examens de contrôle est fixée par arrêté du Ministre chargé de la sécurité sociale.",
       "section": "Titre 2 - Des prestations - Section 4 : Du contrôle médical des bénéficiaires",
-      "mots_cles": ["contrôle médical", "médecin-conseil", "examen", "incapacité temporaire", "consolidation"],
+      "mots_cles": [
+        "examens",
+        "contrôle",
+        "médical",
+        "contrôle médical"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -277,7 +445,13 @@
       "titre": "Notification de l'examen médical de contrôle",
       "contenu": "La victime est informée à l'avance, par lettre recommandée avec accusé de réception ou par tout autre procédé de notification, de l'heure et du lieu de l'examen médical de contrôle.\nSi la victime, en raison de son état, n'est pas en mesure de se rendre au lieu indiqué, elle doit en aviser l'organisme de sécurité sociale par lettre recommandée ou par tout autre procédé de notification.",
       "section": "Titre 2 - Des prestations - Section 4 : Du contrôle médical des bénéficiaires",
-      "mots_cles": ["notification", "examen médical", "lettre recommandée", "contrôle"],
+      "mots_cles": [
+        "notification",
+        "examen",
+        "médical",
+        "contrôle",
+        "examen médical"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -285,7 +459,13 @@
       "titre": "Frais de déplacement pour contrôle médical",
       "contenu": "Les frais de déplacement de la victime ou de ses ayants droit, pour répondre à la convocation du médecin-conseil ou pour soumettre à une expertise, à un contrôle ou à un traitement, sont à la charge de l'organisme de sécurité sociale et remboursés d'après les tarifs en vigueur.\nLes frais de déplacement comprennent, le cas échéant, les frais de transport, les frais de séjour et l'indemnité compensatrice de perte de salaire.",
       "section": "Titre 2 - Des prestations - Section 4 : Du contrôle médical des bénéficiaires",
-      "mots_cles": ["frais de déplacement", "médecin-conseil", "expertise", "transport", "indemnité compensatrice"],
+      "mots_cles": [
+        "frais",
+        "déplacement",
+        "contrôle",
+        "médical",
+        "contrôle médical"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -293,7 +473,14 @@
       "titre": "Obligations de la victime en matière de documents médicaux",
       "contenu": "La victime est tenue de présenter à toute réquisition du service de contrôle médical de l'organisme de sécurité sociale, tous certificats médicaux, radiographies et comptes rendus des examens de laboratoire et ordonnances en sa possession.\nElle doit également faire connaître, le cas échéant, les accidents du travail et les maladies professionnelles antérieures et, au cas où il s'agirait d'une rechute, fournir tous renseignements qui lui sont demandés sur son état de santé antérieur.\nPour tous les actes de contrôle médical, la victime peut se faire assister par son médecin traitant.",
       "section": "Titre 2 - Des prestations - Section 4 : Du contrôle médical des bénéficiaires",
-      "mots_cles": ["certificats médicaux", "radiographies", "contrôle médical", "médecin traitant", "rechute"],
+      "mots_cles": [
+        "obligations",
+        "victime",
+        "matière",
+        "documents",
+        "médicaux",
+        "documents médicaux"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -301,7 +488,11 @@
       "titre": "Sanctions en cas de refus de contrôle",
       "contenu": "La victime ne peut se soustraire aux divers contrôles exigés par l'organisme de sécurité sociale.\nEn cas de refus, les prestations et les indemnités sont suspendues pour la période pendant laquelle les contrôles auront été rendus impossibles. Notification en est faite à l'intéressé.\nL'organisme de sécurité sociale peut également retenir, à titre de pénalité, tout ou partie des indemnités journalières de la victime qui aurait volontairement enfreint les dispositions susvisées relatives au contrôle médical ou aux prescriptions du médecin.",
       "section": "Titre 2 - Des prestations - Section 4 : Du contrôle médical des bénéficiaires",
-      "mots_cles": ["refus contrôle", "suspension prestations", "pénalité", "indemnités journalières"],
+      "mots_cles": [
+        "sanctions",
+        "refus",
+        "contrôle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -309,7 +500,13 @@
       "titre": "Obligation de suivre les prescriptions médicales",
       "contenu": "La victime est tenue d'observer rigoureusement les prescriptions du praticien. En cas d'hospitalisation, elle doit se soumettre aux prescriptions des médecins et au règlement de l'établissement.\nLa victime ne doit se livrer à aucun travail, rémunéré ou non, au cours de la période d'incapacité temporaire sauf dans le cas de reprise d'un travail léger autorisé dans les conditions prévues à l'article 33 de la présente loi.",
       "section": "Titre 2 - Des prestations - Section 4 : Du contrôle médical des bénéficiaires",
-      "mots_cles": ["prescriptions médicales", "hospitalisation", "interdiction travail", "incapacité temporaire", "travail léger"],
+      "mots_cles": [
+        "obligation",
+        "suivre",
+        "prescriptions",
+        "médicales",
+        "prescriptions médicales"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -317,7 +514,13 @@
       "titre": "Notification des décisions de contrôle médical",
       "contenu": "Les décisions prises par l'organisme de sécurité sociale à la suite du contrôle médical sont immédiatement notifiées à la victime.",
       "section": "Titre 2 - Des prestations - Section 4 : Du contrôle médical des bénéficiaires",
-      "mots_cles": ["décisions", "contrôle médical", "notification", "victime"],
+      "mots_cles": [
+        "notification",
+        "décisions",
+        "contrôle",
+        "médical",
+        "contrôle médical"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -325,7 +528,13 @@
       "titre": "Prise en charge des frais funéraires",
       "contenu": "Lorsque l'accident du travail ou la maladie professionnelle est suivi du décès de la victime, les frais funéraires sont supportés par l'organisme de sécurité sociale.\nUn arrêté du Ministre chargé de la sécurité sociale fixe le montant desdits frais.",
       "section": "Titre 2 - Des prestations - Section 5 : Des frais funéraires",
-      "mots_cles": ["frais funéraires", "décès", "accident du travail", "maladie professionnelle"],
+      "mots_cles": [
+        "prise",
+        "charge",
+        "frais",
+        "funéraires",
+        "frais funéraires"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -333,7 +542,11 @@
       "titre": "Frais de transport du corps",
       "contenu": "Si le décès est survenu en dehors de sa résidence ou au cours d'un déplacement lié au travail, ou si la victime a quitté sa résidence à la demande de son employeur en vue de son engagement, l'organisme de sécurité sociale supporte les frais de transport du corps jusqu'au lieu de résidence.\nLes frais funéraires non réglés directement par l'organisme de sécurité sociale sont remboursés aux ayants droit sur présentation de pièces justificatives.",
       "section": "Titre 2 - Des prestations - Section 5 : Des frais funéraires",
-      "mots_cles": ["frais de transport", "corps", "résidence", "remboursement", "pièces justificatives"],
+      "mots_cles": [
+        "frais",
+        "transport",
+        "corps"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -341,7 +554,12 @@
       "titre": "Avance des frais funéraires par l'employeur",
       "contenu": "Les frais visés aux articles 85 et 86 de la présente loi peuvent faire l'objet d'une avance par l'employeur qui en demandera le remboursement à l'organisme de sécurité sociale.",
       "section": "Titre 2 - Des prestations - Section 5 : Des frais funéraires",
-      "mots_cles": ["avance", "employeur", "frais funéraires", "remboursement"],
+      "mots_cles": [
+        "avance",
+        "frais",
+        "funéraires",
+        "frais funéraires"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -349,7 +567,12 @@
       "titre": "Prescription des allocations funéraires",
       "contenu": "Le droit aux allocataires se prescrit par deux ans.",
       "section": "Titre 2 - Des prestations - Section 5 : Des frais funéraires",
-      "mots_cles": ["prescription", "deux ans", "allocations funéraires"],
+      "mots_cles": [
+        "prescription",
+        "allocations",
+        "funéraires",
+        "allocations funéraires"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -357,7 +580,12 @@
       "titre": "Bénéficiaire principal des prestations",
       "contenu": "Le bénéficiaire principal des prestations pour risques professionnels est le travailleur victime d'accident du travail ou de maladie professionnelle.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["bénéficiaire", "prestations", "risques professionnels", "travailleur", "victime"],
+      "mots_cles": [
+        "bénéficiaire",
+        "principal",
+        "prestations",
+        "bénéficiaire principal"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -365,7 +593,13 @@
       "titre": "Rente de réversion aux ayants droit",
       "contenu": "Lorsque l'accident du travail est suivi du décès de la victime, les ayants droit bénéficient de la rente de réversion.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["rente de réversion", "ayants droit", "décès", "accident du travail"],
+      "mots_cles": [
+        "rente",
+        "réversion",
+        "ayants",
+        "droit",
+        "ayants droit"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -373,7 +607,12 @@
       "titre": "Définition des ayants droit",
       "contenu": "Sont considérés comme ayants droit :\n- les enfants à charge du de cujus, qu'ils soient nés avant ou après la cessation d'activités de l'assuré ;\n- le conjoint survivant, à condition que le mariage soit antérieur au décès.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["ayants droit", "enfants à charge", "conjoint survivant", "de cujus"],
+      "mots_cles": [
+        "définition",
+        "ayants",
+        "droit",
+        "ayants droit"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -381,7 +620,13 @@
       "titre": "Plafond des rentes aux ayants droit",
       "contenu": "L'ensemble des rentes de l'organisme de sécurité sociale allouées aux différents ayants droit de la victime ne peut dépasser cinquante pour cent de la rente que percevait le de cujus.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["rentes", "ayants droit", "plafond", "50 %", "de cujus"],
+      "mots_cles": [
+        "plafond",
+        "rentes",
+        "ayants",
+        "droit",
+        "ayants droit"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -389,7 +634,11 @@
       "titre": "Rente des enfants à charge",
       "contenu": "La rente des enfants à charge de la victime est égale à soixante-dix pour cent de la moitié de la rente que percevait le de cujus.\nCette rente est répartie à parts égales entre les enfants.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["rente", "enfants à charge", "70 %", "répartition égale", "de cujus"],
+      "mots_cles": [
+        "rente",
+        "enfants",
+        "charge"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -397,7 +646,12 @@
       "titre": "Rente du conjoint survivant",
       "contenu": "La rente du conjoint survivant est égale à trente pour cent de la moitié de la rente qu'aurait perçue le de cujus.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["rente", "conjoint survivant", "30 %", "de cujus"],
+      "mots_cles": [
+        "rente",
+        "conjoint",
+        "survivant",
+        "conjoint survivant"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -405,7 +659,13 @@
       "titre": "Rente du conjoint divorcé ou séparé",
       "contenu": "Lorsque le conjoint survivant divorcé ou séparé de corps a obtenu légalement une pension alimentaire, la rente viagère qui lui est due est ramenée au montant de cette pension sans pouvoir dépasser trente pour cent de la moitié de la rente qu'aurait perçue le de cujus.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["conjoint divorcé", "séparé de corps", "pension alimentaire", "rente viagère", "30 %"],
+      "mots_cles": [
+        "rente",
+        "conjoint",
+        "divorcé",
+        "séparé",
+        "conjoint divorcé"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -413,7 +673,12 @@
       "titre": "Déchéance et cessation de la rente du conjoint",
       "contenu": "Le conjoint survivant condamné pour abandon de famille est déchu de ses droits.\nIl en est de même pour celui qui a été déchu de la jouissance paternelle. Ce dernier est toutefois réintégré dans ses droits s'il vient à être restitué dans la jouissance paternelle. Les droits du conjoint déchu seront transférés sur la tête du tuteur des enfants.\nEn cas de nouveau mariage, le conjoint survivant cesse d'avoir droit à la rente de réversion.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["déchéance", "conjoint survivant", "abandon de famille", "jouissance paternelle", "remariage", "rente de réversion"],
+      "mots_cles": [
+        "déchéance",
+        "cessation",
+        "rente",
+        "conjoint"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -421,7 +686,11 @@
       "titre": "Partage de la rente entre veuves",
       "contenu": "Lorsque le travailleur décédé laisse plusieurs veuves, la rente viagère est partagée à parts égales entre elles. Ce partage n'est pas susceptible d'être ultérieurement modifié.",
       "section": "Titre 2 - Des prestations - Chapitre 4 : Des bénéficiaires et conditions d'accès",
-      "mots_cles": ["veuves", "rente viagère", "partage égal", "définitif"],
+      "mots_cles": [
+        "partage",
+        "rente",
+        "veuves"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -429,7 +698,11 @@
       "titre": "Prestations de la branche des pensions",
       "contenu": "Les prestations de la branche des pensions comprennent :\n- la pension de retraite normale ;\n- la pension de retraite anticipée ;\n- la pension de retraite proportionnelle ;\n- la pension d'invalidité ;\n- l'allocation de retraite ;\n- la pension de réversion ;\n- l'allocation de réversion.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["pensions", "retraite normale", "retraite anticipée", "retraite proportionnelle", "invalidité", "réversion"],
+      "mots_cles": [
+        "prestations",
+        "branche",
+        "pensions"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -437,7 +710,12 @@
       "titre": "Conditions de la pension de retraite normale",
       "contenu": "L'assuré a droit à une pension de retraite normale s'il remplit les conditions suivantes :\n- avoir cessé définitivement toute activité salariée ;\n- avoir cotisé au moins pendant deux cent soixante-quatre mois pour les manœuvres, les ouvriers et les autres travailleurs assimilés qui atteignent l'âge de cinquante-sept ans à la cessation de leur activité ;\n- avoir cotisé au moins pendant trois cents mois pour les agents de maîtrise et les cadres qui atteignent l'âge de soixante ans à la cessation de leur activité ;\n- avoir cotisé au moins pendant trois cent soixante mois pour les cadres hors catégories qui atteignent l'âge de soixante-cinq ans à la cessation de leur activité.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["pension de retraite", "conditions", "264 mois", "300 mois", "360 mois", "57 ans", "60 ans", "65 ans", "cotisation"],
+      "mots_cles": [
+        "pension",
+        "retraite",
+        "normale",
+        "retraite normale"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -445,7 +723,13 @@
       "titre": "Retraite anticipée pour usure prématurée",
       "contenu": "L'assuré, qui atteint l'âge de cinquante-cinq ans pour les manœuvres, les ouvriers et les autres travailleurs assimilés, l'âge de cinquante-sept ans pour les agents de maîtrise et les cadres ou l'âge de soixante ans pour les cadres hors catégories et qui accuse une usure prématurée de ses facultés physiques ou mentales le rendant inapte à exercer une activité salariée et qui remplit les conditions prescrites à l'article 99 de la présente loi, peut demander une retraite anticipée.\nLes modalités de la constatation et du contrôle de cette usure prématurée de l'assuré sont fixées par voie réglementaire.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["retraite anticipée", "usure prématurée", "55 ans", "57 ans", "60 ans", "inaptitude"],
+      "mots_cles": [
+        "retraite",
+        "anticipée",
+        "usure",
+        "prématurée",
+        "retraite anticipée"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -453,7 +737,13 @@
       "titre": "Jouissance anticipée des droits à la retraite",
       "contenu": "Tout assuré, qui remplit les conditions évoquées à l'article 99 de la présente loi, peut également demander la jouissance anticipée de ses droits au plus tôt cinq ans avant l'âge légal de départ à la retraite.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["jouissance anticipée", "cinq ans", "âge légal", "retraite"],
+      "mots_cles": [
+        "jouissance",
+        "anticipée",
+        "droits",
+        "retraite",
+        "jouissance anticipée"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -461,7 +751,13 @@
       "titre": "Rachat des années de cotisations manquantes",
       "contenu": "L'assuré qui ne remplit pas la condition de durée d'assurance ouvrant droit à une pension de retraite normale dispose d'un droit de rachat des années de cotisations manquantes.\nLe rachat porte au maximum sur cinq cotisations sur la base du dernier salaire soumis à cotisations de l'intéressé à la date de la demande.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["rachat", "cotisations manquantes", "cinq ans", "dernier salaire", "pension de retraite"],
+      "mots_cles": [
+        "rachat",
+        "années",
+        "cotisations",
+        "manquantes",
+        "cotisations manquantes"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -469,7 +765,12 @@
       "titre": "Pension de retraite proportionnelle",
       "contenu": "L'assuré ayant cessé toute activité salariée alors qu'il ne satisfait pas aux autres conditions ouvrant droit à une pension de retraite normale ou à une pension de retraite anticipée reçoit une pension de retraite proportionnelle.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["pension proportionnelle", "cessation activité", "conditions non remplies"],
+      "mots_cles": [
+        "pension",
+        "retraite",
+        "proportionnelle",
+        "retraite proportionnelle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -477,7 +778,11 @@
       "titre": "Date d'effet des pensions",
       "contenu": "Toutes les pensions énumérées à l'article 98 de la présente loi prennent effet le premier jour du mois civil suivant la date à laquelle les conditions requises ont été remplies.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["date d'effet", "pensions", "premier jour du mois"],
+      "mots_cles": [
+        "date",
+        "effet",
+        "pensions"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -485,7 +790,11 @@
       "titre": "Droit à la pension d'invalidité",
       "contenu": "L'assuré qui devient invalide avant d'avoir atteint l'âge de la retraite a droit à une pension d'invalidité.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["pension d'invalidité", "invalide", "âge de retraite"],
+      "mots_cles": [
+        "droit",
+        "pension",
+        "invalidité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -493,7 +802,10 @@
       "titre": "Définition de l'invalide",
       "contenu": "Est considéré comme invalide :\n- l'assuré qui, par suite de maladie ou d'accident d'origine non professionnelle, a subi une diminution permanente de ses capacités physiques ou mentales, médicalement constatées et le rendant inapte à gagner plus du tiers de la rémunération qu'un travailleur ayant la même formation peut se procurer par son travail ;\n- l'assuré qui a accompli six mois d'assurance au cours des douze derniers mois civils précédant le début de l'incapacité conduisant à l'invalidité ;\n- l'assuré qui a occupé un emploi assujetti à l'assurance à la date de l'accident ou de la maladie.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["invalide", "diminution permanente", "capacités physiques", "capacités mentales", "six mois assurance", "un tiers rémunération"],
+      "mots_cles": [
+        "définition",
+        "invalide"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -501,7 +813,13 @@
       "titre": "Caractère temporaire de la pension d'invalidité",
       "contenu": "La pension d'invalidité est toujours concédée à titre temporaire. Elle est remplacée par une pension de retraite lorsque le bénéficiaire atteint l'âge de la retraite. Elle peut être retirée à la suite de l'amélioration de l'état de l'assuré qui aurait permis à ce dernier la reprise d'une activité salariée.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["pension d'invalidité", "temporaire", "pension de retraite", "amélioration", "reprise activité"],
+      "mots_cles": [
+        "caractère",
+        "temporaire",
+        "pension",
+        "invalidité",
+        "caractère temporaire"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -509,7 +827,10 @@
       "titre": "Allocation de retraite",
       "contenu": "L'assuré, qui totalise moins de soixante mois d'assurance, reçoit une allocation de retraite dont les modalités de calcul sont définies par arrêté du Ministre chargé de la sécurité sociale.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["allocation de retraite", "moins de 60 mois", "arrêté ministériel"],
+      "mots_cles": [
+        "allocation",
+        "retraite"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -517,7 +838,10 @@
       "titre": "Pension de réversion",
       "contenu": "En cas de décès du titulaire d'une des pensions visées à l'article 98 de la présente loi, les ayants droit bénéficient d'une pension de réversion.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["pension de réversion", "décès", "ayants droit"],
+      "mots_cles": [
+        "pension",
+        "réversion"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -525,7 +849,13 @@
       "titre": "Ayants droit pour la pension de réversion",
       "contenu": "Sont considérés comme ayants droit :\n- les enfants à charge de l'assuré qu'ils soient nés avant ou après la cessation d'activité du de cujus ;\n- le conjoint survivant non remarié de l'assuré décédé.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["ayants droit", "enfants à charge", "conjoint survivant", "non remarié", "réversion"],
+      "mots_cles": [
+        "ayants",
+        "droit",
+        "pension",
+        "réversion",
+        "ayants droit"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -533,7 +863,11 @@
       "titre": "Calcul de la pension de réversion",
       "contenu": "La pension de réversion est calculée en pourcentage de la pension de retraite normale ou de la pension d'invalidité, de la pension proportionnelle ou de la pension anticipée à laquelle l'assuré avait ou aurait eu droit à la date de son décès.\nCette pension est diminuée de moitié et répartie ainsi qu'il suit :\n- 30 % pour le conjoint survivant. En cas de pluralité de veuves, le montant est réparti entre elles à parts égales, cette répartition étant définitive ;\n- 70 % aux enfants à charge.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["pension de réversion", "calcul", "30 % conjoint", "70 % enfants", "répartition"],
+      "mots_cles": [
+        "calcul",
+        "pension",
+        "réversion"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -541,7 +875,10 @@
       "titre": "Allocation de réversion",
       "contenu": "Si l'assuré ne pouvait prétendre à une pension d'invalidité et s'il totalisait, selon sa catégorie socioprofessionnelle, moins de deux cent soixante-quatre mois, moins de trois cents mois ou moins de trois cent soixante mois d'assurance à la date de son décès, les survivants bénéficient d'une allocation de réversion versée en une seule fois selon la clef de répartition indiquée à l'article 111 de la présente loi.\nLe montant de cette allocation est égal à autant de mensualités de la pension de vieillesse à laquelle l'assuré aurait pu prétendre, selon sa catégorie socioprofessionnelle, au terme de deux cent soixante-quatre mois, de trois cents mois ou de trois cent soixante mois d'assurance qu'il avait accompli de période de douze mois d'assurance à la date de son décès.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["allocation de réversion", "versement unique", "264 mois", "300 mois", "360 mois", "survivants"],
+      "mots_cles": [
+        "allocation",
+        "réversion"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -549,7 +886,10 @@
       "titre": "Allocation de décès",
       "contenu": "Une allocation de décès correspondant à trois mois de pension du de cujus est accordée aux ayants droits, après justification des dépenses d'inhumation effectuées par eux.",
       "section": "Titre 3 - Des pensions de retraite et de réversion",
-      "mots_cles": ["allocation de décès", "trois mois", "pension", "inhumation", "ayants droit"],
+      "mots_cles": [
+        "allocation",
+        "décès"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -557,7 +897,11 @@
       "titre": "Détermination du montant des pensions",
       "contenu": "Le montant des pensions est déterminé en fonction du salaire moyen des rémunérations soumises à cotisation des trente-six meilleurs mois des dix dernières années d'activité.\nPour le calcul du montant de la pension d'invalidité, les années comprises entre l'âge légal de la retraite et l'âge effectif de l'assuré, à la date où la pension d'invalidité prend effet, sont assimilées à des périodes d'assurance à raison de six mois par année.",
       "section": "Titre 3 - Chapitre 2 : De la liquidation",
-      "mots_cles": ["montant pensions", "salaire moyen", "36 meilleurs mois", "10 dernières années", "pension d'invalidité"],
+      "mots_cles": [
+        "détermination",
+        "montant",
+        "pensions"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -565,7 +909,12 @@
       "titre": "Taux de la pension mensuelle",
       "contenu": "Le montant mensuel des pensions est égal à :\n- quarante-quatre pour cent du salaire moyen des rémunérations soumises à cotisation des trente-six meilleurs mois des dix dernières années d'activité, pour les manœuvres, les ouvriers et les autres travailleurs assimilés dont la durée minimale de cotisation est de deux cent-soixante-quatre mois et l'âge d'admission à la retraite fixé à cinquante-sept ans ;\n- cinquante pour cent du salaire moyen des rémunérations soumises à cotisation des trente-six meilleurs mois des dix dernières années d'activité, pour les agents de maîtrise et les cadres dont la durée minimale de cotisation est de trois cents mois et l'âge d'admission à la retraite fixé à soixante ans ;\n- soixante pour cent du salaire moyen des rémunérations soumises à cotisation des trente-six meilleurs mois des dix dernières années d'activité, pour les cadres hors catégories dont la durée minimale de cotisation est de trois cent soixante mois et l'âge d'admission à la retraite fixé à soixante-cinq ans.\nSi le total des mois d'assurance et des mois assimilés dépasse deux cent soixante-quatre mois pour les manœuvres, les ouvriers et les autres travailleurs assimilés, trois cents mois pour les agents de maîtrise et les cadres ou trois cent soixante mois pour les cadres hors catégories, le pourcentage est majoré de deux pour cent pour chaque période d'assurance ou assimilée de douze mois au-delà de deux cent soixante-quatre mois, trois cents mois ou trois cent soixante mois.\nToute période d'assurance supérieure à six mois et inférieure à douze mois donne lieu à une majoration de 1 %.\nLe montant de la pension ne peut cependant être supérieur à quatre-vingts pour cent de la rémunération moyenne de l'assuré.",
       "section": "Titre 3 - Chapitre 2 : De la liquidation",
-      "mots_cles": ["taux pension", "44 %", "50 %", "60 %", "majoration 2 %", "plafond 80 %", "36 meilleurs mois"],
+      "mots_cles": [
+        "taux",
+        "pension",
+        "mensuelle",
+        "pension mensuelle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -573,7 +922,12 @@
       "titre": "Suspension de la pension en cas de reprise d'activité",
       "contenu": "La pension est suspendue lorsque l'assuré bénéficiaire d'une pension de vieillesse, d'une pension anticipée ou d'une pension proportionnelle reprend une activité salariée.",
       "section": "Titre 3 - Chapitre 2 : De la liquidation",
-      "mots_cles": ["suspension pension", "reprise activité salariée", "pension vieillesse", "pension anticipée"],
+      "mots_cles": [
+        "suspension",
+        "pension",
+        "reprise",
+        "activité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -581,7 +935,11 @@
       "titre": "Sources de financement du régime",
       "contenu": "Le financement du régime des risques professionnels et des pensions est assuré par :\n- les cotisations des employeurs et des travailleurs ;\n- les majorations encourues pour cause de retard dans le paiement des cotisations ;\n- les pénalités liées à la non-production ou à la production tardive des déclarations nominatives des salaires ;\n- les intérêts moratoires ;\n- le produit de placement de fonds ;\n- le revenu des valeurs mobilières ;\n- le revenu des placements immobiliers ;\n- les subventions ;\n- les dons et legs.",
       "section": "Titre 4 - Du financement du régime",
-      "mots_cles": ["financement", "cotisations", "majorations", "pénalités", "placements", "subventions", "dons et legs"],
+      "mots_cles": [
+        "sources",
+        "financement",
+        "régime"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -589,7 +947,13 @@
       "titre": "Opposition aux inspecteurs de sécurité sociale",
       "contenu": "Est punie d'une amende de 1.000.000 FCFA, toute personne qui s'est opposée à l'exécution des obligations ou à l'exercice des pouvoirs qui incombent aux inspecteurs de sécurité sociale, contrôleurs des employeurs et agents enquêteurs.\nEn cas de récidive, cette amende est de 2.000.000 FCFA.\nEn cas de multi récidive, l'emprisonnement de deux à six mois est encouru.",
       "section": "Titre 5 - Des pénalités",
-      "mots_cles": ["amende", "1.000.000 FCFA", "inspecteurs", "opposition", "récidive", "emprisonnement"],
+      "mots_cles": [
+        "opposition",
+        "inspecteurs",
+        "sécurité",
+        "sociale",
+        "sécurité sociale"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -597,7 +961,11 @@
       "titre": "Amendes pour défaut de déclarations",
       "contenu": "Est puni d'une amende :\n- de 50.000 FCFA par salarié ou assimilé, l'employeur qui n'a jamais produit de déclaration pour chaque salarié ou assimilé dont le contrôle a révélé l'emploi dans l'entreprise ;\n- de 40.000 FCFA par salarié ou assimilé, tout employeur qui n'a pas produit aux échéances prescrites des déclarations mensuelles et annuelles de salaires ;\n- de 20.000 FCFA par salarié ou assimilé, pour chaque inexactitude frauduleuse quant au montant des rémunérations et gains déclarés.\nCes amendes ne dispensent pas l'employeur de la régularisation des cotisations dues.",
       "section": "Titre 5 - Des pénalités",
-      "mots_cles": ["amende", "50.000 FCFA", "40.000 FCFA", "20.000 FCFA", "déclarations", "cotisations"],
+      "mots_cles": [
+        "amendes",
+        "défaut",
+        "déclarations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -605,7 +973,12 @@
       "titre": "Rétention des cotisations salariales",
       "contenu": "Est puni d'une amende de 100.000 à 1.000.000 FCFA par salarié ou d'un emprisonnement d'un à deux mois, l'employeur qui retient par devers lui la contribution du salarié au régime des pensions précomptée sur le salaire.\nL'employeur est tenu de régulariser le versement des cotisations ainsi précomptées.\nEn cas de récidive, il est puni d'une amende de 500.000 à 5.000.000 FCFA par salarié et d'un emprisonnement de deux ans.",
       "section": "Titre 5 - Des pénalités",
-      "mots_cles": ["rétention cotisations", "amende", "emprisonnement", "précompte", "récidive"],
+      "mots_cles": [
+        "rétention",
+        "cotisations",
+        "salariales",
+        "cotisations salariales"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -613,7 +986,11 @@
       "titre": "Violation de l'obligation d'immatriculation",
       "contenu": "Sont punis d'une amende de 750.000 à 1.500.000 FCFA, les employeurs ou leurs préposés qui violent les dispositions de l'article 126 de la présente loi.\nEn cas de récidive dans le délai d'un an, l'amende est portée à 3.000.000 FCFA.",
       "section": "Titre 5 - Des pénalités",
-      "mots_cles": ["amende", "750.000 FCFA", "1.500.000 FCFA", "immatriculation", "récidive", "3.000.000 FCFA"],
+      "mots_cles": [
+        "violation",
+        "obligation",
+        "immatriculation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -621,7 +998,10 @@
       "titre": "Modalités d'application du régime",
       "contenu": "Les modalités d'affiliation des travailleurs, d'immatriculation des employeurs, de perception des cotisations, de liquidation et de service des prestations ainsi que les obligations incombant aux employeurs et aux travailleurs dans le fonctionnement du régime des risques professionnels et des pensions des travailleurs relevant du secteur privé sont déterminées par décret.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["affiliation", "immatriculation", "cotisations", "prestations", "décret", "secteur privé"],
+      "mots_cles": [
+        "modalités",
+        "régime"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -629,7 +1009,13 @@
       "titre": "Cumul rente et pension de réversion",
       "contenu": "Si à la suite du décès d'un travailleur, consécutif à un accident du travail ou à une maladie professionnelle, les ayants droit peuvent jouir d'une rente et d'une pension de réversion mensuelle. Seule la prestation la plus avantageuse leur est versée.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["cumul", "rente", "pension de réversion", "prestation avantageuse", "décès"],
+      "mots_cles": [
+        "cumul",
+        "rente",
+        "pension",
+        "réversion",
+        "cumul rente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -637,7 +1023,12 @@
       "titre": "Incessibilité et insaisissabilité des rentes et pensions",
       "contenu": "Les rentes et la pension sont incessibles et insaisissables dans les mêmes conditions et limites que pour les salaires, conformément aux dispositions du Code du travail.\nToutefois, l'organisme de sécurité sociale est autorisé à prélever sur les prestations venant à échéance et dans la limite maximale du quart de ces prestations, les sommes indûment payées jusqu'à récupération totale de celles-ci.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["incessibilité", "insaisissabilité", "rentes", "pension", "prélèvement", "sommes indues"],
+      "mots_cles": [
+        "incessibilité",
+        "insaisissabilité",
+        "rentes",
+        "pensions"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -645,7 +1036,11 @@
       "titre": "Accords avec les formations sanitaires",
       "contenu": "Les conditions et les modalités d'accords entre l'organisme de sécurité sociale et les formations sanitaires publiques ou privées agréées par le ministère de la santé en vue d'assurer les soins et de procéder aux visites et examens médicaux prévus par la présente loi sont fixées par voie réglementaire.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["formations sanitaires", "accords", "soins", "examens médicaux", "voie réglementaire"],
+      "mots_cles": [
+        "accords",
+        "formations",
+        "sanitaires"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -653,7 +1048,11 @@
       "titre": "Obligation d'immatriculation et d'affiliation",
       "contenu": "À l'ouverture d'une activité commerciale, industrielle, artisanale ou agricole, il est fait obligation à l'entrepreneur d'immatriculer sa société à l'organisme de sécurité sociale et d'y affilier ses travailleurs.\nIl est également fait obligation à l'administration fiscale, au moment du paiement de la patente par l'entrepreneur, d'exiger une attestation d'affiliation délivrée par l'organisme de sécurité sociale où a été immatriculée la société et ont été affiliés les travailleurs.\nCette attestation ne saurait se substituer à la certification délivrée ultérieurement par l'organisme de sécurité sociale attestant que l'employeur est à jour des cotisations.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["immatriculation", "affiliation", "entrepreneur", "patente", "attestation", "cotisations"],
+      "mots_cles": [
+        "obligation",
+        "immatriculation",
+        "affiliation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -661,7 +1060,12 @@
       "titre": "Sous-traitance et cotisations sociales",
       "contenu": "Lors de la signature, de la mise en œuvre ou de la rupture de tout contrat ou convention en matière de sous-traitance, l'entrepreneur, qui y a recours, a l'obligation de s'assurer que le sous-traitant a produit la preuve du paiement régulier des cotisations sociales par la présentation d'une attestation délivrée par l'autorité compétente de l'organisme de sécurité sociale. En cas de défaillance du sous-traitant, l'obligation de payer incombe à l'entrepreneur principal.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["sous-traitance", "cotisations sociales", "attestation", "entrepreneur principal", "défaillance"],
+      "mots_cles": [
+        "traitance",
+        "cotisations",
+        "sociales",
+        "cotisations sociales"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -669,7 +1073,11 @@
       "titre": "Juridiction compétente",
       "contenu": "Hormis les affaires pénales et les litiges relevant, de par leur nature, d'une juridiction déterminée, les contestations pouvant naître de l'application de la présente loi et de ses textes d'application sont réglées par le tribunal du travail, en première instance.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["tribunal du travail", "contestations", "première instance", "juridiction"],
+      "mots_cles": [
+        "juridiction",
+        "compétente",
+        "juridiction compétente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -677,7 +1085,12 @@
       "titre": "Expertise médicale en cas de contestation",
       "contenu": "Les contestations d'ordre médical relatives à l'état de l'assuré, notamment à la date de consolidation des lésions au taux d'incapacité permanente, à l'existence ou à la gravité de l'invalidité, à l'existence d'une usure prématurée des facultés physiques ou mentales, donnent lieu à l'application d'une procédure d'expertise médicale.\nCes contestations sont soumises à un médecin expert désigné d'un commun accord par le médecin traitant de l'assuré et le médecin-conseil de l'organisme de sécurité sociale ou, à défaut d'accord, par le ministère de la santé sur une liste préétablie par lui.\nL'avis de l'expert ainsi désigné peut donner lieu à une contre-expertise demandée d'accord parties ou par l'une d'elles. Dans ce cas, la contre-expertise n'est pas susceptible de recours.\nLes modalités de l'expertise et de la contre-expertise médicales sont déterminées par voie réglementaire.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["expertise médicale", "contestation", "consolidation", "incapacité permanente", "contre-expertise", "médecin expert"],
+      "mots_cles": [
+        "expertise",
+        "médicale",
+        "contestation",
+        "expertise médicale"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -685,7 +1098,12 @@
       "titre": "Prescription de l'action publique",
       "contenu": "L'action publique résultant des infractions de l'employeur ou ses préposés aux dispositions de la présente loi se prescrit au terme d'une année, à compter de l'expiration du délai de la quinzaine qui suit la mise en demeure.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["action publique", "prescription", "un an", "mise en demeure", "infractions"],
+      "mots_cles": [
+        "prescription",
+        "action",
+        "publique",
+        "action publique"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -693,7 +1111,11 @@
       "titre": "Organisme de gestion du régime",
       "contenu": "La gestion de ce régime est confiée par décret en Conseil des Ministres à un organisme de sécurité sociale de droit public.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["gestion", "décret", "Conseil des Ministres", "organisme de sécurité sociale", "droit public"],
+      "mots_cles": [
+        "organisme",
+        "gestion",
+        "régime"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -701,7 +1123,12 @@
       "titre": "Gestion transitoire par la CNSS",
       "contenu": "En attendant la création du nouvel organisme de sécurité sociale chargé de la gestion du présent régime, la caisse nationale de sécurité sociale assure, à titre transitoire, l'application des dispositions de la présente loi.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["CNSS", "gestion transitoire", "caisse nationale de sécurité sociale"],
+      "mots_cles": [
+        "gestion",
+        "transitoire",
+        "cnss",
+        "gestion transitoire"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -709,7 +1136,10 @@
       "titre": "Entrée en vigueur et abrogation",
       "contenu": "La présente loi, qui abroge toutes dispositions antérieures contraires, sera enregistrée, publiée au Journal officiel et exécutée comme loi de l'État.",
       "section": "Titre 6 - Dispositions transitoires et finales",
-      "mots_cles": ["abrogation", "Journal officiel", "entrée en vigueur", "loi de l'État"],
+      "mots_cles": [
+        "entrée",
+        "abrogation"
+      ],
       "statut": "en vigueur"
     }
   ]

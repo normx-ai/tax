@@ -23,7 +23,20 @@
         "- la pension d'invalidité ;",
         "- et l'allocation de vieillesse et de survivant."
       ],
-      "mots_cles": ["pensions", "vieillesse", "invalidité", "décès", "survivant", "anticipée", "proportionnelle"],
+      "mots_cles": [
+        "pension",
+        "vieillesse",
+        "prestations",
+        "branche",
+        "invalidité",
+        "survivant",
+        "composition",
+        "pensions",
+        "assurance",
+        "décès",
+        "comprennent",
+        "anticipée"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
     },
@@ -41,7 +54,20 @@
         "La pension de vieillesse, la pension anticipée, ainsi que la pension proportionnelle prennent effet le premier jour du mois civil suivant la date à laquelle les conditions requises ont été accomplies, à la condition que la demande de pension ait été adressée à la Caisse dans le délai de six mois qui suit ladite date.",
         "Le droit aux pensions et allocations de vieillesse, de survivant est prescrit par cinq ans."
       ],
-      "mots_cles": ["55 ans", "20 ans immatriculation", "60 mois", "240 mois", "pension anticipée", "50 ans", "proportionnelle", "prescription 5 ans"],
+      "mots_cles": [
+        "pension",
+        "vieillesse",
+        "mois",
+        "assuré",
+        "avoir",
+        "caisse",
+        "date",
+        "activité",
+        "salariée",
+        "anticipée",
+        "atteint",
+        "droit"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
     },
@@ -51,7 +77,20 @@
       "texte": [
         "Si l'assuré vient à relever du régime des retraites des fonctionnaires, les cotisations versées pour son compte à la Caisse Nationale de Sécurité Sociale peuvent, sans conditions d'un nombre minimum d'années d'activité salariée, être transférées au nouveau régime de retraite qui lui est applicable, dans la mesure où la validation de ses services antérieurs à son entrée dans la fonction publique est prévue par son nouveau régime."
       ],
-      "mots_cles": ["transfert", "fonctionnaires", "cotisations", "validation services"],
+      "mots_cles": [
+        "régime",
+        "retraite",
+        "fonctionnaires",
+        "nouveau",
+        "transfert",
+        "assuré",
+        "vient",
+        "relever",
+        "retraites",
+        "cotisations",
+        "versées",
+        "compte"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
     },
@@ -65,7 +104,20 @@
         "2) Nonobstant les dispositions du précédent paragraphe au cas où l'invalidité est due à un accident, l'assuré a droit à une pension d'invalidité à condition qu'il ait occupé un emploi assujetti à l'assurance à la date de l'accident et qu'il ait été immatriculé à la Caisse avant cette date.",
         "3) Est considéré comme invalide l'assuré qui, par suite de maladie ou d'accident d'origine non professionnelle, a subi une diminution permanente de ses capacités physiques ou mentales, médicalement constatée, le rendant incapable de gagner plus d'un tiers de la rémunération qu'un travailleur ayant la même formation peut se procurer par son travail."
       ],
-      "mots_cles": ["invalidité", "55 ans", "5 ans immatriculation", "6 mois assurance", "un tiers rémunération"],
+      "mots_cles": [
+        "invalidité",
+        "pension",
+        "assuré",
+        "avoir",
+        "accident",
+        "invalide",
+        "droit",
+        "immatriculé",
+        "caisse",
+        "mois",
+        "assurance",
+        "date"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
     },
@@ -75,7 +127,20 @@
       "texte": [
         "La pension d'invalidité prend effet soit à la date de la consolidation de la lésion, soit à la date de la constatation médicale de l'invalidité."
       ],
-      "mots_cles": ["date d'effet", "consolidation", "constatation médicale"],
+      "mots_cles": [
+        "date",
+        "invalidité",
+        "effet",
+        "pension",
+        "soit",
+        "prend",
+        "consolidation",
+        "lésion",
+        "constatation",
+        "médicale",
+        "invalidité prend",
+        "effet soit"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 3 - Pensions"
     }

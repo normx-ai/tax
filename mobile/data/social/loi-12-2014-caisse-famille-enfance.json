@@ -23,7 +23,20 @@
         "Il est créé un établissement public administratif à caractère social, doté de la personnalité morale et de l'autonomie financière, dénommé caisse de la famille et de l'enfance en difficulté.",
         "Le siège de la caisse de la famille et de l'enfance en difficulté est fixé à Brazzaville. Il peut être transféré en tout autre lieu du territoire national, suivant les circonstances, par décret en Conseil de Ministres."
       ],
-      "mots_cles": ["création", "établissement public", "Brazzaville"],
+      "mots_cles": [
+        "caisse",
+        "famille",
+        "enfance",
+        "difficulté",
+        "création",
+        "créé",
+        "établissement",
+        "public",
+        "administratif",
+        "caractère",
+        "social",
+        "doté"
+      ],
       "statut": "en vigueur",
       "section": "Création et missions"
     },
@@ -33,7 +46,19 @@
       "texte": [
         "La caisse de la famille et de l'enfance en difficulté est placée sous la tutelle du ministère en charge de la sécurité sociale."
       ],
-      "mots_cles": ["tutelle", "sécurité sociale"],
+      "mots_cles": [
+        "tutelle",
+        "caisse",
+        "famille",
+        "enfance",
+        "difficulté",
+        "placée",
+        "ministère",
+        "charge",
+        "sécurité",
+        "sociale",
+        "sécurité sociale"
+      ],
       "statut": "en vigueur",
       "section": "Création et missions"
     },
@@ -45,7 +70,20 @@
         "- gérer le régime de la famille et de l'enfance en difficulté ;",
         "- assurer les prestations sociales relatives aux branches de la maternité, des prestations familiales, de l'insertion sociale et à toute autre branche créée par la loi et en rapport avec le régime de la famille et de l'enfance en difficulté."
       ],
-      "mots_cles": ["missions", "famille", "enfance", "maternité", "prestations familiales", "insertion sociale"],
+      "mots_cles": [
+        "famille",
+        "enfance",
+        "difficulté",
+        "missions",
+        "régime",
+        "prestations",
+        "caisse",
+        "gérer",
+        "assurer",
+        "sociales",
+        "branches",
+        "maternité"
+      ],
       "statut": "en vigueur",
       "section": "Création et missions"
     },
@@ -64,7 +102,20 @@
         "- les dons et legs ;",
         "- toute autre ressource attribuée à la caisse."
       ],
-      "mots_cles": ["ressources", "cotisations", "dotation État"],
+      "mots_cles": [
+        "cotisations",
+        "état",
+        "ressources",
+        "caisse",
+        "revenus",
+        "retard",
+        "famille",
+        "enfance",
+        "difficulté",
+        "constituées",
+        "secteur",
+        "privé"
+      ],
       "statut": "en vigueur",
       "section": "Création et missions"
     },
@@ -74,7 +125,20 @@
       "texte": [
         "La caisse de la famille et de l'enfance en difficulté reprend l'actif et le passif de la caisse nationale de sécurité sociale et de la caisse de retraite des fonctionnaires ainsi que les droits, obligations et sujétions inhérents aux branches de la maternité et des prestations familiales."
       ],
-      "mots_cles": ["actif", "passif", "reprise", "CNSS"],
+      "mots_cles": [
+        "caisse",
+        "actif",
+        "passif",
+        "reprise",
+        "famille",
+        "enfance",
+        "difficulté",
+        "reprend",
+        "nationale",
+        "sécurité",
+        "sociale",
+        "retraite"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -85,7 +149,20 @@
         "Le personnel de la caisse nationale de sécurité sociale et de la caisse de retraite des fonctionnaires, de formation initiale ou acquise dans le domaine de la sécurité sociale, affecté aux prestations familiales des travailleurs du secteur privé, des agents de la force publique et des agents civils de l'État relevant du statut général de la fonction publique et des statuts particuliers, est reversé, de plein droit, à la caisse de la famille et de l'enfance en difficulté.",
         "Le personnel visé à l'alinéa précédent conserve ses droits acquis tant en ce qui concerne le traitement que l'ancienneté."
       ],
-      "mots_cles": ["personnel", "reversement", "droits acquis"],
+      "mots_cles": [
+        "personnel",
+        "caisse",
+        "sécurité",
+        "sociale",
+        "agents",
+        "publique",
+        "reversement",
+        "nationale",
+        "retraite",
+        "fonctionnaires",
+        "formation",
+        "initiale"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -95,7 +172,20 @@
       "texte": [
         "Les modalités d'affectation du personnel et de transfert de l'actif et du passif de la caisse nationale de sécurité sociale et de la caisse de retraite des fonctionnaires à la caisse de la famille et de l'enfance en difficulté sont déterminées par décret."
       ],
-      "mots_cles": ["modalités", "transfert", "décret"],
+      "mots_cles": [
+        "caisse",
+        "modalités",
+        "affectation",
+        "personnel",
+        "transfert",
+        "actif",
+        "passif",
+        "nationale",
+        "sécurité",
+        "sociale",
+        "retraite",
+        "fonctionnaires"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -106,7 +196,20 @@
         "La caisse de la famille et de l'enfance en difficulté dispose, en son sein, d'un organe de participation sociale permettant aux bénéficiaires des prestations de donner leurs avis sur l'organisation et le fonctionnement de la caisse.",
         "Un décret en Conseil de Ministres fixe les attributions, la composition et le fonctionnement de l'organe de participation sociale."
       ],
-      "mots_cles": ["participation sociale", "organe"],
+      "mots_cles": [
+        "organe",
+        "participation",
+        "sociale",
+        "caisse",
+        "fonctionnement",
+        "famille",
+        "enfance",
+        "difficulté",
+        "dispose",
+        "sein",
+        "permettant",
+        "bénéficiaires"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -117,7 +220,20 @@
         "La caisse de la famille et de l'enfance en difficulté est administrée et gérée par un comité de direction et une direction générale.",
         "La caisse de la famille et de l'enfance en difficulté est dirigée par un directeur général nommé par décret en Conseil de Ministres, sur proposition du Ministre chargé de la sécurité sociale."
       ],
-      "mots_cles": ["administration", "comité de direction", "directeur général"],
+      "mots_cles": [
+        "caisse",
+        "famille",
+        "enfance",
+        "difficulté",
+        "direction",
+        "administration",
+        "gestion",
+        "administrée",
+        "gérée",
+        "comité",
+        "générale",
+        "dirigée"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -127,7 +243,20 @@
       "texte": [
         "Les attributions, l'organisation et le fonctionnement des organes de gestion et d'administration de la caisse de la famille et de l'enfance en difficulté sont fixés par des statuts approuvés par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["statuts", "décret"],
+      "mots_cles": [
+        "statuts",
+        "attributions",
+        "organisation",
+        "fonctionnement",
+        "organes",
+        "gestion",
+        "administration",
+        "caisse",
+        "famille",
+        "enfance",
+        "difficulté",
+        "fixés"
+      ],
       "statut": "en vigueur",
       "section": "Organisation"
     },
@@ -137,7 +266,19 @@
       "texte": [
         "La présente loi sera publiée au Journal officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["publication", "Journal officiel"],
+      "mots_cles": [
+        "publication",
+        "présente",
+        "sera",
+        "publiée",
+        "journal",
+        "officiel",
+        "exécutée",
+        "état",
+        "présente loi",
+        "sera publiée",
+        "journal officiel"
+      ],
       "statut": "en vigueur",
       "section": "Dispositions finales"
     }

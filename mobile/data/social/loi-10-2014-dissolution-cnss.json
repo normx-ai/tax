@@ -22,7 +22,20 @@
       "texte": [
         "La caisse nationale de sécurité sociale, établissement public à caractère social, créée par la loi n°004-86 du 25 février 1986 instituant le Code de sécurité sociale, est dissoute."
       ],
-      "mots_cles": ["CNSS", "dissolution", "loi 004-86"],
+      "mots_cles": [
+        "sécurité",
+        "sociale",
+        "dissolution",
+        "cnss",
+        "caisse",
+        "nationale",
+        "établissement",
+        "public",
+        "caractère",
+        "social",
+        "créée",
+        "février"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -32,7 +45,20 @@
       "texte": [
         "Les prestations de famille ainsi que les activités connexes y afférentes, initialement assurées ou exercées par la caisse nationale de sécurité sociale, sont transférées à l'organisme de sécurité sociale en charge de la gestion du régime de la famille et de l'enfance en difficulté."
       ],
-      "mots_cles": ["prestations de famille", "transfert", "famille et enfance"],
+      "mots_cles": [
+        "famille",
+        "prestations",
+        "sécurité",
+        "sociale",
+        "transfert",
+        "ainsi",
+        "activités",
+        "connexes",
+        "afférentes",
+        "initialement",
+        "assurées",
+        "exercées"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -42,7 +68,20 @@
       "texte": [
         "Les prestations de santé ainsi que les activités connexes y afférentes, initialement assurées ou exercées par la caisse nationale de sécurité sociale, sont transférées à l'organisme de sécurité sociale en charge de la gestion du régime de l'assurance maladie universelle."
       ],
-      "mots_cles": ["prestations de santé", "transfert", "assurance maladie universelle"],
+      "mots_cles": [
+        "prestations",
+        "santé",
+        "sécurité",
+        "sociale",
+        "transfert",
+        "ainsi",
+        "activités",
+        "connexes",
+        "afférentes",
+        "initialement",
+        "assurées",
+        "exercées"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -52,7 +91,20 @@
       "texte": [
         "Les prestations inhérentes aux risques professionnels et aux pensions des travailleurs du secteur privé ainsi que les activités connexes y afférentes, initialement assurées ou exercées par la caisse nationale de sécurité sociale, sont transférées à l'organisme de sécurité sociale en charge de la gestion du régime des risques professionnels et des pensions des travailleurs du secteur privé."
       ],
-      "mots_cles": ["risques professionnels", "pensions", "transfert", "secteur privé"],
+      "mots_cles": [
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur",
+        "privé",
+        "sécurité",
+        "sociale",
+        "transfert",
+        "prestations",
+        "inhérentes",
+        "ainsi",
+        "activités"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -62,7 +114,20 @@
       "texte": [
         "Les prestations inhérentes aux agents contractuels de l'État, initialement assurées ou exercées par la caisse nationale de sécurité sociale, sont transférées respectivement à l'organisme de sécurité sociale en charge de la gestion du régime des pensions des agents de l'État, en ce qui concerne les pensions et à la caisse de la famille et de l'enfance en difficulté, en ce qui concerne les prestations familiales."
       ],
-      "mots_cles": ["agents contractuels", "État", "transfert", "pensions"],
+      "mots_cles": [
+        "prestations",
+        "agents",
+        "contractuels",
+        "état",
+        "caisse",
+        "sécurité",
+        "sociale",
+        "pensions",
+        "concerne",
+        "transfert",
+        "inhérentes",
+        "initialement"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -72,7 +137,20 @@
       "texte": [
         "L'actif et le passif de la caisse nationale de sécurité sociale ainsi que les droits, obligations et sujétions qui sont attachés aux prestations de famille, aux prestations de santé ainsi qu'aux prestations relatives aux risques professionnels et aux pensions des travailleurs du secteur privé sont transférés, de plein droit, respectivement aux organismes de sécurité sociale en charge de la gestion du régime de la famille et de l'enfance en difficulté, du régime de l'assurance maladie universelle et du régime des risques professionnels et des pensions des travailleurs du secteur privé."
       ],
-      "mots_cles": ["actif", "passif", "transfert", "de plein droit"],
+      "mots_cles": [
+        "prestations",
+        "régime",
+        "actif",
+        "passif",
+        "sécurité",
+        "sociale",
+        "ainsi",
+        "famille",
+        "risques",
+        "professionnels",
+        "pensions",
+        "secteur"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -82,7 +160,20 @@
       "texte": [
         "Le personnel de la caisse nationale de sécurité sociale, de formation initiale ou acquise dans le domaine de l'action sociale, affecté aux prestations de famille, est reversé, de plein droit, à l'organisme de sécurité sociale en charge de la gestion du régime de la famille et de l'enfance en difficulté."
       ],
-      "mots_cles": ["personnel", "action sociale", "famille", "reversement"],
+      "mots_cles": [
+        "sociale",
+        "personnel",
+        "affecté",
+        "prestations",
+        "sécurité",
+        "famille",
+        "familiales",
+        "caisse",
+        "nationale",
+        "formation",
+        "initiale",
+        "acquise"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -92,7 +183,20 @@
       "texte": [
         "Le personnel de la caisse nationale de sécurité sociale, de formation initiale ou acquise dans le domaine de la santé, affecté aux prestations de santé, est reversé, de plein droit, à l'organisme de sécurité sociale en charge de la gestion du régime de l'assurance maladie universelle."
       ],
-      "mots_cles": ["personnel", "santé", "assurance maladie", "reversement"],
+      "mots_cles": [
+        "santé",
+        "personnel",
+        "affecté",
+        "sécurité",
+        "sociale",
+        "caisse",
+        "nationale",
+        "formation",
+        "initiale",
+        "acquise",
+        "domaine",
+        "prestations"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -102,7 +206,20 @@
       "texte": [
         "Le personnel de la caisse nationale de sécurité sociale, de formation initiale ou acquise dans le domaine de la sécurité sociale, affecté aux prestations relatives aux risques professionnels et aux pensions des travailleurs du secteur privé, est reversé, de plein droit, à l'organisme de sécurité sociale en charge de la gestion du régime des risques professionnels et des pensions des travailleurs du secteur privé."
       ],
-      "mots_cles": ["personnel", "sécurité sociale", "risques professionnels", "reversement"],
+      "mots_cles": [
+        "risques",
+        "professionnels",
+        "sécurité",
+        "sociale",
+        "personnel",
+        "affecté",
+        "pensions",
+        "secteur",
+        "privé",
+        "caisse",
+        "nationale",
+        "formation"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -112,7 +229,20 @@
       "texte": [
         "Les modalités d'affectation du personnel et de transfert de l'actif et du passif de la caisse nationale de sécurité sociale sont déterminées par décret."
       ],
-      "mots_cles": ["modalités", "décret", "affectation", "transfert"],
+      "mots_cles": [
+        "modalités",
+        "affectation",
+        "personnel",
+        "transfert",
+        "actif",
+        "passif",
+        "caisse",
+        "nationale",
+        "sécurité",
+        "sociale",
+        "déterminées",
+        "décret"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     },
@@ -122,7 +252,20 @@
       "texte": [
         "La présente loi, qui abroge toutes dispositions antérieures contraires, sera enregistrée, publiée au Journal officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["abrogation", "Journal officiel"],
+      "mots_cles": [
+        "abrogation",
+        "publication",
+        "présente",
+        "abroge",
+        "antérieures",
+        "contraires",
+        "sera",
+        "enregistrée",
+        "publiée",
+        "journal",
+        "officiel",
+        "exécutée"
+      ],
       "statut": "en vigueur",
       "section": "Dissolution de la CNSS"
     }

@@ -19,7 +19,20 @@
       "texte": [
         "(Loi n°06-96) Les syndicats et les associations professionnelles existant à la date d'entrée en vigueur de la présente loi doivent, dans les six mois qui suivent sa promulgation, s'y conformer."
       ],
-      "mots_cles": ["syndicats", "associations professionnelles", "conformité", "6 mois"],
+      "mots_cles": [
+        "syndicats",
+        "mise",
+        "conformité",
+        "associations",
+        "professionnelles",
+        "existant",
+        "date",
+        "entrée",
+        "présente",
+        "mois",
+        "suivent",
+        "promulgation"
+      ],
       "statut": "en vigueur",
       "section": "Titre 10 : Dispositions transitoires"
     },
@@ -29,7 +42,20 @@
       "texte": [
         "(Loi n°06-96) Les entrepreneurs de travail temporaire exerçant leur activité à la date d'entrée en vigueur de la présente loi sont tenus aux déclarations prévues à l'article 73-2."
       ],
-      "mots_cles": ["travail temporaire", "déclaration", "entrepreneurs"],
+      "mots_cles": [
+        "entrepreneurs",
+        "temporaire",
+        "déclaration",
+        "exerçant",
+        "activité",
+        "date",
+        "entrée",
+        "présente",
+        "tenus",
+        "déclarations",
+        "prévues",
+        "présente loi"
+      ],
       "statut": "en vigueur",
       "section": "Titre 10 : Dispositions transitoires"
     },
@@ -41,7 +67,20 @@
         "Elles ne peuvent constituer une cause de rupture de ces contrats.",
         "Toute clause d'un contrat en cours qui ne serait pas conforme aux dispositions de la présente loi, d'un décret ou arrêté pris pour son application sera modifié dans un délai de six mois à compter de la publication de la présente loi, du décret ou arrêté en cause. En cas de refus de l'une des parties, la juridiction compétente pourra ordonner, sous peine d'astreinte, de procéder aux modifications qui seront jugées nécessaires."
       ],
-      "mots_cles": ["contrats en cours", "application", "6 mois", "astreinte", "modification"],
+      "mots_cles": [
+        "contrats",
+        "cours",
+        "présente",
+        "cause",
+        "décret",
+        "arrêté",
+        "plein",
+        "droit",
+        "applicables",
+        "individuels",
+        "peuvent",
+        "constituer"
+      ],
       "statut": "en vigueur",
       "section": "Titre 10 : Dispositions transitoires"
     },
@@ -51,7 +90,20 @@
       "texte": [
         "(Loi n°06-96) Pour les dispositions qui ne sont pas contraires à la présente loi, la réglementation existante prise en application des lois du 15 décembre 1952, n°10/64 du 25 juin 1964 et n°45/75 du 15 mars 1975 demeurera en vigueur jusqu'à la mise en place des textes prévus par le présent Code."
       ],
-      "mots_cles": ["réglementation existante", "maintien", "loi 1952", "loi 1964", "loi 1975"],
+      "mots_cles": [
+        "réglementation",
+        "existante",
+        "maintien",
+        "contraires",
+        "présente",
+        "prise",
+        "lois",
+        "décembre",
+        "juin",
+        "mars",
+        "demeurera",
+        "jusqu"
+      ],
       "statut": "en vigueur",
       "section": "Titre 10 : Dispositions transitoires"
     },
@@ -61,7 +113,12 @@
       "texte": [
         "(Loi n°06-96) Les articles 55 alinéas 5, 6, 7 et 172 de la loi n°45/75 du 15 mars 1975 sont abrogés."
       ],
-      "mots_cles": ["abrogation", "loi 45/75", "1975", "articles 55", "article 172"],
+      "mots_cles": [
+        "abrogation",
+        "alinéas",
+        "mars",
+        "abrogés"
+      ],
       "statut": "en vigueur",
       "section": "Titre 10 : Dispositions transitoires"
     },
@@ -71,7 +128,15 @@
       "texte": [
         "La présente loi sera exécutée comme loi de l'État."
       ],
-      "mots_cles": ["exécution", "loi de l'État"],
+      "mots_cles": [
+        "état",
+        "exécution",
+        "présente",
+        "sera",
+        "exécutée",
+        "présente loi",
+        "sera exécutée"
+      ],
       "statut": "en vigueur",
       "section": "Titre 10 : Dispositions transitoires"
     }

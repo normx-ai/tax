@@ -23,7 +23,9 @@
       "titre": "Définitions",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "Au sens de la présente Convention, les termes suivants désignent :\na) « Partie Contractante » : tout État membre de la CIPRES signataire de la présente Convention ;\nb) « territoire » : le territoire national de chaque Partie Contractante ;\nc) « ressortissant » : toute personne ayant la nationalité d'une Partie Contractante ;\nd) « législation » : les lois, règlements et dispositions statutaires en vigueur relatifs aux branches de sécurité sociale visées à l'article 2 ;\ne) « autorité compétente » : les Ministres de tutelle dont relèvent les législations de sécurité sociale de chaque Partie Contractante ;\nf) « institution » : toute autorité ou tout organisme directement chargé d'appliquer tout ou partie de la législation de sécurité sociale d'une Partie Contractante ;\ng) « institution compétente » : l'institution à laquelle le travailleur est affilié au moment de la demande de prestations ou de la part de laquelle il a droit à prestations ;\nh) « État compétent » : la Partie Contractante sur le territoire de laquelle se trouve l'institution compétente ;\ni) « lieu de résidence » : le lieu de séjour habituel ;\nj) « séjour » : le séjour temporaire ;\nk) « institution du lieu de résidence » ou « institution du lieu de séjour » : l'institution habilitée à servir les prestations au lieu de résidence ou de séjour selon la législation que cette institution applique ;\nl) « travailleur » : toute personne considérée comme travailleur par la législation applicable ;\nm) « membres de famille » : les personnes définies ou reconnues comme tels par la législation applicable ;\nn) « périodes d'assurance » : les périodes de cotisation, d'emploi ou d'activité professionnelle telles que définies ou reconnues par la législation sous laquelle elles ont été accomplies ;\no) « périodes d'emploi » : les périodes définies ou reconnues comme telles par la législation sous laquelle elles ont été accomplies ;\np) « prestations » : toutes prestations en nature ou en espèces prévues par la législation applicable ;\nq) « pensions » et « rentes » : toutes prestations en espèces au titre de la vieillesse, de l'invalidité, des survivants, des accidents du travail et des maladies professionnelles, y compris tous compléments, majorations et allocations.",
-      "mots_cles": ["définitions", "partie contractante", "territoire", "ressortissant", "législation", "autorité compétente", "institution", "institution compétente", "État compétent", "résidence", "séjour", "travailleur", "membres de famille", "périodes d'assurance", "prestations", "pensions", "rentes"],
+      "mots_cles": [
+        "définitions"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -31,7 +33,10 @@
       "titre": "Champ d'application matériel",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "1. La présente Convention s'applique à toutes les législations relatives aux branches de sécurité sociale suivantes :\na) les prestations de vieillesse ;\nb) les prestations d'invalidité ;\nc) les prestations de survivants ;\nd) les prestations d'accidents du travail et de maladies professionnelles ;\ne) les prestations familiales et de maternité ;\nf) les prestations de maladie.\n2. La présente Convention s'applique à tous les régimes légaux de sécurité sociale des Parties Contractantes tels que visés à l'article 4 du Traité instituant la CIPRES.\n3. La présente Convention s'applique également aux actes législatifs ou réglementaires qui modifieront ou compléteront les législations visées au paragraphe 1 du présent article.",
-      "mots_cles": ["champ d'application matériel", "branches de sécurité sociale", "vieillesse", "invalidité", "survivants", "accidents du travail", "maladies professionnelles", "prestations familiales", "maternité", "maladie", "régimes légaux"],
+      "mots_cles": [
+        "champ",
+        "matériel"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -39,7 +44,10 @@
       "titre": "Champ d'application personnel",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "1. La présente Convention s'applique aux travailleurs qui sont ou ont été soumis à la législation d'une ou de plusieurs Parties Contractantes et qui sont des ressortissants de l'une des Parties Contractantes, ainsi qu'aux membres de leur famille et à leurs survivants.\n2. La présente Convention n'est pas applicable aux agents diplomatiques et aux fonctionnaires consulaires de carrière, y compris les fonctionnaires de la chancellerie.",
-      "mots_cles": ["champ d'application personnel", "travailleurs", "ressortissants", "membres de famille", "survivants", "agents diplomatiques", "exclusion"],
+      "mots_cles": [
+        "champ",
+        "personnel"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -47,7 +55,10 @@
       "titre": "Annexe relative au champ d'application",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "Les législations auxquelles s'applique la présente Convention sont mentionnées dans une annexe qui fait partie intégrante de la Convention. Chaque Partie Contractante notifie au Secrétaire Permanent de la CIPRES les modifications à apporter à ladite annexe.",
-      "mots_cles": ["annexe", "champ d'application", "législations applicables", "notification"],
+      "mots_cles": [
+        "annexe",
+        "champ"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -55,7 +66,9 @@
       "titre": "Portée de la Convention",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "1. La présente Convention se substitue à toute convention de sécurité sociale conclue antérieurement entre deux ou plusieurs Parties Contractantes, pour autant que les dispositions de ces conventions portent sur les mêmes matières que celles couvertes par la présente Convention.\n2. Les dispositions de la présente Convention ne portent pas atteinte aux obligations découlant des conventions de l'Organisation Internationale du Travail ratifiées par les Parties Contractantes.",
-      "mots_cles": ["portée", "substitution", "conventions antérieures", "conventions OIT", "obligations internationales"],
+      "mots_cles": [
+        "portée"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -63,7 +76,10 @@
       "titre": "Égalité de traitement",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "Les personnes qui résident sur le territoire d'une Partie Contractante sont admises au bénéfice des législations de sécurité sociale de ladite Partie dans les mêmes conditions que les ressortissants de celle-ci, sous réserve des dispositions particulières de la présente Convention.",
-      "mots_cles": ["égalité de traitement", "non-discrimination", "résidence", "mêmes conditions", "ressortissants"],
+      "mots_cles": [
+        "égalité",
+        "traitement"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -71,7 +87,11 @@
       "titre": "Dérogations au principe de territorialité",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "Les prestations acquises au titre de la législation d'une ou de plusieurs Parties Contractantes ne peuvent subir aucune réduction, modification, suspension, suppression ou confiscation du fait que le bénéficiaire réside sur le territoire d'une Partie Contractante autre que celle où se trouve l'institution débitrice, sauf dispositions contraires de la présente Convention.",
-      "mots_cles": ["dérogation", "territorialité", "exportabilité", "prestations", "résidence", "institution débitrice", "maintien des droits"],
+      "mots_cles": [
+        "dérogations",
+        "principe",
+        "territorialité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -79,7 +99,10 @@
       "titre": "Majoration et revalorisation",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "Les majorations et revalorisations de prestations prévues par la législation d'une Partie Contractante sont applicables aux bénéficiaires de la présente Convention dans les mêmes conditions que celles prévues pour les ressortissants de ladite Partie.",
-      "mots_cles": ["majoration", "revalorisation", "prestations", "égalité de traitement"],
+      "mots_cles": [
+        "majoration",
+        "revalorisation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -87,7 +110,10 @@
       "titre": "Réglementation des cumuls",
       "titre_section": "Titre 1 - Dispositions générales et champ d'application",
       "contenu": "La présente Convention ne peut conférer ni maintenir le droit de bénéficier de plusieurs prestations de même nature pour une même période d'assurance obligatoire. Toutefois, cette disposition ne s'applique pas aux prestations d'invalidité, de vieillesse, de survivants ou aux rentes d'accidents du travail et de maladies professionnelles qui sont liquidées par les institutions de deux ou plusieurs Parties Contractantes conformément aux dispositions de la présente Convention.",
-      "mots_cles": ["cumul", "prestations", "même nature", "même période", "interdiction", "exceptions", "invalidité", "vieillesse", "survivants"],
+      "mots_cles": [
+        "réglementation",
+        "cumuls"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -95,7 +121,12 @@
       "titre": "Détermination de la législation applicable",
       "titre_section": "Titre 2 - Dispositions relatives à la législation applicable",
       "contenu": "1. Les travailleurs auxquels la présente Convention est applicable ne sont soumis qu'à la législation d'une seule Partie Contractante, déterminée conformément aux dispositions suivantes :\na) le travailleur salarié occupé sur le territoire d'une Partie Contractante est soumis à la législation de ladite Partie, même s'il réside sur le territoire d'une autre Partie Contractante ou si l'entreprise ou l'employeur qui l'occupe a son siège sur le territoire d'une autre Partie Contractante ;\nb) le travailleur indépendant qui exerce son activité sur le territoire d'une Partie Contractante est soumis à la législation de ladite Partie, même s'il réside sur le territoire d'une autre Partie Contractante ;\nc) le travailleur occupé à bord d'un navire ou d'un aéronef affecté à des transports internationaux est soumis à la législation de la Partie Contractante sur le territoire de laquelle l'entreprise qui l'emploie a son siège ;\nd) le travailleur salarié occupé dans une succursale ou une représentation permanente d'une entreprise sur le territoire d'une Partie Contractante autre que celle où l'entreprise a son siège est soumis à la législation de la Partie Contractante sur le territoire de laquelle la succursale ou la représentation permanente se trouve.",
-      "mots_cles": ["législation applicable", "unicité", "lieu d'exercice", "travailleur salarié", "travailleur indépendant", "transports internationaux", "succursale"],
+      "mots_cles": [
+        "détermination",
+        "législation",
+        "applicable",
+        "législation applicable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -103,7 +134,12 @@
       "titre": "Exceptions à la législation applicable",
       "titre_section": "Titre 2 - Dispositions relatives à la législation applicable",
       "contenu": "Les règles énoncées à l'article 10 comportent les exceptions suivantes :\na) Détachement : le travailleur salarié occupé sur le territoire d'une Partie Contractante par une entreprise dont il relève normalement et qui est détaché par cette entreprise sur le territoire d'une autre Partie Contractante pour y effectuer un travail pour le compte de ladite entreprise demeure soumis à la législation de la première Partie Contractante, à condition que la durée prévisible de ce travail n'excède pas six mois et qu'il ne soit pas envoyé en remplacement d'un autre travailleur parvenu au terme de la période de son détachement. Ce délai peut être prolongé avec l'accord préalable de l'autorité compétente de la Partie Contractante sur le territoire de laquelle le détachement a lieu ;\nb) les travailleurs des missions diplomatiques et des postes consulaires sont soumis à la législation de la Partie Contractante accréditante, sauf s'ils sont ressortissants de l'État accréditaire ;\nc) les travailleurs des transports internationaux sont soumis à la législation de la Partie Contractante sur le territoire de laquelle se trouve le siège de l'entreprise.",
-      "mots_cles": ["exceptions", "détachement", "six mois", "prolongation", "missions diplomatiques", "transports internationaux"],
+      "mots_cles": [
+        "exceptions",
+        "législation",
+        "applicable",
+        "législation applicable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -111,7 +147,11 @@
       "titre": "Assurance volontaire",
       "titre_section": "Titre 2 - Dispositions relatives à la législation applicable",
       "contenu": "Lorsque, en application des dispositions du présent Titre, un travailleur cesse d'être soumis à la législation d'une Partie Contractante sans devenir soumis à la législation d'une autre Partie Contractante, il peut s'assurer volontairement auprès de l'institution de la Partie Contractante à la législation de laquelle il était soumis en dernier lieu, dans les conditions prévues par ladite législation.",
-      "mots_cles": ["assurance volontaire", "cessation d'assujettissement", "continuité", "affiliation"],
+      "mots_cles": [
+        "assurance",
+        "volontaire",
+        "assurance volontaire"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -119,7 +159,13 @@
       "titre": "Principe de la coordination - Totalisation des périodes d'assurance",
       "titre_section": "Titre 3 - Dispositions particulières aux différentes catégories de prestations - Chapitre 1 - Prestations de vieillesse, d'invalidité et de survivants - Section 1 - Dispositions communes",
       "contenu": "Lorsque la législation d'une Partie Contractante subordonne l'acquisition, le maintien ou le recouvrement du droit aux prestations à l'accomplissement de périodes d'assurance, l'institution compétente de cette Partie tient compte, dans la mesure nécessaire, des périodes d'assurance accomplies sous la législation de toute autre Partie Contractante, comme s'il s'agissait de périodes accomplies sous la législation qu'elle applique, à condition que ces périodes ne se superposent pas.",
-      "mots_cles": ["coordination", "totalisation", "périodes d'assurance", "acquisition des droits", "maintien des droits"],
+      "mots_cles": [
+        "principe",
+        "coordination",
+        "totalisation",
+        "périodes",
+        "assurance"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -127,7 +173,11 @@
       "titre": "Totalisation des périodes d'assurance",
       "titre_section": "Titre 3 - Chapitre 1 - Section 1 - Dispositions communes",
       "contenu": "Pour l'ouverture du droit aux prestations de vieillesse, d'invalidité et de survivants, les périodes d'assurance accomplies sous la législation de chaque Partie Contractante sont totalisées, pour autant qu'elles ne se superposent pas, par l'institution de chaque Partie Contractante concernée.",
-      "mots_cles": ["totalisation", "périodes d'assurance", "ouverture de droit", "vieillesse", "invalidité", "survivants"],
+      "mots_cles": [
+        "totalisation",
+        "périodes",
+        "assurance"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -135,7 +185,12 @@
       "titre": "Répartition prorata temporis",
       "titre_section": "Titre 3 - Chapitre 1 - Section 1 - Dispositions communes",
       "contenu": "1. L'institution de chaque Partie Contractante concernée détermine, conformément à la législation qu'elle applique, le montant théorique de la prestation à laquelle l'intéressé pourrait prétendre si toutes les périodes d'assurance totalisées conformément à l'article 14 avaient été accomplies exclusivement sous sa propre législation.\n2. L'institution de chaque Partie Contractante détermine ensuite le montant effectif de la prestation qu'elle doit servir au prorata de la durée des périodes d'assurance accomplies sous sa propre législation par rapport à la durée totale des périodes d'assurance totalisées.",
-      "mots_cles": ["prorata temporis", "montant théorique", "montant effectif", "répartition", "périodes d'assurance", "calcul des prestations"],
+      "mots_cles": [
+        "répartition",
+        "prorata",
+        "temporis",
+        "répartition prorata"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -143,7 +198,11 @@
       "titre": "Bases de calcul des prestations",
       "titre_section": "Titre 3 - Chapitre 1 - Section 1 - Dispositions communes",
       "contenu": "L'institution compétente de chaque Partie Contractante calcule le montant de la prestation sur la base des rémunérations ou des cotisations effectivement perçues ou versées sous sa propre législation pendant les périodes d'assurance accomplies sous ladite législation.",
-      "mots_cles": ["bases de calcul", "rémunérations", "cotisations", "prestations"],
+      "mots_cles": [
+        "bases",
+        "calcul",
+        "prestations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -151,7 +210,13 @@
       "titre": "Période d'assurance inférieure à une année",
       "titre_section": "Titre 3 - Chapitre 1 - Section 1 - Dispositions communes",
       "contenu": "Lorsque la durée totale des périodes d'assurance accomplies sous la législation d'une Partie Contractante est inférieure à une année et que, compte tenu de ces seules périodes, aucun droit à prestation n'est acquis en vertu de ladite législation, l'institution de cette Partie n'est pas tenue d'accorder de prestation au titre desdites périodes. Ces périodes sont toutefois prises en compte par l'institution de chaque autre Partie Contractante pour la détermination du droit et du calcul de la prestation conformément aux articles 14 et 15.",
-      "mots_cles": ["période inférieure à un an", "dispense", "prise en compte", "totalisation"],
+      "mots_cles": [
+        "période",
+        "assurance",
+        "inférieure",
+        "année",
+        "assurance inférieure"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -159,7 +224,11 @@
       "titre": "Cas particuliers de calcul des prestations",
       "titre_section": "Titre 3 - Chapitre 1 - Section 1 - Dispositions communes",
       "contenu": "Lorsque la législation d'une Partie Contractante prévoit que le calcul des prestations repose sur un salaire moyen, un salaire forfaitaire, une cotisation moyenne ou un rapport entre le montant brut de la prestation et les salaires ou cotisations, ces éléments sont déterminés par l'institution compétente de ladite Partie uniquement en fonction des périodes d'assurance accomplies sous sa législation ou des rémunérations perçues pendant lesdites périodes.",
-      "mots_cles": ["cas particuliers", "calcul", "salaire moyen", "salaire forfaitaire", "cotisation moyenne"],
+      "mots_cles": [
+        "particuliers",
+        "calcul",
+        "prestations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -167,7 +236,11 @@
       "titre": "Complément différentiel",
       "titre_section": "Titre 3 - Chapitre 1 - Section 1 - Dispositions communes",
       "contenu": "Lorsque le montant total des prestations dues par les institutions des Parties Contractantes en application des articles 14 et 15 est inférieur au montant minimum prévu par la législation de la Partie Contractante sur le territoire de laquelle le bénéficiaire réside, l'institution de cette Partie lui sert un complément différentiel égal à la différence entre le montant total dû et le montant minimum garanti.",
-      "mots_cles": ["complément différentiel", "montant minimum", "garantie", "résidence"],
+      "mots_cles": [
+        "complément",
+        "différentiel",
+        "complément différentiel"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -175,7 +248,10 @@
       "titre": "Aggravation de l'invalidité",
       "titre_section": "Titre 3 - Chapitre 1 - Section 2 - Dispositions particulières aux prestations d'invalidité",
       "contenu": "En cas d'aggravation d'une invalidité pour laquelle un travailleur bénéficie de prestations au titre de la législation d'une seule Partie Contractante, les dispositions suivantes sont applicables :\na) si le travailleur n'a pas été soumis à la législation d'une autre Partie Contractante depuis qu'il bénéficie de prestations, l'institution compétente est tenue de servir les prestations compte tenu de l'aggravation ;\nb) si le travailleur a été soumis à la législation d'une ou de plusieurs autres Parties Contractantes depuis qu'il bénéficie de prestations, l'aggravation est prise en compte conformément aux articles 13 à 15.",
-      "mots_cles": ["aggravation", "invalidité", "prestations", "nouvelle législation"],
+      "mots_cles": [
+        "aggravation",
+        "invalidité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -183,7 +259,15 @@
       "titre": "Reprise du service des prestations après suspension ou suppression",
       "titre_section": "Titre 3 - Chapitre 1 - Section 2 - Dispositions particulières aux prestations d'invalidité",
       "contenu": "Lorsque, après suspension ou suppression de la prestation d'invalidité, l'état de l'assuré justifie la reprise du service de la prestation, celle-ci est assurée par l'institution qui était compétente au moment de la suspension ou de la suppression, sans préjudice de l'application des dispositions des articles 13 à 15.",
-      "mots_cles": ["reprise", "suspension", "suppression", "invalidité", "institution compétente"],
+      "mots_cles": [
+        "reprise",
+        "service",
+        "prestations",
+        "après",
+        "suspension",
+        "suppression",
+        "prestations après"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -191,7 +275,12 @@
       "titre": "Conversion des prestations d'invalidité en prestations de vieillesse",
       "titre_section": "Titre 3 - Chapitre 1 - Section 2 - Dispositions particulières aux prestations d'invalidité",
       "contenu": "Les prestations d'invalidité sont transformées, le cas échéant, en prestations de vieillesse dans les conditions prévues par la législation au titre de laquelle elles ont été accordées. Lorsqu'un bénéficiaire de prestations d'invalidité peut prétendre à des prestations de vieillesse au titre de la législation d'une ou de plusieurs Parties Contractantes, il continue de bénéficier des prestations d'invalidité auxquelles il a droit jusqu'à ce qu'il remplisse les conditions requises pour la prestation de vieillesse.",
-      "mots_cles": ["conversion", "invalidité", "vieillesse", "transformation", "conditions"],
+      "mots_cles": [
+        "prestations",
+        "conversion",
+        "invalidité",
+        "vieillesse"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -199,7 +288,11 @@
       "titre": "Dérogations au principe de territorialité - AT/MP",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "Le travailleur qui réside sur le territoire d'une Partie Contractante autre que l'État compétent et qui est victime d'un accident du travail ou atteint d'une maladie professionnelle bénéficie :\na) des prestations en nature servies, pour le compte de l'institution compétente, par l'institution du lieu de résidence ou de séjour selon les dispositions de la législation que cette dernière applique ;\nb) des prestations en espèces servies par l'institution compétente selon les dispositions de la législation qu'elle applique.\nToutefois, les prestations en espèces peuvent être servies par l'institution du lieu de résidence pour le compte de l'institution compétente selon les modalités d'un accord entre les institutions concernées ou entre les autorités compétentes.",
-      "mots_cles": ["accident du travail", "maladie professionnelle", "prestations en nature", "prestations en espèces", "institution compétente", "institution du lieu de résidence", "dérogation territorialité"],
+      "mots_cles": [
+        "dérogations",
+        "principe",
+        "territorialité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -207,7 +300,10 @@
       "titre": "Accident de trajet",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "L'accident de trajet survenu sur le territoire d'une Partie Contractante autre que l'État compétent est considéré comme étant survenu sur le territoire de l'État compétent. La constatation de l'accident de trajet est effectuée par l'institution du lieu où l'accident est survenu, selon la législation qu'elle applique.",
-      "mots_cles": ["accident de trajet", "territorialité", "constatation", "État compétent"],
+      "mots_cles": [
+        "accident",
+        "trajet"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -215,7 +311,16 @@
       "titre": "Service des prestations hors du territoire de l'État compétent",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "Le travailleur victime d'un accident du travail ou d'une maladie professionnelle qui a été admis au bénéfice des prestations à la charge de l'institution compétente et qui réside ou transfère sa résidence sur le territoire d'une autre Partie Contractante continue de bénéficier desdites prestations. Le transfert de résidence doit être préalablement autorisé par l'institution compétente.",
-      "mots_cles": ["service des prestations", "hors territoire", "transfert de résidence", "autorisation", "AT/MP"],
+      "mots_cles": [
+        "service",
+        "prestations",
+        "hors",
+        "territoire",
+        "état",
+        "compétent",
+        "prestations hors",
+        "état compétent"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -223,7 +328,14 @@
       "titre": "Autorisation préalable pour certaines prestations en nature",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "Les prothèses, le grand appareillage et les autres prestations en nature d'une grande importance sont, sauf en cas d'urgence absolue, servis à condition que l'institution compétente en donne l'autorisation.",
-      "mots_cles": ["autorisation préalable", "prothèses", "appareillage", "prestations en nature", "urgence"],
+      "mots_cles": [
+        "autorisation",
+        "préalable",
+        "certaines",
+        "prestations",
+        "nature",
+        "autorisation préalable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -231,7 +343,12 @@
       "titre": "Prise en charge des frais de transport",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "L'institution compétente d'une Partie Contractante dont la législation prévoit la prise en charge des frais de transport de la victime d'un accident du travail ou d'une maladie professionnelle prend en charge ces frais jusqu'au lieu de résidence de l'intéressé sur le territoire de la Partie Contractante où il réside.",
-      "mots_cles": ["frais de transport", "prise en charge", "lieu de résidence", "AT/MP"],
+      "mots_cles": [
+        "prise",
+        "charge",
+        "frais",
+        "transport"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -239,7 +356,13 @@
       "titre": "Succession d'éventualités sous plusieurs législations",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "En cas d'accident du travail ou de maladie professionnelle survenu sous la législation d'une Partie Contractante, alors que le travailleur a été antérieurement victime d'un accident du travail ou d'une maladie professionnelle sous la législation d'une autre Partie Contractante, les prestations dues à la victime sont servies exclusivement par l'institution compétente au titre de la dernière législation, compte tenu de l'aggravation éventuelle, dans les conditions suivantes :\na) l'institution compétente prend en charge les prestations d'incapacité temporaire ;\nb) les prestations d'incapacité permanente sont liquidées en tenant compte du degré d'incapacité global de l'intéressé.",
-      "mots_cles": ["succession", "éventualités", "plusieurs législations", "aggravation", "incapacité"],
+      "mots_cles": [
+        "succession",
+        "éventualités",
+        "plusieurs",
+        "législations",
+        "plusieurs législations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -247,7 +370,11 @@
       "titre": "Bases de calcul des prestations AT/MP",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "Les prestations en espèces dues au titre d'un accident du travail ou d'une maladie professionnelle sont calculées par l'institution compétente selon les dispositions de la législation qu'elle applique, sur la base des rémunérations perçues par le travailleur sous ladite législation.",
-      "mots_cles": ["bases de calcul", "prestations en espèces", "AT/MP", "rémunérations"],
+      "mots_cles": [
+        "bases",
+        "calcul",
+        "prestations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -255,7 +382,15 @@
       "titre": "Exposition au risque de maladie professionnelle dans plusieurs États",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "Lorsqu'un travailleur a été exposé au risque d'une maladie professionnelle sur le territoire de deux ou plusieurs Parties Contractantes, les prestations sont accordées exclusivement au titre de la législation de la dernière Partie Contractante sur le territoire de laquelle le travailleur a été exposé au risque et dont les conditions d'ouverture du droit sont remplies, compte tenu le cas échéant de la totalisation des périodes d'exposition au risque accomplies sous la législation des autres Parties Contractantes.",
-      "mots_cles": ["maladie professionnelle", "exposition au risque", "plusieurs États", "dernière législation", "totalisation"],
+      "mots_cles": [
+        "exposition",
+        "risque",
+        "maladie",
+        "professionnelle",
+        "plusieurs",
+        "états",
+        "maladie professionnelle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -263,7 +398,11 @@
       "titre": "Aggravation d'une maladie professionnelle",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "En cas d'aggravation d'une maladie professionnelle pour laquelle un travailleur a bénéficié ou bénéficie de prestations au titre de la législation d'une Partie Contractante, les règles suivantes sont applicables :\na) si le travailleur n'a pas exercé, sous la législation d'une autre Partie Contractante, un emploi susceptible de provoquer ou d'aggraver la maladie, l'institution compétente de la première Partie est tenue de prendre en charge les prestations compte tenu de l'aggravation ;\nb) si le travailleur a exercé un tel emploi sous la législation d'une autre Partie Contractante, l'institution compétente de cette dernière Partie prend en charge la fraction de prestation correspondant à l'aggravation.",
-      "mots_cles": ["aggravation", "maladie professionnelle", "emploi", "prise en charge", "fraction"],
+      "mots_cles": [
+        "aggravation",
+        "maladie",
+        "professionnelle"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -271,7 +410,11 @@
       "titre": "Remboursement des prestations en nature",
       "titre_section": "Titre 3 - Chapitre 2 - Prestations d'accident du travail et de maladie professionnelle",
       "contenu": "Les prestations en nature servies par l'institution du lieu de résidence ou de séjour pour le compte de l'institution compétente sont remboursées par cette dernière sur la base des dépenses réelles engagées, telles qu'elles résultent de la comptabilité de l'institution qui les a servies, sauf accord entre les institutions ou les autorités compétentes prévoyant un remboursement forfaitaire.",
-      "mots_cles": ["remboursement", "prestations en nature", "dépenses réelles", "forfaitaire", "comptabilité"],
+      "mots_cles": [
+        "remboursement",
+        "prestations",
+        "nature"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -279,7 +422,15 @@
       "titre": "Totalisation des périodes d'assurance ou d'emploi - Prestations familiales",
       "titre_section": "Titre 3 - Chapitre 3 - Prestations familiales et de maternité",
       "contenu": "Lorsque la législation d'une Partie Contractante subordonne l'acquisition du droit aux prestations familiales et de maternité à l'accomplissement de périodes d'assurance ou d'emploi, l'institution compétente de cette Partie tient compte, dans la mesure nécessaire, des périodes d'assurance ou d'emploi accomplies sous la législation de toute autre Partie Contractante, comme s'il s'agissait de périodes accomplies sous la législation qu'elle applique.",
-      "mots_cles": ["totalisation", "prestations familiales", "maternité", "périodes d'assurance", "périodes d'emploi"],
+      "mots_cles": [
+        "totalisation",
+        "périodes",
+        "assurance",
+        "emploi",
+        "prestations",
+        "familiales",
+        "prestations familiales"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -287,7 +438,12 @@
       "titre": "Dérogation au principe de territorialité - Maternité",
       "titre_section": "Titre 3 - Chapitre 3 - Prestations familiales et de maternité",
       "contenu": "La femme travailleuse qui transfère sa résidence sur le territoire d'une Partie Contractante autre que l'État compétent au cours de sa grossesse ou de la période pendant laquelle elle a droit aux prestations de maternité continue de bénéficier desdites prestations à la charge de l'institution compétente, à condition qu'elle ait obtenu l'autorisation préalable de ladite institution.",
-      "mots_cles": ["maternité", "dérogation", "territorialité", "transfert de résidence", "autorisation préalable", "grossesse"],
+      "mots_cles": [
+        "dérogation",
+        "principe",
+        "territorialité",
+        "maternité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -295,7 +451,19 @@
       "titre": "Prestations dues au titre des membres de famille résidant hors de l'État compétent",
       "titre_section": "Titre 3 - Chapitre 3 - Prestations familiales et de maternité",
       "contenu": "Le travailleur soumis à la législation d'une Partie Contractante a droit, pour les membres de sa famille résidant sur le territoire d'une autre Partie Contractante, aux prestations familiales prévues par la législation de la première Partie, comme si ces membres de famille résidaient sur le territoire de celle-ci. Ces prestations sont servies directement par l'institution compétente.",
-      "mots_cles": ["prestations familiales", "membres de famille", "résidence hors État compétent", "exportabilité"],
+      "mots_cles": [
+        "prestations",
+        "dues",
+        "membres",
+        "famille",
+        "résidant",
+        "hors",
+        "état",
+        "compétent",
+        "prestations dues",
+        "famille résidant",
+        "état compétent"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -303,7 +471,13 @@
       "titre": "Dérogation au principe de territorialité - Prestations de maladie",
       "titre_section": "Titre 3 - Chapitre 4 - Prestations de maladie",
       "contenu": "Le travailleur qui satisfait aux conditions requises par la législation de l'État compétent pour avoir droit aux prestations de maladie, compte tenu le cas échéant de la totalisation des périodes d'assurance, et dont l'état de santé vient à nécessiter des soins au cours d'un séjour sur le territoire d'une autre Partie Contractante, bénéficie des prestations en nature servies par l'institution du lieu de séjour selon les dispositions de la législation que cette institution applique, à la charge de l'institution compétente.",
-      "mots_cles": ["maladie", "dérogation", "territorialité", "prestations en nature", "séjour", "totalisation"],
+      "mots_cles": [
+        "dérogation",
+        "principe",
+        "territorialité",
+        "prestations",
+        "maladie"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -311,7 +485,13 @@
       "titre": "Autorisation préalable - Prestations de maladie",
       "titre_section": "Titre 3 - Chapitre 4 - Prestations de maladie",
       "contenu": "Le bénéfice des prestations visées à l'article 36 est subordonné à l'autorisation préalable de l'institution compétente, sauf en cas d'urgence médicalement constatée. L'institution compétente ne peut refuser l'autorisation que si le déplacement est de nature à compromettre l'état de santé de l'intéressé ou l'application du traitement médical.",
-      "mots_cles": ["autorisation préalable", "maladie", "urgence", "refus", "état de santé"],
+      "mots_cles": [
+        "autorisation",
+        "préalable",
+        "prestations",
+        "maladie",
+        "autorisation préalable"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -319,7 +499,13 @@
       "titre": "Couverture des membres de famille - Prestations de maladie",
       "titre_section": "Titre 3 - Chapitre 4 - Prestations de maladie",
       "contenu": "Les membres de la famille du travailleur qui résident sur le territoire d'une Partie Contractante autre que l'État compétent bénéficient des prestations en nature servies par l'institution du lieu de résidence selon les dispositions de la législation qu'elle applique, à la charge de l'institution compétente. Les prestations en espèces sont servies par l'institution compétente selon les dispositions de la législation qu'elle applique.",
-      "mots_cles": ["membres de famille", "maladie", "prestations en nature", "prestations en espèces", "résidence"],
+      "mots_cles": [
+        "couverture",
+        "membres",
+        "famille",
+        "prestations",
+        "maladie"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -327,7 +513,11 @@
       "titre": "Entraide administrative",
       "titre_section": "Titre 4 - Dispositions diverses",
       "contenu": "Les autorités compétentes et les institutions des Parties Contractantes se prêtent mutuellement leurs bons offices et agissent comme s'il s'agissait de l'application de leur propre législation. L'entraide administrative de ces autorités et institutions est en principe gratuite. Toutefois, les autorités compétentes des Parties Contractantes peuvent convenir du remboursement de certains frais.",
-      "mots_cles": ["entraide administrative", "bons offices", "gratuité", "remboursement", "coopération"],
+      "mots_cles": [
+        "entraide",
+        "administrative",
+        "entraide administrative"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -335,7 +525,11 @@
       "titre": "Exemption ou réduction de taxes",
       "titre_section": "Titre 4 - Dispositions diverses",
       "contenu": "Toute exemption ou réduction de droits de timbre, de greffe ou de taxes prévue par la législation d'une Partie Contractante pour les pièces et documents à produire en application de la législation de ladite Partie est étendue aux pièces et documents analogues à produire en application de la législation d'une autre Partie Contractante ou de la présente Convention.",
-      "mots_cles": ["exemption", "taxes", "droits de timbre", "droits de greffe", "pièces", "documents"],
+      "mots_cles": [
+        "exemption",
+        "réduction",
+        "taxes"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -343,7 +537,13 @@
       "titre": "Demandes, déclarations et recours de l'assuré",
       "titre_section": "Titre 4 - Dispositions diverses",
       "contenu": "Les demandes, déclarations et recours qui auraient dû être introduits dans un délai déterminé auprès d'une autorité ou institution d'une Partie Contractante sont recevables s'ils sont introduits dans le même délai auprès d'une autorité ou institution correspondante d'une autre Partie Contractante. Dans ce cas, l'autorité ou l'institution ainsi saisie transmet sans retard ces demandes, déclarations ou recours à l'autorité ou institution compétente.",
-      "mots_cles": ["demandes", "déclarations", "recours", "délais", "recevabilité", "transmission"],
+      "mots_cles": [
+        "demandes",
+        "déclarations",
+        "recours",
+        "assuré",
+        "demandes  déclarations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -351,7 +551,11 @@
       "titre": "Contrôle médical",
       "titre_section": "Titre 4 - Dispositions diverses",
       "contenu": "Lorsqu'un bénéficiaire de prestations résidant ou séjournant sur le territoire d'une Partie Contractante est soumis à un contrôle médical, celui-ci est effectué, à la demande de l'institution compétente, par l'institution du lieu de résidence ou de séjour, selon les modalités prévues par la législation que cette dernière institution applique. L'institution compétente conserve la faculté de faire procéder à l'examen du bénéficiaire par un médecin de son choix.",
-      "mots_cles": ["contrôle médical", "résidence", "séjour", "institution compétente", "médecin"],
+      "mots_cles": [
+        "contrôle",
+        "médical",
+        "contrôle médical"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -359,7 +563,10 @@
       "titre": "Transferts de fonds",
       "titre_section": "Titre 4 - Dispositions diverses",
       "contenu": "Les transferts de fonds afférents à l'application de la présente Convention sont effectués conformément aux accords en vigueur entre les Parties Contractantes concernées. Lorsqu'il n'existe pas de tels accords, les arrangements nécessaires sont pris d'un commun accord par les autorités compétentes concernées.",
-      "mots_cles": ["transferts de fonds", "accords", "arrangements", "autorités compétentes"],
+      "mots_cles": [
+        "transferts",
+        "fonds"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -367,7 +574,10 @@
       "titre": "Recouvrement des créances",
       "titre_section": "Titre 4 - Dispositions diverses",
       "contenu": "Les cotisations dues à l'institution d'une Partie Contractante peuvent être recouvrées sur le territoire d'une autre Partie Contractante selon les procédures et les garanties prévues par la législation de cette dernière Partie pour le recouvrement de ses propres cotisations, sur demande de l'institution créancière.",
-      "mots_cles": ["recouvrement", "créances", "cotisations", "procédures", "garanties"],
+      "mots_cles": [
+        "recouvrement",
+        "créances"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -375,7 +585,10 @@
       "titre": "Recours contre tiers",
       "titre_section": "Titre 4 - Dispositions diverses",
       "contenu": "Si une personne bénéficie de prestations au titre de la législation d'une Partie Contractante pour un dommage causé sur le territoire d'une autre Partie Contractante, les droits éventuels de l'institution débitrice à l'encontre du tiers tenu à la réparation du dommage sont réglés de la manière suivante :\na) lorsque l'institution débitrice est subrogée, en vertu de la législation qu'elle applique, dans les droits du bénéficiaire à l'égard du tiers, cette subrogation est reconnue par chaque Partie Contractante ;\nb) lorsque l'institution débitrice a un droit direct contre le tiers, chaque Partie Contractante reconnaît ce droit.",
-      "mots_cles": ["recours", "tiers", "subrogation", "droit direct", "dommage", "réparation"],
+      "mots_cles": [
+        "recours",
+        "tiers"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -383,7 +596,10 @@
       "titre": "Règlement des différends",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "1. Tout différend entre deux ou plusieurs Parties Contractantes concernant l'interprétation ou l'application de la présente Convention est réglé par voie de négociations directes entre les Parties concernées.\n2. Si le différend ne peut être réglé par voie de négociations dans un délai de six mois, il est soumis au Secrétaire Permanent de la CIPRES qui prend toutes dispositions utiles pour le règlement du litige.\n3. Si le différend n'est toujours pas réglé, il est soumis au Conseil des Ministres de la CIPRES, dont la décision s'impose aux Parties.",
-      "mots_cles": ["différends", "négociations", "secrétaire permanent", "conseil des ministres", "règlement", "CIPRES"],
+      "mots_cles": [
+        "règlement",
+        "différends"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -391,7 +607,9 @@
       "titre": "Annexe",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "L'annexe à la présente Convention fait partie intégrante de celle-ci. Elle peut être modifiée par les autorités compétentes des Parties Contractantes concernées.",
-      "mots_cles": ["annexe", "partie intégrante", "modification"],
+      "mots_cles": [
+        "annexe"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -399,7 +617,10 @@
       "titre": "Principe de non-rétroactivité",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "1. La présente Convention n'ouvre aucun droit pour une période antérieure à son entrée en vigueur.\n2. Toutefois, toute période d'assurance accomplie sous la législation d'une Partie Contractante avant l'entrée en vigueur de la présente Convention est prise en considération pour la détermination des droits ouverts conformément aux dispositions de celle-ci.\n3. Les droits des intéressés dont la prestation a été liquidée avant l'entrée en vigueur de la présente Convention sont révisés à leur demande, conformément aux dispositions de celle-ci. En aucun cas, une telle révision ne peut avoir pour effet de diminuer les droits antérieurs de l'intéressé.\n4. Lorsque la demande de révision est présentée dans un délai de deux ans à compter de la date d'entrée en vigueur de la présente Convention, les droits ouverts conformément aux dispositions de celle-ci sont acquis à compter de cette date. Passé ce délai, les droits sont acquis à compter de la date de la demande.\n5. Tout droit qui n'a pas été liquidé ou qui a été suspendu en raison de la nationalité ou de la résidence de l'intéressé est, à sa demande, liquidé ou rétabli à compter de l'entrée en vigueur de la présente Convention.",
-      "mots_cles": ["non-rétroactivité", "périodes antérieures", "révision", "droits acquis", "liquidation", "suspension", "nationalité", "résidence"],
+      "mots_cles": [
+        "principe",
+        "rétroactivité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -407,7 +628,9 @@
       "titre": "Ratification",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "1. La présente Convention est soumise à la ratification des Parties Contractantes conformément à leurs procédures constitutionnelles respectives.\n2. Les instruments de ratification sont déposés auprès du Secrétaire Permanent de la CIPRES qui en notifie le dépôt aux autres Parties Contractantes.\n3. La présente Convention entre en vigueur le premier jour du troisième mois suivant la date de dépôt du deuxième instrument de ratification.\n4. Pour chaque Partie Contractante qui ratifie la Convention après le dépôt du deuxième instrument de ratification, celle-ci entre en vigueur le premier jour du troisième mois suivant la date de dépôt de son instrument de ratification.",
-      "mots_cles": ["ratification", "instruments", "dépôt", "secrétaire permanent", "entrée en vigueur", "troisième mois"],
+      "mots_cles": [
+        "ratification"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -415,7 +638,9 @@
       "titre": "Révision",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "1. La présente Convention peut être révisée à la demande de toute Partie Contractante adressée au Président du Conseil des Ministres de la CIPRES.\n2. La révision est adoptée à l'unanimité des Parties Contractantes.\n3. Toute révision adoptée entre en vigueur le premier jour du troisième mois suivant la date de dépôt du dernier instrument de ratification.",
-      "mots_cles": ["révision", "demande", "président", "conseil des ministres", "unanimité", "entrée en vigueur"],
+      "mots_cles": [
+        "révision"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -423,7 +648,9 @@
       "titre": "Dénonciation",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "1. La présente Convention peut être dénoncée par toute Partie Contractante moyennant un préavis de deux ans. La dénonciation ne peut intervenir avant l'expiration d'une période de cinq ans à compter de la date d'entrée en vigueur de la Convention à l'égard de ladite Partie.\n2. La dénonciation prend effet à l'expiration du préavis de deux ans et est notifiée au Secrétaire Permanent de la CIPRES, qui en informe les autres Parties Contractantes.\n3. En cas de dénonciation, les dispositions de la présente Convention continuent de s'appliquer aux droits acquis.",
-      "mots_cles": ["dénonciation", "préavis", "deux ans", "cinq ans", "notification", "droits acquis"],
+      "mots_cles": [
+        "dénonciation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -431,7 +658,12 @@
       "titre": "Maintien des droits acquis",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "En cas de dénonciation ou de cessation de la présente Convention, tout droit acquis en application de ses dispositions est maintenu. Les Parties Contractantes prennent des dispositions d'un commun accord pour régler le sort des droits en cours d'acquisition.",
-      "mots_cles": ["maintien", "droits acquis", "cessation", "droits en cours d'acquisition"],
+      "mots_cles": [
+        "maintien",
+        "droits",
+        "acquis",
+        "droits acquis"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -439,7 +671,9 @@
       "titre": "Notifications",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "Toute notification relative à la présente Convention est adressée au Secrétaire Permanent de la CIPRES, notamment les notifications relatives aux signatures, ratifications et dénonciations. Le Secrétaire Permanent transmet copie des notifications reçues à l'ensemble des Parties Contractantes.",
-      "mots_cles": ["notifications", "secrétaire permanent", "signatures", "ratifications", "dénonciations", "transmission"],
+      "mots_cles": [
+        "notifications"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -447,7 +681,11 @@
       "titre": "Accords bilatéraux",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "Deux ou plusieurs Parties Contractantes peuvent conclure entre elles des accords bilatéraux ou multilatéraux en application de la présente Convention, pour autant que ces accords ne portent pas atteinte aux droits et obligations des autres Parties Contractantes et qu'ils soient conformes aux principes et à l'esprit de la présente Convention.",
-      "mots_cles": ["accords bilatéraux", "accords multilatéraux", "application", "droits", "obligations", "conformité"],
+      "mots_cles": [
+        "accords",
+        "bilatéraux",
+        "accords bilatéraux"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -455,7 +693,11 @@
       "titre": "Arrangement administratif",
       "titre_section": "Titre 5 - Dispositions transitoires et finales",
       "contenu": "Les Parties Contractantes prendront tous arrangements administratifs nécessaires à l'application de la présente Convention. Ces arrangements font l'objet d'un accord entre les autorités compétentes des Parties Contractantes.",
-      "mots_cles": ["arrangement administratif", "application", "accord", "autorités compétentes"],
+      "mots_cles": [
+        "arrangement",
+        "administratif",
+        "arrangement administratif"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -463,7 +705,10 @@
       "titre": "Définition des concepts",
       "titre_section": "Arrangement administratif - Dispositions générales",
       "contenu": "Pour l'application du présent Arrangement administratif, les termes définis à l'article premier de la Convention multilatérale de sécurité sociale de la CIPRES ont la même signification que celle qui leur est attribuée audit article.",
-      "mots_cles": ["définitions", "arrangement administratif", "renvoi", "convention"],
+      "mots_cles": [
+        "définition",
+        "concepts"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -471,7 +716,12 @@
       "titre": "Diligences du secrétaire permanent",
       "titre_section": "Arrangement administratif - Dispositions générales",
       "contenu": "Le Secrétaire Permanent de la CIPRES prend toutes les diligences nécessaires pour faciliter la coordination entre les institutions des Parties Contractantes et veille à la bonne application de la Convention et du présent Arrangement administratif.",
-      "mots_cles": ["secrétaire permanent", "diligences", "coordination", "facilitation", "application"],
+      "mots_cles": [
+        "diligences",
+        "secrétaire",
+        "permanent",
+        "secrétaire permanent"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -479,7 +729,12 @@
       "titre": "Saisine de l'institution compétente",
       "titre_section": "Arrangement administratif - Dispositions générales",
       "contenu": "L'institution du lieu de résidence ou de séjour qui reçoit une demande de prestations ou tout autre document destiné à l'institution compétente d'une autre Partie Contractante le transmet sans délai à ladite institution avec l'indication de la date de réception de la demande.",
-      "mots_cles": ["saisine", "institution compétente", "demande", "transmission", "date de réception"],
+      "mots_cles": [
+        "saisine",
+        "institution",
+        "compétente",
+        "institution compétente"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -487,7 +742,9 @@
       "titre": "Annexes",
       "titre_section": "Arrangement administratif - Dispositions générales",
       "contenu": "Le présent Arrangement administratif comprend trois annexes :\nAnnexe I : liste des autorités compétentes de chaque Partie Contractante ;\nAnnexe II : liste des institutions compétentes de chaque Partie Contractante ;\nAnnexe III : liste des institutions désignées par les autorités compétentes de chaque Partie Contractante.\nCes annexes sont mises à jour par notification au Secrétaire Permanent de la CIPRES.",
-      "mots_cles": ["annexes", "autorités compétentes", "institutions compétentes", "institutions désignées", "mise à jour"],
+      "mots_cles": [
+        "annexes"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -495,7 +752,11 @@
       "titre": "Accords particuliers",
       "titre_section": "Arrangement administratif - Dispositions générales",
       "contenu": "Les institutions compétentes de deux ou plusieurs Parties Contractantes peuvent conclure entre elles des accords particuliers relatifs aux modalités pratiques d'application de la Convention et du présent Arrangement administratif.",
-      "mots_cles": ["accords particuliers", "modalités pratiques", "institutions compétentes"],
+      "mots_cles": [
+        "accords",
+        "particuliers",
+        "accords particuliers"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -503,7 +764,11 @@
       "titre": "Production d'attestation d'assurance",
       "titre_section": "Arrangement administratif - Législation applicable",
       "contenu": "L'institution compétente de la Partie Contractante dont la législation est applicable délivre au travailleur une attestation certifiant qu'il est soumis à ladite législation et indiquant, le cas échéant, la durée prévisible du détachement ou les conditions particulières de son assujettissement.",
-      "mots_cles": ["attestation", "assurance", "détachement", "assujettissement", "certificat"],
+      "mots_cles": [
+        "production",
+        "attestation",
+        "assurance"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -511,7 +776,13 @@
       "titre": "Réduction, suspension et suppression des prestations",
       "titre_section": "Arrangement administratif - Législation applicable",
       "contenu": "L'institution compétente de chaque Partie Contractante notifie à l'intéressé et aux institutions des autres Parties Contractantes concernées toute décision de réduction, de suspension ou de suppression de prestations, en précisant les voies et délais de recours.",
-      "mots_cles": ["réduction", "suspension", "suppression", "notification", "recours"],
+      "mots_cles": [
+        "réduction",
+        "suspension",
+        "suppression",
+        "prestations",
+        "réduction  suspension"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -519,7 +790,15 @@
       "titre": "Détermination législation applicable prestations familiales",
       "titre_section": "Arrangement administratif - Législation applicable",
       "contenu": "Lorsqu'un travailleur est soumis à la législation d'une Partie Contractante et que les membres de sa famille résident sur le territoire d'une autre Partie Contractante, les prestations familiales sont servies conformément aux dispositions de la législation de la Partie Contractante à laquelle le travailleur est soumis.",
-      "mots_cles": ["législation applicable", "prestations familiales", "membres de famille", "résidence"],
+      "mots_cles": [
+        "détermination",
+        "législation",
+        "applicable",
+        "prestations",
+        "familiales",
+        "détermination législation",
+        "applicable prestations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -527,7 +806,9 @@
       "titre": "Détachement",
       "titre_section": "Arrangement administratif - Législation applicable",
       "contenu": "Pour l'application de l'article 11 de la Convention relatif au détachement, l'employeur adresse une demande à l'institution compétente de la Partie Contractante dont la législation demeure applicable, qui délivre une attestation de détachement. En cas de prolongation au-delà de six mois, l'employeur adresse une demande de prolongation avant l'expiration de la période initiale à l'autorité compétente de la Partie Contractante sur le territoire de laquelle le travailleur est détaché.",
-      "mots_cles": ["détachement", "attestation", "prolongation", "six mois", "employeur", "demande"],
+      "mots_cles": [
+        "détachement"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -535,7 +816,11 @@
       "titre": "Totalisation des périodes d'assurance",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "Pour l'application des articles 13 et 14 de la Convention, l'institution compétente de chaque Partie Contractante concernée établit un relevé des périodes d'assurance accomplies sous sa législation et le transmet aux institutions des autres Parties Contractantes concernées au moyen d'un formulaire dont le modèle est arrêté d'un commun accord.",
-      "mots_cles": ["totalisation", "relevé", "périodes d'assurance", "formulaire", "transmission"],
+      "mots_cles": [
+        "totalisation",
+        "périodes",
+        "assurance"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -543,7 +828,13 @@
       "titre": "Demande de prestations de vieillesse, d'invalidité et de survivants",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "La demande de prestations de vieillesse, d'invalidité ou de survivants est adressée à l'institution compétente de la Partie Contractante à la législation de laquelle le travailleur était soumis en dernier lieu, ou à l'institution du lieu de résidence qui la transmet à l'institution compétente. La date de dépôt de la demande auprès de l'une des institutions vaut pour toutes les institutions concernées.",
-      "mots_cles": ["demande", "prestations", "vieillesse", "invalidité", "survivants", "date de dépôt"],
+      "mots_cles": [
+        "demande",
+        "prestations",
+        "vieillesse",
+        "invalidité",
+        "survivants"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -551,7 +842,10 @@
       "titre": "Recevabilité de la demande",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "L'institution qui reçoit la demande vérifie la recevabilité de celle-ci et la complète, le cas échéant, par les pièces justificatives nécessaires avant de la transmettre aux institutions des autres Parties Contractantes concernées.",
-      "mots_cles": ["recevabilité", "demande", "pièces justificatives", "vérification", "transmission"],
+      "mots_cles": [
+        "recevabilité",
+        "demande"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -559,7 +853,11 @@
       "titre": "Instruction des demandes d'invalidité",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "Pour l'instruction des demandes de prestations d'invalidité, l'institution compétente de chaque Partie Contractante procède à l'évaluation du degré d'invalidité conformément à sa propre législation. Elle peut demander à l'institution du lieu de résidence de faire procéder à un examen médical de l'intéressé.",
-      "mots_cles": ["instruction", "invalidité", "évaluation", "degré d'invalidité", "examen médical"],
+      "mots_cles": [
+        "instruction",
+        "demandes",
+        "invalidité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -567,7 +865,10 @@
       "titre": "Instruction des demandes",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "L'institution de chaque Partie Contractante instruit la demande et détermine les droits de l'intéressé tant au regard de sa propre législation que par application des règles de totalisation et de proratisation prévues par la Convention.",
-      "mots_cles": ["instruction", "demande", "droits", "totalisation", "proratisation"],
+      "mots_cles": [
+        "instruction",
+        "demandes"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -575,7 +876,10 @@
       "titre": "Formule de liquidation",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "L'institution compétente de chaque Partie Contractante procède à la liquidation de la prestation en appliquant la formule de calcul prévue à l'article 15 de la Convention. Elle détermine le montant théorique et le montant effectif de la prestation due.",
-      "mots_cles": ["formule", "liquidation", "montant théorique", "montant effectif", "calcul"],
+      "mots_cles": [
+        "formule",
+        "liquidation"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -583,7 +887,10 @@
       "titre": "Traitement de la demande",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "L'institution compétente de chaque Partie Contractante traite la demande dans les meilleurs délais et communique sa décision aux institutions des autres Parties Contractantes concernées.",
-      "mots_cles": ["traitement", "demande", "délais", "décision", "communication"],
+      "mots_cles": [
+        "traitement",
+        "demande"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -591,7 +898,12 @@
       "titre": "Service provisionnel des prestations",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "Lorsque l'instruction de la demande nécessite un délai important, l'institution compétente peut servir une prestation provisionnelle calculée sur la base des seules périodes d'assurance accomplies sous sa propre législation. Le montant définitif est régularisé dès que les informations nécessaires ont été réunies.",
-      "mots_cles": ["service provisionnel", "prestation", "délai", "régularisation", "montant définitif"],
+      "mots_cles": [
+        "service",
+        "provisionnel",
+        "prestations",
+        "service provisionnel"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -599,7 +911,10 @@
       "titre": "Notification de la décision",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "L'institution compétente de chaque Partie Contractante notifie à l'intéressé la décision prise à son égard en précisant les voies et délais de recours prévus par la législation qu'elle applique. Elle transmet copie de cette notification aux institutions des autres Parties Contractantes concernées.",
-      "mots_cles": ["notification", "décision", "voies de recours", "délais de recours"],
+      "mots_cles": [
+        "notification",
+        "décision"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -607,7 +922,10 @@
       "titre": "Cas particulier de prestations",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "Lorsque les périodes d'assurance accomplies sous la législation d'une Partie Contractante sont insuffisantes pour ouvrir droit à prestation au titre de ladite législation, l'institution de cette Partie en informe l'intéressé et les institutions des autres Parties Contractantes concernées. Les périodes sont toutefois prises en compte par les autres institutions conformément aux dispositions de la Convention.",
-      "mots_cles": ["cas particulier", "périodes insuffisantes", "information", "prise en compte"],
+      "mots_cles": [
+        "particulier",
+        "prestations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -615,7 +933,10 @@
       "titre": "Notification des décisions",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "Les institutions des Parties Contractantes se notifient mutuellement toute décision prise en application de la Convention relative aux prestations de vieillesse, d'invalidité et de survivants, y compris les révisions, suspensions et suppressions.",
-      "mots_cles": ["notification", "décisions mutuelles", "révisions", "suspensions", "suppressions"],
+      "mots_cles": [
+        "notification",
+        "décisions"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -623,7 +944,10 @@
       "titre": "Reconstitution de carrière",
       "titre_section": "Arrangement administratif - Prestations de vieillesse, d'invalidité et de survivants",
       "contenu": "Lorsqu'un assuré a accompli des périodes d'assurance sous les législations de plusieurs Parties Contractantes, chaque institution procède à la reconstitution de sa carrière en totalisant l'ensemble des périodes certifiées par les autres institutions. Cette reconstitution est nécessaire pour la détermination du montant théorique de la prestation.",
-      "mots_cles": ["reconstitution", "carrière", "totalisation", "périodes certifiées", "montant théorique"],
+      "mots_cles": [
+        "reconstitution",
+        "carrière"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -631,7 +955,12 @@
       "titre": "Contrôle administratif et médical",
       "titre_section": "Arrangement administratif - Dispositions communes de service des prestations",
       "contenu": "Le contrôle administratif et médical des bénéficiaires de prestations résidant sur le territoire d'une Partie Contractante autre que l'État compétent est effectué par l'institution du lieu de résidence à la demande de l'institution compétente. Les résultats du contrôle sont transmis à l'institution compétente dans les meilleurs délais.",
-      "mots_cles": ["contrôle administratif", "contrôle médical", "résidence", "institution compétente", "transmission"],
+      "mots_cles": [
+        "contrôle",
+        "administratif",
+        "médical",
+        "contrôle administratif"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -639,7 +968,11 @@
       "titre": "Reprise du service des prestations",
       "titre_section": "Arrangement administratif - Dispositions communes de service des prestations",
       "contenu": "En cas de reprise du service d'une prestation qui avait été suspendue ou supprimée, l'institution compétente en informe l'institution du lieu de résidence et procède au versement des arrérages éventuellement dus.",
-      "mots_cles": ["reprise", "service", "prestations", "suspension", "arrérages"],
+      "mots_cles": [
+        "reprise",
+        "service",
+        "prestations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -647,7 +980,10 @@
       "titre": "Modalités de paiement",
       "titre_section": "Arrangement administratif - Dispositions communes de service des prestations",
       "contenu": "Les prestations en espèces sont payées directement au bénéficiaire par l'institution compétente, selon les modalités prévues par la législation qu'elle applique. Le paiement peut être effectué par l'intermédiaire de l'institution du lieu de résidence, selon les accords conclus entre les institutions concernées.",
-      "mots_cles": ["modalités de paiement", "prestations en espèces", "paiement direct", "intermédiaire"],
+      "mots_cles": [
+        "modalités",
+        "paiement"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -655,7 +991,10 @@
       "titre": "Notification des arrérages",
       "titre_section": "Arrangement administratif - Dispositions communes de service des prestations",
       "contenu": "L'institution compétente notifie au bénéficiaire le montant des arrérages dus et les modalités de leur versement. Elle en informe l'institution du lieu de résidence le cas échéant.",
-      "mots_cles": ["arrérages", "notification", "montant", "versement"],
+      "mots_cles": [
+        "notification",
+        "arrérages"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -663,7 +1002,11 @@
       "titre": "Mode de transfert des fonds",
       "titre_section": "Arrangement administratif - Dispositions communes de service des prestations",
       "contenu": "Les transferts de fonds nécessaires à l'application de la Convention et du présent Arrangement administratif sont effectués conformément aux dispositions des accords en vigueur entre les Parties Contractantes en matière de transferts de fonds. À défaut, les autorités compétentes conviennent des modalités de transfert.",
-      "mots_cles": ["transfert de fonds", "modalités", "accords", "autorités compétentes"],
+      "mots_cles": [
+        "mode",
+        "transfert",
+        "fonds"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -671,7 +1014,10 @@
       "titre": "Paiement des prestations",
       "titre_section": "Arrangement administratif - Dispositions communes de service des prestations",
       "contenu": "Les prestations sont payées dans la monnaie de la Partie Contractante dont l'institution est débitrice. Lorsque le bénéficiaire réside sur le territoire d'une autre Partie Contractante, le paiement est effectué dans la monnaie de cette dernière Partie, au taux de change en vigueur à la date du transfert.",
-      "mots_cles": ["paiement", "monnaie", "taux de change", "transfert"],
+      "mots_cles": [
+        "paiement",
+        "prestations"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -679,7 +1025,10 @@
       "titre": "Reddition de comptes",
       "titre_section": "Arrangement administratif - Dispositions communes de service des prestations",
       "contenu": "L'institution qui a servi des prestations pour le compte d'une autre institution établit un relevé des dépenses engagées et le transmet à l'institution débitrice pour remboursement, selon les modalités convenues entre les institutions ou les autorités compétentes.",
-      "mots_cles": ["reddition de comptes", "relevé", "dépenses", "remboursement"],
+      "mots_cles": [
+        "reddition",
+        "comptes"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -687,7 +1036,10 @@
       "titre": "Changement de résidence",
       "titre_section": "Arrangement administratif - Dispositions communes de service des prestations",
       "contenu": "Lorsqu'un bénéficiaire de prestations transfère sa résidence du territoire d'une Partie Contractante sur le territoire d'une autre Partie Contractante, il en informe l'institution débitrice. L'institution du nouveau lieu de résidence prend les dispositions nécessaires pour assurer la continuité du service des prestations.",
-      "mots_cles": ["changement de résidence", "transfert", "continuité", "service des prestations", "information"],
+      "mots_cles": [
+        "changement",
+        "résidence"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -695,7 +1047,12 @@
       "titre": "Formalités d'ouverture des droits en nature AT/MP",
       "titre_section": "Arrangement administratif - Accidents du travail et maladies professionnelles",
       "contenu": "Pour bénéficier des prestations en nature au titre d'un accident du travail ou d'une maladie professionnelle sur le territoire d'une Partie Contractante autre que l'État compétent, le travailleur présente à l'institution du lieu de résidence ou de séjour une attestation établie par l'institution compétente certifiant son droit aux prestations. En cas d'urgence, l'institution du lieu de résidence ou de séjour sert les prestations sur présentation d'une déclaration d'accident ou de maladie professionnelle.",
-      "mots_cles": ["formalités", "ouverture des droits", "prestations en nature", "AT/MP", "attestation", "urgence"],
+      "mots_cles": [
+        "formalités",
+        "ouverture",
+        "droits",
+        "nature"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -703,7 +1060,11 @@
       "titre": "Formalités relatives aux prestations en espèces AT/MP",
       "titre_section": "Arrangement administratif - Accidents du travail et maladies professionnelles",
       "contenu": "Les prestations en espèces dues au titre d'un accident du travail ou d'une maladie professionnelle sont servies directement par l'institution compétente au bénéficiaire, quel que soit son lieu de résidence. L'institution du lieu de résidence transmet à l'institution compétente les certificats médicaux et les rapports de contrôle nécessaires à la détermination et au maintien du droit aux prestations.",
-      "mots_cles": ["prestations en espèces", "AT/MP", "paiement direct", "certificats médicaux", "contrôle"],
+      "mots_cles": [
+        "formalités",
+        "prestations",
+        "espèces"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -711,7 +1072,10 @@
       "titre": "Échange d'informations AT/MP",
       "titre_section": "Arrangement administratif - Accidents du travail et maladies professionnelles",
       "contenu": "Les institutions des Parties Contractantes échangent toutes informations utiles concernant les accidents du travail et les maladies professionnelles survenus sur leur territoire respectif, y compris les données relatives aux conditions de l'accident, aux soins dispensés et à l'évolution de l'état de santé de la victime.",
-      "mots_cles": ["échange d'informations", "AT/MP", "données", "conditions", "soins", "état de santé"],
+      "mots_cles": [
+        "échange",
+        "informations"
+      ],
       "statut": "en vigueur"
     }
   ]

@@ -18,7 +18,20 @@
       "texte": [
         "Les dispositions du présent décret sont applicables aux sommes dues à titre de rémunération à toutes les personnes salariées ou travaillant pour un employeur du secteur public, semi-public ou privé, quels que soient le montant et la nature de leur rémunération, la forme et la nature de leur statut ou de leur contrat."
       ],
-      "mots_cles": ["saisie-arrêt", "rémunération", "salariés", "secteur public", "secteur privé"],
+      "mots_cles": [
+        "rémunération",
+        "public",
+        "nature",
+        "champ",
+        "présent",
+        "décret",
+        "applicables",
+        "sommes",
+        "dues",
+        "personnes",
+        "salariées",
+        "travaillant"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 - Règles générales"
     },
@@ -36,7 +49,20 @@
         "Toutefois, en cas de saisie-arrêt faite pour le paiement d'une pension alimentaire accordée par décision de justice, le montant de la créance alimentaire sera prélevé intégralement chaque mois sur la portion insaisissable de la rémunération.",
         "La portion saisissable pourra, le cas échéant, être retenue en sus pour sûreté des termes arriérés de la pension alimentaire."
       ],
-      "mots_cles": ["quotité saisissable", "tranches", "50.000 FCFA", "100.000 FCFA", "150.000 FCFA", "250.000 FCFA", "pension alimentaire"],
+      "mots_cles": [
+        "fcfa",
+        "portion",
+        "égale",
+        "supérieure",
+        "inférieure",
+        "alimentaire",
+        "saisissables",
+        "montant",
+        "saisissable",
+        "mois",
+        "pension",
+        "quotités"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 - Limitation de la saisie-arrêt"
     },
@@ -46,7 +72,20 @@
       "texte": [
         "Il doit être pris en considération dans le calcul de la retenue, non seulement la rémunération proprement dite, mais aussi tous les accessoires de ladite rémunération à l'exception des indemnités et sommes déclarées insaisissables par la loi, des remboursements de frais exposés par le travailleur et des allocations ou indemnités pour charges de famille."
       ],
-      "mots_cles": ["calcul", "retenue", "indemnités insaisissables", "charges de famille"],
+      "mots_cles": [
+        "calcul",
+        "retenue",
+        "rémunération",
+        "indemnités",
+        "éléments",
+        "être",
+        "pris",
+        "considération",
+        "seulement",
+        "proprement",
+        "dite",
+        "accessoires"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 - Limitation de la saisie-arrêt"
     },
@@ -57,7 +96,20 @@
         "La saisie-arrêt portant sur les rémunérations visées aux articles 1 et 3 ci-dessus ne peut, quel qu'en soit le montant, être pratiquée qu'après une tentative de conciliation devant le Président du Tribunal Populaire de village-centre ou de quartier du domicile du débiteur.",
         "À cet effet, sur réquisition du créancier, le greffier de la juridiction convoque le débiteur en observant les délais et les formalités prévus aux articles 11 à 15 du Code de procédure civile, commerciale, administrative et financière."
       ],
-      "mots_cles": ["conciliation", "saisie-arrêt", "tribunal"],
+      "mots_cles": [
+        "tentative",
+        "conciliation",
+        "débiteur",
+        "obligatoire",
+        "saisie",
+        "arrêt",
+        "portant",
+        "rémunérations",
+        "visées",
+        "quel",
+        "soit",
+        "montant"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -67,7 +119,20 @@
       "texte": [
         "Les règles édictées par les articles 20 à 22 du Code de procédure civile, commerciale, administrative et financière, sur la non-comparution des parties sont applicables à la procédure de la saisie-arrêt."
       ],
-      "mots_cles": ["non-comparution", "procédure"],
+      "mots_cles": [
+        "comparution",
+        "parties",
+        "procédure",
+        "règles",
+        "édictées",
+        "code",
+        "civile",
+        "commerciale",
+        "administrative",
+        "financière",
+        "applicables",
+        "saisie"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -81,7 +146,20 @@
         "Quand le débiteur ne se présente pas sur convocation remise en mains propres, le Président autorise également, et dans les mêmes formes, la saisie-arrêt.",
         "L'ordonnance ainsi rendue n'est susceptible d'aucune voie de recours."
       ],
-      "mots_cles": ["conciliation", "procès-verbal", "ordonnance", "autorisation"],
+      "mots_cles": [
+        "conciliation",
+        "président",
+        "procès",
+        "verbal",
+        "comparution",
+        "autorise",
+        "saisie",
+        "arrêt",
+        "ordonnance",
+        "tribunal",
+        "populaire",
+        "village"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -97,7 +175,20 @@
         "- 4° l'indication des portions saisissables telles que définies à l'article 2 ci-dessus ;",
         "- 5° l'invitation faite au tiers saisi d'adresser au greffe dans le délai d'un mois, par lettre recommandée, une déclaration contenant des renseignements précis sur la situation du débiteur saisi et, en particulier, sur sa rémunération au sens de l'article 3 du présent décret."
       ],
-      "mots_cles": ["notification", "tiers saisi", "ordonnance", "opposition"],
+      "mots_cles": [
+        "saisi",
+        "tiers",
+        "débiteur",
+        "délai",
+        "ordonnance",
+        "avis",
+        "rémunération",
+        "lettre",
+        "recommandée",
+        "notification",
+        "huitaine",
+        "partir"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -107,7 +198,16 @@
       "texte": [
         "Le débiteur peut continuer de percevoir du tiers-saisi la portion non saisie de sa rémunération."
       ],
-      "mots_cles": ["portion non saisie", "rémunération"],
+      "mots_cles": [
+        "portion",
+        "saisie",
+        "débiteur",
+        "continuer",
+        "percevoir",
+        "tiers",
+        "saisi",
+        "rémunération"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -117,7 +217,20 @@
       "texte": [
         "Lorsqu'une saisie-arrêt aura été pratiquée, s'il survient d'autres créanciers, leur intervention est instruite en suivant la même procédure que celle décrite ci-dessus."
       ],
-      "mots_cles": ["créanciers multiples", "intervention"],
+      "mots_cles": [
+        "intervention",
+        "créanciers",
+        "lorsqu",
+        "saisie",
+        "arrêt",
+        "aura",
+        "pratiquée",
+        "survient",
+        "instruite",
+        "suivant",
+        "même",
+        "procédure"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -127,7 +240,18 @@
       "texte": [
         "En cas de changement de domicile, le créancier saisissant ou intervenant doit déclarer au greffe son nouveau domicile."
       ],
-      "mots_cles": ["changement domicile", "déclaration"],
+      "mots_cles": [
+        "domicile",
+        "changement",
+        "créancier",
+        "saisissant",
+        "intervenant",
+        "déclarer",
+        "greffe",
+        "nouveau",
+        "créancier saisissant",
+        "nouveau domicile"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -139,7 +263,20 @@
         "Le président du Tribunal Populaire de village-centre ou de quartier peut aussi ordonner d'office cette convocation.",
         "Le tiers saisi qui, n'ayant pas fait sa déclaration par lettre recommandée conformément à l'alinéa 2 de l'article 7, ne comparaît pas ou qui refuse de faire sa déclaration à l'audience, ou qui a fait une déclaration reconnue mensongère, est déclaré débiteur pur et simple des retenues non opérées aux frais par lui occasionnés."
       ],
-      "mots_cles": ["contestation", "nullité", "main levée"],
+      "mots_cles": [
+        "déclaration",
+        "saisie",
+        "arrêt",
+        "débiteur",
+        "tiers",
+        "saisi",
+        "convocation",
+        "tribunal",
+        "populaire",
+        "village",
+        "centre",
+        "quartier"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -150,7 +287,20 @@
         "Dans les quinze jours qui suivent chaque trimestre à partir de l'avis qui lui a été envoyé en application de l'alinéa 1 de l'article 7 ou dans les quinze jours qui suivent la date à laquelle le débiteur a quitté son emploi, le tiers saisi doit verser à la section de recouvrement du Tribunal Populaire de village-centre ou de quartier le montant des sommes retenues. Il joint à son versement une note indicative des noms des parties, et la somme versée et de ses causes.",
         "Tout versement du tiers saisi est immédiatement signalé au greffier par la sanction de recouvrement."
       ],
-      "mots_cles": ["versement", "trimestriel", "recouvrement"],
+      "mots_cles": [
+        "versement",
+        "quinze",
+        "jours",
+        "suivent",
+        "tiers",
+        "saisi",
+        "recouvrement",
+        "trimestriel",
+        "trimestre",
+        "partir",
+        "avis",
+        "envoyé"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -164,7 +314,20 @@
         "Le tiers saisi dispose d'un délai de quinze jours à partir de la notification pour former opposition à l'ordonnance par déclaration au greffe. Il est statué sur cette opposition par le Tribunal Populaire de village-centre ou de quartier.",
         "L'ordonnance non frappée d'opposition dans le délai ci-dessus devient définitive et exécutoire."
       ],
-      "mots_cles": ["ordonnance", "contrainte", "opposition"],
+      "mots_cles": [
+        "ordonnance",
+        "tiers",
+        "saisi",
+        "opposition",
+        "être",
+        "délai",
+        "contrainte",
+        "effectué",
+        "versement",
+        "contraint",
+        "rendue",
+        "office"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -176,7 +339,20 @@
         "Le Président procède à la répartition entre les ayants-droit et dresse un procès-verbal indiquant le montant des frais à prélever, le montant des créances privilégiées, s'il en existe, et le montant des sommes attribuées à chaque ayant droit.",
         "Une expédition du procès-verbal de répartition est adressée dans les quarante-huit heures à la Section de Recouvrement aux fins de règlement des ayants-droits."
       ],
-      "mots_cles": ["répartition", "dividende", "créances privilégiées"],
+      "mots_cles": [
+        "répartition",
+        "sommes",
+        "montant",
+        "président",
+        "dividende",
+        "créances",
+        "privilégiées",
+        "frais",
+        "prélever",
+        "ayants",
+        "droit",
+        "procès"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -187,7 +363,20 @@
         "Le Président du Tribunal Populaire de village-centre ou de quartier qui a autorisé la saisie-arrêt reste compétent, même lorsque le débiteur aura transporté son domicile dans un autre ressort, tant qu'il n'aura pas procédé à une saisie dans le ressort du nouveau domicile contre le même débiteur entre les mains du même tiers saisi.",
         "Dès que le tiers saisi est avisé de la saisie-arrêt nouvelle, il doit en informer le greffier de l'ancien domicile du débiteur et il est fait par le Président une réparation des sommes déposées à la section de recouvrement qui met fin à la procédure dans l'ancien ressort."
       ],
-      "mots_cles": ["compétence territoriale", "changement domicile"],
+      "mots_cles": [
+        "saisie",
+        "même",
+        "débiteur",
+        "domicile",
+        "ressort",
+        "président",
+        "arrêt",
+        "aura",
+        "tiers",
+        "saisi",
+        "ancien",
+        "compétence"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -198,7 +387,20 @@
         "Les frais de saisie-arrêt et de répartition sont à la charge du débiteur saisi. Ils seront prélevés sur les sommes à distribuer.",
         "Tous frais de contestations jugée mal fondée seront mis à la charge de la partie qui aura succombé."
       ],
-      "mots_cles": ["frais", "charge du débiteur"],
+      "mots_cles": [
+        "frais",
+        "saisie",
+        "arrêt",
+        "charge",
+        "seront",
+        "répartition",
+        "débiteur",
+        "saisi",
+        "prélevés",
+        "sommes",
+        "distribuer",
+        "contestations"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -212,7 +414,20 @@
         "Dans tous les cas, un avis recommandé de radiation doit être adressé immédiatement par le greffier au tiers saisi.",
         "Le Président devra procéder chaque trimestre à une vérification du registre."
       ],
-      "mots_cles": ["registre", "greffe", "radiation", "mainlevée"],
+      "mots_cles": [
+        "registre",
+        "saisie",
+        "soit",
+        "spécial",
+        "président",
+        "greffe",
+        "être",
+        "décision",
+        "arrêt",
+        "tiers",
+        "saisi",
+        "greffier"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -222,7 +437,20 @@
       "texte": [
         "Sont abrogées toutes dispositions contraires au présent décret et notamment le décret n°55-972 du 16 juillet 1955 relatif aux saisies-arrêts, cessions et retenues sur les traitements ou salaires des travailleurs visés par l'article 1 de la loi n°52-1322 du 15 décembre 1952."
       ],
-      "mots_cles": ["abrogation"],
+      "mots_cles": [
+        "décret",
+        "abrogation",
+        "abrogées",
+        "contraires",
+        "présent",
+        "notamment",
+        "juillet",
+        "relatif",
+        "saisies",
+        "arrêts",
+        "cessions",
+        "retenues"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     },
@@ -232,7 +460,20 @@
       "texte": [
         "Le Garde des Sceaux, Ministre de la justice, le Ministre de l'intérieur, le Ministre des finances, le Ministre du travail et de la prévoyance sociale sont chargés, chacun en ce qui le concerne, de l'exécution du présent décret qui sera enregistré, publié au journal Officiel de la République Populaire du Congo et communiqué partout où besoin sera."
       ],
-      "mots_cles": ["exécution", "publication"],
+      "mots_cles": [
+        "ministre",
+        "exécution",
+        "sera",
+        "garde",
+        "sceaux",
+        "justice",
+        "intérieur",
+        "finances",
+        "prévoyance",
+        "sociale",
+        "chargés",
+        "chacun"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 - Procédure de la saisie-arrêt"
     }

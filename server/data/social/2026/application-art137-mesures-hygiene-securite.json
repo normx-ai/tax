@@ -21,7 +21,20 @@
         "Conformément à l'article 137 du Code du travail, le présent arrêté détermine les mesures générales d'hygiène et de sécurité applicables à tous les établissements appartenant à des entreprises agricoles, forestières, industrielles, commerciales ou de manutention et plus particulièrement les manufactures, fabriques, usines, chantiers, ateliers, laboratoires, cuisines, caves, magasins, boutiques, bureaux, les établissements de spectacle même si ils ont un caractère d'enseignement professionnel ou de bien aisance.",
         "Sont également soumis aux dispositions du présent arrêté les établissements similaires ressortissant aux administrations civiles publiques et militaires terrestres, maritimes et aériennes, offices publics et parapublics ou associations de quelque nature que ce soit."
       ],
-      "mots_cles": ["champ d'application", "hygiène", "sécurité", "entreprises", "administrations"],
+      "mots_cles": [
+        "établissements",
+        "arrêté",
+        "mesures",
+        "générales",
+        "hygiène",
+        "sécurité",
+        "applicables",
+        "entreprises",
+        "industrielles",
+        "commerciales",
+        "agricoles",
+        "forestières"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène"
     },
@@ -33,7 +46,20 @@
         "Le sol doit être nettoyé complètement au moins une fois par jour avant l'ouverture ou après la clôture, mais jamais pendant les heures de travail.",
         "Le nettoyage doit se faire soit par aspiration, soit par tous autres procédés ne soulevant pas de poussières. Le nettoyage à sec est formellement interdit."
       ],
-      "mots_cles": ["propreté", "nettoyage", "quotidien", "aspiration", "poussières"],
+      "mots_cles": [
+        "soit",
+        "propreté",
+        "être",
+        "nettoyage",
+        "lieux",
+        "emplacements",
+        "affectés",
+        "établissements",
+        "ainsi",
+        "dépendance",
+        "quelque",
+        "nature"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 1) Propreté et désinfection des lieux de travail"
     },
@@ -43,7 +69,18 @@
       "texte": [
         "Les murs et les plafonds doivent être fréquemment nettoyés, les enduits refaits toutes les fois qu'il est nécessaire."
       ],
-      "mots_cles": ["murs", "plafonds", "nettoyage", "enduits"],
+      "mots_cles": [
+        "murs",
+        "plafonds",
+        "être",
+        "fréquemment",
+        "nettoyés",
+        "enduits",
+        "refaits",
+        "fois",
+        "nécessaire",
+        "fréquemment nettoyés"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 1) Propreté et désinfection des lieux de travail"
     },
@@ -56,7 +93,20 @@
         "Un lessivage à fond avec la même solution devra être fait au moins une fois par an.",
         "Les résidus putrescibles ne doivent jamais séjourner dans les locaux affectés au travail et doivent être enlevés au fur et à mesure, à moins qu'ils ne soient déposés dans des récipients métalliques hermétiquement clos, vidés, lavés au moins une fois par jour."
       ],
-      "mots_cles": ["matières altérables", "imperméable", "désinfection", "résidus putrescibles"],
+      "mots_cles": [
+        "locaux",
+        "être",
+        "matières",
+        "altérables",
+        "chiffons",
+        "murs",
+        "solution",
+        "fois",
+        "traitées",
+        "organiques",
+        "ainsi",
+        "ceux"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 1) Propreté et désinfection des lieux de travail"
     },
@@ -67,7 +117,20 @@
         "L'atmosphère des ateliers et de tous les autres locaux affectés au travail doit être tenue constamment à l'abri de toute émanation provenant d'égout, fosses, puisards, fosses d'aisance ou de toute autre source d'infection.",
         "Dans les établissements qui déversent les eaux résiduaires ou de lavage dans un égout public ou privé, toute communication entre l'égout et l'établissement doit être munie d'un intercepteur hydraulique."
       ],
-      "mots_cles": ["atmosphère", "émanation", "égout", "fosses", "intercepteur hydraulique"],
+      "mots_cles": [
+        "égout",
+        "atmosphère",
+        "ateliers",
+        "être",
+        "fosses",
+        "locaux",
+        "affectés",
+        "tenue",
+        "constamment",
+        "abri",
+        "émanation",
+        "provenant"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
     },
@@ -78,7 +141,20 @@
         "Les éviers doivent être formés de matériaux imperméables et bien joints. Ils présenteront une pente suffisante dans la direction du tuyau d'écoulement et doivent être aménagés de façon à être inodores.",
         "Ils doivent être soigneusement nettoyés ainsi que leur canalisation au moins deux fois par semaine, au moyen d'une solution désinfectante."
       ],
-      "mots_cles": ["éviers", "imperméables", "inodores", "désinfection", "2 fois par semaine"],
+      "mots_cles": [
+        "être",
+        "éviers",
+        "imperméables",
+        "formés",
+        "matériaux",
+        "joints",
+        "présenteront",
+        "pente",
+        "suffisante",
+        "direction",
+        "tuyau",
+        "écoulement"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
     },
@@ -93,7 +169,20 @@
         "La pulvérisation des matières irritante et toxiques ou autres opérations telles que le tamisage et l'emballage de ces matières doivent se faire mécaniquement en appareils clos.",
         "L'air des ateliers doit être renouvelé de façon à rester dans l'état de pureté nécessaire à la santé des ouvriers."
       ],
-      "mots_cles": ["poussières", "gaz", "ventilation", "hottes", "mercure", "toxiques"],
+      "mots_cles": [
+        "être",
+        "poussières",
+        "appareils",
+        "toxiques",
+        "vapeurs",
+        "installé",
+        "appareil",
+        "communication",
+        "ventilation",
+        "matières",
+        "évacuation",
+        "ainsi"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
     },
@@ -104,7 +193,20 @@
         "Les travaux dans les puits, conduites de gaz, canaux de fumée, cuves, réservoirs, citernes, fosses, galeries et en tous lieux autres que les locaux destinés au travail où l'aération est insuffisante, ne doivent être entrepris qu'après assainissement de l'atmosphère par une ventilation efficace et, le cas échéant, après vidange du contenu.",
         "Pendant l'exécution de ces travaux, l'assainissement de l'atmosphère doit être maintenu soit par la ventilation naturelle, soit par l'introduction d'air neuf à raison de 30 mètres cubes au moins par heure et par personne occupée. Le volume d'air introduit par heure ne doit en aucun cas être inférieur au double du volume de l'atmosphère du lieu de travail."
       ],
-      "mots_cles": ["puits", "aération insuffisante", "ventilation", "30 mètres cubes", "assainissement"],
+      "mots_cles": [
+        "travaux",
+        "être",
+        "atmosphère",
+        "puits",
+        "locaux",
+        "aération",
+        "insuffisante",
+        "après",
+        "assainissement",
+        "ventilation",
+        "soit",
+        "heure"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
     },
@@ -115,7 +217,20 @@
         "Dans le cas où est reconnu impossible l'exécution des mesures de protection collective prévues ci-dessus, après accord de l'inspecteur du travail du ressort, des appareils de protection individuels appropriés doivent être mis à la disposition des travailleurs.",
         "Ces dispositifs doivent être maintenus en bon état de fonctionnement et désinfectés avant d'être attribués à un nouveau titulaire."
       ],
-      "mots_cles": ["protection individuelle", "appareils", "inspecteur du travail", "désinfection"],
+      "mots_cles": [
+        "protection",
+        "être",
+        "individuelle",
+        "reconnu",
+        "impossible",
+        "exécution",
+        "mesures",
+        "prévues",
+        "après",
+        "accord",
+        "inspecteur",
+        "ressort"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 2) Atmosphère"
     },
@@ -128,7 +243,20 @@
         "Un avis affiché dans chaque local de travail indique ses capacités en mètres cubes.",
         "Les locaux fermés affectés au travail doivent être largement aérés et munis de fenêtres ou autres ouvertures à châssis mobiles donnant directement sur le dehors. L'aération doit être suffisante pour empêcher une élévation exagérée de température."
       ],
-      "mots_cles": ["volume d'air", "7 m³", "10 m³", "aération", "fenêtres", "température"],
+      "mots_cles": [
+        "être",
+        "personne",
+        "mètres",
+        "cubes",
+        "volume",
+        "locaux",
+        "fermés",
+        "affectés",
+        "égal",
+        "supérieur",
+        "cube",
+        "employée"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 3) Ambiance et confort"
     },
@@ -143,7 +271,20 @@
         "L'éclairage doit être suffisant pour assurer la sécurité du travail et de la circulation.",
         "Les gardiens de chantiers doivent disposer d'un abri."
       ],
-      "mots_cles": ["sous-sol", "30 m³/heure", "air pur", "filtration", "éclairage", "gardiens"],
+      "mots_cles": [
+        "être",
+        "locaux",
+        "heure",
+        "local",
+        "volume",
+        "introduit",
+        "inférieur",
+        "situé",
+        "assurer",
+        "situés",
+        "mesures",
+        "prises"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 3) Ambiance et confort"
     },
@@ -154,7 +295,20 @@
         "Dans tous les établissements, un siège approprié doit être mis à la disposition de chaque ouvrier ou ouvrière ou employée à son poste dans tous les cas où la nature du travail sera compatible avec la station assise, continue ou intermittente.",
         "Tous les établissements doivent disposer de sièges et bancs en nombre correspondant aux postes de travail occupés par des ouvrières ou employées. Un règlement intérieur fixera les heures et les conditions de leur utilisation."
       ],
-      "mots_cles": ["siège", "poste de travail", "station assise", "ouvrières"],
+      "mots_cles": [
+        "siège",
+        "disposition",
+        "établissements",
+        "approprié",
+        "être",
+        "ouvrier",
+        "ouvrière",
+        "employée",
+        "poste",
+        "nature",
+        "sera",
+        "compatible"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 3) Ambiance et confort"
     },
@@ -165,7 +319,20 @@
         "Dans les établissements bruyants, des mesures doivent être prises pour protéger les travailleurs contre l'effet du bruit et des vibrations.",
         "L'intensité sonore au voisinage d'un poste de travail ne doit pas dépasser la valeur de 85 Décibels (Db)."
       ],
-      "mots_cles": ["bruit", "85 décibels", "vibrations", "protection"],
+      "mots_cles": [
+        "bruit",
+        "décibels",
+        "établissements",
+        "bruyants",
+        "mesures",
+        "être",
+        "prises",
+        "protéger",
+        "effet",
+        "vibrations",
+        "intensité",
+        "sonore"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
     },
@@ -175,7 +342,20 @@
       "texte": [
         "Les engins ou matériels motorisés, ne doivent pas émettre de bruits susceptibles de causer une gêne excessive par le fait de nuisance sonore. À cet effet, ils doivent être munis de dispositifs particuliers en bon état de fonctionnement, afin que le bruit émis par lesdits appareils n'excède pas le niveau admissible."
       ],
-      "mots_cles": ["engins motorisés", "bruit", "nuisance sonore", "niveau admissible"],
+      "mots_cles": [
+        "engins",
+        "motorisés",
+        "bruit",
+        "matériels",
+        "émettre",
+        "bruits",
+        "susceptibles",
+        "causer",
+        "gêne",
+        "excessive",
+        "nuisance",
+        "sonore"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
     },
@@ -185,7 +365,20 @@
       "texte": [
         "En plus des dispositifs de protection collective tant sur l'aménagement des postes de travail et de bâtiments, il est alloué en cas de besoin aux travailleurs un équipement de protection individuel reconnu efficace."
       ],
-      "mots_cles": ["équipement de protection", "individuel", "efficace"],
+      "mots_cles": [
+        "protection",
+        "équipement",
+        "individuelle",
+        "dispositifs",
+        "tant",
+        "aménagement",
+        "postes",
+        "bâtiments",
+        "alloué",
+        "besoin",
+        "individuel",
+        "reconnu"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
     },
@@ -195,7 +388,20 @@
       "texte": [
         "Les machines développant un bruit et des vibrations au-dessus des normes acceptables sont dans toute la mesure du possible, placé dans les locaux éloignés des autres postes de travail."
       ],
-      "mots_cles": ["machines bruyantes", "locaux éloignés", "vibrations"],
+      "mots_cles": [
+        "machines",
+        "locaux",
+        "éloignés",
+        "bruyantes",
+        "développant",
+        "bruit",
+        "vibrations",
+        "normes",
+        "acceptables",
+        "mesure",
+        "possible",
+        "placé"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
     },
@@ -205,7 +411,20 @@
       "texte": [
         "Les travailleurs exposés à une ambiance sonore nocive doivent obligatoirement faire l'objet d'un examen audiométrique périodique au moins deux fois par an."
       ],
-      "mots_cles": ["examen audiométrique", "2 fois par an", "ambiance sonore nocive"],
+      "mots_cles": [
+        "examen",
+        "audiométrique",
+        "exposés",
+        "ambiance",
+        "sonore",
+        "nocive",
+        "obligatoirement",
+        "objet",
+        "périodique",
+        "deux",
+        "fois",
+        "examen audiométrique"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 4) Ambiance sonore"
     },
@@ -219,7 +438,20 @@
         "Dans les établissements non visés à l'alinéa 2 ci-dessus, l'autorisation de prendre les repas dans les locaux affectés au travail pourra être accordée, après enquête et avis du comité d'hygiène et de sécurité d'entreprise par le directeur général du travail, sous réserve que l'employeur justifie que les opérations effectuées ne comportent pas l'emploi de substance toxiques, qu'elles ne donnent lieu à aucun dégagement de poussières ou de gaz incommodes, insalubres ou toxiques, que les autres conditions d'hygiène sont satisfaisantes.",
         "Les chefs d'établissements doivent mettre à la disposition du personnel de l'eau potable et fraîche."
       ],
-      "mots_cles": ["repas", "locaux de travail", "interdit", "cantine", "eau potable"],
+      "mots_cles": [
+        "repas",
+        "locaux",
+        "établissements",
+        "personnel",
+        "hygiène",
+        "prendre",
+        "affectés",
+        "pourra",
+        "mettre",
+        "disposition",
+        "être",
+        "toxiques"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 5) Repas et boissons"
     },
@@ -232,7 +464,20 @@
         "Ils ne doivent pas communiquer directement avec les locaux fermés où le personnel est appelé à séjourner, ils doivent être aménagés de manière à ne pas dégager d'odeur.",
         "Le sol et les parois doivent être en matériaux imperméables."
       ],
-      "mots_cles": ["cabinets d'aisance", "1 pour 40", "désinfection", "imperméable"],
+      "mots_cles": [
+        "être",
+        "cabinets",
+        "aisance",
+        "personnes",
+        "complètement",
+        "nettoyés",
+        "sauf",
+        "lorsqu",
+        "comportent",
+        "fosses",
+        "septiques",
+        "désinfectés"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 6) Installations sanitaires"
     },
@@ -242,7 +487,20 @@
       "texte": [
         "Les cabinets d'aisance, les urinoirs, ainsi que les vestiaires et les lavabos nettement séparés doivent être prévus pour le personnel masculin et le personnel féminin, ils doivent être tenus en état constant de propreté et nettoyés au moins une fois par jour. Ils doivent être bien aérés et convenablement éclairés."
       ],
-      "mots_cles": ["séparation", "masculin", "féminin", "vestiaires", "lavabos", "propreté"],
+      "mots_cles": [
+        "être",
+        "personnel",
+        "séparation",
+        "installations",
+        "sanitaires",
+        "sexe",
+        "cabinets",
+        "aisance",
+        "urinoirs",
+        "ainsi",
+        "vestiaires",
+        "lavabos"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 6) Installations sanitaires"
     },
@@ -253,7 +511,20 @@
         "Toutes dispositions utiles doivent être prises pour éviter, aux alentours des lieux de travail le pullulement des larves, notamment celles de moustiques.",
         "Des dispositions analogues doivent être prises pour éviter le pullulement des mouches dans les industries et commerces d'alimentation."
       ],
-      "mots_cles": ["moustiques", "mouches", "larves", "alimentation"],
+      "mots_cles": [
+        "moustiques",
+        "mouches",
+        "être",
+        "prises",
+        "éviter",
+        "pullulement",
+        "lutte",
+        "utiles",
+        "alentours",
+        "lieux",
+        "larves",
+        "notamment"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : Mesures générales d'hygiène - 6) Installations sanitaires"
     }

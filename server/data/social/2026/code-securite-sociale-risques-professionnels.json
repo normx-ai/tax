@@ -20,7 +20,20 @@
         "a) L'accident survenu à un travailleur pendant le trajet d'aller et retour entre : la résidence principale, une résidence secondaire présentant un caractère de stabilité et le lieu du travail ; tout autre lieu où le travailleur se rend de façon habituelle pour des motifs d'ordre familial et le lieu de travail ; le lieu du travail et le restaurant, la cantine ou d'une manière générale le lieu où le travailleur prend habituellement ses repas à condition que le parcours n'ait pas été interrompu ou détourné pour un motif dicté par l'intérêt personnel et étranger aux nécessités essentielles de la vie courante ou indépendante de l'emploi ;",
         "b) L'accident survenu pendant les voyages dont les frais sont mis à la charge de l'employeur en vertu de l'article 125 du Code du travail."
       ],
-      "mots_cles": ["accident du travail", "trajet", "définition", "présomptions"],
+      "mots_cles": [
+        "accident",
+        "lieu",
+        "survenu",
+        "résidence",
+        "définition",
+        "considéré",
+        "quelle",
+        "soit",
+        "cause",
+        "occasion",
+        "également",
+        "considérés"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Risques professionnels"
     },
@@ -33,7 +46,20 @@
         "3) La date de la première constatation médicale de la maladie professionnelle est assimilée à la date de l'accident.",
         "4) Les maladies qui se déclarent après la date à laquelle le travailleur a cessé d'être exposé au risque de la contacter donneront droit aux prestations si elles se déclarent dans les délais indiqués sur la liste prévue au paragraphe 1 du présent article."
       ],
-      "mots_cles": ["maladies professionnelles", "liste", "agents nocifs", "décret"],
+      "mots_cles": [
+        "maladies",
+        "liste",
+        "professionnelles",
+        "date",
+        "ministre",
+        "après",
+        "risque",
+        "déclarent",
+        "accidents",
+        "applicables",
+        "décret",
+        "pris"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2"
     },
@@ -45,7 +71,20 @@
         "2) L'employeur est tenu de déclarer à la Caisse dans un délai de quarante-huit heures, tout accident du travail ou toute maladie professionnelle dont sont victimes les salariés occupés à l'entreprise. Dans le cas d'un assuré en mission à l'étranger, ce délai est de quinze jours. La déclaration doit être faite dans la forme et selon les modalités qui seront déterminées par arrêté du Ministre chargé de la sécurité sociale, sur proposition du Conseil d'Administration de la Caisse.",
         "3) En cas de carence de l'employeur, la victime ou ses ayants droit peuvent faire la déclaration d'accident du travail ou de la maladie professionnelle jusqu'à l'expiration de la deuxième année suivant la date de l'accident ou de la première constatation médicale de la maladie professionnelle."
       ],
-      "mots_cles": ["déclaration", "48 heures", "employeur", "carence", "deux ans"],
+      "mots_cles": [
+        "accident",
+        "déclaration",
+        "maladie",
+        "professionnelle",
+        "victime",
+        "ayants",
+        "droit",
+        "assuré",
+        "caisse",
+        "délai",
+        "trajet",
+        "immédiatement"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2"
     },
@@ -59,7 +98,20 @@
         "- éventuellement de diriger la victime sur le Centre Médical d'entreprise ou interentreprises ou, à défaut, sur la formation sanitaire publique, ou l'établissement hospitalier public ou privé le plus proche du lieu de l'accident.",
         "Les soins de première urgence ainsi que le salaire de la journée au cours de laquelle le travail a été interrompu sont à la charge de l'employeur."
       ],
-      "mots_cles": ["premiers secours", "soins urgence", "employeur", "médecin"],
+      "mots_cles": [
+        "accident",
+        "soins",
+        "première",
+        "urgence",
+        "médecin",
+        "défaut",
+        "proche",
+        "obligations",
+        "tenu",
+        "survient",
+        "assurer",
+        "aviser"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2"
     },
@@ -69,7 +121,20 @@
       "texte": [
         "L'intervention de la Caisse en matière de prévention des accidents du travail et des maladies professionnelles s'exerce dans le cadre de la politique de prévention définie par le Ministre du travail, après avis de la Commission Nationale Consultative du Travail."
       ],
-      "mots_cles": ["prévention", "politique", "Caisse"],
+      "mots_cles": [
+        "prévention",
+        "caisse",
+        "intervention",
+        "matière",
+        "accidents",
+        "maladies",
+        "professionnelles",
+        "exerce",
+        "cadre",
+        "politique",
+        "définie",
+        "ministre"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Prévention"
     },
@@ -81,7 +146,20 @@
         "2) Sa composition et ses attributions seront déterminées par un arrêté du Ministre chargé de la sécurité sociale.",
         "3) Sur son initiative, le Conseil d'Administration de la Caisse peut proposer au Ministre chargé de la sécurité sociale de rendre obligatoire, par arrêté, l'application des mesures de prévention édictées par la Caisse."
       ],
-      "mots_cles": ["comité technique", "prévention", "accidents", "maladies professionnelles"],
+      "mots_cles": [
+        "prévention",
+        "chargé",
+        "comité",
+        "technique",
+        "proposer",
+        "arrêté",
+        "ministre",
+        "sécurité",
+        "sociale",
+        "caisse",
+        "créé",
+        "accidents"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Prévention"
     },
@@ -97,7 +175,20 @@
         "2) La Caisse peut, dans les conditions et les modalités de remboursement fixées par arrêté du Ministre chargé de la sécurité sociale, après avis du Conseil d'Administration, consentir aux Entreprises, des avances à taux réduit en vue de leur faciliter la réalisation d'aménagements destinés à assurer une meilleure protection des travailleurs.",
         "3) La Caisse peut également accorder des subventions ou des avances en vue de : a) récompenser toute initiative en matière de prévention d'hygiène et de sécurité ; b) créer et développer des institutions, œuvres ou services dont le but est de perfectionner ou de développer les méthodes de prévention, de réadaptation et de rééducation, des conditions d'hygiène et de sécurité et, plus généralement, d'exercer une action sanitaire et sociale."
       ],
-      "mots_cles": ["statistiques", "enquêtes", "publicité", "subventions", "prévention"],
+      "mots_cles": [
+        "prévention",
+        "caisse",
+        "sécurité",
+        "hygiène",
+        "avances",
+        "services",
+        "procéder",
+        "sanitaire",
+        "entreprises",
+        "méthodes",
+        "subventions",
+        "sociale"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Prévention"
     },
@@ -107,7 +198,20 @@
       "texte": [
         "Dans chaque atelier ou chantier, il sera disposé de manière apparente, par les soins du Chef d'Entreprise, une affiche, dont le modèle est fixé par arrêté du Ministre chargé de la sécurité sociale après avis du Conseil d'Administration de la Caisse, destinée à rappeler l'attention des travailleurs sur les dispositions essentielles de la réglementation en matière d'accident du travail et de maladies professionnelles."
       ],
-      "mots_cles": ["affichage", "atelier", "chantier", "réglementation"],
+      "mots_cles": [
+        "affichage",
+        "obligatoire",
+        "atelier",
+        "chantier",
+        "sera",
+        "disposé",
+        "manière",
+        "apparente",
+        "soins",
+        "chef",
+        "affiche",
+        "modèle"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Prévention"
     },
@@ -120,7 +224,20 @@
         "b) en cas d'incapacité permanente de travail totale ou partielle, une rente d'incapacité ;",
         "c) en cas de décès, une allocation de frais funéraires et une rente de survivants."
       ],
-      "mots_cles": ["prestations", "soins médicaux", "rente incapacité", "frais funéraires", "rente survivants"],
+      "mots_cles": [
+        "prestations",
+        "frais",
+        "incapacité",
+        "rente",
+        "nature",
+        "comprennent",
+        "soins",
+        "médicaux",
+        "nécessités",
+        "lésions",
+        "résultant",
+        "accident"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Prestations"
     },
@@ -135,7 +252,20 @@
         "d) la fourniture, l'entretien, la réparation et le renouvellement des appareils de prothèse et d'orthopédie nécessités par les lésions résultant, de l'accident du travail ;",
         "e) le transport de la victime du lieu de l'accident à la formation sanitaire la plus proche et vice-versa."
       ],
-      "mots_cles": ["soins médicaux", "frais médicaux", "hospitalisation", "prothèse", "transport"],
+      "mots_cles": [
+        "médicaux",
+        "soins",
+        "couverture",
+        "frais",
+        "examens",
+        "fourniture",
+        "accident",
+        "comprennent",
+        "chirurgicaux",
+        "dentaires",
+        "compris",
+        "radiographiques"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Prestations"
     },
@@ -148,7 +278,20 @@
         "L'hospitalisation des travailleurs accidentés et le traitement médical n'entrant pas dans le cadre de la médecine d'entreprise, ont obligatoirement lieu dans les centres médicaux créés par les entreprises dans le cadre de la médecine du travail, dans les formations sanitaires et hôpitaux publics, sauf dérogation spéciale accordée par la Caisse si lesdits centres médicaux, formations sanitaires et hôpitaux publics ne disposent pas de moyens appropriés.",
         "Le tarif d'hospitalisation est celui résultant d'une convention conclue entre les formations sanitaires et la Caisse Nationale de Sécurité Sociale."
       ],
-      "mots_cles": ["prise en charge", "Caisse", "hospitalisation", "convention", "tarif"],
+      "mots_cles": [
+        "cadre",
+        "médecine",
+        "caisse",
+        "formations",
+        "sanitaires",
+        "charge",
+        "prestations",
+        "lieu",
+        "hospitalisation",
+        "centres",
+        "médicaux",
+        "hôpitaux"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Prestations"
     },
@@ -158,7 +301,20 @@
       "texte": [
         "Le contrat de travail de toute victime d'accidents du travail ou de maladies professionnelles est suspendu du jour de l'accident jusqu'au jour de sa guérison ou de la consolidation de la blessure."
       ],
-      "mots_cles": ["suspension contrat", "accident", "guérison", "consolidation"],
+      "mots_cles": [
+        "jour",
+        "suspension",
+        "victime",
+        "accidents",
+        "maladies",
+        "professionnelles",
+        "suspendu",
+        "accident",
+        "jusqu",
+        "guérison",
+        "consolidation",
+        "blessure"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Incapacité temporaire"
     },
@@ -168,7 +324,20 @@
       "texte": [
         "En cas d'invalidité permanente, si le travailleur est atteint d'une réduction de capacité le rendant professionnellement inapte à son ancien emploi, l'employeur doit indépendamment des mesures prévues aux sections 1 et 2 du présent titre, s'efforcer de reclasser dans son entreprise en l'affectant à un poste correspondant à ses aptitudes."
       ],
-      "mots_cles": ["reclassement", "invalidité permanente", "poste adapté"],
+      "mots_cles": [
+        "invalidité",
+        "permanente",
+        "reclassement",
+        "atteint",
+        "réduction",
+        "capacité",
+        "rendant",
+        "professionnellement",
+        "inapte",
+        "ancien",
+        "emploi",
+        "indépendamment"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Incapacité temporaire"
     },
@@ -180,7 +349,20 @@
         "L'indemnité est payable pendant toute la période d'incapacité de travail qui précède la guérison, la consolidation de la lésion ou le décès du travailleur.",
         "La rémunération de la journée au cours de laquelle le travail a cessé est intégralement à la charge de l'employeur."
       ],
-      "mots_cles": ["indemnité journalière", "incapacité temporaire", "arrêt de travail"],
+      "mots_cles": [
+        "incapacité",
+        "indemnité",
+        "journalière",
+        "temporaire",
+        "dûment",
+        "constatée",
+        "autorité",
+        "médicale",
+        "compétente",
+        "victime",
+        "droit",
+        "jour"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Incapacité temporaire"
     },
@@ -195,7 +377,20 @@
         "Le salaire servant au calcul de l'indemnité d'incapacité temporaire et des rentes comprend l'ensemble des salaires ou gains indemnités, primes gratifications ou tous autres avantages en espèces perçus par le Travailleur pendant la période considérée, compte tenu s'il y a lieu, des avantages en nature et des pourboires, à l'exception des frais professionnels, des indemnités de représentation, du remboursement de frais, des prestations familiales et des prestations d'accident du travail.",
         "Pour le calcul de l'indemnité journalière, le salaire journalier est le salaire journalier moyen perçu par le travailleur pendant les trente jours précédant l'accident ; il est obtenu en divisant le montant du salaire perçu pendant cette période par le nombre de jours ouvrables contenus dans ladite période."
       ],
-      "mots_cles": ["calcul", "indemnité journalière", "2/3 salaire", "30 jours", "salaire journalier moyen"],
+      "mots_cles": [
+        "salaire",
+        "indemnité",
+        "jours",
+        "accident",
+        "journalière",
+        "période",
+        "journalier",
+        "calcul",
+        "ouvrables",
+        "incapacité",
+        "soit",
+        "toutefois"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Incapacité temporaire"
     },
@@ -205,7 +400,20 @@
       "texte": [
         "Lors de la fixation de la rente, la Caisse peut, si elle estime que l'accident est dû à une faute inexcusable de la victime, diminuer la rente sauf recours du bénéficiaire devant la juridiction compétente."
       ],
-      "mots_cles": ["faute inexcusable", "victime", "diminution rente"],
+      "mots_cles": [
+        "faute",
+        "inexcusable",
+        "victime",
+        "rente",
+        "fixation",
+        "caisse",
+        "estime",
+        "accident",
+        "diminuer",
+        "sauf",
+        "recours",
+        "bénéficiaire"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Faute inexcusable"
     },
@@ -217,7 +425,20 @@
         "Le montant de la majoration est fixé par arrêté du Ministre chargé de la sécurité sociale après avis de la Commission Nationale consultative du Travail sans que la rente ou le total des rentes allouées puisse dépasser soit la fraction du salaire annuel correspondant à la réduction de la capacité, soit le montant de ce salaire.",
         "La majoration est payée par la Caisse qui en récupère le montant au moyen d'une cotisation supplémentaire imposée à l'employeur."
       ],
-      "mots_cles": ["faute inexcusable", "employeur", "majoration", "cotisation supplémentaire"],
+      "mots_cles": [
+        "montant",
+        "faute",
+        "inexcusable",
+        "majoration",
+        "soit",
+        "salaire",
+        "accident",
+        "préposés",
+        "indemnités",
+        "dues",
+        "victime",
+        "ayants"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Faute inexcusable"
     },
@@ -227,7 +448,20 @@
       "texte": [
         "En cas d'incapacité permanente dûment constatée par le Médecin désigné ou agréé par la Caisse, la Victime a droit à une rente d'incapacité permanente lorsque le degré de l'incapacité est au moins égal à dix pour cent ou à un capital de rachat versé en une seule fois lorsque le degré de l'incapacité est inférieur à dix pour cent."
       ],
-      "mots_cles": ["rente", "incapacité permanente", "10%", "capital rachat"],
+      "mots_cles": [
+        "incapacité",
+        "permanente",
+        "rente",
+        "degré",
+        "cent",
+        "dûment",
+        "constatée",
+        "médecin",
+        "désigné",
+        "agréé",
+        "caisse",
+        "victime"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Incapacité permanente"
     },
@@ -241,7 +475,20 @@
         "3) Ascendants et autres catégories de successibles : 20 % du salaire annuel de la victime ayant servi de base au calcul de la rente aux ascendants ou autres catégories de successibles, tels qu'énumérés à l'article 462 du Code de la famille.",
         "En aucun cas, le salaire annuel pris en compte pour le calcul des rentes de survivants, ne peut dépasser 85 % du salaire annuel de la victime tel que défini par la présente loi."
       ],
-      "mots_cles": ["rente survivants", "conjoint 30%", "enfants 50%", "ascendants 20%", "85% plafond"],
+      "mots_cles": [
+        "victime",
+        "rente",
+        "salaire",
+        "annuel",
+        "calcul",
+        "ayant",
+        "servi",
+        "base",
+        "survivants",
+        "code",
+        "famille",
+        "conjoint"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Incapacité permanente"
     },
@@ -251,7 +498,20 @@
       "texte": [
         "Le degré de l'incapacité permanente est déterminé d'après la nature de l'infirmité, l'état général, l'âge, les facultés physiques et mentales de la victime, ainsi que d'après ses aptitudes professionnelles sur la base d'un barème indicatif d'invalidité établi par arrêté du Ministre chargé de la sécurité sociale. Les travailleurs étrangers victimes d'accidents du travail et qui cessent de résider sur le territoire national reçoivent pour indemnité, un capital égal à trois fois le montant de la rente annuelle qui leur a été allouée sauf cas de convention de réciprocité en matière de sécurité sociale."
       ],
-      "mots_cles": ["degré incapacité", "barème", "invalidité", "travailleurs étrangers", "capital"],
+      "mots_cles": [
+        "degré",
+        "incapacité",
+        "permanente",
+        "après",
+        "sécurité",
+        "sociale",
+        "déterminé",
+        "nature",
+        "infirmité",
+        "état",
+        "général",
+        "facultés"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Incapacité permanente"
     },
@@ -261,7 +521,20 @@
       "texte": [
         "Lorsque l'accident du travail est suivi du décès de la victime, les frais funéraires sont supportés par la Caisse dans la limite des frais exposés et sans que leur montant puisse excéder un maximum fixé par arrêté du Ministre chargé de la sécurité sociale après avis du Conseil d'Administration de la Caisse."
       ],
-      "mots_cles": ["frais funéraires", "décès", "Caisse", "maximum"],
+      "mots_cles": [
+        "frais",
+        "funéraires",
+        "caisse",
+        "accident",
+        "suivi",
+        "décès",
+        "victime",
+        "supportés",
+        "limite",
+        "exposés",
+        "montant",
+        "puisse"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Décès"
     },
@@ -272,7 +545,20 @@
         "Si le décès s'est produit au cours d'un déplacement de la victime pour son travail hors de sa résidence ou si la victime a quitté la résidence à la demande de son employeur en vue de son engagement, la Caisse supporte les frais de transport du corps jusqu'au lieu de résidence.",
         "Les frais funéraires sont remboursés aux intéressés sur présentation de pièces justificatives."
       ],
-      "mots_cles": ["transport du corps", "déplacement", "frais funéraires", "remboursement"],
+      "mots_cles": [
+        "résidence",
+        "transport",
+        "corps",
+        "victime",
+        "frais",
+        "décès",
+        "produit",
+        "cours",
+        "déplacement",
+        "hors",
+        "quitté",
+        "demande"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 - Prestations / Chapitre 2 - Décès"
     }

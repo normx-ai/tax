@@ -19,7 +19,20 @@
         "Le siège de l'agence congolaise pour l'emploi est fixé à Brazzaville.",
         "Toutefois, il peut, en cas de besoin, être transféré en tout autre lieu du territoire national par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["ACPE", "création", "établissement public", "Brazzaville"],
+      "mots_cles": [
+        "acpe",
+        "agence",
+        "congolaise",
+        "emploi",
+        "création",
+        "créé",
+        "établissement",
+        "public",
+        "caractère",
+        "administratif",
+        "doté",
+        "personnalité"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -28,7 +41,17 @@
       "texte": [
         "L'agence congolaise pour l'emploi est placée sous la tutelle du Ministre chargé de l'emploi."
       ],
-      "mots_cles": ["tutelle", "Ministre de l'emploi"],
+      "mots_cles": [
+        "tutelle",
+        "emploi",
+        "agence",
+        "congolaise",
+        "placée",
+        "ministre",
+        "chargé",
+        "agence congolaise",
+        "ministre chargé"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -47,7 +70,20 @@
         "- mettre en relation les offres et les demandes d'emploi ;",
         "- contrôler les sociétés privées de placement des demandeurs d'emploi, intermédiaires du marché du travail."
       ],
-      "mots_cles": ["missions", "emploi", "placement", "statistiques", "cartes de travail"],
+      "mots_cles": [
+        "emploi",
+        "demandeurs",
+        "contrôler",
+        "placement",
+        "missions",
+        "assurer",
+        "mettre",
+        "postes",
+        "nationaux",
+        "sociétés",
+        "privées",
+        "acpe"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -62,7 +98,20 @@
         "- les dons et legs ;",
         "- toutes contributions se rapportant à ses missions."
       ],
-      "mots_cles": ["ressources", "financement", "taxe sur salaires", "subvention"],
+      "mots_cles": [
+        "ressources",
+        "emploi",
+        "acpe",
+        "agence",
+        "congolaise",
+        "constituées",
+        "subvention",
+        "état",
+        "quote",
+        "part",
+        "produit",
+        "taxe"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -71,7 +120,20 @@
       "texte": [
         "La structure en charge de la sécurité sociale recouvre, pour le compte de l'agence congolaise pour l'emploi, la quote-part du produit de la taxe unique sur les salaires, au titre de la cotisation patronale, affectée à son fonctionnement."
       ],
-      "mots_cles": ["recouvrement", "sécurité sociale", "taxe sur salaires"],
+      "mots_cles": [
+        "sécurité",
+        "sociale",
+        "recouvrement",
+        "structure",
+        "charge",
+        "recouvre",
+        "compte",
+        "agence",
+        "congolaise",
+        "emploi",
+        "quote",
+        "part"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -81,7 +143,20 @@
         "L'agence congolaise pour l'emploi est administrée par un comité de direction et gérée par une direction générale.",
         "La direction générale de l'agence congolaise pour l'emploi est dirigée et animée par un directeur général, nommé par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["administration", "comité de direction", "direction générale"],
+      "mots_cles": [
+        "direction",
+        "agence",
+        "congolaise",
+        "emploi",
+        "générale",
+        "administration",
+        "administrée",
+        "comité",
+        "gérée",
+        "dirigée",
+        "animée",
+        "directeur"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -90,7 +165,20 @@
       "texte": [
         "Les attributions, l'organisation et le fonctionnement des organes d'administration et de gestion de l'agence congolaise pour l'emploi sont fixés par des statuts approuvés par décret en Conseil des Ministres."
       ],
-      "mots_cles": ["statuts", "décret"],
+      "mots_cles": [
+        "statuts",
+        "attributions",
+        "organisation",
+        "fonctionnement",
+        "organes",
+        "administration",
+        "gestion",
+        "agence",
+        "congolaise",
+        "emploi",
+        "fixés",
+        "approuvés"
+      ],
       "statut": "en vigueur"
     },
     {
@@ -99,7 +187,20 @@
       "texte": [
         "La présente loi, qui abroge toutes dispositions antérieures contraires, notamment celles de la loi n°022-88 du 17 septembre 1988, sera publiée au Journal officiel et exécutée comme loi de l'État."
       ],
-      "mots_cles": ["abrogation", "ONEMO", "publication"],
+      "mots_cles": [
+        "abrogation",
+        "publication",
+        "présente",
+        "abroge",
+        "antérieures",
+        "contraires",
+        "notamment",
+        "celles",
+        "septembre",
+        "sera",
+        "publiée",
+        "journal"
+      ],
       "statut": "en vigueur"
     }
   ]

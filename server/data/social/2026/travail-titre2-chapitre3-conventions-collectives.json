@@ -21,7 +21,20 @@
         "La convention peut mentionner des dispositions plus favorables aux travailleurs que celles des lois et règlements en vigueur. Elle ne peut déroger aux dispositions d'ordre public définies par ces lois et règlements.",
         "Les conventions collectives déterminent leur champ d'application. Celui-ci peut être national, régional ou local."
       ],
-      "mots_cles": ["convention collective", "accord", "syndicats", "employeurs", "conditions de travail", "champ d'application"],
+      "mots_cles": [
+        "plusieurs",
+        "part",
+        "lois",
+        "règlements",
+        "définition",
+        "accord",
+        "relatif",
+        "conclu",
+        "représentants",
+        "syndicats",
+        "groupements",
+        "professionnels"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : De la nature et de la validité de la convention"
     },
@@ -34,7 +47,20 @@
         "À défaut, pour être valable, la convention collective doit être ratifiée par une délibération spéciale de ce groupement.",
         "Les groupements déterminent eux-mêmes leur mode de délibération."
       ],
-      "mots_cles": ["capacité", "contracter", "syndicat", "délibération", "ratification"],
+      "mots_cles": [
+        "organisation",
+        "délibération",
+        "contracter",
+        "groupement",
+        "soit",
+        "spéciale",
+        "être",
+        "capacité",
+        "représentants",
+        "organisations",
+        "syndicales",
+        "professionnel"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : De la nature et de la validité de la convention"
     },
@@ -48,7 +74,20 @@
         "La convention collective doit prévoir dans quelles formes et à quelle époque elle pourra être dénoncée, renouvelée ou révisée. La convention collective doit prévoir notamment la durée du préavis qui doit précéder la dénonciation.",
         "Tout syndicat professionnel ou tout employeur qui ne fait pas partie de la convention peut y adhérer ultérieurement."
       ],
-      "mots_cles": ["durée", "convention collective", "5 ans", "dénonciation", "renouvellement", "adhésion"],
+      "mots_cles": [
+        "durée",
+        "déterminée",
+        "indéterminée",
+        "être",
+        "prévoir",
+        "applicable",
+        "quand",
+        "conclue",
+        "celle",
+        "supérieure",
+        "défaut",
+        "stipulation"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : De la nature et de la validité de la convention"
     },
@@ -61,7 +100,20 @@
         "Les conventions collectives sont applicables, sauf stipulation contraire, à partir du jour qui suit leur dépôt dans les conditions et aux lieux qui seront indiqués par l'arrêté susvisé. Elles feront l'objet d'une publication, sans frais, au Journal officiel.",
         "[NB - Voir l'arrêté n°789/MTSS du 6 septembre 1999 déterminant les conditions de dépôt, de publication et de traduction des conventions collectives ainsi que les conditions d'adhésion à ces conventions, page 76]"
       ],
-      "mots_cles": ["forme écrite", "nullité", "dépôt", "publication", "Journal officiel", "arrêté"],
+      "mots_cles": [
+        "conventions",
+        "dépôt",
+        "arrêté",
+        "collectives",
+        "écrite",
+        "lesquelles",
+        "ainsi",
+        "publication",
+        "forme",
+        "être",
+        "peine",
+        "nullité"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : De la nature et de la validité de la convention"
     },
@@ -73,7 +125,20 @@
         "Lorsque l'employeur est lié par les clauses de la convention collective de travail, ces clauses s'appliquent aux contrats de travail conclus avec lui.",
         "Dans tout établissement compris dans le champ d'application d'une convention collective, les dispositions de cette convention s'imposent, sauf dispositions plus favorables pour les travailleurs, aux rapports nés des contrats individuels."
       ],
-      "mots_cles": ["obligation", "convention collective", "membres", "adhésion", "contrats individuels", "dispositions favorables"],
+      "mots_cles": [
+        "personnes",
+        "soumises",
+        "membres",
+        "organisations",
+        "clauses",
+        "contrats",
+        "obligations",
+        "signée",
+        "donnent",
+        "adhésion",
+        "ainsi",
+        "ceux"
+      ],
       "statut": "en vigueur",
       "section": "Section 1 : De la nature et de la validité de la convention"
     },
@@ -86,7 +151,20 @@
         "Des conventions annexes pourront être conclues pour chacune des principales catégories professionnelles ; et contiendront les conditions particulières du travail à ces catégories et seront discutées par les représentants des organisations syndicales les plus représentatives des catégories intéressées.",
         "Si une commission mixte n'arrive pas à se mettre d'accord sur une ou plusieurs des dispositions à introduire dans la convention, l'inspecteur du travail doit, à la demande de l'une des parties, intervenir pour faciliter la réalisation de cet accord."
       ],
-      "mots_cles": ["commission mixte", "extension", "convention collective", "branche d'activité", "organisations syndicales", "représentativité"],
+      "mots_cles": [
+        "commission",
+        "mixte",
+        "organisations",
+        "syndicales",
+        "représentatives",
+        "représentants",
+        "catégories",
+        "demande",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "part"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conventions collectives susceptibles d'extension et de la procédure d'extension"
     },
@@ -121,7 +199,20 @@
         "- 10° l'organisation, la gestion et le financement des services sociaux et médico-sociaux ;",
         "- 11° les conditions particulières du travail ; travaux par roulement, travaux durant le repos hebdomadaire et durant les jours fériés."
       ],
-      "mots_cles": ["contenu obligatoire", "convention collective", "salaires", "heures supplémentaires", "préavis", "congés payés", "ancienneté", "licenciement", "droit syndical"],
+      "mots_cles": [
+        "lieu",
+        "primes",
+        "indemnité",
+        "rémunération",
+        "travaux",
+        "conventions",
+        "susceptibles",
+        "concernant",
+        "libre",
+        "catégories",
+        "modalités",
+        "jours"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conventions collectives susceptibles d'extension et de la procédure d'extension"
     },
@@ -132,7 +223,20 @@
         "Dans le cas où une convention collective concernant une branche d'activité déterminée a été conclue sur le plan national, les conventions collectives conclues sur le plan inférieur, régional ou local, adaptent cette convention ou certaines de ses dispositions aux conditions particulières de travail existant sur le plan inférieur.",
         "Elles peuvent prévoir des dispositions nouvelles et des clauses plus favorables aux travailleurs."
       ],
-      "mots_cles": ["adaptation", "convention nationale", "régional", "local", "dispositions favorables"],
+      "mots_cles": [
+        "plan",
+        "conventions",
+        "inférieur",
+        "adaptation",
+        "locale",
+        "nationales",
+        "concernant",
+        "branche",
+        "activité",
+        "déterminée",
+        "conclue",
+        "national"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conventions collectives susceptibles d'extension et de la procédure d'extension"
     },
@@ -143,7 +247,20 @@
         "À la demande de l'une des organisations syndicales les plus représentatives ou à l'initiative du Ministre du travail et de la prévoyance sociale, les dispositions des conventions collectives répondant aux conditions déterminées par la présente section peuvent être rendues obligatoires pour tous les employeurs et travailleurs compris dans le champ d'application professionnel et territorial de la convention collective, par décret pris après avis motivé de la Commission Nationale Consultative du travail.",
         "Cette extension des effets et des sanctions de la convention collective se fera pour la durée et aux conditions prévues par ladite convention."
       ],
-      "mots_cles": ["extension", "convention collective", "décret", "obligatoire", "Commission Nationale Consultative"],
+      "mots_cles": [
+        "extension",
+        "demande",
+        "organisations",
+        "syndicales",
+        "représentatives",
+        "initiative",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "conventions",
+        "collectives",
+        "répondant"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conventions collectives susceptibles d'extension et de la procédure d'extension"
     },
@@ -153,7 +270,20 @@
       "texte": [
         "Toutefois, le décret prévu au présent article peut extraire de la convention, sans en modifier l'économie, après avis motivé de la Commission Nationale Consultative du travail, les clauses qui ne répondraient pas à la situation de la branche d'activité dans le champ d'application considéré. Par ailleurs doivent être exclues de l'extension les dispositions qui seraient en contradiction avec les textes législatifs ou réglementaires en vigueur."
       ],
-      "mots_cles": ["retrait", "clauses", "extension", "contradiction", "législation"],
+      "mots_cles": [
+        "clauses",
+        "retrait",
+        "toutefois",
+        "décret",
+        "prévu",
+        "présent",
+        "extraire",
+        "modifier",
+        "économie",
+        "après",
+        "avis",
+        "motivé"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conventions collectives susceptibles d'extension et de la procédure d'extension"
     },
@@ -164,7 +294,20 @@
         "Le décret prévu à l'article précédent cessera d'avoir effet lorsque la convention collective aura cessé d'être en vigueur entre les parties par suite de sa dénonciation ou de son non-renouvellement.",
         "Par décret, pris après avis motivé de la commission nationale consultative du travail, à la demande de l'une des parties signataires ou à l'initiative du Ministre du travail et de la prévoyance sociale, il peut être mis fin à l'extension de la convention collective ou de certaines de ses dispositions lorsque les dispositions considérées ne paraissent plus répondre à la situation de la branche d'activité dans le champ d'application territorial considéré."
       ],
-      "mots_cles": ["fin extension", "dénonciation", "non-renouvellement", "décret"],
+      "mots_cles": [
+        "extension",
+        "décret",
+        "être",
+        "parties",
+        "prévu",
+        "précédent",
+        "cessera",
+        "avoir",
+        "effet",
+        "aura",
+        "cessé",
+        "suite"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conventions collectives susceptibles d'extension et de la procédure d'extension"
     },
@@ -174,7 +317,20 @@
       "texte": [
         "Un décret, pris après avis motivé de la commission nationale consultative du travail, peut, à défaut ou en attendant l'établissement d'une convention ou d'un accord collectif d'établissement, réglementer les conditions de travail pour une profession déterminée en s'inspirant des conventions collectives déjà en vigueur."
       ],
-      "mots_cles": ["décret", "réglementation", "conditions de travail", "profession"],
+      "mots_cles": [
+        "décret",
+        "établissement",
+        "réglementation",
+        "pris",
+        "après",
+        "avis",
+        "motivé",
+        "commission",
+        "nationale",
+        "consultative",
+        "défaut",
+        "attendant"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conventions collectives susceptibles d'extension et de la procédure d'extension"
     },
@@ -186,7 +342,20 @@
         "Le projet d'extension ou de retrait d'extension d'une convention collective fait l'objet d'un avis publié sans frais au Journal officiel (partie non officielle). Le texte « extenso » de ladite convention est annexé à cet avis. Le texte est également communiqué aux syndicats et groupements professionnels intéressés.",
         "Avant l'expiration d'un délai de 45 jours qui suit la date de publication de l'avis au Journal officiel, les syndicats, les groupements professionnels et toutes personnes intéressées adressent au Ministre du travail et de la prévoyance sociale leurs observations sur les clauses de la convention dont l'extension ou le retrait est envisagé et leur avis sur l'opportunité de l'extension ou du retrait de tout ou partie de ses dispositions en considération de la situation de la branche d'activité considérée."
       ],
-      "mots_cles": ["consultation", "extension", "retrait", "Journal officiel", "45 jours", "observations"],
+      "mots_cles": [
+        "extension",
+        "retrait",
+        "avis",
+        "consultation",
+        "projet",
+        "personnes",
+        "intéressées",
+        "journal",
+        "officiel",
+        "texte",
+        "syndicats",
+        "groupements"
+      ],
       "statut": "en vigueur",
       "section": "Section 2 : Des conventions collectives susceptibles d'extension et de la procédure d'extension"
     },
@@ -197,7 +366,20 @@
         "Des accords concernant un ou plusieurs établissements déterminés peuvent être conclus entre, d'une part, un employeur ou un groupement d'employeurs et d'autre part, des représentants des syndicats les plus représentatifs du personnel de l'établissement ou des établissements intéressés.",
         "Les accords d'établissements ont pour objet d'adapter aux conditions particulières de l'établissement ou des établissements considérés les dispositions des conventions collectives nationales, notamment les conditions d'attribution et le mode de calcul de la rémunération au rendement, des primes à la production individuelle et collective et des primes à la productivité."
       ],
-      "mots_cles": ["accords d'établissement", "adaptation", "convention collective", "rémunération", "primes", "productivité"],
+      "mots_cles": [
+        "établissements",
+        "accords",
+        "établissement",
+        "part",
+        "primes",
+        "collectifs",
+        "concernant",
+        "plusieurs",
+        "déterminés",
+        "peuvent",
+        "être",
+        "conclus"
+      ],
       "statut": "en vigueur",
       "section": "Section 3 : Des accords collectifs d'établissement"
     },
@@ -207,7 +389,20 @@
       "texte": [
         "Lorsque le personnel des services, entreprises et établissements publics, n'est pas soumis à un statut législatif ou réglementaire particulier, des conventions collectives peuvent être conclues conformément aux dispositions du présent chapitre."
       ],
-      "mots_cles": ["services publics", "établissements publics", "convention collective", "statut"],
+      "mots_cles": [
+        "conventions",
+        "collectives",
+        "services",
+        "publics",
+        "personnel",
+        "entreprises",
+        "établissements",
+        "soumis",
+        "statut",
+        "législatif",
+        "réglementaire",
+        "particulier"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Des conventions collectives dans les services, entreprises et établissements publics"
     },
@@ -217,7 +412,20 @@
       "texte": [
         "Lorsqu'une convention collective fait l'objet d'un décret portant extension, pris en application de l'article 58, elle est, en l'absence de dispositions contraires, applicables aux services, entreprises et établissements publics visés par la présente section qui, en raison de leur nature et de leur activité, se trouvent placés dans son champ d'application."
       ],
-      "mots_cles": ["extension", "services publics", "décret", "champ d'application"],
+      "mots_cles": [
+        "extension",
+        "services",
+        "publics",
+        "lorsqu",
+        "objet",
+        "décret",
+        "portant",
+        "pris",
+        "absence",
+        "contraires",
+        "applicables",
+        "entreprises"
+      ],
       "statut": "en vigueur",
       "section": "Section 4 : Des conventions collectives dans les services, entreprises et établissements publics"
     },
@@ -227,7 +435,20 @@
       "texte": [
         "Les groupements de travailleurs ou d'employeurs liés par une convention collective ou un accord prévu à l'article 62 ci-dessus sont tenus de ne rien faire, qui soit de nature à en compromettre la loyale exécution. Ils ne sont garants de cette exécution que dans la mesure déterminée par la convention."
       ],
-      "mots_cles": ["loyale exécution", "obligation", "groupements", "convention collective"],
+      "mots_cles": [
+        "exécution",
+        "loyale",
+        "obligation",
+        "groupements",
+        "liés",
+        "accord",
+        "prévu",
+        "tenus",
+        "rien",
+        "soit",
+        "nature",
+        "compromettre"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De l'exécution de la convention collective"
     },
@@ -237,7 +458,20 @@
       "texte": [
         "Les groupements capables d'ester en justice, liés par une convention collective de travail ou l'accord prévu à l'article 62 ci-dessus, peuvent, en leur nom propre, intenter une action en dommages-intérêts à tous autres groupements, à leurs propres membres ou à toutes personnes liées par la convention ou l'accord, qui en violeraient les engagements contractés."
       ],
-      "mots_cles": ["action en justice", "dommages-intérêts", "groupements", "violation"],
+      "mots_cles": [
+        "groupements",
+        "action",
+        "dommages",
+        "intérêts",
+        "accord",
+        "capables",
+        "ester",
+        "justice",
+        "liés",
+        "prévu",
+        "peuvent",
+        "propre"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De l'exécution de la convention collective"
     },
@@ -247,7 +481,20 @@
       "texte": [
         "Les personnes liées par une convention collective ou l'accord prévu à l'article 62 ci-dessus peuvent intenter une action en dommages-intérêts aux autres personnes ou aux groupements liés par la convention qui violeraient à leur égard les engagements contractés."
       ],
-      "mots_cles": ["action", "dommages-intérêts", "personnes liées", "violation", "engagements"],
+      "mots_cles": [
+        "personnes",
+        "action",
+        "dommages",
+        "intérêts",
+        "liées",
+        "accord",
+        "prévu",
+        "peuvent",
+        "intenter",
+        "groupements",
+        "liés",
+        "violeraient"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De l'exécution de la convention collective"
     },
@@ -258,7 +505,20 @@
         "Les groupements capables d'ester en justice qui sont liés par la convention collective ou l'accord prévu à l'article 62 ci-dessus peuvent exercer toutes les actions qui naissent de cette convention ou de cet accord en faveur de leurs membres, sans avoir à justifier d'un mandat de l'intéressé, pourvu que celui-ci ait été averti et n'ait pas déclaré s'y opposer. L'intéressé peut toujours intervenir à l'instance engagée par le groupement.",
         "Lorsqu'une action née de la convention collective ou de l'accord prévu à l'article 62 est intentée soit par une personne, soit par un groupement, tout groupement capable d'ester en justice, dont les membres sont liés par la convention ou l'accord peut toujours intervenir à l'instance engagée à raison de l'intérêt collectif que la solution du litige peut présenter pour ses membres."
       ],
-      "mots_cles": ["action en justice", "groupements", "mandat", "intérêt collectif", "intervention"],
+      "mots_cles": [
+        "membres",
+        "accord",
+        "groupement",
+        "action",
+        "groupements",
+        "faveur",
+        "ester",
+        "justice",
+        "liés",
+        "prévu",
+        "intéressé",
+        "toujours"
+      ],
       "statut": "en vigueur",
       "section": "Section 5 : De l'exécution de la convention collective"
     }

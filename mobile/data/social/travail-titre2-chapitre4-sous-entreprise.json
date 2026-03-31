@@ -20,7 +20,20 @@
         "La sous-entreprise est la convention par laquelle un entrepreneur traite avec un autre entrepreneur pour l'exécution de la totalité ou d'une partie d'un travail donné ou pour la fourniture de certains services moyennant un prix forfaitaire.",
         "Le sous-entrepreneur recrute lui-même la main-d'œuvre nécessaire."
       ],
-      "mots_cles": ["sous-entreprise", "entrepreneur", "sous-traitance", "prix forfaitaire", "main-d'œuvre"],
+      "mots_cles": [
+        "entrepreneur",
+        "définition",
+        "traite",
+        "exécution",
+        "totalité",
+        "donné",
+        "fourniture",
+        "certains",
+        "services",
+        "moyennant",
+        "prix",
+        "forfaitaire"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 : De la sous-entreprise"
     },
@@ -32,7 +45,20 @@
         "Quand les travaux sont exécutés dans un lieu autre que les ateliers, magasins ou chantiers de l'entrepreneur, ce dernier est en cas d'insolvabilité du sous-entrepreneur, responsable du paiement des salaires dus aux travailleurs et du versement des cotisations à la caisse nationale de prévoyance sociale.",
         "Le travailleur lésé et la caisse nationale de prévoyance sociale, auront, dans ces cas, une action directe contre l'entrepreneur qui, lui, dispose d'une action récursoire contre le sous-entrepreneur."
       ],
-      "mots_cles": ["responsabilité", "insolvabilité", "sous-entrepreneur", "salaires", "prévoyance sociale", "action directe", "action récursoire"],
+      "mots_cles": [
+        "entrepreneur",
+        "insolvabilité",
+        "caisse",
+        "nationale",
+        "prévoyance",
+        "sociale",
+        "quand",
+        "travaux",
+        "exécutés",
+        "ateliers",
+        "magasins",
+        "chantiers"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 : De la sous-entreprise"
     },
@@ -47,7 +73,20 @@
         "Ces indications sont communiquées à l'inspecteur du travail en précisant la nature, la durée probable et l'emplacement des travaux.",
         "Même lorsqu'il applique les règlements, barèmes, salaires, etc. de l'entrepreneur principal, le sous-entrepreneur est tenu d'effectuer pour son propre compte des affichages réglementaires."
       ],
-      "mots_cles": ["affichage", "sous-entrepreneur", "pancarte", "inspecteur du travail", "règlements"],
+      "mots_cles": [
+        "entrepreneur",
+        "travaux",
+        "ateliers",
+        "magasins",
+        "chantiers",
+        "principal",
+        "adresse",
+        "obligations",
+        "affichage",
+        "inscrit",
+        "registre",
+        "commerce"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 : De la sous-entreprise"
     },
@@ -57,7 +96,14 @@
       "texte": [
         "L'entrepreneur doit tenir à jour la liste des sous-entrepreneurs avec lesquels il a passé contrat."
       ],
-      "mots_cles": ["liste", "sous-entrepreneurs", "entrepreneur", "contrat"],
+      "mots_cles": [
+        "liste",
+        "entrepreneurs",
+        "entrepreneur",
+        "tenir",
+        "jour",
+        "passé"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 : De la sous-entreprise"
     }

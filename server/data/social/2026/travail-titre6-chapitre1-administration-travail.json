@@ -33,7 +33,20 @@
         "L'organisation et le fonctionnement de la Direction Générale du Travail et de la Prévoyance Sociale et des Services subordonnés sont fixés par décret.",
         "Un arrêté du Ministre du Travail et de la Prévoyance Sociale fixe le ressort territorial des Inspections du Travail, des Contrôles du Travail et des Bureaux de Placement."
       ],
-      "mots_cles": ["administration du travail", "Ministre du Travail", "Direction Générale", "inspection du travail", "Bureaux de Placement", "emploi", "prévoyance sociale"],
+      "mots_cles": [
+        "prévoyance",
+        "sociale",
+        "emploi",
+        "administration",
+        "ministre",
+        "lois",
+        "placement",
+        "direction",
+        "mission",
+        "assurer",
+        "promotion",
+        "règlements"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail"
     },
@@ -43,7 +56,20 @@
       "texte": [
         "Outre les autres attributions que leur confère la présente loi, la Direction Générale du Travail et de la Prévoyance Sociale assume les attributions prévues aux alinéas a), b), d), e), f), et g) de l'article précédent, les Inspections du Travail et des Lois Sociales celles prévues aux alinéas b) et c), les Bureaux de Placement, celles prévues aux alinéas e) et f). Les Inspections du Travail et des Lois Sociales, les Bureaux de Placement relèvent de la Direction Générale du Travail et de la Prévoyance Sociale avec laquelle ils correspondent directement."
       ],
-      "mots_cles": ["attributions", "Direction Générale", "inspections", "Bureaux de Placement"],
+      "mots_cles": [
+        "attributions",
+        "direction",
+        "générale",
+        "prévues",
+        "alinéas",
+        "prévoyance",
+        "sociale",
+        "inspections",
+        "lois",
+        "sociales",
+        "celles",
+        "bureaux"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -53,7 +79,19 @@
       "texte": [
         "Le corps de l'Inspection du Travail et des Lois Sociales comprend des Administrateurs, des Inspecteurs, des Contrôleurs Principaux et des Contrôleurs du Travail."
       ],
-      "mots_cles": ["inspection du travail", "administrateurs", "inspecteurs", "contrôleurs"],
+      "mots_cles": [
+        "corps",
+        "inspection",
+        "contrôleurs",
+        "composition",
+        "lois",
+        "sociales",
+        "comprend",
+        "administrateurs",
+        "inspecteurs",
+        "principaux",
+        "sociales comprend"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -66,7 +104,20 @@
         "Toute violation de ce serment est punie conformément aux dispositions du Code pénal prévues en la matière.",
         "Ils doivent tenir pour confidentielle toute plainte leur signalant un défaut dans l'installation des dispositifs d'hygiène et de sécurité ou une infraction aux dispositions légales et réglementaires."
       ],
-      "mots_cles": ["serment", "secret professionnel", "fabrication", "cour d'appel", "tribunal", "Code pénal", "confidentiel"],
+      "mots_cles": [
+        "serment",
+        "fonctionnaires",
+        "inspection",
+        "devant",
+        "concerne",
+        "contrôleurs",
+        "corps",
+        "lois",
+        "sociales",
+        "prêtent",
+        "fidèlement",
+        "remplir"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -76,7 +127,20 @@
       "texte": [
         "Les fonctionnaires du corps de l'Inspection du Travail et des Lois Sociales ne sauraient avoir un intérêt quelconque direct ou indirect, dans les entreprises placées sous leur contrôle."
       ],
-      "mots_cles": ["intérêt", "interdit", "entreprises", "contrôle", "conflit d'intérêts"],
+      "mots_cles": [
+        "intérêt",
+        "entreprises",
+        "contrôlées",
+        "interdit",
+        "fonctionnaires",
+        "corps",
+        "inspection",
+        "lois",
+        "sociales",
+        "sauraient",
+        "avoir",
+        "quelconque"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -89,7 +153,20 @@
         "Un exemplaire du procès-verbal est déposé au Parquet, un second envoyé au Directeur Général du Travail et de la Prévoyance Sociale, un troisième est classé aux archives de l'inspection.",
         "Les autorités habilitées par le présent article à dresser procès-verbaux, sont tenues d'être informées par le Parquet de la suite réservée à ces procès-verbaux."
       ],
-      "mots_cles": ["procès-verbal", "infractions", "15 jours", "Parquet", "lettre recommandée", "preuve"],
+      "mots_cles": [
+        "procès",
+        "verbal",
+        "être",
+        "infractions",
+        "directement",
+        "autorités",
+        "remise",
+        "représentant",
+        "soit",
+        "main",
+        "parquet",
+        "verbaux"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -99,7 +176,20 @@
       "texte": [
         "(Loi n°06-96) Les inspecteurs du travail et des lois sociales ainsi que les fonctionnaires responsables d'un bureau de contrôle du travail peuvent constater par procès-verbal faisant foi jusqu'à preuve du contraire et ce, après mise en demeure, les infractions à la législation et à la réglementation du travail et transmettre ledit procès-verbal aux autorités judiciaires pour application des peines prévues au titre IX relatif aux pénalités."
       ],
-      "mots_cles": ["infractions", "mise en demeure", "procès-verbal", "titre IX", "pénalités"],
+      "mots_cles": [
+        "infractions",
+        "mise",
+        "demeure",
+        "procès",
+        "verbal",
+        "constat",
+        "inspecteurs",
+        "lois",
+        "sociales",
+        "ainsi",
+        "fonctionnaires",
+        "responsables"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -113,7 +203,20 @@
         "Tout procès-verbal doit être notifié par la remise d'une copie à la partie intéressée ou à son représentant. Cette remise doit être effectuée dans les quinze jours suivant la constatation de l'infraction soit par lettre recommandée avec accusé de réception, soit directement de la main à la main contre récépissé daté et signé par l'employeur ou son représentant.",
         "Un exemplaire du procès-verbal est déposé au Parquet, un second envoyé au Directeur Général du Travail et de la Prévoyance Sociale, un troisième est classé aux archives de l'inspection."
       ],
-      "mots_cles": ["notification", "infraction", "registre", "mise en demeure", "15 jours", "Parquet"],
+      "mots_cles": [
+        "infraction",
+        "procès",
+        "verbal",
+        "représentant",
+        "demeure",
+        "inspecteur",
+        "mise",
+        "directeur",
+        "constatation",
+        "être",
+        "remise",
+        "soit"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -124,7 +227,20 @@
         "(Loi n°06-96) En cas de double récidive, le Directeur régional du travail relève dans le procès-verbal les antécédents et produit toutes pièces utiles. Il s'agit notamment des récépissés.",
         "Les sanctions privatives de liberté sont prononcées en cas de double récidive. Le Parquet doit informer le Ministre du Travail de la décision prise dans un délai de trente jours à compter de la date du jugement."
       ],
-      "mots_cles": ["double récidive", "antécédents", "sanctions privatives", "Parquet", "30 jours"],
+      "mots_cles": [
+        "double",
+        "récidive",
+        "procédure",
+        "directeur",
+        "régional",
+        "relève",
+        "procès",
+        "verbal",
+        "antécédents",
+        "produit",
+        "pièces",
+        "utiles"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -134,7 +250,20 @@
       "texte": [
         "(Loi n°06-96) Lorsque l'employeur est mis en demeure par l'inspecteur du travail et des lois sociales, il dispose de huit jours pour adresser une réclamation auprès du Directeur général du travail. Cette réclamation est suspensive. Notification de la décision du Directeur général du travail est faite à la partie intéressée dans un délai de dix jours à compter de la réception de la réclamation. Passé ce délai, le silence du Directeur général du travail vaut confirmation de la mise en demeure."
       ],
-      "mots_cles": ["réclamation", "mise en demeure", "8 jours", "suspensive", "10 jours", "silence"],
+      "mots_cles": [
+        "réclamation",
+        "demeure",
+        "directeur",
+        "général",
+        "mise",
+        "jours",
+        "délai",
+        "inspecteur",
+        "lois",
+        "sociales",
+        "dispose",
+        "huit"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -144,7 +273,20 @@
       "texte": [
         "(Loi n°06-96) Les décisions du Directeur régional du travail et du Directeur général du travail sont susceptibles d'annulation pour excès ou abus de pouvoir conformément aux principes ordinaires du contentieux administratif."
       ],
-      "mots_cles": ["recours", "annulation", "excès de pouvoir", "contentieux administratif"],
+      "mots_cles": [
+        "décisions",
+        "directeur",
+        "recours",
+        "régional",
+        "général",
+        "susceptibles",
+        "annulation",
+        "excès",
+        "abus",
+        "pouvoir",
+        "conformément",
+        "principes"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     },
@@ -154,7 +296,20 @@
       "texte": [
         "(Loi n°06-96) En ce qui concerne les sanctions privatives de liberté, l'employeur dispose de toutes les voies de recours prévues par le Code de procédure pénale."
       ],
-      "mots_cles": ["voies de recours", "sanctions privatives", "Code de procédure pénale"],
+      "mots_cles": [
+        "voies",
+        "recours",
+        "sanctions",
+        "privatives",
+        "liberté",
+        "concerne",
+        "dispose",
+        "prévues",
+        "code",
+        "procédure",
+        "pénale",
+        "sanctions privatives"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 : De l'administration du travail - Section 1 : Du corps de l'inspection du travail et des lois sociales"
     }

@@ -22,7 +22,20 @@
       "texte": [
         "Le présent décret fixe, en application des dispositions de l'article 15 de la loi n°19-2023 du 27 mai 2023 susvisée, les modalités de reversement des cotisations sociales à la caisse d'assurance maladie universelle (CAMU)."
       ],
-      "mots_cles": ["objet", "reversement", "cotisations", "article 15"],
+      "mots_cles": [
+        "objet",
+        "présent",
+        "décret",
+        "susvisée",
+        "modalités",
+        "reversement",
+        "cotisations",
+        "sociales",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 - Dispositions générales"
     },
@@ -32,7 +45,20 @@
       "texte": [
         "Les cotisations dues au titre du régime d'assurance maladie universelle sont prélevées sur les revenus provenant des traitements, des salaires, des soldes, des pensions ou de toutes activités génératrices de revenus."
       ],
-      "mots_cles": ["assiette", "revenus", "traitements", "salaires", "pensions"],
+      "mots_cles": [
+        "revenus",
+        "assiette",
+        "cotisation",
+        "cotisations",
+        "dues",
+        "régime",
+        "assurance",
+        "maladie",
+        "universelle",
+        "prélevées",
+        "provenant",
+        "traitements"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 - Dispositions générales"
     },
@@ -43,7 +69,20 @@
         "Le reversement des cotisations à la caisse d'assurance maladie universelle se fait selon les modalités fixées pour chaque catégorie des ouvrants-droit.",
         "La caisse d'assurance maladie universelle émet, par le biais de son directeur général, les avis de recouvrement des cotisations dues."
       ],
-      "mots_cles": ["reversement", "modalités", "avis de recouvrement"],
+      "mots_cles": [
+        "modalités",
+        "reversement",
+        "cotisations",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "fixées",
+        "catégorie",
+        "ouvrants",
+        "droit",
+        "émet"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 - Dispositions générales"
     },
@@ -55,7 +94,20 @@
         "Lorsque la caisse relève des discordances entre les informations requises et celles qui lui sont transmises, elle retourne, dans un délai de sept jours, une liste des divergences constatées entre les informations en sa possession et les renseignements qui lui ont été fournis.",
         "À défaut de la transmission à la caisse d'assurance maladie universelle, dans les délais et sous la forme prévue, de la déclaration nominative des cotisations, la caisse d'assurance maladie universelle adresse aux personnes morales, avant le vingtième jour du mois ou du trimestre en cours, un relevé nominatif des salaires, des traitements et des pensions et un avis de recouvrement établi au vu de la déclaration la plus récente."
       ],
-      "mots_cles": ["déclaration nominative", "10 jours", "7 jours", "discordances"],
+      "mots_cles": [
+        "déclaration",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "nominative",
+        "cotisations",
+        "personnes",
+        "morales",
+        "jours",
+        "informations",
+        "transmettent"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 - Dispositions générales"
     },
@@ -65,7 +117,20 @@
       "texte": [
         "À partir du premier jour suivant la deuxième relance de recouvrement, soit à l'entame du troisième mois, le non-versement des cotisations précomptées mensuellement par l'employeur, l'organisme gestionnaire des pensionnés et l'établissement universitaire, est considéré comme une retenue."
       ],
-      "mots_cles": ["non-versement", "retenue", "relance", "3ème mois"],
+      "mots_cles": [
+        "versement",
+        "cotisations",
+        "partir",
+        "premier",
+        "jour",
+        "suivant",
+        "deuxième",
+        "relance",
+        "recouvrement",
+        "soit",
+        "entame",
+        "troisième"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 1 - Dispositions générales"
     },
@@ -76,7 +141,20 @@
         "Les organismes gestionnaires des pensions sont responsables du reversement des cotisations précomptées sur les pensions.",
         "Une retenue à la source est faite par les organismes gestionnaires des pensions selon le taux réglementaire."
       ],
-      "mots_cles": ["organismes gestionnaires", "pensions", "retenue à la source"],
+      "mots_cles": [
+        "organismes",
+        "gestionnaires",
+        "pensions",
+        "responsabilité",
+        "responsables",
+        "reversement",
+        "cotisations",
+        "précomptées",
+        "retenue",
+        "source",
+        "faite",
+        "taux"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Reversement par les organismes gestionnaires des pensions"
     },
@@ -87,7 +165,20 @@
         "Les reversements à la caisse d'assurance maladie universelle du montant des cotisations précomptées sur les pensions sont effectués par virement bancaire automatique dans les quinze jours suivant la fin du mois, pour la paie mensuelle ou la fin du trimestre, pour la paie trimestrielle des pensions.",
         "Les organismes gestionnaires des pensions font parvenir à la caisse d'assurance maladie universelle une déclaration nominative des pensions et des cotisations selon les imprimés définis par la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["virement bancaire", "15 jours", "déclaration nominative"],
+      "mots_cles": [
+        "pensions",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "virement",
+        "bancaire",
+        "automatique",
+        "cotisations",
+        "paie",
+        "reversements",
+        "montant"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Reversement par les organismes gestionnaires des pensions"
     },
@@ -97,7 +188,16 @@
       "texte": [
         "En cas de cumul d'une pension de vieillesse et d'une pension d'invalidité, les cotisations sont prélevées sur la pension la plus élevée."
       ],
-      "mots_cles": ["cumul", "pension vieillesse", "pension invalidité"],
+      "mots_cles": [
+        "pension",
+        "cumul",
+        "vieillesse",
+        "invalidité",
+        "cotisations",
+        "prélevées",
+        "élevée",
+        "cumul pension"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 2 - Reversement par les organismes gestionnaires des pensions"
     },
@@ -109,7 +209,20 @@
         "La déclaration nominative des salaires et des cotisations des agents de l'État est effectuée par les services habilités selon les imprimés convenus avec la caisse d'assurance maladie universelle, dix jours avant la fin du mois.",
         "Le reversement des cotisations des agents de l'État se fait dans les dix jours suivant le versement de leur traitement mensuel, via les mécanismes de virements automatiques par le trésor public vers le compte de la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["agents de l'État", "précompte", "10 jours", "trésor public"],
+      "mots_cles": [
+        "cotisations",
+        "agents",
+        "état",
+        "assurance",
+        "maladie",
+        "universelle",
+        "traitement",
+        "caisse",
+        "jours",
+        "dues",
+        "compris",
+        "ceux"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 - Reversement par les employeurs publics"
     },
@@ -119,7 +232,20 @@
       "texte": [
         "Les établissements publics sont responsables du reversement des cotisations qui sont précomptées sur les salaires de leurs employés et les cotisations qui sont à leur propre charge, selon les taux réglementaires."
       ],
-      "mots_cles": ["établissements publics", "reversement"],
+      "mots_cles": [
+        "établissements",
+        "publics",
+        "cotisations",
+        "responsables",
+        "reversement",
+        "précomptées",
+        "salaires",
+        "employés",
+        "propre",
+        "charge",
+        "taux",
+        "réglementaires"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 - Reversement par les employeurs publics"
     },
@@ -129,7 +255,20 @@
       "texte": [
         "Les cotisations font l'objet d'un reversement par les établissements publics à la caisse d'assurance maladie universelle dans les dix jours suivant la fin de chaque mois."
       ],
-      "mots_cles": ["reversement", "10 jours"],
+      "mots_cles": [
+        "reversement",
+        "établissements",
+        "publics",
+        "cotisations",
+        "font",
+        "objet",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "jours",
+        "suivant"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 - Reversement par les employeurs publics"
     },
@@ -139,7 +278,20 @@
       "texte": [
         "Dans les dix jours avant la date d'exigibilité, les établissements publics font parvenir à la caisse d'assurance maladie universelle une déclaration nominative des salaires et des cotisations, selon les imprimés définis par la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["déclaration nominative", "établissements publics"],
+      "mots_cles": [
+        "déclaration",
+        "nominative",
+        "établissements",
+        "publics",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "jours",
+        "date",
+        "exigibilité",
+        "font"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 - Reversement par les employeurs publics"
     },
@@ -150,7 +302,20 @@
         "Les cotisations de l'État pour le compte des personnes vulnérables sont directement versées dans le compte de la caisse d'assurance maladie universelle par le trésor public au plus tard le cinquième jour suivant la fin du mois.",
         "Le ministère chargé des affaires sociales transmet à la caisse d'assurance maladie universelle la liste nominative des personnes vulnérables inscrites au registre social unique, dix jours avant la date d'exigibilité des cotisations."
       ],
-      "mots_cles": ["personnes vulnérables", "trésor public", "registre social unique"],
+      "mots_cles": [
+        "cotisations",
+        "personnes",
+        "vulnérables",
+        "compte",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "état",
+        "directement",
+        "versées",
+        "trésor"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 3 - Reversement par les employeurs publics"
     },
@@ -162,7 +327,20 @@
         "La contribution de l'employeur est exclusivement à sa charge. Toute convention contraire est nulle de plein droit.",
         "Le salarié ne peut s'opposer au prélèvement des cotisations qui lui incombent."
       ],
-      "mots_cles": ["employeurs privés", "responsabilité", "contribution employeur"],
+      "mots_cles": [
+        "cotisations",
+        "charge",
+        "responsabilité",
+        "privés",
+        "responsables",
+        "reversement",
+        "précomptées",
+        "salaires",
+        "employés",
+        "propre",
+        "taux",
+        "réglementaires"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 - Reversement par les employeurs privés"
     },
@@ -173,7 +351,20 @@
         "Les cotisations font l'objet d'un reversement par l'employeur à la caisse d'assurance maladie universelle dans les cinq jours suivant la fin de chaque mois.",
         "Dans le cas où le travailleur est au service de deux ou plusieurs employeurs, chacun des employeurs est responsable du versement de la part des cotisations calculées proportionnellement à la rémunération qu'il paie à l'intéressé."
       ],
-      "mots_cles": ["reversement", "5 jours", "plusieurs employeurs"],
+      "mots_cles": [
+        "reversement",
+        "cotisations",
+        "font",
+        "objet",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "cinq",
+        "jours",
+        "suivant",
+        "mois"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 - Reversement par les employeurs privés"
     },
@@ -183,7 +374,20 @@
       "texte": [
         "Dans les dix jours avant la date d'exigibilité, les employeurs font parvenir à la caisse d'assurance maladie universelle une déclaration nominative des salaires et des cotisations selon les imprimés définis par la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["déclaration nominative", "10 jours", "employeurs"],
+      "mots_cles": [
+        "déclaration",
+        "nominative",
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "jours",
+        "date",
+        "exigibilité",
+        "font",
+        "parvenir",
+        "salaires"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 4 - Reversement par les employeurs privés"
     },
@@ -194,7 +398,20 @@
         "Les travailleurs indépendants et des professions libérales reçoivent dès leur affiliation, de la part de la caisse d'assurance maladie universelle, les informations sur l'ensemble des droits et obligations en matière de cotisations au régime d'assurance maladie universelle, résultant de la catégorie d'activité professionnelle.",
         "Ces informations peuvent être communiquées sur supports papier ou électronique."
       ],
-      "mots_cles": ["travailleurs indépendants", "professions libérales", "affiliation", "information"],
+      "mots_cles": [
+        "indépendants",
+        "professions",
+        "libérales",
+        "assurance",
+        "maladie",
+        "universelle",
+        "informations",
+        "reçoivent",
+        "affiliation",
+        "part",
+        "caisse",
+        "ensemble"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 - Reversement par les travailleurs indépendants et professions libérales"
     },
@@ -207,7 +424,20 @@
         "Le versement des cotisations peut se faire par tout moyen de paiement, y compris par transfert électronique.",
         "Les travailleurs indépendants et les professions libérales peuvent payer leurs cotisations par anticipation."
       ],
-      "mots_cles": ["professions libérales", "15 jours", "guichets", "transfert électronique"],
+      "mots_cles": [
+        "cotisations",
+        "versement",
+        "professions",
+        "libérales",
+        "indépendants",
+        "versent",
+        "directement",
+        "guichets",
+        "installés",
+        "sein",
+        "caisse",
+        "assurance"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 5 - Reversement par les travailleurs indépendants et professions libérales"
     },
@@ -217,7 +447,20 @@
       "texte": [
         "Les établissements universitaires publics et privés sont responsables de la collecte des cotisations des étudiants, selon le montant réglementaire."
       ],
-      "mots_cles": ["établissements universitaires", "étudiants", "collecte"],
+      "mots_cles": [
+        "établissements",
+        "universitaires",
+        "publics",
+        "privés",
+        "responsables",
+        "collecte",
+        "cotisations",
+        "étudiants",
+        "montant",
+        "réglementaire",
+        "établissements universitaires",
+        "universitaires publics"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 - Reversement par les établissements universitaires"
     },
@@ -228,7 +471,20 @@
         "Les reversements à la caisse d'assurance maladie universelle du montant des cotisations sont effectués par virement bancaire automatique dans les cinq jours qui suivent la clôture des inscriptions de l'année académique.",
         "Les établissements universitaires transmettent, dans les mêmes délais, à la caisse d'assurance maladie universelle une déclaration nominative des inscriptions selon les imprimés définis par la caisse d'assurance maladie universelle."
       ],
-      "mots_cles": ["étudiants", "virement bancaire", "5 jours", "inscriptions"],
+      "mots_cles": [
+        "caisse",
+        "assurance",
+        "maladie",
+        "universelle",
+        "cotisations",
+        "inscriptions",
+        "reversement",
+        "étudiants",
+        "reversements",
+        "montant",
+        "effectués",
+        "virement"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 6 - Reversement par les établissements universitaires"
     },
@@ -238,7 +494,20 @@
       "texte": [
         "Il est appliqué une majoration de retard de 3 % du montant des cotisations qui n'ont pas été versées à la date d'exigibilité. Cette majoration s'applique à toutes les personnes morales et physiques chargées d'effectuer le reversement des cotisations pour leur compte ou pour le compte des personnes physiques dont elles s'obligent."
       ],
-      "mots_cles": ["majoration", "3 %", "retard", "exigibilité"],
+      "mots_cles": [
+        "majoration",
+        "retard",
+        "cotisations",
+        "personnes",
+        "physiques",
+        "compte",
+        "appliqué",
+        "montant",
+        "versées",
+        "date",
+        "exigibilité",
+        "applique"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 - Dispositions diverses et finales"
     },
@@ -249,7 +518,20 @@
         "Les personnes morales ou physiques frappées de pénalités peuvent solliciter la réduction de leurs majorations de retard, à condition qu'elles s'acquittent préalablement du principal.",
         "Elles peuvent solliciter, auprès du comité de recours, une annulation partielle ou totale des majorations telles que prévues par la réglementation en vigueur."
       ],
-      "mots_cles": ["réduction", "majorations", "comité de recours"],
+      "mots_cles": [
+        "majorations",
+        "réduction",
+        "peuvent",
+        "solliciter",
+        "personnes",
+        "morales",
+        "physiques",
+        "frappées",
+        "pénalités",
+        "retard",
+        "condition",
+        "acquittent"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 - Dispositions diverses et finales"
     },
@@ -260,7 +542,20 @@
         "La demande d'annulation des majorations de retard, introduite devant le comité de recours, est suspensive du cours des pénalités.",
         "En cas de rejet de la demande, la créance est évaluée rétroactivement comme si le cours des majorations ne s'était jamais interrompu."
       ],
-      "mots_cles": ["annulation", "suspensive", "comité de recours"],
+      "mots_cles": [
+        "majorations",
+        "annulation",
+        "demande",
+        "cours",
+        "retard",
+        "introduite",
+        "devant",
+        "comité",
+        "recours",
+        "suspensive",
+        "pénalités",
+        "rejet"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 - Dispositions diverses et finales"
     },
@@ -270,7 +565,20 @@
       "texte": [
         "Le présent décret sera enregistré et publié au Journal officiel de la République du Congo."
       ],
-      "mots_cles": ["publication", "Journal officiel"],
+      "mots_cles": [
+        "publication",
+        "présent",
+        "décret",
+        "sera",
+        "enregistré",
+        "publié",
+        "journal",
+        "officiel",
+        "république",
+        "congo",
+        "présent décret",
+        "sera enregistré"
+      ],
       "statut": "en vigueur",
       "section": "Chapitre 7 - Dispositions diverses et finales"
     }

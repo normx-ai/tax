@@ -21,7 +21,20 @@
         "Dans tous les établissements publics ou privés non agricoles, y compris ceux d'enseignement et de bienfaisance, la durée légale du travail des employés ou ouvriers de l'un ou l'autre sexe de tout âge, travaillant à temps, à la tâche ou aux pièces ne peut excéder quarante heures par semaine.",
         "Dans toutes les entreprises agricoles et assimilées, les heures de travail sont basées sur 2.400 heures pour l'année."
       ],
-      "mots_cles": ["durée légale", "40 heures", "semaine", "2 400 heures", "agricole"],
+      "mots_cles": [
+        "heures",
+        "durée",
+        "légale",
+        "agricoles",
+        "décret",
+        "sgfpt",
+        "dtps",
+        "décidant",
+        "dérogations",
+        "prévues",
+        "code",
+        "établissements"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 : Dérogations permanentes particulières aux activités à fonctionnement continu non susceptibles d'interruption"
     },
@@ -32,7 +45,20 @@
         "Le présent Décret a pour objet de fixer le régime des dérogations à la durée légale du travail telle qu'elle résulte des dispositions du Code du travail de la République Populaire du Congo.",
         "Il comprend 7 Titres."
       ],
-      "mots_cles": ["dérogations", "durée légale", "7 titres"],
+      "mots_cles": [
+        "objet",
+        "décret",
+        "présent",
+        "fixer",
+        "régime",
+        "dérogations",
+        "durée",
+        "légale",
+        "telle",
+        "résulte",
+        "code",
+        "république"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 : Dérogations permanentes particulières aux activités à fonctionnement continu non susceptibles d'interruption"
     },
@@ -42,7 +68,20 @@
       "texte": [
         "Pour les activités dont le fonctionnement continu doit, en raison de la nature du travail, être nécessairement assuré sans interruption à aucun moment du jour, de la nuit ou de la semaine, la durée hebdomadaire du travail peut atteindre une moyenne de quarante-deux heures établis sur une période de douze semaines, à la condition que la durée du travail journalier ne soit en aucun cas supérieure à huit heures et qu'il soit assuré à chaque travailleur au moins un repos de vingt-quatre heures consécutives par semaine. Cette durée de quarante-deux heures est, pour les travaux ci-dessus, considérée comme légale."
       ],
-      "mots_cles": ["fonctionnement continu", "42 heures", "12 semaines", "8 heures", "24 heures repos"],
+      "mots_cles": [
+        "heures",
+        "durée",
+        "activités",
+        "fonctionnement",
+        "continu",
+        "assuré",
+        "aucun",
+        "semaine",
+        "quarante",
+        "deux",
+        "soit",
+        "raison"
+      ],
       "statut": "en vigueur",
       "section": "Titre 1 : Dérogations permanentes particulières aux activités à fonctionnement continu non susceptibles d'interruption"
     },
@@ -60,7 +99,20 @@
         "- soit consigner les mentions ci-dessus sur un registre spécial tenu à la disposition de l'Inspecteur et de son délégué.",
         "Les heures perdues pour fait de grève ou lock-out ne sont pas récupérées, sauf accord entre les parties."
       ],
-      "mots_cles": ["récupération", "heures perdues", "interruption collective", "force majeure", "intempéries", "grève"],
+      "mots_cles": [
+        "heures",
+        "perdues",
+        "semaine",
+        "raison",
+        "récupération",
+        "interruption",
+        "jours",
+        "semaines",
+        "force",
+        "deux",
+        "trois",
+        "quatre"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 : Dérogations permanentes ayant pour objet la récupération des heures perdues"
     },
@@ -74,7 +126,20 @@
         "- la détermination des établissements ou parties d'établissements dans lesquels elles peuvent être effectuées.",
         "Le nombre des heures de prolongation autorisées ne peut être supérieur à celui des heures perdues, ni dépasser un nombre d'heures hebdomadaire dans une limite qui sera fixée par le Ministre du travail."
       ],
-      "mots_cles": ["intempéries", "récupération", "chantier", "Inspecteur du Travail", "prolongation"],
+      "mots_cles": [
+        "heures",
+        "récupération",
+        "perdues",
+        "nombre",
+        "être",
+        "intempéries",
+        "ainsi",
+        "prolongation",
+        "périodes",
+        "peuvent",
+        "établissements",
+        "chantier"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 : Dérogations permanentes ayant pour objet la récupération des heures perdues"
     },
@@ -85,7 +150,20 @@
         "Dans les branches d'activité qui subissent des baisses normales de travail, saisonnières en raison des conditions dans lesquelles elles fonctionnent, la récupération des heures de travail perdues du fait de la morte-saison peut être autorisée par Arrêté du Ministre du travail.",
         "Cet arrêté, pris après Avis de la Commission Nationale Consultative du Travail, détermine pour chaque activité les modalités et périodes de récupération, ainsi que le total des heures récupérables dans les limites du maximum annuel qu'il fixera en même temps."
       ],
-      "mots_cles": ["mortes saisons", "récupération", "arrêté", "Commission Nationale Consultative"],
+      "mots_cles": [
+        "récupération",
+        "activité",
+        "heures",
+        "arrêté",
+        "mortes",
+        "saisons",
+        "branches",
+        "subissent",
+        "baisses",
+        "normales",
+        "saisonnières",
+        "raison"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 : Dérogations permanentes ayant pour objet la récupération des heures perdues"
     },
@@ -95,7 +173,18 @@
       "texte": [
         "Les heures récupérées par application des dispositions contenues dans les articles 4-1.5 et 6 sont rémunérées au taux horaire normal."
       ],
-      "mots_cles": ["rémunération", "taux normal", "heures récupérées"],
+      "mots_cles": [
+        "heures",
+        "récupérées",
+        "rémunération",
+        "contenues",
+        "rémunérées",
+        "taux",
+        "horaire",
+        "normal",
+        "heures récupérées",
+        "taux horaire"
+      ],
       "statut": "en vigueur",
       "section": "Titre 2 : Dérogations permanentes ayant pour objet la récupération des heures perdues"
     },
@@ -119,7 +208,20 @@
         "Le bénéfice des dérogations énumérées ci-dessus est acquis de plein droit au Chef d'établissement sous réserve de l'accomplissement des formalités concernant l'horaire du travail.",
         "Les heures accomplies au titre des dérogations permanentes susvisées, seront rémunérées au taux horaire normal."
       ],
-      "mots_cles": ["travaux préparatoires", "complémentaires", "dérogations", "1 heure", "2 heures", "6 heures", "taux normal"],
+      "mots_cles": [
+        "durée",
+        "maximum",
+        "heure",
+        "travaux",
+        "personnel",
+        "employés",
+        "établissement",
+        "heures",
+        "ouvriers",
+        "marche",
+        "délais",
+        "préparatoires"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 : Dérogations permanentes ayant pour but de permettre l'exécution de travaux préparatoires ou complémentaires"
     },
@@ -131,7 +233,20 @@
         "Les énumérations ci-dessus ne sont ni limitatives ni obligatoires.",
         "En attendant la publication de l'Arrêté du Ministre du travail qui déterminera pour chaque branche d'activité et pour le personnel intéressé, la durée de présence ne devra pas être supérieure à 46 heures par semaine."
       ],
-      "mots_cles": ["équivalence", "gardiennage", "surveillance", "intermittent", "46 heures", "transport", "hôtels"],
+      "mots_cles": [
+        "personnel",
+        "durée",
+        "opérations",
+        "présence",
+        "supérieure",
+        "être",
+        "certains",
+        "soit",
+        "dérogations",
+        "équivalence",
+        "légale",
+        "considérée"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 : Dérogations par équivalence et dérogations forfaitaires transitoires"
     },
@@ -141,7 +256,20 @@
       "texte": [
         "En ce qui concerne les mines, les heures de récupération autorisées en application des articles 5 et 6 du présent Décret, seront, à titre transitoire, évaluées, forfaitairement par arrêté du Ministre du travail dans la limite maximum de cinq heures par semaine."
       ],
-      "mots_cles": ["mines", "récupération forfaitaire", "5 heures", "transitoire"],
+      "mots_cles": [
+        "mines",
+        "récupération",
+        "heures",
+        "forfaitaire",
+        "concerne",
+        "autorisées",
+        "présent",
+        "décret",
+        "seront",
+        "transitoire",
+        "évaluées",
+        "forfaitairement"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 : Dérogations par équivalence et dérogations forfaitaires transitoires"
     },
@@ -155,7 +283,20 @@
         "2) Travaux urgents, exceptionnels ou saisonniers ou justifiés, soit par un surcroît extraordinaire de travail, soit par la nécessité de maintenir ou d'accroître le niveau de production soit par la pénurie de main d'œuvre, ces travaux donneront lieu à des heures supplémentaires à tarif majoré effectuées dans la limite de 20 heures par semaine.",
         "Le bénéfice des prolongations ci-dessus est acquis de plein droit aux Chefs d'entreprises sous réserve de l'accomplissement des formalités prévues à l'article 4 du présent Décret et de celles concernant l'horaire du travail."
       ],
-      "mots_cles": ["prolongations temporaires", "travaux urgents", "accidents", "20 heures", "heures supplémentaires"],
+      "mots_cles": [
+        "travaux",
+        "heures",
+        "urgents",
+        "soit",
+        "prolongations",
+        "durée",
+        "accidents",
+        "tarif",
+        "temporaires",
+        "effectif",
+        "temporaire",
+        "être"
+      ],
       "statut": "en vigueur",
       "section": "Titre 5 : Prolongations temporaires de la durée de travail en vue du maintien ou de l'accroissement de la production ainsi qu'en vue de l'exécution de travaux urgents ou exceptionnels"
     },
@@ -167,7 +308,20 @@
         "Cette demande devra indiquer les dispositions pour l'application desquelles un délai est demandé, la durée du délai sollicité et les mesures envisagées pour assurer l'application progressive de ces dispositions.",
         "La demande, accompagnée des justifications nécessaires, devra être adressée à l'Inspecteur du Travail et des Lois Sociales dans le mois suivant la Publication du présent Décret ou des textes pris pour certaines branches professionnelles. Le Ministre du travail statuera à quinzaine. Le Ministre du travail pourra toutefois, en cas de nécessité reconnue, abréger le délai d'un mois prévu par l'article précédent."
       ],
-      "mots_cles": ["délais d'application", "impossibilité", "arrêté", "quinzaine"],
+      "mots_cles": [
+        "être",
+        "ministre",
+        "demande",
+        "délai",
+        "délais",
+        "présent",
+        "décret",
+        "inspecteur",
+        "lois",
+        "sociales",
+        "devra",
+        "mois"
+      ],
       "statut": "en vigueur",
       "section": "Titre 6 : Dispositions particulières et régimes spéciaux de dérogations"
     },
@@ -179,7 +333,20 @@
         "Par ailleurs, le Chef d'établissement ne peut débaucher pour manque de travail dans le délai d'un mois succédant à une période de récupération ou d'heures supplémentaires, le personnel qui aura exécuté ces heures supplémentaires pendant la période considérée.",
         "Cette disposition ne s'applique pas aux ouvriers et employés embauchés temporairement pour faire face au surcroît extraordinaire de travail."
       ],
-      "mots_cles": ["suspension", "heures supplémentaires", "chômage", "débauchage", "1 mois"],
+      "mots_cles": [
+        "heures",
+        "supplémentaires",
+        "chômage",
+        "extraordinaire",
+        "soit",
+        "période",
+        "suspension",
+        "faculté",
+        "utiliser",
+        "accordée",
+        "prolongé",
+        "être"
+      ],
       "statut": "en vigueur",
       "section": "Titre 6 : Dispositions particulières et régimes spéciaux de dérogations"
     },
@@ -189,7 +356,20 @@
       "texte": [
         "Des régimes spéciaux de dérogation peuvent être institués par Décret pris après avis de la Commission Nationale Consultative du Travail, dans certaines branches d'activité et dans les cas où les nécessités de l'exploitation ne sauraient se concilier avec le régime prévu au présent Décret (chemin de fer, transports routiers, navigation aérienne, maritime et fluviale, entreprises de poche ainsi que les Sociétés dont l'activité est directement liée aux transports ferroviaires, aériens, maritimes ou fluviaux)."
       ],
-      "mots_cles": ["régimes spéciaux", "dérogation", "transport", "chemin de fer", "navigation", "aviation"],
+      "mots_cles": [
+        "régimes",
+        "spéciaux",
+        "dérogation",
+        "décret",
+        "activité",
+        "transports",
+        "peuvent",
+        "être",
+        "institués",
+        "pris",
+        "après",
+        "avis"
+      ],
       "statut": "en vigueur",
       "section": "Titre 6 : Dispositions particulières et régimes spéciaux de dérogations"
     },
@@ -200,7 +380,20 @@
         "Le présent Décret abroge et remplace l'Arrêté Général n°3436 du 27 octobre 1953.",
         "Des Décrets pris après avis de la Commission Nationale Consultative du Travail détermineront par catégories professionnelles, s'il y a lieu, les modalités d'application de la durée du travail et des dérogations telles qu'instituées par le présent décret ainsi que la durée maximum des heures supplémentaires qui peuvent être effectuées."
       ],
-      "mots_cles": ["abrogation", "arrêté 3436", "1953", "catégories professionnelles"],
+      "mots_cles": [
+        "présent",
+        "décret",
+        "durée",
+        "abrogation",
+        "abroge",
+        "remplace",
+        "arrêté",
+        "général",
+        "octobre",
+        "décrets",
+        "pris",
+        "après"
+      ],
       "statut": "en vigueur",
       "section": "Titre 7 : Dispositions générales"
     },
@@ -210,7 +403,20 @@
       "texte": [
         "Les Inspecteurs du Travail et des Lois Sociales sont habilités à proposer au Ministre du travail des dérogations à la durée du travail pour les activités au sujet desquelles aucun arrêté n'a été pris."
       ],
-      "mots_cles": ["inspecteurs", "propositions", "dérogations"],
+      "mots_cles": [
+        "dérogations",
+        "inspecteurs",
+        "propositions",
+        "lois",
+        "sociales",
+        "habilités",
+        "proposer",
+        "ministre",
+        "durée",
+        "activités",
+        "sujet",
+        "desquelles"
+      ],
       "statut": "en vigueur",
       "section": "Titre 7 : Dispositions générales"
     },
@@ -220,7 +426,20 @@
       "texte": [
         "Les auteurs d'infractions aux dispositions du présent Décret seront punis des peines mentionnées au titre 10 de la loi 5-75 du 15 mars 1975."
       ],
-      "mots_cles": ["sanctions", "infractions", "peines"],
+      "mots_cles": [
+        "sanctions",
+        "auteurs",
+        "infractions",
+        "présent",
+        "décret",
+        "seront",
+        "punis",
+        "peines",
+        "mentionnées",
+        "mars",
+        "présent décret",
+        "seront punis"
+      ],
       "statut": "en vigueur",
       "section": "Titre 7 : Dispositions générales"
     },
@@ -230,7 +449,20 @@
       "texte": [
         "Le Ministre du travail et de la prévoyance sociale est chargé de l'exécution du présent Décret, qui sera enregistré, publié au JORPC et communiqué partout où besoin sera."
       ],
-      "mots_cles": ["exécution", "JORPC", "publication"],
+      "mots_cles": [
+        "exécution",
+        "sera",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "chargé",
+        "présent",
+        "décret",
+        "enregistré",
+        "publié",
+        "jorpc",
+        "communiqué"
+      ],
       "statut": "en vigueur",
       "section": "Titre 7 : Dispositions générales"
     },
@@ -244,7 +476,20 @@
         "- 50 % du salaire horaire pour les heures supplémentaires effectuées la nuit ou pendant le repos hebdomadaire ou les jours fériés ;",
         "- 100 % du salaire horaire pour les heures de nuit effectuées le jour du repos hebdomadaire, ou les jours fériés."
       ],
-      "mots_cles": ["majorations", "heures supplémentaires", "10%", "25%", "50%", "100%", "nuit", "repos hebdomadaire", "jours fériés"],
+      "mots_cles": [
+        "heures",
+        "salaire",
+        "horaire",
+        "supplémentaires",
+        "majorations",
+        "durée",
+        "jour",
+        "effectuées",
+        "nuit",
+        "repos",
+        "hebdomadaire",
+        "jours"
+      ],
       "statut": "en vigueur",
       "section": "Titre 3 : Rémunération des heures supplémentaires"
     },
@@ -254,7 +499,20 @@
       "texte": [
         "Les auteurs d'infractions aux dispositions du présent Décret seront punis des peines mentionnées au Titre IX de la Loi 45/75 du 15 mars 1975."
       ],
-      "mots_cles": ["sanctions", "infractions", "Titre IX"],
+      "mots_cles": [
+        "décret",
+        "sanctions",
+        "auteurs",
+        "infractions",
+        "présent",
+        "seront",
+        "punis",
+        "peines",
+        "mentionnées",
+        "mars",
+        "présent décret",
+        "seront punis"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 : Sanctions"
     },
@@ -264,7 +522,20 @@
       "texte": [
         "Le Ministre du travail et de la prévoyance sociale est chargé de l'application du présent Décret qui sera publié au Journal Officiel de la République Populaire du Congo et communiqué partout où besoin sera."
       ],
-      "mots_cles": ["exécution", "Journal Officiel"],
+      "mots_cles": [
+        "décret",
+        "sera",
+        "exécution",
+        "ministre",
+        "prévoyance",
+        "sociale",
+        "chargé",
+        "présent",
+        "publié",
+        "journal",
+        "officiel",
+        "république"
+      ],
       "statut": "en vigueur",
       "section": "Titre 4 : Sanctions"
     }

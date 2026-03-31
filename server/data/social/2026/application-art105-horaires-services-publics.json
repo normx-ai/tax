@@ -20,7 +20,20 @@
         "[NB - Décret n°1984-1093 du 29 décembre 1984 fixant les horaires de travail dans les services publics, dans les entreprises publiques et para-publiques et entreprises privées]",
         "Le présent décret détermine les horaires de travail dans les services publics et dans les entreprises publiques, para-publiques et dans les entreprises privées."
       ],
-      "mots_cles": ["horaires", "services publics", "entreprises publiques", "entreprises privées"],
+      "mots_cles": [
+        "entreprises",
+        "publiques",
+        "décret",
+        "horaires",
+        "services",
+        "publics",
+        "para",
+        "privées",
+        "objet",
+        "décembre",
+        "fixant",
+        "présent"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -30,7 +43,18 @@
       "texte": [
         "La durée hebdomadaire de 40 heures de travail est étalée sur six jours dans la semaine du Lundi au Samedi."
       ],
-      "mots_cles": ["40 heures", "6 jours", "lundi", "samedi"],
+      "mots_cles": [
+        "durée",
+        "hebdomadaire",
+        "heures",
+        "jours",
+        "étalée",
+        "semaine",
+        "lundi",
+        "samedi",
+        "durée hebdomadaire",
+        "six jours"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -41,7 +65,20 @@
         "Pour les Entreprises soumises au système de la journée continue une pause journalière de 30 minutes est prévue de 10h00 à 10h30 pour les Services et Entreprises fonctionnant de 6h20 à 13h et 12h à 12h30 pour ceux fonctionnant de 7h à 14h.",
         "Toutefois pour éviter l'arrêt complet de la production, la pause pourra être organisée par roulement."
       ],
-      "mots_cles": ["pause", "30 minutes", "journée continue", "roulement"],
+      "mots_cles": [
+        "pause",
+        "journalière",
+        "minutes",
+        "entreprises",
+        "fonctionnant",
+        "soumises",
+        "système",
+        "journée",
+        "continue",
+        "prévue",
+        "services",
+        "ceux"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -51,7 +88,13 @@
       "texte": [
         "La pause doit être prise sur les lieux de travail."
       ],
-      "mots_cles": ["pause", "lieux de travail"],
+      "mots_cles": [
+        "pause",
+        "lieux",
+        "être",
+        "prise",
+        "être prise"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -65,7 +108,20 @@
         "- Parcs et musées : Lundi au vendredi matin 7h30-12h, Après-midi 15h-17h30, Samedi 7h-12h30. Avec une permanence le samedi après-midi et le dimanche toute la journée ;",
         "- Entreprises commerciales : Horaire à deux temps à la libre organisation de l'entreprise."
       ],
-      "mots_cles": ["horaires", "Trésor", "CNPS", "banques", "BTP", "administrations", "parcs", "entreprises commerciales"],
+      "mots_cles": [
+        "entreprises",
+        "samedi",
+        "lundi",
+        "horaires",
+        "publiques",
+        "pause",
+        "garage",
+        "administratif",
+        "vendredi",
+        "après",
+        "midi",
+        "nature"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -89,7 +145,20 @@
         "- les hôtels, bars et restaurants,",
         "- les boulangeries."
       ],
-      "mots_cles": ["journée continue", "exceptions", "transport", "douanes", "radio", "énergie", "hôpitaux", "hôtels"],
+      "mots_cles": [
+        "entreprises",
+        "services",
+        "journée",
+        "continue",
+        "transport",
+        "maritime",
+        "ainsi",
+        "activités",
+        "distribution",
+        "administrations",
+        "établissements",
+        "soumises"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -99,7 +168,20 @@
       "texte": [
         "Les horaires à fixer conformément à l'article 6 ci-dessus devront faire l'objet d'un arrêté du Ministre du travail, sur proposition des services et entreprises intéressés."
       ],
-      "mots_cles": ["horaires", "arrêté", "Ministre du travail"],
+      "mots_cles": [
+        "horaires",
+        "entreprises",
+        "exclues",
+        "fixer",
+        "conformément",
+        "devront",
+        "objet",
+        "arrêté",
+        "ministre",
+        "proposition",
+        "services",
+        "intéressés"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -109,7 +191,20 @@
       "texte": [
         "L'Office National des Postes et Télécommunications (ONPT) reste soumis aux dispositions de l'arrêté n°2900/MTPS-DGTFP-DTPS du 13 avril 1964."
       ],
-      "mots_cles": ["ONPT", "Postes", "Télécommunications", "arrêté 2900"],
+      "mots_cles": [
+        "onpt",
+        "office",
+        "national",
+        "postes",
+        "télécommunications",
+        "reste",
+        "soumis",
+        "arrêté",
+        "mtps",
+        "dgtfp",
+        "dtps",
+        "avril"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -119,7 +214,20 @@
       "texte": [
         "Toutefois, le Ministre du travail pourra, après avis du Conseil des Ministres, accorder certaines dérogations lorsque celles-ci ne mettent pas en cause fondamentalement les systèmes de la journée de travail."
       ],
-      "mots_cles": ["dérogations", "Conseil des Ministres"],
+      "mots_cles": [
+        "dérogations",
+        "possibles",
+        "toutefois",
+        "ministre",
+        "pourra",
+        "après",
+        "avis",
+        "conseil",
+        "ministres",
+        "accorder",
+        "certaines",
+        "celles"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -129,7 +237,20 @@
       "texte": [
         "Le décret n°82/834 du 13 septembre 1982 modifiant les horaires de travail dans les services publics et entreprises publiques et parapubliques, est abrogé."
       ],
-      "mots_cles": ["abrogation", "décret 82/834"],
+      "mots_cles": [
+        "abrogation",
+        "décret",
+        "septembre",
+        "modifiant",
+        "horaires",
+        "services",
+        "publics",
+        "entreprises",
+        "publiques",
+        "parapubliques",
+        "abrogé",
+        "septembre      modifiant"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     },
@@ -139,7 +260,20 @@
       "texte": [
         "Le présent décret qui prendra effet à compter du 2 janvier 1985 sera enregistré, publié au JORPC et communiqué partout où besoin sera."
       ],
-      "mots_cles": ["entrée en vigueur", "2 janvier 1985", "JORPC"],
+      "mots_cles": [
+        "sera",
+        "entrée",
+        "présent",
+        "décret",
+        "prendra",
+        "effet",
+        "compter",
+        "janvier",
+        "enregistré",
+        "publié",
+        "jorpc",
+        "communiqué"
+      ],
       "statut": "en vigueur",
       "section": "Décret horaires"
     }
