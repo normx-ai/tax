@@ -48,12 +48,16 @@ export async function getMessages(schema: string, conversationId: string, limit:
 
 export async function listConversations(schema: string, userId: string) {
   const r = await pool.query(
-    `SELECT c.*,
+    `SELECT c.id, c.title, c.agent, c.created_at AS "createdAt", c.updated_at AS "updatedAt",
+       (SELECT COUNT(*) FROM "${schema}".messages m WHERE m.conversation_id = c.id)::int AS "_count_messages",
        (SELECT content FROM "${schema}".messages m WHERE m.conversation_id = c.id ORDER BY m.created_at DESC LIMIT 1) as last_message
      FROM "${schema}".conversations c WHERE c.user_id = $1 ORDER BY c.updated_at DESC`,
     [userId]
   );
-  return r.rows;
+  return r.rows.map((row) => ({
+    ...row,
+    _count: { messages: row._count_messages },
+  }));
 }
 
 export async function deleteConversation(schema: string, id: string, userId: string) {
@@ -67,10 +71,17 @@ export async function getConversationWithMessages(schema: string, id: string, us
   const conv = await findConversation(schema, id, userId);
   if (!conv) return null;
   const msgs = await pool.query(
-    `SELECT * FROM "${schema}".messages WHERE conversation_id = $1 ORDER BY created_at ASC`,
+    `SELECT id, conversation_id AS "conversationId", role, content, articles_refs AS "citations", created_at AS "createdAt"
+     FROM "${schema}".messages WHERE conversation_id = $1 ORDER BY created_at ASC`,
     [id]
   );
-  return { ...conv, messages: msgs.rows };
+  return {
+    id: conv.id,
+    title: conv.title,
+    createdAt: conv.created_at,
+    updatedAt: conv.updated_at,
+    messages: msgs.rows,
+  };
 }
 
 export async function updateConversationTitle(schema: string, id: string, title: string) {
