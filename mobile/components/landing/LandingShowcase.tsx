@@ -117,13 +117,13 @@ function FeatureSection({
 
 function IPhoneSimulatorMockup() {
   return (
-    <View style={{ flex: 1, minWidth: 240, alignItems: "center" }}>
+    <View style={{ flex: 1, minWidth: 260, alignItems: "center" }}>
       {/* iPhone frame */}
       <View style={{
         backgroundColor: "#1a1a1e",
-        borderRadius: 32,
-        padding: 8,
-        maxWidth: 280,
+        borderRadius: 36,
+        padding: 10,
+        maxWidth: 320,
         width: "100%",
         shadowColor: "#000",
         shadowOffset: { width: 0, height: 10 },
@@ -154,7 +154,7 @@ function IPhoneSimulatorMockup() {
           </View>
 
           {/* Formulaire */}
-          <View style={{ padding: 12, gap: 8 }}>
+          <View style={{ padding: 14, gap: 10 }}>
             {/* Champ salaire */}
             <View>
               <Text style={{ fontSize: 8, color: "#6b7280", marginBottom: 2 }}>Salaire brut mensuel</Text>
@@ -184,7 +184,7 @@ function IPhoneSimulatorMockup() {
             <View style={{ height: 1, backgroundColor: `${PRIMARY}30`, marginVertical: 2 }} />
 
             {/* Resultats */}
-            <View style={{ backgroundColor: `${PRIMARY}08`, borderRadius: 8, padding: 10, gap: 5, borderWidth: 1, borderColor: `${PRIMARY}20` }}>
+            <View style={{ backgroundColor: `${PRIMARY}08`, borderRadius: 10, padding: 12, gap: 7, borderWidth: 1, borderColor: `${PRIMARY}20` }}>
               <Text style={{ fontSize: 9, fontWeight: "700", color: PRIMARY, letterSpacing: 1 }}>RESULTATS</Text>
               {[
                 { label: "CNSS mensuel (4%)", val: "48 000", color: "#ef4444" },
