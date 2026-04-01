@@ -10,7 +10,7 @@
 | Plan | Prix | Credits | Simulateurs |
 |---|---|---|---|
 | FREE | Gratuit (7 jours) | 10 credits total | 3 de base (ITS, TVA, IS) |
-| STARTER | 115 EUR/an (~75 000 FCFA) | 80 credits/mois | 16 simulateurs complets |
+| STARTER | 99 EUR/an (~75 000 FCFA) | 80 credits/mois | 16 simulateurs complets |
 | PRO | 183 EUR/an (~120 000 FCFA) | 150 credits/mois | 16 simulateurs complets |
 
 ---
@@ -50,7 +50,7 @@
 
 ---
 
-## STARTER — 115 EUR/an (~75 000 FCFA)
+## STARTER — 99 EUR/an (~75 000 FCFA)
 
 > 80 credits mensuels par utilisateur. Renouveles chaque mois.
 
