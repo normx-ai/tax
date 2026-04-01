@@ -129,9 +129,9 @@
 
 | Pack | Prix | Credits | Equivalent questions IA | Equivalent audits |
 |---|---|---|---|---|
-| Pack 30 | 8 EUR | 30 credits | 30 questions | 10 audits |
-| Pack 80 | 18 EUR | 80 credits | 80 questions | 26 audits |
-| Pack 200 | 35 EUR | 200 credits | 200 questions | 66 audits |
+| Pack 30 | 15 EUR | 30 credits | 30 questions | 10 audits |
+| Pack 80 | 25 EUR | 80 credits | 80 questions | 26 audits |
+| Pack 150 | 35 EUR | 150 credits | 150 questions | 50 audits |
 
 ---
 

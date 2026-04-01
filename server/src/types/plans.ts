@@ -57,9 +57,9 @@ export interface CreditPack {
 }
 
 export const CREDIT_PACKS: CreditPack[] = [
-  { id: 'pack_30', credits: 30, priceEur: 8, label: '30 credits' },
-  { id: 'pack_80', credits: 80, priceEur: 18, label: '80 credits' },
-  { id: 'pack_200', credits: 200, priceEur: 35, label: '200 credits' },
+  { id: 'pack_30', credits: 30, priceEur: 15, label: '30 credits' },
+  { id: 'pack_80', credits: 80, priceEur: 25, label: '80 credits' },
+  { id: 'pack_150', credits: 150, priceEur: 35, label: '150 credits' },
 ];
 
 const PLAN_ORDER: PlanName[] = ['FREE', 'STARTER', 'PRO'];

@@ -96,7 +96,7 @@ export default function LandingPricing({ isMobile }: Props) {
           marginBottom: 40,
         }}
       >
-        Packs credits disponibles : 30 (8 EUR) · 80 (18 EUR) · 200 (35 EUR)
+        Packs credits disponibles : 30 (15 EUR) · 80 (25 EUR) · 150 (35 EUR)
       </Text>
 
       <View
