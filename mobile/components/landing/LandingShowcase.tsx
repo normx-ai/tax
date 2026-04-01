@@ -117,14 +117,15 @@ function FeatureSection({
 
 function IPhoneSimulatorMockup() {
   return (
-    <View style={{ flex: 1, minWidth: 260, alignItems: "center" }}>
+    <View style={{ flex: 1, minWidth: 300, alignItems: "center" }}>
       {/* iPhone frame */}
       <View style={{
         backgroundColor: "#1a1a1e",
-        borderRadius: 36,
-        padding: 10,
-        maxWidth: 320,
+        borderRadius: 40,
+        padding: 12,
+        maxWidth: 380,
         width: "100%",
+        minHeight: 580,
         shadowColor: "#000",
         shadowOffset: { width: 0, height: 10 },
         shadowOpacity: 0.12,
@@ -135,9 +136,9 @@ function IPhoneSimulatorMockup() {
           <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: "#333", alignSelf: "center", marginTop: 6 }} />
         </View>
         {/* Screen */}
-        <View style={{ backgroundColor: "#faf8f5", borderRadius: 24, overflow: "hidden" }}>
+        <View style={{ backgroundColor: "#faf8f5", borderRadius: 28, overflow: "hidden", flex: 1 }}>
           {/* Status bar */}
-          <View style={{ height: 18, backgroundColor: DARK, flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 20, paddingTop: 2 }}>
+          <View style={{ height: 22, backgroundColor: DARK, flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 24, paddingTop: 4 }}>
             <Text style={{ fontSize: 8, fontWeight: "600", color: "rgba(255,255,255,0.7)" }}>9:41</Text>
             <View style={{ flexDirection: "row", gap: 3 }}>
               <Ionicons name="cellular" size={8} color="rgba(255,255,255,0.7)" />
@@ -147,35 +148,35 @@ function IPhoneSimulatorMockup() {
           </View>
 
           {/* App header */}
-          <View style={{ backgroundColor: DARK, paddingVertical: 8, paddingHorizontal: 14, flexDirection: "row", alignItems: "center", gap: 8 }}>
-            <Ionicons name="chevron-back" size={16} color="rgba(255,255,255,0.6)" />
-            <Ionicons name="calculator" size={14} color={PRIMARY} />
-            <Text style={{ fontSize: 12, fontWeight: "700", color: "#ffffff" }}>Simulateur ITS</Text>
+          <View style={{ backgroundColor: DARK, paddingVertical: 12, paddingHorizontal: 16, flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <Ionicons name="chevron-back" size={20} color="rgba(255,255,255,0.6)" />
+            <Ionicons name="calculator" size={18} color={PRIMARY} />
+            <Text style={{ fontSize: 15, fontWeight: "700", color: "#ffffff" }}>Simulateur ITS</Text>
           </View>
 
           {/* Formulaire */}
-          <View style={{ padding: 14, gap: 10 }}>
+          <View style={{ padding: 18, gap: 14 }}>
             {/* Champ salaire */}
             <View>
-              <Text style={{ fontSize: 8, color: "#6b7280", marginBottom: 2 }}>Salaire brut mensuel</Text>
-              <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 6, paddingVertical: 6, paddingHorizontal: 8, flexDirection: "row", justifyContent: "space-between" }}>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: DARK }}>1 308 756</Text>
-                <Text style={{ fontSize: 9, color: "#9ca3af" }}>FCFA</Text>
+              <Text style={{ fontSize: 11, color: "#6b7280", marginBottom: 4 }}>Salaire brut mensuel</Text>
+              <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 8, paddingVertical: 10, paddingHorizontal: 12, flexDirection: "row", justifyContent: "space-between" }}>
+                <Text style={{ fontSize: 16, fontWeight: "700", color: DARK }}>1 308 756</Text>
+                <Text style={{ fontSize: 12, color: "#9ca3af" }}>FCFA</Text>
               </View>
             </View>
 
             {/* Situation */}
-            <View style={{ flexDirection: "row", gap: 6 }}>
+            <View style={{ flexDirection: "row", gap: 10 }}>
               <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 8, color: "#6b7280", marginBottom: 2 }}>Situation</Text>
-                <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 6, paddingVertical: 5, paddingHorizontal: 8 }}>
-                  <Text style={{ fontSize: 9, color: DARK }}>Marie</Text>
+                <Text style={{ fontSize: 11, color: "#6b7280", marginBottom: 4 }}>Situation</Text>
+                <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 8, paddingVertical: 8, paddingHorizontal: 12 }}>
+                  <Text style={{ fontSize: 13, color: DARK }}>Marie</Text>
                 </View>
               </View>
               <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 8, color: "#6b7280", marginBottom: 2 }}>Enfants</Text>
-                <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 6, paddingVertical: 5, paddingHorizontal: 8 }}>
-                  <Text style={{ fontSize: 9, color: DARK }}>3</Text>
+                <Text style={{ fontSize: 11, color: "#6b7280", marginBottom: 4 }}>Enfants</Text>
+                <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 8, paddingVertical: 8, paddingHorizontal: 12 }}>
+                  <Text style={{ fontSize: 13, color: DARK }}>3</Text>
                 </View>
               </View>
             </View>
@@ -184,8 +185,8 @@ function IPhoneSimulatorMockup() {
             <View style={{ height: 1, backgroundColor: `${PRIMARY}30`, marginVertical: 2 }} />
 
             {/* Resultats */}
-            <View style={{ backgroundColor: `${PRIMARY}08`, borderRadius: 10, padding: 12, gap: 7, borderWidth: 1, borderColor: `${PRIMARY}20` }}>
-              <Text style={{ fontSize: 9, fontWeight: "700", color: PRIMARY, letterSpacing: 1 }}>RESULTATS</Text>
+            <View style={{ backgroundColor: `${PRIMARY}08`, borderRadius: 12, padding: 14, gap: 10, borderWidth: 1, borderColor: `${PRIMARY}20` }}>
+              <Text style={{ fontSize: 11, fontWeight: "700", color: PRIMARY, letterSpacing: 1 }}>RESULTATS</Text>
               {[
                 { label: "CNSS mensuel (4%)", val: "48 000", color: "#ef4444" },
                 { label: "Net imposable 80%", val: "1 008 605", color: DARK },
@@ -194,16 +195,16 @@ function IPhoneSimulatorMockup() {
                 { label: "Net a payer", val: "1 148 928", color: "#059669" },
               ].map((r, i) => (
                 <View key={i} style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <Text style={{ fontSize: 8, color: "#6b7280" }}>{r.label}</Text>
-                  <Text style={{ fontSize: 10, fontWeight: "700", color: r.color }}>{r.val}</Text>
+                  <Text style={{ fontSize: 11, color: "#6b7280" }}>{r.label}</Text>
+                  <Text style={{ fontSize: 14, fontWeight: "700", color: r.color }}>{r.val}</Text>
                 </View>
               ))}
             </View>
 
             {/* Reference article */}
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 4, justifyContent: "center", marginTop: 2 }}>
-              <Ionicons name="document-text-outline" size={10} color="#9ca3af" />
-              <Text style={{ fontSize: 7, color: "#9ca3af" }}>Art. 116-G CGI 2026 — Bareme ITS</Text>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 6, justifyContent: "center", marginTop: 4 }}>
+              <Ionicons name="document-text-outline" size={12} color="#9ca3af" />
+              <Text style={{ fontSize: 10, color: "#9ca3af" }}>Art. 116-G CGI 2026 — Bareme ITS</Text>
             </View>
           </View>
         </View>
