@@ -91,19 +91,18 @@ export default function ChatScreen() {
     isNearBottomRef.current = distanceFromBottom < 80;
   }, []);
 
-  // Charger historique à l'ouverture du panneau ou après rafraîchissement
+  // Charger historique au montage et apres chaque rafraichissement
   useEffect(() => {
-    if (showHistory) {
-      setLoadingHistory(true);
-      getConversations()
-        .then(setConversations)
-        .catch((err) => {
-          log.warn("Erreur chargement historique", err);
-          setConversations([]);
-        })
-        .finally(() => setLoadingHistory(false));
-    }
-  }, [showHistory, historyRefreshKey]);
+    setLoadingHistory(true);
+    getConversations()
+      .then((convs) => {
+        setConversations(convs);
+      })
+      .catch((err) => {
+        log.warn("Erreur chargement historique", err);
+      })
+      .finally(() => setLoadingHistory(false));
+  }, [historyRefreshKey]);
 
 
   // Charger conversation existante
@@ -171,7 +170,7 @@ export default function ChatScreen() {
           setIsStreaming(false);
           scrollToBottom();
           // Rafraîchir l'historique pour afficher la nouvelle conversation
-          if (showHistory) setHistoryRefreshKey((k) => k + 1);
+          setHistoryRefreshKey((k) => k + 1);
         },
         onError: (error) => {
           setMessages((prev) => [...prev, {
@@ -194,12 +193,14 @@ export default function ChatScreen() {
     setMessages([]);
     setConversationId(null);
     setStreamingContent("");
-  }, []);
+    if (isMobile) setShowHistory(false);
+  }, [isMobile]);
 
   const handleLoadConversation = useCallback((id: string) => {
     setMessages([]);
     setConversationId(id);
-  }, []);
+    if (isMobile) setShowHistory(false);
+  }, [isMobile]);
 
   const handleDeleteConversation = useCallback(
     async (id: string, title: string | null) => {
