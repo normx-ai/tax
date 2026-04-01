@@ -43,7 +43,7 @@ const PLANS = [
     name: "Pro",
     tag: "PRO",
     price: "300€",
-    period: "par an (~197 000 FCFA)",
+    period: "par an (~120 000 FCFA)",
     color: "#0F2A42",
     popular: true,
     features: [
