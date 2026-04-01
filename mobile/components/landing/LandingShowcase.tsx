@@ -328,7 +328,7 @@ function CalendarMockup() {
   };
 
   return (
-    <View style={{ flex: 1, minWidth: 240, maxWidth: 360 }}>
+    <View style={{ flex: 1, minWidth: 300, maxWidth: 480 }}>
       <View style={{
         backgroundColor: "#ffffff",
         borderRadius: 14,
@@ -365,7 +365,7 @@ function CalendarMockup() {
             const dl = day ? deadlines[day] : null;
             const isToday = day === 1;
             return (
-              <View key={i} style={{ width: `${100 / 7}%`, height: 32, padding: 1.5 }}>
+              <View key={i} style={{ width: `${100 / 7}%`, height: 28, padding: 1.5 }}>
                 {day ? (
                   <View style={{
                     flex: 1,
