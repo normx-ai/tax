@@ -219,6 +219,96 @@ function MacBookSocialMockup() {
   );
 }
 
+function CalendarMockup() {
+  const DAYS = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
+  // Avril 2026 commence un mercredi
+  const dates: (number | null)[] = [null, null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, null, null, null];
+  const deadlines: Record<number, { label: string; color: string }> = {
+    15: { label: "IS T1", color: "#ef4444" },
+    20: { label: "TVA", color: "#ef4444" },
+    25: { label: "TUS", color: ORANGE },
+    30: { label: "CNSS", color: "#7c3aed" },
+  };
+
+  return (
+    <View style={{ flex: 1, minWidth: 280 }}>
+      <View style={{
+        backgroundColor: "#ffffff",
+        borderRadius: 16,
+        borderWidth: 1,
+        borderColor: "rgba(0,0,0,0.08)",
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 8 },
+        shadowOpacity: 0.06,
+        shadowRadius: 24,
+        overflow: "hidden",
+      }}>
+        {/* Header mois */}
+        <View style={{ backgroundColor: DARK, paddingVertical: 14, paddingHorizontal: 16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+          <Ionicons name="chevron-back" size={18} color="rgba(255,255,255,0.5)" />
+          <View style={{ alignItems: "center" }}>
+            <Text style={{ fontSize: 16, fontWeight: "700", color: "#ffffff" }}>Avril 2026</Text>
+            <Text style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginTop: 2 }}>4 echeances ce mois</Text>
+          </View>
+          <Ionicons name="chevron-forward" size={18} color="rgba(255,255,255,0.5)" />
+        </View>
+
+        {/* Jours de la semaine */}
+        <View style={{ flexDirection: "row", paddingVertical: 8, paddingHorizontal: 8, backgroundColor: "#f9fafb", borderBottomWidth: 1, borderBottomColor: "#f3f4f6" }}>
+          {DAYS.map((d) => (
+            <View key={d} style={{ flex: 1, alignItems: "center" }}>
+              <Text style={{ fontSize: 10, fontWeight: "600", color: "#9ca3af" }}>{d}</Text>
+            </View>
+          ))}
+        </View>
+
+        {/* Grille des jours */}
+        <View style={{ flexDirection: "row", flexWrap: "wrap", padding: 4 }}>
+          {dates.map((day, i) => {
+            const dl = day ? deadlines[day] : null;
+            const isToday = day === 1;
+            return (
+              <View key={i} style={{ width: `${100 / 7}%`, aspectRatio: 1, padding: 2 }}>
+                {day ? (
+                  <View style={{
+                    flex: 1,
+                    borderRadius: 8,
+                    backgroundColor: dl ? `${dl.color}10` : isToday ? `${ORANGE}12` : "transparent",
+                    borderWidth: dl ? 1.5 : isToday ? 1 : 0,
+                    borderColor: dl ? dl.color : isToday ? ORANGE : "transparent",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}>
+                    <Text style={{ fontSize: 12, fontWeight: dl ? "700" : "500", color: dl ? dl.color : "#374151" }}>{day}</Text>
+                    {dl && <Text style={{ fontSize: 6, fontWeight: "700", color: dl.color, marginTop: 1 }}>{dl.label}</Text>}
+                  </View>
+                ) : <View style={{ flex: 1 }} />}
+              </View>
+            );
+          })}
+        </View>
+
+        {/* Liste echeances */}
+        <View style={{ paddingHorizontal: 12, paddingBottom: 12, paddingTop: 4, gap: 6 }}>
+          {[
+            { date: "15 avr", label: "Acompte IS T1", icon: "alert-circle" as const, color: "#ef4444" },
+            { date: "20 avr", label: "TVA mars 2026", icon: "alert-circle" as const, color: "#ef4444" },
+            { date: "25 avr", label: "TUS avril 2026", icon: "time-outline" as const, color: ORANGE },
+            { date: "30 avr", label: "CNSS T1 + Declaration", icon: "time-outline" as const, color: "#7c3aed" },
+          ].map((e, i) => (
+            <View key={i} style={{ flexDirection: "row", alignItems: "center", gap: 8, backgroundColor: "#f9fafb", borderRadius: 8, paddingVertical: 6, paddingHorizontal: 10 }}>
+              <Ionicons name={e.icon} size={14} color={e.color} />
+              <Text style={{ fontSize: 10, fontWeight: "700", color: e.color, width: 42 }}>{e.date}</Text>
+              <Text style={{ fontSize: 11, color: "#374151", flex: 1 }}>{e.label}</Text>
+              <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: e.color }} />
+            </View>
+          ))}
+        </View>
+      </View>
+    </View>
+  );
+}
+
 function IPadChatMockup() {
   return (
     <View style={{ flex: 1, minWidth: 280, alignItems: "center" }}>
@@ -397,31 +487,26 @@ export default function LandingShowcase({ isMobile }: Props) {
         />
       </View>
 
-      {/* Section 4 — Calendrier */}
+      {/* Section 4 — Calendrier fiscal */}
       <View style={{ backgroundColor: "#faf8f5" }}>
         <FeatureSection
           isMobile={isMobile}
           reverse
           label="CALENDRIER FISCAL"
           labelColor={ORANGE}
-          title={"Ne manquez plus\naucune échéance"}
-          description="Toutes les dates limites de déclaration et de paiement, avec alertes et rappels automatiques."
+          title={"Ne manquez plus\naucune echeance"}
+          description="Toutes les dates limites de declaration et de paiement, avec alertes et rappels automatiques."
           checks={[
-            "Échéances IS, IBA, TVA, ITS mensuelles",
-            "Déclarations CNSS trimestrielles",
+            "Echeances IS, IBA, TVA, ITS mensuelles",
+            "Declarations CNSS trimestrielles",
             "DAS annuelle (31 mars)",
             "Alertes avant chaque date limite",
           ]}
           mockupIcon="calendar-outline"
           mockupColor={ORANGE}
-          mockupTitle="Prochaines échéances"
-          mockupLines={[
-            "15 avril 2026|Acompte IS T1",
-            "20 avril 2026|TVA mars 2026",
-            "15 mai 2026|ITS avril 2026",
-            "15 juin 2026|Acompte IS T2",
-            "30 juin 2026|CNSS T2 2026",
-          ]}
+          mockupTitle=""
+          mockupLines={[]}
+          customMockup={<CalendarMockup />}
         />
       </View>
     </View>
