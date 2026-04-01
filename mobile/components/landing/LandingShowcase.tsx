@@ -288,7 +288,7 @@ function CalendarMockup() {
         {/* Liste echeances */}
         <View style={{ paddingHorizontal: 12, paddingBottom: 12, paddingTop: 4, gap: 6 }}>
           {[
-            { date: "15 avr", label: "CNSS avril 2026", icon: "alert-circle" as const, color: "#7c3aed" },
+            { date: "15 avr", label: "CNSS mars 2026", icon: "alert-circle" as const, color: "#7c3aed" },
             { date: "15 avr", label: "TVA mars 2026", icon: "alert-circle" as const, color: "#ef4444" },
             { date: "15 avr", label: "Patente T2 2026", icon: "alert-circle" as const, color: "#059669" },
           ].map((e, i) => (
