@@ -15,8 +15,8 @@ const anthropic = new Anthropic();
 
 const CLAUDE_MODEL = "claude-sonnet-4-20250514";
 const MAX_TOKENS = 2000;
-const MAX_HISTORY_MESSAGES = 10;
-const MAX_HISTORY_CHARS = 12000;
+const MAX_HISTORY_MESSAGES = 20;
+const MAX_HISTORY_CHARS = 24000;
 
 const GREETING_PATTERNS = [
   /^(bonjour|bonsoir|salut|hello|hi|hey|coucou|yo)\b/i,

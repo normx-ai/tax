@@ -40,8 +40,10 @@ export async function createMessage(
 
 export async function getMessages(schema: string, conversationId: string, limit: number = 20) {
   const r = await pool.query(
-    `SELECT role, content FROM "${schema}".messages
-     WHERE conversation_id = $1 ORDER BY created_at ASC LIMIT $2`,
+    `SELECT role, content FROM (
+       SELECT role, content, created_at FROM "${schema}".messages
+       WHERE conversation_id = $1 ORDER BY created_at DESC LIMIT $2
+     ) recent ORDER BY created_at ASC`,
     [conversationId, limit]
   );
   return r.rows;
