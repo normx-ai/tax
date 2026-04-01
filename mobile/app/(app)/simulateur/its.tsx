@@ -52,6 +52,24 @@ export default function ItsScreen() {
       legalRef={t("simulateur.its.legalRef")}
       emptyMessage={t("simulateur.its.enterSalary")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur ITS",
+        inputs: { "Salaire brut": salaireBrut, "Periode": periode, "Situation": situation, "Enfants": String(enfants) },
+        results: [
+          { label: "Calcul mensuel", value: "", type: "header" },
+          { label: "Salaire brut mensuel", value: formatNumber(result.revenuBrutAnnuel / 12) + " FCFA", type: "normal" },
+          { label: "Retenue CNSS mensuelle", value: "- " + formatNumber(result.retenueCnssMensuelle) + " FCFA", type: "normal" },
+          { label: "Net imposable mensuel", value: formatNumber(Math.round(result.revenuNetImposable / 12)) + " FCFA", type: "normal" },
+          { label: "Calcul annuel", value: "", type: "header" },
+          { label: "Salaire brut annuel", value: formatNumber(result.revenuBrutAnnuel) + " FCFA", type: "normal" },
+          { label: "Retenue CNSS annuelle", value: "- " + formatNumber(result.retenueCnss) + " FCFA", type: "normal" },
+          { label: "Net imposable annuel", value: formatNumber(result.revenuNetImposable) + " FCFA", type: "normal" },
+          { label: "Quotient familial", value: formatNumber(result.revenuParPart) + " FCFA", type: "normal" },
+          { label: "ITS annuel", value: formatNumber(result.itsAnnuel) + " FCFA", type: "result" },
+          { label: "ITS mensuel", value: formatNumber(result.itsMensuel) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 116-G CGI 2026",
+      } : undefined}
       inputSection={
         <>
           <View style={styles.rowGap10}>

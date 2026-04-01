@@ -37,6 +37,21 @@ export default function CessionPartsScreen() {
       legalRef={t("simulateur.cessionParts.legalRef")}
       emptyMessage={t("simulateur.cessionParts.enterAmount")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur Cession de parts",
+        inputs: { "Prix de cession": prixCession, "Type de cession": typeCession, "Contrat petrolier": contratPetrolier ? "Oui" : "Non" },
+        results: [
+          { label: "Calcul", value: "", type: "header" },
+          { label: "Prix de cession", value: formatNumber(result.prixCession) + " FCFA", type: "normal" },
+          { label: "Taux (" + result.articleRef + ")", value: result.taux + "%", type: "normal" },
+          { label: "Detail", value: "", type: "header" },
+          { label: "Droits", value: formatNumber(result.droits) + " FCFA", type: "normal" },
+          ...(result.minimumApplique ? [{ label: "Minimum applique", value: "1 000 000 FCFA", type: "normal" as const }] : []),
+          { label: "Centimes additionnels", value: "+ " + formatNumber(result.centimesAdditionnels) + " FCFA", type: "normal" },
+          { label: "Total du", value: formatNumber(result.total) + " FCFA", type: "total" },
+        ],
+        reference: result.articleRef,
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>

@@ -1,21 +1,18 @@
 import { useState, useMemo } from "react";
-import { View, Text, ScrollView, Switch, StyleSheet } from "react-native";
+import { View, Text, Switch, StyleSheet } from "react-native";
 import { calculerIsParapetrolier, type IsParapetrolierInput } from "@/lib/services/is-parapetrolier.service";
 import { formatNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
-import SimulateurEmptyState from "@/components/simulateur/SimulateurEmptyState";
+import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
-import { useResponsive } from "@/lib/hooks/useResponsive";
-import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 export default function IsParapetrolierScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const { isMobile } = useResponsive();
   const [chiffreAffairesHT, setChiffreAffairesHT] = useState("");
   const [montantMobDemob, setMontantMobDemob] = useState("");
   const [montantRemboursements, setMontantRemboursements] = useState("");
@@ -33,17 +30,35 @@ export default function IsParapetrolierScreen() {
   }, [chiffreAffairesHT, montantMobDemob, montantRemboursements, isZoneAngola]);
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
-          <Text style={[styles.title, { color: colors.text }]}>
-            {t("simulateur.isPara.title")}
-          </Text>
-
-          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText, { color: colors.text }]}>{t("simulateur.isPara.description")}</Text>
-          </View>
-
+    <SimulateurLayout
+      title={t("simulateur.isPara.title")}
+      description={t("simulateur.isPara.description")}
+      legalRef={t("simulateur.isPara.legalRef")}
+      emptyMessage={t("simulateur.isPara.enterCA")}
+      hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur IS Parapetrolier",
+        inputs: { "CA HT": chiffreAffairesHT, "Mob/Demob": montantMobDemob, "Remboursements": montantRemboursements, "Zone Angola": isZoneAngola ? "Oui" : "Non" },
+        results: [
+          { label: "Base de calcul", value: "", type: "header" },
+          { label: "CA HT brut", value: formatNumber(result.caHTBrut) + " FCFA", type: "normal" },
+          { label: "Exclusions", value: "- " + formatNumber(result.exclusions) + " FCFA", type: "normal" },
+          { label: "CA HT net", value: formatNumber(result.caHTNet) + " FCFA", type: "normal" },
+          { label: "Base forfaitaire", value: formatNumber(result.baseForfaitaire) + " FCFA", type: "normal" },
+          { label: "IS forfaitaire", value: "", type: "header" },
+          { label: "Taux IS", value: result.tauxIS + "%", type: "normal" },
+          { label: "IS forfaitaire", value: formatNumber(result.isForfaitaire) + " FCFA", type: "result" },
+          { label: "IRCM forfaitaire", value: "", type: "header" },
+          { label: "Taux IRCM", value: result.tauxIRCM + "%", type: "normal" },
+          { label: "IRCM forfaitaire", value: formatNumber(result.ircmForfaitaire) + " FCFA", type: "result" },
+          { label: "Total IS + IRCM", value: formatNumber(result.totalISPlusIRCM) + " FCFA", type: "total" },
+          { label: "Taux effectif/CA", value: result.tauxEffectifCA + "%", type: "normal" },
+          { label: "Mensualite totale", value: formatNumber(result.mensualiteTotal) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 131-D CGI 2026",
+      } : undefined}
+      inputSection={
+        <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>
             {t("simulateur.isPara.revenueSection")}
           </Text>
@@ -58,76 +73,45 @@ export default function IsParapetrolierScreen() {
             </View>
             <Switch value={isZoneAngola} onValueChange={setIsZoneAngola} trackColor={{ false: colors.disabled, true: `${colors.primary}80` }} thumbColor={isZoneAngola ? colors.primary : colors.textMuted} />
           </View>
+        </>
+      }
+      resultSection={
+        result ? (
+          <View>
+            <SimulateurSection label={t("simulateur.isPara.baseSection")} />
+            <TableRow label={t("simulateur.isPara.caHTBrut")} value={formatNumber(result.caHTBrut)} />
+            <TableRow label={t("simulateur.isPara.exclusionsLabel")} value={`- ${formatNumber(result.exclusions)}`} bg={colors.background} />
+            <TableRow label={t("simulateur.isPara.caHTNet")} value={formatNumber(result.caHTNet)} bold />
+            <TableRow label={t("simulateur.isPara.baseForfaitaire")} value={formatNumber(result.baseForfaitaire)} bg={colors.background} />
 
-          <Text style={[styles.legalRef, { color: colors.textMuted }]}>{t("simulateur.isPara.legalRef")}</Text>
-        </ScrollView>
+            <SimulateurSection label={t("simulateur.isPara.isSection")} />
+            <TableRow label={t("simulateur.isPara.baseForfaitaireLabel")} value={formatNumber(result.baseForfaitaire)} />
+            <TableRow label={t("simulateur.isPara.tauxIS")} value={`${result.tauxIS}%`} bg={colors.background} />
+            <ResultHighlight label={t("simulateur.isPara.isForfaitaire")} value={formatNumber(result.isForfaitaire)} variant="primary" />
 
-        <ScrollView style={[{ width: isMobile ? "100%" : "50%" }, isMobile ? { borderTopWidth: 1, borderTopColor: colors.border } : { borderLeftWidth: 1, borderLeftColor: colors.border }]} contentContainerStyle={styles.resultScrollContent}>
-          {result ? (
-            <View>
-              <SimulateurSection label={t("simulateur.isPara.baseSection")} />
-              <TableRow label={t("simulateur.isPara.caHTBrut")} value={formatNumber(result.caHTBrut)} />
-              <TableRow label={t("simulateur.isPara.exclusionsLabel")} value={`- ${formatNumber(result.exclusions)}`} bg={colors.background} />
-              <TableRow label={t("simulateur.isPara.caHTNet")} value={formatNumber(result.caHTNet)} bold />
-              <TableRow label={t("simulateur.isPara.baseForfaitaire")} value={formatNumber(result.baseForfaitaire)} bg={colors.background} />
+            <SimulateurSection label={t("simulateur.isPara.ircmSection")} />
+            <TableRow label={t("simulateur.isPara.distribReputee")} value={formatNumber(result.distributionReputee)} />
+            <TableRow label={t("simulateur.isPara.tauxIRCM")} value={`${result.tauxIRCM}%`} bg={colors.background} />
+            <ResultHighlight label={t("simulateur.isPara.ircmForfaitaire")} value={formatNumber(result.ircmForfaitaire)} variant="primary" />
 
-              <SimulateurSection label={t("simulateur.isPara.isSection")} />
-              <TableRow label={t("simulateur.isPara.baseForfaitaireLabel")} value={formatNumber(result.baseForfaitaire)} />
-              <TableRow label={t("simulateur.isPara.tauxIS")} value={`${result.tauxIS}%`} bg={colors.background} />
-              <ResultHighlight label={t("simulateur.isPara.isForfaitaire")} value={formatNumber(result.isForfaitaire)} variant="primary" />
+            <SimulateurSection label={t("simulateur.isPara.totalSection")} />
+            <TableRow label={t("simulateur.isPara.isLabel")} value={formatNumber(result.isForfaitaire)} />
+            <TableRow label={t("simulateur.isPara.ircmLabel")} value={formatNumber(result.ircmForfaitaire)} bg={colors.background} />
+            <ResultHighlight label={t("simulateur.isPara.totalISIRCM")} value={formatNumber(result.totalISPlusIRCM)} variant="danger" />
+            <TableRow label={t("simulateur.isPara.tauxEffectif")} value={`${result.tauxEffectifCA}%`} />
 
-              <SimulateurSection label={t("simulateur.isPara.ircmSection")} />
-              <TableRow label={t("simulateur.isPara.distribReputee")} value={formatNumber(result.distributionReputee)} />
-              <TableRow label={t("simulateur.isPara.tauxIRCM")} value={`${result.tauxIRCM}%`} bg={colors.background} />
-              <ResultHighlight label={t("simulateur.isPara.ircmForfaitaire")} value={formatNumber(result.ircmForfaitaire)} variant="primary" />
-
-              <SimulateurSection label={t("simulateur.isPara.totalSection")} />
-              <TableRow label={t("simulateur.isPara.isLabel")} value={formatNumber(result.isForfaitaire)} />
-              <TableRow label={t("simulateur.isPara.ircmLabel")} value={formatNumber(result.ircmForfaitaire)} bg={colors.background} />
-              <ResultHighlight label={t("simulateur.isPara.totalISIRCM")} value={formatNumber(result.totalISPlusIRCM)} variant="danger" />
-              <TableRow label={t("simulateur.isPara.tauxEffectif")} value={`${result.tauxEffectifCA}%`} />
-
-              <SimulateurSection label={t("simulateur.isPara.mensualitesSection")} />
-              <TableRow label={t("simulateur.isPara.mensIS")} value={formatNumber(result.mensualiteIS)} />
-              <TableRow label={t("simulateur.isPara.mensIRCM")} value={formatNumber(result.mensualiteIRCM)} bg={colors.background} />
-              <ResultHighlight label={t("simulateur.isPara.mensTotal")} value={formatNumber(result.mensualiteTotal)} variant="success" note={t("simulateur.isPara.mensNote")} />
-            </View>
-          ) : (
-            <SimulateurEmptyState message={t("simulateur.isPara.enterCA")} />
-          )}
-        </ScrollView>
-      </View>
-    </View>
+            <SimulateurSection label={t("simulateur.isPara.mensualitesSection")} />
+            <TableRow label={t("simulateur.isPara.mensIS")} value={formatNumber(result.mensualiteIS)} />
+            <TableRow label={t("simulateur.isPara.mensIRCM")} value={formatNumber(result.mensualiteIRCM)} bg={colors.background} />
+            <ResultHighlight label={t("simulateur.isPara.mensTotal")} value={formatNumber(result.mensualiteTotal)} variant="success" note={t("simulateur.isPara.mensNote")} />
+          </View>
+        ) : null
+      }
+    />
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  rowContainer: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 12,
-    paddingBottom: 40,
-  },
-  resultScrollContent: {
-    paddingBottom: 40,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: fontWeights.heading,
-    fontFamily: fonts.heading,
-    marginBottom: 12,
-  },
-  descriptionBox: {
-    padding: 12,
-    marginBottom: 12,
-  },
-  descriptionText: {
-    fontSize: 13,
-  },
   fieldLabel: {
     fontSize: 14,
     fontWeight: "600",
@@ -152,8 +136,5 @@ const styles = StyleSheet.create({
   switchDesc: {
     fontSize: 12,
     marginTop: 2,
-  },
-  legalRef: {
-    fontSize: 12,
   },
 });

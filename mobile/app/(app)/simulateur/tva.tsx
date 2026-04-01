@@ -51,6 +51,25 @@ export default function TvaScreen() {
       legalRef={t("simulateur.tva.legalRef")}
       emptyMessage={t("simulateur.tva.enterRevenue")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur TVA",
+        inputs: { "Ventes/Services HT": ventesHT, "Autres operations": autresOp, "Exportations HT": exportsHT, "Operations exonerees": exonerees, "TVA immobilisations": tvaImmo, "TVA biens/services": tvaBnS, "Credit anterieur": creditAnt },
+        results: [
+          { label: "Chiffre d'affaires", value: "", type: "header" },
+          { label: "Total CA HT", value: formatNumber(result.totalCAHT) + " FCFA", type: "normal" },
+          { label: "TVA brute", value: "", type: "header" },
+          { label: "Total TVA brute", value: formatNumber(result.totalTvaBrute) + " FCFA", type: "normal" },
+          { label: "TVA deductible", value: "", type: "header" },
+          { label: "Total TVA deductible", value: "- " + formatNumber(result.totalTvaDeductible) + " FCFA", type: "normal" },
+          { label: "Solde TVA", value: "", type: "header" },
+          ...(result.tvaAPayer > 0
+            ? [{ label: "TVA a payer", value: formatNumber(result.tvaAPayer) + " FCFA", type: "result" as const }]
+            : [{ label: "Credit TVA", value: formatNumber(result.creditTva) + " FCFA", type: "result" as const }]),
+          { label: "Centimes additionnels", value: formatNumber(result.centimesAdditionnels) + " FCFA", type: "normal" },
+          { label: "Total general", value: formatNumber(result.totalAPayer) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 234 CGI 2026",
+      } : undefined}
       inputSection={
         <>
           {/* Section A */}

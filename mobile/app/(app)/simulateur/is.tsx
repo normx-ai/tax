@@ -44,6 +44,20 @@ export default function IsScreen() {
       legalRef={typeImpot === "is" ? t("simulateur.is.legalRefIS") : t("simulateur.is.legalRefIBA")}
       emptyMessage={t("simulateur.is.enterProducts")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur Minimum de perception (IS/IBA)",
+        inputs: { "Type": typeImpot === "is" ? "IS" : "IBA", "Produits exploitation": produitsExploitation, "Produits financiers": produitsFinanciers, "Produits HAO": produitsHAO, "Retenues liberatoires": retenuesLiberatoires },
+        results: [
+          { label: "Minimum de perception", value: "", type: "header" },
+          { label: "Base", value: formatNumber(result.baseMinimumPerception) + " FCFA", type: "normal" },
+          { label: "Taux applique", value: result.tauxMinimum + "%", type: "normal" },
+          { label: "Minimum annuel", value: formatNumber(result.minimumPerceptionAnnuel) + " FCFA", type: "result" },
+          { label: "Acomptes trimestriels", value: "", type: "header" },
+          ...result.acomptes.map((a) => ({ label: a.label, value: formatNumber(a.montant) + " FCFA", type: "normal" as const })),
+          { label: "Total a payer", value: formatNumber(result.minimumPerceptionAnnuel) + " FCFA", type: "total" },
+        ],
+        reference: typeImpot === "is" ? "Art. 131-A CGI 2026" : "Art. 131-A CGI 2026",
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>

@@ -35,6 +35,21 @@ export default function IrfLoyersScreen() {
       legalRef={t("simulateur.irfLoyers.legalRef")}
       emptyMessage={t("simulateur.irfLoyers.enterRent")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur IRF Loyers",
+        inputs: { "Loyers bruts annuels": loyersBruts, "Type de locataire": typeLocataire },
+        results: [
+          { label: "Calcul IRF", value: "", type: "header" },
+          { label: "Loyers bruts annuels", value: formatNumber(result.loyersBrutsAnnuels) + " FCFA", type: "normal" },
+          { label: "Loyers bruts mensuels", value: formatNumber(result.loyersBrutsMensuels) + " FCFA", type: "normal" },
+          { label: "Taux applique", value: result.taux + "%", type: "normal" },
+          { label: "Impot annuel", value: formatNumber(result.impotAnnuel) + " FCFA", type: "result" },
+          { label: "Impot mensuel", value: formatNumber(result.impotMensuel) + " FCFA", type: "normal" },
+          { label: "Net annuel", value: formatNumber(result.netAnnuel) + " FCFA", type: "total" },
+          { label: "Net mensuel", value: formatNumber(result.netMensuel) + " FCFA", type: "normal" },
+        ],
+        reference: "Art. 116-E CGI 2026",
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>

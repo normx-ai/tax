@@ -36,6 +36,18 @@ export default function IrcmScreen() {
       legalRef={t("simulateur.ircm.legalRef")}
       emptyMessage={t("simulateur.ircm.enterAmount")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur IRCM",
+        inputs: { "Montant brut": montantBrut, "Type de revenu": typeRevenu },
+        results: [
+          { label: "Calcul IRCM", value: "", type: "header" },
+          { label: "Montant brut", value: formatNumber(result.montantBrut) + " FCFA", type: "normal" },
+          { label: "Taux applique", value: result.taux + "%", type: "normal" },
+          { label: "Impot du (IRCM)", value: formatNumber(result.impot) + " FCFA", type: "result" },
+          { label: "Montant net", value: formatNumber(result.montantNet) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 116-D CGI 2026",
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>

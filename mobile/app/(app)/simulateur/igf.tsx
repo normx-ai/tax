@@ -35,6 +35,18 @@ export default function IgfScreen() {
       legalRef={t("simulateur.igf.legalRef")}
       emptyMessage={t("simulateur.igf.enterTurnover")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur IGF",
+        inputs: { "Chiffre d'affaires": chiffreAffaires, "Base d'imposition": baseImposition === "ca" ? "Chiffre d'affaires" : "Marge brute" },
+        results: [
+          { label: "Calcul IGF", value: "", type: "header" },
+          { label: "Base imposable", value: formatNumber(result.baseImposable) + " FCFA", type: "normal" },
+          { label: "Taux applique", value: result.taux + "%", type: "normal" },
+          { label: "IGF annuel", value: formatNumber(result.igfAnnuel) + " FCFA", type: "result" },
+          { label: "IGF trimestriel", value: formatNumber(result.igfTrimestriel) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 404 CGI 2026",
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>

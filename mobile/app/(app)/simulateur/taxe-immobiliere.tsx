@@ -45,6 +45,25 @@ export default function TaxeImmobiliereScreen() {
       legalRef={t("simulateur.taxeImmo.legalRef")}
       emptyMessage={t("simulateur.taxeImmo.enterRent")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur Taxe immobiliere",
+        inputs: { "Loyer annuel": loyerAnnuel, "Type debiteur": typeDebiteur, "Nouveau contribuable": estNouveau },
+        results: [
+          { label: "Base de calcul", value: "", type: "header" },
+          { label: "Loyer annuel", value: formatNumber(result.loyerAnnuel) + " FCFA", type: "normal" },
+          { label: "Loyer mensuel", value: formatNumber(result.loyerMensuel) + " FCFA", type: "normal" },
+          { label: "Taux", value: result.taux + "%", type: "normal" },
+          { label: "Taxe", value: "", type: "header" },
+          { label: "Taxe annuelle", value: formatNumber(result.taxeAnnuelle) + " FCFA", type: "result" },
+          { label: "Taxe mensuelle", value: formatNumber(result.taxeMensuelle) + " FCFA", type: "normal" },
+          { label: "Repartition", value: "", type: "header" },
+          { label: "Part Etat", value: formatNumber(result.partEtat) + " FCFA", type: "normal" },
+          { label: "Part collectivites", value: formatNumber(result.partCollectivites) + " FCFA", type: "normal" },
+          { label: "Penalite retard", value: formatNumber(result.penaliteRetard) + " FCFA", type: "normal" },
+          { label: "Total avec penalite", value: formatNumber(result.taxeAnnuelle + result.penaliteRetard) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 378 CGI 2026",
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>

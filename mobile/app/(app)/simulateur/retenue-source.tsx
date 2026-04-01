@@ -36,6 +36,19 @@ export default function RetenueSourceScreen() {
       legalRef={t("simulateur.rts.legalRef")}
       emptyMessage={t("simulateur.rts.enterAmount")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur Retenue a la source",
+        inputs: { "Montant HT": montantHT, "Type de retenue": typeRetenue },
+        results: [
+          { label: "Calcul retenue", value: "", type: "header" },
+          { label: "Montant HT", value: formatNumber(result.montantHT) + " FCFA", type: "normal" },
+          { label: "Taux applique", value: result.taux + "%", type: "normal" },
+          { label: "Article", value: result.articleRef, type: "normal" },
+          { label: "Montant retenue", value: formatNumber(result.montantRetenue) + " FCFA", type: "result" },
+          { label: "Montant net", value: formatNumber(result.montantNet) + " FCFA", type: "total" },
+        ],
+        reference: result.articleRef,
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>

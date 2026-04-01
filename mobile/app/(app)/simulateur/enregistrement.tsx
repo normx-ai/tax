@@ -71,6 +71,21 @@ export default function EnregistrementScreen() {
       legalRef={t("simulateur.enreg.legalRef")}
       emptyMessage={t("simulateur.enreg.enterAmount")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur Droits d'enregistrement",
+        inputs: { "Montant": montant, "Type d'acte": typeActe, "Categorie": category },
+        results: [
+          { label: "Calcul", value: "", type: "header" },
+          { label: "Type d'acte", value: result.libelle, type: "normal" },
+          { label: "Montant de base", value: formatNumber(result.montant) + " FCFA", type: "normal" },
+          { label: "Taux applique (" + result.articleRef + ")", value: result.taux + "%", type: "normal" },
+          { label: "Detail", value: "", type: "header" },
+          { label: "Droits", value: formatNumber(result.droits) + " FCFA", type: "normal" },
+          { label: "Centimes additionnels", value: "+ " + formatNumber(result.centimesAdditionnels) + " FCFA", type: "normal" },
+          { label: "Total du", value: formatNumber(result.total) + " FCFA", type: "total" },
+        ],
+        reference: result.articleRef,
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>

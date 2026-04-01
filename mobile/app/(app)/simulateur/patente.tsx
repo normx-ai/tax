@@ -40,6 +40,25 @@ export default function PatenteScreen() {
       legalRef={t("simulateur.patente.legalRef")}
       emptyMessage={t("simulateur.enterDataToSee")}
       hasResult={hasResult}
+      exportData={result && hasResult ? {
+        simulatorName: "Simulateur Patente",
+        inputs: { "Chiffre d'affaires": chiffreAffaires, "Stand-by": isStandBy ? "Oui" : "Non", "Petroliere": isPetroliere ? "Oui" : "Non", "Entreprise nouvelle": isNouvelle ? "Oui" : "Non", "Entites fiscales": String(nombreEntites) },
+        results: result.isEntrepriseNouvelle ? [
+          { label: "Exoneration entreprise nouvelle", value: "0 FCFA", type: "total" },
+          ...(result.camu > 0 ? [{ label: "CAMU a payer", value: formatNumber(result.camu) + " FCFA", type: "result" as const }] : []),
+        ] : [
+          { label: "Detail par tranches", value: "", type: "header" },
+          { label: "Patente brute", value: formatNumber(Math.round(result.patenteBrute)) + " FCFA", type: "normal" },
+          { label: "Patente nette", value: formatNumber(result.patenteNette) + " FCFA", type: "result" },
+          { label: "Centimes additionnels", value: "", type: "header" },
+          { label: "Centimes additionnels", value: formatNumber(result.centimesAdditionnels) + " FCFA", type: "normal" },
+          { label: "Part chambres de commerce", value: formatNumber(result.partChambresCommerce) + " FCFA", type: "normal" },
+          { label: "Part collectivites locales", value: formatNumber(result.partCollectivitesLocales) + " FCFA", type: "normal" },
+          { label: "CAMU", value: formatNumber(result.camu) + " FCFA", type: "normal" },
+          { label: "Total a payer", value: formatNumber(result.totalAPayer) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 383 CGI 2026",
+      } : undefined}
       inputSection={
         <>
           <View style={[styles.switchRow, { backgroundColor: colors.card }]}>

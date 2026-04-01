@@ -68,6 +68,27 @@ export default function IbaScreen() {
       legalRef={t("simulateur.iba.legalRef")}
       emptyMessage={t("simulateur.iba.enterTurnover")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur IBA",
+        inputs: { "Produits exploitation": produitsExploitation, "Produits financiers": produitsFinanciers, "Produits HAO": produitsHAO, "Charges exploitation": chargesExploitation, "Charges financieres": chargesFinancieres, "Charges HAO": chargesHAO, "Reintegrations": reintegrations, "Deductions": deductions, "ARD": ard, "Report deficitaire": reportDeficitaire, "Achats/importations": montantAchats },
+        results: [
+          { label: "Resultat comptable", value: "", type: "header" },
+          { label: "Total produits", value: formatNumber(result.totalProduits) + " FCFA", type: "normal" },
+          { label: "Total charges", value: "- " + formatNumber(result.totalCharges) + " FCFA", type: "normal" },
+          { label: "Resultat comptable", value: formatNumber(result.resultatComptable) + " FCFA", type: "result" },
+          { label: "Resultat fiscal", value: "", type: "header" },
+          { label: "Resultat fiscal", value: formatNumber(result.resultatFiscal) + " FCFA", type: "result" },
+          { label: "IBA calcule", value: "", type: "header" },
+          { label: "IBA brut", value: formatNumber(result.ibaBrut) + " FCFA", type: "normal" },
+          { label: "Taux IBA", value: result.tauxIBA + "%", type: "normal" },
+          { label: "IBA retenu", value: formatNumber(result.ibaRetenu) + " FCFA", type: "result" },
+          { label: "IBA net", value: formatNumber(result.ibaNet) + " FCFA", type: "result" },
+          { label: "Total acomptes", value: formatNumber(result.totalAcomptes) + " FCFA", type: "normal" },
+          { label: "Solde", value: formatNumber(result.solde) + " FCFA", type: "total" },
+          { label: "Benefice net", value: formatNumber(result.beneficeNet) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 131-A CGI 2026",
+      } : undefined}
       inputSection={
         <>
           {/* Résultat comptable */}

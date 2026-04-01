@@ -145,6 +145,29 @@ export default function PaieScreen() {
       legalRef={t("simulateur.paie.legalRef")}
       emptyMessage={t("simulateur.paie.enterSalary")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur Paie",
+        inputs: { "Salaire de base": fields.salaireBase, "Primes imposables": fields.primesImposables, "Profil": profil, "Situation": situation, "Enfants": String(enfants) },
+        results: [
+          { label: "Bases de calcul", value: "", type: "header" },
+          { label: "Salaire brut total", value: formatNumber(result.salaireBrutTotal) + " FCFA", type: "normal" },
+          { label: "Base ITS", value: formatNumber(result.baseITS) + " FCFA", type: "normal" },
+          { label: "Retenues salarie", value: "", type: "header" },
+          { label: "CNSS salarie", value: "- " + formatNumber(result.cnssSalarieMensuel) + " FCFA", type: "normal" },
+          { label: "ITS mensuel", value: "- " + formatNumber(result.itsMensuel) + " FCFA", type: "normal" },
+          { label: "TOL", value: "- " + formatNumber(result.tolMensuel) + " FCFA", type: "normal" },
+          { label: "CAMU", value: "- " + formatNumber(result.camuMensuel) + " FCFA", type: "normal" },
+          { label: "Total retenues", value: formatNumber(result.totalRetenuesSalarie) + " FCFA", type: "result" },
+          { label: "Salaire net mensuel", value: formatNumber(result.salaireNetMensuel) + " FCFA", type: "total" },
+          { label: "Charges patronales", value: "", type: "header" },
+          { label: "Total charges patronales", value: formatNumber(result.totalChargesPatronales) + " FCFA", type: "result" },
+          { label: "Cout total employeur", value: formatNumber(result.coutTotalEmployeur) + " FCFA", type: "total" },
+          { label: "Recapitulatif annuel", value: "", type: "header" },
+          { label: "Salaire net annuel", value: formatNumber(result.salaireNetAnnuel) + " FCFA", type: "normal" },
+          { label: "Taux effectif", value: result.tauxEffectif.toFixed(1) + "%", type: "normal" },
+        ],
+        reference: "Art. 114-A, 116-G CGI 2026",
+      } : undefined}
       inputSection={
         <>
           {/* Profil salarié */}

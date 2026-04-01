@@ -72,6 +72,25 @@ export default function SoldeLiquidationScreen() {
       legalRef={t("simulateur.solde.legalRef")}
       emptyMessage={t("simulateur.solde.enterResult")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur Solde de liquidation IS",
+        inputs: { "Produits exploitation": produitsExploitation, "Produits financiers": produitsFinanciers, "Produits HAO": produitsHAO, "Charges exploitation": chargesExploitation, "Charges financieres": chargesFinancieres, "Charges HAO": chargesHAO, "Reintegrations": reintegrations, "Deductions": deductions, "Type contribuable": typeContribuable },
+        results: [
+          { label: "Resultat comptable", value: "", type: "header" },
+          { label: "Total produits", value: formatNumber(result.totalProduits) + " FCFA", type: "normal" },
+          { label: "Total charges", value: "- " + formatNumber(result.totalCharges) + " FCFA", type: "normal" },
+          { label: "Resultat comptable", value: formatNumber(result.resultatComptable) + " FCFA", type: "result" },
+          { label: "Resultat fiscal", value: "", type: "header" },
+          { label: "Resultat fiscal", value: formatNumber(result.resultatFiscal) + " FCFA", type: "result" },
+          { label: "IS calcule", value: "", type: "header" },
+          { label: "Benefice arrondi", value: formatNumber(result.beneficeArrondi) + " FCFA", type: "normal" },
+          { label: "Taux IS", value: result.tauxIS + "%", type: "normal" },
+          { label: "IS a payer", value: formatNumber(result.isCalcule) + " FCFA", type: "result" },
+          { label: "Total acomptes", value: formatNumber(result.totalAcomptes) + " FCFA", type: "normal" },
+          { label: result.creditImpot ? "Credit d'impot" : "Solde a payer", value: formatNumber(Math.abs(result.solde)) + " FCFA", type: "total" },
+        ],
+        reference: "Art. 131 CGI 2026",
+      } : undefined}
       inputSection={
         <>
           {/* Résultat comptable */}

@@ -64,6 +64,20 @@ export default function ContributionFonciereScreen() {
       legalRef={t("simulateur.foncier.legalRef")}
       emptyMessage={t("simulateur.foncier.enterData")}
       hasResult={!!result}
+      exportData={result ? {
+        simulatorName: "Simulateur Contribution fonciere",
+        inputs: { "Type de propriete": typePropriete, "Valeur locative": valeurLocative, "Surface m2": surfaceM2, "Surface ha": surfaceHa, "Taux communal": tauxCommunal + "%" },
+        results: [
+          { label: "Calcul", value: "", type: "header" },
+          { label: "Base brute", value: formatNumber(result.basebrute) + " FCFA", type: "normal" },
+          ...(result.tauxAbattement > 0 ? [{ label: "Abattement (" + result.tauxAbattement + "%)", value: "- " + formatNumber(result.abattement) + " FCFA", type: "normal" as const }] : []),
+          { label: "Base nette", value: formatNumber(result.baseNette) + " FCFA", type: "normal" },
+          { label: "Taux communal", value: result.tauxCommunal + "%", type: "normal" },
+          { label: "Resultat", value: "", type: "header" },
+          { label: typePropriete === "bati" ? "CFPB" : "CFPNB", value: result.impot > 0 ? formatNumber(result.impot) + " FCFA" : "Sous le minimum", type: "total" },
+        ],
+        reference: result.articleRef,
+      } : undefined}
       inputSection={
         <>
           <Text style={[styles.fieldLabel, { color: colors.text }]}>
