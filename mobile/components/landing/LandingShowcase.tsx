@@ -115,6 +115,110 @@ function FeatureSection({
   );
 }
 
+function MacBookSocialMockup() {
+  return (
+    <View style={{ flex: 1, minWidth: 280 }}>
+      {/* MacBook Air frame */}
+      <View style={{ backgroundColor: "#e2e2e2", borderRadius: 14, padding: 6, paddingBottom: 0, borderWidth: 1, borderColor: "#d4d4d4" }}>
+        {/* Camera */}
+        <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: "#1a1a1a", alignSelf: "center", marginBottom: 4, borderWidth: 1, borderColor: "#333" }} />
+        {/* Screen */}
+        <View style={{ backgroundColor: "#faf8f5", borderRadius: 2, overflow: "hidden" }}>
+          {/* Topbar */}
+          <View style={{ backgroundColor: DARK, height: 28, flexDirection: "row", alignItems: "center", paddingHorizontal: 10, gap: 6 }}>
+            <View style={{ width: 7, height: 7, borderRadius: 4, backgroundColor: "#ef4444" }} />
+            <View style={{ width: 7, height: 7, borderRadius: 4, backgroundColor: "#f59e0b" }} />
+            <View style={{ width: 7, height: 7, borderRadius: 4, backgroundColor: "#22c55e" }} />
+            <Text style={{ flex: 1, textAlign: "center", fontSize: 9, fontWeight: "600", color: "rgba(255,255,255,0.6)" }}>NORMX Tax — Code Social</Text>
+          </View>
+
+          {/* Book layout - 2 pages */}
+          <View style={{ flexDirection: "row", minHeight: 300 }}>
+            {/* Page gauche - Sommaire */}
+            <View style={{ flex: 1, backgroundColor: "#fffdf7", padding: 14, borderRightWidth: 1, borderRightColor: "rgba(0,0,0,0.08)" }}>
+              {/* Titre du livre */}
+              <View style={{ alignItems: "center", marginBottom: 12, paddingBottom: 8, borderBottomWidth: 1, borderBottomColor: `${PURPLE}20` }}>
+                <Ionicons name="book" size={18} color={PURPLE} />
+                <Text style={{ fontSize: 10, fontWeight: "800", color: DARK, marginTop: 4, textAlign: "center" }}>CODE DU TRAVAIL</Text>
+                <Text style={{ fontSize: 7, color: "#9ca3af", marginTop: 2 }}>Republique du Congo</Text>
+              </View>
+
+              {/* Sommaire */}
+              <Text style={{ fontSize: 8, fontWeight: "700", color: PURPLE, letterSpacing: 1, marginBottom: 6 }}>SOMMAIRE</Text>
+              {[
+                { num: "I", title: "Dispositions generales" },
+                { num: "II", title: "Contrat de travail" },
+                { num: "III", title: "Salaire" },
+                { num: "IV", title: "Conditions de travail" },
+                { num: "V", title: "Hygiene et securite" },
+                { num: "VI", title: "Organismes et moyens" },
+                { num: "VII", title: "Syndicats professionnels" },
+                { num: "VIII", title: "Differends du travail" },
+                { num: "IX", title: "Penalites" },
+                { num: "X", title: "Dispositions transitoires" },
+              ].map((t, i) => (
+                <View key={i} style={{ flexDirection: "row", gap: 6, marginBottom: 3, alignItems: "flex-start" }}>
+                  <Text style={{ fontSize: 7, color: PURPLE, fontWeight: "700", width: 18 }}>T.{t.num}</Text>
+                  <Text style={{ fontSize: 7, color: "#4b5563", flex: 1 }}>{t.title}</Text>
+                </View>
+              ))}
+
+              <View style={{ marginTop: 8, paddingTop: 6, borderTopWidth: 1, borderTopColor: "rgba(0,0,0,0.06)" }}>
+                <Text style={{ fontSize: 7, color: "#9ca3af", textAlign: "center" }}>247 articles</Text>
+              </View>
+            </View>
+
+            {/* Page droite - Article ouvert */}
+            <View style={{ flex: 1, backgroundColor: "#fffef9", padding: 14 }}>
+              {/* Breadcrumb */}
+              <View style={{ flexDirection: "row", gap: 4, marginBottom: 8, flexWrap: "wrap" }}>
+                <Text style={{ fontSize: 6, color: "#9ca3af" }}>Titre II</Text>
+                <Text style={{ fontSize: 6, color: "#9ca3af" }}>/</Text>
+                <Text style={{ fontSize: 6, color: "#9ca3af" }}>Chapitre 2</Text>
+                <Text style={{ fontSize: 6, color: "#9ca3af" }}>/</Text>
+                <Text style={{ fontSize: 6, color: PURPLE }}>Section 1</Text>
+              </View>
+
+              {/* Article */}
+              <Text style={{ fontSize: 11, fontWeight: "800", color: PURPLE, marginBottom: 2 }}>Art. 25</Text>
+              <Text style={{ fontSize: 8, fontWeight: "600", color: DARK, marginBottom: 6 }}>Conclusion du contrat</Text>
+
+              <Text style={{ fontSize: 7, color: "#4b5563", lineHeight: 12, marginBottom: 8 }}>
+                Le contrat de travail est un accord de volontes par lequel une personne physique s'engage a mettre son activite professionnelle sous la direction et l'autorite d'une autre personne physique ou morale moyennant remuneration.
+              </Text>
+
+              <Text style={{ fontSize: 7, color: "#4b5563", lineHeight: 12, marginBottom: 10 }}>
+                Le contrat de travail peut etre conclu pour une duree determinee ou pour une duree indeterminee.
+              </Text>
+
+              {/* Conventions collectives */}
+              <View style={{ backgroundColor: `${PURPLE}08`, borderRadius: 6, padding: 8, borderWidth: 1, borderColor: `${PURPLE}15` }}>
+                <Text style={{ fontSize: 7, fontWeight: "700", color: PURPLE, marginBottom: 4 }}>16 CONVENTIONS COLLECTIVES</Text>
+                <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 3 }}>
+                  {["BTP", "Petrole", "Commerce", "Industrie", "Forestiere", "NTIC", "Hotellerie", "Mines"].map((cc, i) => (
+                    <View key={i} style={{ backgroundColor: "#ffffff", borderRadius: 4, paddingVertical: 2, paddingHorizontal: 5, borderWidth: 1, borderColor: `${PURPLE}20` }}>
+                      <Text style={{ fontSize: 6, color: PURPLE }}>{cc}</Text>
+                    </View>
+                  ))}
+                </View>
+              </View>
+
+              {/* Favorite icon */}
+              <View style={{ position: "absolute", top: 12, right: 12 }}>
+                <Ionicons name="heart" size={12} color="#ef4444" />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      {/* MacBook base */}
+      <View style={{ height: 8, backgroundColor: "#d1d1d1", borderBottomLeftRadius: 2, borderBottomRightRadius: 2, marginHorizontal: 20 }}>
+        <View style={{ width: 60, height: 3, backgroundColor: "#b0b0b0", borderBottomLeftRadius: 2, borderBottomRightRadius: 2, alignSelf: "center" }} />
+      </View>
+    </View>
+  );
+}
+
 function IPadChatMockup() {
   return (
     <View style={{ flex: 1, minWidth: 280, alignItems: "center" }}>
@@ -271,11 +375,11 @@ export default function LandingShowcase({ isMobile }: Props) {
         />
       </View>
 
-      {/* Section 3 — Code Social */}
+      {/* Section 3 — Code Social (mock MacBook Air) */}
       <View style={{ backgroundColor: "#ffffff" }}>
         <FeatureSection
           isMobile={isMobile}
-          label="CODE DU TRAVAIL & CONVENTIONS"
+          label="CODE SOCIAL"
           labelColor={PURPLE}
           title={"Tout le droit social\ncongolais en un clic"}
           description="Code du Travail, Code de Securite Sociale, 16 conventions collectives et textes d'application — indexes et consultables article par article."
@@ -287,15 +391,9 @@ export default function LandingShowcase({ isMobile }: Props) {
           ]}
           mockupIcon="book-outline"
           mockupColor={PURPLE}
-          mockupTitle="Sommaire — Code Social"
-          mockupLines={[
-            "Code du Travail|10 titres, 247 articles",
-            "Securite Sociale|Loi 004-86",
-            "Conventions collectives|16 secteurs",
-            "CAMU (Loi 19-2023)|Assurance maladie",
-            "Risques professionnels|Loi 2012-18",
-            "Age de retraite|Loi 2024-48",
-          ]}
+          mockupTitle=""
+          mockupLines={[]}
+          customMockup={<MacBookSocialMockup />}
         />
       </View>
 
