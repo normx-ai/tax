@@ -7,7 +7,8 @@ import pool from "./pool";
 
 export async function findConversation(schema: string, id: string, userId: string) {
   const r = await pool.query(
-    `SELECT * FROM "${schema}".conversations WHERE id = $1 AND user_id = $2`,
+    `SELECT id, user_id AS "userId", title, agent, created_at AS "createdAt", updated_at AS "updatedAt"
+     FROM "${schema}".conversations WHERE id = $1 AND user_id = $2`,
     [id, userId]
   );
   return r.rows[0] || null;

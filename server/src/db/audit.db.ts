@@ -22,7 +22,8 @@ export async function createAuditLog(schema: string, data: {
 
 export async function getAuditLogs(schema: string, limit: number = 50, offset: number = 0) {
   const r = await pool.query(
-    `SELECT * FROM "${schema}".audit_log ORDER BY created_at DESC LIMIT $1 OFFSET $2`,
+    `SELECT id, actor_id AS "actorId", actor_email AS "actorEmail", action, entity_type AS "entityType", entity_id AS "entityId", ip_address AS "ipAddress", changes, created_at AS "createdAt"
+     FROM "${schema}".audit_log ORDER BY created_at DESC LIMIT $1 OFFSET $2`,
     [limit, offset]
   );
   return r.rows;

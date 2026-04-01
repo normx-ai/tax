@@ -18,7 +18,7 @@ router.get("/", requireAuth, resolveTenant, validate({ query: searchHistoryQuery
 
   const [searches, countResult] = await Promise.all([
     pool.query(
-      `SELECT id, query, results_count, created_at FROM "${s}".search_history
+      `SELECT id, query, results_count AS "resultsCount", created_at AS "createdAt" FROM "${s}".search_history
        WHERE user_id = $1 ORDER BY created_at DESC LIMIT $2 OFFSET $3`,
       [userId, limit, offset]
     ),
