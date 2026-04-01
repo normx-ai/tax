@@ -27,8 +27,8 @@ const PLANS = [
   {
     name: "Starter",
     tag: "STARTER",
-    price: "150€",
-    period: "par an (~98 000 FCFA)",
+    price: "115€",
+    period: "par an (~75 000 FCFA)",
     color: "#3b82f6",
     features: [
       "80 credits/mois",
@@ -42,7 +42,7 @@ const PLANS = [
   {
     name: "Pro",
     tag: "PRO",
-    price: "300€",
+    price: "183€",
     period: "par an (~120 000 FCFA)",
     color: "#0F2A42",
     popular: true,
