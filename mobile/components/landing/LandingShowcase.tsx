@@ -115,6 +115,106 @@ function FeatureSection({
   );
 }
 
+function IPhoneSimulatorMockup() {
+  return (
+    <View style={{ flex: 1, minWidth: 240, alignItems: "center" }}>
+      {/* iPhone frame */}
+      <View style={{
+        backgroundColor: "#1a1a1e",
+        borderRadius: 32,
+        padding: 8,
+        maxWidth: 280,
+        width: "100%",
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 10 },
+        shadowOpacity: 0.12,
+        shadowRadius: 24,
+      }}>
+        {/* Notch */}
+        <View style={{ width: 80, height: 20, borderRadius: 12, backgroundColor: "#1a1a1e", alignSelf: "center", marginBottom: -10, zIndex: 1 }}>
+          <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: "#333", alignSelf: "center", marginTop: 6 }} />
+        </View>
+        {/* Screen */}
+        <View style={{ backgroundColor: "#faf8f5", borderRadius: 24, overflow: "hidden" }}>
+          {/* Status bar */}
+          <View style={{ height: 18, backgroundColor: DARK, flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 20, paddingTop: 2 }}>
+            <Text style={{ fontSize: 8, fontWeight: "600", color: "rgba(255,255,255,0.7)" }}>9:41</Text>
+            <View style={{ flexDirection: "row", gap: 3 }}>
+              <Ionicons name="cellular" size={8} color="rgba(255,255,255,0.7)" />
+              <Ionicons name="wifi" size={8} color="rgba(255,255,255,0.7)" />
+              <Ionicons name="battery-full" size={8} color="rgba(255,255,255,0.7)" />
+            </View>
+          </View>
+
+          {/* App header */}
+          <View style={{ backgroundColor: DARK, paddingVertical: 8, paddingHorizontal: 14, flexDirection: "row", alignItems: "center", gap: 8 }}>
+            <Ionicons name="chevron-back" size={16} color="rgba(255,255,255,0.6)" />
+            <Ionicons name="calculator" size={14} color={PRIMARY} />
+            <Text style={{ fontSize: 12, fontWeight: "700", color: "#ffffff" }}>Simulateur ITS</Text>
+          </View>
+
+          {/* Formulaire */}
+          <View style={{ padding: 12, gap: 8 }}>
+            {/* Champ salaire */}
+            <View>
+              <Text style={{ fontSize: 8, color: "#6b7280", marginBottom: 2 }}>Salaire brut mensuel</Text>
+              <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 6, paddingVertical: 6, paddingHorizontal: 8, flexDirection: "row", justifyContent: "space-between" }}>
+                <Text style={{ fontSize: 12, fontWeight: "700", color: DARK }}>1 308 756</Text>
+                <Text style={{ fontSize: 9, color: "#9ca3af" }}>FCFA</Text>
+              </View>
+            </View>
+
+            {/* Situation */}
+            <View style={{ flexDirection: "row", gap: 6 }}>
+              <View style={{ flex: 1 }}>
+                <Text style={{ fontSize: 8, color: "#6b7280", marginBottom: 2 }}>Situation</Text>
+                <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 6, paddingVertical: 5, paddingHorizontal: 8 }}>
+                  <Text style={{ fontSize: 9, color: DARK }}>Marie</Text>
+                </View>
+              </View>
+              <View style={{ flex: 1 }}>
+                <Text style={{ fontSize: 8, color: "#6b7280", marginBottom: 2 }}>Enfants</Text>
+                <View style={{ backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#e5e7eb", borderRadius: 6, paddingVertical: 5, paddingHorizontal: 8 }}>
+                  <Text style={{ fontSize: 9, color: DARK }}>3</Text>
+                </View>
+              </View>
+            </View>
+
+            {/* Separator */}
+            <View style={{ height: 1, backgroundColor: `${PRIMARY}30`, marginVertical: 2 }} />
+
+            {/* Resultats */}
+            <View style={{ backgroundColor: `${PRIMARY}08`, borderRadius: 8, padding: 10, gap: 5, borderWidth: 1, borderColor: `${PRIMARY}20` }}>
+              <Text style={{ fontSize: 9, fontWeight: "700", color: PRIMARY, letterSpacing: 1 }}>RESULTATS</Text>
+              {[
+                { label: "CNSS mensuel (4%)", val: "48 000", color: "#ef4444" },
+                { label: "Net imposable 80%", val: "1 008 605", color: DARK },
+                { label: "Parts fiscales", val: "3,5", color: PRIMARY },
+                { label: "ITS mensuel", val: "111 828", color: "#ef4444" },
+                { label: "Net a payer", val: "1 148 928", color: "#059669" },
+              ].map((r, i) => (
+                <View key={i} style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                  <Text style={{ fontSize: 8, color: "#6b7280" }}>{r.label}</Text>
+                  <Text style={{ fontSize: 10, fontWeight: "700", color: r.color }}>{r.val}</Text>
+                </View>
+              ))}
+            </View>
+
+            {/* Reference article */}
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 4, justifyContent: "center", marginTop: 2 }}>
+              <Ionicons name="document-text-outline" size={10} color="#9ca3af" />
+              <Text style={{ fontSize: 7, color: "#9ca3af" }}>Art. 116-G CGI 2026 — Bareme ITS</Text>
+            </View>
+          </View>
+        </View>
+
+        {/* Home indicator */}
+        <View style={{ width: 60, height: 4, borderRadius: 2, backgroundColor: "#555", alignSelf: "center", marginTop: 6 }} />
+      </View>
+    </View>
+  );
+}
+
 function MacBookSocialMockup() {
   return (
     <View style={{ flex: 1, minWidth: 280 }}>
@@ -410,31 +510,25 @@ function IPadChatMockup() {
 export default function LandingShowcase({ isMobile }: Props) {
   return (
     <View>
-      {/* Section 1 — Simulateurs */}
+      {/* Section 1 — Simulateurs (mock iPhone) */}
       <View style={{ backgroundColor: "#ffffff" }}>
         <FeatureSection
           isMobile={isMobile}
           label="SIMULATEURS FISCAUX"
           labelColor={PRIMARY}
-          title={"Calculez vos impôts\nen temps réel"}
+          title={"Calculez vos impots\nen temps reel"}
           description="16 simulateurs conformes au CGI Congo 2026. IS, IBA, TVA, ITS, Patente, TUS et plus encore."
           checks={[
-            "IS à 28%, IBA à 30% avec minimum de perception",
-            "ITS barème progressif avec quotient familial",
+            "IS a 28%, IBA a 30% avec minimum de perception",
+            "ITS bareme progressif avec quotient familial",
             "TVA, Patente, CNSS, CAMU automatiques",
-            "Résultat fiscal avec réintégrations et déductions",
+            "Resultat fiscal avec reintegrations et deductions",
           ]}
           mockupIcon="calculator-outline"
           mockupColor={PRIMARY}
-          mockupTitle="Simulateur IS — CGI 2026"
-          mockupLines={[
-            "Produits d'exploitation|45 000 000 FCFA",
-            "Charges d'exploitation|38 500 000 FCFA",
-            "Résultat comptable|6 500 000 FCFA",
-            "Réintégrations fiscales|1 200 000 FCFA",
-            "Résultat fiscal|7 700 000 FCFA",
-            "IS (28%)|2 156 000 FCFA",
-          ]}
+          mockupTitle=""
+          mockupLines={[]}
+          customMockup={<IPhoneSimulatorMockup />}
         />
       </View>
 
