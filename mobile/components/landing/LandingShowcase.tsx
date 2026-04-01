@@ -224,10 +224,7 @@ function CalendarMockup() {
   // Avril 2026 commence un mercredi
   const dates: (number | null)[] = [null, null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, null, null, null];
   const deadlines: Record<number, { label: string; color: string }> = {
-    15: { label: "CNSS", color: "#7c3aed" },
-    20: { label: "TVA", color: "#ef4444" },
-    25: { label: "TUS", color: ORANGE },
-    30: { label: "Patente", color: "#059669" },
+    15: { label: "3 impots", color: "#ef4444" },
   };
 
   return (
@@ -248,7 +245,7 @@ function CalendarMockup() {
           <Ionicons name="chevron-back" size={18} color="rgba(255,255,255,0.5)" />
           <View style={{ alignItems: "center" }}>
             <Text style={{ fontSize: 16, fontWeight: "700", color: "#ffffff" }}>Avril 2026</Text>
-            <Text style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginTop: 2 }}>4 echeances ce mois</Text>
+            <Text style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginTop: 2 }}>3 echeances le 15</Text>
           </View>
           <Ionicons name="chevron-forward" size={18} color="rgba(255,255,255,0.5)" />
         </View>
@@ -292,9 +289,8 @@ function CalendarMockup() {
         <View style={{ paddingHorizontal: 12, paddingBottom: 12, paddingTop: 4, gap: 6 }}>
           {[
             { date: "15 avr", label: "CNSS avril 2026", icon: "alert-circle" as const, color: "#7c3aed" },
-            { date: "20 avr", label: "TVA mars 2026", icon: "alert-circle" as const, color: "#ef4444" },
-            { date: "25 avr", label: "TUS avril 2026", icon: "time-outline" as const, color: ORANGE },
-            { date: "30 avr", label: "Patente T2 2026", icon: "time-outline" as const, color: "#059669" },
+            { date: "15 avr", label: "TVA mars 2026", icon: "alert-circle" as const, color: "#ef4444" },
+            { date: "15 avr", label: "Patente T2 2026", icon: "alert-circle" as const, color: "#059669" },
           ].map((e, i) => (
             <View key={i} style={{ flexDirection: "row", alignItems: "center", gap: 8, backgroundColor: "#f9fafb", borderRadius: 8, paddingVertical: 6, paddingHorizontal: 10 }}>
               <Ionicons name={e.icon} size={14} color={e.color} />
