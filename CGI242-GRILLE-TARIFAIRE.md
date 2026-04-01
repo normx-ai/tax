@@ -1,258 +1,172 @@
-# CGI 242 — Grille Tarifaire & Fonctionnalités par Plan
+# CGI 242 — Grille Tarifaire & Fonctionnalites par Plan
+
+## Systeme de credits
+
+1 credit = 1 question IA ou 1 recherche RAG
+1 audit document = 3 credits
 
 ## Vue d'ensemble
 
-| Plan | Prix | IA Questions | Audit Documents |
+| Plan | Prix | Credits | Simulateurs |
 |---|---|---|---|
-| **FREE** | Gratuit (7 jours) | 5 questions | 3 documents |
-| **STARTER** | 69€/an | 15 questions/mois | 10 docs/mois |
-| **PROFESSIONAL** | 149€/an | 30 questions/mois | 30 docs/mois |
-| **TEAM** | 299€/an | 200 questions/mois | 100 docs/mois |
-| **ENTERPRISE** | Sur devis 500€+/an | Sur devis | Sur devis |
+| FREE | Gratuit (7 jours) | 10 credits total | 3 de base (ITS, TVA, IS) |
+| STARTER | 150 EUR/an (~98 000 FCFA) | 80 credits/mois | 16 simulateurs complets |
+| PRO | 300 EUR/an (~197 000 FCFA) | 150 credits/mois | 16 simulateurs complets |
 
 ---
 
-## FREE — Gratuit (7 jours d'essai complet)
+## FREE — Gratuit (7 jours)
 
-> Accès complet à toutes les fonctionnalités pendant 7 jours.
-> Après 7 jours → accès totalement bloqué, upgrade requis.
+> 10 credits au total sur 7 jours. Apres expiration : acces bloque, upgrade requis.
 
 ### Navigation & Recherche
-- ✅ Navigation CGI complète (2 263 articles — 3 tomes + TFNC)
-- ✅ Navigation arborescente : Tome → Partie → Livre → Chapitre → Section → Article
-- ✅ Recherche textuelle et vocale
-- ✅ Lecture audio des articles (text-to-speech)
-- ✅ Mode hors-ligne
+- Navigation CGI + Code Social (3 700+ articles)
+- Recherche textuelle et vocale
+- Lecture audio des articles (text-to-speech)
+- Mode hors-ligne
+- Favoris
 
 ### Simulateurs Fiscaux
-- ✅ 16 simulateurs complets (pendant 7 jours)
-  - Solde de Liquidation, IS, Retenue à la Source, IS Parapétrolier
-  - IBA, IRCM, IRF Loyers, Taxe Immobilière, ITS, Paie
-  - Enregistrement, Cession de Parts, Contribution Foncière
-  - Patente, IGF, TVA
+- 3 simulateurs de base : ITS, TVA, IS
+- 13 simulateurs avances non inclus
 
 ### Assistant IA
-- ✅ 36 agents spécialisés — **5 questions maximum**
-- ✅ RAG avec citations des articles sources
-- ✅ Recherche hybride (mots-clés + sémantique)
-- ✅ Streaming temps réel
+- 10 credits total (questions IA + recherche RAG)
+- 36 agents specialises
+- RAG avec citations des articles sources
+- Streaming temps reel
 
 ### Audit de Documents
-- ✅ **3 documents maximum** (PDF ou texte)
-- ✅ Vérification conformité CGI (Art. 32, Art. 380)
-- ✅ Contrôle TVA, mentions obligatoires, SFEC
-- ✅ Score de conformité + recommandations
+- 3 credits par document (10 credits = 3 audits max)
+- Verification conformite CGI (Art. 32, Art. 380)
+- Score de conformite + recommandations
 
 ### Calendrier Fiscal
-- ✅ Calendrier fiscal 2026 complet
-- ✅ Alertes push (J-5, J-3, J-1, Jour J)
-- ✅ Obligations mensuelles et annuelles
+- Non inclus
 
-### Sécurité & Compte
-- ✅ Inscription avec vérification email (OTP)
-- ✅ Protection Cloudflare Turnstile
-- ✅ Application Android + Web
+### Compte
+- Authentification SSO via Keycloak
+- Protection Cloudflare Turnstile
 
 ---
 
-## STARTER — 69€/an
+## STARTER — 150 EUR/an (~98 000 FCFA)
+
+> 80 credits mensuels par utilisateur. Renouveles chaque mois.
 
 ### Navigation & Recherche
-- ✅ Navigation CGI illimitée
-- ✅ Recherche textuelle et vocale illimitée
-- ✅ Lecture audio des articles
-- ✅ Mode hors-ligne
-- ✅ Historique de recherche
+- Navigation CGI + Code Social complete et illimitee
+- Recherche textuelle et vocale illimitee
+- Lecture audio, mode hors-ligne
+- Historique de recherche
+- Favoris synces en base
 
 ### Simulateurs Fiscaux
-- ✅ **5 simulateurs de base**
-  - ITS (Traitements et Salaires)
-  - TVA
-  - IS (Impôt sur les Sociétés)
-  - Paie (bulletin de salaire)
-  - Patente
-- ❌ 11 simulateurs avancés non inclus
+- 16 simulateurs complets
+  - ITS, TVA, IS, Paie, Patente
+  - Solde de Liquidation, Retenue a la Source, IS Parapetrolier
+  - IBA, IRCM, IRF Loyers, Taxe Immobiliere
+  - Enregistrement, Cession de Parts, Contribution Fonciere, IGF
 
 ### Assistant IA
-- ✅ 36 agents spécialisés — **15 questions/mois**
-- ✅ RAG avec citations des articles sources
-- ✅ Historique conversations sauvegardé
+- 80 credits/mois (questions IA + recherche RAG)
+- 36 agents specialises
+- RAG avec citations des articles sources
+- Historique conversations sauvegarde
 
 ### Audit de Documents
-- ✅ **10 documents/mois**
-- ✅ Vérification conformité complète
-- ✅ Score de conformité + recommandations
+- 3 credits par document (80 credits = 26 audits/mois max)
+- 5 types : facture, releve bancaire, bon de commande, DAS II, note de frais
+- Verification Art. 32 CGI + conformite TVA + SFEC
+- Historique audits sauvegarde
 
 ### Calendrier Fiscal
-- ✅ Calendrier fiscal 2026 complet
-- ✅ Alertes push activées
-- ✅ Badge notifications échéances
+- Calendrier fiscal 2026 complet
+- Alertes push (J-5, J-3, J-1, Jour J)
 
-### Compte & Sécurité
-- ✅ Profil personnalisable
-- ✅ MFA/TOTP
-- ❌ Organisations/équipes non inclus
-- ❌ Analytics non inclus
+### Compte & Securite
+- SSO Keycloak
+- Profil personnalisable
+- Support email
 
 ---
 
-## PROFESSIONAL — 149€/an
+## PRO — 300 EUR/an (~197 000 FCFA)
 
-### Navigation & Recherche
-- ✅ Tout le STARTER
-- ✅ Navigation CGI illimitée
-- ✅ Toutes fonctionnalités de recherche
+> 150 credits mensuels par utilisateur. Renouveles chaque mois.
 
-### Simulateurs Fiscaux
-- ✅ **16 simulateurs complets**
-  - Solde de Liquidation, IS, Retenue à la Source, IS Parapétrolier
-  - IBA, IRCM, IRF Loyers, Taxe Immobilière, ITS, Paie
-  - Enregistrement, Cession de Parts, Contribution Foncière
-  - Patente, IGF, TVA
-- ✅ Export résultats simulateurs
-- ✅ Calcul en temps réel avec référence articles CGI
+### Tout le STARTER +
 
 ### Assistant IA
-- ✅ 36 agents spécialisés — **30 questions/mois**
-- ✅ RAG avec citations des articles sources
-- ✅ Recherche hybride (mots-clés + sémantique vectorielle)
-- ✅ Streaming temps réel
-- ✅ Historique conversations sauvegardé
+- 150 credits/mois (questions IA + recherche RAG)
+- Toutes fonctionnalites IA
 
 ### Audit de Documents
-- ✅ **30 documents/mois**
-- ✅ 5 types : facture, relevé bancaire, bon de commande, DAS II, note de frais
-- ✅ Vérification Art. 32 CGI (mentions obligatoires)
-- ✅ Conformité TVA (taux, calcul)
-- ✅ SFEC : QR code, NIM, signature DGID
-- ✅ Amende 10 000 FCFA/omission (Art. 380)
-- ✅ Historique audits sauvegardé
+- 3 credits par document (150 credits = 50 audits/mois max)
+- Toutes fonctionnalites audit
 
-### Calendrier Fiscal
-- ✅ Calendrier fiscal 2026 complet
-- ✅ Alertes push (J-5, J-3, J-1, Jour J)
-
-### Compte & Sécurité
-- ✅ MFA/TOTP
-- ✅ Déconnexion toutes sessions
-- ❌ Organisations/équipes non inclus
-- ❌ Analytics non inclus
-
----
-
-## TEAM — 299€/an
-
-### Navigation & Recherche
-- ✅ Tout le PROFESSIONAL
-
-### Simulateurs Fiscaux
-- ✅ 16 simulateurs complets
-- ✅ Export résultats
-
-### Assistant IA
-- ✅ 36 agents spécialisés — **200 questions/mois**
-- ✅ Toutes fonctionnalités IA
-
-### Audit de Documents
-- ✅ **100 documents/mois**
-- ✅ Toutes fonctionnalités audit
-
-### Organisations & Équipes
-- ✅ Création organisation (jusqu'à 5 membres)
-- ✅ Rôles : OWNER, ADMIN, MEMBER
-- ✅ Invitations par email
-- ✅ Sièges supplémentaires disponibles
-  - Tarifs : 75 000 → 115 000 XAF/an/siège
-  - Remises volume : -10% (3+), -15% (5+), -20% (10+)
-- ✅ Permissions par membre
-- ✅ Transfert de propriété
+### Organisations & Equipes
+- Creation organisation
+- Roles : OWNER, ADMIN, MEMBER
+- Invitations par email
+- Permissions par membre
+- Transfert de propriete
 
 ### Analytics & Reporting
-- ✅ Tableau de bord d'activité par membre
-- ✅ Audit trail (qui a fait quoi, quand)
-- ✅ Export CSV statistiques
+- Tableau de bord d'activite par membre
+- Audit trail (qui a fait quoi, quand)
 
-### Sécurité
-- ✅ MFA/TOTP
-- ✅ Isolation données multi-tenant
-- ✅ Protection CSRF + rate limiting
+### Securite
+- Isolation donnees multi-tenant
+- Support prioritaire
 
 ---
 
-## ENTERPRISE — Sur devis 500€+/an
+## Packs Credits — Add-ons
 
-### Tout le TEAM +
+> Disponibles pour les plans payants (STARTER et PRO).
+> Credits supplementaires qui ne se resetent pas, valides jusqu'a utilisation.
 
-### Assistant IA & Audit
-- ✅ Questions IA — **quota personnalisé sur devis**
-- ✅ Documents audit — **quota personnalisé sur devis**
-
-### Organisations
-- ✅ Membres **illimités**
-- ✅ Sièges personnalisés
-- ✅ Quotas personnalisés par membre
-
-### Technique
-- ✅ Accès API
-- ✅ Intégration systèmes tiers
-- ✅ Environnement dédié si requis
-
-### Support & Accompagnement
-- ✅ Support prioritaire dédié
-- ✅ Onboarding personnalisé
-- ✅ Formation équipe incluse
-- ✅ SLA garanti
-
-### Facturation
-- ✅ Facturation personnalisée
-- ✅ Paiement par virement possible
-- ✅ Factures PDF téléchargeables
-
----
-
-## Add-ons — Crédits supplémentaires
-
-> Disponibles pour tous les plans payants.
-> L'utilisateur garde son plan et achète des crédits additionnels.
-
-### Pack Questions IA
-
-| Pack | Prix | Questions |
-|---|---|---|
-| Pack S | 9€ | 10 questions |
-| Pack M | 19€ | 30 questions |
-| Pack L | 39€ | 75 questions |
-| Pack XL | 69€ | 150 questions |
-
-### Pack Audit Documents
-
-| Pack | Prix | Documents |
-|---|---|---|
-| Pack S | 9€ | 10 documents |
-| Pack M | 19€ | 30 documents |
-| Pack L | 39€ | 75 documents |
-| Pack XL | 69€ | 150 documents |
+| Pack | Prix | Credits | Equivalent questions IA | Equivalent audits |
+|---|---|---|---|---|
+| Pack 30 | 8 EUR | 30 credits | 30 questions | 10 audits |
+| Pack 80 | 18 EUR | 80 credits | 80 questions | 26 audits |
+| Pack 200 | 35 EUR | 200 credits | 200 questions | 66 audits |
 
 ---
 
 ## Notifications & Rappels (tous plans)
 
-- ✅ Rappels échéances fiscales : J-5, J-3, J-1, Jour J
-- ✅ Rappels abonnement expirant : J-30, J-7, J-1, Jour J
-- ✅ Notifications push Android
-- ✅ Navigation directe depuis notification
+- Rappels echeances fiscales : J-5, J-3, J-1, Jour J
+- Rappels abonnement expirant : J-30, J-7, J-1, Jour J
+- Notifications push Android
+- Navigation directe depuis notification
 
 ---
 
 ## Plateformes
 
-- ✅ Android (Google Play) — CGI242 Intelligence Fiscale IA
-- ✅ Web — https://tax.normx-ai.com
-- ✅ Mode hors-ligne (plans payants)
-- ✅ Langues : Français / Anglais
+- Android (Google Play)
+- Web : https://tax.normx-ai.com
+- Mode hors-ligne
+- Langues : Francais / Anglais
+- Favoris synces entre appareils
+
+---
+
+## Correspondance credits / utilisation
+
+| Action | Cout en credits |
+|---|---|
+| Question IA (chat) | 1 credit |
+| Recherche RAG | 1 credit |
+| Audit document (facture, releve, etc.) | 3 credits |
+| Navigation CGI / Code Social | Gratuit (illimite) |
+| Simulateurs (selon plan) | Gratuit (illimite) |
+| Calendrier fiscal | Gratuit (illimite) |
 
 ---
 
 *Document NormX AI — CGI 242 Intelligence Fiscale IA*
-*Mise à jour : Mars 2026*
+*Mise a jour : Avril 2026*
 *Contact : facturation@normx-ai.com*

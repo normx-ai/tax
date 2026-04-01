@@ -12,60 +12,47 @@ interface Props {
 
 const PLANS = [
   {
-    nameKey: "landing.pricingFree",
+    name: "Decouverte",
     tag: "FREE",
     price: "0",
-    periodKey: "landing.pricingTrialPeriod",
+    period: "7 jours d'essai",
     color: "#6b7280",
-    featureKeys: [
-      "landing.pricingFeat5q",
-      "landing.pricingFeat3audit",
-      "landing.pricingFeatCgiRead",
-      "landing.pricingFeatAllSimTrial",
+    features: [
+      "10 credits (IA + recherche)",
+      "3 audits de documents",
+      "3 simulateurs (ITS, TVA, IS)",
+      "CGI + Code Social en lecture",
     ],
   },
   {
-    nameKey: "landing.pricingStarter",
+    name: "Starter",
     tag: "STARTER",
-    price: "69€",
-    periodKey: "landing.pricingPerYear",
+    price: "150€",
+    period: "par an (~98 000 FCFA)",
     color: "#3b82f6",
-    featureKeys: [
-      "landing.pricingFeat15q",
-      "landing.pricingFeat10audit",
-      "landing.pricingFeatCgiFull",
-      "landing.pricingFeat5sim",
-      "landing.pricingFeatHistory",
+    features: [
+      "80 credits/mois",
+      "26 audits/mois",
+      "16 simulateurs complets",
+      "CGI + Code Social illimite",
+      "Calendrier fiscal + alertes",
+      "Historique et favoris",
     ],
   },
   {
-    nameKey: "landing.pricingProfessional",
-    tag: "PROFESSIONAL",
-    price: "149€",
-    periodKey: "landing.pricingPerYear",
+    name: "Pro",
+    tag: "PRO",
+    price: "300€",
+    period: "par an (~197 000 FCFA)",
     color: "#0F2A42",
     popular: true,
-    featureKeys: [
-      "landing.pricingFeat30q",
-      "landing.pricingFeat30audit",
-      "landing.pricingFeatCgiFull",
-      "landing.pricingFeatAllSim",
-      "landing.pricingFeatHistory",
-    ],
-  },
-  {
-    nameKey: "landing.pricingTeam",
-    tag: "TEAM",
-    price: "299€",
-    periodKey: "landing.pricingPerYear",
-    color: "#8b5cf6",
-    featureKeys: [
-      "landing.pricingFeat200q",
-      "landing.pricingFeat100audit",
-      "landing.pricingFeatAllSim",
-      "landing.pricingFeatOrg",
-      "landing.pricingFeatAnalytics",
-      "landing.pricingFeatPriority",
+    features: [
+      "150 credits/mois",
+      "50 audits/mois",
+      "16 simulateurs complets",
+      "Organisation et equipes",
+      "Analytics et audit trail",
+      "Support prioritaire",
     ],
   },
 ];
@@ -85,7 +72,7 @@ export default function LandingPricing({ isMobile }: Props) {
           marginBottom: 8,
         }}
       >
-        {t("landing.pricingTitle")}
+        Tarifs simples, credits flexibles
       </Text>
       <Text
         style={{
@@ -94,10 +81,22 @@ export default function LandingPricing({ isMobile }: Props) {
           fontSize: 17,
           fontFamily: fonts.light,
           fontWeight: fontWeights.light,
+          marginBottom: 12,
+        }}
+      >
+        1 credit = 1 question IA — 1 audit = 3 credits
+      </Text>
+      <Text
+        style={{
+          textAlign: "center",
+          color: "#5a6a7a",
+          fontSize: 14,
+          fontFamily: fonts.light,
+          fontWeight: fontWeights.light,
           marginBottom: 40,
         }}
       >
-        {t("landing.pricingSubtitle")}
+        Packs credits disponibles : 30 (8 EUR) · 80 (18 EUR) · 200 (35 EUR)
       </Text>
 
       <View
@@ -169,7 +168,7 @@ export default function LandingPricing({ isMobile }: Props) {
                 marginBottom: 12,
               }}
             >
-              {t(plan.nameKey)}
+              {plan.name}
             </Text>
 
             <View style={{ flexDirection: "row", alignItems: "baseline", marginBottom: 4 }}>
@@ -193,10 +192,10 @@ export default function LandingPricing({ isMobile }: Props) {
                 marginBottom: 20,
               }}
             >
-              {t(plan.periodKey)}
+              {plan.period}
             </Text>
 
-            {plan.featureKeys.map((featKey, idx) => (
+            {plan.features.map((feat, idx) => (
               <View
                 key={idx}
                 style={{
@@ -220,7 +219,7 @@ export default function LandingPricing({ isMobile }: Props) {
                     flex: 1,
                   }}
                 >
-                  {t(featKey)}
+                  {feat}
                 </Text>
               </View>
             ))}
@@ -245,7 +244,7 @@ export default function LandingPricing({ isMobile }: Props) {
                   color: plan.popular ? "#fff" : "#0F2A42",
                 }}
               >
-                {plan.tag === "FREE" ? t("landing.pricingTryFree") : t("landing.pricingStart")}
+                {plan.tag === "FREE" ? "Essayer gratuitement" : "Commencer"}
               </Text>
             </TouchableOpacity>
           </View>
