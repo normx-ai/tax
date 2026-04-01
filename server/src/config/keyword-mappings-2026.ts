@@ -1769,6 +1769,650 @@ export const KEYWORD_ARTICLE_MAP_2026: Record<string, string[]> = {
   'regime forfaitaire': ['Art. 171 bis'],
   'micro entreprise': ['Art. 171 bis'],
   'petits commercants': ['Art. 171 bis'],
+
+  // ========================================================================
+  // SANCTIONS DECLARATIONS (Tome 1, Partie 3, Titre 1, Chap 1 - Art. 372-381 quinquies)
+  // ========================================================================
+
+  // Art. 372 - Sanctions taxation d'office
+  'taxation office 100%': ['Art. 372'],
+  'majoration taxation office': ['Art. 372'],
+  'contribuable taxe office': ['Art. 372'],
+
+  // Art. 373 - Sanctions non-production ou production tardive
+  'non production declaration': ['Art. 373'],
+  'production tardive declaration': ['Art. 373'],
+  '50% cotisations majoration': ['Art. 373'],
+  '15000 fcfa jour retard': ['Art. 373'],
+  '500000 fcfa amende declaration': ['Art. 373'],
+  'report depot declaration': ['Art. 373'],
+  '5% mois retard tca': ['Art. 373'],
+  '15% mois mise en demeure': ['Art. 373'],
+
+  // Art. 373 bis - Obligations déclaratives conventions
+  'obligations declaratives conventions': ['Art. 373 bis'],
+  'perte avantages fiscaux': ['Art. 373 bis', 'Art. 386 bis'],
+  '10000000 fcfa amende etats financiers': ['Art. 373 bis'],
+
+  // Art. 373 ter - Documents comptables en langue étrangère
+  'documents langue etrangere': ['Art. 373 ter'],
+  'traduction documents comptables': ['Art. 373 ter'],
+  '2000000 fcfa amende traduction': ['Art. 373 ter'],
+
+  // Art. 374 - Pénalités inexactitude
+  'inexactitude declaration': ['Art. 374'],
+  'insuffisance declaration': ['Art. 374'],
+  'bonne foi contribuable penalite': ['Art. 374', 'Art. 374 bis'],
+  'mauvaise foi contribuable': ['Art. 374', 'Art. 374 bis'],
+  'ventes sans factures': ['Art. 374'],
+  '200% droits eludes': ['Art. 374'],
+  'manoeuvre frauduleuse': ['Art. 374', 'Art. 374 bis'],
+  'opposition controle penalite': ['Art. 374'],
+  'dirigeant solidairement responsable': ['Art. 374'],
+
+  // Art. 374 bis - Définition mauvaise foi
+  'definition mauvaise foi': ['Art. 374 bis'],
+  'ecritures fictives': ['Art. 374 bis'],
+  'factures fausses': ['Art. 374 bis'],
+  'pièces fausses tva': ['Art. 374 bis'],
+
+  // Art. 374 ter - Intérêt de retard spontané
+  'declaration spontanee insuffisance': ['Art. 374 ter'],
+  '0,5% jour retard': ['Art. 374 ter'],
+  'interet retard spontane': ['Art. 374 ter'],
+
+  // Art. 376 - Revenus hors Congo
+  'revenus hors congo penalite': ['Art. 376'],
+  'avoirs hors congo dissimulation': ['Art. 376', 'Art. 521'],
+
+  // Art. 377 - Amende renseignements
+  'defaut renseignements': ['Art. 377'],
+  '100000 fcfa omission': ['Art. 377'],
+  'cheque voyage registre': ['Art. 377'],
+
+  // Art. 377 bis - Train de vie
+  'train de vie penalite': ['Art. 377 bis'],
+  '10000 fcfa element omis': ['Art. 377 bis'],
+
+  // Art. 379 - Infractions documentaires
+  'infractions obligations documentaires': ['Art. 379'],
+  'majoration 100% retenue source': ['Art. 379'],
+
+  // Art. 380 - Renseignements obligatoires
+  'das 2': ['Art. 380'],
+  'declaration annuelle salaires das': ['Art. 380'],
+  'perte droit deduire salaires': ['Art. 380'],
+  'infractions declaratives employeur': ['Art. 380'],
+
+  // Art. 381 - Déclaration article 276
+  'declaration locative penalite': ['Art. 381'],
+  '25000 fcfa amende declaration': ['Art. 381'],
+
+  // Art. 381 bis - Taxe véhicules majoration
+  'vehicule majoration 100%': ['Art. 381 bis'],
+  'justification paiement taxe vehicule': ['Art. 381 bis'],
+
+  // Art. 381 ter - Articles 31 bis et 31 ter
+  'infraction article 31 bis': ['Art. 381 ter'],
+  '100000 fcfa mois retard': ['Art. 381 ter'],
+  '500000 fcfa amende annuelle': ['Art. 381 ter'],
+
+  // Art. 381 quater - TCA douanes
+  'infractions tca douanes': ['Art. 381 quater'],
+  'biens importes tca': ['Art. 381 quater'],
+
+  // Art. 381 quinquies - Taxation d'office générale
+  'taxation office generale': ['Art. 381 quinquies'],
+
+  // ========================================================================
+  // PRESCRIPTIONS (Tome 1, Partie 3, Titre 1, Chap 2 - Art. 382-383)
+  // ========================================================================
+
+  'prescription fiscale': ['Art. 382'],
+  'delai prescription impots': ['Art. 382'],
+  'quatrieme annee prescription': ['Art. 382'],
+  'omissions assiette': ['Art. 382'],
+  'agissements frauduleux prescription': ['Art. 382'],
+  'prorogation prescription fraude': ['Art. 382'],
+  'prescription enregistrement': ['Art. 383'],
+  'delai prescription enregistrement': ['Art. 383'],
+
+  // ========================================================================
+  // CHANGEMENT LIEU IMPOSITION (Tome 1, Partie 3, Titre 1, Chap 3 - Art. 384)
+  // ========================================================================
+
+  'changement lieu imposition': ['Art. 384'],
+  'deplacement siege entreprise': ['Art. 384'],
+  'cotisations exercices anterieurs': ['Art. 384'],
+
+  // ========================================================================
+  // CONVENTIONS FISCALES (Tome 1, Partie 3, Titre 1, Chap 4 - Art. 385-386 bis)
+  // ========================================================================
+
+  'abus convention fiscale': ['Art. 385'],
+  'conventions internationales assiette': ['Art. 385'],
+  'transfert avantages fiscaux tiers': ['Art. 385'],
+  'immunites fiscales onu': ['Art. 386'],
+  'organismes internationaux immunite': ['Art. 386'],
+  'renegociation conventions fiscales': ['Art. 386 bis'],
+  'annulation avantages fiscaux': ['Art. 386 bis'],
+  'charte investissements conventions': ['Art. 386 bis'],
+  'avenants conventions interdits': ['Art. 386 bis'],
+  'reduction avantages avenants': ['Art. 386 bis'],
+
+  // ========================================================================
+  // DROIT DE COMMUNICATION (Tome 1, Partie 3, Titre 1, Chap 6 - Art. 391-399 quater)
+  // ========================================================================
+
+  'droit communication fiscal': ['Art. 391', 'Art. 393'],
+  'communication livres comptables': ['Art. 391'],
+  'releve par client fournisseur': ['Art. 391'],
+  'declaration comptes bancaires': ['Art. 391 bis'],
+  'ouverture compte commercial declaration': ['Art. 391 bis'],
+  'cloture compte declaration': ['Art. 391 bis'],
+  'rib iban declaration': ['Art. 391 bis'],
+  'non deduction charges compte non declare': ['Art. 391 bis'],
+  '3000000 fcfa amende compte': ['Art. 391 bis'],
+  'rapports controle interne externe': ['Art. 391 ter'],
+  'audit comptes communication': ['Art. 391 ter'],
+  'revue fiscale communication': ['Art. 391 ter'],
+  'organismes exoneres communication': ['Art. 392'],
+  'secret professionnel administration': ['Art. 393'],
+  'autorite judiciaire communication impots': ['Art. 395'],
+  'fraude fiscale information judiciaire': ['Art. 395'],
+  'greffe pièces disposition': ['Art. 395'],
+  'sentence arbitrale enregistrement': ['Art. 395'],
+  'ministere public communication dossiers': ['Art. 396'],
+  'agents change banquiers obligations': ['Art. 397'],
+  'avis ouverture cloture compte': ['Art. 397'],
+  'releve annuel coupons': ['Art. 397'],
+  'etablissements credit etats financiers': ['Art. 397'],
+  'controle changes communication': ['Art. 398'],
+  'refus communication sanction': ['Art. 399'],
+  'destruction documents sanction': ['Art. 399'],
+  '100000 fcfa refus communication': ['Art. 399'],
+  'accuse reception fax email': ['Art. 399 bis'],
+  'niu identification unique': ['Art. 399 ter'],
+  'numero identification unique': ['Art. 399 ter'],
+  'perte droit deduction tva niu': ['Art. 399 ter'],
+  'utilisation frauduleuse niu': ['Art. 399 ter', 'Art. 521 bis'],
+  '3000000 fcfa niu fraude': ['Art. 399 ter'],
+  'immatriculation automatique niu': ['Art. 399 ter'],
+  'declaration existence activite lucrative': ['Art. 399 quater'],
+
+  // ========================================================================
+  // COMMISSION DES IMPOTS (Tome 1, Partie 3, Titre 1, Chap 7 - Art. 400-403)
+  // ========================================================================
+
+  'commission des impots': ['Art. 400', 'Art. 401'],
+  'commission speciale impots': ['Art. 400'],
+  'avis chiffre affaires forfaitaire': ['Art. 400'],
+  'composition commission impots': ['Art. 401'],
+  'directeur departemental impots': ['Art. 401', 'Art. 430 bis'],
+  'chambre commerce commission': ['Art. 401'],
+  'syndicat patronal commission': ['Art. 401'],
+  'conseils fiscaux agrees cemac': ['Art. 401'],
+
+  // ========================================================================
+  // SECRET PROFESSIONNEL (Tome 1, Partie 3, Titre 1, Chap 8 - Art. 404-406 bis)
+  // ========================================================================
+
+  'secret professionnel agents fiscaux': ['Art. 404'],
+  'obligation secret professionnel fiscal': ['Art. 404'],
+  'juge instruction secret fiscal': ['Art. 404'],
+  'echange renseignements international fiscal': ['Art. 404'],
+  'extraits roles contribuable': ['Art. 405'],
+  'cotisation propre extrait role': ['Art. 405'],
+  'communications agents administration': ['Art. 406'],
+  'enveloppe fermee correspondance fiscale': ['Art. 406'],
+  'marches publics impots taxes': ['Art. 406 bis'],
+  'marches bons commande ttc': ['Art. 406 bis'],
+  'adjudicataire redevable legal': ['Art. 406 bis'],
+  'depenses fiscales comptabiliser': ['Art. 406 bis'],
+
+  // ========================================================================
+  // EMISSION DES ROLES (Tome 1, Partie 3, Titre 2, Chap 1 - Art. 407-409)
+  // ========================================================================
+
+  'emission roles impots': ['Art. 407', 'Art. 408'],
+  'titre perception impots': ['Art. 407'],
+  'responsable residence fiscale': ['Art. 407'],
+  'modalites redaction roles': ['Art. 408'],
+
+  // ========================================================================
+  // APPROBATION DES ROLES (Tome 1, Partie 3, Titre 2, Chap 2 - Art. 410-414)
+  // ========================================================================
+
+  'verification roles impots': ['Art. 410'],
+  'directeur contributions directes': ['Art. 410', 'Art. 411', 'Art. 412'],
+  'homologation roles': ['Art. 411'],
+  'approbation ministre finances': ['Art. 411', 'Art. 413'],
+  'arretes roles executoires': ['Art. 412', 'Art. 413'],
+  'etats prise en charge': ['Art. 412'],
+  'avertissement impots': ['Art. 414'],
+  'date avertissement': ['Art. 414'],
+
+  // ========================================================================
+  // MISE EN RECOUVREMENT (Tome 1, Partie 3, Titre 2, Chap 3 - Art. 415-421)
+  // ========================================================================
+
+  'date mise recouvrement role': ['Art. 415'],
+  'tresorier payeur general': ['Art. 415'],
+  'point depart prescription roles': ['Art. 415'],
+  'transmission roles dgid': ['Art. 416'],
+  'expedition authentique roles': ['Art. 416'],
+  'reclamation contribuable recouvrement': ['Art. 417'],
+  'avertissement contribuable': ['Art. 418', 'Art. 419'],
+  'defaut paiement role': ['Art. 420'],
+  'delai paiement impot role': ['Art. 421'],
+
+  // ========================================================================
+  // JURIDICTION GRACIEUSE (Tome 1, Partie 3, Titre 3, Chap 1 et 3 - Art. 422-458 bis)
+  // ========================================================================
+
+  'juridiction contentieuse gracieuse': ['Art. 422'],
+  'remise impot gracieuse': ['Art. 422', 'Art. 446'],
+  'moderation impot': ['Art. 422', 'Art. 446'],
+  'indigence contribuable': ['Art. 422', 'Art. 446'],
+  'gene contribuable': ['Art. 446'],
+  'cotes irrecouvrables': ['Art. 422'],
+  'remise penalites': ['Art. 422'],
+  'demande remise moderation': ['Art. 446'],
+  'destruction partielle immeuble': ['Art. 446'],
+  'vacance locative six mois': ['Art. 446'],
+  'adresse demande gracieuse': ['Art. 447'],
+  'instruction demande gracieuse': ['Art. 448'],
+  'degrevement application': ['Art. 458'],
+  'reclamation garantie caution': ['Art. 458 bis'],
+
+  // ========================================================================
+  // TARIF FRAIS POURSUITE (Tome 1, Partie 3, Titre 4, Chap 3 - Art. 519-520 E)
+  // ========================================================================
+
+  'tarif frais poursuite': ['Art. 519'],
+  'sommation frais': ['Art. 519'],
+  'signification saisie arret tarif': ['Art. 519'],
+  'commissaire priseur tarif': ['Art. 519'],
+  'recouvrement taxe spectacles': ['Art. 520'],
+  'receveur municipal spectacles': ['Art. 520'],
+  'recouvrement ressources naturelles': ['Art. 520 bis', 'Art. 520-A'],
+  'recettes petrolieres gazieres': ['Art. 520 bis'],
+  'partage production petrole': ['Art. 520 bis'],
+  'profit oil': ['Art. 520 bis'],
+  'profit gaz': ['Art. 520 bis'],
+  'pid provision investissements diversifies': ['Art. 520 bis'],
+  'redevance miniere': ['Art. 520 bis'],
+  'redevance superficiaire': ['Art. 520 bis'],
+  'recettes forestieres': ['Art. 520 bis'],
+  'taxes abattage foret': ['Art. 520 bis'],
+  'calendrier declaration paiement ressources': ['Art. 520 bis'],
+  'fiscalite specifique ressources naturelles': ['Art. 520-A'],
+  'codes sectoriels': ['Art. 520-A'],
+  'constatation recettes ressources': ['Art. 520-B'],
+  'declaration paiement spontane ressources': ['Art. 520-B'],
+  'liquidation titre perception ressources': ['Art. 520-C'],
+  'infractions ressources naturelles': ['Art. 520-D'],
+  'penalites ressources naturelles': ['Art. 520-E'],
+
+  // ========================================================================
+  // SANCTIONS PENALES (Tome 1, Partie 4 - Art. 521-524)
+  // ========================================================================
+
+  'sanctions penales fiscales': ['Art. 521', 'Art. 522', 'Art. 523', 'Art. 524'],
+  'declaration inexacte avoirs hors congo': ['Art. 521'],
+  'dissimulation avoirs penale': ['Art. 521'],
+  'amende moitie avoir dissimule': ['Art. 521'],
+  'affichage nom contrevenant': ['Art. 521'],
+  'utilisation frauduleuse niu penale': ['Art. 521 bis'],
+  '500000 a 10000000 fcfa emprisonnement': ['Art. 521 bis'],
+  'fraude fiscale penale': ['Art. 522'],
+  'soustraction frauduleuse impots': ['Art. 522'],
+  'faux documents fiscaux': ['Art. 522'],
+  'escroquerie fiscale': ['Art. 522'],
+  'emprisonnement fraude fiscale': ['Art. 522'],
+  'complicite fraude fiscale': ['Art. 523'],
+  'obstacle fonctions agent impots': ['Art. 524'],
+  'outrage agent impots': ['Art. 524'],
+
+  // ========================================================================
+  // TEXTES NON CODIFIES (Art. NC-1, NC-2)
+  // ========================================================================
+
+  'conventions fiscales internationales congo': ['Art. NC-1'],
+  'liste conventions fiscales': ['Art. NC-1'],
+  'pays conventions bilaterales': ['Art. NC-1'],
+  'convention cemac double imposition': ['Art. NC-2'],
+  'reglement 07/19 cemac': ['Art. NC-2'],
+  'udeac convention fiscale': ['Art. NC-2'],
+
+  // ========================================================================
+  // ENREGISTREMENT - GENERALITES (Tome 2, Livre 1, Chap 1 - Art. 1-16)
+  // ========================================================================
+
+  'droits enregistrement base': ['Art. 1'],
+  'nature droits enregistrement': ['Art. 2'],
+  'droit fixe enregistrement': ['Art. 3'],
+  'droit proportionnel progressif': ['Art. 4'],
+  'dispositions dependantes independantes': ['Art. 5', 'Art. 6'],
+  'enregistrement minutes brevets originaux': ['Art. 8'],
+  'actes support numerique': ['Art. 8 bis'],
+  'signature electronique qualifiee': ['Art. 8 bis'],
+  'qr code actes enregistrement': ['Art. 8 ter'],
+  'identifiant unique acte numerique': ['Art. 8 ter'],
+  'plateforme verification actes': ['Art. 8 ter'],
+  'jugements enregistrement': ['Art. 9'],
+  'actes autorites administratives enregistrement': ['Art. 10'],
+  'extraits copies expeditions enregistrement': ['Art. 11'],
+  'actes mutation immobiliere notariat': ['Art. 11 bis'],
+  'minimum perception 10000 fcfa': ['Art. 12'],
+  'mutation simultanee meubles immeubles': ['Art. 13'],
+  'preuve mutation immobiliere': ['Art. 14'],
+  'preuve mutation fonds commerce': ['Art. 15'],
+  'preuve jouissance locative': ['Art. 16'],
+
+  // ========================================================================
+  // ENREGISTREMENT - ASSIETTE (Tome 2, Livre 1, Chap 2 - Art. 17-57)
+  // ========================================================================
+
+  'assiette droits enregistrement': ['Art. 17'],
+  'microfinance reduction 50%': ['Art. 17'],
+  'baux locations assiette enregistrement': ['Art. 18'],
+  'licences brevets assiette': ['Art. 18 bis'],
+  'usufruit viager evaluation': ['Art. 19', 'Art. 20'],
+  'nue propriete evaluation': ['Art. 20'],
+  'valeur venale enregistrement': ['Art. 21'],
+
+  // ========================================================================
+  // ENREGISTREMENT - DELAIS (Tome 2, Livre 1, Chap 3 - Art. 58-82)
+  // ========================================================================
+
+  'delais enregistrement actes publics': ['Art. 58', 'Art. 59'],
+  'delai notaires enregistrement': ['Art. 59'],
+  'quinze jours enregistrement notaire': ['Art. 59'],
+  'delai actes judiciaires enregistrement': ['Art. 60'],
+  'delai agents execution enregistrement': ['Art. 61'],
+  'delai administrations publiques enregistrement': ['Art. 62'],
+  'testaments enregistrement delai': ['Art. 64'],
+  'actes sous seing prive enregistrement': ['Art. 65', 'Art. 72', 'Art. 73'],
+  'mutations verbales enregistrement': ['Art. 66', 'Art. 67'],
+  'locations verbales declaration': ['Art. 67', 'Art. 68'],
+  '120000 fcfa location verbale': ['Art. 68'],
+  'cession droit bail enregistrement': ['Art. 69'],
+  'mutation fonds commerce delai': ['Art. 70'],
+  'conventions synallagmatiques enregistrement': ['Art. 71'],
+  'declaration succession delai': ['Art. 74', 'Art. 75', 'Art. 76', 'Art. 77'],
+  'succession absent enregistrement': ['Art. 77'],
+  'mutation deces paiement delai': ['Art. 78'],
+  'legs etat etablissements publics': ['Art. 78'],
+  'computation delais enregistrement': ['Art. 79'],
+  'bureaux enregistrement horaires': ['Art. 80'],
+  'jours feries enregistrement': ['Art. 81'],
+  'prorogation delais enregistrement': ['Art. 82'],
+
+  // ========================================================================
+  // ENREGISTREMENT - BUREAUX (Tome 2, Livre 1, Chap 4 - Art. 83-88)
+  // ========================================================================
+
+  'bureaux competents enregistrement': ['Art. 83'],
+  'notaires ressort enregistrement': ['Art. 83'],
+  'ventes publiques enregistrement bureau': ['Art. 84'],
+  'actes sous seing prive bureau': ['Art. 85'],
+  'declarations mutations verbales bureau': ['Art. 86'],
+  'actes etrangers enregistrement indistinct': ['Art. 87'],
+  'mutations deces bureau domicile': ['Art. 88'],
+
+  // ========================================================================
+  // ENREGISTREMENT - PAIEMENT (Tome 2, Livre 1, Chap 5 - Art. 89-98)
+  // ========================================================================
+
+  'paiement droits enregistrement': ['Art. 89'],
+  'obligation paiement enregistrement': ['Art. 90'],
+  'notaires paiement droits': ['Art. 90'],
+  'solidarite parties paiement droits': ['Art. 92'],
+  'officiers publics avance droits': ['Art. 93'],
+  'repartition droits parties': ['Art. 94'],
+  'coheritiers solidarite succession': ['Art. 95'],
+  'fractionnement droits baux enregistrement': ['Art. 97'],
+  'periodes triennales bail': ['Art. 97'],
+
+  // ========================================================================
+  // ENREGISTREMENT - PEINES (Tome 2, Livre 1, Chap 6 - Art. 99-116)
+  // ========================================================================
+
+  'amende defaut enregistrement notaire': ['Art. 99'],
+  '5000 fcfa amende enregistrement': ['Art. 99'],
+  'amende defaut enregistrement exploit': ['Art. 100'],
+  '10000 fcfa amende enregistrement': ['Art. 100'],
+  'nullite acte non enregistre': ['Art. 100'],
+  'amende defaut declaration succession': ['Art. 103'],
+  'droit double succession tardive': ['Art. 104'],
+
+  // ========================================================================
+  // ENREGISTREMENT - INSUFFISANCES (Tome 2, Livre 1, Chap 7 - Art. 117-131)
+  // ========================================================================
+
+  'expertise insuffisance prix': ['Art. 117', 'Art. 118'],
+  'valeur venale expertise': ['Art. 117'],
+  'requete tribunal expertise': ['Art. 118'],
+  'dissimulation prix enregistrement': ['Art. 119'],
+  'complement droits enregistrement': ['Art. 120'],
+
+  // ========================================================================
+  // ENREGISTREMENT - OBLIGATIONS PARTIES (Tome 2, Livre 1, Chap 8 - Art. 132-187)
+  // ========================================================================
+
+  'interdiction copie avant enregistrement': ['Art. 132', 'Art. 133'],
+  'acte non enregistre interdiction': ['Art. 132', 'Art. 133'],
+  'double enregistrement': ['Art. 143'],
+  'repertoire notaires enregistrement': ['Art. 147'],
+  'obligation tenue repertoire': ['Art. 147', 'Art. 148'],
+
+  // ========================================================================
+  // ENREGISTREMENT - DROITS ACQUIS ET PRESCRIPTIONS (Tome 2, Livre 1, Chap 9 - Art. 188-208)
+  // ========================================================================
+
+  'droits regulierement percus enregistrement': ['Art. 188'],
+  'rescision contrat enregistrement': ['Art. 188'],
+  'annulation contrat enregistrement': ['Art. 188'],
+  'retour absent enregistrement': ['Art. 189'],
+  'prescription droits enregistrement': ['Art. 190'],
+  'restitution droits enregistrement': ['Art. 196'],
+
+  // ========================================================================
+  // ENREGISTREMENT - POURSUITES (Tome 2, Livre 1, Chap 10 - Art. 201-208)
+  // ========================================================================
+
+  'difficultes perception droits enregistrement': ['Art. 201'],
+  'recouvrement droits enregistrement': ['Art. 202'],
+  'titre perception enregistrement': ['Art. 202'],
+  'contrainte enregistrement': ['Art. 202'],
+
+  // ========================================================================
+  // TAXE SPECIALE SUR LES ASSURANCES (Tome 2, Livre 1, Chap 13 - Art. 332-349)
+  // ========================================================================
+
+  'taxe speciale assurances': ['Art. 332', 'Art. 333'],
+  'convention assurance taxe': ['Art. 332'],
+  'police assurance enregistrement gratis': ['Art. 332'],
+  'taux taxe assurances': ['Art. 333'],
+  'assurances incendie taux': ['Art. 333'],
+  'assurances vie taux': ['Art. 333'],
+  'assurances transport taux': ['Art. 333'],
+  'exemption taxe assurances': ['Art. 334'],
+  'assurances etat exemption': ['Art. 334'],
+  'assurances agricoles exemption': ['Art. 334'],
+
+  // ========================================================================
+  // ACTES PASSES HORS DU CONGO (Tome 2, Livre 1, Chap 14 - Art. 350-351)
+  // ========================================================================
+
+  'actes hors territoire enregistrement': ['Art. 350'],
+  'actes passes etranger enregistrement': ['Art. 350'],
+  'biens immeubles hors territoire': ['Art. 350'],
+
+  // ========================================================================
+  // PRESCRIPTIONS ENREGISTREMENT (Tome 2, Livre 1, Chap 15 - Art. 352)
+  // ========================================================================
+
+  'sommes acquises republique prescription': ['Art. 352'],
+  'prescription quinquennale coupons': ['Art. 352'],
+  'prescription trentenaire titres': ['Art. 352'],
+  'depots banques prescrits': ['Art. 352'],
+
+  // ========================================================================
+  // FORMALITE UNIQUE (Tome 2, Livre 1, Chap 16 - Art. 353-357)
+  // ========================================================================
+
+  'formalite unique enregistrement': ['Art. 353', 'Art. 354'],
+  'fusion formalites enregistrement publicite fonciere': ['Art. 353'],
+  'formalite fusionnee': ['Art. 353'],
+  'fichier immobilier publication': ['Art. 353'],
+
+  // ========================================================================
+  // TIMBRE - DISPOSITIONS GENERALES (Tome 2, Livre 2, Chap 1 - Art. 1-25)
+  // ========================================================================
+
+  'contribution timbre': ['Art. 1'],
+  'droit timbre transports aeriens': ['Art. 1 bis'],
+  'solidarite paiement timbre': ['Art. 2'],
+  'papier timbre judiciaire': ['Art. 3'],
+
+  // ========================================================================
+  // TIMBRE DE DIMENSION (Tome 2, Livre 2, Chap 2 - Art. 26-46)
+  // ========================================================================
+
+  'timbre dimension papier': ['Art. 26'],
+  'dimensions papiers timbres': ['Art. 26'],
+  'filigrane papier timbre': ['Art. 26'],
+  'timbrage papiers particuliers': ['Art. 27'],
+
+  // ========================================================================
+  // TIMBRE PASSEPORTS (Tome 2, Livre 2, Chap 3 - Art. 47-50)
+  // ========================================================================
+
+  'prix passeport congo': ['Art. 47'],
+  '25500 fcfa passeport': ['Art. 47'],
+  'prorogation passeport': ['Art. 47'],
+  'visa passeport timbre': ['Art. 48'],
+  'visa sejour timbre': ['Art. 48'],
+  'carte identite timbre': ['Art. 49'],
+  'carnet sejour timbre': ['Art. 50'],
+
+  // ========================================================================
+  // TIMBRE - TIMBRES NON CODIFIES (Tome 2, Livre 2)
+  // ========================================================================
+
+  'timbre quittances recus': ['Art. 38'],
+  'timbre effets commerce': ['Art. 39'],
+  'timbre cheques': ['Art. 40'],
+  'timbre actions obligations': ['Art. 41'],
+  'timbre connaissements': ['Art. 42'],
+
+  // ========================================================================
+  // TVA - CHAMP D'APPLICATION (TFNC6, Chap 1 - Art. 1-13)
+  // ========================================================================
+
+  'tva operations imposables': ['Art. 2', 'Art. 3'],
+  'tva assujettis': ['Art. 2'],
+  'tva livraison biens': ['Art. 3'],
+  'tva prestations services': ['Art. 3'],
+  'tva importation': ['Art. 3'],
+  'tva exonerations': ['Art. 5', 'Art. 6'],
+  'tva base imposition': ['Art. 9', 'Art. 10'],
+  'tva taux': ['Art. 11'],
+  'tva 18,9%': ['Art. 11'],
+  'tva 5%': ['Art. 11'],
+
+  // ========================================================================
+  // TVA - FAIT GENERATEUR ET EXIGIBILITE (TFNC6, Chap 2)
+  // ========================================================================
+
+  'tva fait generateur': ['Art. 14'],
+  'tva exigibilite': ['Art. 15'],
+  'tva encaissement': ['Art. 15'],
+  'tva debit': ['Art. 15'],
+
+  // ========================================================================
+  // TVA - DEDUCTIONS (TFNC6, Chap 3-4)
+  // ========================================================================
+
+  'tva deduction': ['Art. 16', 'Art. 17'],
+  'tva droit deduction': ['Art. 16'],
+  'tva credit': ['Art. 16'],
+  'tva remboursement credit': ['Art. 24'],
+  'tva regularisation deduction': ['Art. 19'],
+
+  // ========================================================================
+  // CONVENTION CEMAC (CONV-CEMAC, Art. 1-33)
+  // ========================================================================
+
+  'convention cemac personnes visees': ['Art. 1'],
+  'convention cemac impots vises': ['Art. 2'],
+  'convention cemac definitions': ['Art. 3'],
+  'convention cemac resident': ['Art. 4'],
+  'convention cemac etablissement stable': ['Art. 5'],
+  'convention cemac revenus immobiliers': ['Art. 6'],
+  'convention cemac benefices entreprises': ['Art. 7'],
+  'convention cemac trafic international': ['Art. 8'],
+  'convention cemac entreprises associees': ['Art. 9'],
+  'convention cemac dividendes': ['Art. 10'],
+  'convention cemac interets': ['Art. 11'],
+  'convention cemac redevances': ['Art. 12'],
+  'convention cemac gains capital': ['Art. 13'],
+  'convention cemac revenus emploi': ['Art. 14'],
+  'convention cemac pensions': ['Art. 17'],
+  'convention cemac fonctions publiques': ['Art. 18'],
+  'convention cemac etudiants': ['Art. 19'],
+  'convention cemac autres revenus': ['Art. 20'],
+  'convention cemac fortune': ['Art. 21'],
+  'double imposition cemac elimination': ['Art. 24'],
+  'credit impot cemac': ['Art. 24'],
+  'non discrimination cemac': ['Art. 25'],
+  'procedure amiable cemac': ['Art. 26'],
+  'echange renseignements cemac': ['Art. 27'],
+  'assistance recouvrement cemac': ['Art. 28'],
+  'droit avantages convention': ['Art. 29'],
+  'agents diplomatiques cemac': ['Art. 30'],
+  'denonciation convention cemac': ['Art. 33'],
+
+  // ========================================================================
+  // CONVENTION FRANCE (CONV-FR)
+  // ========================================================================
+
+  'convention france congo': ['Art. 1'],
+  'convention france impots vises': ['Art. 2'],
+  'convention france double imposition': ['Art. 1'],
+  'convention franco congolaise': ['Art. 1'],
+
+  // ========================================================================
+  // CONVENTION CHINE (CONV-CN)
+  // ========================================================================
+
+  'convention chine congo': ['Art. 1'],
+  'convention chine double imposition': ['Art. 1'],
+  'convention sino congolaise': ['Art. 1'],
+
+  // ========================================================================
+  // CONVENTION ITALIE (CONV-IT)
+  // ========================================================================
+
+  'convention italie congo': ['Art. 1'],
+  'convention italie double imposition': ['Art. 1'],
+  'convention italo congolaise': ['Art. 1'],
+
+  // ========================================================================
+  // CONVENTION MAURICE (CONV-MU)
+  // ========================================================================
+
+  'convention maurice congo': ['Art. 1'],
+  'convention maurice double imposition': ['Art. 1'],
+
+  // ========================================================================
+  // CONVENTION RWANDA (CONV-RW)
+  // ========================================================================
+
+  'convention rwanda congo': ['Art. 1'],
+  'convention rwanda double imposition': ['Art. 1'],
 };
 
 /**
@@ -1828,4 +2472,16 @@ export const SYNONYMS_2026: Record<string, string[]> = {
   'enregistrement': ['formalite enregistrement', 'droit enregistrement'],
   'timbre': ['droit de timbre', 'timbre fiscal'],
   'comptabilite informatisee': ['systeme informatise', 'logiciel comptable'],
+
+  // Nouveaux synonymes pour articles ajoutés - Procédures et sanctions
+  'prescription': ['forclusion', 'delai prescriptif', 'peremption'],
+  'droit de communication': ['requisition', 'demande renseignements', 'obligation communication'],
+  'commission impots': ['commission speciale', 'commission departementale'],
+  'ressources naturelles': ['hydrocarbures', 'mines', 'forets', 'petrole'],
+  'convention fiscale': ['traite fiscal', 'accord fiscal', 'convention double imposition'],
+  'sanctions penales': ['poursuites penales', 'emprisonnement', 'delit fiscal'],
+  'taxe assurances': ['taxe contrats assurance', 'taxe speciale assurances'],
+  'formalite unique': ['formalite fusionnee', 'enregistrement publicite fonciere'],
+  'passeport': ['document voyage', 'titre voyage'],
+  'niu': ['numero identification unique', 'identifiant fiscal', 'numero fiscal'],
 };
