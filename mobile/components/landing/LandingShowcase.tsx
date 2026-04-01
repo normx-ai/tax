@@ -228,56 +228,56 @@ function CalendarMockup() {
   };
 
   return (
-    <View style={{ flex: 1, minWidth: 280 }}>
+    <View style={{ flex: 1, minWidth: 240, maxWidth: 360 }}>
       <View style={{
         backgroundColor: "#ffffff",
-        borderRadius: 16,
+        borderRadius: 14,
         borderWidth: 1,
         borderColor: "rgba(0,0,0,0.08)",
         shadowColor: "#000",
-        shadowOffset: { width: 0, height: 8 },
-        shadowOpacity: 0.06,
-        shadowRadius: 24,
+        shadowOffset: { width: 0, height: 6 },
+        shadowOpacity: 0.05,
+        shadowRadius: 16,
         overflow: "hidden",
       }}>
         {/* Header mois */}
-        <View style={{ backgroundColor: DARK, paddingVertical: 14, paddingHorizontal: 16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-          <Ionicons name="chevron-back" size={18} color="rgba(255,255,255,0.5)" />
+        <View style={{ backgroundColor: DARK, paddingVertical: 10, paddingHorizontal: 12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+          <Ionicons name="chevron-back" size={16} color="rgba(255,255,255,0.5)" />
           <View style={{ alignItems: "center" }}>
-            <Text style={{ fontSize: 16, fontWeight: "700", color: "#ffffff" }}>Avril 2026</Text>
-            <Text style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginTop: 2 }}>3 echeances le 15</Text>
+            <Text style={{ fontSize: 14, fontWeight: "700", color: "#ffffff" }}>Avril 2026</Text>
+            <Text style={{ fontSize: 10, color: "rgba(255,255,255,0.5)", marginTop: 2 }}>3 echeances ce mois</Text>
           </View>
-          <Ionicons name="chevron-forward" size={18} color="rgba(255,255,255,0.5)" />
+          <Ionicons name="chevron-forward" size={16} color="rgba(255,255,255,0.5)" />
         </View>
 
         {/* Jours de la semaine */}
-        <View style={{ flexDirection: "row", paddingVertical: 8, paddingHorizontal: 8, backgroundColor: "#f9fafb", borderBottomWidth: 1, borderBottomColor: "#f3f4f6" }}>
+        <View style={{ flexDirection: "row", paddingVertical: 6, paddingHorizontal: 6, backgroundColor: "#f9fafb", borderBottomWidth: 1, borderBottomColor: "#f3f4f6" }}>
           {DAYS.map((d) => (
             <View key={d} style={{ flex: 1, alignItems: "center" }}>
-              <Text style={{ fontSize: 10, fontWeight: "600", color: "#9ca3af" }}>{d}</Text>
+              <Text style={{ fontSize: 9, fontWeight: "600", color: "#9ca3af" }}>{d}</Text>
             </View>
           ))}
         </View>
 
         {/* Grille des jours */}
-        <View style={{ flexDirection: "row", flexWrap: "wrap", padding: 4 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", padding: 3 }}>
           {dates.map((day, i) => {
             const dl = day ? deadlines[day] : null;
             const isToday = day === 1;
             return (
-              <View key={i} style={{ width: `${100 / 7}%`, aspectRatio: 1, padding: 2 }}>
+              <View key={i} style={{ width: `${100 / 7}%`, height: 32, padding: 1.5 }}>
                 {day ? (
                   <View style={{
                     flex: 1,
-                    borderRadius: 8,
+                    borderRadius: 6,
                     backgroundColor: dl ? `${dl.color}10` : isToday ? `${ORANGE}12` : "transparent",
                     borderWidth: dl ? 1.5 : isToday ? 1 : 0,
                     borderColor: dl ? dl.color : isToday ? ORANGE : "transparent",
                     alignItems: "center",
                     justifyContent: "center",
                   }}>
-                    <Text style={{ fontSize: 12, fontWeight: dl ? "700" : "500", color: dl ? dl.color : "#374151" }}>{day}</Text>
-                    {dl && <Text style={{ fontSize: 6, fontWeight: "700", color: dl.color, marginTop: 1 }}>{dl.label}</Text>}
+                    <Text style={{ fontSize: 10, fontWeight: dl ? "700" : "500", color: dl ? dl.color : "#374151" }}>{day}</Text>
+                    {dl && <Text style={{ fontSize: 5, fontWeight: "700", color: dl.color, marginTop: 0 }}>{dl.label}</Text>}
                   </View>
                 ) : <View style={{ flex: 1 }} />}
               </View>
@@ -286,17 +286,17 @@ function CalendarMockup() {
         </View>
 
         {/* Liste echeances */}
-        <View style={{ paddingHorizontal: 12, paddingBottom: 12, paddingTop: 4, gap: 6 }}>
+        <View style={{ paddingHorizontal: 10, paddingBottom: 10, paddingTop: 2, gap: 4 }}>
           {[
             { date: "15 avr", label: "CNSS mars 2026", icon: "alert-circle" as const, color: "#7c3aed" },
             { date: "15 avr", label: "TVA mars 2026", icon: "alert-circle" as const, color: "#ef4444" },
-            { date: "15 avr", label: "Patente T2 2026", icon: "alert-circle" as const, color: "#059669" },
+            { date: "15 avr", label: "Patente annuelle", icon: "alert-circle" as const, color: "#059669" },
           ].map((e, i) => (
-            <View key={i} style={{ flexDirection: "row", alignItems: "center", gap: 8, backgroundColor: "#f9fafb", borderRadius: 8, paddingVertical: 6, paddingHorizontal: 10 }}>
-              <Ionicons name={e.icon} size={14} color={e.color} />
-              <Text style={{ fontSize: 10, fontWeight: "700", color: e.color, width: 42 }}>{e.date}</Text>
-              <Text style={{ fontSize: 11, color: "#374151", flex: 1 }}>{e.label}</Text>
-              <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: e.color }} />
+            <View key={i} style={{ flexDirection: "row", alignItems: "center", gap: 6, backgroundColor: "#f9fafb", borderRadius: 6, paddingVertical: 5, paddingHorizontal: 8 }}>
+              <Ionicons name={e.icon} size={12} color={e.color} />
+              <Text style={{ fontSize: 9, fontWeight: "700", color: e.color, width: 36 }}>{e.date}</Text>
+              <Text style={{ fontSize: 10, color: "#374151", flex: 1 }}>{e.label}</Text>
+              <View style={{ width: 5, height: 5, borderRadius: 3, backgroundColor: e.color }} />
             </View>
           ))}
         </View>
