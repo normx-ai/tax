@@ -22,11 +22,12 @@ type Props = {
   article: ArticleData;
   onBack: () => void;
   onSelectArticle?: (article: ArticleData) => void;
+  codeType?: "cgi" | "social";
 };
 
 const SPEECH_MAX_CHUNK = 3_000;
 
-export default function ArticleDetail({ article, onBack, onSelectArticle }: Props) {
+export default function ArticleDetail({ article, onBack, onSelectArticle, codeType }: Props) {
   const { colors } = useTheme();
   const { t } = useTranslation();
   const favoriteIds = useFavoritesStore((s) => s.articleIds);
@@ -39,7 +40,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle }: Prop
     addHistory({
       article: article.article,
       titre: article.titre,
-      code: "cgi",
+      code: codeType || "cgi",
     });
   }, [article.article]);
   const [speechState, setSpeechState] = useState<"idle" | "playing" | "paused">("idle");

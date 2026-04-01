@@ -84,7 +84,7 @@ export default function CodeCGI() {
   );
 
   if (isMobile) {
-    return <MobileCGIBrowser sommaire={sommaire} />;
+    return <MobileCGIBrowser sommaire={sommaire} codeType={activeCode === "social" ? "social" : "cgi"} />;
   }
 
   const sommaireWidth = isTablet ? "38%" : "32%";
@@ -250,6 +250,7 @@ export default function CodeCGI() {
               onSelectChild={handleSelectChild}
               searchQuery={search}
               searchResults={searchResults}
+              codeType={activeCode === "social" ? "social" : "cgi"}
             />
           )}
         </View>

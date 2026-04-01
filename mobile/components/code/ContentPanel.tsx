@@ -13,6 +13,7 @@ type Props = {
   onSelectArticle: (article: ArticleData | null) => void;
   onSelectChild: (child: SommaireNode, parentId: string) => void;
   searchQuery: string;
+  codeType?: "cgi" | "social";
   searchResults: SearchResult[];
 };
 
@@ -22,6 +23,7 @@ export default function ContentPanel({
   onSelectArticle,
   onSelectChild,
   searchQuery,
+  codeType,
   searchResults,
 }: Props) {
   const { colors } = useTheme();
@@ -33,6 +35,7 @@ export default function ContentPanel({
         article={selectedArticle}
         onBack={() => onSelectArticle(null)}
         onSelectArticle={onSelectArticle}
+        codeType={codeType}
       />
     );
   }

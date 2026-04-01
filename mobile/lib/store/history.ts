@@ -1,6 +1,7 @@
 /**
- * Store historique des consultations récentes
- * Persiste les 10 derniers articles consultés en localStorage
+ * Store historique des consultations recentes
+ * Persiste les 10 derniers articles consultes
+ * Web: localStorage, Mobile: AsyncStorage
  */
 
 import { create } from "zustand";
@@ -26,11 +27,8 @@ const storage = createJSONStorage(() => {
   if (Platform.OS === "web" && typeof localStorage !== "undefined") {
     return localStorage;
   }
-  return {
-    getItem: async () => null,
-    setItem: async () => {},
-    removeItem: async () => {},
-  };
+  // Mobile: utiliser AsyncStorage
+  return require("@react-native-async-storage/async-storage").default;
 });
 
 export const useHistoryStore = create<HistoryState>()(
@@ -39,9 +37,7 @@ export const useHistoryStore = create<HistoryState>()(
       items: [],
       addItem: (item) =>
         set((state) => {
-          // Retirer le doublon si existant
           const filtered = state.items.filter((i) => i.article !== item.article || i.code !== item.code);
-          // Ajouter en tête
           const updated = [{ ...item, timestamp: Date.now() }, ...filtered].slice(0, MAX_ITEMS);
           return { items: updated };
         }),

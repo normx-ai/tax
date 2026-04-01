@@ -12,6 +12,7 @@ import ChapterReader from "./ChapterReader";
 import ArticleText from "./ArticleText";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useFavoritesStore } from "@/lib/store/favorites";
+import { useHistoryStore } from "@/lib/store/history";
 
 const NODE_ICONS: { icon: keyof typeof Ionicons.glyphMap; color: string }[] = [
   { icon: "book-outline", color: "#00815d" },
@@ -300,13 +301,18 @@ function AudioPlayer({ lines, colors, onLineChange }: {
 }
 
 // ── Vue article détaillé ──
-function ArticleDetailView({ article, onBack }: { article: ArticleData; onBack: () => void }) {
+function ArticleDetailView({ article, onBack, codeType }: { article: ArticleData; onBack: () => void; codeType?: "cgi" | "social" }) {
   const { colors } = useTheme();
   const isFavorite = useFavoritesStore((s) => s.isFavorite(article.article));
   const toggleFavorite = useFavoritesStore((s) => s.toggleFavorite);
+  const addHistory = useHistoryStore((s) => s.addItem);
   const scrollRef = useRef<ScrollView>(null);
   const linePositions = useRef<Record<number, number>>({});
   const [highlightIndex, setHighlightIndex] = useState<number | undefined>(undefined);
+
+  useEffect(() => {
+    addHistory({ article: article.article, titre: article.titre, code: codeType || "cgi" });
+  }, [article.article]);
 
   const handleLineChange = useCallback((index: number | undefined) => {
     setHighlightIndex(index);
@@ -502,7 +508,7 @@ function SearchResultsView({ results, onSelect }: { results: SearchResult[]; onS
 }
 
 // ── Composant principal ──
-export default function MobileCGIBrowser({ sommaire }: Props) {
+export default function MobileCGIBrowser({ sommaire, codeType }: Props & { codeType?: "cgi" | "social" }) {
   const { colors } = useTheme();
   const { t } = useTranslation();
 
@@ -591,7 +597,7 @@ export default function MobileCGIBrowser({ sommaire }: Props) {
       {isSearching ? (
         <SearchResultsView results={searchResults} onSelect={handleSelectArticle} />
       ) : selectedArticle ? (
-        <ArticleDetailView article={selectedArticle} onBack={goBack} />
+        <ArticleDetailView article={selectedArticle} onBack={goBack} codeType={codeType} />
       ) : currentNode ? (
         <ChapterReader chapter={currentNode} colors={colors} />
       ) : (
