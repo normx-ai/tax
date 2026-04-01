@@ -7,11 +7,10 @@
 
 ## Vue d'ensemble
 
-| Plan | Prix | Credits | Simulateurs |
-|---|---|---|---|
-| FREE | Gratuit (7 jours) | 10 credits total | 3 de base (ITS, TVA, IS) |
-| STARTER | 115 EUR/an (~75 000 FCFA) | 80 credits/mois | 16 simulateurs complets |
-| PRO | 183 EUR/an (~120 000 FCFA) | 150 credits/mois | 16 simulateurs complets |
+| Plan | Prix | Credits | Simulateurs | Export PDF |
+|---|---|---|---|---|
+| FREE | Gratuit (7 jours) | 10 credits total | 3 de base (ITS, TVA, IS) | Non |
+| PRO | 150 EUR/an (~100 000 FCFA) | 120 credits/mois | 16 complets | Oui |
 
 ---
 
@@ -22,44 +21,37 @@
 ### Navigation & Recherche
 - Navigation CGI + Code Social (3 700+ articles)
 - Recherche textuelle et vocale
-- Lecture audio des articles (text-to-speech)
+- Lecture audio des articles
 - Mode hors-ligne
 - Favoris
 
 ### Simulateurs Fiscaux
 - 3 simulateurs de base : ITS, TVA, IS
-- 13 simulateurs avances non inclus
+- Pas d'export PDF
 
 ### Assistant IA
 - 10 credits total (questions IA + recherche RAG)
-- 36 agents specialises
 - RAG avec citations des articles sources
-- Streaming temps reel
 
 ### Audit de Documents
 - 3 credits par document (10 credits = 3 audits max)
-- Verification conformite CGI (Art. 32, Art. 380)
-- Score de conformite + recommandations
 
-### Calendrier Fiscal
-- Non inclus
-
-### Compte
-- Authentification SSO via Keycloak
-- Protection Cloudflare Turnstile
+### Non inclus
+- Calendrier fiscal
+- Export PDF
+- Organisations
+- Analytics
 
 ---
 
-## STARTER — 115 EUR/an (~75 000 FCFA)
+## PRO — 150 EUR/an (~100 000 FCFA)
 
-> 80 credits mensuels par utilisateur. Renouveles chaque mois.
+> 120 credits mensuels par utilisateur. Renouveles chaque mois.
 
 ### Navigation & Recherche
 - Navigation CGI + Code Social complete et illimitee
 - Recherche textuelle et vocale illimitee
-- Lecture audio, mode hors-ligne
-- Historique de recherche
-- Favoris synces en base
+- Historique de recherche + favoris synces
 
 ### Simulateurs Fiscaux
 - 16 simulateurs complets
@@ -67,65 +59,42 @@
   - Solde de Liquidation, Retenue a la Source, IS Parapetrolier
   - IBA, IRCM, IRF Loyers, Taxe Immobiliere
   - Enregistrement, Cession de Parts, Contribution Fonciere, IGF
+- Export PDF des resultats de simulation
 
 ### Assistant IA
-- 80 credits/mois (questions IA + recherche RAG)
+- 120 credits/mois (questions IA + recherche RAG)
 - 36 agents specialises
 - RAG avec citations des articles sources
 - Historique conversations sauvegarde
 
 ### Audit de Documents
-- 3 credits par document (80 credits = 26 audits/mois max)
+- 3 credits par document (120 credits = 40 audits/mois max)
 - 5 types : facture, releve bancaire, bon de commande, DAS II, note de frais
-- Verification Art. 32 CGI + conformite TVA + SFEC
 - Historique audits sauvegarde
 
 ### Calendrier Fiscal
 - Calendrier fiscal 2026 complet
 - Alertes push (J-5, J-3, J-1, Jour J)
 
-### Compte & Securite
-- SSO Keycloak
-- Profil personnalisable
-- Support email
-
----
-
-## PRO — 183 EUR/an (~120 000 FCFA)
-
-> 150 credits mensuels par utilisateur. Renouveles chaque mois.
-
-### Tout le STARTER +
-
-### Assistant IA
-- 150 credits/mois (questions IA + recherche RAG)
-- Toutes fonctionnalites IA
-
-### Audit de Documents
-- 3 credits par document (150 credits = 50 audits/mois max)
-- Toutes fonctionnalites audit
-
 ### Organisations & Equipes
 - Creation organisation
 - Roles : OWNER, ADMIN, MEMBER
 - Invitations par email
 - Permissions par membre
-- Transfert de propriete
 
 ### Analytics & Reporting
 - Tableau de bord d'activite par membre
-- Audit trail (qui a fait quoi, quand)
+- Audit trail
 
 ### Securite
-- Isolation donnees multi-tenant
+- SSO Keycloak, isolation multi-tenant
 - Support prioritaire
 
 ---
 
 ## Packs Credits — Add-ons
 
-> Disponibles pour les plans payants (STARTER et PRO).
-> Credits supplementaires qui ne se resetent pas, valides jusqu'a utilisation.
+> Disponibles pour le plan PRO. Credits supplementaires, valides jusqu'a utilisation.
 
 | Pack | Prix | Credits | Equivalent questions IA | Equivalent audits |
 |---|---|---|---|---|
@@ -135,12 +104,17 @@
 
 ---
 
-## Notifications & Rappels (tous plans)
+## Correspondance credits / utilisation
 
-- Rappels echeances fiscales : J-5, J-3, J-1, Jour J
-- Rappels abonnement expirant : J-30, J-7, J-1, Jour J
-- Notifications push Android
-- Navigation directe depuis notification
+| Action | Cout |
+|---|---|
+| Question IA (chat) | 1 credit |
+| Recherche RAG | 1 credit |
+| Audit document | 3 credits |
+| Navigation CGI / Code Social | Gratuit |
+| Simulateurs (selon plan) | Gratuit |
+| Export PDF simulation | Gratuit (PRO) |
+| Calendrier fiscal | Gratuit (PRO) |
 
 ---
 
@@ -150,20 +124,6 @@
 - Web : https://tax.normx-ai.com
 - Mode hors-ligne
 - Langues : Francais / Anglais
-- Favoris synces entre appareils
-
----
-
-## Correspondance credits / utilisation
-
-| Action | Cout en credits |
-|---|---|
-| Question IA (chat) | 1 credit |
-| Recherche RAG | 1 credit |
-| Audit document (facture, releve, etc.) | 3 credits |
-| Navigation CGI / Code Social | Gratuit (illimite) |
-| Simulateurs (selon plan) | Gratuit (illimite) |
-| Calendrier fiscal | Gratuit (illimite) |
 
 ---
 

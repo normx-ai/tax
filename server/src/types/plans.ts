@@ -1,14 +1,15 @@
-export type PlanName = 'FREE' | 'STARTER' | 'PRO';
+export type PlanName = 'FREE' | 'PRO';
 
 export interface PlanQuota {
-  creditsPerMonth: number;      // credits mensuels (-1 = illimite, 0 = pas de mensuel)
-  creditsTotal: number;          // credits totaux pour FREE (10)
-  trialDays: number;             // duree essai en jours (7 pour FREE)
-  simulators: 'basic' | 'all';   // 3 de base ou 16 complets
-  fullCodeAccess: boolean;       // acces complet CGI+Social
-  fiscalCalendar: boolean;       // calendrier fiscal
-  support: 'none' | 'email' | 'priority';
-  pricePerYear: number;          // en euros
+  creditsPerMonth: number;
+  creditsTotal: number;
+  trialDays: number;
+  simulators: 'basic' | 'all';
+  fullCodeAccess: boolean;
+  fiscalCalendar: boolean;
+  exportPdf: boolean;
+  support: 'none' | 'priority';
+  pricePerYear: number;
 }
 
 // 1 credit = 1 question IA ou 1 recherche RAG
@@ -23,28 +24,20 @@ export const PLAN_QUOTAS: Record<PlanName, PlanQuota> = {
     simulators: 'basic',
     fullCodeAccess: false,
     fiscalCalendar: false,
+    exportPdf: false,
     support: 'none',
     pricePerYear: 0,
   },
-  STARTER: {
-    creditsPerMonth: 80,
-    creditsTotal: 0,
-    trialDays: 0,
-    simulators: 'all',
-    fullCodeAccess: true,
-    fiscalCalendar: true,
-    support: 'email',
-    pricePerYear: 115,
-  },
   PRO: {
-    creditsPerMonth: 150,
+    creditsPerMonth: 120,
     creditsTotal: 0,
     trialDays: 0,
     simulators: 'all',
     fullCodeAccess: true,
     fiscalCalendar: true,
+    exportPdf: true,
     support: 'priority',
-    pricePerYear: 183,
+    pricePerYear: 150,
   },
 };
 
@@ -62,7 +55,7 @@ export const CREDIT_PACKS: CreditPack[] = [
   { id: 'pack_150', credits: 150, priceEur: 35, label: '150 credits' },
 ];
 
-const PLAN_ORDER: PlanName[] = ['FREE', 'STARTER', 'PRO'];
+const PLAN_ORDER: PlanName[] = ['FREE', 'PRO'];
 
 export function getPlanQuota(plan: PlanName): PlanQuota {
   return PLAN_QUOTAS[plan] || PLAN_QUOTAS.FREE;
@@ -86,8 +79,7 @@ export function isUnlimited(value: number): boolean {
 
 export function getPlanDisplayName(plan: PlanName): string {
   const names: Record<PlanName, string> = {
-    FREE: 'Découverte',
-    STARTER: 'Starter',
+    FREE: 'Decouverte',
     PRO: 'Pro',
   };
   return names[plan];
@@ -101,7 +93,7 @@ export function getPlanPriceFCFA(plan: PlanName): number {
 /** Simulateurs de base (FREE) */
 export const BASIC_SIMULATORS = ['its', 'tva', 'is'];
 
-/** Tous les simulateurs (STARTER+) */
+/** Tous les simulateurs (PRO) */
 export const ALL_SIMULATORS = [
   'its', 'tva', 'is', 'paie', 'patente',
   'solde-liquidation', 'retenue-source', 'is-parapetrolier',

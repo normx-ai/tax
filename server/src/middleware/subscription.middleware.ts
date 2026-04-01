@@ -207,7 +207,7 @@ export function checkAuditCredits(req: AuthRequest, res: Response, next: NextFun
 }
 
 export function requirePremium(req: AuthRequest, res: Response, next: NextFunction) {
-  return requirePlan('STARTER')(req, res, next);
+  return requirePlan('PRO')(req, res, next);
 }
 
 export async function requirePaid(req: AuthRequest, res: Response, next: NextFunction) {

@@ -23,6 +23,7 @@ import notificationRoutes from "./routes/notifications.routes";
 import invoiceRoutes from "./routes/invoice.routes";
 import auditFactureRoutes from "./routes/audit-facture.routes";
 import favoritesRoutes from "./routes/favorites.routes";
+import simulatorExportRoutes from "./routes/simulator-export.routes";
 import { startReminderCron } from "./services/reminder.service";
 import prisma from "./utils/prisma";
 import { createLogger } from "./utils/logger";
@@ -132,6 +133,7 @@ app.use("/api/search-history", searchHistoryRoutes);
 app.use("/api/notifications", notificationRoutes);
 app.use("/api/invoices", invoiceRoutes);
 app.use("/api/favorites", favoritesRoutes);
+app.use("/api/simulator", simulatorExportRoutes);
 
 // Démarrer le cron des rappels (expiration abonnement + échéances fiscales)
 startReminderCron();
