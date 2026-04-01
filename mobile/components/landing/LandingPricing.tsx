@@ -27,7 +27,7 @@ const PLANS = [
   {
     name: "Starter",
     tag: "STARTER",
-    price: "99€",
+    price: "115€",
     period: "par an (~75 000 FCFA)",
     color: "#3b82f6",
     features: [

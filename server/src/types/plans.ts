@@ -34,7 +34,7 @@ export const PLAN_QUOTAS: Record<PlanName, PlanQuota> = {
     fullCodeAccess: true,
     fiscalCalendar: true,
     support: 'email',
-    pricePerYear: 99,
+    pricePerYear: 115,
   },
   PRO: {
     creditsPerMonth: 150,
