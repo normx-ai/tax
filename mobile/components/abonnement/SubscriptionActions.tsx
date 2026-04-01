@@ -46,7 +46,7 @@ export default function SubscriptionActions({
           <TouchableOpacity
             onPress={() => onActivate("PROFESSIONAL")}
             disabled={actionLoading}
-            style={{ flex: 1, backgroundColor: "#0F2A42", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
+            style={{ flex: 1, backgroundColor: "#374151", paddingVertical: 12, alignItems: "center", opacity: actionLoading ? 0.6 : 1 }}
           >
             <Text style={{ color: "#fff", fontWeight: "700", fontSize: 16 }}>Professional</Text>
           </TouchableOpacity>

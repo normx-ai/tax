@@ -109,7 +109,7 @@ export default function SimulateurLayout({
                     marginTop: 16,
                     paddingVertical: 12,
                     borderRadius: 10,
-                    backgroundColor: exporting ? colors.border : "#0F2A42",
+                    backgroundColor: exporting ? colors.border : colors.headerBg,
                   }}
                 >
                   <Ionicons name="download-outline" size={18} color="#ffffff" />

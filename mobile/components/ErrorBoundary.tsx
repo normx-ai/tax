@@ -30,7 +30,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 24, backgroundColor: "#111827" }}>
+        <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 24, backgroundColor: "#0a0a0a" }}>
           <Text style={{ fontSize: 50, marginBottom: 16 }}>!</Text>
           <Text style={{ fontSize: 22, fontWeight: "bold", color: "#f9fafb", marginBottom: 8, textAlign: "center" }}>
             {i18n.t("error.boundaryTitle")}
