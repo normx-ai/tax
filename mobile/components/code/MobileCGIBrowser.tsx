@@ -327,28 +327,32 @@ function ArticleDetailView({ article, onBack, codeType }: { article: ArticleData
   }, []);
 
   return (
-    <ScrollView ref={scrollRef} style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
-      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
-        <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22, color: colors.primary, flex: 1 }}>
-          {article.article}
-        </Text>
-        <TouchableOpacity onPress={() => toggleFavorite(article.article)} hitSlop={8} style={{ padding: 4 }}>
-          <Ionicons
-            name={isFavorite ? "heart" : "heart-outline"}
-            size={22}
-            color={isFavorite ? "#ef4444" : colors.textMuted}
-          />
-        </TouchableOpacity>
+    <View style={{ flex: 1 }}>
+      {/* Header fixe : titre + favori + lecteur audio */}
+      <View style={{ paddingHorizontal: 16, paddingTop: 12, paddingBottom: 8, backgroundColor: colors.background, borderBottomWidth: 1, borderBottomColor: colors.border }}>
+        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
+          <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22, color: colors.primary, flex: 1 }}>
+            {article.article}
+          </Text>
+          <TouchableOpacity onPress={() => toggleFavorite(article.article)} hitSlop={8} style={{ padding: 4 }}>
+            <Ionicons
+              name={isFavorite ? "heart" : "heart-outline"}
+              size={22}
+              color={isFavorite ? "#ef4444" : colors.textMuted}
+            />
+          </TouchableOpacity>
+        </View>
+        {article.titre ? (
+          <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 15, color: colors.text, marginBottom: 6 }} numberOfLines={2}>
+            {article.titre}
+          </Text>
+        ) : null}
+        <AudioPlayer lines={article.texte} colors={colors} onLineChange={handleLineChange} />
       </View>
-      {article.titre ? (
-        <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 17, color: colors.text, marginBottom: 14 }}>
-          {article.titre}
-        </Text>
-      ) : null}
 
-      <AudioPlayer lines={article.texte} colors={colors} onLineChange={handleLineChange} />
-
-      <ArticleText texte={article.texte} highlightIndex={highlightIndex} onLineLayout={handleLineLayout} />
+      {/* Contenu scrollable */}
+      <ScrollView ref={scrollRef} style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
+        <ArticleText texte={article.texte} highlightIndex={highlightIndex} onLineLayout={handleLineLayout} />
 
       {article.mots_cles && article.mots_cles.length > 0 && (
         <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginTop: 16 }}>
@@ -373,6 +377,7 @@ function ArticleDetailView({ article, onBack, codeType }: { article: ArticleData
         </View>
       )}
     </ScrollView>
+    </View>
   );
 }
 
