@@ -3,6 +3,7 @@ import { useMemo } from "react";
 import { router, type Href } from "expo-router";
 import { useAuthStore } from "@/lib/store/auth";
 import { useHistoryStore } from "@/lib/store/history";
+import { useFavoritesStore } from "@/lib/store/favorites";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -39,6 +40,7 @@ export default function Dashboard() {
   const { isMobile } = useResponsive();
   const { setActiveCode } = useActiveCode();
   const historyItems = useHistoryStore((s) => s.items);
+  const favoriteIds = useFavoritesStore((s) => s.articleIds);
 
   const handleCodeSelect = (code: CodeId) => {
     setActiveCode(code);
@@ -100,7 +102,7 @@ export default function Dashboard() {
 
   // Sur mobile : affichage HomeCards (disposition proposée)
   if (isMobile) {
-    return <HomeCards favoritesCount={0} />;
+    return <HomeCards favoritesCount={favoriteIds.length} />;
   }
 
   return (
@@ -249,6 +251,37 @@ export default function Dashboard() {
                   <Text style={{ fontSize: 10, color: colors.textMuted }}>
                     {new Date(item.timestamp).toLocaleDateString("fr-FR", { hour: "2-digit", minute: "2-digit" })}
                   </Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+        )}
+
+        {/* Favoris */}
+        {favoriteIds.length > 0 && (
+          <View style={{ paddingHorizontal: 16, paddingTop: 16 }}>
+            <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
+              <Ionicons name="heart" size={15} color="#ef4444" style={{ marginRight: 6 }} />
+              <Text style={{ fontSize: 18, fontWeight: "500", color: colors.text }}>Mes favoris</Text>
+              <Text style={{ fontSize: 13, color: colors.textMuted, marginLeft: 8 }}>{favoriteIds.length}</Text>
+            </View>
+            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden", borderRadius: 8 }}>
+              {favoriteIds.slice(0, 5).map((artId, i) => (
+                <TouchableOpacity
+                  key={artId}
+                  onPress={() => router.push("/(app)/code" as Href)}
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingVertical: 10,
+                    paddingHorizontal: 12,
+                    borderBottomWidth: i < Math.min(favoriteIds.length, 5) - 1 ? 1 : 0,
+                    borderBottomColor: colors.border,
+                    gap: 10,
+                  }}
+                >
+                  <Ionicons name="heart" size={14} color="#ef4444" />
+                  <Text style={{ fontSize: 14, fontWeight: "500", color: colors.text }} numberOfLines={1}>{artId}</Text>
                 </TouchableOpacity>
               ))}
             </View>
