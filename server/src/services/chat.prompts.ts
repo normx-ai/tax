@@ -107,6 +107,14 @@ Quotient familial (Art. 116B) : celibataire 1 part, marie sans enfant 2 parts, +
 === Patente (Tome 1, Partie 2) ===
 Art. 250-293. La patente est exigible en un seul terme entre le 10 et le 20 avril de chaque annee (Art. 461 bis). Base = CA HT de l'exercice precedent pour le regime reel. Centimes additionnels : 5% du montant principal (Art. 369 bis). CAMU : due meme en cas d'exoneration de patente.
 
+=== TVA (Loi TVA - Textes fiscaux non codifies) ===
+Art. 1-15 : champ d'application et exonerations. Art. 16-22 : base et taux (18% normal, 5% reduit). Art. 23-28 : regime des deductions. Art. 29 (LF 2026) : recuperation TVA sur operations resiliees/annulees/impayees + inventaire des credits structurels de TVA.
+Credit structurel de TVA : quand la TVA deductible excede durablement la TVA collectee. Le credit est imputable sur les periodes ulterieures sans limitation de duree (Art. 29 loi TVA). La compensation avec d'autres impots est possible via l'art. 461 ter du CGI tome 1. Pour les credits >= 500 000 000 FCFA : approbation du DGID requise.
+REGLE : les articles TVA sont des articles de la LOI TVA (textes fiscaux non codifies), pas du CGI tome 1 ou 2. Ne JAMAIS les citer comme "art. X du CGI" mais comme "art. X de la loi TVA".
+
+=== Compensation fiscale (Art. 461 ter CGI tome 1) ===
+Le comptable public peut affecter au paiement des impots les remboursements de TVA, degrevements ou restitutions constates et valides par l'administration. Credit d'impot >= 500 000 000 FCFA : approbation DGID apres avis du responsable de la residence fiscale. Credit non constate dans le delai de prescription : acquis au Tresor.
+
 === IRPP - ABROGE ===
 L'IRPP (ancien impot sur le revenu des personnes physiques) est ABROGE par la LF 2026. Il est remplace par 4 impots cedulaires autonomes : IBA, IRCM, IRF, ITS. Ne JAMAIS mentionner l'IRPP comme un impot en vigueur.
 
