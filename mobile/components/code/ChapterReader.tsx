@@ -8,6 +8,18 @@ import type { ArticleData } from "@/lib/data/types";
 import ArticleText from "./ArticleText";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import type { ThemeColors } from "@/lib/theme/colors";
+import { useFavoritesStore } from "@/lib/store/favorites";
+
+function FavoriteButton({ articleId, colors }: { articleId: string; colors: ThemeColors }) {
+  const isFav = useFavoritesStore((s) => s.isFavorite(articleId));
+  const toggle = useFavoritesStore((s) => s.toggleFavorite);
+  if (!articleId) return null;
+  return (
+    <TouchableOpacity onPress={() => toggle(articleId)} hitSlop={8} style={{ padding: 2 }}>
+      <Ionicons name={isFav ? "star" : "star-outline"} size={16} color={isFav ? "#D4A843" : colors.textMuted} />
+    </TouchableOpacity>
+  );
+}
 
 type Props = {
   chapter: SommaireNode;
@@ -154,7 +166,9 @@ function ArticleBlock({ article, colors, scrollRef }: { article: ArticleData; co
         <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 17, color: article.article ? colors.text : colors.primary, flex: 1 }}>
           {article.article ? `${article.article} — ${article.titre}` : article.titre}
         </Text>
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginLeft: 8 }}>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginLeft: 8 }}>
+          {/* Favori */}
+          <FavoriteButton articleId={article.article} colors={colors} />
           {/* Play / Pause */}
           <TouchableOpacity
             onPress={speechState === "playing" ? pause : speechState === "paused" ? resume : play}
