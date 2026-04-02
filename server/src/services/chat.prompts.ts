@@ -70,13 +70,15 @@ Report deficitaire (Art. 75) : 5 ans maximum.
 Personnes morales etrangeres (Art. 92 a 92K) : regime forfaitaire 22%, quitus fiscal, sous-traitants petroliers.
 
 === IBA - Impot sur les Benefices d'Affaires (Chapitre 2, Section 1, Livre 1, Tome 1) ===
-Art. 93-102. Taux : 30% (Art. 95). Minimum de perception : 1,5% des produits (exploitation + financiers + HAO). Regime forfait : CA inferieur au seuil TVA (Art. 96). Amortissement lineaire uniquement, report deficitaire 3 ans max.
+Art. 93-102. Taux : 30% (Art. 95). Minimum de perception : 1,5% des produits (exploitation + financiers + HAO). Regime forfait : CA inferieur au seuil TVA soit 100 000 000 FCFA (Art. 96).
+RESTRICTIONS IBA par rapport a l'IS (Art. 94) : amortissement LINEAIRE uniquement (pas de degressif), provisions pour creances douteuses NON deductibles, report deficitaire 3 ans max (au lieu de 5 en IS), credit d'impot investissement (Art. 3A) NON applicable.
+Exclus du forfait (Art. 96) : professions reglementees, boulangers, entrepreneurs de travaux, quincailleries, grossistes, importateurs.
 
-=== IRCM - Impot sur le Revenu des Valeurs Mobilieres (Chapitre 2, Section 2, Livre 1, Tome 1) ===
-Art. 103-110A. Taux : 15% (35% revenus occultes). Dividendes, interets, plus-values mobilieres.
+=== IRCM - Impot sur le Revenu des Capitaux Mobiliers (Chapitre 2, Section 2, Livre 1, Tome 1) ===
+Art. 103-110A. Taux unique : 15% (35% revenus occultes). Champ : dividendes, interets, plus-values de cession de valeurs mobilieres, revenus des creances/depots/cautionnements. Retenue liberatoire (Art. 110A). Plus-values de cession : declaration et paiement dans les 60 jours.
 
 === IRF - Impot sur les Revenus Fonciers (Chapitre 2, Section 3, Livre 1, Tome 1) ===
-Art. 111-113A. Taux loyers : 9%. Taux plus-values immobilieres : 15%. Retenue a la source par locataire (personnes morales IS, IBA, Etat).
+Art. 111-113A. Taux loyers : 9%. Taux plus-values immobilieres : 10% (pas 15%). Base = loyers bruts percus (Art. 112), plus de deduction de charges. Retenue a la source par le locataire si personne morale IS, IBA, Etat, collectivite (Art. 113A). Paiement solde en 3 echeances : 15 mai, 20 aout, 15 novembre. Exonerations : residence principale cedee apres 5 ans, immeubles occupes par descendants/ascendants (Art. 111C).
 
 === ITS - Impot sur les Traitements et Salaires (Chapitre 2, Section 4, Livre 1, Tome 1) ===
 Art. 114-116I. Bareme ITS (Art. 116G) :
@@ -85,8 +87,15 @@ Art. 114-116I. Bareme ITS (Art. 116G) :
 - De 1 500 001 a 3 500 000 FCFA : 15% ;
 - De 3 500 001 a 5 000 000 FCFA : 20% ;
 - Au-dela de 5 000 001 FCFA : 30%.
-Retenue mensuelle a la source par l'employeur (Art. 116H).
-Avantages en nature (Art. 115) : Logement 20%, Nourriture 20%, Domesticite/Gardiennage 7% chacun, Eau/Eclairage/Gaz 5% chacun, Voiture 3%, Telephone 2%.
+Retenue mensuelle a la source par l'employeur (Art. 116H). Retenue liberatoire si une seule source de salaire.
+Avantages en nature (Art. 115) : base de reference = salaire brut moins retenues retraite et cotisations sociales. Logement : 20% du salaire PLAFONNE securite sociale (1 200 000 FCFA/mois). Nourriture 20%, Domesticite/Gardiennage 7% chacun, Eau/Eclairage/Gaz 5% chacun, Voiture 3%, Telephone 2%.
+Quotient familial (Art. 116B) : celibataire 1 part, marie sans enfant 2 parts, +0,5 par enfant, max 6,5 parts.
+
+=== Patente (Tome 1, Partie 2) ===
+Art. 250-293. La patente est exigible en un seul terme entre le 10 et le 20 avril de chaque annee (Art. 461 bis). Base = CA HT de l'exercice precedent pour le regime reel. Centimes additionnels : 5% du montant principal (Art. 369 bis). CAMU : due meme en cas d'exoneration de patente.
+
+=== IRPP - ABROGE ===
+L'IRPP (ancien impot sur le revenu des personnes physiques) est ABROGE par la LF 2026. Il est remplace par 4 impots cedulaires autonomes : IBA, IRCM, IRF, ITS. Ne JAMAIS mentionner l'IRPP comme un impot en vigueur.
 
 Base juridique : Directive n°0119/25-UEAC-177-CM-42 du 09 janvier 2025
 Base de connaissances : CGI - Republique du Congo`;
