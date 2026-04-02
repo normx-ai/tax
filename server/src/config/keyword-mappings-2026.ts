@@ -2766,6 +2766,20 @@ export const KEYWORD_ARTICLE_MAP_2026: Record<string, string[]> = {
   'instruction ircm': ['INSTR-103', 'INSTR-110', 'INSTR-110-A'],
   'instruction irf': ['INSTR-111', 'INSTR-112', 'INSTR-113'],
   'instruction its': ['INSTR-114', 'INSTR-115', 'INSTR-116-G'],
+
+  // ========== CIRCULAIRES DGID 2026 ==========
+  'circulaire 0150': ['CIRC-0150'],
+  'circulaire 0151': ['CIRC-0151'],
+  'echeance 15 du mois': ['CIRC-0150'],
+  'prorogation 20 aout': ['CIRC-0150'],
+  'echeance droit commun': ['CIRC-0150'],
+  'article 461 bis': ['CIRC-0150'],
+  'minimum perception circulaire': ['CIRC-0151'],
+  'tss abrogee': ['CIRC-0151'],
+  'acompte provisionnel abroge': ['CIRC-0151'],
+  'penalite 50%': ['CIRC-0151'],
+  'declaration 15 mars': ['CIRC-0151'],
+  'intermediaires commissions': ['CIRC-0151'],
 };
 
 /**

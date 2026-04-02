@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "document": "Circulaires DGID du 4 fevrier 2026",
+    "pays": "Republique du Congo",
+    "edition": "2026",
+    "version": "2026",
+    "tome": "1",
+    "chapitre_titre": "Notes circulaires d'application - DGID",
+    "source": "Direction Generale des Impots et des Domaines, Circulaires 0150 et 0151 du 04/02/2026"
+  },
+  "articles": [
+    {
+      "article": "CIRC-0150",
+      "titre": "Note circulaire relative aux obligations de declaration et de paiement des impots, droits et taxes",
+      "texte": [
+        "En application des dispositions de l'article 461 bis nouveau du Code General des Impots, tome 1, telles qu'instituees par la loi n42-2025 du 31 decembre 2025 portant loi de finances pour l'annee 2026, les obligations de declaration et de paiement des impots, droits et taxes font l'objet d'une restructuration substantielle.",
+        "L'echeance de droit commun pour ces obligations est desormais fixee au plus tard le 15 de chaque mois.",
+        "Par derogation, le legislateur accorde une prorogation jusqu'au 20 aout uniquement pour les impots, droits et taxes du mois de juillet.",
+        "Par consequent, le non-respect des delais ci-dessus indiques est sanctionne par l'application des dispositions contenues dans le Code General des Impots (CGI) et la reglementation en vigueur.",
+        "--- Source officielle ---",
+        "Note circulaire n0150/MFBPP/DGID/DRC du 04 fevrier 2026, signee par Ludovic ITOUA, Directeur General des Impots et des Domaines."
+      ],
+      "mots_cles": [
+        "echeance declaration", "15 de chaque mois", "paiement impots",
+        "20 aout", "prorogation juillet", "article 461 bis",
+        "obligations declaratives", "circulaire 0150", "delai paiement"
+      ],
+      "statut": "en vigueur"
+    },
+    {
+      "article": "CIRC-0151",
+      "titre": "Note circulaire relative aux modalites d'application du minimum de perception en matiere d'IS et d'IBA",
+      "texte": [
+        "Les dispositions des articles 86 C et 95 du Code General des Impots, tome 1, issues de la directive CEMAC n0119/25-UEAC-177-CM-42 du 09 janvier 2025, transposees en droit national par la loi n42-2025 du 31 decembre 2025 portant loi de finances pour l'annee 2026 ont institue un minimum de perception.",
+        "En attendant la vulgarisation de l'instruction d'application, le minimum de perception (qui abroge la TSS et l'acompte provisionnel d'impot) constitue une obligation fiscale minimale incombant a tout redevable de l'Impot sur les Societes (IS) et l'impot sur le benefice d'affaires (IBA), autre que ceux assujettis a l'IGF.",
+        "1. Determination du minimum de perception :",
+        "Le montant de l'impot sur les societes ne peut etre inferieur a un minimum de perception egal a 1% du montant total des produits d'exploitation, des produits financiers et des produits hors activite ordinaire, a l'exception des produits ayant fait l'objet d'une retenue a la source liberatoire.",
+        "Toutefois, pour les intermediaires qui touchent des commissions brutes tres faibles dont les taux sont fixes par les lois et reglements, le chiffre d'affaires de reference est le montant des commissions percues.",
+        "Pour les entreprises individuelles soumises a l'impot sur les benefices d'affaires (IBA), le minimum de perception est fixe a 1,5% sur le montant total des produits d'exploitation, des produits financiers et des produits hors activite ordinaire du contribuable.",
+        "2. Obligation de declaration :",
+        "Les contribuables assujettis a l'IS sont tenus de declarer le montant du minimum de perception au plus tard le 15 mars de chaque annee, sans mise en demeure prealable. Cette declaration se base provisoirement sur les produits de l'exercice precedent ou du dernier exercice clos, en attendant la production des etats financiers definitifs.",
+        "En aucun cas, les taux ci-dessus ne peuvent etre inferieurs a ceux applicables en matiere d'impots sur les societes. L'impot minimum forfaitaire du pour l'impot sur les benefices d'affaires est regi par les memes dispositions que celles de l'impot sur les societes.",
+        "3. Modalites de paiement :",
+        "Le minimum de perception est paye en quatre acomptes, exigibles au plus tard aux dates suivantes : le 15 mars, le 15 juin, le 15 septembre, le 15 decembre.",
+        "4. Imputation et regularisation :",
+        "Le montant du minimum de perception s'impute sur l'impot definitif du au titre du meme exercice. Si la cotisation de l'impot est inferieure au minimum ou nulle, la difference reste acquise au Tresor.",
+        "5. Sanctions applicables :",
+        "Tout defaut de paiement du minimum de perception entraine l'application d'une penalite de 50% du montant du, sans prejudice des interets de retard.",
+        "--- Source officielle ---",
+        "Note circulaire n0151/MFBPP/DGID/DRC du 04 fevrier 2026, signee par Ludovic ITOUA, Directeur General des Impots et des Domaines."
+      ],
+      "mots_cles": [
+        "minimum de perception", "IS", "IBA", "1%", "1,5%",
+        "acomptes", "15 mars", "15 juin", "15 septembre", "15 decembre",
+        "TSS abrogee", "acompte provisionnel abroge", "penalite 50%",
+        "circulaire 0151", "declaration 15 mars", "imputation impot definitif",
+        "produits exploitation", "retenue liberatoire", "IGF exclu",
+        "intermediaires commissions", "directive CEMAC"
+      ],
+      "statut": "en vigueur"
+    }
+  ]
+}

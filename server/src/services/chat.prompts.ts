@@ -63,8 +63,21 @@ Taux IS (Art. 86A) :
 Exonerations IS (Art. 3) : BEAC, BDEAC, cooperatives agricoles, caisses de credit agricole mutuel, associations sans but lucratif, collectivites locales, organismes d'utilite publique, GIE, societes civiles professionnelles, centres de gestion agrees, entreprises agricoles.
 IMPORTANT : A compter du 1er janvier 2026, les exonerations conventionnelles d'IS ne peuvent etre octroyees ni renouvelees (Art. 3).
 Credit d'impot investissement (Art. 3A) : maximum 15%, reportable 5 ans, non remboursable.
-Minimum de perception (Art. 86C) : 1% sur produits exploitation + financiers + HAO. Le minimum de perception est verse en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 decembre. En fin d'exercice, si l'IS definitif est superieur au minimum de perception, l'entreprise paie le solde (IS - acomptes verses). Si l'IS definitif est inferieur, le minimum de perception reste acquis au Tresor.
-IMPORTANT LF 2026 : Les anciens acomptes d'IS classiques (qui existaient a l'art. 124B) sont ABROGES. Il n'existe plus qu'un seul mecanisme d'acomptes : le minimum de perception (Art. 86C). L'art. 86G confirme que le versement de l'IS se fait spontanement via le minimum de perception uniquement. Ne JAMAIS parler de "deux types d'acomptes" ou de "coexistence" entre acomptes IS et minimum de perception.
+Minimum de perception (Art. 86C, circulaire DGID 0151 du 04/02/2026) :
+- IS : 1% sur produits exploitation + financiers + HAO (sauf produits ayant fait l'objet d'une retenue a la source liberatoire). Pour les intermediaires a faibles commissions : base = commissions percues.
+- IBA : 1,5% sur les memes produits (Art. 95).
+- Le minimum de perception ABROGE la TSS (taxe speciale sur les societes) et l'acompte provisionnel d'impot. Il n'existe plus qu'un seul mecanisme d'acomptes.
+- Declaration : au plus tard le 15 mars (base provisoire sur exercice precedent).
+- 4 acomptes exigibles au plus tard : 15 mars, 15 juin, 15 septembre, 15 decembre.
+- Imputation : le minimum s'impute sur l'IS/IBA definitif. Si l'impot definitif est inferieur au minimum, la difference reste acquise au Tresor.
+- Sanctions : penalite de 50% du montant du + interets de retard en cas de defaut de paiement.
+- Exclusion : les assujettis a l'IGF (impot global forfaitaire) ne sont pas redevables du minimum de perception.
+REGLE ABSOLUE : Ne JAMAIS parler de "deux types d'acomptes", de "coexistence" entre acomptes IS et minimum de perception, ni mentionner la TSS ou l'acompte provisionnel comme etant en vigueur. Ils sont ABROGES.
+
+ECHEANCES DECLARATIVES (circulaire DGID 0150 du 04/02/2026, Art. 461 bis) :
+- Echeance de droit commun : le 15 de chaque mois pour tous les impots, droits et taxes.
+- Exception unique : prorogation jusqu'au 20 aout pour les impots du mois de juillet.
+- Ne JAMAIS citer d'autres dates d'echeances (20 du mois, etc.) sauf pour le 20 aout.
 Retenue source non-residents (Art. 86D) : 20% sur prestations et redevances.
 Report deficitaire (Art. 75) : 5 ans maximum.
 Personnes morales etrangeres (Art. 92 a 92K) : regime forfaitaire 22%, quitus fiscal, sous-traitants petroliers.
