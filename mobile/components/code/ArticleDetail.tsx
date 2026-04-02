@@ -313,62 +313,7 @@ export default function ArticleDetail({ article, onBack, onSelectArticle, codeTy
         loading={loadingRefs}
         onSelectArticle={onSelectArticle}
       />
-      <View style={{ height: 70 }} />
     </ScrollView>
-
-    {/* Boutons écoute flottants — fixe en bas à droite */}
-    <View
-      // @ts-ignore
-      dataSet={{ class: "audio-controls-fixed" }}
-      style={{ bottom: 20, left: 20, flexDirection: "row", gap: 8, zIndex: 999,
-        ...(Platform.OS === "web" ? { position: "fixed" } : { position: "absolute" }) as Record<string, string>
-      }}>
-      {speechState !== "idle" && (
-        <TouchableOpacity
-          onPress={handleStop}
-          style={{
-            alignItems: "center",
-            justifyContent: "center",
-            width: 44,
-            height: 44,
-            backgroundColor: colors.danger,
-            borderRadius: 22,
-            shadowColor: "#000",
-            shadowOpacity: 0.2,
-            shadowRadius: 8,
-            shadowOffset: { width: 0, height: 2 },
-            elevation: 5,
-          }}
-        >
-          <Ionicons name="stop" size={18} color="#fff" />
-        </TouchableOpacity>
-      )}
-      <TouchableOpacity
-        onPress={handlePlay}
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          paddingHorizontal: 16,
-          paddingVertical: 12,
-          backgroundColor: colors.primary,
-          borderRadius: 28,
-          shadowColor: "#000",
-          shadowOpacity: 0.2,
-          shadowRadius: 8,
-          shadowOffset: { width: 0, height: 2 },
-          elevation: 5,
-        }}
-      >
-        <Ionicons
-          name={speechState === "playing" ? "pause" : "volume-high"}
-          size={18}
-          color={colors.sidebarText}
-        />
-        <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.sidebarText, fontSize: 16, marginLeft: 8 }}>
-          {speechState === "idle" ? t("articleDetail.listen") : speechState === "playing" ? "Pause" : "Reprendre"}
-        </Text>
-      </TouchableOpacity>
-    </View>
     </View>
   );
 }
