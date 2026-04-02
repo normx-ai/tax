@@ -232,69 +232,70 @@ function AudioPlayer({ lines, colors, onLineChange }: {
   return (
     <View
       style={{
-        flexDirection: "row",
-        alignItems: "center",
         backgroundColor: `${colors.primary}12`,
         borderRadius: 12,
-        padding: 10,
+        padding: 12,
         marginBottom: 14,
-        gap: 10,
       }}
     >
-      {/* Play / Pause */}
-      <TouchableOpacity
-        onPress={speechState === "playing" ? pause : speechState === "paused" ? resume : play}
-        style={{
-          width: 36,
-          height: 36,
-          borderRadius: 18,
-          backgroundColor: colors.primary,
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Ionicons
-          name={speechState === "playing" ? "pause" : "play"}
-          size={16}
-          color="#fff"
-        />
-      </TouchableOpacity>
-
-      {/* Stop (visible quand playing ou paused) */}
-      {speechState !== "idle" && (
+      {/* Boutons sur une ligne */}
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 8 }}>
+        {/* Play / Pause */}
         <TouchableOpacity
-          onPress={stop}
+          onPress={speechState === "playing" ? pause : speechState === "paused" ? resume : play}
           style={{
-            width: 36,
-            height: 36,
-            borderRadius: 18,
-            backgroundColor: colors.danger || "#dc2626",
+            width: 40,
+            height: 40,
+            borderRadius: 20,
+            backgroundColor: colors.primary,
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <Ionicons name="stop" size={16} color="#fff" />
+          <Ionicons
+            name={speechState === "playing" ? "pause" : "play"}
+            size={18}
+            color="#fff"
+          />
         </TouchableOpacity>
-      )}
 
-      <View style={{ flex: 1 }}>
-        <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, marginBottom: 4 }}>
+        {/* Stop */}
+        {speechState !== "idle" && (
+          <TouchableOpacity
+            onPress={stop}
+            style={{
+              width: 40,
+              height: 40,
+              borderRadius: 20,
+              backgroundColor: colors.danger || "#dc2626",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Ionicons name="stop" size={18} color="#fff" />
+          </TouchableOpacity>
+        )}
+
+        {/* Label */}
+        <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text, flex: 1 }}>
           {speechState === "playing"
             ? t("articleDetail.stop")
             : speechState === "paused"
               ? t("articleDetail.paused")
               : t("articleDetail.listen")}
         </Text>
-        <View style={{ height: 4, backgroundColor: colors.border, borderRadius: 2, overflow: "hidden" }}>
-          <View
-            style={{
-              height: 4,
-              backgroundColor: colors.primary,
-              borderRadius: 2,
-              width: `${Math.round(progress * 100)}%` as unknown as number,
-            }}
-          />
-        </View>
+      </View>
+
+      {/* Barre de progression */}
+      <View style={{ height: 4, backgroundColor: colors.border, borderRadius: 2, overflow: "hidden" }}>
+        <View
+          style={{
+            height: 4,
+            backgroundColor: colors.primary,
+            borderRadius: 2,
+            width: `${Math.round(progress * 100)}%`,
+          }}
+        />
       </View>
     </View>
   );
