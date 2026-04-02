@@ -1385,7 +1385,6 @@ export const KEYWORD_ARTICLE_MAP_2026: Record<string, string[]> = {
   // Section 1 - Exigibilité de l'impôt (Art. 459-461)
   'exigibilite impot': ['Art. 459'],
   'mise en recouvrement': ['Art. 459', 'Art. 459 bis'],
-  'titre perception': ['Art. 459', 'Art. 464'],
   'demenagement contribuable': ['Art. 459'],
   'visa depart': ['Art. 459'],
   'amr': ['Art. 459 bis', 'Art. 459 ter'],
@@ -2413,78 +2412,7 @@ export const KEYWORD_ARTICLE_MAP_2026: Record<string, string[]> = {
 
   'convention rwanda congo': ['Art. 1'],
   'convention rwanda double imposition': ['Art. 1'],
-};
 
-/**
- * Synonymes pour expansion de requetes CGI 2026
- */
-export const SYNONYMS_2026: Record<string, string[]> = {
-  'is': ['impot sur les societes', 'impot societes', 'corporate tax'],
-  'minimum de perception': ['minimum is', 'impot minimum', 'plancher fiscal'],
-  'holding': ['societe de participation', 'societe portefeuille'],
-  'amortissement': ['dotation aux amortissements', 'depreciation', 'dap'],
-  'retenue a la source': ['ras', 'withholding tax', 'prelevement a la source', 'wht'],
-  'dividendes': ['distributions', 'benefices distribues', 'irvm'],
-  'sanctions': ['penalites', 'amendes', 'majorations'],
-  'acomptes': ['versements anticipes', 'paiements fractionnaires'],
-  'ebitda': ['ebe', 'excedent brut exploitation'],
-  // Nouveaux synonymes pour tests 7, 21, 33, 88, 98, 99
-  // IRF - Synonymes pour revenus fonciers
-  'plus-values immobilieres': ['gains immobiliers', 'profit cession immobiliere', 'plus-value immeuble'],
-
-  // Synonymes migrés depuis CGI 2025 - IS
-  'deficit reportable': ['report deficitaire', 'pertes reportables'],
-  'sous-traitant petrolier': ['contractor', 'prestataire petrolier'],
-
-  // Synonymes migrés depuis CGI 2025 - Dispositions Communes
-  'gisement': ['gite', 'reserves', 'ressources', 'depot'],
-  'remploi': ['utilisation provision', 'affectation provision', 'emploi provision'],
-
-  // Synonymes migrés depuis CGI 2025 - Taxes Diverses
-  'exemption': ['exoneration', 'dispense', 'franchise'],
-  'precompte 15%': ['retenue liberatoire', 'impot liberatoire bons'],
-
-  // Synonymes migrés depuis CGI 2025 - Dispositions Diverses
-
-  // Synonymes migrés depuis CGI 2025 - Plus-values, BTP, Réassurance
-
-  // Synonymes migrés depuis CGI 2025 - Impôts Locaux
-  'immeuble': ['propriété bâtie', 'construction', 'bâtiment'],
-  'terrain': ['propriété non bâtie', 'sol', 'fonds de terre'],
-
-  // Nouveaux synonymes pour articles ajoutés
-  'recouvrement': ['perception', 'encaissement', 'mise en recouvrement'],
-  'contentieux': ['litige fiscal', 'reclamation', 'contestation'],
-  'verification': ['controle fiscal', 'audit fiscal', 'inspection'],
-  'redressement': ['rehaussement', 'rectification', 'notification'],
-  'poursuite': ['contrainte', 'commandement', 'saisie'],
-  'ordures menageres': ['dechets', 'teom', 'enlevement ordures'],
-  'vehicule': ['voiture', 'auto', 'automobile'],
-  'bail': ['location', 'loyer', 'contrat de location'],
-  'succession': ['heritage', 'deces', 'mutation par deces'],
-  'donation': ['liberalite', 'don', 'transmission gratuite'],
-  'fonds de commerce': ['achalandage', 'clientele', 'goodwill'],
-  'marche public': ['adjudication', 'appel offres', 'commande publique'],
-  'sursis de paiement': ['suspension paiement', 'report paiement'],
-  'avis tiers detenteur': ['atd', 'saisie attribution', 'blocage compte'],
-  'fermeture administrative': ['fermeture entreprise', 'cessation forcee'],
-  'quitus fiscal': ['certificat moralite fiscale', 'attestation fiscale'],
-  'enregistrement': ['formalite enregistrement', 'droit enregistrement'],
-  'timbre': ['droit de timbre', 'timbre fiscal'],
-  'comptabilite informatisee': ['systeme informatise', 'logiciel comptable'],
-
-  // Nouveaux synonymes pour articles ajoutés - Procédures et sanctions
-  'prescription': ['forclusion', 'delai prescriptif', 'peremption'],
-  'droit de communication': ['requisition', 'demande renseignements', 'obligation communication'],
-  'commission impots': ['commission speciale', 'commission departementale'],
-  'ressources naturelles': ['hydrocarbures', 'mines', 'forets', 'petrole'],
-  'convention fiscale': ['traite fiscal', 'accord fiscal', 'convention double imposition'],
-  'sanctions penales': ['poursuites penales', 'emprisonnement', 'delit fiscal'],
-  'taxe assurances': ['taxe contrats assurance', 'taxe speciale assurances'],
-  'formalite unique': ['formalite fusionnee', 'enregistrement publicite fonciere'],
-  'passeport': ['document voyage', 'titre voyage'],
-  'niu': ['numero identification unique', 'identifiant fiscal', 'numero fiscal'],
-};
   // ========== ARTICLES COMPLEMENTAIRES ==========
   'objectif général approche': ['Art. 6bis'],
   'exonérations fiscales contracteur': ['Art. 149'],
@@ -2744,4 +2672,68 @@ export const SYNONYMS_2026: Record<string, string[]> = {
   'fiscalité minière': ['5)'],
   'fiscalité hydrocarbures': ['6)'],
   'fiscalité forestière': ['7)'],
+};
 
+/**
+ * Synonymes pour expansion de requetes CGI 2026
+ */
+export const SYNONYMS_2026: Record<string, string[]> = {
+  'is': ['impot sur les societes', 'impot societes', 'corporate tax'],
+  'minimum de perception': ['minimum is', 'impot minimum', 'plancher fiscal'],
+  'holding': ['societe de participation', 'societe portefeuille'],
+  'amortissement': ['dotation aux amortissements', 'depreciation', 'dap'],
+  'retenue a la source': ['ras', 'withholding tax', 'prelevement a la source', 'wht'],
+  'dividendes': ['distributions', 'benefices distribues', 'irvm'],
+  'sanctions': ['penalites', 'amendes', 'majorations'],
+  'acomptes': ['versements anticipes', 'paiements fractionnaires'],
+  'ebitda': ['ebe', 'excedent brut exploitation'],
+  // Nouveaux synonymes pour tests 7, 21, 33, 88, 98, 99
+  // IRF - Synonymes pour revenus fonciers
+  'plus-values immobilieres': ['gains immobiliers', 'profit cession immobiliere', 'plus-value immeuble'],
+
+  // Synonymes migrés depuis CGI 2025 - IS
+  'deficit reportable': ['report deficitaire', 'pertes reportables'],
+  'sous-traitant petrolier': ['contractor', 'prestataire petrolier'],
+
+  // Synonymes migrés depuis CGI 2025 - Dispositions Communes
+  'gisement': ['gite', 'reserves', 'ressources', 'depot'],
+  'remploi': ['utilisation provision', 'affectation provision', 'emploi provision'],
+
+  // Synonymes migrés depuis CGI 2025 - Taxes Diverses
+  'exemption': ['exoneration', 'dispense', 'franchise'],
+  'precompte 15%': ['retenue liberatoire', 'impot liberatoire bons'],
+
+  // Synonymes migrés depuis CGI 2025 - Dispositions Diverses
+
+  // Synonymes migrés depuis CGI 2025 - Plus-values, BTP, Réassurance
+
+  // Synonymes migrés depuis CGI 2025 - Impôts Locaux
+  'immeuble': ['propriété bâtie', 'construction', 'bâtiment'],
+  'terrain': ['propriété non bâtie', 'sol', 'fonds de terre'],
+
+  // Nouveaux synonymes pour articles ajoutés
+  'recouvrement': ['perception', 'encaissement', 'mise en recouvrement'],
+  'contentieux': ['litige fiscal', 'reclamation', 'contestation'],
+  'verification': ['controle fiscal', 'audit fiscal', 'inspection'],
+  'redressement': ['rehaussement', 'rectification', 'notification'],
+  'poursuite': ['contrainte', 'commandement', 'saisie'],
+  'vehicule': ['voiture', 'auto', 'automobile'],
+  'bail': ['location', 'loyer', 'contrat de location'],
+  'succession': ['heritage', 'deces', 'mutation par deces'],
+  'donation': ['liberalite', 'don', 'transmission gratuite'],
+  'marche public': ['adjudication', 'appel offres', 'commande publique'],
+  'sursis de paiement': ['suspension paiement', 'report paiement'],
+  'enregistrement': ['formalite enregistrement', 'droit enregistrement'],
+  'timbre': ['droit de timbre', 'timbre fiscal'],
+
+  // Nouveaux synonymes pour articles ajoutés - Procédures et sanctions
+  'prescription': ['forclusion', 'delai prescriptif', 'peremption'],
+  'droit de communication': ['requisition', 'demande renseignements', 'obligation communication'],
+  'commission impots': ['commission speciale', 'commission departementale'],
+  'ressources naturelles': ['hydrocarbures', 'mines', 'forets', 'petrole'],
+  'convention fiscale': ['traite fiscal', 'accord fiscal', 'convention double imposition'],
+  'sanctions penales': ['poursuites penales', 'emprisonnement', 'delit fiscal'],
+  'taxe assurances': ['taxe contrats assurance', 'taxe speciale assurances'],
+  'formalite unique': ['formalite fusionnee', 'enregistrement publicite fonciere'],
+  'passeport': ['document voyage', 'titre voyage'],
+};
