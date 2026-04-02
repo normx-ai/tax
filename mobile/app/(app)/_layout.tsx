@@ -115,7 +115,7 @@ function AppLayoutInner() {
   const isOnline = useOnlineStatus();
   const pathname = usePathname();
   const { isMobile } = useResponsive();
-  const { activeCode } = useActiveCode();
+  const { activeCode, setActiveCode } = useActiveCode();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [searchVisible, setSearchVisible] = useState(false);
 
@@ -156,16 +156,23 @@ function AppLayoutInner() {
   }, [isAuthenticated]);
 
   const handleMobileTabPress = useCallback((tab: TabKey) => {
-    const routes: Record<TabKey, string> = {
-      home: "/(app)",
-      cgi: "/(app)/code",
-      sim: "/(app)/simulateur",
-      cal: "/(app)/calendrier",
-      chat: "/(app)/chat",
-      plus: "/(app)/plus",
-    };
-    router.push(routes[tab] as Href);
-  }, []);
+    if (tab === "cgi") {
+      setActiveCode("cgi");
+      router.push("/(app)/code" as Href);
+    } else if (tab === "social") {
+      setActiveCode("social");
+      router.push("/(app)/code" as Href);
+    } else {
+      const routes: Record<string, string> = {
+        home: "/(app)",
+        sim: "/(app)/simulateur",
+        cal: "/(app)/calendrier",
+        chat: "/(app)/chat",
+        plus: "/(app)/plus",
+      };
+      router.push(routes[tab] as Href);
+    }
+  }, [setActiveCode]);
 
   const handleMobileBack = useCallback(() => {
     if (router.canGoBack()) {
@@ -210,7 +217,7 @@ function AppLayoutInner() {
 
   // ── Mapping route → onglet actif pour MobileTabBar ──
   const getActiveTab = (): TabKey => {
-    if (pathname.startsWith("/code")) return "cgi";
+    if (pathname.startsWith("/code")) return activeCode === "social" ? "social" : "cgi";
     if (pathname.startsWith("/simulateur")) return "sim";
     if (pathname.startsWith("/calendrier")) return "cal";
     if (pathname.startsWith("/chat")) return "chat";

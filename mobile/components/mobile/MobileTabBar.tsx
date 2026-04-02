@@ -3,7 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 
-export type TabKey = "home" | "cgi" | "sim" | "cal" | "chat" | "plus";
+export type TabKey = "home" | "cgi" | "social" | "sim" | "cal" | "chat" | "plus";
 
 type Tab = {
   key: TabKey;
@@ -14,8 +14,8 @@ type Tab = {
 const TABS: Tab[] = [
   { key: "home", label: "Home", icon: "home-outline" },
   { key: "cgi", label: "CGI", icon: "book-outline" },
+  { key: "social", label: "Social", icon: "people-outline" },
   { key: "sim", label: "Simul.", icon: "stats-chart-outline" },
-  { key: "cal", label: "Calend.", icon: "calendar-outline" },
   { key: "chat", label: "IA", icon: "chatbubbles-outline" },
   { key: "plus", label: "Plus", icon: "ellipsis-horizontal-outline" },
 ];
