@@ -27,8 +27,8 @@ const PLANS = [
   {
     name: "Pro",
     tag: "PRO",
-    price: "150€",
-    period: "par an (~100 000 FCFA)",
+    price: "1€",
+    period: "offre beta — acces complet",
     color: "#0F2A42",
     popular: true,
     features: [
@@ -83,7 +83,7 @@ export default function LandingPricing({ isMobile }: Props) {
           marginBottom: 40,
         }}
       >
-        Packs credits disponibles : 30 (15 EUR) · 80 (25 EUR) · 150 (35 EUR)
+        Offre beta : acces complet a 1 EUR
       </Text>
 
       <View
