@@ -42,7 +42,7 @@
     /* ══ NAV ══ */
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
     .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 800; color: var(--dark); }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 700; color: var(--dark); }
     .nav-logo-icon { width: 34px; height: 34px; border-radius: 10px; background: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; color: var(--dark); }
     .nav-links { display: flex; align-items: center; gap: 6px; }
     .nav-link { padding: 8px 14px; font-size: 14px; font-weight: 600; color: var(--text-secondary); border-radius: 8px; transition: all 0.2s; }
@@ -83,7 +83,7 @@
     /* ══ HERO — style Pennylane ══ */
     .hero { padding: 120px 24px 80px; background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%); overflow: visible; position: relative; }
     .hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-    .hero-text h1 { font-size: clamp(32px, 4.5vw, 52px); font-weight: 900; line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.5px; }
+    .hero-text h1 { font-size: clamp(32px, 4.5vw, 52px); font-weight: 700; line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.5px; }
     .hero-text h1 .highlight { color: var(--primary); position: relative; }
     .hero-text h1 .highlight::after { content: ''; position: absolute; bottom: 2px; left: 0; right: 0; height: 6px; background: rgba(212,168,67,0.25); border-radius: 3px; }
     .hero-text p { font-size: 18px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px; max-width: 480px; }
@@ -110,7 +110,7 @@
     .social-proof { padding: 48px 24px; text-align: center; background: var(--bg); }
     .social-proof p { font-size: 15px; color: var(--text-secondary); margin-bottom: 24px; }
     .logos-row { display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; opacity: 0.5; }
-    .logos-row span { font-size: 18px; font-weight: 800; color: var(--text-secondary); letter-spacing: 1px; }
+    .logos-row span { font-size: 18px; font-weight: 600; color: var(--text-secondary); letter-spacing: 1px; }
 
     /* ══ SECTION FEATURE — alternating left/right ══ */
     .section-feature { padding: 80px 24px; position: relative; }
@@ -118,8 +118,8 @@
     .feature-row { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
     .feature-row.reverse { direction: rtl; }
     .feature-row.reverse > * { direction: ltr; }
-    .feature-label { font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
-    .feature-content h2 { font-size: clamp(24px, 3vw, 36px); font-weight: 900; line-height: 1.2; margin-bottom: 16px; }
+    .feature-label { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+    .feature-content h2 { font-size: clamp(24px, 3vw, 36px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
     .feature-content p { font-size: 16px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px; }
     .feature-checks { list-style: none; margin-bottom: 28px; }
     .feature-checks li { display: flex; align-items: start; gap: 10px; padding: 6px 0; font-size: 15px; color: var(--text); }
@@ -138,7 +138,7 @@
     .mockup-sidebar-item.active { background: var(--primary-bg); color: var(--primary); }
     .mockup-sidebar-item i { font-size: 14px; }
     .mockup-main { flex: 1; }
-    .mockup-title { font-size: 14px; font-weight: 800; margin-bottom: 12px; color: var(--text); }
+    .mockup-title { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--text); }
     .mockup-table { width: 100%; border-collapse: collapse; font-size: 11px; }
     .mockup-table th { text-align: left; padding: 6px 8px; background: #f9fafb; color: var(--text-secondary); font-weight: 700; border-bottom: 1px solid var(--border); font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
     .mockup-table td { padding: 8px; border-bottom: 1px solid #f3f4f6; color: var(--text); }
@@ -148,7 +148,7 @@
     .mockup-badge.warn { background: rgba(245,158,11,0.12); color: var(--orange); }
     .mockup-stat-row { display: flex; gap: 12px; margin-bottom: 16px; }
     .mockup-stat { flex: 1; background: #f9fafb; border-radius: 10px; padding: 14px; border: 1px solid #f3f4f6; }
-    .mockup-stat .val { font-size: 20px; font-weight: 900; color: var(--dark); }
+    .mockup-stat .val { font-size: 20px; font-weight: 700; color: var(--dark); }
     .mockup-stat .lbl { font-size: 10px; color: var(--text-secondary); margin-top: 2px; }
     .mockup-chart { height: 80px; background: linear-gradient(180deg, rgba(212,168,67,0.08) 0%, transparent 100%); border-radius: 8px; display: flex; align-items: flex-end; gap: 6px; padding: 8px; }
     .mockup-bar-chart { flex: 1; border-radius: 4px 4px 0 0; }
@@ -160,8 +160,8 @@
     /* ══ PRODUCTS GRID ══ */
     .section-products { padding: 80px 24px; background: var(--bg-warm); position: relative; }
     .section-header { text-align: center; margin-bottom: 48px; }
-    .section-header .label { font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
-    .section-header h2 { font-size: clamp(26px, 3.5vw, 40px); font-weight: 900; margin-bottom: 12px; }
+    .section-header .label { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
+    .section-header h2 { font-size: clamp(26px, 3.5vw, 40px); font-weight: 700; margin-bottom: 12px; }
     .section-header p { font-size: 16px; color: var(--text-secondary); max-width: 560px; margin: 0 auto; }
     .products-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .product-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; transition: all 0.3s; position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 320px; }
@@ -169,7 +169,7 @@
     .product-card.live { border-color: var(--primary); }
     .product-card.live::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--primary); }
     .product-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 18px; }
-    .product-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 10px; }
+    .product-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
     .product-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; min-height: 66px; }
     .tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; }
     .tag-live { background: var(--green-bg); color: var(--green); }
@@ -184,7 +184,7 @@
     .grid-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: all 0.25s; }
     .grid-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
     .grid-card .icon { font-size: 28px; margin-bottom: 14px; }
-    .grid-card h4 { font-size: 16px; font-weight: 800; margin-bottom: 8px; }
+    .grid-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
     .grid-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
     @media (max-width: 800px) { .grid-features { grid-template-columns: 1fr; } }
 
@@ -192,13 +192,13 @@
     .stats-bar { padding: 48px 24px; background: var(--dark); }
     .stats-inner { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 32px; }
     .stat { text-align: center; }
-    .stat .number { font-size: 40px; font-weight: 900; color: var(--primary); }
+    .stat .number { font-size: 40px; font-weight: 700; color: var(--primary); }
     .stat .label { font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 4px; }
 
     /* ══ CTA ══ */
     .cta { padding: 80px 24px; }
     .cta-box { max-width: 800px; margin: 0 auto; background: var(--bg-warm); border: 1px solid var(--border); border-radius: 20px; padding: 60px 40px; text-align: center; }
-    .cta-box h2 { font-size: 28px; font-weight: 900; margin-bottom: 12px; }
+    .cta-box h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
     .cta-box p { font-size: 16px; color: var(--text-secondary); margin-bottom: 28px; }
     .cta-box .contact { margin-top: 20px; font-size: 14px; color: var(--text-secondary); }
     .cta-box .contact a { color: var(--primary); font-weight: 600; }
@@ -206,10 +206,10 @@
     /* ══ FOOTER ══ */
     footer { border-top: 1px solid var(--border); padding: 48px 24px; }
     .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; }
-    .footer-brand h3 { font-size: 20px; font-weight: 900; color: var(--dark); margin-bottom: 8px; }
+    .footer-brand h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
     .footer-brand h3 span { color: var(--primary); }
     .footer-brand p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
-    .footer-col h4 { font-size: 12px; font-weight: 800; color: var(--text); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1px; }
+    .footer-col h4 { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1px; }
     .footer-col a { display: block; font-size: 14px; color: var(--text-secondary); padding: 3px 0; transition: color 0.2s; }
     .footer-col a:hover { color: var(--primary); }
     .footer-bottom { text-align: center; padding-top: 32px; margin-top: 32px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-secondary); max-width: 1100px; margin-left: auto; margin-right: auto; }
