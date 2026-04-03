@@ -1,4 +1,5 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { useState, useRef, useEffect } from "react";
+import { View, Text, TouchableOpacity, Linking, Platform } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useAuthStore } from "@/lib/store/auth";
@@ -6,6 +7,15 @@ import { useAuthStore } from "@/lib/store/auth";
 const PRIMARY = "#D4A843";
 const DARK = "#0F2A42";
 const TEXT_SEC = "#6b7280";
+const PURPLE = "#7c3aed";
+const BLUE = "#2563eb";
+
+const PRODUCTS = [
+  { name: "NORMX AI", desc: "Plateforme principale", url: "https://normx-ai.com", color: "#08080d", letter: "N" },
+  { name: "NORMX Compta", desc: "Comptabilite OHADA + IA", url: "https://app.normx-ai.com", color: BLUE, letter: "C" },
+  { name: "NORMX Tax", desc: "Intelligence fiscale IA", url: "https://tax.normx-ai.com", color: PRIMARY, letter: "T" },
+  { name: "NORMX Legal", desc: "Documents juridiques OHADA", url: "https://legal.normx-ai.com", color: PURPLE, letter: "L", soon: true },
+];
 
 interface Props {
   isMobile: boolean;
@@ -14,6 +24,19 @@ interface Props {
 
 export default function LandingHeader({ isMobile, onScrollTo }: Props) {
   const login = useAuthStore((s) => s.login);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<View>(null);
+
+  // Close dropdown on outside click (web only)
+  useEffect(() => {
+    if (Platform.OS !== "web") return;
+    const handler = (e: MouseEvent) => {
+      const el = dropdownRef.current as unknown as HTMLElement | null;
+      if (el && !el.contains(e.target as Node)) setDropdownOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
   return (
     <View
@@ -76,6 +99,67 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
               Contact
             </Text>
           </TouchableOpacity>
+
+          {/* Dropdown Produits */}
+          <View ref={dropdownRef} style={{ position: "relative" }}>
+            <TouchableOpacity
+              onPress={() => setDropdownOpen(!dropdownOpen)}
+              style={{ paddingVertical: 8, paddingHorizontal: 14, borderRadius: 8 }}
+            >
+              <Text style={{ fontSize: 14, color: "#6b7280", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>
+                Produits ▾
+              </Text>
+            </TouchableOpacity>
+            {dropdownOpen && (
+              <View
+                style={{
+                  position: "absolute",
+                  top: "100%",
+                  right: 0,
+                  marginTop: 4,
+                  backgroundColor: "#fff",
+                  borderWidth: 1,
+                  borderColor: "rgba(0,0,0,0.08)",
+                  borderRadius: 12,
+                  minWidth: 240,
+                  padding: 8,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 12 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 32,
+                  elevation: 8,
+                  zIndex: 200,
+                }}
+              >
+                {PRODUCTS.map((p) => (
+                  <TouchableOpacity
+                    key={p.name}
+                    onPress={() => { setDropdownOpen(false); Linking.openURL(p.url); }}
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: 10,
+                      padding: 10,
+                      borderRadius: 8,
+                    }}
+                  >
+                    <View style={{ width: 28, height: 28, borderRadius: 8, backgroundColor: p.color, alignItems: "center", justifyContent: "center" }}>
+                      <Text style={{ fontSize: 11, fontWeight: "900", color: "#fff" }}>{p.letter}</Text>
+                    </View>
+                    <View style={{ flex: 1 }}>
+                      <Text style={{ fontSize: 14, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: DARK }}>{p.name}</Text>
+                      <Text style={{ fontSize: 12, color: TEXT_SEC }}>{p.desc}</Text>
+                    </View>
+                    {p.soon && (
+                      <View style={{ backgroundColor: "#f3f4f6", borderRadius: 10, paddingHorizontal: 8, paddingVertical: 2 }}>
+                        <Text style={{ fontSize: 9, fontWeight: "700", color: "#9ca3af" }}>Bientot</Text>
+                      </View>
+                    )}
+                  </TouchableOpacity>
+                ))}
+              </View>
+            )}
+          </View>
         </View>
       )}
 
