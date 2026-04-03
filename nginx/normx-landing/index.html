@@ -48,14 +48,23 @@
     .nav-link { padding: 8px 14px; font-size: 14px; font-weight: 600; color: var(--text-secondary); border-radius: 8px; transition: all 0.2s; }
     .nav-link:hover { color: var(--text); background: rgba(0,0,0,0.04); }
     .nav-dropdown { position: relative; }
-    .nav-dropdown-menu { position: absolute; top: 100%; right: 0; margin-top: 4px; background: #fff; border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.1); min-width: 240px; padding: 8px; opacity: 0; pointer-events: none; transform: translateY(-4px); transition: all 0.15s ease; }
-    .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; pointer-events: auto; transform: translateY(0); }
-    .nav-dropdown-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; font-size: 14px; font-weight: 600; color: var(--text); transition: background 0.15s; }
-    .nav-dropdown-item:hover { background: rgba(0,0,0,0.04); }
-    .nav-dropdown-item .dd-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 900; color: #fff; flex-shrink: 0; }
+    .nav-dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-4px); margin-top: 4px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.12); width: 560px; padding: 24px; opacity: 0; pointer-events: none; transition: all 0.2s ease; z-index: 200; }
+    .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+    .nav-dropdown-header { margin-bottom: 16px; }
+    .nav-dropdown-header h3 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+    .nav-dropdown-header p { font-size: 13px; color: var(--text-secondary); }
+    .nav-dropdown-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+    .nav-dropdown-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 600; color: var(--text); transition: background 0.15s; }
+    .nav-dropdown-item:hover { background: var(--bg-warm); }
+    .nav-dropdown-item .dd-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900; color: #fff; flex-shrink: 0; }
     .nav-dropdown-item .dd-info { display: flex; flex-direction: column; }
-    .nav-dropdown-item .dd-desc { font-size: 12px; font-weight: 400; color: var(--text-secondary); }
-    .badge-soon { font-size: 9px; font-weight: 700; background: #f3f4f6; color: #9ca3af; padding: 2px 8px; border-radius: 10px; margin-left: auto; }
+    .nav-dropdown-item .dd-name { font-size: 14px; font-weight: 600; color: var(--dark); }
+    .nav-dropdown-item .dd-desc { font-size: 12px; font-weight: 400; color: var(--text-secondary); line-height: 1.4; margin-top: 2px; }
+    .badge-soon { display: inline-block; font-size: 9px; font-weight: 600; background: #f3f4f6; color: #9ca3af; padding: 2px 8px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+    .nav-dropdown-footer { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); display: flex; justify-content: center; }
+    .nav-dropdown-footer a { font-size: 13px; font-weight: 500; color: var(--primary); display: flex; align-items: center; gap: 4px; }
+    .nav-dropdown-footer a:hover { text-decoration: underline; }
+    @media (max-width: 768px) { .nav-dropdown-menu { width: 90vw; left: auto; right: -60px; transform: translateY(-4px); } .nav-dropdown:hover .nav-dropdown-menu { transform: translateY(0); } .nav-dropdown-grid { grid-template-columns: 1fr; } }
     .nav-cta { padding: 9px 22px; background: var(--dark); color: #fff; font-size: 14px; font-weight: 700; border-radius: 8px; transition: all 0.2s; }
     .nav-cta:hover { background: var(--dark2); transform: translateY(-1px); }
     .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
@@ -216,19 +225,31 @@
       <div class="nav-dropdown">
         <span class="nav-link" style="cursor:pointer">Produits &#9662;</span>
         <div class="nav-dropdown-menu">
-          <a href="https://app.normx-ai.com" class="nav-dropdown-item">
-            <div class="dd-icon" style="background:#2563eb">C</div>
-            <div class="dd-info"><div>NORMX Compta</div><div class="dd-desc">Comptabilite OHADA + IA</div></div>
-          </a>
-          <a href="https://tax.normx-ai.com" class="nav-dropdown-item">
-            <div class="dd-icon" style="background:#D4A843">T</div>
-            <div class="dd-info"><div>NORMX Tax</div><div class="dd-desc">Intelligence fiscale IA</div></div>
-          </a>
-          <a href="https://legal.normx-ai.com" class="nav-dropdown-item">
-            <div class="dd-icon" style="background:#7c3aed">L</div>
-            <div class="dd-info"><div>NORMX Legal</div><div class="dd-desc">Documents juridiques OHADA</div></div>
-            <span class="badge-soon">Bientot</span>
-          </a>
+          <div class="nav-dropdown-header">
+            <h3>Produits</h3>
+            <p>Suite logicielle pour les professionnels de l'espace OHADA</p>
+          </div>
+          <div class="nav-dropdown-grid">
+            <a href="https://app.normx-ai.com" class="nav-dropdown-item">
+              <div class="dd-icon" style="background:#2563eb"><i class="bi bi-journal-text"></i></div>
+              <div class="dd-info"><div class="dd-name">NORMX Compta</div><div class="dd-desc">Comptabilite SYSCOHADA, etats financiers et paie</div></div>
+            </a>
+            <a href="https://tax.normx-ai.com" class="nav-dropdown-item">
+              <div class="dd-icon" style="background:#D4A843"><i class="bi bi-calculator"></i></div>
+              <div class="dd-info"><div class="dd-name">NORMX Tax</div><div class="dd-desc">Simulateur fiscal CGI 2026 et assistant IA</div></div>
+            </a>
+            <a href="https://legal.normx-ai.com" class="nav-dropdown-item">
+              <div class="dd-icon" style="background:#7c3aed"><i class="bi bi-file-earmark-text"></i></div>
+              <div class="dd-info"><div class="dd-name">NORMX Legal <span class="badge-soon">Bientot</span></div><div class="dd-desc">Documents juridiques OHADA automatises</div></div>
+            </a>
+            <a href="#features" class="nav-dropdown-item">
+              <div class="dd-icon" style="background:#059669"><i class="bi bi-robot"></i></div>
+              <div class="dd-info"><div class="dd-name">Assistant IA</div><div class="dd-desc">IA specialisee droit OHADA et fiscalite</div></div>
+            </a>
+          </div>
+          <div class="nav-dropdown-footer">
+            <a href="#products">Voir tous les produits <i class="bi bi-arrow-right"></i></a>
+          </div>
         </div>
       </div>
       <a href="#features" class="nav-link">Fonctionnalités</a>
