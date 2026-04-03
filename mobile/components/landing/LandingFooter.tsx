@@ -72,7 +72,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
             info-contact@normx-ai.com
           </Text>
           <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 20 }}>
-            5 rue Benjamin Raspail, 60100 Creil
+            71 rue Daire, 80000 Amiens
           </Text>
         </View>
       </View>

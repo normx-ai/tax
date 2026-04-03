@@ -82,7 +82,7 @@ export default function MentionsLegalesScreen() {
           <InfoRow label="Dénomination sociale" value="NORMX AI" colors={colors} />
           <InfoRow label="Forme juridique" value="Société par Actions Simplifiée (SAS)" colors={colors} />
           <InfoRow label="Capital social" value="1 000 €" colors={colors} />
-          <InfoRow label="Siège social" value="5 rue Benjamin Raspail, 60100 Creil" colors={colors} />
+          <InfoRow label="Siège social" value="71 rue Daire, 80000 Amiens" colors={colors} />
           <InfoRow label="RCS" value="Compiègne — 941 200 169" colors={colors} />
           <InfoRow label="Téléphone" value="06 20 76 94 24" colors={colors} />
           <InfoRow label="Email" value="info-contact@normx-ai.com" colors={colors} />
@@ -153,7 +153,7 @@ export default function MentionsLegalesScreen() {
           {/* Séparateur bas */}
           <View style={{ height: 1, backgroundColor: colors.border, marginTop: 40, marginBottom: 20 }} />
           <Text style={{ fontSize: 14, color: colors.textMuted, textAlign: "center", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — info-contact@normx-ai.com
+            NORMX AI SAS — 71 rue Daire, 80000 Amiens — info-contact@normx-ai.com
           </Text>
         </View>
       </ScrollView>

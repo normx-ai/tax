@@ -78,7 +78,7 @@ export default function CGUPublicScreen() {
             Article 1 — Objet
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de la plateforme NORMX AI, éditée par NORMX AI SAS, société par actions simplifiée au capital de 1 000 €, immatriculée au RCS de Compiègne sous le numéro 941 200 169, dont le siège social est situé au 5/7 rue Benjamin Raspail, 60100 Creil.{"\n\n"}
+            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de la plateforme NORMX AI, éditée par NORMX AI SAS, société par actions simplifiée au capital de 1 000 €, immatriculée au RCS de Compiègne sous le numéro 941 200 169, dont le siège social est situé au 71 rue Daire, 80000 Amiens.{"\n\n"}
             NORMX AI est une plateforme numérique comprenant les produits suivants : NORMX Tax (fiscalité et simulations), NORMX Compta (comptabilité), NORMX Paie (gestion de la paie), NORMX États (états financiers) et NORMX Legal (documents juridiques OHADA).{"\n\n"}
             L'utilisation de l'application implique l'acceptation pleine et entière des présentes CGU ainsi que de la Politique de confidentialité accessible depuis l'application.
           </Text>
@@ -198,7 +198,7 @@ export default function CGUPublicScreen() {
           {/* Séparateur bas */}
           <View style={{ height: 1, backgroundColor: colors.border, marginTop: 40, marginBottom: 20 }} />
           <Text style={{ fontSize: 14, color: colors.textMuted, textAlign: "center", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            NORMX AI SAS — 5 rue Benjamin Raspail, 60100 Creil — info-contact@normx-ai.com
+            NORMX AI SAS — 71 rue Daire, 80000 Amiens — info-contact@normx-ai.com
           </Text>
         </View>
       </ScrollView>

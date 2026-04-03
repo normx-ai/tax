@@ -146,7 +146,7 @@ export default function LandingContact({ isMobile }: Props) {
               textAlign: "center",
             }}
           >
-            5 rue Benjamin Raspail, 60100 Creil
+            71 rue Daire, 80000 Amiens
           </Text>
         </View>
 
