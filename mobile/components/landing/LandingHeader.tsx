@@ -10,11 +10,11 @@ const TEXT_SEC = "#6b7280";
 const PURPLE = "#7c3aed";
 const BLUE = "#2563eb";
 
-const PRODUCTS = [
-  { name: "NORMX AI", desc: "Plateforme principale", url: "https://normx-ai.com", color: "#08080d", letter: "N" },
-  { name: "NORMX Compta", desc: "Comptabilite SYSCOHADA, etats financiers et paie", url: "https://app.normx-ai.com", color: BLUE, letter: "C" },
-  { name: "NORMX Tax", desc: "Simulateur fiscal CGI 2026 et assistant IA", url: "https://tax.normx-ai.com", color: PRIMARY, letter: "T" },
-  { name: "NORMX Legal", desc: "Documents juridiques OHADA automatises", url: "https://legal.normx-ai.com", color: PURPLE, letter: "L", soon: true },
+const PRODUCTS: { name: string; desc: string; url: string; color: string; icon: keyof typeof Ionicons.glyphMap; soon?: boolean }[] = [
+  { name: "NORMX AI", desc: "Plateforme principale", url: "https://normx-ai.com", color: "#08080d", icon: "globe-outline" },
+  { name: "NORMX", desc: "Comptabilite, etats financiers et paie", url: "https://app.normx-ai.com", color: BLUE, icon: "journal-outline" },
+  { name: "NORMX Tax", desc: "Simulateur fiscal CGI 2026 et assistant IA", url: "https://tax.normx-ai.com", color: PRIMARY, icon: "calculator-outline" },
+  { name: "NORMX Legal", desc: "Documents juridiques OHADA automatises", url: "https://legal.normx-ai.com", color: PURPLE, icon: "document-text-outline", soon: true },
 ];
 
 interface Props {
@@ -152,7 +152,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
                       }}
                     >
                       <View style={{ width: 36, height: 36, borderRadius: 10, backgroundColor: p.color, alignItems: "center", justifyContent: "center" }}>
-                        <Text style={{ fontSize: 14, fontWeight: "900", color: "#fff" }}>{p.letter}</Text>
+                        <Ionicons name={p.icon} size={18} color="#fff" />
                       </View>
                       <View style={{ flex: 1 }}>
                         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
