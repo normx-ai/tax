@@ -57,7 +57,8 @@ jobs:
             set -e
             cd ${{ env.APP_DIR }}
 
-            # Pull latest code
+            # Reset local changes et pull
+            git checkout -- .
             git pull origin main
 
             # --- Generer server/.env.production depuis GitHub Secrets ---
