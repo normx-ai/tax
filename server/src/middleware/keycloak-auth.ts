@@ -30,6 +30,7 @@ export interface AuthRequest extends Request {
   userEmail?: string;
   userName?: string;
   userRoles?: string[];
+  userSubscriptions?: string[];
   orgId?: string;
   orgRole?: string;
   orgPermissions?: Record<string, boolean>;
@@ -45,6 +46,7 @@ interface KeycloakPayload {
   email_verified?: boolean;
   realm_access?: { roles: string[] };
   resource_access?: Record<string, { roles: string[] }>;
+  subscribed_products?: string;
   iat?: number;
   exp?: number;
 }
@@ -101,6 +103,8 @@ export async function requireAuth(req: AuthRequest, res: Response, next: NextFun
     req.userEmail = payload.email || payload.preferred_username || "";
     req.userName = payload.name || "";
     req.userRoles = payload.realm_access?.roles || [];
+    const rawSubs = payload.subscribed_products || '';
+    req.userSubscriptions = rawSubs ? rawSubs.split(',').map(s => s.trim()).filter(Boolean) : [];
 
     // Keycloak = authentification uniquement
     // Le controle d'acces par produit se fait via la subscription en base (resolveTenant + subscription.middleware)

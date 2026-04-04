@@ -116,6 +116,19 @@ if (process.env.NODE_ENV === "development") {
   app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
 }
 
+// Middleware global : verifier la souscription produit "tax" sur toutes les routes /api authentifiees
+import { requireAuth, AuthRequest } from "./middleware/keycloak-auth";
+import { requireProductSubscription } from "./middleware/product-subscription.middleware";
+app.use("/api", (req, res, next) => {
+  // Skip les routes publiques (health, docs)
+  if (req.path === '/health' || req.path.startsWith('/docs')) return next();
+  // Appliquer requireAuth puis requireProductSubscription
+  requireAuth(req as AuthRequest, res, (err?: unknown) => {
+    if (err) return next(err);
+    requireProductSubscription('tax')(req as AuthRequest, res, next);
+  });
+});
+
 // Routes
 app.use("/api/chat", chatLimiter, chatRoutes);
 app.use("/api/organizations", organizationRoutes);
