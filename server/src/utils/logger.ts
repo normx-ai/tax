@@ -88,4 +88,14 @@ export function createLogger(context: string): Logger {
   return new Logger(context);
 }
 
+// Singleton cache pour éviter de recréer des loggers identiques
+const loggerCache = new Map<string, Logger>();
+
+export function getLogger(context: string): Logger {
+  if (!loggerCache.has(context)) {
+    loggerCache.set(context, createLogger(context));
+  }
+  return loggerCache.get(context)!;
+}
+
 export default logger;

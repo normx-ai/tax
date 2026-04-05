@@ -16,7 +16,7 @@ export const CACHE_TTL = {
   SEARCH_RESULT: 60 * 60,         // 1 heure
   ARTICLE: 60 * 60 * 24,          // 24 heures
   TENANT: 5 * 60,                 // 5 minutes
-  SUBSCRIPTION: 5 * 60,           // 5 minutes
+  SUBSCRIPTION: 5 * 60,           // 5 minutes — Invalidation event-based a implementer
   TOKEN_BLACKLIST: 24 * 60 * 60,  // 24 heures
 };
 
