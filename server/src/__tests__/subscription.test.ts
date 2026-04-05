@@ -15,21 +15,19 @@ function createAuthToken(userId = "user-1", email = "test@example.com") {
 }
 
 /**
- * Helper to set up auth + tenant middleware mocks.
- * The subscription routes require: requireAuth -> resolveTenant -> requireOrg
- * resolveTenant reads X-Organization-ID header and calls organizationMember.findUnique
+ * Helper to set up resolveTenant middleware mocks.
+ * resolveTenant checks user exists, finds membership, creates tenant schema.
  */
 function setupTenantMocks(role = "OWNER") {
-  // requireAuth: user exists
-  mockPrisma.user.findUnique.mockResolvedValue({ id: "user-1" });
+  // resolveTenant step 1: user exists
+  mockPrisma.user.findUnique.mockResolvedValue({ id: "user-1", email: "test@example.com" });
 
-  // resolveTenant: member found with organization
-  mockPrisma.organizationMember.findUnique.mockResolvedValue({
+  // resolveTenant step 2: membership exists with given role
+  mockPrisma.organizationMember.findFirst.mockResolvedValue({
     userId: "user-1",
     organizationId: "org-1",
     role,
     permissions: null,
-    organization: { id: "org-1", name: "Test SARL", deletedAt: null },
   });
 }
 
@@ -47,18 +45,6 @@ describe("Subscription Routes", () => {
       expect(res.status).toBe(401);
     });
 
-    it("devrait retourner 400 sans header X-Organization-ID", async () => {
-      const token = createAuthToken();
-      mockPrisma.user.findUnique.mockResolvedValue({ id: "user-1" });
-
-      const res = await request(app)
-        .get("/api/subscription/quota")
-        .set("Authorization", `Bearer ${token}`);
-
-      expect(res.status).toBe(400);
-      expect(res.body.error).toContain("X-Organization-ID");
-    });
-
     it("devrait retourner les informations de quota", async () => {
       const token = createAuthToken();
       setupTenantMocks("MEMBER");
@@ -73,8 +59,7 @@ describe("Subscription Routes", () => {
 
       const res = await request(app)
         .get("/api/subscription/quota")
-        .set("Authorization", `Bearer ${token}`)
-        .set("X-Organization-ID", "org-1");
+        .set("Authorization", `Bearer ${token}`);
 
       expect(res.status).toBe(200);
       expect(res.body.plan).toBe("PRO");
@@ -92,8 +77,7 @@ describe("Subscription Routes", () => {
 
       const res = await request(app)
         .get("/api/subscription/quota")
-        .set("Authorization", `Bearer ${token}`)
-        .set("X-Organization-ID", "org-1");
+        .set("Authorization", `Bearer ${token}`);
 
       expect(res.status).toBe(404);
       expect(res.body.error).toContain("introuvable");
@@ -116,20 +100,18 @@ describe("Subscription Routes", () => {
       const res = await request(app)
         .post("/api/subscription/upgrade")
         .set("Authorization", `Bearer ${token}`)
-        .set("X-Organization-ID", "org-1")
         .send({ plan: "INVALID_PLAN" });
 
       expect(res.status).toBe(400);
     });
 
-    it("devrait retourner 400 sans paramètre plan", async () => {
+    it("devrait retourner 400 sans parametre plan", async () => {
       const token = createAuthToken();
       setupTenantMocks("OWNER");
 
       const res = await request(app)
         .post("/api/subscription/upgrade")
         .set("Authorization", `Bearer ${token}`)
-        .set("X-Organization-ID", "org-1")
         .send({});
 
       expect(res.status).toBe(400);
@@ -149,21 +131,19 @@ describe("Subscription Routes", () => {
       const res = await request(app)
         .post("/api/subscription/upgrade")
         .set("Authorization", `Bearer ${token}`)
-        .set("X-Organization-ID", "org-1")
         .send({ plan: "PRO" });
 
       expect(res.status).toBe(200);
       expect(res.body.plan).toBe("PRO");
     });
 
-    it("devrait retourner 403 si le rôle n'est pas OWNER", async () => {
+    it("devrait retourner 403 si le role n'est pas OWNER", async () => {
       const token = createAuthToken();
       setupTenantMocks("MEMBER");
 
       const res = await request(app)
         .post("/api/subscription/upgrade")
         .set("Authorization", `Bearer ${token}`)
-        .set("X-Organization-ID", "org-1")
         .send({ plan: "PRO" });
 
       expect(res.status).toBe(403);

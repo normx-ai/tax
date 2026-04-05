@@ -11,6 +11,32 @@ function createAuthToken(userId = "user-1", email = "test@example.com") {
   });
 }
 
+/**
+ * Setup mocks for resolveTenant + checkCredits middlewares
+ */
+function setupMiddlewareMocks() {
+  // resolveTenant: user exists
+  mockPrisma.user.findUnique.mockResolvedValue({ id: "user-1", email: "test@example.com" });
+  // resolveTenant: membership exists
+  mockPrisma.organizationMember.findFirst.mockResolvedValue({
+    userId: "user-1",
+    organizationId: "org-1",
+    role: "OWNER",
+    permissions: null,
+  });
+  // checkCredits: subscription exists with unlimited credits
+  mockPrisma.subscription.findUnique.mockResolvedValue({
+    id: "sub-1",
+    organizationId: "org-1",
+    plan: "PRO",
+    status: "ACTIVE",
+    creditsPerMonth: -1,
+    creditsUsed: 0,
+    currentPeriodStart: new Date(),
+    currentPeriodEnd: null,
+  });
+}
+
 describe("Chat Routes", () => {
   beforeEach(() => {
     jest.clearAllMocks();
@@ -27,7 +53,7 @@ describe("Chat Routes", () => {
 
     it("devrait retourner 400 sans contenu", async () => {
       const token = createAuthToken();
-      mockPrisma.user.findUnique.mockResolvedValue({ id: "user-1" });
+      setupMiddlewareMocks();
 
       const res = await request(app)
         .post("/api/chat/message/stream")

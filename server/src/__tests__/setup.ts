@@ -7,6 +7,61 @@ jest.mock("jwks-rsa", () => {
   });
 });
 
+// Mock keycloak-auth middleware pour les tests supertest
+// Les tests utilisent des JWT signés en HS256 avec JWT_SECRET, pas du RS256 Keycloak.
+jest.mock("../middleware/keycloak-auth", () => {
+  const jwt = require("jsonwebtoken");
+  const original = jest.requireActual("../middleware/keycloak-auth");
+
+  return {
+    ...original,
+    requireAuth: (req: any, res: any, next: any) => {
+      const header = req.headers.authorization;
+      let token: string | null = null;
+      if (header?.startsWith("Bearer ")) {
+        token = header.split(" ")[1];
+      }
+      if (!token) {
+        res.status(401).json({ error: "Token manquant" });
+        return;
+      }
+      try {
+        const payload = jwt.verify(token, process.env.JWT_SECRET || "test-jwt-secret-for-testing");
+        req.userId = payload.userId || payload.sub;
+        req.userEmail = payload.email || "";
+        req.userName = payload.name || "";
+        req.userRoles = payload.roles || [];
+        req.userSubscriptions = ["tax"]; // Autoriser le produit tax dans les tests
+        next();
+      } catch {
+        res.status(401).json({ error: "Token invalide ou expire" });
+      }
+    },
+    optionalAuth: (_req: any, _res: any, next: any) => next(),
+  };
+});
+
+// Mock product-subscription middleware (toujours passer en test)
+jest.mock("../middleware/product-subscription.middleware", () => ({
+  requireProductSubscription: () => (_req: any, _res: any, next: any) => next(),
+}));
+
+// Mock db/pool pour les tests (pas de vraie connexion PG)
+jest.mock("../db/pool", () => {
+  const mockPool = {
+    query: jest.fn().mockResolvedValue({ rows: [], rowCount: 0 }),
+    connect: jest.fn(),
+    end: jest.fn(),
+  };
+  return { __esModule: true, default: mockPool, getValidatedSchemaName: (slug: string) => `tenant_${slug}` };
+});
+
+// Mock db/tenant.service pour éviter les appels PG réels
+jest.mock("../db/tenant.service", () => ({
+  createTenantSchema: jest.fn().mockResolvedValue("tenant_test"),
+  ensureUserInSchema: jest.fn().mockResolvedValue("user-1"),
+}));
+
 // Mock expo-server-sdk (ESM module incompatible avec Jest CJS)
 jest.mock("expo-server-sdk", () => ({
   Expo: class MockExpo {
