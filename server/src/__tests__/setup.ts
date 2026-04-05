@@ -1,3 +1,12 @@
+// Mock jwks-rsa (ESM module incompatible avec Jest CJS)
+jest.mock("jwks-rsa", () => {
+  return jest.fn().mockReturnValue({
+    getSigningKey: jest.fn().mockImplementation((_kid: string, cb: (err: null, key: { getPublicKey: () => string }) => void) => {
+      cb(null, { getPublicKey: () => 'mock-public-key' });
+    }),
+  });
+});
+
 // Mock expo-server-sdk (ESM module incompatible avec Jest CJS)
 jest.mock("expo-server-sdk", () => ({
   Expo: class MockExpo {

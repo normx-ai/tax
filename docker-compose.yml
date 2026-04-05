@@ -118,7 +118,7 @@ services:
       - keycloak-net
     # Healthcheck Nginx (B8)
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://localhost:80/ || exit 1"]
+      test: ["CMD-SHELL", "wget -qO- http://localhost:80/api/health || exit 1"]
       interval: 30s
       timeout: 5s
       retries: 3

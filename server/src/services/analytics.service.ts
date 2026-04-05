@@ -171,6 +171,8 @@ export async function getPopularSearches(orgId: string, limit: number = 10) {
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
+  // TODO P2: combiner en une seule requete SQL raw avec sous-requete pour eliminer le N+1
+  // SearchHistory n'a pas de relation directe vers Organization, donc on garde 2 requetes Prisma
   const memberIds = await prisma.organizationMember.findMany({
     where: { organizationId: orgId },
     select: { userId: true },

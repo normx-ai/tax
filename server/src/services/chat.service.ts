@@ -109,7 +109,7 @@ export async function sendMessage(
   });
 
   const responseTime = Date.now() - startTime;
-  const assistantContent = response.content[0].type === "text" ? response.content[0].text : "";
+  const assistantContent = response.content?.[0]?.type === "text" ? response.content[0].text : "";
   const tokensUsed = (response.usage?.input_tokens || 0) + (response.usage?.output_tokens || 0);
 
   let citations: Citation[] | undefined;
@@ -122,8 +122,8 @@ export async function sendMessage(
   );
 
   // Fire-and-forget
-  chatDb.createSearchHistory(schema, userId, content, searchResults?.length || 0).catch(() => {});
-  analyticsDb.trackUsage(schema, userId, "chat_message", { tokensUsed }).catch(() => {});
+  chatDb.createSearchHistory(schema, userId, content, searchResults?.length || 0).catch((err) => { logger.warn('Failed to track search history', { error: err instanceof Error ? err.message : String(err) }); });
+  analyticsDb.trackUsage(schema, userId, "chat_message", { tokensUsed }).catch((err) => { logger.warn('Failed to track usage', { error: err instanceof Error ? err.message : String(err) }); });
 
   return { conversationId: conversation.id, message: assistantMessage };
 }
@@ -192,8 +192,8 @@ export async function* sendMessageStream(
   );
 
   // Fire-and-forget
-  chatDb.createSearchHistory(schema, userId, content, searchResults?.length || 0).catch(() => {});
-  analyticsDb.trackUsage(schema, userId, "chat_message", { tokensUsed }).catch(() => {});
+  chatDb.createSearchHistory(schema, userId, content, searchResults?.length || 0).catch((err) => { logger.warn('Failed to track search history', { error: err instanceof Error ? err.message : String(err) }); });
+  analyticsDb.trackUsage(schema, userId, "chat_message", { tokensUsed }).catch((err) => { logger.warn('Failed to track usage', { error: err instanceof Error ? err.message : String(err) }); });
 
   yield {
     event: "done",

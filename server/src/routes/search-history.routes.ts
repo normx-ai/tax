@@ -12,9 +12,9 @@ const router = Router();
 router.get("/", requireAuth, resolveTenant, validate({ query: searchHistoryQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const s = req.tenantSchema!;
   const userId = req.userId!;
-  const page = Number(req.query.page) || 1;
-  const limit = Number(req.query.limit) || 20;
-  const offset = (page - 1) * limit;
+  const page = Math.max(1, Number(req.query.page) || 1);
+  const limit = Math.max(1, Math.min(100, Number(req.query.limit) || 20));
+  const offset = Math.max(0, (page - 1) * limit);
 
   const [searches, countResult] = await Promise.all([
     pool.query(

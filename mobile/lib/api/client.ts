@@ -47,6 +47,7 @@ api.interceptors.request.use(async (config) => {
 
 // Response interceptor — gerer les 401
 let isRefreshing = false;
+const MAX_QUEUE_SIZE = 100;
 let failedQueue: { resolve: (v: unknown) => void; reject: (e: unknown) => void }[] = [];
 
 function processQueue(error: unknown, token: string | null) {
@@ -73,6 +74,7 @@ api.interceptors.response.use(
 
     if (isRefreshing) {
       return new Promise((resolve, reject) => {
+        if (failedQueue.length >= MAX_QUEUE_SIZE) failedQueue.shift();
         failedQueue.push({ resolve, reject });
       }).then(() => api(originalRequest));
     }

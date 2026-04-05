@@ -179,12 +179,10 @@ async function deductCredits(req: AuthRequest, res: Response, next: NextFunction
       return;
     }
 
-    // Incrementer compteur global org (fire-and-forget)
-    prisma.subscription.update({
+    // Incrementer compteur global org (synchrone pour eviter race condition)
+    await prisma.subscription.update({
       where: { organizationId: req.orgId },
       data: { creditsUsed: { increment: cost } },
-    }).catch((err) => {
-      logger.error('Echec increment compteur credits org', err);
     });
 
     req.quotaIncremented = true;

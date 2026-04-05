@@ -79,7 +79,7 @@ const isWeb = typeof window !== "undefined";
 const zustandStorage = createJSONStorage(() => ({
   getItem: async (key: string) => {
     if (isWeb && typeof localStorage !== "undefined") {
-      return localStorage.getItem(key);
+      return Promise.resolve(localStorage.getItem(key));
     }
     try {
       const { getItemAsync } = require("expo-secure-store");

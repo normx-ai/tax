@@ -7,4 +7,7 @@ module.exports = {
   clearMocks: true,
   forceExit: true,
   setupFiles: ["<rootDir>/src/__tests__/setup.ts"],
+  transformIgnorePatterns: [
+    "node_modules/(?!(jwks-rsa)/)",
+  ],
 };
