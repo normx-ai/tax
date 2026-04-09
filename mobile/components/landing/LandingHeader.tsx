@@ -13,7 +13,8 @@ const BLUE = "#2563eb";
 const PRODUCTS: { name: string; desc: string; url: string; color: string; icon: keyof typeof Ionicons.glyphMap; soon?: boolean }[] = [
   { name: "NORMX AI", desc: "Plateforme principale", url: "https://normx-ai.com", color: "#08080d", icon: "globe-outline" },
   { name: "NORMX", desc: "Comptabilite, etats financiers et paie", url: "https://app.normx-ai.com", color: BLUE, icon: "journal-outline" },
-  { name: "NORMX Legal", desc: "Documents juridiques OHADA automatises", url: "https://legal.normx-ai.com", color: PURPLE, icon: "document-text-outline", soon: true },
+  { name: "NORMX Tax", desc: "Simulateur fiscal CGI 2026 et IA", url: "https://tax.normx-ai.com", color: PRIMARY, icon: "calculator-outline" },
+  { name: "NORMX Legal", desc: "Documents juridiques OHADA automatises", url: "https://legal.normx-ai.com", color: PURPLE, icon: "document-text-outline" },
 ];
 
 interface Props {
