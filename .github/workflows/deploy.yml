@@ -34,6 +34,9 @@ jobs:
           cd mobile
           npm install --legacy-peer-deps
           EXPO_PUBLIC_API_URL=/api npx expo export --platform web
+          # Forcer le bon favicon (cohérent avec app.normx-ai.com et legal)
+          cp assets/favicon.png dist/favicon.ico
+          cp assets/favicon.png dist/favicon.png
           cd ..
 
       - name: Setup SSH key
