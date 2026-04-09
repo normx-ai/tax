@@ -33,7 +33,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
 
   return (
     <View style={{ backgroundColor: "#0F2A42", borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.08)", paddingTop: 48, paddingBottom: 0 }}>
-      <View style={{ maxWidth: 1060, width: "100%", alignSelf: "center", paddingHorizontal: 24, flexDirection: isMobile ? "column" : "row", gap: isMobile ? 36 : 0 }}>
+      <View style={{ maxWidth: 1060, width: "100%", alignSelf: "center", paddingHorizontal: 16, flexDirection: isMobile ? "column" : "row", gap: isMobile ? 36 : 0 }}>
         {/* Marque */}
         <View style={{ flex: isMobile ? undefined : 1.3 }}>
           <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
@@ -78,7 +78,7 @@ export default function LandingFooter({ isMobile, onScrollTo }: Props) {
       </View>
 
       {/* Barre du bas */}
-      <View style={{ maxWidth: 1060, width: "100%", alignSelf: "center", paddingHorizontal: 24, marginTop: 40, borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.06)", paddingVertical: 20, flexDirection: isMobile ? "column" : "row", justifyContent: "space-between", alignItems: "center", gap: isMobile ? 8 : 0 }}>
+      <View style={{ maxWidth: 1060, width: "100%", alignSelf: "center", paddingHorizontal: 16, marginTop: 40, borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.06)", paddingVertical: 20, flexDirection: isMobile ? "column" : "row", justifyContent: "space-between", alignItems: "center", gap: isMobile ? 8 : 0 }}>
         <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 14, color: "rgba(255,255,255,0.4)" }}>
           {t("landing.copyright")}
         </Text>

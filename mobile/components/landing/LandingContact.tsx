@@ -10,7 +10,7 @@ interface Props {
 
 export default function LandingContact({ isMobile }: Props) {
   return (
-    <View style={{ paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
+    <View style={{ paddingVertical: 60, paddingHorizontal: 16, backgroundColor: "#ffffff" }}>
       <Text
         style={{
           fontFamily: fonts.headingBlack,

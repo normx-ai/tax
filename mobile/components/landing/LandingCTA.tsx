@@ -9,7 +9,7 @@ export default function LandingCTA() {
   const login = useAuthStore((s) => s.login);
 
   return (
-    <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#faf8f5" }}>
+    <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 16, backgroundColor: "#faf8f5" }}>
       <View style={{
         backgroundColor: "#ffffff",
         borderWidth: 1,

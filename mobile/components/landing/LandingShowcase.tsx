@@ -104,7 +104,7 @@ function FeatureSection({
       flexDirection: isMobile ? "column" : (reverse ? "row-reverse" : "row"),
       gap: isMobile ? 32 : 60,
       paddingVertical: 48,
-      paddingHorizontal: 24,
+      paddingHorizontal: 16,
       maxWidth: 1100,
       alignSelf: "center",
       width: "100%",
@@ -138,7 +138,7 @@ function IPhoneSimulatorMockup() {
         {/* Screen */}
         <View style={{ backgroundColor: "#faf8f5", borderRadius: 28, overflow: "hidden", flex: 1 }}>
           {/* Status bar */}
-          <View style={{ height: 22, backgroundColor: DARK, flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 24, paddingTop: 4 }}>
+          <View style={{ height: 22, backgroundColor: DARK, flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, paddingTop: 4 }}>
             <Text style={{ fontSize: 8, fontWeight: "600", color: "rgba(255,255,255,0.7)" }}>9:41</Text>
             <View style={{ flexDirection: "row", gap: 3 }}>
               <Ionicons name="cellular" size={8} color="rgba(255,255,255,0.7)" />

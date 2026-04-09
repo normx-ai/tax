@@ -127,7 +127,7 @@ export default function Cgi242Page() {
       </View>
 
       {/* Hero — blanc */}
-      <View style={{ alignItems: "center", paddingTop: isMobile ? 60 : 90, paddingBottom: 50, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
+      <View style={{ alignItems: "center", paddingTop: isMobile ? 60 : 90, paddingBottom: 50, paddingHorizontal: 16, backgroundColor: "#ffffff" }}>
         <View
           style={{
             flexDirection: "row",
@@ -232,7 +232,7 @@ export default function Cgi242Page() {
       </View>
 
       {/* Features — blanc */}
-      <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 24, paddingBottom: 60, backgroundColor: "#ffffff" }}>
+      <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 16, paddingBottom: 60, backgroundColor: "#ffffff" }}>
         <Text
           style={{
             fontFamily: fonts.headingBlack,
@@ -297,7 +297,7 @@ export default function Cgi242Page() {
       </View>
 
       {/* CTA final — blanc */}
-      <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
+      <View style={{ alignItems: "center", paddingVertical: 60, paddingHorizontal: 16, backgroundColor: "#ffffff" }}>
         <Text
           style={{
             fontFamily: fonts.headingBlack,
@@ -324,7 +324,7 @@ export default function Cgi242Page() {
       </View>
 
       {/* Footer — bleu */}
-      <View style={{ borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.08)", backgroundColor: BG, paddingVertical: 28, paddingHorizontal: 24, alignItems: "center" }}>
+      <View style={{ borderTopWidth: 1, borderTopColor: "rgba(255,255,255,0.08)", backgroundColor: BG, paddingVertical: 28, paddingHorizontal: 16, alignItems: "center" }}>
         <Text style={{ fontSize: 14, color: "rgba(255,255,255,0.4)", fontFamily: fonts.regular }}>
           {t("landing.copyright")}
         </Text>

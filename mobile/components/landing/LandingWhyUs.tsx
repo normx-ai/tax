@@ -50,7 +50,7 @@ const ADVANTAGES = [
 
 export default function LandingWhyUs({ isMobile }: Props) {
   return (
-    <View style={{ paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#ffffff" }}>
+    <View style={{ paddingVertical: 60, paddingHorizontal: 16, backgroundColor: "#ffffff" }}>
       <Text style={{
         fontFamily: fonts.headingBlack,
         fontWeight: fontWeights.headingBlack,

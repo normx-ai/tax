@@ -72,7 +72,7 @@ export default function LandingCountries({ isMobile, loaded }: Props) {
   const regions = ["Tous", "CEMAC", "UEMOA", "Autre"];
 
   return (
-    <View style={{ paddingVertical: 40, paddingHorizontal: 24 }}>
+    <View style={{ paddingVertical: 40, paddingHorizontal: 16 }}>
       <Text
         style={{
           fontFamily: fonts.headingBlack,

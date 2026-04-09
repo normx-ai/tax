@@ -28,7 +28,7 @@ export default function LandingFeatures({ isMobile, loaded }: Props) {
   const cols = isMobile ? 1 : isTablet ? 2 : 3;
 
   return (
-    <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 24, paddingBottom: 60, backgroundColor: "#ffffff" }}>
+    <View style={{ maxWidth: 1060, alignSelf: "center", width: "100%", paddingHorizontal: 16, paddingBottom: 60, backgroundColor: "#ffffff" }}>
       <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: isMobile ? 28 : 36, color: "#0F2A42", textAlign: "center", marginBottom: 8 }}>
         {t("landing.featuresTitle")}
       </Text>

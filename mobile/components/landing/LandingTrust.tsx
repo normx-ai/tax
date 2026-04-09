@@ -39,7 +39,7 @@ const TRUST_BADGES = [
 
 export default function LandingTrust({ isMobile }: Props) {
   return (
-    <View style={{ paddingVertical: 60, paddingHorizontal: 24, backgroundColor: "#faf8f5" }}>
+    <View style={{ paddingVertical: 60, paddingHorizontal: 16, backgroundColor: "#faf8f5" }}>
       {/* Badges de confiance */}
       <View style={{
         flexDirection: "row",

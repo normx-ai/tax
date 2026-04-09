@@ -54,7 +54,7 @@ export default function LandingProducts({ isMobile }: Props) {
   const cols = isMobile ? 1 : isTablet ? 2 : 4;
 
   return (
-    <View style={{ paddingVertical: 60, paddingHorizontal: 24, maxWidth: 1060, alignSelf: "center", width: "100%", backgroundColor: "#ffffff" }}>
+    <View style={{ paddingVertical: 60, paddingHorizontal: 16, maxWidth: 1060, alignSelf: "center", width: "100%", backgroundColor: "#ffffff" }}>
       <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#0F2A42", textAlign: "center", textTransform: "uppercase", letterSpacing: 2, marginBottom: 12 }}>
         Nos produits
       </Text>

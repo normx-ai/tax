@@ -44,7 +44,7 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
         justifyContent: "space-between",
         alignItems: "center",
         height: 64,
-        paddingHorizontal: 24,
+        paddingHorizontal: 16,
         maxWidth: 1200,
         width: "100%",
         alignSelf: "center",

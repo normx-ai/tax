@@ -67,7 +67,7 @@ export default function LandingHero({ isMobile, loaded }: Props) {
   ];
 
   return (
-    <View style={{ paddingTop: isMobile ? 60 : 100, paddingBottom: 60, paddingHorizontal: 24, backgroundColor: BG_WARM }}>
+    <View style={{ paddingTop: isMobile ? 60 : 100, paddingBottom: 60, paddingHorizontal: 16, backgroundColor: BG_WARM }}>
       {/* Hero 2 colonnes */}
       <View style={{
         maxWidth: 1200,
