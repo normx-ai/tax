@@ -87,7 +87,7 @@ export default function LandingTrust({ isMobile }: Props) {
       <View style={{
         flexDirection: isMobile ? "column" : "row",
         gap: 20,
-        maxWidth: 1100,
+        maxWidth: 1600,
         alignSelf: "center",
         width: "100%",
       }}>

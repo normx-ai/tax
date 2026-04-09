@@ -91,7 +91,7 @@ export default function LandingPricing({ isMobile }: Props) {
           flexDirection: "row",
           flexWrap: "wrap",
           gap: 16,
-          maxWidth: 1200,
+          maxWidth: 1600,
           alignSelf: "center",
           width: "100%",
           justifyContent: "center",

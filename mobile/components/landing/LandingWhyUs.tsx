@@ -77,7 +77,7 @@ export default function LandingWhyUs({ isMobile }: Props) {
         flexDirection: "row",
         flexWrap: "wrap",
         gap: 20,
-        maxWidth: 1100,
+        maxWidth: 1600,
         alignSelf: "center",
         width: "100%",
         justifyContent: "center",

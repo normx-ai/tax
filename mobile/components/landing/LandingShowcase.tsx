@@ -105,7 +105,7 @@ function FeatureSection({
       gap: isMobile ? 32 : 60,
       paddingVertical: 48,
       paddingHorizontal: 16,
-      maxWidth: 1100,
+      maxWidth: 1600,
       alignSelf: "center",
       width: "100%",
     }}>
