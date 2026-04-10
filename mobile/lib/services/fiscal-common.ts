@@ -235,7 +235,9 @@ export function formatMontant(montant: number): string {
 }
 
 export function formatNumber(montant: number): string {
-  return new Intl.NumberFormat("fr-FR").format(Math.round(montant));
+  // Intl fr-FR utilise U+202F (narrow no-break space) qui s'affiche "/" dans certaines polices a l'impression
+  // On remplace par un espace normal pour un rendu propre partout
+  return new Intl.NumberFormat("fr-FR").format(Math.round(montant)).replace(/[\u202F\u00A0]/g, " ");
 }
 
 /**
