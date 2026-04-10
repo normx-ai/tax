@@ -10,7 +10,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 function formatAmount(amount: string, currency: string): string {
   const num = parseFloat(amount);
-  return `${num.toLocaleString("fr-FR", { minimumFractionDigits: 0 })} ${currency}`;
+  return `${num.toLocaleString("fr-FR", { minimumFractionDigits: 0 }).replace(/[\u202F\u00A0]/g, " ")} ${currency}`;
 }
 
 function formatDate(dateStr: string | null | undefined): string {

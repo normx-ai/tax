@@ -68,7 +68,7 @@ export default function SeatRequestSection({
           <Text style={{ fontSize: 15, color: colors.textSecondary, marginTop: 4 }}>
             {t("seatRequest.pendingDetail", {
               seats: pendingSeatRequest.additionalSeats,
-              price: pendingSeatRequest.totalPrice.toLocaleString("fr-FR"),
+              price: pendingSeatRequest.totalPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " "),
             })}
           </Text>
         </View>
@@ -103,7 +103,7 @@ export default function SeatRequestSection({
           {seatsNum > 0 && (
             <View style={{ backgroundColor: `${colors.primary}10`, padding: 12, borderRadius: 8, marginBottom: 12 }}>
               <Text style={{ fontSize: 16, fontWeight: "600", color: colors.text }}>
-                {seatsNum} x {computedUnitPrice.toLocaleString("fr-FR")} = {computedTotalPrice.toLocaleString("fr-FR")} XAF
+                {seatsNum} x {computedUnitPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ")} = {computedTotalPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ")} XAF
               </Text>
               {discountPercent > 0 && (
                 <Text style={{ fontSize: 15, color: colors.primary, marginTop: 4 }}>

@@ -82,7 +82,7 @@ function formatShort(montant: number): string {
   if (montant >= 1_000_000) {
     return `${(montant / 1_000_000).toFixed(0)} M`;
   }
-  return montant.toLocaleString("fr-FR");
+  return montant.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ");
 }
 
 function arrondir(montant: number): number {

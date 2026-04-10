@@ -117,7 +117,7 @@ export default function AdminScreen() {
   const handleApproveSeatRequest = async (req: AdminSeatRequest) => {
     const ok = await confirm({
       title: t("seatRequest.approveTitle"),
-      message: `${t("seatRequest.approveConfirm", { seats: req.additionalSeats, org: req.organization.name, price: req.totalPrice.toLocaleString("fr-FR") })}`,
+      message: `${t("seatRequest.approveConfirm", { seats: req.additionalSeats, org: req.organization.name, price: req.totalPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ") })}`,
       confirmLabel: t("seatRequest.approve"),
       cancelLabel: t("common.cancel"),
     });

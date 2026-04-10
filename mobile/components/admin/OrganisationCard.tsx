@@ -117,7 +117,7 @@ export default function OrganisationCard({ org, actionLoading, seatsValue, onSea
         </View>
         <View>
           <Text style={{ fontSize: 13, color: colors.textMuted }}>Prix total/an</Text>
-          <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>{org.totalPrice > 0 ? `${org.totalPrice.toLocaleString("fr-FR")} XAF` : "-"}</Text>
+          <Text style={{ fontSize: 15, fontWeight: "600", color: colors.text }}>{org.totalPrice > 0 ? `${org.totalPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ")} XAF` : "-"}</Text>
         </View>
       </View>
 

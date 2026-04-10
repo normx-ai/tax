@@ -47,7 +47,7 @@ export default function SeatRequestsList({
               +{req.additionalSeats} {t("admin.seats")} ({req.currentSeats} → {req.totalSeatsAfter})
             </Text>
             <Text style={{ fontSize: 16, fontWeight: "600", color: colors.primary, marginBottom: 8 }}>
-              {req.additionalSeats} x {req.unitPrice.toLocaleString("fr-FR")} = {req.totalPrice.toLocaleString("fr-FR")} XAF
+              {req.additionalSeats} x {req.unitPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ")} = {req.totalPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ")} XAF
             </Text>
             <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 12 }}>
               Plan {req.plan}

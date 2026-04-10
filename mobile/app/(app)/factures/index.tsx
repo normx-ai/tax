@@ -18,7 +18,7 @@ const STATUS_CONFIG: Record<string, { icon: string; color: string; label: string
 
 function formatAmount(amount: string, currency: string): string {
   const num = parseFloat(amount);
-  return `${num.toLocaleString("fr-FR", { minimumFractionDigits: 0 })} ${currency}`;
+  return `${num.toLocaleString("fr-FR", { minimumFractionDigits: 0 }).replace(/[\u202F\u00A0]/g, " ")} ${currency}`;
 }
 
 function formatDate(dateStr: string): string {

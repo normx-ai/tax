@@ -231,7 +231,7 @@ export function calculateTauxEffectif(impot: number, revenuNetImposable: number)
 }
 
 export function formatMontant(montant: number): string {
-  return new Intl.NumberFormat("fr-FR").format(Math.round(montant)) + " FCFA";
+  return new Intl.NumberFormat("fr-FR").format(Math.round(montant)).replace(/[\u202F\u00A0]/g, " ") + " FCFA";
 }
 
 export function formatNumber(montant: number): string {
