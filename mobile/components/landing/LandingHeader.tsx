@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { View, Text, TouchableOpacity, Linking, Platform } from "react-native";
+import { View, Text, TouchableOpacity, Linking, Platform, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { useAuthStore } from "@/lib/store/auth";
@@ -56,30 +56,9 @@ export default function LandingHeader({ isMobile, onScrollTo }: Props) {
       }}
     >
       {/* Logo */}
-      <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-        <View
-          style={{
-            width: 34,
-            height: 34,
-            borderRadius: 10,
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: PRIMARY,
-          }}
-        >
-          <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 16, color: DARK }}>
-            N
-          </Text>
-        </View>
-        <View>
-          <Text style={{ fontSize: 20, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: DARK, lineHeight: 22 }}>
-            NORMX <Text style={{ color: PRIMARY }}>Tax</Text>
-          </Text>
-          <Text style={{ fontSize: 11, color: TEXT_SEC, fontFamily: fonts.regular, lineHeight: 14 }}>
-            La fiscalité augmentée par l'IA
-          </Text>
-        </View>
-      </View>
+      <TouchableOpacity onPress={() => Platform.OS === "web" && window.scrollTo({ top: 0, behavior: "smooth" })} style={{ flexDirection: "row", alignItems: "center" }}>
+        <Image source={require("@/assets/logo-horizontal.png")} style={{ height: 30, width: 130 }} resizeMode="contain" />
+      </TouchableOpacity>
 
       {/* Navigation */}
       {!isMobile && (
