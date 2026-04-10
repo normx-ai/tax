@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NORMX AI — La plateforme complète pour les États membres OHADA</title>
+  <meta name="description" content="NORMX AI — La plateforme complète pour les États membres OHADA : comptabilité, fiscalité, paie et droit des affaires propulsés par l'intelligence artificielle." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #D4A843;
+      --primary-light: #e8c96a;
+      --primary-bg: rgba(212,168,67,0.08);
+      --dark: #1A3A5C;
+      --dark2: #0d2b45;
+      --text: #1f2937;
+      --text-secondary: #6b7280;
+      --bg: #ffffff;
+      --bg-warm: #faf8f5;
+      --bg-card: #f9fafb;
+      --border: rgba(0,0,0,0.08);
+      --green: #059669;
+      --green-bg: rgba(5,150,105,0.1);
+      --blue: #2563eb;
+      --blue-bg: rgba(37,99,235,0.08);
+      --purple: #7c3aed;
+      --purple-bg: rgba(124,58,237,0.08);
+      --orange: #d97706;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,0.08);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1600px; margin: 0 auto; padding: 0 16px; }
+
+    /* ══ NAV ══ */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1600px; margin: 0 auto; padding: 0 16px; display: flex; align-items: center; height: 64px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 700; color: var(--dark); }
+    .nav-logo-icon { width: 34px; height: 34px; border-radius: 10px; background: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; color: var(--dark); }
+    .nav-links { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+    .nav-link { padding: 8px 14px; font-size: 14px; font-weight: 600; color: var(--text-secondary); border-radius: 8px; transition: all 0.2s; }
+    .nav-link:hover { color: var(--text); background: rgba(0,0,0,0.04); }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-4px); margin-top: 4px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.12); width: 560px; padding: 24px; opacity: 0; pointer-events: none; transition: all 0.2s ease; z-index: 200; }
+    .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+    .nav-dropdown-header { margin-bottom: 16px; }
+    .nav-dropdown-header h3 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+    .nav-dropdown-header p { font-size: 13px; color: var(--text-secondary); }
+    .nav-dropdown-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+    .nav-dropdown-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 600; color: var(--text); transition: background 0.15s; }
+    .nav-dropdown-item:hover { background: var(--bg-warm); }
+    .nav-dropdown-item .dd-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900; color: #fff; flex-shrink: 0; }
+    .nav-dropdown-item .dd-info { display: flex; flex-direction: column; }
+    .nav-dropdown-item .dd-name { font-size: 14px; font-weight: 600; color: var(--dark); }
+    .nav-dropdown-item .dd-desc { font-size: 12px; font-weight: 400; color: var(--text-secondary); line-height: 1.4; margin-top: 2px; }
+    .badge-soon { display: inline-block; font-size: 9px; font-weight: 600; background: #f3f4f6; color: #9ca3af; padding: 2px 8px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+    .nav-dropdown-footer { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); display: flex; justify-content: center; }
+    .nav-dropdown-footer a { font-size: 13px; font-weight: 500; color: var(--primary); display: flex; align-items: center; gap: 4px; }
+    .nav-dropdown-footer a:hover { text-decoration: underline; }
+    @media (max-width: 768px) { .nav-dropdown-menu { width: 90vw; left: auto; right: -60px; transform: translateY(-4px); } .nav-dropdown:hover .nav-dropdown-menu { transform: translateY(0); } .nav-dropdown-grid { grid-template-columns: 1fr; } }
+    .nav-cta { padding: 9px 22px; background: var(--dark); color: #fff; font-size: 14px; font-weight: 700; border-radius: 8px; transition: all 0.2s; }
+    .nav-cta:hover { background: var(--dark2); transform: translateY(-1px); }
+    .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-burger span { display: block; width: 20px; height: 2px; background: var(--text-secondary); margin: 4px 0; border-radius: 2px; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-burger { display: block; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--bg); padding: 16px; gap: 4px; border-bottom: 1px solid var(--border); }
+    }
+
+    /* ══ TORN PAPER DIVIDER ══ */
+    .torn-wrap { position: relative; z-index: 1; }
+    .torn-bottom::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 40px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath d='M0,20 Q30,8 60,18 T120,14 T180,22 T240,12 T300,20 T360,10 T420,18 T480,14 T540,22 T600,10 T660,20 T720,12 T780,18 T840,22 T900,10 T960,20 T1020,14 T1080,22 T1140,12 T1200,18 T1260,14 T1320,22 T1380,10 T1440,18 L1440,40 L0,40 Z' fill='%23ffffff'/%3E%3C/svg%3E") no-repeat bottom; background-size: 100% 40px; z-index: 2; }
+    .torn-bottom-warm::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 40px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath d='M0,20 Q30,8 60,18 T120,14 T180,22 T240,12 T300,20 T360,10 T420,18 T480,14 T540,22 T600,10 T660,20 T720,12 T780,18 T840,22 T900,10 T960,20 T1020,14 T1080,22 T1140,12 T1200,18 T1260,14 T1320,22 T1380,10 T1440,18 L1440,40 L0,40 Z' fill='%23faf8f5'/%3E%3C/svg%3E") no-repeat bottom; background-size: 100% 40px; z-index: 2; }
+
+    /* ══ HERO — style Pennylane ══ */
+    .hero { padding: 120px 16px 80px; background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%); overflow: visible; position: relative; }
+    .hero-inner { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .hero-text h1 { font-size: clamp(32px, 4.5vw, 52px); font-weight: 700; line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.5px; }
+    .hero-text h1 .highlight { color: var(--primary); position: relative; }
+    .hero-text h1 .highlight::after { content: ''; position: absolute; bottom: 2px; left: 0; right: 0; height: 6px; background: rgba(212,168,67,0.25); border-radius: 3px; }
+    .hero-text p { font-size: 18px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px; max-width: 480px; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; background: var(--primary); color: var(--dark); font-size: 15px; font-weight: 700; border-radius: var(--radius-sm); transition: all 0.2s; }
+    .btn-primary:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,168,67,0.3); }
+    .btn-outline { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; background: var(--bg); color: var(--text); font-size: 15px; font-weight: 600; border-radius: var(--radius-sm); border: 1.5px solid var(--border); transition: all 0.2s; }
+    .btn-outline:hover { border-color: var(--primary); background: var(--primary-bg); }
+    .hero-social { display: flex; align-items: center; gap: 24px; }
+    .hero-social-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-secondary); }
+    .hero-social-item .stars { color: var(--primary); font-size: 14px; }
+    .hero-visual { position: relative; }
+    .hero-mockup { width: 100%; max-width: 560px; border-radius: 16px; box-shadow: var(--shadow-lg); border: 1px solid var(--border); }
+    @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; text-align: center; } .hero-text p { margin-left: auto; margin-right: auto; } .hero-btns { justify-content: center; } .hero-social { justify-content: center; } .hero-visual { display: none; } }
+
+    /* ══ FEATURE TABS — barre horizontale style Pennylane ══ */
+    .feature-tabs { display: flex; justify-content: center; gap: 0; background: var(--bg-warm); padding: 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow-x: auto; }
+    .feature-tab { padding: 16px 28px; font-size: 14px; font-weight: 600; color: var(--text-secondary); cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
+    .feature-tab:hover { color: var(--text); background: rgba(0,0,0,0.02); }
+    .feature-tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 700; }
+    .feature-tab i { font-size: 16px; }
+
+    /* ══ SOCIAL PROOF ══ */
+    .social-proof { padding: 48px 16px; text-align: center; background: var(--bg); }
+    .social-proof p { font-size: 15px; color: var(--text-secondary); margin-bottom: 24px; }
+    .logos-row { display: flex; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .logos-row .country { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 14px; border-radius: 10px; transition: all 0.25s ease; }
+    .logos-row .country:hover { background: var(--bg-warm); transform: translateY(-2px); }
+    .logos-row .country .flag { font-size: 28px; line-height: 1; }
+    .logos-row .country .name { font-size: 11px; font-weight: 600; color: var(--text-secondary); letter-spacing: 0.3px; }
+
+    /* ══ SECTION FEATURE — alternating left/right ══ */
+    .section-feature { padding: 80px 16px; position: relative; }
+    .section-feature:nth-child(even) { background: var(--bg-warm); }
+    .feature-row { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .feature-row.reverse { direction: rtl; }
+    .feature-row.reverse > * { direction: ltr; }
+    .feature-label { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+    .feature-content h2 { font-size: clamp(24px, 3vw, 36px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+    .feature-content p { font-size: 16px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px; }
+    .feature-checks { list-style: none; margin-bottom: 28px; }
+    .feature-checks li { display: flex; align-items: start; gap: 10px; padding: 6px 0; font-size: 15px; color: var(--text); }
+    .feature-checks li i { color: var(--green); font-size: 18px; margin-top: 2px; flex-shrink: 0; }
+    .feature-img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); border: 1px solid var(--border); }
+
+    /* ══ MOCKUP UI CARDS ══ */
+    .mockup { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .mockup-bar { height: 36px; background: #f3f4f6; border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 14px; gap: 6px; }
+    .mockup-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .mockup-dot.r { background: #ef4444; } .mockup-dot.y { background: #f59e0b; } .mockup-dot.g { background: #22c55e; }
+    .mockup-body { padding: 20px; }
+    .mockup-row { display: flex; gap: 12px; margin-bottom: 12px; }
+    .mockup-sidebar { width: 140px; flex-shrink: 0; }
+    .mockup-sidebar-item { padding: 8px 12px; border-radius: 8px; font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+    .mockup-sidebar-item.active { background: var(--primary-bg); color: var(--primary); }
+    .mockup-sidebar-item i { font-size: 14px; }
+    .mockup-main { flex: 1; }
+    .mockup-title { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--text); }
+    .mockup-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    .mockup-table th { text-align: left; padding: 6px 8px; background: #f9fafb; color: var(--text-secondary); font-weight: 700; border-bottom: 1px solid var(--border); font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .mockup-table td { padding: 8px; border-bottom: 1px solid #f3f4f6; color: var(--text); }
+    .mockup-table .num { text-align: right; font-family: 'Inter', monospace; font-weight: 600; }
+    .mockup-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 10px; font-weight: 700; }
+    .mockup-badge.ok { background: var(--green-bg); color: var(--green); }
+    .mockup-badge.warn { background: rgba(245,158,11,0.12); color: var(--orange); }
+    .mockup-stat-row { display: flex; gap: 12px; margin-bottom: 16px; }
+    .mockup-stat { flex: 1; background: #f9fafb; border-radius: 10px; padding: 14px; border: 1px solid #f3f4f6; }
+    .mockup-stat .val { font-size: 20px; font-weight: 700; color: var(--dark); }
+    .mockup-stat .lbl { font-size: 10px; color: var(--text-secondary); margin-top: 2px; }
+    .mockup-chart { height: 80px; background: linear-gradient(180deg, rgba(212,168,67,0.08) 0%, transparent 100%); border-radius: 8px; display: flex; align-items: flex-end; gap: 6px; padding: 8px; }
+    .mockup-bar-chart { flex: 1; border-radius: 4px 4px 0 0; }
+    @media (max-width: 600px) { .mockup-sidebar { display: none; } }
+    .feature-link { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: var(--primary); transition: gap 0.2s; }
+    .feature-link:hover { gap: 12px; }
+    @media (max-width: 800px) { .feature-row, .feature-row.reverse { grid-template-columns: 1fr; direction: ltr; } }
+
+    /* ══ PRODUCTS GRID ══ */
+    .section-products { padding: 80px 16px; background: var(--bg-warm); position: relative; }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-header .label { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
+    .section-header h2 { font-size: clamp(26px, 3.5vw, 40px); font-weight: 700; margin-bottom: 12px; }
+    .section-header p { font-size: 16px; color: var(--text-secondary); max-width: 560px; margin: 0 auto; }
+    .products-grid { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .product-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; transition: all 0.3s; position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 320px; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: rgba(212,168,67,0.3); }
+    .product-card.live { border-color: var(--primary); }
+    .product-card.live::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--primary); }
+    .product-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 18px; }
+    .product-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+    .product-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; min-height: 66px; }
+    .tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; }
+    .tag-live { background: var(--green-bg); color: var(--green); }
+    .tag-soon { background: rgba(156,163,175,0.15); color: var(--text-secondary); }
+    .product-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--primary); margin-top: 10px; transition: gap 0.2s; }
+    .product-link:hover { gap: 10px; }
+    @media (max-width: 800px) { .products-grid { grid-template-columns: 1fr; } }
+
+    /* ══ FEATURES GRID — style Pennylane img 5 ══ */
+    .section-grid { padding: 80px 16px; }
+    .grid-features { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .grid-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: all 0.25s; }
+    .grid-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .grid-card .icon { font-size: 28px; margin-bottom: 14px; }
+    .grid-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .grid-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+    @media (max-width: 800px) { .grid-features { grid-template-columns: 1fr; } }
+
+    /* ══ STATS ══ */
+    .stats-bar { padding: 48px 16px; background: var(--dark); }
+    .stats-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 32px; }
+    .stat { text-align: center; }
+    .stat .number { font-size: 40px; font-weight: 700; color: var(--primary); }
+    .stat .label { font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 4px; }
+
+    /* ══ CTA ══ */
+    .cta { padding: 80px 16px; }
+    .cta-box { max-width: 800px; margin: 0 auto; background: var(--bg-warm); border: 1px solid var(--border); border-radius: 20px; padding: 60px 40px; text-align: center; }
+    .cta-box h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+    .cta-box p { font-size: 16px; color: var(--text-secondary); margin-bottom: 28px; }
+    .cta-box .contact { margin-top: 20px; font-size: 14px; color: var(--text-secondary); }
+    .cta-box .contact a { color: var(--primary); font-weight: 600; }
+
+    /* ══ FOOTER ══ */
+    footer { border-top: 1px solid var(--border); padding: 48px 16px; }
+    .footer-inner { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; }
+    .footer-brand h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+    .footer-brand h3 span { color: var(--primary); }
+    .footer-brand p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+    .footer-col h4 { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1px; }
+    .footer-col a { display: block; font-size: 14px; color: var(--text-secondary); padding: 3px 0; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--primary); }
+    .footer-bottom { text-align: center; padding-top: 32px; margin-top: 32px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-secondary); max-width: 1600px; margin-left: auto; margin-right: auto; }
+    @media (max-width: 800px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .footer-inner { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- ══════ NAV ══════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/img/logo-horizontal.png" alt="NORMX AI" style="height:32px;width:auto;" />
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#features" class="nav-link">Fonctionnalités</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <div class="nav-dropdown">
+        <span class="nav-link" style="cursor:pointer">Produits &#9662;</span>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-header">
+            <h3>Produits</h3>
+            <p>Suite logicielle pour les professionnels de l'espace OHADA</p>
+          </div>
+          <div class="nav-dropdown-grid">
+            <a href="https://normx-ai.com" class="nav-dropdown-item">
+              <div class="dd-icon" style="background:#08080d"><i class="bi bi-globe"></i></div>
+              <div class="dd-info"><div class="dd-name">NORMX AI</div><div class="dd-desc">Plateforme principale</div></div>
+            </a>
+            <a href="https://app.normx-ai.com" class="nav-dropdown-item">
+              <div class="dd-icon" style="background:#2563eb"><i class="bi bi-journal-text"></i></div>
+              <div class="dd-info"><div class="dd-name">NORMX Finance</div><div class="dd-desc">Comptabilité, états financiers et paie</div></div>
+            </a>
+            <a href="https://tax.normx-ai.com" class="nav-dropdown-item">
+              <div class="dd-icon" style="background:#D4A843"><i class="bi bi-calculator"></i></div>
+              <div class="dd-info"><div class="dd-name">NORMX Tax</div><div class="dd-desc">Simulateur fiscal CGI 2026 et IA</div></div>
+            </a>
+            <a href="https://legal.normx-ai.com" class="nav-dropdown-item">
+              <div class="dd-icon" style="background:#7c3aed"><i class="bi bi-file-earmark-text"></i></div>
+              <div class="dd-info"><div class="dd-name">NORMX Legal</div><div class="dd-desc">Documents juridiques OHADA automatisés</div></div>
+            </a>
+          </div>
+          <div class="nav-dropdown-footer">
+            <a href="#products">Voir tous les produits <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#contact" class="nav-cta">Connexion</a>
+    <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════ HERO ══════ -->
+<section class="hero torn-wrap torn-bottom">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>L'outil qui réunit votre <span class="highlight">comptabilité</span>, votre <span class="highlight">fiscalité</span> et votre <span class="highlight">droit</span></h1>
+      <p>NORMX AI centralise la comptabilité OHADA, la fiscalité CGI, la paie et le droit des affaires dans une plateforme unique propulsée par l'IA — conçue pour l'Afrique.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-primary">Découvrir nos produits <i class="bi bi-arrow-right"></i></a>
+        <a href="#contact" class="btn-outline">Nous contacter</a>
+      </div>
+      <div class="hero-social">
+        <div class="hero-social-item">
+          <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+          <span>4.7/5</span>
+        </div>
+        <div class="hero-social-item">
+          <i class="bi bi-google-play" style="font-size:16px;"></i>
+          <span>Disponible sur Google Play</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <!-- MacBook Pro — Dashboard NORMX -->
+      <div style="max-width:560px;width:100%">
+        <div style="background:#e2e2e2;border-radius:14px;padding:6px 6px 0;border:1px solid #d4d4d4">
+          <div style="width:8px;height:8px;border-radius:4px;background:#1a1a1a;margin:0 auto 4px;border:1px solid #333"></div>
+          <div style="background:#fff;border-radius:2px;overflow:hidden">
+            <div style="background:#1A3A5C;height:32px;display:flex;align-items:center;padding:0 10px;gap:6px">
+              <span style="width:8px;height:8px;border-radius:4px;background:#ef4444"></span><span style="width:8px;height:8px;border-radius:4px;background:#f59e0b"></span><span style="width:8px;height:8px;border-radius:4px;background:#22c55e"></span>
+              <span style="flex:1;text-align:center;font-size:10px;font-weight:600;color:rgba(255,255,255,.6)">NORMX AI — Plateforme unifiée</span>
+            </div>
+            <div style="display:flex">
+              <div style="width:120px;background:#1A3A5C;padding:12px 8px;min-height:280px">
+                <div style="padding:7px 10px;border-radius:6px;background:rgba(212,168,67,.2);font-size:9px;color:#D4A843;font-weight:700;margin-bottom:4px">Dashboard</div>
+                <div style="padding:7px 10px;font-size:9px;color:rgba(255,255,255,.5);margin-bottom:2px">Comptabilité</div>
+                <div style="padding:7px 10px;font-size:9px;color:rgba(255,255,255,.5);margin-bottom:2px">Fiscalité</div>
+                <div style="padding:7px 10px;font-size:9px;color:rgba(255,255,255,.5);margin-bottom:2px">Paie</div>
+                <div style="padding:7px 10px;font-size:9px;color:rgba(255,255,255,.5);margin-bottom:2px">États financiers</div>
+                <div style="padding:7px 10px;font-size:9px;color:rgba(255,255,255,.5);margin-bottom:2px">Documents juridiques</div>
+                <div style="padding:7px 10px;font-size:9px;color:rgba(255,255,255,.5)">Assistant IA</div>
+              </div>
+              <div style="flex:1;padding:12px">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+                  <div style="font-size:12px;font-weight:800;color:#1f2937">Tableau de bord</div>
+                  <div style="font-size:8px;color:#9ca3af">Avril 2026</div>
+                </div>
+                <!-- KPIs -->
+                <div style="display:flex;gap:6px;margin-bottom:10px">
+                  <div style="flex:1;background:#f9fafb;padding:8px 6px;border-radius:6px;text-align:center;border:1px solid #f3f4f6"><div style="font-size:14px;font-weight:800;color:#D4A843">45.2M</div><div style="font-size:7px;color:#6b7280;margin-top:1px">CA cumulé</div></div>
+                  <div style="flex:1;background:#f9fafb;padding:8px 6px;border-radius:6px;text-align:center;border:1px solid #f3f4f6"><div style="font-size:14px;font-weight:800;color:#ef4444">2.1M</div><div style="font-size:7px;color:#6b7280;margin-top:1px">IS à payer</div></div>
+                  <div style="flex:1;background:#f9fafb;padding:8px 6px;border-radius:6px;text-align:center;border:1px solid #f3f4f6"><div style="font-size:14px;font-weight:800;color:#059669">12</div><div style="font-size:7px;color:#6b7280;margin-top:1px">Salariés</div></div>
+                  <div style="flex:1;background:#f9fafb;padding:8px 6px;border-radius:6px;text-align:center;border:1px solid #f3f4f6"><div style="font-size:14px;font-weight:800;color:#2563eb">3</div><div style="font-size:7px;color:#6b7280;margin-top:1px">Échéances</div></div>
+                </div>
+                <!-- Mini graph CA -->
+                <div style="background:#f9fafb;border-radius:6px;padding:8px;margin-bottom:10px;border:1px solid #f3f4f6">
+                  <div style="font-size:8px;font-weight:700;color:#6b7280;margin-bottom:6px">CHIFFRE D'AFFAIRES MENSUEL</div>
+                  <div style="display:flex;align-items:flex-end;gap:3px;height:40px">
+                    <div style="flex:1;background:rgba(212,168,67,.2);border-radius:2px 2px 0 0;height:45%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.2);border-radius:2px 2px 0 0;height:60%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.3);border-radius:2px 2px 0 0;height:55%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.3);border-radius:2px 2px 0 0;height:72%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.4);border-radius:2px 2px 0 0;height:68%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.4);border-radius:2px 2px 0 0;height:80%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.5);border-radius:2px 2px 0 0;height:75%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.5);border-radius:2px 2px 0 0;height:90%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.6);border-radius:2px 2px 0 0;height:85%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.7);border-radius:2px 2px 0 0;height:95%"></div>
+                    <div style="flex:1;background:rgba(212,168,67,.8);border-radius:2px 2px 0 0;height:88%"></div>
+                    <div style="flex:1;background:#D4A843;border-radius:2px 2px 0 0;height:100%"></div>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;margin-top:3px"><span style="font-size:6px;color:#9ca3af">Jan</span><span style="font-size:6px;color:#9ca3af">Fév</span><span style="font-size:6px;color:#9ca3af">Mar</span><span style="font-size:6px;color:#9ca3af">Avr</span></div>
+                </div>
+                <!-- Activite recente -->
+                <div style="font-size:8px;font-weight:700;color:#6b7280;margin-bottom:4px">ACTIVITÉ RÉCENTE</div>
+                <div style="font-size:8px;padding:4px 0;border-bottom:1px solid #f3f4f6;display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;border-radius:3px;background:#059669;flex-shrink:0"></span><span style="color:#374151;flex:1">Bulletin de paie — Mars 2026</span><span style="color:#9ca3af">il y a 2h</span></div>
+                <div style="font-size:8px;padding:4px 0;border-bottom:1px solid #f3f4f6;display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;border-radius:3px;background:#2563eb;flex-shrink:0"></span><span style="color:#374151;flex:1">Écriture OD — Dotation amort.</span><span style="color:#9ca3af">il y a 5h</span></div>
+                <div style="font-size:8px;padding:4px 0;display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;border-radius:3px;background:#D4A843;flex-shrink:0"></span><span style="color:#374151;flex:1">Simulation IS — Exercice 2025</span><span style="color:#9ca3af">hier</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height:8px;background:#d1d1d1;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin:0 20px"><div style="width:60px;height:3px;background:#b0b0b0;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin:0 auto"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FEATURE TABS ══════ -->
+<div class="feature-tabs">
+  <a href="#comptabilité" class="feature-tab active"><i class="bi bi-calculator"></i> Comptabilité</a>
+  <a href="#fiscalité" class="feature-tab"><i class="bi bi-bank"></i> Fiscalité</a>
+  <a href="#paie" class="feature-tab"><i class="bi bi-people"></i> Paie</a>
+  <a href="#etats" class="feature-tab"><i class="bi bi-file-earmark-bar-graph"></i> États financiers</a>
+  <a href="#legal" class="feature-tab"><i class="bi bi-file-earmark-text"></i> Juridique</a>
+</div>
+
+<!-- ══════ SOCIAL PROOF ══════ -->
+<div class="social-proof">
+  <p>Conçu pour les 17 pays de l'espace OHADA</p>
+  <div class="logos-row">
+    <div class="country"><span class="flag">🇧🇯</span><span class="name">Bénin</span></div>
+    <div class="country"><span class="flag">🇧🇫</span><span class="name">Burkina Faso</span></div>
+    <div class="country"><span class="flag">🇨🇲</span><span class="name">Cameroun</span></div>
+    <div class="country"><span class="flag">🇨🇫</span><span class="name">Centrafrique</span></div>
+    <div class="country"><span class="flag">🇰🇲</span><span class="name">Comores</span></div>
+    <div class="country"><span class="flag">🇨🇬</span><span class="name">Congo</span></div>
+    <div class="country"><span class="flag">🇨🇮</span><span class="name">Côte d'Ivoire</span></div>
+    <div class="country"><span class="flag">🇨🇩</span><span class="name">RD Congo</span></div>
+    <div class="country"><span class="flag">🇬🇦</span><span class="name">Gabon</span></div>
+    <div class="country"><span class="flag">🇬🇶</span><span class="name">Guinée Éq.</span></div>
+    <div class="country"><span class="flag">🇬🇼</span><span class="name">Guinée-Bissau</span></div>
+    <div class="country"><span class="flag">🇬🇳</span><span class="name">Guinée</span></div>
+    <div class="country"><span class="flag">🇲🇱</span><span class="name">Mali</span></div>
+    <div class="country"><span class="flag">🇳🇪</span><span class="name">Niger</span></div>
+    <div class="country"><span class="flag">🇸🇳</span><span class="name">Sénégal</span></div>
+    <div class="country"><span class="flag">🇹🇩</span><span class="name">Tchad</span></div>
+    <div class="country"><span class="flag">🇹🇬</span><span class="name">Togo</span></div>
+  </div>
+</div>
+
+<!-- ══════ FEATURE 1 — Comptabilité ══════ -->
+<section class="section-feature torn-wrap torn-bottom-warm" id="comptabilité">
+  <div class="feature-row">
+    <div class="feature-content">
+      <div class="feature-label" style="color:var(--blue)">SOLUTION TOUT-EN-UN</div>
+      <h2>Gardez le controle de votre comptabilité</h2>
+      <p>NORMX est le logiciel comptable conforme SYSCOHADA et SYCEBNL qui réunit toutes vos données financieres au meme endroit.</p>
+      <ul class="feature-checks">
+        <li><i class="bi bi-check-circle-fill"></i> Saisie d'écritures multi-journaux (OD, ACH, VTE, BQ, CAI)</li>
+        <li><i class="bi bi-check-circle-fill"></i> Grand livre, balance générale, balance des tiers</li>
+        <li><i class="bi bi-check-circle-fill"></i> Lettrage automatique des comptes</li>
+        <li><i class="bi bi-check-circle-fill"></i> Plan comptable SYSCOHADA (1 409 comptes) et SYCEBNL</li>
+        <li><i class="bi bi-check-circle-fill"></i> Déclaration TVA mensuelle</li>
+      </ul>
+      <a href="https://app.normx-ai.com" class="feature-link">Accéder à NORMX Compta <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div>
+      <!-- MacBook Air — Journal des écritures -->
+      <div style="max-width:480px">
+        <div style="background:#e2e2e2;border-radius:14px;padding:6px 6px 0;border:1px solid #d4d4d4">
+          <div style="width:8px;height:8px;border-radius:4px;background:#1a1a1a;margin:0 auto 4px;border:1px solid #333"></div>
+          <div style="background:#fff;border-radius:2px;overflow:hidden">
+            <div style="background:#1A3A5C;height:28px;display:flex;align-items:center;padding:0 10px;gap:6px">
+              <span style="width:7px;height:7px;border-radius:4px;background:#ef4444"></span><span style="width:7px;height:7px;border-radius:4px;background:#f59e0b"></span><span style="width:7px;height:7px;border-radius:4px;background:#22c55e"></span>
+              <span style="flex:1;text-align:center;font-size:9px;font-weight:600;color:rgba(255,255,255,.6)">NORMX — Journal des écritures</span>
+            </div>
+            <div style="padding:14px">
+              <table class="mockup-table"><tr><th>Date</th><th>Compte</th><th>Libellé</th><th class="num">Débit</th><th class="num">Crédit</th></tr>
+              <tr><td>01/03</td><td>601000</td><td>Achats marchandises</td><td class="num" style="color:var(--orange)">2 500 000</td><td class="num">—</td></tr>
+              <tr><td>01/03</td><td>445100</td><td>TVA déductible 18%</td><td class="num" style="color:var(--orange)">450 000</td><td class="num">—</td></tr>
+              <tr><td>01/03</td><td>401000</td><td>Fournisseur ALPHA</td><td class="num">—</td><td class="num" style="color:var(--green)">2 950 000</td></tr>
+              <tr><td>05/03</td><td>411000</td><td>Client BETA SA</td><td class="num" style="color:var(--orange)">5 900 000</td><td class="num">—</td></tr>
+              <tr><td>05/03</td><td>701000</td><td>Ventes marchandises</td><td class="num">—</td><td class="num" style="color:var(--green)">5 000 000</td></tr></table>
+              <div style="display:flex;justify-content:space-between;margin-top:10px;padding:6px 8px;background:#f9fafb;border-radius:6px"><span style="font-size:10px;color:#6b7280">5 écritures — Journal ACH/VTE</span><span class="mockup-badge ok">Équilibré</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="height:8px;background:#d1d1d1;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin:0 20px"><div style="width:60px;height:3px;background:#b0b0b0;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin:0 auto"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FEATURE 2 — Fiscalité ══════ -->
+<section class="section-feature torn-wrap torn-bottom" id="fiscalité">
+  <div class="feature-row reverse">
+    <div class="feature-content">
+      <div class="feature-label" style="color:var(--primary)">FISCALITE INTELLIGENTE</div>
+      <h2>Simulez vos impôts, accédez au CGI Congo 2026</h2>
+      <p>16 simulateurs fiscaux et un assistant IA qui repond a vos questions avec les articles de loi sources.</p>
+      <ul class="feature-checks">
+        <li><i class="bi bi-check-circle-fill"></i> IS (28%), IBA (30%), ITS, TVA, Patente, TUS</li>
+        <li><i class="bi bi-check-circle-fill"></i> Résultat fiscal avec réintégrations et déductions</li>
+        <li><i class="bi bi-check-circle-fill"></i> Calendrier fiscal avec alertes échéances</li>
+        <li><i class="bi bi-check-circle-fill"></i> +2 200 articles de loi indexes</li>
+        <li><i class="bi bi-check-circle-fill"></i> IA fiscale conversationnelle</li>
+      </ul>
+      <a href="https://tax.normx-ai.com" class="feature-link">Accéder a NORMX Tax <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div>
+      <!-- iPad — Simulateur IS -->
+      <div style="max-width:400px">
+        <div style="background:#1a1a1e;border-radius:24px;padding:10px">
+          <div style="width:8px;height:8px;border-radius:4px;background:#333;margin:0 auto 6px"></div>
+          <div style="background:#fff;border-radius:14px;overflow:hidden">
+            <div style="background:#1A3A5C;padding:10px 14px;display:flex;align-items:center;gap:8px"><i class="bi bi-calculator" style="color:#D4A843;font-size:14px"></i><span style="font-size:13px;font-weight:700;color:#fff">NORMX Tax — Simulateur IS</span></div>
+            <div style="padding:16px">
+              <table class="mockup-table"><tr><th>Rubrique</th><th class="num">Montant FCFA</th></tr>
+              <tr><td>Produits d'exploitation</td><td class="num">45 000 000</td></tr>
+              <tr><td>Charges d'exploitation</td><td class="num" style="color:var(--orange)">- 38 500 000</td></tr>
+              <tr><td style="font-weight:700">Résultat comptable</td><td class="num" style="font-weight:700">6 500 000</td></tr>
+              <tr><td>Réintégrations fiscales</td><td class="num" style="color:var(--orange)">+ 1 200 000</td></tr>
+              <tr><td style="font-weight:700">Résultat fiscal</td><td class="num" style="font-weight:700;color:#D4A843">7 700 000</td></tr>
+              <tr><td style="font-weight:700">IS (28%)</td><td class="num" style="font-weight:700;color:var(--green)">2 156 000</td></tr></table>
+              <div style="text-align:center;margin-top:10px;font-size:9px;color:#9ca3af">Art. 86-A CGI 2026 — Directive CEMAC</div>
+            </div>
+          </div>
+          <div style="width:80px;height:4px;border-radius:2px;background:#555;margin:8px auto 0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FEATURE 3 — Paie ══════ -->
+<section class="section-feature torn-wrap torn-bottom-warm" id="paie">
+  <div class="feature-row">
+    <div class="feature-content">
+      <div class="feature-label" style="color:var(--orange)">PAIE CONFORME CGI 2026</div>
+      <h2>Gérez vos bulletins de paie en toute conformité</h2>
+      <p>Moteur de calcul complet ITS, CNSS, CAMU, TUS, TOL avec 6+ conventions collectives du Congo.</p>
+      <ul class="feature-checks">
+        <li><i class="bi bi-check-circle-fill"></i> Bulletins de paie conformes CGI 2026</li>
+        <li><i class="bi bi-check-circle-fill"></i> 6 conventions collectives (Générale, Petrole, BTP, Commerce, BAM, Hôtellerie)</li>
+        <li><i class="bi bi-check-circle-fill"></i> Déclarations CNSS, DAS, Nominative</li>
+        <li><i class="bi bi-check-circle-fill"></i> Livre de paie et etats de controle</li>
+        <li><i class="bi bi-check-circle-fill"></i> Gestion des salaries et etablissements</li>
+      </ul>
+      <a href="https://app.normx-ai.com" class="feature-link">Accéder à NORMX Paie <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div>
+      <!-- iPhone — Bulletin de paie -->
+      <div style="max-width:280px;margin:0 auto">
+        <div style="background:#1a1a1e;border-radius:36px;padding:10px">
+          <div style="width:80px;height:20px;border-radius:12px;background:#1a1a1e;margin:0 auto -10px;position:relative;z-index:1"><div style="width:8px;height:8px;border-radius:4px;background:#333;margin:6px auto 0"></div></div>
+          <div style="background:#faf8f5;border-radius:26px;overflow:hidden">
+            <div style="height:20px;background:#1A3A5C;display:flex;align-items:center;justify-content:space-between;padding:0 20px"><span style="font-size:8px;font-weight:600;color:rgba(255,255,255,.7)">9:41</span><span style="font-size:8px;color:rgba(255,255,255,.5)">● ● ●</span></div>
+            <div style="background:#1A3A5C;padding:10px 14px;display:flex;align-items:center;gap:8px"><i class="bi bi-person-badge" style="color:#D4A843;font-size:14px"></i><span style="font-size:13px;font-weight:700;color:#fff">Bulletin de Paie</span></div>
+            <div style="padding:14px">
+              <div style="background:#fff;padding:8px;border-radius:6px;margin-bottom:10px;border:1px solid #e5e7eb"><div style="font-size:10px;color:#6b7280">Jean MBEMBA — Cat. M4</div><div style="font-size:9px;color:#9ca3af">Convention Générale — Mars 2026</div></div>
+              <div style="font-size:10px">
+                <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f3f4f6"><span>Salaire de base</span><span style="font-weight:600">450 000</span></div>
+                <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f3f4f6"><span>Sursalaire</span><span style="font-weight:600">150 000</span></div>
+                <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f3f4f6"><span>Prime transport</span><span style="font-weight:600">30 000</span></div>
+                <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:2px solid #e5e7eb"><span style="font-weight:700">Brut imposable</span><span style="font-weight:700">630 000</span></div>
+                <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f3f4f6;color:#ef4444"><span>CNSS (4%)</span><span style="font-weight:600">- 24 000</span></div>
+                <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f3f4f6;color:#ef4444"><span>ITS mensuel</span><span style="font-weight:600">- 18 200</span></div>
+                <div style="display:flex;justify-content:space-between;padding:8px 0;color:#059669"><span style="font-weight:700">Net à payer</span><span style="font-weight:700;font-size:14px">587 800</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:60px;height:4px;border-radius:2px;background:#555;margin:6px auto 0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FEATURE 4 — États financiers ══════ -->
+<section class="section-feature torn-wrap torn-bottom" id="etats">
+  <div class="feature-row reverse">
+    <div class="feature-content">
+      <div class="feature-label" style="color:var(--green)">ETATS FINANCIERS COMPLETS</div>
+      <h2>Générez vos états financiers OHADA en un clic</h2>
+      <p>Bilan, compte de résultat, TFT, liasse fiscale complete avec 37 notes annexes — SYSCOHADA et SYCEBNL.</p>
+      <ul class="feature-checks">
+        <li><i class="bi bi-check-circle-fill"></i> Bilan actif/passif avec correspondances automatiques</li>
+        <li><i class="bi bi-check-circle-fill"></i> Compte de résultat conforme</li>
+        <li><i class="bi bi-check-circle-fill"></i> TFT méthode directe (SYCEBNL) et indirecte (SYSCOHADA)</li>
+        <li><i class="bi bi-check-circle-fill"></i> Résultat fiscal IS/IBA avec CGI 2026</li>
+        <li><i class="bi bi-check-circle-fill"></i> Export PDF professionnel</li>
+      </ul>
+      <a href="https://app.normx-ai.com" class="feature-link">Accéder aux États financiers <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div>
+      <!-- MacBook Air — Bilan SYSCOHADA -->
+      <div style="max-width:500px">
+        <div style="background:#e2e2e2;border-radius:14px;padding:6px 6px 0;border:1px solid #d4d4d4">
+          <div style="width:8px;height:8px;border-radius:4px;background:#1a1a1a;margin:0 auto 4px;border:1px solid #333"></div>
+          <div style="background:#fff;border-radius:2px;overflow:hidden">
+            <div style="background:#1A3A5C;height:28px;display:flex;align-items:center;padding:0 10px;gap:6px">
+              <span style="width:7px;height:7px;border-radius:4px;background:#ef4444"></span><span style="width:7px;height:7px;border-radius:4px;background:#f59e0b"></span><span style="width:7px;height:7px;border-radius:4px;background:#22c55e"></span>
+              <span style="flex:1;text-align:center;font-size:9px;font-weight:600;color:rgba(255,255,255,.6)">NORMX — Bilan SYSCOHADA 2025</span>
+            </div>
+            <div style="padding:16px;display:flex;gap:14px">
+              <div style="flex:1">
+                <div style="font-size:10px;font-weight:700;color:#6b7280;text-transform:uppercase;margin-bottom:6px;letter-spacing:1px">Actif</div>
+                <div style="font-size:11px;padding:6px 0;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between"><span>Immobilisations</span><span style="font-weight:600">85 000 000</span></div>
+                <div style="font-size:11px;padding:6px 0;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between"><span>Stocks</span><span style="font-weight:600">12 500 000</span></div>
+                <div style="font-size:11px;padding:6px 0;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between"><span>Créances</span><span style="font-weight:600">28 000 000</span></div>
+                <div style="font-size:11px;padding:6px 0;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between"><span>Trésorerie</span><span style="font-weight:600">8 500 000</span></div>
+                <div style="font-size:12px;padding:8px 0;font-weight:700;display:flex;justify-content:space-between;color:#D4A843"><span>Total Actif</span><span>134 000 000</span></div>
+              </div>
+              <div style="width:1px;background:rgba(0,0,0,.08)"></div>
+              <div style="flex:1">
+                <div style="font-size:10px;font-weight:700;color:#6b7280;text-transform:uppercase;margin-bottom:6px;letter-spacing:1px">Passif</div>
+                <div style="font-size:11px;padding:6px 0;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between"><span>Capitaux propres</span><span style="font-weight:600">65 000 000</span></div>
+                <div style="font-size:11px;padding:6px 0;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between"><span>Résultat</span><span style="font-weight:600;color:#059669">12 000 000</span></div>
+                <div style="font-size:11px;padding:6px 0;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between"><span>Dettes financières</span><span style="font-weight:600">35 000 000</span></div>
+                <div style="font-size:11px;padding:6px 0;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between"><span>Fournisseurs</span><span style="font-weight:600">22 000 000</span></div>
+                <div style="font-size:12px;padding:8px 0;font-weight:700;display:flex;justify-content:space-between;color:#D4A843"><span>Total Passif</span><span>134 000 000</span></div>
+              </div>
+            </div>
+            <div style="text-align:center;padding-bottom:10px"><span class="mockup-badge ok">Équilibre Actif = Passif</span></div>
+          </div>
+        </div>
+        <div style="height:8px;background:#d1d1d1;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin:0 20px"><div style="width:60px;height:3px;background:#b0b0b0;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin:0 auto"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FEATURE 5 — Juridique ══════ -->
+<section class="section-feature torn-wrap torn-bottom-warm" id="legal">
+  <div class="feature-row">
+    <div class="feature-content">
+      <div class="feature-label" style="color:var(--purple)">DOCUMENTS JURIDIQUES OHADA</div>
+      <h2>Générez vos actes juridiques en quelques clics</h2>
+      <p>59 modèles de documents conformes au droit OHADA — statuts, PV, cessions, convocations, rapports.</p>
+      <ul class="feature-checks">
+        <li><i class="bi bi-check-circle-fill"></i> Statuts SARL, SAS, SA, SNC, SCS, GIE</li>
+        <li><i class="bi bi-check-circle-fill"></i> PV d'assemblées générales ordinaires et extraordinaires</li>
+        <li><i class="bi bi-check-circle-fill"></i> Actes de cession de parts et d'actions</li>
+        <li><i class="bi bi-check-circle-fill"></i> Export Word et PDF instantané</li>
+      </ul>
+      <a href="https://legal.normx-ai.com" class="feature-link">Accéder à NORMX Legal <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div>
+      <!-- iPad — Documents juridiques -->
+      <div style="max-width:400px">
+        <div style="background:#1a1a1e;border-radius:24px;padding:10px">
+          <div style="width:8px;height:8px;border-radius:4px;background:#333;margin:0 auto 6px"></div>
+          <div style="background:#fff;border-radius:14px;overflow:hidden">
+            <div style="background:#1A3A5C;padding:10px 14px;display:flex;align-items:center;gap:8px"><i class="bi bi-file-earmark-text" style="color:#D4A843;font-size:14px"></i><span style="font-size:13px;font-weight:700;color:#fff">NORMX Legal — Statuts SAS</span></div>
+            <div style="padding:16px">
+              <div style="font-size:11px;color:#6b7280;margin-bottom:12px">Document généré automatiquement — OHADA</div>
+              <div style="background:#f9fafb;border-radius:8px;padding:12px;margin-bottom:10px;border:1px solid rgba(0,0,0,.06)">
+                <div style="font-size:10px;font-weight:700;color:#1A3A5C;margin-bottom:6px">ARTICLE 1 — FORME</div>
+                <div style="font-size:10px;color:#374151;line-height:1.6">Il est formé entre les soussignés une société par actions simplifiée (SAS) régie par l'Acte Uniforme OHADA relatif au droit des sociétés commerciales...</div>
+              </div>
+              <div style="background:#f9fafb;border-radius:8px;padding:12px;border:1px solid rgba(0,0,0,.06)">
+                <div style="font-size:10px;font-weight:700;color:#1A3A5C;margin-bottom:6px">ARTICLE 2 — OBJET</div>
+                <div style="font-size:10px;color:#374151;line-height:1.6">La société a pour objet, directement ou indirectement, au Congo et à l'étranger...</div>
+              </div>
+              <div style="display:flex;gap:6px;margin-top:12px;flex-wrap:wrap">
+                <span style="font-size:9px;padding:3px 8px;background:rgba(37,99,235,.08);color:#2563eb;border-radius:4px">Statuts</span>
+                <span style="font-size:9px;padding:3px 8px;background:rgba(124,58,237,.08);color:#7c3aed;border-radius:4px">PV AG</span>
+                <span style="font-size:9px;padding:3px 8px;background:rgba(5,150,105,.08);color:#059669;border-radius:4px">Cessions</span>
+              </div>
+            </div>
+          </div>
+          <div style="width:80px;height:4px;border-radius:2px;background:#555;margin:8px auto 0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ STATS ══════ -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><div class="number">+2 200</div><div class="label">Articles de loi indexes</div></div>
+    <div class="stat"><div class="number">16</div><div class="label">Simulateurs fiscaux</div></div>
+    <div class="stat"><div class="number">6+</div><div class="label">Conventions collectives</div></div>
+    <div class="stat"><div class="number">37</div><div class="label">Notes annexes</div></div>
+    <div class="stat"><div class="number">IA</div><div class="label">Assistants spécialisés</div></div>
+  </div>
+</div>
+
+<!-- ══════ PRODUITS ══════ -->
+<section class="section-products torn-wrap torn-bottom" id="products">
+  <div class="section-header">
+    <div class="label">Nos produits</div>
+    <h2>Une suite complete pour les professionnels</h2>
+    <p>Chaque module est conçu pour les besoins spécifiques des entreprises, cabinets et administrations en Afrique.</p>
+  </div>
+  <div class="products-grid" style="grid-template-columns: repeat(5, 1fr);">
+    <div class="product-card live" style="border-top: 3px solid #D4A843;">
+      <div class="product-icon" style="background:var(--primary-bg)"><i class="bi bi-bank" style="color:var(--primary)"></i></div>
+      <h3>NORMX Tax</h3>
+      <p style="font-size:12px;color:#6b7280;margin-bottom:12px;min-height:auto">Intelligence fiscale CGI 2026</p>
+      <ul style="list-style:none; padding:0; margin:0 0 12px; font-size:12px; color:#374151;">
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#D4A843;font-size:14px">&#10003;</span> 16 simulateurs fiscaux</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#D4A843;font-size:14px">&#10003;</span> CGI 2026 + Code Social</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#D4A843;font-size:14px">&#10003;</span> Assistant IA fiscal</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#D4A843;font-size:14px">&#10003;</span> Calendrier des echeances</li>
+      </ul>
+      <span class="tag" style="background:rgba(212,168,67,0.12); color:#D4A843;">Disponible</span>
+      <a href="https://tax.normx-ai.com" class="product-link" style="color:#D4A843; margin-top:auto;">Acceder <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="product-card live" style="border-top: 3px solid #2563eb;">
+      <div class="product-icon" style="background:var(--blue-bg)"><i class="bi bi-calculator" style="color:var(--blue)"></i></div>
+      <h3>NORMX Compta</h3>
+      <p style="font-size:12px;color:#6b7280;margin-bottom:12px;min-height:auto">Comptabilite SYSCOHADA / SYCEBNL</p>
+      <ul style="list-style:none; padding:0; margin:0 0 12px; font-size:12px; color:#374151;">
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#2563eb;font-size:14px">&#10003;</span> Saisie comptable</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#2563eb;font-size:14px">&#10003;</span> GL, BG</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#2563eb;font-size:14px">&#10003;</span> Declarations</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#2563eb;font-size:14px">&#10003;</span> Plan comptable OHADA</li>
+      </ul>
+      <span class="tag" style="background:rgba(37,99,235,0.1); color:#2563eb;">Disponible</span>
+      <a href="https://app.normx-ai.com" class="product-link" style="color:#2563eb; margin-top:auto;">Acceder <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="product-card live" style="border-top: 3px solid #059669;">
+      <div class="product-icon" style="background:rgba(5,150,105,0.08)"><i class="bi bi-file-earmark-bar-graph" style="color:#059669"></i></div>
+      <h3>NORMX Etats</h3>
+      <p style="font-size:12px;color:#6b7280;margin-bottom:12px;min-height:auto">Etats financiers et resultat fiscal</p>
+      <ul style="list-style:none; padding:0; margin:0 0 12px; font-size:12px; color:#374151;">
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#059669;font-size:14px">&#10003;</span> Bilan</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#059669;font-size:14px">&#10003;</span> Compte de resultat</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#059669;font-size:14px">&#10003;</span> TFT &amp; Notes</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#059669;font-size:14px">&#10003;</span> Resultat fiscal</li>
+      </ul>
+      <span class="tag" style="background:rgba(5,150,105,0.1); color:#059669;">Disponible</span>
+      <a href="https://app.normx-ai.com" class="product-link" style="color:#059669; margin-top:auto;">Acceder <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="product-card live" style="border-top: 3px solid #d97706;">
+      <div class="product-icon" style="background:rgba(245,158,11,0.08)"><i class="bi bi-people" style="color:#d97706"></i></div>
+      <h3>NORMX Paie</h3>
+      <p style="font-size:12px;color:#6b7280;margin-bottom:12px;min-height:auto">Gestion de la paie Congo</p>
+      <ul style="list-style:none; padding:0; margin:0 0 12px; font-size:12px; color:#374151;">
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#d97706;font-size:14px">&#10003;</span> Bulletins de paie</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#d97706;font-size:14px">&#10003;</span> DAS I, II, III</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#d97706;font-size:14px">&#10003;</span> Etats sociaux</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#d97706;font-size:14px">&#10003;</span> Etat fiscal</li>
+      </ul>
+      <span class="tag" style="background:rgba(217,119,6,0.1); color:#d97706;">Disponible</span>
+      <a href="https://app.normx-ai.com" class="product-link" style="color:#d97706; margin-top:auto;">Acceder <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="product-card live" style="border-top: 3px solid #7c3aed;">
+      <div class="product-icon" style="background:var(--purple-bg)"><i class="bi bi-file-earmark-text" style="color:var(--purple)"></i></div>
+      <h3>NORMX Legal</h3>
+      <p style="font-size:12px;color:#6b7280;margin-bottom:12px;min-height:auto">Documents juridiques OHADA</p>
+      <ul style="list-style:none; padding:0; margin:0 0 12px; font-size:12px; color:#374151;">
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#7c3aed;font-size:14px">&#10003;</span> 59 modeles de documents</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#7c3aed;font-size:14px">&#10003;</span> Statuts, PV, cessions</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#7c3aed;font-size:14px">&#10003;</span> Droit OHADA conforme</li>
+        <li style="display:flex;align-items:center;gap:6px;padding:2px 0"><span style="color:#7c3aed;font-size:14px">&#10003;</span> Export Word + PDF</li>
+      </ul>
+      <span class="tag" style="background:rgba(124,58,237,0.1); color:#7c3aed;">Disponible</span>
+      <a href="https://legal.normx-ai.com" class="product-link" style="color:#7c3aed; margin-top:auto;">Acceder <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ GRID FONCTIONNALITES ══════ -->
+<section class="section-grid" id="features">
+  <div class="section-header">
+    <div class="label">Fonctionnalités</div>
+    <h2>Découvrez toutes nos fonctionnalités</h2>
+    <p>Tout ce dont vous avez besoin pour gerer votre entreprise en toute conformité.</p>
+  </div>
+  <div class="grid-features">
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-robot" style="color:var(--primary)"></i></div>
+      <h4>IA conversationnelle</h4>
+      <p>Posez vos questions en langage naturel et obtenez des réponses sourcées avec les articles de loi.</p>
+    </div>
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-phone" style="color:var(--blue)"></i></div>
+      <h4>Mobile & Web</h4>
+      <p>Accessible sur smartphone Android/iOS et navigateur web, partout et a tout moment.</p>
+    </div>
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-sliders2" style="color:var(--purple)"></i></div>
+      <h4>16 simulateurs</h4>
+      <p>Calculez vos impots, taxes et cotisations en temps reel avec les taux CGI 2026.</p>
+    </div>
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-calendar-check" style="color:var(--green)"></i></div>
+      <h4>Calendrier fiscal</h4>
+      <p>Ne manquez plus aucune echeance grace aux alertes et rappels automatiques.</p>
+    </div>
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-building" style="color:var(--orange)"></i></div>
+      <h4>Multi-entités</h4>
+      <p>Gérez plusieurs entreprises ou clients depuis un seul compte avec roles et permissions.</p>
+    </div>
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-globe-americas" style="color:#06b6d4"></i></div>
+      <h4>Multi-pays OHADA</h4>
+      <p>Conçu pour couvrir les 17 pays de l'espace OHADA progressivement.</p>
+    </div>
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-file-earmark-pdf" style="color:#dc2626"></i></div>
+      <h4>Export PDF</h4>
+      <p>Générez vos états financiers, bulletins de paie et déclarations en PDF professionnel.</p>
+    </div>
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-shield-check" style="color:var(--green)"></i></div>
+      <h4>Conformite OHADA</h4>
+      <p>SYSCOHADA revise, SYCEBNL 2022, plan comptable, normes et référentiels a jour.</p>
+    </div>
+    <div class="grid-card">
+      <div class="icon"><i class="bi bi-lock" style="color:var(--dark)"></i></div>
+      <h4>Sécurité</h4>
+      <p>Données chiffrées, authentification Keycloak, isolation multi-tenant par schema PostgreSQL.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ CTA ══════ -->
+<section class="cta" id="contact">
+  <div class="cta-box">
+    <h2>Prêt a simplifier votre gestion ?</h2>
+    <p>Commencez maintenant avec NORMX Tax ou contactez-nous pour en savoir plus.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:32px;">
+      <a href="https://tax.normx-ai.com" class="btn-primary">Essayer NORMX Tax <i class="bi bi-arrow-right"></i></a>
+    </div>
+
+    <div style="max-width:480px; margin:0 auto; text-align:left;">
+      <h3 style="font-size:18px; font-weight:800; margin-bottom:16px; text-align:center;">Nous contacter</h3>
+      <form action="https://formsubmit.co/info-contact@normx-ai.com" method="POST" style="display:flex; flex-direction:column; gap:12px;">
+        <input type="hidden" name="_subject" value="Contact depuis normx-ai.com" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://normx-ai.com/#contact" />
+        <div style="display:flex; gap:12px;">
+          <input type="text" name="nom" placeholder="Nom" required style="flex:1; padding:12px 14px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-size:14px; font-family:inherit; outline:none; transition:border 0.2s;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'" />
+          <input type="text" name="prenom" placeholder="Prenom" required style="flex:1; padding:12px 14px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-size:14px; font-family:inherit; outline:none; transition:border 0.2s;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'" />
+        </div>
+        <input type="email" name="email" placeholder="Adresse email" required style="padding:12px 14px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-size:14px; font-family:inherit; outline:none; transition:border 0.2s;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'" />
+        <input type="text" name="entreprise" placeholder="Entreprise / Cabinet (optionnel)" style="padding:12px 14px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-size:14px; font-family:inherit; outline:none; transition:border 0.2s;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'" />
+        <select name="sujet" required style="padding:12px 14px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-size:14px; font-family:inherit; outline:none; background:var(--bg); color:var(--text); transition:border 0.2s;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'">
+          <option value="" disabled selected>Sujet de votre demande</option>
+          <option value="demo">Demande de demonstration</option>
+          <option value="tarifs">Question sur les tarifs</option>
+          <option value="partenariat">Partenariat / Revendeur</option>
+          <option value="support">Support technique</option>
+          <option value="autre">Autre</option>
+        </select>
+        <textarea name="message" placeholder="Votre message..." rows="4" required style="padding:12px 14px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-size:14px; font-family:inherit; outline:none; resize:vertical; transition:border 0.2s;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+        <button type="submit" class="btn-primary" style="border:none; cursor:pointer; justify-content:center;">Envoyer <i class="bi bi-send"></i></button>
+      </form>
+      <p style="text-align:center; margin-top:12px; font-size:13px; color:var(--text-secondary);">
+        Ou directement : <a href="mailto:info-contact@normx-ai.com" style="color:var(--primary); font-weight:600;">info-contact@normx-ai.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>NORMX <span>AI</span></h3>
+      <p>Plateforme d'intelligence comptable, fiscale, sociale et juridique pour les professionnels africains.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Produits</h4>
+      <a href="https://tax.normx-ai.com">NORMX Tax</a>
+      <a href="https://tax.normx-ai.com">NORMX Compta & Paie</a>
+      <a href="https://legal.normx-ai.com">NORMX Legal</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:info-contact@normx-ai.com">info-contact@normx-ai.com</a>
+      <a href="mailto:support@normx-ai.com">support@normx-ai.com</a>
+      <a href="mailto:facturation@normx-ai.com">facturation@normx-ai.com</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="https://tax.normx-ai.com/legal/cgu">Conditions générales</a>
+      <a href="https://tax.normx-ai.com/legal/confidentialite">Politique de confidentialite</a>
+      <a href="https://tax.normx-ai.com/legal/mentions">Mentions legales</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 NORMX AI SAS — 71 rue Daire, 80000 Amiens, France
+  </div>
+</footer>
+
+<script>
+  // Active tab on scroll
+  const tabs = document.querySelectorAll('.feature-tab');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

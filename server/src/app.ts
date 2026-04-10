@@ -148,6 +148,27 @@ app.use("/api/invoices", invoiceRoutes);
 app.use("/api/favorites", favoritesRoutes);
 app.use("/api/simulator", simulatorExportRoutes);
 
+// Contact form (landing normx-ai.com)
+app.post("/api/contact", async (req, res) => {
+  try {
+    const { nom, prenom, email, sujet, message } = req.body;
+    if (!email || !message) return res.status(400).json({ error: "Email et message requis" });
+    const { EmailService } = await import("./services/email.service");
+    const adminEmail = process.env.ADMIN_EMAIL || "info-contact@normx-ai.com";
+    const html = `<h2>Nouveau message de contact — NORMX AI</h2>
+      <p><strong>Nom :</strong> ${nom || ""} ${prenom || ""}</p>
+      <p><strong>Email :</strong> ${email}</p>
+      <p><strong>Sujet :</strong> ${sujet || "Sans objet"}</p>
+      <p><strong>Message :</strong></p>
+      <p>${(message || "").replace(/\n/g, "<br>")}</p>`;
+    await EmailService.sendGeneric(adminEmail, `[NORMX Contact] ${sujet || "Nouveau message"}`, html);
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Contact form error:", err);
+    res.status(500).json({ error: "Erreur serveur" });
+  }
+});
+
 // Démarrer le cron des rappels (expiration abonnement + échéances fiscales)
 startReminderCron();
 
