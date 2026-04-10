@@ -88,10 +88,8 @@ export const ECHEANCES_FISCALES: EcheanceFiscale[] = [
   // Centimes additionnels patente (Art. 369 bis)
   { jour: 15, moisIndex: 3, label: "Centimes additionnels patente (5%)", icon: "storefront-outline", recurrent: false, descriptionKey: "calendrier.desc.centimesPatente" },
   // Contribution foncière (Art. 257 bis, 270)
-  // TOL habitation retenue mensuelle (Art. 14 TFNC4-TOL : 1 000 FCFA/mois retenu par l'employeur)
-  { jour: 15, moisIndex: -1, label: "TOL habitation (retenue)", icon: "home-outline", recurrent: true, descriptionKey: "calendrier.desc.tolRetenue" },
-  // TOL habitation régularisation (Art. 14 TFNC4-TOL : au plus tard le 20 avril)
-  { jour: 20, moisIndex: 3, label: "TOL habitation (régularisation)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.tolHabitation" },
+  // TOL habitation (Art. 14 TFNC4-TOL : retenue mensuelle par l'employeur)
+  { jour: 15, moisIndex: -1, label: "TOL habitation", icon: "home-outline", recurrent: true, descriptionKey: "calendrier.desc.tolHabitation" },
   // TOL professionnels (Art. 14 TFNC4-TOL : exigible au plus tard le 20 février)
   { jour: 20, moisIndex: 1, label: "TOL professionnels", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.tolPro" },
   { jour: 30, moisIndex: 3, label: "Contribution foncière (CFPB/CFPNB)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.cfpb" },

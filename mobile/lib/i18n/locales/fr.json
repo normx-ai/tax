@@ -995,8 +995,7 @@
       "irf1": "IRF Loyers — 1re échéance. Art. 111-113A CGI — Retenue à la source 9%.",
       "irf2": "IRF Loyers — 2e échéance. Art. 111-113A CGI — Déclaration au plus tard le 20 août.",
       "irf3": "IRF Loyers — 3e échéance. Art. 111-113A CGI — Dernière échéance de l'année.",
-      "tolRetenue": "TOL habitation — Retenue à la source de 1 000 FCFA/mois par l'employeur (Art. 14 TFNC4-TOL). Couvre le taux périphérie (12 000 FCFA/an).",
-      "tolHabitation": "TOL habitation — Régularisation annuelle au 20 avril (Art. 14 TFNC4-TOL). Concerne les salariés centre-ville (complément 48 000 FCFA), mariés même local, sous-logés ou exemptés.",
+      "tolHabitation": "TOL habitation — Retenue mensuelle par l'employeur (Art. 14 TFNC4-TOL). Périphérie : 1 000 FCFA/mois (12 000/an). Centre-ville : 5 000 FCFA/mois (60 000/an).",
       "tolPro": "TOL professionnels — Taxe d'occupation des locaux à usage professionnel. Art. 14 TFNC4-TOL — Exigible au plus tard le 20 février. Pénalité 50% en cas de retard (Art. 15)."
     }
   },
