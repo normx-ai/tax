@@ -90,8 +90,8 @@ export const ECHEANCES_FISCALES: EcheanceFiscale[] = [
   // Contribution foncière (Art. 257 bis, 270)
   // TOL habitation (Art. 14 TFNC4-TOL : exigible au plus tard le 20 avril)
   { jour: 20, moisIndex: 3, label: "TOL habitation", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.tolHabitation" },
-  // TOL professionnels (Art. 14 TFNC4-TOL : retenue à la source mensuelle, même échéance que les autres impôts)
-  { jour: 15, moisIndex: -1, label: "TOL professionnels (retenue)", icon: "home-outline", recurrent: true, descriptionKey: "calendrier.desc.tolPro" },
+  // TOL professionnels (Art. 14 TFNC4-TOL : exigible au plus tard le 20 février)
+  { jour: 20, moisIndex: 1, label: "TOL professionnels", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.tolPro" },
   { jour: 30, moisIndex: 3, label: "Contribution foncière (CFPB/CFPNB)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.cfpb" },
   // Déclaration IS annuelle (Art. 86-F : 4 mois après clôture 31/12 → 30 avril)
   { jour: 30, moisIndex: 3, label: "Déclaration IS annuelle", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.declarationIS" },
