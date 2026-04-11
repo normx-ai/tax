@@ -3,8 +3,6 @@ import { useEffect } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
-import LandingPage from "@/components/landing/LandingPage";
-
 const PRIMARY = "#D4A843";
 const DARK = "#0F2A42";
 const BG_WARM = "#faf8f5";
@@ -31,12 +29,8 @@ export default function AuthScreen() {
     );
   }
 
-  // Sur web : afficher la landing complète
-  if (Platform.OS === "web") {
-    return <LandingPage />;
-  }
-
-  // Sur mobile : ecran simplifie avec boutons
+  // Landing HTML statique servie par nginx sur web
+  // Ici on affiche l'écran mobile d'auth
   return (
     <ScrollView style={{ flex: 1, backgroundColor: BG_WARM }} contentContainerStyle={{ flexGrow: 1, justifyContent: "center", alignItems: "center", padding: 32 }}>
       {/* Logo */}
