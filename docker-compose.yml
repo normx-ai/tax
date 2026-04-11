@@ -108,6 +108,9 @@ services:
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - /var/www/certbot:/var/www/certbot:ro
       - /var/www/normx-app:/var/www/normx-app:ro
+      - /var/www/cgi242-landing:/var/www/cgi242-landing:ro
+      - /var/www/normx-legal-landing:/var/www/normx-legal-landing:ro
+      - /var/www/normx-app-landing:/var/www/normx-app-landing:ro
     depends_on:
       api:
         condition: service_healthy
