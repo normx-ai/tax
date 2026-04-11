@@ -10,3 +10,7 @@ dist/
 *.pdf
 Conventions_collectives/
 .~lock.CGI242_Tests_Fonctionnels.xlsx#
+*.jpg
+*.xlsx
+Projet-Final-2-master/
+site/
