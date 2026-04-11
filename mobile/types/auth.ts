@@ -61,8 +61,6 @@ export interface AuthResponse {
   token?: string;
   refreshToken?: string;
   rememberMe?: boolean;
-  requireMFA?: boolean;
-  mfaToken?: string;
 }
 
 export interface OtpResponse {
