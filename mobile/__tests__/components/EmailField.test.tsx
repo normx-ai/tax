@@ -1,13 +1,14 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
 import EmailField from "@/components/auth/EmailField";
+import type { ThemeColors } from "@/lib/theme/colors";
 
 const mockColors = {
   input: "#F2F2F7",
   text: "#000000",
   textMuted: "#8E8E93",
   danger: "#FF3B30",
-};
+} as ThemeColors;
 
 const defaultProps = {
   email: "",

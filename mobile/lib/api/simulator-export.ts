@@ -44,7 +44,7 @@ export async function exportSimulatorPdf(params: ExportParams): Promise<void> {
   } else {
     // Mobile : utiliser expo-sharing
     const { shareAsync } = await import("expo-sharing");
-    const { cacheDirectory, writeAsStringAsync, EncodingType } = await import("expo-file-system");
+    const { cacheDirectory, writeAsStringAsync, EncodingType } = await import("expo-file-system/legacy");
 
     const { data } = await api.post("/simulator/export-pdf", {
       ...params,

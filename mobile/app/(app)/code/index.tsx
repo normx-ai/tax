@@ -33,7 +33,7 @@ export default function CodeCGI() {
   const { colors } = useTheme();
   const { t } = useTranslation();
   const { isMobile, isTablet } = useResponsive();
-  const { activeCode } = useActiveCode();
+  const { activeCode, setActiveCode } = useActiveCode();
 
   const sommaire = useMemo(() => {
     if (activeCode === "social") return getSocialSommaire();
