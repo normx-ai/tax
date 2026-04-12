@@ -1,10 +1,3 @@
-# ==========================================
-# CGI-242 — Deploiement automatique via GitHub Actions
-# ==========================================
-# Frontend build dans GitHub Actions (7 GB RAM)
-# Backend build sur le VPS (Docker)
-# ==========================================
-
 name: Deploy to Production
 
 on:
@@ -15,7 +8,7 @@ on:
 env:
   VPS_HOST: 51.83.75.203
   VPS_USER: ubuntu
-  APP_DIR: /opt/cgi242
+  APP_DIR: /opt/tax
 
 jobs:
   deploy:
@@ -34,7 +27,6 @@ jobs:
           cd mobile
           npm install --legacy-peer-deps
           EXPO_PUBLIC_API_URL=/api npx expo export --platform web
-          # Forcer le bon favicon (cohérent avec app.normx-ai.com et legal)
           cp assets/favicon.png dist/favicon.ico
           cp assets/favicon.png dist/favicon.png
           cd ..
@@ -48,7 +40,7 @@ jobs:
 
       - name: Upload frontend build
         run: |
-          rsync -az --delete mobile/dist/ ${{ env.VPS_USER }}@${{ env.VPS_HOST }}:${{ env.APP_DIR }}/nginx/dist/
+          rsync -az --delete mobile/dist/ ${{ env.VPS_USER }}@${{ env.VPS_HOST }}:${{ env.APP_DIR }}/mobile/dist/
 
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1
@@ -60,15 +52,12 @@ jobs:
             set -e
             cd ${{ env.APP_DIR }}
 
-            # Reset local changes et pull
             git checkout -- .
             git pull origin main
 
-            # --- Generer server/.env.production depuis GitHub Secrets ---
+            # server/.env.production depuis GitHub Secrets
             printf '%s\n' \
               "NODE_ENV=production" \
-              "PORT=3003" \
-              "DATABASE_URL=${{ secrets.DATABASE_URL }}" \
               "JWT_SECRET=${{ secrets.JWT_SECRET }}" \
               "JWT_REFRESH_SECRET=${{ secrets.JWT_REFRESH_SECRET }}" \
               "JWT_EXPIRES_IN=15m" \
@@ -78,7 +67,6 @@ jobs:
               "VOYAGE_API_KEY=${{ secrets.VOYAGE_API_KEY }}" \
               "FRONTEND_URL=https://tax.normx-ai.com" \
               "CORS_ORIGIN=https://tax.normx-ai.com,https://normx-ai.com" \
-              "QDRANT_URL=http://qdrant:6333" \
               "SMTP_HOST=${{ secrets.SMTP_HOST }}" \
               "SMTP_PORT=465" \
               "SMTP_USER=${{ secrets.SMTP_USER }}" \
@@ -90,16 +78,13 @@ jobs:
               > server/.env.production
             chmod 600 server/.env.production
 
-            # --- Generer .env (Docker Compose) ---
-            printf '%s\n' "POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}" > .env
-            chmod 600 .env
+            # Rebuild tax-api via le compose infra (DATABASE_URL/QDRANT_URL
+            # sont definis directement dans /opt/infra/docker-compose.yml)
+            cd /opt/infra
+            sudo docker compose up -d --build tax-api
 
-            # --- Rebuild et restart ---
-            docker compose build --no-cache api nginx
-            docker compose up -d
-
-            # --- Verifier la sante ---
+            # Le dist est monte en volume dans nginx (live) — pas de reload necessaire
             sleep 10
-            curl -sf http://localhost:3003/health || exit 1
+            curl -sf https://tax.normx-ai.com/health || exit 1
 
-            echo "Deploiement termine avec succes"
+            echo "Deploiement tax termine avec succes"
