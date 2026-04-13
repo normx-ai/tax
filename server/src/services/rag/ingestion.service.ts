@@ -12,6 +12,7 @@ import {
   SourceFile,
   transformSourceToArticles,
   prepareArticleText,
+  isMeaningfulArticle,
 } from './ingestion.parsers';
 
 export type { ArticleJSON, SourceFile } from './ingestion.parsers';
@@ -35,14 +36,24 @@ export async function ingestFromSource(sources: SourceFile[]): Promise<Ingestion
 }
 
 export async function ingestArticles(articles: ArticleJSON[]): Promise<IngestionResult> {
+  // Filtrer les articles vides (Abroge, Sans objet, contenu < 30 chars)
+  // pour ne pas polluer le RAG avec des articles non-trouvables.
+  const totalRaw = articles.length;
+  const filtered = articles.filter(isMeaningfulArticle);
+  const skipped = totalRaw - filtered.length;
+  if (skipped > 0) {
+    logger.info(`Filtre articles vides : ${skipped}/${totalRaw} ignores (Abroge, Sans objet, contenu < 30 chars)`);
+  }
+
   const result: IngestionResult = {
-    total: articles.length,
+    total: filtered.length,
     inserted: 0,
     updated: 0,
     errors: 0,
     tokensUsed: 0,
   };
 
+  articles = filtered;
   await initializeCollection();
   logger.info(`Début ingestion de ${articles.length} articles`);
 

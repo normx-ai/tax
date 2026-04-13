@@ -197,3 +197,27 @@ export function prepareArticleText(article: ArticleJSON): string {
   if (article.keywords?.length) parts.push(`Mots-clés: ${article.keywords.join(', ')}`);
   return parts.join('\n');
 }
+
+/**
+ * Filtre les articles "vides" qui n'ont pas a etre indexes :
+ * - "Abroge", "Sans objet", "Reserve" : pas de contenu utile
+ * - Contenu trop court pour porter du sens (< 30 chars hors espaces)
+ *
+ * Ces articles polluaient la recherche RAG et descendaient le taux de
+ * couverture artificiellement.
+ */
+export function isMeaningfulArticle(article: ArticleJSON): boolean {
+  const titre = (article.titre || '').toLowerCase().trim();
+  const contenu = (article.contenu || '').replace(/\s+/g, ' ').trim();
+
+  // Titres explicitement vides
+  if (/^(abrog[eé]|sans objet|r[eé]serv[eé]|supprim[eé])$/i.test(titre)) return false;
+
+  // Contenu trop court (< 30 chars)
+  if (contenu.length < 30) return false;
+
+  // Contenu qui dit explicitement "abroge" ou "sans objet"
+  if (/^(article\s+)?(abrog[eé]|sans objet|r[eé]serv[eé]|supprim[eé])\.?$/i.test(contenu)) return false;
+
+  return true;
+}

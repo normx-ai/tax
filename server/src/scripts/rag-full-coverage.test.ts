@@ -41,6 +41,19 @@ function normalizeArt(s: string): string {
     .trim();
 }
 
+function isMeaningfulArticle(titre: string, contenu: string): boolean {
+  const t = titre.toLowerCase().trim();
+  const c = contenu.replace(/\s+/g, ' ').trim();
+  if (/^(abrog[eé]|sans objet|r[eé]serv[eé]|supprim[eé])$/i.test(t)) return false;
+  if (c.length < 30) return false;
+  if (/^(article\s+)?(abrog[eé]|sans objet|r[eé]serv[eé]|supprim[eé])\.?$/i.test(c)) return false;
+  return true;
+}
+
+interface ArticleDataFull extends ArticleData {
+  contenu?: string;
+}
+
 function loadArticles(): { source: string; numero: string; titre: string }[] {
   const dataDir = join(__dirname, '..', '..', 'data');
   const files = readdirSync(dataDir).filter((f) => f.startsWith('articles-2026-') && f.endsWith('.json'));
@@ -48,13 +61,15 @@ function loadArticles(): { source: string; numero: string; titre: string }[] {
 
   for (const f of files) {
     const content = JSON.parse(readFileSync(join(dataDir, f), 'utf-8'));
-    const items: ArticleData[] = Array.isArray(content) ? content : content.articles || [];
+    const items: ArticleDataFull[] = Array.isArray(content) ? content : content.articles || [];
     for (const item of items) {
       const numero = item.numero || item.article || '';
       const titre = item.titre || '';
-      if (numero && titre && titre.length > 5) {
-        all.push({ source: f, numero, titre });
-      }
+      const contenu = item.contenu || '';
+      if (!numero || !titre || titre.length < 5) continue;
+      // Skip articles "vides" : Abroge, Sans objet, contenu trop court
+      if (!isMeaningfulArticle(titre, contenu)) continue;
+      all.push({ source: f, numero, titre });
     }
   }
 
@@ -77,7 +92,9 @@ async function runFullCoverage() {
 
   for (let i = 0; i < sampled.length; i++) {
     const a = sampled[i];
-    const question = a.titre;
+    // Question enrichie : numero + titre, plus proche d'une vraie requete utilisateur
+    // qu'un titre seul ("Abrogé", "Contrôle"...) qui est trop ambigu.
+    const question = `Que dit l'article ${a.numero} sur ${a.titre} ?`;
     process.stdout.write(`[${i + 1}/${sampled.length}] ${a.numero.padEnd(15)} ${a.titre.substring(0, 50)}... `);
 
     try {
