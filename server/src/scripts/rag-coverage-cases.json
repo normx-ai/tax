@@ -1,127 +1,94 @@
 [
-  {
-    "question": "Quelle est la sanction pour les documents en langue étrangère ?",
-    "expected": ["Art. 373 ter"],
-    "agent": "general"
-  },
-  {
-    "question": "Quel est le taux de l'impôt sur les sociétés au Congo ?",
-    "expected": ["Art. 86A"],
-    "agent": "is"
-  },
-  {
-    "question": "Quelles sont les conditions d'exonération de l'IS ?",
-    "expected": ["Art. 3"],
-    "agent": "is"
-  },
-  {
-    "question": "Quel est le taux IS pour les sociétés de microfinance ?",
-    "expected": ["Art. 86A"],
-    "agent": "is"
-  },
-  {
-    "question": "Comment fonctionnent les acomptes IS ?",
-    "expected": ["Art. 86C"],
-    "agent": "is"
-  },
-  {
-    "question": "Comment fonctionne le report déficitaire en matière d'IS ?",
-    "expected": ["Art. 75"],
-    "agent": "is"
-  },
-  {
-    "question": "Quel est le minimum de perception de l'IS ?",
-    "expected": ["Art. 86C"],
-    "agent": "is"
-  },
-  {
-    "question": "Quelle est la retenue à la source sur les paiements aux non-résidents ?",
-    "expected": ["Art. 86D"],
-    "agent": "is"
-  },
-  {
-    "question": "Quel est le barème de l'ITS ?",
-    "expected": ["Art. 116G"],
-    "agent": "its"
-  },
-  {
-    "question": "Comment sont imposés les avantages en nature ?",
-    "expected": ["Art. 115"],
-    "agent": "its"
-  },
-  {
-    "question": "Comment fonctionne le quotient familial pour l'ITS ?",
-    "expected": ["Art. 116B"],
-    "agent": "its"
-  },
-  {
-    "question": "Comment l'employeur effectue-t-il la retenue à la source de l'ITS ?",
-    "expected": ["Art. 116H"],
-    "agent": "its"
-  },
-  {
-    "question": "Quel est le taux de l'IBA et le minimum de perception ?",
-    "expected": ["Art. 95"],
-    "agent": "iba"
-  },
-  {
-    "question": "Quel est le seuil de chiffre d'affaires pour le régime forfaitaire IBA ?",
-    "expected": ["Art. 96"],
-    "agent": "iba"
-  },
-  {
-    "question": "Quel est le taux de l'IRCM sur les dividendes ?",
-    "expected": ["Art. 110"],
-    "agent": "ircm"
-  },
-  {
-    "question": "Quel est le taux d'imposition des revenus locatifs IRF ?",
-    "expected": ["Art. 113"],
-    "agent": "irf"
-  },
-  {
-    "question": "Comment fonctionne la retenue à la source sur les loyers ?",
-    "expected": ["Art. 113A"],
-    "agent": "irf"
-  },
-  {
-    "question": "Quelles sont les exonérations IRF pour la résidence principale ?",
-    "expected": ["Art. 111C"],
-    "agent": "irf"
-  },
-  {
-    "question": "Qui est exonéré de patente ?",
-    "expected": ["Art. 277"],
-    "agent": "patente"
-  },
-  {
-    "question": "Quel est le plafond de paiement en espèces ?",
-    "expected": ["Art. 26"],
-    "agent": "general"
-  },
-  {
-    "question": "Quel est le taux de TVA au Congo ?",
-    "expected": [],
-    "_note": "TFNC TVA, à compléter avec article exact"
-  },
-  {
-    "question": "Quel est le tarif du timbre fiscal ?",
-    "expected": [],
-    "_note": "Tome 2 droit de timbre"
-  },
-  {
-    "question": "Quels sont les délais de prescription fiscale ?",
-    "expected": [],
-    "_note": "TFNC procédures, à compléter"
-  },
-  {
-    "question": "Quels sont les taux de pénalités fiscales ?",
-    "expected": [],
-    "_note": "TFNC procédures"
-  },
-  {
-    "question": "Comment obtenir le NIU au Congo ?",
-    "expected": [],
-    "_note": "TFNC procédures"
-  }
+  { "question": "Quelle est la sanction pour les documents en langue étrangère ?", "expected": ["Art. 373 ter"], "agent": "general" },
+  { "question": "Quel est le plafond de paiement en espèces ?", "expected": ["Art. 26"], "agent": "general" },
+
+  { "question": "Quel est le taux de l'impôt sur les sociétés au Congo ?", "expected": ["Art. 86A"], "agent": "is" },
+  { "question": "Quelles sont les conditions d'exonération de l'IS ?", "expected": ["Art. 3"], "agent": "is" },
+  { "question": "Quel est le taux IS pour les sociétés de microfinance ?", "expected": ["Art. 86A"], "agent": "is" },
+  { "question": "Comment fonctionnent les acomptes IS ?", "expected": ["Art. 86C"], "agent": "is" },
+  { "question": "Comment fonctionne le report déficitaire en matière d'IS ?", "expected": ["Art. 75"], "agent": "is" },
+  { "question": "Quel est le minimum de perception de l'IS ?", "expected": ["Art. 86C"], "agent": "is" },
+  { "question": "Quelle est la retenue à la source sur les paiements aux non-résidents ?", "expected": ["Art. 86D"], "agent": "is" },
+  { "question": "Quel est le credit d'impot investissement ?", "expected": ["Art. 3A"], "agent": "is" },
+
+  { "question": "Quel est le barème de l'ITS ?", "expected": ["Art. 116G"], "agent": "its" },
+  { "question": "Comment sont imposés les avantages en nature ?", "expected": ["Art. 115"], "agent": "its" },
+  { "question": "Comment fonctionne le quotient familial pour l'ITS ?", "expected": ["Art. 116B"], "agent": "its" },
+  { "question": "Comment l'employeur effectue-t-il la retenue à la source de l'ITS ?", "expected": ["Art. 116H"], "agent": "its" },
+
+  { "question": "Quel est le taux de l'IBA et le minimum de perception ?", "expected": ["Art. 95"], "agent": "iba" },
+  { "question": "Quel est le seuil de chiffre d'affaires pour le régime forfaitaire IBA ?", "expected": ["Art. 96"], "agent": "iba" },
+  { "question": "Quelles sont les restrictions IBA par rapport à l'IS ?", "expected": ["Art. 94"], "agent": "iba" },
+  { "question": "Qui est exclu du forfait IBA ?", "expected": ["Art. 96"], "agent": "iba" },
+
+  { "question": "Quel est le taux de l'IRCM sur les dividendes ?", "expected": ["Art. 110"], "agent": "ircm" },
+  { "question": "Comment fonctionne la retenue libératoire IRCM ?", "expected": ["Art. 110A"], "agent": "ircm" },
+  { "question": "Comment sont taxées les plus-values mobilières ?", "expected": ["Art. 110"], "agent": "ircm" },
+
+  { "question": "Quel est le taux d'imposition des revenus locatifs IRF ?", "expected": ["Art. 113"], "agent": "irf" },
+  { "question": "Comment fonctionne la retenue à la source sur les loyers ?", "expected": ["Art. 113A"], "agent": "irf" },
+  { "question": "Quelles sont les exonérations IRF pour la résidence principale ?", "expected": ["Art. 111C"], "agent": "irf" },
+  { "question": "Quelle est la base d'imposition de l'IRF ?", "expected": ["Art. 112"], "agent": "irf" },
+
+  { "question": "Qui est exonéré de patente ?", "expected": ["Art. 277"], "agent": "patente" },
+  { "question": "Comment est calculée la patente ?", "expected": ["Art. 250"], "agent": "patente" },
+  { "question": "Quand la patente est-elle exigible ?", "expected": ["Art. 461 bis"], "agent": "patente" },
+
+  { "question": "Quel est le taux de TVA au Congo Brazzaville ?", "expected": [], "_note": "TFNC TVA — articles loi TVA, à compléter" },
+  { "question": "Quelles opérations sont exonérées de TVA ?", "expected": [], "_note": "TFNC TVA" },
+  { "question": "Comment fonctionne le droit à déduction de la TVA ?", "expected": [], "_note": "TFNC TVA" },
+  { "question": "Quel est le seuil d'assujettissement à la TVA ?", "expected": [], "_note": "TFNC TVA — 100 000 000 FCFA" },
+  { "question": "Comment se fait le remboursement du crédit de TVA ?", "expected": [], "_note": "TFNC TVA Art. 29" },
+  { "question": "Qu'est-ce que le fait générateur et l'exigibilité de la TVA ?", "expected": [], "_note": "TFNC TVA" },
+
+  { "question": "Quels sont les droits d'enregistrement sur les cessions d'immeubles ?", "expected": [], "_note": "Tome 2 enregistrement" },
+  { "question": "Quel est le tarif du timbre fiscal ?", "expected": [], "_note": "Tome 2 timbre" },
+  { "question": "Comment sont taxés les actes de mutation à titre gratuit (donations) ?", "expected": [], "_note": "Tome 2 donations" },
+  { "question": "Quels actes sont exonérés du droit de timbre ?", "expected": [], "_note": "Tome 2 timbre" },
+  { "question": "Quelles sont les obligations des notaires en matière d'enregistrement ?", "expected": [], "_note": "Tome 2 enregistrement" },
+  { "question": "Comment sont imposées les successions au Congo ?", "expected": [], "_note": "Tome 2 successions" },
+
+  { "question": "Comment est imposé un salarié congolais travaillant en France selon la convention fiscale ?", "expected": [], "_note": "Convention Congo-France" },
+  { "question": "Quelle est la retenue à la source sur les dividendes versés à une société de la CEMAC ?", "expected": [], "_note": "Convention CEMAC" },
+  { "question": "Comment éviter la double imposition selon la convention Congo-Italie ?", "expected": [], "_note": "Convention Congo-Italie" },
+  { "question": "Qu'est-ce qu'un établissement stable selon la convention Congo-Chine ?", "expected": [], "_note": "Convention Congo-Chine" },
+  { "question": "Comment fonctionne l'échange de renseignements fiscaux dans le cadre CEMAC ?", "expected": [], "_note": "Convention CEMAC" },
+
+  { "question": "Comment est calculée la redevance minière proportionnelle ?", "expected": [], "_note": "TFNC pétrole/mines" },
+  { "question": "Quel est le régime TVA du secteur pétrolier amont ?", "expected": [], "_note": "TFNC TVA pétrole" },
+  { "question": "Comment fonctionne la redevance superficiaire ?", "expected": [], "_note": "TFNC pétrole/mines" },
+  { "question": "Quelles sont les obligations fiscales des sociétés pétrolières ?", "expected": [], "_note": "TFNC pétrole" },
+  { "question": "Comment fonctionne le contrat de partage de production (CPSC) ?", "expected": [], "_note": "TFNC pétrole" },
+  { "question": "Qu'est-ce que la stabilisation fiscale dans le secteur extractif ?", "expected": [], "_note": "TFNC pétrole" },
+
+  { "question": "Quelles sont les catégories tarifaires du TEC CEMAC ?", "expected": [], "_note": "TFNC douanes" },
+  { "question": "Comment est déterminée la valeur en douane des marchandises ?", "expected": [], "_note": "TFNC douanes" },
+  { "question": "Quels sont les régimes douaniers suspensifs ?", "expected": [], "_note": "TFNC douanes" },
+  { "question": "Quel est le régime douanier des zones franches au Congo ?", "expected": [], "_note": "TFNC douanes" },
+  { "question": "Comment fonctionnent les franchises douanières à l'importation ?", "expected": [], "_note": "TFNC douanes" },
+  { "question": "Quels sont les droits d'accises sur les boissons et tabacs ?", "expected": [], "_note": "TFNC accises" },
+
+  { "question": "Quel est le taux de la CAMU ?", "expected": [], "_note": "TFNC4 CAMU" },
+  { "question": "Comment fonctionne l'impôt global forfaitaire (IGF) ?", "expected": [], "_note": "TFNC4 IGF" },
+  { "question": "Quel est le taux de la taxe sur les transferts de fonds ?", "expected": [], "_note": "TFNC4 transferts" },
+  { "question": "Comment est taxée la taxe sur les jeux de hasard ?", "expected": [], "_note": "TFNC4 jeux" },
+  { "question": "Quel est le montant de l'impôt sur les pylônes télécom ?", "expected": [], "_note": "TFNC4 pylônes" },
+  { "question": "Comment fonctionne la taxe sur les billets d'avion internationaux ?", "expected": [], "_note": "TFNC4 billets" },
+  { "question": "Comment fonctionne la taxe de séjour ?", "expected": [], "_note": "TFNC4 séjour" },
+  { "question": "Qu'est-ce que la redevance audiovisuelle ?", "expected": [], "_note": "TFNC4 audiovisuel" },
+
+  { "question": "Quels sont les délais de prescription fiscale ?", "expected": [], "_note": "TFNC procédures" },
+  { "question": "Quels sont les taux de pénalités fiscales ?", "expected": [], "_note": "TFNC procédures" },
+  { "question": "Comment obtenir le NIU au Congo ?", "expected": [], "_note": "TFNC procédures" },
+  { "question": "Comment se déroule un contrôle fiscal au Congo ?", "expected": [], "_note": "TFNC procédures" },
+  { "question": "Comment fonctionne la réclamation préalable en contentieux fiscal ?", "expected": [], "_note": "TFNC procédures" },
+  { "question": "Comment se déroule le recouvrement des créances publiques ?", "expected": [], "_note": "TFNC procédures" },
+  { "question": "Qu'est-ce que l'attestation de non-redevance fiscale ?", "expected": [], "_note": "TFNC procédures" },
+  { "question": "Comment fonctionne le sursis de paiement ?", "expected": [], "_note": "TFNC procédures" },
+
+  { "question": "Quelles sont les sanctions pénales en matière fiscale ?", "expected": [], "_note": "Tome 1 sanctions" },
+  { "question": "Quel est le régime fiscal des bons de caisse ?", "expected": [], "_note": "Tome 1" },
+  { "question": "Quel est le régime de la réévaluation des bilans ?", "expected": [], "_note": "Tome 1" },
+  { "question": "Quels sont les avantages fiscaux de la charte des investissements ?", "expected": ["Art. 92J"], "agent": "general" },
+  { "question": "Quel est le régime fiscal des zones économiques spéciales (ZES) ?", "expected": [], "_note": "TFNC ZES" }
 ]
