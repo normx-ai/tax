@@ -34,7 +34,7 @@ function normalizeArt(s: string): string {
   return s
     .toLowerCase()
     .replace(/^art\.?\s*/, '')
-    .replace(/\s+/g, ' ')
+    .replace(/[\s-]+/g, '')   // retirer espaces ET tirets : "110-A", "110 A", "110A" matchent
     .trim();
 }
 

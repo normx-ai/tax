@@ -47,6 +47,9 @@ COPY src/db/tenant-schema.sql dist/db/tenant-schema.sql
 # Assets statiques (fonts Inter + logo) utilises par les routes PDF
 COPY src/assets dist/assets
 
+# Fichiers JSON de test/scripts (cas de couverture RAG, etc.)
+COPY src/scripts/*.json dist/scripts/
+
 # Dossier pour les factures PDF
 RUN mkdir -p /app/storage/invoices && chown -R node:node /app/storage
 
