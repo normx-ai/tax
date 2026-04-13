@@ -2,7 +2,7 @@
 // Service chat IA fiscal - RAG hybride + Claude API + schema PostgreSQL isolation
 
 import Anthropic from "@anthropic-ai/sdk";
-import { buildSimplePrompt, buildFiscalPrompt, buildContextPrompt, buildSocialContextPrompt, buildSocialFallbackPrompt } from "./chat.prompts";
+import { buildSimplePrompt, buildFiscalPrompt, buildContextPrompt, buildSocialContextPrompt, buildSocialFallbackPrompt, buildStrictNoResultPrompt } from "./chat.prompts";
 import { hybridSearch, isSocialQuery, SearchResult } from "./rag/hybrid-search.service";
 import { isFiscalQuery, buildContext, extractArticlesFromResponse, Citation } from "./rag/chat.utils";
 import { createLogger } from "../utils/logger";
@@ -42,12 +42,18 @@ export function isSimpleGreeting(query: string): boolean {
   return GREETING_PATTERNS.some((pattern) => pattern.test(query.trim()));
 }
 
+// Nombre max de chunks renvoyes au LLM. Avant: 8 (trop restrictif sur 11k+ documents,
+// les articles courts comme 373 ter passaient sous le radar). Claude Sonnet a 200K
+// tokens de contexte donc 25 chunks ~10K tokens reste tres confortable.
+const RAG_TOP_K = 25;
+
 async function performRAGSearch(content: string): Promise<SearchResult[] | null> {
   if (!isFiscalQuery(content)) return null;
   try {
-    const results = await hybridSearch(content, 8, '2026');
+    const results = await hybridSearch(content, RAG_TOP_K, '2026');
     if (results.length > 0) {
-      logger.info(`RAG: ${results.length} articles trouvés pour "${content.substring(0, 50)}..."`);
+      const top = results[0];
+      logger.info(`RAG: ${results.length} articles trouvés pour "${content.substring(0, 50)}..." (top: ${top.payload.numero}, score: ${top.score.toFixed(3)})`);
       return results;
     }
     return null;
@@ -67,9 +73,14 @@ function buildSystemPrompt(content: string, searchResults: SearchResult[] | null
     logger.info(`Agent: ${agent.name} (social: ${socialQuery})`);
     return enhancedSystemPrompt;
   }
-  const basePrompt = socialQuery ? buildSocialFallbackPrompt() : buildFiscalPrompt();
-  const { enhancedSystemPrompt } = orchestrate(content, basePrompt);
-  return enhancedSystemPrompt;
+  // Pas de resultat RAG : prompt strict qui interdit l'invention de chiffres/articles
+  // (utilise le fallback social pour les questions sociales, sinon refus stricte)
+  if (socialQuery) {
+    const { enhancedSystemPrompt } = orchestrate(content, buildSocialFallbackPrompt());
+    return enhancedSystemPrompt;
+  }
+  logger.warn(`RAG vide pour "${content.substring(0, 60)}" — strict fallback`);
+  return buildStrictNoResultPrompt();
 }
 
 /**
