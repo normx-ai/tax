@@ -63,7 +63,8 @@ export default function MessageBubble({ role, content, citations, pending }: Pro
               fontSize: 16,
               fontFamily: fonts.regular,
               fontWeight: fontWeights.regular,
-              lineHeight: 20,
+              lineHeight: 22,
+              textAlign: role === "ASSISTANT" ? "justify" : "left",
             }}
             selectable
           >
