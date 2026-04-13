@@ -41,11 +41,11 @@ export default function RetenueSourceScreen() {
         inputs: { "Montant HT": montantHT, "Type de retenue": typeRetenue },
         results: [
           { label: "Calcul retenue", value: "", type: "header" },
-          { label: "Montant HT", value: formatNumber(result.montantHT) + " FCFA", type: "normal" },
+          { label: "Montant HT", value: formatNumber(result.montantHT) + "", type: "normal" },
           { label: "Taux applique", value: result.taux + "%", type: "normal" },
           { label: "Article", value: result.articleRef, type: "normal" },
-          { label: "Montant retenue", value: formatNumber(result.montantRetenue) + " FCFA", type: "result" },
-          { label: "Montant net", value: formatNumber(result.montantNet) + " FCFA", type: "total" },
+          { label: "Montant retenue", value: formatNumber(result.montantRetenue) + "", type: "result" },
+          { label: "Montant net", value: formatNumber(result.montantNet) + "", type: "total" },
         ],
         reference: result.articleRef,
       } : undefined}

@@ -56,17 +56,17 @@ export default function TvaScreen() {
         inputs: { "Ventes/Services HT": ventesHT, "Autres operations": autresOp, "Exportations HT": exportsHT, "Operations exonerees": exonerees, "TVA immobilisations": tvaImmo, "TVA biens/services": tvaBnS, "Credit anterieur": creditAnt },
         results: [
           { label: "Chiffre d'affaires", value: "", type: "header" },
-          { label: "Total CA HT", value: formatNumber(result.totalCAHT) + " FCFA", type: "normal" },
+          { label: "Total CA HT", value: formatNumber(result.totalCAHT) + "", type: "normal" },
           { label: "TVA brute", value: "", type: "header" },
-          { label: "Total TVA brute", value: formatNumber(result.totalTvaBrute) + " FCFA", type: "normal" },
+          { label: "Total TVA brute", value: formatNumber(result.totalTvaBrute) + "", type: "normal" },
           { label: "TVA deductible", value: "", type: "header" },
-          { label: "Total TVA deductible", value: "- " + formatNumber(result.totalTvaDeductible) + " FCFA", type: "normal" },
+          { label: "Total TVA deductible", value: "- " + formatNumber(result.totalTvaDeductible) + "", type: "normal" },
           { label: "Solde TVA", value: "", type: "header" },
           ...(result.tvaAPayer > 0
-            ? [{ label: "TVA a payer", value: formatNumber(result.tvaAPayer) + " FCFA", type: "result" as const }]
-            : [{ label: "Credit TVA", value: formatNumber(result.creditTva) + " FCFA", type: "result" as const }]),
-          { label: "Centimes additionnels", value: formatNumber(result.centimesAdditionnels) + " FCFA", type: "normal" },
-          { label: "Total general", value: formatNumber(result.totalAPayer) + " FCFA", type: "total" },
+            ? [{ label: "TVA a payer", value: formatNumber(result.tvaAPayer) + "", type: "result" as const }]
+            : [{ label: "Credit TVA", value: formatNumber(result.creditTva) + "", type: "result" as const }]),
+          { label: "Centimes additionnels", value: formatNumber(result.centimesAdditionnels) + "", type: "normal" },
+          { label: "Total general", value: formatNumber(result.totalAPayer) + "", type: "total" },
         ],
         reference: "Art. 234 CGI 2026",
       } : undefined}
@@ -185,7 +185,7 @@ export default function TvaScreen() {
             {/* Total général */}
             <View style={[styles.totalBar, { backgroundColor: colors.primary }]}>
               <Text style={styles.totalLabel}>{t("simulateur.tva.totalGeneral")}</Text>
-              <Text style={styles.totalValue}>{formatNumber(result.totalAPayer)} FCFA</Text>
+              <Text style={styles.totalValue}>{formatNumber(result.totalAPayer)}</Text>
             </View>
 
             <View style={[styles.noteBox, { backgroundColor: `${colors.primary}10` }]}>

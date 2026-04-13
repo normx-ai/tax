@@ -22,7 +22,6 @@ export default function NumberField({ label, value, onChange }: Props) {
           placeholder="0"
           placeholderTextColor={colors.textMuted}
         />
-        <Text style={{ fontSize: 14, color: colors.textMuted }}>FCFA</Text>
       </View>
     </View>
   );

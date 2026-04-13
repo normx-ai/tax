@@ -49,12 +49,12 @@ export default function IsScreen() {
         inputs: { "Type": typeImpot === "is" ? "IS" : "IBA", "Produits exploitation": produitsExploitation, "Produits financiers": produitsFinanciers, "Produits HAO": produitsHAO, "Retenues liberatoires": retenuesLiberatoires },
         results: [
           { label: "Minimum de perception", value: "", type: "header" },
-          { label: "Base", value: formatNumber(result.baseMinimumPerception) + " FCFA", type: "normal" },
+          { label: "Base", value: formatNumber(result.baseMinimumPerception) + "", type: "normal" },
           { label: "Taux applique", value: result.tauxMinimum + "%", type: "normal" },
-          { label: "Minimum annuel", value: formatNumber(result.minimumPerceptionAnnuel) + " FCFA", type: "result" },
+          { label: "Minimum annuel", value: formatNumber(result.minimumPerceptionAnnuel) + "", type: "result" },
           { label: "Acomptes trimestriels", value: "", type: "header" },
-          ...result.acomptes.map((a) => ({ label: a.label, value: formatNumber(a.montant) + " FCFA", type: "normal" as const })),
-          { label: "Total a payer", value: formatNumber(result.minimumPerceptionAnnuel) + " FCFA", type: "total" },
+          ...result.acomptes.map((a) => ({ label: a.label, value: formatNumber(a.montant) + "", type: "normal" as const })),
+          { label: "Total a payer", value: formatNumber(result.minimumPerceptionAnnuel) + "", type: "total" },
         ],
         reference: typeImpot === "is" ? "Art. 131-A CGI 2026" : "Art. 131-A CGI 2026",
       } : undefined}

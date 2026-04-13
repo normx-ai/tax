@@ -57,16 +57,16 @@ export default function ItsScreen() {
         inputs: { "Salaire brut": salaireBrut, "Periode": periode, "Situation": situation, "Enfants": String(enfants) },
         results: [
           { label: "Calcul mensuel", value: "", type: "header" },
-          { label: "Salaire brut mensuel", value: formatNumber(result.revenuBrutAnnuel / 12) + " FCFA", type: "normal" },
-          { label: "Retenue CNSS mensuelle", value: "- " + formatNumber(result.retenueCnssMensuelle) + " FCFA", type: "normal" },
-          { label: "Net imposable mensuel", value: formatNumber(Math.round(result.revenuNetImposable / 12)) + " FCFA", type: "normal" },
+          { label: "Salaire brut mensuel", value: formatNumber(result.revenuBrutAnnuel / 12) + "", type: "normal" },
+          { label: "Retenue CNSS mensuelle", value: "- " + formatNumber(result.retenueCnssMensuelle) + "", type: "normal" },
+          { label: "Net imposable mensuel", value: formatNumber(Math.round(result.revenuNetImposable / 12)) + "", type: "normal" },
           { label: "Calcul annuel", value: "", type: "header" },
-          { label: "Salaire brut annuel", value: formatNumber(result.revenuBrutAnnuel) + " FCFA", type: "normal" },
-          { label: "Retenue CNSS annuelle", value: "- " + formatNumber(result.retenueCnss) + " FCFA", type: "normal" },
-          { label: "Net imposable annuel", value: formatNumber(result.revenuNetImposable) + " FCFA", type: "normal" },
-          { label: "Quotient familial", value: formatNumber(result.revenuParPart) + " FCFA", type: "normal" },
-          { label: "ITS annuel", value: formatNumber(result.itsAnnuel) + " FCFA", type: "result" },
-          { label: "ITS mensuel", value: formatNumber(result.itsMensuel) + " FCFA", type: "total" },
+          { label: "Salaire brut annuel", value: formatNumber(result.revenuBrutAnnuel) + "", type: "normal" },
+          { label: "Retenue CNSS annuelle", value: "- " + formatNumber(result.retenueCnss) + "", type: "normal" },
+          { label: "Net imposable annuel", value: formatNumber(result.revenuNetImposable) + "", type: "normal" },
+          { label: "Quotient familial", value: formatNumber(result.revenuParPart) + "", type: "normal" },
+          { label: "ITS annuel", value: formatNumber(result.itsAnnuel) + "", type: "result" },
+          { label: "ITS mensuel", value: formatNumber(result.itsMensuel) + "", type: "total" },
         ],
         reference: "Art. 116-G CGI 2026",
       } : undefined}
@@ -120,7 +120,6 @@ export default function ItsScreen() {
               placeholder="0"
               placeholderTextColor={colors.textMuted}
             />
-            <Text style={[styles.currencyLabel, { color: colors.textSecondary }]}>FCFA</Text>
           </View>
         </>
       }

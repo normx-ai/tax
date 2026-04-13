@@ -41,10 +41,10 @@ export default function IrcmScreen() {
         inputs: { "Montant brut": montantBrut, "Type de revenu": typeRevenu },
         results: [
           { label: "Calcul IRCM", value: "", type: "header" },
-          { label: "Montant brut", value: formatNumber(result.montantBrut) + " FCFA", type: "normal" },
+          { label: "Montant brut", value: formatNumber(result.montantBrut) + "", type: "normal" },
           { label: "Taux applique", value: result.taux + "%", type: "normal" },
-          { label: "Impot du (IRCM)", value: formatNumber(result.impot) + " FCFA", type: "result" },
-          { label: "Montant net", value: formatNumber(result.montantNet) + " FCFA", type: "total" },
+          { label: "Impot du (IRCM)", value: formatNumber(result.impot) + "", type: "result" },
+          { label: "Montant net", value: formatNumber(result.montantNet) + "", type: "total" },
         ],
         reference: "Art. 116-D CGI 2026",
       } : undefined}

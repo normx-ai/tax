@@ -42,13 +42,13 @@ export default function CessionPartsScreen() {
         inputs: { "Prix de cession": prixCession, "Type de cession": typeCession, "Contrat petrolier": contratPetrolier ? "Oui" : "Non" },
         results: [
           { label: "Calcul", value: "", type: "header" },
-          { label: "Prix de cession", value: formatNumber(result.prixCession) + " FCFA", type: "normal" },
+          { label: "Prix de cession", value: formatNumber(result.prixCession) + "", type: "normal" },
           { label: "Taux (" + result.articleRef + ")", value: result.taux + "%", type: "normal" },
           { label: "Detail", value: "", type: "header" },
-          { label: "Droits", value: formatNumber(result.droits) + " FCFA", type: "normal" },
-          ...(result.minimumApplique ? [{ label: "Minimum applique", value: "1 000 000 FCFA", type: "normal" as const }] : []),
-          { label: "Centimes additionnels", value: "+ " + formatNumber(result.centimesAdditionnels) + " FCFA", type: "normal" },
-          { label: "Total du", value: formatNumber(result.total) + " FCFA", type: "total" },
+          { label: "Droits", value: formatNumber(result.droits) + "", type: "normal" },
+          ...(result.minimumApplique ? [{ label: "Minimum applique", value: "1 000 000", type: "normal" as const }] : []),
+          { label: "Centimes additionnels", value: "+ " + formatNumber(result.centimesAdditionnels) + "", type: "normal" },
+          { label: "Total du", value: formatNumber(result.total) + "", type: "total" },
         ],
         reference: result.articleRef,
       } : undefined}
@@ -87,7 +87,7 @@ export default function CessionPartsScreen() {
             <SimulateurSection label={t("simulateur.cessionParts.detailSection")} />
             <TableRow label={t("simulateur.cessionParts.duties")} value={formatNumber(result.droits)} bold />
             {result.minimumApplique && (
-              <TableRow label={t("simulateur.cessionParts.minimumApplied")} value="1 000 000 FCFA" bg={colors.background} color={colors.primary} />
+              <TableRow label={t("simulateur.cessionParts.minimumApplied")} value="1 000 000" bg={colors.background} color={colors.primary} />
             )}
             <TableRow label={t("simulateur.cessionParts.additionalCents")} value={`+ ${formatNumber(result.centimesAdditionnels)}`} bg={colors.background} />
             <ResultHighlight label={t("simulateur.cessionParts.totalDue")} value={formatNumber(result.total)} variant="danger" />

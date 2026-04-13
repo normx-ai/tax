@@ -44,18 +44,18 @@ export default function PatenteScreen() {
         simulatorName: "Simulateur Patente",
         inputs: { "Chiffre d'affaires": chiffreAffaires, "Stand-by": isStandBy ? "Oui" : "Non", "Petroliere": isPetroliere ? "Oui" : "Non", "Entreprise nouvelle": isNouvelle ? "Oui" : "Non", "Entites fiscales": String(nombreEntites) },
         results: result.isEntrepriseNouvelle ? [
-          { label: "Exoneration entreprise nouvelle", value: "0 FCFA", type: "total" },
-          ...(result.camu > 0 ? [{ label: "CAMU a payer", value: formatNumber(result.camu) + " FCFA", type: "result" as const }] : []),
+          { label: "Exoneration entreprise nouvelle", value: "0", type: "total" },
+          ...(result.camu > 0 ? [{ label: "CAMU a payer", value: formatNumber(result.camu) + "", type: "result" as const }] : []),
         ] : [
           { label: "Detail par tranches", value: "", type: "header" },
-          { label: "Patente brute", value: formatNumber(Math.round(result.patenteBrute)) + " FCFA", type: "normal" },
-          { label: "Patente nette", value: formatNumber(result.patenteNette) + " FCFA", type: "result" },
+          { label: "Patente brute", value: formatNumber(Math.round(result.patenteBrute)) + "", type: "normal" },
+          { label: "Patente nette", value: formatNumber(result.patenteNette) + "", type: "result" },
           { label: "Centimes additionnels", value: "", type: "header" },
-          { label: "Centimes additionnels", value: formatNumber(result.centimesAdditionnels) + " FCFA", type: "normal" },
-          { label: "Part chambres de commerce", value: formatNumber(result.partChambresCommerce) + " FCFA", type: "normal" },
-          { label: "Part collectivites locales", value: formatNumber(result.partCollectivitesLocales) + " FCFA", type: "normal" },
-          { label: "CAMU", value: formatNumber(result.camu) + " FCFA", type: "normal" },
-          { label: "Total a payer", value: formatNumber(result.totalAPayer) + " FCFA", type: "total" },
+          { label: "Centimes additionnels", value: formatNumber(result.centimesAdditionnels) + "", type: "normal" },
+          { label: "Part chambres de commerce", value: formatNumber(result.partChambresCommerce) + "", type: "normal" },
+          { label: "Part collectivites locales", value: formatNumber(result.partCollectivitesLocales) + "", type: "normal" },
+          { label: "CAMU", value: formatNumber(result.camu) + "", type: "normal" },
+          { label: "Total a payer", value: formatNumber(result.totalAPayer) + "", type: "total" },
         ],
         reference: "Art. 383 CGI 2026",
       } : undefined}
@@ -73,7 +73,6 @@ export default function PatenteScreen() {
               <Text style={[styles.subLabel, { color: colors.textSecondary }]}>{t("simulateur.patente.lastPatente")}</Text>
               <View style={[styles.inputRowSmall, { backgroundColor: colors.card, borderColor: colors.border }]}>
                 <TextInput style={[styles.inputTextSmall, { color: colors.text }]} value={dernierePatente} onChangeText={(v) => setDernierePatente(formatInputNumber(v))} keyboardType="numeric" placeholder="0" placeholderTextColor={colors.textMuted} />
-                <Text style={[styles.currencySmall, { color: colors.textMuted }]}>FCFA</Text>
               </View>
             </View>
           )}
@@ -83,7 +82,6 @@ export default function PatenteScreen() {
               <Text style={[styles.fieldLabel, { color: colors.text }]}>{t("simulateur.patente.turnover")}</Text>
               <View style={[styles.inputRow, { backgroundColor: colors.card, borderColor: colors.primary }]}>
                 <TextInput style={[styles.inputText, { color: colors.text }]} value={chiffreAffaires} onChangeText={(v) => setChiffreAffaires(formatInputNumber(v))} keyboardType="numeric" placeholder="0" placeholderTextColor={colors.textMuted} />
-                <Text style={[styles.currencyLabel, { color: colors.textSecondary }]}>FCFA</Text>
               </View>
             </View>
           )}
@@ -123,7 +121,7 @@ export default function PatenteScreen() {
             <View style={[styles.totalBox, { backgroundColor: colors.success || "#2E7D32" }]}>
               <View style={styles.spaceBetweenRow}>
                 <Text style={[styles.totalLabel, { color: "#fff" }]}>{t("simulateur.patente.exemptionTitle")}</Text>
-                <Text style={[styles.totalValue, { color: "#fff" }]}>0 FCFA</Text>
+                <Text style={[styles.totalValue, { color: "#fff" }]}>0</Text>
               </View>
             </View>
             <View style={{ paddingHorizontal: 14, paddingVertical: 12 }}>
@@ -136,7 +134,7 @@ export default function PatenteScreen() {
                 <View style={[styles.totalBox, { backgroundColor: colors.primary }]}>
                   <View style={styles.spaceBetweenRow}>
                     <Text style={[styles.totalLabel, { color: "#fff" }]}>CAMU à payer</Text>
-                    <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.camu)} FCFA</Text>
+                    <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.camu)}</Text>
                   </View>
                 </View>
               </>
@@ -202,7 +200,7 @@ export default function PatenteScreen() {
             <View style={[styles.totalBox, { backgroundColor: colors.primary, borderTopColor: colors.border }]}>
               <View style={styles.spaceBetweenRow}>
                 <Text style={[styles.totalLabel, { color: "#fff" }]}>{t("simulateur.patente.totalToPay")}</Text>
-                <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.totalAPayer)} FCFA</Text>
+                <Text style={[styles.totalValue, { color: "#fff" }]}>{formatNumber(result.totalAPayer)}</Text>
               </View>
             </View>
 

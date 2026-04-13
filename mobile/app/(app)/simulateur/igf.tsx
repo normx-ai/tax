@@ -40,10 +40,10 @@ export default function IgfScreen() {
         inputs: { "Chiffre d'affaires": chiffreAffaires, "Base d'imposition": baseImposition === "ca" ? "Chiffre d'affaires" : "Marge brute" },
         results: [
           { label: "Calcul IGF", value: "", type: "header" },
-          { label: "Base imposable", value: formatNumber(result.baseImposable) + " FCFA", type: "normal" },
+          { label: "Base imposable", value: formatNumber(result.baseImposable) + "", type: "normal" },
           { label: "Taux applique", value: result.taux + "%", type: "normal" },
-          { label: "IGF annuel", value: formatNumber(result.igfAnnuel) + " FCFA", type: "result" },
-          { label: "IGF trimestriel", value: formatNumber(result.igfTrimestriel) + " FCFA", type: "total" },
+          { label: "IGF annuel", value: formatNumber(result.igfAnnuel) + "", type: "result" },
+          { label: "IGF trimestriel", value: formatNumber(result.igfTrimestriel) + "", type: "total" },
         ],
         reference: "Art. 404 CGI 2026",
       } : undefined}
