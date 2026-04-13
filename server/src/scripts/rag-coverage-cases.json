@@ -1,0 +1,127 @@
+[
+  {
+    "question": "Quelle est la sanction pour les documents en langue étrangère ?",
+    "expected": ["Art. 373 ter"],
+    "agent": "general"
+  },
+  {
+    "question": "Quel est le taux de l'impôt sur les sociétés au Congo ?",
+    "expected": ["Art. 86A"],
+    "agent": "is"
+  },
+  {
+    "question": "Quelles sont les conditions d'exonération de l'IS ?",
+    "expected": ["Art. 3"],
+    "agent": "is"
+  },
+  {
+    "question": "Quel est le taux IS pour les sociétés de microfinance ?",
+    "expected": ["Art. 86A"],
+    "agent": "is"
+  },
+  {
+    "question": "Comment fonctionnent les acomptes IS ?",
+    "expected": ["Art. 86C"],
+    "agent": "is"
+  },
+  {
+    "question": "Comment fonctionne le report déficitaire en matière d'IS ?",
+    "expected": ["Art. 75"],
+    "agent": "is"
+  },
+  {
+    "question": "Quel est le minimum de perception de l'IS ?",
+    "expected": ["Art. 86C"],
+    "agent": "is"
+  },
+  {
+    "question": "Quelle est la retenue à la source sur les paiements aux non-résidents ?",
+    "expected": ["Art. 86D"],
+    "agent": "is"
+  },
+  {
+    "question": "Quel est le barème de l'ITS ?",
+    "expected": ["Art. 116G"],
+    "agent": "its"
+  },
+  {
+    "question": "Comment sont imposés les avantages en nature ?",
+    "expected": ["Art. 115"],
+    "agent": "its"
+  },
+  {
+    "question": "Comment fonctionne le quotient familial pour l'ITS ?",
+    "expected": ["Art. 116B"],
+    "agent": "its"
+  },
+  {
+    "question": "Comment l'employeur effectue-t-il la retenue à la source de l'ITS ?",
+    "expected": ["Art. 116H"],
+    "agent": "its"
+  },
+  {
+    "question": "Quel est le taux de l'IBA et le minimum de perception ?",
+    "expected": ["Art. 95"],
+    "agent": "iba"
+  },
+  {
+    "question": "Quel est le seuil de chiffre d'affaires pour le régime forfaitaire IBA ?",
+    "expected": ["Art. 96"],
+    "agent": "iba"
+  },
+  {
+    "question": "Quel est le taux de l'IRCM sur les dividendes ?",
+    "expected": ["Art. 110A"],
+    "agent": "ircm"
+  },
+  {
+    "question": "Quel est le taux d'imposition des revenus locatifs IRF ?",
+    "expected": ["Art. 113"],
+    "agent": "irf"
+  },
+  {
+    "question": "Comment fonctionne la retenue à la source sur les loyers ?",
+    "expected": ["Art. 113A"],
+    "agent": "irf"
+  },
+  {
+    "question": "Quelles sont les exonérations IRF pour la résidence principale ?",
+    "expected": ["Art. 111C"],
+    "agent": "irf"
+  },
+  {
+    "question": "Qui est exonéré de patente ?",
+    "expected": ["Art. 251", "Art. 252"],
+    "agent": "patente"
+  },
+  {
+    "question": "Quel est le plafond de paiement en espèces ?",
+    "expected": ["Art. 26"],
+    "agent": "general"
+  },
+  {
+    "question": "Quel est le taux de TVA au Congo ?",
+    "expected": [],
+    "_note": "TFNC TVA, à compléter avec article exact"
+  },
+  {
+    "question": "Quel est le tarif du timbre fiscal ?",
+    "expected": [],
+    "_note": "Tome 2 droit de timbre"
+  },
+  {
+    "question": "Quels sont les délais de prescription fiscale ?",
+    "expected": [],
+    "_note": "TFNC procédures, à compléter"
+  },
+  {
+    "question": "Quels sont les taux de pénalités fiscales ?",
+    "expected": [],
+    "_note": "TFNC procédures"
+  },
+  {
+    "question": "Comment obtenir le NIU au Congo ?",
+    "expected": [],
+    "_note": "TFNC procédures"
+  }
+]
