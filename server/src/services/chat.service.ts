@@ -13,7 +13,7 @@ import * as analyticsDb from "../db/analytics.db";
 const logger = createLogger('ChatService');
 const anthropic = new Anthropic();
 
-const CLAUDE_MODEL = "claude-sonnet-4-20250514";
+const CLAUDE_MODEL = "claude-sonnet-4-6";
 const MAX_TOKENS = 2000;
 const MAX_HISTORY_MESSAGES = 20;
 const MAX_HISTORY_CHARS = 24000;
