@@ -1,7 +1,7 @@
 // server/src/services/chat.service.ts
 // Service chat IA fiscal - RAG hybride + Claude API + schema PostgreSQL isolation
 
-import Anthropic from "@anthropic-ai/sdk";
+import Anthropic, { APIError } from "@anthropic-ai/sdk";
 import { buildSimplePrompt, buildFiscalPrompt, buildContextPrompt, buildSocialContextPrompt, buildSocialFallbackPrompt, buildStrictNoResultPrompt } from "./chat.prompts";
 import { hybridSearch, isSocialQuery, SearchResult } from "./rag/hybrid-search.service";
 import { isFiscalQuery, buildContext, extractArticlesFromResponse, Citation } from "./rag/chat.utils";
@@ -39,14 +39,33 @@ function trimHistory(messages: { role: string; content: string }[]): { role: str
 }
 
 /**
+ * Extrait le type interieur d'une erreur Anthropic SDK.
+ * Le body JSON typique est { type: "error", error: { type: "overloaded_error", ... } }
+ * donc le type utile est dans .error.error.type (et non .error.type qui vaut "error").
+ */
+function getAnthropicErrorType(err: unknown): { status?: number; innerType?: string } {
+  if (!err || typeof err !== 'object') return {};
+  const e = err as { status?: number; error?: unknown };
+  const result: { status?: number; innerType?: string } = {};
+  if (typeof e.status === 'number') result.status = e.status;
+
+  const body = e.error as { type?: string; error?: { type?: string } } | undefined;
+  if (body && typeof body === 'object') {
+    if (body.error && typeof body.error === 'object' && body.error.type) {
+      result.innerType = body.error.type;
+    } else if (body.type && body.type !== 'error') {
+      result.innerType = body.type;
+    }
+  }
+  return result;
+}
+
+/**
  * Transforme une erreur brute de l'API Anthropic en message utilisateur lisible.
  * Retourne null si l'erreur n'est pas reconnue comme une erreur Anthropic.
  */
 function friendlyAnthropicError(err: unknown): string | null {
-  if (!err || typeof err !== 'object') return null;
-  const e = err as { status?: number; error?: { type?: string; error?: { type?: string } }; message?: string };
-  const status = e.status;
-  const innerType = e.error?.type || e.error?.error?.type;
+  const { status, innerType } = getAnthropicErrorType(err);
 
   if (status === 529 || innerType === 'overloaded_error') {
     return "Les serveurs de l'IA sont momentanement surcharges. Reessaie dans quelques secondes.";
@@ -60,15 +79,17 @@ function friendlyAnthropicError(err: unknown): string | null {
   if (status === 500 || status === 502 || status === 503 || innerType === 'api_error') {
     return "L'IA est momentanement indisponible. Reessaie dans quelques instants.";
   }
+  // Fallback si on a reconnu une erreur Anthropic mais pas mappee
+  if (err instanceof APIError) {
+    return "Erreur de l'IA. Reessaie dans quelques instants.";
+  }
   return null;
 }
 
 function isRetryable(err: unknown): boolean {
-  if (!err || typeof err !== 'object') return false;
-  const e = err as { status?: number; error?: { type?: string; error?: { type?: string } } };
-  const status = e.status;
-  const innerType = e.error?.type || e.error?.error?.type;
-  return status === 529 || status === 503 || status === 502 || innerType === 'overloaded_error' || innerType === 'api_error';
+  const { status, innerType } = getAnthropicErrorType(err);
+  return status === 529 || status === 503 || status === 502 ||
+    innerType === 'overloaded_error' || innerType === 'api_error';
 }
 
 function sleep(ms: number): Promise<void> {
@@ -249,6 +270,14 @@ export async function* sendMessageStream(
   }
 
   if (lastErr) {
+    // Log l'erreur complete pour debug (shape Anthropic APIError vs generic)
+    const detected = getAnthropicErrorType(lastErr);
+    logger.error('Anthropic stream final error', {
+      isAPIError: lastErr instanceof APIError,
+      status: detected.status,
+      innerType: detected.innerType,
+      message: lastErr instanceof Error ? lastErr.message : String(lastErr),
+    });
     const friendly = friendlyAnthropicError(lastErr) || "Erreur lors de la generation de la reponse. Reessaie.";
     throw new Error(friendly);
   }
