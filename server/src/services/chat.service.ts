@@ -38,6 +38,43 @@ function trimHistory(messages: { role: string; content: string }[]): { role: str
   return trimmed;
 }
 
+/**
+ * Transforme une erreur brute de l'API Anthropic en message utilisateur lisible.
+ * Retourne null si l'erreur n'est pas reconnue comme une erreur Anthropic.
+ */
+function friendlyAnthropicError(err: unknown): string | null {
+  if (!err || typeof err !== 'object') return null;
+  const e = err as { status?: number; error?: { type?: string; error?: { type?: string } }; message?: string };
+  const status = e.status;
+  const innerType = e.error?.type || e.error?.error?.type;
+
+  if (status === 529 || innerType === 'overloaded_error') {
+    return "Les serveurs de l'IA sont momentanement surcharges. Reessaie dans quelques secondes.";
+  }
+  if (status === 429 || innerType === 'rate_limit_error') {
+    return "Limite de requetes atteinte. Patiente une minute puis reessaie.";
+  }
+  if (status === 401 || innerType === 'authentication_error') {
+    return "Erreur d'authentification de l'IA. Contacte le support.";
+  }
+  if (status === 500 || status === 502 || status === 503 || innerType === 'api_error') {
+    return "L'IA est momentanement indisponible. Reessaie dans quelques instants.";
+  }
+  return null;
+}
+
+function isRetryable(err: unknown): boolean {
+  if (!err || typeof err !== 'object') return false;
+  const e = err as { status?: number; error?: { type?: string; error?: { type?: string } } };
+  const status = e.status;
+  const innerType = e.error?.type || e.error?.error?.type;
+  return status === 529 || status === 503 || status === 502 || innerType === 'overloaded_error' || innerType === 'api_error';
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export function isSimpleGreeting(query: string): boolean {
   return GREETING_PATTERNS.some((pattern) => pattern.test(query.trim()));
 }
@@ -169,24 +206,54 @@ export async function* sendMessageStream(
   const startTime = Date.now();
   let fullContent = "";
 
-  const stream = anthropic.messages.stream({
-    model: CLAUDE_MODEL,
-    max_tokens: MAX_TOKENS,
-    system: systemPrompt,
-    messages: previousMessages.map((msg) => ({
-      role: msg.role === "USER" ? "user" as const : "assistant" as const,
-      content: msg.content,
-    })),
-  });
+  const messagesForApi = previousMessages.map((msg) => ({
+    role: msg.role === "USER" ? "user" as const : "assistant" as const,
+    content: msg.content,
+  }));
 
-  for await (const event of stream) {
-    if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
-      fullContent += event.delta.text;
-      yield { event: "chunk", data: JSON.stringify({ text: event.delta.text }) };
+  // Retry avec backoff sur les erreurs transitoires d'Anthropic (overloaded, etc.)
+  // Ne retry que si aucun chunk n'a encore ete envoye au client.
+  const MAX_ATTEMPTS = 3;
+  const BACKOFF_MS = [0, 1500, 3500]; // 0ms, 1.5s, 3.5s
+  let stream: ReturnType<typeof anthropic.messages.stream> | null = null;
+  let lastErr: unknown = null;
+
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+    if (attempt > 0) await sleep(BACKOFF_MS[attempt]);
+    try {
+      stream = anthropic.messages.stream({
+        model: CLAUDE_MODEL,
+        max_tokens: MAX_TOKENS,
+        system: systemPrompt,
+        messages: messagesForApi,
+      });
+      // Consomme le stream ; si erreur avant tout chunk on peut retry
+      for await (const event of stream) {
+        if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
+          fullContent += event.delta.text;
+          yield { event: "chunk", data: JSON.stringify({ text: event.delta.text }) };
+        }
+      }
+      lastErr = null;
+      break;
+    } catch (err) {
+      lastErr = err;
+      if (fullContent.length > 0 || !isRetryable(err)) {
+        // Des chunks ont deja ete envoyes, ou erreur non-retryable : on abandonne
+        break;
+      }
+      logger.warn(`Anthropic stream attempt ${attempt + 1}/${MAX_ATTEMPTS} failed, retrying`, {
+        error: err instanceof Error ? err.message : String(err),
+      });
     }
   }
 
-  const finalMessage = await stream.finalMessage();
+  if (lastErr) {
+    const friendly = friendlyAnthropicError(lastErr) || "Erreur lors de la generation de la reponse. Reessaie.";
+    throw new Error(friendly);
+  }
+
+  const finalMessage = await stream!.finalMessage();
   const responseTime = Date.now() - startTime;
   const tokensUsed = (finalMessage.usage?.input_tokens || 0) + (finalMessage.usage?.output_tokens || 0);
 
