@@ -40,15 +40,19 @@ function trimHistory(messages: { role: string; content: string }[]): { role: str
 
 /**
  * Extrait le type interieur d'une erreur Anthropic SDK.
- * Le body JSON typique est { type: "error", error: { type: "overloaded_error", ... } }
- * donc le type utile est dans .error.error.type (et non .error.type qui vaut "error").
+ * Le SDK Anthropic stocke le body JSON (ex: {"type":"error","error":{"type":"overloaded_error"}})
+ * a plusieurs endroits selon les versions :
+ * - err.status : le code HTTP
+ * - err.error : objet parsé (parfois absent)
+ * - err.message : JSON string (fallback — le SDK y met souvent le body brut)
  */
 function getAnthropicErrorType(err: unknown): { status?: number; innerType?: string } {
   if (!err || typeof err !== 'object') return {};
-  const e = err as { status?: number; error?: unknown };
+  const e = err as { status?: number; error?: unknown; message?: string };
   const result: { status?: number; innerType?: string } = {};
   if (typeof e.status === 'number') result.status = e.status;
 
+  // Tentative 1 : err.error structure
   const body = e.error as { type?: string; error?: { type?: string } } | undefined;
   if (body && typeof body === 'object') {
     if (body.error && typeof body.error === 'object' && body.error.type) {
@@ -57,6 +61,30 @@ function getAnthropicErrorType(err: unknown): { status?: number; innerType?: str
       result.innerType = body.type;
     }
   }
+
+  // Tentative 2 : parser err.message comme JSON (cas le plus frequent avec APIError)
+  if (!result.innerType && typeof e.message === 'string') {
+    const jsonStart = e.message.indexOf('{');
+    if (jsonStart >= 0) {
+      try {
+        const parsed = JSON.parse(e.message.slice(jsonStart)) as { type?: string; error?: { type?: string } };
+        if (parsed.error && typeof parsed.error === 'object' && parsed.error.type) {
+          result.innerType = parsed.error.type;
+        } else if (parsed.type && parsed.type !== 'error') {
+          result.innerType = parsed.type;
+        }
+      } catch {
+        // pas un JSON, on ignore
+      }
+    }
+  }
+
+  // Tentative 3 : heuristique sur le texte du message (dernier filet)
+  if (!result.innerType && typeof e.message === 'string') {
+    if (/overloaded/i.test(e.message)) result.innerType = 'overloaded_error';
+    else if (/rate.?limit/i.test(e.message)) result.innerType = 'rate_limit_error';
+  }
+
   return result;
 }
 
