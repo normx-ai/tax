@@ -97,24 +97,6 @@ export const DIRECT_KEYWORD_MAPPINGS: Record<string, string> = {
   'irf famille': 'Art. 111C',
   'exonération famille': 'Art. 111C',
   'exoneration famille': 'Art. 111C',
-
-  // Art. 373 ter - Sanction documents en langue etrangere
-  'documents en langue étrangère': 'Art. 373 ter',
-  'documents en langue etrangere': 'Art. 373 ter',
-  'documents langue étrangère': 'Art. 373 ter',
-  'documents langue etrangere': 'Art. 373 ter',
-  'document langue étrangère': 'Art. 373 ter',
-  'document langue etrangere': 'Art. 373 ter',
-  'sanction langue étrangère': 'Art. 373 ter',
-  'sanction langue etrangere': 'Art. 373 ter',
-  'amende langue étrangère': 'Art. 373 ter',
-  'amende langue etrangere': 'Art. 373 ter',
-  'traduction documents comptables': 'Art. 373 ter',
-  'traduction documents': 'Art. 373 ter',
-  'non traduit français': 'Art. 373 ter',
-  'non traduit francais': 'Art. 373 ter',
-  'amende 2.000.000 documents': 'Art. 373 ter',
-  'amende 2000000 documents': 'Art. 373 ter',
 };
 
 /**
