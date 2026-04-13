@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity, Image } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -65,15 +65,13 @@ export default function ConfidentialitePublicScreen() {
           elevation: 4,
         }}>
           {/* En-tête */}
-          <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 32, gap: 12 }}>
-            <View style={{ width: 40, height: 40, borderRadius: 8, backgroundColor: "rgba(200,160,60,0.13)", alignItems: "center", justifyContent: "center" }}>
-              <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24, color: GOLD }}>N</Text>
-            </View>
-            <View>
-              <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 22, color: colors.text }}>
-                NORMX <Text style={{ color: GOLD }}>AI</Text>
-              </Text>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted }}>
+          <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 32, gap: 16 }}>
+            <Image
+              source={require("@/assets/logo-horizontal.png")}
+              style={{ width: 180, height: 35, resizeMode: "contain" }}
+            />
+            <View style={{ flex: 1, paddingLeft: 4, borderLeftWidth: 1, borderLeftColor: colors.border }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 15, color: colors.textMuted, paddingLeft: 12 }}>
                 Politique de confidentialité
               </Text>
             </View>
