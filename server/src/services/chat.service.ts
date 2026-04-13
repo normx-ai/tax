@@ -178,7 +178,8 @@ export async function sendMessage(
   });
 
   const responseTime = Date.now() - startTime;
-  const assistantContent = response.content?.[0]?.type === "text" ? response.content[0].text : "";
+  const rawContent = response.content?.[0]?.type === "text" ? response.content[0].text : "";
+  const assistantContent = rawContent.replace(/\*\*/g, "");
   const tokensUsed = (response.usage?.input_tokens || 0) + (response.usage?.output_tokens || 0);
 
   let citations: Citation[] | undefined;
@@ -226,6 +227,24 @@ export async function* sendMessageStream(
 
   const startTime = Date.now();
   let fullContent = "";
+  let pendingBuffer = "";
+
+  // Retire les ** (gras markdown) en streaming. Le ** peut etre coupe en deux
+  // chunks ("*" puis "*"), on garde 1 char en buffer pour eviter de laisser
+  // filer une moitie seule.
+  const stripBold = (chunk: string): string => {
+    const combined = pendingBuffer + chunk;
+    // Remplace tous les ** par rien
+    const stripped = combined.replace(/\*\*/g, "");
+    // Si le dernier char est une etoile isolee, on la garde en buffer pour la
+    // fusionner avec le prochain chunk (cas "*" + "*")
+    if (stripped.endsWith("*")) {
+      pendingBuffer = "*";
+      return stripped.slice(0, -1);
+    }
+    pendingBuffer = "";
+    return stripped;
+  };
 
   const messagesForApi = previousMessages.map((msg) => ({
     role: msg.role === "USER" ? "user" as const : "assistant" as const,
@@ -251,9 +270,18 @@ export async function* sendMessageStream(
       // Consomme le stream ; si erreur avant tout chunk on peut retry
       for await (const event of stream) {
         if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
-          fullContent += event.delta.text;
-          yield { event: "chunk", data: JSON.stringify({ text: event.delta.text }) };
+          const cleaned = stripBold(event.delta.text);
+          fullContent += cleaned;
+          if (cleaned) {
+            yield { event: "chunk", data: JSON.stringify({ text: cleaned }) };
+          }
         }
+      }
+      // Flush le buffer final au cas ou on termine sur une etoile orpheline
+      if (pendingBuffer) {
+        fullContent += pendingBuffer;
+        yield { event: "chunk", data: JSON.stringify({ text: pendingBuffer }) };
+        pendingBuffer = "";
       }
       lastErr = null;
       break;
