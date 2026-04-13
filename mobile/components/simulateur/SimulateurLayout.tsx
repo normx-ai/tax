@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react";
-import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Platform } from "react-native";
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Platform, Modal } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import SimulateurEmptyState from "./SimulateurEmptyState";
 import { useTheme } from "@/lib/theme/ThemeContext";
@@ -47,13 +47,23 @@ export default function SimulateurLayout({
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
   const [exporting, setExporting] = useState(false);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+  const [previewFilename, setPreviewFilename] = useState<string>("");
 
   const handleExport = async () => {
     if (!exportData) return;
     setExporting(true);
     try {
-      const { exportSimulatorPdf } = await import("@/lib/api/simulator-export");
-      await exportSimulatorPdf(exportData);
+      const { fetchSimulatorPdf, downloadSimulatorPdf } = await import("@/lib/api/simulator-export");
+      const { url, filename } = await fetchSimulatorPdf(exportData);
+      if (Platform.OS === "web") {
+        // Web : afficher l'apercu dans un modal avant telechargement
+        setPreviewUrl(url);
+        setPreviewFilename(filename);
+      } else {
+        // Mobile : share natif (l'OS gere l'apercu)
+        await downloadSimulatorPdf(url, filename);
+      }
     } catch {
       if (Platform.OS === "web") {
         alert("Erreur lors de l'export PDF");
@@ -61,6 +71,22 @@ export default function SimulateurLayout({
     } finally {
       setExporting(false);
     }
+  };
+
+  const handleClosePreview = async () => {
+    if (previewUrl) {
+      const { releaseSimulatorPdf } = await import("@/lib/api/simulator-export");
+      releaseSimulatorPdf(previewUrl);
+    }
+    setPreviewUrl(null);
+    setPreviewFilename("");
+  };
+
+  const handleConfirmDownload = async () => {
+    if (!previewUrl) return;
+    const { downloadSimulatorPdf } = await import("@/lib/api/simulator-export");
+    await downloadSimulatorPdf(previewUrl, previewFilename);
+    await handleClosePreview();
   };
 
   return (
@@ -122,6 +148,36 @@ export default function SimulateurLayout({
           ) : <SimulateurEmptyState message={emptyMessage} />}
         </ScrollView>
       </View>
+
+      {/* Apercu PDF avant telechargement (web uniquement) */}
+      {Platform.OS === "web" && (
+        <Modal visible={!!previewUrl} transparent animationType="fade" onRequestClose={handleClosePreview}>
+          <View style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.75)", justifyContent: "center", alignItems: "center", padding: 20 }}>
+            <View style={{ backgroundColor: "#ffffff", borderRadius: 12, width: "100%", maxWidth: 900, height: "90%", overflow: "hidden", flexDirection: "column" }}>
+              {/* Header modal */}
+              <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: "#e5e7eb", backgroundColor: "#f9fafb" }}>
+                <Text style={{ fontSize: 15, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#111827" }}>Aperçu du PDF</Text>
+                <View style={{ flexDirection: "row", gap: 8 }}>
+                  <TouchableOpacity onPress={handleConfirmDownload} style={{ flexDirection: "row", alignItems: "center", gap: 6, paddingHorizontal: 14, paddingVertical: 8, backgroundColor: colors.primary, borderRadius: 8 }}>
+                    <Ionicons name="download-outline" size={16} color="#0F2A42" />
+                    <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#0F2A42" }}>Télécharger</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={handleClosePreview} style={{ paddingHorizontal: 14, paddingVertical: 8, backgroundColor: "#e5e7eb", borderRadius: 8 }}>
+                    <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#374151" }}>Fermer</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+              {/* Iframe PDF */}
+              {previewUrl && (
+                <View style={{ flex: 1 }}>
+                  {/* @ts-ignore iframe est valide sur web */}
+                  <iframe src={previewUrl} style={{ border: 0, width: "100%", height: "100%" }} title="Aperçu PDF" />
+                </View>
+              )}
+            </View>
+          </View>
+        </Modal>
+      )}
     </View>
   );
 }
