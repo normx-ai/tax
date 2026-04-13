@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, Image } from "react-native";
 import { useMemo } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { router, type Href } from "expo-router";
@@ -89,9 +89,15 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
         <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 17, color: colors.textSecondary, marginBottom: 4 }}>
           {getGreeting(t)}
         </Text>
-        <Text style={{ fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, fontSize: 26, color: colors.text, letterSpacing: -0.5 }}>
-          NORMX <Text style={{ color: colors.primary }}>Tax</Text>
-        </Text>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+          <Image
+            source={require("@/assets/logo-horizontal.png")}
+            style={{ width: 150, height: 30, resizeMode: "contain" }}
+          />
+          <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 20, color: colors.primary }}>
+            Tax
+          </Text>
+        </View>
       </View>
 
       {/* Stats — barre unique 1x4 */}

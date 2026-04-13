@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
@@ -34,9 +34,10 @@ export default function MobileHeader({ title, showBack, onBack, onSearch, rightE
           </TouchableOpacity>
         )}
         {!showBack && (
-          <View style={{ width: 28, height: 28, borderRadius: 7, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }}>
-            <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 15, color: "#fff" }}>N</Text>
-          </View>
+          <Image
+            source={require("@/assets/icon.png")}
+            style={{ width: 28, height: 28, resizeMode: "contain" }}
+          />
         )}
         <Text
           style={{

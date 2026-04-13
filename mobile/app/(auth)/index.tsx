@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, ActivityIndicator, Platform } from "react-native";
+import { View, Text, TouchableOpacity, ActivityIndicator, Platform, Image } from "react-native";
 import { useEffect } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
@@ -48,13 +48,15 @@ export default function AuthScreen() {
   // Mobile : ecran simple avec logo + boutons
   return (
     <View style={{ flex: 1, backgroundColor: BG_WARM, justifyContent: "center", alignItems: "center", padding: 32 }}>
-      <View style={{ width: 60, height: 60, borderRadius: 16, backgroundColor: PRIMARY, alignItems: "center", justifyContent: "center", marginBottom: 24 }}>
-        <Text style={{ fontFamily: fonts.black, fontWeight: fontWeights.black, fontSize: 28, color: DARK }}>N</Text>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 12 }}>
+        <Image
+          source={require("@/assets/logo-horizontal.png")}
+          style={{ width: 200, height: 40, resizeMode: "contain" }}
+        />
+        <Text style={{ fontSize: 24, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: PRIMARY }}>
+          Tax
+        </Text>
       </View>
-
-      <Text style={{ fontSize: 32, fontFamily: fonts.black, fontWeight: fontWeights.black, color: DARK, textAlign: "center", marginBottom: 8 }}>
-        NORMX <Text style={{ color: PRIMARY }}>Tax</Text>
-      </Text>
 
       <Text style={{ fontSize: 15, color: "#6b7280", textAlign: "center", lineHeight: 24, fontFamily: fonts.regular, marginBottom: 40, maxWidth: 320 }}>
         Code fiscal et social du Congo-Brazzaville

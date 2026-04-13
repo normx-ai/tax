@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import { router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from "@/lib/store/auth";
@@ -116,11 +116,11 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           }}
         >
           {isCollapsed ? (
-            <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24 }}>C</Text>
+            <Image source={require("@/assets/icon.png")} style={{ width: 32, height: 32, resizeMode: "contain" }} />
           ) : (
             <View>
-              <Text style={{ color: "#D4A843", fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 22 }}>NORMX <Text style={{ color: "#e8e6e1" }}>AI</Text></Text>
-              <Text style={{ color: "rgba(232,230,225,0.6)", fontSize: 11, fontFamily: fonts.regular }}>La fiscalité augmentée par l'IA</Text>
+              <Image source={require("@/assets/logo-horizontal.png")} style={{ width: 160, height: 32, resizeMode: "contain" }} />
+              <Text style={{ color: "rgba(232,230,225,0.6)", fontSize: 11, fontFamily: fonts.regular, marginTop: 4 }}>La fiscalité augmentée par l'IA</Text>
             </View>
           )}
           {!isCollapsed && (
