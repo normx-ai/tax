@@ -14,7 +14,8 @@
     "db:studio": "prisma studio",
     "ingest": "tsx src/scripts/ingest-articles.ts",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:rag": "tsx src/scripts/rag-coverage.test.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
