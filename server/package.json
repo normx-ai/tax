@@ -15,7 +15,8 @@
     "ingest": "tsx src/scripts/ingest-articles.ts",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:rag": "tsx src/scripts/rag-coverage.test.ts"
+    "test:rag": "tsx src/scripts/rag-coverage.test.ts",
+    "test:rag:full": "tsx src/scripts/rag-full-coverage.test.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
