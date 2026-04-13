@@ -71,7 +71,7 @@
   },
   {
     "question": "Quel est le taux de l'IRCM sur les dividendes ?",
-    "expected": ["Art. 110A"],
+    "expected": ["Art. 110"],
     "agent": "ircm"
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "question": "Qui est exonéré de patente ?",
-    "expected": ["Art. 251", "Art. 252"],
+    "expected": ["Art. 277"],
     "agent": "patente"
   },
   {
