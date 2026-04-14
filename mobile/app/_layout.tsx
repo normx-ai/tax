@@ -36,13 +36,13 @@ function ThemedStack() {
     <Stack
       screenOptions={{
         headerShown: false,
-        title: "NORMX Tax",
+        title: "NORMX Tax | La fiscalité augmentée par l'IA",
         contentStyle: { backgroundColor: colors.background },
       }}
     >
-      <Stack.Screen name="(auth)" options={{ title: "NORMX Tax" }} />
-      <Stack.Screen name="(app)" options={{ title: "NORMX Tax" }} />
-      <Stack.Screen name="legal" options={{ title: "NORMX Tax" }} />
+      <Stack.Screen name="(auth)" options={{ title: "NORMX Tax | La fiscalité augmentée par l'IA" }} />
+      <Stack.Screen name="(app)" options={{ title: "NORMX Tax | La fiscalité augmentée par l'IA" }} />
+      <Stack.Screen name="legal" options={{ title: "NORMX Tax | La fiscalité augmentée par l'IA" }} />
     </Stack>
   );
 }
@@ -53,7 +53,7 @@ function RootLayout() {
   useEffect(() => {
     if (Platform.OS === "web") {
       // Web : titre, favicon, polices Google Fonts CDN
-      document.title = "NORMX Tax";
+      document.title = "NORMX Tax | La fiscalité augmentée par l'IA";
 
       const fontsLink = document.createElement("link");
       fontsLink.href = GOOGLE_FONTS_URL;
