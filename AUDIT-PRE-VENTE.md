@@ -150,11 +150,13 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 - L'endpoint `/health` statique est conserve pour les monitorings externes rapides (ping shallow).
 - Resultat : nginx est marque unhealthy si tax-api, Prisma ou Qdrant sont down. Docker redemarre alors le container nginx apres 3 tentatives infructueuses.
 
-### 2.4 Logging __DEV__ en prod potentiel
+### 2.4 Logging __DEV__ en prod potentiel ✅ RESOLU (2026-04-14)
 
-- `mobile/lib/api/client.ts:43` : log tokens si `__DEV__`
-- Risque : tokens exposes si `__DEV__` reste true en build prod
-- Fix : verifier la config Expo de build production
+- Analyse : `mobile/lib/api/client.ts:43` utilisait `if (__DEV__) console.warn("[api] Erreur injection token:", err)`. En Expo, `__DEV__` est normalement remplace par `false` au build production via Metro (dead code elimination), donc inoffensif. Mais au cas ou une mauvaise config laisserait `__DEV__ = true` en prod, l'objet `err` complet (potentiellement avec stack trace) serait expose dans la console du navigateur.
+- Solution implementee :
+  1. Utilise le logger centralise `createLogger("api")` de `lib/utils/logger.ts` qui gere nativement le basculement dev → Sentry en prod (jamais de log navigateur en prod, meme si `__DEV__` venait a etre true).
+  2. Passe uniquement le `err.message` au logger, jamais l'objet `err` complet. Meme en cas de leak, pas de stack trace exposee.
+- Verification : aucun autre `__DEV__ + console` trouve dans `mobile/lib`, `mobile/components`, `mobile/app`.
 
 ### 2.5 Optional chaining manquant sur reponse Claude
 
@@ -227,8 +229,8 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 **Progres** :
 
 - P0 termines : 5/5 ✅ (credits check+confirm, npm audit fix, whitelist SQL, pagination analytics, healthcheck nginx)
-- P1 termines : 3/4 (env.guard, catch silencieux, N+1 analytics)
-- Reste P1 : optional chaining Claude, `__DEV__` logging, error boundary React
+- P1 termines : 4/5 (env.guard, catch silencieux, N+1 analytics, __DEV__ logging)
+- Reste P1 : optional chaining Claude, error boundary React
 - Reste P2 : webhook Stripe (reporte — societe en creation)
 
 **🎉 TOUS LES P0 SONT TERMINES.** Le produit est techniquement pret pour une beta gratuite. Il reste uniquement des ameliorations P1/P2.

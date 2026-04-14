@@ -5,7 +5,9 @@
  */
 
 import axios, { type AxiosError, type InternalAxiosRequestConfig } from "axios";
+import { createLogger } from "@/lib/utils/logger";
 
+const log = createLogger("api");
 const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3003/api";
 export { API_URL };
 const API_TIMEOUT_MS = 15_000;
@@ -40,7 +42,10 @@ api.interceptors.request.use(async (config) => {
       config.headers["X-Organization-ID"] = user.entreprise_id;
     }
   } catch (err) {
-    if (__DEV__) console.warn("[api] Erreur injection token:", err);
+    // Passe par le logger centralise : console en dev, Sentry en prod.
+    // On ne passe que le message (pas l'objet err complet) pour eviter
+    // toute exposition accidentelle de stack trace ou donnees sensibles.
+    log.warn("Erreur injection token", err instanceof Error ? err.message : String(err));
   }
   return config;
 });
