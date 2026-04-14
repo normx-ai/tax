@@ -116,17 +116,24 @@ if (process.env.NODE_ENV === "development") {
   app.get("/api/docs.json", (_req, res) => res.json(swaggerSpec));
 }
 
-// Middleware global : verifier la souscription produit "tax" sur toutes les routes /api authentifiees
+// Middleware global : authentification uniquement.
+//
+// NOTE : la verification de souscription produit (requireProductSubscription)
+// est desactivee pendant la phase beta gratuite. Elle necessite un attribut
+// Keycloak `subscribed_products` qui devrait etre ajoute par le webhook
+// Stripe a chaque achat. Tant que NORMX AI SAS n'est pas creee et que
+// Stripe n'est pas branche, aucun nouveau user inscrit ne peut avoir cet
+// attribut automatiquement — ils seraient tous bloques sur toutes les
+// routes /api.
+//
+// A reactiver quand le webhook Stripe sera en place en remettant
+// requireProductSubscription('tax') dans la chaine ci-dessous.
 import { requireAuth, AuthRequest } from "./middleware/keycloak-auth";
-import { requireProductSubscription } from "./middleware/product-subscription.middleware";
+// import { requireProductSubscription } from "./middleware/product-subscription.middleware";
 app.use("/api", (req, res, next) => {
   // Skip les routes publiques (health, docs)
   if (req.path === '/health' || req.path.startsWith('/docs')) return next();
-  // Appliquer requireAuth puis requireProductSubscription
-  requireAuth(req as AuthRequest, res, (err?: unknown) => {
-    if (err) return next(err);
-    requireProductSubscription('tax')(req as AuthRequest, res, next);
-  });
+  requireAuth(req as AuthRequest, res, next);
 });
 
 // Routes
