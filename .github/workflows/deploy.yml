@@ -63,9 +63,12 @@ jobs:
               "JWT_EXPIRES_IN=15m" \
               "JWT_REFRESH_EXPIRES_IN=7d" \
               "MFA_ENCRYPTION_KEY=${{ secrets.MFA_ENCRYPTION_KEY }}" \
+              "KEYCLOAK_URL=https://auth.normx-ai.com" \
+              "KEYCLOAK_REALM=normx" \
               "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" \
               "VOYAGE_API_KEY=${{ secrets.VOYAGE_API_KEY }}" \
               "FRONTEND_URL=https://tax.normx-ai.com" \
+              "BASE_URL=https://tax.normx-ai.com" \
               "CORS_ORIGIN=https://tax.normx-ai.com,https://normx-ai.com" \
               "SMTP_HOST=${{ secrets.SMTP_HOST }}" \
               "SMTP_PORT=465" \
