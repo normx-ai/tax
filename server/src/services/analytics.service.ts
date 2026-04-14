@@ -165,36 +165,31 @@ export async function getMemberStats(orgId: string) {
 }
 
 /**
- * Recherches les plus populaires sur une periode donnee.
+ * Recherches les plus populaires sur les 30 derniers jours.
+ * Une seule requete SQL raw avec sous-select sur organization_members
+ * (elimine le 2-query pattern + charge de serialization du IN array).
  * Protege contre DoS memoire : limit plafonne cote schema (max 100).
  */
 export async function getPopularSearches(orgId: string, limit: number = 10, offset: number = 0) {
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-  // TODO P2: combiner en une seule requete SQL raw avec sous-requete pour eliminer le N+1
-  // SearchHistory n'a pas de relation directe vers Organization, donc on garde 2 requetes Prisma
-  const memberIds = await prisma.organizationMember.findMany({
-    where: { organizationId: orgId },
-    select: { userId: true },
-  });
-  const userIds = memberIds.map(m => m.userId);
+  const rows = await prisma.$queryRaw<Array<{ query: string; count: bigint }>>`
+    SELECT sh.query, COUNT(*)::bigint AS count
+    FROM search_history sh
+    WHERE sh."userId" IN (
+      SELECT om."userId" FROM organization_members om WHERE om."organizationId" = ${orgId}
+    )
+      AND sh."createdAt" >= ${thirtyDaysAgo}
+    GROUP BY sh.query
+    ORDER BY count DESC
+    LIMIT ${limit}
+    OFFSET ${offset}
+  `;
 
-  const searches = await prisma.searchHistory.groupBy({
-    by: ['query'],
-    where: {
-      userId: { in: userIds },
-      createdAt: { gte: thirtyDaysAgo },
-    },
-    _count: true,
-    orderBy: { _count: { query: 'desc' } },
-    take: limit,
-    skip: offset,
-  });
-
-  return searches.map(s => ({
-    query: s.query,
-    count: s._count,
+  return rows.map((r) => ({
+    query: r.query,
+    count: Number(r.count),
   }));
 }
 

@@ -121,11 +121,25 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 - Les 4 catches de `chat.service.ts` (2 dans sendMessage, 2 dans sendMessageStream pour les fire-and-forget sur createSearchHistory et trackUsage) loggent tous maintenant via `logger.warn` avec contexte. Deja corrige lors des fixes precedents sur le retry Anthropic.
 - Bonus : le fallback `.catch(() => [{ count: BigInt(0) }])` de `analytics.service.ts:259` (requete raw document_audits) logge maintenant aussi un warning avant de renvoyer la valeur par defaut. Ca ne change pas le comportement fonctionnel mais donne de la visibilite en prod si la table n'existe pas ou si la requete echoue.
 
-### 2.2 N+1 dans analytics.service.ts
+### 2.2 N+1 dans analytics.service.ts ✅ RESOLU (2026-04-14)
 
-- Lignes 170-194 : 2 requetes separees au lieu d'un JOIN
-- Impact : perf degradee avec 1000+ orgs
-- Fix : sub-requete Prisma unique
+- `getPopularSearches` faisait 2 requetes Prisma en chaine (organizationMember puis groupBy searchHistory avec IN array). Suboptimal avec beaucoup de membres ou beaucoup de searches.
+- Refactor en une seule requete `$queryRaw` avec sous-select :
+
+  ```sql
+  SELECT sh.query, COUNT(*)::bigint AS count
+  FROM search_history sh
+  WHERE sh."userId" IN (
+    SELECT om."userId" FROM organization_members om WHERE om."organizationId" = $1
+  )
+    AND sh."createdAt" >= $2
+  GROUP BY sh.query
+  ORDER BY count DESC
+  LIMIT $3 OFFSET $4
+  ```
+
+- Postgres optimise ca en semi-join (index sur `search_history.userId` + `organization_members.organizationId`), donc performance lineaire sur le nombre de searches, pas quadratique.
+- Le TODO P2 dans le code est supprime.
 
 ### 2.3 Healthcheck Nginx insuffisant
 
