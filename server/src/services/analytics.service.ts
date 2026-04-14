@@ -256,7 +256,10 @@ export async function getFeatureUsage(orgId: string) {
     prisma.$queryRaw<[{ count: bigint }]>`
       SELECT COUNT(*)::bigint as count FROM document_audits
       WHERE "orgId" = ${orgId} AND "createdAt" >= ${thirtyDaysAgo}
-    `.catch(() => [{ count: BigInt(0) }]),
+    `.catch((err) => {
+      logger.warn('Query document_audits failed, fallback to 0', { error: err instanceof Error ? err.message : String(err) });
+      return [{ count: BigInt(0) }];
+    }),
   ]);
   const auditCount = Number(auditCountResult[0]?.count ?? 0);
 

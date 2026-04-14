@@ -115,11 +115,11 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 ## 2. A surveiller (urgent mais pas bloquant)
 
-### 2.1 Catch silencieux dans chat.service.ts
+### 2.1 Catch silencieux dans chat.service.ts ✅ RESOLU (2026-04-14)
 
-- `chat.service.ts:125-126` : `.catch(() => {})` sans log
-- Impact : audit trail perdu, debug en prod difficile
-- Fix : `.catch(err => logger.warn('...', err))`
+- Verification effectuee : plus aucun `.catch(() => {})` silencieux dans `server/src` (hors tests)
+- Les 4 catches de `chat.service.ts` (2 dans sendMessage, 2 dans sendMessageStream pour les fire-and-forget sur createSearchHistory et trackUsage) loggent tous maintenant via `logger.warn` avec contexte. Deja corrige lors des fixes precedents sur le retry Anthropic.
+- Bonus : le fallback `.catch(() => [{ count: BigInt(0) }])` de `analytics.service.ts:259` (requete raw document_audits) logge maintenant aussi un warning avant de renvoyer la valeur par defaut. Ca ne change pas le comportement fonctionnel mais donne de la visibilite en prod si la table n'existe pas ou si la requete echoue.
 
 ### 2.2 N+1 dans analytics.service.ts
 
