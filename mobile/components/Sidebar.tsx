@@ -118,10 +118,7 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           {isCollapsed ? (
             <Image source={require("@/assets/icon.png")} style={{ width: 32, height: 32, resizeMode: "contain" }} />
           ) : (
-            <View>
-              <Image source={require("@/assets/logo-white.png")} style={{ width: 160, height: 32, resizeMode: "contain" }} />
-              <Text style={{ color: "rgba(232,230,225,0.6)", fontSize: 11, fontFamily: fonts.regular, marginTop: 4 }}>La fiscalité augmentée par l'IA</Text>
-            </View>
+            <Image source={require("@/assets/logo-white.png")} style={{ width: 160, height: 32, resizeMode: "contain" }} />
           )}
           {!isCollapsed && (
             <TouchableOpacity onPress={onToggle} accessibilityLabel={t("sidebar.collapse")} accessibilityRole="button">
