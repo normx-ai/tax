@@ -1,5 +1,11 @@
 import "dotenv/config";
 
+import { validateEnv } from "./utils/env.guard";
+
+// Verifie les variables critiques AVANT de toucher au reste de l'app.
+// En production, crash immediatement si une variable requise manque.
+validateEnv();
+
 import app from "./app";
 import prisma from "./utils/prisma";
 import { initializeCollection } from "./services/rag/qdrant.service";
