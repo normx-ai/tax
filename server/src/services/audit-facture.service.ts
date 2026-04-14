@@ -253,8 +253,12 @@ export async function analyzeInvoice(
     messages: [{ role: "user", content }],
   });
 
-  const text =
-    response.content[0].type === "text" ? response.content[0].text : "";
+  const firstBlock = response.content?.[0];
+  const text = firstBlock?.type === "text" ? firstBlock.text : "";
+
+  if (!text) {
+    throw new Error("Reponse IA vide ou sans bloc texte");
+  }
 
   const jsonMatch = text.match(/\{[\s\S]*\}/);
   if (!jsonMatch) {

@@ -158,11 +158,13 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
   2. Passe uniquement le `err.message` au logger, jamais l'objet `err` complet. Meme en cas de leak, pas de stack trace exposee.
 - Verification : aucun autre `__DEV__ + console` trouve dans `mobile/lib`, `mobile/components`, `mobile/app`.
 
-### 2.5 Optional chaining manquant sur reponse Claude
+### 2.5 Optional chaining manquant sur reponse Claude ✅ RESOLU (2026-04-14)
 
-- `chat.service.ts:112` : `response.content[0].type`
-- Risque : IndexError si reponse vide ou type `tool_use`
-- Fix : `response.content?.[0]?.type === "text"`
+- Audit pointait `chat.service.ts:112`, en realite 2 endroits :
+  1. `chat.service.ts:209` : avait deja `response.content?.[0]?.type === "text"` en condition mais le ternaire retournait `response.content[0].text` sans `?.` — theoriquement safe puisque la condition garantit `content[0]` non-null, mais pas coherent
+  2. `audit-facture.service.ts:257` : AUCUNE protection. `response.content[0].type === "text"` aurait crash si `content` vide ou `undefined`.
+- Solution : extraction dans une variable locale `firstBlock = response.content?.[0]` puis check explicite `firstBlock?.type === "text" ? firstBlock.text : ""`. Plus lisible, plus safe, plus coherent entre les 2 fichiers.
+- Bonus pour audit-facture : ajout d'un throw explicite "Reponse IA vide ou sans bloc texte" avant le parse JSON pour avoir un message d'erreur clair plutot qu'un crash silencieux sur `.match` d'une string vide.
 
 ### 2.6 TODO P2 documente dans analytics
 
@@ -229,8 +231,8 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 **Progres** :
 
 - P0 termines : 5/5 ✅ (credits check+confirm, npm audit fix, whitelist SQL, pagination analytics, healthcheck nginx)
-- P1 termines : 4/5 (env.guard, catch silencieux, N+1 analytics, __DEV__ logging)
-- Reste P1 : optional chaining Claude, error boundary React
+- P1 termines : 5/6 (env.guard, catch silencieux, N+1 analytics, __DEV__ logging, optional chaining Claude)
+- Reste P1 : error boundary React + catch visible front
 - Reste P2 : webhook Stripe (reporte — societe en creation)
 
 **🎉 TOUS LES P0 SONT TERMINES.** Le produit est techniquement pret pour une beta gratuite. Il reste uniquement des ameliorations P1/P2.

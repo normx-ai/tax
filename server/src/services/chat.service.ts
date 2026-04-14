@@ -206,7 +206,8 @@ export async function sendMessage(
   });
 
   const responseTime = Date.now() - startTime;
-  const rawContent = response.content?.[0]?.type === "text" ? response.content[0].text : "";
+  const firstBlock = response.content?.[0];
+  const rawContent = firstBlock?.type === "text" ? firstBlock.text : "";
   const assistantContent = rawContent.replace(/\*\*/g, "");
   const tokensUsed = (response.usage?.input_tokens || 0) + (response.usage?.output_tokens || 0);
 
