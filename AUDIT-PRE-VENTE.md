@@ -166,10 +166,11 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 - Solution : extraction dans une variable locale `firstBlock = response.content?.[0]` puis check explicite `firstBlock?.type === "text" ? firstBlock.text : ""`. Plus lisible, plus safe, plus coherent entre les 2 fichiers.
 - Bonus pour audit-facture : ajout d'un throw explicite "Reponse IA vide ou sans bloc texte" avant le parse JSON pour avoir un message d'erreur clair plutot qu'un crash silencieux sur `.match` d'une string vide.
 
-### 2.6 TODO P2 documente dans analytics
+### 2.6 TODO P2 documente dans analytics ✅ RESOLU (2026-04-14)
 
-- `analytics.service.ts:174` : "TODO P2: combiner en une seule requete SQL"
-- Dette technique connue mais non resolue
+- Corollaire du 2.2 : le TODO etait exactement "combiner en une seule requete SQL", ce qu'on a fait en refactorant `getPopularSearches` en `$queryRaw` avec sous-select (commit 4bf9dff).
+- Le commentaire TODO a ete supprime dans ce meme commit.
+- Verification : aucun TODO/FIXME/XXX restant dans `server/src/services/analytics.service.ts`.
 
 ---
 
