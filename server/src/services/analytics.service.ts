@@ -165,9 +165,10 @@ export async function getMemberStats(orgId: string) {
 }
 
 /**
- * Recherches les plus populaires (30 derniers jours)
+ * Recherches les plus populaires sur une periode donnee.
+ * Protege contre DoS memoire : limit plafonne cote schema (max 100).
  */
-export async function getPopularSearches(orgId: string, limit: number = 10) {
+export async function getPopularSearches(orgId: string, limit: number = 10, offset: number = 0) {
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
@@ -188,6 +189,7 @@ export async function getPopularSearches(orgId: string, limit: number = 10) {
     _count: true,
     orderBy: { _count: { query: 'desc' } },
     take: limit,
+    skip: offset,
   });
 
   return searches.map(s => ({
@@ -197,17 +199,19 @@ export async function getPopularSearches(orgId: string, limit: number = 10) {
 }
 
 /**
- * Temps de réponse moyen de l'IA (30 derniers jours)
+ * Temps de reponse moyen de l'IA sur une periode donnee.
+ * La periode est plafonnee cote schema (max 365 jours) pour eviter
+ * un scan massif sur des annees de donnees.
  */
-export async function getResponseTimeStats(orgId: string) {
-  const thirtyDaysAgo = new Date();
-  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+export async function getResponseTimeStats(orgId: string, days: number = 30) {
+  const since = new Date();
+  since.setDate(since.getDate() - days);
 
   const stats = await prisma.message.aggregate({
     where: {
       role: 'ASSISTANT',
       conversation: { organizationId: orgId },
-      createdAt: { gte: thirtyDaysAgo },
+      createdAt: { gte: since },
       responseTime: { not: null },
     },
     _avg: { responseTime: true, tokensUsed: true },

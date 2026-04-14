@@ -4,7 +4,7 @@ import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireAdmin, requireMember } from '../middleware/orgRole.middleware';
 import { requirePaid } from '../middleware/subscription.middleware';
 import { validate } from '../middleware/validate.middleware';
-import { daysQuery } from '../schemas/analytics.schema';
+import { daysQuery, popularSearchesQuery, responseTimesQuery } from '../schemas/analytics.schema';
 import * as analyticsService from '../services/analytics.service';
 import { asyncHandler } from '../middleware/asyncHandler';
 
@@ -105,15 +105,19 @@ router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, vali
 }));
 
 // GET /api/analytics/popular-searches
-router.get('/popular-searches', requireAuth, resolveTenant, requireOrg, requireMember, asyncHandler(async (req: AuthRequest, res: Response) => {
-  const limit = Number(req.query.limit) || 10;
-  const data = await analyticsService.getPopularSearches(req.orgId!, limit);
+// limit: 1-100 (default 10), offset: 0+ (default 0) — validation Zod
+router.get('/popular-searches', requireAuth, resolveTenant, requireOrg, requireMember, validate({ query: popularSearchesQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const limit = Number(req.query.limit);
+  const offset = Number(req.query.offset);
+  const data = await analyticsService.getPopularSearches(req.orgId!, limit, offset);
   res.json(data);
 }));
 
 // GET /api/analytics/response-times
-router.get('/response-times', requireAuth, resolveTenant, requireOrg, requireMember, asyncHandler(async (req: AuthRequest, res: Response) => {
-  const data = await analyticsService.getResponseTimeStats(req.orgId!);
+// days: 1-365 (default 30) — validation Zod pour eviter un scan massif
+router.get('/response-times', requireAuth, resolveTenant, requireOrg, requireMember, validate({ query: responseTimesQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const days = Number(req.query.days);
+  const data = await analyticsService.getResponseTimeStats(req.orgId!, days);
   res.json(data);
 }));
 

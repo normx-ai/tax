@@ -97,12 +97,19 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 - Effet : toute injection SQL via schema est maintenant bloquee a deux niveaux (construction + utilisation), et tout bug futur sur ces helpers fail fast avec un 500 clair plutot que d'executer une requete malicieuse.
 
-### 1.6 Pagination absente sur 2 endpoints analytics
+### 1.6 Pagination absente sur 2 endpoints analytics ✅ RESOLU (2026-04-14)
 
-- Fichier : `server/src/routes/analytics.routes.ts`
-- Methodes : `getPopularSearches()`, `getResponseTimeStats()`
-- Risque : DoS potentiel avec des milliers d'organisations
-- Fix : validation Zod avec `limit.max(100)` et offset
+- Fichier : `server/src/routes/analytics.routes.ts` + service + schemas
+- Probleme reel trouve :
+  - `/popular-searches` acceptait `limit` de la query sans cap → un attaquant pouvait demander `?limit=999999999` → scan/groupBy massif Prisma → crash memoire
+  - `/response-times` : periode hardcodee a 30 jours, aucun parametrage ni cap
+- Solution implementee :
+  1. Nouveau schema `popularSearchesQuery` : `limit` 1..100 (default 10) + `offset` >=0 (default 0)
+  2. Nouveau schema `responseTimesQuery` : `days` 1..365 (default 30) — plafonne pour eviter un scan sur plusieurs annees
+  3. `daysQuery` existant mis a jour avec `.max(365)`
+  4. Routes validees par `validate({ query: ... })` qui rejette 400 si hors bornes
+  5. Service `getPopularSearches` accepte maintenant `offset`
+  6. Service `getResponseTimeStats` accepte maintenant `days` parametrable
 
 ---
 
@@ -164,18 +171,18 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 ## 4. Checklist des 10 aspects
 
-| #  | Aspect              | Statut        | Notes                                                                 |
-| -- | ------------------- | ------------- | --------------------------------------------------------------------- |
-| 1  | Flux critiques user | ⚠ partiel    | Signup/login/chat/simulateurs OK. Passage Pro bloque (webhook absent) |
-| 2  | Gestion erreurs     | ⚠ partiel    | Backend OK. Front : peu de catch, pas d'error boundary global         |
-| 3  | Dead code           | ✓ OK         | 0 TODO critique, routes propres                                       |
-| 4  | Branding / UX       | ✓ OK         | Logo consistant, favicon, francais correct                            |
-| 5  | Responsive mobile   | ✓ OK         | Hook actif, modals mobile-friendly                                    |
-| 6  | Pages legales       | ✓ OK         | Mentions, CGU, confidentialite conformes                              |
-| 7  | Securite            | ✗ critique   | CVE handlebars + validation SQL + race condition credits              |
-| 8  | Performance         | ⚠ bon        | Indexes OK, N+1 analytics, pagination manquante                       |
-| 9  | Monitoring          | ✓ OK         | Logger structure, health check, no secret logged                      |
-| 10 | Deploiement         | ✓ OK          | CI OK, secrets injectes proprement via GitHub Actions au deploy       |
+| #  | Aspect              | Statut (maj 2026-04-14) | Notes                                                                                         |
+| -- | ------------------- | ----------------------- | --------------------------------------------------------------------------------------------- |
+| 1  | Flux critiques user | ⚠ partiel              | Signup/login/chat/simulateurs OK. Stripe webhook reporte (societe en cours de creation)       |
+| 2  | Gestion erreurs     | ⚠ partiel              | Backend OK + env.guard + catch retry Claude. Reste : error boundary React + catch front       |
+| 3  | Dead code           | ✓ OK                   | 0 TODO critique, routes propres                                                               |
+| 4  | Branding / UX       | ✓ OK                   | Logo consistant, favicon, francais correct                                                    |
+| 5  | Responsive mobile   | ✓ OK                   | Hook actif, modals mobile-friendly                                                            |
+| 6  | Pages legales       | ✓ OK                   | Mentions, CGU, confidentialite conformes                                                      |
+| 7  | Securite            | ✓ OK                   | npm audit fix (1.4), whitelist SQL + assertSafeSchemaName (1.5), credits atomiques (1.2)      |
+| 8  | Performance         | ✓ OK                   | Indexes OK, pagination analytics ajoutee (1.6, cap 100/365). Reste N+1 documente en P2        |
+| 9  | Monitoring          | ✓ OK                   | Logger structure, health check, no secret logged, env.guard fail-fast au boot                 |
+| 10 | Deploiement         | ✓ OK                   | CI OK, secrets injectes proprement via GitHub Actions au deploy                               |
 
 ---
 
@@ -190,7 +197,7 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 | P1       | Validation des env vars critiques au boot (fail-fast)    | 30 min        | ✅ fait (03f47d5) |
 | P1       | Error boundary React + catch visible front               | 2 h           | ⏳ pending   |
 | P1       | Optional chaining response.content Claude                | 15 min        | ⏳ pending   |
-| P1       | Pagination analytics routes                              | 1 h           | ⏳ pending   |
+| P0       | Pagination analytics routes (1.6)                        | 1 h           | ✅ fait      |
 | P2       | N+1 analytics en sub-requete                             | 30 min        | ⏳ pending   |
 | P2       | Logs sur catch silencieux chat.service                   | 15 min        | ⏳ pending   |
 | P2       | Webhook Stripe (reporte : societe en cours de creation)  | 1 jour        | ⏸ reporte   |
@@ -202,12 +209,12 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 **Progres** :
 
-- P0 termines : 3/4 (credits check+confirm, npm audit fix, whitelist SQL)
+- P0 termines : 4/5 (credits check+confirm, npm audit fix, whitelist SQL, pagination analytics)
 - P1 termines : 1/4 (env.guard)
 - Reste P0 : healthcheck nginx `/api/health` (15 min)
 
 **Total P0 restant : ~15 minutes de travail.**
-**Total P0 + P1 restant : ~3h30 de travail.**
+**Total P0 + P1 restant : ~2h30 de travail.**
 
 ---
 
