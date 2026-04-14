@@ -2,7 +2,7 @@ import { Router } from "express";
 import multer from "multer";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
-import { checkAuditCredits } from "../middleware/subscription.middleware";
+import { checkAuditCredits, confirmCreditUsage } from "../middleware/subscription.middleware";
 import { analyzeInvoice, type DocumentType } from "../services/audit-facture.service";
 import prisma from "../utils/prisma";
 import { createLogger } from "../utils/logger";
@@ -62,9 +62,13 @@ router.post(
         },
       });
 
+      // L'audit a reussi et est sauvegarde : on debite les credits
+      await confirmCreditUsage(req);
+
       return res.json(result);
     } catch (err) {
       logger.error("Erreur audit facture:", err instanceof Error ? err.message : err);
+      // Echec : pas de debit de credit (reservation annulee implicitement)
       return res.status(500).json({ error: "Erreur lors de l'analyse" });
     }
   }

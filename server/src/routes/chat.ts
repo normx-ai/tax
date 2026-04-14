@@ -4,7 +4,7 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
-import { checkCredits } from "../middleware/subscription.middleware";
+import { checkCredits, confirmCreditUsage } from "../middleware/subscription.middleware";
 import { validate } from "../middleware/validate.middleware";
 import { messageStreamBody, conversationIdParam } from "../schemas/chat.schema";
 import * as chatService from "../services/chat.service";
@@ -39,11 +39,20 @@ router.post("/message/stream", requireAuth, resolveTenant, checkCredits, validat
   res.setHeader("X-Accel-Buffering", "no");
   res.flushHeaders();
 
+  let streamCompleted = false;
   try {
     const stream = chatService.sendMessageStream(req.tenantSchema!, userId, content.trim(), conversationId);
 
     for await (const event of stream) {
       res.write(`event: ${event.event}\ndata: ${event.data}\n\n`);
+      if (event.event === "done") {
+        streamCompleted = true;
+      }
+    }
+
+    // Debit du credit UNIQUEMENT si le stream s'est termine avec succes
+    if (streamCompleted) {
+      await confirmCreditUsage(req);
     }
 
     res.write("event: close\ndata: {}\n\n");
@@ -52,6 +61,7 @@ router.post("/message/stream", requireAuth, resolveTenant, checkCredits, validat
     logger.error("[chat/stream]", err);
     const message = err instanceof Error ? err.message : "Erreur serveur";
     res.write(`event: error\ndata: ${JSON.stringify({ error: message })}\n\n`);
+    // En cas d'echec, on NE debite PAS le credit (reservation annulee implicitement)
     res.end();
   }
 });

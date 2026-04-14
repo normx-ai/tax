@@ -100,9 +100,30 @@ export function requirePlan(minPlan: PlanName) {
 }
 
 /**
- * Deduction generique de credits (factorise checkCredits et checkAuditCredits).
+ * Pattern "check + confirm" en 2 temps pour la deduction de credits.
+ *
+ * ETAPE 1 - reserveCredits (middleware avant la route) :
+ *   Verifie que l'utilisateur a assez de credits. Ne fait AUCUNE ecriture DB.
+ *   Attache req.pendingCreditCost au cas ou la route voudra confirmer apres succes.
+ *
+ * ETAPE 2 - confirmCreditUsage (appele par la route apres succes) :
+ *   Execute une transaction Prisma qui :
+ *     (a) UPDATE organization_members avec verification atomique du quota
+ *     (b) UPDATE subscription.creditsUsed (compteur global, plans payants uniquement)
+ *   Les deux ecritures sont rollback automatiquement si l'une echoue.
+ *
+ * AVANTAGES vs l'ancienne approche "deduct before" :
+ *   - Les credits ne sont jamais consommes si le travail (ex: chat IA) echoue
+ *   - Les deux compteurs (member + subscription) restent coherents meme en cas de crash
+ *   - Plus de divergence silencieuse entre les tables
  */
-async function deductCredits(req: AuthRequest, res: Response, next: NextFunction, cost: number) {
+
+async function reserveCreditsInternal(
+  req: AuthRequest,
+  res: Response,
+  next: NextFunction,
+  cost: number,
+) {
   if (!req.orgId || !req.userId) {
     next();
     return;
@@ -117,91 +138,137 @@ async function deductCredits(req: AuthRequest, res: Response, next: NextFunction
       res.status(403).json({ error: 'Abonnement expiré. Veuillez renouveler.' });
       return;
     }
-
     if (isUnlimited(ctx.creditsPerMonth)) {
-      req.quotaIncremented = false;
+      req.pendingCreditCost = 0; // rien a confirmer
+      req.pendingCreditPlan = ctx.plan;
       next();
       return;
     }
 
-    // FREE plan : credits totaux
-    if (ctx.plan === 'FREE') {
-      const affected: number = await prisma.$executeRaw`
-        UPDATE organization_members
-        SET "creditsUsed" = "creditsUsed" + ${cost}
-        WHERE "userId" = ${req.userId}
-          AND "organizationId" = ${req.orgId}
-          AND "creditsUsed" + ${cost} <= (
-            SELECT "creditsTotal" FROM subscriptions WHERE "organizationId" = ${req.orgId}
-          )
-      `;
+    // Verification de disponibilite SANS ecriture DB
+    const member = await prisma.organizationMember.findUnique({
+      where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
+      select: { creditsUsed: true },
+    });
+    const used = member?.creditsUsed || 0;
 
-      if (affected === 0) {
-        const member = await prisma.organizationMember.findUnique({
-          where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
-          select: { creditsUsed: true },
-        });
-        const sub = await prisma.subscription.findUnique({
-          where: { organizationId: req.orgId },
-          select: { creditsTotal: true },
-        });
+    if (ctx.plan === 'FREE') {
+      const sub = await prisma.subscription.findUnique({
+        where: { organizationId: req.orgId },
+        select: { creditsTotal: true },
+      });
+      const limit = sub?.creditsTotal || 0;
+      if (used + cost > limit) {
         res.status(429).json({
           error: cost > 1 ? `Crédits insuffisants (coût: ${cost} crédits)` : 'Crédits épuisés',
-          quota: { used: member?.creditsUsed || 0, limit: sub?.creditsTotal || 0, cost, plan: ctx.plan },
+          quota: { used, limit, cost, plan: ctx.plan },
         });
         return;
       }
-
-      req.quotaIncremented = true;
-      cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
-      next();
-      return;
+    } else {
+      if (used + cost > ctx.creditsPerMonth) {
+        res.status(429).json({
+          error: cost > 1 ? `Crédits mensuels insuffisants (coût: ${cost} crédits)` : 'Crédits mensuels épuisés',
+          quota: { used, limit: ctx.creditsPerMonth, cost, plan: ctx.plan },
+        });
+        return;
+      }
     }
 
-    // Plans payants : credits mensuels par user
-    const affected: number = await prisma.$executeRaw`
-      UPDATE organization_members
-      SET "creditsUsed" = "creditsUsed" + ${cost}
-      WHERE "userId" = ${req.userId}
-        AND "organizationId" = ${req.orgId}
-        AND "creditsUsed" + ${cost} <= ${ctx.creditsPerMonth}
-    `;
-
-    if (affected === 0) {
-      const member = await prisma.organizationMember.findUnique({
-        where: { userId_organizationId: { userId: req.userId, organizationId: req.orgId } },
-        select: { creditsUsed: true },
-      });
-      res.status(429).json({
-        error: cost > 1 ? `Crédits mensuels insuffisants (coût: ${cost} crédits)` : 'Crédits mensuels épuisés',
-        quota: { used: member?.creditsUsed || 0, limit: ctx.creditsPerMonth, cost, plan: ctx.plan },
-      });
-      return;
-    }
-
-    // Incrementer compteur global org (synchrone pour eviter race condition)
-    await prisma.subscription.update({
-      where: { organizationId: req.orgId },
-      data: { creditsUsed: { increment: cost } },
-    });
-
-    req.quotaIncremented = true;
-    cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${req.orgId}`);
+    // Reserve ok : on attache le cout pour que la route puisse confirmer apres succes
+    req.pendingCreditCost = cost;
+    req.pendingCreditPlan = ctx.plan;
     next();
   } catch (err) {
-    logger.error('Erreur vérification crédits', err);
+    logger.error('Erreur verification credits', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
 }
 
-/** Vérifie et décrémente 1 crédit. */
-export function checkCredits(req: AuthRequest, res: Response, next: NextFunction) {
-  return deductCredits(req, res, next, 1);
+/**
+ * A appeler par la route APRES le succes du travail (ex: apres le 'done' event
+ * du stream chat). Execute la deduction reelle dans une transaction Prisma.
+ *
+ * Si insufficientCredits est throw par le WHERE atomique, c'est qu'une autre
+ * requete a consomme le credit entre-temps (race tres rare) : on log et on
+ * retourne false. La route doit alors decider si elle considere la reponse
+ * comme livree ou non.
+ */
+export async function confirmCreditUsage(req: AuthRequest): Promise<boolean> {
+  if (req.quotaIncremented) return true; // deja confirme, idempotent
+  if (!req.pendingCreditCost || req.pendingCreditCost === 0) return true;
+  if (!req.orgId || !req.userId) return true;
+
+  const cost = req.pendingCreditCost;
+  const plan = req.pendingCreditPlan || 'FREE';
+  const orgId = req.orgId;
+  const userId = req.userId;
+
+  try {
+    await prisma.$transaction(async (tx) => {
+      if (plan === 'FREE') {
+        // Plan FREE : credits totaux, limite dans subscriptions.creditsTotal
+        const affected: number = await tx.$executeRaw`
+          UPDATE organization_members
+          SET "creditsUsed" = "creditsUsed" + ${cost}
+          WHERE "userId" = ${userId}
+            AND "organizationId" = ${orgId}
+            AND "creditsUsed" + ${cost} <= (
+              SELECT "creditsTotal" FROM subscriptions WHERE "organizationId" = ${orgId}
+            )
+        `;
+        if (affected === 0) {
+          throw new Error('RACE_CONDITION_QUOTA_EXCEEDED');
+        }
+      } else {
+        // Plans payants : credits mensuels par user + compteur global org
+        const affected: number = await tx.$executeRaw`
+          UPDATE organization_members
+          SET "creditsUsed" = "creditsUsed" + ${cost}
+          WHERE "userId" = ${userId}
+            AND "organizationId" = ${orgId}
+            AND "creditsUsed" + ${cost} <= (
+              SELECT "creditsPerMonth" FROM subscriptions WHERE "organizationId" = ${orgId}
+            )
+        `;
+        if (affected === 0) {
+          throw new Error('RACE_CONDITION_QUOTA_EXCEEDED');
+        }
+
+        // Compteur global de l'organisation (dans la meme transaction)
+        await tx.subscription.update({
+          where: { organizationId: orgId },
+          data: { creditsUsed: { increment: cost } },
+        });
+      }
+    });
+
+    req.quotaIncremented = true;
+    req.pendingCreditCost = 0;
+    cacheService.del(`${CACHE_PREFIX.SUBSCRIPTION}${orgId}`);
+    return true;
+  } catch (err) {
+    if (err instanceof Error && err.message === 'RACE_CONDITION_QUOTA_EXCEEDED') {
+      // Cas rare : le quota a ete consomme par une autre requete simultanee
+      // entre le reserve et le confirm. On log mais on ne bloque pas la reponse
+      // deja livree au client (c'est du travail perdu cote coute API mais la
+      // reponse est envoyee).
+      logger.warn('Race condition sur quota credits (reservation perdue)', { orgId, userId, cost });
+      return false;
+    }
+    logger.error('Erreur confirmation credits', err);
+    return false;
+  }
 }
 
-/** Vérifie et décrémente CREDITS_PER_AUDIT crédits. */
+/** Verifie et reserve 1 credit. La route doit appeler confirmCreditUsage(req) apres succes. */
+export function checkCredits(req: AuthRequest, res: Response, next: NextFunction) {
+  return reserveCreditsInternal(req, res, next, 1);
+}
+
+/** Verifie et reserve CREDITS_PER_AUDIT credits. La route doit appeler confirmCreditUsage(req) apres succes. */
 export function checkAuditCredits(req: AuthRequest, res: Response, next: NextFunction) {
-  return deductCredits(req, res, next, CREDITS_PER_AUDIT);
+  return reserveCreditsInternal(req, res, next, CREDITS_PER_AUDIT);
 }
 
 export function requirePremium(req: AuthRequest, res: Response, next: NextFunction) {

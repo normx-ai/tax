@@ -35,6 +35,12 @@ export interface AuthRequest extends Request {
   orgRole?: string;
   orgPermissions?: Record<string, boolean>;
   quotaIncremented?: boolean;
+  // Pattern check + confirm pour la deduction de credits
+  // pendingCreditCost : cout reserve par reserveCredits, a confirmer apres succes
+  pendingCreditCost?: number;
+  // pendingCreditPlan : plan au moment de la reservation (pour savoir si on fait
+  // l'update de subscription.creditsUsed ou non)
+  pendingCreditPlan?: string;
   tenantSchema?: string;
 }
 
