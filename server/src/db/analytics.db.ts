@@ -2,9 +2,10 @@
  * Operations DB Analytics / Usage Stats — Schema isolation
  */
 
-import pool from "./pool";
+import pool, { assertSafeSchemaName } from "./pool";
 
 export async function trackUsage(schema: string, userId: string, action: string, details?: Record<string, unknown>) {
+  assertSafeSchemaName(schema);
   await pool.query(
     `INSERT INTO "${schema}".usage_stats (user_id, action, details) VALUES ($1, $2, $3)`,
     [userId, action, JSON.stringify(details || {})]
@@ -12,6 +13,7 @@ export async function trackUsage(schema: string, userId: string, action: string,
 }
 
 export async function getUserStats(schema: string, userId: string) {
+  assertSafeSchemaName(schema);
   const conversations = await pool.query(
     `SELECT COUNT(*) as c FROM "${schema}".conversations WHERE user_id = $1`, [userId]
   );
@@ -30,6 +32,7 @@ export async function getUserStats(schema: string, userId: string) {
 }
 
 export async function getUsageByPeriod(schema: string, userId: string, days: number = 30) {
+  assertSafeSchemaName(schema);
   const r = await pool.query(
     `SELECT DATE(created_at) as date, action, COUNT(*) as count
      FROM "${schema}".usage_stats WHERE user_id = $1 AND created_at > NOW() - make_interval(days => $2)

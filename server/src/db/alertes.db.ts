@@ -2,9 +2,10 @@
  * Operations DB Alertes Fiscales — Schema isolation
  */
 
-import pool from "./pool";
+import pool, { assertSafeSchemaName } from "./pool";
 
 export async function listAlertes(schema: string, userId: string) {
+  assertSafeSchemaName(schema);
   const r = await pool.query(
     `SELECT id, user_id AS "userId", type, titre, description, date_echeance AS "dateEcheance", statut, lu, created_at AS "createdAt"
      FROM "${schema}".alertes_fiscales WHERE user_id = $1 ORDER BY date_echeance ASC`,
@@ -16,6 +17,7 @@ export async function listAlertes(schema: string, userId: string) {
 export async function createAlerte(schema: string, userId: string, data: {
   type: string; titre: string; description?: string; date_echeance?: string;
 }) {
+  assertSafeSchemaName(schema);
   const r = await pool.query(
     `INSERT INTO "${schema}".alertes_fiscales (user_id, type, titre, description, date_echeance)
      VALUES ($1, $2, $3, $4, $5) RETURNING id, type, titre, description, date_echeance AS "dateEcheance", statut, lu, created_at AS "createdAt"`,
@@ -25,6 +27,7 @@ export async function createAlerte(schema: string, userId: string, data: {
 }
 
 export async function markAlerteLue(schema: string, id: string, userId: string) {
+  assertSafeSchemaName(schema);
   await pool.query(
     `UPDATE "${schema}".alertes_fiscales SET lu = true WHERE id = $1 AND user_id = $2`,
     [id, userId]
@@ -32,6 +35,7 @@ export async function markAlerteLue(schema: string, id: string, userId: string) 
 }
 
 export async function deleteAlerte(schema: string, id: string, userId: string) {
+  assertSafeSchemaName(schema);
   await pool.query(
     `DELETE FROM "${schema}".alertes_fiscales WHERE id = $1 AND user_id = $2`,
     [id, userId]

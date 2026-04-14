@@ -84,12 +84,18 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 - Les 5 restantes sont acceptees : devDependencies (jamais shippees en production), non-exploitables par un attaquant externe. Le fix force downgraderait `jest-expo` de 48 a 47 (breaking change sur les tests).
 - Note : l'audit initial mentionnait handlebars et express-rate-limit mais les vraies CVE identifiees au moment du fix etaient axios et nodemailer (les listes de CVE sont dynamiques).
 
-### 1.5 Validation schema SQL trop permissive
+### 1.5 Validation schema SQL trop permissive ✅ RESOLU (2026-04-14)
 
 - Fichier : `server/src/db/pool.ts`
-- Probleme : regex accepte `pg_catalog`, `information_schema`
-- Risque : pollution cross-tenant / fuite de donnees
-- Fix : whitelist stricte de noms de schemas valides
+- Analyse approfondie : le code existant prefixait deja toujours avec `tenant_`, donc `pg_catalog`/`information_schema` ne pouvaient jamais etre renvoyes directement. Mais les helpers db (`chat.db.ts`, `analytics.db.ts`, `alertes.db.ts`, `audit.db.ts`) acceptaient `schema: string` et l'injectaient directement en raw SQL via template literals, sans re-validation. Un bug en amont aurait pu permettre une injection.
+
+- Solution implementee :
+  1. Nouveau pattern strict `TENANT_SCHEMA_REGEX = /^tenant_[a-z0-9_]{1,55}$/` — force le prefixe `tenant_` + char set limite
+  2. `getValidatedSchemaName(slug)` : construit depuis un slug utilisateur, verifie le pattern strict
+  3. Nouveau `assertSafeSchemaName(schema)` exporte : verification defensive en entree des helpers db. Leve une exception si pattern non-respecte (pas de sanitization silencieuse — on veut que le bug soit loud).
+  4. Appel defensif de `assertSafeSchemaName` dans toutes les fonctions des db helpers (`chat.db`, `analytics.db`, `alertes.db`, `audit.db`) qui injectent le schema via template literal.
+
+- Effet : toute injection SQL via schema est maintenant bloquee a deux niveaux (construction + utilisation), et tout bug futur sur ces helpers fail fast avec un 500 clair plutot que d'executer une requete malicieuse.
 
 ### 1.6 Pagination absente sur 2 endpoints analytics
 
@@ -178,7 +184,7 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 | Priorite | Tache                                                    | Duree estimee | Statut      |
 | -------- | -------------------------------------------------------- | ------------- | ----------- |
 | P0       | `npm audit fix`                                          | 15 min        | ✅ fait (2b5a77d) |
-| P0       | Whitelist schemas SQL dans `db/pool.ts`                  | 15 min        | ⏳ pending   |
+| P0       | Whitelist schemas SQL dans `db/pool.ts`                  | 15 min        | ✅ fait        |
 | P0       | Transaction atomique credits (middleware subscription)   | 1 h           | ✅ fait (cd6a37b) |
 | P0       | Fix healthcheck Nginx sur `/api/health`                  | 15 min        | ⏳ pending   |
 | P1       | Validation des env vars critiques au boot (fail-fast)    | 30 min        | ✅ fait (03f47d5) |
@@ -196,12 +202,12 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 **Progres** :
 
-- P0 termines : 2/4 (credits check+confirm, npm audit fix)
+- P0 termines : 3/4 (credits check+confirm, npm audit fix, whitelist SQL)
 - P1 termines : 1/4 (env.guard)
-- Reste P0 : whitelist SQL (15min), healthcheck nginx (15min)
+- Reste P0 : healthcheck nginx `/api/health` (15 min)
 
-**Total P0 restant : ~30 minutes de travail.**
-**Total P0 + P1 restant : ~3h45 de travail.**
+**Total P0 restant : ~15 minutes de travail.**
+**Total P0 + P1 restant : ~3h30 de travail.**
 
 ---
 

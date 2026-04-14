@@ -3,9 +3,10 @@
  * Remplace les appels Prisma dans chat.service.ts
  */
 
-import pool from "./pool";
+import pool, { assertSafeSchemaName } from "./pool";
 
 export async function findConversation(schema: string, id: string, userId: string) {
+  assertSafeSchemaName(schema);
   const r = await pool.query(
     `SELECT id, user_id AS "userId", title, agent, created_at AS "createdAt", updated_at AS "updatedAt"
      FROM "${schema}".conversations WHERE id = $1 AND user_id = $2`,
@@ -15,6 +16,7 @@ export async function findConversation(schema: string, id: string, userId: strin
 }
 
 export async function createConversation(schema: string, userId: string, title: string) {
+  assertSafeSchemaName(schema);
   const r = await pool.query(
     `INSERT INTO "${schema}".conversations (user_id, title) VALUES ($1, $2) RETURNING *`,
     [userId, title]
@@ -30,6 +32,7 @@ export async function createMessage(
   content: string,
   articlesRefs?: unknown[]
 ) {
+  assertSafeSchemaName(schema);
   const r = await pool.query(
     `INSERT INTO "${schema}".messages (conversation_id, role, content, articles_refs)
      VALUES ($1, $2, $3, $4) RETURNING *`,
@@ -39,6 +42,7 @@ export async function createMessage(
 }
 
 export async function getMessages(schema: string, conversationId: string, limit: number = 20) {
+  assertSafeSchemaName(schema);
   const r = await pool.query(
     `SELECT role, content FROM (
        SELECT role, content, created_at FROM "${schema}".messages
@@ -50,6 +54,7 @@ export async function getMessages(schema: string, conversationId: string, limit:
 }
 
 export async function listConversations(schema: string, userId: string) {
+  assertSafeSchemaName(schema);
   const r = await pool.query(
     `SELECT c.id, c.title, c.agent, c.created_at AS "createdAt", c.updated_at AS "updatedAt",
        (SELECT COUNT(*) FROM "${schema}".messages m WHERE m.conversation_id = c.id)::int AS "_count_messages",
@@ -64,6 +69,7 @@ export async function listConversations(schema: string, userId: string) {
 }
 
 export async function deleteConversation(schema: string, id: string, userId: string) {
+  assertSafeSchemaName(schema);
   const conv = await findConversation(schema, id, userId);
   if (!conv) return null;
   await pool.query(`DELETE FROM "${schema}".conversations WHERE id = $1`, [id]);
@@ -71,6 +77,7 @@ export async function deleteConversation(schema: string, id: string, userId: str
 }
 
 export async function getConversationWithMessages(schema: string, id: string, userId: string) {
+  assertSafeSchemaName(schema);
   const conv = await findConversation(schema, id, userId);
   if (!conv) return null;
   const msgs = await pool.query(
@@ -88,6 +95,7 @@ export async function getConversationWithMessages(schema: string, id: string, us
 }
 
 export async function updateConversationTitle(schema: string, id: string, title: string) {
+  assertSafeSchemaName(schema);
   await pool.query(
     `UPDATE "${schema}".conversations SET title = $1, updated_at = NOW() WHERE id = $2`,
     [title, id]
@@ -95,6 +103,7 @@ export async function updateConversationTitle(schema: string, id: string, title:
 }
 
 export async function createSearchHistory(schema: string, userId: string, query: string, resultsCount: number) {
+  assertSafeSchemaName(schema);
   await pool.query(
     `INSERT INTO "${schema}".search_history (user_id, query, results_count) VALUES ($1, $2, $3)`,
     [userId, query, resultsCount]
