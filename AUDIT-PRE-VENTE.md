@@ -43,19 +43,34 @@ if (process.env.NODE_ENV === 'production' && missing.length > 0) {
 
 Ce point passe de **P0 bloquant** a **P1 hardening**.
 
-### 1.2 Race condition sur la deduction de credits
+### 1.2 Race condition sur la deduction de credits ✅ RESOLU (2026-04-14)
 
 - Fichier : `server/src/middleware/subscription.middleware.ts`
-- Probleme : debit non-atomique avec increment subscription (fire-and-forget sans await)
-- Risque : credits perdus si crash du process entre les deux operations
-- Fix : wrapper les deux operations dans une transaction Prisma
+- Commit : `cd6a37b`
+- Deux problemes corriges :
+  1. Les 2 UPDATE (`organization_members` + `subscriptions`) n'etaient pas dans une transaction → divergence possible des compteurs en cas de crash entre les ecritures
+  2. Les credits etaient debites AVANT le travail → l'utilisateur payait meme si Claude echouait
 
-### 1.3 Webhook Stripe inexistant
+- Solution implementee : pattern "check + confirm"
+  - `reserveCreditsInternal` (middleware) : verifie la disponibilite via SELECT, AUCUNE ecriture DB. Attache `req.pendingCreditCost` et `req.pendingCreditPlan`
+  - `confirmCreditUsage(req)` : helper exporte, execute les 2 UPDATE dans une transaction Prisma. Rollback automatique si une ecriture echoue
+  - Routes adaptees :
+    - `chat.ts` : confirm apres l'event `done` du stream (pas de debit si Claude plante)
+    - `audit-facture.routes.ts` : confirm apres l'enregistrement en DB de l'audit reussi
+  - Race condition rare (double reservation au dernier credit) detectee par le `WHERE creditsUsed + cost <= limit` atomique, loggee comme warning
+
+- Resultat :
+  - Atomicite garantie : plus de divergence entre `member.creditsUsed` et `subscription.creditsUsed`
+  - Equite : aucun credit preleve si le travail echoue (Claude overloaded, timeout, erreur reseau)
+
+### 1.3 Webhook Stripe inexistant (reporte — pas bloquant immediat)
 
 - Aucune route `/webhook/stripe` detectee
-- Consequence : le passage free trial -> Pro est techniquement impossible
-- Impact commercial : impossible d'encaisser des abonnements
-- Fix : implementer `/webhook/stripe` avec verification signature
+- **Contexte metier** : NORMX AI SAS est en cours de creation. Pas encore de compte Stripe, pas encore de facturation clients. Le webhook n'est donc pas necessaire pour la mise en ligne beta actuelle.
+- Ce point sera repris des que la societe sera enregistree et que le compte Stripe sera cree.
+- Fix (pour plus tard) : implementer `/webhook/stripe` avec verification signature
+
+**Reclasse en P2** (pas bloquant tant que l'app est en beta gratuite).
 
 ### 1.4 Dependances vulnerables CVE
 
@@ -154,23 +169,32 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 ## 5. Plan d'action recommande (ordre de priorite)
 
-| Priorite | Tache                                                    | Duree estimee |
-| -------- | -------------------------------------------------------- | ------------- |
-| P0       | Implementer webhook Stripe (passage Pro)                 | 1 jour        |
-| P0       | `npm audit fix` + fix validation SQL                     | 30 min        |
-| P0       | Transaction atomique credits (middleware subscription)   | 1 h           |
-| P0       | Fix healthcheck Nginx sur `/api/health`                  | 15 min        |
-| P1       | Validation des env vars critiques au boot (fail-fast)    | 30 min        |
-| P1       | Error boundary React + catch visible front               | 2 h           |
-| P1       | Optional chaining response.content Claude                | 15 min        |
-| P1       | Pagination analytics routes                              | 1 h           |
-| P2       | N+1 analytics en sub-requete                             | 30 min        |
-| P2       | Logs sur catch silencieux chat.service                   | 15 min        |
+| Priorite | Tache                                                    | Duree estimee | Statut      |
+| -------- | -------------------------------------------------------- | ------------- | ----------- |
+| P0       | `npm audit fix` + fix validation SQL                     | 30 min        | ⏳ pending   |
+| P0       | Transaction atomique credits (middleware subscription)   | 1 h           | ✅ fait (cd6a37b) |
+| P0       | Fix healthcheck Nginx sur `/api/health`                  | 15 min        | ⏳ pending   |
+| P1       | Validation des env vars critiques au boot (fail-fast)    | 30 min        | ✅ fait (03f47d5) |
+| P1       | Error boundary React + catch visible front               | 2 h           | ⏳ pending   |
+| P1       | Optional chaining response.content Claude                | 15 min        | ⏳ pending   |
+| P1       | Pagination analytics routes                              | 1 h           | ⏳ pending   |
+| P2       | N+1 analytics en sub-requete                             | 30 min        | ⏳ pending   |
+| P2       | Logs sur catch silencieux chat.service                   | 15 min        | ⏳ pending   |
+| P2       | Webhook Stripe (reporte : societe en cours de creation)  | 1 jour        | ⏸ reporte   |
 
-**Note** : le point 1.1 de l'audit (`.env.production` vide) est reclasse en P1 apres verification : les secrets sont correctement injectes au deploy via GitHub Actions secrets. Le fichier vide dans le repo est la bonne pratique.
+**Notes de reclassification** :
 
-**Total P0 (bloquants avant vente) : ~1.5 jours de travail.**
-**Total P0 + P1 (vente + stabilisation) : ~2.5 jours de travail.**
+- Point 1.1 de l'audit (`.env.production` vide) reclasse en P1 apres verification : les secrets sont correctement injectes au deploy via GitHub Actions secrets. Le fichier vide dans le repo est la bonne pratique.
+- Point 1.3 (webhook Stripe) reclasse en P2 reporte : NORMX AI SAS est en cours de creation, pas encore de compte Stripe ni de facturation clients. Le webhook sera implemente quand la societe sera enregistree et que le compte Stripe sera cree.
+
+**Progres** :
+
+- P0 termines : 1/3 (credits check+confirm)
+- P1 termines : 1/4 (env.guard)
+- Reste P0 : npm audit + SQL whitelist (30min), healthcheck nginx (15min)
+
+**Total P0 restant : ~45 minutes de travail.**
+**Total P0 + P1 restant : ~4 heures de travail.**
 
 ---
 
