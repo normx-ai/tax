@@ -72,11 +72,17 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 **Reclasse en P2** (pas bloquant tant que l'app est en beta gratuite).
 
-### 1.4 Dependances vulnerables CVE
+### 1.4 Dependances vulnerables CVE ✅ RESOLU (2026-04-14)
 
-- `handlebars 4.0.0-4.7.8` : 8 CVE XSS/RCE
-- `express-rate-limit 8.2.0` : bypass IPv6 du rate limiting
-- Fix : `npm audit fix` puis retests
+- Commit : `2b5a77d`
+- `npm audit` reel au moment du fix :
+  - **Server** : 1 moderate (nodemailer <=8.0.4, CRLF injection) → fixe
+  - **Mobile** : 1 critical (axios <=1.14.0, SSRF + metadata exfil) + 1 moderate (follow-redirects, auth header leak) → fixes
+- Resultat apres `npm audit fix` :
+  - Server : 0 vulnerabilites
+  - Mobile : 5 vulnerabilites low restantes (toutes transitives via `@tootallnate/once → http-proxy-agent → jsdom → jest-environment-jsdom → jest-expo`)
+- Les 5 restantes sont acceptees : devDependencies (jamais shippees en production), non-exploitables par un attaquant externe. Le fix force downgraderait `jest-expo` de 48 a 47 (breaking change sur les tests).
+- Note : l'audit initial mentionnait handlebars et express-rate-limit mais les vraies CVE identifiees au moment du fix etaient axios et nodemailer (les listes de CVE sont dynamiques).
 
 ### 1.5 Validation schema SQL trop permissive
 
@@ -171,7 +177,8 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 | Priorite | Tache                                                    | Duree estimee | Statut      |
 | -------- | -------------------------------------------------------- | ------------- | ----------- |
-| P0       | `npm audit fix` + fix validation SQL                     | 30 min        | ⏳ pending   |
+| P0       | `npm audit fix`                                          | 15 min        | ✅ fait (2b5a77d) |
+| P0       | Whitelist schemas SQL dans `db/pool.ts`                  | 15 min        | ⏳ pending   |
 | P0       | Transaction atomique credits (middleware subscription)   | 1 h           | ✅ fait (cd6a37b) |
 | P0       | Fix healthcheck Nginx sur `/api/health`                  | 15 min        | ⏳ pending   |
 | P1       | Validation des env vars critiques au boot (fail-fast)    | 30 min        | ✅ fait (03f47d5) |
@@ -189,12 +196,12 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 **Progres** :
 
-- P0 termines : 1/3 (credits check+confirm)
+- P0 termines : 2/4 (credits check+confirm, npm audit fix)
 - P1 termines : 1/4 (env.guard)
-- Reste P0 : npm audit + SQL whitelist (30min), healthcheck nginx (15min)
+- Reste P0 : whitelist SQL (15min), healthcheck nginx (15min)
 
-**Total P0 restant : ~45 minutes de travail.**
-**Total P0 + P1 restant : ~4 heures de travail.**
+**Total P0 restant : ~30 minutes de travail.**
+**Total P0 + P1 restant : ~3h45 de travail.**
 
 ---
 
