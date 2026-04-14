@@ -46,6 +46,9 @@ export interface PaieInput {
   profilSalarie: ProfilSalarie;
   situationFamiliale: SituationFamiliale;
   nombreEnfants: number;
+  // Sous-ensemble des enfants a charge qui sont infirmes et majeurs
+  // (Art. 116-C al. 2 : 1 part au lieu de 0,5 part par enfant).
+  enfantsInfirmesMajeurs?: number;
   zoneTOL: ZoneTOL;
   moisJanvier: boolean;
 }
@@ -161,7 +164,7 @@ export function calculerPaie(input: PaieInput): PaieResult {
     modeCalculIts = "bareme";
 
     // Quotient familial
-    nombreParts = calculateQuotient(input.situationFamiliale, input.nombreEnfants, true);
+    nombreParts = calculateQuotient(input.situationFamiliale, input.nombreEnfants, true, input.enfantsInfirmesMajeurs ?? null);
     const revenuParPart = revenuNetImposable / nombreParts;
 
     // Barème ITS

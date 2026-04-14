@@ -111,11 +111,16 @@ export function calculateFraisPro(revenuBrutAnnuel: number, retenueCnssAnnuelle:
 export function calculateQuotient(
   situation: SituationFamiliale,
   nombreEnfants: number | null,
-  appliquerCharge = true
+  appliquerCharge = true,
+  enfantsInfirmesMajeurs: number | null = null
 ): number {
   if (!appliquerCharge) return 1;
 
   const enfants = Math.max(0, nombreEnfants || 0);
+  const infirmesMajeurs = Math.max(
+    0,
+    Math.min(enfantsInfirmesMajeurs || 0, enfants)
+  );
 
   let partsBase: number;
   if (situation === "marie") {
@@ -137,7 +142,12 @@ export function calculateQuotient(
     partsEnfants = enfants * 0.5;
   }
 
-  const totalParts = partsBase + partsEnfants;
+  // Art. 116-C al. 2 CGI Tome 1 : pour chaque enfant infirme majeur,
+  // le quotient familial est augmente d'une part entiere au lieu d'une
+  // demi-part. Bonus effectif : +0,5 par enfant infirme majeur.
+  const bonusInfirmesMajeurs = infirmesMajeurs * 0.5;
+
+  const totalParts = partsBase + partsEnfants + bonusInfirmesMajeurs;
   return Math.min(totalParts, FISCAL_PARAMS.quotientFamilial.maxParts);
 }
 

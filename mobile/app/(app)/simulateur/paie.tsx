@@ -38,6 +38,7 @@ export default function PaieScreen() {
   const [profil, setProfil] = useState<ProfilSalarie>("national");
   const [situation, setSituation] = useState<SituationFamiliale>("celibataire");
   const [enfants, setEnfants] = useState(0);
+  const [enfantsInfirmesMajeurs, setEnfantsInfirmesMajeurs] = useState(0);
   const [zoneTOL, setZoneTOL] = useState<ZoneTOL>("peripherie");
   const [moisJanvier, setMoisJanvier] = useState(false);
   const [forfaitaire, setForfaitaire] = useState(false);
@@ -107,18 +108,19 @@ export default function PaieScreen() {
       profilSalarie: profil,
       situationFamiliale: situation,
       nombreEnfants: enfants,
+      enfantsInfirmesMajeurs,
       zoneTOL,
       moisJanvier,
     });
-  }, [rubriques, profil, situation, enfants, zoneTOL, moisJanvier]);
+  }, [rubriques, profil, situation, enfants, enfantsInfirmesMajeurs, zoneTOL, moisJanvier]);
 
   const isResident = profil !== "non_resident";
 
   // Nombre de parts calculé indépendamment du résultat
   const nombreParts = useMemo(() => {
     if (!isResident) return 1;
-    return calculateQuotient(situation, enfants, true);
-  }, [situation, enfants, isResident]);
+    return calculateQuotient(situation, enfants, true, enfantsInfirmesMajeurs);
+  }, [situation, enfants, enfantsInfirmesMajeurs, isResident]);
 
   const PROFILS: { value: ProfilSalarie; label: string }[] = [
     { value: "national", label: t("simulateur.paie.profilNational") },
@@ -184,7 +186,11 @@ export default function PaieScreen() {
               <View style={styles.flex1}>
                 <Text style={[styles.label13, { color: colors.textSecondary }]}>{t("simulateur.paie.dependents")}</Text>
                 <View style={styles.counterRow}>
-                  <TouchableOpacity accessibilityLabel={t("simulateur.decreaseDependents")} accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
+                  <TouchableOpacity accessibilityLabel={t("simulateur.decreaseDependents")} accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => {
+                    const next = Math.max(0, enfants - 1);
+                    setEnfants(next);
+                    if (enfantsInfirmesMajeurs > next) setEnfantsInfirmesMajeurs(next);
+                  }}>
                     <Text style={[styles.counterButtonText, { color: colors.text }]}>-</Text>
                   </TouchableOpacity>
                   <Text style={[styles.counterValue, { color: colors.text }]}>{enfants}</Text>
@@ -192,6 +198,20 @@ export default function PaieScreen() {
                     <Text style={[styles.counterButtonText, { color: colors.text }]}>+</Text>
                   </TouchableOpacity>
                 </View>
+                {enfants > 0 && (
+                  <>
+                    <Text style={[styles.label13, { color: colors.textSecondary, marginTop: 4 }]}>{t("simulateur.paie.disabledMajor")}</Text>
+                    <View style={styles.counterRow}>
+                      <TouchableOpacity accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => setEnfantsInfirmesMajeurs(Math.max(0, enfantsInfirmesMajeurs - 1))}>
+                        <Text style={[styles.counterButtonText, { color: colors.text }]}>-</Text>
+                      </TouchableOpacity>
+                      <Text style={[styles.counterValue, { color: colors.text }]}>{enfantsInfirmesMajeurs}</Text>
+                      <TouchableOpacity accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => setEnfantsInfirmesMajeurs(Math.min(enfants, enfantsInfirmesMajeurs + 1))}>
+                        <Text style={[styles.counterButtonText, { color: colors.text }]}>+</Text>
+                      </TouchableOpacity>
+                    </View>
+                  </>
+                )}
                 <View style={[styles.partsBox, { backgroundColor: `${colors.primary}15` }]}>
                   <Text style={[styles.partsText, { color: colors.primary }]}>
                     {nombreParts} {t("common.parts")}

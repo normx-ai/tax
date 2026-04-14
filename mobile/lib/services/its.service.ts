@@ -24,6 +24,10 @@ export interface ItsInput {
   periode: PeriodeRevenu;
   situationFamiliale: SituationFamiliale;
   nombreEnfants: number | null;
+  // Sous-ensemble des enfants a charge qui sont infirmes et majeurs.
+  // Art. 116-C al. 2 : chaque enfant infirme majeur compte pour 1 part
+  // au lieu de 0,5 part.
+  enfantsInfirmesMajeurs?: number | null;
   appliquerChargeFamille: boolean;
   avantagesEnNature?: number | null;
   primes?: number | null;
@@ -66,9 +70,15 @@ export interface ItsResult {
 export function calculerNombreParts(
   situation: SituationFamiliale,
   nombreEnfants: number | null,
-  appliquerCharge: boolean
+  appliquerCharge: boolean,
+  enfantsInfirmesMajeurs: number | null = null
 ): number {
-  return calculateQuotient(situation, nombreEnfants, appliquerCharge);
+  return calculateQuotient(
+    situation,
+    nombreEnfants,
+    appliquerCharge,
+    enfantsInfirmesMajeurs
+  );
 }
 
 export function calculerIts(input: ItsInput): ItsResult {
@@ -83,11 +93,12 @@ export function calculerIts(input: ItsInput): ItsResult {
   // Etape 3-5: Frais pro et revenu net
   const fraisProResult = calculateFraisPro(revenuBrutAnnuel, cnssResult.retenueAnnuelle);
 
-  // Etape 6: Quotient familial (Art. 116 A)
+  // Etape 6: Quotient familial (Art. 116 A / 116 B / 116 C)
   const nombreParts = calculateQuotient(
     input.situationFamiliale,
     input.nombreEnfants,
-    input.appliquerChargeFamille
+    input.appliquerChargeFamille,
+    input.enfantsInfirmesMajeurs
   );
   const revenuParPart = fraisProResult.revenuNetImposable / nombreParts;
 

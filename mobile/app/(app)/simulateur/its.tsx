@@ -19,6 +19,7 @@ export default function ItsScreen() {
   const [periode, setPeriode] = useState<PeriodeRevenu>("mensuel");
   const [situation, setSituation] = useState<SituationFamiliale>("celibataire");
   const [enfants, setEnfants] = useState(0);
+  const [enfantsInfirmesMajeurs, setEnfantsInfirmesMajeurs] = useState(0);
   const [appliquerCharge, setAppliquerCharge] = useState(true);
 
   const SITUATIONS: { value: SituationFamiliale; label: string }[] = [
@@ -29,8 +30,8 @@ export default function ItsScreen() {
   ];
 
   const nombreParts = useMemo(
-    () => calculerNombreParts(situation, enfants, appliquerCharge),
-    [situation, enfants, appliquerCharge]
+    () => calculerNombreParts(situation, enfants, appliquerCharge, enfantsInfirmesMajeurs),
+    [situation, enfants, appliquerCharge, enfantsInfirmesMajeurs]
   );
 
   const result = useMemo(() => {
@@ -41,9 +42,10 @@ export default function ItsScreen() {
       periode,
       situationFamiliale: situation,
       nombreEnfants: enfants,
+      enfantsInfirmesMajeurs,
       appliquerChargeFamille: appliquerCharge,
     });
-  }, [salaireBrut, periode, situation, enfants, appliquerCharge]);
+  }, [salaireBrut, periode, situation, enfants, enfantsInfirmesMajeurs, appliquerCharge]);
 
   return (
     <SimulateurLayout
@@ -80,7 +82,11 @@ export default function ItsScreen() {
             <View style={styles.flex1}>
               <Text style={[styles.labelSmall, { color: colors.textSecondary }]}>{t("simulateur.its.dependents")}</Text>
               <View style={styles.counterRow}>
-                <TouchableOpacity accessibilityLabel={t("simulateur.decreaseDependents")} accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => setEnfants(Math.max(0, enfants - 1))}>
+                <TouchableOpacity accessibilityLabel={t("simulateur.decreaseDependents")} accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => {
+                  const next = Math.max(0, enfants - 1);
+                  setEnfants(next);
+                  if (enfantsInfirmesMajeurs > next) setEnfantsInfirmesMajeurs(next);
+                }}>
                   <Text style={[styles.counterButtonText, { color: colors.text }]}>-</Text>
                 </TouchableOpacity>
                 <Text style={[styles.counterValue, { color: colors.text }]}>{enfants}</Text>
@@ -88,6 +94,20 @@ export default function ItsScreen() {
                   <Text style={[styles.counterButtonText, { color: colors.text }]}>+</Text>
                 </TouchableOpacity>
               </View>
+              {enfants > 0 && (
+                <>
+                  <Text style={[styles.labelSmall, { color: colors.textSecondary, marginTop: 4 }]}>{t("simulateur.its.disabledMajor")}</Text>
+                  <View style={styles.counterRow}>
+                    <TouchableOpacity accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => setEnfantsInfirmesMajeurs(Math.max(0, enfantsInfirmesMajeurs - 1))}>
+                      <Text style={[styles.counterButtonText, { color: colors.text }]}>-</Text>
+                    </TouchableOpacity>
+                    <Text style={[styles.counterValue, { color: colors.text }]}>{enfantsInfirmesMajeurs}</Text>
+                    <TouchableOpacity accessibilityRole="button" style={[styles.counterButton, { backgroundColor: colors.border }]} onPress={() => setEnfantsInfirmesMajeurs(Math.min(enfants, enfantsInfirmesMajeurs + 1))}>
+                      <Text style={[styles.counterButtonText, { color: colors.text }]}>+</Text>
+                    </TouchableOpacity>
+                  </View>
+                </>
+              )}
               <TouchableOpacity style={[styles.checkboxRow, { backgroundColor: appliquerCharge ? `${colors.primary}20` : colors.border }]} onPress={() => setAppliquerCharge(!appliquerCharge)}>
                 <Ionicons name={appliquerCharge ? "checkbox" : "square-outline"} size={16} color={appliquerCharge ? colors.primary : colors.textMuted} />
                 <Text style={[styles.checkboxLabel, { color: appliquerCharge ? colors.primary : colors.textSecondary }]}>{t("simulateur.its.familyQuotient")}</Text>
