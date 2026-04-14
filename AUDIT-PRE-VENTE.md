@@ -141,11 +141,14 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 - Postgres optimise ca en semi-join (index sur `search_history.userId` + `organization_members.organizationId`), donc performance lineaire sur le nombre de searches, pas quadratique.
 - Le TODO P2 dans le code est supprime.
 
-### 2.3 Healthcheck Nginx insuffisant
+### 2.3 Healthcheck Nginx insuffisant ✅ RESOLU (2026-04-14)
 
-- `docker-compose.yml` : test sur `/` au lieu de `/api/health`
-- Risque : Nginx peut etre healthy pendant que l'API backend est down
-- Fix : changer en `wget -qO- http://localhost/api/health`
+- Analyse reelle (le repo concerne est `normx-ai/infra`, pas `tax`) : le healthcheck pointait deja vers `/health` (l'audit etait imprecis en disant `/`), mais cet endpoint etait un `return 200 "ok"` statique dans `00-default.conf` qui ne testait que nginx lui-meme. Nginx pouvait etre "healthy" pendant que `tax-api` etait completement down.
+- Solution implementee (2 fichiers dans infra repo) :
+  1. `nginx/conf.d/00-default.conf` : nouveau `location = /healthz-deep` qui proxy vers `http://tax-api:3003/health`. L'API tax teste elle-meme Prisma + Qdrant et renvoie 200 ou 503.
+  2. `docker-compose.yml` (service nginx) : `healthcheck.test` passe de `http://127.0.0.1/health` a `http://127.0.0.1/healthz-deep`. Timeout augmente a 10s pour laisser le temps au deep check de repondre.
+- L'endpoint `/health` statique est conserve pour les monitorings externes rapides (ping shallow).
+- Resultat : nginx est marque unhealthy si tax-api, Prisma ou Qdrant sont down. Docker redemarre alors le container nginx apres 3 tentatives infructueuses.
 
 ### 2.4 Logging __DEV__ en prod potentiel
 
@@ -207,7 +210,7 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 | P0       | `npm audit fix`                                          | 15 min        | ✅ fait (2b5a77d) |
 | P0       | Whitelist schemas SQL dans `db/pool.ts`                  | 15 min        | ✅ fait        |
 | P0       | Transaction atomique credits (middleware subscription)   | 1 h           | ✅ fait (cd6a37b) |
-| P0       | Fix healthcheck Nginx sur `/api/health`                  | 15 min        | ⏳ pending   |
+| P0       | Fix healthcheck Nginx sur `/healthz-deep` (deep check)   | 15 min        | ✅ fait (infra) |
 | P1       | Validation des env vars critiques au boot (fail-fast)    | 30 min        | ✅ fait (03f47d5) |
 | P1       | Error boundary React + catch visible front               | 2 h           | ⏳ pending   |
 | P1       | Optional chaining response.content Claude                | 15 min        | ⏳ pending   |
@@ -223,12 +226,12 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 **Progres** :
 
-- P0 termines : 4/5 (credits check+confirm, npm audit fix, whitelist SQL, pagination analytics)
-- P1 termines : 1/4 (env.guard)
-- Reste P0 : healthcheck nginx `/api/health` (15 min)
+- P0 termines : 5/5 ✅ (credits check+confirm, npm audit fix, whitelist SQL, pagination analytics, healthcheck nginx)
+- P1 termines : 3/4 (env.guard, catch silencieux, N+1 analytics)
+- Reste P1 : optional chaining Claude, `__DEV__` logging, error boundary React
+- Reste P2 : webhook Stripe (reporte — societe en creation)
 
-**Total P0 restant : ~15 minutes de travail.**
-**Total P0 + P1 restant : ~2h30 de travail.**
+**🎉 TOUS LES P0 SONT TERMINES.** Le produit est techniquement pret pour une beta gratuite. Il reste uniquement des ameliorations P1/P2.
 
 ---
 
