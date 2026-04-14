@@ -196,7 +196,7 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 | #  | Aspect              | Statut (maj 2026-04-14) | Notes                                                                                         |
 | -- | ------------------- | ----------------------- | --------------------------------------------------------------------------------------------- |
 | 1  | Flux critiques user | ⚠ partiel              | Signup/login/chat/simulateurs OK. Stripe webhook reporte (societe en cours de creation)       |
-| 2  | Gestion erreurs     | ⚠ partiel              | Backend OK + env.guard + catch retry Claude. Reste : error boundary React + catch front       |
+| 2  | Gestion erreurs     | ✓ OK                   | Backend OK + env.guard + retry Claude + ErrorBoundary racine + toasts globaux API errors       |
 | 3  | Dead code           | ✓ OK                   | 0 TODO critique, routes propres                                                               |
 | 4  | Branding / UX       | ✓ OK                   | Logo consistant, favicon, francais correct                                                    |
 | 5  | Responsive mobile   | ✓ OK                   | Hook actif, modals mobile-friendly                                                            |
@@ -217,7 +217,7 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 | P0       | Transaction atomique credits (middleware subscription)   | 1 h           | ✅ fait (cd6a37b) |
 | P0       | Fix healthcheck Nginx sur `/healthz-deep` (deep check)   | 15 min        | ✅ fait (infra) |
 | P1       | Validation des env vars critiques au boot (fail-fast)    | 30 min        | ✅ fait (03f47d5) |
-| P1       | Error boundary React + catch visible front               | 2 h           | ⏳ pending   |
+| P1       | Error boundary React + catch visible front               | 2 h           | ✅ fait      |
 | P1       | Optional chaining response.content Claude                | 15 min        | ⏳ pending   |
 | P0       | Pagination analytics routes (1.6)                        | 1 h           | ✅ fait      |
 | P2       | N+1 analytics en sub-requete                             | 30 min        | ⏳ pending   |
@@ -231,10 +231,11 @@ Ce point passe de **P0 bloquant** a **P1 hardening**.
 
 **Progres** :
 
-- P0 termines : 5/5 ✅ (credits check+confirm, npm audit fix, whitelist SQL, pagination analytics, healthcheck nginx)
-- P1 termines : 5/6 (env.guard, catch silencieux, N+1 analytics, __DEV__ logging, optional chaining Claude)
-- Reste P1 : error boundary React + catch visible front
+- P0 termines : 5/5 ✅
+- P1 termines : 6/6 ✅
 - Reste P2 : webhook Stripe (reporte — societe en creation)
+
+**🎉 TOUS LES P0 ET P1 SONT TERMINES.** Le produit est techniquement pret pour la mise en vente en beta gratuite. Seul le webhook Stripe reste, reporte au moment ou NORMX AI SAS sera enregistree et le compte Stripe cree.
 
 **🎉 TOUS LES P0 SONT TERMINES.** Le produit est techniquement pret pour une beta gratuite. Il reste uniquement des ameliorations P1/P2.
 

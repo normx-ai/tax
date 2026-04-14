@@ -1,7 +1,8 @@
-import React, { createContext, useContext, useState, useCallback, useRef } from "react";
+import React, { createContext, useContext, useState, useCallback, useRef, useEffect } from "react";
 import { View, Text, TouchableOpacity, Animated, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { errorBus } from "@/lib/errorBus";
 
 // ─── Types ───────────────────────────────────────────────────
 
@@ -66,6 +67,21 @@ export default function ToastProvider({ children }: { children: React.ReactNode 
       });
     }, 3500);
   }, []);
+
+  // S'abonner au errorBus pour afficher automatiquement les erreurs
+  // reseau/API remontees par l'intercepteur axios. Debounce simple via
+  // set de messages deja emis dans la derniere seconde pour eviter les
+  // toasts identiques en rafale.
+  useEffect(() => {
+    const recentMessages = new Set<string>();
+    const unsubscribe = errorBus.subscribe((message, type) => {
+      if (recentMessages.has(message)) return;
+      recentMessages.add(message);
+      setTimeout(() => recentMessages.delete(message), 1500);
+      toast(message, type);
+    });
+    return unsubscribe;
+  }, [toast]);
 
   const confirm = useCallback((options: ConfirmOptions): Promise<boolean> => {
     return new Promise((resolve) => {

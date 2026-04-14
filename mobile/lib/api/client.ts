@@ -6,6 +6,7 @@
 
 import axios, { type AxiosError, type InternalAxiosRequestConfig } from "axios";
 import { createLogger } from "@/lib/utils/logger";
+import { errorBus } from "@/lib/errorBus";
 
 const log = createLogger("api");
 const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3003/api";
@@ -63,6 +64,28 @@ function processQueue(error: unknown, token: string | null) {
   failedQueue = [];
 }
 
+/**
+ * Notifier visiblement l'utilisateur quand une requete API echoue pour une
+ * raison serveur ou reseau. Le toast est emis via errorBus → ToastProvider.
+ * On ne notifie PAS les 401 (gerees par le refresh), ni les 4xx fonctionnelles
+ * (400, 403, 404, 422, 429) qui sont des erreurs metier attendues et que
+ * l'appelant affiche a sa maniere.
+ */
+function notifyUserOfApiError(error: AxiosError): void {
+  const status = error.response?.status;
+  // Erreurs network (pas de reponse) ou 5xx : on notifie
+  if (!error.response) {
+    errorBus.emit("Connexion au serveur impossible. Verifiez votre reseau.", "error");
+    return;
+  }
+  if (status && status >= 500) {
+    errorBus.emit(`Le serveur a repondu avec une erreur (${status}). Reessaie dans quelques instants.`, "error");
+    return;
+  }
+  // 401 non notifie (gere par le refresh)
+  // 4xx metier non notifie (l'appelant affiche son propre message)
+}
+
 api.interceptors.response.use(
   (response) => response,
   async (error: AxiosError) => {
@@ -74,6 +97,10 @@ api.interceptors.response.use(
       originalRequest._retry ||
       originalRequest._skipAuthRetry
     ) {
+      // Erreur non-401 ou 401 deja retry : on notifie l'utilisateur si c'est
+      // une erreur serveur/reseau. Les 4xx restent silencieuses (l'appelant
+      // gere son propre affichage).
+      notifyUserOfApiError(error);
       return Promise.reject(error);
     }
 
