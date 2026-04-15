@@ -315,7 +315,7 @@ export default function AuditFacturePage() {
                   style={{ marginRight: 10 }}
                 />
                 <View style={{ flex: 1 }}>
-                  <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text }} numberOfLines={1}>
+                  <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text }} numberOfLines={2}>
                     {h.fileName}
                   </Text>
                   <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textMuted, marginTop: 1 }}>
