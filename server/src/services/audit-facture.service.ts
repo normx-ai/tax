@@ -221,14 +221,39 @@ Pour les mentions, verifie : date, beneficiaire, objet depense, montant, signatu
 
 // --- Analyse ---
 
+// Detecte le vrai format d'un fichier a partir de ses magic bytes.
+// Anthropic refuse l'image si le media_type declare ne correspond pas
+// au contenu reel (ex: .jpg renomme depuis un .webp).
+function detectMediaType(buffer: Buffer): "application/pdf" | "image/jpeg" | "image/png" | "image/webp" | "image/gif" | null {
+  if (buffer.length < 12) return null;
+  // PDF : %PDF
+  if (buffer[0] === 0x25 && buffer[1] === 0x50 && buffer[2] === 0x44 && buffer[3] === 0x46) return "application/pdf";
+  // JPEG : FF D8 FF
+  if (buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) return "image/jpeg";
+  // PNG : 89 50 4E 47
+  if (buffer[0] === 0x89 && buffer[1] === 0x50 && buffer[2] === 0x4e && buffer[3] === 0x47) return "image/png";
+  // GIF : GIF87a / GIF89a
+  if (buffer[0] === 0x47 && buffer[1] === 0x49 && buffer[2] === 0x46) return "image/gif";
+  // WebP : RIFF....WEBP
+  if (
+    buffer[0] === 0x52 && buffer[1] === 0x49 && buffer[2] === 0x46 && buffer[3] === 0x46 &&
+    buffer[8] === 0x57 && buffer[9] === 0x45 && buffer[10] === 0x42 && buffer[11] === 0x50
+  ) return "image/webp";
+  return null;
+}
+
 export async function analyzeInvoice(
   fileBuffer: Buffer,
   mimeType: string,
   docType: DocumentType = "facture"
 ): Promise<AuditFactureResult> {
+  // On detecte le vrai format depuis le contenu plutot que de faire
+  // confiance au mimetype envoye par le client (un .jpg peut en realite
+  // contenir un WebP, ce qui fait echouer l'API Anthropic).
+  const detectedType = detectMediaType(fileBuffer) || mimeType;
   const base64 = fileBuffer.toString("base64");
 
-  const isPdf = mimeType === "application/pdf";
+  const isPdf = detectedType === "application/pdf";
   const content: Anthropic.Messages.ContentBlockParam[] = [
     isPdf
       ? {
@@ -239,7 +264,7 @@ export async function analyzeInvoice(
           type: "image" as const,
           source: {
             type: "base64" as const,
-            media_type: mimeType as "image/jpeg" | "image/png" | "image/webp" | "image/gif",
+            media_type: detectedType as "image/jpeg" | "image/png" | "image/webp" | "image/gif",
             data: base64,
           },
         },
