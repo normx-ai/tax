@@ -42,7 +42,12 @@ router.post(
         return res.status(400).json({ error: "Type de document invalide" });
       }
 
-      logger.info(`Audit ${docType} par user ${req.userId}, fichier: ${req.file.originalname} (${req.file.mimetype}, ${(req.file.size / 1024).toFixed(0)} Ko)`);
+      // Multer decode les noms de fichiers multipart en latin1 alors que les
+      // navigateurs envoient de l'UTF-8. On reinterprete les octets pour
+      // restaurer les accents (é, è, à, ô...).
+      const fileName = Buffer.from(req.file.originalname, "latin1").toString("utf8");
+
+      logger.info(`Audit ${docType} par user ${req.userId}, fichier: ${fileName} (${req.file.mimetype}, ${(req.file.size / 1024).toFixed(0)} Ko)`);
 
       const result = await analyzeInvoice(req.file.buffer, req.file.mimetype, docType);
 
@@ -51,7 +56,7 @@ router.post(
         data: {
           userId: req.userId!,
           orgId: req.orgId || null,
-          fileName: req.file.originalname,
+          fileName,
           fileType: req.file.mimetype,
           fileSize: req.file.size,
           docType,
