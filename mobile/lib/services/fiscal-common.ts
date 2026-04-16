@@ -142,10 +142,14 @@ export function calculateQuotient(
     partsEnfants = enfants * 0.5;
   }
 
-  // Art. 116-C al. 2 CGI Tome 1 : pour chaque enfant infirme majeur,
-  // le quotient familial est augmente d'une part entiere au lieu d'une
-  // demi-part. Bonus effectif : +0,5 par enfant infirme majeur.
-  const bonusInfirmesMajeurs = infirmesMajeurs * 0.5;
+  // Art. 116-C al. 2 CGI Tome 1 : "Le quotient familial prévu à
+  // l'article 116 A ci-dessus est augmenté d'une part pour l'enfant
+  // infirme majeur au lieu d'une demi-part." Interpretation retenue
+  // par la pratique DGID Brazzaville : l'enfant infirme majeur donne
+  // droit a une part entiere (1,0) qui s'ajoute au quotient, en plus
+  // du comptage normal. Ex : marie 4 enfants dont 1 infirme majeur
+  // = 2 + 2 + 1 = 5 parts (au lieu de 4,5).
+  const bonusInfirmesMajeurs = infirmesMajeurs * 1.0;
 
   const totalParts = partsBase + partsEnfants + bonusInfirmesMajeurs;
   return Math.min(totalParts, FISCAL_PARAMS.quotientFamilial.maxParts);
