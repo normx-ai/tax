@@ -5,7 +5,7 @@ const CLAUDE_MODEL = "claude-sonnet-4-6";
 
 // --- Types ---
 
-export type DocumentType = "facture" | "releve_bancaire" | "bon_commande" | "das2" | "note_frais";
+export type DocumentType = "facture" | "contrat";
 
 export interface MentionResult {
   nom: string;
@@ -197,26 +197,16 @@ Risques "amende" selon le CGI 2026 — CITER L'ARTICLE pour chaque sanction :
 
 const DOC_INSTRUCTIONS: Record<DocumentType, string> = {
   facture: "Analyse cette FACTURE et retourne le JSON d'audit de conformite. Verifie toutes les mentions obligatoires Art. 32, le taux TVA, la langue et le SFEC.",
-  releve_bancaire: `Analyse ce RELEVE BANCAIRE et verifie :
+  contrat: `Analyse ce CONTRAT et verifie :
 - Langue : doit etre en francais (Art. 373 ter — amende 2M FCFA/document)
-- Identification : nom du titulaire, numero de compte, IBAN, banque, periode
-- Coherence : les montants sont-ils lisibles et en FCFA
-Pour les mentions, verifie : nom titulaire, numero compte, IBAN, nom banque, periode, solde debut, solde fin, devise (FCFA). Score sur 8. TVA non applicable.`,
-  bon_commande: `Analyse ce BON DE COMMANDE ou CONTRAT et verifie :
-- Langue : doit etre en francais (Art. 373 ter — amende 2M FCFA/document)
-- Identification : nom et NIU des deux parties, RCCM, objet, montant, date
-- Si soumis a enregistrement : verifier la mention d'enregistrement
-Pour les mentions, verifie : date, numero, identite vendeur (NIU, RCCM), identite acheteur (NIU), objet/designation, montant HT, TVA si applicable, montant TTC, conditions paiement, signatures. Score sur 10.`,
-  das2: `Analyse cette DECLARATION ANNUELLE DES SALAIRES (DAS II) et verifie :
-- Langue : francais
-- Mentions Art. 176-181 : nom/prenom employes, adresse, montants remuneration, retenues, NIU employeur
-- Omission : chaque omission = 10 000 FCFA (Art. 380)
-Pour les mentions, verifie : NIU employeur, raison sociale, exercice fiscal, liste des employes (nom, prenom, emploi, adresse), montants bruts, retenues, avantages en nature. Score sur 10.`,
-  note_frais: `Analyse cette NOTE DE FRAIS ou PIECE JUSTIFICATIVE et verifie :
-- Langue : doit etre en francais (Art. 373 ter — amende 2M FCFA/document)
-- Date, beneficiaire, motif/objet de la depense, montant
-- Si facture jointe : verifier les mentions Art. 32
-Pour les mentions, verifie : date, beneficiaire, objet depense, montant, signature, piece justificative jointe. Score sur 6.`,
+- Identification des parties : nom, NIU et RCCM du prestataire / vendeur / bailleur, nom et NIU du client / acheteur / locataire
+- Objet du contrat clairement defini
+- Montant / prix / loyer, conditions et modalites de paiement
+- Date de signature et duree (debut, fin, reconduction)
+- Signatures des deux parties
+- Enregistrement fiscal : certains contrats sont soumis a l'obligation d'enregistrement (baux commerciaux, cessions de parts, marches, contrats de travail specifiques). Si applicable, verifier la mention du droit d'enregistrement et son paiement.
+- Clauses essentielles : resolution, juridiction competente, loi applicable, reglement des litiges
+Pour les mentions, verifie : date de signature, identite prestataire (NIU, RCCM), identite client (NIU), objet du contrat, montant / prix / loyer, duree / validite, conditions de paiement, droit d'enregistrement si applicable, juridiction competente, signatures des deux parties. Score sur 10.`,
 };
 
 // --- Analyse ---

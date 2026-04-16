@@ -8,7 +8,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { analyzeDocument, getAuditHistory, getAuditDetail, DOC_TYPE_LABELS, type AuditFactureResult, type AuditHistoryItem, type DocumentType } from "@/lib/api/audit-facture";
 
 type FileInfo = { name: string; size: number; blob: Blob };
-const DOC_TYPES: DocumentType[] = ["facture", "releve_bancaire", "bon_commande", "das2", "note_frais"];
+const DOC_TYPES: DocumentType[] = ["facture", "contrat"];
 
 export default function AuditFacturePage() {
   const { colors } = useTheme();

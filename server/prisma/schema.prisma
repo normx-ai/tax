@@ -725,7 +725,7 @@ model DocumentAudit {
   fileName  String
   fileType  String   // application/pdf, image/jpeg, etc.
   fileSize  Int      // en octets
-  docType   String   // facture, releve_bancaire, bon_commande, das2, note_frais
+  docType   String   // facture, contrat
 
   // Résultat
   score     Int      // mentions trouvées

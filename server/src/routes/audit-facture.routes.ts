@@ -7,7 +7,7 @@ import { analyzeInvoice, type DocumentType } from "../services/audit-facture.ser
 import prisma from "../utils/prisma";
 import { createLogger } from "../utils/logger";
 
-const VALID_DOC_TYPES: DocumentType[] = ["facture", "releve_bancaire", "bon_commande", "das2", "note_frais"];
+const VALID_DOC_TYPES: DocumentType[] = ["facture", "contrat"];
 const logger = createLogger("AuditFacture");
 const router = Router();
 

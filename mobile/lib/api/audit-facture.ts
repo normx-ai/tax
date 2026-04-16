@@ -1,13 +1,10 @@
 import { api } from "./client";
 
-export type DocumentType = "facture" | "releve_bancaire" | "bon_commande" | "das2" | "note_frais";
+export type DocumentType = "facture" | "contrat";
 
 export const DOC_TYPE_LABELS: Record<DocumentType, string> = {
   facture: "Facture",
-  releve_bancaire: "Relevé bancaire",
-  bon_commande: "Bon de commande / Contrat",
-  das2: "DAS II",
-  note_frais: "Note de frais / Pièce justificative",
+  contrat: "Contrat",
 };
 
 export interface MentionResult {
