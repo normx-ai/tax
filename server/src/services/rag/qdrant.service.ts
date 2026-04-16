@@ -34,6 +34,11 @@ export interface ArticleVector {
     chapitre?: string;
     version?: string;
     keywords: string[];
+    // true si l'article provient d'une instruction d'application
+    // de la Loi de Finances (doctrine administrative DGID/DRC).
+    isInstruction?: boolean;
+    // Nom du document source (ex: "Instruction d'application LF 2026 - IBA")
+    sourceDocument?: string;
   };
 }
 

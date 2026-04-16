@@ -125,7 +125,17 @@ function formatArticleNumber(numero: string, tome?: string): string {
 export function buildContext(results: SearchResult[]): string {
   return results
     .map(r => {
-      const { numero, titre, contenu, tome, chapitre } = r.payload;
+      const { numero, titre, contenu, tome, chapitre, isInstruction, sourceDocument } = r.payload;
+
+      if (isInstruction) {
+        // INSTR-93 -> Art. 93 (commente)
+        const refNum = numero.replace(/^INSTR-/i, '');
+        let header = `INSTRUCTION D'APPLICATION LF — commentaire administratif de l'Art. ${refNum}`;
+        if (titre) header += ` - ${titre}`;
+        if (sourceDocument) header += ` (${sourceDocument})`;
+        return `[${header}]\n${contenu.substring(0, 2000)}`;
+      }
+
       let header = formatArticleNumber(numero, tome);
       if (titre) header += ` - ${titre}`;
       if (chapitre) header += `, Chapitre ${chapitre}`;

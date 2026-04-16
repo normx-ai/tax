@@ -118,6 +118,8 @@ export async function ingestArticles(articles: ArticleJSON[]): Promise<Ingestion
               chapitre: article.chapitre,
               version: version,
               keywords: article.keywords || [],
+              isInstruction: article.isInstruction === true,
+              sourceDocument: article.sourceDocument,
             },
           });
         } catch (err) {

@@ -67,6 +67,8 @@ export interface ArticleJSON {
   version?: string;
   keywords?: string[];
   statut?: string;
+  isInstruction?: boolean;
+  sourceDocument?: string;
 }
 
 /**
@@ -163,25 +165,37 @@ export function transformSourceToArticles(source: SourceFile): ArticleJSON[] {
 
   const validArticles = articles.filter((art) => art.article && typeof art.article === 'string');
 
-  return validArticles.map((art) => ({
-    numero: parseArticleNumber(art.article),
-    titre: art.titre,
-    chapeau: art.chapeau,
-    contenu: art.texte.join('\n'),
-    tome: meta.tome?.toString(),
-    partie: meta.partie ? `Partie ${meta.partie}` : undefined,
-    livre: meta.livre ? `Livre ${meta.livre}` : undefined,
-    chapitre: meta.chapitre_titre || (meta.chapitre ? `Chapitre ${meta.chapitre}` : undefined),
-    section:
-      typeof art.section === 'string'
-        ? art.section
-        : meta.section_titre ||
-          (typeof meta.titre === 'string' ? meta.titre : undefined) ||
-          (meta.section ? `Section ${meta.section}` : undefined),
-    version: meta.version || meta.edition || '2026',
-    keywords: art.mots_cles || [],
-    statut: art.statut || 'en vigueur',
-  }));
+  // Detection d'une instruction d'application via la meta du fichier.
+  // Les fichiers instruction-lf2026-*.json portent "Instruction d'application..."
+  // dans meta.document et leurs articles sont prefixes "INSTR-".
+  const docName = typeof meta.document === 'string' ? meta.document : '';
+  const sourceIsInstruction = /^Instruction\s+d['’]application/i.test(docName);
+
+  return validArticles.map((art) => {
+    const numero = parseArticleNumber(art.article);
+    const isInstruction = sourceIsInstruction || /^INSTR-/i.test(numero);
+    return {
+      numero,
+      titre: art.titre,
+      chapeau: art.chapeau,
+      contenu: art.texte.join('\n'),
+      tome: meta.tome?.toString(),
+      partie: meta.partie ? `Partie ${meta.partie}` : undefined,
+      livre: meta.livre ? `Livre ${meta.livre}` : undefined,
+      chapitre: meta.chapitre_titre || (meta.chapitre ? `Chapitre ${meta.chapitre}` : undefined),
+      section:
+        typeof art.section === 'string'
+          ? art.section
+          : meta.section_titre ||
+            (typeof meta.titre === 'string' ? meta.titre : undefined) ||
+            (meta.section ? `Section ${meta.section}` : undefined),
+      version: meta.version || meta.edition || '2026',
+      keywords: art.mots_cles || [],
+      statut: art.statut || 'en vigueur',
+      isInstruction,
+      sourceDocument: docName || undefined,
+    };
+  });
 }
 
 /**

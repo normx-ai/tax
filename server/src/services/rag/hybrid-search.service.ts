@@ -69,6 +69,10 @@ export interface ArticlePayload {
   mots_cles?: string[];
   tome?: string;
   chapitre?: string;
+  // true si la source est une instruction d'application LF (doctrine DGID).
+  isInstruction?: boolean;
+  // Nom du document source (ex: "Instruction d'application LF 2026 - IBA")
+  sourceDocument?: string;
 }
 
 export interface SearchResult {
@@ -147,14 +151,16 @@ async function searchByArticleNumbers(
 
       if (scrollResult.points.length > 0) {
         const point = scrollResult.points[0];
-        const rawPayload = point.payload as Record<string, string | string[] | undefined>;
+        const rawPayload = point.payload as Record<string, string | string[] | boolean | undefined>;
         const payload: ArticlePayload = {
           numero: String(rawPayload.numero || ''),
           titre: String(rawPayload.titre || ''),
           contenu: String(rawPayload.contenu || ''),
-          mots_cles: Array.isArray(rawPayload.mots_cles) ? rawPayload.mots_cles : undefined,
+          mots_cles: Array.isArray(rawPayload.mots_cles) ? (rawPayload.mots_cles as string[]) : undefined,
           tome: rawPayload.tome ? String(rawPayload.tome) : undefined,
           chapitre: rawPayload.chapitre ? String(rawPayload.chapitre) : undefined,
+          isInstruction: rawPayload.isInstruction === true,
+          sourceDocument: typeof rawPayload.sourceDocument === 'string' ? rawPayload.sourceDocument : undefined,
         };
 
         const metadata = getMetadataForArticle(payload.numero, version);
@@ -197,14 +203,16 @@ async function searchByVector(
     });
 
     return searchResult.map((result) => {
-      const rawPayload = result.payload as Record<string, string | string[] | undefined>;
+      const rawPayload = result.payload as Record<string, string | string[] | boolean | undefined>;
       const payload: ArticlePayload = {
         numero: String(rawPayload.numero || ''),
         titre: String(rawPayload.titre || ''),
         contenu: String(rawPayload.contenu || ''),
-        mots_cles: Array.isArray(rawPayload.mots_cles) ? rawPayload.mots_cles : undefined,
+        mots_cles: Array.isArray(rawPayload.mots_cles) ? (rawPayload.mots_cles as string[]) : undefined,
         tome: rawPayload.tome ? String(rawPayload.tome) : undefined,
         chapitre: rawPayload.chapitre ? String(rawPayload.chapitre) : undefined,
+        isInstruction: rawPayload.isInstruction === true,
+        sourceDocument: typeof rawPayload.sourceDocument === 'string' ? rawPayload.sourceDocument : undefined,
       };
 
       const metadata = getMetadataForArticle(payload.numero, version);
@@ -425,11 +433,106 @@ export async function hybridSearch(
   // ÉTAPE 5: RÈGLES DE PRIORITÉ
   merged = applyPriorityRules(query, merged);
 
+  // ÉTAPE 6: APPAIRAGE ARTICLE + INSTRUCTION D'APPLICATION
+  // Pour chaque article CGI dans le top-K, on recupere automatiquement
+  // l'instruction d'application LF correspondante (INSTR-X) si elle
+  // existe mais n'est pas deja dans le top-K. Claude voit alors l'article
+  // et la doctrine administrative cote a cote.
+  if (!isSocial) {
+    merged = await attachInstructionPairs(merged, collectionName);
+  }
+
   logger.info(
-    `[HybridSearch] Final: ${merged.map((r) => `${r.payload.numero}(P${r.priority},${r.matchType})`).join(', ')}`
+    `[HybridSearch] Final: ${merged.map((r) => `${r.payload.numero}(P${r.priority},${r.matchType}${r.payload.isInstruction ? ',INSTR' : ''})`).join(', ')}`
   );
 
   return merged;
+}
+
+/**
+ * Pour chaque article CGI present dans les resultats, cherche
+ * l'instruction d'application LF correspondante (INSTR-<numero>)
+ * et l'ajoute si elle n'est pas deja dans les resultats.
+ *
+ * Insere chaque instruction juste apres son article CGI pour que
+ * Claude voie la paire naturellement.
+ */
+async function attachInstructionPairs(
+  results: SearchResult[],
+  collectionName: string,
+): Promise<SearchResult[]> {
+  // Numeros d'articles CGI deja presents (non-instructions)
+  const cgiNumbers = new Set<string>();
+  const presentInstr = new Set<string>();
+  for (const r of results) {
+    const n = normalizeArticleNumber(r.payload.numero);
+    if (r.payload.isInstruction) {
+      // INSTR-93 -> 93
+      presentInstr.add(n.replace(/^INSTR-/i, ''));
+    } else {
+      cgiNumbers.add(n);
+    }
+  }
+
+  // Pour chaque article CGI sans instruction appariee, chercher INSTR-X
+  const toFetch = [...cgiNumbers].filter((n) => !presentInstr.has(n));
+  if (toFetch.length === 0) return results;
+
+  const fetched: Map<string, SearchResult> = new Map();
+  for (const numero of toFetch.slice(0, 8)) {
+    try {
+      const scroll = await client.scroll(collectionName, {
+        filter: {
+          must: [
+            { key: 'numero', match: { value: `INSTR-${numero}` } },
+            { key: 'isInstruction', match: { value: true } },
+          ],
+        },
+        limit: 1,
+        with_payload: true,
+        with_vector: false,
+      });
+      if (scroll.points.length > 0) {
+        const point = scroll.points[0];
+        const raw = point.payload as Record<string, string | string[] | boolean | undefined>;
+        const payload: ArticlePayload = {
+          numero: String(raw.numero || ''),
+          titre: String(raw.titre || ''),
+          contenu: String(raw.contenu || ''),
+          mots_cles: Array.isArray(raw.mots_cles) ? (raw.mots_cles as string[]) : undefined,
+          tome: raw.tome ? String(raw.tome) : undefined,
+          chapitre: raw.chapitre ? String(raw.chapitre) : undefined,
+          isInstruction: true,
+          sourceDocument: typeof raw.sourceDocument === 'string' ? raw.sourceDocument : undefined,
+        };
+        fetched.set(numero, {
+          id: point.id,
+          score: 0.95,
+          payload,
+          matchType: 'keyword',
+          priority: 2,
+          articleType: 'instruction',
+        });
+      }
+    } catch (err) {
+      logger.warn(`[HybridSearch] Echec lookup INSTR-${numero}: ${err instanceof Error ? err.message : err}`);
+    }
+  }
+
+  if (fetched.size === 0) return results;
+
+  // Inserer chaque instruction juste apres son article CGI correspondant
+  const out: SearchResult[] = [];
+  for (const r of results) {
+    out.push(r);
+    if (!r.payload.isInstruction) {
+      const n = normalizeArticleNumber(r.payload.numero);
+      const instr = fetched.get(n);
+      if (instr) out.push(instr);
+    }
+  }
+  logger.info(`[HybridSearch] Instructions d'application ajoutees: ${fetched.size}`);
+  return out;
 }
 
 export default { hybridSearch };
