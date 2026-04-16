@@ -131,26 +131,30 @@ export function calculateQuotient(
     partsBase = 1;
   }
 
-  // Art. 116-A CGI : chaque enfant a charge ajoute 0,5 part au
-  // quotient familial.
+  // Art. 116-B CGI : bareme du nombre de parts.
+  // - Marie ou veuf avec N enfants : 2 + 0,5 N
+  // - Celibataire/divorce avec N enfants (N >= 1) : 2 + 0,5 (N - 1)
+  //   (le 1er enfant apporte 1 part entiere, les suivants 0,5 part)
+  let partsEnfants: number;
+  if (situation === "celibataire" || situation === "divorce") {
+    if (enfants === 0) {
+      partsEnfants = 0;
+    } else {
+      partsEnfants = 1 + (enfants - 1) * 0.5;
+    }
+  } else {
+    partsEnfants = enfants * 0.5;
+  }
+
   // Art. 116-C al. 2 CGI : "Le quotient familial est augmente d'une
   // part pour l'enfant infirme majeur au lieu d'une demi-part."
-  // Interpretation : l'enfant infirme majeur compte pour 1 part pleine
-  // AU LIEU DE 0,5 part. Pas de cumul (pas 0,5 + 1).
-  // Ex : marie 4 enfants dont 1 infirme majeur
-  //   = 2 (marie) + 3 x 0,5 (enfants normaux) + 1 x 1,0 (infirme) = 4,5 parts.
-  const enfantsNormaux = Math.max(0, enfants - infirmesMajeurs);
-  const partsEnfantsNormaux = enfantsNormaux * 0.5;
-  const partsInfirmes = infirmesMajeurs * 1.0;
+  // Lecture officielle : l'enfant infirme majeur vaut 1 part a la place
+  // de 0,5 part (remplacement, pas cumul). L'ecart par rapport a un
+  // enfant ordinaire est donc +0,5 part par enfant infirme majeur.
+  // Ex : marie 4 enfants dont 1 infirme = 2 + 4 x 0,5 + 0,5 = 4,5 parts.
+  const bonusInfirmesMajeurs = infirmesMajeurs * 0.5;
 
-  // Regle "chef de famille" pour les celibataires/divorces avec enfants :
-  // le premier enfant a charge donne une part entiere au lieu d'une
-  // demi-part (+0,5 part par rapport au calcul standard). Cette regle
-  // s'applique quelle que soit la nature du 1er enfant (normal ou infirme).
-  const bonusChefFamille =
-    (situation === "celibataire" || situation === "divorce") && enfants > 0 ? 0.5 : 0;
-
-  const totalParts = partsBase + partsEnfantsNormaux + partsInfirmes + bonusChefFamille;
+  const totalParts = partsBase + partsEnfants + bonusInfirmesMajeurs;
   return Math.min(totalParts, FISCAL_PARAMS.quotientFamilial.maxParts);
 }
 
