@@ -19,15 +19,27 @@ export async function getUserStats(schema: string, userId: string) {
   );
   const messages = await pool.query(
     `SELECT COUNT(*) as c FROM "${schema}".messages m
-     JOIN "${schema}".conversations c ON c.id = m.conversation_id WHERE c.user_id = $1`, [userId]
+     JOIN "${schema}".conversations c ON c.id = m.conversation_id
+     WHERE c.user_id = $1 AND m.role = 'USER'`, [userId]
+  );
+  const monthMessages = await pool.query(
+    `SELECT COUNT(*) as c FROM "${schema}".messages m
+     JOIN "${schema}".conversations c ON c.id = m.conversation_id
+     WHERE c.user_id = $1 AND m.role = 'USER'
+     AND m.created_at >= date_trunc('month', CURRENT_DATE)`, [userId]
   );
   const searches = await pool.query(
     `SELECT COUNT(*) as c FROM "${schema}".search_history WHERE user_id = $1`, [userId]
   );
+  const activeDays = await pool.query(
+    `SELECT COUNT(DISTINCT DATE(created_at)) as c FROM "${schema}".usage_stats WHERE user_id = $1`, [userId]
+  );
   return {
     conversations: parseInt(conversations.rows[0]?.c || '0'),
     messages: parseInt(messages.rows[0]?.c || '0'),
+    monthMessages: parseInt(monthMessages.rows[0]?.c || '0'),
     searches: parseInt(searches.rows[0]?.c || '0'),
+    activeDays: parseInt(activeDays.rows[0]?.c || '0'),
   };
 }
 
