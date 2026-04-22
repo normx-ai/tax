@@ -95,7 +95,7 @@ export default function ConfidentialitePublicScreen() {
             Siège social : 71 rue Daire, 80000 Amiens{"\n"}
             SIREN : 103 831 921{"\n"}
             RCS Amiens : 103 831 921{"\n\n"}
-            Référente protection des données : Christelle MABIKA{"\n"}
+            Référente protection des données : POATY-KAMBISSI Christelle Elodie épouse MABIKA{"\n"}
             Email : info-contact@normx-ai.com{"\n"}
             Téléphone : 06 20 76 94 24
           </Text>

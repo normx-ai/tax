@@ -92,7 +92,7 @@ export default function MentionsLegalesScreen() {
             2. Directrice de la publication
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, paddingLeft: 8 }}>
-            Christelle MABIKA, en qualité de Présidente de NORMX AI SAS.
+            POATY-KAMBISSI Christelle Elodie épouse MABIKA, en qualité de Directrice de la publication.
           </Text>
 
           {/* 3. Hébergeur */}
