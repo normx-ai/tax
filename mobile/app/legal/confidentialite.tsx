@@ -93,7 +93,8 @@ export default function ConfidentialitePublicScreen() {
             NORMX AI SAS{"\n"}
             Société par Actions Simplifiée au capital de 1 000 €{"\n"}
             Siège social : 71 rue Daire, 80000 Amiens{"\n"}
-            RCS Compiègne : 941 200 169{"\n\n"}
+            SIREN : 103 831 921{"\n"}
+            RCS Amiens : 103 831 921{"\n\n"}
             Référente protection des données : Christelle MABIKA{"\n"}
             Email : info-contact@normx-ai.com{"\n"}
             Téléphone : 06 20 76 94 24

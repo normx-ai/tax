@@ -76,7 +76,7 @@ export default function CGUPublicScreen() {
             Article 1 — Objet
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de la plateforme NORMX AI, éditée par NORMX AI SAS, société par actions simplifiée au capital de 1 000 €, immatriculée au RCS de Compiègne sous le numéro 941 200 169, dont le siège social est situé au 71 rue Daire, 80000 Amiens.{"\n\n"}
+            Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de la plateforme NORMX AI, éditée par NORMX AI SAS, société par actions simplifiée au capital de 1 000 €, immatriculée au RCS d'Amiens sous le numéro 103 831 921, dont le siège social est situé au 71 rue Daire, 80000 Amiens.{"\n\n"}
             NORMX AI est une plateforme numérique comprenant les produits suivants : NORMX Tax (fiscalité et simulations), NORMX Compta (comptabilité), NORMX Paie (gestion de la paie), NORMX États (états financiers) et NORMX Legal (documents juridiques OHADA).{"\n\n"}
             L'utilisation de l'application implique l'acceptation pleine et entière des présentes CGU ainsi que de la Politique de confidentialité accessible depuis l'application.
           </Text>
@@ -190,7 +190,7 @@ export default function CGUPublicScreen() {
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Les présentes CGU sont soumises au droit français.{"\n\n"}
             En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. À défaut de résolution amiable, le consommateur pourra saisir le tribunal compétent de son lieu de domicile conformément aux dispositions du Code de la consommation, ou tout autre tribunal compétent.{"\n\n"}
-            Pour les utilisateurs professionnels, les tribunaux de Compiègne seront seuls compétents.
+            Pour les utilisateurs professionnels, les tribunaux d'Amiens seront seuls compétents.
           </Text>
 
           {/* Séparateur bas */}

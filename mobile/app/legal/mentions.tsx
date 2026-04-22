@@ -81,7 +81,9 @@ export default function MentionsLegalesScreen() {
           <InfoRow label="Forme juridique" value="Société par Actions Simplifiée (SAS)" colors={colors} />
           <InfoRow label="Capital social" value="1 000 €" colors={colors} />
           <InfoRow label="Siège social" value="71 rue Daire, 80000 Amiens" colors={colors} />
-          <InfoRow label="RCS" value="Compiègne — 941 200 169" colors={colors} />
+          <InfoRow label="SIREN" value="103 831 921" colors={colors} />
+          <InfoRow label="RCS" value="Amiens — 103 831 921" colors={colors} />
+          <InfoRow label="Date d'immatriculation" value="22 avril 2026" colors={colors} />
           <InfoRow label="Téléphone" value="06 20 76 94 24" colors={colors} />
           <InfoRow label="Email" value="info-contact@normx-ai.com" colors={colors} />
 
