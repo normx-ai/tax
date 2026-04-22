@@ -62,11 +62,11 @@ export default function AuthScreen() {
         Code fiscal et social du Congo-Brazzaville
       </Text>
 
-      <TouchableOpacity onPress={login} style={{ backgroundColor: PRIMARY, paddingVertical: 16, paddingHorizontal: 32, borderRadius: 12, width: "100%", maxWidth: 360, alignItems: "center" }}>
+      <TouchableOpacity onPress={login} style={{ backgroundColor: PRIMARY, paddingVertical: 16, paddingHorizontal: 32, width: "100%", maxWidth: 360, alignItems: "center" }}>
         <Text style={{ color: DARK, fontSize: 16, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>Se connecter</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={register} style={{ marginTop: 12, paddingVertical: 14, paddingHorizontal: 32, borderRadius: 12, borderWidth: 1.5, borderColor: "rgba(0,0,0,0.1)", backgroundColor: "#ffffff", width: "100%", maxWidth: 360, alignItems: "center" }}>
+      <TouchableOpacity onPress={register} style={{ marginTop: 12, paddingVertical: 14, paddingHorizontal: 32, borderWidth: 1.5, borderColor: "rgba(0,0,0,0.1)", backgroundColor: "#ffffff", width: "100%", maxWidth: 360, alignItems: "center" }}>
         <Text style={{ color: DARK, fontSize: 16, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold }}>Créer un compte</Text>
       </TouchableOpacity>
     </View>

@@ -101,7 +101,6 @@ export default function AuditFacturePage() {
               style={{
                 paddingVertical: 6,
                 paddingHorizontal: 12,
-                borderRadius: 6,
                 backgroundColor: docType === dt ? colors.headerBg : colors.card,
                 borderWidth: 1,
                 borderColor: docType === dt ? colors.headerBg : colors.border,
@@ -126,7 +125,6 @@ export default function AuditFacturePage() {
             borderWidth: 2,
             borderStyle: "dashed",
             borderColor: file ? colors.success : colors.border,
-            borderRadius: 12,
             padding: 24,
             alignItems: "center",
             backgroundColor: file ? `${colors.success}08` : colors.card,
@@ -167,7 +165,6 @@ export default function AuditFacturePage() {
           disabled={!file || loading}
           style={{
             backgroundColor: file && !loading ? colors.headerBg : colors.disabled,
-            borderRadius: 8,
             paddingVertical: 10,
             alignItems: "center",
             marginBottom: 20,
@@ -188,7 +185,7 @@ export default function AuditFacturePage() {
         </TouchableOpacity>
 
         {error && (
-          <View style={{ backgroundColor: `${colors.danger}15`, borderRadius: 8, padding: 12, marginBottom: 12 }}>
+          <View style={{ backgroundColor: `${colors.danger}15`, padding: 12, marginBottom: 12 }}>
             <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.danger }}>{error}</Text>
           </View>
         )}
@@ -197,7 +194,7 @@ export default function AuditFacturePage() {
         {result && (
           <View style={{ gap: 12 }}>
             {/* Score */}
-            <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 20, alignItems: "center", borderWidth: 1, borderColor: colors.border }}>
+            <View style={{ backgroundColor: colors.card, padding: 20, alignItems: "center", borderWidth: 1, borderColor: colors.border }}>
               <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 36, color: scoreColor(result.score.found, result.score.total) }}>
                 {result.score.found}/{result.score.total}
               </Text>
@@ -207,7 +204,7 @@ export default function AuditFacturePage() {
             </View>
 
             {/* Langue */}
-            <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+            <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
               <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
                 <Ionicons name={result.langue.conforme ? "checkmark-circle" : "close-circle"} size={18} color={result.langue.conforme ? colors.success : colors.danger} />
                 <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Langue</Text>
@@ -216,7 +213,7 @@ export default function AuditFacturePage() {
             </View>
 
             {/* TVA */}
-            <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+            <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
               <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
                 <Ionicons name={result.tva.conforme ? "checkmark-circle" : "alert-circle"} size={18} color={result.tva.conforme ? colors.success : colors.warning} />
                 <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Taux TVA</Text>
@@ -230,7 +227,7 @@ export default function AuditFacturePage() {
             </View>
 
             {/* Mentions */}
-            <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+            <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
               <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
                 Mentions obligatoires (Art. 32)
               </Text>
@@ -249,7 +246,7 @@ export default function AuditFacturePage() {
 
             {/* Risques */}
             {result.risques.length > 0 && (
-              <View style={{ backgroundColor: `${colors.danger}08`, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: `${colors.danger}30` }}>
+              <View style={{ backgroundColor: `${colors.danger}08`, padding: 16, borderWidth: 1, borderColor: `${colors.danger}30` }}>
                 <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.danger, marginBottom: 10 }}>
                   Risques identifies
                 </Text>
@@ -267,7 +264,7 @@ export default function AuditFacturePage() {
 
             {/* Recommandations */}
             {result.recommandations.length > 0 && (
-              <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+              <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
                 <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
                   Recommandations
                 </Text>
@@ -301,7 +298,6 @@ export default function AuditFacturePage() {
                   flexDirection: "row",
                   alignItems: "center",
                   backgroundColor: colors.card,
-                  borderRadius: 8,
                   padding: 12,
                   marginBottom: 6,
                   borderWidth: 1,

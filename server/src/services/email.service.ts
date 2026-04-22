@@ -252,7 +252,7 @@ export class EmailService {
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
         <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
-        <div style="background: ${urgency}10; border-left: 4px solid ${urgency}; padding: 16px; border-radius: 8px; margin: 20px 0;">
+        <div style="background: ${urgency}10; border-left: 4px solid ${urgency}; padding: 16px; margin: 20px 0;">
           <p style="margin: 0; color: ${urgency}; font-weight: bold;">
             Votre abonnement ${plan} pour ${organizationName} expire ${urgencyLabel}.
           </p>
@@ -276,7 +276,7 @@ export class EmailService {
       <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
         <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
         <p>Les échéances fiscales suivantes arrivent dans les <strong>7 prochains jours</strong> :</p>
-        <div style="background: #fffbeb; border-left: 4px solid #d97706; padding: 16px; border-radius: 8px; margin: 20px 0;">
+        <div style="background: #fffbeb; border-left: 4px solid #d97706; padding: 16px; margin: 20px 0;">
           <ul style="margin: 0; padding-left: 20px; color: #374151;">
             ${deadlineList}
           </ul>

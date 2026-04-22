@@ -40,7 +40,6 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
     backgroundColor: colors.card,
     borderWidth: 1,
     borderColor: colors.border,
-    borderRadius: 14,
   };
 
   const now = new Date();
@@ -104,7 +103,6 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
       <View style={{
         flexDirection: "row",
         backgroundColor: "#374151",
-        borderRadius: 14,
         paddingVertical: 16,
         paddingHorizontal: 8,
         marginBottom: 22,
@@ -162,7 +160,6 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
                 style={{
                   width: 40,
                   height: 40,
-                  borderRadius: 10,
                   backgroundColor: `${colors.primary}20`,
                   alignItems: "center",
                   justifyContent: "center",
@@ -179,7 +176,7 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
                 </Text>
               </View>
               {joursRestants <= 3 && (
-                <View style={{ backgroundColor: "#ef4444", paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6 }}>
+                <View style={{ backgroundColor: "#ef4444", paddingHorizontal: 8, paddingVertical: 3 }}>
                   <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 12, color: "#fff" }}>
                     {t("common.urgent")}
                   </Text>

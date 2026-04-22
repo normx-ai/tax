@@ -85,7 +85,7 @@ function RelevanceBadge({ score, colors }: { score: number; colors: ThemeColors 
   }
 
   return (
-    <View style={{ backgroundColor: bg, borderRadius: 6, paddingHorizontal: 6, paddingVertical: 2 }}>
+    <View style={{ backgroundColor: bg, paddingHorizontal: 6, paddingVertical: 2 }}>
       <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 11, color: fg }}>{label}</Text>
     </View>
   );
@@ -132,7 +132,6 @@ export default function SearchResults({ query, results, onSelectArticle }: Props
             backgroundColor: colors.card,
             padding: 16,
             marginBottom: 12,
-            borderRadius: 12,
             borderWidth: 1,
             borderColor: score >= 100 ? `${colors.primary}40` : colors.border,
             shadowColor: "#000",
@@ -152,7 +151,7 @@ export default function SearchResults({ query, results, onSelectArticle }: Props
               />
               <RelevanceBadge score={score} colors={colors} />
             </View>
-            <View style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6 }}>
+            <View style={{ backgroundColor: colors.primary + "20", paddingHorizontal: 8, paddingVertical: 4 }}>
               <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.regular, fontSize: 13, color: colors.primary }}>{art.statut}</Text>
             </View>
           </View>
@@ -175,7 +174,7 @@ export default function SearchResults({ query, results, onSelectArticle }: Props
                 .filter((mc) => matchedWords.some((w) => normalize(mc).includes(normalize(w))))
                 .slice(0, 4)
                 .map((mc, j) => (
-                  <View key={j} style={{ backgroundColor: `${colors.primary}10`, borderRadius: 4, paddingHorizontal: 6, paddingVertical: 1 }}>
+                  <View key={j} style={{ backgroundColor: `${colors.primary}10`, paddingHorizontal: 6, paddingVertical: 1 }}>
                     <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.primary }}>{mc}</Text>
                   </View>
                 ))}

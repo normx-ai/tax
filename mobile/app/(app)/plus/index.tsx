@@ -51,7 +51,6 @@ export default function PlusScreen() {
           backgroundColor: colors.card,
           borderWidth: 1,
           borderColor: colors.border,
-          borderRadius: 14,
           padding: 16,
           marginBottom: 20,
           flexDirection: "row",
@@ -63,7 +62,6 @@ export default function PlusScreen() {
           style={{
             width: 52,
             height: 52,
-            borderRadius: 26,
             backgroundColor: colors.primary,
             alignItems: "center",
             justifyContent: "center",
@@ -92,7 +90,6 @@ export default function PlusScreen() {
           backgroundColor: colors.card,
           borderWidth: 1,
           borderColor: colors.border,
-          borderRadius: 14,
           overflow: "hidden",
           marginBottom: 20,
         }}
@@ -114,7 +111,6 @@ export default function PlusScreen() {
               style={{
                 width: 36,
                 height: 36,
-                borderRadius: 10,
                 backgroundColor: `${colors.primary}15`,
                 alignItems: "center",
                 justifyContent: "center",
@@ -142,7 +138,6 @@ export default function PlusScreen() {
         onPress={() => router.replace("/(auth)/logout")}
         style={{
           backgroundColor: `${colors.danger}12`,
-          borderRadius: 14,
           padding: 14,
           flexDirection: "row",
           alignItems: "center",

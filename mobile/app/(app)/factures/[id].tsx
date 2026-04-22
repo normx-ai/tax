@@ -87,7 +87,7 @@ export default function InvoiceDetailScreen() {
             {invoice.invoiceNumber}
           </Text>
           <View style={{ flexDirection: "row", alignItems: "center", marginTop: 6 }}>
-            <View style={{ backgroundColor: statusColor + "20", paddingHorizontal: 10, paddingVertical: 4, borderRadius: 12 }}>
+            <View style={{ backgroundColor: statusColor + "20", paddingHorizontal: 10, paddingVertical: 4 }}>
               <Text style={{ color: statusColor, fontSize: 12, fontWeight: "700" }}>{statusLabel}</Text>
             </View>
             <Text style={{ color: colors.textMuted, fontSize: 12, marginLeft: 10 }}>
@@ -97,7 +97,7 @@ export default function InvoiceDetailScreen() {
         </View>
 
         {Platform.OS === "web" && (
-          <TouchableOpacity onPress={handleDownloadPdf} style={{ backgroundColor: colors.primary, paddingHorizontal: 20, paddingVertical: 10, borderRadius: 8, flexDirection: "row", alignItems: "center" }}>
+          <TouchableOpacity onPress={handleDownloadPdf} style={{ backgroundColor: colors.primary, paddingHorizontal: 20, paddingVertical: 10, flexDirection: "row", alignItems: "center" }}>
             <Ionicons name="download-outline" size={16} color="#fff" />
             <Text style={{ color: "#fff", fontWeight: "700", marginLeft: 6 }}>{t("factures.downloadPdf")}</Text>
           </TouchableOpacity>
@@ -105,7 +105,7 @@ export default function InvoiceDetailScreen() {
       </View>
 
       {/* Client */}
-      <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
         <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary, marginBottom: 10, textTransform: "uppercase" }}>{t("factures.client")}</Text>
         <Row label={t("factures.name")} value={invoice.customerName} />
         <Row label={t("factures.email")} value={invoice.customerEmail} />
@@ -114,7 +114,7 @@ export default function InvoiceDetailScreen() {
       </View>
 
       {/* Détails */}
-      <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
         <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary, marginBottom: 10, textTransform: "uppercase" }}>{t("factures.details")}</Text>
         <Row label={t("factures.description")} value={invoice.description} />
         <Row label={t("factures.plan")} value={invoice.plan} />
@@ -124,7 +124,7 @@ export default function InvoiceDetailScreen() {
       </View>
 
       {/* Montants */}
-      <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
         <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary, marginBottom: 10, textTransform: "uppercase" }}>{t("factures.amounts")}</Text>
         <Row label={t("factures.amountHT")} value={formatAmount(invoice.amountHT, invoice.currency)} />
         <Row label={`TVA (${invoice.tvaRate}%)`} value={formatAmount(invoice.tvaAmount, invoice.currency)} />
@@ -132,7 +132,7 @@ export default function InvoiceDetailScreen() {
       </View>
 
       {/* Dates */}
-      <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 24, borderWidth: 1, borderColor: colors.border }}>
+      <View style={{ backgroundColor: colors.card, padding: 16, marginBottom: 24, borderWidth: 1, borderColor: colors.border }}>
         <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary, marginBottom: 10, textTransform: "uppercase" }}>{t("factures.dates")}</Text>
         <Row label={t("factures.createdAt")} value={formatDate(invoice.createdAt)} />
         {invoice.paidAt && <Row label={t("factures.paidAt")} value={formatDate(invoice.paidAt)} />}

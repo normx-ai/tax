@@ -71,7 +71,7 @@ export default function TabsBar({ openTabs, activeTab, onSelectTab, onCloseTab }
                     onCloseTab(tab.id);
                   }}
                   hitSlop={4}
-                  style={{ padding: 2, borderRadius: 3, marginLeft: 2 }}
+                  style={{ padding: 2, marginLeft: 2 }}
                 >
                   <Ionicons name="close" size={12} color={isActive ? "#fff" : "#9ca3af"} />
                 </TouchableOpacity>

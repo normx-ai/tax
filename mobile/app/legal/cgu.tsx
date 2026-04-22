@@ -42,7 +42,6 @@ export default function CGUPublicScreen() {
           backgroundColor: colors.card,
           borderWidth: 1,
           borderColor: colors.border,
-          borderRadius: 12,
           paddingHorizontal: 48,
           paddingVertical: 56,
           shadowColor: "#000",

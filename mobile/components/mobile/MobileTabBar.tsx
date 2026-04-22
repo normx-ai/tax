@@ -58,7 +58,6 @@ export default function MobileTabBar({ active, onTabPress }: Props) {
                   top: -8,
                   width: 20,
                   height: 3,
-                  borderRadius: 2,
                   backgroundColor: colors.primary,
                 }}
               />

@@ -143,7 +143,7 @@ export default function CodeCGI() {
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       {/* Barre de recherche */}
       <View style={{ backgroundColor: colors.card, paddingHorizontal: 16, paddingVertical: 10, flexDirection: "row", alignItems: "center", borderBottomWidth: 1, borderBottomColor: colors.border }}>
-        <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, borderRadius: 10, paddingHorizontal: 12, paddingVertical: 6 }}>
+        <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, paddingHorizontal: 12, paddingVertical: 6 }}>
           <Ionicons name="search" size={18} color={colors.textMuted} />
           <TextInput
             style={{ flex: 1, marginLeft: 8, fontSize: 16, color: colors.text, fontFamily: fonts.regular }}

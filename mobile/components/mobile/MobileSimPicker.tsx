@@ -50,7 +50,6 @@ export default function MobileSimPicker() {
               backgroundColor: colors.card,
               borderWidth: 1,
               borderColor: colors.border,
-              borderRadius: 14,
               padding: 14,
               width: "48.5%" as unknown as number,
               minWidth: 150,
@@ -61,7 +60,6 @@ export default function MobileSimPicker() {
               style={{
                 width: 42,
                 height: 42,
-                borderRadius: 12,
                 backgroundColor: `${colors.primary}15`,
                 alignItems: "center",
                 justifyContent: "center",
@@ -81,7 +79,6 @@ export default function MobileSimPicker() {
                 backgroundColor: `${colors.primary}15`,
                 paddingHorizontal: 12,
                 paddingVertical: 6,
-                borderRadius: 8,
                 alignSelf: "flex-start",
               }}
             >

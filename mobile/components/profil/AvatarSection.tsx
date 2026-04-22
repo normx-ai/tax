@@ -16,7 +16,6 @@ export default function AvatarSection({ initials, email, colors }: Props) {
         style={{
           width: 88,
           height: 88,
-          borderRadius: 44,
           backgroundColor: colors.primary,
           justifyContent: "center",
           alignItems: "center",

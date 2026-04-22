@@ -123,7 +123,6 @@ export default function Dashboard() {
                     backgroundColor: colors.card,
                     borderWidth: 1,
                     borderColor: colors.border,
-                    borderRadius: 12,
                     paddingVertical: 10,
                     paddingHorizontal: 12,
                     alignItems: "center",
@@ -265,7 +264,7 @@ export default function Dashboard() {
               <Text style={{ fontSize: 18, fontWeight: "500", color: colors.text }}>Mes favoris</Text>
               <Text style={{ fontSize: 13, color: colors.textMuted, marginLeft: 8 }}>{favoriteIds.length}</Text>
             </View>
-            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden", borderRadius: 8 }}>
+            <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" }}>
               {favoriteIds.slice(0, 5).map((artId, i) => (
                 <TouchableOpacity
                   key={artId}
@@ -295,7 +294,7 @@ export default function Dashboard() {
               <Ionicons name="calendar-outline" size={15} color={colors.primary} style={{ marginRight: 6 }} />
               <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text }}>{t("dashboard.fiscalDeadlines")}</Text>
             </View>
-            <View style={{ backgroundColor: `${colors.primary}15`, paddingHorizontal: 10, paddingVertical: 3, borderRadius: 12 }}>
+            <View style={{ backgroundColor: `${colors.primary}15`, paddingHorizontal: 10, paddingVertical: 3 }}>
               <Text style={{ fontSize: 13, fontWeight: "700", color: colors.primary }}>{nomMois} 2026</Text>
             </View>
           </View>
@@ -317,7 +316,7 @@ export default function Dashboard() {
                 >
                   <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 4 }}>
                     <View style={{
-                      width: 28, height: 28, borderRadius: 14,
+                      width: 28, height: 28,
                       backgroundColor: estAujourdhui ? colors.primary : estPasse ? colors.disabled : `${colors.primary}15`,
                       alignItems: "center", justifyContent: "center", marginRight: 8,
                     }}>

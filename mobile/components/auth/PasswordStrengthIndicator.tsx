@@ -44,13 +44,12 @@ export default function PasswordStrengthIndicator({ password, colors }: Props) {
   return (
     <View style={{ marginTop: 8, marginBottom: 8 }}>
       {/* Barre de progression */}
-      <View style={{ height: 4, backgroundColor: colors.input, borderRadius: 2, overflow: "hidden", marginBottom: 10 }}>
+      <View style={{ height: 4, backgroundColor: colors.input, overflow: "hidden", marginBottom: 10 }}>
         <View
           style={{
             width: `${(score / CRITERIA.length) * 100}%`,
             height: "100%",
             backgroundColor: barColor,
-            borderRadius: 2,
           }}
         />
       </View>

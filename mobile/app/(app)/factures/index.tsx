@@ -73,7 +73,7 @@ export default function FacturesScreen() {
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.background, padding: 20 }}>
         <Ionicons name="alert-circle" size={48} color={"#ef4444"} />
         <Text style={{ color: "#ef4444", fontSize: 16, marginTop: 12, textAlign: "center" }}>{error}</Text>
-        <TouchableOpacity onPress={loadInvoices} style={{ marginTop: 16, backgroundColor: colors.primary, paddingHorizontal: 24, paddingVertical: 10, borderRadius: 8 }}>
+        <TouchableOpacity onPress={loadInvoices} style={{ marginTop: 16, backgroundColor: colors.primary, paddingHorizontal: 24, paddingVertical: 10 }}>
           <Text style={{ color: "#fff", fontWeight: "700" }}>{t("common.retry")}</Text>
         </TouchableOpacity>
       </View>
@@ -105,7 +105,6 @@ export default function FacturesScreen() {
                 onPress={() => router.push(`/(app)/factures/${inv.id}` as Href)}
                 style={{
                   backgroundColor: colors.card,
-                  borderRadius: 12,
                   padding: 16,
                   marginBottom: 12,
                   borderWidth: 1,
@@ -137,7 +136,7 @@ export default function FacturesScreen() {
                   {Platform.OS === "web" && (
                     <TouchableOpacity
                       onPress={(e) => { e.stopPropagation(); handleDownloadPdf(inv); }}
-                      style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.primary + "15", paddingHorizontal: 12, paddingVertical: 6, borderRadius: 6 }}
+                      style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.primary + "15", paddingHorizontal: 12, paddingVertical: 6 }}
                     >
                       <Ionicons name="download-outline" size={14} color={colors.primary} />
                       <Text style={{ color: colors.primary, fontSize: 12, fontWeight: "600", marginLeft: 4 }}>PDF</Text>

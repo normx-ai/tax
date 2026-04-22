@@ -33,10 +33,10 @@ export default function SeatRequestsList({
       {seatRequests.map((req) => {
         const requesterName = [req.requestedBy.firstName, req.requestedBy.lastName].filter(Boolean).join(" ") || req.requestedBy.email;
         return (
-          <View key={req.id} style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: colors.warning }}>
+          <View key={req.id} style={{ backgroundColor: colors.card, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: colors.warning }}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }}>
               <Text style={{ fontSize: 17, fontWeight: "700", color: colors.text }}>{req.organization.name}</Text>
-              <View style={{ backgroundColor: `${colors.warning}20`, paddingHorizontal: 8, paddingVertical: 2, borderRadius: 4 }}>
+              <View style={{ backgroundColor: `${colors.warning}20`, paddingHorizontal: 8, paddingVertical: 2 }}>
                 <Text style={{ fontSize: 14, fontWeight: "600", color: colors.warning }}>{t("seatRequest.pending")}</Text>
               </View>
             </View>
@@ -60,7 +60,6 @@ export default function SeatRequestsList({
               style={{
                 borderWidth: 1,
                 borderColor: colors.border,
-                borderRadius: 8,
                 padding: 10,
                 fontSize: 15,
                 color: colors.text,
@@ -72,7 +71,7 @@ export default function SeatRequestsList({
               <TouchableOpacity
                 onPress={() => onApprove(req)}
                 disabled={actionLoading === req.id}
-                style={{ flex: 1, backgroundColor: colors.primary, paddingVertical: 10, borderRadius: 8, alignItems: "center" }}
+                style={{ flex: 1, backgroundColor: colors.primary, paddingVertical: 10, alignItems: "center" }}
               >
                 <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
                   {actionLoading === req.id ? t("common.loading") : t("seatRequest.approve")}
@@ -81,7 +80,7 @@ export default function SeatRequestsList({
               <TouchableOpacity
                 onPress={() => onReject(req)}
                 disabled={actionLoading === req.id}
-                style={{ flex: 1, backgroundColor: colors.danger, paddingVertical: 10, borderRadius: 8, alignItems: "center" }}
+                style={{ flex: 1, backgroundColor: colors.danger, paddingVertical: 10, alignItems: "center" }}
               >
                 <Text style={{ color: "#fff", fontWeight: "600", fontSize: 16 }}>
                   {actionLoading === req.id ? t("common.loading") : t("seatRequest.reject")}

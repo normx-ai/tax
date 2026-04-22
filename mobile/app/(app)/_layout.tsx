@@ -384,9 +384,9 @@ function AppLayoutInner() {
 
             <TouchableOpacity
               onPress={() => router.push("/(app)/profil")}
-              style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 6, paddingHorizontal: 10, borderRadius: 6 }}
+              style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 6, paddingHorizontal: 10 }}
             >
-              <View style={{ width: 28, height: 28, borderRadius: 14, backgroundColor: "#D4A843", alignItems: "center", justifyContent: "center" }}>
+              <View style={{ width: 28, height: 28, backgroundColor: "#D4A843", alignItems: "center", justifyContent: "center" }}>
                 <Text style={{ color: "#fff", fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 12 }}>
                   {getInitials(user?.prenom, user?.nom)}
                 </Text>

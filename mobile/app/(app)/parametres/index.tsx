@@ -74,7 +74,7 @@ export default function ParametresScreen() {
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
         {/* Section Compte */}
         <SectionHeader title={t("settings.account")} colors={colors} />
-        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 14, overflow: "hidden" as const, marginBottom: 4 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" as const, marginBottom: 4 }}>
           <SettingsRow
             icon="mail-outline"
             label={t("settings.email")}
@@ -101,7 +101,7 @@ export default function ParametresScreen() {
 
         {/* Section Sécurité */}
         <SectionHeader title={t("settings.security")} colors={colors} />
-        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 14, overflow: "hidden" as const, marginBottom: 4 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" as const, marginBottom: 4 }}>
           <SettingsRow
             icon="shield-checkmark-outline"
             label={t("settings.twoFactor")}
@@ -113,7 +113,7 @@ export default function ParametresScreen() {
 
         {/* Section Apparence */}
         <SectionHeader title={t("settings.appearance")} colors={colors} />
-        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 14, overflow: "hidden" as const, marginBottom: 4 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" as const, marginBottom: 4 }}>
           <View
             style={{
               flexDirection: "row",
@@ -135,7 +135,7 @@ export default function ParametresScreen() {
 
         {/* Section Langue */}
         <SectionHeader title={t("settings.language")} colors={colors} />
-        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 14, overflow: "hidden" as const, marginBottom: 4 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" as const, marginBottom: 4 }}>
           <TouchableOpacity
             onPress={() => i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr")}
             style={{
@@ -156,7 +156,7 @@ export default function ParametresScreen() {
 
         {/* Section Abonnement */}
         <SectionHeader title={t("settings.subscription")} colors={colors} />
-        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 14, overflow: "hidden" as const, marginBottom: 4 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" as const, marginBottom: 4 }}>
           <SettingsRow icon="ribbon-outline" label={t("settings.plan")} value={planLabel} colors={colors} />
           <Divider colors={colors} />
           <SettingsRow
@@ -196,7 +196,7 @@ export default function ParametresScreen() {
 
         {/* Section A propos */}
         <SectionHeader title={t("settings.about")} colors={colors} />
-        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 14, overflow: "hidden" as const, marginBottom: 4 }}>
+        <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" as const, marginBottom: 4 }}>
           <SettingsRow icon="information-circle-outline" label={t("common.version")} value={Constants.expoConfig?.version ?? "1.0.0"} colors={colors} />
           <Divider colors={colors} />
           <SettingsRow icon="book-outline" label={t("settings.edition")} value="CGI Édition 2026" colors={colors} />

@@ -84,7 +84,6 @@ const HighlightedText = memo(function HighlightedText({
             key={i}
             style={{
               backgroundColor: highlightColor,
-              borderRadius: 2,
               fontFamily: fonts.bold,
               fontWeight: fontWeights.bold,
             }}
@@ -119,7 +118,7 @@ const RelevanceBadge = memo(function RelevanceBadge({ score, colors }: { score: 
   }
 
   return (
-    <View style={{ backgroundColor: bg, borderRadius: 6, paddingHorizontal: 6, paddingVertical: 2 }}>
+    <View style={{ backgroundColor: bg, paddingHorizontal: 6, paddingVertical: 2 }}>
       <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 10, color: fg }}>
         {label}
       </Text>
@@ -184,7 +183,6 @@ export default function SearchOverlay({ visible, onClose }: Props) {
               flexDirection: "row",
               alignItems: "center",
               backgroundColor: colors.input,
-              borderRadius: 12,
               paddingHorizontal: 12,
               paddingVertical: 8,
             }}
@@ -243,7 +241,6 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                     backgroundColor: colors.card,
                     borderWidth: 1,
                     borderColor: score >= 100 ? `${colors.primary}40` : colors.border,
-                    borderRadius: 12,
                     padding: 14,
                     marginBottom: 8,
                     flexDirection: "row",
@@ -254,7 +251,6 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                     style={{
                       width: 36,
                       height: 36,
-                      borderRadius: 8,
                       backgroundColor: score >= 100 ? `${colors.primary}20` : `${colors.primary}10`,
                       alignItems: "center",
                       justifyContent: "center",
@@ -299,7 +295,6 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                               key={j}
                               style={{
                                 backgroundColor: `${colors.primary}10`,
-                                borderRadius: 4,
                                 paddingHorizontal: 6,
                                 paddingVertical: 1,
                               }}
@@ -349,7 +344,6 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                       backgroundColor: colors.card,
                       borderWidth: 1,
                       borderColor: colors.border,
-                      borderRadius: 12,
                       padding: 16,
                       width: "48%",
                       alignItems: "center",
@@ -360,7 +354,6 @@ export default function SearchOverlay({ visible, onClose }: Props) {
                       style={{
                         width: 40,
                         height: 40,
-                        borderRadius: 10,
                         backgroundColor: `${colors.primary}15`,
                         alignItems: "center",
                         justifyContent: "center",

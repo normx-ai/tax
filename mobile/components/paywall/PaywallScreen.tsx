@@ -231,7 +231,7 @@ export default function PaywallScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1 },
   scroll: { flexGrow: 1, alignItems: "center", paddingHorizontal: 24, paddingVertical: 40 },
-  iconCircle: { width: 96, height: 96, borderRadius: 48, alignItems: "center", justifyContent: "center", marginBottom: 24 },
+  iconCircle: { width: 96, height: 96, alignItems: "center", justifyContent: "center", marginBottom: 24 },
   title: { fontSize: 24, fontWeight: "800", textAlign: "center", marginBottom: 10 },
   subtitle: { fontSize: 17, textAlign: "center", lineHeight: 22, marginBottom: 28, maxWidth: 400 },
   sectionTitle: { fontSize: 18, fontWeight: "700", marginBottom: 10, alignSelf: "flex-start", maxWidth: 560, width: "100%" },

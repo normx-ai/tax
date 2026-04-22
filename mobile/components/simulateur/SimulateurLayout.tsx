@@ -134,7 +134,6 @@ export default function SimulateurLayout({
                     marginHorizontal: 12,
                     marginTop: 16,
                     paddingVertical: 12,
-                    borderRadius: 10,
                     backgroundColor: exporting ? colors.border : colors.headerBg,
                   }}
                 >
@@ -153,16 +152,16 @@ export default function SimulateurLayout({
       {Platform.OS === "web" && (
         <Modal visible={!!previewUrl} transparent animationType="fade" onRequestClose={handleClosePreview}>
           <View style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.75)", justifyContent: "center", alignItems: "center", padding: 20 }}>
-            <View style={{ backgroundColor: "#ffffff", borderRadius: 12, width: "100%", maxWidth: 900, height: "90%", overflow: "hidden", flexDirection: "column" }}>
+            <View style={{ backgroundColor: "#ffffff", width: "100%", maxWidth: 900, height: "90%", overflow: "hidden", flexDirection: "column" }}>
               {/* Header modal */}
               <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: "#e5e7eb", backgroundColor: "#f9fafb" }}>
                 <Text style={{ fontSize: 15, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#111827" }}>Aperçu du PDF</Text>
                 <View style={{ flexDirection: "row", gap: 8 }}>
-                  <TouchableOpacity onPress={handleConfirmDownload} style={{ flexDirection: "row", alignItems: "center", gap: 6, paddingHorizontal: 14, paddingVertical: 8, backgroundColor: colors.primary, borderRadius: 8 }}>
+                  <TouchableOpacity onPress={handleConfirmDownload} style={{ flexDirection: "row", alignItems: "center", gap: 6, paddingHorizontal: 14, paddingVertical: 8, backgroundColor: colors.primary }}>
                     <Ionicons name="download-outline" size={16} color="#0F2A42" />
                     <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#0F2A42" }}>Télécharger</Text>
                   </TouchableOpacity>
-                  <TouchableOpacity onPress={handleClosePreview} style={{ paddingHorizontal: 14, paddingVertical: 8, backgroundColor: "#e5e7eb", borderRadius: 8 }}>
+                  <TouchableOpacity onPress={handleClosePreview} style={{ paddingHorizontal: 14, paddingVertical: 8, backgroundColor: "#e5e7eb" }}>
                     <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#374151" }}>Fermer</Text>
                   </TouchableOpacity>
                 </View>

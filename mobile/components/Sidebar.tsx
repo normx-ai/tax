@@ -163,7 +163,6 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
                 paddingVertical: 10,
                 paddingHorizontal: isCollapsed ? 0 : 14,
                 marginHorizontal: isCollapsed ? 0 : 6,
-                borderRadius: 6,
                 backgroundColor: active ? colors.sidebarActive : "transparent",
                 opacity: disabled ? 0.5 : 1,
               }}

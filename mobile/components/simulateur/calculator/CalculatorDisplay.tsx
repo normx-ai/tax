@@ -46,7 +46,6 @@ export default function CalculatorDisplay({ display, firstOperand, operator }: P
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 12,
     borderWidth: 1,
     padding: 16,
     marginBottom: 12,

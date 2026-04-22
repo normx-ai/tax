@@ -39,7 +39,6 @@ export default function ActivityStats({ stats }: Props) {
     backgroundColor: colors.card,
     borderWidth: 1,
     borderColor: colors.border,
-    borderRadius: 14,
     overflow: "hidden" as const,
     marginBottom: 4,
   };
@@ -75,7 +74,6 @@ export default function ActivityStats({ stats }: Props) {
                     style={{
                       width: "70%",
                       height,
-                      borderRadius: 4,
                       backgroundColor: day.questions > 0 ? colors.success : colors.border,
                     }}
                   />

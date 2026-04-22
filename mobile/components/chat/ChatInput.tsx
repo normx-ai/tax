@@ -56,7 +56,6 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           flexDirection: "row",
           alignItems: "flex-end",
           backgroundColor: colors.input,
-          borderRadius: 22,
           paddingHorizontal: 14,
           paddingVertical: 6,
           gap: 8,
@@ -90,7 +89,6 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
             style={{
               width: 36,
               height: 36,
-              borderRadius: 18,
               alignItems: "center",
               justifyContent: "center",
             }}
@@ -108,7 +106,6 @@ export default function ChatInput({ value, onChangeText, onSend, disabled }: Pro
           disabled={disabled || !value.trim()}
           style={{
             backgroundColor: disabled || !value.trim() ? colors.disabled : colors.primary,
-            borderRadius: 18,
             width: 36,
             height: 36,
             alignItems: "center",

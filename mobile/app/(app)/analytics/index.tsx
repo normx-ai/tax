@@ -191,7 +191,7 @@ export default function AnalyticsScreen() {
             </Text>
             <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 16, marginBottom: 20 }}>
               {/* Barre de répartition */}
-              <View style={{ flexDirection: "row", height: 24, borderRadius: 4, overflow: "hidden", marginBottom: 12 }}>
+              <View style={{ flexDirection: "row", height: 24, overflow: "hidden", marginBottom: 12 }}>
                 {featureBars.map((f) => (
                   <View key={f.label} style={{ width: `${f.pct}%` as `${number}%`, backgroundColor: f.color, minWidth: f.pct > 0 ? 2 : 0 }} />
                 ))}

@@ -36,7 +36,7 @@ export default function SecuriteScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background, padding: 16 }}>
-      <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 14, padding: 20, marginBottom: 16 }}>
+      <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 20, marginBottom: 16 }}>
         <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
           <Ionicons name="shield-checkmark-outline" size={22} color={colors.primary} style={{ marginRight: 10 }} />
           <Text style={{ fontSize: 18, fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, color: colors.text }}>
@@ -48,7 +48,7 @@ export default function SecuriteScreen() {
         </Text>
         <TouchableOpacity
           onPress={openKeycloakAccount}
-          style={{ backgroundColor: colors.primary, borderRadius: 10, paddingVertical: 14, alignItems: "center" }}
+          style={{ backgroundColor: colors.primary, paddingVertical: 14, alignItems: "center" }}
         >
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <Ionicons name="open-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
@@ -62,7 +62,7 @@ export default function SecuriteScreen() {
       <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: colors.border, paddingTop: 20 }}>
         <TouchableOpacity
           onPress={handleLogoutAll}
-          style={{ backgroundColor: `${colors.danger}15`, borderRadius: 12, paddingVertical: 14, alignItems: "center" }}
+          style={{ backgroundColor: `${colors.danger}15`, paddingVertical: 14, alignItems: "center" }}
         >
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <Ionicons name="log-out-outline" size={18} color="#dc2626" style={{ marginRight: 8 }} />

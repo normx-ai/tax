@@ -15,7 +15,7 @@ export default function ManagementLinks({ colors }: Props) {
   const isAdmin = user?.role === "ADMIN";
 
   return (
-    <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 14, overflow: "hidden" as const, marginBottom: 4 }}>
+    <View style={{ backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: "hidden" as const, marginBottom: 4 }}>
       <SettingsRow
         icon="card-outline"
         label={t("settings.managementSubscription")}

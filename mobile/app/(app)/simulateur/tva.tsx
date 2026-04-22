@@ -207,7 +207,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 6,
     marginBottom: 4,
-    borderRadius: 4,
   },
   sectionHeaderText: {
     fontSize: 13,

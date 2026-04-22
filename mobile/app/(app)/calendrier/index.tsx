@@ -95,7 +95,7 @@ export default function CalendrierFiscal() {
       <View style={{
         flexDirection: "row", alignItems: "center", justifyContent: "space-between",
         marginBottom: 16, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border,
-        borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10,
+        paddingHorizontal: 12, paddingVertical: 10,
       }}>
         <TouchableOpacity onPress={moisPrecedent} hitSlop={8} accessibilityLabel="Mois precedent" accessibilityRole="button">
           <Ionicons name="chevron-back" size={22} color={colors.primary} />
@@ -159,7 +159,7 @@ export default function CalendrierFiscal() {
                       <View style={{
                         position: "absolute", top: 2, right: 4,
                         backgroundColor: jour.echeances.some((e) => e.recurrent) ? colors.accent : colors.danger,
-                        width: 16, height: 16, borderRadius: 8,
+                        width: 16, height: 16,
                         alignItems: "center", justifyContent: "center",
                       }}>
                         <Text style={{ fontSize: 11, fontFamily: fonts.extraBold, fontWeight: fontWeights.extraBold, color: "#fff" }}>
@@ -182,11 +182,11 @@ export default function CalendrierFiscal() {
           <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeAujourdhui")}</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-          <View style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: colors.danger }} />
+          <View style={{ width: 12, height: 12, backgroundColor: colors.danger }} />
           <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeEcheance")}</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-          <View style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: colors.accent }} />
+          <View style={{ width: 12, height: 12, backgroundColor: colors.accent }} />
           <Text style={{ fontSize: 13, fontFamily: fonts.regular, fontWeight: fontWeights.regular, color: colors.textMuted }}>{t("calendrier.legendeRecurrent")}</Text>
         </View>
       </View>
@@ -208,9 +208,9 @@ export default function CalendrierFiscal() {
           {prochaineEcheance && (
             <View style={{
               backgroundColor: `${colors.primary}10`, borderWidth: 1, borderColor: `${colors.primary}30`,
-              borderRadius: 12, padding: 14, flexDirection: "row", alignItems: "center", gap: 12,
+              padding: 14, flexDirection: "row", alignItems: "center", gap: 12,
             }}>
-              <View style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: `${colors.primary}20`, alignItems: "center", justifyContent: "center" }}>
+              <View style={{ width: 40, height: 40, backgroundColor: `${colors.primary}20`, alignItems: "center", justifyContent: "center" }}>
                 <Ionicons name={prochaineEcheance.echeance.icon as keyof typeof Ionicons.glyphMap} size={18} color={colors.primary} />
               </View>
               <View style={{ flex: 1 }}>
@@ -231,7 +231,7 @@ export default function CalendrierFiscal() {
               {selectedJour} {nomMois} {annee}
             </Text>
             {echeancesJourSelectionne.length > 0 && (
-              <View style={{ backgroundColor: `${colors.primary}15`, paddingHorizontal: 10, paddingVertical: 3, borderRadius: 10 }}>
+              <View style={{ backgroundColor: `${colors.primary}15`, paddingHorizontal: 10, paddingVertical: 3 }}>
                 <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 13, color: colors.primary }}>
                   {echeancesJourSelectionne.length} {echeancesJourSelectionne.length > 1 ? t("calendrier.obligations") : t("calendrier.obligation")}
                 </Text>
@@ -256,7 +256,6 @@ export default function CalendrierFiscal() {
                     backgroundColor: colors.card,
                     borderWidth: 1,
                     borderColor: e.recurrent ? `${colors.accent}40` : `${colors.danger}40`,
-                    borderRadius: 12,
                     padding: 14,
                     flexGrow: isMobile ? undefined : 1,
                     minWidth: isMobile ? undefined : 250,
@@ -264,7 +263,7 @@ export default function CalendrierFiscal() {
                 >
                   <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8, gap: 10 }}>
                     <View style={{
-                      width: 36, height: 36, borderRadius: 10,
+                      width: 36, height: 36,
                       backgroundColor: e.recurrent ? `${colors.accent}15` : `${colors.danger}15`,
                       alignItems: "center", justifyContent: "center",
                     }}>
@@ -282,7 +281,7 @@ export default function CalendrierFiscal() {
                   <View style={{
                     marginTop: 8, alignSelf: "flex-start",
                     backgroundColor: e.recurrent ? `${colors.accent}15` : `${colors.danger}15`,
-                    paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6,
+                    paddingHorizontal: 8, paddingVertical: 3,
                   }}>
                     <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 11, color: e.recurrent ? colors.accent : colors.danger }}>
                       {e.recurrent ? t("calendrier.legendeRecurrent") : t("calendrier.legendeEcheance")}

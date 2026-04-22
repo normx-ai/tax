@@ -33,7 +33,6 @@ export default memo(function PasswordFields({
     padding: isMobile ? 10 : 12,
     fontSize: isMobile ? 15 : 16,
     color: colors.text,
-    borderRadius: 8,
   };
 
   return (

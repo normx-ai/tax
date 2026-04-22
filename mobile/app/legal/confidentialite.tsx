@@ -55,7 +55,6 @@ export default function ConfidentialitePublicScreen() {
           backgroundColor: colors.card,
           borderWidth: 1,
           borderColor: colors.border,
-          borderRadius: 12,
           paddingHorizontal: 48,
           paddingVertical: 56,
           shadowColor: "#000",
@@ -120,7 +119,7 @@ export default function ConfidentialitePublicScreen() {
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Conformément à l'article 6 du RGPD, chaque traitement repose sur une base légale :
           </Text>
-          <View style={{ marginTop: 12, backgroundColor: "rgba(200,160,60,0.05)", borderRadius: 8, padding: 12 }}>
+          <View style={{ marginTop: 12, backgroundColor: "rgba(200,160,60,0.05)", padding: 12 }}>
             <View style={{ flexDirection: "row", marginBottom: 8 }}>
               <Text style={{ fontSize: 15, color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold, flex: 1 }}>Finalité</Text>
               <Text style={{ fontSize: 15, color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold, flex: 1 }}>Base légale</Text>

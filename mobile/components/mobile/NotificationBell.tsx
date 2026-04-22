@@ -100,7 +100,6 @@ export default function NotificationBell() {
                 backgroundColor: colors.danger,
                 width: 9,
                 height: 9,
-                borderRadius: 5,
                 borderWidth: 1.5,
                 borderColor: colors.background,
               }}
@@ -127,7 +126,6 @@ export default function NotificationBell() {
               width: isMobile ? 320 : 380,
               maxHeight: 480,
               backgroundColor: colors.card,
-              borderRadius: 14,
               borderWidth: 1,
               borderColor: colors.border,
               shadowColor: "#000",
@@ -168,7 +166,6 @@ export default function NotificationBell() {
                     backgroundColor: `${colors.primary}15`,
                     paddingHorizontal: 8,
                     paddingVertical: 2,
-                    borderRadius: 8,
                   }}
                 >
                   <Text
@@ -220,7 +217,6 @@ export default function NotificationBell() {
                             : isUrgent
                               ? `${colors.warning}30`
                               : `${colors.primary}15`,
-                          borderRadius: 10,
                           padding: 12,
                           marginBottom: 8,
                         }}
@@ -239,7 +235,6 @@ export default function NotificationBell() {
                               style={{
                                 width: 30,
                                 height: 30,
-                                borderRadius: 8,
                                 backgroundColor: isToday
                                   ? colors.danger
                                   : isUrgent
@@ -280,7 +275,6 @@ export default function NotificationBell() {
                                   : `${colors.primary}15`,
                               paddingHorizontal: 8,
                               paddingVertical: 2,
-                              borderRadius: 6,
                             }}
                           >
                             <Text

@@ -217,7 +217,6 @@ function ArticleBlock({ article, colors, scrollRef }: { article: ArticleData; co
                 backgroundColor: colors.border,
                 paddingHorizontal: 8,
                 paddingVertical: 2,
-                borderRadius: 4,
                 overflow: "hidden",
               }}
             >

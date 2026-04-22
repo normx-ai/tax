@@ -22,7 +22,6 @@ export default memo(function EmailField({ email, emailError, onChangeEmail, onBl
     padding: isMobile ? 10 : 12,
     fontSize: isMobile ? 15 : 16,
     color: colors.text,
-    borderRadius: 8,
   };
 
   return (

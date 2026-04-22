@@ -48,7 +48,6 @@ export default function ArticleText({ texte, highlightIndex, onLineLayout }: Pro
     borderLeftColor: "#D4A017",
     paddingLeft: 6,
     paddingVertical: 2,
-    borderRadius: 6,
   };
 
   const wrapLine = (i: number, content: React.ReactNode) => (

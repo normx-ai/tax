@@ -47,7 +47,6 @@ function Card({ children, onPress }: { children: React.ReactNode; onPress?: () =
         backgroundColor: colors.card,
         borderWidth: 1,
         borderColor: colors.border,
-        borderRadius: 14,
         padding: 16,
         marginBottom: 10,
       }}
@@ -83,7 +82,6 @@ function NodeListView({ nodes, onSelect, title }: {
                 style={{
                   width: 40,
                   height: 40,
-                  borderRadius: 10,
                   backgroundColor: `${ic.color}18`,
                   alignItems: "center",
                   justifyContent: "center",
@@ -233,7 +231,6 @@ function AudioPlayer({ lines, colors, onLineChange }: {
     <View
       style={{
         backgroundColor: `${colors.primary}12`,
-        borderRadius: 12,
         padding: 12,
         marginBottom: 14,
       }}
@@ -246,7 +243,6 @@ function AudioPlayer({ lines, colors, onLineChange }: {
           style={{
             width: 40,
             height: 40,
-            borderRadius: 20,
             backgroundColor: colors.primary,
             alignItems: "center",
             justifyContent: "center",
@@ -266,7 +262,6 @@ function AudioPlayer({ lines, colors, onLineChange }: {
             style={{
               width: 40,
               height: 40,
-              borderRadius: 20,
               backgroundColor: colors.danger || "#dc2626",
               alignItems: "center",
               justifyContent: "center",
@@ -287,12 +282,11 @@ function AudioPlayer({ lines, colors, onLineChange }: {
       </View>
 
       {/* Barre de progression */}
-      <View style={{ height: 4, backgroundColor: colors.border, borderRadius: 2, overflow: "hidden" }}>
+      <View style={{ height: 4, backgroundColor: colors.border, overflow: "hidden" }}>
         <View
           style={{
             height: 4,
             backgroundColor: colors.primary,
-            borderRadius: 2,
             width: `${Math.round(progress * 100)}%`,
           }}
         />
@@ -367,7 +361,6 @@ function ArticleDetailView({ article, onBack, codeType }: { article: ArticleData
                 backgroundColor: colors.border,
                 paddingHorizontal: 8,
                 paddingVertical: 2,
-                borderRadius: 4,
                 overflow: "hidden",
               }}
             >
@@ -430,7 +423,7 @@ function ScoreBadge({ score, colors }: { score: number; colors: ThemeColors }) {
   const bg = score >= 100 ? `${colors.success}20` : score >= 40 ? `${colors.primary}15` : `${colors.textMuted}15`;
   const fg = score >= 100 ? colors.success : score >= 40 ? colors.primary : colors.textMuted;
   return (
-    <View style={{ backgroundColor: bg, borderRadius: 6, paddingHorizontal: 5, paddingVertical: 1 }}>
+    <View style={{ backgroundColor: bg, paddingHorizontal: 5, paddingVertical: 1 }}>
       <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 10, color: fg }}>{label}</Text>
     </View>
   );
@@ -458,7 +451,6 @@ function SearchResultsView({ results, onSelect }: { results: SearchResult[]; onS
               style={{
                 width: 36,
                 height: 36,
-                borderRadius: 8,
                 backgroundColor: score >= 100 ? `${colors.primary}20` : `${colors.primary}10`,
                 alignItems: "center",
                 justifyContent: "center",
@@ -499,7 +491,7 @@ function SearchResultsView({ results, onSelect }: { results: SearchResult[]; onS
                     .filter((mc) => matchedWords.some((w) => normalize(mc).includes(normalize(w))))
                     .slice(0, 3)
                     .map((mc, j) => (
-                      <View key={j} style={{ backgroundColor: `${colors.primary}10`, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1 }}>
+                      <View key={j} style={{ backgroundColor: `${colors.primary}10`, paddingHorizontal: 5, paddingVertical: 1 }}>
                         <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.primary }}>{mc}</Text>
                       </View>
                     ))}
@@ -560,7 +552,7 @@ export default function MobileCGIBrowser({ sommaire, codeType }: Props & { codeT
               <Ionicons name="arrow-back" size={20} color={colors.primary} />
             </TouchableOpacity>
           )}
-          <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, borderRadius: 10, paddingHorizontal: 10, paddingVertical: 6 }}>
+          <View style={{ flex: 1, flexDirection: "row", alignItems: "center", backgroundColor: colors.input, paddingHorizontal: 10, paddingVertical: 6 }}>
             <Ionicons name="search" size={16} color={colors.textMuted} />
             <TextInput
               style={{ flex: 1, marginLeft: 8, fontSize: 16, color: colors.text, fontFamily: fonts.regular }}
@@ -617,7 +609,7 @@ export default function MobileCGIBrowser({ sommaire, codeType }: Props & { codeT
             return (
               <Card key={node.id} onPress={() => handleSelectNode(node)}>
                 <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
-                  <View style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: ic.color + "18", alignItems: "center", justifyContent: "center" }}>
+                  <View style={{ width: 40, height: 40, backgroundColor: ic.color + "18", alignItems: "center", justifyContent: "center" }}>
                     <Ionicons name={ic.icon} size={20} color={ic.color} />
                   </View>
                   <View style={{ flex: 1 }}>

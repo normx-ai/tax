@@ -56,7 +56,6 @@ function FieldInput({
         style={{
           borderWidth: 1,
           borderColor: colors.border,
-          borderRadius: 10,
           paddingHorizontal: 14,
           paddingVertical: 11,
           fontSize: 17,
@@ -99,7 +98,6 @@ export default function ProfileForm({
         <View
           style={{
             backgroundColor: message.type === "success" ? `${colors.success}15` : `${colors.danger}15`,
-            borderRadius: 12,
             padding: 14,
             marginBottom: 16,
             flexDirection: "row",
@@ -132,7 +130,6 @@ export default function ProfileForm({
           backgroundColor: colors.card,
           borderWidth: 1,
           borderColor: colors.border,
-          borderRadius: 14,
           padding: 18,
           marginBottom: 16,
         }}
@@ -192,7 +189,6 @@ export default function ProfileForm({
             backgroundColor: saving ? colors.accent : colors.primary,
             paddingVertical: 12,
             paddingHorizontal: 24,
-            borderRadius: 12,
             flexDirection: "row",
             alignItems: "center",
           }}

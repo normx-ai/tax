@@ -51,7 +51,7 @@ export default function SeatRequestSection({
   const discountPercent = getVolumeDiscountPercent(totalSeatsAfter);
 
   return (
-    <View style={{ backgroundColor: colors.card, borderRadius: 12, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
+    <View style={{ backgroundColor: colors.card, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border }}>
       <Text style={{ fontSize: 18, fontWeight: "700", color: colors.text, marginBottom: 12 }}>
         {t("seatRequest.title")}
       </Text>
@@ -61,7 +61,7 @@ export default function SeatRequestSection({
       </Text>
 
       {pendingSeatRequest && pendingSeatRequest.status === "PENDING" ? (
-        <View style={{ backgroundColor: `${colors.warning}15`, padding: 12, borderRadius: 8 }}>
+        <View style={{ backgroundColor: `${colors.warning}15`, padding: 12 }}>
           <Text style={{ fontSize: 16, fontWeight: "600", color: colors.warning }}>
             {t("seatRequest.pendingLabel")}
           </Text>
@@ -87,7 +87,6 @@ export default function SeatRequestSection({
               style={{
                 borderWidth: 1,
                 borderColor: colors.border,
-                borderRadius: 8,
                 paddingHorizontal: 12,
                 paddingVertical: 8,
                 width: 80,
@@ -101,7 +100,7 @@ export default function SeatRequestSection({
           </View>
 
           {seatsNum > 0 && (
-            <View style={{ backgroundColor: `${colors.primary}10`, padding: 12, borderRadius: 8, marginBottom: 12 }}>
+            <View style={{ backgroundColor: `${colors.primary}10`, padding: 12, marginBottom: 12 }}>
               <Text style={{ fontSize: 16, fontWeight: "600", color: colors.text }}>
                 {seatsNum} x {computedUnitPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ")} = {computedTotalPrice.toLocaleString("fr-FR").replace(/[\u202F\u00A0]/g, " ")} XAF
               </Text>
@@ -119,7 +118,6 @@ export default function SeatRequestSection({
             style={{
               backgroundColor: seatsNum > 0 ? colors.primary : colors.disabled,
               paddingVertical: 12,
-              borderRadius: 8,
               alignItems: "center",
             }}
           >
