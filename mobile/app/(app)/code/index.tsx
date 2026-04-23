@@ -179,27 +179,21 @@ export default function CodeCGI() {
                   <TouchableOpacity
                     key={tab.id}
                     onPress={() => setActiveCode(tab.id)}
+                    accessibilityLabel={tab.label}
+                    accessibilityRole="tab"
+                    {...({ title: tab.label } as object)}
                     style={{
                       flex: 1,
                       flexDirection: "row",
                       alignItems: "center",
                       justifyContent: "center",
-                      paddingVertical: 10,
+                      paddingVertical: 12,
                       backgroundColor: isActive ? `${colors.primary}15` : "transparent",
                       borderBottomWidth: 2,
                       borderBottomColor: isActive ? colors.primary : "transparent",
-                      gap: 6,
                     }}
                   >
-                    <Ionicons name={tab.icon} size={16} color={isActive ? colors.primary : colors.textMuted} />
-                    <Text style={{
-                      fontSize: 13,
-                      fontFamily: isActive ? fonts.bold : fonts.regular,
-                      fontWeight: isActive ? fontWeights.bold : fontWeights.regular,
-                      color: isActive ? colors.primary : colors.textMuted,
-                    }}>
-                      {tab.label}
-                    </Text>
+                    <Ionicons name={tab.icon} size={20} color={isActive ? colors.primary : colors.textMuted} />
                   </TouchableOpacity>
                 );
               })}
