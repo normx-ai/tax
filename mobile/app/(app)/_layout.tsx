@@ -400,7 +400,12 @@ function AppLayoutInner() {
           </View>
         )}
 
-        {/* Onglets multiples en haut */}
+        {/* Contenu */}
+        <View style={{ flex: 1 }}>
+          {stackScreens}
+        </View>
+
+        {/* Onglets style Normx */}
         <TabsBar
           openTabs={openTabs}
           activeTab={activeTabId}
@@ -417,11 +422,6 @@ function AppLayoutInner() {
             });
           }}
         />
-
-        {/* Contenu */}
-        <View style={{ flex: 1 }}>
-          {stackScreens}
-        </View>
       </View>
       <FloatingCalculator />
       <SessionExpiredModal />
