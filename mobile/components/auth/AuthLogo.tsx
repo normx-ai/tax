@@ -21,10 +21,12 @@ export default function AuthLogo({ size = "md" }: Props) {
   return (
     <View style={{ alignItems: "center", marginBottom: size === "lg" ? 36 : 24 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: size === "lg" ? 8 : 6 }}>
-        <Image
-          source={require("@/assets/logo-horizontal.png")}
-          style={{ width: s.logoW, height: s.logoH, resizeMode: "contain" }}
-        />
+        <View style={{ backgroundColor: "#fff", padding: 6 }}>
+          <Image
+            source={require("@/assets/logo-horizontal.png")}
+            style={{ width: s.logoW, height: s.logoH, resizeMode: "contain" }}
+          />
+        </View>
         <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: s.taxFont, color: colors.primary }}>
           Tax
         </Text>

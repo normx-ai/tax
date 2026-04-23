@@ -89,10 +89,12 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
           {getGreeting(t)}
         </Text>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-          <Image
-            source={require("@/assets/logo-horizontal.png")}
-            style={{ width: 150, height: 30, resizeMode: "contain" }}
-          />
+          <View style={{ backgroundColor: "#fff", padding: 4 }}>
+            <Image
+              source={require("@/assets/logo-horizontal.png")}
+              style={{ width: 150, height: 30, resizeMode: "contain" }}
+            />
+          </View>
           <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 20, color: colors.primary }}>
             Tax
           </Text>

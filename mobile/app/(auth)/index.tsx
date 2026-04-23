@@ -49,10 +49,12 @@ export default function AuthScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: BG_WARM, justifyContent: "center", alignItems: "center", padding: 32 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 12 }}>
-        <Image
-          source={require("@/assets/logo-horizontal.png")}
-          style={{ width: 200, height: 40, resizeMode: "contain" }}
-        />
+        <View style={{ backgroundColor: "#fff", padding: 6 }}>
+          <Image
+            source={require("@/assets/logo-horizontal.png")}
+            style={{ width: 200, height: 40, resizeMode: "contain" }}
+          />
+        </View>
         <Text style={{ fontSize: 24, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: PRIMARY }}>
           Tax
         </Text>
