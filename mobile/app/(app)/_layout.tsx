@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { View, Text, TouchableOpacity, Platform, ActivityIndicator } from "react-native";
 import { Redirect, Stack, usePathname, router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -24,6 +24,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 import FloatingCalculator from "@/components/simulateur/FloatingCalculator";
 import NotificationBell from "@/components/mobile/NotificationBell";
 import { ActiveCodeProvider } from "@/lib/context/ActiveCodeContext";
+import TabsBar, { type TabItem } from "@/components/TabsBar";
 
 function getInitials(prenom?: string, nom?: string) {
   return ((prenom?.[0] || "") + (nom?.[0] || "")).toUpperCase() || "U";
@@ -117,6 +118,30 @@ function AppLayoutInner() {
   const { activeCode, setActiveCode } = useActiveCode();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [searchVisible, setSearchVisible] = useState(false);
+
+  // --- Onglets multiples ---
+  type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
+  const PAGE_ICONS: Record<string, IoniconsName> = {
+    "/": "home-outline", "/code": "book-outline", "/simulateur": "calculator-outline",
+    "/calendrier": "calendar-outline", "/chat": "chatbubbles-outline", "/audit-facture": "scan-outline",
+    "/profil": "person-outline", "/parametres": "settings-outline", "/plus": "ellipsis-horizontal",
+  };
+  const [openTabs, setOpenTabs] = useState<TabItem[]>([
+    { id: "/", label: "Accueil", icon: "home-outline", route: "/(app)", closable: false },
+  ]);
+  const [activeTabId, setActiveTabId] = useState("/");
+
+  useEffect(() => {
+    const tabId = pathname === "/(app)" ? "/" : pathname;
+    setActiveTabId(tabId);
+    setOpenTabs((prev) => {
+      if (prev.some((t) => t.id === tabId)) return prev;
+      const titleKey = PAGE_TITLES[pathname];
+      const label = titleKey ? t(titleKey) : pathname.split("/").pop() || "";
+      const icon = Object.entries(PAGE_ICONS).find(([k]) => pathname.startsWith(k) && k !== "/")?.[1] || "document-outline";
+      return [...prev, { id: tabId, label, icon: icon as IoniconsName, route: `/(app)${pathname}`, closable: true }];
+    });
+  }, [pathname]);
 
   const [subStatus, setSubStatus] = useState<string | null>(null);
   const [subLoading, setSubLoading] = useState(true);
@@ -374,6 +399,24 @@ function AppLayoutInner() {
             </Text>
           </View>
         )}
+
+        {/* Onglets multiples en haut */}
+        <TabsBar
+          openTabs={openTabs}
+          activeTab={activeTabId}
+          onSelectTab={(id) => setActiveTabId(id)}
+          onCloseTab={(id) => {
+            setOpenTabs((prev) => {
+              const next = prev.filter((t) => t.id !== id);
+              if (activeTabId === id && next.length > 0) {
+                const last = next[next.length - 1];
+                setActiveTabId(last.id);
+                router.push(last.route as Href);
+              }
+              return next;
+            });
+          }}
+        />
 
         {/* Contenu */}
         <View style={{ flex: 1 }}>
