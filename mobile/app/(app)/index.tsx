@@ -1,5 +1,5 @@
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
-import { useMemo } from "react";
+import { View, Text, TouchableOpacity, ScrollView, Pressable } from "react-native";
+import { useMemo, useState } from "react";
 import { router, type Href } from "expo-router";
 import { useAuthStore } from "@/lib/store/auth";
 import { useHistoryStore } from "@/lib/store/history";
@@ -100,6 +100,8 @@ export default function Dashboard() {
   ], [t]);
 
 
+  const [hoveredAction, setHoveredAction] = useState<string | null>(null);
+
   // Sur mobile : affichage HomeCards (disposition proposée)
   if (isMobile) {
     return <HomeCards favoritesCount={favoriteIds.length} />;
@@ -114,12 +116,13 @@ export default function Dashboard() {
             {QUICK_ACTIONS.map((a) => {
               const disabled = !a.route;
               return (
-                <TouchableOpacity
+                <Pressable
                   key={a.label}
                   onPress={() => a.onPress ? a.onPress() : a.route && router.push(a.route as Href)}
                   disabled={disabled}
                   accessibilityLabel={a.label}
-                  {...({ title: a.label } as object)}
+                  onHoverIn={() => setHoveredAction(a.label)}
+                  onHoverOut={() => setHoveredAction((prev) => (prev === a.label ? null : prev))}
                   style={{
                     backgroundColor: colors.card,
                     borderWidth: 1,
@@ -128,10 +131,32 @@ export default function Dashboard() {
                     alignItems: "center",
                     justifyContent: "center",
                     opacity: disabled ? 0.5 : 1,
+                    position: "relative",
                   }}
                 >
                   <Ionicons name={a.icon} size={22} color={a.color} />
-                </TouchableOpacity>
+                  {hoveredAction === a.label && (
+                    <View
+                      pointerEvents="none"
+                      style={{
+                        position: "absolute",
+                        top: "100%",
+                        left: "50%",
+                        transform: [{ translateX: -50 }],
+                        marginTop: 6,
+                        paddingHorizontal: 10,
+                        paddingVertical: 6,
+                        backgroundColor: "#0f2a42",
+                        minWidth: 100,
+                        zIndex: 1000,
+                      }}
+                    >
+                      <Text style={{ color: "#fff", fontSize: 12, fontFamily: fonts.medium, fontWeight: fontWeights.medium, textAlign: "center" }} numberOfLines={1}>
+                        {a.label}
+                      </Text>
+                    </View>
+                  )}
+                </Pressable>
               );
             })}
           </ScrollView>
