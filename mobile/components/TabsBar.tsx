@@ -1,8 +1,7 @@
 import React from "react";
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { View, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { router, type Href } from "expo-router";
-import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type IoniconsName = React.ComponentProps<typeof Ionicons>["name"];
 
@@ -42,28 +41,20 @@ export default function TabsBar({ openTabs, activeTab, onSelectTab, onCloseTab }
                 onSelectTab(tab.id);
                 router.push(tab.route as Href);
               }}
+              accessibilityLabel={tab.label}
+              accessibilityRole="tab"
+              {...({ title: tab.label } as object)}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 6,
-                paddingHorizontal: 14,
+                paddingHorizontal: 12,
                 backgroundColor: isActive ? "#D4A843" : "transparent",
                 borderRightWidth: 1,
                 borderRightColor: "#333",
               }}
             >
-              <Ionicons name={tab.icon} size={14} color={isActive ? "#fff" : "#9ca3af"} />
-              <Text
-                style={{
-                  fontFamily: fonts.regular,
-                  fontSize: 12,
-                  color: isActive ? "#fff" : "#9ca3af",
-                  maxWidth: 120,
-                }}
-                numberOfLines={1}
-              >
-                {tab.label}
-              </Text>
+              <Ionicons name={tab.icon} size={18} color={isActive ? "#fff" : "#9ca3af"} />
               {tab.closable && (
                 <TouchableOpacity
                   onPress={(e) => {
@@ -71,7 +62,9 @@ export default function TabsBar({ openTabs, activeTab, onSelectTab, onCloseTab }
                     onCloseTab(tab.id);
                   }}
                   hitSlop={4}
-                  style={{ padding: 2, marginLeft: 2 }}
+                  style={{ padding: 2 }}
+                  accessibilityLabel={`Fermer ${tab.label}`}
+                  {...({ title: `Fermer ${tab.label}` } as object)}
                 >
                   <Ionicons name="close" size={12} color={isActive ? "#fff" : "#9ca3af"} />
                 </TouchableOpacity>
