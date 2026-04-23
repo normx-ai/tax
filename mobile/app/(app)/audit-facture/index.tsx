@@ -82,6 +82,15 @@ export default function AuditFacturePage() {
     }
   };
 
+  const resetAudit = () => {
+    setFile(null);
+    setResult(null);
+    setError(null);
+    setSelectedAxes(new Set(ALL_AXES));
+    setLastAxes(new Set(ALL_AXES));
+    if (inputRef.current) inputRef.current.value = "";
+  };
+
   const handleAnalyze = async () => {
     if (!file) return;
     setLoading(true);
@@ -359,6 +368,26 @@ export default function AuditFacturePage() {
             ))}
           </View>
         )}
+
+        {/* Bouton retour : reinitialiser pour une nouvelle analyse */}
+        <TouchableOpacity
+          onPress={resetAudit}
+          style={{
+            marginTop: 4,
+            paddingVertical: 10,
+            alignItems: "center",
+            borderWidth: 1,
+            borderColor: colors.border,
+            backgroundColor: colors.card,
+          }}
+        >
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+            <Ionicons name="refresh-outline" size={16} color={colors.text} />
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 13, color: colors.text }}>
+              Nouvelle analyse
+            </Text>
+          </View>
+        </TouchableOpacity>
       </View>
     );
   })();
