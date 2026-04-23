@@ -7,6 +7,11 @@ const CLAUDE_MODEL = "claude-sonnet-4-6";
 
 export type DocumentType = "facture" | "contrat";
 
+/** Axes d'audit selectionnables individuellement par l'utilisateur. */
+export type AuditAxe = "langue" | "tva" | "mentions" | "risques" | "recommandations";
+
+export const ALL_AXES: AuditAxe[] = ["langue", "tva", "mentions", "risques", "recommandations"];
+
 export interface MentionResult {
   nom: string;
   present: boolean;
@@ -232,10 +237,35 @@ function detectMediaType(buffer: Buffer): "application/pdf" | "image/jpeg" | "im
   return null;
 }
 
+const AXE_LABELS: Record<AuditAxe, string> = {
+  langue: "conformite linguistique (Art. 373 ter)",
+  tva: "taux et statut TVA (Art. 22)",
+  mentions: "mentions obligatoires (Art. 32)",
+  risques: "risques fiscaux / amendes",
+  recommandations: "recommandations d'amelioration",
+};
+
+function buildFocusInstruction(axes: AuditAxe[] | undefined): string {
+  if (!axes || axes.length === 0 || axes.length === ALL_AXES.length) return "";
+  const selected = axes.map((a) => AXE_LABELS[a]).join(", ");
+  const omitted = ALL_AXES.filter((a) => !axes.includes(a));
+  const omittedHints = omitted.map((a) => {
+    switch (a) {
+      case "langue": return '"langue": { "conforme": true, "details": "non audite" }';
+      case "tva": return '"tva": { "assujetti": false, "conforme": true, "tauxApplique": null, "tauxAttendu": null, "details": "non audite" }';
+      case "mentions": return '"mentions": []';
+      case "risques": return '"risques": []';
+      case "recommandations": return '"recommandations": []';
+    }
+  }).join(", ");
+  return `\n\nAUDIT CIBLE : focalise ton analyse et ton JSON sur ces axes uniquement : ${selected}. Pour les axes non demandes, renvoie des valeurs vides/defaut : ${omittedHints}. Remplis quand meme "score" et "donneesExtraites" normalement.`;
+}
+
 export async function analyzeInvoice(
   fileBuffer: Buffer,
   mimeType: string,
-  docType: DocumentType = "facture"
+  docType: DocumentType = "facture",
+  axes?: AuditAxe[],
 ): Promise<AuditFactureResult> {
   // On detecte le vrai format depuis le contenu plutot que de faire
   // confiance au mimetype envoye par le client (un .jpg peut en realite
@@ -258,7 +288,7 @@ export async function analyzeInvoice(
             data: base64,
           },
         },
-    { type: "text" as const, text: DOC_INSTRUCTIONS[docType] },
+    { type: "text" as const, text: DOC_INSTRUCTIONS[docType] + buildFocusInstruction(axes) },
   ];
 
   const response = await anthropic.messages.create({

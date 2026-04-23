@@ -5,7 +5,7 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
-import { analyzeDocument, getAuditHistory, getAuditDetail, DOC_TYPE_LABELS, type AuditFactureResult, type AuditHistoryItem, type DocumentType } from "@/lib/api/audit-facture";
+import { analyzeDocument, getAuditHistory, getAuditDetail, DOC_TYPE_LABELS, ALL_AXES, AXE_LABELS, type AuditFactureResult, type AuditHistoryItem, type DocumentType, type AuditAxe } from "@/lib/api/audit-facture";
 
 type FileInfo = { name: string; size: number; blob: Blob };
 const DOC_TYPES: DocumentType[] = ["facture", "contrat"];
@@ -20,7 +20,30 @@ export default function AuditFacturePage() {
   const [result, setResult] = useState<AuditFactureResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<AuditHistoryItem[]>([]);
+  // Axes actifs : tous par defaut (audit complet). L'utilisateur peut en
+  // desactiver pour ne verifier qu'un sous-ensemble.
+  const [selectedAxes, setSelectedAxes] = useState<Set<AuditAxe>>(() => new Set(ALL_AXES));
+  const [lastAxes, setLastAxes] = useState<Set<AuditAxe>>(() => new Set(ALL_AXES));
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const toggleAxe = (a: AuditAxe) => {
+    setSelectedAxes((prev) => {
+      const next = new Set(prev);
+      if (next.has(a)) {
+        if (next.size > 1) next.delete(a); // garde au moins 1 axe
+      } else {
+        next.add(a);
+      }
+      return next;
+    });
+    setResult(null);
+    setError(null);
+  };
+  const selectAllAxes = () => {
+    setSelectedAxes(new Set(ALL_AXES));
+    setResult(null);
+    setError(null);
+  };
 
   useEffect(() => {
     getAuditHistory().then(setHistory).catch(() => {});
@@ -63,9 +86,11 @@ export default function AuditFacturePage() {
     if (!file) return;
     setLoading(true);
     setError(null);
+    const axes = Array.from(selectedAxes);
     try {
-      const res = await analyzeDocument(file.blob, file.name, docType);
+      const res = await analyzeDocument(file.blob, file.name, docType, axes);
       setResult(res);
+      setLastAxes(new Set(axes));
     } catch (err) {
       const axiosErr = err as { response?: { data?: { error?: string } } };
       setError(axiosErr?.response?.data?.error || "Erreur lors de l'analyse");
@@ -149,6 +174,42 @@ export default function AuditFacturePage() {
         />
       )}
 
+      {/* Axes a auditer */}
+      <View style={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: colors.textSecondary, textTransform: "uppercase", letterSpacing: 0.5 }}>
+            Axes a auditer
+          </Text>
+          {selectedAxes.size < ALL_AXES.length && (
+            <TouchableOpacity onPress={selectAllAxes} hitSlop={6}>
+              <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 11, color: colors.primary }}>Tout cocher</Text>
+            </TouchableOpacity>
+          )}
+        </View>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+          {ALL_AXES.map((a) => {
+            const active = selectedAxes.has(a);
+            return (
+              <TouchableOpacity
+                key={a}
+                onPress={() => toggleAxe(a)}
+                style={{
+                  paddingVertical: 5,
+                  paddingHorizontal: 10,
+                  backgroundColor: active ? colors.headerBg : colors.card,
+                  borderWidth: 1,
+                  borderColor: active ? colors.headerBg : colors.border,
+                }}
+              >
+                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 11, color: active ? "#fff" : colors.textSecondary }}>
+                  {AXE_LABELS[a]}
+                </Text>
+              </TouchableOpacity>
+            );
+          })}
+        </View>
+      </View>
+
       {/* Bouton analyser */}
       <TouchableOpacity
         onPress={handleAnalyze}
@@ -168,7 +229,7 @@ export default function AuditFacturePage() {
           </View>
         ) : (
           <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: "#fff" }}>
-            Analyser le document
+            {selectedAxes.size === ALL_AXES.length ? "Analyser le document" : `Analyser (${selectedAxes.size} axe${selectedAxes.size > 1 ? "s" : ""})`}
           </Text>
         )}
       </TouchableOpacity>
@@ -218,6 +279,7 @@ export default function AuditFacturePage() {
         </View>
 
         {/* Langue */}
+        {lastAxes.has("langue") && (
         <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
           <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
             <Ionicons name={result.langue.conforme ? "checkmark-circle" : "close-circle"} size={18} color={result.langue.conforme ? colors.success : colors.danger} />
@@ -225,8 +287,10 @@ export default function AuditFacturePage() {
           </View>
           <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.langue.details}</Text>
         </View>
+        )}
 
         {/* TVA */}
+        {lastAxes.has("tva") && (
         <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
           <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
             <Ionicons name={result.tva.conforme ? "checkmark-circle" : "alert-circle"} size={18} color={result.tva.conforme ? colors.success : colors.warning} />
@@ -239,8 +303,10 @@ export default function AuditFacturePage() {
             </Text>
           )}
         </View>
+        )}
 
         {/* Mentions */}
+        {lastAxes.has("mentions") && result.mentions.length > 0 && (
         <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
           <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
             Mentions obligatoires (Art. 32)
@@ -257,9 +323,10 @@ export default function AuditFacturePage() {
             </View>
           ))}
         </View>
+        )}
 
         {/* Risques */}
-        {result.risques.length > 0 && (
+        {lastAxes.has("risques") && result.risques.length > 0 && (
           <View style={{ backgroundColor: `${colors.danger}08`, padding: 16, borderWidth: 1, borderColor: `${colors.danger}30` }}>
             <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.danger, marginBottom: 10 }}>
               Risques identifies
@@ -277,7 +344,7 @@ export default function AuditFacturePage() {
         )}
 
         {/* Recommandations */}
-        {result.recommandations.length > 0 && (
+        {lastAxes.has("recommandations") && result.recommandations.length > 0 && (
           <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
             <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
               Recommandations

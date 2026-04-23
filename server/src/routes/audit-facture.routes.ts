@@ -3,7 +3,7 @@ import multer from "multer";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
 import { checkAuditCredits, confirmCreditUsage } from "../middleware/subscription.middleware";
-import { analyzeInvoice, type DocumentType } from "../services/audit-facture.service";
+import { analyzeInvoice, ALL_AXES, type DocumentType, type AuditAxe } from "../services/audit-facture.service";
 import prisma from "../utils/prisma";
 import { createLogger } from "../utils/logger";
 
@@ -42,14 +42,32 @@ router.post(
         return res.status(400).json({ error: "Type de document invalide" });
       }
 
+      // Axes cibles (optionnel). Accepte une liste separee par virgules
+      // (ex: "langue,mentions") ou un JSON string. Valeurs invalides ignorees.
+      const rawAxes = typeof req.body?.axes === "string" ? req.body.axes : "";
+      let axes: AuditAxe[] | undefined;
+      if (rawAxes) {
+        try {
+          const parsed = rawAxes.trim().startsWith("[") ? JSON.parse(rawAxes) : rawAxes.split(",");
+          if (Array.isArray(parsed)) {
+            axes = parsed
+              .map((a) => String(a).trim())
+              .filter((a): a is AuditAxe => ALL_AXES.includes(a as AuditAxe));
+          }
+        } catch {
+          // Format invalide : on retombe sur l'audit complet.
+        }
+      }
+
       // Multer decode les noms de fichiers multipart en latin1 alors que les
       // navigateurs envoient de l'UTF-8. On reinterprete les octets pour
       // restaurer les accents (é, è, à, ô...).
       const fileName = Buffer.from(req.file.originalname, "latin1").toString("utf8");
 
-      logger.info(`Audit ${docType} par user ${req.userId}, fichier: ${fileName} (${req.file.mimetype}, ${(req.file.size / 1024).toFixed(0)} Ko)`);
+      const axesLog = axes && axes.length > 0 ? ` [axes: ${axes.join(",")}]` : "";
+      logger.info(`Audit ${docType} par user ${req.userId}, fichier: ${fileName} (${req.file.mimetype}, ${(req.file.size / 1024).toFixed(0)} Ko)${axesLog}`);
 
-      const result = await analyzeInvoice(req.file.buffer, req.file.mimetype, docType);
+      const result = await analyzeInvoice(req.file.buffer, req.file.mimetype, docType, axes);
 
       // Sauvegarder en base
       await prisma.documentAudit.create({
