@@ -268,7 +268,8 @@ export default function AuditFacturePage() {
     }
     return (
       <View style={{ gap: 12 }}>
-        {/* Score */}
+        {/* Score : seulement si l'axe mentions a ete audite (le score compte les mentions) */}
+        {lastAxes.has("mentions") && result.score.total > 0 && (
         <View style={{ backgroundColor: colors.card, padding: 20, alignItems: "center", borderWidth: 1, borderColor: colors.border }}>
           <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 36, color: scoreColor(result.score.found, result.score.total) }}>
             {result.score.found}/{result.score.total}
@@ -277,6 +278,7 @@ export default function AuditFacturePage() {
             mentions obligatoires detectees
           </Text>
         </View>
+        )}
 
         {/* Langue */}
         {lastAxes.has("langue") && (

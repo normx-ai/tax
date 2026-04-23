@@ -258,7 +258,12 @@ function buildFocusInstruction(axes: AuditAxe[] | undefined): string {
       case "recommandations": return '"recommandations": []';
     }
   }).join(", ");
-  return `\n\nAUDIT CIBLE : focalise ton analyse et ton JSON sur ces axes uniquement : ${selected}. Pour les axes non demandes, renvoie des valeurs vides/defaut : ${omittedHints}. Remplis quand meme "score" et "donneesExtraites" normalement.`;
+  // Le score compte les mentions obligatoires. S'il n'est pas demande,
+  // on l'annule (found=0, total=0) pour que le frontend masque la carte.
+  const scoreHint = axes.includes("mentions")
+    ? 'Remplis "score" et "donneesExtraites" normalement.'
+    : 'Le score est lie aux mentions (non audite ici) : renvoie "score": { "found": 0, "total": 0 }. Remplis "donneesExtraites" normalement.';
+  return `\n\nAUDIT CIBLE : focalise ton analyse et ton JSON sur ces axes uniquement : ${selected}. Pour les axes non demandes, renvoie des valeurs vides/defaut : ${omittedHints}. ${scoreHint}`;
 }
 
 export async function analyzeInvoice(
