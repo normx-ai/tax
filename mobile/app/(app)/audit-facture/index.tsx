@@ -25,6 +25,7 @@ export default function AuditFacturePage() {
   const [selectedAxes, setSelectedAxes] = useState<Set<AuditAxe>>(() => new Set(ALL_AXES));
   const [lastAxes, setLastAxes] = useState<Set<AuditAxe>>(() => new Set(ALL_AXES));
   const inputRef = useRef<HTMLInputElement>(null);
+  const abortRef = useRef<AbortController | null>(null);
 
   const toggleAxe = (a: AuditAxe) => {
     setSelectedAxes((prev) => {
@@ -83,12 +84,26 @@ export default function AuditFacturePage() {
   };
 
   const resetAudit = () => {
+    if (abortRef.current) {
+      abortRef.current.abort();
+      abortRef.current = null;
+    }
     setFile(null);
     setResult(null);
     setError(null);
+    setLoading(false);
     setSelectedAxes(new Set(ALL_AXES));
     setLastAxes(new Set(ALL_AXES));
     if (inputRef.current) inputRef.current.value = "";
+  };
+
+  const cancelAnalyze = () => {
+    if (abortRef.current) {
+      abortRef.current.abort();
+      abortRef.current = null;
+    }
+    setLoading(false);
+    setError("Analyse annulee");
   };
 
   const handleAnalyze = async () => {
@@ -96,14 +111,20 @@ export default function AuditFacturePage() {
     setLoading(true);
     setError(null);
     const axes = Array.from(selectedAxes);
+    const controller = new AbortController();
+    abortRef.current = controller;
     try {
-      const res = await analyzeDocument(file.blob, file.name, docType, axes);
+      const res = await analyzeDocument(file.blob, file.name, docType, axes, controller.signal);
       setResult(res);
       setLastAxes(new Set(axes));
     } catch (err) {
-      const axiosErr = err as { response?: { data?: { error?: string } } };
-      setError(axiosErr?.response?.data?.error || "Erreur lors de l'analyse");
+      const e = err as { code?: string; name?: string; response?: { data?: { error?: string } } };
+      const aborted = e?.code === "ERR_CANCELED" || e?.name === "CanceledError" || e?.name === "AbortError";
+      if (!aborted) {
+        setError(e?.response?.data?.error || "Erreur lors de l'analyse");
+      }
     } finally {
+      abortRef.current = null;
       setLoading(false);
     }
   };
@@ -117,8 +138,8 @@ export default function AuditFacturePage() {
 
   const uploadColumn = (
     <View style={{ gap: 12 }}>
-      {/* Selecteur type de document */}
-      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+      {/* Selecteur type de document + actions (annuler / nouvelle analyse) */}
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
         {DOC_TYPES.map((dt) => (
           <TouchableOpacity
             key={dt}
@@ -141,6 +162,49 @@ export default function AuditFacturePage() {
             </Text>
           </TouchableOpacity>
         ))}
+        <View style={{ flex: 1 }} />
+        {loading && (
+          <TouchableOpacity
+            onPress={cancelAnalyze}
+            accessibilityLabel="Arreter l'analyse"
+            style={{
+              paddingVertical: 6,
+              paddingHorizontal: 10,
+              borderWidth: 1,
+              borderColor: colors.danger,
+              backgroundColor: `${colors.danger}10`,
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 6,
+            }}
+          >
+            <Ionicons name="stop-circle-outline" size={16} color={colors.danger} />
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.danger }}>
+              Arreter
+            </Text>
+          </TouchableOpacity>
+        )}
+        {(file || result) && !loading && (
+          <TouchableOpacity
+            onPress={resetAudit}
+            accessibilityLabel="Nouvelle analyse"
+            style={{
+              paddingVertical: 6,
+              paddingHorizontal: 10,
+              borderWidth: 1,
+              borderColor: colors.border,
+              backgroundColor: colors.card,
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 6,
+            }}
+          >
+            <Ionicons name="refresh-outline" size={16} color={colors.text} />
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text }}>
+              Nouvelle analyse
+            </Text>
+          </TouchableOpacity>
+        )}
       </View>
 
       {/* Upload */}
@@ -369,25 +433,6 @@ export default function AuditFacturePage() {
           </View>
         )}
 
-        {/* Bouton retour : reinitialiser pour une nouvelle analyse */}
-        <TouchableOpacity
-          onPress={resetAudit}
-          style={{
-            marginTop: 4,
-            paddingVertical: 10,
-            alignItems: "center",
-            borderWidth: 1,
-            borderColor: colors.border,
-            backgroundColor: colors.card,
-          }}
-        >
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-            <Ionicons name="refresh-outline" size={16} color={colors.text} />
-            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 13, color: colors.text }}>
-              Nouvelle analyse
-            </Text>
-          </View>
-        </TouchableOpacity>
       </View>
     );
   })();

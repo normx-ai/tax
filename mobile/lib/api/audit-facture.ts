@@ -67,6 +67,7 @@ export async function analyzeDocument(
   filename: string,
   type: DocumentType = "facture",
   axes?: AuditAxe[],
+  signal?: AbortSignal,
 ): Promise<AuditFactureResult> {
   const formData = new FormData();
   formData.append("file", file, filename);
@@ -77,6 +78,7 @@ export async function analyzeDocument(
   const { data } = await api.post<AuditFactureResult>("/audit-facture", formData, {
     headers: { "Content-Type": "multipart/form-data" },
     timeout: 60_000,
+    signal,
   });
   return data;
 }
