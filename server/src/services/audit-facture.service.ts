@@ -44,6 +44,11 @@ REGLES A VERIFIER :
 
 1) LANGUE (Art. 373 ter CGI) : les documents comptables et factures doivent etre rediges en francais. Sanction : amende de 2.000.000 FCFA par document en langue etrangere.
 
+REGLE STRICTE DE COHERENCE LANGUE :
+- Si le document est INTEGRALEMENT en francais (toutes les sections principales : libelles, mentions, montants, designation) : langue.conforme = true, details = "Document redige en francais, conforme"
+- Si le document contient MEME PARTIELLEMENT une autre langue (anglais, arabe, chinois, etc.) sur les sections principales : langue.conforme = false OBLIGATOIREMENT. details doit preciser la langue detectee (ex: "Facture en anglais detectee — non conforme Art. 373 ter").
+- INTERDICTION ABSOLUE de mettre conforme=true si tu decris une anomalie linguistique dans details. Les deux champs doivent etre coherents.
+
 2) DETERMINATION DU STATUT TVA DE L'EMETTEUR — ETAPE PREALABLE OBLIGATOIRE :
 
 Avant de verifier les mentions, tu DOIS identifier si l'emetteur est assujetti ou non a la TVA :
