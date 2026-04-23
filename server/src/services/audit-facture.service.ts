@@ -115,7 +115,10 @@ Services des impots / unites de gestion fiscale (CGI 2026) :
 - Peut aussi apparaitre comme "DGE", "CIME", "CSI", "Centre des impots de [ville]"
 - Le contribuable doit indiquer l'unite dont il depend sur sa facture
 
-Monnaie : FCFA (Franc CFA CEMAC). Les montants sont en FCFA.
+Monnaie : FCFA (Franc CFA CEMAC) pour les emetteurs congolais. Les factures FOURNISSEURS
+etrangeres peuvent legitimement etre libellees en EUR, USD ou autre devise — ce n'est PAS
+une anomalie ni un risque fiscal. NE PAS signaler la devise etrangere comme non-conforme.
+Le CGI n'impose pas le FCFA sur les factures recues de fournisseurs hors Congo.
 TVA : toujours exprimee en pourcentage (18%, 5%, 0%).
 
 3) TAUX DE TVA (Art. 22 CGI) :
@@ -196,7 +199,8 @@ Risques "amende" selon le CGI 2026 — CITER L'ARTICLE pour chaque sanction :
   Si aucun de ces elements n'est visible, signaler : "Facture sans elements SFEC (QR code, NIM). Risque : amende 50M FCFA (Art. 34 bis) et perte de deduction TVA (Art. 34 ter)."
   NOTE : le SFEC est en cours de deploiement au Congo. Preciser que l'obligation est en vigueur depuis la LF 2025.
 - Facture non conforme : rejet de la deduction TVA pour le client assujetti (Art. 23 et 34 bis)
-- NE PAS inventer de montant d'amende qui n'existe pas dans le CGI. Citer UNIQUEMENT les sanctions ci-dessus.`;
+- NE PAS inventer de montant d'amende qui n'existe pas dans le CGI. Citer UNIQUEMENT les sanctions ci-dessus.
+- NE PAS signaler la devise etrangere (EUR, USD, etc.) comme un risque : les factures de fournisseurs etrangers en devise sont licites et courantes, le CGI ne l'interdit pas.`;
 
 // --- Prompts specifiques par type de document ---
 
