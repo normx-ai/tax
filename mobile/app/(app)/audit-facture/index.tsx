@@ -136,6 +136,33 @@ export default function AuditFacturePage() {
     return colors.danger;
   };
 
+  // Garde-fou cote client : si Claude met conforme=true mais details contient
+  // clairement une anomalie, on force non-conforme pour eviter l'incoherence
+  // visuelle (icone verte + message d'anomalie).
+  const isLangueConforme = (langue: { conforme: boolean; details: string }): boolean => {
+    if (!langue.conforme) return false;
+    const d = (langue.details || "").toLowerCase();
+    const anomaliePatterns = [
+      "non conforme",
+      "anomalie",
+      "langue etrangere",
+      "langue étrangère",
+      "anglais",
+      "english",
+      "espagnol",
+      "portugais",
+      "arabe",
+      "chinois",
+      "373 ter",
+      "amende",
+      "detecte",
+      "détecté",
+    ];
+    // Si la phrase contient 'conforme' sans negation et aucun motif d'anomalie,
+    // on garde conforme=true. Sinon on force false.
+    return !anomaliePatterns.some((p) => d.includes(p));
+  };
+
   const uploadColumn = (
     <View style={{ gap: 12 }}>
       {/* Selecteur type de document + actions (annuler / nouvelle analyse) */}
@@ -354,15 +381,18 @@ export default function AuditFacturePage() {
         )}
 
         {/* Langue */}
-        {lastAxes.has("langue") && (
-        <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
-            <Ionicons name={result.langue.conforme ? "checkmark-circle" : "close-circle"} size={18} color={result.langue.conforme ? colors.success : colors.danger} />
-            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Langue</Text>
-          </View>
-          <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.langue.details}</Text>
-        </View>
-        )}
+        {lastAxes.has("langue") && (() => {
+          const conforme = isLangueConforme(result.langue);
+          return (
+            <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
+                <Ionicons name={conforme ? "checkmark-circle" : "close-circle"} size={18} color={conforme ? colors.success : colors.danger} />
+                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Langue</Text>
+              </View>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.langue.details}</Text>
+            </View>
+          );
+        })()}
 
         {/* TVA */}
         {lastAxes.has("tva") && (
