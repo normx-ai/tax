@@ -119,20 +119,18 @@ export default function Dashboard() {
                   onPress={() => a.onPress ? a.onPress() : a.route && router.push(a.route as Href)}
                   disabled={disabled}
                   accessibilityLabel={a.label}
+                  {...({ title: a.label } as object)}
                   style={{
                     backgroundColor: colors.card,
                     borderWidth: 1,
                     borderColor: colors.border,
-                    paddingVertical: 10,
-                    paddingHorizontal: 12,
+                    padding: 12,
                     alignItems: "center",
                     justifyContent: "center",
                     opacity: disabled ? 0.5 : 1,
-                    minWidth: 70,
                   }}
                 >
-                  <Ionicons name={a.icon} size={20} color={a.color} />
-                  <Text style={{ fontSize: 10, color: colors.textSecondary, marginTop: 4, textAlign: "center" }} numberOfLines={1}>{a.label}</Text>
+                  <Ionicons name={a.icon} size={22} color={a.color} />
                 </TouchableOpacity>
               );
             })}
