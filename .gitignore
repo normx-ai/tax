@@ -5,6 +5,7 @@ dist/
 !.env.example
 *.png
 !mobile/assets/*.png
+!mobile/public/*.png
 !nginx/normx-landing/img/*.png
 .DS_Store
 *.pdf
