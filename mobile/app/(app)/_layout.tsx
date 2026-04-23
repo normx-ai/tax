@@ -225,11 +225,11 @@ function AppLayoutInner() {
     return "home";
   };
 
-  // Titre dynamique pour le header mobile
+  // Titre dynamique pour le header mobile (l'icone N suffit sur la home)
   const getMobileTitle = (): string => {
-    if (isHome) return "NORMX Tax";
+    if (isHome) return "";
     if (pageTitleKey) return getPageTitle();
-    return "NORMX Tax";
+    return "";
   };
 
   // Bouton retour : visible si on n'est pas sur un écran principal
@@ -335,29 +335,20 @@ function AppLayoutInner() {
       <View style={{ flex: 1 }}>
         {/* Header principal — style Normx */}
         <View style={{ backgroundColor: colors.headerBg, paddingHorizontal: 20, height: 54, flexDirection: "row", alignItems: "center", justifyContent: "space-between", zIndex: 100 }}>
-          {/* Gauche : logo + breadcrumb */}
+          {/* Gauche : breadcrumb (le logo NORMX Tax est deja dans la sidebar) */}
           <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <TouchableOpacity onPress={() => router.push("/(app)")} style={{ flexDirection: "row", alignItems: "center" }}>
-              <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 24, color: "#D4A843", letterSpacing: -0.5 }}>
-                NORMX
-              </Text>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 24, color: "#e8e6e1", marginLeft: 4 }}>
-                Tax
-              </Text>
-            </TouchableOpacity>
             {!isHome && pageTitleKey && (
               <>
                 {parent && (
                   <>
-                    <Ionicons name="chevron-forward" size={14} color="rgba(255,255,255,0.4)" style={{ marginHorizontal: 8 }} />
                     <TouchableOpacity onPress={() => router.push(`/(app)${parent.path}` as Href)}>
                       <Text style={{ color: "rgba(255,255,255,0.6)", fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 15 }}>
                         {t(parent.titleKey)}
                       </Text>
                     </TouchableOpacity>
+                    <Ionicons name="chevron-forward" size={14} color="rgba(255,255,255,0.4)" style={{ marginHorizontal: 8 }} />
                   </>
                 )}
-                <Ionicons name="chevron-forward" size={14} color="rgba(255,255,255,0.4)" style={{ marginHorizontal: 8 }} />
                 <Text style={{ color: "#D4A843", fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15 }}>
                   {getPageTitle()}
                 </Text>
