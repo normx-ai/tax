@@ -267,7 +267,16 @@ function buildFocusInstruction(axes: AuditAxe[] | undefined): string {
   const scoreHint = axes.includes("mentions")
     ? 'Remplis "score" et "donneesExtraites" normalement.'
     : 'Le score est lie aux mentions (non audite ici) : renvoie "score": { "found": 0, "total": 0 }. Remplis "donneesExtraites" normalement.';
-  return `\n\nAUDIT CIBLE : focalise ton analyse et ton JSON sur ces axes uniquement : ${selected}. Pour les axes non demandes, renvoie des valeurs vides/defaut : ${omittedHints}. ${scoreHint}`;
+
+  // Risques et recommandations sont transversaux : ils doivent se limiter
+  // aux axes reellement audites. Exemple : audit langue seule => pas de
+  // risque TVA ni amende sur mentions manquantes.
+  const auditedAreas = axes.filter((a) => a === "langue" || a === "tva" || a === "mentions");
+  const scopeHint = auditedAreas.length > 0 && (axes.includes("risques") || axes.includes("recommandations"))
+    ? ` Les risques et recommandations doivent STRICTEMENT se limiter aux domaines audites (${auditedAreas.map((a) => AXE_LABELS[a]).join(", ")}). Ne mentionne AUCUN risque ou recommandation sur les domaines non audites.`
+    : "";
+
+  return `\n\nAUDIT CIBLE : focalise ton analyse et ton JSON sur ces axes uniquement : ${selected}. Pour les axes non demandes, renvoie des valeurs vides/defaut : ${omittedHints}. ${scoreHint}${scopeHint}`;
 }
 
 export async function analyzeInvoice(
