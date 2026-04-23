@@ -116,13 +116,9 @@ export default function Sidebar({ collapsed, onToggle, currentRoute }: SidebarPr
           }}
         >
           {isCollapsed ? (
-            <View style={{ backgroundColor: "#fff", padding: 4 }}>
-              <Image source={require("@/assets/icon.png")} style={{ width: 32, height: 32, resizeMode: "contain" }} />
-            </View>
+            <Image source={require("@/assets/icon.png")} style={{ width: 48, height: 48, resizeMode: "contain" }} />
           ) : (
-            <View style={{ backgroundColor: "#fff", padding: 6 }}>
-              <Image source={require("@/assets/logo-white.png")} style={{ width: 160, height: 32, resizeMode: "contain" }} />
-            </View>
+            <Image source={require("@/assets/logo-white.png")} style={{ width: 180, height: 54, resizeMode: "contain" }} />
           )}
           {!isCollapsed && (
             <TouchableOpacity onPress={onToggle} accessibilityLabel={t("sidebar.collapse")} accessibilityRole="button">
