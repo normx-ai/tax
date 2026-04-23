@@ -81,6 +81,219 @@ export default function AuditFacturePage() {
     return colors.danger;
   };
 
+  const uploadColumn = (
+    <View style={{ gap: 12 }}>
+      {/* Selecteur type de document */}
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+        {DOC_TYPES.map((dt) => (
+          <TouchableOpacity
+            key={dt}
+            onPress={() => { setDocType(dt); setResult(null); setError(null); }}
+            style={{
+              paddingVertical: 6,
+              paddingHorizontal: 12,
+              backgroundColor: docType === dt ? colors.headerBg : colors.card,
+              borderWidth: 1,
+              borderColor: docType === dt ? colors.headerBg : colors.border,
+            }}
+          >
+            <Text style={{
+              fontFamily: fonts.medium,
+              fontWeight: fontWeights.medium,
+              fontSize: 12,
+              color: docType === dt ? "#fff" : colors.text,
+            }}>
+              {DOC_TYPE_LABELS[dt]}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+
+      {/* Upload */}
+      <TouchableOpacity
+        onPress={pickFile}
+        style={{
+          borderWidth: 2,
+          borderStyle: "dashed",
+          borderColor: file ? colors.success : colors.border,
+          padding: 24,
+          alignItems: "center",
+          backgroundColor: file ? `${colors.success}08` : colors.card,
+        }}
+      >
+        <Ionicons name={file ? "document-text" : "cloud-upload-outline"} size={32} color={file ? colors.success : colors.textMuted} />
+        {file ? (
+          <View style={{ alignItems: "center", marginTop: 8 }}>
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>{file.name}</Text>
+            <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>{(file.size / 1024).toFixed(0)} Ko</Text>
+          </View>
+        ) : (
+          <View style={{ alignItems: "center", marginTop: 8 }}>
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text }}>
+              Selectionnez un document
+            </Text>
+            <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
+              PDF, JPEG ou PNG — 10 Mo max
+            </Text>
+          </View>
+        )}
+      </TouchableOpacity>
+
+      {Platform.OS === "web" && (
+        <input
+          ref={inputRef as React.RefObject<HTMLInputElement>}
+          type="file"
+          accept="application/pdf,image/jpeg,image/png"
+          onChange={handleWebFile as React.ChangeEventHandler<HTMLInputElement>}
+          style={{ display: "none" }}
+        />
+      )}
+
+      {/* Bouton analyser */}
+      <TouchableOpacity
+        onPress={handleAnalyze}
+        disabled={!file || loading}
+        style={{
+          backgroundColor: file && !loading ? colors.headerBg : colors.disabled,
+          paddingVertical: 10,
+          alignItems: "center",
+        }}
+      >
+        {loading ? (
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+            <ActivityIndicator color="#fff" size="small" />
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: "#fff" }}>
+              Analyse en cours...
+            </Text>
+          </View>
+        ) : (
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: "#fff" }}>
+            Analyser le document
+          </Text>
+        )}
+      </TouchableOpacity>
+
+      {error && (
+        <View style={{ backgroundColor: `${colors.danger}15`, padding: 12 }}>
+          <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.danger }}>{error}</Text>
+        </View>
+      )}
+    </View>
+  );
+
+  const resultsColumn = (() => {
+    if (loading) {
+      return (
+        <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 40, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, minHeight: 320 }}>
+          <ActivityIndicator color={colors.primary} size="large" />
+          <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.textSecondary, marginTop: 12 }}>
+            Analyse en cours...
+          </Text>
+        </View>
+      );
+    }
+    if (!result) {
+      return (
+        <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 40, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, minHeight: 320 }}>
+          <Ionicons name="document-text-outline" size={48} color={colors.primary} />
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text, marginTop: 12 }}>
+            En attente d'analyse
+          </Text>
+          <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, marginTop: 4, textAlign: "center" }}>
+            Chargez un document puis lancez l'analyse pour voir les resultats ici.
+          </Text>
+        </View>
+      );
+    }
+    return (
+      <View style={{ gap: 12 }}>
+        {/* Score */}
+        <View style={{ backgroundColor: colors.card, padding: 20, alignItems: "center", borderWidth: 1, borderColor: colors.border }}>
+          <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 36, color: scoreColor(result.score.found, result.score.total) }}>
+            {result.score.found}/{result.score.total}
+          </Text>
+          <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
+            mentions obligatoires detectees
+          </Text>
+        </View>
+
+        {/* Langue */}
+        <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
+            <Ionicons name={result.langue.conforme ? "checkmark-circle" : "close-circle"} size={18} color={result.langue.conforme ? colors.success : colors.danger} />
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Langue</Text>
+          </View>
+          <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.langue.details}</Text>
+        </View>
+
+        {/* TVA */}
+        <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
+            <Ionicons name={result.tva.conforme ? "checkmark-circle" : "alert-circle"} size={18} color={result.tva.conforme ? colors.success : colors.warning} />
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Taux TVA</Text>
+          </View>
+          <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.tva.details}</Text>
+          {result.tva.tauxApplique && (
+            <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginTop: 4 }}>
+              Applique : {result.tva.tauxApplique} {result.tva.tauxAttendu ? `| Attendu : ${result.tva.tauxAttendu}` : ""}
+            </Text>
+          )}
+        </View>
+
+        {/* Mentions */}
+        <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+          <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
+            Mentions obligatoires (Art. 32)
+          </Text>
+          {result.mentions.map((m, i) => (
+            <View key={i} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 6, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: colors.border }}>
+              <Ionicons name={m.present ? "checkmark-circle" : "close-circle"} size={16} color={m.present ? colors.success : colors.danger} style={{ marginRight: 8 }} />
+              <View style={{ flex: 1 }}>
+                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text }}>{m.nom}</Text>
+                {m.valeur && (
+                  <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textMuted, marginTop: 1 }} numberOfLines={1}>{m.valeur}</Text>
+                )}
+              </View>
+            </View>
+          ))}
+        </View>
+
+        {/* Risques */}
+        {result.risques.length > 0 && (
+          <View style={{ backgroundColor: `${colors.danger}08`, padding: 16, borderWidth: 1, borderColor: `${colors.danger}30` }}>
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.danger, marginBottom: 10 }}>
+              Risques identifies
+            </Text>
+            {result.risques.map((r, i) => (
+              <View key={i} style={{ flexDirection: "row", alignItems: "flex-start", marginBottom: 6 }}>
+                <Ionicons name="warning" size={14} color={colors.danger} style={{ marginRight: 6, marginTop: 1 }} />
+                <View style={{ flex: 1 }}>
+                  <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.text }}>{r.description}</Text>
+                  {r.montant && <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: colors.danger, marginTop: 1 }}>{r.montant}</Text>}
+                </View>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {/* Recommandations */}
+        {result.recommandations.length > 0 && (
+          <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
+            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
+              Recommandations
+            </Text>
+            {result.recommandations.map((r, i) => (
+              <View key={i} style={{ flexDirection: "row", alignItems: "flex-start", marginBottom: 6 }}>
+                <Ionicons name="bulb-outline" size={14} color={colors.primary} style={{ marginRight: 6, marginTop: 1 }} />
+                <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, flex: 1 }}>{r}</Text>
+              </View>
+            ))}
+          </View>
+        )}
+      </View>
+    );
+  })();
+
   return (
     <ScrollView style={{ flex: 1, backgroundColor: colors.background }}>
       <View style={{ flex: 1, padding: isMobile ? 14 : 20 }}>
@@ -88,194 +301,20 @@ export default function AuditFacturePage() {
         <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 20, color: colors.text, marginBottom: 4 }}>
           Audit Documents
         </Text>
-        <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, marginBottom: 16 }}>
+        <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, marginBottom: 20 }}>
           Analysez la conformite de vos documents au CGI 2026
         </Text>
 
-        {/* Selecteur type de document */}
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginBottom: 14 }}>
-          {DOC_TYPES.map((dt) => (
-            <TouchableOpacity
-              key={dt}
-              onPress={() => { setDocType(dt); setResult(null); setError(null); }}
-              style={{
-                paddingVertical: 6,
-                paddingHorizontal: 12,
-                backgroundColor: docType === dt ? colors.headerBg : colors.card,
-                borderWidth: 1,
-                borderColor: docType === dt ? colors.headerBg : colors.border,
-              }}
-            >
-              <Text style={{
-                fontFamily: fonts.medium,
-                fontWeight: fontWeights.medium,
-                fontSize: 12,
-                color: docType === dt ? "#fff" : colors.text,
-              }}>
-                {DOC_TYPE_LABELS[dt]}
-              </Text>
-            </TouchableOpacity>
-          ))}
-        </View>
-
-        {/* Upload */}
-        <TouchableOpacity
-          onPress={pickFile}
-          style={{
-            borderWidth: 2,
-            borderStyle: "dashed",
-            borderColor: file ? colors.success : colors.border,
-            padding: 24,
-            alignItems: "center",
-            backgroundColor: file ? `${colors.success}08` : colors.card,
-            marginBottom: 12,
-          }}
-        >
-          <Ionicons name={file ? "document-text" : "cloud-upload-outline"} size={32} color={file ? colors.success : colors.textMuted} />
-          {file ? (
-            <View style={{ alignItems: "center", marginTop: 8 }}>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>{file.name}</Text>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>{(file.size / 1024).toFixed(0)} Ko</Text>
-            </View>
-          ) : (
-            <View style={{ alignItems: "center", marginTop: 8 }}>
-              <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 14, color: colors.text }}>
-                Selectionnez un document
-              </Text>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
-                PDF, JPEG ou PNG — 10 Mo max
-              </Text>
-            </View>
-          )}
-        </TouchableOpacity>
-
-        {Platform.OS === "web" && (
-          <input
-            ref={inputRef as React.RefObject<HTMLInputElement>}
-            type="file"
-            accept="application/pdf,image/jpeg,image/png"
-            onChange={handleWebFile as React.ChangeEventHandler<HTMLInputElement>}
-            style={{ display: "none" }}
-          />
-        )}
-
-        {/* Bouton analyser */}
-        <TouchableOpacity
-          onPress={handleAnalyze}
-          disabled={!file || loading}
-          style={{
-            backgroundColor: file && !loading ? colors.headerBg : colors.disabled,
-            paddingVertical: 10,
-            alignItems: "center",
-            marginBottom: 20,
-          }}
-        >
-          {loading ? (
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-              <ActivityIndicator color="#fff" size="small" />
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: "#fff" }}>
-                Analyse en cours...
-              </Text>
-            </View>
-          ) : (
-            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: "#fff" }}>
-              Analyser le document
-            </Text>
-          )}
-        </TouchableOpacity>
-
-        {error && (
-          <View style={{ backgroundColor: `${colors.danger}15`, padding: 12, marginBottom: 12 }}>
-            <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.danger }}>{error}</Text>
+        {/* Layout 2 colonnes (desktop) / stack (mobile) */}
+        {isMobile ? (
+          <View style={{ gap: 20 }}>
+            {uploadColumn}
+            {resultsColumn}
           </View>
-        )}
-
-        {/* Resultats */}
-        {result && (
-          <View style={{ gap: 12 }}>
-            {/* Score */}
-            <View style={{ backgroundColor: colors.card, padding: 20, alignItems: "center", borderWidth: 1, borderColor: colors.border }}>
-              <Text style={{ fontFamily: fonts.headingBlack, fontWeight: fontWeights.headingBlack, fontSize: 36, color: scoreColor(result.score.found, result.score.total) }}>
-                {result.score.found}/{result.score.total}
-              </Text>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
-                mentions obligatoires detectees
-              </Text>
-            </View>
-
-            {/* Langue */}
-            <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
-              <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
-                <Ionicons name={result.langue.conforme ? "checkmark-circle" : "close-circle"} size={18} color={result.langue.conforme ? colors.success : colors.danger} />
-                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Langue</Text>
-              </View>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.langue.details}</Text>
-            </View>
-
-            {/* TVA */}
-            <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
-              <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }}>
-                <Ionicons name={result.tva.conforme ? "checkmark-circle" : "alert-circle"} size={18} color={result.tva.conforme ? colors.success : colors.warning} />
-                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text }}>Taux TVA</Text>
-              </View>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary }}>{result.tva.details}</Text>
-              {result.tva.tauxApplique && (
-                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.text, marginTop: 4 }}>
-                  Applique : {result.tva.tauxApplique} {result.tva.tauxAttendu ? `| Attendu : ${result.tva.tauxAttendu}` : ""}
-                </Text>
-              )}
-            </View>
-
-            {/* Mentions */}
-            <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
-              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
-                Mentions obligatoires (Art. 32)
-              </Text>
-              {result.mentions.map((m, i) => (
-                <View key={i} style={{ flexDirection: "row", alignItems: "center", paddingVertical: 6, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: colors.border }}>
-                  <Ionicons name={m.present ? "checkmark-circle" : "close-circle"} size={16} color={m.present ? colors.success : colors.danger} style={{ marginRight: 8 }} />
-                  <View style={{ flex: 1 }}>
-                    <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text }}>{m.nom}</Text>
-                    {m.valeur && (
-                      <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textMuted, marginTop: 1 }} numberOfLines={1}>{m.valeur}</Text>
-                    )}
-                  </View>
-                </View>
-              ))}
-            </View>
-
-            {/* Risques */}
-            {result.risques.length > 0 && (
-              <View style={{ backgroundColor: `${colors.danger}08`, padding: 16, borderWidth: 1, borderColor: `${colors.danger}30` }}>
-                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.danger, marginBottom: 10 }}>
-                  Risques identifies
-                </Text>
-                {result.risques.map((r, i) => (
-                  <View key={i} style={{ flexDirection: "row", alignItems: "flex-start", marginBottom: 6 }}>
-                    <Ionicons name="warning" size={14} color={colors.danger} style={{ marginRight: 6, marginTop: 1 }} />
-                    <View style={{ flex: 1 }}>
-                      <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.text }}>{r.description}</Text>
-                      {r.montant && <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 12, color: colors.danger, marginTop: 1 }}>{r.montant}</Text>}
-                    </View>
-                  </View>
-                ))}
-              </View>
-            )}
-
-            {/* Recommandations */}
-            {result.recommandations.length > 0 && (
-              <View style={{ backgroundColor: colors.card, padding: 16, borderWidth: 1, borderColor: colors.border }}>
-                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 14, color: colors.text, marginBottom: 10 }}>
-                  Recommandations
-                </Text>
-                {result.recommandations.map((r, i) => (
-                  <View key={i} style={{ flexDirection: "row", alignItems: "flex-start", marginBottom: 6 }}>
-                    <Ionicons name="bulb-outline" size={14} color={colors.primary} style={{ marginRight: 6, marginTop: 1 }} />
-                    <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, flex: 1 }}>{r}</Text>
-                  </View>
-                ))}
-              </View>
-            )}
+        ) : (
+          <View style={{ flexDirection: "row", gap: 20, alignItems: "flex-start" }}>
+            <View style={{ flex: 0.4 }}>{uploadColumn}</View>
+            <View style={{ flex: 0.6 }}>{resultsColumn}</View>
           </View>
         )}
 
