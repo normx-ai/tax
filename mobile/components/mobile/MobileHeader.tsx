@@ -22,9 +22,9 @@ export default function MobileHeader({ title, showBack, onBack, onSearch, rightE
         justifyContent: "space-between",
         paddingHorizontal: 18,
         paddingVertical: 14,
-        backgroundColor: colors.headerBg,
+        backgroundColor: "#fff",
         borderBottomWidth: 1,
-        borderBottomColor: "rgba(255,255,255,0.08)",
+        borderBottomColor: "rgba(15,42,66,0.08)",
       }}
     >
       <View style={{ flexDirection: "row", alignItems: "center", gap: 10, flex: 1 }}>
@@ -44,7 +44,7 @@ export default function MobileHeader({ title, showBack, onBack, onSearch, rightE
             fontFamily: fonts.extraBold,
             fontWeight: fontWeights.extraBold,
             fontSize: 19,
-            color: "#e8e6e1",
+            color: "#0F2A42",
             letterSpacing: -0.3,
           }}
           numberOfLines={1}
@@ -56,7 +56,7 @@ export default function MobileHeader({ title, showBack, onBack, onSearch, rightE
         {rightElement}
         {onSearch && (
           <TouchableOpacity onPress={onSearch} hitSlop={8}>
-            <Ionicons name="search" size={18} color="rgba(255,255,255,0.6)" />
+            <Ionicons name="search" size={18} color="rgba(15,42,66,0.6)" />
           </TouchableOpacity>
         )}
       </View>

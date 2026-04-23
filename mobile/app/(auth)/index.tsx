@@ -48,13 +48,11 @@ export default function AuthScreen() {
   // Mobile : ecran simple avec logo + boutons
   return (
     <View style={{ flex: 1, backgroundColor: BG_WARM, justifyContent: "center", alignItems: "center", padding: 32 }}>
-      <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 12 }}>
-        <View style={{ backgroundColor: "#fff", padding: 6 }}>
-          <Image
-            source={require("@/assets/logo-horizontal.png")}
-            style={{ width: 200, height: 40, resizeMode: "contain" }}
-          />
-        </View>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 12, backgroundColor: "#fff", paddingHorizontal: 10, paddingVertical: 6 }}>
+        <Image
+          source={require("@/assets/logo-horizontal.png")}
+          style={{ width: 200, height: 40, resizeMode: "contain" }}
+        />
         <Text style={{ fontSize: 24, fontFamily: fonts.medium, fontWeight: fontWeights.medium, color: PRIMARY }}>
           Tax
         </Text>
