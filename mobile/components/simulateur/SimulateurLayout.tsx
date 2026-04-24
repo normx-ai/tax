@@ -5,6 +5,7 @@ import SimulateurEmptyState from "./SimulateurEmptyState";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { useToast } from "@/components/ui/ToastProvider";
 
 interface ExportLine {
   label: string;
@@ -46,6 +47,7 @@ export default function SimulateurLayout({
 }: SimulateurLayoutProps) {
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
+  const { toast } = useToast();
   const [exporting, setExporting] = useState(false);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [previewFilename, setPreviewFilename] = useState<string>("");
@@ -65,9 +67,7 @@ export default function SimulateurLayout({
         await downloadSimulatorPdf(url, filename);
       }
     } catch {
-      if (Platform.OS === "web") {
-        alert("Erreur lors de l'export PDF");
-      }
+      toast("Erreur lors de l'export PDF", "error");
     } finally {
       setExporting(false);
     }

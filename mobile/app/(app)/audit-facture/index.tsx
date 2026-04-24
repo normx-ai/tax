@@ -6,6 +6,7 @@ import { useResponsive } from "@/lib/hooks/useResponsive";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { analyzeDocument, getAuditHistory, getAuditDetail, clearAuditHistory, deleteAuditItem, DOC_TYPE_LABELS, ALL_AXES, AXE_LABELS, type AuditFactureResult, type AuditHistoryItem, type DocumentType, type AuditAxe } from "@/lib/api/audit-facture";
+import { useToast } from "@/components/ui/ToastProvider";
 
 type FileInfo = { name: string; size: number; blob: Blob };
 const DOC_TYPES: DocumentType[] = ["facture", "contrat"];
@@ -13,6 +14,7 @@ const DOC_TYPES: DocumentType[] = ["facture", "contrat"];
 export default function AuditFacturePage() {
   const { colors } = useTheme();
   const { isMobile } = useResponsive();
+  const { toast, confirm } = useToast();
   const { t } = useTranslation();
   const [docType, setDocType] = useState<DocumentType>("facture");
   const [file, setFile] = useState<FileInfo | null>(null);
@@ -500,11 +502,21 @@ export default function AuditFacturePage() {
               </Text>
               <TouchableOpacity
                 onPress={async () => {
-                  if (Platform.OS === "web" && !window.confirm("Effacer tout l'historique des audits ?")) return;
+                  const ok = await confirm({
+                    title: "Effacer l'historique",
+                    message: "Supprimer definitivement tous les audits de cet historique ? Cette action est irreversible.",
+                    confirmLabel: "Tout effacer",
+                    cancelLabel: "Annuler",
+                    destructive: true,
+                  });
+                  if (!ok) return;
                   try {
-                    await clearAuditHistory();
+                    const deleted = await clearAuditHistory();
                     setHistory([]);
-                  } catch {}
+                    toast(`${deleted} audit${deleted > 1 ? "s" : ""} supprime${deleted > 1 ? "s" : ""}`, "success");
+                  } catch {
+                    toast("Erreur lors de l'effacement de l'historique", "error");
+                  }
                 }}
                 style={{ flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: 10, paddingVertical: 6, borderWidth: 1, borderColor: colors.border }}
                 accessibilityLabel="Effacer tout l'historique"
@@ -557,11 +569,21 @@ export default function AuditFacturePage() {
                 </TouchableOpacity>
                 <TouchableOpacity
                   onPress={async () => {
-                    if (Platform.OS === "web" && !window.confirm(`Supprimer l'audit de "${h.fileName}" ?`)) return;
+                    const ok = await confirm({
+                      title: "Supprimer cet audit",
+                      message: `Supprimer definitivement l'audit de "${h.fileName}" ? Cette action est irreversible.`,
+                      confirmLabel: "Supprimer",
+                      cancelLabel: "Annuler",
+                      destructive: true,
+                    });
+                    if (!ok) return;
                     try {
                       await deleteAuditItem(h.id);
                       setHistory((prev) => prev.filter((x) => x.id !== h.id));
-                    } catch {}
+                      toast("Audit supprime", "success");
+                    } catch {
+                      toast("Erreur lors de la suppression", "error");
+                    }
                   }}
                   hitSlop={8}
                   style={{ padding: 6, marginLeft: 6 }}
