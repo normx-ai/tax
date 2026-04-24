@@ -12,7 +12,7 @@ const SMTP_PORT = parseInt(process.env.SMTP_PORT || '587', 10);
 const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
 const SMTP_FROM_ADDRESS = process.env.SMTP_FROM || 'no-reply@normx-ai.com';
-const SMTP_FROM = `CGI 242 - NORMX AI <${SMTP_FROM_ADDRESS}>`;
+const SMTP_FROM = `NORMX Tax <${SMTP_FROM_ADDRESS}>`;
 const SMTP_REPLY_TO = process.env.SMTP_REPLY_TO || 'support@normx-ai.com';
 
 const isSmtpConfigured = !!(SMTP_HOST && SMTP_USER && SMTP_PASS);
@@ -72,7 +72,7 @@ async function sendMail(to: string, subject: string, html: string, attachments?:
       text,
       attachments,
       headers: {
-        'X-Mailer': 'CGI242-NORMX',
+        'X-Mailer': 'NORMX-Tax',
       },
     });
     logger.info(`Email envoyé à ${to} : ${subject}`);
@@ -85,7 +85,7 @@ async function sendMail(to: string, subject: string, html: string, attachments?:
 
 export class EmailService {
   /**
-   * Template email générique avec le style CGI-242
+   * Template email generique avec le style NORMX Tax
    */
   private static emailLayout(content: string): string {
     return `
@@ -118,16 +118,21 @@ export class EmailService {
             <p style="margin: 0; font-size: 11px; color: #9ca3af; line-height: 18px;">
               Vérifiez toujours le nom et l'adresse de l'expéditeur des messages avant de les ouvrir.<br/>
               Ne communiquez jamais votre code de vérification à un tiers.<br/>
-              CGI 242 ne vous demandera jamais votre mot de passe par email.
+              NORMX AI ne vous demandera jamais votre mot de passe par email.
             </p>
           </td>
         </tr>
 
-        <!-- Copyright -->
+        <!-- Mentions legales societe -->
         <tr>
           <td style="padding: 16px 32px; text-align: center;">
+            <p style="margin: 0 0 6px 0; font-size: 11px; color: #6b7280; line-height: 18px;">
+              <strong>NORMX AI SAS</strong> — SAS au capital de 1 000 EUR<br/>
+              Siege social : 71 rue Daire, 80000 Amiens, France<br/>
+              RCS Amiens 2026 B 00524 — SIREN 103 831 921
+            </p>
             <p style="margin: 0; font-size: 11px; color: #9ca3af;">
-              © ${new Date().getFullYear()} CGI 242 — NORMX AI · info-contact@normx-ai.com
+              info-contact@normx-ai.com · normx-ai.com · &copy; ${new Date().getFullYear()} NORMX AI
             </p>
           </td>
         </tr>
@@ -140,12 +145,12 @@ export class EmailService {
   }
 
   static async sendOtp(email: string, otp: string): Promise<void> {
-    const subject = 'CGI 242 — Votre code de vérification';
+    const subject = 'NORMX Tax — Votre code de verification';
     const html = EmailService.emailLayout(`
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
       <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
-        Pour sécuriser votre connexion à votre espace CGI 242, voici votre code de vérification :
+        Pour sécuriser votre connexion à votre espace NORMX Tax, voici votre code de vérification :
       </p>
 
       <div style="background-color: #fef9ee; border: 2px solid #D4A843; padding: 24px; text-align: center; margin: 0 0 24px 0;">
@@ -165,7 +170,7 @@ export class EmailService {
       </ul>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
-        À bientôt sur CGI 242,<br/>
+        A bientot sur NORMX Tax,<br/>
         <strong>L'équipe NORMX AI</strong>
       </p>
     `);
@@ -173,12 +178,12 @@ export class EmailService {
   }
 
   static async sendPasswordReset(email: string, code: string): Promise<void> {
-    const subject = 'CGI 242 — Réinitialisation de mot de passe';
+    const subject = 'NORMX Tax — Reinitialisation de mot de passe';
     const html = EmailService.emailLayout(`
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
       <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
-        Vous avez demandé une réinitialisation de mot de passe pour votre compte CGI 242. Voici votre code :
+        Vous avez demandé une réinitialisation de mot de passe pour votre compte NORMX Tax. Voici votre code :
       </p>
 
       <div style="background-color: #fef9ee; border: 2px solid #D4A843; padding: 24px; text-align: center; margin: 0 0 24px 0;">
@@ -194,7 +199,7 @@ export class EmailService {
       </p>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
-        À bientôt sur CGI 242,<br/>
+        A bientot sur NORMX Tax,<br/>
         <strong>L'équipe NORMX AI</strong>
       </p>
     `);
@@ -204,12 +209,12 @@ export class EmailService {
   static async sendInvitation(email: string, organizationName: string, inviterName: string, token: string): Promise<void> {
     const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3004';
     const inviteUrl = `${frontendUrl}/register?invitation=${token}`;
-    const subject = `CGI-242 — Invitation à rejoindre ${escapeHtml(organizationName)}`;
+    const subject = `NORMX Tax — Invitation a rejoindre ${escapeHtml(organizationName)}`;
     const html = EmailService.emailLayout(`
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
       <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
-        <strong>${escapeHtml(inviterName)}</strong> vous invite à rejoindre l'organisation <strong>${escapeHtml(organizationName)}</strong> sur CGI-242.
+        <strong>${escapeHtml(inviterName)}</strong> vous invite à rejoindre l'organisation <strong>${escapeHtml(organizationName)}</strong> sur NORMX Tax.
       </p>
 
       <div style="text-align: center; margin: 0 0 24px 0;">
@@ -230,7 +235,7 @@ export class EmailService {
       </p>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
-        À bientôt sur CGI 242,<br/>
+        A bientot sur NORMX Tax,<br/>
         <strong>L'équipe NORMX AI</strong>
       </p>
     `);
@@ -246,10 +251,10 @@ export class EmailService {
   ): Promise<void> {
     const urgency = daysLeft <= 1 ? '#dc2626' : daysLeft <= 7 ? '#d97706' : '#3b82f6';
     const urgencyLabel = daysLeft === 0 ? "aujourd'hui" : `dans ${daysLeft} jour${daysLeft > 1 ? 's' : ''}`;
-    const subject = `CGI-242 — Votre abonnement ${plan} expire ${urgencyLabel}`;
+    const subject = `NORMX Tax — Votre abonnement ${plan} expire ${urgencyLabel}`;
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
-        <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
+        <h2 style="color: #1a56db;">NORMX Tax — Intelligence Fiscale</h2>
         <div style="background: ${urgency}10; border-left: 4px solid ${urgency}; padding: 16px; margin: 20px 0;">
           <p style="margin: 0; color: ${urgency}; font-weight: bold;">
             Votre abonnement ${plan} pour ${organizationName} expire ${urgencyLabel}.
@@ -258,7 +263,7 @@ export class EmailService {
         <p>Date d'expiration : <strong>${expiryDate}</strong></p>
         <p>Sans renouvellement, votre organisation sera basculée sur le plan Gratuit avec un accès limité.</p>
         <p>Contactez votre administrateur pour procéder au renouvellement.</p>
-        <p style="color: #6b7280; font-size: 14px;">CGI-242 — Code Général des Impôts du Congo</p>
+        <p style="color: #6b7280; font-size: 14px;">NORMX Tax — CGI 2026 Republique du Congo</p>
       </div>
     `;
     await sendMail(email, subject, html);
@@ -268,11 +273,11 @@ export class EmailService {
     email: string,
     deadlines: string[],
   ): Promise<void> {
-    const subject = `CGI-242 — Échéances fiscales à venir (${deadlines.length})`;
+    const subject = `NORMX Tax — Echeances fiscales a venir (${deadlines.length})`;
     const deadlineList = deadlines.map(d => `<li style="padding: 4px 0;">${d}</li>`).join('');
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
-        <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
+        <h2 style="color: #1a56db;">NORMX Tax — Intelligence Fiscale</h2>
         <p>Les échéances fiscales suivantes arrivent dans les <strong>7 prochains jours</strong> :</p>
         <div style="background: #fffbeb; border-left: 4px solid #d97706; padding: 16px; margin: 20px 0;">
           <ul style="margin: 0; padding-left: 20px; color: #374151;">
@@ -280,7 +285,7 @@ export class EmailService {
           </ul>
         </div>
         <p>Assurez-vous que vos déclarations et paiements sont prêts.</p>
-        <p style="color: #6b7280; font-size: 14px;">Consultez l'application CGI-242 pour plus de détails sur les articles correspondants.</p>
+        <p style="color: #6b7280; font-size: 14px;">Consultez l'application NORMX Tax pour plus de détails sur les articles correspondants.</p>
       </div>
     `;
     await sendMail(email, subject, html);
@@ -295,7 +300,7 @@ export class EmailService {
     totalPrice: number,
     plan: string,
   ): Promise<void> {
-    const subject = `CGI-242 — Demande de ${additionalSeats} siège(s) pour ${orgName}`;
+    const subject = `NORMX Tax — Demande de ${additionalSeats} siege(s) pour ${orgName}`;
     const html = EmailService.emailLayout(`
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
@@ -317,7 +322,7 @@ export class EmailService {
       </p>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
-        À bientôt sur CGI 242,<br/>
+        A bientot sur NORMX Tax,<br/>
         <strong>L'équipe NORMX AI</strong>
       </p>
     `);
@@ -330,7 +335,7 @@ export class EmailService {
     additionalSeats: number,
     newTotalSeats: number,
   ): Promise<void> {
-    const subject = `CGI-242 — Vos ${additionalSeats} siège(s) ont été approuvés`;
+    const subject = `NORMX Tax — Vos ${additionalSeats} siege(s) ont ete approuves`;
     const html = EmailService.emailLayout(`
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
@@ -349,7 +354,7 @@ export class EmailService {
       </p>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
-        À bientôt sur CGI 242,<br/>
+        A bientot sur NORMX Tax,<br/>
         <strong>L'équipe NORMX AI</strong>
       </p>
     `);
@@ -362,7 +367,7 @@ export class EmailService {
     additionalSeats: number,
     note?: string,
   ): Promise<void> {
-    const subject = `CGI-242 — Demande de sièges refusée pour ${orgName}`;
+    const subject = `NORMX Tax — Demande de sieges refusee pour ${orgName}`;
     const noteSection = note
       ? `<div style="background-color: #fef2f2; border-left: 4px solid #dc2626; padding: 16px; margin: 0 0 24px 0;">
            <p style="margin: 0; font-size: 14px; color: #374151;"><strong>Motif :</strong> ${note}</p>
@@ -382,7 +387,7 @@ export class EmailService {
       </p>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
-        À bientôt sur CGI 242,<br/>
+        A bientot sur NORMX Tax,<br/>
         <strong>L'équipe NORMX AI</strong>
       </p>
     `);
@@ -398,7 +403,7 @@ export class EmailService {
     pdfPath: string,
   ): Promise<void> {
     const amount = parseFloat(amountTTC).toLocaleString('fr-FR', { minimumFractionDigits: 0 });
-    const subject = `CGI-242 — Facture ${invoiceNumber}`;
+    const subject = `NORMX Tax — Facture ${invoiceNumber}`;
     const html = EmailService.emailLayout(`
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour ${customerName},</p>
 
@@ -427,7 +432,7 @@ export class EmailService {
   }
 
   static async sendPasswordChanged(email: string): Promise<void> {
-    const subject = 'CGI 242 — Votre mot de passe a été modifié';
+    const subject = 'NORMX Tax — Votre mot de passe a ete modifie';
     const now = new Date().toLocaleString('fr-FR', {
       dateStyle: 'long',
       timeStyle: 'short',
@@ -437,7 +442,7 @@ export class EmailService {
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
 
       <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
-        Votre mot de passe CGI 242 a été <strong>modifié avec succès</strong> le ${now}.
+        Votre mot de passe NORMX Tax a été <strong>modifié avec succès</strong> le ${now}.
       </p>
 
       <div style="background-color: #f0fdf4; border: 2px solid #22c55e; padding: 20px; text-align: center; margin: 0 0 24px 0;">
@@ -457,7 +462,7 @@ export class EmailService {
       </p>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
-        À bientôt sur CGI 242,<br/>
+        A bientot sur NORMX Tax,<br/>
         <strong>L'équipe NORMX AI</strong>
       </p>
     `);
@@ -465,10 +470,10 @@ export class EmailService {
   }
 
   static async sendMfaEnabled(email: string): Promise<void> {
-    const subject = 'CGI-242 — Authentification à deux facteurs activée';
+    const subject = 'NORMX Tax — Authentification a deux facteurs activee';
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto;">
-        <h2 style="color: #1a56db;">CGI-242 — Intelligence Fiscale</h2>
+        <h2 style="color: #1a56db;">NORMX Tax — Intelligence Fiscale</h2>
         <p>L'authentification à deux facteurs (2FA) a été activée sur votre compte.</p>
         <p>Vous devrez désormais saisir un code depuis votre application d'authentification lors de chaque connexion.</p>
         <p style="color: #6b7280; font-size: 14px;">Si vous n'avez pas fait cette action, changez immédiatement votre mot de passe.</p>
