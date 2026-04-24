@@ -89,11 +89,18 @@ export default function SimulateurLayout({
     await handleClosePreview();
   };
 
+  // Desktop : 3 colonnes 20/40/40. Mobile : stack vertical + modale pour l'apercu.
+  const threeColumns = !isMobile;
+  const showPreviewColumn = threeColumns && Platform.OS === "web";
+
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
       <View style={[styles.rowContainer, { flexDirection: isMobile ? "column" : "row" }]}>
         {/* SAISIE */}
-        <ScrollView style={{ width: isMobile ? "100%" : "50%" }} contentContainerStyle={styles.scrollContent}>
+        <ScrollView
+          style={{ width: isMobile ? "100%" : showPreviewColumn ? "20%" : "50%" }}
+          contentContainerStyle={styles.scrollContent}
+        >
           <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
           {subtitle && (
             <Text style={[styles.subtitle, { color: colors.textMuted }]}>{subtitle}</Text>
@@ -112,7 +119,7 @@ export default function SimulateurLayout({
         {/* RÉSULTATS */}
         <ScrollView
           style={[
-            { width: isMobile ? "100%" : "50%" },
+            { width: isMobile ? "100%" : showPreviewColumn ? "40%" : "50%" },
             isMobile
               ? { borderTopWidth: 1, borderTopColor: colors.border }
               : { borderLeftWidth: 1, borderLeftColor: colors.border },
@@ -137,23 +144,60 @@ export default function SimulateurLayout({
                     backgroundColor: exporting ? colors.border : colors.headerBg,
                   }}
                 >
-                  <Ionicons name="download-outline" size={18} color="#ffffff" />
+                  <Ionicons name={showPreviewColumn ? "eye-outline" : "download-outline"} size={18} color="#ffffff" />
                   <Text style={{ color: "#ffffff", fontSize: 14, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>
-                    {exporting ? "Export en cours..." : "Exporter en PDF"}
+                    {exporting ? "Generation en cours..." : showPreviewColumn ? "Générer l'aperçu" : "Exporter en PDF"}
                   </Text>
                 </TouchableOpacity>
               )}
             </>
           ) : <SimulateurEmptyState message={emptyMessage} />}
         </ScrollView>
+
+        {/* APERCU PDF (desktop web uniquement) */}
+        {showPreviewColumn && (
+          <View
+            style={{
+              width: "40%",
+              borderLeftWidth: 1,
+              borderLeftColor: colors.border,
+              backgroundColor: colors.card,
+            }}
+          >
+            {previewUrl ? (
+              <View style={{ flex: 1, flexDirection: "column" }}>
+                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 14, paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: colors.border, backgroundColor: colors.background }}>
+                  <Text style={{ fontSize: 13, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text }}>Aperçu avant export</Text>
+                  <View style={{ flexDirection: "row", gap: 6 }}>
+                    <TouchableOpacity onPress={handleConfirmDownload} style={{ flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: 10, paddingVertical: 6, backgroundColor: colors.primary }}>
+                      <Ionicons name="download-outline" size={14} color="#0F2A42" />
+                      <Text style={{ fontSize: 12, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#0F2A42" }}>Télécharger</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={handleClosePreview} style={{ paddingHorizontal: 10, paddingVertical: 6, backgroundColor: colors.border }}>
+                      <Text style={{ fontSize: 12, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: colors.text }}>Fermer</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+                {/* @ts-ignore iframe est valide sur web */}
+                <iframe src={previewUrl} style={{ border: 0, width: "100%", flex: 1, minHeight: 0 }} title="Aperçu PDF" />
+              </View>
+            ) : (
+              <View style={{ flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 24 }}>
+                <Ionicons name="document-text-outline" size={44} color={colors.textMuted} />
+                <Text style={{ fontSize: 13, color: colors.textMuted, textAlign: "center", marginTop: 10, fontFamily: fonts.regular }}>
+                  {hasResult ? "Cliquez sur « Générer l'aperçu » pour visualiser le PDF avant export" : "L'aperçu du PDF apparaîtra ici après calcul et génération"}
+                </Text>
+              </View>
+            )}
+          </View>
+        )}
       </View>
 
-      {/* Apercu PDF avant telechargement (web uniquement) */}
-      {Platform.OS === "web" && (
+      {/* Apercu PDF en modal (mobile web) */}
+      {!showPreviewColumn && Platform.OS === "web" && (
         <Modal visible={!!previewUrl} transparent animationType="fade" onRequestClose={handleClosePreview}>
           <View style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.75)", justifyContent: "center", alignItems: "center", padding: 20 }}>
             <View style={{ backgroundColor: "#ffffff", width: "100%", maxWidth: 900, height: "90%", overflow: "hidden", flexDirection: "column" }}>
-              {/* Header modal */}
               <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: "#e5e7eb", backgroundColor: "#f9fafb" }}>
                 <Text style={{ fontSize: 15, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: "#111827" }}>Aperçu du PDF</Text>
                 <View style={{ flexDirection: "row", gap: 8 }}>
@@ -166,7 +210,6 @@ export default function SimulateurLayout({
                   </TouchableOpacity>
                 </View>
               </View>
-              {/* Iframe PDF */}
               {previewUrl && (
                 <View style={{ flex: 1 }}>
                   {/* @ts-ignore iframe est valide sur web */}
