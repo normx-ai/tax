@@ -5,7 +5,7 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { useResponsive } from "@/lib/hooks/useResponsive";
 import { useTranslation } from "react-i18next";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
-import { analyzeDocument, getAuditHistory, getAuditDetail, DOC_TYPE_LABELS, ALL_AXES, AXE_LABELS, type AuditFactureResult, type AuditHistoryItem, type DocumentType, type AuditAxe } from "@/lib/api/audit-facture";
+import { analyzeDocument, getAuditHistory, getAuditDetail, clearAuditHistory, deleteAuditItem, DOC_TYPE_LABELS, ALL_AXES, AXE_LABELS, type AuditFactureResult, type AuditHistoryItem, type DocumentType, type AuditAxe } from "@/lib/api/audit-facture";
 
 type FileInfo = { name: string; size: number; blob: Blob };
 const DOC_TYPES: DocumentType[] = ["facture", "contrat"];
@@ -494,18 +494,30 @@ export default function AuditFacturePage() {
         {/* Historique */}
         {history.length > 0 && (
           <View style={{ marginTop: 24 }}>
-            <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text, marginBottom: 10 }}>
-              Historique des audits
-            </Text>
-            {history.map((h) => (
+            <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
+              <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 15, color: colors.text }}>
+                Historique des audits
+              </Text>
               <TouchableOpacity
-                key={h.id}
                 onPress={async () => {
+                  if (Platform.OS === "web" && !window.confirm("Effacer tout l'historique des audits ?")) return;
                   try {
-                    const detail = await getAuditDetail(h.id);
-                    setResult(detail);
+                    await clearAuditHistory();
+                    setHistory([]);
                   } catch {}
                 }}
+                style={{ flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: 10, paddingVertical: 6, borderWidth: 1, borderColor: colors.border }}
+                accessibilityLabel="Effacer tout l'historique"
+              >
+                <Ionicons name="trash-outline" size={14} color={colors.danger} />
+                <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 12, color: colors.danger }}>
+                  Tout effacer
+                </Text>
+              </TouchableOpacity>
+            </View>
+            {history.map((h) => (
+              <View
+                key={h.id}
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
@@ -516,24 +528,48 @@ export default function AuditFacturePage() {
                   borderColor: colors.border,
                 }}
               >
-                <Ionicons
-                  name={h.conforme ? "checkmark-circle" : "alert-circle"}
-                  size={18}
-                  color={h.conforme ? colors.success : colors.warning}
-                  style={{ marginRight: 10 }}
-                />
-                <View style={{ flex: 1 }}>
-                  <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text }} numberOfLines={2}>
-                    {h.fileName}
+                <TouchableOpacity
+                  onPress={async () => {
+                    try {
+                      const detail = await getAuditDetail(h.id);
+                      setResult(detail);
+                    } catch {}
+                  }}
+                  style={{ flexDirection: "row", alignItems: "center", flex: 1 }}
+                >
+                  <Ionicons
+                    name={h.conforme ? "checkmark-circle" : "alert-circle"}
+                    size={18}
+                    color={h.conforme ? colors.success : colors.warning}
+                    style={{ marginRight: 10 }}
+                  />
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ fontFamily: fonts.medium, fontWeight: fontWeights.medium, fontSize: 13, color: colors.text }} numberOfLines={2}>
+                      {h.fileName}
+                    </Text>
+                    <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textMuted, marginTop: 1 }}>
+                      {DOC_TYPE_LABELS[h.docType] || h.docType} — {new Date(h.createdAt).toLocaleDateString("fr-FR")}
+                    </Text>
+                  </View>
+                  <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 13, color: h.conforme ? colors.success : colors.warning }}>
+                    {h.score}/{h.total}
                   </Text>
-                  <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textMuted, marginTop: 1 }}>
-                    {DOC_TYPE_LABELS[h.docType] || h.docType} — {new Date(h.createdAt).toLocaleDateString("fr-FR")}
-                  </Text>
-                </View>
-                <Text style={{ fontFamily: fonts.semiBold, fontWeight: fontWeights.semiBold, fontSize: 13, color: h.conforme ? colors.success : colors.warning }}>
-                  {h.score}/{h.total}
-                </Text>
-              </TouchableOpacity>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={async () => {
+                    if (Platform.OS === "web" && !window.confirm(`Supprimer l'audit de "${h.fileName}" ?`)) return;
+                    try {
+                      await deleteAuditItem(h.id);
+                      setHistory((prev) => prev.filter((x) => x.id !== h.id));
+                    } catch {}
+                  }}
+                  hitSlop={8}
+                  style={{ padding: 6, marginLeft: 6 }}
+                  accessibilityLabel={`Supprimer ${h.fileName}`}
+                >
+                  <Ionicons name="trash-outline" size={16} color={colors.textMuted} />
+                </TouchableOpacity>
+              </View>
             ))}
           </View>
         )}

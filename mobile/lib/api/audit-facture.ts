@@ -62,6 +62,15 @@ export async function getAuditDetail(id: string): Promise<AuditFactureResult> {
   return data.result;
 }
 
+export async function clearAuditHistory(): Promise<number> {
+  const { data } = await api.delete<{ deleted: number }>("/audit-facture/history");
+  return data.deleted;
+}
+
+export async function deleteAuditItem(id: string): Promise<void> {
+  await api.delete(`/audit-facture/${id}`);
+}
+
 export async function analyzeDocument(
   file: Blob,
   filename: string,

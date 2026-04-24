@@ -144,4 +144,39 @@ router.get(
   }
 );
 
+// DELETE /history — Efface tout l'historique de l'utilisateur courant
+router.delete(
+  "/history",
+  requireAuth,
+  async (req: AuthRequest, res) => {
+    try {
+      const { count } = await prisma.documentAudit.deleteMany({
+        where: { userId: req.userId! },
+      });
+      return res.json({ deleted: count });
+    } catch (err) {
+      logger.error("Erreur effacement historique:", err instanceof Error ? err.message : err);
+      return res.status(500).json({ error: "Erreur effacement historique" });
+    }
+  }
+);
+
+// DELETE /:id — Supprime un audit specifique
+router.delete(
+  "/:id",
+  requireAuth,
+  async (req: AuthRequest, res) => {
+    try {
+      const { count } = await prisma.documentAudit.deleteMany({
+        where: { id: String(req.params.id), userId: req.userId! },
+      });
+      if (count === 0) return res.status(404).json({ error: "Audit introuvable" });
+      return res.json({ deleted: count });
+    } catch (err) {
+      logger.error("Erreur suppression audit:", err instanceof Error ? err.message : err);
+      return res.status(500).json({ error: "Erreur suppression audit" });
+    }
+  }
+);
+
 export default router;
