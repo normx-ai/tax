@@ -100,7 +100,7 @@ export class EmailService {
         <!-- Header -->
         <tr>
           <td style="background-color: #1A3A5C; padding: 28px 32px; text-align: center;">
-            <img src="https://normx-ai.com/img/logo-horizontal-white.png" alt="NORMX AI" width="240" height="60" style="display: inline-block; border: 0; outline: none; text-decoration: none; height: 60px; width: 240px; max-width: 100%;" />
+            <img src="https://normx-ai.com/img/logo-horizontal-white.png?v=20260424" alt="NORMX AI" width="240" height="60" style="display: inline-block; border: 0; outline: none; text-decoration: none; height: 60px; width: 240px; max-width: 100%;" />
           </td>
         </tr>
 
