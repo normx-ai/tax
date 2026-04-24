@@ -39,7 +39,9 @@ router.post("/export-pdf", requireAuth, resolveTenant, async (req: AuthRequest, 
       return res.status(400).json({ error: "Donnees manquantes" });
     }
 
-    const doc = new PDFDocument({ size: "A4", margin: 50 });
+    // margin: 0 : tout est positionne en absolu dans le code, on evite
+    // ainsi l'auto page-break de PDFKit quand y depasse la zone utile.
+    const doc = new PDFDocument({ size: "A4", margin: 0 });
 
     // Enregistrer les polices Inter (supportent les accents francais)
     if (fs.existsSync(FONT_REG)) doc.registerFont("Inter", FONT_REG);
