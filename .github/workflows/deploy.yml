@@ -71,7 +71,7 @@ jobs:
               "BASE_URL=https://tax.normx-ai.com" \
               "CORS_ORIGIN=https://tax.normx-ai.com,https://normx-ai.com" \
               "SMTP_HOST=${{ secrets.SMTP_HOST }}" \
-              "SMTP_PORT=465" \
+              "SMTP_PORT=${{ secrets.SMTP_PORT || '587' }}" \
               "SMTP_USER=${{ secrets.SMTP_USER }}" \
               "SMTP_PASS=${{ secrets.SMTP_PASS }}" \
               "SMTP_FROM=no-reply@normx-ai.com" \
@@ -86,8 +86,19 @@ jobs:
             cd /opt/infra
             sudo docker compose up -d --build tax-api
 
-            # Le dist est monte en volume dans nginx (live) — pas de reload necessaire
-            sleep 10
+            # Attendre que le container soit healthy (evite le curl premature)
+            for i in $(seq 1 30); do
+              if [ "$(sudo docker inspect -f '{{.State.Health.Status}}' normx-tax-api 2>/dev/null)" = "healthy" ]; then
+                break
+              fi
+              sleep 2
+            done
+
+            # Forcer nginx a re-resoudre l'upstream (nouvelle IP apres recreate
+            # du container tax-api, sinon cache de l'ancienne IP -> 502)
+            sudo docker exec normx-nginx nginx -s reload
+
+            # Healthcheck public (via nginx + Cloudflare)
             curl -sf https://tax.normx-ai.com/health || exit 1
 
             echo "Deploiement tax termine avec succes"
