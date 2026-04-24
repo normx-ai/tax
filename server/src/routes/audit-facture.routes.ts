@@ -69,6 +69,15 @@ router.post(
 
       const result = await analyzeInvoice(req.file.buffer, req.file.mimetype, docType, axes);
 
+      // Conforme global : tous les axes doivent etre conformes, pas uniquement le score
+      // des mentions. Une facture en anglais ou avec un mauvais taux TVA n'est pas
+      // conforme meme si toutes les mentions sont presentes.
+      const conformeGlobal =
+        result.score.found === result.score.total &&
+        result.langue.conforme !== false &&
+        result.tva.conforme !== false &&
+        (result.risques?.length ?? 0) === 0;
+
       // Sauvegarder en base
       await prisma.documentAudit.create({
         data: {
@@ -80,7 +89,7 @@ router.post(
           docType,
           score: result.score.found,
           total: result.score.total,
-          conforme: result.score.found === result.score.total,
+          conforme: conformeGlobal,
           result: JSON.parse(JSON.stringify(result)),
         },
       });
@@ -98,6 +107,8 @@ router.post(
 );
 
 // GET /history — Historique des audits
+// Recalcule le flag conforme depuis le result stocke pour corriger les
+// anciens enregistrements ou seul le score etait pris en compte.
 router.get(
   "/history",
   requireAuth,
@@ -116,9 +127,32 @@ router.get(
           total: true,
           conforme: true,
           createdAt: true,
+          result: true,
         },
       });
-      return res.json(audits);
+      const payload = audits.map((a) => {
+        const r = a.result as {
+          langue?: { conforme?: boolean };
+          tva?: { conforme?: boolean };
+          risques?: unknown[];
+        } | null;
+        const conformeGlobal = r
+          ? a.score === a.total &&
+            r.langue?.conforme !== false &&
+            r.tva?.conforme !== false &&
+            (r.risques?.length ?? 0) === 0
+          : a.conforme;
+        return {
+          id: a.id,
+          fileName: a.fileName,
+          docType: a.docType,
+          score: a.score,
+          total: a.total,
+          conforme: conformeGlobal,
+          createdAt: a.createdAt,
+        };
+      });
+      return res.json(payload);
     } catch (err) {
       logger.error("Erreur historique audit:", err instanceof Error ? err.message : err);
       return res.status(500).json({ error: "Erreur chargement historique" });
