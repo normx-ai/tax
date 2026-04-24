@@ -70,12 +70,15 @@ interface MailAttachment {
 async function sendMail(to: string, subject: string, html: string, attachments?: MailAttachment[]): Promise<void> {
   const text = htmlToPlainText(html);
 
-  // Toujours embarquer le logo en CID (reference par <img src="cid:normx-logo">
-  // dans emailLayout). Gmail/Outlook affichent alors l'image depuis l'attachement
-  // sans passer par leur proxy -> pas de cache + pas besoin d'activer
-  // "afficher les images externes" pour le destinataire.
+  // N'embarquer le logo CID que si le HTML y fait reference (emailLayout).
+  // Pour les mails "raw" (contact form interne, notifications techniques)
+  // on evite une piece jointe orpheline que certains clients affichent comme
+  // fichier attache.
+  const needsLogo = html.includes(`cid:${LOGO_CID}`);
   const allAttachments: MailAttachment[] = [
-    { filename: 'logo.png', path: LOGO_PATH, cid: LOGO_CID, contentType: 'image/png' },
+    ...(needsLogo
+      ? [{ filename: 'logo.png', path: LOGO_PATH, cid: LOGO_CID, contentType: 'image/png' }]
+      : []),
     ...(attachments || []),
   ];
 
