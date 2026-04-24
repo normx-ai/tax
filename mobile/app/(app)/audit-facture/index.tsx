@@ -71,7 +71,7 @@ export default function AuditFacturePage() {
           setError(null);
         }
       } catch {
-        setError("Erreur lors de la selection du fichier");
+        setError("Erreur lors de la sélection du fichier");
       }
     }
   };
@@ -105,7 +105,7 @@ export default function AuditFacturePage() {
       abortRef.current = null;
     }
     setLoading(false);
-    setError("Analyse annulee");
+    setError("Analyse annulée");
   };
 
   const handleAnalyze = async () => {
@@ -195,7 +195,7 @@ export default function AuditFacturePage() {
         {loading && (
           <TouchableOpacity
             onPress={cancelAnalyze}
-            accessibilityLabel="Arreter l'analyse"
+            accessibilityLabel="Arrêter l'analyse"
             style={{
               paddingVertical: 6,
               paddingHorizontal: 10,
@@ -504,7 +504,7 @@ export default function AuditFacturePage() {
                 onPress={async () => {
                   const ok = await confirm({
                     title: "Effacer l'historique",
-                    message: "Supprimer definitivement tous les audits de cet historique ? Cette action est irreversible.",
+                    message: "Supprimer définitivement tous les audits de cet historique ? Cette action est irréversible.",
                     confirmLabel: "Tout effacer",
                     cancelLabel: "Annuler",
                     destructive: true,
@@ -513,7 +513,7 @@ export default function AuditFacturePage() {
                   try {
                     const deleted = await clearAuditHistory();
                     setHistory([]);
-                    toast(`${deleted} audit${deleted > 1 ? "s" : ""} supprime${deleted > 1 ? "s" : ""}`, "success");
+                    toast(`${deleted} audit${deleted > 1 ? "s" : ""} supprimé${deleted > 1 ? "s" : ""}`, "success");
                   } catch {
                     toast("Erreur lors de l'effacement de l'historique", "error");
                   }
@@ -571,7 +571,7 @@ export default function AuditFacturePage() {
                   onPress={async () => {
                     const ok = await confirm({
                       title: "Supprimer cet audit",
-                      message: `Supprimer definitivement l'audit de "${h.fileName}" ? Cette action est irreversible.`,
+                      message: `Supprimer définitivement l'audit de "${h.fileName}" ? Cette action est irréversible.`,
                       confirmLabel: "Supprimer",
                       cancelLabel: "Annuler",
                       destructive: true,
@@ -580,7 +580,7 @@ export default function AuditFacturePage() {
                     try {
                       await deleteAuditItem(h.id);
                       setHistory((prev) => prev.filter((x) => x.id !== h.id));
-                      toast("Audit supprime", "success");
+                      toast("Audit supprimé", "success");
                     } catch {
                       toast("Erreur lors de la suppression", "error");
                     }
