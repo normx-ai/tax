@@ -1,5 +1,12 @@
 import nodemailer from 'nodemailer';
+import path from 'path';
 import { createLogger } from '../utils/logger';
+
+// Logo NORMX AI embarque en CID dans tous les emails (evite le cache
+// des proxies d'images type Gmail googleusercontent, plus fiable que
+// les URLs externes + query strings de cache bust).
+const LOGO_CID = 'normx-logo';
+const LOGO_PATH = path.join(__dirname, '..', 'assets', 'logo-horizontal-white.png');
 
 const logger = createLogger('EmailService');
 
@@ -57,10 +64,20 @@ interface MailAttachment {
   filename: string;
   path: string;
   contentType?: string;
+  cid?: string;
 }
 
 async function sendMail(to: string, subject: string, html: string, attachments?: MailAttachment[]): Promise<void> {
   const text = htmlToPlainText(html);
+
+  // Toujours embarquer le logo en CID (reference par <img src="cid:normx-logo">
+  // dans emailLayout). Gmail/Outlook affichent alors l'image depuis l'attachement
+  // sans passer par leur proxy -> pas de cache + pas besoin d'activer
+  // "afficher les images externes" pour le destinataire.
+  const allAttachments: MailAttachment[] = [
+    { filename: 'logo.png', path: LOGO_PATH, cid: LOGO_CID, contentType: 'image/png' },
+    ...(attachments || []),
+  ];
 
   if (transporter) {
     await transporter.sendMail({
@@ -70,7 +87,7 @@ async function sendMail(to: string, subject: string, html: string, attachments?:
       subject,
       html,
       text,
-      attachments,
+      attachments: allAttachments,
       headers: {
         'X-Mailer': 'NORMX-Tax',
       },
@@ -79,7 +96,7 @@ async function sendMail(to: string, subject: string, html: string, attachments?:
   } else {
     logger.info(`[EMAIL FALLBACK] À: ${to} | Sujet: ${subject}`);
     logger.info(`[EMAIL FALLBACK] Contenu:\n${text}`);
-    if (attachments?.length) logger.info(`[EMAIL FALLBACK] Pièces jointes: ${attachments.map(a => a.filename).join(', ')}`);
+    logger.info(`[EMAIL FALLBACK] Pièces jointes: ${allAttachments.map(a => a.filename).join(', ')}`);
   }
 }
 
@@ -100,7 +117,7 @@ export class EmailService {
         <!-- Header -->
         <tr>
           <td style="background-color: #1A3A5C; padding: 28px 32px; text-align: center;">
-            <img src="https://normx-ai.com/img/logo-horizontal-white.png?v=20260424" alt="NORMX AI" width="240" height="60" style="display: inline-block; border: 0; outline: none; text-decoration: none; height: 60px; width: 240px; max-width: 100%;" />
+            <img src="cid:${LOGO_CID}" alt="NORMX AI" width="240" height="60" style="display: inline-block; border: 0; outline: none; text-decoration: none; height: 60px; width: 240px; max-width: 100%;" />
           </td>
         </tr>
 
