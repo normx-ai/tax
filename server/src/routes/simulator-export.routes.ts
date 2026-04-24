@@ -15,7 +15,6 @@ const DARK = "#0F2A42";
 // Chemins assets (fonts Inter pour supporter les accents, logo blanc pour header fonce)
 const FONT_REG = path.join(__dirname, "..", "assets", "fonts", "Inter-Regular.ttf");
 const FONT_BOLD = path.join(__dirname, "..", "assets", "fonts", "Inter-Bold.ttf");
-const LOGO_PATH = path.join(__dirname, "..", "assets", "logo-horizontal-white.png");
 
 interface SimulatorLine {
   label: string;
@@ -52,13 +51,9 @@ router.post("/export-pdf", requireAuth, resolveTenant, async (req: AuthRequest, 
     res.setHeader("Content-Disposition", `attachment; filename="simulation-${simulatorName}-${Date.now()}.pdf"`);
     doc.pipe(res);
 
-    // Header — fond bleu fonce + logo blanc + nom du simulateur
+    // Header — fond bleu fonce + titre RAPPORT + nom du simulateur
     doc.rect(0, 0, 595, 80).fill(DARK);
-    if (fs.existsSync(LOGO_PATH)) {
-      doc.image(LOGO_PATH, 50, 22, { height: 36 });
-    } else {
-      doc.font(FONT_B).fontSize(22).fillColor("#ffffff").text("NORMX Tax", 50, 25);
-    }
+    doc.font(FONT_B).fontSize(26).fillColor("#ffffff").text("RAPPORT", 50, 26, { characterSpacing: 2 });
     doc.font(FONT_B).fontSize(13).fillColor(PRIMARY).text(simulatorName, 240, 32, { width: 305, align: "right" });
     doc.font(FONT).fontSize(9).fillColor("#cbd5e1").text(
       `Généré le ${date || new Date().toLocaleDateString("fr-FR")}  |  CGI Congo 2026`,
