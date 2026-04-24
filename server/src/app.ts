@@ -131,8 +131,8 @@ if (process.env.NODE_ENV === "development") {
 import { requireAuth, AuthRequest } from "./middleware/keycloak-auth";
 // import { requireProductSubscription } from "./middleware/product-subscription.middleware";
 app.use("/api", (req, res, next) => {
-  // Skip les routes publiques (health, docs)
-  if (req.path === '/health' || req.path.startsWith('/docs')) return next();
+  // Skip les routes publiques (health, docs, contact form des landings)
+  if (req.path === '/health' || req.path.startsWith('/docs') || req.path === '/contact') return next();
   requireAuth(req as AuthRequest, res, next);
 });
 
