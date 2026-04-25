@@ -505,4 +505,43 @@ export class EmailService {
   static async sendGeneric(to: string, subject: string, html: string): Promise<void> {
     await sendMail(to, subject, html);
   }
+
+  static async sendNewsletterConfirmation(
+    email: string,
+    confirmUrl: string,
+    unsubscribeUrl: string,
+  ): Promise<void> {
+    const subject = "NORMX — Confirmez votre inscription a la newsletter";
+    const html = EmailService.emailLayout(`
+      <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour,</p>
+
+      <p style="margin: 0 0 24px 0; font-size: 15px; color: #374151; line-height: 24px;">
+        Merci pour votre interet ! Cliquez sur le bouton ci-dessous pour confirmer votre inscription a la newsletter NORMX et recevoir nos actualites comptables, fiscales et juridiques OHADA.
+      </p>
+
+      <div style="text-align: center; margin: 0 0 24px 0;">
+        <a href="${confirmUrl}" style="display: inline-block; background-color: #D4A843; color: #0F2A42; padding: 14px 32px; font-size: 15px; font-weight: bold; text-decoration: none;">
+          Confirmer mon inscription
+        </a>
+      </div>
+
+      <p style="margin: 0 0 12px 0; font-size: 13px; color: #6b7280; line-height: 20px;">
+        Si le bouton ne fonctionne pas, copiez-collez ce lien dans votre navigateur :
+      </p>
+      <p style="margin: 0 0 24px 0; font-size: 12px; color: #D4A843; word-break: break-all;">
+        ${confirmUrl}
+      </p>
+
+      <p style="margin: 0 0 12px 0; font-size: 13px; color: #6b7280; line-height: 20px;">
+        Si vous n'etes pas a l'origine de cette demande, ignorez cet email.
+        Vous pouvez aussi <a href="${unsubscribeUrl}" style="color: #6b7280; text-decoration: underline;">vous desinscrire en un clic</a>.
+      </p>
+
+      <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">
+        A bientot,<br/>
+        <strong>L'equipe NORMX AI</strong>
+      </p>
+    `);
+    await sendMail(email, subject, html);
+  }
 }

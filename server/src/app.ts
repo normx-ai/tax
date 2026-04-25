@@ -24,6 +24,7 @@ import invoiceRoutes from "./routes/invoice.routes";
 import auditFactureRoutes from "./routes/audit-facture.routes";
 import favoritesRoutes from "./routes/favorites.routes";
 import simulatorExportRoutes from "./routes/simulator-export.routes";
+import newsletterRoutes from "./routes/newsletter.routes";
 import { startReminderCron } from "./services/reminder.service";
 import prisma from "./utils/prisma";
 import { createLogger } from "./utils/logger";
@@ -131,8 +132,16 @@ if (process.env.NODE_ENV === "development") {
 import { requireAuth, AuthRequest } from "./middleware/keycloak-auth";
 // import { requireProductSubscription } from "./middleware/product-subscription.middleware";
 app.use("/api", (req, res, next) => {
-  // Skip les routes publiques (health, docs, contact form des landings)
-  if (req.path === '/health' || req.path.startsWith('/docs') || req.path === '/contact') return next();
+  // Skip les routes publiques (health, docs, contact form, newsletter
+  // double opt-in : la subscription, la confirmation et la desinscription
+  // doivent etre accessibles sans token Keycloak puisqu'elles viennent
+  // des landings ou d'un lien dans un email).
+  if (
+    req.path === '/health'
+    || req.path.startsWith('/docs')
+    || req.path === '/contact'
+    || req.path.startsWith('/newsletter/')
+  ) return next();
   requireAuth(req as AuthRequest, res, next);
 });
 
@@ -154,6 +163,7 @@ app.use("/api/notifications", notificationRoutes);
 app.use("/api/invoices", invoiceRoutes);
 app.use("/api/favorites", favoritesRoutes);
 app.use("/api/simulator", simulatorExportRoutes);
+app.use("/api/newsletter", newsletterRoutes);
 
 // Contact form (landing normx-ai.com)
 app.post("/api/contact", async (req, res) => {

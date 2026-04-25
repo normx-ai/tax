@@ -786,3 +786,30 @@ model PushToken {
   @@index([userId])
   @@map("push_tokens")
 }
+
+// ==================== NEWSLETTER ====================
+// Inscriptions newsletter via les landings (normx-ai, tax, app, legal).
+// Double opt-in : confirm_token genere a l'inscription, valide quand
+// l'utilisateur clique sur le lien dans l'email de confirmation. RGPD :
+// unsubscribe_token + endpoint d'un clic.
+
+enum NewsletterStatus {
+  PENDING
+  CONFIRMED
+  UNSUBSCRIBED
+}
+
+model NewsletterSubscriber {
+  id                String           @id @default(uuid())
+  email             String           @unique
+  status            NewsletterStatus @default(PENDING)
+  confirmToken      String           @unique
+  unsubscribeToken  String           @unique
+  source            String?
+  subscribedAt      DateTime         @default(now())
+  confirmedAt       DateTime?
+  unsubscribedAt    DateTime?
+
+  @@index([status])
+  @@map("newsletter_subscribers")
+}
