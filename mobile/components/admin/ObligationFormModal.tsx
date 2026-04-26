@@ -1,6 +1,7 @@
-import { View, Text, TouchableOpacity, ScrollView, TextInput, ActivityIndicator } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, TextInput, ActivityIndicator, Modal } from "react-native";
 import { useState, useEffect, useCallback } from "react";
 import { Ionicons } from "@expo/vector-icons";
+import TestApplicabiliteModal from "./TestApplicabiliteModal";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useToast } from "@/components/ui/ToastProvider";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
@@ -43,6 +44,7 @@ export default function ObligationFormModal({ obligation, version, onClose, onSa
   const [simulateurs, setSimulateurs] = useState<string[]>([]);
   const [articleSuggestions, setArticleSuggestions] = useState<ArticleRef[]>([]);
   const [saving, setSaving] = useState(false);
+  const [showTest, setShowTest] = useState(false);
 
   useEffect(() => {
     obligationsApi.getSimulateurs().then(setSimulateurs).catch(() => {});
@@ -132,11 +134,26 @@ export default function ObligationFormModal({ obligation, version, onClose, onSa
         <Text style={{ flex: 1, fontFamily: fonts.regular, fontWeight: fontWeights.bold, fontSize: 17, color: colors.text, marginLeft: 8 }}>
           {isEdit ? "Modifier" : "Nouvelle obligation"}
         </Text>
+        {isEdit && (
+          <TouchableOpacity
+            onPress={() => setShowTest(true)}
+            style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 8, gap: 6, marginRight: 6, borderWidth: 1, borderColor: colors.primary }}
+          >
+            <Ionicons name="flask-outline" size={16} color={colors.primary} />
+            <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.semiBold, color: colors.primary }}>Tester</Text>
+          </TouchableOpacity>
+        )}
         <TouchableOpacity onPress={handleSave} disabled={saving} style={{ flexDirection: "row", alignItems: "center", backgroundColor: colors.primary, paddingHorizontal: 14, paddingVertical: 8, gap: 6, opacity: saving ? 0.6 : 1 }}>
           {saving ? <ActivityIndicator size="small" color="#0F2A42" /> : <Ionicons name="save-outline" size={18} color="#0F2A42" />}
           <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.bold, color: "#0F2A42" }}>Enregistrer</Text>
         </TouchableOpacity>
       </View>
+
+      {isEdit && obligation && (
+        <Modal visible={showTest} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setShowTest(false)}>
+          <TestApplicabiliteModal obligation={obligation} onClose={() => setShowTest(false)} />
+        </Modal>
+      )}
 
       <ScrollView contentContainerStyle={{ padding: 16, gap: 14 }}>
         <Section title="Identité">

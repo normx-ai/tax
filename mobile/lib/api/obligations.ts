@@ -147,7 +147,25 @@ export const obligationsApi = {
     const { data } = await api.get<string[]>("/obligations/simulateurs");
     return data;
   },
+
+  testerApplicabilite: async (obligationId: string, entiteId: string, anneeFiscale?: number): Promise<TestApplicabiliteResult> => {
+    const { data } = await api.post<TestApplicabiliteResult>(
+      `/obligations/${obligationId}/tester-applicabilite`,
+      { entiteId, anneeFiscale },
+    );
+    return data;
+  },
 };
+
+export interface TestApplicabiliteResult {
+  obligation: { id: string; code: string; libelle: string };
+  entite: { id: string; raisonSociale: string };
+  profil: Record<string, string | number | boolean>;
+  applicable: boolean;
+  anneeFiscale: number;
+  periodes: { periode: string; dateEcheance: string }[];
+  nbPeriodes: number;
+}
 
 // === Helpers UI ===
 

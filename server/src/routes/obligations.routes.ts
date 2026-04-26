@@ -144,4 +144,21 @@ router.post('/cloner-version', requireAuth, requireAdmin, validate({ body: clone
   res.json(result);
 }));
 
+/**
+ * @swagger
+ * /api/obligations/{id}/tester-applicabilite:
+ *   post:
+ *     tags: [Obligations]
+ *     summary: Verifier si une obligation s'applique a une entite donnee
+ */
+router.post('/:id/tester-applicabilite', requireAuth, requireAdmin, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const { entiteId, anneeFiscale } = req.body as { entiteId?: string; anneeFiscale?: number };
+  if (!entiteId) {
+    res.status(400).json({ error: "entiteId requis" });
+    return;
+  }
+  const result = await service.testerApplicabilite(String(req.params.id), entiteId, anneeFiscale);
+  res.json(result);
+}));
+
 export default router;

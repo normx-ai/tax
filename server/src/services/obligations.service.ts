@@ -138,6 +138,34 @@ export async function cloneVersion(fromVersion: string, toVersion: string) {
   return { cloned: created.length, message: 'OK' };
 }
 
+/** Test d'applicabilite d'une obligation contre une entite. Renvoie le
+ *  verdict (applicable ou non), les periodes calculees pour l'annee
+ *  fiscale, et l'echeance la plus proche. Sert a la page admin
+ *  "Tester une obligation" pour valider les regles avant activation. */
+export async function testerApplicabilite(obligationId: string, entiteId: string, anneeFiscale = new Date().getFullYear()) {
+  const [obligation, entite] = await Promise.all([
+    prisma.obligation.findUnique({ where: { id: obligationId } }),
+    prisma.entite.findUnique({ where: { id: entiteId } }),
+  ]);
+  if (!obligation) throw new Error("Obligation non trouvée");
+  if (!entite) throw new Error("Entité non trouvée");
+
+  const { entiteToProfil, evaluerApplicabilite, genererPeriodes } = await import("./applicabilite.service");
+  const profil = entiteToProfil(entite);
+  const applicable = evaluerApplicabilite(obligation.applicabilite, profil);
+  const periodes = applicable ? genererPeriodes(obligation.echeanceRule, anneeFiscale) : [];
+
+  return {
+    obligation: { id: obligation.id, code: obligation.code, libelle: obligation.libelle },
+    entite: { id: entite.id, raisonSociale: entite.raisonSociale },
+    profil,
+    applicable,
+    anneeFiscale,
+    periodes: periodes.map(p => ({ periode: p.periode, dateEcheance: p.dateEcheance.toISOString() })),
+    nbPeriodes: periodes.length,
+  };
+}
+
 /** Liste simplifiee des AlerteFiscale, groupees par categorie, pour aider
  *  l'admin a remplir les obligations a partir des donnees deja extraites
  *  du CGI par le moteur de NLP. */
