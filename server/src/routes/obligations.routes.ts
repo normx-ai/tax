@@ -79,6 +79,18 @@ router.get('/simulateurs', requireAuth, requireAdmin, asyncHandler(async (_req: 
 
 /**
  * @swagger
+ * /api/obligations/versions:
+ *   get:
+ *     tags: [Obligations]
+ *     summary: Liste des versions du catalogue avec stats
+ */
+router.get('/versions', requireAuth, requireAdmin, asyncHandler(async (_req: AuthRequest, res: Response) => {
+  const versions = await service.listVersions();
+  res.json(versions);
+}));
+
+/**
+ * @swagger
  * /api/obligations/{id}:
  *   get:
  *     tags: [Obligations]

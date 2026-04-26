@@ -138,6 +138,38 @@ export async function cloneVersion(fromVersion: string, toVersion: string) {
   return { cloned: created.length, message: 'OK' };
 }
 
+/** Liste des versions du catalogue avec leur etat (compteurs + dates).
+ *  Sert a la page admin "Gestion des versions" pour basculer entre
+ *  annees fiscales et voir l'avancement de la saisie. */
+export async function listVersions() {
+  const grouped = await prisma.obligation.groupBy({
+    by: ["version"],
+    _count: { _all: true },
+    orderBy: { version: "desc" },
+  });
+  const actifsByVersion = await prisma.obligation.groupBy({
+    by: ["version"],
+    where: { actif: true },
+    _count: { _all: true },
+  });
+  const actifsMap = new Map(actifsByVersion.map(r => [r.version, r._count._all]));
+
+  const versions = await Promise.all(grouped.map(async g => {
+    const last = await prisma.obligation.findFirst({
+      where: { version: g.version },
+      orderBy: { updatedAt: "desc" },
+      select: { updatedAt: true },
+    });
+    return {
+      version: g.version,
+      total: g._count._all,
+      actifs: actifsMap.get(g.version) ?? 0,
+      derniereModif: last?.updatedAt?.toISOString() ?? null,
+    };
+  }));
+  return versions;
+}
+
 /** Test d'applicabilite d'une obligation contre une entite. Renvoie le
  *  verdict (applicable ou non), les periodes calculees pour l'annee
  *  fiscale, et l'echeance la plus proche. Sert a la page admin

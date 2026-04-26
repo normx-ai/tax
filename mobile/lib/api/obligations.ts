@@ -148,6 +148,11 @@ export const obligationsApi = {
     return data;
   },
 
+  listVersions: async (): Promise<VersionStat[]> => {
+    const { data } = await api.get<VersionStat[]>("/obligations/versions");
+    return data;
+  },
+
   testerApplicabilite: async (obligationId: string, entiteId: string, anneeFiscale?: number): Promise<TestApplicabiliteResult> => {
     const { data } = await api.post<TestApplicabiliteResult>(
       `/obligations/${obligationId}/tester-applicabilite`,
@@ -156,6 +161,13 @@ export const obligationsApi = {
     return data;
   },
 };
+
+export interface VersionStat {
+  version: string;
+  total: number;
+  actifs: number;
+  derniereModif: string | null;
+}
 
 export interface TestApplicabiliteResult {
   obligation: { id: string; code: string; libelle: string };

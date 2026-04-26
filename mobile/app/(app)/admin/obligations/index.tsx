@@ -16,6 +16,7 @@ import {
 } from "@/lib/api/obligations";
 import ObligationFormModal from "@/components/admin/ObligationFormModal";
 import AlertesAidePanel from "@/components/admin/AlertesAidePanel";
+import VersionsModal from "@/components/admin/VersionsModal";
 
 export default function ObligationsAdminScreen() {
   const { colors } = useTheme();
@@ -38,6 +39,9 @@ export default function ObligationsAdminScreen() {
 
   // Aide depuis AlerteFiscale
   const [showAide, setShowAide] = useState(false);
+
+  // Modale Versions
+  const [showVersions, setShowVersions] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -169,9 +173,9 @@ export default function ObligationsAdminScreen() {
           <Text style={{ fontFamily: fonts.regular, color: colors.textSecondary, fontSize: 12 }}>
             {total} obligation{total > 1 ? "s" : ""} · version {version}
           </Text>
-          <TouchableOpacity onPress={handleCloneVersion} style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
-            <Ionicons name="copy-outline" size={14} color={colors.primary} />
-            <Text style={{ fontFamily: fonts.regular, color: colors.primary, fontSize: 12, fontWeight: fontWeights.semiBold }}>Cloner version</Text>
+          <TouchableOpacity onPress={() => setShowVersions(true)} style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+            <Ionicons name="folder-open-outline" size={14} color={colors.primary} />
+            <Text style={{ fontFamily: fonts.regular, color: colors.primary, fontSize: 12, fontWeight: fontWeights.semiBold }}>Versions</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -208,6 +212,15 @@ export default function ObligationsAdminScreen() {
           version={version}
           onClose={() => setShowForm(false)}
           onSaved={handleSaved}
+        />
+      </Modal>
+
+      {/* Modale Versions */}
+      <Modal visible={showVersions} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setShowVersions(false)}>
+        <VersionsModal
+          versionActive={version}
+          onClose={() => setShowVersions(false)}
+          onSelectVersion={(v) => { setVersion(v); setShowVersions(false); }}
         />
       </Modal>
 

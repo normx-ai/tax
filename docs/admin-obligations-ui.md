@@ -190,8 +190,8 @@ groupées par `categorie`.
 | Documentation `admin-obligations-ui.md` à jour | ✓ Livré | (ce commit) |
 | Constructeur cliquable de règles d'applicabilité | ✓ Livré | `d909d2b` — composant `ApplicabiliteBuilder` (11 champs, boolean/number/select) + toggle JSON avancé |
 | Page Aperçu / test d'une obligation | ✓ Livré | `5e506ee` — modal `TestApplicabiliteModal` + endpoint `/api/obligations/:id/tester-applicabilite` |
-| Page dédiée Versionning (liste des versions) | À faire | v2 |
-| Audit trail dans `audit_log` | À faire | v2 |
+| Page dédiée Versionning (liste des versions) | ✓ Livré | (ce commit) — modale `VersionsModal` avec stats par version, bouton « Cloner » et bascule de version active |
+| Audit trail dans `audit_log` | ✓ Livré | `53988a1` — 11 nouvelles AuditAction et hooks dans toutes les routes mutantes |
 | Lien depuis la sidebar Admin vers `/admin/obligations` | ✓ Livré | `7e53fe8` |
 | Grille d'outils administrateur (Catalogue, Analytics, Audit, Permissions) | ✓ Livré | `523ff6b` |
 | Card « Mes entités fiscales » dans le hub admin | ✓ Livré | `895cafa` |
