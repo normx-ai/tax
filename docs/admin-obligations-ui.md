@@ -188,7 +188,7 @@ groupées par `categorie`.
 | Modale formulaire 5 sections + champs adaptatifs | ✓ Livré | `e4f6f63` |
 | Panneau `AlertesAidePanel` | ✓ Livré | `e4f6f63` |
 | Documentation `admin-obligations-ui.md` à jour | ✓ Livré | (ce commit) |
-| Constructeur cliquable de règles d'applicabilité | À faire | v2 |
+| Constructeur cliquable de règles d'applicabilité | ✓ Livré | `d909d2b` — composant `ApplicabiliteBuilder` (11 champs, boolean/number/select) + toggle JSON avancé |
 | Page Aperçu / test d'une obligation | ✓ Livré | `5e506ee` — modal `TestApplicabiliteModal` + endpoint `/api/obligations/:id/tester-applicabilite` |
 | Page dédiée Versionning (liste des versions) | À faire | v2 |
 | Audit trail dans `audit_log` | À faire | v2 |
