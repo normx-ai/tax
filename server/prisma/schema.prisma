@@ -1091,10 +1091,39 @@ model Dossier {
   createdAt       DateTime      @default(now())
   updatedAt       DateTime      @updatedAt
 
+  // Documents joints (Bloc 4.3) — pieces justificatives uploadees pour ce
+  // dossier (avis foncier, balance comptable, etc.)
+  documents       DossierDocument[]
+
   @@unique([entiteId, obligationId, periode])
   @@index([entiteId])
   @@index([obligationId])
   @@index([statut])
   @@index([dateEcheance])
   @@map("dossiers")
+}
+
+// ==================== DOCUMENTS JOINTS (Bloc 4.3) ====================
+// Pieces justificatives attachees a un dossier fiscal. Pour l'instant on
+// stocke les metadonnees + un chemin/url ; l'upload effectif (multer + S3
+// ou storage local) viendra dans une iteration ulterieure quand l'infra
+// sera prete.
+
+model DossierDocument {
+  id              String   @id @default(uuid())
+
+  dossierId       String
+  dossier         Dossier  @relation(fields: [dossierId], references: [id], onDelete: Cascade)
+
+  filename        String                          // nom affiche
+  storedPath      String                          // chemin sur disque ou cle S3
+  contentType     String                          // ex. application/pdf
+  size            Int                             // bytes
+
+  uploadedById    String?                         // userId qui a uploade
+  uploadedAt      DateTime @default(now())
+
+  @@index([dossierId])
+  @@index([uploadedById])
+  @@map("dossier_documents")
 }
