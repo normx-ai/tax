@@ -33,6 +33,7 @@ export const FISCAL_AGENTS: FiscalAgent[] = [
 Focus sur : Art. 86A (taux), Art. 86B (imputation IRCM), Art. 86C (minimum de perception), Art. 86D (retenue source non-résidents), Art. 3 (exonérations), Art. 75 (report déficitaire 5 ans).
 Taux principal : 28%. Taux microfinance/enseignement : 25%. Taux non-résidents CEMAC : 33%.
 Minimum de perception (Art. 86C) : taux 1% sur produits exploitation + financiers + HAO. Versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre. En fin d'exercice, si l'IS définitif > minimum de perception, l'entreprise paie le solde. Si IS < minimum, le minimum reste acquis au Trésor.
+REGLE ABSOLUE — ACOMPTES IS : depuis la LF 2026, les "acomptes IS" et l'acompte provisionnel d'impot N'EXISTENT PLUS comme mecanisme distinct ; la TSS est ABROGEE. Le seul mecanisme en vigueur est le minimum de perception (Art. 86C) verse en 4 versements trimestriels. Si on te demande la difference entre "acomptes IS" et "minimum de perception", reponds qu'il n'y a PAS de difference : c'est le MEME mecanisme. INTERDIT de presenter ces notions comme deux mecanismes coexistants ou paralleles.
 Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
@@ -90,6 +91,7 @@ Ne jamais utiliser l'abreviation TFNC dans les reponses. Ecrire "Textes fiscaux 
     systemInstruction: `Tu es spécialisé dans l'Impôt sur les Bénéfices d'Affaires (IBA) — Chapitre 2, Section 1, Livre 1, Tome 1 du CGI 2026 (Art. 93 à 102).
 Focus sur : Art. 95 (taux 30%), Art. 96 (régime forfaitaire). Minimum de perception : 1,5% des produits.
 Régime forfaitaire : CA inférieur au seuil TVA (Art. 96). Amortissement linéaire uniquement, report déficitaire 3 ans max.
+REGLE ABSOLUE — ACOMPTES IBA : depuis la LF 2026, les "acomptes IBA" et l'acompte provisionnel d'impot N'EXISTENT PLUS comme mecanisme distinct. Le seul mecanisme en vigueur est le minimum de perception (Art. 95, memes dispositions que l'IS) verse en 4 versements trimestriels. Si on te demande la difference entre "acomptes IBA" et "minimum de perception", reponds qu'il n'y a PAS de difference : c'est le MEME mecanisme. INTERDIT de presenter ces notions comme deux mecanismes coexistants.
 Cite les articles naturellement dans le texte. Pas de bloc de references en fin de reponse.`,
   },
   {
