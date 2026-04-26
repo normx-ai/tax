@@ -16,6 +16,7 @@ import {
   REGIME_IS_LABELS,
   REGIME_TVA_LABELS,
 } from "@/lib/api/entites";
+import { dossiersApi } from "@/lib/api/dossiers";
 
 interface Props {
   entite: Entite | null;
@@ -100,6 +101,17 @@ export default function EntiteFormModal({ entite, isClientSelfDefault = false, o
       const result = isEdit
         ? await entitesApi.update(entite!.id, payload as never)
         : await entitesApi.create(payload as never);
+
+      // Recalcul automatique des dossiers fiscaux pour cette entite
+      // (le profil fiscal a change donc certaines obligations peuvent
+      // devenir applicables ou non)
+      try {
+        await dossiersApi.recalculer({ entiteId: result.id });
+      } catch {
+        // Silencieux : si le catalogue d'obligations est vide, le recalcul
+        // ne fait rien — pas la peine d'alerter l'utilisateur.
+      }
+
       toast(isEdit ? "Entité mise à jour" : "Entité créée", "success");
       onSaved(result);
     } catch (err) {

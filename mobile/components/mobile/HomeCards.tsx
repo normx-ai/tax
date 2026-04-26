@@ -7,6 +7,7 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { getEcheancesDuMois, getNomMois, getJoursRestants, type EcheanceFiscale } from "@/lib/services/calendrier-fiscal";
 import { entitesApi, Entite } from "@/lib/api/entites";
+import { dossiersApi, DashboardKpis } from "@/lib/api/dossiers";
 
 type Props = {
   favoritesCount?: number;
@@ -37,12 +38,16 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
 
   const [entites, setEntites] = useState<Entite[]>([]);
   const [loadingEntites, setLoadingEntites] = useState(true);
+  const [kpis, setKpis] = useState<DashboardKpis | null>(null);
 
   useEffect(() => {
     entitesApi.list({ limit: 200, actif: true })
       .then(r => setEntites(r.items))
       .catch(() => setEntites([]))
       .finally(() => setLoadingEntites(false));
+    dossiersApi.getKpis()
+      .then(setKpis)
+      .catch(() => setKpis(null));
   }, []);
 
   const cardBase = {
@@ -145,30 +150,30 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
       </Text>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10, marginBottom: 22 }}>
         <KpiCard
-          label="Simulations ce mois"
-          value="—"
-          hint="Bientôt"
+          label={isCabinet ? "Clients suivis" : "Mes entités"}
+          value={kpis ? String(kpis.totalClients > 0 ? kpis.totalClients : totalClients) : (loadingEntites ? "…" : String(totalClients))}
+          hint={isCabinet ? "Profils fiscaux" : "Profils déclarés"}
           color={COULEUR_BLEU_MARQUE}
           colors={colors}
         />
         <KpiCard
-          label="Économie identifiée"
-          value="—"
-          hint="Bientôt"
+          label="Obligations du mois"
+          value={kpis ? String(kpis.obligationsDuMois) : "…"}
+          hint={kpis ? `${kpis.obligationsDeposeesDuMois} déposées` : "À calculer"}
           color={COULEUR_OR_MARQUE}
           colors={colors}
         />
         <KpiCard
-          label={isCabinet ? "Clients en retard" : "Obligations en retard"}
-          value="0"
-          hint={loadingEntites ? "..." : (totalClients > 0 ? "Aucun retard" : "Aucune entité")}
-          color={COULEUR_BLEU_MARQUE}
+          label="En retard"
+          value={kpis ? String(kpis.obligationsEnRetard) : "…"}
+          hint={kpis && kpis.obligationsEnRetard === 0 ? "Aucun retard" : "À traiter"}
+          color={kpis && kpis.obligationsEnRetard > 0 ? "#ef4444" : COULEUR_BLEU_MARQUE}
           colors={colors}
         />
         <KpiCard
-          label="Complétion obligations"
-          value="—"
-          hint="Bientôt"
+          label="Complétion"
+          value={kpis ? `${kpis.completionPct}%` : "…"}
+          hint={kpis ? "Obligations déposées" : "À calculer"}
           color={COULEUR_OR_MARQUE}
           colors={colors}
         />
