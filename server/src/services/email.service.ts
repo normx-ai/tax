@@ -544,4 +544,12 @@ export class EmailService {
     `);
     await sendMail(email, subject, html);
   }
+
+  /**
+   * Envoi generique pour les services qui construisent leur propre HTML
+   * (ex. dossiers-rappels.service pour les rappels personnalises).
+   */
+  static async sendRaw(email: string, subject: string, html: string): Promise<void> {
+    await sendMail(email, subject, html);
+  }
 }

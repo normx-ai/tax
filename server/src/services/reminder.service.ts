@@ -5,6 +5,7 @@ import prisma from '../utils/prisma';
 import { EmailService } from './email.service';
 import { PushService } from './push.service';
 import { createLogger } from '../utils/logger';
+import { marquerEnRetard, envoyerRappelsDossiers } from './dossiers-rappels.service';
 
 const logger = createLogger('ReminderService');
 
@@ -327,6 +328,11 @@ async function runAllReminders(): Promise<void> {
   try {
     await checkExpiringSubscriptions();
     await checkFiscalDeadlines();
+
+    // Bloc 4.2 : marquer les dossiers expires EN_RETARD puis envoyer
+    // les recaps personnalises aux OWNER/ADMIN.
+    await marquerEnRetard();
+    await envoyerRappelsDossiers();
 
     // Nettoyage tokens push obsolètes le dimanche
     if (new Date().getDay() === 0) {
