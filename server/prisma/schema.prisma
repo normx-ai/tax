@@ -14,11 +14,17 @@ datasource db {
 
 // ==================== ORGANIZATIONS (TENANTS) ====================
 
+enum OrganizationMode {
+  ENTREPRISE   // Une seule entite (la sienne), creee a l'onboarding
+  CABINET      // Plusieurs entites clients
+}
+
 model Organization {
   id        String   @id @default(uuid())
   name      String
   slug      String   @unique // URL-friendly identifier
   pays      String   @default("242") // Indicatif pays (242 = Congo-Brazzaville)
+  mode      OrganizationMode @default(ENTREPRISE)
   logo      String?
   website   String?
   address   String?

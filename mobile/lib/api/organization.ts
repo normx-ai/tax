@@ -1,9 +1,12 @@
 import { api } from "./client";
 
+export type OrganizationMode = "ENTREPRISE" | "CABINET";
+
 export interface Organization {
   id: string;
   name: string;
   slug: string;
+  mode?: OrganizationMode;
   plan: string;
   memberCount: number;
   paidSeats?: number;
