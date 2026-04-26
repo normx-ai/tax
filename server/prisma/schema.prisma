@@ -887,6 +887,9 @@ model Obligation {
   createdAt       DateTime              @default(now())
   updatedAt       DateTime              @updatedAt
 
+  // Dossiers fiscaux generes pour cette obligation (instances par entite x periode)
+  dossiers        Dossier[]
+
   @@unique([code, version])
   @@index([categorie])
   @@index([version])
@@ -1007,9 +1010,74 @@ model Entite {
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
 
+  // Dossiers fiscaux generes automatiquement par le moteur d'applicabilite
+  dossiers        Dossier[]
+
   @@index([organizationId])
   @@index([secteurActivite])
   @@index([actif])
   @@index([isClientSelf])
   @@map("entites")
+}
+
+// ==================== DOSSIERS FISCAUX (Bloc 2.2) ====================
+// Un dossier = une instance d'obligation pour une entite et une periode.
+// Genere automatiquement par le moteur d'applicabilite (Bloc 2.1) en
+// croisant le profil de l'entite avec le catalogue des obligations.
+//
+// Exemple : entite DAISY DEL, obligation ITS, periode "2026-04",
+// dateEcheance 2026-05-15, statut A_FAIRE -> apparait dans le calendrier
+// de l'utilisateur. Une fois la declaration deposee, statut PRET ou
+// DEPOSE, montant calcule rempli depuis le simulateur ITS.
+
+enum DossierStatut {
+  A_FAIRE                      // Dossier cree, rien fait dessus
+  EN_COURS                     // Saisie en cours, donnees partielles
+  PRET                         // Calcul fait, pret a deposer
+  DEPOSE                       // Declaration envoyee a l'administration
+  PAYE                         // Paiement effectue
+  EN_RETARD                    // Echeance depassee, non depose
+  NON_APPLICABLE               // Genere puis profil entite a change
+}
+
+model Dossier {
+  id              String        @id @default(uuid())
+
+  entiteId        String
+  entite          Entite        @relation(fields: [entiteId], references: [id], onDelete: Cascade)
+
+  obligationId    String
+  obligation      Obligation    @relation(fields: [obligationId], references: [id], onDelete: Cascade)
+
+  // Periode concernee, format normalise :
+  // - mensuelle      : "2026-04"
+  // - trimestrielle  : "2026-Q1"
+  // - semestrielle   : "2026-S1"
+  // - annuelle       : "2026"
+  // - ponctuelle     : ISO date "2026-04-26"
+  periode         String
+
+  // Date d'echeance calculee a partir d'echeanceRule + periode
+  dateEcheance    DateTime
+
+  statut          DossierStatut @default(A_FAIRE)
+
+  // Resultats calcules (alimentes par le simulateur ou la saisie)
+  montantCalcule  Decimal?      @db.Decimal(20, 2)
+  baseImposable   Decimal?      @db.Decimal(20, 2)
+
+  // Suivi de la declaration
+  dateDepot       DateTime?
+  datePaiement    DateTime?
+  notes           String?       @db.Text
+
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@unique([entiteId, obligationId, periode])
+  @@index([entiteId])
+  @@index([obligationId])
+  @@index([statut])
+  @@index([dateEcheance])
+  @@map("dossiers")
 }
