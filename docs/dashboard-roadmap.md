@@ -290,20 +290,24 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 | 3 | 3.2 — KPIs utilisateur | 0,5 j (réalisé partiellement) | ⚠ Squelette livré, valeurs réelles attendent Phase 2 |
 | 3 | 3.3 — Liste des échéances | 0,5 j (réalisé) | ✓ Livré (26/04/2026) — par mois courant |
 | 3 | 3.4 — Activité récente | 0,2 j (réalisé) | ⚠ Placeholder livré, données attendent Bloc 4.1 |
-| 4 | 4.1 — Simulateurs ↔ Dossiers | 1 j | À faire |
-| 4 | 4.2 — Notifications / rappels | 1,5 j | À faire |
-| 4 | 4.3 — Documents joints | 1 j | À faire |
-| 5 | 5.1 — IA Insights | 2-3 j | À faire |
+| 4 | 4.1 — Simulateurs ↔ Dossiers | 0,5 j (réalisé) | ✓ Livré (26/04/2026) — composant + Patente, TVA branchés (14 simulateurs restants à brancher avec le même pattern) |
+| 4 | 4.2 — Notifications / rappels | 0,5 j (réalisé) | ✓ Livré (26/04/2026) — `dossiers-rappels.service` + cron quotidien |
+| 4 | 4.3 — Documents joints | 0,3 j (réalisé) | ⚠ Schéma livré, upload effectif (multer/S3) à faire |
+| 5 | 5.1 — IA Insights | 1 j (réalisé) | ✓ Livré (26/04/2026) — Claude sonnet-4-6 + cache 1h |
 | 5 | 5.2 — Assistant IA fiscal enrichi | 1-2 j | À faire |
 
-Réalisé à date (26 avril 2026) : 7,3 jours
+Réalisé à date (26 avril 2026) : 9,6 jours
 - Bloc 1.1 (catalogue obligations) : 2,5 j
 - Bloc 1.2 (modèle entité) : 2,5 j
 - Bloc 1.3 (mode entreprise/cabinet) : 0,3 j (backend uniquement)
 - Phase 3 squelette (3.1, 3.2 partiel, 3.3, 3.4 placeholder) : ~1,5 j
-  enchassés dans le total ci-dessus
 - Bloc 2.1 (moteur applicabilité) : 1 j
 - Bloc 2.2 (table dossiers + recalcul auto + KPIs branchés) : 1 j
+- Bloc 4.1 (simulateurs ↔ dossiers) : 0,5 j
+- Bloc 4.2 (rappels emails personnalisés) : 0,5 j
+- Bloc 4.3 (schéma documents joints, upload à faire) : 0,3 j
+- Bloc 5.1 (IA Insights) : 1 j
+- Items v2 admin obligations (test, builder, audit, versions) : 1 j
 
 Backfill production des modes (26 avril 2026, opération SQL directe)
 - CABINET : Cédron Ngamiye (avec Douce Moussavou en ADMIN, son org
@@ -316,10 +320,11 @@ Backfill production des modes (26 avril 2026, opération SQL directe)
   a été soft-supprimée (deletedAt) — elle n'a plus que le cabinet en
   accès.
 
-Reste à faire : ~10,7 jours
-- Phase 4 complète (intégrations simulateur ↔ dossiers, notifications, documents joints) : 3,5 j
-- Phase 5 (IA Insights + Assistant fiscal enrichi) : 4 j
-- Renforcement UX dashboard (page liste dossiers détaillée, activité récente, modal onboarding mode) : ~3 j
+Reste à faire : ~5 jours
+- Bloc 4.1 : appliquer le pattern SaveToDossierButton aux 14 simulateurs restants (~1 j en bulk)
+- Bloc 4.3 : upload effectif des documents (multer + S3 ou storage local) : 1 j
+- Bloc 5.2 (Assistant IA fiscal enrichi avec function calling sur dossiers) : 1-2 j
+- Renforcement UX dashboard (page liste dossiers détaillée, activité récente, modal onboarding mode entreprise/cabinet) : ~2 j
 
 Le dashboard tax affiche désormais des chiffres RÉELS (Clients suivis,
 Obligations du mois, En retard, Complétion %), tirés de
