@@ -1,0 +1,147 @@
+import { Router, Response } from 'express';
+import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
+import { requireAdmin } from '../middleware/orgRole.middleware';
+import { validate } from '../middleware/validate.middleware';
+import { asyncHandler } from '../middleware/asyncHandler';
+import {
+  createObligation,
+  updateObligation,
+  listObligationsQuery,
+  cloneVersionBody,
+} from '../schemas/obligations.schema';
+import * as service from '../services/obligations.service';
+
+const router = Router();
+
+/**
+ * @swagger
+ * /api/obligations:
+ *   get:
+ *     tags: [Obligations]
+ *     summary: Liste paginee des obligations fiscales du catalogue
+ *     security:
+ *       - bearerAuth: []
+ */
+router.get('/', requireAuth, validate({ query: listObligationsQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const result = await service.listObligations({
+    version: req.query.version as string | undefined,
+    categorie: req.query.categorie as never,
+    periodicite: req.query.periodicite as never,
+    actif: req.query.actif as boolean | undefined,
+    search: req.query.search as string | undefined,
+    page: Number(req.query.page),
+    limit: Number(req.query.limit),
+  });
+  res.json(result);
+}));
+
+/**
+ * @swagger
+ * /api/obligations/alertes-aide:
+ *   get:
+ *     tags: [Obligations]
+ *     summary: Alertes fiscales deja extraites du CGI, groupees par categorie.
+ *       Aide l'admin a remplir les obligations a partir des donnees connues.
+ */
+router.get('/alertes-aide', requireAuth, requireAdmin, asyncHandler(async (_req: AuthRequest, res: Response) => {
+  const groups = await service.getAlertesByCategorie();
+  res.json(groups);
+}));
+
+/**
+ * @swagger
+ * /api/obligations/articles-recherche:
+ *   get:
+ *     tags: [Obligations]
+ *     summary: Autocomplete d'articles CGI pour lier a une obligation
+ */
+router.get('/articles-recherche', requireAuth, requireAdmin, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const qRaw = req.query.q;
+  const versionRaw = req.query.version;
+  const q = typeof qRaw === 'string' ? qRaw : '';
+  const version = typeof versionRaw === 'string' ? versionRaw : '2026';
+  const articles = await service.searchArticles(q, version);
+  res.json(articles);
+}));
+
+/**
+ * @swagger
+ * /api/obligations/simulateurs:
+ *   get:
+ *     tags: [Obligations]
+ *     summary: Codes des simulateurs disponibles pour rattacher a une obligation
+ */
+router.get('/simulateurs', requireAuth, requireAdmin, asyncHandler(async (_req: AuthRequest, res: Response) => {
+  res.json(service.SIMULATEUR_CODES);
+}));
+
+/**
+ * @swagger
+ * /api/obligations/{id}:
+ *   get:
+ *     tags: [Obligations]
+ *     summary: Detail d'une obligation
+ */
+router.get('/:id', requireAuth, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const o = await service.getObligationById(String(req.params.id));
+  if (!o) {
+    res.status(404).json({ error: 'Obligation non trouvee' });
+    return;
+  }
+  res.json(o);
+}));
+
+/**
+ * @swagger
+ * /api/obligations:
+ *   post:
+ *     tags: [Obligations]
+ *     summary: Creer une obligation (admin uniquement)
+ */
+router.post('/', requireAuth, requireAdmin, validate({ body: createObligation }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const created = await service.createObligation(req.body);
+  res.status(201).json(created);
+}));
+
+/**
+ * @swagger
+ * /api/obligations/{id}:
+ *   patch:
+ *     tags: [Obligations]
+ *     summary: Modifier une obligation (admin uniquement)
+ */
+router.patch('/:id', requireAuth, requireAdmin, validate({ body: updateObligation }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const updated = await service.updateObligation(String(req.params.id), req.body);
+  res.json(updated);
+}));
+
+/**
+ * @swagger
+ * /api/obligations/{id}/desactiver:
+ *   post:
+ *     tags: [Obligations]
+ *     summary: Desactiver une obligation (soft delete, admin uniquement)
+ */
+router.post('/:id/desactiver', requireAuth, requireAdmin, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const updated = await service.deactivateObligation(String(req.params.id));
+  res.json(updated);
+}));
+
+router.post('/:id/activer', requireAuth, requireAdmin, asyncHandler(async (req: AuthRequest, res: Response) => {
+  const updated = await service.activateObligation(String(req.params.id));
+  res.json(updated);
+}));
+
+/**
+ * @swagger
+ * /api/obligations/cloner-version:
+ *   post:
+ *     tags: [Obligations]
+ *     summary: Dupliquer un catalogue d'une version vers une autre (loi de finances)
+ */
+router.post('/cloner-version', requireAuth, requireAdmin, validate({ body: cloneVersionBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
+  const result = await service.cloneVersion(req.body.fromVersion, req.body.toVersion);
+  res.json(result);
+}));
+
+export default router;
