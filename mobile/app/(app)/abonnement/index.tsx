@@ -6,9 +6,12 @@ import {
   ScrollView,
   ActivityIndicator,
   Linking,
+  Platform,
 } from "react-native";
+import * as Clipboard from "expo-clipboard";
 import { Ionicons } from "@expo/vector-icons";
 import { subscriptionApi, type QuotaResponse } from "@/lib/api/subscription";
+import { stripeApi, type StripeBillingPeriod } from "@/lib/api/stripe";
 import { useAuthStore } from "@/lib/store/auth";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useTranslation } from "react-i18next";
@@ -19,6 +22,54 @@ import PeriodInfo from "@/components/abonnement/PeriodInfo";
 import PlansComparison from "@/components/abonnement/PlansComparison";
 import SubscriptionActions from "@/components/abonnement/SubscriptionActions";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
+import { BANK, COMPANY } from "@/lib/constants/company";
+import type { ThemeColors } from "@/lib/theme/colors";
+
+interface BankRowProps {
+  label: string;
+  value: string;
+  colors: ThemeColors;
+  onCopy: () => void;
+  monospace?: boolean;
+  isLast?: boolean;
+}
+
+function BankRow({ label, value, colors, onCopy, monospace, isLast }: BankRowProps) {
+  return (
+    <View
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        paddingVertical: 10,
+        borderBottomWidth: isLast ? 0 : 1,
+        borderBottomColor: colors.border,
+      }}
+    >
+      <View style={{ flex: 1 }}>
+        <Text style={{ fontSize: 12, color: colors.textSecondary, marginBottom: 2 }}>{label}</Text>
+        <Text
+          style={{
+            fontSize: 15,
+            color: colors.text,
+            fontWeight: "600",
+            fontFamily: monospace ? Platform.select({ web: "monospace", default: "Courier" }) : undefined,
+          }}
+          selectable
+        >
+          {value}
+        </Text>
+      </View>
+      <TouchableOpacity
+        onPress={onCopy}
+        accessibilityLabel={`Copier ${label}`}
+        accessibilityRole="button"
+        style={{ padding: 8 }}
+      >
+        <Ionicons name="copy-outline" size={18} color={colors.primary} />
+      </TouchableOpacity>
+    </View>
+  );
+}
 
 export default function AbonnementScreen() {
   const { colors } = useTheme();
@@ -88,6 +139,26 @@ export default function AbonnementScreen() {
       await loadQuota();
     } catch (err) {
       const msg = err instanceof Error ? err.message : t("common.error");
+      toast(msg, "error");
+    } finally {
+      setActionLoading(false);
+    }
+  };
+
+  const handleCopy = async (label: string, value: string) => {
+    await Clipboard.setStringAsync(value);
+    toast(`${label} copié`, "success");
+  };
+
+  const handleStripeCheckout = async (period: StripeBillingPeriod) => {
+    setActionLoading(true);
+    try {
+      const { url } = await stripeApi.createCheckoutSession("PRO", period);
+      await Linking.openURL(url);
+    } catch (err) {
+      const axiosErr = err as { response?: { data?: { error?: string } } };
+      const msg = axiosErr?.response?.data?.error
+        ?? (err instanceof Error ? err.message : t("common.error"));
       toast(msg, "error");
     } finally {
       setActionLoading(false);
@@ -184,6 +255,138 @@ export default function AbonnementScreen() {
           />
         )}
 
+        {/* Paiement par carte (Stripe) */}
+        {isOwner && plan === "FREE" && (
+          <View
+            style={{
+              backgroundColor: colors.card,
+              padding: 20,
+              borderWidth: 1,
+              borderColor: colors.border,
+              marginBottom: 16,
+            }}
+          >
+            <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
+              <Ionicons name="card" size={22} color={colors.primary} style={{ marginRight: 8 }} />
+              <Text style={{ fontSize: 17, fontWeight: "700", color: colors.text, flex: 1 }}>
+                Paiement par carte bancaire
+              </Text>
+            </View>
+            <Text style={{ fontSize: 14, color: colors.textSecondary, marginBottom: 14, lineHeight: 20 }}>
+              Réglez votre abonnement Pro par carte via Stripe (paiement sécurisé). Activation immédiate après confirmation.
+            </Text>
+            <View style={{ gap: 8 }}>
+              <TouchableOpacity
+                onPress={() => handleStripeCheckout("monthly")}
+                disabled={actionLoading}
+                accessibilityLabel="Souscrire Pro mensuel par carte"
+                accessibilityRole="button"
+                style={{
+                  backgroundColor: colors.primary,
+                  paddingVertical: 12,
+                  paddingHorizontal: 16,
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  opacity: actionLoading ? 0.6 : 1,
+                }}
+              >
+                <Ionicons name="card-outline" size={18} color="#fff" style={{ marginRight: 8 }} />
+                <Text style={{ color: "#fff", fontSize: 16, fontWeight: "700" }}>Pro — paiement mensuel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => handleStripeCheckout("yearly")}
+                disabled={actionLoading}
+                accessibilityLabel="Souscrire Pro annuel par carte"
+                accessibilityRole="button"
+                style={{
+                  backgroundColor: colors.card,
+                  borderWidth: 1,
+                  borderColor: colors.primary,
+                  paddingVertical: 12,
+                  paddingHorizontal: 16,
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  opacity: actionLoading ? 0.6 : 1,
+                }}
+              >
+                <Ionicons name="calendar-outline" size={18} color={colors.primary} style={{ marginRight: 8 }} />
+                <Text style={{ color: colors.primary, fontSize: 16, fontWeight: "700" }}>Pro — paiement annuel</Text>
+              </TouchableOpacity>
+            </View>
+            <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 10, textAlign: "center" }}>
+              Vous serez redirigé vers la page sécurisée de Stripe.
+            </Text>
+          </View>
+        )}
+
+        {/* Coordonnées bancaires — paiement par virement */}
+        {isOwner && (
+          <View
+            style={{
+              backgroundColor: colors.card,
+              padding: 20,
+              borderWidth: 1,
+              borderColor: colors.border,
+              marginBottom: 16,
+            }}
+          >
+            <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 12 }}>
+              <Ionicons name="card-outline" size={22} color={colors.primary} style={{ marginRight: 8 }} />
+              <Text style={{ fontSize: 17, fontWeight: "700", color: colors.text, flex: 1 }}>
+                Paiement par virement
+              </Text>
+            </View>
+            <Text style={{ fontSize: 14, color: colors.textSecondary, marginBottom: 14, lineHeight: 20 }}>
+              Réglez votre abonnement par virement bancaire. Pensez à indiquer le numéro de votre facture en référence.
+            </Text>
+
+            <BankRow
+              label="Titulaire"
+              value={BANK.holder}
+              colors={colors}
+              onCopy={() => handleCopy("Titulaire", BANK.holder)}
+            />
+            <BankRow
+              label="Banque"
+              value={BANK.name}
+              colors={colors}
+              onCopy={() => handleCopy("Banque", BANK.name)}
+            />
+            <BankRow
+              label="IBAN"
+              value={BANK.iban}
+              monospace
+              colors={colors}
+              onCopy={() => handleCopy("IBAN", BANK.iban)}
+            />
+            <BankRow
+              label="BIC"
+              value={BANK.bic}
+              monospace
+              colors={colors}
+              onCopy={() => handleCopy("BIC", BANK.bic)}
+              isLast
+            />
+
+            <View
+              style={{
+                backgroundColor: `${colors.primary}10`,
+                padding: 12,
+                marginTop: 14,
+                flexDirection: "row",
+                alignItems: "flex-start",
+              }}
+            >
+              <Ionicons name="information-circle" size={16} color={colors.primary} style={{ marginRight: 8, marginTop: 2 }} />
+              <Text style={{ fontSize: 13, color: colors.textSecondary, flex: 1, lineHeight: 18 }}>
+                Après réception du virement (généralement sous 1 à 2 jours ouvrés), votre abonnement sera activé. Envoyez la preuve à {COMPANY.contact.billing} pour accélérer le traitement.
+              </Text>
+            </View>
+          </View>
+        )}
+
         {/* Footer CTA */}
         <View
           style={{
@@ -202,7 +405,7 @@ export default function AbonnementScreen() {
             {t("abonnement.subscribeDesc")}
           </Text>
           <TouchableOpacity
-            onPress={() => Linking.openURL("mailto:facturation@normx-ai.com")}
+            onPress={() => Linking.openURL(`mailto:${COMPANY.contact.billing}`)}
             accessibilityLabel={t("abonnement.contactSubscribe")}
             accessibilityRole="button"
             style={{
@@ -214,7 +417,7 @@ export default function AbonnementScreen() {
             }}
           >
             <Ionicons name="mail" size={18} color="#fff" style={{ marginRight: 8 }} />
-            <Text style={{ color: "#fff", fontSize: 17, fontWeight: "700" }}>facturation@normx-ai.com</Text>
+            <Text style={{ color: "#fff", fontSize: 17, fontWeight: "700" }}>{COMPANY.contact.billing}</Text>
           </TouchableOpacity>
         </View>
 

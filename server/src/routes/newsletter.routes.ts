@@ -155,7 +155,7 @@ function htmlPage(title: string, message: string, success: boolean): string {
       <p>${escapeHtml(message)}</p>
       <a class="cta" href="https://normx-ai.com">Retour au site</a>
     </div>
-    <div class="footer">NORMX AI SAS — 71 rue Daire, 80000 Amiens<br>info-contact@normx-ai.com</div>
+    <div class="footer">NORMX AI SAS — 71 rue Daire, 80000 Amiens — SIRET 103 831 921 00012<br>info-contact@normx-ai.com</div>
   </div>
   </body></html>`;
 }

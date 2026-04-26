@@ -223,6 +223,7 @@ router.post('/admin/:invoiceId/send', requireAuth, requireAdmin, validate({ para
       invoice.amountTTC.toString(),
       invoice.currency,
       pdfPath,
+      invoice.status,
     );
 
     // Mettre à jour le statut

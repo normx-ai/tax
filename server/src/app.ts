@@ -29,6 +29,7 @@ import auditFactureRoutes from "./routes/audit-facture.routes";
 import favoritesRoutes from "./routes/favorites.routes";
 import simulatorExportRoutes from "./routes/simulator-export.routes";
 import newsletterRoutes from "./routes/newsletter.routes";
+import stripeRoutes, { stripeWebhookHandler } from "./routes/stripe.routes";
 import { startReminderCron } from "./services/reminder.service";
 import prisma from "./utils/prisma";
 import { createLogger } from "./utils/logger";
@@ -81,6 +82,10 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "X-Organization-ID", "X-Platform", "X-CSRF-Token"],
 }));
+// Webhook Stripe — DOIT recevoir le body brut pour verifier la signature.
+// Monte AVANT express.json sinon le body est consomme et la signature invalide.
+app.post("/api/stripe/webhook", express.raw({ type: "application/json" }), stripeWebhookHandler);
+
 app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
 
@@ -140,11 +145,14 @@ app.use("/api", (req, res, next) => {
   // double opt-in : la subscription, la confirmation et la desinscription
   // doivent etre accessibles sans token Keycloak puisqu'elles viennent
   // des landings ou d'un lien dans un email).
+  // Le webhook Stripe est aussi public (signature HMAC verifiee dans
+  // stripe.routes.ts).
   if (
     req.path === '/health'
     || req.path.startsWith('/docs')
     || req.path === '/contact'
     || req.path.startsWith('/newsletter/')
+    || req.path === '/stripe/webhook'
   ) return next();
   requireAuth(req as AuthRequest, res, next);
 });
@@ -172,6 +180,7 @@ app.use("/api/invoices", invoiceRoutes);
 app.use("/api/favorites", favoritesRoutes);
 app.use("/api/simulator", simulatorExportRoutes);
 app.use("/api/newsletter", newsletterRoutes);
+app.use("/api/stripe", sensitiveLimiter, stripeRoutes);
 
 // Contact form (landing normx-ai.com)
 app.post("/api/contact", async (req, res) => {

@@ -2,6 +2,7 @@ import PDFDocument from 'pdfkit';
 import fs from 'fs';
 import path from 'path';
 import { createLogger } from '../utils/logger';
+import { BANK, COMPANY, formatCompanyAddress } from '../config/company';
 
 const logger = createLogger('PdfService');
 
@@ -87,9 +88,10 @@ export async function generateInvoicePdf(invoice: InvoiceData): Promise<string> 
     doc.fontSize(9).font('Helvetica-Bold').fillColor(gold).text('ÉMETTEUR', colLeft, y);
     doc.font('Helvetica').fillColor(dark).fontSize(9);
     y += 16;
-    doc.text('NORMX AI', colLeft, y);
-    doc.text('Brazzaville, République du Congo', colLeft, y + 13);
-    doc.text('info-contact@normx-ai.com', colLeft, y + 26);
+    doc.text(`${COMPANY.legalName} SAS`, colLeft, y);
+    doc.text(formatCompanyAddress(), colLeft, y + 13);
+    doc.text(`SIRET ${COMPANY.siret} — APE ${COMPANY.ape}`, colLeft, y + 26);
+    doc.text(COMPANY.contact.billing, colLeft, y + 39);
 
     doc.fontSize(9).font('Helvetica-Bold').fillColor(gold).text('CLIENT', colRight, y - 16);
     doc.font('Helvetica').fillColor(dark).fontSize(9);
@@ -143,11 +145,40 @@ export async function generateInvoicePdf(invoice: InvoiceData): Promise<string> 
     doc.fontSize(11).fillColor(statusColor).font('Helvetica-Bold');
     doc.text(`Statut : ${statusLabel}`, 50, y);
 
+    // --- Coordonnées bancaires (factures non payées) ---
+    if (invoice.status !== 'PAID' && invoice.status !== 'CANCELLED') {
+      y += 30;
+      doc.rect(50, y, 495, 1).fill('#e5e7eb');
+      y += 12;
+      doc.fontSize(10).font('Helvetica-Bold').fillColor(gold).text('COORDONNÉES BANCAIRES', 50, y);
+      y += 16;
+      doc.fontSize(9).font('Helvetica').fillColor(dark);
+      doc.text(`Titulaire : ${BANK.holder}`, 50, y);
+      doc.text(`Banque : ${BANK.name}`, 310, y);
+      y += 14;
+      doc.text(`IBAN : ${BANK.iban}`, 50, y);
+      y += 14;
+      doc.text(`BIC : ${BANK.bic}`, 50, y);
+      doc.text(`Référence : ${invoice.invoiceNumber}`, 310, y);
+      y += 16;
+      doc.fontSize(8).fillColor(gray);
+      doc.text(
+        `Merci d'indiquer la référence ${invoice.invoiceNumber} dans le libellé du virement.`,
+        50, y, { width: 495 },
+      );
+    }
+
     // --- Pied de page ---
     const footerY = 750;
     doc.fontSize(8).font('Helvetica').fillColor(gray);
-    doc.text('NORMX AI — Brazzaville, République du Congo', 50, footerY, { width: 495, align: 'center' });
-    doc.text('info-contact@normx-ai.com | facturation@normx-ai.com', 50, footerY + 12, { width: 495, align: 'center' });
+    doc.text(
+      `${COMPANY.legalName} SAS — ${formatCompanyAddress()} — SIRET ${COMPANY.siret} — ${COMPANY.rcs}`,
+      50, footerY, { width: 495, align: 'center' },
+    );
+    doc.text(
+      `${COMPANY.contact.info} | ${COMPANY.contact.billing}`,
+      50, footerY + 12, { width: 495, align: 'center' },
+    );
 
     doc.end();
 

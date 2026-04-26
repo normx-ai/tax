@@ -80,7 +80,7 @@ export default function ConfidentialitePublicScreen() {
           <View style={{ height: 2, backgroundColor: GOLD, opacity: 0.3, marginBottom: 24 }} />
 
           <Text style={{ fontSize: 14, color: colors.textMuted, marginBottom: 32, fontStyle: "italic", fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Dernière mise à jour : 1er mars 2026 — Conformément au RGPD (UE 2016/679) et à la loi Informatique et Libertés
+            Version 2.0 — Dernière mise à jour : 26 avril 2026 — Conformément au RGPD (UE 2016/679) et à la loi Informatique et Libertés
           </Text>
 
           {/* 1. Responsable */}
@@ -93,9 +93,12 @@ export default function ConfidentialitePublicScreen() {
             Société par Actions Simplifiée au capital de 1 000 €{"\n"}
             Siège social : 71 rue Daire, 80000 Amiens{"\n"}
             SIREN : 103 831 921{"\n"}
-            RCS Amiens : 103 831 921{"\n\n"}
-            Référente protection des données : POATY-KAMBISSI Christelle Elodie épouse MABIKA{"\n"}
-            Email : info-contact@normx-ai.com{"\n"}
+            SIRET (siège) : 103 831 921 00012{"\n"}
+            RCS Amiens : 103 831 921{"\n"}
+            Code APE : 62.01Z (Programmation informatique){"\n\n"}
+            Déléguée à la Protection des Données (DPO) : POATY-KAMBISSI Christelle Elodie épouse MABIKA{"\n"}
+            Email DPO dédié : dpo@normx-ai.com{"\n"}
+            Email général : info-contact@normx-ai.com{"\n"}
             Téléphone : 06 20 76 94 24
           </Text>
 
@@ -148,44 +151,102 @@ export default function ConfidentialitePublicScreen() {
             5. Durée de conservation
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Vos données personnelles sont conservées pendant la durée de votre inscription au service, puis archivées pendant une durée de 3 ans à compter de la suppression de votre compte, conformément aux obligations légales applicables.{"\n\n"}
-            Les logs de connexion sont conservés 12 mois conformément à la législation française (LCEN).{"\n\n"}
-            Les données de facturation sont conservées 10 ans conformément au Code de commerce.
+            Conformément au principe de limitation de la conservation (art. 5.1.e du RGPD), vos données sont conservées pour la durée strictement nécessaire à chaque finalité :
           </Text>
+          <BulletItem colors={colors}>Compte actif et données du profil : pendant toute la durée de votre inscription au Service.</BulletItem>
+          <BulletItem colors={colors}>Données après suppression du Compte : archivage limité de 3 ans à compter de la suppression, justifié par la prescription civile quinquennale (art. 2224 du Code civil) et la prescription en matière de responsabilité contractuelle, afin de pouvoir répondre à toute action ou litige éventuel.</BulletItem>
+          <BulletItem colors={colors}>Données fiscales et données d'organisation chargées (entités, dossiers, balances, déclarations) : exportables pendant 30 jours après résiliation, puis suppression définitive (sauf obligation légale de conservation côté Client).</BulletItem>
+          <BulletItem colors={colors}>Logs de connexion : 12 mois (article L.34-1 du Code des postes et des communications électroniques).</BulletItem>
+          <BulletItem colors={colors}>Pièces justificatives comptables et factures : 10 ans (article L.123-22 du Code de commerce).</BulletItem>
+          <BulletItem colors={colors}>Logs d'audit applicatifs (traçabilité des accès aux Données Client) : 24 mois.</BulletItem>
+          <BulletItem colors={colors}>Prompts soumis à l'assistant IA et réponses : conservation transitoire le temps strictement nécessaire à la fourniture de la réponse, sans réutilisation pour entraîner les modèles.</BulletItem>
 
           {/* 6. Partage */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
-            6. Destinataires des données
+            6. Destinataires et sous-traitants
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Vos données ne sont pas vendues à des tiers. Elles peuvent être partagées avec :
+            Vos données ne sont jamais vendues à des tiers. Elles peuvent être partagées avec :
           </Text>
-          <BulletItem colors={colors}>Les membres de votre organisation (données de profil)</BulletItem>
-          <BulletItem colors={colors}>Nos sous-traitants techniques (hébergement : OVH SAS, envoi d'emails, monitoring : Sentry)</BulletItem>
-          <BulletItem colors={colors}>Notre fournisseur de service d'IA (pour le traitement des questions posées à l'assistant)</BulletItem>
-          <BulletItem colors={colors}>Les autorités compétentes sur demande légale</BulletItem>
+          <BulletItem colors={colors}>Les membres de votre Organisation, dans la limite des rôles et permissions configurés (Owner, Admin, Membre).</BulletItem>
+          <BulletItem colors={colors}>Les autorités administratives ou judiciaires compétentes sur réquisition légale.</BulletItem>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 12 }}>
-            Tous nos sous-traitants sont liés par des clauses contractuelles garantissant la sécurité et la confidentialité de vos données.
+            Conformément à l'article 28 du RGPD, NORMX AI fait appel aux sous-traitants suivants, liés par des clauses contractuelles garantissant un niveau de protection conforme :
           </Text>
+          <View style={{ marginTop: 12 }}>
+            <View style={{ paddingVertical: 8, borderBottomWidth: 1, borderBottomColor: colors.border }}>
+              <Text style={{ fontSize: 15, color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>OVH SAS — Hébergement</Text>
+              <Text style={{ fontSize: 15, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+                Localisation : Roubaix (France) · Certifié ISO 27001, HDS · Aucun transfert hors UE.
+              </Text>
+            </View>
+            <View style={{ paddingVertical: 8, borderBottomWidth: 1, borderBottomColor: colors.border }}>
+              <Text style={{ fontSize: 15, color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>Anthropic PBC — Assistant IA (Claude)</Text>
+              <Text style={{ fontSize: 15, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+                Localisation : San Francisco, États-Unis · Anthropic PBC est inscrit sur la liste du EU-US Data Privacy Framework (décision d'adéquation 2023/1795 du 10 juillet 2023, confirmée par le Tribunal de l'UE le 3 septembre 2025). Le transfert est par ailleurs encadré par les Clauses Contractuelles Types 2021/914 (Modules 2 et 3), incorporées au Data Processing Addendum signé avec NORMX AI (garantie cumulative).{"\n\n"}
+                Sous-traitants ultérieurs d'Anthropic : Amazon Web Services et Google Cloud Platform (États-Unis), couverts par le DPA Anthropic.{"\n\n"}
+                Engagements contractuels : non-utilisation des prompts pour entraîner les modèles ; rétention contractuelle des logs limitée à 7 jours maximum ; notification de toute violation de données sous 48 heures ; notification de toute demande contraignante d'autorité publique américaine sous 48 heures sauf interdiction légale.
+              </Text>
+            </View>
+            <View style={{ paddingVertical: 8, borderBottomWidth: 1, borderBottomColor: colors.border }}>
+              <Text style={{ fontSize: 15, color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>Functional Software Inc. (Sentry) — Monitoring d'erreurs</Text>
+              <Text style={{ fontSize: 15, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+                Localisation : Francfort (Allemagne) · Données techniques anonymisées, aucun contenu Client transmis volontairement.
+              </Text>
+            </View>
+            <View style={{ paddingVertical: 8, borderBottomWidth: 1, borderBottomColor: colors.border }}>
+              <Text style={{ fontSize: 15, color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>Prestataire SMTP — Emails transactionnels</Text>
+              <Text style={{ fontSize: 15, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+                Localisation : Union européenne · Acheminement des emails de notification (OTP, factures, échéances).
+              </Text>
+            </View>
+            <View style={{ paddingVertical: 8, borderBottomWidth: 1, borderBottomColor: colors.border }}>
+              <Text style={{ fontSize: 15, color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>Société Générale Effiscience SAS (Shine) — Encaissement par virement</Text>
+              <Text style={{ fontSize: 15, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+                Localisation : France · Réception des virements bancaires. Aucune donnée bancaire client n'est stockée dans la Plateforme.
+              </Text>
+            </View>
+            <View style={{ paddingVertical: 8 }}>
+              <Text style={{ fontSize: 15, color: GOLD, fontFamily: fonts.bold, fontWeight: fontWeights.bold }}>Stripe Payments Europe Ltd (Stripe) — Paiement par carte bancaire</Text>
+              <Text style={{ fontSize: 15, color: colors.text, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+                Localisation : Dublin (Irlande), avec sous-traitance ultérieure Stripe Inc. (États-Unis). Encadrement par les Clauses Contractuelles Types 2021/914 et adhésion de Stripe Inc. au EU-US Data Privacy Framework (décision 2023/1795). Stripe est certifié PCI-DSS niveau 1.{"\n\n"}
+                Données traitées par Stripe : informations de carte bancaire saisies sur la page sécurisée Stripe Checkout, identifiant du client (Customer Stripe), montant et devise. Aucune donnée de carte ne transite ni n'est stockée par NORMX AI ; seuls le statut du paiement et les identifiants techniques (Customer ID, Subscription ID) sont reçus via les webhooks signés.
+              </Text>
+            </View>
+          </View>
 
           {/* 7. Transferts hors UE */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
             7. Transferts de données hors de l'Union européenne
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
-            Certaines données peuvent être transférées vers des pays situés hors de l'Espace économique européen (EEE), notamment dans le cadre de l'utilisation de l'assistant IA (serveurs aux États-Unis).{"\n\n"}
-            Ces transferts sont encadrés par des garanties appropriées conformément au chapitre V du RGPD :{"\n"}
+            Le seul transfert hors EEE concerne l'utilisation de l'assistant IA fourni par Anthropic PBC (États-Unis). Ce transfert est encadré conformément au chapitre V du RGPD par des garanties cumulatives :
           </Text>
-          <BulletItem colors={colors}>Clauses contractuelles types (CCT) adoptées par la Commission européenne</BulletItem>
-          <BulletItem colors={colors}>Évaluation de l'impact du transfert (Transfer Impact Assessment)</BulletItem>
+          <BulletItem colors={colors}>EU-US Data Privacy Framework (DPF) — décision d'adéquation 2023/1795 de la Commission européenne du 10 juillet 2023, confirmée par le Tribunal de l'UE le 3 septembre 2025. Anthropic PBC est inscrit sur la liste officielle dataprivacyframework.gov ;</BulletItem>
+          <BulletItem colors={colors}>Clauses Contractuelles Types (CCT) 2021/914 du 4 juin 2021, Modules 2 (responsable → sous-traitant) et 3 (sous-traitant → sous-traitant ultérieur), incorporées au Data Processing Addendum signé entre NORMX AI et Anthropic — applicables en garantie cumulative et subsidiaire au DPF ;</BulletItem>
+          <BulletItem colors={colors}>Analyse d'impact des transferts (Transfer Impact Assessment, TIA) réalisée selon les recommandations 01/2020 du Comité européen de la protection des données, tenant compte du droit américain (FISA Section 702, Executive Order 12333, CLOUD Act) et des mesures techniques, contractuelles et organisationnelles supplémentaires mises en place ;</BulletItem>
+          <BulletItem colors={colors}>Engagements d'Anthropic : non-utilisation des prompts pour entraîner les modèles, rétention des logs limitée à 7 jours, notification des violations sous 48 heures, notification des demandes contraignantes d'autorités publiques américaines sous 48 heures sauf interdiction légale.</BulletItem>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 12 }}>
-            Vous pouvez obtenir une copie des garanties mises en place en contactant : info-contact@normx-ai.com.{"\n\n"}
-            L'hébergement principal des données est assuré par OVH SAS en France (Roubaix), certifié ISO 27001. Le monitoring d'erreurs (Sentry) utilise des serveurs européens (Francfort, Allemagne).
+            Les Données Client (entités, dossiers, balances, déclarations, documents) ne sont pas transmises à Anthropic : seules les questions textuelles posées à l'assistant le sont, et l'Utilisateur est invité à ne pas y inclure d'informations confidentielles superflues.{"\n\n"}
+            Une copie du TIA et des garanties mises en place est disponible sur demande à dpo@normx-ai.com.
           </Text>
 
-          {/* 8. Sécurité */}
+          {/* 7 bis. Confidentialité données fiscales */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
-            8. Sécurité des données
+            8. Confidentialité des données fiscales et d'entreprise
+          </Text>
+          <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
+            Outre la protection au titre du RGPD, les données fiscales et d'entreprise chargées dans la Plateforme (entités, dossiers, balances, déclarations, pièces justificatives) bénéficient d'une obligation de confidentialité métier, dans le respect notamment du secret professionnel applicable aux experts-comptables (article 21 de l'ordonnance n° 45-2138 du 19 septembre 1945) lorsque le Client y est soumis.{"\n\n"}
+            Concrètement :
+          </Text>
+          <BulletItem colors={colors}>Cloisonnement multi-tenant : chaque Organisation accède uniquement à ses propres données ; les contrôles d'accès sont vérifiés à chaque requête côté serveur.</BulletItem>
+          <BulletItem colors={colors}>Aucun accès humain par défaut : les équipes NORMX AI n'accèdent aux données d'une Organisation que sur demande explicite du Client (support, audit) et avec traçabilité.</BulletItem>
+          <BulletItem colors={colors}>Pas d'utilisation à des fins d'analyse marketing ou de profilage.</BulletItem>
+          <BulletItem colors={colors}>Engagement de confidentialité de cinq (5) ans après la fin du contrat, conformément aux CGU/CGV.</BulletItem>
+
+          {/* 9. Sécurité */}
+          <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
+            9. Sécurité des données
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Nous mettons en œuvre des mesures techniques et organisationnelles appropriées conformément à l'article 32 du RGPD :
@@ -199,9 +260,9 @@ export default function ConfidentialitePublicScreen() {
             En cas de violation de données susceptible d'engendrer un risque élevé pour vos droits et libertés, nous vous en informerons dans les meilleurs délais, conformément à l'article 34 du RGPD. La CNIL sera notifiée dans les 72 heures suivant la constatation de la violation (article 33 du RGPD).
           </Text>
 
-          {/* 9. Vos droits */}
+          {/* 10. Vos droits */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
-            9. Vos droits
+            10. Vos droits
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Conformément au RGPD et à la loi Informatique et Libertés, vous disposez des droits suivants :
@@ -215,12 +276,12 @@ export default function ConfidentialitePublicScreen() {
           <BulletItem colors={colors}>Droit de retirer votre consentement à tout moment, sans affecter la licéité du traitement antérieur (art. 7.3)</BulletItem>
           <BulletItem colors={colors}>Droit de définir des directives relatives au sort de vos données après votre décès (loi Informatique et Libertés, art. 85)</BulletItem>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 12 }}>
-            Pour exercer ces droits, contactez-nous par email à info-contact@normx-ai.com ou par courrier à NORMX AI SAS, 71 rue Daire, 80000 Amiens. Nous nous engageons à répondre dans un délai d'un mois, prolongeable de deux mois en cas de demande complexe (art. 12.3 du RGPD).
+            Pour exercer ces droits, contactez la Déléguée à la Protection des Données par email à dpo@normx-ai.com ou par courrier à NORMX AI SAS – DPO, 71 rue Daire, 80000 Amiens. Nous nous engageons à répondre dans un délai d'un mois, prolongeable de deux mois en cas de demande complexe (art. 12.3 du RGPD).
           </Text>
 
-          {/* 10. Réclamation CNIL */}
+          {/* 11. Réclamation CNIL */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
-            10. Réclamation auprès de la CNIL
+            11. Réclamation auprès de la CNIL
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Si vous estimez que le traitement de vos données personnelles constitue une violation du RGPD, vous avez le droit d'introduire une réclamation auprès de la Commission nationale de l'informatique et des libertés (CNIL) :{"\n\n"}
@@ -230,32 +291,33 @@ export default function ConfidentialitePublicScreen() {
             Téléphone : 01 53 73 22 22
           </Text>
 
-          {/* 11. Cookies */}
+          {/* 12. Cookies */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
-            11. Cookies
+            12. Cookies
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             L'application utilise uniquement des cookies strictement nécessaires au fonctionnement du service (authentification, préférences de thème et de langue). Ces cookies sont exemptés de consentement conformément aux recommandations de la CNIL.{"\n\n"}
             Aucun cookie publicitaire, de traçage ou analytique n'est utilisé.
           </Text>
 
-          {/* 12. Modifications */}
+          {/* 13. Modifications */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
-            12. Modifications
+            13. Modifications
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Nous nous réservons le droit de modifier la présente politique de confidentialité. En cas de modification substantielle, vous serez informé par notification dans l'application ou par email à l'adresse associée à votre compte, au moins 30 jours avant l'entrée en vigueur.
           </Text>
 
-          {/* 13. Contact */}
+          {/* 14. Contact */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 24, marginBottom: 10 }}>
-            13. Contact
+            14. Contact
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular }}>
             Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, contactez NORMX AI :{"\n\n"}
-            Email : info-contact@normx-ai.com{"\n"}
+            DPO : dpo@normx-ai.com{"\n"}
+            Email général : info-contact@normx-ai.com{"\n"}
             Téléphone : 06 20 76 94 24{"\n"}
-            Courrier : NORMX AI SAS, 71 rue Daire, 80000 Amiens
+            Courrier : NORMX AI SAS – DPO, 71 rue Daire, 80000 Amiens
           </Text>
 
           {/* Séparateur bas */}

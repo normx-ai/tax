@@ -1,6 +1,7 @@
 import nodemailer from 'nodemailer';
 import path from 'path';
 import { createLogger } from '../utils/logger';
+import { BANK, COMPANY } from '../config/company';
 
 // Logo NORMX AI embarque en CID dans tous les emails (evite le cache
 // des proxies d'images type Gmail googleusercontent, plus fiable que
@@ -149,7 +150,7 @@ export class EmailService {
             <p style="margin: 0 0 6px 0; font-size: 11px; color: #6b7280; line-height: 18px;">
               <strong>NORMX AI SAS</strong> — SAS au capital de 1 000 EUR<br/>
               Siege social : 71 rue Daire, 80000 Amiens, France<br/>
-              RCS Amiens 2026 B 00524 — SIREN 103 831 921
+              SIRET 103 831 921 00012 — RCS Amiens 2026 B 00524 — APE 62.01Z
             </p>
             <p style="margin: 0; font-size: 11px; color: #9ca3af;">
               info-contact@normx-ai.com · normx-ai.com · &copy; ${new Date().getFullYear()} NORMX AI
@@ -421,9 +422,26 @@ export class EmailService {
     amountTTC: string,
     currency: string,
     pdfPath: string,
+    status: string = 'SENT',
   ): Promise<void> {
     const amount = parseFloat(amountTTC).toLocaleString('fr-FR', { minimumFractionDigits: 0 });
     const subject = `NORMX Tax — Facture ${invoiceNumber}`;
+    const showBankDetails = status !== 'PAID' && status !== 'CANCELLED';
+    const bankBlock = showBankDetails ? `
+      <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 20px; margin: 0 0 24px 0;">
+        <p style="margin: 0 0 12px 0; font-size: 13px; font-weight: bold; color: #1A3A5C; letter-spacing: 0.5px;">PAIEMENT PAR VIREMENT BANCAIRE</p>
+        <table style="width: 100%; font-size: 13px; color: #374151; line-height: 22px;">
+          <tr><td style="padding: 2px 0; color: #6b7280;">Titulaire</td><td style="padding: 2px 0; font-weight: 600;">${BANK.holder}</td></tr>
+          <tr><td style="padding: 2px 0; color: #6b7280;">Banque</td><td style="padding: 2px 0; font-weight: 600;">${BANK.name}</td></tr>
+          <tr><td style="padding: 2px 0; color: #6b7280;">IBAN</td><td style="padding: 2px 0; font-family: monospace; font-weight: 600;">${BANK.iban}</td></tr>
+          <tr><td style="padding: 2px 0; color: #6b7280;">BIC</td><td style="padding: 2px 0; font-family: monospace; font-weight: 600;">${BANK.bic}</td></tr>
+          <tr><td style="padding: 2px 0; color: #6b7280;">Référence</td><td style="padding: 2px 0; font-weight: 600;">${invoiceNumber}</td></tr>
+        </table>
+        <p style="margin: 12px 0 0 0; font-size: 12px; color: #6b7280;">
+          Merci d'indiquer la référence <strong>${invoiceNumber}</strong> dans le libellé du virement.
+        </p>
+      </div>
+    ` : '';
     const html = EmailService.emailLayout(`
       <p style="margin: 0 0 16px 0; font-size: 15px; color: #374151;">Bonjour ${customerName},</p>
 
@@ -437,8 +455,10 @@ export class EmailService {
         <span style="font-size: 28px; font-weight: bold; color: #D4A843;">${amount} ${currency}</span>
       </div>
 
+      ${bankBlock}
+
       <p style="margin: 0 0 24px 0; font-size: 14px; color: #6b7280; line-height: 22px;">
-        Pour toute question relative à cette facture, contactez-nous à facturation@normx-ai.com.
+        Pour toute question relative à cette facture, contactez-nous à ${COMPANY.contact.billing}.
       </p>
 
       <p style="margin: 0; font-size: 15px; color: #374151; line-height: 24px;">

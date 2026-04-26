@@ -77,15 +77,24 @@ export default function MentionsLegalesScreen() {
             1. Éditeur de l'application
           </Text>
           <InfoRow label="Dénomination sociale" value="NORMX AI" colors={colors} />
+          <InfoRow label="Sigle" value="NX" colors={colors} />
           <InfoRow label="Forme juridique" value="Société par Actions Simplifiée (SAS)" colors={colors} />
           <InfoRow label="Capital social" value="1 000 €" colors={colors} />
           <InfoRow label="Siège social" value="71 rue Daire, 80000 Amiens" colors={colors} />
           <InfoRow label="SIREN" value="103 831 921" colors={colors} />
+          <InfoRow label="SIRET (siège)" value="103 831 921 00012" colors={colors} />
           <InfoRow label="RCS" value="Amiens — 103 831 921" colors={colors} />
+          <InfoRow label="Code APE" value="62.01Z — Programmation informatique" colors={colors} />
           <InfoRow label="EUID" value="FR8002.103831921" colors={colors} />
-          <InfoRow label="Date d'immatriculation" value="22 avril 2026" colors={colors} />
+          <InfoRow label="TVA" value="Non applicable, art. 293 B du CGI (franchise en base)" colors={colors} />
+          <InfoRow label="Marque" value="« NORMX AI » — déposée auprès de l'INPI" colors={colors} />
+          <InfoRow label="Date d'immatriculation" value="2 avril 2026" colors={colors} />
           <InfoRow label="Téléphone" value="06 20 76 94 24" colors={colors} />
           <InfoRow label="Email" value="info-contact@normx-ai.com" colors={colors} />
+
+          <Text style={{ fontSize: 14, color: colors.textMuted, lineHeight: 22, fontFamily: fonts.regular, fontWeight: fontWeights.regular, marginTop: 16, fontStyle: "italic" }}>
+            NORMX AI SAS commercialise ses services principalement à destination de professionnels établis hors de l'Union européenne (notamment République du Congo). Les prestations correspondantes sont facturées hors taxes au titre de l'export de services. Pour les Clients établis en France ou dans l'Union européenne, la franchise en base de TVA prévue à l'article 293 B du CGI s'applique tant que le seuil légal n'est pas dépassé.
+          </Text>
 
           {/* 2. Directeur de publication */}
           <Text style={{ fontSize: 19, fontFamily: fonts.bold, fontWeight: fontWeights.bold, color: GOLD, marginTop: 28, marginBottom: 10 }}>
