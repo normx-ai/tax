@@ -35,6 +35,7 @@ model Organization {
   usageStats    UsageStats[]
   seatRequests  SeatRequest[]
   invoices      Invoice[]
+  entites       Entite[]
 
   // Soft delete
   deletedAt DateTime?
@@ -886,4 +887,117 @@ model Obligation {
   @@index([actif])
   @@index([periodicite])
   @@map("obligations")
+}
+
+// ==================== ENTITES FISCALES (Bloc 1.2) ====================
+// Une entite fiscale = une personne morale ou physique suivie par
+// l'organisation. Mode "entreprise" = 1 entite (la sienne, isClientSelf=true).
+// Mode "cabinet" = N entites (clients du cabinet).
+//
+// Les caracteristiques saisies ici alimentent le moteur d'applicabilite
+// des obligations fiscales (Bloc 2.1) et la generation automatique du
+// calendrier des dossiers (Bloc 2.2).
+
+// Secteurs d'activite alignes sur les 16 conventions collectives
+// congolaises ingerees cote social (mobile/data/social/conventions/).
+// Cette correspondance permet ensuite cote paie de retrouver la grille
+// salariale conventionnelle applicable.
+enum SecteurActivite {
+  AERIEN
+  AGRI_FORET
+  AUXILIAIRES_TRANSPORT
+  BAM                          // Banques, Assurances, Mutuelles
+  BTP
+  COMMERCE
+  EXPLOITATION_MINIERE
+  FORESTIERE
+  HOTELLERIE_CATERING          // HCR
+  INDUSTRIE
+  INFORMATION_COMMUNICATION
+  NTIC
+  PARA_PETROLE
+  PECHE_MARITIME
+  PERSONNEL_DOMESTIQUE
+  PETROLE
+}
+
+enum FormeJuridique {
+  EI                           // Entreprise individuelle
+  SARL
+  SARLU
+  SA
+  SAS
+  SASU
+  GIE
+  ASSOCIATION
+  SCI
+  AUTRE
+}
+
+enum RegimeIS {
+  REEL_NORMAL
+  REEL_SIMPLIFIE
+  MICRO
+  EXONERE                      // Zones franches, ONG, etc.
+}
+
+enum RegimeTVA {
+  REEL                         // Assujetti TVA reel
+  FRANCHISE                    // En franchise (sous le seuil de CA)
+  EXONERE                      // Exoneration specifique
+  NON_ASSUJETTI                // Hors champ TVA
+}
+
+model Entite {
+  id              String   @id @default(uuid())
+
+  organizationId  String
+  organization    Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  // Identite
+  raisonSociale   String
+  sigle           String?
+  niu             String?            // Numero d'identification unique
+  rccm            String?            // Registre du commerce
+  adresse         String?
+  ville           String?
+  telephone       String?
+  email           String?
+
+  // Caracteristiques fiscales (saisies au profilage initial)
+  formeJuridique  FormeJuridique
+  secteurActivite SecteurActivite
+  regimeIs        RegimeIS
+  regimeTva       RegimeTVA
+
+  // Salaries (declenche ITS, TUS, IRCM, CNSS, CAMU)
+  estEmployeur          Boolean @default(false)
+  effectifSalaries      Int     @default(0)
+
+  // Foncier (declenche CFPB / CFPNB)
+  possedeFoncierBati    Boolean @default(false)
+  possedeFoncierNonBati Boolean @default(false)
+
+  // Estimations financieres (utilisees pour determiner les seuils)
+  caEstimeAnneeCourante Decimal? @db.Decimal(20, 2)
+  caRealiseAnneeN1      Decimal? @db.Decimal(20, 2)
+
+  // Exercice fiscal
+  dateCreation        DateTime?
+  dateClotureExercice String?            // Format "MM-DD" ex. "12-31"
+
+  // Distinction interne entre l'entite "self" (compte entreprise mono)
+  // et les clients d'un cabinet
+  isClientSelf    Boolean @default(false)
+
+  actif           Boolean @default(true)
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([organizationId])
+  @@index([secteurActivite])
+  @@index([actif])
+  @@index([isClientSelf])
+  @@map("entites")
 }
