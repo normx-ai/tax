@@ -53,7 +53,8 @@ pour déterminer l'applicabilité des obligations :
 
 - Identité : raison sociale, NIU, RCCM, adresse
 - Forme juridique (SARL, SA, SAS, EI…)
-- Secteur d'activité (HCR, BTP, services, commerce…)
+- Secteur d'activité — voir liste fermée alignée sur les 16 conventions
+  collectives congolaises ci-dessous
 - Régime IS (réel normal, réel simplifié, micro)
 - Assujettissement TVA (oui/non/franchise)
 - Salariés (oui/non, effectif)
@@ -61,7 +62,44 @@ pour déterminer l'applicabilité des obligations :
 - CA estimé année en cours
 - Date de création / clôture exercice
 
-Effort : 1 jour modèle + 1 jour formulaire de saisie.
+Liste fermée des secteurs d'activité — alignée sur les conventions
+collectives sectorielles congolaises (16 conventions) déjà ingérées
+côté `mobile/data/social/conventions/` et `server/data/social/2026/conventions/`.
+Cette correspondance permet de lier directement un client à sa
+convention applicable, ce qui sert ensuite côté paie (calcul ITS/TUS
+et cotisations CNSS/CAMU spécifiques par secteur) et côté fiscal
+(certaines obligations comme la patente ont des barèmes sectoriels).
+
+| Code interne | Libellé | Convention collective |
+|---|---|---|
+| `aerien` | Transport aérien | Convention Collective Aérien |
+| `agri_foret` | Agriculture, élevage, forêt | CC Agri-Forêt |
+| `auxiliaires_transport` | Auxiliaires de transport | CC Auxiliaires Transport |
+| `bam` | Banques, Assurances, Mutuelles | CC BAM |
+| `btp` | Bâtiment et Travaux Publics | CC BTP |
+| `commerce` | Commerce | CC Commerce |
+| `exploitation_miniere` | Exploitation minière | CC Exploitation Minière |
+| `forestiere` | Forestière | CC Forestière |
+| `hotellerie_catering` | Hôtellerie, restauration, catering (HCR) | CC HCR |
+| `industrie` | Industrie | CC Industrie |
+| `information_communication` | Information et communication | CC IC |
+| `ntic` | NTIC | CC NTIC |
+| `para_petrole` | Para-pétrole | CC Para-Pétrole |
+| `peche_maritime` | Pêche maritime | CC Pêche Maritime |
+| `personnel_domestique` | Personnel domestique | CC Personnel Domestique |
+| `petrole` | Pétrole | CC Pétrole |
+
+Conséquences pratiques :
+- Le champ `secteur_activite` sera un enum strict côté Prisma avec ces
+  16 valeurs, pas une chaîne libre. Évite les saisies divergentes.
+- Le moteur d'applicabilité pourra utiliser ces codes dans les règles
+  JSON des obligations (`{"secteurs_inclus": ["hotellerie_catering"]}`
+  pour une taxe HCR par exemple).
+- Côté paie (Bloc à venir), on retrouvera la même valeur pour appliquer
+  la grille salariale conventionnelle correcte.
+
+Effort : 1,5 jour modèle (incluant l'enum sectoriel et les liens
+optionnels vers la convention) + 1 jour formulaire de saisie.
 
 ### Bloc 1.3 — Mode entreprise vs cabinet
 
@@ -224,7 +262,7 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 | Phase | Bloc | Effort | Statut |
 |---|---|---|---|
 | 1 | 1.1 — Catalogue obligations | 2,5 j (réalisé) | ✓ Livré (26/04/2026) — schéma, API, UI admin, navigation |
-| 1 | 1.2 — Modèle entité fiscale | 2 j | À faire |
+| 1 | 1.2 — Modèle entité fiscale | 2,5 j | À faire (secteur aligné sur 16 CC) |
 | 1 | 1.3 — Mode entreprise/cabinet | 0,5 j | À faire |
 | 2 | 2.1 — Moteur applicabilité | 2 j | À faire |
 | 2 | 2.2 — Table dossiers | 1,5 j | À faire |
