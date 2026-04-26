@@ -189,22 +189,31 @@ groupées par `categorie`.
 | Panneau `AlertesAidePanel` | ✓ Livré | `e4f6f63` |
 | Documentation `admin-obligations-ui.md` à jour | ✓ Livré | (ce commit) |
 | Constructeur cliquable de règles d'applicabilité | À faire | v2 |
-| Page Aperçu / test d'une obligation | À faire | v2, dépend Bloc 1.2 |
+| Page Aperçu / test d'une obligation | À faire | Bloc 1.2 livré, peut démarrer (utiliser `evaluerApplicabilite` du moteur) |
 | Page dédiée Versionning (liste des versions) | À faire | v2 |
 | Audit trail dans `audit_log` | À faire | v2 |
 | Lien depuis la sidebar Admin vers `/admin/obligations` | ✓ Livré | `7e53fe8` |
 | Grille d'outils administrateur (Catalogue, Analytics, Audit, Permissions) | ✓ Livré | `523ff6b` |
+| Card « Mes entités fiscales » dans le hub admin | ✓ Livré | `895cafa` |
+| Moteur d'applicabilité qui consomme `obligation.applicabilite` | ✓ Livré | `76b0f9f` |
+| Génération automatique des dossiers via `genererPeriodes(echeanceRule)` | ✓ Livré | `76b0f9f` |
+| Endpoint `POST /api/dossiers/recalculer` | ✓ Livré | `76b0f9f` |
+| Recalcul auto des dossiers à la création/modif d'une entité | ✓ Livré | `2c8b5cd` |
+| Schéma Zod `applicabilite` strictement typé (zéro `any`/`unknown`) | ✓ Livré | `7354e63` |
 
 ---
 
 ## Prochaines étapes immédiates
 
 1. ~~Ajouter le lien « Obligations » dans la sidebar admin~~ ✓ Fait
-   dans `7e53fe8` (card unique) puis enrichi en grille d'outils admin
-   dans `523ff6b` (Catalogue obligations / Analytics / Audit / Permissions
-   accessibles depuis le dashboard `/admin`).
+   dans `7e53fe8` puis enrichi dans `523ff6b`.
 2. Quand un fiscaliste valide la première saisie d'une obligation,
-   s'assurer que la mise en prod côté server applique bien la migration
-   `add_obligations_catalog` (auto via Dockerfile `prisma migrate deploy`).
-3. Démarrer Bloc 1.2 (modèle entité fiscale + onboarding) pour pouvoir
-   ensuite construire le moteur d'applicabilité et le suivi par dossier.
+   s'assurer que la mise en prod côté server applique bien les
+   migrations (auto via Dockerfile `prisma migrate deploy`).
+3. ~~Démarrer Bloc 1.2~~ ✓ Fait dans `3bc8cf0` + `895cafa`.
+4. ~~Démarrer Phase 2 (moteur applicabilité + dossiers)~~ ✓ Fait dans
+   `76b0f9f` (backend) + `2c8b5cd` (KPIs dashboard branchés).
+5. Saisie effective du catalogue d'obligations par un fiscaliste —
+   c'est l'opération qui débloque tout le reste de la chaîne.
+6. Items v2 restants : constructeur cliquable de règles, page
+   aperçu/test d'obligation, page versions dédiée, audit trail.
