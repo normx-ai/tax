@@ -10,6 +10,8 @@ import {
   cloneVersionBody,
 } from '../schemas/obligations.schema';
 import * as service from '../services/obligations.service';
+import { AuditService } from '../services/audit.service';
+import { getClientIp } from '../utils/ip';
 
 const router = Router();
 
@@ -100,6 +102,12 @@ router.get('/:id', requireAuth, asyncHandler(async (req: AuthRequest, res: Respo
  */
 router.post('/', requireAuth, requireAdmin, validate({ body: createObligation }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const created = await service.createObligation(req.body);
+  AuditService.log({
+    actorId: req.userId!, actorEmail: req.userEmail!,
+    action: 'OBLIGATION_CREATED', entityType: 'Obligation', entityId: created.id,
+    organizationId: req.orgId, ipAddress: getClientIp(req),
+    changes: { code: created.code, version: created.version, libelle: created.libelle },
+  });
   res.status(201).json(created);
 }));
 
@@ -112,6 +120,12 @@ router.post('/', requireAuth, requireAdmin, validate({ body: createObligation })
  */
 router.patch('/:id', requireAuth, requireAdmin, validate({ body: updateObligation }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const updated = await service.updateObligation(String(req.params.id), req.body);
+  AuditService.log({
+    actorId: req.userId!, actorEmail: req.userEmail!,
+    action: 'OBLIGATION_UPDATED', entityType: 'Obligation', entityId: updated.id,
+    organizationId: req.orgId, ipAddress: getClientIp(req),
+    changes: { fields: Object.keys(req.body) },
+  });
   res.json(updated);
 }));
 
@@ -124,11 +138,23 @@ router.patch('/:id', requireAuth, requireAdmin, validate({ body: updateObligatio
  */
 router.post('/:id/desactiver', requireAuth, requireAdmin, asyncHandler(async (req: AuthRequest, res: Response) => {
   const updated = await service.deactivateObligation(String(req.params.id));
+  AuditService.log({
+    actorId: req.userId!, actorEmail: req.userEmail!,
+    action: 'OBLIGATION_DEACTIVATED', entityType: 'Obligation', entityId: updated.id,
+    organizationId: req.orgId, ipAddress: getClientIp(req),
+    changes: { code: updated.code },
+  });
   res.json(updated);
 }));
 
 router.post('/:id/activer', requireAuth, requireAdmin, asyncHandler(async (req: AuthRequest, res: Response) => {
   const updated = await service.activateObligation(String(req.params.id));
+  AuditService.log({
+    actorId: req.userId!, actorEmail: req.userEmail!,
+    action: 'OBLIGATION_ACTIVATED', entityType: 'Obligation', entityId: updated.id,
+    organizationId: req.orgId, ipAddress: getClientIp(req),
+    changes: { code: updated.code },
+  });
   res.json(updated);
 }));
 
@@ -141,6 +167,14 @@ router.post('/:id/activer', requireAuth, requireAdmin, asyncHandler(async (req: 
  */
 router.post('/cloner-version', requireAuth, requireAdmin, validate({ body: cloneVersionBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const result = await service.cloneVersion(req.body.fromVersion, req.body.toVersion);
+  if (result.cloned > 0) {
+    AuditService.log({
+      actorId: req.userId!, actorEmail: req.userEmail!,
+      action: 'OBLIGATIONS_VERSION_CLONED', entityType: 'Obligation', entityId: 'catalog',
+      organizationId: req.orgId, ipAddress: getClientIp(req),
+      changes: { fromVersion: req.body.fromVersion, toVersion: req.body.toVersion, cloned: result.cloned },
+    });
+  }
   res.json(result);
 }));
 

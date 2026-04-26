@@ -5,6 +5,8 @@ import { validate } from "../middleware/validate.middleware";
 import { asyncHandler } from "../middleware/asyncHandler";
 import { createEntite, updateEntite, listEntitesQuery } from "../schemas/entites.schema";
 import * as service from "../services/entites.service";
+import { AuditService } from "../services/audit.service";
+import { getClientIp } from "../utils/ip";
 
 const router = Router();
 
@@ -46,24 +48,48 @@ router.get("/:id", asyncHandler(async (req: AuthRequest, res: Response) => {
 router.post("/", validate({ body: createEntite }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const orgId = req.orgId!;
   const created = await service.createEntite(orgId, req.body);
+  AuditService.log({
+    actorId: req.userId!, actorEmail: req.userEmail!,
+    action: 'ENTITE_CREATED', entityType: 'Entite', entityId: created.id,
+    organizationId: orgId, ipAddress: getClientIp(req),
+    changes: { raisonSociale: created.raisonSociale, secteurActivite: created.secteurActivite, isClientSelf: created.isClientSelf },
+  });
   res.status(201).json(created);
 }));
 
 router.patch("/:id", validate({ body: updateEntite }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const orgId = req.orgId!;
   const updated = await service.updateEntite(orgId, String(req.params.id), req.body);
+  AuditService.log({
+    actorId: req.userId!, actorEmail: req.userEmail!,
+    action: 'ENTITE_UPDATED', entityType: 'Entite', entityId: updated.id,
+    organizationId: orgId, ipAddress: getClientIp(req),
+    changes: { fields: Object.keys(req.body) },
+  });
   res.json(updated);
 }));
 
 router.post("/:id/desactiver", asyncHandler(async (req: AuthRequest, res: Response) => {
   const orgId = req.orgId!;
   const updated = await service.deactivateEntite(orgId, String(req.params.id));
+  AuditService.log({
+    actorId: req.userId!, actorEmail: req.userEmail!,
+    action: 'ENTITE_DEACTIVATED', entityType: 'Entite', entityId: updated.id,
+    organizationId: orgId, ipAddress: getClientIp(req),
+    changes: { raisonSociale: updated.raisonSociale },
+  });
   res.json(updated);
 }));
 
 router.post("/:id/activer", asyncHandler(async (req: AuthRequest, res: Response) => {
   const orgId = req.orgId!;
   const updated = await service.activateEntite(orgId, String(req.params.id));
+  AuditService.log({
+    actorId: req.userId!, actorEmail: req.userEmail!,
+    action: 'ENTITE_ACTIVATED', entityType: 'Entite', entityId: updated.id,
+    organizationId: orgId, ipAddress: getClientIp(req),
+    changes: { raisonSociale: updated.raisonSociale },
+  });
   res.json(updated);
 }));
 
