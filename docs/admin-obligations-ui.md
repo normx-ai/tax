@@ -192,14 +192,17 @@ groupées par `categorie`.
 | Page Aperçu / test d'une obligation | À faire | v2, dépend Bloc 1.2 |
 | Page dédiée Versionning (liste des versions) | À faire | v2 |
 | Audit trail dans `audit_log` | À faire | v2 |
-| Lien depuis la sidebar Admin vers `/admin/obligations` | À faire | suivant |
+| Lien depuis la sidebar Admin vers `/admin/obligations` | ✓ Livré | `7e53fe8` |
+| Grille d'outils administrateur (Catalogue, Analytics, Audit, Permissions) | ✓ Livré | `523ff6b` |
 
 ---
 
 ## Prochaines étapes immédiates
 
-1. Ajouter le lien « Obligations » dans la sidebar admin de cgi-242
-   (`/admin` → cards) pour naviguer facilement depuis la console admin.
+1. ~~Ajouter le lien « Obligations » dans la sidebar admin~~ ✓ Fait
+   dans `7e53fe8` (card unique) puis enrichi en grille d'outils admin
+   dans `523ff6b` (Catalogue obligations / Analytics / Audit / Permissions
+   accessibles depuis le dashboard `/admin`).
 2. Quand un fiscaliste valide la première saisie d'une obligation,
    s'assurer que la mise en prod côté server applique bien la migration
    `add_obligations_catalog` (auto via Dockerfile `prisma migrate deploy`).

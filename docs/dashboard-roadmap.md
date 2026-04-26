@@ -13,9 +13,10 @@ au plus enrichissant). Chaque bloc débloque les suivants.
 
 ### Bloc 1.1 — Catalogue des obligations fiscales [LIVRÉ — 26 avril 2026]
 
-Schéma + UI admin livrés. Reste à remplir le catalogue avec les
-obligations réelles du CGI Congo via l'UI admin (par un fiscaliste).
-Voir `docs/admin-obligations-ui.md` pour le détail.
+Schéma + UI admin + intégration au dashboard admin livrés. Reste à
+remplir le catalogue avec les obligations réelles du CGI Congo via
+l'UI (par un fiscaliste). Voir `docs/admin-obligations-ui.md` pour le
+détail commit-par-commit.
 
 Modèle Prisma `Obligation` (table `obligations`) :
 - `code` (ITS, TVA, IS, MP, CFPB, patente…) unique par version
@@ -222,7 +223,7 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 
 | Phase | Bloc | Effort | Statut |
 |---|---|---|---|
-| 1 | 1.1 — Catalogue obligations | 2 j (réalisé) | ✓ Livré (26/04/2026) |
+| 1 | 1.1 — Catalogue obligations | 2,5 j (réalisé) | ✓ Livré (26/04/2026) — schéma, API, UI admin, navigation |
 | 1 | 1.2 — Modèle entité fiscale | 2 j | À faire |
 | 1 | 1.3 — Mode entreprise/cabinet | 0,5 j | À faire |
 | 2 | 2.1 — Moteur applicabilité | 2 j | À faire |
