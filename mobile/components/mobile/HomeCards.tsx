@@ -85,9 +85,8 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
   return (
     <ScrollView
       style={{ flex: 1, backgroundColor: colors.background }}
-      contentContainerStyle={{ alignItems: "center", paddingBottom: 40 }}
+      contentContainerStyle={{ padding: 16, paddingBottom: 40 }}
     >
-      <View style={{ width: "100%", maxWidth: 880, padding: 16 }}>
       {/* === Greeting + date === */}
       <View style={{ marginBottom: 16 }}>
         <Text style={{ fontFamily: fonts.bold, fontWeight: fontWeights.bold, fontSize: 22, color: colors.text }}>
@@ -317,7 +316,6 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
           Aucune activité récente.{"\n"}
           Vos simulations et calculs apparaîtront ici.
         </Text>
-      </View>
       </View>
     </ScrollView>
   );
