@@ -209,6 +209,13 @@ export default function AdminScreen() {
             colors={colors}
           />
           <AdminToolCard
+            icon="business-outline"
+            title="Mes entités fiscales"
+            subtitle="Profils d'entreprise / clients suivis pour la fiscalité"
+            onPress={() => router.push("/entites" as never)}
+            colors={colors}
+          />
+          <AdminToolCard
             icon="bar-chart-outline"
             title="Analytics"
             subtitle="Statistiques d'usage de la plateforme"

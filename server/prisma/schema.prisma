@@ -922,15 +922,21 @@ enum SecteurActivite {
 }
 
 enum FormeJuridique {
+  // Personne physique
   EI                           // Entreprise individuelle
-  SARL
-  SARLU
-  SA
-  SAS
-  SASU
-  GIE
+  // OHADA AUDSCGIE — formes commerciales
+  SARL                         // Societe a responsabilite limitee
+  SARLU                        // SARL unipersonnelle
+  SA                           // Societe anonyme
+  SAS                          // Societe par actions simplifiee
+  SASU                         // SAS unipersonnelle
+  SNC                          // Societe en nom collectif
+  SCS                          // Societe en commandite simple
+  SOCIETE_PARTICIPATION        // Societe en participation
+  GIE                          // Groupement d'interet economique
+  // Autres formes
+  SCI                          // Societe civile immobiliere
   ASSOCIATION
-  SCI
   AUTRE
 }
 

@@ -30,9 +30,12 @@ CREATE TYPE "FormeJuridique" AS ENUM (
   'SA',
   'SAS',
   'SASU',
+  'SNC',
+  'SCS',
+  'SOCIETE_PARTICIPATION',
   'GIE',
-  'ASSOCIATION',
   'SCI',
+  'ASSOCIATION',
   'AUTRE'
 );
 

@@ -20,7 +20,9 @@ const SECTEUR = z.enum([
 ]);
 
 const FORME_JURIDIQUE = z.enum([
-  "EI", "SARL", "SARLU", "SA", "SAS", "SASU", "GIE", "ASSOCIATION", "SCI", "AUTRE",
+  "EI", "SARL", "SARLU", "SA", "SAS", "SASU",
+  "SNC", "SCS", "SOCIETE_PARTICIPATION", "GIE",
+  "SCI", "ASSOCIATION", "AUTRE",
 ]);
 
 const REGIME_IS = z.enum(["REEL_NORMAL", "REEL_SIMPLIFIE", "MICRO", "EXONERE"]);
