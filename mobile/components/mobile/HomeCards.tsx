@@ -8,6 +8,7 @@ import { fonts, fontWeights } from "@/lib/theme/fonts";
 import { getEcheancesDuMois, getNomMois, getJoursRestants, type EcheanceFiscale } from "@/lib/services/calendrier-fiscal";
 import { entitesApi, Entite } from "@/lib/api/entites";
 import { dossiersApi, DashboardKpis } from "@/lib/api/dossiers";
+import { iaInsightsApi, Insight } from "@/lib/api/ia-insights";
 
 type Props = {
   favoritesCount?: number;
@@ -39,6 +40,7 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
   const [entites, setEntites] = useState<Entite[]>([]);
   const [loadingEntites, setLoadingEntites] = useState(true);
   const [kpis, setKpis] = useState<DashboardKpis | null>(null);
+  const [insights, setInsights] = useState<Insight[]>([]);
 
   useEffect(() => {
     entitesApi.list({ limit: 200, actif: true })
@@ -48,6 +50,9 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
     dossiersApi.getKpis()
       .then(setKpis)
       .catch(() => setKpis(null));
+    iaInsightsApi.get()
+      .then(r => setInsights(r.insights))
+      .catch(() => setInsights([]));
   }, []);
 
   const cardBase = {
@@ -241,20 +246,62 @@ export default function HomeCards({ favoritesCount: _fc }: Props) {
         </View>
       )}
 
-      {/* === IA Insights (placeholder en attendant blocs 5.x) === */}
-      <View style={{ ...cardBase, padding: 16, marginBottom: 16, backgroundColor: `${COULEUR_OR_MARQUE}12`, borderColor: `${COULEUR_OR_MARQUE}40` }}>
-        <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8 }}>
-          <Ionicons name="bulb-outline" size={18} color={COULEUR_OR_MARQUE} style={{ marginRight: 6 }} />
-          <Text style={{ fontFamily: fonts.bold, fontSize: 14, color: COULEUR_BLEU_MARQUE }}>
-            Suggestion IA
+      {/* === IA Insights (Bloc 5.1 — generes par Claude) === */}
+      {insights.length === 0 ? (
+        <View style={{ ...cardBase, padding: 16, marginBottom: 16, backgroundColor: `${COULEUR_OR_MARQUE}12`, borderColor: `${COULEUR_OR_MARQUE}40` }}>
+          <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 8 }}>
+            <Ionicons name="bulb-outline" size={18} color={COULEUR_OR_MARQUE} style={{ marginRight: 6 }} />
+            <Text style={{ fontFamily: fonts.bold, fontSize: 14, color: COULEUR_BLEU_MARQUE }}>
+              Suggestions IA
+            </Text>
+          </View>
+          <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, lineHeight: 19 }}>
+            {totalClients === 0
+              ? "Créez vos entités fiscales pour activer les suggestions personnalisées."
+              : "Aucune suggestion en ce moment. Le moteur analyse vos dossiers en arrière-plan et reviendra avec des conseils dès qu'il en détecte."}
           </Text>
         </View>
-        <Text style={{ fontFamily: fonts.regular, fontSize: 13, color: colors.textSecondary, lineHeight: 19 }}>
-          {totalClients === 0
-            ? "Créez vos entités fiscales pour activer les suggestions personnalisées (optimisations, échéances oubliées, anomalies)."
-            : "Le moteur d'analyse arrive bientôt. Une fois les obligations rattachées à vos entités, vous verrez ici les optimisations possibles et les anomalies détectées."}
-        </Text>
-      </View>
+      ) : (
+        <View style={{ marginBottom: 16, gap: 8 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 4 }}>
+            <Ionicons name="sparkles-outline" size={16} color={COULEUR_OR_MARQUE} style={{ marginRight: 6 }} />
+            <Text style={{ fontFamily: fonts.bold, fontSize: 13, color: COULEUR_BLEU_MARQUE, letterSpacing: 0.4, textTransform: "uppercase" }}>
+              Suggestions IA · {insights.length}
+            </Text>
+          </View>
+          {insights.map((ins, i) => (
+            <View
+              key={i}
+              style={{
+                ...cardBase,
+                padding: 14,
+                backgroundColor: ins.type === "anomalie" ? "#fef2f2" : ins.type === "optimisation" ? `${COULEUR_OR_MARQUE}12` : ins.type === "echeance" ? "#fff7ed" : `${COULEUR_BLEU_MARQUE}08`,
+                borderLeftWidth: 4,
+                borderLeftColor: ins.type === "anomalie" ? "#ef4444" : ins.type === "optimisation" ? COULEUR_OR_MARQUE : ins.type === "echeance" ? "#f97316" : COULEUR_BLEU_MARQUE,
+              }}
+            >
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 4 }}>
+                <Ionicons
+                  name={ins.type === "anomalie" ? "warning-outline" : ins.type === "optimisation" ? "trending-up-outline" : ins.type === "echeance" ? "time-outline" : "information-circle-outline"}
+                  size={14}
+                  color={ins.type === "anomalie" ? "#ef4444" : ins.type === "optimisation" ? COULEUR_OR_MARQUE : ins.type === "echeance" ? "#f97316" : COULEUR_BLEU_MARQUE}
+                />
+                <Text style={{ fontFamily: fonts.bold, fontSize: 13, color: colors.text, flex: 1 }} numberOfLines={2}>
+                  {ins.titre}
+                </Text>
+              </View>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                {ins.description}
+              </Text>
+              {ins.economiePotentielleFcfa && ins.economiePotentielleFcfa > 0 && (
+                <Text style={{ fontFamily: fonts.bold, fontSize: 12, color: COULEUR_OR_MARQUE, marginTop: 6 }}>
+                  Économie potentielle : ≈ {ins.economiePotentielleFcfa.toLocaleString("fr-FR")} FCFA
+                </Text>
+              )}
+            </View>
+          ))}
+        </View>
+      )}
 
       {/* === Activité récente (placeholder) === */}
       <Text style={{ fontFamily: fonts.bold, fontSize: 15, color: colors.text, marginBottom: 10 }}>
