@@ -468,6 +468,7 @@ model Article {
   referencedBy  ArticleReference[] @relation("ArticleTo")
   searchHistory SearchHistory[]
   alertes       AlerteFiscale[]
+  obligations   Obligation[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -812,4 +813,77 @@ model NewsletterSubscriber {
 
   @@index([status])
   @@map("newsletter_subscribers")
+}
+
+// ==================== OBLIGATIONS FISCALES (CATALOGUE) ====================
+// Catalogue normalise des obligations declaratives et de paiement du CGI
+// Congolais. Une ligne = un type d'obligation (ITS, TVA, IS, CFPB, patente,
+// etc.) avec ses regles d'echeance et d'applicabilite. Les dossiers
+// (instances par entite x periode) seront crees a partir de ce catalogue.
+
+enum ObligationPeriodicite {
+  MENSUELLE
+  BIMENSUELLE
+  TRIMESTRIELLE
+  SEMESTRIELLE
+  ANNUELLE
+  PONCTUELLE   // Au cas par cas (ex. mutation, cession, succession)
+}
+
+model Obligation {
+  id              String                @id @default(uuid())
+
+  // Identite
+  code            String                // "ITS", "TVA", "IS", "CFPB", "PATENTE"
+  libelle         String
+  description     String?               @db.Text
+  categorie       AlerteCategorie       // Reutilise l'enum existant (IS, ITS, TVA, ...)
+
+  // Frequence et calcul d'echeance
+  periodicite     ObligationPeriodicite
+
+  // Regle d'echeance au format JSON, parsee par le moteur de calendrier.
+  // Exemples :
+  // - mensuel le 15 :         { "type": "monthly", "day": 15 }
+  // - mensuel dernier jour :  { "type": "monthly", "day": "last" }
+  // - annuel 30 avril :       { "type": "yearly", "month": 4, "day": 30 }
+  // - acomptes trimestriels : { "type": "quarterly", "months": [3,6,9,12], "day": "last" }
+  // - patente fractionnee :   { "type": "yearly", "month": 4, "day": 20, "fractions": [...] }
+  echeanceRule    Json
+
+  // Regles d'applicabilite par entite (evaluees par le moteur). Format JSON :
+  // - { "salaries_count": { "min": 1 } }              // ex. ITS, TUS
+  // - { "possede_foncier_bati": true }                // ex. CFPB
+  // - { "regime_tva": "reel" }                        // ex. TVA reel
+  // - { "ca_n_moins_1": { "min": 100000000 } }        // ex. acomptes IS
+  // - { "secteurs_inclus": ["HCR", "BTP"] }           // ex. taxe specifique
+  // Si vide ou {}, l'obligation s'applique a TOUTES les entites.
+  applicabilite   Json                  @default("{}")
+
+  // Reference legale (article CGI source)
+  articleNumero   String?               // "86A", "277", "314"
+  articleId       String?
+  article         Article?              @relation(fields: [articleId], references: [id], onDelete: SetNull)
+
+  // Reference vers le simulateur cgi-242 qui calcule la base de l'obligation
+  // Code interne aligne avec les ids des simulateurs mobile (ex: "patente",
+  // "is", "tva", "its"). Permet l'integration "calcul -> dossier pret".
+  simulateurCode  String?
+
+  // Etat / versionning par annee fiscale (loi de finances)
+  version         String                @default("2026")
+  actif           Boolean               @default(true)
+
+  // Ordre d'affichage dans le calendrier (aide a grouper / prioriser)
+  ordre           Int                   @default(100)
+
+  createdAt       DateTime              @default(now())
+  updatedAt       DateTime              @updatedAt
+
+  @@unique([code, version])
+  @@index([categorie])
+  @@index([version])
+  @@index([actif])
+  @@index([periodicite])
+  @@map("obligations")
 }
