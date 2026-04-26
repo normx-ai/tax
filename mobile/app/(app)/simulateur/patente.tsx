@@ -6,6 +6,7 @@ import { formatNumber, formatInputNumber } from "@/lib/services/fiscal-common";
 import TableRow from "@/components/simulateur/TableRow";
 import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
+import SaveToDossierButton from "@/components/dossiers/SaveToDossierButton";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts } from "@/lib/theme/fonts";
@@ -220,6 +221,17 @@ export default function PatenteScreen() {
                 <Text key={ref} style={[styles.refText, { color: colors.textMuted }]}>{ref}</Text>
               ))}
             </View>
+
+            {/* Bouton Bloc 4.1 : enregistrer le calcul dans un dossier ouvert */}
+            {result.totalAPayer > 0 && (
+              <View style={{ marginTop: 12 }}>
+                <SaveToDossierButton
+                  simulateurCode="patente"
+                  montantCalcule={result.totalAPayer}
+                  baseImposable={result.chiffreAffaires}
+                />
+              </View>
+            )}
           </View>
         ) : null
       }

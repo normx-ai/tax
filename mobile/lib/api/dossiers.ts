@@ -107,6 +107,22 @@ export const dossiersApi = {
     const { data } = await api.post<RecalculerResult>("/dossiers/recalculer", input);
     return data;
   },
+
+  /**
+   * Liste les dossiers ouverts (A_FAIRE / EN_COURS) lies au code simulateur
+   * passe en argument. Sert au flow "Enregistrer ce calcul dans un dossier".
+   */
+  listOuvertsParSimulateur: async (simulateurCode: string): Promise<Dossier[]> => {
+    const { data } = await api.get<ListDossiersResult>("/dossiers", {
+      params: { limit: 200 },
+    });
+    // Filtre cote client (le backend filtre par obligationCode pas par
+    // simulateurCode, on enrichit ici)
+    return data.items.filter(d =>
+      d.obligation?.simulateurCode === simulateurCode &&
+      (d.statut === "A_FAIRE" || d.statut === "EN_COURS")
+    );
+  },
 };
 
 export const STATUT_LABELS: Record<DossierStatut, string> = {
