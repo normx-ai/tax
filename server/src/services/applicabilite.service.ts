@@ -4,7 +4,7 @@
 // le profil d'une entite fiscale. Genere les periodes a partir de
 // `echeanceRule` pour creer les dossiers a venir.
 
-import type { Entite, Obligation } from "@prisma/client";
+import type { Entite, Obligation, Prisma } from "@prisma/client";
 
 // === Profil entite normalise (cles utilisees dans les regles) ===
 
@@ -38,39 +38,61 @@ export function entiteToProfil(e: Entite): EntiteProfil {
   };
 }
 
-// === Evaluation des regles ===
+// === Types stricts pour le format de regles ===
 
-interface CritereObjet {
+type ValeurSimple = string | number | boolean;
+
+interface CritereOperateurs {
   min?: number;
   max?: number;
-  eq?: unknown;
-  in?: unknown[];
-  not_in?: unknown[];
+  eq?: ValeurSimple;
+  in?: ValeurSimple[];
+  not_in?: ValeurSimple[];
 }
 
-function evaluerCritere(value: unknown, critere: unknown): boolean {
+// Un critere peut etre :
+// - une valeur simple (string | number | boolean) -> egalite stricte
+// - un tableau de valeurs simples -> appartenance
+// - un objet operateurs (min/max/eq/in/not_in)
+type Critere = ValeurSimple | ValeurSimple[] | CritereOperateurs;
+
+type ReglesApplicabilite = Record<string, Critere>;
+
+// === Helpers de type-narrowing pour les JSON Prisma ===
+
+function isReglesApplicabilite(v: Prisma.JsonValue): boolean {
+  return v !== null && typeof v === "object" && !Array.isArray(v);
+}
+
+function isOperateurs(c: Critere): c is CritereOperateurs {
+  return c !== null && typeof c === "object" && !Array.isArray(c);
+}
+
+// === Evaluation des regles ===
+
+function evaluerCritere(value: ValeurSimple | undefined, critere: Critere): boolean {
   // Booleen direct
   if (typeof critere === "boolean") return value === critere;
+  // Number / string direct
+  if (typeof critere === "number" || typeof critere === "string") return value === critere;
 
   // Liste de valeurs acceptees
   if (Array.isArray(critere)) {
-    if (typeof value === "string") return critere.map(String).includes(value);
-    return critere.includes(value);
+    if (value === undefined) return false;
+    return critere.some(v => v === value);
   }
 
-  // Objet avec operateurs
-  if (critere !== null && typeof critere === "object") {
-    const c = critere as CritereObjet;
-    if (c.min !== undefined && (typeof value !== "number" || value < c.min)) return false;
-    if (c.max !== undefined && (typeof value !== "number" || value > c.max)) return false;
-    if (c.eq !== undefined && value !== c.eq) return false;
-    if (c.in !== undefined && !c.in.map(String).includes(String(value))) return false;
-    if (c.not_in !== undefined && c.not_in.map(String).includes(String(value))) return false;
+  // Objet operateurs
+  if (isOperateurs(critere)) {
+    if (critere.min !== undefined && (typeof value !== "number" || value < critere.min)) return false;
+    if (critere.max !== undefined && (typeof value !== "number" || value > critere.max)) return false;
+    if (critere.eq !== undefined && value !== critere.eq) return false;
+    if (critere.in !== undefined && !critere.in.some(v => v === value)) return false;
+    if (critere.not_in !== undefined && critere.not_in.some(v => v === value)) return false;
     return true;
   }
 
-  // Valeur litterale
-  return value === critere;
+  return false;
 }
 
 /**
@@ -79,15 +101,20 @@ function evaluerCritere(value: unknown, critere: unknown): boolean {
  * Regles vides ou {} -> applicable a toutes les entites.
  * Sinon : ET logique de tous les criteres saisis.
  */
-export function evaluerApplicabilite(regles: unknown, profil: EntiteProfil): boolean {
-  if (regles === null || regles === undefined) return true;
-  if (typeof regles !== "object") return true;
-  const entries = Object.entries(regles as Record<string, unknown>);
+export function evaluerApplicabilite(regles: Prisma.JsonValue, profil: EntiteProfil): boolean {
+  if (!isReglesApplicabilite(regles)) return true;
+  const reglesObj = regles as ReglesApplicabilite;
+  const entries = Object.entries(reglesObj);
   if (entries.length === 0) return true;
 
-  const profilRecord = profil as unknown as Record<string, unknown>;
-  for (const [field, critere] of entries) {
-    const value = profilRecord[field];
+  for (const [field, critereRaw] of entries) {
+    if (critereRaw === null || critereRaw === undefined) continue;
+    const critere = critereRaw as Critere;
+    const valueRaw = profil[field as keyof EntiteProfil];
+    const value: ValeurSimple | undefined =
+      typeof valueRaw === "string" || typeof valueRaw === "number" || typeof valueRaw === "boolean"
+        ? valueRaw
+        : undefined;
     if (!evaluerCritere(value, critere)) return false;
   }
   return true;
@@ -108,7 +135,6 @@ export interface PeriodeGeneree {
 }
 
 function dernierJourDuMois(annee: number, mois: number): number {
-  // mois 1-12
   return new Date(annee, mois, 0).getDate();
 }
 
@@ -116,17 +142,25 @@ function jourEffectif(jour: number | "last", annee: number, mois: number): numbe
   return jour === "last" ? dernierJourDuMois(annee, mois) : jour;
 }
 
+function isEcheanceRule(v: Prisma.JsonValue): v is Prisma.JsonValue & EcheanceRule {
+  if (v === null || typeof v !== "object" || Array.isArray(v)) return false;
+  const t = (v as { type?: string }).type;
+  return t === "monthly" || t === "yearly" || t === "quarterly" || t === "semestriel" || t === "ponctuelle";
+}
+
 /**
  * Genere les periodes (et leurs echeances) pour une regle d'echeance, sur
- * une annee fiscale donnee. Pour les obligations mensuelles, on prend les
- * 12 mois de l'annee. Pour les annuelles, une seule occurrence.
+ * une annee fiscale donnee.
  */
-export function genererPeriodes(rule: EcheanceRule, annee: number): PeriodeGeneree[] {
-  switch (rule.type) {
+export function genererPeriodes(rule: Prisma.JsonValue, annee: number): PeriodeGeneree[] {
+  if (!isEcheanceRule(rule)) return [];
+  const r = rule as EcheanceRule;
+
+  switch (r.type) {
     case "monthly":
       return Array.from({ length: 12 }, (_, i) => {
         const mois = i + 1;
-        const jour = jourEffectif(rule.day, annee, mois);
+        const jour = jourEffectif(r.day, annee, mois);
         return {
           periode: `${annee}-${String(mois).padStart(2, "0")}`,
           dateEcheance: new Date(annee, mois - 1, jour),
@@ -134,31 +168,24 @@ export function genererPeriodes(rule: EcheanceRule, annee: number): PeriodeGener
       });
 
     case "quarterly":
-      return rule.months.map((mois, i) => {
-        const jour = jourEffectif(rule.day, annee, mois);
-        return {
-          periode: `${annee}-Q${i + 1}`,
-          dateEcheance: new Date(annee, mois - 1, jour),
-        };
-      });
+      return r.months.map((mois, i) => ({
+        periode: `${annee}-Q${i + 1}`,
+        dateEcheance: new Date(annee, mois - 1, jourEffectif(r.day, annee, mois)),
+      }));
 
     case "semestriel":
-      return rule.months.map((mois, i) => {
-        const jour = jourEffectif(rule.day, annee, mois);
-        return {
-          periode: `${annee}-S${i + 1}`,
-          dateEcheance: new Date(annee, mois - 1, jour),
-        };
-      });
+      return r.months.map((mois, i) => ({
+        periode: `${annee}-S${i + 1}`,
+        dateEcheance: new Date(annee, mois - 1, jourEffectif(r.day, annee, mois)),
+      }));
 
     case "yearly":
       return [{
         periode: `${annee}`,
-        dateEcheance: new Date(annee, rule.month - 1, jourEffectif(rule.day, annee, rule.month)),
+        dateEcheance: new Date(annee, r.month - 1, jourEffectif(r.day, annee, r.month)),
       }];
 
     case "ponctuelle":
-      // Pas de periode a precalculer, ces dossiers sont crees manuellement
       return [];
 
     default:

@@ -50,10 +50,24 @@ const echeanceRule = z.discriminatedUnion('type', [
   }),
 ]);
 
-// Regles d'applicabilite : JSON libre, validation cote moteur. On accepte
-// n'importe quelle structure d'objet ici — la coherence semantique est
-// verifiee par le moteur de calendrier.
-const applicabilite = z.record(z.string(), z.unknown()).default({});
+// Regles d'applicabilite : objet de criteres typés strictement.
+// Une cle = un champ du profil entite. La valeur est :
+// - une valeur simple (string | number | boolean) -> egalite
+// - un tableau de valeurs simples -> appartenance
+// - un objet { min?, max?, eq?, in?, not_in? } -> operateurs
+const valeurSimple = z.union([z.string(), z.number(), z.boolean()]);
+const critereSchema = z.union([
+  valeurSimple,
+  z.array(valeurSimple),
+  z.object({
+    min: z.number().optional(),
+    max: z.number().optional(),
+    eq: valeurSimple.optional(),
+    in: z.array(valeurSimple).optional(),
+    not_in: z.array(valeurSimple).optional(),
+  }),
+]);
+const applicabilite = z.record(z.string(), critereSchema).default({});
 
 const baseObligationFields = {
   code: z.string().min(1).max(50),
