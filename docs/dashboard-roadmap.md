@@ -130,7 +130,7 @@ adaptation du dashboard selon le mode.
 
 ## Phase 2 — Génération automatique du calendrier
 
-### Bloc 2.1 — Moteur d'applicabilité
+### Bloc 2.1 — Moteur d'applicabilité [LIVRÉ — 26 avril 2026]
 
 Pour chaque entité, on évalue les règles `applicabilite` du catalogue
 d'obligations. Output : la liste des obligations applicables à l'entité, avec
@@ -151,7 +151,7 @@ estimé 80 M FCFA, possède un local commercial bâti :
 
 Effort : 2 jours (moteur + tests par persona).
 
-### Bloc 2.2 — Table `dossiers` (instances d'obligation)
+### Bloc 2.2 — Table `dossiers` (instances d'obligation) [LIVRÉ — 26 avril 2026]
 
 Pour chaque (entité × obligation × période), on crée un `dossier` avec :
 - statut (`a_faire`, `en_cours`, `pret`, `depose`, `paye`, `en_retard`)
@@ -284,8 +284,8 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 | 1 | 1.1 — Catalogue obligations | 2,5 j (réalisé) | ✓ Livré (26/04/2026) — schéma, API, UI admin, navigation |
 | 1 | 1.2 — Modèle entité fiscale | 2,5 j (réalisé) | ✓ Livré (26/04/2026) — schéma + API + UI list/form |
 | 1 | 1.3 — Mode entreprise/cabinet | 0,3 j (réalisé) | ✓ Livré (26/04/2026) — champ Organization.mode + API |
-| 2 | 2.1 — Moteur applicabilité | 2 j | À faire |
-| 2 | 2.2 — Table dossiers | 1,5 j | À faire |
+| 2 | 2.1 — Moteur applicabilité | 1 j (réalisé) | ✓ Livré (26/04/2026) — services + tests inline |
+| 2 | 2.2 — Table dossiers | 1 j (réalisé) | ✓ Livré (26/04/2026) — modèle + API + recalcul auto |
 | 3 | 3.1 — Bandeau prochaine échéance | 0,3 j (réalisé) | ✓ Livré (26/04/2026) — squelette avec données calendrier-fiscal existant |
 | 3 | 3.2 — KPIs utilisateur | 0,5 j (réalisé partiellement) | ⚠ Squelette livré, valeurs réelles attendent Phase 2 |
 | 3 | 3.3 — Liste des échéances | 0,5 j (réalisé) | ✓ Livré (26/04/2026) — par mois courant |
@@ -296,12 +296,14 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 | 5 | 5.1 — IA Insights | 2-3 j | À faire |
 | 5 | 5.2 — Assistant IA fiscal enrichi | 1-2 j | À faire |
 
-Réalisé à date (26 avril 2026) : 5,3 jours
+Réalisé à date (26 avril 2026) : 7,3 jours
 - Bloc 1.1 (catalogue obligations) : 2,5 j
 - Bloc 1.2 (modèle entité) : 2,5 j
 - Bloc 1.3 (mode entreprise/cabinet) : 0,3 j (backend uniquement)
 - Phase 3 squelette (3.1, 3.2 partiel, 3.3, 3.4 placeholder) : ~1,5 j
   enchassés dans le total ci-dessus
+- Bloc 2.1 (moteur applicabilité) : 1 j
+- Bloc 2.2 (table dossiers + recalcul auto + KPIs branchés) : 1 j
 
 Backfill production des modes (26 avril 2026, opération SQL directe)
 - CABINET : Cédron Ngamiye (avec Douce Moussavou en ADMIN, son org
@@ -314,11 +316,16 @@ Backfill production des modes (26 avril 2026, opération SQL directe)
   a été soft-supprimée (deletedAt) — elle n'a plus que le cabinet en
   accès.
 
-Reste à faire pour rendre les chiffres réels : ~14,2 jours
-- Phase 2 complète (moteur applicabilité + dossiers) : 3,5 j
-- Phase 4 complète (intégrations simulateur, notifications, documents) : 3,5 j
-- Phase 5 (IA Insights + Assistant enrichi) : 4 j
-- Renforcement UX dashboard (vraies valeurs KPIs, activité récente, IA insights, modal onboarding mode) : ~3 j
+Reste à faire : ~10,7 jours
+- Phase 4 complète (intégrations simulateur ↔ dossiers, notifications, documents joints) : 3,5 j
+- Phase 5 (IA Insights + Assistant fiscal enrichi) : 4 j
+- Renforcement UX dashboard (page liste dossiers détaillée, activité récente, modal onboarding mode) : ~3 j
+
+Le dashboard tax affiche désormais des chiffres RÉELS (Clients suivis,
+Obligations du mois, En retard, Complétion %), tirés de
+`/api/dossiers/kpis`. Les KPIs deviennent significatifs dès qu'un
+fiscaliste saisit son catalogue d'obligations + une entité — le
+moteur d'applicabilité génère automatiquement les dossiers à venir.
 
 Estimation **2 à 3 semaines de dev** restants pour avoir un dashboard
 vraiment alimenté en données.
