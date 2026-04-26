@@ -7,6 +7,7 @@ import SimulateurSection from "@/components/simulateur/SimulateurSection";
 import NumberField from "@/components/simulateur/NumberField";
 import ResultHighlight from "@/components/simulateur/ResultHighlight";
 import SimulateurLayout from "@/components/simulateur/SimulateurLayout";
+import SaveToDossierButton from "@/components/dossiers/SaveToDossierButton";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
@@ -195,6 +196,17 @@ export default function TvaScreen() {
             <View style={[styles.noteBox, { backgroundColor: `${colors.primary}10` }]}>
               <Text style={[styles.noteText, { color: colors.primary }]}>{t("simulateur.tva.deadlineNote")}</Text>
             </View>
+
+            {/* Bloc 4.1 : enregistrer dans un dossier */}
+            {result.totalAPayer > 0 && (
+              <View style={{ marginTop: 12 }}>
+                <SaveToDossierButton
+                  simulateurCode="tva"
+                  montantCalcule={result.totalAPayer}
+                  baseImposable={result.totalTvaBrute}
+                />
+              </View>
+            )}
           </View>
         ) : null
       }
