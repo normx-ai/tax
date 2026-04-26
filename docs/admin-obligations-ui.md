@@ -4,6 +4,10 @@ Interface dans cgi-242 pour permettre à un administrateur (fiscaliste de
 référence ou super-admin NORMX) de gérer le catalogue des obligations
 fiscales du CGI Congolais sans toucher à la base de données.
 
+État : v1 livrée le 26 avril 2026 (commits `ad508b6` backend + `e4f6f63`
+front). Voir section « Statut d'implémentation » à la fin du document
+pour ce qui est en place vs ce qui est à faire.
+
 ---
 
 ## Pourquoi une UI plutôt qu'un seed code ?
@@ -19,164 +23,185 @@ fiscales du CGI Congolais sans toucher à la base de données.
 
 ## Pages et composants
 
-### Page 1 — Liste des obligations
+### Page 1 — Liste des obligations [LIVRÉ]
 URL : `/admin/obligations`
 
-Tableau triable avec ces colonnes :
+Tableau (en réalité liste de cards mobile-friendly) avec ces colonnes :
 - Code (ITS, TVA, IS, MP, CFPB, patente…)
 - Libellé court
 - Catégorie (badge couleur, reprend `AlerteCategorie`)
 - Périodicité (mensuelle, annuelle…)
-- Prochaine échéance (calculée pour aujourd'hui)
+- Aperçu de la règle d'échéance en français
 - Article CGI (lien vers la fiche article dans la KB)
-- Simulateur lié (lien vers le simulateur mobile)
-- Version (2026, 2025…)
-- Actif (toggle on/off)
+- Simulateur lié
+- Toggle actif/inactif
 
 Filtres en haut :
-- Par version (2026 par défaut)
-- Par catégorie
-- Par périodicité
-- Par état (actif / archivé)
-- Champ recherche libre (code + libellé)
+- Par version (input texte, défaut 2026)
+- Par catégorie (chips horizontaux scrollables, toutes les catégories de
+  l'enum `AlerteCategorie`)
+- Par périodicité (chips)
+- Par état (chip « Actives uniquement » / « Inclut inactives »)
+- Champ recherche libre (code + libellé, recherche serveur)
 
-Actions par ligne : Modifier, Dupliquer, Désactiver.
-Action globale : Nouvelle obligation, Importer depuis l'année précédente.
+Actions par ligne : Modifier (icône crayon), Désactiver/Réactiver
+(icône œil).
+Action globale : Nouvelle obligation (bouton or), Cloner version (lien
+texte), Aide depuis les alertes (icône ampoule).
 
-### Page 2 — Formulaire création / édition
-URL : `/admin/obligations/new` ou `/admin/obligations/:id`
+### Page 2 — Formulaire création / édition [LIVRÉ]
+URL : Modale plein écran ouverte depuis la liste
 
-Formulaire en sections collapsibles :
+Formulaire en 5 sections (cards) :
 
 #### 2.1 Identité
 - Code (input, contrainte unique par version) — ex. ITS, TVA, IS, MP
 - Libellé (input)
 - Description (textarea, optionnel)
-- Catégorie (select, valeurs depuis enum `AlerteCategorie`)
-- Version (select : année fiscale 2025, 2026, 2027…)
+- Catégorie (chips horizontaux, toutes les valeurs de `AlerteCategorie`)
+- Version (héritée du contexte, modifiable côté liste)
 
 #### 2.2 Échéance
-- Périodicité (radio : mensuelle, bimensuelle, trimestrielle, semestrielle,
-  annuelle, ponctuelle)
+- Périodicité (chips horizontaux : mensuelle, bimensuelle, trimestrielle,
+  semestrielle, annuelle, ponctuelle)
 - Selon la périodicité choisie, le formulaire affiche les bons champs :
-  - Mensuelle : « Jour du mois » (1-31 ou « dernier jour »)
-  - Trimestrielle : mois concernés (multiselect : 3, 6, 9, 12 par exemple)
-    + jour
+  - Mensuelle : « Jour du mois » (1-31 ou « last »)
+  - Trimestrielle : mois concernés (CSV : `3,6,9,12`) + jour
+  - Semestrielle : 2 mois (CSV : `6,12`) + jour
   - Annuelle : mois (1-12) + jour
-  - Ponctuelle : règle libre (texte décrivant le déclencheur)
-- Aperçu des 3 prochaines échéances calculées à partir des règles saisies
-  (helper visuel pour valider).
+  - Ponctuelle : description libre du déclencheur
+- Lors du changement de périodicité, la règle est réinitialisée avec une
+  valeur par défaut sensée.
 
 #### 2.3 Applicabilité
-Constructeur de règles avec ajout/suppression de critères. Chaque critère :
-- Champ (select : `salaries_count`, `regime_tva`, `regime_is`,
-  `possede_foncier_bati`, `possede_foncier_non_bati`, `secteur_activite`,
-  `ca_n_moins_1`, `forme_juridique`…)
-- Opérateur (select : égal, ≥, ≤, parmi, exclu de, est vrai, est faux)
-- Valeur (input adapté au champ : nombre, liste, booléen)
+Pour la v1, c'est un éditeur JSON simple avec exemples affichés en
+helper. Le constructeur cliquable de règles est prévu pour la v2 (voir
+TODO).
 
-Aperçu JSON en lecture seule à droite, qui correspond à ce qui sera stocké
-dans `applicabilite`. Si vide, l'obligation s'applique à toutes les
-entités.
+Exemples affichés dans l'aide :
+- ITS → `{ "salaries_count": { "min": 1 } }`
+- CFPB → `{ "possede_foncier_bati": true }`
+- TVA réel → `{ "regime_tva": "reel" }`
+- Vide / `{}` → applicable à toutes les entités.
 
-Exemple de règles que le fiscaliste construit cliquablement :
-- ITS → `salaries_count >= 1`
-- TVA réel → `regime_tva = "reel"`
-- CFPB → `possede_foncier_bati = true`
-- Taxe HCR → `secteur_activite parmi ["HCR"]`
-- MP → s'applique à toutes les entités assujetties à l'IS, donc
-  `regime_is parmi ["reel_normal", "reel_simplifie"]`
+Validation JSON au moment de l'enregistrement : si invalide, toast
+d'erreur et le formulaire reste ouvert.
 
-#### 2.4 Référence légale
-- Article CGI : autocomplete connecté à la table `articles` existante.
-  Quand l'admin tape « 277 », le système propose « Art. 277 — Patente,
-  Champ d'application ». Sélection → `articleId` rempli automatiquement.
+#### 2.4 Référence légale [LIVRÉ avec autocomplete]
+- Article CGI : input avec autocomplete connecté à la table `articles`
+  existante via `GET /api/obligations/articles-recherche?q=`. Quand
+  l'admin tape « 277 », le système propose « Art. 277 — Patente, Champ
+  d'application ». Sélection → `articleNumero` et `articleId` remplis
+  ensemble.
 - Numéro affiché en clair (`articleNumero`) pour ne pas casser si
   l'article est mis à jour.
 
-#### 2.5 Calcul
-- Simulateur lié (select parmi les 16 simulateurs déjà en place :
-  patente, is, its, tva, ircm, iba, igf, irf-loyers,
+#### 2.5 Calcul [LIVRÉ]
+- Simulateur lié (chips horizontaux parmi les 16 simulateurs déjà en
+  place — liste retournée par `GET /api/obligations/simulateurs`) :
+  patente, is, is-parapetrolier, its, tva, ircm, iba, igf, irf-loyers,
   contribution-fonciere, taxe-immobiliere, cession-parts, enregistrement,
-  solde-liquidation, retenue-source, paie, is-parapetrolier).
+  solde-liquidation, retenue-source, paie.
 - Indique au système quel simulateur ouvrir quand l'utilisateur clique
-  « Calculer » sur un dossier de cette obligation.
+  « Calculer » sur un dossier de cette obligation (à exploiter dans le
+  Bloc 4.1 du roadmap dashboard).
 
 #### 2.6 Présentation
 - Ordre d'affichage (number, défaut 100) — permet de regrouper les
-  obligations dans le calendrier (les déclarations mensuelles avant les
-  annuelles, par exemple).
-- Actif (toggle) — désactive sans supprimer (audit trail conservé).
+  obligations dans le calendrier.
+- Actif (checkbox) — désactive sans supprimer (audit trail conservé).
 
 Boutons en bas :
-- Annuler (retour liste)
-- Enregistrer (validation + redirection liste)
-- Enregistrer et nouvelle (saisie en chaîne pour la première version
-  qui charge tout le catalogue)
+- Annuler (croix dans le header)
+- Enregistrer (header, gros bouton or)
 
-### Page 3 — Aperçu / test d'une obligation
-URL : `/admin/obligations/:id/preview`
+### Page 3 — Aperçu / test d'une obligation [À FAIRE — v2]
 
 Permet à l'admin de simuler l'application de la règle sur des profils
-fictifs ou réels :
-- Sélectionne une entité existante (ou crée un profil fictif inline) avec
-  ses caractéristiques (régime, salariés, foncier, secteur, CA…)
-- Affiche : « cette obligation s'applique-t-elle ? oui/non »
-- Affiche les 12 prochaines échéances calculées
-- Utile pour valider que la règle d'applicabilité est correcte avant
-  d'activer.
+fictifs ou réels. Pas implémenté en v1, attend le bloc « Modèle entité
+fiscale » (Bloc 1.2 du roadmap).
 
-### Page 4 — Versionning par année fiscale
-URL : `/admin/obligations/versions`
+### Page 4 — Versionning par année fiscale [LIVRÉ partiellement]
 
-- Liste des versions de catalogue (2025, 2026, 2027 prévue…)
-- Bouton « Ouvrir la version 2027 à partir de 2026 » → duplique tout le
-  catalogue actif vers une nouvelle version, le fiscaliste amende les
-  obligations qui changent (taux IS, plafonds, dates, nouvelles taxes).
-- Bascule de version active : à un instant T une seule version est en
-  cours pour la génération des dossiers.
+Action « Cloner version » disponible depuis la liste : duplique tout le
+catalogue de la version active vers la version suivante (incrément +1).
+- Backend : `POST /api/obligations/cloner-version` avec idempotence (si
+  la version cible contient déjà des obligations, le clone est annulé).
+- Front : confirmation modale avant clonage.
+
+Pas encore livré : page dédiée listant toutes les versions et permettant
+de basculer la version active. À ajouter quand on aura plusieurs années
+en production.
+
+---
+
+## Aide depuis les alertes existantes [LIVRÉ — différencie cette UI]
+
+Bouton ampoule dans le header de la liste → ouvre le panneau
+`AlertesAidePanel`. Affiche les `AlerteFiscale` déjà extraites du CGI
+par le moteur NLP, groupées par catégorie. Cliquer sur une alerte
+pré-remplit le formulaire « Nouvelle obligation » avec les champs déduits :
+- titre → libellé
+- description → description
+- categorie → catégorie
+- articleNumero → référence légale
+
+Cela évite à l'admin de retaper depuis zéro, et garantit qu'on s'appuie
+sur les données réelles de la plateforme.
+
+Endpoint dédié : `GET /api/obligations/alertes-aide` qui renvoie les
+alertes filtrées sur `type IN (ECHEANCE, OBLIGATION)` et `actif=true`,
+groupées par `categorie`.
 
 ---
 
 ## Sécurité et permissions
 
-- Accès réservé aux comptes avec rôle `SUPER_ADMIN` ou `FISCALISTE_ADMIN`
-  (rôle nouveau à ajouter dans `UserRole`).
-- Toutes les modifications loggées dans la table `audit_log` existante :
-  qui a modifié quoi quand.
+- Routes API CRUD protégées par `requireAuth + requireAdmin` côté serveur.
+- La liste et le détail (GET) sont accessibles à tout utilisateur
+  authentifié — utile car les autres modules (calendrier, dossiers)
+  liront le catalogue en lecture pour calculer les obligations
+  applicables à chaque entité.
+- L'écriture (POST, PATCH, désactiver, cloner) est réservée aux
+  administrateurs uniquement.
+- Toutes les modifications loggées via `logger.info` côté service. Le
+  rattachement à la table `audit_log` peut être ajouté en v2.
 - Aucune suppression dure : `actif=false` pour archiver, jamais de DELETE.
 
 ---
 
-## Effort d'implémentation
+## Statut d'implémentation
 
-- Routes API CRUD obligations (Express) : 0,5 jour
-- Page liste avec filtres (mobile + web) : 1 jour
-- Formulaire création/édition complet : 2 jours
-  - dont constructeur de règles d'applicabilité : 1 jour
-- Page aperçu / test : 0,5 jour
-- Versionning : 0,5 jour
-- Permissions et audit : 0,5 jour
-
-Total : **~5 jours** de dev en plus des 5,5 j déjà prévus pour le Bloc 1.1.
-
-Cet effort en vaut la peine si on imagine plusieurs années d'évolution
-législative et plusieurs marchés (Congo, possible extension Cameroun
-Cameroun ou Sénégal plus tard avec leur propre catalogue).
+| Élément | Statut | Commit |
+|---|---|---|
+| Modèle Prisma `Obligation` + enum `ObligationPeriodicite` | ✓ Livré | `960cb0e` |
+| Migration SQL `add_obligations_catalog` | ✓ Livré | `960cb0e` |
+| Service `obligations.service.ts` (CRUD + helpers) | ✓ Livré | `ad508b6` |
+| Schémas Zod de validation | ✓ Livré | `ad508b6` |
+| Routes Express `/api/obligations` | ✓ Livré | `ad508b6` |
+| Endpoint `alertes-aide` (lecture AlerteFiscale) | ✓ Livré | `ad508b6` |
+| Endpoint `articles-recherche` (autocomplete KB) | ✓ Livré | `ad508b6` |
+| Endpoint `simulateurs` (codes mobile) | ✓ Livré | `ad508b6` |
+| Endpoint `cloner-version` | ✓ Livré | `ad508b6` |
+| API client mobile `obligations.ts` (types stricts) | ✓ Livré | `e4f6f63` |
+| Page liste `/admin/obligations` avec filtres | ✓ Livré | `e4f6f63` |
+| Modale formulaire 5 sections + champs adaptatifs | ✓ Livré | `e4f6f63` |
+| Panneau `AlertesAidePanel` | ✓ Livré | `e4f6f63` |
+| Documentation `admin-obligations-ui.md` à jour | ✓ Livré | (ce commit) |
+| Constructeur cliquable de règles d'applicabilité | À faire | v2 |
+| Page Aperçu / test d'une obligation | À faire | v2, dépend Bloc 1.2 |
+| Page dédiée Versionning (liste des versions) | À faire | v2 |
+| Audit trail dans `audit_log` | À faire | v2 |
+| Lien depuis la sidebar Admin vers `/admin/obligations` | À faire | suivant |
 
 ---
 
-## Alternative pour la première version
+## Prochaines étapes immédiates
 
-Si on veut éviter les 5 jours d'UI dès le démarrage :
-
-1. Phase 0 (1 jour) : un fiscaliste donne le catalogue dans un Google
-   Sheet (1 ligne par obligation, 8 colonnes : code, libellé, catégorie,
-   périodicité, jour échéance, mois échéance, règle applicabilité,
-   article CGI). Un script TypeScript le lit et l'insère en SQL.
-2. Phase 1 (plus tard, quand on a les autres blocs) : on bâtit l'UI
-   admin pour faciliter la maintenance annuelle.
-
-Cette voie permet de commencer Bloc 2 (génération du calendrier) sans
-attendre l'UI. Inconvénient : les corrections/mises à jour passent
-forcément par un dev tant que l'UI n'existe pas.
+1. Ajouter le lien « Obligations » dans la sidebar admin de cgi-242
+   (`/admin` → cards) pour naviguer facilement depuis la console admin.
+2. Quand un fiscaliste valide la première saisie d'une obligation,
+   s'assurer que la mise en prod côté server applique bien la migration
+   `add_obligations_catalog` (auto via Dockerfile `prisma migrate deploy`).
+3. Démarrer Bloc 1.2 (modèle entité fiscale + onboarding) pour pouvoir
+   ensuite construire le moteur d'applicabilité et le suivi par dossier.

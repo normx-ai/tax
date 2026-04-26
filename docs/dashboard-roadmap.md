@@ -11,25 +11,39 @@ au plus enrichissant). Chaque bloc débloque les suivants.
 
 ## Phase 1 — Fondations data (sans elles, rien ne fonctionne)
 
-### Bloc 1.1 — Catalogue des obligations fiscales
+### Bloc 1.1 — Catalogue des obligations fiscales [LIVRÉ — 26 avril 2026]
 
-Table `obligations` côté serveur, qui décrit pour chaque taxe/déclaration du
-CGI Congolais :
+Schéma + UI admin livrés. Reste à remplir le catalogue avec les
+obligations réelles du CGI Congo via l'UI admin (par un fiscaliste).
+Voir `docs/admin-obligations-ui.md` pour le détail.
 
-- `code` (ITS, TUS, IRCM, TVA, IS, CFPB, CFPNB, patente, CAMU, …)
-- `libelle`
-- `texte_legal` (référence au CGI : article 277-314 pour patente, etc.)
-- `periodicite` (mensuelle, trimestrielle, annuelle, ponctuelle)
-- `jour_echeance` (par exemple le 15 du mois suivant pour ITS, le 30 avril
-  pour CFPB et IS, etc.)
-- `applicabilite` : règles d'application sous forme JSON (employeur=true,
-  ca_min, ca_max, regime_is, secteurs_exclus, possede_foncier_bati, etc.)
-- `simulateur_id` : référence vers le simulateur cgi-242 qui calcule la base
+Modèle Prisma `Obligation` (table `obligations`) :
+- `code` (ITS, TVA, IS, MP, CFPB, patente…) unique par version
+- `libelle` + `description`
+- `categorie` (réutilise enum `AlerteCategorie` existant)
+- `periodicite` (MENSUELLE, BIMENSUELLE, TRIMESTRIELLE, SEMESTRIELLE,
+  ANNUELLE, PONCTUELLE)
+- `echeanceRule` (JSON, discriminated union sur `type` :
+  monthly / yearly / quarterly / semestriel / ponctuelle)
+- `applicabilite` (JSON, règles évaluées par le moteur)
+- `articleNumero` + `articleId` (lien vers la KB articles existante)
+- `simulateurCode` (référence vers les 16 simulateurs mobile existants)
+- `version` (par année fiscale, défaut 2026), `actif`, `ordre`
 
-Initialement : ~20-25 obligations principales du CGI Congo. Données
-versionnées par année fiscale (loi de finances 2025 vs 2026).
+API `/api/obligations` :
+- CRUD complet (admin uniquement sauf GET)
+- `cloner-version` : duplique tout vers une nouvelle année (loi de
+  finances)
+- `alertes-aide` : lit `AlerteFiscale` existantes pour pré-remplir
+- `articles-recherche` : autocomplete sur la KB CGI
+- `simulateurs` : liste des codes simulateurs mobile
 
-Effort estimé : 2-3 jours de saisie + 1 jour migration et seed.
+UI admin `/admin/obligations` :
+- Liste filtrée + bouton Nouvelle/Cloner version
+- Formulaire en 5 sections avec champs adaptatifs selon périodicité
+- Panneau d'aide affichant les alertes déjà extraites du CGI
+
+Effort réalisé : ~2 jours dev + saisie en cours par fiscaliste.
 
 ### Bloc 1.2 — Modèle entité fiscale
 
@@ -206,18 +220,25 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 
 ## Récapitulatif effort total
 
-| Phase | Effort | Cumul |
-|---|---|---|
-| 1 — Fondations | 5,5 j | 5,5 j |
-| 2 — Calendrier auto | 3,5 j | 9 j |
-| 3 — Dashboard UX | 3 j | 12 j |
-| 4 — Intégrations | 3,5 j | 15,5 j |
-| 5 — IA | 4 j | 19,5 j |
+| Phase | Bloc | Effort | Statut |
+|---|---|---|---|
+| 1 | 1.1 — Catalogue obligations | 2 j (réalisé) | ✓ Livré (26/04/2026) |
+| 1 | 1.2 — Modèle entité fiscale | 2 j | À faire |
+| 1 | 1.3 — Mode entreprise/cabinet | 0,5 j | À faire |
+| 2 | 2.1 — Moteur applicabilité | 2 j | À faire |
+| 2 | 2.2 — Table dossiers | 1,5 j | À faire |
+| 3 | 3.1 — Bandeau prochaine échéance | 0,5 j | À faire |
+| 3 | 3.2 — KPIs utilisateur | 1 j | À faire |
+| 3 | 3.3 — Liste des échéances | 1 j | À faire |
+| 3 | 3.4 — Activité récente | 0,5 j | À faire |
+| 4 | 4.1 — Simulateurs ↔ Dossiers | 1 j | À faire |
+| 4 | 4.2 — Notifications / rappels | 1,5 j | À faire |
+| 4 | 4.3 — Documents joints | 1 j | À faire |
+| 5 | 5.1 — IA Insights | 2-3 j | À faire |
+| 5 | 5.2 — Assistant IA fiscal enrichi | 1-2 j | À faire |
 
-Estimation : **3 à 4 semaines de dev** pour livrer l'ensemble (un seul dev
-temps plein). Chaque phase est livrable indépendamment et ajoute de la
-valeur perçue (pas besoin d'attendre la phase 5 pour mettre en prod la
-phase 1+2+3).
+Reste à faire : ~17 jours sur ~19,5 jours initialement estimés.
+Estimation **3 à 4 semaines de dev** restants.
 
 ---
 
