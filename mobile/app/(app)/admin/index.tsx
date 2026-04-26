@@ -196,6 +196,27 @@ export default function AdminScreen() {
           colors={colors}
         />
 
+        {/* Acces rapide aux outils admin */}
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
+          <TouchableOpacity
+            onPress={() => router.push("/admin/obligations" as never)}
+            style={{ flex: 1, minWidth: 220, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 14, flexDirection: "row", alignItems: "center", gap: 12 }}
+          >
+            <View style={{ width: 44, height: 44, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }}>
+              <Ionicons name="document-text-outline" size={22} color="#0F2A42" />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.bold, fontSize: 14, color: colors.text }}>
+                Catalogue des obligations
+              </Text>
+              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
+                Gérer les obligations fiscales (ITS, TVA, IS, MP, CFPB, patente…)
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
+          </TouchableOpacity>
+        </View>
+
         {/* Demandes de sièges en attente */}
         <SeatRequestsList
           seatRequests={seatRequests}
