@@ -197,24 +197,38 @@ export default function AdminScreen() {
         />
 
         {/* Acces rapide aux outils admin */}
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
-          <TouchableOpacity
+        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.bold, fontSize: 13, color: colors.textSecondary, marginBottom: 8, textTransform: "uppercase", letterSpacing: 0.6 }}>
+          Outils administrateur
+        </Text>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12, marginBottom: 20 }}>
+          <AdminToolCard
+            icon="document-text-outline"
+            title="Catalogue obligations"
+            subtitle="Gérer les obligations fiscales (ITS, TVA, IS, MP, CFPB, patente…)"
             onPress={() => router.push("/admin/obligations" as never)}
-            style={{ flex: 1, minWidth: 220, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 14, flexDirection: "row", alignItems: "center", gap: 12 }}
-          >
-            <View style={{ width: 44, height: 44, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }}>
-              <Ionicons name="document-text-outline" size={22} color="#0F2A42" />
-            </View>
-            <View style={{ flex: 1 }}>
-              <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.bold, fontSize: 14, color: colors.text }}>
-                Catalogue des obligations
-              </Text>
-              <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
-                Gérer les obligations fiscales (ITS, TVA, IS, MP, CFPB, patente…)
-              </Text>
-            </View>
-            <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
-          </TouchableOpacity>
+            colors={colors}
+          />
+          <AdminToolCard
+            icon="bar-chart-outline"
+            title="Analytics"
+            subtitle="Statistiques d'usage de la plateforme"
+            onPress={() => router.push("/analytics" as never)}
+            colors={colors}
+          />
+          <AdminToolCard
+            icon="document-attach-outline"
+            title="Audit logs"
+            subtitle="Journal des actions sensibles"
+            onPress={() => router.push("/audit" as never)}
+            colors={colors}
+          />
+          <AdminToolCard
+            icon="key-outline"
+            title="Permissions"
+            subtitle="Rôles et droits d'accès des utilisateurs"
+            onPress={() => router.push("/permissions" as never)}
+            colors={colors}
+          />
         </View>
 
         {/* Demandes de sièges en attente */}
@@ -249,5 +263,35 @@ export default function AdminScreen() {
         )}
       </ScrollView>
     </View>
+  );
+}
+
+interface AdminToolCardProps {
+  icon: keyof typeof Ionicons.glyphMap;
+  title: string;
+  subtitle: string;
+  onPress: () => void;
+  colors: ReturnType<typeof useTheme>["colors"];
+}
+
+function AdminToolCard({ icon, title, subtitle, onPress, colors }: AdminToolCardProps) {
+  return (
+    <TouchableOpacity
+      onPress={onPress}
+      style={{ flex: 1, minWidth: 240, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, padding: 14, flexDirection: "row", alignItems: "center", gap: 12 }}
+    >
+      <View style={{ width: 44, height: 44, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }}>
+        <Ionicons name={icon} size={22} color="#0F2A42" />
+      </View>
+      <View style={{ flex: 1 }}>
+        <Text style={{ fontFamily: fonts.regular, fontWeight: fontWeights.bold, fontSize: 14, color: colors.text }}>
+          {title}
+        </Text>
+        <Text style={{ fontFamily: fonts.regular, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
+          {subtitle}
+        </Text>
+      </View>
+      <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
+    </TouchableOpacity>
   );
 }
