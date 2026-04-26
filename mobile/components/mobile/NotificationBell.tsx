@@ -100,8 +100,6 @@ export default function NotificationBell() {
                 backgroundColor: colors.danger,
                 width: 9,
                 height: 9,
-                borderWidth: 1.5,
-                borderColor: colors.background,
               }}
             />
           )}
