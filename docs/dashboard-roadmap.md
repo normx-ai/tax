@@ -109,16 +109,22 @@ Conséquences pratiques :
 Effort : 1,5 jour modèle (incluant l'enum sectoriel et les liens
 optionnels vers la convention) + 1 jour formulaire de saisie.
 
-### Bloc 1.3 — Mode entreprise vs cabinet
+### Bloc 1.3 — Mode entreprise vs cabinet [LIVRÉ — 26 avril 2026]
 
 À l'inscription, choix unique :
 - **Entreprise** : 1 entité (la sienne), créée automatiquement
 - **Cabinet** : plusieurs entités clients à ajouter au fur et à mesure
 
-Le mode pilote l'affichage du dashboard, la navigation, les agrégations. Pas
-de bascule possible après inscription (ou alors avec une action explicite).
+Implémenté côté backend dans le commit `de455e0` :
+- enum `OrganizationMode` (ENTREPRISE | CABINET) sur Organization
+- Migration `add_organization_mode` (défaut ENTREPRISE)
+- Schémas Zod (createOrgBody, updateOrgBody) acceptent le champ
+- Type côté API client mobile
 
-Effort : 0,5 jour (logique de routing + onboarding différencié).
+Reste à faire côté UX (à intégrer dans la refonte dashboard quand on
+remplira les KPIs réels) : modal d'onboarding « Êtes-vous une entreprise
+ou un cabinet ? » au premier connect d'une nouvelle organisation, et
+adaptation du dashboard selon le mode.
 
 ---
 
@@ -277,7 +283,7 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 |---|---|---|---|
 | 1 | 1.1 — Catalogue obligations | 2,5 j (réalisé) | ✓ Livré (26/04/2026) — schéma, API, UI admin, navigation |
 | 1 | 1.2 — Modèle entité fiscale | 2,5 j (réalisé) | ✓ Livré (26/04/2026) — schéma + API + UI list/form |
-| 1 | 1.3 — Mode entreprise/cabinet | 0,5 j | À faire (logique de routing) |
+| 1 | 1.3 — Mode entreprise/cabinet | 0,3 j (réalisé) | ✓ Livré (26/04/2026) — champ Organization.mode + API |
 | 2 | 2.1 — Moteur applicabilité | 2 j | À faire |
 | 2 | 2.2 — Table dossiers | 1,5 j | À faire |
 | 3 | 3.1 — Bandeau prochaine échéance | 0,3 j (réalisé) | ✓ Livré (26/04/2026) — squelette avec données calendrier-fiscal existant |
@@ -290,18 +296,18 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 | 5 | 5.1 — IA Insights | 2-3 j | À faire |
 | 5 | 5.2 — Assistant IA fiscal enrichi | 1-2 j | À faire |
 
-Réalisé à date (26 avril 2026) : 5 jours
+Réalisé à date (26 avril 2026) : 5,3 jours
 - Bloc 1.1 (catalogue obligations) : 2,5 j
 - Bloc 1.2 (modèle entité) : 2,5 j
+- Bloc 1.3 (mode entreprise/cabinet) : 0,3 j (backend uniquement)
 - Phase 3 squelette (3.1, 3.2 partiel, 3.3, 3.4 placeholder) : ~1,5 j
   enchassés dans le total ci-dessus
 
-Reste à faire pour rendre les chiffres réels : ~14,5 jours
-- Bloc 1.3 (mode entreprise/cabinet) : 0,5 j
+Reste à faire pour rendre les chiffres réels : ~14,2 jours
 - Phase 2 complète (moteur applicabilité + dossiers) : 3,5 j
 - Phase 4 complète (intégrations simulateur, notifications, documents) : 3,5 j
 - Phase 5 (IA Insights + Assistant enrichi) : 4 j
-- Renforcement UX dashboard (vraies valeurs KPIs, activité récente, IA insights) : ~3 j
+- Renforcement UX dashboard (vraies valeurs KPIs, activité récente, IA insights, modal onboarding mode) : ~3 j
 
 Estimation **2 à 3 semaines de dev** restants pour avoir un dashboard
 vraiment alimenté en données.
