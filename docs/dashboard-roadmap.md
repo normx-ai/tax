@@ -303,6 +303,17 @@ Réalisé à date (26 avril 2026) : 5,3 jours
 - Phase 3 squelette (3.1, 3.2 partiel, 3.3, 3.4 placeholder) : ~1,5 j
   enchassés dans le total ci-dessus
 
+Backfill production des modes (26 avril 2026, opération SQL directe)
+- CABINET : Cédron Ngamiye (avec Douce Moussavou en ADMIN, son org
+  perso soft-deletée), Fresnay MAKOUESSE (cabinet séparé), NORMX AI
+- ENTREPRISE : Claver BATCHI, Diasthene Merveilles, Excelle
+  Louboungou, Franck BIKEDI, Genia MOUSSOYI, MMA CONSULTING SA
+  (mecene), SANA Hygiène et services
+- Cas particulier : Cédron + Douce dans le même cabinet (cabinet de
+  Cédron). Cédron OWNER, Douce ADMIN. L'organisation perso de Douce
+  a été soft-supprimée (deletedAt) — elle n'a plus que le cabinet en
+  accès.
+
 Reste à faire pour rendre les chiffres réels : ~14,2 jours
 - Phase 2 complète (moteur applicabilité + dossiers) : 3,5 j
 - Phase 4 complète (intégrations simulateur, notifications, documents) : 3,5 j
