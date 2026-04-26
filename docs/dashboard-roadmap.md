@@ -46,7 +46,15 @@ UI admin `/admin/obligations` :
 
 Effort réalisé : ~2 jours dev + saisie en cours par fiscaliste.
 
-### Bloc 1.2 — Modèle entité fiscale
+### Bloc 1.2 — Modèle entité fiscale [LIVRÉ — 26 avril 2026]
+
+Schéma Prisma + migration + API REST + UI mobile livrés. Voir commits
+`3bc8cf0` (backend) et `895cafa` (frontend).
+
+Reste à saisir les premières entités via l'UI `/entites` pour activer le
+moteur d'applicabilité (Bloc 2.1).
+
+
 
 Une entité = un client (cabinet) ou l'entreprise elle-même. Champs minimaux
 pour déterminer l'applicabilité des obligations :
@@ -157,7 +165,13 @@ Effort : 1,5 jour (modèle + cron + transitions de statut).
 
 ## Phase 3 — Dashboard et UX
 
-### Bloc 3.1 — Bandeau « Prochaine échéance »
+État global Phase 3 : squelette livré le 26 avril 2026 (commit
+`beded41`) selon l'option « Build it now, données plus tard ». Le
+nouveau dashboard est visible immédiatement sur la page d'accueil
+mobile/web. Les blocs 3.x ci-dessous sont chacun livrés en surface,
+mais leurs données réelles attendent les Phase 2 et 4.
+
+### Bloc 3.1 — Bandeau « Prochaine échéance » [LIVRÉ partiel]
 
 Le composant le plus visible. Affiche la première obligation à échéance dans
 les 30 jours, avec :
@@ -168,7 +182,7 @@ les 30 jours, avec :
 
 Effort : 0,5 jour.
 
-### Bloc 3.2 — KPIs utilisateur
+### Bloc 3.2 — KPIs utilisateur [LIVRÉ squelette]
 
 4 cards en haut du dashboard, métriques différentes selon le mode :
 
@@ -186,7 +200,7 @@ Effort : 0,5 jour.
 
 Effort : 1 jour (queries d'agrégation + composant card).
 
-### Bloc 3.3 — Liste des échéances
+### Bloc 3.3 — Liste des échéances [LIVRÉ partiel]
 
 Groupée par date, scrollable, avec filtre passé/présent/futur. Pour chaque
 date :
@@ -196,7 +210,7 @@ date :
 
 Effort : 1 jour.
 
-### Bloc 3.4 — Activité récente
+### Bloc 3.4 — Activité récente [LIVRÉ placeholder]
 
 Timeline des dernières simulations, dépôts, calculs avec montant et entité
 concernée. Permet de revenir rapidement sur un travail en cours.
@@ -262,22 +276,35 @@ Effort : 1-2 jours (function calling sur les tables dossiers/entités).
 | Phase | Bloc | Effort | Statut |
 |---|---|---|---|
 | 1 | 1.1 — Catalogue obligations | 2,5 j (réalisé) | ✓ Livré (26/04/2026) — schéma, API, UI admin, navigation |
-| 1 | 1.2 — Modèle entité fiscale | 2,5 j | À faire (secteur aligné sur 16 CC) |
-| 1 | 1.3 — Mode entreprise/cabinet | 0,5 j | À faire |
+| 1 | 1.2 — Modèle entité fiscale | 2,5 j (réalisé) | ✓ Livré (26/04/2026) — schéma + API + UI list/form |
+| 1 | 1.3 — Mode entreprise/cabinet | 0,5 j | À faire (logique de routing) |
 | 2 | 2.1 — Moteur applicabilité | 2 j | À faire |
 | 2 | 2.2 — Table dossiers | 1,5 j | À faire |
-| 3 | 3.1 — Bandeau prochaine échéance | 0,5 j | À faire |
-| 3 | 3.2 — KPIs utilisateur | 1 j | À faire |
-| 3 | 3.3 — Liste des échéances | 1 j | À faire |
-| 3 | 3.4 — Activité récente | 0,5 j | À faire |
+| 3 | 3.1 — Bandeau prochaine échéance | 0,3 j (réalisé) | ✓ Livré (26/04/2026) — squelette avec données calendrier-fiscal existant |
+| 3 | 3.2 — KPIs utilisateur | 0,5 j (réalisé partiellement) | ⚠ Squelette livré, valeurs réelles attendent Phase 2 |
+| 3 | 3.3 — Liste des échéances | 0,5 j (réalisé) | ✓ Livré (26/04/2026) — par mois courant |
+| 3 | 3.4 — Activité récente | 0,2 j (réalisé) | ⚠ Placeholder livré, données attendent Bloc 4.1 |
 | 4 | 4.1 — Simulateurs ↔ Dossiers | 1 j | À faire |
 | 4 | 4.2 — Notifications / rappels | 1,5 j | À faire |
 | 4 | 4.3 — Documents joints | 1 j | À faire |
 | 5 | 5.1 — IA Insights | 2-3 j | À faire |
 | 5 | 5.2 — Assistant IA fiscal enrichi | 1-2 j | À faire |
 
-Reste à faire : ~17 jours sur ~19,5 jours initialement estimés.
-Estimation **3 à 4 semaines de dev** restants.
+Réalisé à date (26 avril 2026) : 5 jours
+- Bloc 1.1 (catalogue obligations) : 2,5 j
+- Bloc 1.2 (modèle entité) : 2,5 j
+- Phase 3 squelette (3.1, 3.2 partiel, 3.3, 3.4 placeholder) : ~1,5 j
+  enchassés dans le total ci-dessus
+
+Reste à faire pour rendre les chiffres réels : ~14,5 jours
+- Bloc 1.3 (mode entreprise/cabinet) : 0,5 j
+- Phase 2 complète (moteur applicabilité + dossiers) : 3,5 j
+- Phase 4 complète (intégrations simulateur, notifications, documents) : 3,5 j
+- Phase 5 (IA Insights + Assistant enrichi) : 4 j
+- Renforcement UX dashboard (vraies valeurs KPIs, activité récente, IA insights) : ~3 j
+
+Estimation **2 à 3 semaines de dev** restants pour avoir un dashboard
+vraiment alimenté en données.
 
 ---
 
