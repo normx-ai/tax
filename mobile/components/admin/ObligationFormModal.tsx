@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, ScrollView, TextInput, ActivityIndicator,
 import { useState, useEffect, useCallback } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import TestApplicabiliteModal from "./TestApplicabiliteModal";
+import ApplicabiliteBuilder from "./ApplicabiliteBuilder";
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { useToast } from "@/components/ui/ToastProvider";
 import { fonts, fontWeights } from "@/lib/theme/fonts";
@@ -283,24 +284,19 @@ export default function ObligationFormModal({ obligation, version, onClose, onSa
           )}
         </Section>
 
-        <Section title="Applicabilité (JSON)">
+        <Section title="Applicabilité">
           <Text style={{ fontFamily: fonts.regular, fontSize: 11, color: colors.textSecondary, marginBottom: 6 }}>
-            Règles évaluées par le moteur. Exemples :{"\n"}
-            {`{ "salaries_count": { "min": 1 } }`}{"\n"}
-            {`{ "possede_foncier_bati": true }`}{"\n"}
-            {`{ "regime_tva": "reel" }`}{"\n"}
-            Vide = applicable à toutes les entités.
+            Critères que doit satisfaire une entité pour que cette obligation s'applique. Sans critère = applicable à toutes les entités.
           </Text>
-          <TextInput
-            value={applicabiliteJson}
-            onChangeText={setApplicabiliteJson}
-            multiline
-            numberOfLines={4}
-            style={[inputStyle, { fontFamily: "Menlo, monospace", minHeight: 90, textAlignVertical: "top" }]}
-            placeholder="{}"
-            placeholderTextColor={colors.textSecondary}
-            autoCapitalize="none"
-            autoCorrect={false}
+          <ApplicabiliteBuilder
+            value={(() => {
+              try {
+                return applicabiliteJson.trim() ? JSON.parse(applicabiliteJson) : {};
+              } catch {
+                return {};
+              }
+            })()}
+            onChange={(regles) => setApplicabiliteJson(JSON.stringify(regles, null, 2))}
           />
         </Section>
 
