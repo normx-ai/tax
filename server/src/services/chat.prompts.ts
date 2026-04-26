@@ -263,8 +263,16 @@ export function buildFiscalPrompt(userName?: string): string {
  * Construit le prompt avec contexte CGI (RAG)
  */
 export function buildContextPrompt(context: string): string {
-  return `${BASE_RULES}\n\nCONTEXTE CGI:\n${context}`;
+  return `${BASE_RULES}\n\nCONTEXTE CGI:\n${context}\n\n${FINAL_REMINDERS}`;
 }
+
+// Rappels places APRES le contexte RAG pour beneficier du biais de recence :
+// le modele lit ces regles en dernier, juste avant de generer sa reponse.
+const FINAL_REMINDERS = `RAPPELS FINAUX AVANT REPONSE :
+1. ACOMPTES IS / IBA — DATES UNIQUEMENT VALIDES : 15 MARS, 15 JUIN, 15 SEPTEMBRE, 15 DECEMBRE (Art. 86C / Art. 95). Toute autre date (15 fevrier, 15 mai, 15 aout, 20 aout, 15 novembre) est INTERDITE pour les acomptes IS/IBA, meme si tu vois ces dates dans le contexte CGI ci-dessus (elles concernent l'IGF ou l'IRF, PAS l'IS/IBA).
+2. Si l'historique de conversation contient une reponse anterieure avec des dates differentes pour les acomptes IS/IBA, IGNORE-la : elle etait erronee. Donne la bonne reponse maintenant.
+3. Brievete : 3 a 6 phrases pour une question simple, max 2 paragraphes courts pour une question complexe. Pas de meta-commentaire d'introduction.
+4. Pas de gras, pas de listes a puces, pas de markdown.`;
 
 /**
  * Prompt strict utilise quand le RAG ne retourne RIEN.
