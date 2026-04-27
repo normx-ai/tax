@@ -9,11 +9,13 @@ export {
   BRAND,
   ctaButton,
   ctaButtonPair,
+  detailsBox,
   getProductDisplayName,
   highlightBox,
   paragraph,
   renderBaseLayout,
   softBox,
+  warningBox,
   type Product,
 } from "./base.template";
 
@@ -24,3 +26,4 @@ export type { PaymentSuccessVars } from "./templates/payment-success.template";
 export type { PaymentFailedVars } from "./templates/payment-failed.template";
 export type { SubscriptionCancelledVars } from "./templates/subscription-cancelled.template";
 export type { PasswordResetVars } from "./templates/password-reset.template";
+export type { OtpVars } from "./templates/otp.template";

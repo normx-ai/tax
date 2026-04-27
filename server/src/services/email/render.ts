@@ -27,6 +27,7 @@ import {
   renderPasswordReset,
   type PasswordResetVars,
 } from "./templates/password-reset.template";
+import { renderOtp, type OtpVars } from "./templates/otp.template";
 
 /**
  * Registry typée : mappe chaque nom de template à son type de variables.
@@ -40,6 +41,7 @@ export interface TemplateRegistry {
   "payment-failed": PaymentFailedVars;
   "subscription-cancelled": SubscriptionCancelledVars;
   "password-reset": PasswordResetVars;
+  otp: OtpVars;
 }
 
 export type TemplateName = keyof TemplateRegistry;
@@ -70,6 +72,8 @@ export function renderEmail<K extends TemplateName>(
       return renderSubscriptionCancelled(vars as SubscriptionCancelledVars);
     case "password-reset":
       return renderPasswordReset(vars as PasswordResetVars);
+    case "otp":
+      return renderOtp(vars as OtpVars);
     default: {
       // Branche d'exhaustivité : TypeScript erreur si un template manque
       const _exhaustive: never = name;

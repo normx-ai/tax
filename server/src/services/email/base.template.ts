@@ -19,7 +19,7 @@
 // La société émettrice (NORMX AI SAS, RCS Amiens, CM2C) reste commune
 // puisque les 3 produits sont édités par la même personne morale.
 
-export type Product = "tax" | "finance" | "legal";
+export type Product = "tax" | "finance" | "legal" | "auth";
 
 interface ProductConfig {
   /** Nom affiché à droite du logo NORMX (en blanc light) */
@@ -50,6 +50,15 @@ const PRODUCTS: Record<Product, ProductConfig> = {
     defaultTag: "Documents Juridiques OHADA",
     baseUrl: "https://legal.normx-ai.com",
     contactEmail: "contact@normx-ai.com",
+  },
+  // Umbrella brand pour tous les emails de securite/auth (OTP, reset
+  // mot de passe, MFA) — Keycloak SSO les emet pour le compte des 3
+  // produits. Le logo affiche "NORMX AI" sans suffixe produit.
+  auth: {
+    suffix: "AI",
+    defaultTag: "Sécurité",
+    baseUrl: "https://normx-ai.com",
+    contactEmail: "support@normx-ai.com",
   },
 };
 
@@ -90,8 +99,12 @@ export interface BaseLayoutOptions {
   headerTag?: string;
   /** Badge or pâle latéral au-dessus du H1 (style fiscal-deadlines). Mutuellement exclusif avec heroIcon. */
   badge?: { text: string; emoji?: string };
-  /** Icône hero centrée au-dessus du H1 (style payment-success). Ex: { symbol: "✓", bg: "#dcfce7", fg: "#16a34a" }. */
-  heroIcon?: { symbol: string; bg: string; fg: string };
+  /**
+   * Icône hero centrée au-dessus du H1.
+   * - Style "filled" (✓ vert sur fond vert pâle) : { symbol: "✓", bg: "#DCFCE7", fg: "#16A34A" }
+   * - Style "outlined" (🔐 sur fond or pâle bordé or) : ajouter borderColor: "#D4A843"
+   */
+  heroIcon?: { symbol: string; bg: string; fg: string; borderColor?: string };
   /** Titre H1. */
   heading: string;
   /** Alignement du H1 (et du subheading le cas échéant). Default: left. */
@@ -208,14 +221,15 @@ function headerSection(productSuffix: string, headerTag: string): string {
           </tr>`;
 }
 
-function heroIconSection(icon: { symbol: string; bg: string; fg: string }): string {
+function heroIconSection(icon: { symbol: string; bg: string; fg: string; borderColor?: string }): string {
+  const border = icon.borderColor ? `border: 2px solid ${icon.borderColor};` : "";
   return `
           <tr>
             <td align="center" class="nx-px nx-card" style="background-color: ${BRAND.white}; padding: 48px 40px 16px 40px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td align="center" valign="middle" width="72" height="72" style="background-color: ${icon.bg}; width: 72px; height: 72px; border-radius: 50%; mso-line-height-rule: exactly; line-height: 72px;">
-                    <span style="display: inline-block; color: ${icon.fg}; font-family: ${FONT_STACK}; font-size: 36px; font-weight: 700; line-height: 72px;">${escapeHtml(icon.symbol)}</span>
+                  <td align="center" valign="middle" width="72" height="72" style="background-color: ${icon.bg}; width: 72px; height: 72px; border-radius: 50%; mso-line-height-rule: exactly; line-height: 72px; ${border}">
+                    <span style="display: inline-block; color: ${icon.fg}; font-family: ${FONT_STACK}; font-size: 32px; font-weight: 700; line-height: 72px;">${escapeHtml(icon.symbol)}</span>
                   </td>
                 </tr>
               </table>
@@ -382,6 +396,62 @@ export function highlightBox(innerHtml: string): string {
   <tr>
     <td style="padding: 20px 24px;">
       ${innerHtml}
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Encadré ambre d'avertissement (alerte sécurité, action requise modérée).
+ * Même esthétique qu'une mention "warning" Tailwind : fond ambre clair,
+ * bordure gauche or foncé, titre + corps explicatif.
+ */
+export function warningBox(title: string, innerHtml: string): string {
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #FEF3C7; border-left: 4px solid #D97706; border-radius: 8px; margin: 0 0 24px 0;">
+  <tr>
+    <td style="padding: 16px 20px;">
+      <p style="margin: 0 0 8px 0; color: #92400E; font-family: ${FONT_STACK}; font-size: 13px; font-weight: 600;">
+        ${title}
+      </p>
+      <p style="margin: 0; color: #78350F; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;">
+        ${innerHtml}
+      </p>
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Encadré "détails techniques" — clé/valeur avec icône optionnelle.
+ * Utilisé pour les détails de connexion (date, IP, user-agent), montant
+ * de transaction, méta-données diverses.
+ */
+export function detailsBox(
+  title: string,
+  items: Array<{ icon?: string; label: string }>,
+): string {
+  const rows = items
+    .map(
+      (it) => `
+        <tr>
+          <td style="padding: 2px 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;" class="nx-text-body">
+            ${it.icon ? `<span style="margin-right: 6px;">${it.icon}</span>` : ""}${escapeHtml(it.label)}
+          </td>
+        </tr>`,
+    )
+    .join("");
+
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="nx-soft-bg" style="background-color: ${BRAND.bgSoft}; border-radius: 8px; margin: 0 0 24px 0;">
+  <tr>
+    <td style="padding: 16px 20px;">
+      <p style="margin: 0 0 8px 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 12px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;">
+        ${escapeHtml(title)}
+      </p>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        ${rows}
+      </table>
     </td>
   </tr>
 </table>`;

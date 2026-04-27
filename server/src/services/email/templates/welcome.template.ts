@@ -13,8 +13,11 @@ import {
 } from "../base.template";
 
 // Pitch d'onboarding par produit. Un seul endroit à mettre à jour quand
-// les fonctionnalités évoluent.
-const WELCOME_PITCH: Record<Product, { features: string; quickStart: string }> = {
+// les fonctionnalités évoluent. Le produit "auth" n'est pas listé : un
+// email de bienvenue ne s'applique qu'aux 3 produits commerciaux.
+type WelcomeProduct = Exclude<Product, "auth">;
+
+const WELCOME_PITCH: Record<WelcomeProduct, { features: string; quickStart: string }> = {
   tax: {
     features:
       "Vous avez accès à l'intégralité du CGI 2026 du Congo, aux simulateurs (ITS, IS, IBA, TVA, patente, paie), à l'agent IA fiscal et au calendrier des échéances avec rappels automatiques.",
@@ -34,6 +37,10 @@ const WELCOME_PITCH: Record<Product, { features: string; quickStart: string }> =
       "Choisissez votre type de société et votre opération — NORMX Legal pré-remplit le document conformément aux exigences OHADA en vigueur.",
   },
 };
+
+function resolveWelcomeProduct(product?: Product): WelcomeProduct {
+  return product && product !== "auth" ? product : "tax";
+}
 import { addUtm } from "../utm";
 
 const CAMPAIGN = "welcome";
@@ -57,7 +64,7 @@ export function renderWelcome(vars: WelcomeVars): RenderedEmail {
   const { product, userName, organizationName, planName, dashboardUrl, unsubscribeUrl } = vars;
   const dashboardWithUtm = addUtm(dashboardUrl, { campaign: CAMPAIGN, content: "cta-primary" });
   const productName = getProductDisplayName(product);
-  const pitch = WELCOME_PITCH[product ?? "tax"];
+  const pitch = WELCOME_PITCH[resolveWelcomeProduct(product)];
 
   const subject = `Bienvenue sur ${productName}, ${userName}`;
   const preheader = `Votre espace ${organizationName} (plan ${planName}) est prêt. Démarrez en 2 minutes.`;

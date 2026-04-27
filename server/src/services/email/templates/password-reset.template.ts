@@ -31,14 +31,16 @@ interface RenderedEmail {
 }
 
 export function renderPasswordReset(vars: PasswordResetVars): RenderedEmail {
-  const { product, userName, resetUrl, expiresInMinutes } = vars;
+  // Default 'auth' : geres par Keycloak SSO commun aux 3 produits
+  const { product = "auth", userName, resetUrl, expiresInMinutes } = vars;
   const resetWithUtm = addUtm(resetUrl, { campaign: CAMPAIGN, content: "cta-reset" });
 
   const productName = (() => {
     switch (product) {
       case "finance": return "NORMX Finance";
       case "legal": return "NORMX Legal";
-      default: return "NORMX Tax";
+      case "tax": return "NORMX Tax";
+      default: return "NORMX AI"; // auth umbrella
     }
   })();
   const subject = `Réinitialisation de votre mot de passe ${productName}`;
