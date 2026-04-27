@@ -105,8 +105,8 @@ export default function SimulateurLayout({
           {subtitle && (
             <Text style={[styles.subtitle, { color: colors.textMuted }]}>{subtitle}</Text>
           )}
-          <View style={[styles.descriptionBox, { backgroundColor: colors.card }]}>
-            <Text style={[styles.descriptionText, { color: colors.text }]}>{description}</Text>
+          <View style={[styles.descriptionBox, { backgroundColor: colors.card, borderColor: colors.border }]}>
+            <Text style={[styles.descriptionText, { color: colors.textSecondary }]}>{description}</Text>
           </View>
 
           {inputSection}
@@ -249,11 +249,13 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   descriptionBox: {
-    marginBottom: 12,
-    padding: 12,
+    marginBottom: 14,
+    padding: 14,
+    borderWidth: 1,
   },
   descriptionText: {
-    fontSize: 15,
+    fontSize: 13,
+    lineHeight: 19,
   },
   legalRef: {
     fontSize: 14,

@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 interface Props {
   label: string;
@@ -8,8 +9,18 @@ interface Props {
 export default function SimulateurSection({ label }: Props) {
   const { colors } = useTheme();
   return (
-    <View style={{ backgroundColor: colors.background, paddingHorizontal: 14, paddingVertical: 8 }}>
-      <Text style={{ fontSize: 16, fontWeight: "700", color: colors.text }}>{label}</Text>
+    <View style={{ paddingHorizontal: 16, paddingTop: 18, paddingBottom: 6 }}>
+      <Text
+        style={{
+          fontSize: 11,
+          fontFamily: fonts.bold,
+          fontWeight: fontWeights.bold,
+          color: colors.textSecondary,
+          letterSpacing: 1.2,
+        }}
+      >
+        {label.toUpperCase()}
+      </Text>
     </View>
   );
 }

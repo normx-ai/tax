@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { useTheme } from "@/lib/theme/ThemeContext";
+import { fonts, fontWeights } from "@/lib/theme/fonts";
 
 type Option<T extends string> = {
   value: T;
@@ -24,30 +25,36 @@ export default function OptionButtonGroup<T extends string>({
   const { colors } = useTheme();
 
   return (
-    <View style={{ flexDirection: direction, gap: direction === "row" ? 8 : 4, marginBottom: 12 }}>
-      {options.map((opt) => (
-        <TouchableOpacity
-          key={opt.value}
-          style={{
-            flex: direction === "row" ? 1 : undefined,
-            paddingVertical: 8,
-            paddingHorizontal: direction === "column" ? 12 : undefined,
-            alignItems: direction === "row" ? "center" : undefined,
-            backgroundColor: selected === opt.value ? colors.primary : colors.border,
-          }}
-          onPress={() => onChange(opt.value)}
-        >
-          <Text
+    <View style={{ flexDirection: direction, gap: direction === "row" ? 6 : 4, marginBottom: 10 }}>
+      {options.map((opt) => {
+        const isActive = selected === opt.value;
+        return (
+          <TouchableOpacity
+            key={opt.value}
             style={{
-              color: selected === opt.value ? colors.sidebarText : colors.text,
-              fontWeight: "700",
-              fontSize,
+              flex: direction === "row" ? 1 : undefined,
+              paddingVertical: 10,
+              paddingHorizontal: direction === "column" ? 14 : 8,
+              alignItems: direction === "row" ? "center" : "flex-start",
+              backgroundColor: isActive ? `${colors.primary}15` : colors.card,
+              borderWidth: 1,
+              borderColor: isActive ? colors.primary : colors.border,
             }}
+            onPress={() => onChange(opt.value)}
           >
-            {opt.label}
-          </Text>
-        </TouchableOpacity>
-      ))}
+            <Text
+              style={{
+                color: isActive ? colors.text : colors.textSecondary,
+                fontFamily: isActive ? fonts.bold : fonts.medium,
+                fontWeight: isActive ? fontWeights.bold : fontWeights.medium,
+                fontSize,
+              }}
+            >
+              {opt.label}
+            </Text>
+          </TouchableOpacity>
+        );
+      })}
     </View>
   );
 }
