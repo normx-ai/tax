@@ -2,7 +2,7 @@ import { Router, Response } from "express";
 import prisma from "../utils/prisma";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
-import { validate } from "../middleware/validate.middleware";
+import { typedRoute } from "../middleware/typed-route";
 import { updateProfileBody } from "../schemas/user.schema";
 import { asyncHandler } from "../middleware/asyncHandler";
 
@@ -104,8 +104,8 @@ router.get("/profile", requireAuth, resolveTenant, asyncHandler(async (req: Auth
  *       200:
  *         description: Profil mis à jour
  */
-router.put("/profile", requireAuth, resolveTenant, validate({ body: updateProfileBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { firstName, lastName, phone, profession } = req.body;
+router.put("/profile", requireAuth, resolveTenant, ...typedRoute({ body: updateProfileBody }, async (req, res) => {
+  const { firstName, lastName, phone, profession } = req.validated.body;
 
   // Construire l'objet de mise à jour avec uniquement les champs fournis
   const data: Record<string, string | null> = {};

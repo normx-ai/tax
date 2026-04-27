@@ -1,7 +1,7 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { asyncHandler } from "../middleware/asyncHandler";
-import { validate } from "../middleware/validate.middleware";
+import { typedRoute } from "../middleware/typed-route";
 import { registerPushBody, unregisterPushBody } from "../schemas/notifications.schema";
 import { PushService } from "../services/push.service";
 import prisma from "../utils/prisma";
@@ -34,8 +34,8 @@ const router = Router();
  *       400:
  *         description: Token manquant
  */
-router.post("/register", requireAuth, validate({ body: registerPushBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { token, platform } = req.body;
+router.post("/register", requireAuth, ...typedRoute({ body: registerPushBody }, async (req, res) => {
+  const { token, platform } = req.validated.body;
   await PushService.registerToken(req.userId!, token, platform || "unknown");
   res.json({ message: "Token enregistré" });
 }));
@@ -62,8 +62,8 @@ router.post("/register", requireAuth, validate({ body: registerPushBody }), asyn
  *       200:
  *         description: Token supprimé
  */
-router.delete("/unregister", requireAuth, validate({ body: unregisterPushBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { token } = req.body;
+router.delete("/unregister", requireAuth, ...typedRoute({ body: unregisterPushBody }, async (req, res) => {
+  const { token } = req.validated.body;
   await PushService.unregisterToken(token);
   res.json({ message: "Token supprimé" });
 }));

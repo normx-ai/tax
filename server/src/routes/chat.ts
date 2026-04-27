@@ -5,7 +5,7 @@ import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
 import { checkCredits, confirmCreditUsage } from "../middleware/subscription.middleware";
-import { validate } from "../middleware/validate.middleware";
+import { typedRoute } from "../middleware/typed-route";
 import { messageStreamBody, conversationIdParam } from "../schemas/chat.schema";
 import * as chatService from "../services/chat.service";
 import prisma from "../utils/prisma"; // pour les articles CGI (donnees globales)
@@ -28,9 +28,9 @@ const router = Router();
  *         description: Flux SSE de la réponse du chat
  */
 // POST /api/chat/message/stream — Envoyer un message avec streaming SSE
-router.post("/message/stream", requireAuth, resolveTenant, checkCredits, validate({ body: messageStreamBody }), async (req: AuthRequest, res: Response) => {
+router.post("/message/stream", requireAuth, resolveTenant, checkCredits, ...typedRoute({ body: messageStreamBody }, async (req, res) => {
   const userId = req.userId!;
-  const { content, conversationId } = req.body;
+  const { content, conversationId } = req.validated.body;
 
   // Configurer SSE
   res.setHeader("Content-Type", "text/event-stream");
@@ -64,7 +64,7 @@ router.post("/message/stream", requireAuth, resolveTenant, checkCredits, validat
     // En cas d'echec, on NE debite PAS le credit (reservation annulee implicitement)
     res.end();
   }
-});
+}));
 
 /**
  * @swagger
@@ -111,10 +111,9 @@ router.get("/conversations", requireAuth, resolveTenant, async (req: AuthRequest
  *         description: Conversation introuvable
  */
 // GET /api/chat/conversations/:id — Recuperer une conversation avec messages
-router.get("/conversations/:id", requireAuth, resolveTenant, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
+router.get("/conversations/:id", requireAuth, resolveTenant, ...typedRoute({ params: conversationIdParam }, async (req, res) => {
   try {
-    const id = String(req.params.id);
-    const conversation = await chatService.getConversation(req.tenantSchema!, req.userId!, id);
+    const conversation = await chatService.getConversation(req.tenantSchema!, req.userId!, req.validated.params.id);
     res.json({ conversation });
   } catch (err) {
     logger.error("[chat/conversation]", err);
@@ -125,7 +124,7 @@ router.get("/conversations/:id", requireAuth, resolveTenant, validate({ params: 
     }
     res.status(500).json({ error: "Erreur serveur" });
   }
-});
+}));
 
 /**
  * @swagger
@@ -149,10 +148,9 @@ router.get("/conversations/:id", requireAuth, resolveTenant, validate({ params: 
  *         description: Conversation introuvable
  */
 // DELETE /api/chat/conversations/:id — Supprimer une conversation
-router.delete("/conversations/:id", requireAuth, resolveTenant, validate({ params: conversationIdParam }), async (req: AuthRequest, res: Response) => {
+router.delete("/conversations/:id", requireAuth, resolveTenant, ...typedRoute({ params: conversationIdParam }, async (req, res) => {
   try {
-    const id = String(req.params.id);
-    await chatService.deleteConversation(req.tenantSchema!, req.userId!, id);
+    await chatService.deleteConversation(req.tenantSchema!, req.userId!, req.validated.params.id);
     res.json({ message: "Conversation supprimee" });
   } catch (err) {
     logger.error("[chat/delete]", err);
@@ -163,7 +161,7 @@ router.delete("/conversations/:id", requireAuth, resolveTenant, validate({ param
     }
     res.status(500).json({ error: "Erreur serveur" });
   }
-});
+}));
 
 /**
  * @swagger

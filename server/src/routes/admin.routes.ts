@@ -1,8 +1,9 @@
 import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { requireAdmin } from '../middleware/requireAdmin';
-import { validate } from '../middleware/validate.middleware';
+import { typedRoute } from '../middleware/typed-route';
 import { activateOrgBody, orgIdParam } from '../schemas/admin.schema';
+import { idParam } from '../schemas/common.schema';
 import prisma from '../utils/prisma';
 import * as subscriptionService from '../services/subscription.service';
 import { PlanName } from '../types/plans';
@@ -100,10 +101,10 @@ router.get('/organizations', requireAuth, requireAdmin, async (_req: AuthRequest
  *       200:
  *         description: Abonnement activé
  */
-router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, validate({ params: orgIdParam, body: activateOrgBody }), async (req: AuthRequest, res: Response) => {
+router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, ...typedRoute({ params: orgIdParam, body: activateOrgBody }, async (req, res) => {
   try {
-    const orgId = String(req.params.orgId);
-    const { plan } = req.body;
+    const { orgId } = req.validated.params;
+    const { plan } = req.validated.body;
 
     const updated = await subscriptionService.activateSubscription(orgId, plan);
     logger.info(`Admin ${req.userEmail} a active le plan ${plan} pour l'org ${orgId}`);
@@ -121,7 +122,7 @@ router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, validat
     }
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 /**
  * @swagger
@@ -141,9 +142,9 @@ router.post('/organizations/:orgId/activate', requireAuth, requireAdmin, validat
  *       200:
  *         description: Abonnement renouvelé
  */
-router.post('/organizations/:orgId/renew', requireAuth, requireAdmin, validate({ params: orgIdParam }), async (req: AuthRequest, res: Response) => {
+router.post('/organizations/:orgId/renew', requireAuth, requireAdmin, ...typedRoute({ params: orgIdParam }, async (req, res) => {
   try {
-    const orgId = String(req.params.orgId);
+    const { orgId } = req.validated.params;
 
     const updated = await subscriptionService.renewSubscription(orgId);
     logger.info(`Admin ${req.userEmail} a renouvele l'abonnement pour l'org ${orgId}`);
@@ -161,14 +162,14 @@ router.post('/organizations/:orgId/renew', requireAuth, requireAdmin, validate({
     }
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 // Seat request routes removed — credits system replaces seat-based model
 
 // POST /api/admin/organizations/:id/credit-pack — Créditer un pack de crédits
-router.post('/organizations/:id/credit-pack', requireAuth, requireAdmin, validate({ params: orgIdParam }), async (req: AuthRequest, res: Response) => {
+router.post('/organizations/:id/credit-pack', requireAuth, requireAdmin, ...typedRoute({ params: idParam }, async (req, res) => {
   try {
-    const orgId = String(req.params.id);
+    const { id: orgId } = req.validated.params;
     const qty = parseInt(req.body.amount, 10);
     if (!qty || qty < 1) {
       res.status(400).json({ error: 'Nombre de crédits requis (amount)' });
@@ -187,6 +188,6 @@ router.post('/organizations/:id/credit-pack', requireAuth, requireAdmin, validat
     logger.error('Erreur achat crédits', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 export default router;

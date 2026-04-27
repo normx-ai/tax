@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { requireAdmin } from '../middleware/requireAdmin';
-import { validate } from '../middleware/validate.middleware';
+import { typedRoute } from '../middleware/typed-route';
 import {
   createManualInvoiceBody,
   updateInvoiceStatusBody,
@@ -41,9 +41,9 @@ router.get('/', requireAuth, async (req: AuthRequest, res: Response) => {
 /**
  * GET /api/invoices/:invoiceId — Détail d'une facture
  */
-router.get('/:invoiceId', requireAuth, validate({ params: invoiceIdParam }), async (req: AuthRequest, res: Response) => {
+router.get('/:invoiceId', requireAuth, ...typedRoute({ params: invoiceIdParam }, async (req, res) => {
   try {
-    const invoice = await invoiceService.getInvoiceById(req.params.invoiceId as string, req.userId!);
+    const invoice = await invoiceService.getInvoiceById(req.validated.params.invoiceId, req.userId!);
     res.json(invoice);
   } catch (err) {
     const msg = err instanceof Error ? err.message : 'Erreur serveur';
@@ -51,14 +51,14 @@ router.get('/:invoiceId', requireAuth, validate({ params: invoiceIdParam }), asy
     if (msg.includes('refusé')) { res.status(403).json({ error: msg }); return; }
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 /**
  * GET /api/invoices/:invoiceId/pdf — Télécharger le PDF
  */
-router.get('/:invoiceId/pdf', requireAuth, validate({ params: invoiceIdParam }), async (req: AuthRequest, res: Response) => {
+router.get('/:invoiceId/pdf', requireAuth, ...typedRoute({ params: invoiceIdParam }, async (req, res) => {
   try {
-    const invoice = await invoiceService.getInvoiceById(req.params.invoiceId as string, req.userId!);
+    const invoice = await invoiceService.getInvoiceById(req.validated.params.invoiceId, req.userId!);
 
     // Générer le PDF à la volée s'il n'existe pas
     let pdfPath = invoice.pdfPath;
@@ -92,7 +92,7 @@ router.get('/:invoiceId/pdf', requireAuth, validate({ params: invoiceIdParam }),
     logger.error('Erreur téléchargement PDF', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 // ============================================================
 // ROUTES ADMIN
@@ -115,9 +115,9 @@ router.get('/admin/all', requireAuth, requireAdmin, async (req: AuthRequest, res
 /**
  * POST /api/invoices/admin/create — Créer une facture manuelle (admin)
  */
-router.post('/admin/create', requireAuth, requireAdmin, validate({ body: createManualInvoiceBody }), async (req: AuthRequest, res: Response) => {
+router.post('/admin/create', requireAuth, requireAdmin, ...typedRoute({ body: createManualInvoiceBody }, async (req, res) => {
   try {
-    const { periodStart, periodEnd, ...rest } = req.body;
+    const { periodStart, periodEnd, ...rest } = req.validated.body;
     const invoice = await invoiceService.createInvoice({
       type: 'MANUAL',
       ...rest,
@@ -161,14 +161,16 @@ router.post('/admin/create', requireAuth, requireAdmin, validate({ body: createM
     logger.error('Erreur création facture manuelle', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 /**
  * PATCH /api/invoices/admin/:invoiceId/status — Changer le statut (admin)
  */
-router.patch('/admin/:invoiceId/status', requireAuth, requireAdmin, validate({ params: invoiceIdParam, body: updateInvoiceStatusBody }), async (req: AuthRequest, res: Response) => {
+router.patch('/admin/:invoiceId/status', requireAuth, requireAdmin, ...typedRoute({ params: invoiceIdParam, body: updateInvoiceStatusBody }, async (req, res) => {
   try {
-    const invoice = await invoiceService.updateInvoiceStatus(req.params.invoiceId as string, req.body.status);
+    const { invoiceId } = req.validated.params;
+    const { status } = req.validated.body;
+    const invoice = await invoiceService.updateInvoiceStatus(invoiceId, status);
 
     AuditService.log({
       actorId: req.userId!,
@@ -177,22 +179,22 @@ router.patch('/admin/:invoiceId/status', requireAuth, requireAdmin, validate({ p
       entityType: 'Invoice',
       entityId: invoice.id,
       ipAddress: getClientIp(req),
-      changes: { status: req.body.status },
+      changes: { status },
     });
 
-    res.json({ message: `Facture ${invoice.invoiceNumber} → ${req.body.status}`, invoice });
+    res.json({ message: `Facture ${invoice.invoiceNumber} → ${status}`, invoice });
   } catch (err) {
     logger.error('Erreur mise à jour statut facture', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 /**
  * POST /api/invoices/admin/:invoiceId/send — Envoyer la facture par email (admin)
  */
-router.post('/admin/:invoiceId/send', requireAuth, requireAdmin, validate({ params: invoiceIdParam }), async (req: AuthRequest, res: Response) => {
+router.post('/admin/:invoiceId/send', requireAuth, requireAdmin, ...typedRoute({ params: invoiceIdParam }, async (req, res) => {
   try {
-    const invoice = await invoiceService.getInvoiceById(req.params.invoiceId as string);
+    const invoice = await invoiceService.getInvoiceById(req.validated.params.invoiceId);
 
     // Générer le PDF
     const pdfPath = await generateInvoicePdf({
@@ -244,14 +246,14 @@ router.post('/admin/:invoiceId/send', requireAuth, requireAdmin, validate({ para
     logger.error('Erreur envoi facture', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 /**
  * DELETE /api/invoices/admin/:invoiceId — Annuler une facture (admin)
  */
-router.delete('/admin/:invoiceId', requireAuth, requireAdmin, validate({ params: invoiceIdParam }), async (req: AuthRequest, res: Response) => {
+router.delete('/admin/:invoiceId', requireAuth, requireAdmin, ...typedRoute({ params: invoiceIdParam }, async (req, res) => {
   try {
-    const invoice = await invoiceService.cancelInvoice(req.params.invoiceId as string);
+    const invoice = await invoiceService.cancelInvoice(req.validated.params.invoiceId);
 
     AuditService.log({
       actorId: req.userId!,
@@ -268,6 +270,6 @@ router.delete('/admin/:invoiceId', requireAuth, requireAdmin, validate({ params:
     logger.error('Erreur annulation facture', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 export default router;

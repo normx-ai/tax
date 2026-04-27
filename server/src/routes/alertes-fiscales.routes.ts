@@ -2,7 +2,6 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireAdmin } from '../middleware/orgRole.middleware';
-import { validate } from '../middleware/validate.middleware';
 import { listAlertesQuery } from '../schemas/alertes-fiscales.schema';
 import { typedRoute } from '../middleware/typed-route';
 import * as alertesService from '../services/alertes-fiscales.service';

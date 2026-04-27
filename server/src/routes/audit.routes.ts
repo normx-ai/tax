@@ -1,13 +1,11 @@
-import { Router, Response } from 'express';
-import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
+import { Router } from 'express';
+import { requireAuth } from '../middleware/keycloak-auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireOwner, requireAdmin } from '../middleware/orgRole.middleware';
-import { validate } from '../middleware/validate.middleware';
 import { typedRoute } from '../middleware/typed-route';
 import { orgAuditQuery, userAuditQuery, userAuditParams, entityAuditParams, searchAuditQuery, statsAuditQuery, cleanupAuditBody } from '../schemas/audit.schema';
 import { AuditService } from '../services/audit.service';
 import { getClientIp } from '../utils/ip';
-import { asyncHandler } from '../middleware/asyncHandler';
 
 const router = Router();
 
@@ -187,8 +185,8 @@ router.get('/stats', requireAuth, resolveTenant, requireOrg, requireAdmin, ...ty
  *       200:
  *         description: Résultat du nettoyage
  */
-router.post('/cleanup', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: cleanupAuditBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { olderThanDays } = req.body;
+router.post('/cleanup', requireAuth, resolveTenant, requireOrg, requireOwner, ...typedRoute({ body: cleanupAuditBody }, async (req, res) => {
+  const { olderThanDays } = req.validated.body;
   const result = await AuditService.gdprCleanup(req.orgId!, olderThanDays);
   AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'DATA_EXPORTED', entityType: 'AuditLog', entityId: req.orgId!, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { type: 'gdpr_cleanup', deleted: result.deleted } });
   res.json(result);

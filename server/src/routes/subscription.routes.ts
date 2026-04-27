@@ -2,7 +2,7 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireOwner } from '../middleware/orgRole.middleware';
-import { validate } from '../middleware/validate.middleware';
+import { typedRoute } from '../middleware/typed-route';
 import { activateBody, upgradeBody } from '../schemas/subscription.schema';
 import * as subscriptionService from '../services/subscription.service';
 import { AuditService } from '../services/audit.service';
@@ -63,9 +63,9 @@ router.get('/', requireAuth, resolveTenant, requireOrg, async (req: AuthRequest,
  *         description: Plan invalide
  */
 // POST /api/subscription/activate — Activation manuelle après paiement (OWNER only)
-router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: activateBody }), async (req: AuthRequest, res: Response) => {
+router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, ...typedRoute({ body: activateBody }, async (req, res) => {
   try {
-    const { plan } = req.body;
+    const { plan } = req.validated.body;
 
     const updated = await subscriptionService.activateSubscription(req.orgId!, plan);
 
@@ -90,7 +90,7 @@ router.post('/activate', requireAuth, resolveTenant, requireOrg, requireOwner, v
     if (msg.includes('introuvable') || msg.includes('gratuit')) { res.status(400).json({ error: msg }); return; }
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 /**
  * @swagger
@@ -161,10 +161,11 @@ router.post('/renew', requireAuth, resolveTenant, requireOrg, requireOwner, asyn
  *         description: Abonnement introuvable
  */
 // POST /api/subscription/upgrade — Changer de plan
-router.post('/upgrade', requireAuth, resolveTenant, requireOrg, requireOwner, validate({ body: upgradeBody }), async (req: AuthRequest, res: Response) => {
+router.post('/upgrade', requireAuth, resolveTenant, requireOrg, requireOwner, ...typedRoute({ body: upgradeBody }, async (req, res) => {
   try {
-    const updated = await subscriptionService.upgradePlan(req.orgId!, req.body.plan);
-    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SUBSCRIPTION_UPDATED', entityType: 'Subscription', entityId: updated.id, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { newPlan: req.body.plan } });
+    const { plan } = req.validated.body;
+    const updated = await subscriptionService.upgradePlan(req.orgId!, plan);
+    AuditService.log({ actorId: req.userId!, actorEmail: req.userEmail!, action: 'SUBSCRIPTION_UPDATED', entityType: 'Subscription', entityId: updated.id, organizationId: req.orgId!, ipAddress: getClientIp(req), changes: { newPlan: plan } });
     res.json(updated);
   } catch (err) {
     const msg = err instanceof Error ? err.message : 'Erreur serveur';
@@ -172,7 +173,7 @@ router.post('/upgrade', requireAuth, resolveTenant, requireOrg, requireOwner, va
     if (msg.includes('supérieur') || msg.includes('déjà')) { res.status(400).json({ error: msg }); return; }
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});
+}));
 
 /**
  * @swagger

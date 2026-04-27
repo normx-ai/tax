@@ -1,7 +1,6 @@
 import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { requireAdmin } from '../middleware/orgRole.middleware';
-import { validate } from '../middleware/validate.middleware';
 import { typedRoute } from '../middleware/typed-route';
 import { asyncHandler } from '../middleware/asyncHandler';
 import {
@@ -105,8 +104,8 @@ router.get('/:id', requireAuth, asyncHandler(async (req: AuthRequest, res: Respo
  *     tags: [Obligations]
  *     summary: Creer une obligation (admin uniquement)
  */
-router.post('/', requireAuth, requireAdmin, validate({ body: createObligation }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const created = await service.createObligation(req.body);
+router.post('/', requireAuth, requireAdmin, ...typedRoute({ body: createObligation }, async (req, res) => {
+  const created = await service.createObligation(req.validated.body);
   AuditService.log({
     actorId: req.userId!, actorEmail: req.userEmail!,
     action: 'OBLIGATION_CREATED', entityType: 'Obligation', entityId: created.id,
@@ -123,13 +122,13 @@ router.post('/', requireAuth, requireAdmin, validate({ body: createObligation })
  *     tags: [Obligations]
  *     summary: Modifier une obligation (admin uniquement)
  */
-router.patch('/:id', requireAuth, requireAdmin, validate({ body: updateObligation }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const updated = await service.updateObligation(String(req.params.id), req.body);
+router.patch('/:id', requireAuth, requireAdmin, ...typedRoute({ body: updateObligation }, async (req, res) => {
+  const updated = await service.updateObligation(String(req.params.id), req.validated.body);
   AuditService.log({
     actorId: req.userId!, actorEmail: req.userEmail!,
     action: 'OBLIGATION_UPDATED', entityType: 'Obligation', entityId: updated.id,
     organizationId: req.orgId, ipAddress: getClientIp(req),
-    changes: { fields: Object.keys(req.body) },
+    changes: { fields: Object.keys(req.validated.body) },
   });
   res.json(updated);
 }));
@@ -170,14 +169,15 @@ router.post('/:id/activer', requireAuth, requireAdmin, asyncHandler(async (req: 
  *     tags: [Obligations]
  *     summary: Dupliquer un catalogue d'une version vers une autre (loi de finances)
  */
-router.post('/cloner-version', requireAuth, requireAdmin, validate({ body: cloneVersionBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const result = await service.cloneVersion(req.body.fromVersion, req.body.toVersion);
+router.post('/cloner-version', requireAuth, requireAdmin, ...typedRoute({ body: cloneVersionBody }, async (req, res) => {
+  const { fromVersion, toVersion } = req.validated.body;
+  const result = await service.cloneVersion(fromVersion, toVersion);
   if (result.cloned > 0) {
     AuditService.log({
       actorId: req.userId!, actorEmail: req.userEmail!,
       action: 'OBLIGATIONS_VERSION_CLONED', entityType: 'Obligation', entityId: 'catalog',
       organizationId: req.orgId, ipAddress: getClientIp(req),
-      changes: { fromVersion: req.body.fromVersion, toVersion: req.body.toVersion, cloned: result.cloned },
+      changes: { fromVersion, toVersion, cloned: result.cloned },
     });
   }
   res.json(result);

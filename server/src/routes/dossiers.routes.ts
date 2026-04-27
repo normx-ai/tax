@@ -1,7 +1,6 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant, requireOrg } from "../middleware/tenant.middleware";
-import { validate } from "../middleware/validate.middleware";
 import { typedRoute } from "../middleware/typed-route";
 import { asyncHandler } from "../middleware/asyncHandler";
 import { updateDossierBody, listDossiersQuery, recalculerDossiersBody } from "../schemas/dossiers.schema";
@@ -35,26 +34,29 @@ router.get("/:id", asyncHandler(async (req: AuthRequest, res: Response) => {
   res.json(d);
 }));
 
-router.patch("/:id", validate({ body: updateDossierBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
+router.patch("/:id", ...typedRoute({ body: updateDossierBody }, async (req, res) => {
   const orgId = req.orgId!;
-  const body = req.body;
+  const body = req.validated.body;
   const updated = await service.updateDossier(orgId, String(req.params.id), {
-    ...body,
-    dateDepot: body.dateDepot ? new Date(body.dateDepot) : body.dateDepot,
-    datePaiement: body.datePaiement ? new Date(body.datePaiement) : body.datePaiement,
+    statut: body.statut,
+    montantCalcule: body.montantCalcule,
+    baseImposable: body.baseImposable,
+    notes: body.notes,
+    dateDepot: typeof body.dateDepot === "string" ? new Date(body.dateDepot) : body.dateDepot,
+    datePaiement: typeof body.datePaiement === "string" ? new Date(body.datePaiement) : body.datePaiement,
   });
   AuditService.log({
     actorId: req.userId!, actorEmail: req.userEmail!,
     action: 'DOSSIER_UPDATED', entityType: 'Dossier', entityId: updated.id,
     organizationId: orgId, ipAddress: getClientIp(req),
-    changes: { fields: Object.keys(req.body), statut: updated.statut },
+    changes: { fields: Object.keys(body), statut: updated.statut },
   });
   res.json(updated);
 }));
 
-router.post("/recalculer", validate({ body: recalculerDossiersBody }), asyncHandler(async (req: AuthRequest, res: Response) => {
+router.post("/recalculer", ...typedRoute({ body: recalculerDossiersBody }, async (req, res) => {
   const orgId = req.orgId!;
-  const { entiteId, anneeFiscale } = req.body as { entiteId?: string; anneeFiscale?: number };
+  const { entiteId, anneeFiscale } = req.validated.body;
   if (entiteId) {
     const r = await service.recalculerDossiers(entiteId, anneeFiscale);
     AuditService.log({

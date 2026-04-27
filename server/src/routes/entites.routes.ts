@@ -1,7 +1,6 @@
 import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant, requireOrg } from "../middleware/tenant.middleware";
-import { validate } from "../middleware/validate.middleware";
 import { typedRoute } from "../middleware/typed-route";
 import { asyncHandler } from "../middleware/asyncHandler";
 import { createEntite, updateEntite, listEntitesQuery } from "../schemas/entites.schema";
@@ -39,9 +38,9 @@ router.get("/:id", asyncHandler(async (req: AuthRequest, res: Response) => {
   res.json(e);
 }));
 
-router.post("/", validate({ body: createEntite }), asyncHandler(async (req: AuthRequest, res: Response) => {
+router.post("/", ...typedRoute({ body: createEntite }, async (req, res) => {
   const orgId = req.orgId!;
-  const created = await service.createEntite(orgId, req.body);
+  const created = await service.createEntite(orgId, req.validated.body);
   AuditService.log({
     actorId: req.userId!, actorEmail: req.userEmail!,
     action: 'ENTITE_CREATED', entityType: 'Entite', entityId: created.id,
@@ -51,14 +50,14 @@ router.post("/", validate({ body: createEntite }), asyncHandler(async (req: Auth
   res.status(201).json(created);
 }));
 
-router.patch("/:id", validate({ body: updateEntite }), asyncHandler(async (req: AuthRequest, res: Response) => {
+router.patch("/:id", ...typedRoute({ body: updateEntite }, async (req, res) => {
   const orgId = req.orgId!;
-  const updated = await service.updateEntite(orgId, String(req.params.id), req.body);
+  const updated = await service.updateEntite(orgId, String(req.params.id), req.validated.body);
   AuditService.log({
     actorId: req.userId!, actorEmail: req.userEmail!,
     action: 'ENTITE_UPDATED', entityType: 'Entite', entityId: updated.id,
     organizationId: orgId, ipAddress: getClientIp(req),
-    changes: { fields: Object.keys(req.body) },
+    changes: { fields: Object.keys(req.validated.body) },
   });
   res.json(updated);
 }));

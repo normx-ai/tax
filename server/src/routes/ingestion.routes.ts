@@ -4,9 +4,9 @@
 import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { requireAdmin } from '../middleware/requireAdmin';
-import { validate } from '../middleware/validate.middleware';
+import { typedRoute } from '../middleware/typed-route';
 import { ingestArticlesBody, ingestSourcesBody } from '../schemas/ingestion.schema';
-import { ingestArticles, ingestFromSource, type IngestionResult } from '../services/rag/ingestion.service';
+import { ingestArticles, ingestFromSource, type IngestionResult, type SourceFile } from '../services/rag/ingestion.service';
 import { createLogger } from '../utils/logger';
 import prisma from '../utils/prisma';
 
@@ -36,9 +36,9 @@ const router = Router();
  *       200:
  *         description: Résultat de l'ingestion
  */
-router.post('/articles', requireAuth, requireAdmin, validate({ body: ingestArticlesBody }), async (req: AuthRequest, res: Response) => {
+router.post('/articles', requireAuth, requireAdmin, ...typedRoute({ body: ingestArticlesBody }, async (req, res) => {
   try {
-    const { articles } = req.body;
+    const { articles } = req.validated.body;
 
     logger.info(`Ingestion demandée par ${req.userEmail} : ${articles.length} articles`);
 
@@ -54,7 +54,7 @@ router.post('/articles', requireAuth, requireAdmin, validate({ body: ingestArtic
     logger.error('Erreur ingestion articles:', err);
     res.status(500).json({ error: 'Erreur lors de l\'ingestion' });
   }
-});
+}));
 
 /**
  * @swagger
@@ -79,14 +79,14 @@ router.post('/articles', requireAuth, requireAdmin, validate({ body: ingestArtic
  *       200:
  *         description: Résultat de l'ingestion
  */
-router.post('/sources', requireAuth, requireAdmin, validate({ body: ingestSourcesBody }), async (req: AuthRequest, res: Response) => {
+router.post('/sources', requireAuth, requireAdmin, ...typedRoute({ body: ingestSourcesBody }, async (req, res) => {
   try {
-    const { sources } = req.body;
+    const { sources } = req.validated.body;
 
-    const totalArticles = sources.reduce((sum: number, s: { articles?: unknown[] }) => sum + (s.articles?.length || 0), 0);
+    const totalArticles = sources.reduce((sum: number, s) => sum + (s.articles?.length || 0), 0);
     logger.info(`Ingestion sources demandée par ${req.userEmail} : ${sources.length} fichiers, ${totalArticles} articles`);
 
-    const result: IngestionResult = await ingestFromSource(sources);
+    const result: IngestionResult = await ingestFromSource(sources as unknown as SourceFile[]);
 
     logger.info(`Ingestion sources terminée : ${result.inserted} insérés, ${result.updated} mis à jour, ${result.errors} erreurs`);
 
@@ -98,7 +98,7 @@ router.post('/sources', requireAuth, requireAdmin, validate({ body: ingestSource
     logger.error('Erreur ingestion sources:', err);
     res.status(500).json({ error: 'Erreur lors de l\'ingestion' });
   }
-});
+}));
 
 /**
  * @swagger

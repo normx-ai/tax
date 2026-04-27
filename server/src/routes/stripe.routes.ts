@@ -1,9 +1,9 @@
 import { Router, Request, Response } from "express";
 import { z } from "zod";
-import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
+import { requireAuth } from "../middleware/keycloak-auth";
 import { resolveTenant, requireOrg } from "../middleware/tenant.middleware";
 import { requireOwner } from "../middleware/orgRole.middleware";
-import { validate } from "../middleware/validate.middleware";
+import { typedRoute } from "../middleware/typed-route";
 import { asyncHandler } from "../middleware/asyncHandler";
 import {
   createCheckoutSession,
@@ -28,14 +28,13 @@ router.post(
   resolveTenant,
   requireOrg,
   requireOwner,
-  validate({ body: checkoutBody }),
-  asyncHandler(async (req: AuthRequest, res: Response) => {
+  ...typedRoute({ body: checkoutBody }, async (req, res) => {
     if (!isStripeEnabled()) {
       res.status(503).json({ error: "Paiements par carte indisponibles, contactez le support." });
       return;
     }
 
-    const { plan, period } = req.body as z.infer<typeof checkoutBody>;
+    const { plan, period } = req.validated.body;
     const result = await createCheckoutSession({
       orgId: req.orgId!,
       plan,
