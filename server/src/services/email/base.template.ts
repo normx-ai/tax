@@ -131,6 +131,12 @@ export interface BaseLayoutOptions {
    * Utile pour les communications produit ("...car vous êtes utilisateur ou abonné aux mises à jour produit X").
    */
   subscriptionContext?: string;
+  /**
+   * Label personnalisé du lien de désinscription. Default "Se désabonner".
+   * Utile sur les emails de win-back/re-engagement où on veut afficher
+   * "Se désabonner définitivement" pour signaler l'intention claire.
+   */
+  unsubscribeLabel?: string;
 }
 
 /**
@@ -153,6 +159,7 @@ export function renderBaseLayout(opts: BaseLayoutOptions): string {
     preferencesUrl,
     newsletterName,
     subscriptionContext,
+    unsubscribeLabel,
   } = opts;
   const productCfg = resolveProduct(product);
   const tag = headerTag ?? productCfg.defaultTag;
@@ -213,7 +220,7 @@ export function renderBaseLayout(opts: BaseLayoutOptions): string {
           ${heading ? headingSection(heading, headingAlign, subheading) : ""}
           ${contentSection(content)}
           ${footerVariant === "newsletter"
-            ? newsletterFooterSection(productCfg, { unsubscribeUrl, preferencesUrl, newsletterName, subscriptionContext })
+            ? newsletterFooterSection(productCfg, { unsubscribeUrl, preferencesUrl, newsletterName, subscriptionContext, unsubscribeLabel })
             : footerVariant === "marketing"
               ? marketingFooterSection(productCfg, unsubscribeUrl)
               : footerSection(productCfg, unsubscribeUrl)}
@@ -335,6 +342,7 @@ function newsletterFooterSection(
     preferencesUrl?: string;
     newsletterName?: string;
     subscriptionContext?: string;
+    unsubscribeLabel?: string;
   },
 ): string {
   const privacyUrl = `${productCfg.baseUrl}/confidentialite`;
@@ -343,8 +351,9 @@ function newsletterFooterSection(
   const subscriptionLine =
     opts.subscriptionContext ??
     `Vous recevez cet email car vous êtes abonné à la ${newsletterName}.`;
+  const unsubLabel = opts.unsubscribeLabel ?? "Se désabonner";
   const unsub = opts.unsubscribeUrl
-    ? `<a href="${escapeAttr(opts.unsubscribeUrl)}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Se désabonner</a>`
+    ? `<a href="${escapeAttr(opts.unsubscribeUrl)}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">${escapeHtml(unsubLabel)}</a>`
     : "";
   const prefs = opts.preferencesUrl
     ? `<a href="${escapeAttr(opts.preferencesUrl)}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Préférences</a>`
@@ -890,6 +899,104 @@ export function tipCard(args: { eyebrow: string; title?: string; content: string
       <p style="margin: ${args.title ? "0" : "4px 0 0 0"}; color: ${args.title ? BRAND.navySubtle : BRAND.white}; font-family: ${FONT_STACK}; font-size: ${args.title ? "13px" : "14px"}; line-height: 22px;">
         ${args.content}
       </p>
+    </td>
+  </tr>
+</table>`;
+}
+
+// =============================================================================
+// Helpers liste / récap (re-engagement, recap d'actions, changelog)
+// =============================================================================
+
+/**
+ * Liste de lignes "icône + titre + description". Chaque item a son emoji
+ * propre dans un carré or pâle 36×36 arrondi. Séparateurs fins or pâle
+ * entre items. Utilisé pour les changelogs / résumés d'évolutions.
+ */
+export function iconList(items: Array<{ emoji: string; title: string; description: string }>): string {
+  const rows = items
+    .map((item, i) => {
+      const isLast = i === items.length - 1;
+      const borderBottom = isLast ? "" : `border-bottom: 1px solid ${BRAND.goldBorder};`;
+      return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="padding: 16px 0; ${borderBottom}">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td width="44" valign="top" style="padding-right: 14px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="36" height="36" class="nx-pale-bg" style="width: 36px; height: 36px; background-color: ${BRAND.goldPale}; border-radius: 8px;">
+              <tr>
+                <td align="center" valign="middle" style="font-family: ${FONT_STACK}; font-size: 18px; mso-line-height-rule: exactly; line-height: 36px;">
+                  ${item.emoji}
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <p style="margin: 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 600; line-height: 20px;">
+              ${escapeHtml(item.title)}
+            </p>
+            <p style="margin: 4px 0 0 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;" class="nx-text-body">
+              ${escapeHtml(item.description)}
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>`;
+    })
+    .join("");
+  return rows;
+}
+
+/**
+ * Carte "offre" — encadré or pâle dégradé avec bordure or 2px (plus
+ * prononcée que featuredCard 1px). Eyebrow + titre H2 + description +
+ * code optionnel (encadré dashed or sur fond blanc) + expiry.
+ *
+ * Utilisée pour les emails de win-back ("Cadeau de retrouvailles") et
+ * les promos personnalisées avec un poids visuel élevé.
+ */
+export function offerCard(args: {
+  eyebrow: string;
+  title: string;
+  description: string;
+  code?: string;
+  expiryNote?: string;
+}): string {
+  const codeBlock = args.code
+    ? `
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto; background-color: ${BRAND.white}; border: 1px dashed ${BRAND.gold}; border-radius: 8px;">
+          <tr>
+            <td style="padding: 10px 20px;">
+              <p style="margin: 0; color: ${BRAND.navy}; font-family: 'Courier New', Consolas, monospace; font-size: 18px; font-weight: 700; letter-spacing: 3px;">
+                ${escapeHtml(args.code)}
+              </p>
+            </td>
+          </tr>
+        </table>`
+    : "";
+  const expiry = args.expiryNote
+    ? `<p style="margin: 12px 0 0 0; color: ${BRAND.textMuted}; font-family: ${FONT_STACK}; font-size: 11px;">${args.expiryNote}</p>`
+    : "";
+
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="nx-pale-bg" style="background: linear-gradient(135deg, ${BRAND.goldPale} 0%, #FFF5D6 100%); background-color: ${BRAND.goldPale}; border: 2px solid ${BRAND.gold}; border-radius: 12px; margin: 0 0 24px 0;">
+  <tr>
+    <td align="center" style="padding: 28px 24px;">
+      <p style="margin: 0 0 8px 0; color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">
+        ${escapeHtml(args.eyebrow)}
+      </p>
+      <p style="margin: 0 0 4px 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 24px; font-weight: 700; line-height: 30px; letter-spacing: -0.5px;">
+        ${escapeHtml(args.title)}
+      </p>
+      <p style="margin: 0 0 16px 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 14px; line-height: 22px;" class="nx-text-body">
+        ${escapeHtml(args.description)}
+      </p>
+      ${codeBlock}
+      ${expiry}
     </td>
   </tr>
 </table>`;

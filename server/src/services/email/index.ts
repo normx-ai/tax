@@ -18,9 +18,11 @@ export {
   featuredCard,
   getProductDisplayName,
   highlightBox,
+  iconList,
   infoBox,
   newsItem,
   numberedSteps,
+  offerCard,
   paragraph,
   pillBadge,
   promoCode,
@@ -45,3 +47,4 @@ export type { OtpVars } from "./templates/otp.template";
 export type { NewsletterVars, NewsletterArticle, NewsletterStat } from "./templates/newsletter.template";
 export type { PromoVars } from "./templates/promo.template";
 export type { ProductUpdateVars } from "./templates/product-update.template";
+export type { ReEngagementVars, ReEngagementUpdate } from "./templates/re-engagement.template";

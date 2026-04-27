@@ -31,6 +31,7 @@ import { renderOtp, type OtpVars } from "./templates/otp.template";
 import { renderNewsletter, type NewsletterVars } from "./templates/newsletter.template";
 import { renderPromo, type PromoVars } from "./templates/promo.template";
 import { renderProductUpdate, type ProductUpdateVars } from "./templates/product-update.template";
+import { renderReEngagement, type ReEngagementVars } from "./templates/re-engagement.template";
 
 /**
  * Registry typée : mappe chaque nom de template à son type de variables.
@@ -48,6 +49,7 @@ export interface TemplateRegistry {
   newsletter: NewsletterVars;
   promo: PromoVars;
   "product-update": ProductUpdateVars;
+  "re-engagement": ReEngagementVars;
 }
 
 export type TemplateName = keyof TemplateRegistry;
@@ -86,6 +88,8 @@ export function renderEmail<K extends TemplateName>(
       return renderPromo(vars as PromoVars);
     case "product-update":
       return renderProductUpdate(vars as ProductUpdateVars);
+    case "re-engagement":
+      return renderReEngagement(vars as ReEngagementVars);
     default: {
       // Branche d'exhaustivité : TypeScript erreur si un template manque
       const _exhaustive: never = name;
