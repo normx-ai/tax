@@ -41,7 +41,8 @@ const PREDEFINED_ALERTES = [
   // IS - Impôt sur les sociétés
   { type: 'TAUX', categorie: 'IS', titre: 'Taux IS droit commun', description: 'Taux de l\'impôt sur les sociétés applicable aux bénéfices des personnes morales (Art. 86A).', valeur: '28', unite: '%', articleNumero: '86A' },
   { type: 'TAUX', categorie: 'IS', titre: 'Minimum de perception IS', description: 'Minimum de perception : 1% des produits (exploitation + financiers + HAO) - Art. 86C.', valeur: '1', unite: '%', articleNumero: '86C' },
-  { type: 'ECHEANCE', categorie: 'IS', titre: 'Déclaration IS - délai', description: 'Déclaration des résultats dans les 4 mois suivant la clôture de l\'exercice.', valeur: '4', unite: 'mois', articleNumero: '35' },
+  { type: 'ECHEANCE', categorie: 'IS', titre: 'Déclaration IS annuelle + dépôt des états financiers', description: 'Déclaration des résultats dans les 4 mois suivant la clôture de l\'exercice (Art. 86-F). Combiné à l\'Art. 461 bis (15 du mois), pour un exercice clos au 31/12 l\'échéance est le 15 mai. Aucune date au 30 du mois n\'est valide.', valeur: '15', unite: 'mai', periodicite: 'annuel', articleNumero: '86F' },
+  { type: 'ECHEANCE', categorie: 'IS', titre: 'Solde de liquidation IS', description: 'Paiement du solde de l\'IS dès la remise de la déclaration des bénéfices (Art. 86-G). Pour exercice 31/12, échéance le 15 mai.', valeur: '15', unite: 'mai', periodicite: 'annuel', articleNumero: '86G' },
   { type: 'ECHEANCE', categorie: 'IS', titre: 'Acomptes minimum de perception IS', description: 'Le minimum de perception est versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre (Art. 86C).', valeur: '4', unite: 'trimestres', periodicite: 'trimestriel', articleNumero: '86C' },
 
   // IBA
@@ -49,6 +50,8 @@ const PREDEFINED_ALERTES = [
   { type: 'SEUIL', categorie: 'IBA', titre: 'Seuil régime réel IBA', description: 'Chiffre d\'affaires à partir duquel le régime réel est obligatoire.', valeur: '200.000.000', unite: 'FCFA', articleNumero: '92B' },
   { type: 'SEUIL', categorie: 'IBA', titre: 'Seuil régime simplifié IBA', description: 'Chiffre d\'affaires jusqu\'auquel le régime simplifié est applicable.', valeur: '50.000.000', unite: 'FCFA', articleNumero: '92C' },
   { type: 'TAUX', categorie: 'IBA', titre: 'Base forfaitaire non-résidents', description: 'Application d\'un pourcentage forfaitaire du chiffre d\'affaires pour les personnes morales étrangères.', valeur: '22', unite: '%', articleNumero: '92A' },
+  { type: 'ECHEANCE', categorie: 'IBA', titre: 'Déclaration IBA annuelle + dépôt des états financiers', description: 'Mêmes dispositions que l\'IS (Art. 95 §6) : déclaration dans les 4 mois après clôture, ramenée au 15 du mois par Art. 461 bis. Pour exercice 31/12, échéance le 15 mai. Aucune date au 30 du mois n\'est valide.', valeur: '15', unite: 'mai', periodicite: 'annuel', articleNumero: '95' },
+  { type: 'ECHEANCE', categorie: 'IBA', titre: 'Acomptes minimum de perception IBA', description: 'Le minimum de perception IBA est versé en 4 acomptes trimestriels : 15 mars, 15 juin, 15 septembre, 15 décembre (Art. 95 §4 et §6).', valeur: '4', unite: 'trimestres', periodicite: 'trimestriel', articleNumero: '95' },
 
   // ITS — Barème Art. 116-G CGI 2026
   { type: 'TAUX', categorie: 'ITS', titre: 'Barème ITS tranche 1', description: 'Revenus de 0 à 615.000 FCFA : forfait 1.200 FCFA.', valeur: '1200', unite: 'FCFA', articleNumero: '116-G' },
@@ -106,13 +109,13 @@ const PREDEFINED_ALERTES = [
   { type: 'SEUIL', categorie: 'PRIX_TRANSFERT', titre: 'Seuil documentation prix de transfert', description: 'Seuil de chiffre d\'affaires au-delà duquel la documentation est obligatoire.', valeur: '500.000.000', unite: 'FCFA', articleNumero: '36' },
 
   // Patente
-  { type: 'ECHEANCE', categorie: 'PATENTE', titre: 'Paiement patente', description: 'Paiement annuel de la contribution des patentes.', periodicite: 'annuel', articleNumero: 'IL-1' },
+  { type: 'ECHEANCE', categorie: 'PATENTE', titre: 'Paiement patente', description: 'Paiement annuel de la contribution des patentes — entre le 1er et le 20 avril (Art. 310 + Art. 461 bis).', valeur: '20', unite: 'avril', periodicite: 'annuel', articleNumero: '310' },
   { type: 'OBLIGATION', categorie: 'PATENTE', titre: 'Déclaration patente', description: 'Toute personne exerçant un commerce, une industrie ou une profession doit être inscrite au rôle des patentes.', articleNumero: 'IL-2' },
 
   // Foncier
-  { type: 'ECHEANCE', categorie: 'FONCIER_BATI', titre: 'Paiement foncier bâti', description: 'Paiement annuel de la contribution foncière sur les propriétés bâties.', periodicite: 'annuel', articleNumero: 'IL-10' },
+  { type: 'ECHEANCE', categorie: 'FONCIER_BATI', titre: 'Paiement foncier bâti (CFPB)', description: 'Paiement annuel de la contribution foncière sur les propriétés bâties — au 15 du mois par Art. 461 bis (jamais le 30).', periodicite: 'annuel', articleNumero: 'IL-10' },
   { type: 'TAUX', categorie: 'FONCIER_BATI', titre: 'Taux foncier bâti', description: 'Taux de la contribution foncière sur les propriétés bâties.', valeur: '15', unite: '%', articleNumero: 'IL-11' },
-  { type: 'ECHEANCE', categorie: 'FONCIER_NON_BATI', titre: 'Paiement foncier non bâti', description: 'Paiement annuel de la contribution foncière sur les propriétés non bâties.', periodicite: 'annuel', articleNumero: 'IL-20' },
+  { type: 'ECHEANCE', categorie: 'FONCIER_NON_BATI', titre: 'Paiement foncier non bâti (CFPNB)', description: 'Paiement annuel de la contribution foncière sur les propriétés non bâties — au 15 du mois par Art. 461 bis (jamais le 30).', periodicite: 'annuel', articleNumero: 'IL-20' },
 
   // Minimum de perception
   { type: 'SEUIL', categorie: 'MINIMUM_PERCEPTION', titre: 'Minimum perception IS', description: 'Minimum de perception annuel pour l\'IS.', valeur: '1.000.000', unite: 'FCFA', articleNumero: '86A' },
