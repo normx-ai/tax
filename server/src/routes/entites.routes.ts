@@ -3,7 +3,7 @@ import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant, requireOrg } from "../middleware/tenant.middleware";
 import { validate } from "../middleware/validate.middleware";
 import { asyncHandler } from "../middleware/asyncHandler";
-import { createEntite, updateEntite, listEntitesQuery } from "../schemas/entites.schema";
+import { createEntite, updateEntite, listEntitesQuery, type ListEntitesQuery } from "../schemas/entites.schema";
 import * as service from "../services/entites.service";
 import { AuditService } from "../services/audit.service";
 import { getClientIp } from "../utils/ip";
@@ -15,13 +15,8 @@ router.use(requireAuth, resolveTenant, requireOrg);
 
 router.get("/", validate({ query: listEntitesQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const orgId = req.orgId!;
-  const result = await service.listEntites(orgId, {
-    secteurActivite: req.query.secteurActivite as never,
-    actif: req.query.actif as boolean | undefined,
-    search: req.query.search as string | undefined,
-    page: Number(req.query.page),
-    limit: Number(req.query.limit),
-  });
+  const query = req.validated!.query as ListEntitesQuery;
+  const result = await service.listEntites(orgId, query);
   res.json(result);
 }));
 

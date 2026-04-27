@@ -3,7 +3,7 @@ import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant, requireOrg } from "../middleware/tenant.middleware";
 import { validate } from "../middleware/validate.middleware";
 import { asyncHandler } from "../middleware/asyncHandler";
-import { updateDossierBody, listDossiersQuery, recalculerDossiersBody } from "../schemas/dossiers.schema";
+import { updateDossierBody, listDossiersQuery, recalculerDossiersBody, type ListDossiersQuery } from "../schemas/dossiers.schema";
 import * as service from "../services/dossiers.service";
 import { AuditService } from "../services/audit.service";
 import { getClientIp } from "../utils/ip";
@@ -14,15 +14,8 @@ router.use(requireAuth, resolveTenant, requireOrg);
 
 router.get("/", validate({ query: listDossiersQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const orgId = req.orgId!;
-  const result = await service.listDossiersByOrg(orgId, {
-    entiteId: req.query.entiteId as string | undefined,
-    statut: req.query.statut as never,
-    obligationCode: req.query.obligationCode as string | undefined,
-    dateMin: req.query.dateMin as Date | undefined,
-    dateMax: req.query.dateMax as Date | undefined,
-    page: Number(req.query.page),
-    limit: Number(req.query.limit),
-  });
+  const query = req.validated!.query as ListDossiersQuery;
+  const result = await service.listDossiersByOrg(orgId, query);
   res.json(result);
 }));
 

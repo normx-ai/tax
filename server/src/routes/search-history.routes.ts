@@ -5,6 +5,9 @@ import { asyncHandler } from "../middleware/asyncHandler";
 import { validate } from "../middleware/validate.middleware";
 import { searchHistoryQuery } from "../schemas/search-history.schema";
 import pool from "../db/pool";
+import type { z } from "zod";
+
+type SearchHistoryQuery = z.infer<typeof searchHistoryQuery>;
 
 const router = Router();
 
@@ -12,9 +15,8 @@ const router = Router();
 router.get("/", requireAuth, resolveTenant, validate({ query: searchHistoryQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const s = req.tenantSchema!;
   const userId = req.userId!;
-  const page = Math.max(1, Number(req.query.page) || 1);
-  const limit = Math.max(1, Math.min(100, Number(req.query.limit) || 20));
-  const offset = Math.max(0, (page - 1) * limit);
+  const { page, limit } = req.validated!.query as SearchHistoryQuery;
+  const offset = (page - 1) * limit;
 
   const [searches, countResult] = await Promise.all([
     pool.query(

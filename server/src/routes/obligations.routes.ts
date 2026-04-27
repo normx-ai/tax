@@ -8,6 +8,7 @@ import {
   updateObligation,
   listObligationsQuery,
   cloneVersionBody,
+  type ListObligationsQuery,
 } from '../schemas/obligations.schema';
 import * as service from '../services/obligations.service';
 import { AuditService } from '../services/audit.service';
@@ -25,15 +26,8 @@ const router = Router();
  *       - bearerAuth: []
  */
 router.get('/', requireAuth, validate({ query: listObligationsQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const result = await service.listObligations({
-    version: req.query.version as string | undefined,
-    categorie: req.query.categorie as never,
-    periodicite: req.query.periodicite as never,
-    actif: req.query.actif as boolean | undefined,
-    search: req.query.search as string | undefined,
-    page: Number(req.query.page),
-    limit: Number(req.query.limit),
-  });
+  const query = req.validated!.query as ListObligationsQuery;
+  const result = await service.listObligations(query);
   res.json(result);
 }));
 

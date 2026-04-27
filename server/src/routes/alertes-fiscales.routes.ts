@@ -4,6 +4,9 @@ import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireAdmin } from '../middleware/orgRole.middleware';
 import { validate } from '../middleware/validate.middleware';
 import { listAlertesQuery } from '../schemas/alertes-fiscales.schema';
+import type { z } from 'zod';
+
+type ListAlertesQuery = z.infer<typeof listAlertesQuery>;
 import * as alertesService from '../services/alertes-fiscales.service';
 import { asyncHandler } from '../middleware/asyncHandler';
 
@@ -39,12 +42,8 @@ const router = Router();
  *         description: Alertes fiscales paginées
  */
 router.get('/', requireAuth, validate({ query: listAlertesQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const result = await alertesService.getAllAlertes({
-    type: req.query.type ? String(req.query.type) : undefined,
-    categorie: req.query.categorie ? String(req.query.categorie) : undefined,
-    page: Number(req.query.page),
-    limit: Number(req.query.limit),
-  });
+  const query = req.validated!.query as ListAlertesQuery;
+  const result = await alertesService.getAllAlertes(query);
   res.json(result);
 }));
 

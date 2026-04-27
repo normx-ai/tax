@@ -4,6 +4,12 @@ import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireOwner, requireAdmin } from '../middleware/orgRole.middleware';
 import { validate } from '../middleware/validate.middleware';
 import { orgAuditQuery, userAuditQuery, userAuditParams, entityAuditParams, searchAuditQuery, statsAuditQuery, cleanupAuditBody } from '../schemas/audit.schema';
+import type { z } from 'zod';
+
+type OrgAuditQuery = z.infer<typeof orgAuditQuery>;
+type UserAuditQuery = z.infer<typeof userAuditQuery>;
+type SearchAuditQuery = z.infer<typeof searchAuditQuery>;
+type StatsAuditQuery = z.infer<typeof statsAuditQuery>;
 import { AuditService } from '../services/audit.service';
 import { getClientIp } from '../utils/ip';
 import { asyncHandler } from '../middleware/asyncHandler';
@@ -36,9 +42,7 @@ const router = Router();
  *         description: Logs d'audit paginés
  */
 router.get('/organization', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: orgAuditQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const page = Number(req.query.page);
-  const limit = Number(req.query.limit);
-  const action = req.query.action ? String(req.query.action) : undefined;
+  const { page, limit, action } = req.validated!.query as OrgAuditQuery;
   const result = await AuditService.getOrganizationAudit(req.orgId!, { page, limit, action });
   res.json(result);
 }));
@@ -63,8 +67,7 @@ router.get('/organization', requireAuth, resolveTenant, requireOrg, requireAdmin
  */
 router.get('/user/:userId', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ params: userAuditParams, query: userAuditQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
   const userId = String(req.params.userId);
-  const page = Number(req.query.page);
-  const limit = Number(req.query.limit);
+  const { page, limit } = req.validated!.query as UserAuditQuery;
   const result = await AuditService.getUserActions(userId, { page, limit });
   res.json(result);
 }));
@@ -143,15 +146,8 @@ router.get('/entity/:type/:id', requireAuth, resolveTenant, requireOrg, requireA
  *         description: Résultats de recherche paginés
  */
 router.get('/search', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: searchAuditQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const result = await AuditService.search(req.orgId!, {
-    action: req.query.action ? String(req.query.action) : undefined,
-    actorId: req.query.actorId ? String(req.query.actorId) : undefined,
-    entityType: req.query.entityType ? String(req.query.entityType) : undefined,
-    from: req.query.from ? String(req.query.from) : undefined,
-    to: req.query.to ? String(req.query.to) : undefined,
-    page: Number(req.query.page),
-    limit: Number(req.query.limit),
-  });
+  const query = req.validated!.query as SearchAuditQuery;
+  const result = await AuditService.search(req.orgId!, query);
   res.json(result);
 }));
 
@@ -173,7 +169,7 @@ router.get('/search', requireAuth, resolveTenant, requireOrg, requireAdmin, vali
  *         description: Statistiques d'audit
  */
 router.get('/stats', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: statsAuditQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const days = Number(req.query.days);
+  const { days } = req.validated!.query as StatsAuditQuery;
   const stats = await AuditService.getStats(req.orgId!, days);
   res.json(stats);
 }));
