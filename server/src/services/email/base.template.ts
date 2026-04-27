@@ -402,6 +402,70 @@ export function highlightBox(innerHtml: string): string {
 }
 
 /**
+ * Encadré informatif aux couleurs de marque (or pâle + bordure gauche or).
+ * Pendant "info" du warningBox ambre. Utilisé pour les confirmations
+ * d'action (accès maintenu jusqu'à X, opération réussie, etc.).
+ */
+export function infoBox(title: string, innerHtml: string): string {
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="nx-pale-bg" style="background-color: ${BRAND.goldPale}; border-left: 4px solid ${BRAND.gold}; border-radius: 8px; margin: 0 0 24px 0;">
+  <tr>
+    <td style="padding: 20px 24px;">
+      <p style="margin: 0 0 8px 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 600;">
+        ${title}
+      </p>
+      <p style="margin: 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;" class="nx-text-body">
+        ${innerHtml}
+      </p>
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Liste de définitions label/valeur sur fond gris doux. Chaque entrée
+ * affiche un libellé en petit gris au-dessus d'une valeur en navy gras,
+ * séparée de la suivante par un trait fin. Utilisée pour les récapitulatifs
+ * de paramètres (formule annulée, date, fin d'accès…).
+ */
+export function definitionList(items: Array<{ label: string; value: string }>): string {
+  const rows = items
+    .map((it, i) => {
+      const isFirst = i === 0;
+      const isLast = i === items.length - 1;
+      const padding = isFirst
+        ? "padding-bottom: 12px;"
+        : isLast
+          ? "padding-top: 12px;"
+          : "padding: 12px 0;";
+      const border = isLast ? "" : `border-bottom: 1px solid ${BRAND.border};`;
+      return `
+        <tr>
+          <td style="${padding} ${border}">
+            <p style="margin: 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 12px;" class="nx-text-body">
+              ${escapeHtml(it.label)}
+            </p>
+            <p style="margin: 4px 0 0 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 600;">
+              ${escapeHtml(it.value)}
+            </p>
+          </td>
+        </tr>`;
+    })
+    .join("");
+
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="nx-soft-bg" style="background-color: ${BRAND.bgSoft}; border-radius: 8px; margin: 0 0 24px 0;">
+  <tr>
+    <td style="padding: 20px 24px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        ${rows}
+      </table>
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
  * Encadré ambre d'avertissement (alerte sécurité, action requise modérée).
  * Même esthétique qu'une mention "warning" Tailwind : fond ambre clair,
  * bordure gauche or foncé, titre + corps explicatif.
