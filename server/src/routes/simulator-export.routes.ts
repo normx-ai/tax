@@ -82,14 +82,14 @@ router.post("/export-pdf", requireAuth, resolveTenant, async (req: AuthRequest, 
         totalLine.value,
         70, y + 32, { width: 410 }
       );
-      doc.font(FONT).fontSize(9).fillColor("rgba(203,213,225,1)").text(
+      doc.font(FONT).fontSize(9).fillColor("#cbd5e1").text(
         "FCFA",
         70, y + 50, { width: 410 }
       );
       // Badge "result" eventuel a droite (taux effectif, etc.)
       const resultLine = otherResults.find((l) => l.type === "result");
       if (resultLine) {
-        doc.font(FONT).fontSize(8).fillColor("rgba(203,213,225,1)").text(
+        doc.font(FONT).fontSize(8).fillColor("#cbd5e1").text(
           resultLine.label,
           340, y + 18, { width: 185, align: "right", characterSpacing: 0.4 }
         );
