@@ -11,14 +11,20 @@ export {
   ctaButtonPair,
   definitionList,
   detailsBox,
+  eyebrow,
   fallbackLink,
+  featuredCard,
   getProductDisplayName,
   highlightBox,
   infoBox,
+  newsItem,
   numberedSteps,
   paragraph,
   renderBaseLayout,
+  sectionTitle,
   softBox,
+  statsRow,
+  tipCard,
   warningBox,
   type Product,
 } from "./base.template";
@@ -31,3 +37,4 @@ export type { PaymentFailedVars } from "./templates/payment-failed.template";
 export type { SubscriptionCancelledVars } from "./templates/subscription-cancelled.template";
 export type { PasswordResetVars } from "./templates/password-reset.template";
 export type { OtpVars } from "./templates/otp.template";
+export type { NewsletterVars, NewsletterArticle, NewsletterStat } from "./templates/newsletter.template";

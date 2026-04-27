@@ -105,8 +105,8 @@ export interface BaseLayoutOptions {
    * - Style "outlined" (🔐 sur fond or pâle bordé or) : ajouter borderColor: "#D4A843"
    */
   heroIcon?: { symbol: string; bg: string; fg: string; borderColor?: string };
-  /** Titre H1. */
-  heading: string;
+  /** Titre H1. Optionnel : si omis, le content démarre directement après le header (newsletter / templates avec hero édito custom). */
+  heading?: string;
   /** Alignement du H1 (et du subheading le cas échéant). Default: left. */
   headingAlign?: "left" | "center";
   /** Sous-titre optionnel sous le H1, plus petit. */
@@ -115,6 +115,16 @@ export interface BaseLayoutOptions {
   content: string;
   /** Omis pour les transactionnels critiques (OTP, mot de passe, paiement). */
   unsubscribeUrl?: string;
+  /**
+   * "transactional" (default) : footer standard avec CGV / Confidentialité / Mentions légales.
+   * "newsletter" : mention "Vous recevez cet email car vous êtes abonné..." +
+   *   liens Se désinscrire / Préférences / Confidentialité (pas de CGV ni Mentions).
+   */
+  footerVariant?: "transactional" | "newsletter";
+  /** Lien préférences abonnements (uniquement footerVariant='newsletter'). */
+  preferencesUrl?: string;
+  /** Nom de la newsletter pour le texte du footer (ex: "newsletter NORMX Tax"). Default: dérivé du produit. */
+  newsletterName?: string;
 }
 
 /**
@@ -133,6 +143,9 @@ export function renderBaseLayout(opts: BaseLayoutOptions): string {
     subheading,
     content,
     unsubscribeUrl,
+    footerVariant = "transactional",
+    preferencesUrl,
+    newsletterName,
   } = opts;
   const productCfg = resolveProduct(product);
   const tag = headerTag ?? productCfg.defaultTag;
@@ -146,7 +159,7 @@ export function renderBaseLayout(opts: BaseLayoutOptions): string {
   <meta name="x-apple-disable-message-reformatting" />
   <meta name="color-scheme" content="light dark" />
   <meta name="supported-color-schemes" content="light dark" />
-  <title>${escapeHtml(heading)}</title>
+  <title>${escapeHtml(heading ?? preheader)}</title>
   <!--[if mso]>
   <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
   <![endif]-->
@@ -190,9 +203,11 @@ export function renderBaseLayout(opts: BaseLayoutOptions): string {
           ${headerSection(productCfg.suffix, tag)}
           ${heroIcon ? heroIconSection(heroIcon) : ""}
           ${badge ? badgeSection(badge) : ""}
-          ${headingSection(heading, headingAlign, subheading)}
+          ${heading ? headingSection(heading, headingAlign, subheading) : ""}
           ${contentSection(content)}
-          ${footerSection(productCfg, unsubscribeUrl)}
+          ${footerVariant === "newsletter"
+            ? newsletterFooterSection(productCfg, { unsubscribeUrl, preferencesUrl, newsletterName })
+            : footerSection(productCfg, unsubscribeUrl)}
         </table>
 
       </td>
@@ -272,6 +287,41 @@ function contentSection(content: string): string {
           <tr>
             <td class="nx-px nx-card" style="background-color: ${BRAND.white}; padding: 8px 40px 32px 40px;">
               ${content}
+            </td>
+          </tr>`;
+}
+
+function newsletterFooterSection(
+  productCfg: ProductConfig,
+  opts: { unsubscribeUrl?: string; preferencesUrl?: string; newsletterName?: string },
+): string {
+  const privacyUrl = `${productCfg.baseUrl}/confidentialite`;
+  const productHost = productCfg.baseUrl.replace(/^https?:\/\//, "");
+  const newsletterName = opts.newsletterName ?? `newsletter NORMX ${productCfg.suffix}`;
+  const unsub = opts.unsubscribeUrl
+    ? `<a href="${escapeAttr(opts.unsubscribeUrl)}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Se désabonner</a>`
+    : "";
+  const prefs = opts.preferencesUrl
+    ? `<a href="${escapeAttr(opts.preferencesUrl)}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Préférences</a>`
+    : "";
+  const links = [unsub, prefs, `<a href="${privacyUrl}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Confidentialité</a>`]
+    .filter(Boolean)
+    .join(" &middot; ");
+
+  return `
+          <tr>
+            <td class="nx-px" style="background-color: ${BRAND.navy}; padding: 32px 40px; border-radius: 0 0 12px 12px;">
+              <p style="margin: 0 0 12px 0; color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 600;">NORMX AI SAS</p>
+              <p style="margin: 0; color: ${BRAND.navySubtle}; font-family: ${FONT_STACK}; font-size: 12px; line-height: 20px;">
+                71 rue Daire, 80000 Amiens &mdash; RCS Amiens 103 831 921<br/>
+                <a href="${productCfg.baseUrl}" style="color: ${BRAND.gold}; text-decoration: none;">${escapeHtml(productHost)}</a>
+                &middot;
+                <a href="mailto:${escapeAttr(productCfg.contactEmail)}" style="color: ${BRAND.gold}; text-decoration: none;">${escapeHtml(productCfg.contactEmail)}</a>
+              </p>
+              <p style="margin: 16px 0 0 0; padding-top: 16px; border-top: 1px solid ${BRAND.navyDivider}; color: ${BRAND.navyMuted}; font-family: ${FONT_STACK}; font-size: 11px; line-height: 18px;">
+                Vous recevez cet email car vous êtes abonné à la ${escapeHtml(newsletterName)}.<br/>
+                ${links}
+              </p>
             </td>
           </tr>`;
 }
@@ -593,6 +643,153 @@ export function softBox(innerHtml: string): string {
   <tr>
     <td style="padding: 20px 24px;">
       ${innerHtml}
+    </td>
+  </tr>
+</table>`;
+}
+
+// =============================================================================
+// Helpers édito (newsletter, blog, contenu marketing)
+// =============================================================================
+
+/**
+ * Petit titre or en small caps avec letter-spacing — élément récurrent
+ * au-dessus des H1/H2 ou des cartes featured. Optionnellement en navy
+ * sur fond clair (variant 'navy') ou or sur fond sombre (variant 'gold').
+ */
+export function eyebrow(text: string, variant: "gold" | "navy" = "gold"): string {
+  const color = variant === "gold" ? BRAND.gold : BRAND.navy;
+  return `<p style="margin: 0 0 8px 0; color: ${color}; font-family: ${FONT_STACK}; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;">${escapeHtml(text)}</p>`;
+}
+
+/**
+ * Titre de section H2-style avec un underline 2px or sous le texte.
+ * Utilisé pour découper la newsletter (Actualités, Stats, Astuce…).
+ */
+export function sectionTitle(text: string, emoji?: string): string {
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 0 0 16px 0;">
+  <tr>
+    <td style="border-bottom: 2px solid ${BRAND.gold}; padding-bottom: 8px;">
+      <p style="margin: 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">
+        ${emoji ? `<span style="margin-right: 6px;">${emoji}</span>` : ""}${escapeHtml(text)}
+      </p>
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Carte "à la une" — encadré dégradé or pâle pour mettre en avant un
+ * article, une nouveauté produit, une promo. eyebrow + H2 + excerpt + lien.
+ */
+export function featuredCard(args: {
+  eyebrow: string;
+  title: string;
+  excerpt: string;
+  linkUrl: string;
+  linkText?: string;
+}): string {
+  const linkText = args.linkText ?? "Lire l'article complet →";
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="nx-pale-bg nx-pale-border" style="background: linear-gradient(135deg, ${BRAND.goldPale} 0%, #FFF5D6 100%); background-color: ${BRAND.goldPale}; border: 1px solid ${BRAND.goldBorder}; border-radius: 12px; margin: 0 0 16px 0;">
+  <tr>
+    <td style="padding: 28px;">
+      ${eyebrow(args.eyebrow, "gold")}
+      <h2 style="margin: 0 0 12px 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 22px; font-weight: 700; line-height: 28px; letter-spacing: -0.3px;">
+        ${escapeHtml(args.title)}
+      </h2>
+      <p style="margin: 0 0 20px 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 14px; line-height: 24px;" class="nx-text-body">
+        ${escapeHtml(args.excerpt)}
+      </p>
+      <a href="${escapeAttr(args.linkUrl)}" style="color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 600; text-decoration: none;">
+        ${escapeHtml(linkText)}
+      </a>
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Item d'une liste de news (eyebrow catégorie + titre lien + excerpt).
+ * Plusieurs items consécutifs : passer isLast pour omettre la bordure.
+ */
+export function newsItem(args: {
+  category: string;
+  title: string;
+  url: string;
+  excerpt: string;
+  isLast?: boolean;
+}): string {
+  const border = args.isLast ? "" : `border-bottom: 1px solid ${BRAND.goldBorder};`;
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="padding: 16px 0; ${border}">
+      <p style="margin: 0 0 4px 0; color: ${BRAND.textMuted}; font-family: ${FONT_STACK}; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
+        ${escapeHtml(args.category)}
+      </p>
+      <p style="margin: 0 0 6px 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 15px; font-weight: 600; line-height: 21px;">
+        <a href="${escapeAttr(args.url)}" style="color: ${BRAND.navy}; text-decoration: none;">${escapeHtml(args.title)}</a>
+      </p>
+      <p style="margin: 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;" class="nx-text-body">
+        ${escapeHtml(args.excerpt)}
+      </p>
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Rangée de 3 stats (cartes or pâle côte à côte). Valeur 28px or, label
+ * small caps. Sur mobile, les 3 cellules tombent en stack vertical via
+ * la media query du base layout (table avec td block).
+ */
+export function statsRow(stats: Array<{ value: string; label: string }>): string {
+  if (stats.length !== 3) {
+    throw new Error("statsRow attend exactement 3 entrées");
+  }
+  const cell = (s: { value: string; label: string }) => `
+    <td width="33%" align="center" valign="top" class="nx-pale-bg" style="padding: 16px 8px; background-color: ${BRAND.goldPale}; border-radius: 8px;">
+      <p style="margin: 0; color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 28px; font-weight: 700; line-height: 32px;">
+        ${escapeHtml(s.value)}
+      </p>
+      <p style="margin: 6px 0 0 0; color: ${BRAND.textMuted}; font-family: ${FONT_STACK}; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;">
+        ${escapeHtml(s.label)}
+      </p>
+    </td>`;
+
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 0 0 24px 0;">
+  <tr>
+    ${cell(stats[0])}
+    <td width="8">&nbsp;</td>
+    ${cell(stats[1])}
+    <td width="8">&nbsp;</td>
+    ${cell(stats[2])}
+  </tr>
+</table>`;
+}
+
+/**
+ * Carte "astuce" — encadré navy plein avec eyebrow or, titre blanc et
+ * contenu gris bleuté. Inverse visuel du highlightBox (or sur fond clair
+ * → or sur fond sombre).
+ */
+export function tipCard(args: { eyebrow: string; title: string; content: string }): string {
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: ${BRAND.navy}; border-radius: 8px; margin: 0 0 24px 0;">
+  <tr>
+    <td style="padding: 24px 28px;">
+      <p style="margin: 0 0 8px 0; color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;">
+        ${escapeHtml(args.eyebrow)}
+      </p>
+      <p style="margin: 0 0 12px 0; color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 16px; font-weight: 600; line-height: 22px;">
+        ${escapeHtml(args.title)}
+      </p>
+      <p style="margin: 0; color: ${BRAND.navySubtle}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;">
+        ${escapeHtml(args.content)}
+      </p>
     </td>
   </tr>
 </table>`;
