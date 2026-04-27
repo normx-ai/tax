@@ -22,12 +22,14 @@ export {
   newsItem,
   numberedSteps,
   paragraph,
+  pillBadge,
   promoCode,
   renderBaseLayout,
   sectionTitle,
   softBox,
   statsRow,
   tipCard,
+  visualPlaceholder,
   warningBox,
   type Product,
 } from "./base.template";
@@ -42,3 +44,4 @@ export type { PasswordResetVars } from "./templates/password-reset.template";
 export type { OtpVars } from "./templates/otp.template";
 export type { NewsletterVars, NewsletterArticle, NewsletterStat } from "./templates/newsletter.template";
 export type { PromoVars } from "./templates/promo.template";
+export type { ProductUpdateVars } from "./templates/product-update.template";

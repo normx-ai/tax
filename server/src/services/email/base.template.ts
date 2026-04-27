@@ -121,10 +121,16 @@ export interface BaseLayoutOptions {
    * "marketing" : mention communications commerciales + Se désinscrire / CGV / Confidentialité.
    */
   footerVariant?: "transactional" | "newsletter" | "marketing";
-  /** Lien préférences abonnements (uniquement footerVariant='newsletter'). */
+  /** Lien préférences abonnements (footerVariant='newsletter'). */
   preferencesUrl?: string;
   /** Nom de la newsletter pour le texte du footer (ex: "newsletter NORMX Tax"). Default: dérivé du produit. */
   newsletterName?: string;
+  /**
+   * Texte personnalisé pour la mention d'abonnement dans le footer 'newsletter'.
+   * Si fourni, remplace "Vous recevez cet email car vous êtes abonné à la {newsletterName}".
+   * Utile pour les communications produit ("...car vous êtes utilisateur ou abonné aux mises à jour produit X").
+   */
+  subscriptionContext?: string;
 }
 
 /**
@@ -146,6 +152,7 @@ export function renderBaseLayout(opts: BaseLayoutOptions): string {
     footerVariant = "transactional",
     preferencesUrl,
     newsletterName,
+    subscriptionContext,
   } = opts;
   const productCfg = resolveProduct(product);
   const tag = headerTag ?? productCfg.defaultTag;
@@ -206,7 +213,7 @@ export function renderBaseLayout(opts: BaseLayoutOptions): string {
           ${heading ? headingSection(heading, headingAlign, subheading) : ""}
           ${contentSection(content)}
           ${footerVariant === "newsletter"
-            ? newsletterFooterSection(productCfg, { unsubscribeUrl, preferencesUrl, newsletterName })
+            ? newsletterFooterSection(productCfg, { unsubscribeUrl, preferencesUrl, newsletterName, subscriptionContext })
             : footerVariant === "marketing"
               ? marketingFooterSection(productCfg, unsubscribeUrl)
               : footerSection(productCfg, unsubscribeUrl)}
@@ -323,11 +330,19 @@ function marketingFooterSection(productCfg: ProductConfig, unsubscribeUrl?: stri
 
 function newsletterFooterSection(
   productCfg: ProductConfig,
-  opts: { unsubscribeUrl?: string; preferencesUrl?: string; newsletterName?: string },
+  opts: {
+    unsubscribeUrl?: string;
+    preferencesUrl?: string;
+    newsletterName?: string;
+    subscriptionContext?: string;
+  },
 ): string {
   const privacyUrl = `${productCfg.baseUrl}/confidentialite`;
   const productHost = productCfg.baseUrl.replace(/^https?:\/\//, "");
   const newsletterName = opts.newsletterName ?? `newsletter NORMX ${productCfg.suffix}`;
+  const subscriptionLine =
+    opts.subscriptionContext ??
+    `Vous recevez cet email car vous êtes abonné à la ${newsletterName}.`;
   const unsub = opts.unsubscribeUrl
     ? `<a href="${escapeAttr(opts.unsubscribeUrl)}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Se désabonner</a>`
     : "";
@@ -349,7 +364,7 @@ function newsletterFooterSection(
                 <a href="mailto:${escapeAttr(productCfg.contactEmail)}" style="color: ${BRAND.gold}; text-decoration: none;">${escapeHtml(productCfg.contactEmail)}</a>
               </p>
               <p style="margin: 16px 0 0 0; padding-top: 16px; border-top: 1px solid ${BRAND.navyDivider}; color: ${BRAND.navyMuted}; font-family: ${FONT_STACK}; font-size: 11px; line-height: 18px;">
-                Vous recevez cet email car vous êtes abonné à la ${escapeHtml(newsletterName)}.<br/>
+                ${escapeHtml(subscriptionLine)}<br/>
                 ${links}
               </p>
             </td>
@@ -567,11 +582,62 @@ export function warningBox(title: string, innerHtml: string): string {
 }
 
 /**
- * Liste d'étapes numérotées — chaque étape a un carré or arrondi avec
- * son numéro, un titre et une description courte. Utilisé pour les
- * onboarding (welcome) et les guides "comment commencer".
+ * Liste d'étapes numérotées — chaque étape a un marqueur or (carré
+ * arrondi 40×40 par défaut, ou rond 24×24 en style 'circle-small'
+ * pour les use-cases compacts), un titre et une description.
+ *
+ * - 'square' (default) : carré 40px arrondi, fond or pâle, titre +
+ *   description (utilisé pour l'onboarding welcome).
+ * - 'circle-small' : rond 24px or, pas de fond englobant, items séparés
+ *   par border-bottom or pâle (utilisé pour les use-cases d'un product
+ *   update — visuel plus discret avec une description seule).
  */
-export function numberedSteps(steps: Array<{ title: string; description: string }>): string {
+export function numberedSteps(
+  steps: Array<{ title?: string; description: string }>,
+  options: { style?: "square" | "circle-small" } = {},
+): string {
+  const style = options.style ?? "square";
+
+  if (style === "circle-small") {
+    const rows = steps
+      .map((step, i) => {
+        const isLast = i === steps.length - 1;
+        const borderBottom = isLast ? "" : `border-bottom: 1px solid ${BRAND.goldBorder};`;
+        const titleHtml = step.title
+          ? `<p style="margin: 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 600; line-height: 22px;">${escapeHtml(step.title)}</p>
+             <p style="margin: 4px 0 0 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;" class="nx-text-body">${escapeHtml(step.description)}</p>`
+          : `<p style="margin: 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 14px; line-height: 22px;">${escapeHtml(step.description)}</p>`;
+        return `
+  <tr>
+    <td style="padding: 12px 0; ${borderBottom}">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td width="32" valign="top">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="24" height="24" style="width: 24px; height: 24px; background-color: ${BRAND.gold}; border-radius: 50%;">
+              <tr>
+                <td align="center" valign="middle" style="color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 12px; font-weight: 700; mso-line-height-rule: exactly; line-height: 24px;">
+                  ${i + 1}
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" style="padding-left: 12px;">
+            ${titleHtml}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>`;
+      })
+      .join("");
+
+    return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+  ${rows}
+</table>`;
+  }
+
+  // style 'square' (default)
   const rows = steps
     .map((step, i) => {
       const isLast = i === steps.length - 1;
@@ -592,7 +658,7 @@ export function numberedSteps(steps: Array<{ title: string; description: string 
           </td>
           <td valign="top">
             <p style="margin: 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 15px; font-weight: 600; line-height: 22px;">
-              ${escapeHtml(step.title)}
+              ${step.title ? escapeHtml(step.title) : ""}
             </p>
             <p style="margin: 4px 0 0 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;" class="nx-text-body">
               ${escapeHtml(step.description)}
@@ -802,24 +868,83 @@ export function statsRow(stats: Array<{ value: string; label: string }>): string
 }
 
 /**
- * Carte "astuce" — encadré navy plein avec eyebrow or, titre blanc et
- * contenu gris bleuté. Inverse visuel du highlightBox (or sur fond clair
- * → or sur fond sombre).
+ * Carte "astuce / dispo / info" — encadré navy plein avec eyebrow or,
+ * titre blanc optionnel, contenu gris bleuté. Inverse visuel du
+ * highlightBox. Si title omis (ex: bloc "Disponibilité" sur un product
+ * update), le bloc reste compact avec juste eyebrow + contenu.
  */
-export function tipCard(args: { eyebrow: string; title: string; content: string }): string {
+export function tipCard(args: { eyebrow: string; title?: string; content: string }): string {
+  const titleHtml = args.title
+    ? `<p style="margin: 0 0 12px 0; color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 16px; font-weight: 600; line-height: 22px;">
+        ${escapeHtml(args.title)}
+      </p>`
+    : "";
   return `
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: ${BRAND.navy}; border-radius: 8px; margin: 0 0 24px 0;">
   <tr>
-    <td style="padding: 24px 28px;">
-      <p style="margin: 0 0 8px 0; color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;">
+    <td style="padding: 20px 24px;">
+      <p style="margin: 0${args.title ? " 0 8px 0" : ""}; color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;">
         ${escapeHtml(args.eyebrow)}
       </p>
-      <p style="margin: 0 0 12px 0; color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 16px; font-weight: 600; line-height: 22px;">
-        ${escapeHtml(args.title)}
+      ${titleHtml}
+      <p style="margin: ${args.title ? "0" : "4px 0 0 0"}; color: ${args.title ? BRAND.navySubtle : BRAND.white}; font-family: ${FONT_STACK}; font-size: ${args.title ? "13px" : "14px"}; line-height: 22px;">
+        ${args.content}
       </p>
-      <p style="margin: 0; color: ${BRAND.navySubtle}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;">
-        ${escapeHtml(args.content)}
+    </td>
+  </tr>
+</table>`;
+}
+
+// =============================================================================
+// Helpers product (annonces de fonctionnalités, mises à jour)
+// =============================================================================
+
+/**
+ * Pill badge or dégradé arrondi (pill shape, padding compact).
+ * Différent du `badge` latéral or pâle bordé : ici fond plein or
+ * doré, texte blanc small caps. Utilisé pour signaler "✨ Nouveau"
+ * sur un product update centré.
+ */
+export function pillBadge(args: { text: string; emoji?: string }): string {
+  return `
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;">
+  <tr>
+    <td align="center" style="background: linear-gradient(135deg, ${BRAND.gold} 0%, ${BRAND.goldDark} 100%); background-color: ${BRAND.gold}; border-radius: 24px; padding: 6px 16px;">
+      <p style="margin: 0; color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;">
+        ${args.emoji ? `<span style="margin-right: 6px;">${args.emoji}</span>` : ""}${escapeHtml(args.text)}
       </p>
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Encadré visuel "placeholder" : fond dégradé or pâle avec un emoji
+ * 64px et une caption italic dessous. Utilisé sur les product updates
+ * comme illustration provisoire en attendant un vrai screenshot/GIF.
+ * Si une image est fournie via imageUrl, elle remplace l'emoji.
+ */
+export function visualPlaceholder(args: {
+  emoji?: string;
+  caption?: string;
+  imageUrl?: string;
+  imageAlt?: string;
+}): string {
+  const visual = args.imageUrl
+    ? `<img src="${escapeAttr(args.imageUrl)}" alt="${escapeAttr(args.imageAlt ?? "")}" width="500" style="display: block; max-width: 100%; height: auto; border: 0;" />`
+    : args.emoji
+      ? `<span style="display: inline-block; font-family: ${FONT_STACK}; font-size: 64px; line-height: 64px;">${args.emoji}</span>`
+      : "";
+  const caption = args.caption
+    ? `<p style="margin: 16px 0 0 0; color: ${BRAND.textMuted}; font-family: ${FONT_STACK}; font-size: 13px; font-style: italic;">${escapeHtml(args.caption)}</p>`
+    : "";
+
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="nx-pale-bg nx-pale-border" style="background: linear-gradient(135deg, ${BRAND.goldPale} 0%, #FFF5D6 100%); background-color: ${BRAND.goldPale}; border: 1px solid ${BRAND.goldBorder}; border-radius: 12px; margin: 0 0 24px 0;">
+  <tr>
+    <td align="center" style="padding: 48px 24px;">
+      ${visual}
+      ${caption}
     </td>
   </tr>
 </table>`;
