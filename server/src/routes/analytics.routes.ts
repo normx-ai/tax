@@ -3,15 +3,10 @@ import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { resolveTenant, requireOrg } from '../middleware/tenant.middleware';
 import { requireAdmin, requireMember } from '../middleware/orgRole.middleware';
 import { requirePaid } from '../middleware/subscription.middleware';
-import { validate } from '../middleware/validate.middleware';
+import { typedRoute } from '../middleware/typed-route';
 import { daysQuery, popularSearchesQuery, responseTimesQuery } from '../schemas/analytics.schema';
 import * as analyticsService from '../services/analytics.service';
 import { asyncHandler } from '../middleware/asyncHandler';
-import type { z } from 'zod';
-
-type DaysQuery = z.infer<typeof daysQuery>;
-type PopularSearchesQuery = z.infer<typeof popularSearchesQuery>;
-type ResponseTimesQuery = z.infer<typeof responseTimesQuery>;
 
 const router = Router();
 
@@ -53,9 +48,8 @@ router.get('/dashboard', requireAuth, resolveTenant, requireOrg, requireMember, 
  *         description: Données de série temporelle
  */
 // GET /api/analytics/timeseries
-router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: daysQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { days } = req.validated!.query as DaysQuery;
-  const data = await analyticsService.getTimeSeries(req.orgId!, days);
+router.get('/timeseries', requireAuth, resolveTenant, requireOrg, requireAdmin, ...typedRoute({ query: daysQuery }, async (req, res) => {
+  const data = await analyticsService.getTimeSeries(req.orgId!, req.validated.query.days);
   res.json(data);
 }));
 
@@ -101,9 +95,8 @@ router.get('/members', requireAuth, resolveTenant, requireOrg, requireAdmin, asy
  *               type: string
  */
 // GET /api/analytics/export
-router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, validate({ query: daysQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { days } = req.validated!.query as DaysQuery;
-  const csv = await analyticsService.exportCsv(req.orgId!, days);
+router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, ...typedRoute({ query: daysQuery }, async (req, res) => {
+  const csv = await analyticsService.exportCsv(req.orgId!, req.validated.query.days);
   res.setHeader('Content-Type', 'text/csv');
   res.setHeader('Content-Disposition', `attachment; filename=analytics-${req.orgId}.csv`);
   res.send(csv);
@@ -111,17 +104,16 @@ router.get('/export', requireAuth, resolveTenant, requireOrg, requireAdmin, vali
 
 // GET /api/analytics/popular-searches
 // limit: 1-100 (default 10), offset: 0+ (default 0) — validation Zod
-router.get('/popular-searches', requireAuth, resolveTenant, requireOrg, requireMember, validate({ query: popularSearchesQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { limit, offset } = req.validated!.query as PopularSearchesQuery;
+router.get('/popular-searches', requireAuth, resolveTenant, requireOrg, requireMember, ...typedRoute({ query: popularSearchesQuery }, async (req, res) => {
+  const { limit, offset } = req.validated.query;
   const data = await analyticsService.getPopularSearches(req.orgId!, limit, offset);
   res.json(data);
 }));
 
 // GET /api/analytics/response-times
 // days: 1-365 (default 30) — validation Zod pour eviter un scan massif
-router.get('/response-times', requireAuth, resolveTenant, requireOrg, requireMember, validate({ query: responseTimesQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { days } = req.validated!.query as ResponseTimesQuery;
-  const data = await analyticsService.getResponseTimeStats(req.orgId!, days);
+router.get('/response-times', requireAuth, resolveTenant, requireOrg, requireMember, ...typedRoute({ query: responseTimesQuery }, async (req, res) => {
+  const data = await analyticsService.getResponseTimeStats(req.orgId!, req.validated.query.days);
   res.json(data);
 }));
 

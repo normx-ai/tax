@@ -2,20 +2,17 @@ import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant } from "../middleware/tenant.middleware";
 import { asyncHandler } from "../middleware/asyncHandler";
-import { validate } from "../middleware/validate.middleware";
+import { typedRoute } from "../middleware/typed-route";
 import { searchHistoryQuery } from "../schemas/search-history.schema";
 import pool from "../db/pool";
-import type { z } from "zod";
-
-type SearchHistoryQuery = z.infer<typeof searchHistoryQuery>;
 
 const router = Router();
 
 // GET /api/search-history
-router.get("/", requireAuth, resolveTenant, validate({ query: searchHistoryQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
+router.get("/", requireAuth, resolveTenant, ...typedRoute({ query: searchHistoryQuery }, async (req, res) => {
   const s = req.tenantSchema!;
   const userId = req.userId!;
-  const { page, limit } = req.validated!.query as SearchHistoryQuery;
+  const { page, limit } = req.validated.query;
   const offset = (page - 1) * limit;
 
   const [searches, countResult] = await Promise.all([

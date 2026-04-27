@@ -2,8 +2,9 @@ import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant, requireOrg } from "../middleware/tenant.middleware";
 import { validate } from "../middleware/validate.middleware";
+import { typedRoute } from "../middleware/typed-route";
 import { asyncHandler } from "../middleware/asyncHandler";
-import { updateDossierBody, listDossiersQuery, recalculerDossiersBody, type ListDossiersQuery } from "../schemas/dossiers.schema";
+import { updateDossierBody, listDossiersQuery, recalculerDossiersBody } from "../schemas/dossiers.schema";
 import * as service from "../services/dossiers.service";
 import { AuditService } from "../services/audit.service";
 import { getClientIp } from "../utils/ip";
@@ -12,10 +13,8 @@ const router = Router();
 
 router.use(requireAuth, resolveTenant, requireOrg);
 
-router.get("/", validate({ query: listDossiersQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const orgId = req.orgId!;
-  const query = req.validated!.query as ListDossiersQuery;
-  const result = await service.listDossiersByOrg(orgId, query);
+router.get("/", ...typedRoute({ query: listDossiersQuery }, async (req, res) => {
+  const result = await service.listDossiersByOrg(req.orgId!, req.validated.query);
   res.json(result);
 }));
 

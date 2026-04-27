@@ -2,8 +2,9 @@ import { Router, Response } from "express";
 import { requireAuth, AuthRequest } from "../middleware/keycloak-auth";
 import { resolveTenant, requireOrg } from "../middleware/tenant.middleware";
 import { validate } from "../middleware/validate.middleware";
+import { typedRoute } from "../middleware/typed-route";
 import { asyncHandler } from "../middleware/asyncHandler";
-import { createEntite, updateEntite, listEntitesQuery, type ListEntitesQuery } from "../schemas/entites.schema";
+import { createEntite, updateEntite, listEntitesQuery } from "../schemas/entites.schema";
 import * as service from "../services/entites.service";
 import { AuditService } from "../services/audit.service";
 import { getClientIp } from "../utils/ip";
@@ -13,10 +14,8 @@ const router = Router();
 // Toutes les routes requierent un tenant resolu (l'organisation courante)
 router.use(requireAuth, resolveTenant, requireOrg);
 
-router.get("/", validate({ query: listEntitesQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const orgId = req.orgId!;
-  const query = req.validated!.query as ListEntitesQuery;
-  const result = await service.listEntites(orgId, query);
+router.get("/", ...typedRoute({ query: listEntitesQuery }, async (req, res) => {
+  const result = await service.listEntites(req.orgId!, req.validated.query);
   res.json(result);
 }));
 

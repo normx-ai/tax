@@ -2,13 +2,13 @@ import { Router, Response } from 'express';
 import { requireAuth, AuthRequest } from '../middleware/keycloak-auth';
 import { requireAdmin } from '../middleware/orgRole.middleware';
 import { validate } from '../middleware/validate.middleware';
+import { typedRoute } from '../middleware/typed-route';
 import { asyncHandler } from '../middleware/asyncHandler';
 import {
   createObligation,
   updateObligation,
   listObligationsQuery,
   cloneVersionBody,
-  type ListObligationsQuery,
 } from '../schemas/obligations.schema';
 import * as service from '../services/obligations.service';
 import { AuditService } from '../services/audit.service';
@@ -25,9 +25,8 @@ const router = Router();
  *     security:
  *       - bearerAuth: []
  */
-router.get('/', requireAuth, validate({ query: listObligationsQuery }), asyncHandler(async (req: AuthRequest, res: Response) => {
-  const query = req.validated!.query as ListObligationsQuery;
-  const result = await service.listObligations(query);
+router.get('/', requireAuth, ...typedRoute({ query: listObligationsQuery }, async (req, res) => {
+  const result = await service.listObligations(req.validated.query);
   res.json(result);
 }));
 
