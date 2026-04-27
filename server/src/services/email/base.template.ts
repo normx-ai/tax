@@ -468,6 +468,24 @@ export function numberedSteps(steps: Array<{ title: string; description: string 
 }
 
 /**
+ * Encadré "lien de secours" — affiche l'URL en monospace word-break dans
+ * un fond gris clair, précédé d'une instruction. Utile pour les liens de
+ * confirmation / réinitialisation dont le bouton CTA peut ne pas marcher
+ * dans certains clients email.
+ */
+export function fallbackLink(url: string, instruction?: string): string {
+  const intro =
+    instruction ?? "Si le bouton ne fonctionne pas, copiez ce lien dans votre navigateur :";
+  return `
+<p style="margin: 0; color: ${BRAND.textMuted}; font-family: ${FONT_STACK}; font-size: 12px; line-height: 18px;">
+  ${escapeHtml(intro)}
+</p>
+<p style="margin: 8px 0 0 0; padding: 12px; background-color: ${BRAND.bgSoft}; border-radius: 6px; color: ${BRAND.navy}; font-family: 'Courier New', Consolas, monospace; font-size: 12px; line-height: 18px; word-break: break-all;" class="nx-soft-bg">
+  ${escapeHtml(url)}
+</p>`;
+}
+
+/**
  * Encadré "détails techniques" — clé/valeur avec icône optionnelle.
  * Utilisé pour les détails de connexion (date, IP, user-agent), montant
  * de transaction, méta-données diverses.

@@ -10,6 +10,7 @@ export {
   ctaButton,
   ctaButtonPair,
   detailsBox,
+  fallbackLink,
   getProductDisplayName,
   highlightBox,
   numberedSteps,
