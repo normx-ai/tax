@@ -423,6 +423,51 @@ export function warningBox(title: string, innerHtml: string): string {
 }
 
 /**
+ * Liste d'étapes numérotées — chaque étape a un carré or arrondi avec
+ * son numéro, un titre et une description courte. Utilisé pour les
+ * onboarding (welcome) et les guides "comment commencer".
+ */
+export function numberedSteps(steps: Array<{ title: string; description: string }>): string {
+  const rows = steps
+    .map((step, i) => {
+      const isLast = i === steps.length - 1;
+      const borderBottom = isLast ? "" : `border-bottom: 1px solid ${BRAND.goldBorder};`;
+      return `
+  <tr>
+    <td style="padding: 20px 24px; ${borderBottom}">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td width="40" valign="top" style="padding-right: 16px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="40" height="40" style="width: 40px; height: 40px; background-color: ${BRAND.gold}; border-radius: 8px;">
+              <tr>
+                <td align="center" valign="middle" style="color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 18px; font-weight: 700; mso-line-height-rule: exactly; line-height: 40px;">
+                  ${i + 1}
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <p style="margin: 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 15px; font-weight: 600; line-height: 22px;">
+              ${escapeHtml(step.title)}
+            </p>
+            <p style="margin: 4px 0 0 0; color: ${BRAND.textBody}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;" class="nx-text-body">
+              ${escapeHtml(step.description)}
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>`;
+    })
+    .join("");
+
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="nx-pale-bg" style="background-color: ${BRAND.goldPale}; border-radius: 8px; margin: 0 0 24px 0;">
+  ${rows}
+</table>`;
+}
+
+/**
  * Encadré "détails techniques" — clé/valeur avec icône optionnelle.
  * Utilisé pour les détails de connexion (date, IP, user-agent), montant
  * de transaction, méta-données diverses.

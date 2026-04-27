@@ -1,4 +1,9 @@
 // Template "Bienvenue" — envoyé après une souscription réussie.
+//
+// Visuel : header navy NORMX <Produit>, hero rond or pâle 🎉,
+// heading center "Bienvenue, <userName> !", sous-titre annonçant le plan
+// activé. Trois étapes numérotées (numberedSteps) avec carrés or, CTA or
+// "Accéder à mon tableau de bord", encadré aide avec lien support.
 
 import {
   BRAND,
@@ -6,53 +11,91 @@ import {
   ctaButton,
   escapeHtml,
   getProductDisplayName,
+  numberedSteps,
   paragraph,
   renderBaseLayout,
   softBox,
   type Product,
 } from "../base.template";
+import { addUtm } from "../utm";
 
-// Pitch d'onboarding par produit. Un seul endroit à mettre à jour quand
-// les fonctionnalités évoluent. Le produit "auth" n'est pas listé : un
-// email de bienvenue ne s'applique qu'aux 3 produits commerciaux.
+const CAMPAIGN = "welcome";
+
+// 3 étapes d'onboarding par produit. Chaque produit a sa pédagogie.
 type WelcomeProduct = Exclude<Product, "auth">;
 
-const WELCOME_PITCH: Record<WelcomeProduct, { features: string; quickStart: string }> = {
-  tax: {
-    features:
-      "Vous avez accès à l'intégralité du CGI 2026 du Congo, aux simulateurs (ITS, IS, IBA, TVA, patente, paie), à l'agent IA fiscal et au calendrier des échéances avec rappels automatiques.",
-    quickStart:
-      "Renseignez votre première entité fiscale (régime IS/IBA, secteur, effectif) — NORMX Tax génère automatiquement vos obligations déclaratives et vos échéances.",
-  },
-  finance: {
-    features:
-      "Vous avez accès à la comptabilité OHADA SYSCOHADA, aux états financiers (bilan, compte de résultat, flux de trésorerie), aux 47 notes annexes, à la paie congolaise (CGI 2026, 16 conventions collectives) et à l'assistant IA comptable.",
-    quickStart:
-      "Importez votre balance ou créez votre premier exercice — NORMX Finance génère automatiquement vos états financiers et vos déclarations de paie.",
-  },
-  legal: {
-    features:
-      "Vous avez accès à la génération de documents juridiques OHADA (statuts, PV d'AG, cessions de parts, contrats), à la bibliothèque des Actes uniformes et aux modèles paramétrables par forme juridique (SARL, SAS, SA…).",
-    quickStart:
-      "Choisissez votre type de société et votre opération — NORMX Legal pré-remplit le document conformément aux exigences OHADA en vigueur.",
-  },
+interface OnboardingStep {
+  title: string;
+  description: string;
+}
+
+const WELCOME_STEPS: Record<WelcomeProduct, OnboardingStep[]> = {
+  tax: [
+    {
+      title: "Posez vos questions fiscales",
+      description:
+        "44 agents IA spécialisés sur le CGI Congo, prêts à vous répondre avec les articles applicables.",
+    },
+    {
+      title: "Utilisez les simulateurs",
+      description:
+        "ITS, IS, IBA, TVA, patente, paie : calculez vos impôts en quelques clics avec les barèmes 2026.",
+    },
+    {
+      title: "Suivez vos échéances",
+      description:
+        "Recevez des alertes automatiques avant chaque deadline fiscale (Art. 461 bis : 15 du mois).",
+    },
+  ],
+  finance: [
+    {
+      title: "Importez votre balance",
+      description:
+        "Plan comptable SYSCOHADA OHADA, journaux et écritures synchronisés avec votre comptabilité existante.",
+    },
+    {
+      title: "Générez les états financiers",
+      description:
+        "Bilan, compte de résultat, flux de trésorerie et 47 notes annexes — conformes OHADA, prêts pour le greffe.",
+    },
+    {
+      title: "Pilotez la paie congolaise",
+      description:
+        "Bulletins, déclarations CNSS/CAMU/ITS, 16 conventions collectives et CGI 2026 intégrés.",
+    },
+  ],
+  legal: [
+    {
+      title: "Choisissez votre opération",
+      description:
+        "Statuts, PV d'AG, cessions de parts, contrats — tous les documents juridiques OHADA en un clic.",
+    },
+    {
+      title: "Personnalisez le document",
+      description:
+        "Forme juridique (SARL, SAS, SA…), capital, associés, gérance : NORMX Legal pré-remplit tout.",
+    },
+    {
+      title: "Téléchargez en .docx",
+      description:
+        "Document final aux normes OHADA, prêt pour signature et dépôt au greffe du commerce.",
+    },
+  ],
 };
 
 function resolveWelcomeProduct(product?: Product): WelcomeProduct {
   return product && product !== "auth" ? product : "tax";
 }
-import { addUtm } from "../utm";
-
-const CAMPAIGN = "welcome";
 
 export interface WelcomeVars {
   /** Produit qui souhaite la bienvenue (Tax / Finance / Legal). Default: "tax". */
   product?: Product;
   userName: string;
-  organizationName: string;
   planName: string; // ex: "Pro", "Starter"
   dashboardUrl: string;
   unsubscribeUrl: string;
+  /** Email de support à afficher dans l'encadré aide — default: contact du produit */
+  supportEmail?: string;
 }
 
 interface RenderedEmail {
@@ -61,43 +104,45 @@ interface RenderedEmail {
 }
 
 export function renderWelcome(vars: WelcomeVars): RenderedEmail {
-  const { product, userName, organizationName, planName, dashboardUrl, unsubscribeUrl } = vars;
+  const { product, userName, planName, dashboardUrl, unsubscribeUrl, supportEmail } = vars;
   const dashboardWithUtm = addUtm(dashboardUrl, { campaign: CAMPAIGN, content: "cta-primary" });
   const productName = getProductDisplayName(product);
-  const pitch = WELCOME_PITCH[resolveWelcomeProduct(product)];
+  const steps = WELCOME_STEPS[resolveWelcomeProduct(product)];
+  const helpEmail = supportEmail ?? "support@normx-ai.com";
 
   const subject = `Bienvenue sur ${productName}, ${userName}`;
-  const preheader = `Votre espace ${organizationName} (plan ${planName}) est prêt. Démarrez en 2 minutes.`;
+  const preheader = `Votre abonnement ${planName} est activé. Démarrez en 2 minutes.`;
 
   const content = `
-${paragraph(`Bonjour <strong style="color: ${BRAND.navy};">${escapeHtml(userName)}</strong>,`)}
-${paragraph(
-    `Bienvenue sur ${escapeHtml(productName)}. Votre espace <strong style="color: ${BRAND.navy};">${escapeHtml(organizationName)}</strong> est désormais actif sur le plan <strong style="color: ${BRAND.navy};">${escapeHtml(planName)}</strong>.`,
-  )}
-${paragraph(pitch.features)}
+${numberedSteps(steps)}
 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
-    <td align="center" style="padding: 8px 0 24px 0;">
-      ${ctaButton({ text: "Accéder à mon espace →", url: dashboardWithUtm, variant: "primary" })}
+    <td align="center" style="padding: 0 0 24px 0;">
+      ${ctaButton({ text: "Accéder à mon tableau de bord →", url: dashboardWithUtm, variant: "primary" })}
     </td>
   </tr>
 </table>
 
 ${softBox(`
-<p style="margin: 0; font-family: ${FONT}; font-size: 14px; font-weight: 600; color: ${BRAND.navy};">
-  💡 Pour bien démarrer
+<p style="margin: 0; color: ${BRAND.navy}; font-family: ${FONT}; font-size: 14px; font-weight: 600;">
+  💬 Une question ?
 </p>
-<p style="margin: 8px 0 0 0; font-family: ${FONT}; font-size: 13px; line-height: 22px; color: ${BRAND.textBody};" class="nx-text-body">
-  ${escapeHtml(pitch.quickStart)}
+<p style="margin: 8px 0 0 0; color: ${BRAND.textBody}; font-family: ${FONT}; font-size: 13px; line-height: 22px;" class="nx-text-body">
+  Notre équipe est là : <a href="mailto:${escapeHtml(helpEmail)}" style="color: ${BRAND.gold}; text-decoration: none; font-weight: 600;">${escapeHtml(helpEmail)}</a>
 </p>`)}
 `;
+
+  // suppress unused import warning (paragraph kept for back-compat consumers)
+  void paragraph;
 
   const html = renderBaseLayout({
     preheader,
     product,
-    badge: { text: "Bienvenue", emoji: "👋" },
-    heading: `Votre espace ${productName} est prêt`,
+    heroIcon: { symbol: "🎉", bg: BRAND.goldPale, fg: BRAND.navy },
+    heading: `Bienvenue, ${userName} !`,
+    headingAlign: "center",
+    subheading: `Votre abonnement <strong style="color: ${BRAND.navy};">${escapeHtml(planName)}</strong> est activé. Vous avez maintenant accès à toute la puissance de ${escapeHtml(productName)}.`,
     content,
     unsubscribeUrl,
   });

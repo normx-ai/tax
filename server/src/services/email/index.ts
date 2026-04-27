@@ -12,6 +12,7 @@ export {
   detailsBox,
   getProductDisplayName,
   highlightBox,
+  numberedSteps,
   paragraph,
   renderBaseLayout,
   softBox,
