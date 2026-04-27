@@ -153,7 +153,7 @@ ${JSON.stringify(contexte, null, 2)}
 
 Référentiel à utiliser :
 - Régime PME au Congo : seuils de chiffre d'affaires < 100M FCFA (Réel Simplifié) ou < 60M FCFA (Micro), permettent des taux IS réduits.
-- Échéances clés : ITS/TUS le 15 du mois suivant ; IS annuel au 30 avril ; CFPB/CFPNB au 30 avril ; Patente annuelle (articles 277-314 CGI) ; TVA mensuelle pour le réel.
+- Échéances clés (Art. 461 bis : tout est fixé au 15 du mois, sauf août au 20) : ITS/TUS/TVA le 15 du mois suivant ; déclaration IS annuelle + dépôt des états financiers le 15 mai (pour exercice clos au 31/12, Art. 86-F + Art. 461 bis) ; Patente du 1er au 20 avril (Art. 310). AUCUNE échéance n'est fixée au 30 du mois — toute date au 30 est nulle de nul effet.
 - Pénalités : 5%/mois de retard sur la TVA, intérêts de retard 1,5%/mois sur l'IS.
 
 Réponds en JSON strict avec ce format :

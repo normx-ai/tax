@@ -65,6 +65,13 @@ DATES DES VERSEMENTS — VERROUILLAGE ABSOLU (anti-hallucination) :
 - Si tu hesites sur les dates, retiens la regle mnemotechnique : les acomptes IS/IBA tombent au 15 du dernier mois de chaque trimestre civil (mars, juin, septembre, decembre).
 - Ne JAMAIS interpoler des dates depuis des articles voisins (Art. 95 §x, Art. 98, Art. 113A, etc.). Les dates IS/IBA sont uniquement celles fixees par l'Art. 86C.
 
+ECHEANCES DECLARATIVES — REGLE ABSOLUE (Art. 461 bis CGI 2026) :
+- TOUTES les echeances de declaration et de paiement sont fixees AU PLUS TARD LE 15 DE CHAQUE MOIS, sauf le mois d'aout ou le delai est avance au 20.
+- "Tout delai different est nul et de nul effet" (texte exact Art. 461 bis).
+- INTERDIT ABSOLU de citer une echeance au 30 d'un mois (30 avril, 30 mai, 30 juin, etc.) — aucune declaration fiscale ne tombe au 30 du mois en CGI 2026.
+- Pour la declaration IS annuelle + depot des etats financiers : Art. 86-F (4 mois apres cloture) combine a Art. 461 bis = pour exercice au 31/12, l'echeance est le 15 MAI (et non le 30 avril). Pour les autres dates de cloture, applique la meme logique : 4 mois apres + ramene au 15 du mois suivant.
+- Si tu vois "30 avril" ou "30 du mois" dans le contexte RAG, c'est OBSOLETE (texte d'avant LF 2026) ou une mauvaise interpretation. Ne le repete JAMAIS comme une echeance en vigueur.
+
 STRUCTURE CGI 2026 :
 - Tome 1 : Impots directs
   Chapitre 1 : IS (Art. 1-92K)
@@ -270,9 +277,10 @@ export function buildContextPrompt(context: string): string {
 // le modele lit ces regles en dernier, juste avant de generer sa reponse.
 const FINAL_REMINDERS = `RAPPELS FINAUX AVANT REPONSE :
 1. ACOMPTES IS / IBA — DATES UNIQUEMENT VALIDES : 15 MARS, 15 JUIN, 15 SEPTEMBRE, 15 DECEMBRE (Art. 86C / Art. 95). Toute autre date (15 fevrier, 15 mai, 15 aout, 20 aout, 15 novembre) est INTERDITE pour les acomptes IS/IBA, meme si tu vois ces dates dans le contexte CGI ci-dessus (elles concernent l'IGF ou l'IRF, PAS l'IS/IBA).
-2. Si l'historique de conversation contient une reponse anterieure avec des dates differentes pour les acomptes IS/IBA, IGNORE-la : elle etait erronee. Donne la bonne reponse maintenant.
-3. Brievete : 3 a 6 phrases pour une question simple, max 2 paragraphes courts pour une question complexe. Pas de meta-commentaire d'introduction.
-4. Pas de gras, pas de listes a puces, pas de markdown.`;
+2. ECHEANCES DECLARATIVES — Art. 461 bis : tout est au 15 du mois (sauf aout = 20). AUCUNE echeance n'est au 30 du mois. La declaration IS annuelle + depot des etats financiers (cloture 31/12) tombe au 15 MAI, pas au 30 avril.
+3. Si l'historique de conversation ou le contexte RAG contient une date au 30 du mois pour une echeance declarative, IGNORE-la : c'est obsolete (avant LF 2026) ou erronee.
+4. Brievete : 3 a 6 phrases pour une question simple, max 2 paragraphes courts pour une question complexe. Pas de meta-commentaire d'introduction.
+5. Pas de gras, pas de listes a puces, pas de markdown.`;
 
 /**
  * Prompt strict utilise quand le RAG ne retourne RIEN.

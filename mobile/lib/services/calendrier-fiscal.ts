@@ -92,11 +92,12 @@ export const ECHEANCES_FISCALES: EcheanceFiscale[] = [
   { jour: 15, moisIndex: -1, label: "TOL habitation", icon: "home-outline", recurrent: true, descriptionKey: "calendrier.desc.tolHabitation" },
   // TOL professionnels (Art. 14 TFNC4-TOL : exigible au plus tard le 20 février)
   { jour: 20, moisIndex: 1, label: "TOL professionnels", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.tolPro" },
-  { jour: 30, moisIndex: 3, label: "Contribution foncière (CFPB/CFPNB)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.cfpb" },
-  // Déclaration IS annuelle (Art. 86-F : 4 mois après clôture 31/12 → 30 avril)
-  { jour: 30, moisIndex: 3, label: "Déclaration IS annuelle", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.declarationIS" },
 
   // ===== MAI =====
+  // Contribution foncière (CFPB/CFPNB) — Art. 461 bis : 15 du mois (jamais le 30)
+  { jour: 15, moisIndex: 4, label: "Contribution foncière (CFPB/CFPNB)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.cfpb" },
+  // Déclaration IS annuelle + dépôt des états financiers (Art. 86-F : 4 mois après clôture 31/12 → 15 mai par Art. 461 bis)
+  { jour: 15, moisIndex: 4, label: "Déclaration IS annuelle + états financiers", icon: "business-outline", recurrent: false, descriptionKey: "calendrier.desc.declarationIS" },
   // IRF Loyers — 1re échéance (Art. 113A : 15 mai)
   { jour: 15, moisIndex: 4, label: "IRF Loyers (1re échéance)", icon: "home-outline", recurrent: false, descriptionKey: "calendrier.desc.irf1" },
   // Solde de liquidation IS (Art. 86-G : dès remise déclaration → 15 mai)

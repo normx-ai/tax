@@ -707,6 +707,9 @@ AVRIL :
 - Du 1er au 20 avril : Patente — Art. 310 (expressément "20 avril" malgré Art. 461 bis).
 
 MAI :
+- 15 mai : Déclaration IS annuelle + dépôt des états financiers (Art. 86-F : 4 mois après clôture, ramené au 15 du mois par Art. 461 bis pour exercice au 31/12) ;
+- 15 mai : Solde de liquidation IS (Art. 86-G) ;
+- 15 mai : Contribution foncière CFPB/CFPNB ;
 - 15 mai : IRF personnes physiques (déclaration + 1ère échéance paiement) — Art. 113A.
 
 JUIN :
@@ -731,7 +734,7 @@ OBLIGATIONS MENSUELLES (chaque mois) :
 - 15 du mois : TUS (TFNC4 4.15 + Art. 461 bis) — était le 20, désormais le 15.
 
 DÉLAIS SPÉCIAUX :
-- Déclaration IS : 4 mois après clôture exercice — Art. 86F ;
+- Déclaration IS + dépôt des états financiers : 4 mois après clôture exercice — Art. 86F. Combiné à Art. 461 bis (15 du mois), pour clôture 31/12 → 15 mai. JAMAIS le 30 avril ni une autre date au 30 du mois ;
 - Paiement IS : dès remise déclaration — Art. 86G ;
 - Déclaration d'existence : 15 jours du commencement (3 mois après constitution) — Art. 86E ;
 - IRCM plus-values : 60 jours du mois suivant la réalisation — Art. 110A ;
