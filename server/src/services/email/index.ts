@@ -7,10 +7,12 @@ export { renderEmail, type TemplateName, type TemplateRegistry, type RenderedEma
 export { addUtm } from "./utm";
 export {
   BRAND,
+  benefitsList,
   ctaButton,
   ctaButtonPair,
   definitionList,
   detailsBox,
+  discountBadge,
   eyebrow,
   fallbackLink,
   featuredCard,
@@ -20,6 +22,7 @@ export {
   newsItem,
   numberedSteps,
   paragraph,
+  promoCode,
   renderBaseLayout,
   sectionTitle,
   softBox,
@@ -38,3 +41,4 @@ export type { SubscriptionCancelledVars } from "./templates/subscription-cancell
 export type { PasswordResetVars } from "./templates/password-reset.template";
 export type { OtpVars } from "./templates/otp.template";
 export type { NewsletterVars, NewsletterArticle, NewsletterStat } from "./templates/newsletter.template";
+export type { PromoVars } from "./templates/promo.template";

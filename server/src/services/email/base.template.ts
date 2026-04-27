@@ -117,10 +117,10 @@ export interface BaseLayoutOptions {
   unsubscribeUrl?: string;
   /**
    * "transactional" (default) : footer standard avec CGV / Confidentialité / Mentions légales.
-   * "newsletter" : mention "Vous recevez cet email car vous êtes abonné..." +
-   *   liens Se désinscrire / Préférences / Confidentialité (pas de CGV ni Mentions).
+   * "newsletter" : mention abonnement newsletter + Se désinscrire / Préférences / Confidentialité.
+   * "marketing" : mention communications commerciales + Se désinscrire / CGV / Confidentialité.
    */
-  footerVariant?: "transactional" | "newsletter";
+  footerVariant?: "transactional" | "newsletter" | "marketing";
   /** Lien préférences abonnements (uniquement footerVariant='newsletter'). */
   preferencesUrl?: string;
   /** Nom de la newsletter pour le texte du footer (ex: "newsletter NORMX Tax"). Default: dérivé du produit. */
@@ -207,7 +207,9 @@ export function renderBaseLayout(opts: BaseLayoutOptions): string {
           ${contentSection(content)}
           ${footerVariant === "newsletter"
             ? newsletterFooterSection(productCfg, { unsubscribeUrl, preferencesUrl, newsletterName })
-            : footerSection(productCfg, unsubscribeUrl)}
+            : footerVariant === "marketing"
+              ? marketingFooterSection(productCfg, unsubscribeUrl)
+              : footerSection(productCfg, unsubscribeUrl)}
         </table>
 
       </td>
@@ -287,6 +289,34 @@ function contentSection(content: string): string {
           <tr>
             <td class="nx-px nx-card" style="background-color: ${BRAND.white}; padding: 8px 40px 32px 40px;">
               ${content}
+            </td>
+          </tr>`;
+}
+
+function marketingFooterSection(productCfg: ProductConfig, unsubscribeUrl?: string): string {
+  const cgvUrl = `${productCfg.baseUrl}/cgv`;
+  const privacyUrl = `${productCfg.baseUrl}/confidentialite`;
+  const productHost = productCfg.baseUrl.replace(/^https?:\/\//, "");
+  const unsub = unsubscribeUrl
+    ? `<a href="${escapeAttr(unsubscribeUrl)}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Se désabonner</a> &middot; `
+    : "";
+
+  return `
+          <tr>
+            <td class="nx-px" style="background-color: ${BRAND.navy}; padding: 32px 40px; border-radius: 0 0 12px 12px;">
+              <p style="margin: 0 0 12px 0; color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 600;">NORMX AI SAS</p>
+              <p style="margin: 0; color: ${BRAND.navySubtle}; font-family: ${FONT_STACK}; font-size: 12px; line-height: 20px;">
+                71 rue Daire, 80000 Amiens &mdash; RCS Amiens 103 831 921<br/>
+                <a href="${productCfg.baseUrl}" style="color: ${BRAND.gold}; text-decoration: none;">${escapeHtml(productHost)}</a>
+                &middot;
+                <a href="mailto:${escapeAttr(productCfg.contactEmail)}" style="color: ${BRAND.gold}; text-decoration: none;">${escapeHtml(productCfg.contactEmail)}</a>
+              </p>
+              <p style="margin: 16px 0 0 0; padding-top: 16px; border-top: 1px solid ${BRAND.navyDivider}; color: ${BRAND.navyMuted}; font-family: ${FONT_STACK}; font-size: 11px; line-height: 18px;">
+                Vous recevez cet email car vous êtes inscrit aux communications commerciales NORMX ${productCfg.suffix}.<br/>
+                ${unsub}<a href="${cgvUrl}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">CGV</a>
+                &middot;
+                <a href="${privacyUrl}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Confidentialité</a>
+              </p>
             </td>
           </tr>`;
 }
@@ -790,6 +820,101 @@ export function tipCard(args: { eyebrow: string; title: string; content: string 
       <p style="margin: 0; color: ${BRAND.navySubtle}; font-family: ${FONT_STACK}; font-size: 13px; line-height: 22px;">
         ${escapeHtml(args.content)}
       </p>
+    </td>
+  </tr>
+</table>`;
+}
+
+// =============================================================================
+// Helpers marketing / promo (offres commerciales, codes de réduction)
+// =============================================================================
+
+/**
+ * Gros badge or dégradé "Économisez X%" — pièce centrale d'un email promo.
+ * box-shadow simulé via une bordure gold-dark (Outlook ignore les ombres
+ * réelles ; on garde un rendu ferme par le contraste seul).
+ */
+export function discountBadge(args: { label: string; value: string; target: string }): string {
+  return `
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto; background: linear-gradient(135deg, ${BRAND.gold} 0%, ${BRAND.goldDark} 100%); background-color: ${BRAND.gold}; border-radius: 16px;">
+  <tr>
+    <td align="center" style="padding: 32px 48px;">
+      <p style="margin: 0 0 4px 0; color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9;">
+        ${escapeHtml(args.label)}
+      </p>
+      <p style="margin: 0; color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 64px; font-weight: 800; line-height: 64px; letter-spacing: -2px;">
+        ${escapeHtml(args.value)}
+      </p>
+      <p style="margin: 8px 0 0 0; color: ${BRAND.white}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 500; opacity: 0.95;">
+        ${escapeHtml(args.target)}
+      </p>
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Code promo / code de réduction dans un encadré or pâle dashed bordé or.
+ * Police monospace letter-spacing élevé pour mise en valeur. Optionnellement
+ * une note de validité dessous.
+ */
+export function promoCode(args: { intro?: string; code: string; expiryNote?: string }): string {
+  const intro = args.intro ?? "Utilisez le code promo";
+  const expiry = args.expiryNote
+    ? `<p style="margin: 12px 0 0 0; color: ${BRAND.textMuted}; font-family: ${FONT_STACK}; font-size: 12px;">${args.expiryNote}</p>`
+    : "";
+
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td align="center">
+      <p style="margin: 0 0 8px 0; color: ${BRAND.textMuted}; font-family: ${FONT_STACK}; font-size: 13px;">
+        ${escapeHtml(intro)}
+      </p>
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="nx-pale-bg" style="background-color: ${BRAND.goldPale}; border: 2px dashed ${BRAND.gold}; border-radius: 10px;">
+        <tr>
+          <td style="padding: 12px 24px;">
+            <p style="margin: 0; color: ${BRAND.navy}; font-family: 'Courier New', Consolas, monospace; font-size: 24px; font-weight: 700; letter-spacing: 4px;">
+              ${escapeHtml(args.code)}
+            </p>
+          </td>
+        </tr>
+      </table>
+      ${expiry}
+    </td>
+  </tr>
+</table>`;
+}
+
+/**
+ * Liste de bénéfices avec check ✓ or — fond or pâle, titre optionnel.
+ * Utilisée sur les emails promo et les pages onboarding pour énumérer
+ * ce que l'abonnement inclut.
+ */
+export function benefitsList(args: { title?: string; items: string[] }): string {
+  const titleHtml = args.title
+    ? `<p style="margin: 0 0 16px 0; color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 600; text-align: center;">${escapeHtml(args.title)}</p>`
+    : "";
+  const rows = args.items
+    .map(
+      (item) => `
+        <tr>
+          <td style="padding: 6px 0;">
+            <span style="color: ${BRAND.gold}; font-family: ${FONT_STACK}; font-size: 14px; font-weight: 700;">✓</span>
+            <span style="color: ${BRAND.navy}; font-family: ${FONT_STACK}; font-size: 14px; line-height: 22px; margin-left: 8px;">${escapeHtml(item)}</span>
+          </td>
+        </tr>`,
+    )
+    .join("");
+
+  return `
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="nx-pale-bg" style="background-color: ${BRAND.goldPale}; border-radius: 8px; margin: 0 0 24px 0;">
+  <tr>
+    <td style="padding: 24px 28px;">
+      ${titleHtml}
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        ${rows}
+      </table>
     </td>
   </tr>
 </table>`;
