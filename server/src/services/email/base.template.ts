@@ -403,8 +403,10 @@ function footerSection(productCfg: ProductConfig, unsubscribeUrl?: string): stri
                 <a href="mailto:${escapeAttr(productCfg.contactEmail)}" style="color: ${BRAND.gold}; text-decoration: none;">${escapeHtml(productCfg.contactEmail)}</a>
               </p>
               <p style="margin: 16px 0 0 0; padding-top: 16px; border-top: 1px solid ${BRAND.navyDivider}; color: ${BRAND.navyMuted}; font-family: ${FONT_STACK}; font-size: 11px; line-height: 18px;">
-                Médiateur de la consommation : CM2C &mdash;
-                <a href="https://www.cm2c.net" style="color: ${BRAND.navySubtle}; text-decoration: underline;">www.cm2c.net</a><br/>
+                Médiation de la consommation : CM2C, 49 rue de Ponthieu, 75008 Paris &mdash;
+                <a href="https://www.cm2c.net/declarer-un-litige.php" style="color: ${BRAND.navySubtle}; text-decoration: underline;">www.cm2c.net</a>
+                &middot;
+                <a href="mailto:litiges@cm2c.net" style="color: ${BRAND.navySubtle}; text-decoration: underline;">litiges@cm2c.net</a><br/>
                 ${unsubscribeBlock}<a href="${cgvUrl}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">CGV</a>
                 &middot;
                 <a href="${privacyUrl}" style="color: ${BRAND.navySubtle}; text-decoration: underline;">Politique de confidentialité</a>

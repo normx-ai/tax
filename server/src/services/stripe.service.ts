@@ -77,6 +77,9 @@ export async function createCheckoutSession(input: CreateCheckoutInput): Promise
       email: input.customerEmail,
       name: input.customerName,
       metadata: { orgId: input.orgId },
+      invoice_settings: {
+        footer: "Mediation de la consommation : CM2C, 49 rue de Ponthieu, 75008 Paris — www.cm2c.net — litiges@cm2c.net",
+      },
     });
     stripeCustomerId = customer.id;
     await prisma.subscription.update({

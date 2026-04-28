@@ -169,7 +169,7 @@ export async function generateInvoicePdf(invoice: InvoiceData): Promise<string> 
     }
 
     // --- Pied de page ---
-    const footerY = 750;
+    const footerY = 736;
     doc.fontSize(8).font('Helvetica').fillColor(gray);
     doc.text(
       `${COMPANY.legalName} SAS — ${formatCompanyAddress()} — SIRET ${COMPANY.siret} — ${COMPANY.rcs}`,
@@ -178,6 +178,10 @@ export async function generateInvoicePdf(invoice: InvoiceData): Promise<string> 
     doc.text(
       `${COMPANY.contact.info} | ${COMPANY.contact.billing}`,
       50, footerY + 12, { width: 495, align: 'center' },
+    );
+    doc.text(
+      `Médiation de la consommation : CM2C, 49 rue de Ponthieu, 75008 Paris — www.cm2c.net — litiges@cm2c.net`,
+      50, footerY + 24, { width: 495, align: 'center' },
     );
 
     doc.end();

@@ -145,8 +145,13 @@ export default function MentionsLegalesScreen() {
             7. Médiation de la consommation
           </Text>
           <Text style={{ fontSize: 16, color: colors.text, lineHeight: 24, fontFamily: fonts.regular, fontWeight: fontWeights.regular, paddingLeft: 8 }}>
-            Conformément aux articles L.612-1 et suivants du Code de la consommation, en cas de litige non résolu par notre service client, vous pouvez recourir gratuitement au médiateur de la consommation dont nous relevons :{"\n\n"}
-            Médiateur : en cours de désignation{"\n\n"}
+            Conformément aux dispositions du Code de la consommation concernant « le processus de médiation des litiges de la consommation », après nous avoir sollicités et à défaut de réponse vous satisfaisant, vous avez la possibilité de recourir gratuitement à une procédure de médiation de la consommation auprès de :{"\n\n"}
+            CM2C{"\n"}
+            49 rue de Ponthieu{"\n"}
+            75 008 PARIS{"\n"}
+            Tél : 01 89 47 00 14{"\n"}
+            Site internet : https://www.cm2c.net/declarer-un-litige.php{"\n"}
+            Mail : litiges@cm2c.net{"\n\n"}
             Vous pouvez également utiliser la plateforme européenne de règlement en ligne des litiges :{"\n"}
             https://ec.europa.eu/consumers/odr
           </Text>
